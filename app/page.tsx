@@ -8,7 +8,6 @@ import CampCard from "@/components/CampCard";
 
 const DEFAULT_FILTERS: Filters = {
   prefecture: "全部",
-  bonfire: false,
   soloPlan: false,
   bath: false,
   noReservation: false,

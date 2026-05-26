@@ -37,7 +37,7 @@ export default function CampMap({ lat, lng, name }: Props) {
         rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       />
-      <div ref={mapRef} className="w-full h-64 sm:h-80 rounded-xl overflow-hidden" />
+      <div ref={mapRef} className="w-full h-60 sm:h-96 rounded-xl overflow-hidden" />
     </>
   );
 }

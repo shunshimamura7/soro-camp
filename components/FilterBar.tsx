@@ -70,7 +70,6 @@ export default function FilterBar({ filters, sort, onFiltersChange, onSortChange
 
         {/* Feature toggles + sort */}
         <div className="px-3 sm:px-4 flex flex-wrap items-center gap-2">
-          <Toggle checked={filters.bonfire} onChange={(v) => set("bonfire", v)} label="🔥 焚き火可" />
           <Toggle checked={filters.soloPlan} onChange={(v) => set("soloPlan", v)} label="🏕 ソロプラン" />
           <Toggle checked={filters.bath} onChange={(v) => set("bath", v)} label="♨️ 風呂あり" />
           <Toggle checked={filters.noReservation} onChange={(v) => set("noReservation", v)} label="✅ 予約不要" />

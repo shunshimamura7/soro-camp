@@ -16,7 +16,6 @@ function Tag({ children, green }: { children: React.ReactNode; green?: boolean }
 
 function featureTags(f: Campground["features"]) {
   const tags: { label: string; green?: boolean }[] = [];
-  if (f.bonfire) tags.push({ label: "🔥 焚き火", green: true });
   if (f.pet) tags.push({ label: "🐕 ペット" });
   if (f.soloPlan) tags.push({ label: "🏕 ソロプラン", green: true });
   if (f.bath) tags.push({ label: "♨️ 風呂", green: true });
