@@ -22,7 +22,6 @@ export type SortKey =
 export type Filters = {
   prefecture: string;
   bonfire: boolean;
-  pet: boolean;
   soloPlan: boolean;
   bath: boolean;
   noReservation: boolean;
@@ -38,7 +37,6 @@ export function filterAndSort(
       if (c.prefecture !== filters.prefecture) return false;
     }
     if (filters.bonfire && !c.features.bonfire) return false;
-    if (filters.pet && !c.features.pet) return false;
     if (filters.soloPlan && !c.features.soloPlan) return false;
     if (filters.bath && !c.features.bath) return false;
     if (filters.noReservation && c.features.reservation !== "不要") return false;
