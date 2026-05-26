@@ -38,8 +38,8 @@ export async function generateMetadata({
 function Row({ label, value }: { label: string; value: React.ReactNode }) {
   return (
     <div className="flex gap-3 py-2.5 border-b border-slate-100">
-      <span className="w-28 shrink-0 text-slate-500 text-sm">{label}</span>
-      <span className="text-sm text-slate-700">{value}</span>
+      <span className="w-24 sm:w-28 shrink-0 text-slate-500 text-xs sm:text-sm">{label}</span>
+      <span className="text-xs sm:text-sm text-slate-700 break-words min-w-0">{value}</span>
     </div>
   );
 }
@@ -84,34 +84,34 @@ export default async function CampDetailPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-8">
         {/* Breadcrumb */}
-        <nav className="text-xs text-slate-500 mb-5 flex gap-1 items-center flex-wrap">
-          <Link href="/" className="hover:text-slate-700">トップ</Link>
+        <nav className="text-xs text-slate-500 mb-4 flex gap-1 items-center flex-wrap">
+          <Link href="/" className="hover:text-slate-700">← 一覧</Link>
           <span>›</span>
           <span>{camp.prefecture}</span>
           <span>›</span>
-          <span className="text-slate-700">{camp.name}</span>
+          <span className="text-slate-700 truncate max-w-[180px] sm:max-w-none">{camp.name}</span>
         </nav>
 
         {/* Title */}
-        <div className="mb-6">
-          <p className="text-sm text-slate-500 mb-1">{camp.prefecture} · {camp.area}</p>
-          <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 leading-tight">{camp.name}</h1>
-          <div className="flex items-center gap-3 mt-2">
+        <div className="mb-5 sm:mb-6">
+          <p className="text-xs sm:text-sm text-slate-500 mb-1">{camp.prefecture} · {camp.area}</p>
+          <h1 className="text-xl sm:text-3xl font-bold text-slate-900 leading-tight">{camp.name}</h1>
+          <div className="flex items-center gap-2 sm:gap-3 mt-2 flex-wrap">
             <span className="text-3xl font-bold text-blue-500">{camp.soloScore.toFixed(1)}</span>
-            <span className="text-slate-500 text-sm">ソロスコア</span>
-            <span className="text-green-600 font-bold">¥{camp.priceMin.toLocaleString()}〜</span>
-            <span className="text-slate-500 text-sm">{camp.season}</span>
+            <span className="text-slate-500 text-xs sm:text-sm">ソロスコア</span>
+            <span className="text-green-600 font-bold text-sm sm:text-base">¥{camp.priceMin.toLocaleString()}〜</span>
+            <span className="text-slate-500 text-xs sm:text-sm">{camp.season}</span>
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          {/* Left */}
-          <div className="flex flex-col gap-6">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+          {/* Left column */}
+          <div className="flex flex-col gap-4 sm:gap-6">
             {/* Scores */}
-            <section className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
-              <h2 className="text-sm font-bold text-slate-700 mb-3">5軸スコア</h2>
+            <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
+              <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-3">5軸スコア</h2>
               <div className="flex flex-col gap-2">
                 <ScoreBar label="静か度" score={camp.scores.quietness} />
                 <ScoreBar label="絶景度" score={camp.scores.scenery} color="#00ba7c" />
@@ -122,49 +122,61 @@ export default async function CampDetailPage({
             </section>
 
             {/* Comment */}
-            <section className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
-              <h2 className="text-sm font-bold text-slate-700 mb-2">ソロキャンパーへのコメント</h2>
+            <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
+              <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">ソロキャンパーへのコメント</h2>
               <p className="text-sm text-slate-600 leading-relaxed">{camp.soloComment}</p>
             </section>
 
-            {/* Links */}
+            {/* Action links — full-height buttons for easy tapping */}
             <div className="flex flex-col gap-2">
               {camp.officialUrl && (
-                <a href={camp.officialUrl} target="_blank" rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 rounded-xl bg-blue-50 text-blue-600 text-sm font-medium hover:bg-blue-100 transition-colors">
+                <a
+                  href={camp.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center min-h-[52px] gap-2 rounded-xl bg-blue-50 text-blue-600 text-sm font-medium hover:bg-blue-100 transition-colors"
+                >
                   公式サイトを見る ↗
                 </a>
               )}
               {camp.reservationUrl && (
-                <a href={camp.reservationUrl} target="_blank" rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-50 text-emerald-600 text-sm font-medium hover:bg-emerald-100 transition-colors">
+                <a
+                  href={camp.reservationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center min-h-[52px] gap-2 rounded-xl bg-emerald-50 text-emerald-600 text-sm font-medium hover:bg-emerald-100 transition-colors"
+                >
                   予約ページへ ↗
                 </a>
               )}
               {camp.tel && (
-                <a href={`tel:${camp.tel}`}
-                  className="flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-100 text-slate-600 text-sm font-medium hover:bg-slate-200 transition-colors">
+                <a
+                  href={`tel:${camp.tel}`}
+                  className="flex items-center justify-center min-h-[52px] gap-2 rounded-xl bg-slate-100 text-slate-600 text-sm font-medium hover:bg-slate-200 transition-colors"
+                >
                   📞 {camp.tel}
                 </a>
               )}
               {camp.telNote && !camp.tel && (
-                <p className="text-xs text-slate-500 text-center">{camp.telNote}</p>
+                <p className="text-xs text-slate-500 text-center py-2">{camp.telNote}</p>
               )}
             </div>
           </div>
 
-          {/* Right */}
-          <div className="flex flex-col gap-6">
+          {/* Right column */}
+          <div className="flex flex-col gap-4 sm:gap-6">
             {/* Map */}
             <section>
-              <h2 className="text-sm font-bold text-slate-700 mb-2">アクセスマップ</h2>
-              <CampMapClient lat={camp.lat} lng={camp.lng} name={camp.name} />
-              <p className="text-xs text-slate-500 mt-1">📍 {camp.address}</p>
+              <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">アクセスマップ</h2>
+              <div className="overflow-hidden rounded-xl">
+                <CampMapClient lat={camp.lat} lng={camp.lng} name={camp.name} />
+              </div>
+              <p className="text-xs text-slate-500 mt-1.5">📍 {camp.address}</p>
             </section>
 
-            {/* Details */}
-            <section className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
-              <h2 className="text-sm font-bold text-slate-700 mb-1">施設情報</h2>
+            {/* Facility details */}
+            <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
+              <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-1">施設情報</h2>
               <div>
                 <Row label="料金" value={`¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`} />
                 <Row label="営業期間" value={camp.season} />
@@ -184,7 +196,7 @@ export default async function CampDetailPage({
           </div>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-6 sm:mt-8">
           <Link href="/" className="text-blue-500 text-sm hover:underline">← キャンプ場一覧に戻る</Link>
         </div>
       </div>

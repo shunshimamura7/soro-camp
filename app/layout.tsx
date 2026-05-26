@@ -35,14 +35,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja">
       <body className={`${noto.className} bg-white text-slate-900 min-h-screen`}>
-        <header className="border-b border-slate-200 px-4 py-3 bg-white">
-          <div className="max-w-4xl mx-auto flex items-center gap-3">
-            <span className="text-2xl">🏕</span>
+        <header className="border-b border-slate-200 px-3 sm:px-4 py-2 sm:py-3 bg-white">
+          <div className="max-w-4xl mx-auto flex items-center gap-2 sm:gap-3">
+            <span className="text-xl sm:text-2xl leading-none">🏕</span>
             <div>
-              <a href="/" className="text-slate-900 font-bold text-lg leading-none hover:text-blue-500 transition-colors">
+              <a href="/" className="text-slate-900 font-bold text-base sm:text-lg leading-none hover:text-blue-500 transition-colors">
                 ソロキャン羅針盤
               </a>
-              <p className="text-xs text-slate-500 mt-0.5">神奈川・静岡・山梨 ソロキャンプ場ガイド</p>
+              <p className="text-xs text-slate-500 mt-0.5 hidden sm:block">神奈川・静岡・山梨 ソロキャンプ場ガイド</p>
             </div>
           </div>
         </header>

@@ -31,7 +31,7 @@ function Toggle({ checked, onChange, label }: ToggleProps) {
   return (
     <button
       onClick={() => onChange(!checked)}
-      className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+      className={`shrink-0 min-h-[36px] px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
         checked
           ? "bg-blue-500 border-blue-500 text-white"
           : "bg-white border-slate-300 text-slate-600 hover:border-slate-400"
@@ -47,38 +47,40 @@ export default function FilterBar({ filters, sort, onFiltersChange, onSortChange
     onFiltersChange({ ...filters, [key]: val });
 
   return (
-    <div className="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-slate-200 py-3 px-4 shadow-sm">
-      <div className="max-w-4xl mx-auto flex flex-col gap-3">
-        {/* Prefecture tabs */}
-        <div className="flex gap-2 flex-wrap">
-          {PREFECTURES.map((p) => (
-            <button
-              key={p}
-              onClick={() => set("prefecture", p)}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                filters.prefecture === p
-                  ? "bg-blue-500 text-white"
-                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-              }`}
-            >
-              {p}
-            </button>
-          ))}
+    <div className="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-slate-200 py-2 sm:py-3 shadow-sm">
+      <div className="max-w-4xl mx-auto flex flex-col gap-2 sm:gap-3">
+        {/* Prefecture tabs — horizontal scroll on mobile, wrap on desktop */}
+        <div className="scrollbar-hide overflow-x-auto pl-3 sm:pl-4">
+          <div className="flex gap-2 pr-3 sm:pr-4 sm:flex-wrap">
+            {PREFECTURES.map((p) => (
+              <button
+                key={p}
+                onClick={() => set("prefecture", p)}
+                className={`shrink-0 min-h-[36px] px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                  filters.prefecture === p
+                    ? "bg-blue-500 text-white"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
+              >
+                {p}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Feature toggles + sort */}
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="px-3 sm:px-4 flex flex-wrap items-center gap-2">
           <Toggle checked={filters.bonfire} onChange={(v) => set("bonfire", v)} label="🔥 焚き火可" />
           <Toggle checked={filters.soloPlan} onChange={(v) => set("soloPlan", v)} label="🏕 ソロプラン" />
           <Toggle checked={filters.bath} onChange={(v) => set("bath", v)} label="♨️ 風呂あり" />
           <Toggle checked={filters.noReservation} onChange={(v) => set("noReservation", v)} label="✅ 予約不要" />
 
           <div className="ml-auto flex items-center gap-2">
-            <span className="text-xs text-slate-500">{total}件</span>
+            <span className="text-xs text-slate-500 whitespace-nowrap">{total}件</span>
             <select
               value={sort}
               onChange={(e) => onSortChange(e.target.value as SortKey)}
-              className="bg-white border border-slate-300 text-slate-700 text-xs rounded-lg px-2 py-1.5 focus:outline-none focus:border-blue-500"
+              className="min-h-[36px] bg-white border border-slate-300 text-slate-700 text-xs rounded-lg px-2 py-1.5 focus:outline-none focus:border-blue-500"
             >
               {SORT_OPTIONS.map((o) => (
                 <option key={o.value} value={o.value}>

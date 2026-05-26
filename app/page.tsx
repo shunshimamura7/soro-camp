@@ -26,7 +26,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="px-4 py-10 text-center max-w-4xl mx-auto">
+      <section className="px-3 sm:px-4 py-6 sm:py-10 text-center max-w-4xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-3 text-slate-900">
           神奈川・静岡・山梨の<br className="sm:hidden" />
           <span className="text-blue-500">ソロキャンプ場</span>を探す
@@ -46,7 +46,7 @@ export default function HomePage() {
         total={results.length}
       />
 
-      <section className="max-w-4xl mx-auto px-4 py-6">
+      <section className="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
         {results.length === 0 ? (
           <div className="text-center py-20 text-slate-500">
             <p className="text-4xl mb-3">🏕</p>
