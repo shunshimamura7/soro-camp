@@ -34,7 +34,7 @@ function Toggle({ checked, onChange, label }: ToggleProps) {
       className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
         checked
           ? "bg-blue-500 border-blue-500 text-white"
-          : "bg-transparent border-white/20 text-gray-400 hover:border-white/40"
+          : "bg-white border-slate-300 text-slate-600 hover:border-slate-400"
       }`}
     >
       {label}
@@ -47,7 +47,7 @@ export default function FilterBar({ filters, sort, onFiltersChange, onSortChange
     onFiltersChange({ ...filters, [key]: val });
 
   return (
-    <div className="sticky top-0 z-10 bg-[#0f1419]/90 backdrop-blur border-b border-white/5 py-3 px-4">
+    <div className="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-slate-200 py-3 px-4 shadow-sm">
       <div className="max-w-4xl mx-auto flex flex-col gap-3">
         {/* Prefecture tabs */}
         <div className="flex gap-2 flex-wrap">
@@ -58,7 +58,7 @@ export default function FilterBar({ filters, sort, onFiltersChange, onSortChange
               className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
                 filters.prefecture === p
                   ? "bg-blue-500 text-white"
-                  : "bg-white/5 text-gray-400 hover:bg-white/10"
+                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
               }`}
             >
               {p}
@@ -74,14 +74,14 @@ export default function FilterBar({ filters, sort, onFiltersChange, onSortChange
           <Toggle checked={filters.noReservation} onChange={(v) => set("noReservation", v)} label="✅ 予約不要" />
 
           <div className="ml-auto flex items-center gap-2">
-            <span className="text-xs text-gray-500">{total}件</span>
+            <span className="text-xs text-slate-500">{total}件</span>
             <select
               value={sort}
               onChange={(e) => onSortChange(e.target.value as SortKey)}
-              className="bg-white/5 border border-white/10 text-gray-300 text-xs rounded-lg px-2 py-1.5 focus:outline-none focus:border-blue-500"
+              className="bg-white border border-slate-300 text-slate-700 text-xs rounded-lg px-2 py-1.5 focus:outline-none focus:border-blue-500"
             >
               {SORT_OPTIONS.map((o) => (
-                <option key={o.value} value={o.value} className="bg-[#16181c]">
+                <option key={o.value} value={o.value}>
                   {o.label}
                 </option>
               ))}

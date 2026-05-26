@@ -12,7 +12,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://soro-camp.vercel.a
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | ソロキャンプ場ガイド`,
+    default: `${SITE_NAME} | ソロキャンプ場ガイド 神奈川・静岡・山梨`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -34,22 +34,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className={`${noto.className} bg-[#0f1419] text-white min-h-screen`}>
-        <header className="border-b border-white/5 px-4 py-3">
+      <body className={`${noto.className} bg-white text-slate-900 min-h-screen`}>
+        <header className="border-b border-slate-200 px-4 py-3 bg-white">
           <div className="max-w-4xl mx-auto flex items-center gap-3">
             <span className="text-2xl">🏕</span>
             <div>
-              <a href="/" className="text-white font-bold text-lg leading-none hover:text-blue-400 transition-colors">
+              <a href="/" className="text-slate-900 font-bold text-lg leading-none hover:text-blue-500 transition-colors">
                 ソロキャン羅針盤
               </a>
-              <p className="text-xs text-gray-500 mt-0.5">神奈川・静岡・山梨 ソロキャンプ場ガイド</p>
+              <p className="text-xs text-slate-500 mt-0.5">神奈川・静岡・山梨 ソロキャンプ場ガイド</p>
             </div>
           </div>
         </header>
 
         <main>{children}</main>
 
-        <footer className="border-t border-white/5 mt-16 py-8 px-4 text-center text-xs text-gray-600">
+        <footer className="border-t border-slate-200 mt-16 py-8 px-4 text-center text-xs text-slate-400">
           <p>© 2026 ソロキャン羅針盤 — 情報の正確性に努めていますが、訪問前に各キャンプ場へご確認ください。</p>
           <p className="mt-1">最終確認: 2026-05-26</p>
         </footer>
