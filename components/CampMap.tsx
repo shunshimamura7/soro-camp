@@ -3,11 +3,12 @@
 import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 
+// CartoDB Dark Matter — dark_all は確実に存在するパス
 const CARTO_TILES = [
-  "https://a.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
-  "https://b.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
-  "https://c.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
-  "https://d.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
+  "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+  "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+  "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+  "https://d.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
 ];
 
 const MAP_STYLE: maplibregl.StyleSpecification = {
@@ -31,6 +32,23 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
     },
   ],
 };
+
+/** ember ドット要素を生成（inline styles で確実に描画） */
+function createEmberEl(large = false): HTMLDivElement {
+  const el = document.createElement("div");
+  // CSS クラスはアニメーション用。inline styles で寸法・色を保証する
+  el.className = large ? "camp-marker camp-marker--lg" : "camp-marker";
+  const size = large ? 18 : 14;
+  el.style.cssText =
+    `width:${size}px;height:${size}px;` +
+    "background:#e8611f;" +
+    "border-radius:50%;" +
+    "cursor:pointer;" +
+    "position:relative;" +
+    "flex-shrink:0;" +
+    "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);";
+  return el;
+}
 
 type Props = {
   lat: number;
@@ -58,26 +76,21 @@ export default function CampMap({ lat, lng, name, height = 320 }: Props) {
     mapRef.current = map;
 
     map.once("load", () => {
-      // Ember dot marker
-      const el = document.createElement("div");
-      el.className = "camp-marker camp-marker--lg";
+      const el = createEmberEl(true);
 
       const popup = new maplibregl.Popup({
-        offset: 16,
+        offset: 18,
         closeButton: false,
         maxWidth: "220px",
       }).setHTML(`<span class="camp-popup-name">${name}</span>`);
 
-      new maplibregl.Marker({ element: el })
+      const marker = new maplibregl.Marker({ element: el })
         .setLngLat([lng, lat])
         .setPopup(popup)
         .addTo(map);
 
-      // Auto-open popup
-      setTimeout(() => {
-        popup.addTo(map);
-        popup.setLngLat([lng, lat]);
-      }, 600);
+      // マーカーをクリックせずにポップアップを自動開示
+      setTimeout(() => marker.togglePopup(), 700);
     });
 
     return () => {

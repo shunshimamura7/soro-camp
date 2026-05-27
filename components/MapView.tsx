@@ -4,11 +4,12 @@ import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
 
+// CartoDB Dark Matter — dark_all は確実に存在するパス
 const CARTO_TILES = [
-  "https://a.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
-  "https://b.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
-  "https://c.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
-  "https://d.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
+  "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+  "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+  "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+  "https://d.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
 ];
 
 const MAP_STYLE: maplibregl.StyleSpecification = {
@@ -32,6 +33,22 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
     },
   ],
 };
+
+/** ember ドット要素を生成（inline styles で確実に描画） */
+function createEmberEl(): HTMLDivElement {
+  const el = document.createElement("div");
+  // CSS クラスはアニメーション用。inline styles で寸法・色を保証する
+  el.className = "camp-marker";
+  el.style.cssText =
+    "width:14px;height:14px;" +
+    "background:#e8611f;" +
+    "border-radius:50%;" +
+    "cursor:pointer;" +
+    "position:relative;" +
+    "flex-shrink:0;" +
+    "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);";
+  return el;
+}
 
 type Props = {
   camps: Campground[];
@@ -72,7 +89,7 @@ export default function MapView({ camps, height = 520 }: Props) {
     if (!map) return;
 
     const syncMarkers = () => {
-      // Remove previous markers
+      // 古いマーカーを削除
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
 
@@ -81,8 +98,7 @@ export default function MapView({ camps, height = 520 }: Props) {
       const bounds = new maplibregl.LngLatBounds();
 
       camps.forEach((camp) => {
-        const el = document.createElement("div");
-        el.className = "camp-marker";
+        const el = createEmberEl();
 
         const popup = new maplibregl.Popup({
           offset: 14,
