@@ -77,11 +77,14 @@ export default async function CampDetailPage({
 
   const f = camp.features;
 
-  // キャンプ場名を含めた Google マップ近隣検索 URL（zoom 14z で周辺が分かりやすい）
+  // ?q= パラメータ形式：Google Maps が文字列全体を検索クエリとして扱い、
+  // キャンプ場名が検索バーに確実に表示される。
+  // path 形式（/search/QUERY/@lat,lng）だと先頭のキャンプ場名を POI と判定して
+  // 検索バーに表示されないため、こちらの形式を採用。
   const supermarketUrl =
-    `https://www.google.com/maps/search/${encodeURIComponent(`${camp.name} スーパーマーケット`)}/@${camp.lat},${camp.lng},14z`;
+    `https://www.google.com/maps/search/?q=${encodeURIComponent(`${camp.name} スーパーマーケット`)}`;
   const meatFishUrl =
-    `https://www.google.com/maps/search/${encodeURIComponent(`${camp.name} 精肉店 鮮魚店`)}/@${camp.lat},${camp.lng},14z`;
+    `https://www.google.com/maps/search/?q=${encodeURIComponent(`${camp.name} 精肉店 鮮魚店`)}`;
 
   return (
     <>
