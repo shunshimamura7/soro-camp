@@ -35,3 +35,170 @@ select {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* ═══════════════════════════════════════════════════════
+   MapLibre GL JS — 焚火夜行トーン
+   炭: #0e0d0b  ember: #e8611f  枯草: #c4b49a
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Controls ── */
+.maplibregl-ctrl-group {
+  background: #1c1a17 !important;
+  border: 1px solid #2e2b27 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+}
+.maplibregl-ctrl-group button {
+  background: transparent !important;
+  color: #c4b49a !important;
+  border-bottom: 1px solid #2e2b27 !important;
+}
+.maplibregl-ctrl-group button:last-child {
+  border-bottom: none !important;
+}
+.maplibregl-ctrl-group button:hover {
+  background: #2e2b27 !important;
+  color: #e8c89a !important;
+}
+.maplibregl-ctrl-group button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+/* ズームアイコン色 */
+.maplibregl-ctrl-zoom-in .maplibregl-ctrl-icon,
+.maplibregl-ctrl-zoom-out .maplibregl-ctrl-icon,
+.maplibregl-ctrl-compass .maplibregl-ctrl-icon {
+  filter: invert(75%) sepia(15%) saturate(400%) hue-rotate(15deg) brightness(90%);
+}
+
+/* ── Attribution ── */
+.maplibregl-ctrl-attrib {
+  background: rgba(14, 13, 11, 0.72) !important;
+  color: #7a6e64 !important;
+  font-size: 9px !important;
+  border-radius: 4px !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: #9a8e84 !important;
+}
+.maplibregl-ctrl-attrib a:hover {
+  color: #c4b49a !important;
+}
+.maplibregl-ctrl-attrib-button {
+  filter: invert(60%) !important;
+}
+
+/* ── Cooperative gesture overlay ── */
+.maplibregl-cooperative-gesture-screen {
+  background: rgba(14, 13, 11, 0.78) !important;
+  color: #e8c89a !important;
+  font-size: 15px !important;
+  font-family: "Noto Sans JP", sans-serif !important;
+  letter-spacing: 0.03em;
+}
+
+/* ── Popup ── */
+.maplibregl-popup-content {
+  background: #1c1a17 !important;
+  border: 1px solid #3a3530 !important;
+  border-radius: 10px !important;
+  padding: 10px 14px !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.65) !important;
+  font-family: "Noto Sans JP", "Noto Serif JP", sans-serif !important;
+}
+.maplibregl-popup-tip {
+  border-top-color: #1c1a17 !important;
+  border-bottom-color: #1c1a17 !important;
+}
+/* tip の border を消してポップアップ色に統一 */
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+  border-top-color: #1c1a17 !important;
+}
+.maplibregl-popup-anchor-top .maplibregl-popup-tip {
+  border-bottom-color: #1c1a17 !important;
+}
+.maplibregl-popup-close-button {
+  color: #7a6e64 !important;
+  font-size: 16px !important;
+  line-height: 1;
+  padding: 4px 6px !important;
+}
+.maplibregl-popup-close-button:hover {
+  color: #c4b49a !important;
+  background: transparent !important;
+}
+
+/* ── Popup内コンテンツ ── */
+.camp-popup-link {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-decoration: none;
+  color: inherit;
+}
+.camp-popup-link:hover .camp-popup-name {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.camp-popup-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e8c89a;
+  line-height: 1.3;
+}
+.camp-popup-meta {
+  font-size: 11px;
+  color: #8a7e74;
+}
+
+/* ── Ember ドットマーカー ── */
+.camp-marker {
+  width: 14px;
+  height: 14px;
+  background: #e8611f;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 2px rgba(232, 97, 31, 0.35),
+    0 0 8px rgba(232, 97, 31, 0.6);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.15s ease;
+}
+.camp-marker:hover {
+  transform: scale(1.25);
+}
+.camp-marker::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid rgba(232, 97, 31, 0.45);
+  animation: ember-pulse 2.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* 詳細ページ用（少し大きめ） */
+.camp-marker--lg {
+  width: 18px;
+  height: 18px;
+}
+.camp-marker--lg::after {
+  inset: -8px;
+}
+
+@keyframes ember-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  55% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* ── Canvas フォーカスアウトライン除去 ── */
+.maplibregl-canvas:focus {
+  outline: none !important;
+}

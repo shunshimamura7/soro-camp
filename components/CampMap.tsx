@@ -1,43 +1,96 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import maplibregl from "maplibre-gl";
 
-type Props = { lat: number; lng: number; name: string };
+const CARTO_TILES = [
+  "https://a.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
+  "https://b.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
+  "https://c.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
+  "https://d.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png",
+];
 
-export default function CampMap({ lat, lng, name }: Props) {
-  const mapRef = useRef<HTMLDivElement>(null);
-  const initializedRef = useRef(false);
+const MAP_STYLE: maplibregl.StyleSpecification = {
+  version: 8,
+  sources: {
+    "carto-dark": {
+      type: "raster",
+      tiles: CARTO_TILES,
+      tileSize: 256,
+      attribution:
+        '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
+    },
+  },
+  layers: [
+    {
+      id: "carto-dark-layer",
+      type: "raster",
+      source: "carto-dark",
+      minzoom: 0,
+      maxzoom: 22,
+    },
+  ],
+};
+
+type Props = {
+  lat: number;
+  lng: number;
+  name: string;
+  height?: number;
+};
+
+export default function CampMap({ lat, lng, name, height = 320 }: Props) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<maplibregl.Map | null>(null);
 
   useEffect(() => {
-    if (!mapRef.current || initializedRef.current) return;
-    initializedRef.current = true;
+    if (!containerRef.current || mapRef.current) return;
 
-    import("leaflet").then((L) => {
-      // Fix default icon paths broken by webpack
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      delete (L.Icon.Default.prototype as any)._getIconUrl;
-      L.Icon.Default.mergeOptions({
-        iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-        iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-        shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-      });
-
-      const map = L.map(mapRef.current!).setView([lat, lng], 13);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "© OpenStreetMap contributors",
-        maxZoom: 19,
-      }).addTo(map);
-      L.marker([lat, lng]).addTo(map).bindPopup(name).openPopup();
+    const map = new maplibregl.Map({
+      container: containerRef.current,
+      style: MAP_STYLE,
+      center: [lng, lat],
+      zoom: 13,
+      cooperativeGestures: true,
+      attributionControl: { compact: true },
     });
+
+    mapRef.current = map;
+
+    map.once("load", () => {
+      // Ember dot marker
+      const el = document.createElement("div");
+      el.className = "camp-marker camp-marker--lg";
+
+      const popup = new maplibregl.Popup({
+        offset: 16,
+        closeButton: false,
+        maxWidth: "220px",
+      }).setHTML(`<span class="camp-popup-name">${name}</span>`);
+
+      new maplibregl.Marker({ element: el })
+        .setLngLat([lng, lat])
+        .setPopup(popup)
+        .addTo(map);
+
+      // Auto-open popup
+      setTimeout(() => {
+        popup.addTo(map);
+        popup.setLngLat([lng, lat]);
+      }, 600);
+    });
+
+    return () => {
+      map.remove();
+      mapRef.current = null;
+    };
   }, [lat, lng, name]);
 
   return (
-    <>
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      />
-      <div ref={mapRef} className="w-full h-60 sm:h-96 rounded-xl overflow-hidden" />
-    </>
+    <div
+      ref={containerRef}
+      className="w-full rounded-xl overflow-hidden"
+      style={{ height }}
+    />
   );
 }

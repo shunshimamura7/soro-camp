@@ -1,10 +1,13 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import dynamic from "next/dynamic";
 import { campgrounds, filterAndSort } from "@/lib/camp";
 import type { Filters, SortKey } from "@/lib/camp";
 import FilterBar from "@/components/FilterBar";
 import CampCard from "@/components/CampCard";
+
+const MapView = dynamic(() => import("@/components/MapView"), { ssr: false });
 
 const DEFAULT_FILTERS: Filters = {
   prefecture: "全部",
@@ -35,6 +38,11 @@ export default function HomePage() {
           焚き火OK・予約不要など条件を絞り込んで、
           自分だけの最高のサイトを見つけよう。
         </p>
+      </section>
+
+      {/* 一覧地図 — フィルター連動 */}
+      <section className="max-w-4xl mx-auto px-3 sm:px-4 pb-4 sm:pb-6">
+        <MapView camps={results} height={520} />
       </section>
 
       <FilterBar

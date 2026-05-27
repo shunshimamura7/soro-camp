@@ -169,7 +169,7 @@ export default async function CampDetailPage({
             <section>
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">アクセスマップ</h2>
               <div className="overflow-hidden rounded-xl">
-                <CampMapClient lat={camp.lat} lng={camp.lng} name={camp.name} />
+                <CampMapClient lat={camp.lat} lng={camp.lng} name={camp.name} height={320} />
               </div>
               <p className="text-xs text-slate-500 mt-1.5">📍 {camp.address}</p>
             </section>
