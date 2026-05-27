@@ -67,8 +67,8 @@ export default function MapView({ camps, height = 520 }: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
-      center: [138.82, 35.45],
-      zoom: 7.2,
+      center: [138.6, 35.5],
+      zoom: 7.5,
       cooperativeGestures: true,
       attributionControl: { compact: true },
     });
@@ -128,7 +128,7 @@ export default function MapView({ camps, height = 520 }: Props) {
         });
       } else {
         map.fitBounds(bounds, {
-          padding: { top: 48, bottom: 48, left: 48, right: 48 },
+          padding: { top: 80, bottom: 80, left: 80, right: 80 },
           maxZoom: 11,
           duration: 700,
         });
