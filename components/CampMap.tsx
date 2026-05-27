@@ -44,8 +44,6 @@ function createEmberEl(large = false): HTMLDivElement {
     "background:#e8611f;" +
     "border-radius:50%;" +
     "cursor:pointer;" +
-    "position:relative;" +
-    "flex-shrink:0;" +
     "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);";
   return el;
 }
