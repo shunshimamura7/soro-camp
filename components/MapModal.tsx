@@ -7,10 +7,7 @@ import type { Campground } from "@/lib/types";
 
 // ── Tile sets ─────────────────────────────────────────────────────────────────
 const LIGHT_TILES = [
-  "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
-  "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
-  "https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
-  "https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+  "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
 ];
 const DARK_TILES = [
   "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
@@ -27,7 +24,7 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
       tiles: LIGHT_TILES, // default: 白基調
       tileSize: 256,
       attribution:
-        '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     },
   },
   layers: [
@@ -38,13 +35,25 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function createEmberEl(): HTMLDivElement {
   const el = document.createElement("div");
+  // タップ領域を 44×44px に拡大してスマホ誤タップを防止
+  // 外枠は透明で、中心に実際のドットを配置
   el.style.cssText =
+    "width:44px;height:44px;" +
+    "display:flex;align-items:center;justify-content:center;" +
+    "cursor:pointer;" +
+    "pointer-events:all;" +
+    "z-index:10;" +
+    "position:relative;";
+  // 見た目のドット（14px）は内部要素として配置
+  const dot = document.createElement("div");
+  dot.style.cssText =
     "width:14px;height:14px;" +
     "background:#e8611f;" +
     "border-radius:50%;" +
-    "cursor:pointer;" +
     "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);" +
-    "transition:transform 0.15s ease,box-shadow 0.15s ease;";
+    "transition:transform 0.15s ease,box-shadow 0.15s ease;" +
+    "pointer-events:none;";
+  el.appendChild(dot);
   return el;
 }
 
@@ -113,18 +122,20 @@ export default function MapModal({ camps, onClose }: Props) {
     return () => { document.body.style.overflow = prev; };
   }, []);
 
-  // 選択マーカーをハイライト
+  // 選択マーカーをハイライト（内部ドット要素を対象）
   useEffect(() => {
     elMapRef.current.forEach((el, slug) => {
+      const dot = el.firstElementChild as HTMLDivElement | null;
+      if (!dot) return;
       if (slug === selected?.slug) {
-        el.style.background = "#ff7a00";
-        el.style.transform = "scale(1.7)";
-        el.style.boxShadow =
+        dot.style.background = "#ff7a00";
+        dot.style.transform = "scale(1.7)";
+        dot.style.boxShadow =
           "0 0 0 3px rgba(255,122,0,0.5),0 0 20px rgba(255,122,0,0.9)";
       } else {
-        el.style.background = "#e8611f";
-        el.style.transform = "";
-        el.style.boxShadow =
+        dot.style.background = "#e8611f";
+        dot.style.transform = "";
+        dot.style.boxShadow =
           "0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65)";
       }
     });
@@ -152,10 +163,12 @@ export default function MapModal({ camps, onClose }: Props) {
         const el = createEmberEl();
         elMapRef.current.set(camp.slug, el);
 
-        el.addEventListener("click", (e) => {
+        const handler = (e: Event) => {
           e.stopPropagation();
           openPanel(camp);
-        });
+        };
+        el.addEventListener("click", handler);
+        el.addEventListener("touchend", handler, { passive: false });
 
         const marker = new maplibregl.Marker({ element: el })
           .setLngLat([camp.lng, camp.lat])
