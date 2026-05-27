@@ -67,8 +67,8 @@ export default function MapView({ camps, height = 520 }: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
-      center: [138.6, 35.5],
-      zoom: 7.5,
+      center: [138.85, 35.55],
+      zoom: 7.8,
       cooperativeGestures: true,
       attributionControl: { compact: true },
     });
@@ -95,8 +95,6 @@ export default function MapView({ camps, height = 520 }: Props) {
 
       if (camps.length === 0) return;
 
-      const bounds = new maplibregl.LngLatBounds();
-
       camps.forEach((camp) => {
         const el = createEmberEl();
 
@@ -117,22 +115,7 @@ export default function MapView({ camps, height = 520 }: Props) {
           .addTo(map);
 
         markersRef.current.push(marker);
-        bounds.extend([camp.lng, camp.lat]);
       });
-
-      if (camps.length === 1) {
-        map.flyTo({
-          center: [camps[0].lng, camps[0].lat],
-          zoom: 12,
-          duration: 700,
-        });
-      } else {
-        map.fitBounds(bounds, {
-          padding: { top: 80, bottom: 80, left: 80, right: 80 },
-          maxZoom: 11,
-          duration: 700,
-        });
-      }
     };
 
     if (map.loaded()) {
