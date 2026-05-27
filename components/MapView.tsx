@@ -67,8 +67,8 @@ export default function MapView({ camps, height = 520 }: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
-      center: [138.85, 35.55],
-      zoom: 7.8,
+      center: [138.9, 35.7],
+      zoom: 7.2,
       cooperativeGestures: true,
       attributionControl: { compact: true },
     });
