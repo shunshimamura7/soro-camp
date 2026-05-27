@@ -33,18 +33,17 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
+/**
+ * 44×44px transparent tap-area wrapper around a 14px visible ember dot.
+ * position:relative は MapLibre の transform と競合するため設定しない。
+ */
 function createEmberEl(): HTMLDivElement {
   const el = document.createElement("div");
-  // タップ領域を 44×44px に拡大してスマホ誤タップを防止
-  // 外枠は透明で、中心に実際のドットを配置
   el.style.cssText =
     "width:44px;height:44px;" +
     "display:flex;align-items:center;justify-content:center;" +
     "cursor:pointer;" +
-    "pointer-events:all;" +
-    "z-index:10;" +
-    "position:relative;";
-  // 見た目のドット（14px）は内部要素として配置
+    "pointer-events:all;";
   const dot = document.createElement("div");
   dot.style.cssText =
     "width:14px;height:14px;" +
@@ -57,6 +56,73 @@ function createEmberEl(): HTMLDivElement {
   return el;
 }
 
+/**
+ * マーカー要素にタップ判定付きのイベントを登録する。
+ *
+ * ポイント：
+ * - touchstart で stopPropagation + preventDefault → MapLibre がタッチを
+ *   パン操作として横取りするのを防ぐ（これが「たまに反応しない」の根本原因）
+ * - touchmove でドラッグ検知 → 8px 以上動いたらタップキャンセル
+ * - touchend がタップと判定した場合のみ onTap() を呼ぶ
+ * - click はマウス（PC）用
+ */
+function bindTapHandler(el: HTMLDivElement, onTap: () => void): void {
+  let isTap = false;
+  let startX = 0;
+  let startY = 0;
+
+  el.addEventListener(
+    "touchstart",
+    (e: TouchEvent) => {
+      e.stopPropagation();
+      e.preventDefault(); // ← Critical: これがないと MapLibre がタッチを奪う
+      isTap = true;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      // タッチ中は z-index を上げて他のマーカーより前面に
+      const wrapper = el.parentElement;
+      if (wrapper) wrapper.style.zIndex = "20";
+    },
+    { passive: false },
+  );
+
+  el.addEventListener(
+    "touchmove",
+    (e: TouchEvent) => {
+      if (!isTap) return;
+      const dx = Math.abs(e.touches[0].clientX - startX);
+      const dy = Math.abs(e.touches[0].clientY - startY);
+      if (dx > 8 || dy > 8) {
+        // スクロール / パン → タップキャンセル
+        isTap = false;
+        const wrapper = el.parentElement;
+        if (wrapper) wrapper.style.zIndex = "";
+      }
+    },
+    { passive: true },
+  );
+
+  el.addEventListener(
+    "touchend",
+    (e: TouchEvent) => {
+      e.stopPropagation();
+      const wrapper = el.parentElement;
+      if (wrapper) wrapper.style.zIndex = "";
+      if (!isTap) return;
+      isTap = false;
+      e.preventDefault(); // synthesized click を抑制して二重発火防止
+      onTap();
+    },
+    { passive: false },
+  );
+
+  // マウス（PC）用
+  el.addEventListener("click", (e: MouseEvent) => {
+    e.stopPropagation();
+    onTap();
+  });
+}
+
 function buildTags(camp: Campground): string[] {
   const t: string[] = [];
   if (camp.features.bonfire) t.push("🔥 焚き火OK");
@@ -66,7 +132,6 @@ function buildTags(camp: Campground): string[] {
   if (camp.features.shower) t.push("🚿 シャワーあり");
   if (camp.features.wifi) t.push("📶 Wi-Fi");
   return t;
-  // ※ペット情報は除外
 }
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -155,7 +220,7 @@ export default function MapModal({ camps, onClose }: Props) {
 
     mapRef.current = map;
 
-    // 【1】コンテナサイズ確定後にリサイズして位置ズレを解消
+    // コンテナサイズ確定後にリサイズして位置ズレを解消
     setTimeout(() => mapRef.current?.resize(), 100);
 
     map.once("load", () => {
@@ -163,12 +228,7 @@ export default function MapModal({ camps, onClose }: Props) {
         const el = createEmberEl();
         elMapRef.current.set(camp.slug, el);
 
-        const handler = (e: Event) => {
-          e.stopPropagation();
-          openPanel(camp);
-        };
-        el.addEventListener("click", handler);
-        el.addEventListener("touchend", handler, { passive: false });
+        bindTapHandler(el, () => openPanel(camp));
 
         const marker = new maplibregl.Marker({ element: el })
           .setLngLat([camp.lng, camp.lat])

@@ -31,17 +31,93 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
   ],
 };
 
-/** ember ドット（inline styles で確実に描画） */
+// ── Helpers ───────────────────────────────────────────────────────────────────
+/**
+ * 44×44px transparent tap-area wrapper around a 14px visible ember dot.
+ * position:relative は MapLibre の transform と競合するため設定しない。
+ */
 function createEmberEl(): HTMLDivElement {
   const el = document.createElement("div");
-  el.className = "camp-marker";
   el.style.cssText =
+    "width:44px;height:44px;" +
+    "display:flex;align-items:center;justify-content:center;" +
+    "cursor:pointer;" +
+    "pointer-events:all;";
+  const dot = document.createElement("div");
+  dot.style.cssText =
     "width:14px;height:14px;" +
     "background:#e8611f;" +
     "border-radius:50%;" +
-    "cursor:pointer;" +
-    "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);";
+    "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);" +
+    "pointer-events:none;";
+  el.appendChild(dot);
   return el;
+}
+
+/**
+ * マーカー要素にタップ判定付きのイベントを登録する。
+ *
+ * touchstart で preventDefault → MapLibre がタッチをパン操作として
+ * 横取りするのを防ぎ、touchend を確実に受け取れるようにする。
+ * setPopup() が内部で登録する click リスナーと二重発火しないよう、
+ * touch 系は独自管理し、click はマウス専用とする。
+ */
+function bindTapHandler(
+  el: HTMLDivElement,
+  onTap: () => void,
+): void {
+  let isTap = false;
+  let startX = 0;
+  let startY = 0;
+
+  el.addEventListener(
+    "touchstart",
+    (e: TouchEvent) => {
+      e.stopPropagation();
+      e.preventDefault(); // ← MapLibre のパン横取りを防ぐ / synthesized click を抑制
+      isTap = true;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      const wrapper = el.parentElement;
+      if (wrapper) wrapper.style.zIndex = "20";
+    },
+    { passive: false },
+  );
+
+  el.addEventListener(
+    "touchmove",
+    (e: TouchEvent) => {
+      if (!isTap) return;
+      const dx = Math.abs(e.touches[0].clientX - startX);
+      const dy = Math.abs(e.touches[0].clientY - startY);
+      if (dx > 8 || dy > 8) {
+        isTap = false;
+        const wrapper = el.parentElement;
+        if (wrapper) wrapper.style.zIndex = "";
+      }
+    },
+    { passive: true },
+  );
+
+  el.addEventListener(
+    "touchend",
+    (e: TouchEvent) => {
+      e.stopPropagation();
+      const wrapper = el.parentElement;
+      if (wrapper) wrapper.style.zIndex = "";
+      if (!isTap) return;
+      isTap = false;
+      e.preventDefault();
+      onTap();
+    },
+    { passive: false },
+  );
+
+  // マウス（PC）用 — touch 系とは排他
+  el.addEventListener("click", (e: MouseEvent) => {
+    e.stopPropagation();
+    onTap();
+  });
 }
 
 type Props = { camps: Campground[]; height?: number };
@@ -112,8 +188,19 @@ export default function MapView({ camps, height = 520 }: Props) {
 
         const marker = new maplibregl.Marker({ element: el })
           .setLngLat([camp.lng, camp.lat])
-          .setPopup(popup)
           .addTo(map);
+
+        // ポップアップの開閉は bindTapHandler → marker.togglePopup() で管理。
+        // setPopup() を使わないことで MapLibre 内部の click リスナーと競合しない。
+        popup.setLngLat([camp.lng, camp.lat]);
+        bindTapHandler(el, () => {
+          // 他のポップアップを閉じてから自分を開く
+          markersRef.current.forEach((m) => {
+            if (m !== marker && m.getPopup()?.isOpen()) m.togglePopup();
+          });
+          if (!popup.isOpen()) popup.addTo(map);
+          else popup.remove();
+        });
 
         markersRef.current.push(marker);
       });
