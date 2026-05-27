@@ -21,7 +21,7 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
   sources: {
     carto: {
       type: "raster",
-      tiles: LIGHT_TILES, // default: 白基調
+      tiles: LIGHT_TILES,
       tileSize: 256,
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -33,28 +33,28 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
-function createEmberEl(): HTMLDivElement {
-  const el = document.createElement("div");
-  // タップ領域を 44×44px に拡大してスマホ誤タップを防止
-  // 外枠は透明で、中心に実際のドットを配置
-  el.style.cssText =
-    "width:44px;height:44px;" +
-    "display:flex;align-items:center;justify-content:center;" +
-    "cursor:pointer;" +
-    "pointer-events:all;" +
-    "z-index:10;" +
-    "position:relative;";
-  // 見た目のドット（14px）は内部要素として配置
-  const dot = document.createElement("div");
-  dot.style.cssText =
-    "width:14px;height:14px;" +
-    "background:#e8611f;" +
-    "border-radius:50%;" +
-    "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);" +
-    "transition:transform 0.15s ease,box-shadow 0.15s ease;" +
-    "pointer-events:none;";
-  el.appendChild(dot);
-  return el;
+function buildGeoJSON(camps: Campground[]): GeoJSON.FeatureCollection {
+  return {
+    type: "FeatureCollection",
+    features: camps.map((c) => ({
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [c.lng, c.lat] },
+      properties: {
+        slug: c.slug,
+        name: c.name,
+        prefecture: c.prefecture,
+        area: c.area,
+        soloScore: c.soloScore,
+        priceMin: c.priceMin,
+        soloPlan: c.features.soloPlan,
+        bath: c.features.bath,
+        shower: c.features.shower,
+        wifi: c.features.wifi ?? false,
+        bonfire: c.features.bonfire,
+        reservation: c.features.reservation,
+      },
+    })),
+  };
 }
 
 function buildTags(camp: Campground): string[] {
@@ -66,7 +66,6 @@ function buildTags(camp: Campground): string[] {
   if (camp.features.shower) t.push("🚿 シャワーあり");
   if (camp.features.wifi) t.push("📶 Wi-Fi");
   return t;
-  // ※ペット情報は除外
 }
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -76,8 +75,7 @@ type Props = { camps: Campground[]; onClose: () => void };
 export default function MapModal({ camps, onClose }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const markersRef = useRef<maplibregl.Marker[]>([]);
-  const elMapRef = useRef(new Map<string, HTMLDivElement>());
+  const campsMapRef = useRef<Map<string, Campground>>(new Map());
 
   const [selected, setSelected] = useState<Campground | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
@@ -122,24 +120,10 @@ export default function MapModal({ camps, onClose }: Props) {
     return () => { document.body.style.overflow = prev; };
   }, []);
 
-  // 選択マーカーをハイライト（内部ドット要素を対象）
+  // Build camps lookup map
   useEffect(() => {
-    elMapRef.current.forEach((el, slug) => {
-      const dot = el.firstElementChild as HTMLDivElement | null;
-      if (!dot) return;
-      if (slug === selected?.slug) {
-        dot.style.background = "#ff7a00";
-        dot.style.transform = "scale(1.7)";
-        dot.style.boxShadow =
-          "0 0 0 3px rgba(255,122,0,0.5),0 0 20px rgba(255,122,0,0.9)";
-      } else {
-        dot.style.background = "#e8611f";
-        dot.style.transform = "";
-        dot.style.boxShadow =
-          "0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65)";
-      }
-    });
-  }, [selected]);
+    campsMapRef.current = new Map(camps.map((c) => [c.slug, c]));
+  }, [camps]);
 
   // Map init (once on mount)
   useEffect(() => {
@@ -155,33 +139,116 @@ export default function MapModal({ camps, onClose }: Props) {
 
     mapRef.current = map;
 
-    // 【1】コンテナサイズ確定後にリサイズして位置ズレを解消
+    // コンテナサイズ確定後にリサイズして位置ズレを解消
     setTimeout(() => mapRef.current?.resize(), 100);
 
     map.once("load", () => {
-      camps.forEach((camp) => {
-        const el = createEmberEl();
-        elMapRef.current.set(camp.slug, el);
+      const fc = buildGeoJSON(camps);
 
-        const handler = (e: Event) => {
-          e.stopPropagation();
-          openPanel(camp);
-        };
-        el.addEventListener("click", handler);
-        el.addEventListener("touchend", handler, { passive: false });
+      // ── GeoJSON source with clustering ──────────────────────────────────
+      map.addSource("camps", {
+        type: "geojson",
+        data: fc,
+        cluster: true,
+        clusterMaxZoom: 12,
+        clusterRadius: 50,
+      });
 
-        const marker = new maplibregl.Marker({ element: el })
-          .setLngLat([camp.lng, camp.lat])
-          .addTo(map);
+      // ── Cluster circles ─────────────────────────────────────────────────
+      map.addLayer({
+        id: "clusters",
+        type: "circle",
+        source: "camps",
+        filter: ["has", "point_count"],
+        paint: {
+          "circle-color": [
+            "step",
+            ["get", "point_count"],
+            "#e8611f",   // 1–4件: ember
+            5,  "#c94f17",  // 5–9件: 濃いember
+            10, "#a03a0c",  // 10件以上: ダーク
+          ],
+          "circle-radius": [
+            "step",
+            ["get", "point_count"],
+            18,  // 1–4件
+            5,  22,  // 5–9件
+            10, 28,  // 10件以上
+          ],
+          "circle-opacity": 0.92,
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "rgba(232,97,31,0.4)",
+        },
+      });
 
-        markersRef.current.push(marker);
+      // ── Cluster count text ──────────────────────────────────────────────
+      map.addLayer({
+        id: "cluster-count",
+        type: "symbol",
+        source: "camps",
+        filter: ["has", "point_count"],
+        layout: {
+          "text-field": "{point_count_abbreviated}",
+          "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+          "text-size": 13,
+        },
+        paint: {
+          "text-color": "#ffffff",
+        },
+      });
+
+      // ── Unclustered individual pins ─────────────────────────────────────
+      map.addLayer({
+        id: "unclustered-point",
+        type: "circle",
+        source: "camps",
+        filter: ["!", ["has", "point_count"]],
+        paint: {
+          "circle-color": "#e8611f",
+          "circle-radius": 8,
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "rgba(232,97,31,0.45)",
+          "circle-opacity": 1,
+        },
+      });
+
+      // ── Cluster click → zoom in ─────────────────────────────────────────
+      map.on("click", "clusters", (e) => {
+        const features = map.queryRenderedFeatures(e.point, { layers: ["clusters"] });
+        if (!features.length) return;
+        const clusterId = features[0].properties?.cluster_id as number;
+        const source = map.getSource("camps") as maplibregl.GeoJSONSource;
+        source.getClusterExpansionZoom(clusterId).then((zoom) => {
+          const geom = features[0].geometry as GeoJSON.Point;
+          map.easeTo({ center: geom.coordinates as [number, number], zoom: zoom ?? 12 });
+        }).catch(() => {});
+      });
+
+      // ── Individual pin click → open detail panel ────────────────────────
+      map.on("click", "unclustered-point", (e) => {
+        const features = map.queryRenderedFeatures(e.point, { layers: ["unclustered-point"] });
+        if (!features.length) return;
+        const slug = features[0].properties?.slug as string;
+        const camp = campsMapRef.current.get(slug);
+        if (camp) openPanel(camp);
+      });
+
+      // ── Cursor pointer on hover ─────────────────────────────────────────
+      map.on("mouseenter", "clusters", () => {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", "clusters", () => {
+        map.getCanvas().style.cursor = "";
+      });
+      map.on("mouseenter", "unclustered-point", () => {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", "unclustered-point", () => {
+        map.getCanvas().style.cursor = "";
       });
     });
 
     return () => {
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
-      elMapRef.current.clear();
       map.remove();
       mapRef.current = null;
     };

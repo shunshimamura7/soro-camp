@@ -20,7 +20,7 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
   sources: {
     carto: {
       type: "raster",
-      tiles: LIGHT_TILES, // default: 白基調
+      tiles: LIGHT_TILES,
       tileSize: 256,
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -31,17 +31,21 @@ const MAP_STYLE: maplibregl.StyleSpecification = {
   ],
 };
 
-/** ember ドット（inline styles で確実に描画） */
-function createEmberEl(): HTMLDivElement {
-  const el = document.createElement("div");
-  el.className = "camp-marker";
-  el.style.cssText =
-    "width:14px;height:14px;" +
-    "background:#e8611f;" +
-    "border-radius:50%;" +
-    "cursor:pointer;" +
-    "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);";
-  return el;
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function buildGeoJSON(camps: Campground[]): GeoJSON.FeatureCollection {
+  return {
+    type: "FeatureCollection",
+    features: camps.map((c) => ({
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [c.lng, c.lat] },
+      properties: {
+        slug: c.slug,
+        name: c.name,
+        soloScore: c.soloScore,
+        priceMin: c.priceMin,
+      },
+    })),
+  };
 }
 
 type Props = { camps: Campground[]; height?: number };
@@ -49,7 +53,6 @@ type Props = { camps: Campground[]; height?: number };
 export default function MapView({ camps, height = 520 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const markersRef = useRef<maplibregl.Marker[]>([]);
   const [isDark, setIsDark] = useState(false);
 
   // 昼夜切り替え
@@ -78,49 +81,136 @@ export default function MapView({ camps, height = 520 }: Props) {
 
     mapRef.current = map;
 
+    map.once("load", () => {
+      const fc = buildGeoJSON(camps);
+
+      // ── GeoJSON source with clustering ──────────────────────────────────
+      map.addSource("camps", {
+        type: "geojson",
+        data: fc,
+        cluster: true,
+        clusterMaxZoom: 12,
+        clusterRadius: 50,
+      });
+
+      // ── Cluster circles ─────────────────────────────────────────────────
+      map.addLayer({
+        id: "clusters",
+        type: "circle",
+        source: "camps",
+        filter: ["has", "point_count"],
+        paint: {
+          "circle-color": [
+            "step",
+            ["get", "point_count"],
+            "#e8611f",
+            5,  "#c94f17",
+            10, "#a03a0c",
+          ],
+          "circle-radius": [
+            "step",
+            ["get", "point_count"],
+            18,
+            5,  22,
+            10, 28,
+          ],
+          "circle-opacity": 0.92,
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "rgba(232,97,31,0.4)",
+        },
+      });
+
+      // ── Cluster count text ──────────────────────────────────────────────
+      map.addLayer({
+        id: "cluster-count",
+        type: "symbol",
+        source: "camps",
+        filter: ["has", "point_count"],
+        layout: {
+          "text-field": "{point_count_abbreviated}",
+          "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+          "text-size": 13,
+        },
+        paint: {
+          "text-color": "#ffffff",
+        },
+      });
+
+      // ── Unclustered individual pins ─────────────────────────────────────
+      map.addLayer({
+        id: "unclustered-point",
+        type: "circle",
+        source: "camps",
+        filter: ["!", ["has", "point_count"]],
+        paint: {
+          "circle-color": "#e8611f",
+          "circle-radius": 8,
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "rgba(232,97,31,0.45)",
+          "circle-opacity": 1,
+        },
+      });
+
+      // ── Cluster click → zoom in ─────────────────────────────────────────
+      map.on("click", "clusters", (e) => {
+        const features = map.queryRenderedFeatures(e.point, { layers: ["clusters"] });
+        if (!features.length) return;
+        const clusterId = features[0].properties?.cluster_id as number;
+        const source = map.getSource("camps") as maplibregl.GeoJSONSource;
+        source.getClusterExpansionZoom(clusterId).then((zoom) => {
+          const geom = features[0].geometry as GeoJSON.Point;
+          map.easeTo({ center: geom.coordinates as [number, number], zoom: zoom ?? 12 });
+        }).catch(() => {});
+      });
+
+      // ── Individual pin click → popup ────────────────────────────────────
+      map.on("click", "unclustered-point", (e) => {
+        const features = map.queryRenderedFeatures(e.point, { layers: ["unclustered-point"] });
+        if (!features.length) return;
+        const props = features[0].properties;
+        if (!props) return;
+
+        const geom = features[0].geometry as GeoJSON.Point;
+        new maplibregl.Popup({ offset: 12, closeButton: false, maxWidth: "200px" })
+          .setLngLat(geom.coordinates as [number, number])
+          .setHTML(
+            `<a href="/camp/${props.slug}" class="camp-popup-link">` +
+              `<span class="camp-popup-name">${props.name}</span>` +
+              `<span class="camp-popup-meta">★${Number(props.soloScore).toFixed(1)}&nbsp;·&nbsp;¥${Number(props.priceMin).toLocaleString()}〜</span>` +
+            `</a>`
+          )
+          .addTo(map);
+      });
+
+      // ── Cursor pointer on hover ─────────────────────────────────────────
+      map.on("mouseenter", "clusters", () => {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", "clusters", () => {
+        map.getCanvas().style.cursor = "";
+      });
+      map.on("mouseenter", "unclustered-point", () => {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", "unclustered-point", () => {
+        map.getCanvas().style.cursor = "";
+      });
+    });
+
     return () => {
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
       map.remove();
       mapRef.current = null;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // ── Marker sync ──────────────────────────────────────────────────────────
+  // ── camps 変更時に GeoJSON source を更新 ─────────────────────────────────
   useEffect(() => {
     const map = mapRef.current;
-    if (!map) return;
-
-    const syncMarkers = () => {
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
-      if (camps.length === 0) return;
-
-      camps.forEach((camp) => {
-        const el = createEmberEl();
-
-        const popup = new maplibregl.Popup({
-          offset: 14,
-          closeButton: false,
-          maxWidth: "200px",
-        }).setHTML(
-          `<a href="/camp/${camp.slug}" class="camp-popup-link">` +
-            `<span class="camp-popup-name">${camp.name}</span>` +
-            `<span class="camp-popup-meta">★${camp.soloScore.toFixed(1)}&nbsp;·&nbsp;¥${camp.priceMin.toLocaleString()}〜</span>` +
-          `</a>`
-        );
-
-        const marker = new maplibregl.Marker({ element: el })
-          .setLngLat([camp.lng, camp.lat])
-          .setPopup(popup)
-          .addTo(map);
-
-        markersRef.current.push(marker);
-      });
-    };
-
-    if (map.loaded()) syncMarkers();
-    else map.once("load", syncMarkers);
+    if (!map || !map.loaded()) return;
+    const src = map.getSource("camps") as maplibregl.GeoJSONSource | undefined;
+    if (!src) return;
+    src.setData(buildGeoJSON(camps));
   }, [camps]);
 
   // ── 昼夜ボタンのスタイル（isDark で切り替え） ────────────────────────────
