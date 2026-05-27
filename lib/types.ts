@@ -37,6 +37,12 @@ export type Campground = {
     convenience: boolean;
     shop: boolean;
     wifi?: boolean;
+    firewood: boolean;
+    ice: boolean;
+    alcohol: boolean;
+    garbage: string;
+    nearbySupermarket: string;
+    nearbyShop: string;
   };
   season: string;
   closedDays?: string;

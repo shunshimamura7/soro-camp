@@ -182,13 +182,18 @@ export default async function CampDetailPage({
                 <Row label="営業期間" value={camp.season} />
                 <Row label="予約" value={`${f.reservation}${f.reservationNote ? `（${f.reservationNote}）` : ""}`} />
                 <Row label="焚き火" value={f.bonfire ? `可${f.bonfireNote ? `（${f.bonfireNote}）` : ""}` : "不可"} />
-                <Row label="ペット" value={f.pet ? `可${f.petNote ? `（${f.petNote}）` : ""}` : "不可"} />
                 <Row label="シャワー" value={f.shower ? `あり${f.showerNote ? `（${f.showerNote}）` : ""}` : "なし"} />
                 <Row label="風呂" value={f.bath ? `あり${f.bathNote ? `（${f.bathNote}）` : ""}` : "なし"} />
                 <Row label="トイレ" value={f.toilet} />
                 <Row label="車横付け" value={f.carIn ? `可${f.carInNote ? `（${f.carInNote}）` : ""}` : `不可${f.carInNote ? `（${f.carInNote}）` : ""}`} />
                 <Row label="ソロプラン" value={f.soloPlan ? `あり${f.soloPlanNote ? `（${f.soloPlanNote}）` : ""}` : "なし"} />
                 <Row label="Wi-Fi" value={f.wifi ? "あり" : "なし"} />
+                <Row label="薪販売" value={f.firewood ? "あり" : "なし"} />
+                <Row label="氷販売" value={f.ice ? "あり" : "なし"} />
+                <Row label="酒販売" value={f.alcohol ? "あり" : "なし"} />
+                <Row label="ゴミ処分" value={f.garbage || "情報なし"} />
+                <Row label="近隣スーパー" value={f.nearbySupermarket || "情報なし"} />
+                <Row label="近隣の肉屋・魚屋" value={f.nearbyShop || "情報なし"} />
                 {camp.closedDays && <Row label="定休日" value={camp.closedDays} />}
                 <Row label="情報確認日" value={camp.lastVerified} />
               </div>

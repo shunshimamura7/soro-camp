@@ -22,7 +22,18 @@ function featureTags(f: Campground["features"]) {
   if (f.carIn) tags.push({ label: "🚗 車横付け" });
   if (f.reservation === "不要") tags.push({ label: "✅ 予約不要", green: true });
   if (f.shop) tags.push({ label: "🏪 売店" });
+  if (f.firewood) tags.push({ label: "🪵 薪" });
+  if (f.ice) tags.push({ label: "🧊 氷" });
+  if (f.alcohol) tags.push({ label: "🍶 酒" });
   return tags;
+}
+
+function nearbyInfo(f: Campground["features"]) {
+  const items: { icon: string; text: string }[] = [];
+  if (f.garbage)          items.push({ icon: "🗑", text: `ゴミ: ${f.garbage}` });
+  if (f.nearbySupermarket) items.push({ icon: "🛒", text: `スーパー: ${f.nearbySupermarket}` });
+  if (f.nearbyShop)        items.push({ icon: "🥩", text: `肉魚: ${f.nearbyShop}` });
+  return items;
 }
 
 type Props = { camp: Campground };
@@ -32,6 +43,7 @@ const btn = "flex items-center justify-center min-h-[44px] sm:min-h-0 sm:py-1.5 
 
 export default function CampCard({ camp }: Props) {
   const tags = featureTags(camp.features);
+  const nearby = nearbyInfo(camp.features);
 
   return (
     <article className="bg-white rounded-2xl p-3 sm:p-5 flex flex-col gap-3 sm:gap-4 border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all">
@@ -68,6 +80,17 @@ export default function CampCard({ camp }: Props) {
           <Tag key={t.label} green={t.green}>{t.label}</Tag>
         ))}
       </div>
+
+      {/* Nearby info: ゴミ・スーパー・肉魚（値があるものだけ表示） */}
+      {nearby.length > 0 && (
+        <div className="flex flex-col gap-0.5">
+          {nearby.map((item) => (
+            <p key={item.icon} className="text-xs text-slate-500 leading-snug">
+              {item.icon} {item.text}
+            </p>
+          ))}
+        </div>
+      )}
 
       {/* Comment */}
       <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">{camp.soloComment}</p>
