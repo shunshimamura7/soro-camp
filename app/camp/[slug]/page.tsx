@@ -77,6 +77,12 @@ export default async function CampDetailPage({
 
   const f = camp.features;
 
+  // 座標ベースの Google マップ検索 URL（手入力不要・常に表示できる）
+  const supermarketUrl =
+    `https://www.google.com/maps/search/${encodeURIComponent("スーパーマーケット")}/@${camp.lat},${camp.lng},13z`;
+  const meatFishUrl =
+    `https://www.google.com/maps/search/${encodeURIComponent("精肉店 鮮魚店")}/@${camp.lat},${camp.lng},13z`;
+
   return (
     <>
       <script
@@ -192,8 +198,38 @@ export default async function CampDetailPage({
                 <Row label="氷販売" value={f.ice ? "あり" : "なし"} />
                 <Row label="酒販売" value={f.alcohol ? "あり" : "なし"} />
                 <Row label="ゴミ処分" value={f.garbage || "情報なし"} />
-                <Row label="近隣スーパー" value={f.nearbySupermarket || "情報なし"} />
-                <Row label="近隣の肉屋・魚屋" value={f.nearbyShop || "情報なし"} />
+                <Row
+                  label="近隣スーパー"
+                  value={
+                    <>
+                      {f.nearbySupermarket && <>{f.nearbySupermarket}<br /></>}
+                      <a
+                        href={supermarketUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-orange-500 hover:text-orange-600 hover:underline"
+                      >
+                        📍 周辺のスーパーを地図で見る
+                      </a>
+                    </>
+                  }
+                />
+                <Row
+                  label="近隣の肉屋・魚屋"
+                  value={
+                    <>
+                      {f.nearbyShop && <>{f.nearbyShop}<br /></>}
+                      <a
+                        href={meatFishUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-orange-500 hover:text-orange-600 hover:underline"
+                      >
+                        📍 周辺の肉屋・魚屋を地図で見る
+                      </a>
+                    </>
+                  }
+                />
                 {camp.closedDays && <Row label="定休日" value={camp.closedDays} />}
                 <Row label="情報確認日" value={camp.lastVerified} />
               </div>
