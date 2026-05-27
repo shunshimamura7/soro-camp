@@ -1,11 +1,17 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
 
-// CartoDB Dark Matter — dark_all は確実に存在するパス
-const CARTO_TILES = [
+// ── Tile sets ─────────────────────────────────────────────────────────────────
+const LIGHT_TILES = [
+  "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+  "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+  "https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+  "https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+];
+const DARK_TILES = [
   "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
   "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
   "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
@@ -15,29 +21,22 @@ const CARTO_TILES = [
 const MAP_STYLE: maplibregl.StyleSpecification = {
   version: 8,
   sources: {
-    "carto-dark": {
+    carto: {
       type: "raster",
-      tiles: CARTO_TILES,
+      tiles: LIGHT_TILES, // default: 白基調
       tileSize: 256,
       attribution:
         '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
     },
   },
   layers: [
-    {
-      id: "carto-dark-layer",
-      type: "raster",
-      source: "carto-dark",
-      minzoom: 0,
-      maxzoom: 22,
-    },
+    { id: "carto-layer", type: "raster", source: "carto", minzoom: 0, maxzoom: 22 },
   ],
 };
 
-/** ember ドット要素を生成（inline styles で確実に描画） */
+/** ember ドット（inline styles で確実に描画） */
 function createEmberEl(): HTMLDivElement {
   const el = document.createElement("div");
-  // CSS クラスはアニメーション用。inline styles で寸法・色を保証する
   el.className = "camp-marker";
   el.style.cssText =
     "width:14px;height:14px;" +
@@ -48,15 +47,24 @@ function createEmberEl(): HTMLDivElement {
   return el;
 }
 
-type Props = {
-  camps: Campground[];
-  height?: number;
-};
+type Props = { camps: Campground[]; height?: number };
 
 export default function MapView({ camps, height = 520 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<maplibregl.Marker[]>([]);
+  const [isDark, setIsDark] = useState(false);
+
+  // 昼夜切り替え
+  const toggleTheme = useCallback(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const next = !isDark;
+    setIsDark(next);
+    (map.getSource("carto") as maplibregl.RasterTileSource)?.setTiles(
+      next ? DARK_TILES : LIGHT_TILES
+    );
+  }, [isDark]);
 
   // ── Map init (once) ──────────────────────────────────────────────────────
   useEffect(() => {
@@ -81,16 +89,14 @@ export default function MapView({ camps, height = 520 }: Props) {
     };
   }, []);
 
-  // ── Marker sync (on every camps change) ──────────────────────────────────
+  // ── Marker sync ──────────────────────────────────────────────────────────
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
 
     const syncMarkers = () => {
-      // 古いマーカーを削除
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
-
       if (camps.length === 0) return;
 
       camps.forEach((camp) => {
@@ -116,18 +122,42 @@ export default function MapView({ camps, height = 520 }: Props) {
       });
     };
 
-    if (map.loaded()) {
-      syncMarkers();
-    } else {
-      map.once("load", syncMarkers);
-    }
+    if (map.loaded()) syncMarkers();
+    else map.once("load", syncMarkers);
   }, [camps]);
+
+  // ── 昼夜ボタンのスタイル（isDark で切り替え） ────────────────────────────
+  const btnStyle: React.CSSProperties = {
+    position: "absolute",
+    top: 10,
+    left: 10,
+    zIndex: 1,
+    background: isDark ? "rgba(14,13,11,0.9)" : "rgba(255,255,255,0.9)",
+    color: isDark ? "#e8c89a" : "#333",
+    border: "1px solid rgba(0,0,0,0.2)",
+    padding: "6px 12px",
+    borderRadius: "4px",
+    fontSize: "12px",
+    cursor: "pointer",
+    fontFamily: "inherit",
+    lineHeight: 1.4,
+    userSelect: "none",
+  };
 
   return (
     <div
-      ref={containerRef}
-      className="w-full rounded-2xl overflow-hidden"
-      style={{ height, minWidth: 0, display: "block" }}
-    />
+      className="relative w-full rounded-2xl overflow-hidden"
+      style={{ height, minWidth: 0 }}
+    >
+      {/* MapLibre canvas */}
+      <div
+        ref={containerRef}
+        style={{ position: "absolute", inset: 0 }}
+      />
+      {/* 昼夜切り替えボタン */}
+      <button style={btnStyle} onClick={toggleTheme}>
+        {isDark ? "☀️ 昼モード" : "🌙 夜モード"}
+      </button>
+    </div>
   );
 }

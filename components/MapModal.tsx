@@ -5,8 +5,14 @@ import { createPortal } from "react-dom";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
 
-// ── Tile / Style ──────────────────────────────────────────────────────────────
-const CARTO_TILES = [
+// ── Tile sets ─────────────────────────────────────────────────────────────────
+const LIGHT_TILES = [
+  "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+  "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+  "https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+  "https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+];
+const DARK_TILES = [
   "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
   "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
   "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
@@ -16,16 +22,16 @@ const CARTO_TILES = [
 const MAP_STYLE: maplibregl.StyleSpecification = {
   version: 8,
   sources: {
-    "carto-dark": {
+    carto: {
       type: "raster",
-      tiles: CARTO_TILES,
+      tiles: LIGHT_TILES, // default: 白基調
       tileSize: 256,
       attribution:
         '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
     },
   },
   layers: [
-    { id: "carto-dark-layer", type: "raster", source: "carto-dark", minzoom: 0, maxzoom: 22 },
+    { id: "carto-layer", type: "raster", source: "carto", minzoom: 0, maxzoom: 22 },
   ],
 };
 
@@ -47,11 +53,11 @@ function buildTags(camp: Campground): string[] {
   if (camp.features.bonfire) t.push("🔥 焚き火OK");
   if (camp.features.reservation === "不要") t.push("📋 予約不要");
   if (camp.features.soloPlan) t.push("🏕 ソロプランあり");
-  if (camp.features.pet) t.push("🐶 ペットOK");
   if (camp.features.bath) t.push("♨ 風呂あり");
   if (camp.features.shower) t.push("🚿 シャワーあり");
   if (camp.features.wifi) t.push("📶 Wi-Fi");
   return t;
+  // ※ペット情報は除外
 }
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -66,21 +72,30 @@ export default function MapModal({ camps, onClose }: Props) {
 
   const [selected, setSelected] = useState<Campground | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
-  // Open panel with a camp
+  // 昼夜切り替え
+  const toggleTheme = useCallback(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const next = !isDark;
+    setIsDark(next);
+    (map.getSource("carto") as maplibregl.RasterTileSource)?.setTiles(
+      next ? DARK_TILES : LIGHT_TILES
+    );
+  }, [isDark]);
+
   const openPanel = useCallback((camp: Campground) => {
     setSelected(camp);
     setPanelOpen(true);
   }, []);
 
-  // Close just the panel (map stays open)
   const closePanel = useCallback(() => {
     setPanelOpen(false);
-    // Clear content after slide-out animation (250ms)
     setTimeout(() => setSelected(null), 260);
   }, []);
 
-  // ESC key: close panel first, then modal
+  // ESC: パネル→閉、モーダル→閉
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key !== "Escape") return;
@@ -91,14 +106,14 @@ export default function MapModal({ camps, onClose }: Props) {
     return () => window.removeEventListener("keydown", handler);
   }, [panelOpen, closePanel, onClose]);
 
-  // Lock body scroll while modal is open
+  // Body scroll lock
   useEffect(() => {
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = prev; };
   }, []);
 
-  // Highlight / reset active marker
+  // 選択マーカーをハイライト
   useEffect(() => {
     elMapRef.current.forEach((el, slug) => {
       if (slug === selected?.slug) {
@@ -129,6 +144,9 @@ export default function MapModal({ camps, onClose }: Props) {
 
     mapRef.current = map;
 
+    // 【1】コンテナサイズ確定後にリサイズして位置ズレを解消
+    setTimeout(() => mapRef.current?.resize(), 100);
+
     map.once("load", () => {
       camps.forEach((camp) => {
         const el = createEmberEl();
@@ -154,9 +172,26 @@ export default function MapModal({ camps, onClose }: Props) {
       map.remove();
       mapRef.current = null;
     };
-    // camps is a snapshot taken when modal opens — intentionally excluded from deps
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // ── 昼夜ボタンスタイル ────────────────────────────────────────────────────
+  const themeBtnStyle: React.CSSProperties = {
+    position: "absolute",
+    top: 10,
+    left: 10,
+    zIndex: 9,
+    background: isDark ? "rgba(14,13,11,0.9)" : "rgba(255,255,255,0.9)",
+    color: isDark ? "#e8c89a" : "#333",
+    border: "1px solid rgba(0,0,0,0.2)",
+    padding: "6px 12px",
+    borderRadius: "4px",
+    fontSize: "12px",
+    cursor: "pointer",
+    fontFamily: "inherit",
+    lineHeight: 1.4,
+    userSelect: "none",
+  };
 
   const content = (
     <div
@@ -164,13 +199,18 @@ export default function MapModal({ camps, onClose }: Props) {
       aria-modal="true"
       style={{ position: "fixed", inset: 0, zIndex: 100, background: "#0e0d0b" }}
     >
-      {/* ── Map canvas ── */}
+      {/* Map canvas */}
       <div
         ref={containerRef}
         style={{ position: "absolute", inset: 0, minWidth: 0, display: "block" }}
       />
 
-      {/* ── × Close modal button (top-right) ── */}
+      {/* 昼夜切り替えボタン（左上） */}
+      <button style={themeBtnStyle} onClick={toggleTheme}>
+        {isDark ? "☀️ 昼モード" : "🌙 夜モード"}
+      </button>
+
+      {/* × モーダル閉じるボタン（右上） */}
       <button
         onClick={onClose}
         className="map-modal-close-btn"
@@ -179,7 +219,7 @@ export default function MapModal({ camps, onClose }: Props) {
         ✕
       </button>
 
-      {/* ── Transparent backdrop: click to close panel ── */}
+      {/* パネル外クリックでパネルを閉じる透明backdrop */}
       {panelOpen && (
         <div
           style={{ position: "absolute", inset: 0, zIndex: 6 }}
@@ -188,7 +228,7 @@ export default function MapModal({ camps, onClose }: Props) {
         />
       )}
 
-      {/* ── Detail panel ── */}
+      {/* 詳細パネル */}
       <div
         className={`map-modal-panel${panelOpen ? " panel-open" : ""}`}
         onClick={(e) => e.stopPropagation()}
@@ -201,7 +241,7 @@ export default function MapModal({ camps, onClose }: Props) {
   return createPortal(content, document.body);
 }
 
-// ── Sub-component: Camp detail panel ─────────────────────────────────────────
+// ── 詳細パネルコンテンツ ──────────────────────────────────────────────────────
 function CampDetailPanel({
   camp,
   onClose,
@@ -213,28 +253,23 @@ function CampDetailPanel({
 
   return (
     <div className="panel-inner">
-      {/* Panel header */}
       <div className="panel-header">
         <button onClick={onClose} className="panel-close-btn" aria-label="パネルを閉じる">
           ✕
         </button>
       </div>
 
-      {/* Prefecture · Area */}
       <p className="panel-area">
         {camp.prefecture}&nbsp;·&nbsp;{camp.area}
       </p>
 
-      {/* Camp name */}
       <h2 className="panel-name">{camp.name}</h2>
 
-      {/* Solo score + price */}
       <div className="panel-score-row">
         <span className="panel-score">★&nbsp;{camp.soloScore.toFixed(1)}</span>
         <span className="panel-price">¥{camp.priceMin.toLocaleString()}〜</span>
       </div>
 
-      {/* Feature tags */}
       {tags.length > 0 && (
         <div className="panel-tags">
           {tags.map((t) => (
@@ -243,7 +278,6 @@ function CampDetailPanel({
         </div>
       )}
 
-      {/* CTA link */}
       <a href={`/camp/${camp.slug}`} className="panel-detail-link">
         詳細を見る →
       </a>
