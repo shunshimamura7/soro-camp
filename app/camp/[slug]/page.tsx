@@ -77,11 +77,11 @@ export default async function CampDetailPage({
 
   const f = camp.features;
 
-  // 座標ベースの Google マップ検索 URL（手入力不要・常に表示できる）
+  // キャンプ場名を含めた Google マップ近隣検索 URL（zoom 14z で周辺が分かりやすい）
   const supermarketUrl =
-    `https://www.google.com/maps/search/${encodeURIComponent("スーパーマーケット")}/@${camp.lat},${camp.lng},13z`;
+    `https://www.google.com/maps/search/${encodeURIComponent(`${camp.name} スーパーマーケット`)}/@${camp.lat},${camp.lng},14z`;
   const meatFishUrl =
-    `https://www.google.com/maps/search/${encodeURIComponent("精肉店 鮮魚店")}/@${camp.lat},${camp.lng},13z`;
+    `https://www.google.com/maps/search/${encodeURIComponent(`${camp.name} 精肉店 鮮魚店`)}/@${camp.lat},${camp.lng},14z`;
 
   return (
     <>
@@ -197,7 +197,6 @@ export default async function CampDetailPage({
                 <Row label="薪販売" value={f.firewood ? "あり" : "なし"} />
                 <Row label="氷販売" value={f.ice ? "あり" : "なし"} />
                 <Row label="酒販売" value={f.alcohol ? "あり" : "なし"} />
-                <Row label="ゴミ処分" value={f.garbage || "情報なし"} />
                 <Row
                   label="近隣スーパー"
                   value={

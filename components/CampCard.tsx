@@ -30,7 +30,6 @@ function featureTags(f: Campground["features"]) {
 
 function nearbyInfo(f: Campground["features"]) {
   const items: { icon: string; text: string }[] = [];
-  if (f.garbage)          items.push({ icon: "🗑", text: `ゴミ: ${f.garbage}` });
   if (f.nearbySupermarket) items.push({ icon: "🛒", text: `スーパー: ${f.nearbySupermarket}` });
   if (f.nearbyShop)        items.push({ icon: "🥩", text: `肉魚: ${f.nearbyShop}` });
   return items;
