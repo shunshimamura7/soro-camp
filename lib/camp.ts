@@ -13,7 +13,8 @@ export function getAllSlugs(): string[] {
 
 export type SortKey =
   | "soloScore"
-  | "priceMin"
+  | "priceAsc"
+  | "priceDesc"
   | "quietness"
   | "scenery"
   | "value"
@@ -45,8 +46,10 @@ export function filterAndSort(
     switch (sort) {
       case "soloScore":
         return b.soloScore - a.soloScore;
-      case "priceMin":
+      case "priceAsc":
         return a.priceMin - b.priceMin;
+      case "priceDesc":
+        return b.priceMin - a.priceMin;
       case "quietness":
         return b.scores.quietness - a.scores.quietness;
       case "scenery":

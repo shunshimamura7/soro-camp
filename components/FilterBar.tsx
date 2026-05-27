@@ -15,7 +15,8 @@ const PREFECTURES = ["全部", "神奈川", "静岡", "山梨"] as const;
 
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "soloScore", label: "おすすめ順" },
-  { value: "priceMin", label: "価格順" },
+  { value: "priceAsc", label: "価格安い順" },
+  { value: "priceDesc", label: "価格高い順" },
   { value: "quietness", label: "静か順" },
   { value: "scenery", label: "絶景順" },
   { value: "value", label: "コスパ順" },

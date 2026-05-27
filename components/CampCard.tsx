@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Campground } from "@/lib/types";
-import ScoreBar from "./ScoreBar";
 
 function Tag({ children, green }: { children: React.ReactNode; green?: boolean }) {
   return (
@@ -22,6 +21,7 @@ function featureTags(f: Campground["features"]) {
   if (f.wifi) tags.push({ label: "📶 Wi-Fi" });
   if (f.carIn) tags.push({ label: "🚗 車横付け" });
   if (f.reservation === "不要") tags.push({ label: "✅ 予約不要", green: true });
+  if (f.shop) tags.push({ label: "🏪 売店" });
   return tags;
 }
 
@@ -60,15 +60,6 @@ export default function CampCard({ camp }: Props) {
         {camp.priceNote && (
           <span className="text-xs text-slate-500 truncate">{camp.priceNote}</span>
         )}
-      </div>
-
-      {/* Scores */}
-      <div className="flex flex-col gap-1.5">
-        <ScoreBar label="静か度" score={camp.scores.quietness} />
-        <ScoreBar label="絶景度" score={camp.scores.scenery} color="#00ba7c" />
-        <ScoreBar label="コスパ" score={camp.scores.value} color="#f59e0b" />
-        <ScoreBar label="アクセス" score={camp.scores.access} color="#a78bfa" />
-        <ScoreBar label="設備" score={camp.scores.facility} color="#fb7185" />
       </div>
 
       {/* Tags */}

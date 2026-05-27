@@ -35,6 +35,7 @@ export type Campground = {
     reservation: "要" | "不要" | "ハイシーズンのみ";
     reservationNote?: string;
     convenience: boolean;
+    shop: boolean;
     wifi?: boolean;
   };
   season: string;
