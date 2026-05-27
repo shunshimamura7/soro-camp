@@ -8,6 +8,7 @@ import FilterBar from "@/components/FilterBar";
 import CampCard from "@/components/CampCard";
 
 const MapView = dynamic(() => import("@/components/MapView"), { ssr: false });
+const MapModal = dynamic(() => import("@/components/MapModal"), { ssr: false });
 
 const DEFAULT_FILTERS: Filters = {
   prefecture: "全部",
@@ -19,6 +20,7 @@ const DEFAULT_FILTERS: Filters = {
 export default function HomePage() {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
   const [sort, setSort] = useState<SortKey>("soloScore");
+  const [mapOpen, setMapOpen] = useState(false);
 
   const results = useMemo(
     () => filterAndSort(campgrounds, filters, sort),
@@ -40,19 +42,22 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* 一覧地図 — フィルター連動 */}
+      {/* 一覧地図（常時表示） */}
       <section className="max-w-4xl mx-auto px-3 sm:px-4 pb-4 sm:pb-6">
         <MapView camps={results} height={520} />
       </section>
 
+      {/* フィルターバー（「地図で見る」ボタン付き） */}
       <FilterBar
         filters={filters}
         sort={sort}
         onFiltersChange={setFilters}
         onSortChange={setSort}
         total={results.length}
+        onMapOpen={() => setMapOpen(true)}
       />
 
+      {/* キャンプ場リスト */}
       <section className="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
         {results.length === 0 ? (
           <div className="text-center py-20 text-slate-500">
@@ -73,6 +78,14 @@ export default function HomePage() {
           </div>
         )}
       </section>
+
+      {/* 全画面地図モーダル */}
+      {mapOpen && (
+        <MapModal
+          camps={results}
+          onClose={() => setMapOpen(false)}
+        />
+      )}
     </>
   );
 }
