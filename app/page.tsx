@@ -47,7 +47,7 @@ export default function HomePage() {
           href="https://www.google.com/maps/search/キャンプ場/@35.3,138.65,9z"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#0e0d0b] text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-[#0e0d0b] transition-colors mb-6"
+          className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors mb-6"
         >
           🗺 Googleマップでキャンプ場を探す
         </a>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Campground } from "@/lib/types";
+import FavoriteButton from "./FavoriteButton";
 
 function Tag({ children, green }: { children: React.ReactNode; green?: boolean }) {
   return (
@@ -57,9 +58,12 @@ export default function CampCard({ camp }: Props) {
             {camp.name}
           </Link>
         </div>
-        <div className="shrink-0 text-right ml-2">
-          <div className="text-2xl font-bold text-blue-500">{camp.soloScore.toFixed(1)}</div>
-          <div className="text-[11px] text-slate-500">ソロ評価</div>
+        <div className="shrink-0 flex items-center gap-2 ml-2">
+          <FavoriteButton slug={camp.slug} />
+          <div className="text-right">
+            <div className="text-2xl font-bold text-blue-500">{camp.soloScore.toFixed(1)}</div>
+            <div className="text-[11px] text-slate-500">ソロ評価</div>
+          </div>
         </div>
       </div>
 

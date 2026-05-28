@@ -80,10 +80,8 @@ export default async function CampDetailPage({
   // キャンプ場名が検索バーに確実に表示される。
   // path 形式（/search/QUERY/@lat,lng）だと先頭のキャンプ場名を POI と判定して
   // 検索バーに表示されないため、こちらの形式を採用。
-  const supermarketUrl =
-    `https://www.google.com/maps/search/?q=${encodeURIComponent(`${camp.name} スーパーマーケット`)}`;
-  const meatFishUrl =
-    `https://www.google.com/maps/search/?q=${encodeURIComponent(`${camp.name} 精肉店 鮮魚店`)}`;
+  const supermarketUrl = `https://www.google.com/maps/search/スーパー/@${camp.lat},${camp.lng},14z`;
+  const meatFishUrl = `https://www.google.com/maps/search/精肉店/@${camp.lat},${camp.lng},14z`;
 
   return (
     <>
