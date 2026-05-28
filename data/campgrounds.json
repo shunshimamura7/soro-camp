@@ -5438,8 +5438,8 @@
     "name": "なみのこ村",
     "prefecture": "神奈川",
     "area": "湯河原・海沿い",
-    "lat": 35.143,
-    "lng": 139.13,
+    "lat": 35.2015665,
+    "lng": 139.1395858,
     "priceMin": 2500,
     "priceMax": 3500,
     "scores": {
@@ -5834,8 +5834,8 @@
     "name": "magic hour",
     "prefecture": "静岡",
     "area": "静岡市清水区",
-    "lat": 35.05,
-    "lng": 138.51,
+    "lat": 35.373376,
+    "lng": 139.225478,
     "priceMin": 4500,
     "priceMax": 6500,
     "scores": {
@@ -6406,8 +6406,8 @@
     "name": "月夜野キャンプ場",
     "prefecture": "山梨",
     "area": "道志村",
-    "lat": 35.555,
-    "lng": 138.945,
+    "lat": 35.5282375,
+    "lng": 139.1014625,
     "priceMin": 2500,
     "priceMax": 3500,
     "scores": {
