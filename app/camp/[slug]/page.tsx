@@ -171,14 +171,24 @@ export default async function CampDetailPage({
             {/* Map */}
             <section>
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">アクセスマップ</h2>
-              <a
-                href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors"
-              >
-                📍 Googleマップで開く
-              </a>
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(camp.name + ' ' + (camp.address ?? ''))}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors"
+                >
+                  📍 Googleマップで開く
+                </a>
+                <a
+                  href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-slate-600 border border-slate-300 rounded-lg font-mono text-sm hover:bg-slate-100 transition-colors"
+                >
+                  🛒 周辺施設を探す
+                </a>
+              </div>
               <p className="text-xs text-slate-500 mt-2">📍 {camp.address}</p>
             </section>
 
