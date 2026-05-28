@@ -172,20 +172,12 @@ export default async function CampDetailPage({
             <section>
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">アクセスマップ</h2>
               <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(camp.name + ' ' + (camp.address ?? ''))}`}
+                href={`https://www.google.com/maps/search/スーパー+精肉店+鮮魚店/@${camp.lat},${camp.lng},14z`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors"
               >
-                📍 Googleマップで開く
-              </a>
-              <a
-                href={`https://www.google.com/maps/search/スーパー+精肉店+鮮魚店/@${camp.lat},${camp.lng},14z`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-slate-600 border border-slate-300 rounded-lg font-mono text-sm hover:bg-slate-100 transition-colors mt-2"
-              >
-                🛒 周辺の買い物を探す
+                🛒 周辺の買い物を探す（Googleマップ）
               </a>
               <p className="text-xs text-slate-500 mt-2">📍 {camp.address}</p>
             </section>
