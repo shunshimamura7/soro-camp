@@ -355,12 +355,12 @@ function CampDetailPanel({
         詳細を見る →
       </a>
       <a
-        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(camp.name + ' ' + (camp.address ?? ''))}`}
+        href={`https://www.google.com/maps/search/スーパー+精肉店+鮮魚店/@${camp.lat},${camp.lng},14z`}
         target="_blank"
         rel="noopener noreferrer"
         style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#e8611f", textDecoration: "none" }}
       >
-        Googleマップ →
+        🛒 周辺の買い物を探す
       </a>
       <a
         href={`https://www.google.com/maps/search/スーパー+精肉店+鮮魚店/@${camp.lat},${camp.lng},14z`}
