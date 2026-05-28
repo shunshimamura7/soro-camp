@@ -184,7 +184,7 @@ export default function MapView({ camps, height = 520 }: Props) {
             `<span class="camp-popup-name">${camp.name}</span>` +
             `<span class="camp-popup-meta">★${camp.soloScore.toFixed(1)}&nbsp;·&nbsp;¥${camp.priceMin.toLocaleString()}〜</span>` +
           `</a>` +
-          `<a href="https://www.google.com/maps/search/?api=1&query=${camp.lat},${camp.lng}" target="_blank" rel="noopener noreferrer" style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">Googleマップ →</a>`
+          `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(camp.name + ' ' + (camp.address ?? ''))}" target="_blank" rel="noopener noreferrer" style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">Googleマップ →</a>`
         );
 
         const marker = new maplibregl.Marker({ element: el })

@@ -177,7 +177,7 @@ export default async function CampDetailPage({
             <section>
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">アクセスマップ</h2>
               <a
-                href={`https://www.google.com/maps/search/?api=1&query=${camp.lat},${camp.lng}`}
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(camp.name + ' ' + (camp.address ?? ''))}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#0e0d0b] text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-[#0e0d0b] transition-colors"

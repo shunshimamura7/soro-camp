@@ -131,14 +131,6 @@ export default function CampCard({ camp }: Props) {
             📞 {camp.tel}
           </a>
         )}
-        <a
-          href={`https://www.openstreetmap.org/?mlat=${camp.lat}&mlon=${camp.lng}&zoom=14`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${btn} bg-slate-100 text-slate-600 hover:bg-slate-200`}
-        >
-          🗺 地図
-        </a>
       </div>
     </article>
   );
