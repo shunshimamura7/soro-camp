@@ -7,6 +7,7 @@ import type { Filters, SortKey } from "@/lib/camp";
 import FilterBar from "@/components/FilterBar";
 import CampCard from "@/components/CampCard";
 
+const MapView = dynamic(() => import("@/components/MapView"), { ssr: false });
 const MapModal = dynamic(() => import("@/components/MapModal"), { ssr: false });
 
 const DEFAULT_FILTERS: Filters = {
@@ -41,16 +42,9 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* Googleマップリンク */}
+      {/* 一覧地図（常時表示） */}
       <section className="max-w-4xl mx-auto px-3 sm:px-4 pb-4 sm:pb-6">
-        <a
-          href="https://www.google.com/maps/search/キャンプ場/@35.3,138.65,9z"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors mb-6"
-        >
-          🗺 Googleマップでキャンプ場を探す
-        </a>
+        <MapView camps={results} height={520} />
       </section>
 
       {/* フィルターバー（「地図で見る」ボタン付き） */}
