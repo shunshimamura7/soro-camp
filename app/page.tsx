@@ -42,9 +42,20 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* 一覧地図（常時表示） */}
       <section className="max-w-4xl mx-auto px-3 sm:px-4 pb-4 sm:pb-6">
-        <MapView camps={results} height={520} />
+        {/* PC: 地図表示 */}
+        <div className="hidden sm:block">
+          <MapView camps={results} height={520} />
+        </div>
+        {/* スマホ: 地図ボタン */}
+        <div className="sm:hidden">
+          <button
+            onClick={() => setMapOpen(true)}
+            className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors"
+          >
+            🗺 地図で見る
+          </button>
+        </div>
       </section>
 
       {/* フィルターバー（「地図で見る」ボタン付き） */}
