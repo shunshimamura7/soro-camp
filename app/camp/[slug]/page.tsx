@@ -80,9 +80,6 @@ export default async function CampDetailPage({
   // キャンプ場名が検索バーに確実に表示される。
   // path 形式（/search/QUERY/@lat,lng）だと先頭のキャンプ場名を POI と判定して
   // 検索バーに表示されないため、こちらの形式を採用。
-  const supermarketUrl = `https://www.google.com/maps/search/スーパー/@${camp.lat},${camp.lng},14z`;
-  const meatFishUrl = `https://www.google.com/maps/search/精肉店/@${camp.lat},${camp.lng},14z`;
-
   return (
     <>
       <script
@@ -178,9 +175,17 @@ export default async function CampDetailPage({
                 href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(camp.name + ' ' + (camp.address ?? ''))}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#0e0d0b] text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-[#0e0d0b] transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors"
               >
                 📍 Googleマップで開く
+              </a>
+              <a
+                href={`https://www.google.com/maps/search/スーパー+精肉店+鮮魚店/@${camp.lat},${camp.lng},14z`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-slate-600 border border-slate-300 rounded-lg font-mono text-sm hover:bg-slate-100 transition-colors mt-2"
+              >
+                🛒 周辺の買い物を探す
               </a>
               <p className="text-xs text-slate-500 mt-2">📍 {camp.address}</p>
             </section>
@@ -202,38 +207,6 @@ export default async function CampDetailPage({
                 <Row label="薪販売" value={f.firewood ? "あり" : "なし"} />
                 <Row label="氷販売" value={f.ice ? "あり" : "なし"} />
                 <Row label="酒販売" value={f.alcohol ? "あり" : "なし"} />
-                <Row
-                  label="近隣スーパー"
-                  value={
-                    <>
-                      {f.nearbySupermarket && <>{f.nearbySupermarket}<br /></>}
-                      <a
-                        href={supermarketUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-orange-500 hover:text-orange-600 hover:underline"
-                      >
-                        📍 周辺のスーパーを地図で見る
-                      </a>
-                    </>
-                  }
-                />
-                <Row
-                  label="近隣の肉屋・魚屋"
-                  value={
-                    <>
-                      {f.nearbyShop && <>{f.nearbyShop}<br /></>}
-                      <a
-                        href={meatFishUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-orange-500 hover:text-orange-600 hover:underline"
-                      >
-                        📍 周辺の肉屋・魚屋を地図で見る
-                      </a>
-                    </>
-                  }
-                />
                 {camp.closedDays && <Row label="定休日" value={camp.closedDays} />}
                 <Row label="情報確認日" value={camp.lastVerified} />
               </div>
