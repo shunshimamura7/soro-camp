@@ -5834,8 +5834,8 @@
     "name": "magic hour",
     "prefecture": "静岡",
     "area": "静岡市清水区",
-    "lat": 35.373376,
-    "lng": 139.225478,
+    "lat": 35.05,
+    "lng": 138.51,
     "priceMin": 4500,
     "priceMax": 6500,
     "scores": {
@@ -6406,8 +6406,8 @@
     "name": "月夜野キャンプ場",
     "prefecture": "山梨",
     "area": "道志村",
-    "lat": 35.5282375,
-    "lng": 139.1014625,
+    "lat": 35.555,
+    "lng": 138.945,
     "priceMin": 2500,
     "priceMax": 3500,
     "scores": {
