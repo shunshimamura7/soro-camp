@@ -76,16 +76,7 @@ export default function FilterBar({ filters, sort, onFiltersChange, onSortChange
           <Toggle checked={filters.bath} onChange={(v) => set("bath", v)} label="♨️ 風呂あり" />
           <Toggle checked={filters.noReservation} onChange={(v) => set("noReservation", v)} label="✅ 予約不要" />
 
-          {onMapOpen && (
-            <button
-              onClick={onMapOpen}
-              className="shrink-0 min-h-[36px] px-3 py-1.5 rounded-full text-xs font-medium border border-orange-400/60 text-orange-500 bg-orange-50 hover:bg-orange-100 transition-colors"
-            >
-              🗺 地図で見る
-            </button>
-          )}
-
-          <div className="ml-auto flex items-center gap-2">
+<div className="ml-auto flex items-center gap-2">
             <span className="text-xs text-slate-500 whitespace-nowrap">{total}件</span>
             <select
               value={sort}
