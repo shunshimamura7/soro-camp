@@ -177,9 +177,19 @@ export default async function CampDetailPage({
             {/* Map */}
             <section>
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">アクセスマップ</h2>
-              <div className="overflow-hidden rounded-xl">
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${camp.lat},${camp.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block group cursor-pointer overflow-hidden rounded-xl"
+              >
                 <CampMapClient lat={camp.lat} lng={camp.lng} name={camp.name} height={320} />
-              </div>
+                <div className="absolute inset-0 flex items-end justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  <span className="bg-black/70 text-[#e8611f] text-xs px-2 py-1 rounded font-mono">
+                    Googleマップで開く →
+                  </span>
+                </div>
+              </a>
               <p className="text-xs text-slate-500 mt-1.5">📍 {camp.address}</p>
             </section>
 
