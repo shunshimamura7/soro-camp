@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCampground, getAllSlugs } from "@/lib/camp";
 import ScoreBar from "@/components/ScoreBar";
-import CampMapClient from "@/components/CampMapClient";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://soro-camp.vercel.app";
 
@@ -181,16 +180,11 @@ export default async function CampDetailPage({
                 href={`https://www.google.com/maps/search/?api=1&query=${camp.lat},${camp.lng}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative block group cursor-pointer overflow-hidden rounded-xl"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#0e0d0b] text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-[#0e0d0b] transition-colors"
               >
-                <CampMapClient lat={camp.lat} lng={camp.lng} name={camp.name} height={320} />
-                <div className="absolute inset-0 flex items-end justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                  <span className="bg-black/70 text-[#e8611f] text-xs px-2 py-1 rounded font-mono">
-                    Googleマップで開く →
-                  </span>
-                </div>
+                📍 Googleマップで開く
               </a>
-              <p className="text-xs text-slate-500 mt-1.5">📍 {camp.address}</p>
+              <p className="text-xs text-slate-500 mt-2">📍 {camp.address}</p>
             </section>
 
             {/* Facility details */}
