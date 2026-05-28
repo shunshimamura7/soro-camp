@@ -354,6 +354,14 @@ function CampDetailPanel({
       <a href={`/camp/${camp.slug}`} className="panel-detail-link">
         詳細を見る →
       </a>
+      <a
+        href={`https://www.google.com/maps/search/?api=1&query=${camp.lat},${camp.lng}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#e8611f", textDecoration: "none" }}
+      >
+        Googleマップ →
+      </a>
     </div>
   );
 }
