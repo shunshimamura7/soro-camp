@@ -45,7 +45,7 @@ function createEmberEl(): HTMLDivElement {
     "pointer-events:all;";
   const dot = document.createElement("div");
   dot.style.cssText =
-    "width:14px;height:14px;" +
+    "width:12px;height:12px;" +
     "background:#e8611f;" +
     "border-radius:50%;" +
     "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);" +
@@ -148,9 +148,13 @@ export default function MapView({ camps, height = 520 }: Props) {
       style: MAP_STYLE,
       center: [138.65, 35.3],
       zoom: 7.5,
-      cooperativeGestures: true,
+      cooperativeGestures: false,
       attributionControl: { compact: true },
     });
+
+    map.touchZoomRotate.enable();
+    map.touchPitch.disable();
+    map.dragPan.enable();
 
     mapRef.current = map;
 
