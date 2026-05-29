@@ -14,6 +14,7 @@ const DEFAULT_FILTERS: Filters = {
   prefecture: "全部",
   soloPlan: false,
   bath: false,
+  shower: false,
   noReservation: false,
 };
 
