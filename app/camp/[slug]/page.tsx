@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCampground, getAllSlugs } from "@/lib/camp";
-import ScoreBar from "@/components/ScoreBar";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://soro-camp.vercel.app";
 
@@ -119,8 +118,6 @@ export default async function CampDetailPage({
           <p className="text-xs sm:text-sm text-slate-500 mb-1">{camp.prefecture} · {camp.area}</p>
           <h1 className="text-xl sm:text-3xl font-bold text-slate-900 leading-tight">{camp.name}</h1>
           <div className="flex items-center gap-2 sm:gap-3 mt-2 flex-wrap">
-            <span className="text-3xl font-bold text-blue-500">{camp.soloScore.toFixed(1)}</span>
-            <span className="text-slate-500 text-xs sm:text-sm">ソロスコア</span>
             <span className="text-green-600 font-bold text-sm sm:text-base">¥{camp.priceMin.toLocaleString()}〜</span>
             <span className="text-slate-500 text-xs sm:text-sm">{camp.season}</span>
           </div>
@@ -129,18 +126,6 @@ export default async function CampDetailPage({
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
           {/* Left column */}
           <div className="flex flex-col gap-4 sm:gap-6">
-            {/* Scores */}
-            <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
-              <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-3">5軸スコア</h2>
-              <div className="flex flex-col gap-2">
-                <ScoreBar label="静か度" score={camp.scores.quietness} />
-                <ScoreBar label="絶景度" score={camp.scores.scenery} color="#00ba7c" />
-                <ScoreBar label="コスパ" score={camp.scores.value} color="#f59e0b" />
-                <ScoreBar label="アクセス" score={camp.scores.access} color="#a78bfa" />
-                <ScoreBar label="設備" score={camp.scores.facility} color="#fb7185" />
-              </div>
-            </section>
-
             {/* Comment */}
             <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">ソロキャンパーへのコメント</h2>
