@@ -193,7 +193,6 @@ export default function MapView({ camps, height = 520 }: Props) {
         }).setHTML(
           `<a href="/camp/${camp.slug}" class="camp-popup-link">` +
             `<span class="camp-popup-name">${camp.name}</span>` +
-            `<span class="camp-popup-meta">★${camp.soloScore.toFixed(1)}&nbsp;·&nbsp;¥${camp.priceMin.toLocaleString()}〜</span>` +
           `</a>` +
           `<a href="https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z" target="_blank" rel="noopener noreferrer" style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">🛒 周辺の買い物を探す</a>`
         );
