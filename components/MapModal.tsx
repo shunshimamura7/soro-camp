@@ -228,7 +228,7 @@ export default function MapModal({ camps, onClose }: Props) {
 
     mapRef.current = map;
 
-    map.dragPan.enable({ deceleration: 2500, maxSpeed: 1400 });
+    map.dragPan.enable({ deceleration: 1200, maxSpeed: 2000 });
 
     // コンテナサイズ確定後にリサイズして位置ズレを解消
     setTimeout(() => mapRef.current?.resize(), 100);
@@ -290,7 +290,7 @@ export default function MapModal({ camps, onClose }: Props) {
       {/* Map canvas */}
       <div
         ref={containerRef}
-        style={{ position: "absolute", inset: 0, minWidth: 0, display: "block", touchAction: "none" }}
+        style={{ position: "absolute", inset: 0, minWidth: 0, display: "block", touchAction: "none", userSelect: "none", WebkitUserSelect: "none" }}
       />
 
       {/* 昼夜切り替えボタン（左上） */}
