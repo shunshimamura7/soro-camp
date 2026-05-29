@@ -146,8 +146,8 @@ export default function MapView({ camps, height = 520 }: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
-      center: [138.65, 35.3],
-      zoom: 7.5,
+      center: [138.8, 35.45],
+      zoom: 8.0,
       cooperativeGestures: false,
       attributionControl: { compact: true },
     });
@@ -157,6 +157,13 @@ export default function MapView({ camps, height = 520 }: Props) {
     map.dragPan.enable();
 
     mapRef.current = map;
+
+    map.once("load", () => {
+      map.setMaxBounds([
+        [136.5, 34.2],
+        [140.0, 36.2],
+      ]);
+    });
 
     return () => {
       markersRef.current.forEach((m) => m.remove());

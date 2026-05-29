@@ -213,8 +213,8 @@ export default function MapModal({ camps, onClose }: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
-      center: [138.65, 35.3],
-      zoom: 7.5,
+      center: [138.8, 35.45],
+      zoom: 8.0,
       attributionControl: { compact: true },
     });
 

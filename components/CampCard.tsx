@@ -47,20 +47,14 @@ export default function CampCard({ camp }: Props) {
         </Link>
       </div>
 
-      {/* 3. soloScore + price (JetBrains Mono) */}
-      <div className="px-4 pb-3 flex items-baseline gap-5">
+      {/* 3. Price */}
+      <div className="px-4 pb-3">
         <div className="flex items-baseline gap-1.5">
-          <span className="font-['JetBrains_Mono',monospace] text-[26px] font-bold text-[#e8611f] leading-none">
-            {camp.soloScore.toFixed(1)}
-          </span>
-          <span className="text-[11px] text-[#9a8e84]">ソロ評価</span>
-        </div>
-        <div className="flex items-baseline gap-1.5">
-          <span className="font-['JetBrains_Mono',monospace] text-[16px] font-semibold text-[#2a6e3f]">
+          <span className="font-['JetBrains_Mono',monospace] text-[20px] font-bold text-[#2a6e3f]">
             ¥{camp.priceMin.toLocaleString()}〜
           </span>
           {camp.priceNote && (
-            <span className="text-[11px] text-[#9a8e84] truncate max-w-[110px]">
+            <span className="text-[12px] text-[#9a8e84] truncate max-w-[140px]">
               {camp.priceNote}
             </span>
           )}
