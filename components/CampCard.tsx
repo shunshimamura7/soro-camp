@@ -9,7 +9,6 @@ function getFeatureTags(f: Campground["features"]): FeatureTag[] {
   if (f.shower)                  tags.push({ key: "shower",  label: "🚿 シャワー" });
   if (f.carIn)                   tags.push({ key: "carIn",   label: "🚗 車横付け" });
   if (f.wifi)                    tags.push({ key: "wifi",    label: "📶 Wi-Fi" });
-  if (f.soloPlan)                tags.push({ key: "soloPlan",label: "🏕 ソロプラン" });
   if (f.reservation === "不要")  tags.push({ key: "noRes",   label: "✅ 予約不要" });
   if (f.firewood)                tags.push({ key: "firewood",label: "🪵 薪" });
   return tags;
