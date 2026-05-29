@@ -224,6 +224,11 @@ export default function MapModal({ camps, onClose }: Props) {
     setTimeout(() => mapRef.current?.resize(), 100);
 
     map.once("load", () => {
+      map.setMaxBounds([
+        [136.5, 34.2],
+        [140.0, 36.2],
+      ]);
+
       camps.forEach((camp) => {
         const el = createEmberEl();
         elMapRef.current.set(camp.slug, el);
