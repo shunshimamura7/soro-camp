@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -9,6 +9,12 @@ const SITE_NAME = "ソロキャン羅針盤";
 const SITE_DESCRIPTION =
   "神奈川・静岡・山梨のソロキャンプ場を徹底比較。静か・絶景・コスパ・アクセス・設備の5軸スコアで自分だけの最高のサイトを見つけよう。";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://soro-camp.vercel.app";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -36,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja">
       <body className={`${noto.className} bg-white text-slate-900 min-h-screen`}>
-        <header className="border-b border-slate-200 px-3 sm:px-4 py-2 sm:py-3 bg-white">
+        <header className="border-b border-slate-200 px-3 sm:px-4 py-2 sm:py-3 bg-white pt-[env(safe-area-inset-top)]">
           <div className="max-w-4xl mx-auto flex items-center gap-2 sm:gap-3">
             <span className="text-xl sm:text-2xl leading-none">🏕</span>
             <div>

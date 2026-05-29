@@ -2,139 +2,108 @@ import Link from "next/link";
 import type { Campground } from "@/lib/types";
 import FavoriteButton from "./FavoriteButton";
 
-function Tag({ children, green }: { children: React.ReactNode; green?: boolean }) {
-  return (
-    <span
-      className={`px-2.5 py-1 rounded text-xs font-medium ${
-        green ? "bg-emerald-50 text-emerald-700" : "bg-blue-50 text-blue-700"
-      }`}
-    >
-      {children}
-    </span>
-  );
-}
+type FeatureTag = { key: string; label: string };
 
-function featureTags(f: Campground["features"]) {
-  const tags: { label: string; green?: boolean }[] = [];
-  if (f.soloPlan) tags.push({ label: "🏕 ソロプラン", green: true });
-  if (f.bath) tags.push({ label: "♨️ 風呂", green: true });
-  if (f.shower) tags.push({ label: "🚿 シャワー" });
-  if (f.wifi) tags.push({ label: "📶 Wi-Fi" });
-  if (f.carIn) tags.push({ label: "🚗 車横付け" });
-  if (f.reservation === "不要") tags.push({ label: "✅ 予約不要", green: true });
-  if (f.shop) tags.push({ label: "🏪 売店" });
-  if (f.firewood) tags.push({ label: "🪵 薪" });
-  if (f.ice) tags.push({ label: "🧊 氷" });
-  if (f.alcohol) tags.push({ label: "🍶 酒" });
+function getFeatureTags(f: Campground["features"]): FeatureTag[] {
+  const tags: FeatureTag[] = [];
+  if (f.bath)                    tags.push({ key: "bath",    label: "♨️ 風呂" });
+  if (f.shower)                  tags.push({ key: "shower",  label: "🚿 シャワー" });
+  if (f.carIn)                   tags.push({ key: "carIn",   label: "🚗 車横付け" });
+  if (f.wifi)                    tags.push({ key: "wifi",    label: "📶 Wi-Fi" });
+  if (f.soloPlan)                tags.push({ key: "soloPlan",label: "🏕 ソロプラン" });
+  if (f.reservation === "不要")  tags.push({ key: "noRes",   label: "✅ 予約不要" });
+  if (f.firewood)                tags.push({ key: "firewood",label: "🪵 薪" });
   return tags;
-}
-
-function nearbyInfo(f: Campground["features"]) {
-  const items: { icon: string; text: string }[] = [];
-  if (f.nearbySupermarket) items.push({ icon: "🛒", text: `スーパー: ${f.nearbySupermarket}` });
-  if (f.nearbyShop)        items.push({ icon: "🥩", text: `肉魚: ${f.nearbyShop}` });
-  return items;
 }
 
 type Props = { camp: Campground };
 
-// Shared button class — min-h-[44px] on mobile for iOS HIG touch targets
-const btn = "flex items-center justify-center min-h-[44px] sm:min-h-0 sm:py-1.5 px-3 rounded-lg text-xs font-medium transition-colors";
-
 export default function CampCard({ camp }: Props) {
-  const tags = featureTags(camp.features);
-  const nearby = nearbyInfo(camp.features);
+  const tags = getFeatureTags(camp.features);
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    camp.name + " " + (camp.address ?? "")
+  )}`;
 
   return (
-    <article className="bg-white rounded-2xl p-3 sm:p-5 flex flex-col gap-3 sm:gap-4 border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all">
-      {/* Header */}
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0 flex-1">
-          <p className="text-xs text-slate-500 mb-0.5">{camp.prefecture} · {camp.area}</p>
-          <Link
-            href={`/camp/${camp.slug}`}
-            className="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-500 transition-colors leading-tight"
-          >
-            {camp.name}
-          </Link>
-        </div>
-        <div className="shrink-0 flex items-center gap-2 ml-2">
-          <FavoriteButton slug={camp.slug} />
-          <div className="text-right">
-            <div className="text-2xl font-bold text-blue-500">{camp.soloScore.toFixed(1)}</div>
-            <div className="text-[11px] text-slate-500">ソロ評価</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Price */}
-      <div className="flex items-baseline gap-1 min-w-0">
-        <span className="text-green-600 font-bold text-base shrink-0">
-          ¥{camp.priceMin.toLocaleString()}〜
+    <article className="bg-white rounded-2xl border border-[#e2ddd8] hover:border-[#e8611f]/40 hover:shadow-lg transition-all overflow-hidden">
+      {/* 1. Header row: area + prefecture badge + favorite */}
+      <div className="flex items-center gap-2 px-4 pt-4 pb-2">
+        <span className="font-['JetBrains_Mono',monospace] text-[11px] text-[#9a8e84] tracking-wider truncate flex-1 leading-none">
+          {camp.area}
         </span>
-        {camp.priceNote && (
-          <span className="text-xs text-slate-500 truncate">{camp.priceNote}</span>
-        )}
+        <span className="shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-[#f5f0ea] text-[#6b5a4e] border border-[#e2ddd8]">
+          {camp.prefecture}
+        </span>
+        <FavoriteButton slug={camp.slug} />
       </div>
 
-      {/* Tags */}
-      <div className="flex flex-wrap gap-1.5">
-        {tags.map((t) => (
-          <Tag key={t.label} green={t.green}>{t.label}</Tag>
-        ))}
+      {/* 2. Camp name */}
+      <div className="px-4 pb-3">
+        <Link
+          href={`/camp/${camp.slug}`}
+          className="font-['Shippori_Mincho_B1','Noto_Serif_JP',serif] text-[18px] sm:text-[20px] font-bold text-[#0e0d0b] leading-snug hover:text-[#e8611f] transition-colors"
+        >
+          {camp.name}
+        </Link>
       </div>
 
-      {/* Nearby info: ゴミ・スーパー・肉魚（値があるものだけ表示） */}
-      {nearby.length > 0 && (
-        <div className="flex flex-col gap-0.5">
-          {nearby.map((item) => (
-            <p key={item.icon} className="text-xs text-slate-500 leading-snug">
-              {item.icon} {item.text}
-            </p>
+      {/* 3. soloScore + price (JetBrains Mono) */}
+      <div className="px-4 pb-3 flex items-baseline gap-5">
+        <div className="flex items-baseline gap-1.5">
+          <span className="font-['JetBrains_Mono',monospace] text-[26px] font-bold text-[#e8611f] leading-none">
+            {camp.soloScore.toFixed(1)}
+          </span>
+          <span className="text-[11px] text-[#9a8e84]">ソロ評価</span>
+        </div>
+        <div className="flex items-baseline gap-1.5">
+          <span className="font-['JetBrains_Mono',monospace] text-[16px] font-semibold text-[#2a6e3f]">
+            ¥{camp.priceMin.toLocaleString()}〜
+          </span>
+          {camp.priceNote && (
+            <span className="text-[11px] text-[#9a8e84] truncate max-w-[110px]">
+              {camp.priceNote}
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* 4. Feature tags */}
+      {tags.length > 0 && (
+        <div className="px-4 pb-3 flex flex-wrap gap-1.5">
+          {tags.map((t) => (
+            <span
+              key={t.key}
+              className="inline-flex items-center px-2.5 py-1 rounded-full text-[12px] font-medium bg-[#f5f0ea] text-[#5a4a3a] border border-[#e2ddd8]"
+            >
+              {t.label}
+            </span>
           ))}
         </div>
       )}
 
-      {/* Comment */}
-      <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">{camp.soloComment}</p>
+      {/* 5. soloComment — max 2 lines */}
+      <div className="px-4 pb-4">
+        <p className="text-[13px] text-[#5a5050] leading-relaxed line-clamp-2">
+          {camp.soloComment}
+        </p>
+      </div>
 
-      {/* Actions: 2-col grid on mobile, flex-wrap on desktop */}
-      <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 pt-1">
-        {/* Primary CTA spans full width on mobile */}
+      {/* 6. Action buttons */}
+      <div className="px-4 pb-4 grid grid-cols-2 gap-2">
         <Link
           href={`/camp/${camp.slug}`}
-          className={`col-span-2 ${btn} bg-blue-50 text-blue-600 hover:bg-blue-100`}
+          className="flex items-center justify-center min-h-[44px] rounded-xl bg-[#e8611f] text-white text-[14px] font-semibold hover:bg-[#d0551a] transition-colors"
         >
-          詳細を見る →
+          詳細を見る
         </Link>
-        {camp.officialUrl && (
-          <a
-            href={camp.officialUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${btn} bg-slate-100 text-slate-600 hover:bg-slate-200`}
-          >
-            公式サイト ↗
-          </a>
-        )}
-        {camp.reservationUrl && (
-          <a
-            href={camp.reservationUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${btn} bg-emerald-50 text-emerald-700 hover:bg-emerald-100`}
-          >
-            予約する ↗
-          </a>
-        )}
-        {camp.tel && (
-          <a
-            href={`tel:${camp.tel}`}
-            className={`${btn} bg-slate-100 text-slate-600 hover:bg-slate-200`}
-          >
-            📞 {camp.tel}
-          </a>
-        )}
+        <a
+          href={mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center min-h-[44px] rounded-xl bg-white text-[#e8611f] text-[13px] font-semibold border-2 border-[#e8611f] hover:bg-[#e8611f]/5 transition-colors"
+        >
+          📍 Googleマップ
+        </a>
       </div>
     </article>
   );

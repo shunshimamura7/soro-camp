@@ -27,6 +27,22 @@ select {
   touch-action: manipulation;
 }
 
+/* タップハイライト除去 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* フォームリセット（セレクトボックス） */
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* スムーズスクロール */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Hide scrollbar while keeping scroll functionality */
 .scrollbar-hide {
   -ms-overflow-style: none;

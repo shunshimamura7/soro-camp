@@ -14,83 +14,91 @@ type Props = {
 const PREFECTURES = ["全部", "神奈川", "静岡", "山梨"] as const;
 
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
-  { value: "soloScore", label: "おすすめ順" },
-  { value: "priceAsc", label: "価格安い順" },
-  { value: "priceDesc", label: "価格高い順" },
-  { value: "quietness", label: "静か順" },
-  { value: "scenery", label: "絶景順" },
-  { value: "value", label: "コスパ順" },
-  { value: "facility", label: "設備順" },
+  { value: "soloScore",  label: "おすすめ順" },
+  { value: "priceAsc",   label: "価格安い順" },
+  { value: "priceDesc",  label: "価格高い順" },
+  { value: "quietness",  label: "静か順" },
+  { value: "scenery",    label: "絶景順" },
+  { value: "value",      label: "コスパ順" },
+  { value: "facility",   label: "設備順" },
 ];
 
-type ToggleProps = {
-  checked: boolean;
-  onChange: (v: boolean) => void;
-  label: string;
-};
+type BooleanFilterKey = "soloPlan" | "bath" | "noReservation";
 
-function Toggle({ checked, onChange, label }: ToggleProps) {
-  return (
-    <button
-      onClick={() => onChange(!checked)}
-      className={`shrink-0 min-h-[36px] px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
-        checked
-          ? "bg-blue-500 border-blue-500 text-white"
-          : "bg-white border-slate-300 text-slate-600 hover:border-slate-400"
-      }`}
-    >
-      {label}
-    </button>
-  );
-}
+const FEATURE_FILTERS: Array<{ key: BooleanFilterKey; label: string }> = [
+  { key: "soloPlan",      label: "🏕 ソロプラン" },
+  { key: "bath",          label: "♨️ 風呂あり" },
+  { key: "noReservation", label: "✅ 予約不要" },
+];
 
-export default function FilterBar({ filters, sort, onFiltersChange, onSortChange, total, onMapOpen }: Props) {
+const pillBase =
+  "inline-flex items-center justify-center h-[40px] px-4 rounded-full text-[14px] font-medium border transition-colors shrink-0";
+const pillActive   = "bg-[#e8611f] text-white border-transparent";
+const pillInactive = "bg-white text-[#0e0d0b] border-[#ccc] hover:border-[#e8611f]/50";
+
+export default function FilterBar({
+  filters,
+  sort,
+  onFiltersChange,
+  onSortChange,
+  total,
+}: Props) {
   const set = <K extends keyof Filters>(key: K, val: Filters[K]) =>
     onFiltersChange({ ...filters, [key]: val });
 
+  const toggleFeature = (key: BooleanFilterKey) =>
+    onFiltersChange({ ...filters, [key]: !filters[key] });
+
   return (
-    <div className="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-slate-200 py-2 sm:py-3 shadow-sm">
-      <div className="max-w-4xl mx-auto flex flex-col gap-2 sm:gap-3">
-        {/* Prefecture tabs — horizontal scroll on mobile, wrap on desktop */}
-        <div className="scrollbar-hide overflow-x-auto pl-3 sm:pl-4">
-          <div className="flex gap-2 pr-3 sm:pr-4 sm:flex-wrap">
+    <div className="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+      <div className="max-w-4xl mx-auto flex flex-col gap-3 py-2.5 sm:py-3">
+
+        {/* Prefecture + feature toggles — single horizontal scroll row */}
+        <div
+          className="scrollbar-hide overflow-x-auto pl-4"
+          style={{ WebkitOverflowScrolling: "touch", whiteSpace: "nowrap" }}
+        >
+          <div className="inline-flex gap-2 pr-4">
             {PREFECTURES.map((p) => (
               <button
                 key={p}
                 onClick={() => set("prefecture", p)}
-                className={`shrink-0 min-h-[36px] px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                  filters.prefecture === p
-                    ? "bg-blue-500 text-white"
-                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                }`}
+                className={`${pillBase} ${filters.prefecture === p ? pillActive : pillInactive}`}
               >
                 {p}
+              </button>
+            ))}
+
+            <span className="inline-block w-px h-[40px] bg-slate-200 mx-1 align-middle" />
+
+            {FEATURE_FILTERS.map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => toggleFeature(key)}
+                className={`${pillBase} ${filters[key] ? pillActive : pillInactive}`}
+              >
+                {label}
               </button>
             ))}
           </div>
         </div>
 
-        {/* Feature toggles + sort */}
-        <div className="px-3 sm:px-4 flex flex-wrap items-center gap-2">
-          <Toggle checked={filters.soloPlan} onChange={(v) => set("soloPlan", v)} label="🏕 ソロプラン" />
-          <Toggle checked={filters.bath} onChange={(v) => set("bath", v)} label="♨️ 風呂あり" />
-          <Toggle checked={filters.noReservation} onChange={(v) => set("noReservation", v)} label="✅ 予約不要" />
-
-<div className="ml-auto flex items-center gap-2">
-            <span className="text-xs text-slate-500 whitespace-nowrap">{total}件</span>
-            <select
-              value={sort}
-              onChange={(e) => onSortChange(e.target.value as SortKey)}
-              className="min-h-[36px] bg-white border border-slate-300 text-slate-700 text-xs rounded-lg px-2 py-1.5 focus:outline-none focus:border-blue-500"
-            >
-              {SORT_OPTIONS.map((o) => (
-                <option key={o.value} value={o.value}>
-                  {o.label}
-                </option>
-              ))}
-            </select>
-          </div>
+        {/* Sort dropdown + result count */}
+        <div className="px-4 flex items-center gap-3">
+          <select
+            value={sort}
+            onChange={(e) => onSortChange(e.target.value as SortKey)}
+            className="flex-1 h-[44px] bg-white border border-[#ccc] text-[#0e0d0b] text-[15px] rounded-xl px-3 focus:outline-none focus:border-[#e8611f]"
+          >
+            {SORT_OPTIONS.map((o) => (
+              <option key={o.value} value={o.value}>
+                {o.label}
+              </option>
+            ))}
+          </select>
+          <span className="text-sm text-slate-500 whitespace-nowrap shrink-0">{total}件</span>
         </div>
+
       </div>
     </div>
   );

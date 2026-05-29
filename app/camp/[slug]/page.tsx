@@ -76,6 +76,20 @@ export default async function CampDetailPage({
 
   const f = camp.features;
 
+  const featureBadges: Array<[string, string]> = [];
+  if (f.bath)     featureBadges.push(["bath",    "♨️ 風呂"]);
+  if (f.shower)   featureBadges.push(["shower",  "🚿 シャワー"]);
+  if (f.carIn)    featureBadges.push(["carIn",   "🚗 車横付け"]);
+  if (f.wifi)     featureBadges.push(["wifi",    "📶 Wi-Fi"]);
+  if (f.soloPlan) featureBadges.push(["soloPlan","🏕 ソロプラン"]);
+  if (f.bonfire)  featureBadges.push(["bonfire", "🔥 焚き火"]);
+  if (f.firewood) featureBadges.push(["firewood","🪵 薪販売"]);
+  if (f.shop)     featureBadges.push(["shop",    "🏪 売店"]);
+
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    camp.name + " " + (camp.address ?? "")
+  )}`;
+
   // ?q= パラメータ形式：Google Maps が文字列全体を検索クエリとして扱い、
   // キャンプ場名が検索バーに確実に表示される。
   // path 形式（/search/QUERY/@lat,lng）だと先頭のキャンプ場名を POI と判定して
@@ -87,7 +101,10 @@ export default async function CampDetailPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="max-w-4xl mx-auto px-3 sm:px-4 py-4 sm:py-8">
+      {/* Safe-area spacer — active when viewport-fit=cover */}
+      <div className="h-[env(safe-area-inset-top,0px)]" />
+
+      <div className="max-w-4xl mx-auto px-3 sm:px-4 pt-4 sm:pt-8 pb-[96px] md:pb-8">
         {/* Breadcrumb */}
         <nav className="text-xs text-slate-500 mb-4 flex gap-1 items-center flex-wrap">
           <Link href="/" className="hover:text-slate-700">← 一覧</Link>
@@ -127,8 +144,25 @@ export default async function CampDetailPage({
             {/* Comment */}
             <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">ソロキャンパーへのコメント</h2>
-              <p className="text-sm text-slate-600 leading-relaxed">{camp.soloComment}</p>
+              <p className="text-[15px] text-slate-600 leading-[1.8] tracking-[0.02em]">{camp.soloComment}</p>
             </section>
+
+            {/* Feature badges — 2 col grid, 44px tap targets */}
+            {featureBadges.length > 0 && (
+              <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
+                <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-3">設備・特徴</h2>
+                <div className="grid grid-cols-2 gap-2">
+                  {featureBadges.map(([key, label]) => (
+                    <div
+                      key={key}
+                      className="flex items-center min-h-[44px] px-3 bg-white rounded-xl text-[13px] font-medium text-[#5a4a3a] border border-[#e2ddd8]"
+                    >
+                      {label}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Action links — full-height buttons for easy tapping */}
             <div className="flex flex-col gap-2">
@@ -218,6 +252,31 @@ export default async function CampDetailPage({
 
         <div className="mt-6 sm:mt-8">
           <Link href="/" className="text-blue-500 text-sm hover:underline">← キャンプ場一覧に戻る</Link>
+        </div>
+      </div>
+
+      {/* Fixed bottom CTA bar — mobile only */}
+      <div
+        className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur border-t border-slate-200"
+        style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
+      >
+        <div className="flex gap-2 px-4 py-3">
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center justify-center h-[52px] rounded-xl bg-[#e8611f] text-white text-[14px] font-semibold hover:bg-[#d0551a] transition-colors"
+          >
+            📍 Googleマップで開く
+          </a>
+          {camp.tel && (
+            <a
+              href={`tel:${camp.tel}`}
+              className="flex items-center justify-center h-[52px] px-5 rounded-xl bg-slate-100 text-slate-700 text-[14px] font-semibold hover:bg-slate-200 transition-colors"
+            >
+              📞 電話
+            </a>
+          )}
         </div>
       </div>
     </>
