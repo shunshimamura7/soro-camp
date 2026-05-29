@@ -343,11 +343,6 @@ function CampDetailPanel({
 
       <h2 className="panel-name">{camp.name}</h2>
 
-      <div className="panel-score-row">
-        <span className="panel-score">★&nbsp;{camp.soloScore.toFixed(1)}</span>
-        <span className="panel-price">¥{camp.priceMin.toLocaleString()}〜</span>
-      </div>
-
       {tags.length > 0 && (
         <div className="panel-tags">
           {tags.map((t) => (
