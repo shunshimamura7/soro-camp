@@ -206,6 +206,14 @@ export default async function CampDetailPage({
                 >
                   🛒 周辺施設を探す
                 </a>
+                <a
+                  href={`https://www.google.com/search?q=${encodeURIComponent(camp.name)}&tbm=isch`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors"
+                >
+                  📷 写真を見る
+                </a>
               </div>
               <p className="text-xs text-slate-500 mt-2">📍 {camp.address}</p>
             </section>
