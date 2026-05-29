@@ -23,10 +23,9 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "facility",   label: "設備順" },
 ];
 
-type BooleanFilterKey = "soloPlan" | "bath" | "noReservation";
+type BooleanFilterKey = "bath" | "noReservation";
 
 const FEATURE_FILTERS: Array<{ key: BooleanFilterKey; label: string }> = [
-  { key: "soloPlan",      label: "🏕 ソロプラン" },
   { key: "bath",          label: "♨️ 風呂あり" },
   { key: "noReservation", label: "✅ 予約不要" },
 ];
