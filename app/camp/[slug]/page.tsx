@@ -80,7 +80,6 @@ export default async function CampDetailPage({
   if (f.shower)   featureBadges.push(["shower",  "🚿 シャワー"]);
   if (f.carIn)    featureBadges.push(["carIn",   "🚗 車横付け"]);
   if (f.wifi)     featureBadges.push(["wifi",    "📶 Wi-Fi"]);
-  if (f.soloPlan) featureBadges.push(["soloPlan","🏕 ソロプラン"]);
   if (f.bonfire)  featureBadges.push(["bonfire", "🔥 焚き火"]);
   if (f.firewood) featureBadges.push(["firewood","🪵 薪販売"]);
   if (f.shop)     featureBadges.push(["shop",    "🏪 売店"]);
