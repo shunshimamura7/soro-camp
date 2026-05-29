@@ -3,10 +3,10 @@ import type { Campground } from "@/lib/types";
 
 type FeatureTag = { key: string; label: string };
 
-function getFeatureTags(f: Campground["features"]): FeatureTag[] {
+function getFeatureTags(f: Campground["features"], bathFilterActive: boolean): FeatureTag[] {
   const tags: FeatureTag[] = [];
   if (f.bath)                    tags.push({ key: "bath",    label: "♨️ 風呂" });
-  if (f.shower)                  tags.push({ key: "shower",  label: "🚿 シャワー" });
+  if (f.shower && !bathFilterActive) tags.push({ key: "shower",  label: "🚿 シャワー" });
   if (f.carIn)                   tags.push({ key: "carIn",   label: "🚗 車横付け" });
   if (f.wifi)                    tags.push({ key: "wifi",    label: "📶 Wi-Fi" });
   if (f.reservation === "不要")  tags.push({ key: "noRes",   label: "✅ 予約不要" });
@@ -14,10 +14,10 @@ function getFeatureTags(f: Campground["features"]): FeatureTag[] {
   return tags;
 }
 
-type Props = { camp: Campground };
+type Props = { camp: Campground; bathFilterActive?: boolean };
 
-export default function CampCard({ camp }: Props) {
-  const tags = getFeatureTags(camp.features);
+export default function CampCard({ camp, bathFilterActive = false }: Props) {
+  const tags = getFeatureTags(camp.features, bathFilterActive);
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     camp.name + " " + (camp.address ?? "")
   )}`;

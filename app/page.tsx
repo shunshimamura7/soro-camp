@@ -85,7 +85,7 @@ export default function HomePage() {
         ) : (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {results.map((camp) => (
-              <CampCard key={camp.id} camp={camp} />
+              <CampCard key={camp.id} camp={camp} bathFilterActive={filters.bath} />
             ))}
           </div>
         )}
