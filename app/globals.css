@@ -341,19 +341,6 @@ html {
   letter-spacing: 0.01em;
 }
 
-/* Score + Price row */
-.panel-score-row {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
-}
-.panel-score {
-  font-size: 24px;
-  font-weight: 800;
-  color: #e8611f;
-  letter-spacing: -0.02em;
-  line-height: 1;
-}
 .panel-price {
   font-size: 14px;
   color: #a09080;
