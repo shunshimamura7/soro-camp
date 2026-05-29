@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Campground } from "@/lib/types";
-import FavoriteButton from "./FavoriteButton";
 
 type FeatureTag = { key: string; label: string };
 
@@ -34,7 +33,6 @@ export default function CampCard({ camp }: Props) {
         <span className="shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-[#f5f0ea] text-[#6b5a4e] border border-[#e2ddd8]">
           {camp.prefecture}
         </span>
-        <FavoriteButton slug={camp.slug} />
       </div>
 
       {/* 2. Camp name */}
