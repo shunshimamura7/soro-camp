@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>soro-camp 自動採用候補レビュー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --charcoal: #0e0d0b;
+    --ember: #e8611f;
+    --ash: #9a8e84;
+    --line: #2a2723;
+    --panel: #171512;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--charcoal); color: #f2ede7;
+    font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans JP", sans-serif;
+    font-size: 15px; line-height: 1.6;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 20px 16px 120px; }
+
+  header { border-bottom: 1px solid var(--line); padding-bottom: 14px; margin-bottom: 18px; }
+  .title { font-family: "Shippori Mincho B1", serif; font-size: 20px; font-weight: 700; margin: 0 0 8px; }
+  .title span { color: var(--ember); }
+  .lead { font-size: 13px; color: var(--ash); margin: 0; }
+  .lead b { color: var(--ember); }
+
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 16px 0 20px; }
+  .toolbar .spacer { flex: 1; }
+  button {
+    font: inherit; cursor: pointer; border-radius: 10px;
+    border: 1px solid var(--line); background: #201d19; color: #f2ede7;
+    padding: 0 14px; min-height: 40px; transition: background .15s, border-color .15s;
+  }
+  button:hover { border-color: var(--ember); }
+  button.primary { background: var(--ember); border-color: var(--ember); color: #fff; font-weight: 700; }
+  button.primary:hover { background: #d0551a; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    overflow: hidden; transition: border-color .15s, opacity .15s;
+  }
+  .card.rejected { opacity: .38; border-color: var(--line); }
+  .card.accepted { border-color: var(--ember); }
+
+  .thumb {
+    position: relative; height: 170px; background: #100e0c;
+    overflow: hidden; cursor: pointer;
+  }
+  .thumb img { position: absolute; width: 256px; height: 256px; image-rendering: auto; }
+  .pin {
+    position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px;
+    background: var(--ember); border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(232,97,31,.35), 0 0 14px rgba(232,97,31,.85);
+    pointer-events: none;
+  }
+  .thumb-badge {
+    position: absolute; right: 6px; bottom: 6px; z-index: 2;
+    font-family: "JetBrains Mono", monospace; font-size: 10px;
+    background: rgba(14,13,11,.85); color: var(--ash);
+    padding: 2px 6px; border-radius: 5px;
+  }
+  .far { color: #ff8a5c; }
+
+  .body { padding: 12px 14px 14px; }
+  .meta { font-family: "JetBrains Mono", monospace; font-size: 10px; color: var(--ash); letter-spacing: .06em; margin: 0 0 4px; }
+  .name { font-family: "Shippori Mincho B1", serif; font-size: 16px; font-weight: 700; margin: 0 0 6px; line-height: 1.35; }
+  .osm { font-size: 12px; color: var(--ash); margin: 0 0 4px; }
+  .osm b { color: #f2ede7; font-weight: 400; }
+  .coords { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--ash); margin: 0 0 10px; }
+
+  .row { display: flex; gap: 8px; align-items: center; }
+  .check {
+    flex: 1; display: flex; align-items: center; gap: 8px; cursor: pointer;
+    min-height: 40px; padding: 0 10px; border-radius: 9px;
+    border: 1px solid var(--line); background: #100e0c; font-size: 13px; user-select: none;
+  }
+  .check input { width: 17px; height: 17px; accent-color: var(--ember); cursor: pointer; }
+  .card.accepted .check { border-color: var(--ember); color: var(--ember); font-weight: 700; }
+  .gmap {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 40px; padding: 0 10px; border-radius: 9px;
+    border: 1px solid var(--line); background: #100e0c;
+    color: var(--ember); text-decoration: none; font-size: 12px;
+  }
+  .gmap:hover { border-color: var(--ember); }
+
+  .footbar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+    background: rgba(14,13,11,.96); border-top: 1px solid var(--line);
+    backdrop-filter: blur(6px);
+  }
+  .footbar .inner {
+    max-width: 1180px; margin: 0 auto; padding: 12px 16px;
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+  }
+  .footbar .count { flex: 1; font-size: 13px; color: var(--ash); }
+  .footbar .count b { color: var(--ember); font-size: 17px; font-family: "JetBrains Mono", monospace; }
+  .empty { text-align: center; padding: 60px 20px; color: var(--ash); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 class="title">soro-camp <span>自動採用候補レビュー</span></h1>
+    <p class="lead">
+      Overpass API が <b>1件だけ</b>候補を返し、現在座標から近かったものです。
+      サムネイルのピン位置が正しいか目視で確認し、<b>違うものはチェックを外して</b>ください。
+      チェックが付いているものだけが書き出されます。
+    </p>
+  </header>
+
+  <div class="toolbar">
+    <button id="btn-all">すべて選択</button>
+    <button id="btn-none">すべて解除</button>
+    <button id="btn-far">2km以上ズレのみ解除</button>
+    <span class="spacer"></span>
+    <button id="btn-reset">レビュー状態をリセット</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="footbar">
+  <div class="inner">
+    <span class="count" id="count"></span>
+    <button class="primary" id="btn-download">選択したものを JSON でダウンロード</button>
+  </div>
+</div>
+
+<script>
+// ── 自動採用候補（review-auto-coords.js が生成時に埋め込む） ──────────────────
+var ITEMS = __ITEMS_JSON__;
+
+var STORAGE_KEY = 'soro-camp:auto-review:v1';
+var ZOOM = 15;
+var TILE = 256;
+var THUMB_W = 300;   // 実際の描画幅は CSS 側で伸縮する
+var THUMB_H = 170;
+
+// 既定は全件チェック済み。外したものだけ記録する
+var rejected = loadRejected();
+
+function loadRejected() {
+  try {
+    var raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      var arr = JSON.parse(raw);
+      if (Array.isArray(arr)) return new Set(arr);
+    }
+  } catch (e) {}
+  return new Set();
+}
+
+function saveRejected() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(rejected))); } catch (e) {}
+}
+
+// ── タイル計算（WebGL を使わず img のモザイクで描く） ────────────────────────
+// 地図を75個も MapLibre で描くとブラウザの WebGL コンテキスト上限に当たるため、
+// ラスタタイルを直接並べてピンを中央に固定する。
+function lngToPx(lng, z) { return ((lng + 180) / 360) * Math.pow(2, z) * TILE; }
+function latToPx(lat, z) {
+  var s = Math.sin((lat * Math.PI) / 180);
+  var y = 0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI);
+  return y * Math.pow(2, z) * TILE;
+}
+
+function buildThumb(el, lat, lng) {
+  var cx = lngToPx(lng, ZOOM);
+  var cy = latToPx(lat, ZOOM);
+  var left = cx - THUMB_W / 2;
+  var top = cy - THUMB_H / 2;
+  var x0 = Math.floor(left / TILE);
+  var y0 = Math.floor(top / TILE);
+  var x1 = Math.floor((left + THUMB_W) / TILE);
+  var y1 = Math.floor((top + THUMB_H) / TILE);
+  var n = Math.pow(2, ZOOM);
+  var html = '';
+  for (var ty = y0; ty <= y1; ty++) {
+    for (var tx = x0; tx <= x1; tx++) {
+      if (ty < 0 || ty >= n) continue;
+      var wx = ((tx % n) + n) % n;
+      var sub = 'abc'[Math.abs(tx + ty) % 3];
+      var url = 'https://' + sub + '.basemaps.cartocdn.com/dark_all/' + ZOOM + '/' + wx + '/' + ty + '.png';
+      var px = tx * TILE - left;
+      var py = ty * TILE - top;
+      html += '<img loading="lazy" src="' + url + '" style="left:' + px + 'px;top:' + py + 'px" alt="" />';
+    }
+  }
+  el.innerHTML = html + '<div class="pin"></div>';
+}
+
+// ── 描画 ─────────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function render() {
+  var grid = document.getElementById('grid');
+  if (!ITEMS.length) {
+    grid.innerHTML = '<p class="empty">自動採用候補がありません。' +
+      'scripts/coord-tool.html で手動確認してください。</p>';
+    updateCount();
+    return;
+  }
+  var html = '';
+  ITEMS.forEach(function (it, i) {
+    var far = it.distanceKm != null && it.distanceKm >= 2;
+    var distText = it.distanceKm == null
+      ? '座標未設定'
+      : it.distanceKm.toFixed(2) + 'km ズレ';
+    html +=
+      '<div class="card" id="card-' + i + '">' +
+        '<div class="thumb" id="thumb-' + i + '" title="クリックでGoogleマップ">' +
+          '<div class="thumb-badge' + (far ? ' far' : '') + '">' + esc(distText) + '</div>' +
+        '</div>' +
+        '<div class="body">' +
+          '<p class="meta">' + esc(it.prefecture) + ' · ' + esc(it.area) + ' · ' + esc(it.slug) + '</p>' +
+          '<h2 class="name">' + esc(it.name) + '</h2>' +
+          '<p class="osm">OSM: <b>' + esc(it.osmName) + '</b></p>' +
+          '<p class="coords">' + it.lat + ', ' + it.lng + '</p>' +
+          '<div class="row">' +
+            '<label class="check"><input type="checkbox" data-i="' + i + '" /> 採用する</label>' +
+            '<a class="gmap" target="_blank" rel="noopener noreferrer" ' +
+               'href="https://www.google.com/maps/search/?api=1&query=' + it.lat + ',' + it.lng + '">地図↗</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  });
+  grid.innerHTML = html;
+
+  ITEMS.forEach(function (it, i) {
+    buildThumb(document.getElementById('thumb-' + i), it.lat, it.lng);
+    document.getElementById('thumb-' + i).onclick = function () {
+      window.open('https://www.google.com/maps/search/?api=1&query=' + it.lat + ',' + it.lng, '_blank');
+    };
+    var cb = document.querySelector('input[data-i="' + i + '"]');
+    cb.checked = !rejected.has(it.slug);
+    cb.addEventListener('change', function () {
+      if (cb.checked) rejected.delete(it.slug);
+      else rejected.add(it.slug);
+      saveRejected();
+      syncCard(i);
+      updateCount();
+    });
+    syncCard(i);
+  });
+  updateCount();
+}
+
+function syncCard(i) {
+  var it = ITEMS[i];
+  var card = document.getElementById('card-' + i);
+  if (!card) return;
+  var on = !rejected.has(it.slug);
+  card.className = 'card ' + (on ? 'accepted' : 'rejected');
+}
+
+function updateCount() {
+  var on = ITEMS.filter(function (it) { return !rejected.has(it.slug); }).length;
+  document.getElementById('count').innerHTML =
+    '採用 <b>' + on + '</b> / 候補 ' + ITEMS.length + '件（除外 ' + (ITEMS.length - on) + '件）';
+}
+
+function setAll(accept) {
+  ITEMS.forEach(function (it) {
+    if (accept) rejected.delete(it.slug);
+    else rejected.add(it.slug);
+  });
+  saveRejected();
+  render();
+}
+
+// ── 操作 ─────────────────────────────────────────────────────────────────────
+document.getElementById('btn-all').onclick = function () { setAll(true); };
+document.getElementById('btn-none').onclick = function () { setAll(false); };
+document.getElementById('btn-far').onclick = function () {
+  ITEMS.forEach(function (it) {
+    if (it.distanceKm != null && it.distanceKm >= 2) rejected.add(it.slug);
+  });
+  saveRejected();
+  render();
+};
+document.getElementById('btn-reset').onclick = function () {
+  if (!confirm('レビュー状態（除外の記録）を消して全件チェック済みに戻します。よろしいですか？')) return;
+  rejected = new Set();
+  saveRejected();
+  render();
+};
+
+document.getElementById('btn-download').onclick = function () {
+  var out = ITEMS
+    .filter(function (it) { return !rejected.has(it.slug); })
+    .map(function (it) {
+      return { slug: it.slug, lat: it.lat, lng: it.lng, coordsVerified: true };
+    });
+  if (!out.length) { alert('採用対象が0件です。'); return; }
+  var blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'coords-fixed.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+};
+
+render();
+</script>
+</body>
+</html>

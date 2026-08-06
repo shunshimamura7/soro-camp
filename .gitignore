@@ -39,6 +39,10 @@ yarn-error.log*
 # cloudflare
 .wrangler/
 
+# 座標ツールの作業ファイル
+scripts/.overpass-cache.json
+scripts/coords-fixed.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
