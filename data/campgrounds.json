@@ -5779,8 +5779,9 @@
     "officialUrl": "",
     "reservationUrl": "",
     "season": "通年",
-    "soloComment": "西伊豆の海岸沿い、夕陽が駿河湾に沈む。波音と星の濃さは関東最強クラス。",
-    "lastVerified": "2025-01-01"
+    "soloComment": "※この施設の実在・正式名称を確認中です。西伊豆の海岸沿い、夕陽が駿河湾に沈む。波音と星の濃さは関東最強クラス。",
+    "lastVerified": "2025-01-01",
+    "needsVerify": true
   },
   {
     "id": "fujisan-genshijin",
@@ -7490,8 +7491,9 @@
     "officialUrl": "",
     "reservationUrl": "",
     "season": "通年",
-    "soloComment": "西伊豆堂ヶ島近く、駿河湾に沈む夕陽が絶品。トンボロ現象が見られる奇景の地。",
-    "lastVerified": "2026-05-28"
+    "soloComment": "※この施設の実在・正式名称を確認中です。西伊豆堂ヶ島近く、駿河湾に沈む夕陽が絶品。トンボロ現象が見られる奇景の地。",
+    "lastVerified": "2026-05-28",
+    "needsVerify": true
   },
   {
     "id": "kawanehon-camp",
@@ -8727,5 +8729,61 @@
     "soloComment": "相模川河川敷の市営サイト。桜の名所で春は花見キャンプができる。アクセスがよく設備も揃うが、静けさを求めるなら時期を外したい。",
     "tel": "042-760-6066",
     "lastVerified": ""
+  },
+  {
+    "id": "ugusu-camp",
+    "slug": "ugusu-camp",
+    "name": "宇久須キャンプ場",
+    "prefecture": "静岡",
+    "area": "西伊豆町",
+    "address": "静岡県賀茂郡西伊豆町宇久須",
+    "type": "campground",
+    "cautions": [
+      "サイトでの直火は禁止（焚き火台は可）",
+      "海岸でのバーベキューは不可",
+      "ペットの持ち込み不可",
+      "発電機・カラオケ禁止、花火は夜9時まで",
+      "車両乗入不可。駐車場から荷物を運ぶ必要あり"
+    ],
+    "lat": 0,
+    "lng": 0,
+    "priceMin": 2200,
+    "priceMax": 5500,
+    "priceNote": "＋駐車料金1台1,000円",
+    "scores": {
+      "quietness": 2,
+      "scenery": 5,
+      "value": 3,
+      "access": 3,
+      "facility": 4
+    },
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "焚き火台のみ。直火は禁止",
+      "pet": false,
+      "shower": true,
+      "showerNote": "温水シャワー",
+      "bath": false,
+      "toilet": "洋式",
+      "toiletNote": "水洗",
+      "carIn": false,
+      "carInNote": "車両乗入不可。駐車場から荷物を運搬",
+      "soloPlan": false,
+      "reservation": "要",
+      "convenience": false,
+      "shop": false,
+      "wifi": false,
+      "firewood": false,
+      "ice": false,
+      "alcohol": false,
+      "garbage": "",
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "要確認",
+    "soloComment": "伊豆半島最大の海岸公営キャンプ場。全長500mの遠浅海岸が目の前で、水平線に沈む夕陽が最大の魅力。1サイト5m×5mでソロには十分。車両乗入不可なので荷物運搬に注意。",
+    "officialUrl": "https://www.nishiizu-kankou.com/stay/ugusucanp",
+    "tel": null,
+    "lastVerified": "2026-08-06"
   }
 ]

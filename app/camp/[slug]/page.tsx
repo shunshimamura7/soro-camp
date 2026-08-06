@@ -161,6 +161,13 @@ export default async function CampDetailPage({
           </div>
         </div>
 
+        {/* 施設の同定そのものが未確定 — 情報の鮮度より重い警告なので先に出す */}
+        {camp.needsVerify && (
+          <p className="mb-3 rounded-xl border border-[#e8611f] bg-white px-3 py-2.5 text-[12px] sm:text-[13px] leading-relaxed text-[#e8611f]">
+            この施設は情報の裏取りが済んでいません。訪問前に必ず公式情報をご確認ください
+          </p>
+        )}
+
         {/* 情報の鮮度 */}
         {isUnverified ? (
           <p className="mb-5 sm:mb-6 rounded-xl border border-[#e8611f] bg-white px-3 py-2.5 text-[12px] sm:text-[13px] leading-relaxed text-[#e8611f]">

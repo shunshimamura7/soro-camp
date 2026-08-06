@@ -61,6 +61,11 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
             🚫 焚き火不可
           </span>
         )}
+        {camp.needsVerify && (
+          <span className="ml-2 align-middle inline-flex items-center shrink-0 px-2 py-0.5 rounded text-[10px] font-medium bg-[#f2f0ee] text-[#6b6560] border border-[#d8d3ce]">
+            要確認
+          </span>
+        )}
       </div>
 
       {/* 3. Price */}
