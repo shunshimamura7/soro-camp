@@ -14,8 +14,11 @@ const path = require('path');
 const DATA_PATH   = path.join(__dirname, '../data/campgrounds.json');
 const REPORT_PATH = path.join(__dirname, 'unverified-descriptions.md');
 
-// 「確認中である」ことを述べている文（＝断定ではない）
-const DISCLAIMER = /確認中|確認できていません|裏付けが取れていません|未確認|要確認|ご確認ください|可能性があります/;
+// 「確認中である」ことを述べている文（＝断定ではない）。
+// ※ で始まる文は編集上の断り書きなので、内容にかかわらず対象外とする
+// （「※家山は島田市川根町であり川根本町ではない。」のように、
+//   なぜ確認中なのかを説明する文が句点で分かれるため）。
+const DISCLAIMER = /^※|確認中|確認できていません|裏付けが取れていません|未確認|要確認|ご確認ください|可能性があります/;
 // 断定を避けている言い回し
 const HEDGE = /とされ|という|かもしれ|possibly|見込め|ようだ|らしい/;
 
