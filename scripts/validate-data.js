@@ -21,9 +21,14 @@ function calcSoloScore(s) {
 
 const camps = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
 
+// batch 一括投入時のプレースホルダ。実際の確認日ではないので未確認として数える
+const PLACEHOLDER_DATE = '2025-01-01';
+
 const errors = [];
 const warnings = [];
 let unsetCoords = 0;
+let placeholderVerified = 0;
+let emptyVerified = 0;
 
 // ── slug の重複 ─────────────────────────────────────────────────────────────
 const seen = new Map();
@@ -69,6 +74,10 @@ for (const c of camps) {
     errors.push(`${id}: prefecture "${c.prefecture}" は ${PREFECTURES.join('/')} のいずれでもない`);
   }
 
+  // ── lastVerified の鮮度（エラーにはしない） ──
+  if (c.lastVerified === PLACEHOLDER_DATE) placeholderVerified++;
+  else if (c.lastVerified == null || String(c.lastVerified).trim() === '') emptyVerified++;
+
   // ── lat/lng ──
   const latOk = typeof c.lat === 'number' && Number.isFinite(c.lat);
   const lngOk = typeof c.lng === 'number' && Number.isFinite(c.lng);
@@ -84,6 +93,11 @@ for (const c of camps) {
 // ── 結果 ────────────────────────────────────────────────────────────────────
 console.log(`validate-data: ${camps.length}件を検査`);
 console.log(`  座標未設定（lat/lng = 0）: ${unsetCoords}件`);
+console.log(`  lastVerified が ${PLACEHOLDER_DATE}（一括投入時のプレースホルダ＝未確認）: ${placeholderVerified}件`);
+console.log(`  lastVerified が空: ${emptyVerified}件`);
+if (placeholderVerified || emptyVerified) {
+  console.log(`  → 未確認 計${placeholderVerified + emptyVerified}件。詳細は node scripts/unverified-list.js`);
+}
 
 if (warnings.length) {
   console.log(`\n警告 ${warnings.length}件:`);

@@ -58,6 +58,17 @@ export type Campground = {
   reservationUrl?: string;
   tel?: string | null;
   telNote?: string;
+  /**
+   * 情報を最後に確認した日（YYYY-MM-DD）。
+   *
+   * - `"2025-01-01"` … batch 一括投入時に入れたプレースホルダ。**未確認**を意味し、
+   *   実際に確認した日ではない。二重登録として削除した2件はいずれもこの日付だった。
+   * - `""`（空） … 確認日を持たないもの（野営地など）。同じく未確認扱い。
+   * - それ以外の日付 … 実際に情報を確認した日。
+   *
+   * 未確認のものは詳細ページに注意書きを出す。件数は
+   * `node scripts/unverified-list.js` で洗い出せる。
+   */
   lastVerified: string;
   source?: string[];
 };

@@ -715,48 +715,6 @@
     "soloComment": "静岡市街から20分なのに1日3組限定、貸切サウナあり。夏は蛍が舞う。"
   },
   {
-    "id": "oyama-camp-gotemba",
-    "slug": "oyama-camp-gotemba",
-    "name": "大野山キャンプ場",
-    "prefecture": "静岡",
-    "area": "御殿場",
-    "lat": 35.33,
-    "lng": 138.97,
-    "priceMin": 2500,
-    "priceMax": 3500,
-    "scores": {
-      "quietness": 4,
-      "scenery": 4,
-      "value": 4,
-      "access": 4,
-      "facility": 3
-    },
-    "features": {
-      "bath": false,
-      "shower": true,
-      "wifi": false,
-      "carIn": true,
-      "soloPlan": false,
-      "reservation": "要",
-      "shop": false,
-      "firewood": true,
-      "ice": false,
-      "alcohol": false,
-      "bonfire": true,
-      "pet": true,
-      "toilet": "洋式",
-      "convenience": false,
-      "season": "通年",
-      "garbage": "",
-      "nearbySupermarket": "",
-      "nearbyShop": ""
-    },
-    "tel": "",
-    "officialUrl": "",
-    "reservationUrl": "",
-    "soloComment": "御殿場郊外、富士山ビューの中規模キャンプ場。"
-  },
-  {
     "id": "makigaya-auto",
     "slug": "makigaya-auto",
     "name": "牧ヶ谷オートキャンプ場",

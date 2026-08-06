@@ -85,6 +85,12 @@ export default async function CampDetailPage({
   const isWild = camp.type === "wild";
   const priceLabel = isWild ? "無料" : `¥${camp.priceMin.toLocaleString()}〜`;
 
+  // "2025-01-01" は一括投入時のプレースホルダなので確認済みとは扱わない
+  const isUnverified =
+    !camp.lastVerified ||
+    camp.lastVerified.trim() === "" ||
+    camp.lastVerified === "2025-01-01";
+
   const featureBadges: Array<[string, string]> = [];
   if (f.bath)     featureBadges.push(["bath",    "♨️ 風呂"]);
   if (f.shower)   featureBadges.push(["shower",  "🚿 シャワー"]);
@@ -136,6 +142,17 @@ export default async function CampDetailPage({
             <span className="text-slate-500 text-xs sm:text-sm">{camp.season}</span>
           </div>
         </div>
+
+        {/* 情報の鮮度 */}
+        {isUnverified ? (
+          <p className="mb-5 sm:mb-6 rounded-xl border border-[#e8611f] bg-white px-3 py-2.5 text-[12px] sm:text-[13px] leading-relaxed text-[#e8611f]">
+            この情報は未確認です。訪問前に公式サイト等でご確認ください
+          </p>
+        ) : (
+          <p className="mb-5 sm:mb-6 text-[11px] sm:text-xs text-[#9a8e84]">
+            最終確認: {camp.lastVerified}
+          </p>
+        )}
 
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
           {/* Left column */}
@@ -266,7 +283,7 @@ export default async function CampDetailPage({
                 <Row label="氷販売" value={f.ice ? "あり" : "なし"} />
                 <Row label="酒販売" value={f.alcohol ? "あり" : "なし"} />
                 {camp.closedDays && <Row label="定休日" value={camp.closedDays} />}
-                <Row label="情報確認日" value={camp.lastVerified || "未確認"} />
+                <Row label="情報確認日" value={isUnverified ? "未確認" : camp.lastVerified} />
               </div>
             </section>
           </div>

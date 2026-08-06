@@ -45,12 +45,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b border-slate-200 px-3 sm:px-4 py-2 sm:py-3 bg-white pt-[env(safe-area-inset-top)]">
           <div className="max-w-4xl mx-auto flex items-center gap-2 sm:gap-3">
             <span className="text-xl sm:text-2xl leading-none">🏕</span>
-            <div>
+            <div className="min-w-0 flex-1">
               <a href="/" className="text-slate-900 font-bold text-base sm:text-lg leading-none hover:text-blue-500 transition-colors">
                 ソロキャン羅針盤
               </a>
               <p className="text-xs text-slate-500 mt-0.5 hidden sm:block">神奈川・静岡・山梨 ソロキャンプ場ガイド</p>
             </div>
+            <a
+              href="/about"
+              className="shrink-0 inline-flex items-center min-h-[36px] px-3 rounded-lg border border-[#e2ddd8] text-[13px] text-[#5a4a3a] hover:border-[#e8611f] hover:text-[#e8611f] transition-colors"
+            >
+              スコアの見方
+            </a>
           </div>
         </header>
 

@@ -1,19 +1,19 @@
 # 情報欠損の棚卸し
 
-対象: 全 **188件** / チェック項目 6種
+対象: 全 **187件** / チェック項目 6種
 
-何らかの欠損があるもの: **188件**（欠損ゼロ: 0件）
+何らかの欠損があるもの: **187件**（欠損ゼロ: 0件）
 
 ## 項目別の欠損数
 
 | 項目 | 欠損数 | 割合 |
 | --- | --- | --- |
-| tel が空 | 120 | 63.8% |
-| officialUrl が空 | 148 | 78.7% |
-| reservationUrl が空 | 155 | 82.4% |
-| lastVerified が空/2026年以前 | 188 | 100.0% |
-| soloComment が80字未満 | 98 | 52.1% |
-| priceMin と priceMax が同値 | 23 | 12.2% |
+| tel が空 | 119 | 63.6% |
+| officialUrl が空 | 147 | 78.6% |
+| reservationUrl が空 | 154 | 82.4% |
+| lastVerified が空/2026年以前 | 187 | 100.0% |
+| soloComment が80字未満 | 97 | 51.9% |
+| priceMin と priceMax が同値 | 23 | 12.3% |
 
 ### lastVerified の内訳
 
@@ -23,7 +23,7 @@
 | --- | --- |
 | 空 | 9 |
 | 日付として不正 | 0 |
-| 2025年以前 | 35 |
+| 2025年以前 | 34 |
 | 2026年 | 144 |
 | 2027年以降 | 0 |
 
@@ -34,7 +34,7 @@
 | 県 | 件数 | 欠損ありの件数 | 平均欠損項目数 | 欠損率 |
 | --- | --- | --- | --- | --- |
 | 山梨 | 65 | 65 | 3.97 | 66.2% |
-| 静岡 | 62 | 62 | 3.94 | 65.6% |
+| 静岡 | 61 | 61 | 3.92 | 65.3% |
 | 神奈川 | 61 | 61 | 3.77 | 62.8% |
 
 ## エリア別の欠損率（欠損率の高い順）
@@ -53,7 +53,7 @@
 | 神奈川・湯河原 | 1 | 1 | 5.00 | 83.3% |
 | 神奈川・湯河原・海沿い | 1 | 1 | 5.00 | 83.3% |
 | 神奈川・津久井湖 | 1 | 1 | 5.00 | 83.3% |
-| 静岡・御殿場 | 4 | 4 | 5.00 | 83.3% |
+| 静岡・御殿場 | 3 | 3 | 5.00 | 83.3% |
 | 静岡・西伊豆 | 2 | 2 | 5.00 | 83.3% |
 | 静岡・静岡市 | 1 | 1 | 5.00 | 83.3% |
 | 静岡・静岡市葵区・井川 | 1 | 1 | 5.00 | 83.3% |
@@ -156,7 +156,6 @@
 | `nishiizu-seto` | 西伊豆せと海岸キャンプ場 | 静岡・西伊豆 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `magic-hour-camp` | magic hour | 静岡・静岡市清水区 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `kokono-shizuoka` | キャンプ場此処野静岡 | 静岡・静岡市葵区 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
-| `oyama-camp-gotemba` | 大野山キャンプ場 | 静岡・御殿場 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `makigaya-auto` | 牧ヶ谷オートキャンプ場 | 静岡・静岡市 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `marubi-auto` | 御殿場まるびオートキャンプ場 | 静岡・御殿場 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `ikawa-auto` | 井川オートキャンプ場 | 静岡・静岡市葵区・井川 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
