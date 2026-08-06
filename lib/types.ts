@@ -25,7 +25,6 @@ export type Campground = {
     access: number;
     facility: number;
   };
-  soloScore: number;
   features: {
     bonfire: boolean;
     bonfireNote?: string;

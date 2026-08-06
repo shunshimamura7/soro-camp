@@ -3,6 +3,25 @@ import data from "../data/campgrounds.json";
 
 export const campgrounds: Campground[] = data as Campground[];
 
+/**
+ * ソロ適性スコア。静けさと絶景を2倍で重み付けし、小数第1位に丸める。
+ *
+ *   (静けさ*2 + 絶景*2 + コスパ + アクセス + 設備) / 7
+ *
+ * 以前は JSON に soloScore を持たせていたが、scores と食い違っても
+ * 気づけないため計算に統一した（JSON からフィールドは削除済み）。
+ */
+export function calcSoloScore(scores: Campground["scores"]): number {
+  const raw =
+    (scores.quietness * 2 +
+      scores.scenery * 2 +
+      scores.value +
+      scores.access +
+      scores.facility) /
+    7;
+  return Math.round(raw * 10) / 10;
+}
+
 export function getCampground(slug: string): Campground | undefined {
   return campgrounds.find((c) => c.slug === slug);
 }
@@ -50,11 +69,11 @@ export function filterAndSort(
   result = [...result].sort((a, b) => {
     switch (sort) {
       case "soloScore":
-        return b.soloScore - a.soloScore;
+        return calcSoloScore(b.scores) - calcSoloScore(a.scores);
       case "priceAsc":
         return a.priceMin - b.priceMin;
       default:
-        return b.soloScore - a.soloScore;
+        return calcSoloScore(b.scores) - calcSoloScore(a.scores);
     }
   });
 

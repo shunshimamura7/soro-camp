@@ -16,7 +16,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.1,
     "features": {
       "bath": false,
       "shower": true,
@@ -59,7 +58,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.3,
     "features": {
       "bath": false,
       "shower": false,
@@ -102,7 +100,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": false,
@@ -145,7 +142,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bath": false,
       "shower": true,
@@ -188,7 +184,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -232,7 +227,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -275,7 +269,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -318,7 +311,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": false,
@@ -361,7 +353,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bath": false,
       "shower": true,
@@ -404,7 +395,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": false,
@@ -447,7 +437,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -490,7 +479,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.6,
     "features": {
       "bath": false,
       "shower": false,
@@ -533,7 +521,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -576,7 +563,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -619,7 +605,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4.1,
     "features": {
       "bath": false,
       "shower": true,
@@ -662,7 +647,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": false,
@@ -705,7 +689,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -748,7 +731,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -791,7 +773,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bath": false,
       "shower": true,
@@ -834,7 +815,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -877,7 +857,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -920,7 +899,6 @@
       "access": 1,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -963,7 +941,6 @@
       "access": 2,
       "facility": 2
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": false,
@@ -1006,7 +983,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bath": false,
       "shower": true,
@@ -1049,7 +1025,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -1092,7 +1067,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.9,
     "features": {
       "bath": true,
       "shower": true,
@@ -1135,7 +1109,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -1178,7 +1151,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -1221,7 +1193,6 @@
       "access": 2,
       "facility": 4
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -1264,7 +1235,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": true,
       "shower": true,
@@ -1307,7 +1277,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": true,
       "shower": true,
@@ -1350,7 +1319,6 @@
       "access": 2,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -1393,7 +1361,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": true,
       "shower": false,
@@ -1436,7 +1403,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -1479,7 +1445,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": true,
       "shower": true,

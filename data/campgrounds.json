@@ -19,7 +19,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -67,7 +66,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK・焚き火天国",
@@ -115,7 +113,6 @@
       "access": 2,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -165,7 +162,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -215,7 +211,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用・小さな火なら時間無制限",
@@ -264,7 +259,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須・芝生保護のため焚き火シート推奨",
@@ -315,7 +309,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -365,7 +358,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -414,7 +406,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK（貴重）",
@@ -464,7 +455,6 @@
       "access": 5,
       "facility": 5
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須・ウッドデッキ上禁止",
@@ -513,7 +503,6 @@
       "access": 3,
       "facility": 5
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -564,7 +553,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -613,7 +601,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -661,7 +648,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -711,7 +697,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須・直火禁止",
@@ -759,7 +744,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -807,7 +791,6 @@
       "access": 2,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -858,7 +841,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK（河川敷エリアは条件あり）",
@@ -905,7 +887,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -955,7 +936,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -1004,7 +984,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1052,7 +1031,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1098,7 +1076,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -1144,7 +1121,6 @@
       "access": 5,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1190,7 +1166,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -1237,7 +1212,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1282,7 +1256,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -1328,7 +1301,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": false,
       "bonfireNote": "焚き火不可（BBQコンロのみ）",
@@ -1374,7 +1346,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1418,7 +1389,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1462,7 +1432,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -1508,7 +1477,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -1554,7 +1522,6 @@
       "access": 2,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -1601,7 +1568,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -1648,7 +1614,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -1694,7 +1659,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1738,7 +1702,6 @@
       "access": 2,
       "facility": 2
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1783,7 +1746,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1829,7 +1791,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1873,7 +1834,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1917,7 +1877,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -1962,7 +1921,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -2008,7 +1966,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -2054,7 +2011,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4.4,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -2100,7 +2056,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -2146,7 +2101,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -2192,7 +2146,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -2238,7 +2191,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "pet": true,
@@ -2283,7 +2235,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -2328,7 +2279,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -2374,7 +2324,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -2421,7 +2370,6 @@
       "access": 3,
       "facility": 5
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -2468,7 +2416,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -2514,7 +2461,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -2560,7 +2506,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -2606,7 +2551,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -2652,7 +2596,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -2700,7 +2643,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -2746,7 +2688,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -2793,7 +2734,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -2838,7 +2778,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -2883,7 +2822,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 3.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -2929,7 +2867,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火OK",
@@ -2974,7 +2911,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3019,7 +2955,6 @@
       "access": 2,
       "facility": 2
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3065,7 +3000,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3112,7 +3046,6 @@
       "access": 2,
       "facility": 2
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3157,7 +3090,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3204,7 +3136,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3251,7 +3182,6 @@
       "access": 3,
       "facility": 5
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3298,7 +3228,6 @@
       "access": 2,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3343,7 +3272,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3390,7 +3318,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3435,7 +3362,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3480,7 +3406,6 @@
       "access": 2,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3526,7 +3451,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3573,7 +3497,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3619,7 +3542,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3664,7 +3586,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3709,7 +3630,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3754,7 +3674,6 @@
       "access": 2,
       "facility": 2
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3800,7 +3719,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3845,7 +3763,6 @@
       "access": 4,
       "facility": 2
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3890,7 +3807,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -3935,7 +3851,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -3982,7 +3897,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -4028,7 +3942,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -4074,7 +3987,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -4120,7 +4032,6 @@
       "access": 3,
       "facility": 5
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -4167,7 +4078,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -4214,7 +4124,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -4261,7 +4170,6 @@
       "access": 5,
       "facility": 5
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -4308,7 +4216,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -4353,7 +4260,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -4399,7 +4305,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -4445,7 +4350,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -4490,7 +4394,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -4535,7 +4438,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
@@ -4580,7 +4482,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -4625,7 +4526,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
@@ -4670,7 +4570,6 @@
       "access": 5,
       "facility": 3
     },
-    "soloScore": 3.3,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -4716,7 +4615,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -4761,7 +4659,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -4806,7 +4703,6 @@
       "access": 4,
       "facility": 5
     },
-    "soloScore": 3.3,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -4852,7 +4748,6 @@
       "access": 2,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -4898,7 +4793,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -4943,7 +4837,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -4988,7 +4881,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -5032,7 +4924,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -5077,7 +4968,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.9,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -5122,7 +5012,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -5168,7 +5057,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -5212,7 +5100,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -5257,7 +5144,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bonfire": true,
       "pet": false,
@@ -5300,7 +5186,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.1,
     "features": {
       "bath": false,
       "shower": true,
@@ -5344,7 +5229,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.3,
     "features": {
       "bath": false,
       "shower": false,
@@ -5389,7 +5273,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": false,
@@ -5434,7 +5317,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bath": false,
       "shower": true,
@@ -5479,7 +5361,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -5524,7 +5405,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -5568,7 +5448,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -5612,7 +5491,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": false,
@@ -5657,7 +5535,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bath": false,
       "shower": true,
@@ -5701,7 +5578,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": false,
@@ -5745,7 +5621,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -5790,7 +5665,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.6,
     "features": {
       "bath": false,
       "shower": false,
@@ -5835,7 +5709,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -5879,7 +5752,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -5924,7 +5796,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4.1,
     "features": {
       "bath": false,
       "shower": true,
@@ -5969,7 +5840,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": false,
@@ -6014,7 +5884,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -6058,7 +5927,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -6102,7 +5970,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bath": false,
       "shower": true,
@@ -6147,7 +6014,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -6192,7 +6058,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -6237,7 +6102,6 @@
       "access": 1,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -6281,7 +6145,6 @@
       "access": 2,
       "facility": 2
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": false,
@@ -6325,7 +6188,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.6,
     "features": {
       "bath": false,
       "shower": true,
@@ -6370,7 +6232,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -6415,7 +6276,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.9,
     "features": {
       "bath": true,
       "shower": true,
@@ -6460,7 +6320,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -6505,7 +6364,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -6550,7 +6408,6 @@
       "access": 2,
       "facility": 4
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -6595,7 +6452,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": true,
       "shower": true,
@@ -6640,7 +6496,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": true,
       "shower": true,
@@ -6685,7 +6540,6 @@
       "access": 2,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -6730,7 +6584,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": true,
       "shower": false,
@@ -6775,7 +6628,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -6820,7 +6672,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": true,
       "shower": true,
@@ -6865,7 +6716,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": false,
@@ -6910,7 +6760,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -6955,7 +6804,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": false,
@@ -7000,7 +6848,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -7044,7 +6891,6 @@
       "access": 3,
       "facility": 2
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": false,
@@ -7089,7 +6935,6 @@
       "access": 4,
       "facility": 2
     },
-    "soloScore": 3.3,
     "features": {
       "bath": false,
       "shower": false,
@@ -7133,7 +6978,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -7177,7 +7021,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -7221,7 +7064,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -7265,7 +7107,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -7310,7 +7151,6 @@
       "access": 4,
       "facility": 3
     },
-    "soloScore": 4.1,
     "features": {
       "bath": false,
       "shower": false,
@@ -7355,7 +7195,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bath": false,
       "shower": true,
@@ -7400,7 +7239,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": false,
@@ -7444,7 +7282,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -7489,7 +7326,6 @@
       "access": 2,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -7533,7 +7369,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -7577,7 +7412,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -7621,7 +7455,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.4,
     "features": {
       "bath": false,
       "shower": true,
@@ -7665,7 +7498,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": true,
@@ -7709,7 +7541,6 @@
       "access": 2,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": false,
@@ -7754,7 +7585,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -7799,7 +7629,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -7843,7 +7672,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": false,
@@ -7888,7 +7716,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -7933,7 +7760,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -7978,7 +7804,6 @@
       "access": 4,
       "facility": 4
     },
-    "soloScore": 3.7,
     "features": {
       "bath": false,
       "shower": true,
@@ -8022,7 +7847,6 @@
       "access": 3,
       "facility": 4
     },
-    "soloScore": 4,
     "features": {
       "bath": true,
       "shower": true,
@@ -8066,7 +7890,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4.1,
     "features": {
       "bath": false,
       "shower": true,
@@ -8110,7 +7933,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 4,
     "features": {
       "bath": false,
       "shower": false,
@@ -8155,7 +7977,6 @@
       "access": 2,
       "facility": 3
     },
-    "soloScore": 3.9,
     "features": {
       "bath": false,
       "shower": true,
@@ -8192,8 +8013,10 @@
     "type": "wild",
     "cautions": [
       "直火禁止（焚き火台必須）",
-      "増水時は立入危険",
-      "ゴミ完全持ち帰り"
+      "トイレ・水場なし（田代運動公園の設備が使えるかは要現地確認）",
+      "増水時は立入危険。上流の降雨でも急増水することがある",
+      "ゴミは完全持ち帰り",
+      "無料開放のため、マナー違反により閉鎖・規制強化の恐れあり"
     ],
     "lat": 35.5242086,
     "lng": 139.2880469,
@@ -8208,7 +8031,6 @@
       "access": 4,
       "facility": 1
     },
-    "soloScore": 3,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
@@ -8244,8 +8066,10 @@
     "type": "wild",
     "cautions": [
       "直火禁止（焚き火台必須）",
-      "増水時は立入危険",
-      "ゴミ完全持ち帰り"
+      "簡易トイレあり。水場なし（設置状況は要現地確認）",
+      "増水時は立入危険。上流の降雨でも急増水することがある",
+      "ゴミは完全持ち帰り",
+      "無料開放のため、マナー違反により閉鎖・規制強化の恐れあり"
     ],
     "lat": 35.526353,
     "lng": 139.3002288,
@@ -8260,7 +8084,6 @@
       "access": 4,
       "facility": 2
     },
-    "soloScore": 3.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
@@ -8296,8 +8119,10 @@
     "type": "wild",
     "cautions": [
       "直火禁止（焚き火台必須）",
-      "増水時は立入危険",
-      "ゴミ完全持ち帰り"
+      "トイレ・水場なし",
+      "増水時は立入危険。上流の降雨でも急増水することがある",
+      "ゴミは完全持ち帰り",
+      "無料開放のため、マナー違反により閉鎖・規制強化の恐れあり"
     ],
     "lat": 35.5118809,
     "lng": 139.329662,
@@ -8312,7 +8137,6 @@
       "access": 4,
       "facility": 1
     },
-    "soloScore": 2.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
@@ -8347,9 +8171,11 @@
     "address": "神奈川県三浦市初声町和田",
     "type": "wild",
     "cautions": [
-      "海岸は原則直火禁止",
-      "増水・高波時は立入危険",
-      "ゴミ完全持ち帰り"
+      "海岸は原則直火禁止（焚き火台と養生シート必須）",
+      "トイレ・水場なし（周辺の公衆トイレの有無は要現地確認）",
+      "高波・強風時は立入危険。満潮時の浸水にも注意",
+      "ゴミは完全持ち帰り",
+      "海水浴シーズンは利用制限の可能性あり。要現地確認"
     ],
     "lat": 35.1906528,
     "lng": 139.6148426,
@@ -8364,7 +8190,6 @@
       "access": 3,
       "facility": 1
     },
-    "soloScore": 3,
     "features": {
       "bonfire": true,
       "bonfireNote": "原則直火禁止・焚き火台必須",
@@ -8400,10 +8225,12 @@
     "address": "山梨県甲府市",
     "type": "wild",
     "cautions": [
+      "直火の可否は要現地確認（焚き火台持参が無難）",
       "トイレ・水道なし",
-      "熊の出没注意",
-      "上級者向け",
-      "甲府市の無料開放。マナー違反で閉鎖の恐れ"
+      "熊の出没注意。落石・倒木の恐れもあり、悪天時は入山を避ける",
+      "ゴミは完全持ち帰り",
+      "甲府市の無料開放。マナー違反で閉鎖の恐れ",
+      "上級者向け"
     ],
     "lat": 35.8195963,
     "lng": 138.5988191,
@@ -8418,7 +8245,6 @@
       "access": 2,
       "facility": 1
     },
-    "soloScore": 3.2,
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須（要現地確認）",
@@ -8455,8 +8281,10 @@
     "cautions": [
       "正式名称・営業状況とも未確認。要現地確認",
       "直火禁止（焚き火台必須）",
-      "増水時は立入危険",
-      "ゴミ完全持ち帰り"
+      "水場・男女別トイレあり（現況は要現地確認）",
+      "渓谷沿いのため増水・落石に注意",
+      "ゴミは完全持ち帰り",
+      "営業状況が未確認。閉鎖・有料化の可能性あり"
     ],
     "lat": 35.5044711,
     "lng": 138.3990002,
@@ -8471,7 +8299,6 @@
       "access": 2,
       "facility": 2
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
@@ -8507,10 +8334,13 @@
     "address": "静岡県静岡市葵区",
     "type": "wild",
     "cautions": [
-      "管理棟・受付なし",
+      "直火禁止（焚き火台必須）",
+      "トイレ・水場なし。管理棟・受付もなし",
+      "増水・落石などの地形リスクは要現地確認",
+      "ゴミは完全持ち帰り",
+      "管理者不在の無料開放。閉鎖・有料化の可能性あり",
       "売店・薪なし、全て持参",
-      "場所により四駆でないと乗り入れ不可",
-      "ゴミ完全持ち帰り"
+      "場所により四駆でないと乗り入れ不可"
     ],
     "lat": 35.1193587,
     "lng": 138.4512288,
@@ -8525,7 +8355,6 @@
       "access": 2,
       "facility": 1
     },
-    "soloScore": 3,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
@@ -8562,7 +8391,10 @@
     "type": "wild",
     "cautions": [
       "直火禁止（焚き火台必須）",
-      "ゴミ完全持ち帰り"
+      "洋式トイレあり。水場の有無は要現地確認",
+      "増水・落石などの地形リスクは要現地確認",
+      "ゴミは完全持ち帰り",
+      "公園の運営方針により利用制限・有料化の可能性あり。要現地確認"
     ],
     "lat": 35.1190432,
     "lng": 138.4282826,
@@ -8577,7 +8409,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.4,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
@@ -8617,7 +8448,12 @@
       "要事前予約（伊東市民体育センター）",
       "管理人不在・解錠施錠は利用者",
       "酒類持込禁止",
-      "ゴミ完全持ち帰り"
+      "直火禁止（焚き火台必須）",
+      "洋式トイレあり。水場の有無は要現地確認",
+      "地形リスクは要現地確認",
+      "ゴミは完全持ち帰り",
+      "伊東市営のため運用変更・有料化の可能性あり",
+      "座標が未確定。場所は要現地確認"
     ],
     "lat": 0,
     "lng": 0,
@@ -8631,7 +8467,6 @@
       "access": 3,
       "facility": 3
     },
-    "soloScore": 3.8,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
