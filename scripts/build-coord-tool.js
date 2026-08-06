@@ -46,12 +46,17 @@ if (usePending) {
     process.exit(1);
   }
   const result = JSON.parse(fs.readFileSync(AUTO_RESULT, 'utf-8'));
+  const toSlug = x => (typeof x === 'string' ? x : x.slug);
+  // fetchFailed は「照合できなかった」だけなので手動対象には含めない
+  // （--retry-failed で取り直すのが先）
   const pending = new Set([
-    ...(result.notFound || []),
-    ...(result.ambiguous || []).map(a => (typeof a === 'string' ? a : a.slug)),
+    ...(result.notFound || []).map(toSlug),
+    ...(result.ambiguous || []).map(toSlug),
   ]);
   targets = targets.filter(c => pending.has(c.slug));
   filterLabel = `--pending（notFound ${(result.notFound || []).length} + ambiguous ${(result.ambiguous || []).length}）`;
+  const ff = (result.fetchFailed || []).length;
+  if (ff) console.log(`注意: fetchFailed ${ff}件は未照合のため除外しています。先に --retry-failed を実行してください。`);
 } else if (slugsArg) {
   const want = new Set(slugsArg);
   const missing = slugsArg.filter(s => !camps.some(c => c.slug === s));
