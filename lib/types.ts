@@ -34,7 +34,9 @@ export type Campground = {
     showerNote?: string;
     bath: boolean;
     bathNote?: string;
-    toilet: "和式" | "洋式" | "ウォシュレット" | "温水便座" | "簡易" | "なし";
+    /** "不明" は「トイレはあるが様式が未確認」。無いことが確認できていれば "なし"。 */
+    toilet: "和式" | "洋式" | "ウォシュレット" | "温水便座" | "簡易" | "なし" | "不明";
+    toiletNote?: string;
     carIn: boolean;
     carInNote?: string;
     soloPlan: boolean;
@@ -45,6 +47,7 @@ export type Campground = {
     shop: boolean;
     wifi?: boolean;
     firewood: boolean;
+    firewoodNote?: string;
     ice: boolean;
     alcohol: boolean;
     garbage: string;

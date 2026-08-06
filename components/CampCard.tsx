@@ -19,6 +19,8 @@ type Props = { camp: Campground; bathFilterActive?: boolean };
 export default function CampCard({ camp, bathFilterActive = false }: Props) {
   const tags = getFeatureTags(camp.features, bathFilterActive);
   const isWild = camp.type === "wild";
+  // 野営地は無料。管理施設で価格が 0/0 のものは未調査なので priceNote を出す
+  const priceUnknown = !isWild && camp.priceMin === 0 && camp.priceMax === 0;
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     camp.name + " " + (camp.address ?? "")
   )}`;
@@ -54,9 +56,9 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
       <div className="px-4 pb-3">
         <div className="flex items-baseline gap-1.5">
           <span className="font-['JetBrains_Mono',monospace] text-[20px] font-bold text-[#2a6e3f]">
-            {isWild ? "無料" : `¥${camp.priceMin.toLocaleString()}〜`}
+            {isWild ? "無料" : priceUnknown ? (camp.priceNote || "要問合せ") : `¥${camp.priceMin.toLocaleString()}〜`}
           </span>
-          {!isWild && camp.priceNote && (
+          {!isWild && !priceUnknown && camp.priceNote && (
             <span className="text-[12px] text-[#9a8e84] truncate max-w-[140px]">
               {camp.priceNote}
             </span>

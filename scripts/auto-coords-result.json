@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T09:56:03.927Z",
+  "generatedAt": "2026-08-06T11:01:46.841Z",
   "auto": [
     {
       "slug": "naminokomura",
@@ -26,29 +26,26 @@
       "distanceKm": 4.64,
       "currentLat": 35.38,
       "currentLng": 138.555
+    },
+    {
+      "slug": "kamioshima-camp",
+      "name": "上大島キャンプ場",
+      "prefecture": "神奈川",
+      "area": "相模原市緑区",
+      "lat": 35.5749159,
+      "lng": 139.3108432,
+      "osmName": "上大島キャンプ場",
+      "osmId": "node/2138415181",
+      "distanceKm": null,
+      "currentLat": 0,
+      "currentLng": 0
     }
   ],
   "ambiguous": [],
   "notFound": [
     {
-      "slug": "doshigawa-kanko-noen",
-      "name": "道志村観光農園オートキャンプ場"
-    },
-    {
       "slug": "marutamura-camp",
       "name": "丸太村キャンプ場"
-    },
-    {
-      "slug": "tiny-camp-village",
-      "name": "TINY CAMP VILLAGE"
-    },
-    {
-      "slug": "hinata-camp",
-      "name": "日向キャンプ場"
-    },
-    {
-      "slug": "okuyugawara-auto",
-      "name": "奥湯河原オートキャンプ場"
     },
     {
       "slug": "doshi-fureainomori",
@@ -59,10 +56,6 @@
       "name": "玄倉キャンプ場"
     },
     {
-      "slug": "hayatogawa-masu",
-      "name": "早戸川国際マス釣場キャンプ場"
-    },
-    {
       "slug": "yakeyamazawa-shinpukuji",
       "name": "焼山沢真福寺キャンプ場"
     },
@@ -71,48 +64,12 @@
       "name": "城山ふれあいの里"
     },
     {
-      "slug": "mountkan-kannogawa",
-      "name": "西丹沢マウントカンキャンプ場"
-    },
-    {
-      "slug": "nelo-gotemba",
-      "name": "NELOキャンプ場御殿場"
-    },
-    {
       "slug": "nishiizu-seto",
       "name": "西伊豆せと海岸キャンプ場"
     },
     {
-      "slug": "fujisan-genshijin",
-      "name": "富士山オートキャンプ場GENSHIJIN"
-    },
-    {
-      "slug": "magic-hour-camp",
-      "name": "magic hour"
-    },
-    {
-      "slug": "kokono-shizuoka",
-      "name": "キャンプ場此処野静岡"
-    },
-    {
-      "slug": "oyama-camp-gotemba",
-      "name": "大野山キャンプ場"
-    },
-    {
       "slug": "makigaya-auto",
       "name": "牧ヶ谷オートキャンプ場"
-    },
-    {
-      "slug": "granpapa-solo-bocchi",
-      "name": "富士山GranPapaソロぼっち区画サイト"
-    },
-    {
-      "slug": "marubi-auto",
-      "name": "御殿場まるびオートキャンプ場"
-    },
-    {
-      "slug": "ikawa-auto",
-      "name": "井川オートキャンプ場"
     },
     {
       "slug": "sessokyo-camp",
@@ -123,72 +80,8 @@
       "name": "南アルプスオートキャンプ場"
     },
     {
-      "slug": "doshi-minamoto-camp",
-      "name": "道志みなもとキャンプ"
-    },
-    {
-      "slug": "yamanakako-minami-auto",
-      "name": "山中湖みなみオートキャンプ場"
-    },
-    {
-      "slug": "camp-akaike",
-      "name": "キャンプアカイケ"
-    },
-    {
-      "slug": "tsukiyono-doshi-camp",
-      "name": "月夜野キャンプ場"
-    },
-    {
-      "slug": "ecopa-inagako",
-      "name": "エコパ伊奈ヶ湖"
-    },
-    {
-      "slug": "village-hakushu",
-      "name": "ヴィレッヂ白州"
-    },
-    {
-      "slug": "hananomori-camp",
-      "name": "花の森オートキャンピア"
-    },
-    {
-      "slug": "flora-campsite",
-      "name": "FLORA Campsite"
-    },
-    {
-      "slug": "shinozawa-ootaki-camp",
-      "name": "篠沢大滝キャンプ場"
-    },
-    {
-      "slug": "oishii-camp",
-      "name": "おいしいキャンプ場"
-    },
-    {
-      "slug": "shimobe-yurucamp-sato",
-      "name": "道の駅しもべ オートキャンプ場〜ゆるキャン△の里〜"
-    },
-    {
-      "slug": "hayato-hakone",
-      "name": "HAYATO 箱根キャンプ場"
-    },
-    {
-      "slug": "bushcraft-shonan",
-      "name": "BUSHCRAFT湘南"
-    },
-    {
-      "slug": "akiyamagawa-camp",
-      "name": "秋山川キャンプ場"
-    },
-    {
-      "slug": "hachibanaen-miroku",
-      "name": "蜂花苑ミロクキャンプ場"
-    },
-    {
       "slug": "oyama-kogen-camp",
       "name": "大野山高原キャンプ場"
-    },
-    {
-      "slug": "nakatsugawa-camp",
-      "name": "中津川キャンプ場"
     },
     {
       "slug": "tanzawako-roadside-camp",
@@ -207,24 +100,8 @@
       "name": "秦野渓谷キャンプ場"
     },
     {
-      "slug": "otome-forest-camp",
-      "name": "乙女森林公園第1キャンプ場"
-    },
-    {
-      "slug": "recamp-fuji-speedway",
-      "name": "RECAMP富士スピードウェイ"
-    },
-    {
-      "slug": "camp-bean-izu",
-      "name": "CAMP BEAN"
-    },
-    {
       "slug": "shizunami-beach-camp",
       "name": "静波海岸キャンプサイト"
-    },
-    {
-      "slug": "ginga-momiji-camp",
-      "name": "銀河もみじキャンプ場"
     },
     {
       "slug": "fuji-international-camp",
@@ -243,28 +120,8 @@
       "name": "川根本町家山キャンプ場"
     },
     {
-      "slug": "fujimangan-village",
-      "name": "富士満願ビレッジファミリーキャンプ場"
-    },
-    {
-      "slug": "nagomino-sato-tsuru",
-      "name": "和みの里オートキャンプ場"
-    },
-    {
       "slug": "takaranoyama-fureai",
       "name": "宝の山ふれあいの里キャンプ場"
-    },
-    {
-      "slug": "doshi-mori-cottage",
-      "name": "道志・森のコテージ"
-    },
-    {
-      "slug": "sports-train-aokigahara",
-      "name": "SPORTS TRAIN"
-    },
-    {
-      "slug": "kirara-yamanakako",
-      "name": "山中湖交流プラザきらら"
     },
     {
       "slug": "fuji-midori-kyuka-auto",
@@ -279,81 +136,61 @@
       "name": "南部キャンプ場"
     },
     {
-      "slug": "hayakawa-camp",
-      "name": "早川オートキャンプ場"
-    },
-    {
-      "slug": "nakatsugawa-kasenjiki",
-      "name": "中津川河川敷（田代運動公園）"
-    },
-    {
-      "slug": "sumida-ohashi-kasenjiki",
-      "name": "角田大橋河川敷"
-    },
-    {
-      "slug": "hasugebashi-kasenjiki",
-      "name": "八菅橋河川敷"
-    },
-    {
-      "slug": "wadanagahama-kaigan",
-      "name": "和田長浜海岸"
-    },
-    {
-      "slug": "kofu-shinrinyoku-hiroba",
-      "name": "甲府市 森林浴広場"
-    },
-    {
-      "slug": "ogayanagawa-keikoku",
-      "name": "大柳川渓谷キャンプ場"
-    },
-    {
-      "slug": "tsuchimura",
-      "name": "土村キャンプ場"
-    },
-    {
-      "slug": "kurokawa-shizuoka",
-      "name": "黒川キャンプ場（清水森林公園）"
-    },
-    {
       "slug": "omuroyama-camp",
       "name": "大室山キャンプ場（伊東市営）"
+    },
+    {
+      "slug": "ogurabashi-kasenjiki",
+      "name": "小倉橋河川敷"
+    },
+    {
+      "slug": "takadabashi-kasenjiki",
+      "name": "高田橋河川敷"
+    },
+    {
+      "slug": "nishizato-camp-tekichi",
+      "name": "西里キャンプ適地"
+    },
+    {
+      "slug": "numazu-shimin-no-mori",
+      "name": "沼津市民の森"
     }
   ],
   "fetchFailed": [],
   "requestStats": {
-    "requests": 8,
-    "success": 3,
-    "http429": 1,
-    "http504": 4,
+    "requests": 0,
+    "success": 0,
+    "http429": 0,
+    "http504": 0,
     "otherHttp": 0,
     "timeouts": 0,
     "networkErrors": 0,
     "exhausted": 0,
-    "cacheHits": 0,
+    "cacheHits": 3,
     "byEndpoint": {
       "overpass-api.de": {
-        "tried": 4,
-        "ok": 2,
-        "http429": 1,
-        "http504": 1,
+        "tried": 0,
+        "ok": 0,
+        "http429": 0,
+        "http504": 0,
         "otherHttp": 0,
         "timeout": 0,
         "networkError": 0
       },
       "overpass.kumi.systems": {
-        "tried": 2,
+        "tried": 0,
         "ok": 0,
         "http429": 0,
-        "http504": 2,
+        "http504": 0,
         "otherHttp": 0,
         "timeout": 0,
         "networkError": 0
       },
       "overpass.private.coffee": {
-        "tried": 2,
-        "ok": 1,
+        "tried": 0,
+        "ok": 0,
         "http429": 0,
-        "http504": 1,
+        "http504": 0,
         "otherHttp": 0,
         "timeout": 0,
         "networkError": 0

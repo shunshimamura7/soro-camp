@@ -22,7 +22,9 @@ export async function generateMetadata({
   const description =
     camp.type === "wild"
       ? `${camp.soloComment} 無料。${camp.season}。`
-      : `${camp.soloComment} 最安値${camp.priceMin.toLocaleString()}円〜。${camp.season}営業。`;
+      : camp.priceMin === 0 && camp.priceMax === 0
+        ? `${camp.soloComment} 料金は要問合せ。${camp.season}営業。`
+        : `${camp.soloComment} 最安値${camp.priceMin.toLocaleString()}円〜。${camp.season}営業。`;
 
   return {
     title,
@@ -78,12 +80,22 @@ export default async function CampDetailPage({
       : {}),
     ...(camp.tel ? { telephone: camp.tel } : {}),
     ...(camp.officialUrl ? { url: camp.officialUrl } : {}),
-    priceRange: `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}`,
+    // 野営地は無料、価格未調査（0/0）は priceRange を出さない
+    ...(camp.type === "wild"
+      ? { priceRange: "0" }
+      : camp.priceMin === 0 && camp.priceMax === 0
+        ? {}
+        : { priceRange: `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}` }),
   };
 
   const f = camp.features;
   const isWild = camp.type === "wild";
-  const priceLabel = isWild ? "無料" : `¥${camp.priceMin.toLocaleString()}〜`;
+  const priceUnknown = !isWild && camp.priceMin === 0 && camp.priceMax === 0;
+  const priceLabel = isWild
+    ? "無料"
+    : priceUnknown
+      ? (camp.priceNote || "要問合せ")
+      : `¥${camp.priceMin.toLocaleString()}〜`;
 
   // "2025-01-01" は一括投入時のプレースホルダなので確認済みとは扱わない
   const isUnverified =
@@ -269,17 +281,17 @@ export default async function CampDetailPage({
             <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-1">施設情報</h2>
               <div>
-                <Row label="料金" value={isWild ? "無料" : `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`} />
+                <Row label="料金" value={isWild ? "無料" : priceUnknown ? (camp.priceNote || "要問合せ") : `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`} />
                 <Row label="営業期間" value={camp.season} />
                 <Row label="予約" value={`${f.reservation}${f.reservationNote ? `（${f.reservationNote}）` : ""}`} />
                 <Row label="焚き火" value={f.bonfire ? `可${f.bonfireNote ? `（${f.bonfireNote}）` : ""}` : "不可"} />
                 <Row label="シャワー" value={f.shower ? `あり${f.showerNote ? `（${f.showerNote}）` : ""}` : "なし"} />
                 <Row label="風呂" value={f.bath ? `あり${f.bathNote ? `（${f.bathNote}）` : ""}` : "なし"} />
-                <Row label="トイレ" value={f.toilet} />
+                <Row label="トイレ" value={`${f.toilet}${f.toiletNote ? `（${f.toiletNote}）` : ""}`} />
                 <Row label="車横付け" value={f.carIn ? `可${f.carInNote ? `（${f.carInNote}）` : ""}` : `不可${f.carInNote ? `（${f.carInNote}）` : ""}`} />
                 <Row label="ソロプラン" value={f.soloPlan ? `あり${f.soloPlanNote ? `（${f.soloPlanNote}）` : ""}` : "なし"} />
                 <Row label="Wi-Fi" value={f.wifi ? "あり" : "なし"} />
-                <Row label="薪販売" value={f.firewood ? "あり" : "なし"} />
+                <Row label="薪" value={f.firewood ? `あり${f.firewoodNote ? `（${f.firewoodNote}）` : ""}` : "なし"} />
                 <Row label="氷販売" value={f.ice ? "あり" : "なし"} />
                 <Row label="酒販売" value={f.alcohol ? "あり" : "なし"} />
                 {camp.closedDays && <Row label="定休日" value={camp.closedDays} />}
