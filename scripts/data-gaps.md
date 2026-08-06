@@ -12,7 +12,7 @@
 | officialUrl が空 | 155 | 75.6% |
 | reservationUrl が空 | 171 | 83.4% |
 | lastVerified が空/2026年以前 | 205 | 100.0% |
-| soloComment が80字未満 | 114 | 55.6% |
+| soloComment が80字未満 | 113 | 55.1% |
 | priceMin と priceMax が同値 | 40 | 19.5% |
 
 ### lastVerified の内訳
@@ -34,7 +34,7 @@
 | 県 | 件数 | 欠損ありの件数 | 平均欠損項目数 | 欠損率 |
 | --- | --- | --- | --- | --- |
 | 山梨 | 71 | 71 | 4.07 | 67.8% |
-| 静岡 | 70 | 70 | 3.97 | 66.2% |
+| 静岡 | 70 | 70 | 3.96 | 66.0% |
 | 神奈川 | 64 | 64 | 3.80 | 63.3% |
 
 ## エリア別の欠損率（欠損率の高い順）
@@ -56,7 +56,6 @@
 | 神奈川・湯河原・海沿い | 1 | 1 | 5.00 | 83.3% |
 | 神奈川・津久井湖 | 1 | 1 | 5.00 | 83.3% |
 | 静岡・御殿場 | 3 | 3 | 5.00 | 83.3% |
-| 静岡・西伊豆 | 2 | 2 | 5.00 | 83.3% |
 | 静岡・静岡市 | 1 | 1 | 5.00 | 83.3% |
 | 静岡・静岡市葵区・井川 | 1 | 1 | 5.00 | 83.3% |
 | 山梨・精進湖近く | 1 | 1 | 5.00 | 83.3% |
@@ -78,6 +77,7 @@
 | 静岡・沼津市 | 1 | 1 | 5.00 | 83.3% |
 | 静岡・川根本町 | 9 | 9 | 4.56 | 75.9% |
 | 神奈川・相模原 | 4 | 4 | 4.50 | 75.0% |
+| 静岡・西伊豆 | 2 | 2 | 4.50 | 75.0% |
 | 山梨・南アルプス | 3 | 3 | 4.33 | 72.2% |
 | 山梨・北杜 | 6 | 6 | 4.33 | 72.2% |
 | 静岡・富士宮 | 6 | 6 | 4.17 | 69.4% |
@@ -160,7 +160,6 @@
 | `shiroyama-fureainosato` | 城山ふれあいの里 | 神奈川・津久井湖 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `mountkan-kannogawa` | 西丹沢マウントカンキャンプ場 | 神奈川・西丹沢 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `nelo-gotemba` | NELOキャンプ場御殿場 | 静岡・御殿場 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
-| `nishiizu-seto` | 西伊豆せと海岸キャンプ場 | 静岡・西伊豆 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `magic-hour-camp` | magic hour | 静岡・静岡市清水区 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `kokono-shizuoka` | キャンプ場此処野静岡 | 静岡・静岡市葵区 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `makigaya-auto` | 牧ヶ谷オートキャンプ場 | 静岡・静岡市 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
@@ -260,6 +259,7 @@
 | `asagiri-foodpark` | あさぎりフードパークキャンプ場 | 静岡・朝霧高原 | 4 | tel が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `folkwood-yatsugatake` | FOLKWOOD VILLAGE 八ヶ岳 | 山梨・八ヶ岳・小淵沢 | 4 | tel が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `yamaboshi-camp` | キャンプ村やまぼうし | 山梨・道志村 | 4 | officialUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
+| `nishiizu-seto` | 西伊豆せと海岸キャンプ場 | 静岡・西伊豆 | 4 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前 |
 | `fujisan-genshijin` | 富士山オートキャンプ場GENSHIJIN | 静岡・富士宮 | 4 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `granpapa-solo-bocchi` | 富士山GranPapaソロぼっち区画サイト | 静岡・富士宮 | 4 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `shinozawa-ootaki-camp` | 篠沢大滝キャンプ場 | 山梨・北杜・南アルプス | 4 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |

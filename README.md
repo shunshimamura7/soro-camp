@@ -29,6 +29,32 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## データ記述のルール
+
+### soloComment に順位・ランクの主張を書かない
+
+「日本一」「最高峰」「随一」「屈指」「全国第N位」といった順位・ランクの主張は、
+出典を示せない限り書かない。代わりに**観測できる事実**を書く。
+
+```
+✗ 遮るものが何もない広大な草原と富士山の全景は国内最高峰クラスの絶景。
+○ 遮るものが何もない広大な草原の正面に富士山が立つ。
+
+✗ 晴れた日の朝は360度の山岳パノラマが広がる山梨ソロキャンプ最高峰の一つ。
+○ 標高1,400mの清里高原から八ヶ岳と南アルプスを一望できる。
+```
+
+**帰属が明示できるものは残してよい。** ギネス記録、自治体の公称、
+「〜と言われる」「〜と称される」のように誰の評価かが分かる書き方であれば問題ない。
+その場合は帰属を示す語を**同じ文の中に**入れること
+（`validate-data.js` は文単位で判定するため、別の文に書くと警告に出る）。
+
+`needsVerify: true` の施設は、そもそも断定的な描写を避け、
+確認中である旨を主にする。
+
+検出は `node scripts/validate-data.js` が行い、**警告のみでビルドは止めない**。
+新しいデータを追加したら警告が増えていないか確認する。
+
 ## データ監査
 
 未検証データ（`coordsVerified !== true`）の名称・県・実在性をまとめてチェックする。
