@@ -24,7 +24,7 @@
       "access": 4,
       "facility": 1
     },
-    "soloScore": 3.0,
+    "soloScore": 3,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
@@ -177,7 +177,7 @@
       "access": 3,
       "facility": 1
     },
-    "soloScore": 3.0,
+    "soloScore": 3,
     "features": {
       "bonfire": true,
       "bonfireNote": "原則直火禁止・焚き火台必須",
@@ -335,7 +335,7 @@
       "access": 2,
       "facility": 1
     },
-    "soloScore": 3.0,
+    "soloScore": 3,
     "features": {
       "bonfire": true,
       "bonfireNote": "直火禁止・焚き火台必須",
@@ -450,7 +450,7 @@
       "toilet": "洋式",
       "carIn": true,
       "soloPlan": false,
-      "reservation": "不要",
+      "reservation": "要",
       "reservationNote": "1日1団体限定・伊東市民体育センターへ要事前予約",
       "convenience": false,
       "shop": false,

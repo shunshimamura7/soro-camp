@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>soro-camp 座標確認ツール</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<style>
+  :root {
+    --charcoal: #0e0d0b;
+    --ember: #e8611f;
+    --ash: #9a8e84;
+    --line: #2a2723;
+    --panel: #171512;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--charcoal);
+    color: #f2ede7;
+    font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 20px 16px 60px; }
+
+  header { border-bottom: 1px solid var(--line); padding-bottom: 14px; margin-bottom: 20px; }
+  .title {
+    font-family: "Shippori Mincho B1", serif;
+    font-size: 20px; font-weight: 700; margin: 0 0 10px;
+  }
+  .title span { color: var(--ember); }
+  .progress-row { display: flex; align-items: baseline; gap: 12px; }
+  .progress {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 22px; font-weight: 700; color: var(--ember);
+  }
+  .progress-sub { font-size: 12px; color: var(--ash); }
+  .bar { height: 4px; background: var(--line); border-radius: 2px; margin-top: 10px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--ember); width: 0%; transition: width .2s ease; }
+
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+  .meta { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--ash); letter-spacing: .08em; margin: 0 0 6px; }
+  .name { font-family: "Shippori Mincho B1", serif; font-size: 22px; font-weight: 700; margin: 0 0 8px; line-height: 1.4; }
+  .cur { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--ash); margin: 0 0 16px; }
+  .cur b { color: #f2ede7; font-weight: 400; }
+
+  button {
+    font: inherit; cursor: pointer; border-radius: 10px;
+    border: 1px solid var(--line); background: #201d19; color: #f2ede7;
+    padding: 0 16px; min-height: 44px; transition: background .15s, border-color .15s;
+  }
+  button:hover:not(:disabled) { border-color: var(--ember); }
+  button:disabled { opacity: .4; cursor: not-allowed; }
+  button.primary { background: var(--ember); border-color: var(--ember); color: #fff; font-weight: 700; }
+  button.primary:hover:not(:disabled) { background: #d0551a; }
+  button.wide { width: 100%; }
+
+  textarea {
+    width: 100%; min-height: 84px; margin-top: 14px; padding: 10px 12px;
+    background: #100e0c; color: #f2ede7; border: 1px solid var(--line);
+    border-radius: 10px; font-family: "JetBrains Mono", monospace; font-size: 12px;
+    resize: vertical;
+  }
+  textarea:focus { outline: none; border-color: var(--ember); }
+  .hint { font-size: 11px; color: var(--ash); margin: 6px 0 0; }
+
+  .extracted {
+    margin-top: 12px; padding: 10px 12px; border-radius: 10px;
+    background: #100e0c; border: 1px solid var(--line);
+    font-family: "JetBrains Mono", monospace; font-size: 14px;
+  }
+  .extracted.ok { border-color: var(--ember); color: var(--ember); }
+  .extracted.empty { color: var(--ash); }
+
+  .warn {
+    margin-top: 12px; padding: 10px 12px; border-radius: 10px;
+    border: 1px solid #ff4d4d; background: rgba(255,77,77,.08);
+    color: #ff6b6b; font-size: 13px; font-weight: 700;
+  }
+  .hidden { display: none; }
+
+  #map { height: 300px; margin-top: 14px; border-radius: 12px; overflow: hidden; background: #100e0c; }
+  #map-note { font-size: 12px; color: var(--ash); text-align: center; padding: 130px 12px; margin: 0; }
+
+  .nav { display: grid; grid-template-columns: auto auto 1fr; gap: 8px; margin-top: 16px; }
+
+  .foot {
+    margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line);
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .foot .count { flex: 1; font-size: 13px; color: var(--ash); }
+  .done-box { text-align: center; padding: 40px 20px; }
+  .done-box h2 { font-family: "Shippori Mincho B1", serif; color: var(--ember); }
+  .kbd {
+    font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--ash);
+    border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 class="title">soro-camp <span>座標確認ツール</span></h1>
+    <div class="progress-row">
+      <span class="progress" id="progress">0 / 0</span>
+      <span class="progress-sub" id="progress-sub"></span>
+    </div>
+    <div class="bar"><div class="bar-fill" id="bar-fill"></div></div>
+  </header>
+
+  <main id="main"></main>
+
+  <div class="foot">
+    <span class="count" id="count"></span>
+    <button id="btn-download">JSONをダウンロード</button>
+    <button id="btn-reset">進捗をリセット</button>
+  </div>
+  <p class="hint">
+    キーボード: <span class="kbd">Enter</span> 確定して次へ / <span class="kbd">S</span> スキップ
+  </p>
+</div>
+
+<script>
+// ── 対象データ（build-coord-tool.js が生成時に埋め込む） ──────────────────────
+var CAMPS = __CAMPS_JSON__;
+
+// ── 県境 bounds ───────────────────────────────────────────────────────────────
+var BOUNDS = {
+  '神奈川': { latMin: 35.1, latMax: 35.7, lngMin: 138.9, lngMax: 139.8 },
+  '山梨':   { latMin: 35.2, latMax: 35.9, lngMin: 138.2, lngMax: 139.2 },
+  '静岡':   { latMin: 34.6, latMax: 35.4, lngMin: 137.4, lngMax: 139.2 }
+};
+
+var STORAGE_KEY = 'soro-camp:coord-tool:v1';
+
+// ── 状態 ─────────────────────────────────────────────────────────────────────
+var state = loadState();
+var boundsArmed = false;   // 県境警告を一度出したか（2回目の押下で確定を通す）
+var map = null;
+var marker = null;
+
+function loadState() {
+  try {
+    var raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      var parsed = JSON.parse(raw);
+      if (parsed && typeof parsed.index === 'number' && parsed.results) return parsed;
+    }
+  } catch (e) { /* 壊れていたら初期化 */ }
+  return { index: 0, results: {} };
+}
+
+function saveState() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+// ── 座標抽出 ─────────────────────────────────────────────────────────────────
+// !3d..!4d.. は「その地点」、/@..,..,17z は「表示中心」。前者を優先する。
+var RE_3D4D = /!3d(-?\d+(?:\.\d+)?)!4d(-?\d+(?:\.\d+)?)/;
+var RE_AT   = /@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/;
+var RE_PAIR = /(-?\d{1,3}\.\d{3,})\s*[,\s]\s*(-?\d{1,3}\.\d{3,})/;
+
+function extractLatLng(text) {
+  if (!text) return null;
+  var via = '!3d/!4d（地点）';
+  var m = RE_3D4D.exec(text);
+  if (!m) { m = RE_AT.exec(text); via = '/@（表示中心）'; }
+  if (!m) { m = RE_PAIR.exec(text); via = '数値ペア'; }
+  if (!m) return null;
+  var lat = parseFloat(m[1]);
+  var lng = parseFloat(m[2]);
+  if (isNaN(lat) || isNaN(lng)) return null;
+  if (lat < -90 || lat > 90 || lng < -180 || lng > 180) return null;
+  return { lat: lat, lng: lng, via: via };
+}
+
+function outOfBounds(pref, lat, lng) {
+  var b = BOUNDS[pref];
+  if (!b) return false;
+  return lat < b.latMin || lat > b.latMax || lng < b.lngMin || lng > b.lngMax;
+}
+
+// ── 地図 ─────────────────────────────────────────────────────────────────────
+function showMap(lat, lng) {
+  var el = document.getElementById('map');
+  if (!el) return;
+  if (typeof maplibregl === 'undefined') {
+    el.innerHTML = '<p id="map-note">地図ライブラリを読み込めませんでした（オフライン？）。座標は手動で確認してください。</p>';
+    return;
+  }
+  if (!map) {
+    map = new maplibregl.Map({
+      container: el,
+      style: {
+        version: 8,
+        sources: {
+          carto: {
+            type: 'raster',
+            tiles: [
+              'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
+              'https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
+              'https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+            ],
+            tileSize: 256,
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+          }
+        },
+        layers: [{ id: 'carto', type: 'raster', source: 'carto' }]
+      },
+      center: [lng, lat],
+      zoom: 15,
+      attributionControl: { compact: true }
+    });
+  } else {
+    map.jumpTo({ center: [lng, lat], zoom: 15 });
+  }
+  if (marker) marker.remove();
+  var dot = document.createElement('div');
+  dot.style.cssText =
+    'width:16px;height:16px;background:#e8611f;border-radius:50%;' +
+    'box-shadow:0 0 0 3px rgba(232,97,31,.35),0 0 14px rgba(232,97,31,.8);';
+  marker = new maplibregl.Marker({ element: dot }).setLngLat([lng, lat]).addTo(map);
+  setTimeout(function () { if (map) map.resize(); }, 60);
+}
+
+function destroyMap() {
+  if (marker) { marker.remove(); marker = null; }
+  if (map) { map.remove(); map = null; }
+}
+
+// ── 描画 ─────────────────────────────────────────────────────────────────────
+function currentCamp() { return CAMPS[state.index]; }
+
+function doneCount() { return Object.keys(state.results).length; }
+
+function renderHeader() {
+  var total = CAMPS.length;
+  var pos = Math.min(state.index + 1, total);
+  document.getElementById('progress').textContent = pos + ' / ' + total;
+  document.getElementById('progress-sub').textContent = '確定 ' + doneCount() + '件';
+  document.getElementById('bar-fill').style.width = (total ? (doneCount() / total) * 100 : 0) + '%';
+  document.getElementById('count').textContent =
+    '確定 ' + doneCount() + '件 / 全' + total + '件';
+}
+
+function render() {
+  renderHeader();
+  var main = document.getElementById('main');
+
+  if (state.index >= CAMPS.length) {
+    destroyMap();
+    main.innerHTML =
+      '<div class="card done-box">' +
+      '<h2>すべて確認しました</h2>' +
+      '<p>確定 ' + doneCount() + '件。下の「JSONをダウンロード」で書き出し、' +
+      'scripts/coords-fixed.json として保存してから <code>node scripts/apply-coords.js</code> を実行してください。</p>' +
+      '<button id="btn-back-done">← 最後の1件に戻る</button>' +
+      '</div>';
+    var bd = document.getElementById('btn-back-done');
+    if (bd) bd.onclick = function () { state.index = CAMPS.length - 1; saveState(); render(); };
+    return;
+  }
+
+  var c = currentCamp();
+  var saved = state.results[c.slug];
+  boundsArmed = false;
+
+  main.innerHTML =
+    '<div class="card">' +
+      '<p class="meta">' + esc(c.prefecture) + ' · ' + esc(c.area) + ' · ' + esc(c.slug) + '</p>' +
+      '<h2 class="name">' + esc(c.name) + '</h2>' +
+      '<p class="cur">現在: lat <b>' + c.lat + '</b> / lng <b>' + c.lng + '</b>' +
+        (c.lat === 0 || c.lng === 0 ? '（未設定）' : '（未検証）') + '</p>' +
+      '<button class="wide" id="btn-search">Googleマップで検索 ↗</button>' +
+      '<textarea id="paste" placeholder="GoogleマップのURLをそのまま貼り付け"></textarea>' +
+      '<p class="hint">/@35.123,138.456,17z 形式と !3d35.123!4d138.456 形式の両方に対応' +
+        '（両方あればピン位置の !3d/!4d を優先）。' +
+        'maps.app.goo.gl の短縮URLには座標が含まれないので、一度開いてアドレスバーのURLを貼ってください。</p>' +
+      '<div class="extracted empty" id="extracted">未抽出</div>' +
+      '<div class="warn hidden" id="warn"></div>' +
+      '<div id="map"><p id="map-note">URLを貼ると地図が表示されます</p></div>' +
+      '<div class="nav">' +
+        '<button id="btn-back">← 戻る</button>' +
+        '<button id="btn-skip">スキップ</button>' +
+        '<button class="primary" id="btn-confirm">確定して次へ</button>' +
+      '</div>' +
+    '</div>';
+
+  destroyMap();
+
+  var ta = document.getElementById('paste');
+  document.getElementById('btn-search').onclick = function () {
+    var q = c.name + ' ' + c.prefecture + c.area;
+    window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q), '_blank');
+  };
+  document.getElementById('btn-back').onclick = goBack;
+  document.getElementById('btn-back').disabled = state.index === 0;
+  document.getElementById('btn-skip').onclick = goSkip;
+  document.getElementById('btn-confirm').onclick = goConfirm;
+
+  ta.addEventListener('input', onPaste);
+  if (saved && saved.raw) { ta.value = saved.raw; onPaste(); }
+  else if (saved) { setExtracted({ lat: saved.lat, lng: saved.lng }); showMap(saved.lat, saved.lng); }
+  ta.focus();
+}
+
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+var pending = null;   // 現在抽出できている座標
+
+function setExtracted(coords) {
+  var box = document.getElementById('extracted');
+  if (!box) return;
+  pending = coords;
+  if (!coords) {
+    box.className = 'extracted empty';
+    box.textContent = '未抽出';
+    return;
+  }
+  box.className = 'extracted ok';
+  box.textContent = 'lat ' + coords.lat + ' , lng ' + coords.lng +
+    (coords.via ? '   ← ' + coords.via : '');
+}
+
+function onPaste() {
+  var ta = document.getElementById('paste');
+  var coords = extractLatLng(ta.value);
+  hideWarn();
+  boundsArmed = false;
+  setExtracted(coords);
+  if (coords) showMap(coords.lat, coords.lng);
+}
+
+function showWarn(msg) {
+  var w = document.getElementById('warn');
+  if (!w) return;
+  w.textContent = msg;
+  w.className = 'warn';
+}
+
+function hideWarn() {
+  var w = document.getElementById('warn');
+  if (w) w.className = 'warn hidden';
+}
+
+// ── 操作 ─────────────────────────────────────────────────────────────────────
+function goConfirm() {
+  var c = currentCamp();
+  if (!c) return;
+  if (!pending) {
+    showWarn('座標が抽出できていません。GoogleマップのURLを貼り付けてください。');
+    return;
+  }
+  if (outOfBounds(c.prefecture, pending.lat, pending.lng) && !boundsArmed) {
+    boundsArmed = true;
+    var b = BOUNDS[c.prefecture];
+    showWarn(
+      '警告: ' + c.prefecture + 'の想定範囲外です（lat ' + b.latMin + '〜' + b.latMax +
+      ' / lng ' + b.lngMin + '〜' + b.lngMax + '）。' +
+      '地図を確認のうえ、正しければもう一度「確定して次へ」を押してください。'
+    );
+    return;
+  }
+  var ta = document.getElementById('paste');
+  state.results[c.slug] = {
+    lat: pending.lat,
+    lng: pending.lng,
+    raw: ta ? ta.value : ''
+  };
+  advance();
+}
+
+function goSkip() { advance(); }
+
+function advance() {
+  state.index = Math.min(state.index + 1, CAMPS.length);
+  pending = null;
+  saveState();
+  render();
+}
+
+function goBack() {
+  if (state.index === 0) return;
+  state.index -= 1;
+  pending = null;
+  saveState();
+  render();
+}
+
+// ── 書き出し ─────────────────────────────────────────────────────────────────
+function download() {
+  var out = [];
+  CAMPS.forEach(function (c) {
+    var r = state.results[c.slug];
+    if (r) out.push({ slug: c.slug, lat: r.lat, lng: r.lng, coordsVerified: true });
+  });
+  if (out.length === 0) {
+    alert('確定済みの座標がまだありません。');
+    return;
+  }
+  var blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'coords-fixed.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+}
+
+// ── 初期化 ───────────────────────────────────────────────────────────────────
+document.getElementById('btn-download').onclick = download;
+document.getElementById('btn-reset').onclick = function () {
+  if (!confirm('進捗（確定済みの座標を含む）をすべて消します。よろしいですか？')) return;
+  state = { index: 0, results: {} };
+  saveState();
+  render();
+};
+
+document.addEventListener('keydown', function (e) {
+  if (e.isComposing || e.altKey || e.ctrlKey || e.metaKey) return;
+  var inTextarea = e.target && e.target.tagName === 'TEXTAREA';
+  if (e.key === 'Enter') {
+    e.preventDefault();          // textarea 内でも改行させず確定に回す
+    goConfirm();
+    return;
+  }
+  if ((e.key === 's' || e.key === 'S') && !inTextarea) {
+    e.preventDefault();
+    goSkip();
+  }
+});
+
+render();
+</script>
+</body>
+</html>

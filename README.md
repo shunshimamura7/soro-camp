@@ -29,6 +29,33 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## 座標確認ツール
+
+`lat/lng` が未設定（0）または未検証（`coordsVerified !== true`）のキャンプ場を、
+Googleマップと突き合わせて1件ずつ確認・修正するためのローカルツール。
+
+```bash
+node scripts/mark-verified.js      # 初回のみ: 確認済みデータに coordsVerified: true を付与
+node scripts/build-coord-tool.js   # 対象を抽出して scripts/coord-tool.html を生成
+```
+
+生成された `scripts/coord-tool.html` をブラウザで開き（`file://` で可）、
+
+1. 「Googleマップで検索」で対象を開く
+2. アドレスバーのURLをテキストエリアに貼る（`/@…` と `!3d…!4d…` の両形式に対応）
+3. 地図に出たピンを目視確認して「確定して次へ」（<kbd>Enter</kbd>）/「スキップ」（<kbd>S</kbd>）
+
+進捗は localStorage に保存されるので、途中で閉じても再開できる。
+確認が済んだら「JSONをダウンロード」→ `scripts/coords-fixed.json` として保存し、
+
+```bash
+node scripts/apply-coords.js       # slug 照合で lat/lng/coordsVerified を反映
+node scripts/check-coords.js       # 県境チェック + 座標未設定の残数確認
+```
+
+UIを直す場合は `scripts/coord-tool.template.html` を編集して `build-coord-tool.js` を再実行する
+（`coord-tool.html` は生成物）。
+
 ## Deploy on Cloudflare Workers
 
 本番は Cloudflare Workers の静的アセット配信で公開している。
