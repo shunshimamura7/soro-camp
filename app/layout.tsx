@@ -2,13 +2,13 @@ import type { Metadata, Viewport } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { SITE_URL } from "@/lib/site";
 
 const noto = Noto_Sans_JP({ subsets: ["latin"], weight: ["400", "700"] });
 
 const SITE_NAME = "ソロキャン羅針盤";
 const SITE_DESCRIPTION =
   "神奈川・静岡・山梨のソロキャンプ場を徹底比較。静か・絶景・コスパ・アクセス・設備の5軸スコアで自分だけの最高のサイトを見つけよう。";
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://soro-camp.vercel.app";
 
 export const viewport: Viewport = {
   width: "device-width",
