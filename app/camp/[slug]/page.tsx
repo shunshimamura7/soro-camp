@@ -19,7 +19,10 @@ export async function generateMetadata({
   if (!camp) return {};
 
   const title = `${camp.name}【${camp.prefecture}・${camp.area}】`;
-  const description = `${camp.soloComment} 最安値${camp.priceMin.toLocaleString()}円〜。${camp.season}営業。`;
+  const description =
+    camp.type === "wild"
+      ? `${camp.soloComment} 無料。${camp.season}。`
+      : `${camp.soloComment} 最安値${camp.priceMin.toLocaleString()}円〜。${camp.season}営業。`;
 
   return {
     title,
@@ -63,17 +66,24 @@ export default async function CampDetailPage({
       streetAddress: camp.address,
       addressCountry: "JP",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: camp.lat,
-      longitude: camp.lng,
-    },
+    // 座標未確認（0）の場合は geo を出さない — 0,0 は誤った位置を主張してしまうため
+    ...(camp.lat !== 0 && camp.lng !== 0
+      ? {
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: camp.lat,
+            longitude: camp.lng,
+          },
+        }
+      : {}),
     ...(camp.tel ? { telephone: camp.tel } : {}),
     ...(camp.officialUrl ? { url: camp.officialUrl } : {}),
     priceRange: `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}`,
   };
 
   const f = camp.features;
+  const isWild = camp.type === "wild";
+  const priceLabel = isWild ? "無料" : `¥${camp.priceMin.toLocaleString()}〜`;
 
   const featureBadges: Array<[string, string]> = [];
   if (f.bath)     featureBadges.push(["bath",    "♨️ 風呂"]);
@@ -117,7 +127,12 @@ export default async function CampDetailPage({
           <p className="text-xs sm:text-sm text-slate-500 mb-1">{camp.prefecture} · {camp.area}</p>
           <h1 className="text-xl sm:text-3xl font-bold text-slate-900 leading-tight">{camp.name}</h1>
           <div className="flex items-center gap-2 sm:gap-3 mt-2 flex-wrap">
-            <span className="text-green-600 font-bold text-sm sm:text-base">¥{camp.priceMin.toLocaleString()}〜</span>
+            <span className="text-green-600 font-bold text-sm sm:text-base">{priceLabel}</span>
+            {isWild && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-white text-[#e8611f] border border-[#e8611f]">
+                野営地
+              </span>
+            )}
             <span className="text-slate-500 text-xs sm:text-sm">{camp.season}</span>
           </div>
         </div>
@@ -125,6 +140,21 @@ export default async function CampDetailPage({
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
           {/* Left column */}
           <div className="flex flex-col gap-4 sm:gap-6">
+            {/* Cautions — 野営地の注意事項 */}
+            {camp.cautions && camp.cautions.length > 0 && (
+              <section className="bg-white rounded-2xl p-4 sm:p-5 border border-[#e8611f]">
+                <h2 className="text-xs sm:text-sm font-bold text-[#e8611f] mb-2">⚠️ 注意事項</h2>
+                <ul className="flex flex-col gap-1.5">
+                  {camp.cautions.map((c) => (
+                    <li key={c} className="text-[13px] sm:text-sm text-[#e8611f] leading-relaxed flex gap-2">
+                      <span aria-hidden="true">・</span>
+                      <span className="min-w-0">{c}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
             {/* Comment */}
             <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">ソロキャンパーへのコメント</h2>
@@ -222,7 +252,7 @@ export default async function CampDetailPage({
             <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-1">施設情報</h2>
               <div>
-                <Row label="料金" value={`¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`} />
+                <Row label="料金" value={isWild ? "無料" : `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`} />
                 <Row label="営業期間" value={camp.season} />
                 <Row label="予約" value={`${f.reservation}${f.reservationNote ? `（${f.reservationNote}）` : ""}`} />
                 <Row label="焚き火" value={f.bonfire ? `可${f.bonfireNote ? `（${f.bonfireNote}）` : ""}` : "不可"} />
@@ -236,7 +266,7 @@ export default async function CampDetailPage({
                 <Row label="氷販売" value={f.ice ? "あり" : "なし"} />
                 <Row label="酒販売" value={f.alcohol ? "あり" : "なし"} />
                 {camp.closedDays && <Row label="定休日" value={camp.closedDays} />}
-                <Row label="情報確認日" value={camp.lastVerified} />
+                <Row label="情報確認日" value={camp.lastVerified || "未確認"} />
               </div>
             </section>
           </div>

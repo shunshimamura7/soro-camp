@@ -239,7 +239,8 @@ export default function MapModal({ camps, onClose }: Props) {
         [140.0, 36.2],
       ]);
 
-      camps.forEach((camp) => {
+      // 座標未確認（lat/lng が 0）のものはピンを打たない
+      camps.filter((c) => c.lat !== 0 && c.lng !== 0).forEach((camp) => {
         const el = createEmberEl();
         elMapRef.current.set(camp.slug, el);
 

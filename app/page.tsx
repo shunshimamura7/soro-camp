@@ -16,6 +16,7 @@ const DEFAULT_FILTERS: Filters = {
   bath: false,
   shower: false,
   noReservation: false,
+  wild: false,
 };
 
 export default function HomePage() {

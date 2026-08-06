@@ -18,6 +18,7 @@ type Props = { camp: Campground; bathFilterActive?: boolean };
 
 export default function CampCard({ camp, bathFilterActive = false }: Props) {
   const tags = getFeatureTags(camp.features, bathFilterActive);
+  const isWild = camp.type === "wild";
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     camp.name + " " + (camp.address ?? "")
   )}`;
@@ -42,15 +43,20 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
         >
           {camp.name}
         </Link>
+        {isWild && (
+          <span className="ml-2 align-middle inline-flex items-center shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-white text-[#e8611f] border border-[#e8611f]">
+            野営地
+          </span>
+        )}
       </div>
 
       {/* 3. Price */}
       <div className="px-4 pb-3">
         <div className="flex items-baseline gap-1.5">
           <span className="font-['JetBrains_Mono',monospace] text-[20px] font-bold text-[#2a6e3f]">
-            ¥{camp.priceMin.toLocaleString()}〜
+            {isWild ? "無料" : `¥${camp.priceMin.toLocaleString()}〜`}
           </span>
-          {camp.priceNote && (
+          {!isWild && camp.priceNote && (
             <span className="text-[12px] text-[#9a8e84] truncate max-w-[140px]">
               {camp.priceNote}
             </span>

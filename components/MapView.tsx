@@ -181,9 +181,11 @@ export default function MapView({ camps, height = 520 }: Props) {
     const syncMarkers = () => {
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
-      if (camps.length === 0) return;
+      // 座標未確認（lat/lng が 0）のものはピンを打たない
+      const pinnable = camps.filter((c) => c.lat !== 0 && c.lng !== 0);
+      if (pinnable.length === 0) return;
 
-      camps.forEach((camp) => {
+      pinnable.forEach((camp) => {
         const el = createEmberEl();
 
         const popup = new maplibregl.Popup({

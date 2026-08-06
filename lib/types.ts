@@ -5,6 +5,10 @@ export type Campground = {
   prefecture: "神奈川" | "静岡" | "山梨";
   area: string;
   address: string;
+  /** 省略時は "campground"（管理されたキャンプ場）。"wild" は野営地。 */
+  type?: "campground" | "wild";
+  /** 野営地の注意事項。あれば詳細ページに ⚠️ セクションで表示する。 */
+  cautions?: string[];
   lat: number;
   lng: number;
   priceMin: number;
@@ -27,7 +31,7 @@ export type Campground = {
     showerNote?: string;
     bath: boolean;
     bathNote?: string;
-    toilet: "和式" | "洋式" | "ウォシュレット" | "温水便座";
+    toilet: "和式" | "洋式" | "ウォシュレット" | "温水便座" | "簡易" | "なし";
     carIn: boolean;
     carInNote?: string;
     soloPlan: boolean;

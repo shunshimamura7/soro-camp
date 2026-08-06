@@ -21,6 +21,7 @@ export type Filters = {
   bath: boolean;
   shower: boolean;
   noReservation: boolean;
+  wild: boolean;
 };
 
 export function filterAndSort(
@@ -35,6 +36,7 @@ export function filterAndSort(
     if (filters.bath && !c.features.bath) return false;
     if (filters.shower && !c.features.shower) return false;
     if (filters.noReservation && c.features.reservation !== "不要") return false;
+    if (filters.wild && c.type !== "wild") return false;
     return true;
   });
 
