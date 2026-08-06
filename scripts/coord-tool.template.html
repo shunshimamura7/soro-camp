@@ -46,6 +46,17 @@
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
   .meta { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--ash); letter-spacing: .08em; margin: 0 0 6px; }
   .name { font-family: "Shippori Mincho B1", serif; font-size: 22px; font-weight: 700; margin: 0 0 8px; line-height: 1.4; }
+  .needs-verify {
+    display: inline-block; vertical-align: middle; margin-left: 8px;
+    font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700;
+    color: var(--charcoal); background: var(--ember);
+    padding: 2px 8px; border-radius: 5px;
+  }
+  .needs-verify-note {
+    margin: 0 0 10px; padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--ember); background: rgba(232,97,31,.08);
+    font-size: 12px; color: var(--ember); line-height: 1.5;
+  }
   .cur { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--ash); margin: 0 0 16px; }
   .cur b { color: #f2ede7; font-weight: 400; }
 
@@ -273,7 +284,13 @@ function render() {
   main.innerHTML =
     '<div class="card">' +
       '<p class="meta">' + esc(c.prefecture) + ' · ' + esc(c.area) + ' · ' + esc(c.slug) + '</p>' +
-      '<h2 class="name">' + esc(c.name) + '</h2>' +
+      '<h2 class="name">' + esc(c.name) +
+        (c.needsVerify ? '<span class="needs-verify">要確認</span>' : '') +
+      '</h2>' +
+      (c.needsVerify
+        ? '<p class="needs-verify-note">施設の同定そのものが未確定です。名称が似た別施設と取り違えていないか、' +
+          '公式情報でも裏を取ってください。</p>'
+        : '') +
       '<p class="cur">現在: lat <b>' + c.lat + '</b> / lng <b>' + c.lng + '</b>' +
         (c.lat === 0 || c.lng === 0 ? '（未設定）' : '（未検証）') + '</p>' +
       '<button class="wide" id="btn-search">Googleマップで検索 ↗</button>' +

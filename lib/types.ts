@@ -13,6 +13,8 @@ export type Campground = {
   lng: number;
   /** 座標を目視確認済みなら true。未設定・false は要確認（scripts/coord-tool.html の対象）。 */
   coordsVerified?: boolean;
+  /** 施設の同定そのものが怪しく、優先的に裏取りすべきものに true。 */
+  needsVerify?: boolean;
   priceMin: number;
   priceMax: number;
   priceNote?: string;

@@ -10,7 +10,9 @@
  */
 const PREFECTURE_BOUNDS = {
   '神奈川': { latMin: 35.10, latMax: 35.68, lngMin: 138.90, lngMax: 139.80 },
-  '山梨':   { latMin: 35.16, latMax: 35.97, lngMin: 138.20, lngMax: 139.15 },
+  // lngMax は 139.15 だと道志村東端（WOODSMAN CAMP, lng 139.1536）を
+  // 範囲外にしてしまうため 139.17 に緩和。山梨県の東端は上野原市の約 139.16。
+  '山梨':   { latMin: 35.16, latMax: 35.97, lngMin: 138.20, lngMax: 139.17 },
   '静岡':   { latMin: 34.58, latMax: 35.65, lngMin: 137.45, lngMax: 139.18 },
 };
 

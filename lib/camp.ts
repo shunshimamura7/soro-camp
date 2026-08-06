@@ -21,8 +21,16 @@ export type Filters = {
   bath: boolean;
   shower: boolean;
   noReservation: boolean;
-  wild: boolean;
 };
+
+/** 一覧上部のタブ。キャンプ場と野営地の切り替え。 */
+export type TypeTab = "all" | "campground" | "wild";
+
+export function filterByType(camps: Campground[], tab: TypeTab): Campground[] {
+  if (tab === "wild") return camps.filter((c) => c.type === "wild");
+  if (tab === "campground") return camps.filter((c) => c.type !== "wild");
+  return camps;
+}
 
 export function filterAndSort(
   camps: Campground[],
@@ -36,7 +44,6 @@ export function filterAndSort(
     if (filters.bath && !c.features.bath) return false;
     if (filters.shower && !c.features.shower) return false;
     if (filters.noReservation && c.features.reservation !== "不要") return false;
-    if (filters.wild && c.type !== "wild") return false;
     return true;
   });
 

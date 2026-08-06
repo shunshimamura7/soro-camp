@@ -48,6 +48,17 @@
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
   .meta { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--ash); letter-spacing: .08em; margin: 0 0 6px; }
   .name { font-family: "Shippori Mincho B1", serif; font-size: 22px; font-weight: 700; margin: 0 0 8px; line-height: 1.4; }
+  .needs-verify {
+    display: inline-block; vertical-align: middle; margin-left: 8px;
+    font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700;
+    color: var(--charcoal); background: var(--ember);
+    padding: 2px 8px; border-radius: 5px;
+  }
+  .needs-verify-note {
+    margin: 0 0 10px; padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--ember); background: rgba(232,97,31,.08);
+    font-size: 12px; color: var(--ember); line-height: 1.5;
+  }
   .cur { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--ash); margin: 0 0 16px; }
   .cur b { color: #f2ede7; font-weight: 400; }
 
@@ -131,14 +142,25 @@
 // ── 対象データ（build-coord-tool.js が生成時に埋め込む） ──────────────────────
 var CAMPS = [
   {
+    "needsVerify": true,
+    "slug": "doshi-fureainomori",
+    "name": "道志ふれあいの森キャンプ場",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "lat": 35.575,
+    "lng": 139.09
+  },
+  {
+    "needsVerify": false,
     "slug": "doshigawa-kanko-noen",
-    "name": "道志川観光農園オートキャンプ場",
-    "prefecture": "神奈川",
-    "area": "道志川",
+    "name": "道志村観光農園オートキャンプ場",
+    "prefecture": "山梨",
+    "area": "道志村",
     "lat": 35.568,
     "lng": 139.148
   },
   {
+    "needsVerify": false,
     "slug": "marutamura-camp",
     "name": "丸太村キャンプ場",
     "prefecture": "神奈川",
@@ -147,6 +169,7 @@ var CAMPS = [
     "lng": 139.17
   },
   {
+    "needsVerify": false,
     "slug": "tiny-camp-village",
     "name": "TINY CAMP VILLAGE",
     "prefecture": "神奈川",
@@ -155,6 +178,7 @@ var CAMPS = [
     "lng": 139.2625
   },
   {
+    "needsVerify": false,
     "slug": "hinata-camp",
     "name": "日向キャンプ場",
     "prefecture": "神奈川",
@@ -163,6 +187,7 @@ var CAMPS = [
     "lng": 139.289
   },
   {
+    "needsVerify": false,
     "slug": "okuyugawara-auto",
     "name": "奥湯河原オートキャンプ場",
     "prefecture": "神奈川",
@@ -171,14 +196,7 @@ var CAMPS = [
     "lng": 139.081
   },
   {
-    "slug": "doshi-fureainomori",
-    "name": "道志ふれあいの森キャンプ場",
-    "prefecture": "神奈川",
-    "area": "道志川",
-    "lat": 35.575,
-    "lng": 139.09
-  },
-  {
+    "needsVerify": false,
     "slug": "naminokomura",
     "name": "なみのこ村",
     "prefecture": "神奈川",
@@ -187,6 +205,7 @@ var CAMPS = [
     "lng": 139.1395858
   },
   {
+    "needsVerify": false,
     "slug": "kuragari-camp",
     "name": "玄倉キャンプ場",
     "prefecture": "神奈川",
@@ -195,6 +214,7 @@ var CAMPS = [
     "lng": 138.974
   },
   {
+    "needsVerify": false,
     "slug": "hayatogawa-masu",
     "name": "早戸川国際マス釣場キャンプ場",
     "prefecture": "神奈川",
@@ -203,6 +223,7 @@ var CAMPS = [
     "lng": 139.188
   },
   {
+    "needsVerify": false,
     "slug": "yakeyamazawa-shinpukuji",
     "name": "焼山沢真福寺キャンプ場",
     "prefecture": "神奈川",
@@ -211,6 +232,7 @@ var CAMPS = [
     "lng": 139.22
   },
   {
+    "needsVerify": false,
     "slug": "shiroyama-fureainosato",
     "name": "城山ふれあいの里",
     "prefecture": "神奈川",
@@ -219,6 +241,7 @@ var CAMPS = [
     "lng": 139.268
   },
   {
+    "needsVerify": false,
     "slug": "mountkan-kannogawa",
     "name": "西丹沢マウントカンキャンプ場",
     "prefecture": "神奈川",
@@ -227,6 +250,7 @@ var CAMPS = [
     "lng": 139.025
   },
   {
+    "needsVerify": false,
     "slug": "nelo-gotemba",
     "name": "NELOキャンプ場御殿場",
     "prefecture": "静岡",
@@ -235,6 +259,7 @@ var CAMPS = [
     "lng": 138.932
   },
   {
+    "needsVerify": false,
     "slug": "nishiizu-seto",
     "name": "西伊豆せと海岸キャンプ場",
     "prefecture": "静岡",
@@ -243,6 +268,7 @@ var CAMPS = [
     "lng": 138.772
   },
   {
+    "needsVerify": false,
     "slug": "fujisan-genshijin",
     "name": "富士山オートキャンプ場GENSHIJIN",
     "prefecture": "静岡",
@@ -251,6 +277,7 @@ var CAMPS = [
     "lng": 138.645
   },
   {
+    "needsVerify": false,
     "slug": "magic-hour-camp",
     "name": "magic hour",
     "prefecture": "静岡",
@@ -259,6 +286,7 @@ var CAMPS = [
     "lng": 138.51
   },
   {
+    "needsVerify": false,
     "slug": "kokono-shizuoka",
     "name": "キャンプ場此処野静岡",
     "prefecture": "静岡",
@@ -267,6 +295,7 @@ var CAMPS = [
     "lng": 138.37
   },
   {
+    "needsVerify": false,
     "slug": "oyama-camp-gotemba",
     "name": "大野山キャンプ場",
     "prefecture": "静岡",
@@ -275,6 +304,7 @@ var CAMPS = [
     "lng": 138.97
   },
   {
+    "needsVerify": false,
     "slug": "makigaya-auto",
     "name": "牧ヶ谷オートキャンプ場",
     "prefecture": "静岡",
@@ -283,6 +313,7 @@ var CAMPS = [
     "lng": 138.31
   },
   {
+    "needsVerify": false,
     "slug": "granpapa-solo-bocchi",
     "name": "富士山GranPapaソロぼっち区画サイト",
     "prefecture": "静岡",
@@ -291,6 +322,7 @@ var CAMPS = [
     "lng": 138.62
   },
   {
+    "needsVerify": false,
     "slug": "marubi-auto",
     "name": "御殿場まるびオートキャンプ場",
     "prefecture": "静岡",
@@ -299,6 +331,7 @@ var CAMPS = [
     "lng": 138.895
   },
   {
+    "needsVerify": false,
     "slug": "ikawa-auto",
     "name": "井川オートキャンプ場",
     "prefecture": "静岡",
@@ -307,6 +340,7 @@ var CAMPS = [
     "lng": 138.205
   },
   {
+    "needsVerify": false,
     "slug": "sessokyo-camp",
     "name": "接岨峡キャンプ場",
     "prefecture": "静岡",
@@ -315,6 +349,7 @@ var CAMPS = [
     "lng": 138.11
   },
   {
+    "needsVerify": false,
     "slug": "minamialps-auto-camp",
     "name": "南アルプスオートキャンプ場",
     "prefecture": "山梨",
@@ -323,6 +358,7 @@ var CAMPS = [
     "lng": 138.49
   },
   {
+    "needsVerify": false,
     "slug": "doshi-minamoto-camp",
     "name": "道志みなもとキャンプ",
     "prefecture": "山梨",
@@ -331,6 +367,7 @@ var CAMPS = [
     "lng": 138.92
   },
   {
+    "needsVerify": false,
     "slug": "yamanakako-minami-auto",
     "name": "山中湖みなみオートキャンプ場",
     "prefecture": "山梨",
@@ -339,6 +376,7 @@ var CAMPS = [
     "lng": 138.858
   },
   {
+    "needsVerify": false,
     "slug": "camp-akaike",
     "name": "キャンプアカイケ",
     "prefecture": "山梨",
@@ -347,6 +385,7 @@ var CAMPS = [
     "lng": 138.62
   },
   {
+    "needsVerify": false,
     "slug": "tsukiyono-doshi-camp",
     "name": "月夜野キャンプ場",
     "prefecture": "山梨",
@@ -355,6 +394,7 @@ var CAMPS = [
     "lng": 138.945
   },
   {
+    "needsVerify": false,
     "slug": "ecopa-inagako",
     "name": "エコパ伊奈ヶ湖",
     "prefecture": "山梨",
@@ -363,6 +403,7 @@ var CAMPS = [
     "lng": 138.44
   },
   {
+    "needsVerify": false,
     "slug": "village-hakushu",
     "name": "ヴィレッヂ白州",
     "prefecture": "山梨",
@@ -371,6 +412,7 @@ var CAMPS = [
     "lng": 138.305
   },
   {
+    "needsVerify": false,
     "slug": "hananomori-camp",
     "name": "花の森オートキャンピア",
     "prefecture": "山梨",
@@ -379,6 +421,7 @@ var CAMPS = [
     "lng": 138.91
   },
   {
+    "needsVerify": false,
     "slug": "flora-campsite",
     "name": "FLORA Campsite",
     "prefecture": "山梨",
@@ -387,6 +430,7 @@ var CAMPS = [
     "lng": 138.3
   },
   {
+    "needsVerify": false,
     "slug": "shinozawa-ootaki-camp",
     "name": "篠沢大滝キャンプ場",
     "prefecture": "山梨",
@@ -395,6 +439,7 @@ var CAMPS = [
     "lng": 138.29
   },
   {
+    "needsVerify": false,
     "slug": "oishii-camp",
     "name": "おいしいキャンプ場",
     "prefecture": "山梨",
@@ -403,6 +448,7 @@ var CAMPS = [
     "lng": 138.575
   },
   {
+    "needsVerify": false,
     "slug": "shimobe-yurucamp-sato",
     "name": "道の駅しもべ オートキャンプ場〜ゆるキャン△の里〜",
     "prefecture": "山梨",
@@ -411,6 +457,7 @@ var CAMPS = [
     "lng": 138.45
   },
   {
+    "needsVerify": false,
     "slug": "hayato-hakone",
     "name": "HAYATO 箱根キャンプ場",
     "prefecture": "神奈川",
@@ -419,6 +466,7 @@ var CAMPS = [
     "lng": 139.055
   },
   {
+    "needsVerify": false,
     "slug": "bushcraft-shonan",
     "name": "BUSHCRAFT湘南",
     "prefecture": "神奈川",
@@ -427,6 +475,7 @@ var CAMPS = [
     "lng": 139.42
   },
   {
+    "needsVerify": false,
     "slug": "akiyamagawa-camp",
     "name": "秋山川キャンプ場",
     "prefecture": "神奈川",
@@ -435,6 +484,7 @@ var CAMPS = [
     "lng": 139.015
   },
   {
+    "needsVerify": false,
     "slug": "hachibanaen-miroku",
     "name": "蜂花苑ミロクキャンプ場",
     "prefecture": "神奈川",
@@ -443,6 +493,7 @@ var CAMPS = [
     "lng": 139.23
   },
   {
+    "needsVerify": false,
     "slug": "oyama-kogen-camp",
     "name": "大野山高原キャンプ場",
     "prefecture": "神奈川",
@@ -451,6 +502,7 @@ var CAMPS = [
     "lng": 139.005
   },
   {
+    "needsVerify": false,
     "slug": "nakatsugawa-camp",
     "name": "中津川キャンプ場",
     "prefecture": "神奈川",
@@ -459,6 +511,7 @@ var CAMPS = [
     "lng": 139.245
   },
   {
+    "needsVerify": false,
     "slug": "tanzawako-roadside-camp",
     "name": "丹沢湖レイクサイドキャンプ場",
     "prefecture": "神奈川",
@@ -467,6 +520,7 @@ var CAMPS = [
     "lng": 139.005
   },
   {
+    "needsVerify": false,
     "slug": "sagamiko-camping-village",
     "name": "相模湖キャンピングヴィレッジ",
     "prefecture": "神奈川",
@@ -475,6 +529,7 @@ var CAMPS = [
     "lng": 139.155
   },
   {
+    "needsVerify": false,
     "slug": "miura-camp-beach",
     "name": "三浦海岸キャンプ場",
     "prefecture": "神奈川",
@@ -483,6 +538,7 @@ var CAMPS = [
     "lng": 139.62
   },
   {
+    "needsVerify": false,
     "slug": "hadano-camp-valley",
     "name": "秦野渓谷キャンプ場",
     "prefecture": "神奈川",
@@ -491,6 +547,7 @@ var CAMPS = [
     "lng": 139.165
   },
   {
+    "needsVerify": false,
     "slug": "otome-forest-camp",
     "name": "乙女森林公園第1キャンプ場",
     "prefecture": "静岡",
@@ -499,6 +556,7 @@ var CAMPS = [
     "lng": 138.91
   },
   {
+    "needsVerify": false,
     "slug": "recamp-fuji-speedway",
     "name": "RECAMP富士スピードウェイ",
     "prefecture": "静岡",
@@ -507,6 +565,7 @@ var CAMPS = [
     "lng": 138.927
   },
   {
+    "needsVerify": false,
     "slug": "camp-bean-izu",
     "name": "CAMP BEAN",
     "prefecture": "静岡",
@@ -515,6 +574,7 @@ var CAMPS = [
     "lng": 138.945
   },
   {
+    "needsVerify": false,
     "slug": "shizunami-beach-camp",
     "name": "静波海岸キャンプサイト",
     "prefecture": "静岡",
@@ -523,6 +583,7 @@ var CAMPS = [
     "lng": 138.215
   },
   {
+    "needsVerify": false,
     "slug": "ginga-momiji-camp",
     "name": "銀河もみじキャンプ場",
     "prefecture": "静岡",
@@ -531,6 +592,7 @@ var CAMPS = [
     "lng": 138.08
   },
   {
+    "needsVerify": false,
     "slug": "tenshino-mori-camp",
     "name": "天子の森オートキャンプ場",
     "prefecture": "静岡",
@@ -539,6 +601,7 @@ var CAMPS = [
     "lng": 138.555
   },
   {
+    "needsVerify": false,
     "slug": "fuji-international-camp",
     "name": "富士山国際キャンプ場",
     "prefecture": "静岡",
@@ -547,6 +610,7 @@ var CAMPS = [
     "lng": 138.605
   },
   {
+    "needsVerify": false,
     "slug": "izukogen-granpal-camp",
     "name": "伊豆グランパル公園キャンプ場",
     "prefecture": "静岡",
@@ -555,6 +619,7 @@ var CAMPS = [
     "lng": 139.085
   },
   {
+    "needsVerify": false,
     "slug": "nishiizu-dogashima-camp",
     "name": "西伊豆堂ヶ島キャンプ場",
     "prefecture": "静岡",
@@ -563,6 +628,7 @@ var CAMPS = [
     "lng": 138.765
   },
   {
+    "needsVerify": false,
     "slug": "kawanehon-camp",
     "name": "川根本町家山キャンプ場",
     "prefecture": "静岡",
@@ -571,6 +637,7 @@ var CAMPS = [
     "lng": 138.09
   },
   {
+    "needsVerify": false,
     "slug": "fujimangan-village",
     "name": "富士満願ビレッジファミリーキャンプ場",
     "prefecture": "山梨",
@@ -579,6 +646,7 @@ var CAMPS = [
     "lng": 138.62
   },
   {
+    "needsVerify": false,
     "slug": "nagomino-sato-tsuru",
     "name": "和みの里オートキャンプ場",
     "prefecture": "山梨",
@@ -587,6 +655,7 @@ var CAMPS = [
     "lng": 138.905
   },
   {
+    "needsVerify": false,
     "slug": "takaranoyama-fureai",
     "name": "宝の山ふれあいの里キャンプ場",
     "prefecture": "山梨",
@@ -595,6 +664,7 @@ var CAMPS = [
     "lng": 138.93
   },
   {
+    "needsVerify": false,
     "slug": "doshi-mori-cottage",
     "name": "道志・森のコテージ",
     "prefecture": "山梨",
@@ -603,6 +673,7 @@ var CAMPS = [
     "lng": 138.96
   },
   {
+    "needsVerify": false,
     "slug": "sports-train-aokigahara",
     "name": "SPORTS TRAIN",
     "prefecture": "山梨",
@@ -611,6 +682,7 @@ var CAMPS = [
     "lng": 138.65
   },
   {
+    "needsVerify": false,
     "slug": "kirara-yamanakako",
     "name": "山中湖交流プラザきらら",
     "prefecture": "山梨",
@@ -619,6 +691,7 @@ var CAMPS = [
     "lng": 138.875
   },
   {
+    "needsVerify": false,
     "slug": "fuji-midori-kyuka-auto",
     "name": "富士緑の休暇村オートキャンプ場",
     "prefecture": "山梨",
@@ -627,6 +700,7 @@ var CAMPS = [
     "lng": 138.705
   },
   {
+    "needsVerify": false,
     "slug": "kaikoma-camp",
     "name": "甲斐駒高原キャンプ場",
     "prefecture": "山梨",
@@ -635,6 +709,7 @@ var CAMPS = [
     "lng": 138.32
   },
   {
+    "needsVerify": false,
     "slug": "minobe-camp",
     "name": "南部キャンプ場",
     "prefecture": "山梨",
@@ -643,6 +718,7 @@ var CAMPS = [
     "lng": 138.46
   },
   {
+    "needsVerify": false,
     "slug": "hayakawa-camp",
     "name": "早川オートキャンプ場",
     "prefecture": "山梨",
@@ -651,6 +727,7 @@ var CAMPS = [
     "lng": 138.38
   },
   {
+    "needsVerify": false,
     "slug": "nakatsugawa-kasenjiki",
     "name": "中津川河川敷（田代運動公園）",
     "prefecture": "神奈川",
@@ -659,6 +736,7 @@ var CAMPS = [
     "lng": 0
   },
   {
+    "needsVerify": false,
     "slug": "sumida-ohashi-kasenjiki",
     "name": "角田大橋河川敷",
     "prefecture": "神奈川",
@@ -667,6 +745,7 @@ var CAMPS = [
     "lng": 0
   },
   {
+    "needsVerify": false,
     "slug": "hasugebashi-kasenjiki",
     "name": "八菅橋河川敷",
     "prefecture": "神奈川",
@@ -675,6 +754,7 @@ var CAMPS = [
     "lng": 0
   },
   {
+    "needsVerify": false,
     "slug": "wadanagahama-kaigan",
     "name": "和田長浜海岸",
     "prefecture": "神奈川",
@@ -683,6 +763,7 @@ var CAMPS = [
     "lng": 0
   },
   {
+    "needsVerify": false,
     "slug": "kofu-shinrinyoku-hiroba",
     "name": "甲府市 森林浴広場",
     "prefecture": "山梨",
@@ -691,6 +772,7 @@ var CAMPS = [
     "lng": 0
   },
   {
+    "needsVerify": false,
     "slug": "ogayanagawa-keikoku",
     "name": "大柳川渓谷キャンプ場",
     "prefecture": "山梨",
@@ -699,6 +781,7 @@ var CAMPS = [
     "lng": 0
   },
   {
+    "needsVerify": false,
     "slug": "tsuchimura",
     "name": "土村キャンプ場",
     "prefecture": "静岡",
@@ -707,6 +790,7 @@ var CAMPS = [
     "lng": 0
   },
   {
+    "needsVerify": false,
     "slug": "kurokawa-shizuoka",
     "name": "黒川キャンプ場（清水森林公園）",
     "prefecture": "静岡",
@@ -715,6 +799,7 @@ var CAMPS = [
     "lng": 0
   },
   {
+    "needsVerify": false,
     "slug": "omuroyama-camp",
     "name": "大室山キャンプ場（伊東市営）",
     "prefecture": "静岡",
@@ -868,7 +953,13 @@ function render() {
   main.innerHTML =
     '<div class="card">' +
       '<p class="meta">' + esc(c.prefecture) + ' · ' + esc(c.area) + ' · ' + esc(c.slug) + '</p>' +
-      '<h2 class="name">' + esc(c.name) + '</h2>' +
+      '<h2 class="name">' + esc(c.name) +
+        (c.needsVerify ? '<span class="needs-verify">要確認</span>' : '') +
+      '</h2>' +
+      (c.needsVerify
+        ? '<p class="needs-verify-note">施設の同定そのものが未確定です。名称が似た別施設と取り違えていないか、' +
+          '公式情報でも裏を取ってください。</p>'
+        : '') +
       '<p class="cur">現在: lat <b>' + c.lat + '</b> / lng <b>' + c.lng + '</b>' +
         (c.lat === 0 || c.lng === 0 ? '（未設定）' : '（未検証）') + '</p>' +
       '<button class="wide" id="btn-search">Googleマップで検索 ↗</button>' +

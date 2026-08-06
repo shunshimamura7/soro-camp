@@ -10,6 +10,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { isOutOfBounds, describeBounds } = require(path.join(__dirname, 'prefecture-bounds.js'));
+const { normalizeName, levenshtein, similarity } = require(path.join(__dirname, 'name-match.js'));
 
 const DATA_PATH    = path.join(__dirname, '../data/campgrounds.json');
 const REPORT_PATH  = path.join(__dirname, 'audit-report.md');
@@ -37,65 +38,6 @@ const DOSHI_ANY = /道志/;
 const DOSHI_YAMANASHI_STRONG = /道志の森|道志村|道志渓谷/;
 // 神奈川側と確定できる地名（相模原市緑区side）
 const KANAGAWA_CONFIRMED = /青野原|青根|両国橋/;
-
-// ── 正規化 ──────────────────────────────────────────────────────────────────
-/** カタカナ→ひらがな。表記ゆれ（ロッジ/ろっじ 等）を吸収する。 */
-function kataToHira(s) {
-  return s.replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60));
-}
-
-function normalizeName(s) {
-  if (!s) return '';
-  let t = String(s).normalize('NFKC');
-  t = t.replace(/\([^)]*\)/g, '');      // 括弧内（NFKC 後は半角）
-  t = t.replace(/\[[^\]]*\]/g, '');
-  t = t.replace(/【[^】]*】/g, '');
-  t = t.replace(/オートキャンプ場/g, '');
-  t = t.replace(/キャンプ場/g, '');
-  t = t.replace(/オートキャンプ/g, '');
-  t = t.replace(/キャンプ/g, '');
-  t = t.replace(/場/g, '');
-  t = t.replace(/[\s・･]/g, '');
-  t = kataToHira(t);
-  return t.toLowerCase();
-}
-
-function levenshtein(a, b) {
-  if (a === b) return 0;
-  if (!a.length) return b.length;
-  if (!b.length) return a.length;
-  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
-  for (let i = 1; i <= a.length; i++) {
-    const cur = [i];
-    for (let j = 1; j <= b.length; j++) {
-      cur[j] = Math.min(
-        prev[j] + 1,
-        cur[j - 1] + 1,
-        prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
-      );
-    }
-    prev = cur;
-  }
-  return prev[b.length];
-}
-
-/**
- * 近いとみなすか。近ければ { kind, distance } を返し、そうでなければ null。
- *
- * 日本語の短い名前では編集距離1が「全く別の施設」を意味することが多い
- * （井川 / 早川 / 黒川、大野山 / 大室山）。漢字1文字の情報量が大きいため、
- * 3文字以下は完全一致のみを疑い、長い名前ほど距離を許容する。
- */
-function similarity(a, b) {
-  if (!a || !b) return null;
-  if (a.length < 2 || b.length < 2) return null;
-  const d = levenshtein(a, b);
-  if (d === 0) return { kind: '完全一致', distance: 0 };
-  const maxLen = Math.max(a.length, b.length);
-  if (maxLen <= 3) return null;            // 短い名前は完全一致のみ
-  if (maxLen <= 6) return d <= 1 ? { kind: '類似', distance: d } : null;
-  return d <= 2 ? { kind: '類似', distance: d } : null;
-}
 
 // ── 監査 ────────────────────────────────────────────────────────────────────
 const camps = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));

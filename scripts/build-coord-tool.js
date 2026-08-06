@@ -64,8 +64,15 @@ if (targets.length === 0) {
   console.log(`対象が0件です（${filterLabel}）。手動確認は不要です。`);
 }
 
+// needsVerify: true（施設の同定そのものが怪しいもの）を先頭に持ってくる
+targets = [
+  ...targets.filter(c => c.needsVerify === true),
+  ...targets.filter(c => c.needsVerify !== true),
+];
+
 // ツールが必要とするフィールドだけに絞って埋め込む
 const payload = targets.map(c => ({
+  needsVerify: c.needsVerify === true,
   slug: c.slug,
   name: c.name,
   prefecture: c.prefecture,
@@ -90,8 +97,10 @@ const banner =
 fs.writeFileSync(OUT_PATH, banner + template.replace('__CAMPS_JSON__', json));
 
 const zero = payload.filter(c => c.lat === 0 || c.lng === 0).length;
+const needsVerifyCount = payload.filter(c => c.needsVerify).length;
 console.log(`絞り込み: ${filterLabel}`);
 console.log(`全${camps.length}件 → 要確認 ${payload.length}件`);
+if (needsVerifyCount) console.log(`  うち needsVerify（優先・先頭に配置）: ${needsVerifyCount}件`);
 console.log(`  うち座標未設定（lat/lng = 0）: ${zero}件`);
 console.log(`  うち未検証（coordsVerified !== true）: ${payload.length - zero}件`);
 console.log(`生成: ${path.relative(process.cwd(), OUT_PATH)}`);

@@ -8,6 +8,8 @@
  *     （県ごとに1回だけ問い合わせて使い回す。9件それぞれで県全体を引くと
  *       Overpass に同じ重いクエリを何度も投げることになるため）
  *
+ * 名前の正規化・一致判定は audit-names.js と共通（scripts/name-match.js）。
+ *
  * 判定は scripts/auto-coords-result.json に書き出すだけで、
  * campgrounds.json は一切変更しない。採用は目視レビュー後に
  * review-auto-coords.js → apply-coords.js で行う。
@@ -16,6 +18,8 @@
  */
 const fs = require('fs');
 const path = require('path');
+
+const { normalizeName, namesMatch } = require(path.join(__dirname, 'name-match.js'));
 
 const DATA_PATH   = path.join(__dirname, '../data/campgrounds.json');
 const RESULT_PATH = path.join(__dirname, 'auto-coords-result.json');
@@ -30,10 +34,10 @@ const UA = 'soro-camp-coord-check/1.0 (personal campsite site; contact via githu
 const FETCH_TIMEOUT_MS      = 90000;   // 半径5kmクエリ用
 const FETCH_TIMEOUT_AREA_MS = 180000;  // 県全体クエリは重いので長め
 
-const SLEEP_MS      = 1500;  // Overpass への礼儀。1リクエストごと
-const MAX_RETRY     = 3;
-const RADIUS_M      = 5000;  // 現在座標まわりの検索半径
-const AUTO_MAX_KM   = 10;    // 自動採用を許す現在座標からのズレ
+const SLEEP_MS    = 1500;  // Overpass への礼儀。1リクエストごと
+const MAX_RETRY   = 3;
+const RADIUS_M    = 5000;  // 現在座標まわりの検索半径
+const AUTO_MAX_KM = 10;    // auto に分類する現在座標からのズレの上限
 
 const PREF_FULL = { '神奈川': '神奈川県', '静岡': '静岡県', '山梨': '山梨県' };
 
@@ -49,42 +53,6 @@ function haversineKm(lat1, lng1, lat2, lng2) {
     Math.sin(dLat / 2) ** 2 +
     Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(a));
-}
-
-/**
- * 名前の正規化。
- *   NFKC で全角半角を統一 → 括弧内を除去 → 「オートキャンプ場」「キャンプ場」「場」を除去
- *   → スペース・中黒を除去 → 小文字化
- * 両者に同じ処理をかけるので、除去で多少崩れても比較としては対称。
- */
-function normalizeName(s) {
-  if (!s) return '';
-  let t = String(s).normalize('NFKC');
-  t = t.replace(/\([^)]*\)/g, '');       // 括弧内（NFKC 後は半角括弧）
-  t = t.replace(/\[[^\]]*\]/g, '');
-  t = t.replace(/【[^】]*】/g, '');
-  t = t.replace(/オートキャンプ場/g, '');
-  t = t.replace(/キャンプ場/g, '');
-  t = t.replace(/オートキャンプ/g, '');
-  t = t.replace(/キャンプ/g, '');
-  t = t.replace(/場/g, '');
-  t = t.replace(/[\s・･]/g, '');
-  return t.toLowerCase();
-}
-
-/**
- * 一致判定。
- * 完全一致は2文字以上、包含は短い側が3文字以上を要求する。
- * これがないと「森」だけが残った名前が大量の候補を拾ってしまう。
- */
-function namesMatch(a, b) {
-  if (!a || !b) return false;
-  if (a.length < 2 || b.length < 2) return false;
-  if (a === b) return true;
-  const shorter = a.length <= b.length ? a : b;
-  const longer  = a.length <= b.length ? b : a;
-  if (shorter.length < 3) return false;
-  return longer.includes(shorter);
 }
 
 // ── Overpass ────────────────────────────────────────────────────────────────
@@ -163,15 +131,19 @@ async function main() {
   const camps = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
   const targets = camps.filter(c => c.coordsVerified !== true);
 
-  console.log(`対象 ${targets.length}件（座標あり ${targets.filter(c => c.lat && c.lng).length} / 座標0 ${targets.filter(c => !c.lat || !c.lng).length}）`);
+  const withCoords = targets.filter(c => c.lat !== 0 && c.lng !== 0).length;
+  console.log(`対象 ${targets.length}件（座標あり ${withCoords} / 座標0 ${targets.length - withCoords}）`);
   console.log(`Overpass: ${ENDPOINT}（1件ごとに ${SLEEP_MS}ms 待機）\n`);
 
   const prefCache = {};   // 県全体の一覧（座標0のもの用）
-  // fetchFailed は notFound にも含める（仕様どおり notFound 扱い）が、
-  // 「本当に候補がない」のか「Overpass が落ちて取れなかった」のかを区別できるよう
+  // fetchFailed は notFound にも含める（候補なしと同じ扱い）が、
+  // 「本当に候補がない」のか「Overpass から取れなかった」のかを区別できるよう
   // 別配列にも残す。再実行すれば取得済みはキャッシュから即返るので、
   // fetchFailed だけを取り直せる。
-  const result = { generatedAt: new Date().toISOString(), auto: [], ambiguous: [], notFound: [], fetchFailed: [] };
+  const result = {
+    generatedAt: new Date().toISOString(),
+    auto: [], ambiguous: [], notFound: [], fetchFailed: [],
+  };
 
   for (let i = 0; i < targets.length; i++) {
     const c = targets[i];
@@ -183,7 +155,11 @@ async function main() {
       pool = await overpass(radiusQuery(c.lat, c.lng), 'r:' + c.slug);
     } else {
       const prefFull = PREF_FULL[c.prefecture];
-      if (!prefFull) { result.notFound.push(c.slug); continue; }
+      if (!prefFull) {
+        console.log('    → 県名が不明。notFound 扱い');
+        result.notFound.push({ slug: c.slug, name: c.name });
+        continue;
+      }
       if (!prefCache[prefFull]) {
         console.log(`    (${prefFull} 全体の camp_site を取得)`);
         prefCache[prefFull] = await overpass(prefectureQuery(prefFull), 'p:' + prefFull, FETCH_TIMEOUT_AREA_MS);
@@ -193,13 +169,13 @@ async function main() {
 
     if (!pool) {                       // リトライしきって失敗
       console.log('    → 取得失敗。notFound 扱い（再実行で取り直せます）');
-      result.notFound.push(c.slug);
+      result.notFound.push({ slug: c.slug, name: c.name });
       result.fetchFailed.push(c.slug);
       continue;
     }
 
     const target = normalizeName(c.name);
-    const candidates = pool
+    const matched = pool
       .filter(o => namesMatch(target, normalizeName(o.osmName)))
       .map(o => ({
         osmId: o.osmId,
@@ -211,43 +187,57 @@ async function main() {
 
     // 同一地点の重複（node と way の二重登録など）をまとめる
     const seen = new Set();
-    const uniq = candidates.filter(x => {
+    const candidates = matched.filter(x => {
       const k = x.osmName + '@' + x.lat.toFixed(4) + ',' + x.lng.toFixed(4);
       if (seen.has(k)) return false;
       seen.add(k);
       return true;
     });
 
-    if (uniq.length === 0) {
+    if (candidates.length === 0) {
       console.log('    → 候補なし');
-      result.notFound.push(c.slug);
-    } else if (uniq.length === 1) {
-      const m = uniq[0];
+      result.notFound.push({ slug: c.slug, name: c.name });
+    } else if (candidates.length === 1) {
+      const m = candidates[0];
+      // 座標0のものは距離を測れない。県内の名前一致を根拠に auto へ入れるが、
+      // 採用は auto-review.html での目視確認が前提（自動反映はしない）。
       const withinRange = !hasCoords || m.distanceKm <= AUTO_MAX_KM;
       if (withinRange) {
-        console.log(`    → 自動採用候補: ${m.osmName}${hasCoords ? ` (${m.distanceKm}km)` : ' (座標未設定・県内一致)'}`);
+        console.log(`    → auto: ${m.osmName}${hasCoords ? ` (${m.distanceKm}km)` : ' (座標未設定・県内一致)'}`);
         result.auto.push({
-          slug: c.slug, name: c.name, prefecture: c.prefecture, area: c.area,
-          lat: m.lat, lng: m.lng, osmName: m.osmName, osmId: m.osmId,
+          slug: c.slug, name: c.name,
+          prefecture: c.prefecture, area: c.area,
+          lat: m.lat, lng: m.lng,
+          osmName: m.osmName, osmId: m.osmId,
           distanceKm: m.distanceKm,
           currentLat: c.lat, currentLng: c.lng,
         });
       } else {
-        console.log(`    → 1件だが ${m.distanceKm}km 離れているため要確認`);
-        result.ambiguous.push({ slug: c.slug, name: c.name, prefecture: c.prefecture, area: c.area, currentLat: c.lat, currentLng: c.lng, candidates: uniq });
+        console.log(`    → ambiguous: 1件だが ${m.distanceKm}km 離れている`);
+        result.ambiguous.push({
+          slug: c.slug, name: c.name,
+          prefecture: c.prefecture, area: c.area,
+          currentLat: c.lat, currentLng: c.lng,
+          candidates,
+        });
       }
     } else {
-      console.log(`    → 候補${uniq.length}件。要確認`);
-      result.ambiguous.push({ slug: c.slug, name: c.name, prefecture: c.prefecture, area: c.area, currentLat: c.lat, currentLng: c.lng, candidates: uniq });
+      console.log(`    → ambiguous: 候補${candidates.length}件`);
+      result.ambiguous.push({
+        slug: c.slug, name: c.name,
+        prefecture: c.prefecture, area: c.area,
+        currentLat: c.lat, currentLng: c.lng,
+        candidates,
+      });
     }
   }
 
   fs.writeFileSync(RESULT_PATH, JSON.stringify(result, null, 2));
 
   console.log('\n── 集計 ───────────────────────────────────');
-  console.log(`自動採用候補 (auto):    ${result.auto.length}件`);
-  console.log(`要判断     (ambiguous): ${result.ambiguous.length}件`);
-  console.log(`候補なし   (notFound):  ${result.notFound.length}件`);
+  console.log(`auto:      ${result.auto.length}件`);
+  console.log(`ambiguous: ${result.ambiguous.length}件`);
+  console.log(`notFound:  ${result.notFound.length}件`);
   if (result.fetchFailed.length) {
     console.log(`  └ うち Overpass 取得失敗: ${result.fetchFailed.length}件（再実行で取り直し可）`);
   }
