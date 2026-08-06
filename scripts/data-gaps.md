@@ -1,19 +1,19 @@
 # 情報欠損の棚卸し
 
-対象: 全 **199件** / チェック項目 6種
+対象: 全 **205件** / チェック項目 6種
 
-何らかの欠損があるもの: **199件**（欠損ゼロ: 0件）
+何らかの欠損があるもの: **205件**（欠損ゼロ: 0件）
 
 ## 項目別の欠損数
 
 | 項目 | 欠損数 | 割合 |
 | --- | --- | --- |
-| tel が空 | 122 | 61.3% |
-| officialUrl が空 | 151 | 75.9% |
-| reservationUrl が空 | 165 | 82.9% |
-| lastVerified が空/2026年以前 | 199 | 100.0% |
-| soloComment が80字未満 | 108 | 54.3% |
-| priceMin と priceMax が同値 | 34 | 17.1% |
+| tel が空 | 125 | 61.0% |
+| officialUrl が空 | 155 | 75.6% |
+| reservationUrl が空 | 171 | 83.4% |
+| lastVerified が空/2026年以前 | 205 | 100.0% |
+| soloComment が80字未満 | 114 | 55.6% |
+| priceMin と priceMax が同値 | 40 | 19.5% |
 
 ### lastVerified の内訳
 
@@ -24,7 +24,7 @@
 | 空 | 14 |
 | 日付として不正 | 0 |
 | 2025年以前 | 32 |
-| 2026年 | 153 |
+| 2026年 | 159 |
 | 2027年以降 | 0 |
 
 ## 県別の欠損率
@@ -33,8 +33,8 @@
 
 | 県 | 件数 | 欠損ありの件数 | 平均欠損項目数 | 欠損率 |
 | --- | --- | --- | --- | --- |
+| 山梨 | 71 | 71 | 4.07 | 67.8% |
 | 静岡 | 70 | 70 | 3.97 | 66.2% |
-| 山梨 | 65 | 65 | 3.97 | 66.2% |
 | 神奈川 | 64 | 64 | 3.80 | 63.3% |
 
 ## エリア別の欠損率（欠損率の高い順）
@@ -49,6 +49,7 @@
 | 静岡・静岡市清水区 | 3 | 3 | 5.67 | 94.4% |
 | 静岡・静岡市葵区 | 2 | 2 | 5.50 | 91.7% |
 | 神奈川・相模原市緑区 | 2 | 2 | 5.50 | 91.7% |
+| 山梨・南部町 | 7 | 7 | 5.14 | 85.7% |
 | 静岡・掛川 | 1 | 1 | 5.00 | 83.3% |
 | 神奈川・伊勢原 | 1 | 1 | 5.00 | 83.3% |
 | 神奈川・湯河原 | 1 | 1 | 5.00 | 83.3% |
@@ -72,7 +73,6 @@
 | 山梨・鳴沢村 | 1 | 1 | 5.00 | 83.3% |
 | 山梨・都留市 | 2 | 2 | 5.00 | 83.3% |
 | 山梨・富士河口湖町 | 2 | 2 | 5.00 | 83.3% |
-| 山梨・南部町 | 1 | 1 | 5.00 | 83.3% |
 | 山梨・早川町 | 1 | 1 | 5.00 | 83.3% |
 | 静岡・伊東市 | 1 | 1 | 5.00 | 83.3% |
 | 静岡・沼津市 | 1 | 1 | 5.00 | 83.3% |
@@ -144,6 +144,8 @@
 | `ogurabashi-kasenjiki` | 小倉橋河川敷 | 神奈川・相模原市緑区 | 6 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `takadabashi-kasenjiki` | 高田橋河川敷 | 神奈川・相模原市中央区 | 6 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `nishizato-camp-tekichi` | 西里キャンプ適地 | 静岡・静岡市清水区 | 6 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
+| `nekumasanso-auto` | 福士川根熊山荘ファミリーオートキャンプ場 | 山梨・南部町 | 6 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
+| `sanogawa-camp` | 佐野川キャンプ場 | 山梨・南部町 | 6 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `narakoko` | ならここの里キャンプ場 | 静岡・掛川 | 5 | tel が空<br>officialUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `momijino-sato` | もみじの里オートキャンプ場 | 山梨・道志村 | 5 | tel が空<br>officialUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `yatsugatake-oizumi` | 八ヶ岳オートキャンプ場大泉 | 山梨・北杜 | 5 | tel が空<br>officialUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
@@ -209,6 +211,9 @@
 | `kamioshima-camp` | 上大島キャンプ場 | 神奈川・相模原市緑区 | 5 | officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `ikenoya-family` | 池の谷ファミリーキャンプ場 | 静岡・川根本町 | 5 | officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `apt-ichishiro` | アプトいちしろキャンプ場 | 静岡・川根本町 | 5 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
+| `fukushigawa-auto` | 福士川オートキャンプ場 | 山梨・南部町 | 5 | officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
+| `turkeys-house` | ターキーズハウス | 山梨・南部町 | 5 | officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
+| `lumberjack-nanbu` | ランバージャック | 山梨・南部町 | 5 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `tanzawako-lodge` | 丹沢湖ロッヂキャンプ場 | 神奈川・丹沢湖 | 4 | officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `oiso-longbeach` | 大磯ロングビーチキャンプサイト | 神奈川・大磯 | 4 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前 |
 | `nanasawa-camp` | 七沢キャンプ場 | 神奈川・厚木 | 4 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前 |
@@ -263,6 +268,7 @@
 | `yagi-camp` | 八木キャンプ場 | 静岡・川根本町 | 4 | reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `mitsuboshi-auto` | 三ツ星オートキャンプ場 | 静岡・川根本町 | 4 | reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `fudonotaki-auto` | 不動の滝自然広場オートキャンプ場 | 静岡・川根本町 | 4 | reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
+| `fukushigawa-seishonen` | 福士川渓谷青少年旅行村 | 山梨・南部町 | 4 | reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満<br>priceMin と priceMax が同値 |
 | `asagiri-sorairo` | 朝霧Camp Base そらいろ | 静岡・朝霧高原 | 3 | tel が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `motosu-lakeside` | 本栖レークサイドキャンプ場 | 山梨・本栖湖 | 3 | tel が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `aonohara-auto` | 青野原オートキャンプ場 | 神奈川・道志川 | 3 | officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前 |
