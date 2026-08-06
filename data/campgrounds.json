@@ -631,16 +631,16 @@
   {
     "id": "kannogawa",
     "slug": "kannogawa",
-    "name": "神之川キャンプ場",
+    "name": "神之川キャンプ・マス釣り場",
     "prefecture": "神奈川",
     "area": "西丹沢",
     "address": "神奈川県相模原市緑区青根3685",
     "lat": 35.5282434,
     "lng": 139.1075912,
     "coordsVerified": true,
-    "priceMin": 3740,
-    "priceMax": 6000,
-    "priceNote": "入場料880円+オートサイト2,860円〜",
+    "priceMin": 3080,
+    "priceMax": 3080,
+    "priceNote": "区画サイト宿泊。日帰り2,000円。バンガロー6畳8,250円／高床式16,500円／12畳19,800円。2026年4月1日改定",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -671,11 +671,14 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "キャンプと管理釣り場が一体になった渓流キャンプ場。場内でマス釣りができるという珍しい複合施設。温水シャワーと家族風呂の両方が揃い、入浴問題ゼロ。道志川源流域の静かな渓流沿いで自然度が高い。アクセスはやや悪いがその分人が少ない。",
+    "soloComment": "キャンプと管理釣り場が一体の渓流サイト。全区画が神之川沿いの河原にあり、場内でマス釣りやつかみ取りができる。温水シャワーと家族風呂が揃い入浴も困らない。",
     "officialUrl": "https://kannogawa.jp/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11648",
     "tel": "042-787-2116",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-08-06",
+    "cautions": [
+      "予約日から1週間以上前の場合は往復はがきでの受付"
+    ]
   },
   {
     "id": "fumotoppara",
@@ -2515,7 +2518,7 @@
       "toilet": "洋式",
       "carIn": true,
       "soloPlan": false,
-      "reservation": "不要",
+      "reservation": "要",
       "convenience": false,
       "shop": true,
       "wifi": false,
@@ -2524,12 +2527,14 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "carInNote": "オートサイト約50区画"
     },
     "season": "通年",
-    "soloComment": "予約不要で思い立ったら行ける道志川沿いの格安キャンプ場。1,500円〜のコスパで渓流サイトを楽しめる。川釣りを楽しみながらのんびりしたいソロ向け。道志川源流域の静かな環境が魅力。",
+    "soloComment": "道志川と支流の此の間沢が流れる渓流サイト。オート約50区画で車を横付けでき、シャワー・売店・ランドリーも揃う。予約制なので事前に押さえてから向かいたい。",
     "tel": "042-787-2735",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-08-06",
+    "officialUrl": "https://konomasawacamp.co.jp/"
   },
   {
     "id": "chojayashiki-camp",
@@ -5252,8 +5257,9 @@
     "officialUrl": "",
     "reservationUrl": "",
     "season": "通年",
-    "soloComment": "相模原の小さなキャンプ場。シンプルで素朴、価格と静けさのバランスがいい。",
-    "lastVerified": "2025-01-01"
+    "soloComment": "※この施設は実在を確認できていません。閉鎖済みか、正式名称が異なる可能性があります。訪問前に必ずご確認ください。",
+    "lastVerified": "2025-01-01",
+    "needsVerify": true
   },
   {
     "id": "tiny-camp-village",
