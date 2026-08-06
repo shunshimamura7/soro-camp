@@ -8,9 +8,9 @@
 
 | 項目 | 欠損数 | 割合 |
 | --- | --- | --- |
-| tel が空 | 121 | 63.0% |
-| officialUrl が空 | 152 | 79.2% |
-| reservationUrl が空 | 159 | 82.8% |
+| tel が空 | 120 | 62.5% |
+| officialUrl が空 | 150 | 78.1% |
+| reservationUrl が空 | 158 | 82.3% |
 | lastVerified が空/2026年以前 | 192 | 100.0% |
 | soloComment が80字未満 | 102 | 53.1% |
 | priceMin と priceMax が同値 | 28 | 14.6% |
@@ -23,8 +23,8 @@
 | --- | --- |
 | 空 | 14 |
 | 日付として不正 | 0 |
-| 2025年以前 | 34 |
-| 2026年 | 144 |
+| 2025年以前 | 33 |
+| 2026年 | 145 |
 | 2027年以降 | 0 |
 
 ## 県別の欠損率
@@ -35,7 +35,7 @@
 | --- | --- | --- | --- | --- |
 | 山梨 | 65 | 65 | 3.97 | 66.2% |
 | 静岡 | 63 | 63 | 3.95 | 65.9% |
-| 神奈川 | 64 | 64 | 3.86 | 64.3% |
+| 神奈川 | 64 | 64 | 3.80 | 63.3% |
 
 ## エリア別の欠損率（欠損率の高い順）
 
@@ -77,7 +77,6 @@
 | 山梨・早川町 | 1 | 1 | 5.00 | 83.3% |
 | 静岡・伊東市 | 1 | 1 | 5.00 | 83.3% |
 | 静岡・沼津市 | 1 | 1 | 5.00 | 83.3% |
-| 神奈川・丹沢湖 | 4 | 4 | 4.50 | 75.0% |
 | 神奈川・相模原 | 4 | 4 | 4.50 | 75.0% |
 | 山梨・南アルプス | 3 | 3 | 4.33 | 72.2% |
 | 山梨・北杜 | 6 | 6 | 4.33 | 72.2% |
@@ -101,6 +100,7 @@
 | 静岡・伊豆 | 8 | 8 | 3.63 | 60.4% |
 | 山梨・山中湖 | 6 | 6 | 3.50 | 58.3% |
 | 神奈川・秦野 | 4 | 4 | 3.50 | 58.3% |
+| 神奈川・丹沢湖 | 4 | 4 | 3.50 | 58.3% |
 | 山梨・山梨市 | 2 | 2 | 3.50 | 58.3% |
 | 神奈川・相模湖 | 5 | 5 | 3.40 | 56.7% |
 | 神奈川・宮ヶ瀬 | 5 | 5 | 3.40 | 56.7% |
@@ -152,7 +152,6 @@
 | `okuyugawara-auto` | 奥湯河原オートキャンプ場 | 神奈川・湯河原 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `doshi-fureainomori` | 道志ふれあいの森キャンプ場 | 山梨・道志村 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `naminokomura` | なみのこ村 | 神奈川・湯河原・海沿い | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
-| `kuragari-camp` | 玄倉キャンプ場 | 神奈川・丹沢湖 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `hayatogawa-masu` | 早戸川国際マス釣場キャンプ場 | 神奈川・宮ヶ瀬 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `yakeyamazawa-shinpukuji` | 焼山沢真福寺キャンプ場 | 神奈川・相模原 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `shiroyama-fureainosato` | 城山ふれあいの里 | 神奈川・津久井湖 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
@@ -181,7 +180,6 @@
 | `hachibanaen-miroku` | 蜂花苑ミロクキャンプ場 | 神奈川・厚木・中津川 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `oyama-kogen-camp` | 大野山高原キャンプ場 | 神奈川・山北 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `nakatsugawa-camp` | 中津川キャンプ場 | 神奈川・愛甲郡愛川町 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
-| `tanzawako-roadside-camp` | 丹沢湖レイクサイドキャンプ場 | 神奈川・丹沢湖 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `sagamiko-camping-village` | 相模湖キャンピングヴィレッジ | 神奈川・相模湖 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `miura-camp-beach` | 三浦海岸キャンプ場 | 神奈川・三浦半島 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `hadano-camp-valley` | 秦野渓谷キャンプ場 | 神奈川・秦野 | 5 | tel が空<br>officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
@@ -257,6 +255,7 @@
 | `fujisan-genshijin` | 富士山オートキャンプ場GENSHIJIN | 静岡・富士宮 | 4 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `granpapa-solo-bocchi` | 富士山GranPapaソロぼっち区画サイト | 静岡・富士宮 | 4 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `shinozawa-ootaki-camp` | 篠沢大滝キャンプ場 | 山梨・北杜・南アルプス | 4 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
+| `tanzawako-roadside-camp` | 丹沢湖ロッヂ | 神奈川・丹沢湖 | 4 | tel が空<br>reservationUrl が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `asagiri-sorairo` | 朝霧Camp Base そらいろ | 静岡・朝霧高原 | 3 | tel が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `motosu-lakeside` | 本栖レークサイドキャンプ場 | 山梨・本栖湖 | 3 | tel が空<br>lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `aonohara-auto` | 青野原オートキャンプ場 | 神奈川・道志川 | 3 | officialUrl が空<br>reservationUrl が空<br>lastVerified が空/2026年以前 |
@@ -314,6 +313,7 @@
 | `camp-baird` | キャンプベアード | 静岡・伊豆 | 2 | reservationUrl が空<br>lastVerified が空/2026年以前 |
 | `pica-fuji-greenpa` | PICA富士ぐりんぱ | 静岡・裾野 | 2 | reservationUrl が空<br>lastVerified が空/2026年以前 |
 | `pica-fujiyama-camp` | PICA Fujiyama | 山梨・河口湖 | 2 | reservationUrl が空<br>lastVerified が空/2026年以前 |
+| `kuragari-camp` | 丹沢湖キャンプサイト | 神奈川・丹沢湖 | 2 | lastVerified が空/2026年以前<br>soloComment が80字未満 |
 | `asagiri-eichinomori` | 朝霧高原 英知の杜キャンプ場 | 静岡・朝霧高原 | 1 | lastVerified が空/2026年以前 |
 | `wellcamp-nishitanzawa` | ウェルキャンプ西丹沢 | 神奈川・西丹沢 | 1 | lastVerified が空/2026年以前 |
 | `shindo` | 新戸キャンプ場 | 神奈川・道志川 | 1 | lastVerified が空/2026年以前 |

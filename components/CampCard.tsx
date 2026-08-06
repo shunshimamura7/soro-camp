@@ -14,6 +14,11 @@ function getFeatureTags(f: Campground["features"], bathFilterActive: boolean): F
   return tags;
 }
 
+/** 焚き火不可はソロキャンプでは決定的なので、一覧でも判別できるようにする */
+function isNoBonfire(f: Campground["features"]): boolean {
+  return f.bonfire === false;
+}
+
 type Props = { camp: Campground; bathFilterActive?: boolean };
 
 export default function CampCard({ camp, bathFilterActive = false }: Props) {
@@ -21,6 +26,7 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
   const isWild = camp.type === "wild";
   // 野営地は無料。管理施設で価格が 0/0 のものは未調査なので priceNote を出す
   const priceUnknown = !isWild && camp.priceMin === 0 && camp.priceMax === 0;
+  const noBonfire = isNoBonfire(camp.features);
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     camp.name + " " + (camp.address ?? "")
   )}`;
@@ -48,6 +54,11 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
         {isWild && (
           <span className="ml-2 align-middle inline-flex items-center shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-white text-[#e8611f] border border-[#e8611f]">
             野営地
+          </span>
+        )}
+        {noBonfire && (
+          <span className="ml-2 align-middle inline-flex items-center shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-[#f2f0ee] text-[#6b6560] border border-[#d8d3ce]">
+            🚫 焚き火不可
           </span>
         )}
       </div>

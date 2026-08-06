@@ -18,12 +18,13 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "priceAsc",  label: "価格安い順" },
 ];
 
-type BooleanFilterKey = "bath" | "shower" | "noReservation";
+type BooleanFilterKey = "bath" | "shower" | "noReservation" | "bonfire";
 
 const FEATURE_FILTERS: Array<{ key: BooleanFilterKey; label: string }> = [
   { key: "bath",          label: "♨️ 風呂あり" },
   { key: "shower",        label: "🚿 シャワーあり" },
   { key: "noReservation", label: "✅ 予約不要" },
+  { key: "bonfire",       label: "🔥 焚き火可" },
 ];
 
 const pillBase =

@@ -40,6 +40,7 @@ export type Filters = {
   bath: boolean;
   shower: boolean;
   noReservation: boolean;
+  bonfire: boolean;
 };
 
 /** 一覧上部のタブ。キャンプ場と野営地の切り替え。 */
@@ -63,6 +64,7 @@ export function filterAndSort(
     if (filters.bath && !c.features.bath) return false;
     if (filters.shower && !c.features.shower) return false;
     if (filters.noReservation && c.features.reservation !== "不要") return false;
+    if (filters.bonfire && !c.features.bonfire) return false;
     return true;
   });
 

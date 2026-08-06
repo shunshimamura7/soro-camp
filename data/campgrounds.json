@@ -5201,7 +5201,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5209,6 +5208,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "道志川沿いの観光農園併設キャンプ場。果物狩りと組み合わせられる。",
     "lastVerified": "2025-01-01"
   },
@@ -5244,7 +5244,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5252,6 +5251,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "相模原の小さなキャンプ場。シンプルで素朴、価格と静けさのバランスがいい。",
     "lastVerified": "2025-01-01"
   },
@@ -5288,7 +5288,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": "七沢温泉まで徒歩3分"
@@ -5296,6 +5295,7 @@
     "tel": "070-3366-7738",
     "officialUrl": "https://www.tiny-camp-village.com/",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "1日5組限定の隠れ家キャンプ場。七沢温泉まで徒歩3分。完全予約制でソロには贅沢な空間。",
     "lastVerified": "2025-01-01"
   },
@@ -5332,7 +5332,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5340,6 +5339,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "大山日向薬師の麓、伊勢原の渓流沿い。アクセス抜群で平日ソロにも最適。",
     "lastVerified": "2025-01-01"
   },
@@ -5376,7 +5376,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": "奥湯河原温泉まで5分"
@@ -5384,6 +5383,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "奥湯河原の渓流沿い、温泉街までクルマで5分。",
     "lastVerified": "2025-01-01"
   },
@@ -5420,7 +5420,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5428,6 +5427,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "相模原市側の道志川沿い、中央道相模原ICから20分台のアクセス。",
     "lastVerified": "2025-01-01"
   },
@@ -5463,7 +5463,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5471,13 +5470,14 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "湯河原の海岸沿い、目の前に相模湾が広がる稀少な海キャンプ。",
     "lastVerified": "2025-01-01"
   },
   {
     "id": "kuragari-camp",
     "slug": "kuragari-camp",
-    "name": "玄倉キャンプ場",
+    "name": "丹沢湖キャンプサイト",
     "prefecture": "神奈川",
     "area": "丹沢湖",
     "lat": 35.448,
@@ -5497,25 +5497,29 @@
       "wifi": false,
       "carIn": true,
       "soloPlan": false,
-      "reservation": "不要",
+      "reservation": "要",
       "shop": false,
       "firewood": false,
       "ice": false,
       "alcohol": false,
       "bonfire": true,
-      "pet": true,
+      "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "tel": "",
-    "officialUrl": "",
-    "reservationUrl": "",
-    "soloComment": "丹沢湖の奥、玄倉川沿いのバイクツーリング派の聖地。夜は本物の静寂。",
-    "lastVerified": "2025-01-01"
+    "tel": "0465-78-3242",
+    "officialUrl": "https://www.yamakita.net/stay/detail.php?id=13&type=2",
+    "reservationUrl": "https://tanzawa-camp.sakura.ne.jp/",
+    "season": "4月〜11月末",
+    "soloComment": "丹沢湖畔・標高340mの林間サイト。地面は砂で設営しやすく、玄倉バス停から徒歩3分と電車バス派にも向く。中川温泉ぶなの湯まで車11分。",
+    "lastVerified": "2026-08-06",
+    "telNote": "受付10:00〜21:00",
+    "cautions": [
+      "玄倉川はダム放流で急激に増水する。河原には降りないこと"
+    ]
   },
   {
     "id": "hayatogawa-masu",
@@ -5550,7 +5554,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5558,6 +5561,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "宮ヶ瀬北側、マス釣場併設。釣ってその場で焼くソロの楽しみ方。",
     "lastVerified": "2025-01-01"
   },
@@ -5593,7 +5597,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "4月-11月",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5601,6 +5604,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "4月-11月",
     "soloComment": "焼山登山口近くの寺所有のキャンプ場。徒歩搬入で完全静寂。",
     "lastVerified": "2025-01-01"
   },
@@ -5636,7 +5640,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "4月-11月",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5644,6 +5647,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "4月-11月",
     "soloComment": "津久井湖近く相模原市営。林間でひっそり、公営の安心感と価格。",
     "lastVerified": "2025-01-01"
   },
@@ -5680,7 +5684,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5688,6 +5691,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "西丹沢神之川流域の渓谷キャンプ場。林道を奥に進んだ先の隠れ家。",
     "lastVerified": "2025-01-01"
   },
@@ -5724,7 +5728,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5732,6 +5735,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "御殿場ICから10分の高規格キャンプ場。富士山ビューと整った設備。",
     "lastVerified": "2025-01-01"
   },
@@ -5767,7 +5771,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5775,6 +5778,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "西伊豆の海岸沿い、夕陽が駿河湾に沈む。波音と星の濃さは関東最強クラス。",
     "lastVerified": "2025-01-01"
   },
@@ -5811,7 +5815,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5819,6 +5822,7 @@
     "tel": "",
     "officialUrl": "https://genshijin-fujinomiya.com/",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "朝霧高原の麓、富士宮側で富士山を正面に。ふもとっぱらより気軽。",
     "lastVerified": "2025-01-01"
   },
@@ -5855,7 +5859,6 @@
       "pet": true,
       "toilet": "コンポスト",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5863,6 +5866,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "標高400m、富士山と駿河湾を見下ろすオフグリッドの5区画のみ。直火の石窯付き。",
     "lastVerified": "2025-01-01"
   },
@@ -5899,7 +5903,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5907,6 +5910,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "静岡市街から20分なのに1日3組限定、貸切サウナあり。夏は蛍が舞う。",
     "lastVerified": "2025-01-01"
   },
@@ -5942,7 +5946,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5950,6 +5953,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "静岡市西部、市街から20分の街近キャンプ場。設備充実。",
     "lastVerified": "2025-01-01"
   },
@@ -5986,7 +5990,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -5994,6 +5997,7 @@
     "tel": "",
     "officialUrl": "https://www.gran-papa.com/site/solo/",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "富士宮のキャンプ場内ソロ専用ぼっち区画。25㎡・トイレ近・ソロ最適化設計。",
     "lastVerified": "2025-01-01"
   },
@@ -6030,7 +6034,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6038,6 +6041,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "御殿場IC近くの隠れたオートキャンプ場。富士山と箱根を両方眺められる。",
     "lastVerified": "2025-01-01"
   },
@@ -6074,7 +6078,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "4月-11月",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6082,6 +6085,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "4月-11月",
     "soloComment": "南アルプス南部・大井川源流の井川湖そば。ICから2時間超の山奥、完全な静寂。",
     "lastVerified": "2025-01-01"
   },
@@ -6117,7 +6121,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": "接岨峡温泉まで徒歩"
@@ -6125,6 +6128,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "奥大井・接岨峡温泉に隣接。秘境感は寸又峡以上、無人駅と吊り橋の世界。",
     "lastVerified": "2025-01-01"
   },
@@ -6160,7 +6164,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6168,6 +6171,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "南アルプス市の麓の小規模オートキャンプ場。",
     "lastVerified": "2025-01-01"
   },
@@ -6204,7 +6208,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6212,6 +6215,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "道志川源流域、道志村の最奥に近いポジション。源流の冷たい水と静けさが売り。",
     "lastVerified": "2025-01-01"
   },
@@ -6248,7 +6252,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6256,6 +6259,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "山中湖の南岸、湖と富士山を一望のフリーサイト。温泉あり・炊事場お湯あり。",
     "lastVerified": "2025-01-01"
   },
@@ -6292,7 +6296,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6300,6 +6303,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "精進湖の北側、赤池跡近くの素朴なキャンプ場。富士五湖の喧騒を避けた林間。",
     "lastVerified": "2025-01-01"
   },
@@ -6336,7 +6340,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6344,6 +6347,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "道志川沿い、車両乗入は8サイトのみのプライベート感重視。",
     "lastVerified": "2025-01-01"
   },
@@ -6380,7 +6384,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "4月-11月",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6388,6 +6391,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "4月-11月",
     "soloComment": "南アルプス市の市営。利用料500円〜の破格、ソロなら1000円台で済む。",
     "lastVerified": "2025-01-01"
   },
@@ -6424,7 +6428,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": "サントリー白州蒸溜所近く"
@@ -6432,6 +6435,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "標高1130mの星降るリゾート、南アルプス甲斐駒のふところ。サントリー白州近く。",
     "lastVerified": "2025-01-01"
   },
@@ -6468,7 +6472,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6476,6 +6479,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "道志村のフィンランド風キャンプ場。直火OKでサウナ系の趣向にもハマる。",
     "lastVerified": "2025-01-01"
   },
@@ -6512,7 +6516,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6520,6 +6523,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "南アルプス甲斐駒ヶ岳山麓、1日1-2組限定の森のキャンプ場。1区画500平米の贅沢。",
     "lastVerified": "2025-01-01"
   },
@@ -6556,7 +6560,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6564,6 +6567,7 @@
     "tel": "",
     "officialUrl": "https://shinozawa-ootaki-camp.com/",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "北杜白州、大武川最上流の川遊び聖地。家族貸切風呂2種、フリーWi-Fi完備。",
     "lastVerified": "2025-01-01"
   },
@@ -6600,7 +6604,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6608,6 +6611,7 @@
     "tel": "050-8007-1120",
     "officialUrl": "https://oic-camp.com/",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "富士ヶ嶺の富士山ビュー、ソロ専用区画あり。混雑回避にも最適。",
     "lastVerified": "2025-01-01"
   },
@@ -6644,7 +6648,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": true,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "道の駅併設",
       "nearbyShop": "下部温泉まで車5分"
@@ -6652,6 +6655,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "ゆるキャン△聖地の身延町、道の駅と下部温泉直結のオートキャンプ場。",
     "lastVerified": "2025-01-01"
   },
@@ -6688,7 +6692,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6696,6 +6699,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "箱根の静かな林間、ソロ専用区画あり。プライベート感十分でサイトは土と砂利。",
     "lastVerified": "2026-05-28"
   },
@@ -6732,7 +6736,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6740,6 +6743,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "湘南エリアのブッシュクラフト特化キャンプ場。ソロ向けの設計で自然技術を磨ける。",
     "lastVerified": "2026-05-28"
   },
@@ -6776,7 +6780,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6784,6 +6787,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "相模原秋山川沿い、電車でも行ける。JR藤野駅から徒歩20分とアクセス良好。",
     "lastVerified": "2026-05-28"
   },
@@ -6820,7 +6824,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6828,6 +6831,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "中津川沿い1日数組限定の予約制プライベートキャンプ場。ペットゾーンあり。",
     "lastVerified": "2026-05-28"
   },
@@ -6863,7 +6867,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "4月-11月",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6871,6 +6874,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "4月-11月",
     "soloComment": "山北町大野山山頂付近、360度パノラマの草原。富士山・丹沢・相模湾が一望。",
     "lastVerified": "2026-05-28"
   },
@@ -6907,7 +6911,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -6915,13 +6918,14 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "厚木ICから20分の河川敷キャンプ場。無料〜格安で車の乗り入れ可、手軽な都市近郊の定番。",
     "lastVerified": "2026-05-28"
   },
   {
     "id": "tanzawako-roadside-camp",
     "slug": "tanzawako-roadside-camp",
-    "name": "丹沢湖レイクサイドキャンプ場",
+    "name": "丹沢湖ロッヂ",
     "prefecture": "神奈川",
     "area": "丹沢湖",
     "lat": 35.435,
@@ -6929,7 +6933,7 @@
     "priceMin": 2500,
     "priceMax": 4000,
     "scores": {
-      "quietness": 4,
+      "quietness": 5,
       "scenery": 5,
       "value": 4,
       "access": 3,
@@ -6946,20 +6950,28 @@
       "firewood": true,
       "ice": false,
       "alcohol": false,
-      "bonfire": true,
+      "bonfire": false,
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bonfireNote": "焚き火・直火とも全面禁止",
+      "petNote": "湖サイトのみリード着用で可"
     },
     "tel": "",
-    "officialUrl": "",
+    "officialUrl": "https://tanzawakolodge.com/",
     "reservationUrl": "",
-    "soloComment": "丹沢湖畔の静かなキャンプ場。湖を眺めながらのソロキャンプ、ツーリング派にも人気。",
-    "lastVerified": "2026-05-28"
+    "season": "通年",
+    "soloComment": "都心から90分、富士山と湖を一望できる高台。おやすみタイムを設けるほど静粛性を重視した運営だが、焚き火・直火は全面禁止なので注意。",
+    "lastVerified": "2026-08-06",
+    "needsVerify": true,
+    "cautions": [
+      "焚き火・直火は全面禁止",
+      "おやすみタイム21:00〜6:00。発電機・音楽プレーヤー禁止",
+      "水源地のため合成洗剤の使用不可"
+    ]
   },
   {
     "id": "sagamiko-camping-village",
@@ -6993,7 +7005,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7001,6 +7012,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "相模湖近くの高規格キャンプ場。中央道相模湖ICから近く、設備充実でソロ初心者にも安心。",
     "lastVerified": "2026-05-28"
   },
@@ -7036,7 +7048,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7044,6 +7055,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "三浦半島の海沿い、東京湾と太平洋の両方が見渡せる稀有なロケーション。",
     "lastVerified": "2026-05-28"
   },
@@ -7079,7 +7091,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7087,6 +7098,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "秦野市内の渓谷沿い、丹沢の入り口。東名秦野中井ICから20分の渓流キャンプ場。",
     "lastVerified": "2026-05-28"
   },
@@ -7123,7 +7135,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "4月-11月",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7131,6 +7142,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "4月-11月",
     "soloComment": "御殿場ICから10分、森の中の公営キャンプ場。富士山ビューで破格の公営料金。",
     "lastVerified": "2026-05-28"
   },
@@ -7167,7 +7179,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7175,6 +7186,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "2024年9月オープン、富士スピードウェイ敷地内。昼はレーシングカーの轟音、夜は満天の星空。",
     "lastVerified": "2026-05-28"
   },
@@ -7211,7 +7223,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7219,6 +7230,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "伊豆市大平、焚き火好きオーナーが山を買って開拓した2020年開業の個性派。約18サイト。",
     "lastVerified": "2026-05-28"
   },
@@ -7254,7 +7266,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7262,6 +7273,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "2023年オープン、サーフィン聖地・静波海岸のリゾート内の全面芝生7区画。",
     "lastVerified": "2026-05-28"
   },
@@ -7298,7 +7310,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7306,6 +7317,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "川根本町の山奥、日本一の星空。秋は紅葉と天の川が同時に楽しめる。",
     "lastVerified": "2026-05-28"
   },
@@ -7341,7 +7353,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7349,6 +7360,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "朝霧高原の南、田貫湖の近く。毛無山を背に富士山が見える林間キャンプ場。",
     "lastVerified": "2026-05-28"
   },
@@ -7384,7 +7396,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7392,6 +7403,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "朝霧高原の大規模キャンプ場、外国人キャンパーも多く国際的な雰囲気。富士山ビューは折り紙付き。",
     "lastVerified": "2026-05-28"
   },
@@ -7427,7 +7439,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7435,6 +7446,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "伊豆高原の遊園地隣接のキャンプ場。設備充実、伊豆観光の拠点に。",
     "lastVerified": "2026-05-28"
   },
@@ -7470,7 +7482,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7478,6 +7489,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "西伊豆堂ヶ島近く、駿河湾に沈む夕陽が絶品。トンボロ現象が見られる奇景の地。",
     "lastVerified": "2026-05-28"
   },
@@ -7513,7 +7525,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7521,6 +7532,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "大井川鉄道沿線、SLの汽笛が聞こえる秘境キャンプ場。川根の清流と深い森。",
     "lastVerified": "2026-05-28"
   },
@@ -7557,7 +7569,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7565,6 +7576,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "標高約1000m鳴沢村の赤松林。全サイトに焚き火台、24時間給湯炊事場完備。ソロでも快適。",
     "lastVerified": "2026-05-28"
   },
@@ -7601,7 +7613,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7609,6 +7620,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "都留市の全18区画オートキャンプ場。炊事場お湯あり、コテージ隣接。河口湖へのアクセスも良い。",
     "lastVerified": "2026-05-28"
   },
@@ -7644,7 +7656,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "4月-11月",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7652,6 +7663,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "4月-11月",
     "soloComment": "都留市の山上、1日4組限定のフリーサイト。富士山湧水の自然環境、夜の星空が抜群。",
     "lastVerified": "2026-05-28"
   },
@@ -7688,7 +7700,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7696,6 +7707,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "道志村の森の中、時間がゆっくり流れる清流コテージ系キャンプ場。",
     "lastVerified": "2026-05-28"
   },
@@ -7732,7 +7744,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7740,6 +7751,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "青木ヶ原樹海の中の異世界キャンプ場。アウトドアセレクトショップ運営、洗練された空間。",
     "lastVerified": "2026-05-28"
   },
@@ -7776,7 +7788,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7784,6 +7795,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "山中湖南岸の公営交流施設内キャンプ場。湖畔で富士山ビュー、公営で料金控えめ。",
     "lastVerified": "2026-05-28"
   },
@@ -7819,7 +7831,6 @@
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7827,6 +7838,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "富士五湖エリアの高規格キャンプ場、温泉あり。西湖・精進湖の穴場エリアで富士山眺望抜群。",
     "lastVerified": "2026-05-28"
   },
@@ -7862,7 +7874,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "4月-11月",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": "白州道の駅近く"
@@ -7870,6 +7881,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "4月-11月",
     "soloComment": "北杜市、甲斐駒ヶ岳を正面に望む標高800mの草原。南アルプス・八ヶ岳も見渡せる絶景。",
     "lastVerified": "2026-05-28"
   },
@@ -7905,7 +7917,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7913,6 +7924,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "山梨最南端・南部町の渓流沿い、人が来ない穴場の極致。富士川支流の静寂と清流。",
     "lastVerified": "2026-05-28"
   },
@@ -7949,7 +7961,6 @@
       "pet": true,
       "toilet": "洋式",
       "convenience": false,
-      "season": "通年",
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": ""
@@ -7957,6 +7968,7 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
+    "season": "通年",
     "soloComment": "早川町の深山渓谷沿い。日本で最も人口の少ない自治体のひとつ、本物の山奥で孤独を楽しむ。",
     "lastVerified": "2026-05-28"
   },

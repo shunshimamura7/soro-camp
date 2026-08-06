@@ -109,6 +109,7 @@ export default async function CampDetailPage({
   if (f.carIn)    featureBadges.push(["carIn",   "🚗 車横付け"]);
   if (f.wifi)     featureBadges.push(["wifi",    "📶 Wi-Fi"]);
   if (f.bonfire)  featureBadges.push(["bonfire", "🔥 焚き火"]);
+  const noBonfire = f.bonfire === false;
   if (f.firewood) featureBadges.push(["firewood","🪵 薪販売"]);
   if (f.shop)     featureBadges.push(["shop",    "🏪 売店"]);
 
@@ -149,6 +150,11 @@ export default async function CampDetailPage({
             {isWild && (
               <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-white text-[#e8611f] border border-[#e8611f]">
                 野営地
+              </span>
+            )}
+            {noBonfire && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-[#f2f0ee] text-[#6b6560] border border-[#d8d3ce]">
+                🚫 焚き火不可
               </span>
             )}
             <span className="text-slate-500 text-xs sm:text-sm">{camp.season}</span>

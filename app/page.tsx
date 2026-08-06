@@ -17,6 +17,7 @@ const DEFAULT_FILTERS: Filters = {
   bath: false,
   shower: false,
   noReservation: false,
+  bonfire: false,
 };
 
 // タブの件数はフィルターと無関係に「その種別が全部で何件あるか」を示す
