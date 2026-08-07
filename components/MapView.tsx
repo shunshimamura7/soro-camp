@@ -3,130 +3,51 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
-
-// ── Tile sets ─────────────────────────────────────────────────────────────────
-const LIGHT_TILES = [
-  "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-];
-const DARK_TILES = [
-  "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://d.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-];
-
-const MAP_STYLE: maplibregl.StyleSpecification = {
-  version: 8,
-  sources: {
-    carto: {
-      type: "raster",
-      tiles: LIGHT_TILES, // default: 白基調
-      tileSize: 256,
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    },
-  },
-  layers: [
-    { id: "carto-layer", type: "raster", source: "carto", minzoom: 0, maxzoom: 22 },
-  ],
-};
-
-// ── Helpers ───────────────────────────────────────────────────────────────────
-/**
- * 44×44px transparent tap-area wrapper around a 14px visible ember dot.
- * position:relative は MapLibre の transform と競合するため設定しない。
- */
-function createEmberEl(): HTMLDivElement {
-  const el = document.createElement("div");
-  el.style.cssText =
-    "width:44px;height:44px;" +
-    "display:flex;align-items:center;justify-content:center;" +
-    "cursor:pointer;" +
-    "pointer-events:all;";
-  const dot = document.createElement("div");
-  dot.style.cssText =
-    "width:12px;height:12px;" +
-    "background:#e8611f;" +
-    "border-radius:50%;" +
-    "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);" +
-    "pointer-events:none;";
-  el.appendChild(dot);
-  return el;
-}
-
-/**
- * マーカー要素にタップ判定付きのイベントを登録する。
- *
- * touchstart で preventDefault → MapLibre がタッチをパン操作として
- * 横取りするのを防ぎ、touchend を確実に受け取れるようにする。
- * setPopup() が内部で登録する click リスナーと二重発火しないよう、
- * touch 系は独自管理し、click はマウス専用とする。
- */
-function bindTapHandler(
-  el: HTMLDivElement,
-  onTap: () => void,
-): void {
-  let isTap = false;
-  let startX = 0;
-  let startY = 0;
-
-  el.addEventListener(
-    "touchstart",
-    (e: TouchEvent) => {
-      e.stopPropagation();
-      e.preventDefault(); // ← MapLibre のパン横取りを防ぐ / synthesized click を抑制
-      isTap = true;
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-      const wrapper = el.parentElement;
-      if (wrapper) wrapper.style.zIndex = "20";
-    },
-    { passive: false },
-  );
-
-  el.addEventListener(
-    "touchmove",
-    (e: TouchEvent) => {
-      if (!isTap) return;
-      const dx = Math.abs(e.touches[0].clientX - startX);
-      const dy = Math.abs(e.touches[0].clientY - startY);
-      if (dx > 8 || dy > 8) {
-        isTap = false;
-        const wrapper = el.parentElement;
-        if (wrapper) wrapper.style.zIndex = "";
-      }
-    },
-    { passive: true },
-  );
-
-  el.addEventListener(
-    "touchend",
-    (e: TouchEvent) => {
-      e.stopPropagation();
-      const wrapper = el.parentElement;
-      if (wrapper) wrapper.style.zIndex = "";
-      if (!isTap) return;
-      isTap = false;
-      e.preventDefault();
-      onTap();
-    },
-    { passive: false },
-  );
-
-  // マウス（PC）用 — touch 系とは排他
-  el.addEventListener("click", (e: MouseEvent) => {
-    e.stopPropagation();
-    onTap();
-  });
-}
+import {
+  MAP_STYLE,
+  addCampPinLayers,
+  setPinData,
+  setMapTheme,
+  bindPinCursor,
+  pinAt,
+} from "@/lib/map-style";
 
 type Props = { camps: Campground[]; height?: number };
+
+function popupHtml(camp: Campground): string {
+  const shop =
+    `https://www.google.com/maps/search/` +
+    `スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`;
+  return (
+    `<a href="/camp/${camp.slug}" class="camp-popup-link">` +
+      `<span class="camp-popup-name">${camp.name}</span>` +
+    `</a>` +
+    `<a href="${shop}" target="_blank" rel="noopener noreferrer" ` +
+      `style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">` +
+      `🛒 周辺の買い物を探す</a>`
+  );
+}
 
 export default function MapView({ camps, height = 520 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const markersRef = useRef<maplibregl.Marker[]>([]);
+  const popupRef = useRef<maplibregl.Popup | null>(null);
+  const readyRef = useRef(false);
   const [isDark, setIsDark] = useState(false);
+
+  /**
+   * クリックハンドラは初期化時に1度だけ登録するので、
+   * そのままだと初回レンダー時の camps を握り続ける。
+   * 絞り込み後の一覧を見せるために ref 経由で最新を参照する。
+   *
+   * 代入はレンダー中ではなくエフェクトで行う（react-hooks/refs）。
+   * このエフェクトを先に宣言しておくことで、マウント時に
+   * 地図初期化より先に走ることを保証する。
+   */
+  const campsRef = useRef(camps);
+  useEffect(() => {
+    campsRef.current = camps;
+  }, [camps]);
 
   // 昼夜切り替え
   const toggleTheme = useCallback(() => {
@@ -134,9 +55,7 @@ export default function MapView({ camps, height = 520 }: Props) {
     if (!map) return;
     const next = !isDark;
     setIsDark(next);
-    (map.getSource("carto") as maplibregl.RasterTileSource)?.setTiles(
-      next ? DARK_TILES : LIGHT_TILES
-    );
+    setMapTheme(map, next);
   }, [isDark]);
 
   // ── Map init (once) ──────────────────────────────────────────────────────
@@ -158,69 +77,57 @@ export default function MapView({ camps, height = 520 }: Props) {
 
     mapRef.current = map;
 
+    const popup = new maplibregl.Popup({
+      offset: 14,
+      closeButton: false,
+      maxWidth: "200px",
+    });
+    popupRef.current = popup;
+
     map.once("load", () => {
       map.setMaxBounds([
         [136.5, 34.2],
         [140.0, 36.2],
       ]);
+
+      addCampPinLayers(map, campsRef.current);
+      bindPinCursor(map);
+      readyRef.current = true;
+
+      /**
+       * 旧実装はマーカーの div に touchstart/touchmove/touchend を自前で張り、
+       * MapLibre がタッチをパンとして横取りするのと競合していた（「たまに反応しない」）。
+       * circle レイヤなら MapLibre 自身がドラッグとタップを判別したうえで
+       * click を発火するので、その競合自体が無くなる。
+       */
+      map.on("click", (e) => {
+        const slug = pinAt(map, e.point);
+        if (!slug) {
+          popup.remove();
+          return;
+        }
+        const camp = campsRef.current.find((c) => c.slug === slug);
+        if (!camp) return;
+        popup.setLngLat([camp.lng, camp.lat]).setHTML(popupHtml(camp)).addTo(map);
+      });
     });
 
     return () => {
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
+      popupRef.current?.remove();
+      popupRef.current = null;
+      readyRef.current = false;
       map.remove();
       mapRef.current = null;
     };
   }, []);
 
-  // ── Marker sync ──────────────────────────────────────────────────────────
+  // ── 絞り込みの反映 ────────────────────────────────────────────────────────
   useEffect(() => {
     const map = mapRef.current;
-    if (!map) return;
-
-    const syncMarkers = () => {
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
-      // 座標未確認（lat/lng が 0）のものはピンを打たない
-      const pinnable = camps.filter((c) => c.lat !== 0 && c.lng !== 0);
-      if (pinnable.length === 0) return;
-
-      pinnable.forEach((camp) => {
-        const el = createEmberEl();
-
-        const popup = new maplibregl.Popup({
-          offset: 14,
-          closeButton: false,
-          maxWidth: "200px",
-        }).setHTML(
-          `<a href="/camp/${camp.slug}" class="camp-popup-link">` +
-            `<span class="camp-popup-name">${camp.name}</span>` +
-          `</a>` +
-          `<a href="https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z" target="_blank" rel="noopener noreferrer" style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">🛒 周辺の買い物を探す</a>`
-        );
-
-        const marker = new maplibregl.Marker({ element: el })
-          .setLngLat([camp.lng, camp.lat])
-          .addTo(map);
-
-        // ポップアップの開閉は bindTapHandler → marker.togglePopup() で管理。
-        // setPopup() を使わないことで MapLibre 内部の click リスナーと競合しない。
-        popup.setLngLat([camp.lng, camp.lat]);
-        bindTapHandler(el, () => {
-          // 他のポップアップを閉じてから自分を開く
-          markersRef.current.forEach((m) => {
-            if (m !== marker && m.getPopup()?.isOpen()) m.togglePopup();
-          });
-          if (!popup.isOpen()) popup.addTo(map);
-          else popup.remove();
-        });
-
-        markersRef.current.push(marker);
-      });
-    };
-
-    if (map.loaded()) syncMarkers();
-    else map.once("load", syncMarkers);
+    if (!map || !readyRef.current) return;
+    setPinData(map, camps);
+    // 絞り込みで消えた施設のポップアップが残らないように閉じる
+    popupRef.current?.remove();
   }, [camps]);
 
   // ── 昼夜ボタンのスタイル（isDark で切り替え） ────────────────────────────

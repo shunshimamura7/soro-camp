@@ -4,124 +4,14 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
-
-// ── Tile sets ─────────────────────────────────────────────────────────────────
-const LIGHT_TILES = [
-  "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-];
-const DARK_TILES = [
-  "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://d.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-];
-
-const MAP_STYLE: maplibregl.StyleSpecification = {
-  version: 8,
-  sources: {
-    carto: {
-      type: "raster",
-      tiles: LIGHT_TILES, // default: 白基調
-      tileSize: 256,
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    },
-  },
-  layers: [
-    { id: "carto-layer", type: "raster", source: "carto", minzoom: 0, maxzoom: 22 },
-  ],
-};
-
-// ── Helpers ───────────────────────────────────────────────────────────────────
-/**
- * 44×44px transparent tap-area wrapper around a 14px visible ember dot.
- * position:relative は MapLibre の transform と競合するため設定しない。
- */
-function createEmberEl(): HTMLDivElement {
-  const el = document.createElement("div");
-  el.style.cssText =
-    "width:44px;height:44px;" +
-    "display:flex;align-items:center;justify-content:center;" +
-    "cursor:pointer;" +
-    "pointer-events:all;";
-  const dot = document.createElement("div");
-  dot.style.cssText =
-    "width:14px;height:14px;" +
-    "background:#e8611f;" +
-    "border-radius:50%;" +
-    "box-shadow:0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65);" +
-    "transition:transform 0.15s ease,box-shadow 0.15s ease;" +
-    "pointer-events:none;";
-  el.appendChild(dot);
-  return el;
-}
-
-/**
- * マーカー要素にタップ判定付きのイベントを登録する。
- *
- * ポイント：
- * - touchstart で stopPropagation + preventDefault → MapLibre がタッチを
- *   パン操作として横取りするのを防ぐ（これが「たまに反応しない」の根本原因）
- * - touchmove でドラッグ検知 → 8px 以上動いたらタップキャンセル
- * - touchend がタップと判定した場合のみ onTap() を呼ぶ
- * - click はマウス（PC）用
- */
-function bindTapHandler(el: HTMLDivElement, onTap: () => void): void {
-  let isTap = false;
-  let startX = 0;
-  let startY = 0;
-
-  el.addEventListener(
-    "touchstart",
-    (e: TouchEvent) => {
-      e.stopPropagation();
-      e.preventDefault(); // ← Critical: これがないと MapLibre がタッチを奪う
-      isTap = true;
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-      // タッチ中は z-index を上げて他のマーカーより前面に
-      const wrapper = el.parentElement;
-      if (wrapper) wrapper.style.zIndex = "20";
-    },
-    { passive: false },
-  );
-
-  el.addEventListener(
-    "touchmove",
-    (e: TouchEvent) => {
-      if (!isTap) return;
-      const dx = Math.abs(e.touches[0].clientX - startX);
-      const dy = Math.abs(e.touches[0].clientY - startY);
-      if (dx > 8 || dy > 8) {
-        // スクロール / パン → タップキャンセル
-        isTap = false;
-        const wrapper = el.parentElement;
-        if (wrapper) wrapper.style.zIndex = "";
-      }
-    },
-    { passive: true },
-  );
-
-  el.addEventListener(
-    "touchend",
-    (e: TouchEvent) => {
-      e.stopPropagation();
-      const wrapper = el.parentElement;
-      if (wrapper) wrapper.style.zIndex = "";
-      if (!isTap) return;
-      isTap = false;
-      e.preventDefault(); // synthesized click を抑制して二重発火防止
-      onTap();
-    },
-    { passive: false },
-  );
-
-  // マウス（PC）用
-  el.addEventListener("click", (e: MouseEvent) => {
-    e.stopPropagation();
-    onTap();
-  });
-}
+import {
+  MAP_STYLE,
+  addCampPinLayers,
+  setSelectedPin,
+  setMapTheme,
+  bindPinCursor,
+  pinAt,
+} from "@/lib/map-style";
 
 function buildTags(camp: Campground): string[] {
   const t: string[] = [];
@@ -141,12 +31,21 @@ type Props = { camps: Campground[]; onClose: () => void };
 export default function MapModal({ camps, onClose }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const markersRef = useRef<maplibregl.Marker[]>([]);
-  const elMapRef = useRef(new Map<string, HTMLDivElement>());
+  const readyRef = useRef(false);
 
   const [selected, setSelected] = useState<Campground | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
+
+  /**
+   * クリックハンドラは初期化時に1度だけ登録するので ref 経由で最新を参照する。
+   * 代入はレンダー中ではなくエフェクトで行う（react-hooks/refs）。
+   * このエフェクトを先に宣言し、マウント時に地図初期化より先に走らせる。
+   */
+  const campsRef = useRef(camps);
+  useEffect(() => {
+    campsRef.current = camps;
+  }, [camps]);
 
   // 昼夜切り替え
   const toggleTheme = useCallback(() => {
@@ -154,9 +53,7 @@ export default function MapModal({ camps, onClose }: Props) {
     if (!map) return;
     const next = !isDark;
     setIsDark(next);
-    (map.getSource("carto") as maplibregl.RasterTileSource)?.setTiles(
-      next ? DARK_TILES : LIGHT_TILES
-    );
+    setMapTheme(map, next);
   }, [isDark]);
 
   const openPanel = useCallback((camp: Campground) => {
@@ -187,32 +84,20 @@ export default function MapModal({ camps, onClose }: Props) {
     return () => { document.body.style.overflow = prev; };
   }, []);
 
-  // 選択マーカーをハイライト（内部ドット要素を対象）
+  /**
+   * 選択中のピンをハイライト。
+   * 旧実装は保持していた div の style を直接書き換えていたが、
+   * circle レイヤでは専用レイヤのフィルタを差し替えるだけで済む。
+   */
   useEffect(() => {
-    elMapRef.current.forEach((el, slug) => {
-      const dot = el.firstElementChild as HTMLDivElement | null;
-      if (!dot) return;
-      if (slug === selected?.slug) {
-        dot.style.background = "#ff7a00";
-        dot.style.transform = "scale(1.7)";
-        dot.style.boxShadow =
-          "0 0 0 3px rgba(255,122,0,0.5),0 0 20px rgba(255,122,0,0.9)";
-      } else {
-        dot.style.background = "#e8611f";
-        dot.style.transform = "";
-        dot.style.boxShadow =
-          "0 0 0 2px rgba(232,97,31,0.35),0 0 10px rgba(232,97,31,0.65)";
-      }
-    });
+    const map = mapRef.current;
+    if (!map || !readyRef.current) return;
+    setSelectedPin(map, selected?.slug ?? null);
   }, [selected]);
 
   // Map init (once on mount)
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
-
-    // cleanup 時には ref.current が別の Map に差し替わっている可能性があるので、
-    // この effect が作ったインスタンスを掴んでおく
-    const elMap = elMapRef.current;
 
     const map = new maplibregl.Map({
       container: containerRef.current,
@@ -243,25 +128,25 @@ export default function MapModal({ camps, onClose }: Props) {
         [140.0, 36.2],
       ]);
 
-      // 座標未確認（lat/lng が 0）のものはピンを打たない
-      camps.filter((c) => c.lat !== 0 && c.lng !== 0).forEach((camp) => {
-        const el = createEmberEl();
-        elMapRef.current.set(camp.slug, el);
+      addCampPinLayers(map, campsRef.current);
+      bindPinCursor(map);
+      readyRef.current = true;
 
-        bindTapHandler(el, () => openPanel(camp));
-
-        const marker = new maplibregl.Marker({ element: el })
-          .setLngLat([camp.lng, camp.lat])
-          .addTo(map);
-
-        markersRef.current.push(marker);
+      /**
+       * 旧実装はマーカーの div に touchstart/touchmove/touchend を自前で張り、
+       * MapLibre のパン処理と競合していた。circle レイヤなら MapLibre 自身が
+       * ドラッグとタップを判別してから click を発火するので、その競合が無くなる。
+       */
+      map.on("click", (e) => {
+        const slug = pinAt(map, e.point);
+        if (!slug) return;
+        const camp = campsRef.current.find((c) => c.slug === slug);
+        if (camp) openPanel(camp);
       });
     });
 
     return () => {
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
-      elMap.clear();
+      readyRef.current = false;
       map.remove();
       mapRef.current = null;
     };
@@ -374,14 +259,6 @@ function CampDetailPanel({
         target="_blank"
         rel="noopener noreferrer"
         style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#e8611f", textDecoration: "none" }}
-      >
-        🛒 周辺の買い物を探す
-      </a>
-      <a
-        href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#666", textDecoration: "none" }}
       >
         🛒 周辺の買い物を探す
       </a>
