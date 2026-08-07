@@ -1861,7 +1861,7 @@
     "prefecture": "静岡",
     "area": "磐田",
     "status": "active",
-    "address": "静岡県磐田市駒場6866-1",
+    "address": "静岡県磐田市駒場6866-10",
     "lat": 34.6827,
     "lng": 137.8481,
     "coordsVerified": true,
@@ -1898,7 +1898,7 @@
     "season": "通年",
     "soloComment": "遠州灘に面した海辺のオートキャンプ場。シャワー無料・ウォシュレット完備と設備は充実。釣りやサーフィンとの組み合わせが人気で、夕日の美しさは格別。東海エリアからのアクセスが良く静岡西部在住者の定番。",
     "tel": "0538-66-9166",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -2864,7 +2864,7 @@
     "prefecture": "神奈川",
     "area": "秦野",
     "status": "active",
-    "address": "神奈川県秦野市堀山下777",
+    "address": "神奈川県秦野市堀山下1513",
     "lat": 35.4028,
     "lng": 139.1465,
     "coordsVerified": true,
@@ -2902,7 +2902,7 @@
     "season": "4月〜11月",
     "soloComment": "神奈川県立秦野戸川公園内の公営キャンプ場。格安で渋沢丘陵トレッキングや大山・丹沢表尾根への登山ベースとして最適。水無川沿いの涼しい林間サイトが夏も快適。電車でも行ける公共交通アクセスが嬉しい。",
     "tel": "0463-87-9020",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -3533,7 +3533,7 @@
     "prefecture": "静岡",
     "area": "富士",
     "status": "active",
-    "address": "静岡県富士市岩本225-1",
+    "address": "静岡県富士市中之郷4482-141",
     "lat": 35.1482,
     "lng": 138.5976,
     "coordsVerified": true,
@@ -3569,7 +3569,7 @@
     },
     "season": "通年",
     "soloComment": "富士川河川敷のキャンプ場。河口近くから富士山を真正面に見上げる絶景は富士市ならでは。富士川の大きな流れを眼前に、静岡中部エリアからのアクセスが抜群。河川敷の解放感がソロキャンプの醍醐味。",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -4008,7 +4008,7 @@
     "prefecture": "静岡",
     "area": "浜松",
     "status": "active",
-    "address": "静岡県浜松市南区中田島町1313-2",
+    "address": "静岡県浜松市中央区中田島町1313-2",
     "lat": 34.6697,
     "lng": 137.7212,
     "coordsVerified": true,
@@ -4044,7 +4044,7 @@
     },
     "season": "3月〜11月",
     "soloComment": "日本三大砂丘の一つ・中田島砂丘に隣接したキャンプ場。砂丘を越えると太平洋の絶景が広がる。遠州灘の荒波音が心地よく夕日・星空が格別美しい。浜松からのアクセスが良く日帰り感覚でも利用しやすい。",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -4681,7 +4681,7 @@
     "prefecture": "山梨",
     "area": "北杜",
     "status": "active",
-    "address": "山梨県北杜市明野町浅尾2888",
+    "address": "山梨県北杜市明野町浅尾5260-5",
     "lat": 35.8124,
     "lng": 138.4621,
     "coordsVerified": true,
@@ -4717,7 +4717,7 @@
     },
     "season": "5月〜10月",
     "soloComment": "日照時間が日本一と公称される明野の高台キャンプ場。夏のひまわり畑と八ヶ岳・南アルプスのパノラマが圧巻。星空観察の条件が良く公営なので料金もお値打ち。八ヶ岳を正面に見ながらの焚き火が格別。",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -4925,7 +4925,7 @@
     "prefecture": "神奈川",
     "area": "相模湖",
     "status": "active",
-    "address": "",
+    "address": "神奈川県相模原市緑区若柳1634",
     "lat": 35.6042341,
     "lng": 139.2078206,
     "coordsVerified": true,
@@ -5397,7 +5397,7 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "tel": "",
+    "tel": "0554-52-2365",
     "officialUrl": "",
     "reservationUrl": "",
     "season": "通年",
@@ -5405,7 +5405,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceNote": "区画+人数課金。テントサイト料1,000円＋大人1名800円＋車1台1,000円で、ソロ1名1泊2,800円（バイクで行けば2,300円）。入園料（釣り堀含む）500円は日帰り向けの別項目で、宿泊者に必須の記載はない。タープは別途500円。ゴミは持ち帰り",
-    "priceVerified": true
+    "priceVerified": true,
+    "address": "山梨県南都留郡道志村9240"
   },
   {
     "id": "tiny-camp-village",
@@ -5546,7 +5547,7 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "tel": "",
+    "tel": "0465-29-0841",
     "officialUrl": "",
     "reservationUrl": "",
     "season": "通年",
@@ -5555,7 +5556,8 @@
     "coordsGsiChecked": true,
     "closedDays": "水・木曜（夏休みは無休、11〜翌3月は月〜金曜。祝日は営業）",
     "priceNote": "区画+人数課金。オートキャンプ1泊1台4,800円（駐車料・温水シャワー込み）＋入村料 大人1名800円で、ソロ1名1泊5,600円。2泊目以降の入村料は1泊500円。ACコンセントは別途1,000円。ログキャビンは1棟12,000円＋入村料",
-    "priceVerified": true
+    "priceVerified": true,
+    "address": "神奈川県小田原市根府川161"
   },
   {
     "id": "kuragari-camp",
@@ -6087,7 +6089,7 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "tel": "",
+    "tel": "0555-87-2885",
     "officialUrl": "https://www.camp-akaike.jp/",
     "reservationUrl": "",
     "season": "春〜秋（冬季クローズ）。2026年は4月18日〜11月23日",
@@ -6095,7 +6097,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceNote": "区画+人数課金。入場料 大人（中学生以上）1,500円＋ソロ専用の「ソロブッシュ」1,000円〜で、ソロ1名1泊2,500円〜。ソロブッシュはアーリー＆レイト込みで最長32時間滞在でき、テント・タープ計2張まで（直径3m超のテント不可、ハンモック泊推奨）。バイクのフリーサイトも1,000円〜。車で乗り入れるならオートサイトA・C 2,000円〜（総額3,500円〜）、最上位のYサイトは5,000円〜（総額6,500円〜）",
-    "priceVerified": true
+    "priceVerified": true,
+    "address": "山梨県南都留郡富士河口湖町精進550-127"
   },
   {
     "id": "tsukiyono-doshi-camp",
@@ -6330,7 +6333,7 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "tel": "",
+    "tel": "0551-45-9164",
     "officialUrl": "https://www.floracampsite.com/",
     "reservationUrl": "",
     "season": "通年",
@@ -6341,7 +6344,8 @@
       "グランピングエリア（1日5組限定）とひなたの森キャンピングエリア（1日13組限定）の2エリア構成"
     ],
     "priceNote": "人数課金。キャンプサイトのテント泊プラン1名3,500円〜で、ソロ1名1泊3,500円〜。駐車場15台は無料。13張のフリーサイト。デイキャンププランは1名1,800円〜。ゴミ処理は30ℓ300円（持ち帰りなら無料）、シャワーは20分500円。同じ敷地のグランピングテントは別カテゴリで1泊1名 平日8,800円〜・土日9,900円〜",
-    "priceVerified": true
+    "priceVerified": true,
+    "address": "山梨県北杜市白州町白須8813-2"
   },
   {
     "id": "shinozawa-ootaki-camp",
@@ -7157,7 +7161,8 @@
       "夜9時以降は飲酒制限。宴会・飲み会目的の利用は不可"
     ],
     "priceNote": "サイト単位課金だがソロ料金あり。テントサイト使用（1張・1泊・駐車場代1台・5名まで）4,500円のところ、ソロは2,500円。よってソロ1名1泊は2,500円で、駐車1台込み。2台目からは1,000円/台（バイク500円）。6名以上はDayキャンプ料金（中学生以上800円・3歳〜小学生500円）が加算。シャワーは17〜22時が無料。生ゴミ以外は持ち帰り",
-    "priceVerified": true
+    "priceVerified": true,
+    "address": "山梨県南都留郡道志村7895"
   },
   {
     "id": "sports-train-aokigahara",
@@ -7255,7 +7260,7 @@
     "soloComment": "富士五湖エリアの高規格キャンプ場、温泉あり。西湖・精進湖の穴場エリアで富士山眺望抜群。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "address": "山梨県南都留郡鳴沢村8532-5",
+    "address": "山梨県南都留郡鳴沢村字ジラゴンノ8532-5",
     "priceNote": "サイト単位課金＋人数課金。1サイト 平日4,400円／休前日5,500円／特別日7,700円＋入場料 大人880円・小人660円 → ソロ1名は平日5,280円。河口湖駅から無料送迎あり（事前予約制）",
     "priceVerified": true
   },
