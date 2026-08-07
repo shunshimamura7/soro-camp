@@ -25,11 +25,26 @@ export type Restriction = {
 };
 
 /**
+ * 「誰が使えるか」の制限の型。調査で4種類が出てきた（scripts/batch76-check.md）。
+ *
+ * - `exclusive`  … 排他型。市外の人は使えない（甲府市 森林浴広場＝利用対象者が甲府市民）
+ * - `discount`   … 料金差型。使えるが市外は割高（乙女森林公園＝市民800円／市外2,000円）
+ * - `priority`   … 申込先行型。居住者の予約受付が先に始まる（ふれあいの森日向）
+ * - `membership` … 会員制。登録しないと使えない（BUSHCRAFT湘南）
+ *
+ * このサイトの読者は市外から来る人が大半なので、`discount` の場合
+ * `priceMin` には**市外料金**を入れる。
+ */
+export type EligibilityType = "exclusive" | "discount" | "priority" | "membership";
+
+/**
  * 利用できる人の制限（例: 甲府市民限定）。
  * 日付に依存しないのでビルド時に静的出力する。
  * restrictions の JS が失敗しても、この表示は必ず残る。
  */
 export type Eligibility = {
+  /** 制限の型。表示の文言を型ごとに変える */
+  type: EligibilityType;
   /** チップに出す短い文言。例: "甲府市民限定" */
   label: string;
   /** 補足。詳細ページにのみ出す */
@@ -53,10 +68,20 @@ export type Campground = {
    * - `"active"` … 通常掲載。一覧に出る。
    * - `"closed"` … 閉鎖・利用禁止が確認できたもの。一覧から外し、詳細ページに警告を出す。
    * - `"unverified"` … 営業状況が確認できていないもの。一覧から外し、詳細ページに注意書きを出す。
+   * - `"suspended"` … **再開予定のある休業**。一覧から外し、詳細ページに休業中である旨を出す。
+   *
+   * `closed` と `suspended` を分けている理由。`closed` は「もう行ってはいけない」だが、
+   * `suspended` は「今は行けないが将来復活する」。`hayakawa-camp`（早川町オートキャンプ場）が
+   * 災害復旧のため数ヵ年の休業に入っており、閉鎖と同じ警告を出すと事実と違う。
    *
    * 既存リンク対策として `"active"` 以外もページ自体は残し、サイトマップにも含める。
    */
-  status: "active" | "closed" | "unverified";
+  status: "active" | "closed" | "unverified" | "suspended";
+  /**
+   * `status: "suspended"` のときの休業理由と再開見込み。出典URLを含めて書く。
+   * 例: "災害復旧後のリニューアルオープンを目指して休業中。再開まで数ヵ年を要する見込み https://example.jp/"
+   */
+  suspendedNote?: string;
   /** 野営地の注意事項。あれば詳細ページに ⚠️ セクションで表示する。 */
   cautions?: string[];
   /** 毎年繰り返される期間限定の制限。一覧・詳細に警告チップを出す。 */

@@ -91,41 +91,83 @@ export function RestrictionDetails({ restrictions }: { restrictions?: Restrictio
 }
 
 /**
+ * 「誰が使えるか」の型ごとの見出し文。
+ *
+ * 4つは利用者にとって意味がまるで違う。
+ * 排他型は行っても使えない、料金差型は使えるが高い、申込先行型は取りにくい、会員制は登録が要る。
+ * 同じ文言でまとめると、行けるかどうかの判断を誤らせる。
+ */
+const ELIGIBILITY_HEADLINE: Record<Eligibility["type"], string> = {
+  exclusive: "利用できる人が限られています",
+  discount: "市外からの利用は割高になります",
+  priority: "地元の方の申込が先に始まります",
+  membership: "会員登録が必要です",
+};
+
+/** チップの色。排他型と会員制は「そもそも使えないことがある」ので強め */
+const ELIGIBILITY_STYLE: Record<Eligibility["type"], string> = {
+  exclusive: "bg-rose-50 text-rose-800 border-rose-500",
+  discount: "bg-amber-50 text-amber-800 border-amber-500",
+  priority: "bg-amber-50 text-amber-800 border-amber-500",
+  membership: "bg-rose-50 text-rose-800 border-rose-500",
+};
+
+/**
  * 利用できる人の制限（例: 甲府市民限定）。
  * 日付に依存しないので完全に静的。restrictions の JS が失敗しても必ず残る。
  */
 export function EligibilityChip({ eligibility }: { eligibility?: Eligibility }) {
   if (!eligibility) return null;
   return (
-    <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-500">
+    <span
+      className={`inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold border ${ELIGIBILITY_STYLE[eligibility.type]}`}
+    >
       {eligibility.label}
     </span>
   );
 }
 
-/** 詳細ページ用。チップに補足と出典リンクを添える。 */
+/** 詳細ページ用。型ごとの見出しに、補足と出典リンクを添える。 */
 export function EligibilityNote({ eligibility }: { eligibility?: Eligibility }) {
   if (!eligibility) return null;
   const src = parseSource(eligibility.source);
+  const strong = eligibility.type === "exclusive" || eligibility.type === "membership";
   return (
-    <p className="mb-4 rounded-xl border-2 border-amber-500 bg-amber-50 px-4 py-3 text-[13px] sm:text-sm leading-relaxed text-amber-900">
-      <span className="font-bold">{eligibility.label}</span>
-      {eligibility.note ? ` — ${eligibility.note}` : null}
-      {src.url ? (
-        <>
-          {" "}
-          <a
-            href={src.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:no-underline"
-          >
-            {src.label} ↗
-          </a>
-        </>
-      ) : (
-        <span className="text-amber-700"> （{src.label}）</span>
-      )}
-    </p>
+    <div
+      className={`mb-4 rounded-xl border-2 px-4 py-3 ${
+        strong ? "border-rose-500 bg-rose-50" : "border-amber-500 bg-amber-50"
+      }`}
+    >
+      <p
+        className={`text-[13px] sm:text-sm font-bold leading-relaxed ${
+          strong ? "text-rose-800" : "text-amber-800"
+        }`}
+      >
+        {ELIGIBILITY_HEADLINE[eligibility.type]}
+      </p>
+      <p
+        className={`mt-1 text-[13px] sm:text-sm leading-relaxed ${
+          strong ? "text-rose-900" : "text-amber-900"
+        }`}
+      >
+        <span className="font-bold">{eligibility.label}</span>
+        {eligibility.note ? ` — ${eligibility.note}` : null}
+        {src.url ? (
+          <>
+            {" "}
+            <a
+              href={src.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:no-underline"
+            >
+              {src.label} ↗
+            </a>
+          </>
+        ) : (
+          <span className="opacity-80"> （{src.label}）</span>
+        )}
+      </p>
+    </div>
   );
 }

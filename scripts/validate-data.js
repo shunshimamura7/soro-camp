@@ -47,7 +47,10 @@ function unsourcedSuperlatives(text) {
 }
 
 // ── 掲載状態と features の整合性 ──────────────────────────────────────────────
-const STATUSES = ['active', 'closed', 'unverified'];
+const STATUSES = ['active', 'closed', 'unverified', 'suspended'];
+
+/** eligibility.type が取りうる値 */
+const ELIGIBILITY_TYPES = ['exclusive', 'discount', 'priority', 'membership'];
 
 /** 閉鎖施設の soloComment に書いてはいけない、利用を促す語 */
 const INVITING = /焚き火|直火|泊まれ|泊まる|野営できる|キャンプできる|設営/;
@@ -297,10 +300,26 @@ for (const c of camps) {
           errors.push(`${id}: eligibility.${key} が空`);
         }
       }
+      if (!ELIGIBILITY_TYPES.includes(e.type)) {
+        errors.push(`${id}: eligibility.type が ${ELIGIBILITY_TYPES.join('/')} のいずれでもない（${JSON.stringify(e.type)}）`);
+      }
       if (typeof e.source === 'string' && !/https?:\/\//.test(e.source)) {
         warnings.push(`${id}: eligibility.source に URL がない（${e.source}）`);
       }
     }
+  }
+
+  // ── suspended（再開予定のある休業） ──
+  // 「今は行けないが将来復活する」という主張なので、根拠を必ず持たせる。
+  if (c.status === 'suspended') {
+    if (c.suspendedNote == null || String(c.suspendedNote).trim() === '') {
+      errors.push(`${id}: status が suspended なのに suspendedNote が空。休業理由と再開見込みを出典付きで書くこと`);
+    } else if (!/https?:\/\//.test(String(c.suspendedNote))) {
+      warnings.push(`${id}: suspendedNote に URL がない（${c.suspendedNote}）`);
+    }
+  }
+  if (c.status !== 'suspended' && c.suspendedNote != null) {
+    warnings.push(`${id}: status が suspended でないのに suspendedNote が残っている`);
   }
 }
 

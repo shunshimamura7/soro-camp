@@ -9,7 +9,7 @@ import {
   EligibilityChip,
   EligibilityNote,
 } from "@/components/RestrictionChip";
-import { formatPeriod } from "@/lib/restrictions";
+import { formatPeriod, parseSource } from "@/lib/restrictions";
 
 
 export async function generateStaticParams() {
@@ -175,6 +175,41 @@ export default async function CampDetailPage({
             <p className="text-[13px] sm:text-[15px] font-bold leading-relaxed text-amber-700">
               営業状況が確認できていません。訪問前に必ず最新情報を確認してください。
             </p>
+          </div>
+        )}
+        {/*
+          休業中。closed（もう行ってはいけない）とは分けて、
+          「今は行けないが将来復活する」ことが伝わる文言にする。
+        */}
+        {camp.status === "suspended" && (
+          <div
+            role="alert"
+            className="mb-4 rounded-xl border-2 border-sky-600 bg-sky-50 px-4 py-3.5"
+          >
+            <p className="text-[13px] sm:text-[15px] font-bold leading-relaxed text-sky-800">
+              現在は休業中です。今は利用できませんが、再開の予定があります。
+            </p>
+            {camp.suspendedNote && (() => {
+              const src = parseSource(camp.suspendedNote);
+              return (
+                <p className="mt-2 text-[12px] sm:text-[13px] leading-relaxed text-sky-900">
+                  {src.label}
+                  {src.url && (
+                    <>
+                      {" "}
+                      <a
+                        href={src.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:no-underline"
+                      >
+                        出典 ↗
+                      </a>
+                    </>
+                  )}
+                </p>
+              );
+            })()}
           </div>
         )}
 
