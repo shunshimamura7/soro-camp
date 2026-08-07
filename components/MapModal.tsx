@@ -210,6 +210,10 @@ export default function MapModal({ camps, onClose }: Props) {
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
 
+    // cleanup 時には ref.current が別の Map に差し替わっている可能性があるので、
+    // この effect が作ったインスタンスを掴んでおく
+    const elMap = elMapRef.current;
+
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
@@ -257,7 +261,7 @@ export default function MapModal({ camps, onClose }: Props) {
     return () => {
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
-      elMapRef.current.clear();
+      elMap.clear();
       map.remove();
       mapRef.current = null;
     };

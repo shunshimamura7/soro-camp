@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Link from "next/link";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -46,17 +47,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-4xl mx-auto flex items-center gap-2 sm:gap-3">
             <span className="text-xl sm:text-2xl leading-none">🏕</span>
             <div className="min-w-0 flex-1">
-              <a href="/" className="text-slate-900 font-bold text-base sm:text-lg leading-none hover:text-blue-500 transition-colors">
+              <Link href="/" className="text-slate-900 font-bold text-base sm:text-lg leading-none hover:text-blue-500 transition-colors">
                 ソロキャン羅針盤
-              </a>
+              </Link>
               <p className="text-xs text-slate-500 mt-0.5 hidden sm:block">神奈川・静岡・山梨 ソロキャンプ場ガイド</p>
             </div>
-            <a
+            <Link
               href="/about"
               className="shrink-0 inline-flex items-center min-h-[36px] px-3 rounded-lg border border-[#e2ddd8] text-[13px] text-[#5a4a3a] hover:border-[#e8611f] hover:text-[#e8611f] transition-colors"
             >
               スコアの見方
-            </a>
+            </Link>
           </div>
         </header>
 
@@ -66,6 +67,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <p>© 2026 ソロキャン羅針盤 — 情報の正確性に努めていますが、訪問前に各キャンプ場へご確認ください。</p>
           <p className="mt-1">最終確認: 2026-05-26</p>
         </footer>
+
+        {/*
+          期間限定制限バッジの書き換え。静的HTMLは常に「要確認」で出しておき、
+          閲覧時のローカル日付で制限中かどうかを判定させる。
+          読み込めなくても要確認表示が残るだけなので defer で足りる。
+        */}
+        <script src="/restrictions.js" defer />
       </body>
     </html>
   );

@@ -8213,7 +8213,7 @@
     "season": "通年",
     "soloComment": "無料で入れる河川敷。川音を独り占めできるが設備は皆無で、水もトイレも持参前提。焚き火台必須、増水予報を確認してから入るのが鉄則。",
     "tel": null,
-    "lastVerified": ""
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "sumida-ohashi-kasenjiki",
@@ -8267,7 +8267,7 @@
     "season": "通年",
     "soloComment": "簡易トイレがあるぶん河川敷のなかでは入りやすい一枚。無料で車を寄せられ、焚き火台さえあれば十分成立する。週末は場所取りが早い。",
     "tel": null,
-    "lastVerified": ""
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "hasugebashi-kasenjiki",
@@ -8321,7 +8321,7 @@
     "season": "通年",
     "soloComment": "八菅橋のたもとに広がる無料の石河原。設備なし・人目ありで玄人向けだが、荷物を絞ったソロ装備の実験場としては悪くない。",
     "tel": null,
-    "lastVerified": ""
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "wadanagahama-kaigan",
@@ -8376,7 +8376,16 @@
     "season": "通年",
     "soloComment": "潮風を浴びながらのソロ。夕景は文句なしだが砂と風の対策は必須。直火は原則不可、焚き火台と養生シートを用意して静かに撤収したい。",
     "tel": null,
-    "lastVerified": ""
+    "lastVerified": "2026-08-07",
+    "restrictions": [
+      {
+        "type": "bonfire",
+        "from": "07-03",
+        "to": "08-31",
+        "reason": "海水浴場の開設期間中は、三浦市海水浴場ルール第25条により焚き火および火気を使用する調理器具が使用できない（焚き火台も不可。開設日は年により数日前後する）",
+        "source": "三浦市海水浴場ルール第25条【令和7年度】 https://www.pref.kanagawa.jp/documents/122025/r7miurashi.pdf"
+      }
+    ]
   },
   {
     "id": "kofu-shinrinyoku-hiroba",
@@ -8428,38 +8437,51 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "通年",
+    "season": "通年（冬期林道通行止期間 12/10〜4/25 は休館）",
     "soloComment": "甲府市が無料開放する林。街から近いのに人の気配がなく静か。トイレも水もなく熊の気配もある、装備と経験が前提の上級者向け。",
     "tel": null,
-    "lastVerified": ""
+    "lastVerified": "2026-08-07",
+    "restrictions": [
+      {
+        "type": "access",
+        "from": "12-10",
+        "to": "04-25",
+        "reason": "冬期林道通行止期間のため休館（甲府市 施設カルテの休館日）",
+        "source": "甲府市 施設カルテ 3-10（基準日 令和7年3月31日） https://www.city.kofu.yamanashi.jp/file_summary/shisetu_karte/3-10.pdf"
+      }
+    ],
+    "eligibility": {
+      "label": "甲府市民限定",
+      "note": "施設カルテの利用対象者は「甲府市民」",
+      "source": "甲府市 施設カルテ 3-10 https://www.city.kofu.yamanashi.jp/file_summary/shisetu_karte/3-10.pdf"
+    }
   },
   {
     "id": "ogayanagawa-keikoku",
     "slug": "ogayanagawa-keikoku",
-    "name": "大柳川渓谷キャンプ場",
+    "name": "大柳川渓流キャンプ場",
     "prefecture": "山梨",
     "area": "富士川町十谷",
     "address": "山梨県南巨摩郡富士川町十谷",
-    "type": "wild",
+    "type": "campground",
     "status": "active",
     "cautions": [
-      "正式名称・営業状況とも未確認。要現地確認",
       "直火禁止（焚き火台必須）",
       "水場・男女別トイレあり（現況は要現地確認）",
       "渓谷沿いのため増水・落石に注意",
       "ゴミは完全持ち帰り",
-      "営業状況が未確認。閉鎖・有料化の可能性あり"
+      "2023年8月に有料化。前日までに要予約"
     ],
     "lat": 35.5044711,
     "lng": 138.3990002,
     "coordsVerified": true,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceNote": "無料開放",
+    "priceMin": 1100,
+    "priceMax": 3800,
+    "priceNote": "2023年8月より有料。入場料はテント泊が大人1,800円・小中学生900円、デイキャンプが大人1,100円・小中学生550円（幼児は無料）。オートサイトはオンシーズン+2,000円、駐車代は無料。グランピング（ロータスベルテント）はオンシーズン+13,200円",
     "scores": {
       "quietness": 4,
       "scenery": 4,
-      "value": 5,
+      "value": 4,
       "access": 4,
       "facility": 4
     },
@@ -8473,7 +8495,7 @@
       "toilet": "和式",
       "carIn": true,
       "soloPlan": false,
-      "reservation": "不要",
+      "reservation": "要",
       "convenience": false,
       "shop": false,
       "wifi": false,
@@ -8482,20 +8504,22 @@
       "alcohol": false,
       "garbage": "全て持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "前日までに要予約"
     },
-    "season": "通年（要確認）",
-    "soloComment": "渓谷沿いの静かな一角。水場と男女別トイレがあり車5分で温泉かじかの湯へ。ただし正式名称も営業状況も未確認、要現地確認のうえで向かいたい。",
+    "season": "通年（降雪時は休業する場合あり）",
+    "soloComment": "5つの滝と10の吊り橋が連なる渓谷の入口に建つ、予約制のキャンプ場。2023年8月に無料開放を終えて有料になり、テント泊は大人1,800円。サウナやグランピング棟もあり、渓谷歩きの拠点として使える。前日までの予約を忘れずに。",
     "tel": null,
-    "lastVerified": ""
+    "lastVerified": "2026-08-07",
+    "officialUrl": "https://ooyanagawa-camp.com/"
   },
   {
     "id": "tsuchimura",
     "slug": "tsuchimura",
     "name": "土村キャンプ場",
     "prefecture": "静岡",
-    "area": "静岡市葵区",
-    "address": "静岡県静岡市葵区",
+    "area": "静岡市清水区",
+    "address": "静岡県静岡市清水区",
     "type": "wild",
     "status": "active",
     "cautions": [
@@ -8505,7 +8529,8 @@
       "ゴミは完全持ち帰り",
       "管理者不在の無料開放。閉鎖・有料化の可能性あり",
       "売店・薪なし、全て持参",
-      "場所により四駆でないと乗り入れ不可"
+      "場所により四駆でないと乗り入れ不可",
+      "静岡市の「キャンプ適地」だが、市の利用ルールのページは現在閲覧できず、公認の裏付けは取れていない（黙認）"
     ],
     "lat": 35.1193587,
     "lng": 138.4512288,
@@ -8552,8 +8577,8 @@
     "name": "黒川キャンプ場（清水森林公園）",
     "prefecture": "静岡",
     "area": "静岡市清水区",
-    "address": "静岡県静岡市清水区西里",
-    "type": "wild",
+    "address": "静岡県静岡市清水区西里1310-1",
+    "type": "campground",
     "status": "active",
     "cautions": [
       "直火禁止（焚き火台必須）",
@@ -8585,7 +8610,7 @@
       "toilet": "洋式",
       "carIn": true,
       "soloPlan": false,
-      "reservation": "不要",
+      "reservation": "要",
       "convenience": false,
       "shop": false,
       "wifi": false,
@@ -8594,12 +8619,15 @@
       "alcohol": false,
       "garbage": "全て持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "「オクシズばった」で要予約。管理棟 054-395-2999（9:00〜17:00）"
     },
-    "season": "通年",
-    "soloComment": "森林公園内で無料ながらトイレも整い、隣にやませみの湯。初めての野営地としては敷居が低く、温泉付きでソロの週末をまとめやすい。",
-    "tel": null,
-    "lastVerified": ""
+    "season": "通年（年末年始休）",
+    "soloComment": "森林公園の中にある無料のキャンプ場。33区画に炊事場とトイレが整い、隣はやませみの湯。無料でも「オクシズばった」での予約が要ることと、受付管理棟が月曜休みな点だけ押さえておきたい。",
+    "tel": "054-395-2999",
+    "lastVerified": "2026-08-07",
+    "closedDays": "キャンプ場は年末年始（12/29〜1/5）。受付管理棟は毎週月曜（祝日の場合はその翌平日）",
+    "officialUrl": "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000093.html"
   },
   {
     "id": "omuroyama-camp",
@@ -8620,9 +8648,9 @@
       "地形リスクは要現地確認",
       "ゴミは完全持ち帰り",
       "伊東市営のため運用変更・有料化の可能性あり",
-      "座標が未確定。場所は要現地確認",
-      "予約は使用希望月の2ヶ月前の1日から受付",
-      "酒類の持ち込み禁止"
+      "予約は使用希望月の3ヶ月前の1日から受付（1日が土日祝なら次の平日）",
+      "春季・GW・夏季（7〜8月）は最大1泊2日、その他の期間は最大2泊3日",
+      "夜間（18:00〜翌8:00）利用は当日16:00までに申請と鍵の受取りが必要。間に合わない場合は利用不可"
     ],
     "lat": 34.9075265,
     "lng": 139.0883787,
@@ -8661,7 +8689,9 @@
     "soloComment": "1日1団体だけの貸切。大室山を眺めながら完全な静寂を独占できる。管理人不在で施錠まで自己責任、酒は持ち込めないので事前予約と装備は入念に。",
     "tel": "0557-36-1178",
     "telNote": "伊東市民体育センター事務室",
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "closedDays": "12/28〜1/4",
+    "officialUrl": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/shogaigakushuka/kanko/2379.html"
   },
   {
     "id": "ogurabashi-kasenjiki",
@@ -8677,7 +8707,8 @@
       "水道なし・飲料水は持参",
       "増水時は立入危険",
       "石が多く設営場所を選ぶ",
-      "ゴミ完全持ち帰り"
+      "ゴミ完全持ち帰り",
+      "自治体が公認した野営地ではない（黙認）。相模原市はキャンプについて市営キャンプ場を案内している"
     ],
     "lat": 35.5867121,
     "lng": 139.2984116,
@@ -8732,7 +8763,9 @@
       "増水時は立入危険",
       "イベント開催時は利用不可の場合あり",
       "ゴミ完全持ち帰り",
-      "要現地確認"
+      "要現地確認",
+      "自治体が公認した野営地ではない（黙認）。相模原市はキャンプについて市営キャンプ場を案内している",
+      "管理区分により火気の扱いが異なる可能性がある。事前に相模原市へ確認を推奨（公園課 042-769-8243）"
     ],
     "lat": 35.5415695,
     "lng": 139.3325907,
@@ -8785,7 +8818,8 @@
       "車乗り入れ不可・荷物は徒歩運搬",
       "直火の可否は要確認",
       "増水時は立入危険",
-      "ゴミ完全持ち帰り"
+      "ゴミ完全持ち帰り",
+      "静岡市の「キャンプ適地」だが、市の利用ルールのページは現在閲覧できず、公認の裏付けは取れていない（黙認）"
     ],
     "lat": 35.1249393,
     "lng": 138.4407838,
@@ -8839,7 +8873,9 @@
       "直火・打上花火禁止（焚き火台は可）",
       "薪はかまどでの使用のみ",
       "事前予約必須",
-      "ゴミ完全持ち帰り"
+      "ゴミ完全持ち帰り",
+      "園内の水は飲料に適さない。飲料水は持参",
+      "チェックイン10:00〜16:00、チェックアウト8:00〜10:00。いずれも管理棟に立ち寄ること"
     ],
     "lat": 34.985472,
     "lng": 138.848321,
@@ -8862,10 +8898,10 @@
       "toilet": "不明",
       "toiletNote": "トイレ・炊事棟あり（様式は要確認）",
       "carIn": false,
-      "carInNote": "要確認",
+      "carInNote": "荷物の搬出入時のみ乗り入れ可。その後は指定場所に駐車。キャンピングカーでの利用は不可",
       "soloPlan": false,
       "reservation": "要",
-      "reservationNote": "利用日の1週間前まで。TEL 055-942-3103",
+      "reservationNote": "利用日の3日前まで。沼津市公共施設予約システムまたは TEL 055-942-3103",
       "convenience": false,
       "shop": false,
       "wifi": false,
@@ -8880,7 +8916,8 @@
     "season": "通年",
     "soloComment": "無料なのに炊事棟もトイレも整い、かまど用の薪まで只でもらえる。展望台からは富士山と駿河湾。1週間前までの予約を忘れずに。",
     "tel": "055-942-3103",
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "officialUrl": "https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/shiminnomori/"
   },
   {
     "id": "kamioshima-camp",
@@ -9419,13 +9456,13 @@
     "status": "active",
     "lat": 35.2107755,
     "lng": 138.4650031,
-    "priceMin": 0,
-    "priceMax": 0,
-    "priceNote": "大人500円／小人400円／幼児300円",
+    "priceMin": 4500,
+    "priceMax": 13500,
+    "priceNote": "宿泊料1泊：オートキャンプ1サイト（テント1張・車1台）4,000円／バンガロー1棟8,000円／江ノ電バンガロー1両13,000円。これに施設使用料1泊が加算（大人500円・小学生400円・乳幼児300円）。AC電源1,000円、追加の車1台1,000円。2泊目以降は1泊につき500円割引",
     "scores": {
       "quietness": 4,
       "scenery": 3,
-      "value": 5,
+      "value": 3,
       "access": 2,
       "facility": 3
     },
@@ -9441,7 +9478,7 @@
       "carInNote": "要確認",
       "soloPlan": false,
       "reservation": "要",
-      "reservationNote": "要確認",
+      "reservationNote": "2026年は2月1日9:00から予約受付開始",
       "convenience": false,
       "shop": false,
       "wifi": false,
@@ -9452,10 +9489,10 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "4月中旬〜11月30日",
+    "season": "連休を中心とした限定営業（公式の営業カレンダー要確認）。夏季は施設貸切",
     "tel": "0556-66-3155",
     "lastVerified": "2026-08-07",
-    "soloComment": "福士川沿いのこぢんまりとしたキャンプ場。実際の江ノ電車両に泊まれるのが名物で、大人500円という値段も含めてソロ向き。",
+    "soloComment": "福士川沿いのこぢんまりとしたキャンプ場。実際の江ノ電車両に泊まれるのが名物で、貸切露天風呂「とと湯」を無料で使える。営業は連休を中心とした限られた日だけなので、公式の営業カレンダーを見てから動きたい。",
     "officialUrl": "http://www.turkeyshouse.com/"
   },
   {

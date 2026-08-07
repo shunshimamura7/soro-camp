@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Campground } from "@/lib/types";
+import { RestrictionChips, EligibilityChip } from "@/components/RestrictionChip";
+import FavoriteButton from "@/components/FavoriteButton";
 
 type FeatureTag = { key: string; label: string };
 
@@ -41,6 +43,7 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
         <span className="shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-[#f5f0ea] text-[#6b5a4e] border border-[#e2ddd8]">
           {camp.prefecture}
         </span>
+        <FavoriteButton slug={camp.slug} />
       </div>
 
       {/* 2. Camp name */}
@@ -51,6 +54,16 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
         >
           {camp.name}
         </Link>
+        {/*
+          期間限定制限と利用対象の制限は、施設名の直下・featureバッジより前に出す。
+          料金や設備を見る前に「今そこへ行けるのか」を判断させたいため。
+        */}
+        {(camp.restrictions?.length || camp.eligibility) && (
+          <span className="ml-2 inline-flex flex-wrap gap-1.5 align-middle">
+            <RestrictionChips restrictions={camp.restrictions} />
+            <EligibilityChip eligibility={camp.eligibility} />
+          </span>
+        )}
         {isWild && (
           <span className="ml-2 align-middle inline-flex items-center shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-white text-[#e8611f] border border-[#e8611f]">
             野営地

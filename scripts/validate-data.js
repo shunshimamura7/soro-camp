@@ -8,6 +8,9 @@ const fs = require('fs');
 const path = require('path');
 
 const { PREFECTURE_BOUNDS, isOutOfBounds, describeBounds } = require(path.join(__dirname, 'prefecture-bounds.js'));
+// 期間限定制限の日付ロジックは public/restrictions.js が唯一の実装。
+// 閲覧時に実際に走るコードと同じ関数で検査するため、ここから直接読み込む。
+const { isValidMD } = require(path.join(__dirname, '../public/restrictions.js'));
 
 const DATA_PATH = path.join(__dirname, '../data/campgrounds.json');
 const REQUIRED = ['id', 'slug', 'name', 'prefecture', 'area', 'scores'];
@@ -67,6 +70,30 @@ function positiveBonfireMentions(text) {
  * 「直火禁止」は焚き火台ならOKという意味で bonfire:true と両立するので含めない。
  */
 const BONFIRE_BANNED = /焚き火[^。、]{0,6}(?:禁止|不可|できません|できない)|火気厳禁/;
+
+/** restrictions.type が取りうる値 */
+const RESTRICTION_TYPES = ['bonfire', 'camping', 'access'];
+
+/**
+ * restrictions の期間が古びていないか見張る日数。
+ *
+ * MM-DD は毎年同じ日付を指すが、根拠のほうは年ごとに動く。
+ * 和田長浜の海水浴場開設期間（令和8年は 7/3〜8/31）が典型で、
+ * 開設日は年により数日前後する。放っておくと誰も気づかないまま
+ * ずれた期間で「制限中」を出し続けることになるので、
+ * 確認から1年が過ぎたらビルドのたびに警告を出す。
+ */
+const RESTRICTION_STALE_DAYS = 365;
+
+/** lastVerified から今日までの日数。日付として読めなければ null */
+function daysSince(dateStr, today) {
+  if (typeof dateStr !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) return null;
+  const t = Date.parse(`${dateStr}T00:00:00Z`);
+  if (Number.isNaN(t)) return null;
+  return Math.floor((today - t) / 86400000);
+}
+
+const TODAY_UTC = Date.parse(new Date().toISOString().slice(0, 10) + 'T00:00:00Z');
 
 /** 利用可能であることを示す真偽値の features。閉鎖・未確認の施設に true で残っていたら不整合 */
 const USABLE_FEATURES = [
@@ -189,6 +216,76 @@ for (const c of camps) {
     const left = USABLE_FEATURES.filter((k) => f[k] === true);
     if (left.length) {
       errors.push(`${id}: status が closed なのに features に利用可能を示す true が残っている（${left.join(', ')}）`);
+    }
+  }
+
+  // ── restrictions（期間限定の制限） ──
+  if ('restrictions' in c && c.restrictions != null) {
+    if (!Array.isArray(c.restrictions)) {
+      errors.push(`${id}: restrictions は配列でなければならない`);
+    } else if (c.restrictions.length === 0) {
+      errors.push(`${id}: restrictions が空配列。制限がないならフィールドごと削除する`);
+    } else {
+      c.restrictions.forEach((r, i) => {
+        const at = `${id}: restrictions[${i}]`;
+        if (!r || typeof r !== 'object') {
+          errors.push(`${at} がオブジェクトでない`);
+          return;
+        }
+        if (!RESTRICTION_TYPES.includes(r.type)) {
+          errors.push(`${at}.type が ${RESTRICTION_TYPES.join('/')} のいずれでもない（${JSON.stringify(r.type)}）`);
+        }
+        for (const key of ['from', 'to']) {
+          if (!isValidMD(r[key])) {
+            errors.push(`${at}.${key} が MM-DD 形式の実在する日付でない（${JSON.stringify(r[key])}）`);
+          }
+        }
+        for (const key of ['reason', 'source']) {
+          if (typeof r[key] !== 'string' || r[key].trim() === '') {
+            errors.push(`${at}.${key} が空。制限は根拠と理由を必ず持つこと`);
+          }
+        }
+        // 出典URLのない制限は、あとから裏を取り直せない
+        if (typeof r.source === 'string' && !/https?:\/\//.test(r.source)) {
+          warnings.push(`${at}.source に URL がない（${r.source}）`);
+        }
+        // 焚き火が元から不可なら「期間限定で制限される」は成り立たない
+        if (r.type === 'bonfire' && f.bonfire === false) {
+          errors.push(`${at}: type が bonfire だが features.bonfire が false。通年不可なら期間制限にしない`);
+        }
+      });
+
+      // 制限の期間そのものが古びていないか。エラーではなく警告にする
+      // （期間が動いたと決まったわけではなく、確認しに行くべきという合図）
+      const age = daysSince(c.lastVerified, TODAY_UTC);
+      if (age === null) {
+        warnings.push(
+          `${id}: restrictions を持つが lastVerified が未設定（${JSON.stringify(c.lastVerified)}）。` +
+            `期間が年により変動する可能性。出典を再確認`,
+        );
+      } else if (age >= RESTRICTION_STALE_DAYS) {
+        warnings.push(
+          `${id}: restrictions を持つが lastVerified が ${c.lastVerified}（${age}日前）。` +
+            `期間が年により変動する可能性。出典を再確認`,
+        );
+      }
+    }
+  }
+
+  // ── eligibility（利用できる人の制限） ──
+  if ('eligibility' in c && c.eligibility != null) {
+    const e = c.eligibility;
+    if (typeof e !== 'object' || Array.isArray(e)) {
+      errors.push(`${id}: eligibility はオブジェクトでなければならない`);
+    } else {
+      for (const key of ['label', 'source']) {
+        if (typeof e[key] !== 'string' || e[key].trim() === '') {
+          errors.push(`${id}: eligibility.${key} が空`);
+        }
+      }
+      if (typeof e.source === 'string' && !/https?:\/\//.test(e.source)) {
+        warnings.push(`${id}: eligibility.source に URL がない（${e.source}）`);
+      }
     }
   }
 }

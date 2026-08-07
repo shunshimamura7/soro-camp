@@ -8,7 +8,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { normalizeName, similarity, levenshtein } = require(path.join(__dirname, 'name-match.js'));
+const { normalizeName, similarity } = require(path.join(__dirname, 'name-match.js'));
 
 const DATA_PATH   = path.join(__dirname, '../data/campgrounds.json');
 const REPORT_PATH = path.join(__dirname, 'duplicate-suspects.md');

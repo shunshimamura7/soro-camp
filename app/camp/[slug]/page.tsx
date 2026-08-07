@@ -3,6 +3,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCampground, getAllSlugs } from "@/lib/camp";
 import { SITE_URL } from "@/lib/site";
+import {
+  RestrictionChips,
+  RestrictionDetails,
+  EligibilityChip,
+  EligibilityNote,
+} from "@/components/RestrictionChip";
+import { formatPeriod } from "@/lib/restrictions";
 
 
 export async function generateStaticParams() {
@@ -108,7 +115,10 @@ export default async function CampDetailPage({
   if (f.shower)   featureBadges.push(["shower",  "🚿 シャワー"]);
   if (f.carIn)    featureBadges.push(["carIn",   "🚗 車横付け"]);
   if (f.wifi)     featureBadges.push(["wifi",    "📶 Wi-Fi"]);
-  if (f.bonfire)  featureBadges.push(["bonfire", "🔥 焚き火"]);
+  // 焚き火に期間制限がある施設は、素の「🔥 焚き火」を出すと制限チップと矛盾して見える。
+  // 設備欄からは外し、タイトル横の3状態チップに一本化する。
+  const bonfireRestricted = (camp.restrictions ?? []).some((r) => r.type === "bonfire");
+  if (f.bonfire && !bonfireRestricted) featureBadges.push(["bonfire", "🔥 焚き火"]);
   const noBonfire = f.bonfire === false;
   if (f.firewood) featureBadges.push(["firewood","🪵 薪販売"]);
   if (f.shop)     featureBadges.push(["shop",    "🏪 売店"]);
@@ -158,6 +168,13 @@ export default async function CampDetailPage({
           </div>
         )}
 
+        {/*
+          期間限定の制限と利用対象の制限。掲載状態の警告と同じく施設名より前に出す。
+          どちらもサーバ側で静的に書き出すので、restrictions.js が動かなくても残る。
+        */}
+        <RestrictionDetails restrictions={camp.restrictions} />
+        <EligibilityNote eligibility={camp.eligibility} />
+
         {/* Breadcrumb */}
         <nav className="text-xs text-slate-500 mb-4 flex gap-1 items-center flex-wrap">
           <Link href="/" className="hover:text-slate-700">← 一覧</Link>
@@ -173,6 +190,8 @@ export default async function CampDetailPage({
           <h1 className="text-xl sm:text-3xl font-bold text-slate-900 leading-tight">{camp.name}</h1>
           <div className="flex items-center gap-2 sm:gap-3 mt-2 flex-wrap">
             <span className="text-green-600 font-bold text-sm sm:text-base">{priceLabel}</span>
+            <RestrictionChips restrictions={camp.restrictions} />
+            <EligibilityChip eligibility={camp.eligibility} />
             {isWild && (
               <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-white text-[#e8611f] border border-[#e8611f]">
                 野営地
@@ -323,7 +342,21 @@ export default async function CampDetailPage({
                 <Row label="料金" value={isWild ? "無料" : priceUnknown ? (camp.priceNote || "要問合せ") : `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`} />
                 <Row label="営業期間" value={camp.season} />
                 <Row label="予約" value={`${f.reservation}${f.reservationNote ? `（${f.reservationNote}）` : ""}`} />
-                <Row label="焚き火" value={f.bonfire ? `可${f.bonfireNote ? `（${f.bonfireNote}）` : ""}` : "不可"} />
+                <Row
+                  label="焚き火"
+                  value={
+                    <>
+                      {f.bonfire ? `可${f.bonfireNote ? `（${f.bonfireNote}）` : ""}` : "不可"}
+                      {(camp.restrictions ?? [])
+                        .filter((r) => r.type === "bonfire")
+                        .map((r) => (
+                          <span key={`${r.from}-${r.to}`} className="block text-amber-700 mt-1">
+                            ※ {formatPeriod(r)} は{r.reason}
+                          </span>
+                        ))}
+                    </>
+                  }
+                />
                 <Row label="シャワー" value={f.shower ? `あり${f.showerNote ? `（${f.showerNote}）` : ""}` : "なし"} />
                 <Row label="風呂" value={f.bath ? `あり${f.bathNote ? `（${f.bathNote}）` : ""}` : "なし"} />
                 <Row label="トイレ" value={`${f.toilet}${f.toiletNote ? `（${f.toiletNote}）` : ""}`} />

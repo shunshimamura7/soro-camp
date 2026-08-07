@@ -1,3 +1,43 @@
+/** 期間限定の制限が何にかかるか。 */
+export type RestrictionType = "bonfire" | "camping" | "access";
+
+/**
+ * 毎年繰り返される期間限定の制限。
+ *
+ * 年を持たない MM-DD で表すので、`from > to`（例 12-10 〜 04-25）は
+ * 年をまたぐ期間を意味する。判定は閲覧時のローカル日付で行う（`public/restrictions.js`）。
+ * ビルド時に判定すると翌日には嘘になるため、静的HTMLは常に「要確認」を出す。
+ */
+export type Restriction = {
+  type: RestrictionType;
+  /** "07-03" 形式の MM-DD。年は持たない（毎年繰り返すため） */
+  from: string;
+  /** "08-31" 形式の MM-DD。from より小さければ年またぎ */
+  to: string;
+  /** 制限の内容。利用者が読む文面 */
+  reason: string;
+  /**
+   * 根拠。条例名・資料名と、あれば URL を続けて書く。
+   * 例: "三浦市海水浴場ルール第25条 https://example.jp/rule.pdf"
+   * 表示側は最初の http(s) URL をリンクにし、残りをラベルとして扱う。
+   */
+  source: string;
+};
+
+/**
+ * 利用できる人の制限（例: 甲府市民限定）。
+ * 日付に依存しないのでビルド時に静的出力する。
+ * restrictions の JS が失敗しても、この表示は必ず残る。
+ */
+export type Eligibility = {
+  /** チップに出す短い文言。例: "甲府市民限定" */
+  label: string;
+  /** 補足。詳細ページにのみ出す */
+  note?: string;
+  /** 根拠。Restriction.source と同じ書式 */
+  source: string;
+};
+
 export type Campground = {
   id: string;
   slug: string;
@@ -19,6 +59,10 @@ export type Campground = {
   status: "active" | "closed" | "unverified";
   /** 野営地の注意事項。あれば詳細ページに ⚠️ セクションで表示する。 */
   cautions?: string[];
+  /** 毎年繰り返される期間限定の制限。一覧・詳細に警告チップを出す。 */
+  restrictions?: Restriction[];
+  /** 利用できる人の制限。日付に依存しないので静的に表示する。 */
+  eligibility?: Eligibility;
   lat: number;
   lng: number;
   /** 座標を目視確認済みなら true。未設定・false は要確認（scripts/coord-tool.html の対象）。 */
