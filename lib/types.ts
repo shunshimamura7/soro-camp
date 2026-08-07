@@ -134,6 +134,24 @@ export type Campground = {
    * （`scores.value` 自体は書き換えない。料金を確認したら元の値がそのまま復活する）。
    */
   priceVerified?: boolean;
+  /**
+   * 料金を一次情報まで当たって探したが、**公開されていなかった**ものに true。
+   *
+   * `priceVerified` が false なだけでは「調べていない」のか「調べたが出なかった」のかが
+   * 区別できず、次に絞り込んだ人が同じ手順で調べ直すことになる。本フラグはその再調査を止める印。
+   * どこを当たって何が無かったかは `scripts/price24-check.md` に1件ずつ書いてある。
+   *
+   * 立てるときは `priceMin`/`priceMax` を 0 に落とす。根拠のない数字を残すと、
+   * 将来 `priceVerified` を立て直した瞬間にその数字が表に出るため。
+   * `scripts/validate-data.js` が「needsPrice なのに priceMin に数字がある」をエラーにする。
+   *
+   * 出なかった理由には型がある（詳細は price24-check.md）。
+   * - 変動料金体系で固定料金が存在しない（PICAさがみ湖）
+   * - 会員制で1泊単価が定義できない（キャンプ場此処野静岡）
+   * - 同名の別拠点があって料金の帰属が決まらない（接岨YANBY）
+   * - 施設の同定自体ができていない（静波海岸キャンプサイト。`needsVerify` も併用）
+   */
+  needsPrice?: boolean;
   scores: {
     quietness: number;
     scenery: number;

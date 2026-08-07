@@ -236,6 +236,20 @@ for (const c of camps) {
     warnings.push(`${id}: priceNote があるのに priceVerified が立っていない（付け忘れの疑い）`);
   }
 
+  // ── needsPrice（探したが料金が公開されていなかった） ──
+  // 根拠のない数字を残したままにすると、priceVerified を立て直した瞬間にその数字が表に出る。
+  // 「調べたが出なかった」という結論と、値を持っている状態は両立しない。
+  if (c.needsPrice === true) {
+    if (Number(c.priceMin) !== 0 || Number(c.priceMax) !== 0) {
+      errors.push(
+        `${id}: needsPrice が立っているのに priceMin/priceMax に数字が入っている（${c.priceMin}/${c.priceMax}）。料金が取れなかったなら 0 に落とす`
+      );
+    }
+    if (c.priceVerified === true) {
+      errors.push(`${id}: needsPrice と priceVerified が同時に立っている。どちらか一方しか成り立たない`);
+    }
+  }
+
   // ── restrictions（期間限定の制限） ──
   if ('restrictions' in c && c.restrictions != null) {
     if (!Array.isArray(c.restrictions)) {
