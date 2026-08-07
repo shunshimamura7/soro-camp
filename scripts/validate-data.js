@@ -48,6 +48,8 @@ function unsourcedSuperlatives(text) {
 
 // ── 掲載状態と features の整合性 ──────────────────────────────────────────────
 const STATUSES = ['active', 'closed', 'unverified', 'suspended'];
+/** status が closed のときの内訳。詳細ページの警告の文面がこれで変わる */
+const CLOSED_REASONS = ['prohibited', 'abolished', 'closed_business'];
 
 /** eligibility.type が取りうる値 */
 const ELIGIBILITY_TYPES = ['exclusive', 'discount', 'priority', 'membership'];
@@ -334,6 +336,27 @@ for (const c of camps) {
   }
   if (c.status !== 'suspended' && c.suspendedNote != null) {
     warnings.push(`${id}: status が suspended でないのに suspendedNote が残っている`);
+  }
+
+  // ── closed の内訳 ──
+  // 詳細ページの赤い警告の文面が closedReason で変わる。未設定だと
+  // 「キャンプが禁止されています」側にフォールバックするので、
+  // 廃止・閉業の施設に誤った警告が出る。だから警告ではなくエラーにする。
+  if (c.status === 'closed') {
+    if (!CLOSED_REASONS.includes(c.closedReason)) {
+      errors.push(
+        `${id}: status が closed なのに closedReason が ${c.closedReason == null ? '無い' : `不正（${c.closedReason}）`}。${CLOSED_REASONS.join(' / ')} のどれかを付けること`
+      );
+    }
+    if (c.closedNote == null || String(c.closedNote).trim() === '') {
+      warnings.push(`${id}: closedNote が空。いつ・誰が・何をしたかを出典付きで1文書くこと`);
+    } else if (c.closedReason !== 'prohibited' && !/https?:\/\//.test(String(c.closedNote))) {
+      // prohibited は現地の掲示・管理者への確認が根拠になることがあり、URL を必須にしない
+      warnings.push(`${id}: closedNote に URL がない（${c.closedNote}）`);
+    }
+  }
+  if (c.status !== 'closed' && (c.closedReason != null || c.closedNote != null)) {
+    warnings.push(`${id}: status が closed でないのに closedReason/closedNote が残っている`);
   }
 }
 

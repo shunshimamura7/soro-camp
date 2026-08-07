@@ -1797,13 +1797,15 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "通年",
+    "season": "閉業（旧: 通年）",
     "soloComment": "2020年6月に朝霧高原北部の富士ヶ嶺高原に開業したフリーサイトのキャンプ場だったが、現在は閉業している。ふもとっぱらより標高が高く富士山に近い牧草地で、開けた眺めが売りだった。",
     "lastVerified": "2026-08-07",
     "priceVerified": true,
     "cautions": [
       "閉業済み。利用できない"
-    ]
+    ],
+    "closedReason": "closed_business",
+    "closedNote": "2020年6月開業、現在は閉業。所在地は静岡県富士宮市ではなく山梨県富士河口湖町富士ヶ嶺 https://camp-quests.com/39367/"
   },
   {
     "id": "okooigawa-lake",
@@ -5499,11 +5501,13 @@
     "tel": "0463-96-0303",
     "officialUrl": "",
     "reservationUrl": "",
-    "season": "7月20日〜8月31日のみ（約6週間）",
-    "soloComment": "大山日向薬師の麓、伊勢原の渓流沿い。アクセス抜群で平日ソロにも最適。",
+    "season": "廃止（令和6年3月まで 7月20日〜8月31日のみ開設）",
+    "soloComment": "大山日向薬師の麓、伊勢原の渓流沿いにあった市営キャンプ場。夏の約6週間だけ開設し、市内在住者の申込が先に始まる形だったが、令和6年3月に廃止された。跡地は「SMBCの森」として森林保全と研修の場になっており、キャンプ場としては再開しない。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "address": "神奈川県伊勢原市日向2190-2"
+    "address": "神奈川県伊勢原市日向2190-2",
+    "closedNote": "伊勢原市が令和6年3月に用途を廃止。跡地を含む森林は三井住友銀行が「SMBCの森」として取得し、「伊勢原自然塾」として利用されている https://www.city.isehara.kanagawa.jp/docs/2024112800066/",
+    "closedReason": "abolished"
   },
   {
     "id": "naminokomura",
@@ -5988,8 +5992,8 @@
     "tel": "",
     "officialUrl": "",
     "reservationUrl": "",
-    "season": "通年",
-    "soloComment": "接岨峡は大井川上流の山あいにあり、空が暗く星がよく見える。奥大井湖上駅へのシャトルバスがあり、八橋小道ラブロマンスロード（1周約1時間）も近い。星を眺めて過ごす夜向き。",
+    "season": "秋〜初冬の期間限定（年により変動・要確認）。2026年は9月19日〜12月5日",
+    "soloComment": "長島公園が年に3か月だけキャンプ場になる期間限定の施設。接岨峡は大井川上流の山あいにあり、空が暗く星がよく見える。奥大井湖上駅へのシャトルバスがあり、八橋小道ラブロマンスロード（1周約1時間）も近い。星を眺めて過ごす夜向きだが、開設期間が年によって動くので予約前に必ず確認すること。",
     "lastVerified": "2026-08-07",
     "needsVerify": true,
     "coordsGsiChecked": true,
@@ -7050,11 +7054,11 @@
     "name": "宝の山ふれあいの里キャンプ場",
     "prefecture": "山梨",
     "area": "都留市",
-    "status": "active",
+    "status": "closed",
     "lat": 35.515,
     "lng": 138.93,
-    "priceMin": 2660,
-    "priceMax": 2660,
+    "priceMin": 0,
+    "priceMax": 0,
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -7070,10 +7074,10 @@
       "soloPlan": false,
       "reservation": "要",
       "shop": false,
-      "firewood": true,
+      "firewood": false,
       "ice": false,
       "alcohol": false,
-      "bonfire": true,
+      "bonfire": false,
       "pet": false,
       "toilet": "洋式",
       "convenience": false,
@@ -7084,8 +7088,8 @@
     "tel": "0554-45-6222",
     "officialUrl": "https://takaranoyama.camp/",
     "reservationUrl": "",
-    "season": "4月-11月",
-    "soloComment": "都留市の山上、1日4組限定のフリーサイト。富士山湧水の自然環境、夜の星空が抜群。",
+    "season": "閉館（旧: 4月1日〜11月30日）",
+    "soloComment": "都留市の山上にあった市の施設で、1日4組限定のフリーサイトとコテージ6棟があった。敷地が土砂災害特別警戒区域に指定されたため、令和7年度末（2026年3月末）で閉館した。公式サイトも都留市のページも料金表を載せたまま残っているので、営業中と誤解しないこと。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "address": "山梨県都留市大幡5108",
@@ -7093,8 +7097,8 @@
       "テントサイトは1日4組限定のフリーサイト",
       "予約は電話のみ（0554-45-6222）"
     ],
-    "priceNote": "サイト単位課金。フリーサイト1張1泊2,660円（税込）のみで、入場料・施設利用料は別途かからない。ソロ1名でも同額。1日4組限定（1組あたりテント1張）、駐車は共有スペースに1組1台が基準で無料。AC電源なし、ペット不可、支払いは現金のみ。IN 13:00 / OUT 10:00",
-    "priceVerified": true
+    "closedReason": "abolished",
+    "closedNote": "施設の立地が土砂災害特別警戒区域（レッドゾーン）に指定されたため、安全性を考慮して令和7年度末（2026年3月末）で閉館。都留市の施設で、再開の予定はない https://www.city.tsuru.yamanashi.jp/soshiki/sangyo/shoko_t/3/1365.html"
   },
   {
     "id": "doshi-mori-cottage",
@@ -7196,14 +7200,16 @@
     "tel": "090-7988-3152",
     "officialUrl": "",
     "reservationUrl": "",
-    "season": "通年（1月・2月は冬季休業）",
-    "soloComment": "青木ヶ原樹海の中の異世界キャンプ場。アウトドアセレクトショップ運営、洗練された空間。",
+    "season": "閉業（旧: 通年／1月・2月は冬季休業）",
+    "soloComment": "青木ヶ原樹海の中にあった1日11組限定の小さなキャンプ場で、アウトドアセレクトショップが運営していたが、現在は閉業している。湖や富士山は見えないかわりに、森だけを眺めて過ごせる場所だった。モンベルのフレンドショップ検索や旅行サイトには今も料金付きで残っているので注意。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "address": "山梨県南都留郡富士河口湖町西湖2169-1",
     "cautions": [
       "青木ヶ原樹海の中にある全8サイトの施設"
-    ]
+    ],
+    "closedReason": "closed_business",
+    "closedNote": "営業を終了している。公式サイト（sportstraincamp.com）はドメインの接続が切れており、なっぷの施設名も「【閉鎖】SPORTS TRAIN in Forest CAMP」で予約不可になっている https://www.nap-camp.com/yamanashi/14549"
   },
   {
     "id": "fuji-midori-kyuka-auto",
@@ -8838,12 +8844,14 @@
     },
     "season": "要確認",
     "tel": null,
-    "lastVerified": "2026-08-06",
+    "lastVerified": "2026-08-07",
     "needsVerify": true,
     "soloComment": "現在キャンプは禁止されています。かつて無料の野営地として知られていましたが、佐野川河川公園として管理される現在は利用できません。",
     "cautions": [
       "現在キャンプは禁止されている。佐野川河川公園として管理されており、宿泊・野営はできない"
     ],
-    "priceVerified": true
+    "priceVerified": true,
+    "closedReason": "prohibited",
+    "closedNote": "南部町が河川公園として管理しており、公園内でのキャンプ・火気の使用は認められていない。かつて無料の野営地として知られていた場所だが、現在は利用できない"
   }
 ]

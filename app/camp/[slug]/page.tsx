@@ -157,14 +157,45 @@ export default async function CampDetailPage({
           名前を見てから警告に気づくのでは遅いので、パンくず（施設名を含む）よりも
           さらに前、ページ内容の先頭に置くこと。
         */}
+        {/*
+          閉鎖の警告。closedReason で文面を変える。
+          以前は closed 全件に「キャンプが禁止されています。訪問しないでください」を出していたが、
+          これが正しいのは自治体がキャンプを禁じた sanogawa-camp だけだった。
+          廃止・閉業に「禁止」と書くのは事実と違うし、「訪問しないでください」は
+          その土地への立ち入り自体が禁じられているように読める。
+        */}
         {camp.status === "closed" && (
           <div
             role="alert"
             className="mb-4 rounded-xl border-2 border-red-600 bg-red-50 px-4 py-3.5"
           >
             <p className="text-[13px] sm:text-[15px] font-bold leading-relaxed text-red-700">
-              この場所は現在キャンプが禁止されています。訪問しないでください。
+              {camp.closedReason === "abolished" ||
+              camp.closedReason === "closed_business"
+                ? "この施設は営業を終了しています。現地に施設はありません。"
+                : "この場所は現在キャンプが禁止されています。訪問しないでください。"}
             </p>
+            {camp.closedNote && (() => {
+              const src = parseSource(camp.closedNote);
+              return (
+                <p className="mt-2 text-[12px] sm:text-[13px] leading-relaxed text-red-900">
+                  {src.label}
+                  {src.url && (
+                    <>
+                      {" "}
+                      <a
+                        href={src.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:no-underline"
+                      >
+                        出典 ↗
+                      </a>
+                    </>
+                  )}
+                </p>
+              );
+            })()}
           </div>
         )}
         {camp.status === "unverified" && (
