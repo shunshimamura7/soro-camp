@@ -17,9 +17,14 @@ const REQUIRED = ['id', 'slug', 'name', 'prefecture', 'area', 'scores'];
 const SCORE_KEYS = ['quietness', 'scenery', 'value', 'access', 'facility'];
 const PREFECTURES = Object.keys(PREFECTURE_BOUNDS);
 
-/** lib/camp.ts の calcSoloScore と同じ式（静けさ・絶景を2倍） */
-function calcSoloScore(s) {
-  return Math.round(((s.quietness * 2 + s.scenery * 2 + s.value + s.access + s.facility) / 7) * 10) / 10;
+/**
+ * lib/camp.ts の calcSoloScore と同じ式（静けさ・絶景を2倍）。
+ * 料金が未確認の施設はコスパを中立値3として扱うところまで揃える。
+ */
+function calcSoloScore(camp) {
+  const s = camp.scores;
+  const value = camp.priceVerified === true ? s.value : 3;
+  return Math.round(((s.quietness * 2 + s.scenery * 2 + value + s.access + s.facility) / 7) * 10) / 10;
 }
 
 const camps = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
@@ -139,7 +144,7 @@ for (const c of camps) {
 
   // ── soloScore は派生値。JSON に残っていたら計算値と突き合わせる ──
   if ('soloScore' in c && c.scores) {
-    const expected = calcSoloScore(c.scores);
+    const expected = calcSoloScore(c);
     if (Math.abs(c.soloScore - expected) > 0.05) {
       warnings.push(`${id}: soloScore ${c.soloScore} は計算値 ${expected} と一致しない（再計算した値を使用）`);
     } else {
@@ -217,6 +222,15 @@ for (const c of camps) {
     if (left.length) {
       errors.push(`${id}: status が closed なのに features に利用可能を示す true が残っている（${left.join(', ')}）`);
     }
+  }
+
+  // ── priceVerified（料金の裏取り） ──
+  // 内訳を書けないのに「確認した」とは言えない。実質的な判定基準は priceNote の有無。
+  if (c.priceVerified === true && (c.priceNote == null || String(c.priceNote).trim() === '')) {
+    errors.push(`${id}: priceVerified が true なのに priceNote が空。料金の内訳を書けないなら確認済みにしない`);
+  }
+  if (c.priceVerified !== true && c.priceNote != null && String(c.priceNote).trim() !== '') {
+    warnings.push(`${id}: priceNote があるのに priceVerified が立っていない（付け忘れの疑い）`);
   }
 
   // ── restrictions（期間限定の制限） ──

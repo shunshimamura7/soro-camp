@@ -96,6 +96,19 @@ export type Campground = {
   priceMin: number;
   priceMax: number;
   priceNote?: string;
+  /**
+   * 料金を一次情報で確認したなら true。未設定・false は
+   * 「priceMin/priceMax に値は入っているが、裏を取っていない」を意味する。
+   *
+   * 判定の実質的な基準は `priceNote`（内訳）を書けたかどうか。
+   * 料金を実際に調べた人は「入場料◯円＋サイト料◯円」のような内訳を必ず書ける。
+   * 一括投入で入った76件は値だけを持ち、内訳を持たなかった。
+   *
+   * false のときは金額を表示せず「料金 要確認」とし、価格順ソートの末尾に回し、
+   * soloScore の計算では `scores.value` の代わりに中立値3を使う
+   * （`scores.value` 自体は書き換えない。料金を確認したら元の値がそのまま復活する）。
+   */
+  priceVerified?: boolean;
   scores: {
     quietness: number;
     scenery: number;

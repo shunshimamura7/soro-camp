@@ -21,15 +21,22 @@ export const activeCampgrounds: Campground[] = campgrounds.filter(
  *
  * 以前は JSON に soloScore を持たせていたが、scores と食い違っても
  * 気づけないため計算に統一した（JSON からフィールドは削除済み）。
+ *
+ * 料金が未確認（`priceVerified !== true`）の施設は、コスパを判定する根拠が無い。
+ * その場合だけ `scores.value` の代わりに中立値の 3 を使う。
+ *
+ * コスパを分母から外す（4軸で /6 にする）方式は採らない。残り4軸の平均が
+ * 暗黙に代入される形になり、value が平均より低い未確認施設ほど順位が上がってしまう。
+ * 実データで試すと、上位20件に入る未確認施設が2件から10件に増えた。
+ *
+ * `scores.value` そのものは書き換えない。料金を確認して priceVerified を立てれば
+ * 元の値がそのまま効くようにしておく。
  */
-export function calcSoloScore(scores: Campground["scores"]): number {
+export function calcSoloScore(camp: Campground): number {
+  const s = camp.scores;
+  const value = camp.priceVerified === true ? s.value : 3;
   const raw =
-    (scores.quietness * 2 +
-      scores.scenery * 2 +
-      scores.value +
-      scores.access +
-      scores.facility) /
-    7;
+    (s.quietness * 2 + s.scenery * 2 + value + s.access + s.facility) / 7;
   return Math.round(raw * 10) / 10;
 }
 
@@ -79,14 +86,25 @@ export function filterAndSort(
     return true;
   });
 
+  /**
+   * 価格順のキー。料金が未確認の施設は根拠のない数字なので、
+   * その値で順位を付けずに末尾へ回す。一覧から消してしまうと
+   * 「価格順にしたら施設が減った」という別の事故になるので除外はしない。
+   */
+  const priceKey = (c: Campground) =>
+    c.priceVerified === true ? c.priceMin : Number.POSITIVE_INFINITY;
+
   result = [...result].sort((a, b) => {
     switch (sort) {
+      case "priceAsc": {
+        const diff = priceKey(a) - priceKey(b);
+        // 末尾に溜まる未確認施設どうしは soloScore 順で安定させる
+        if (Number.isNaN(diff) || diff === 0) return calcSoloScore(b) - calcSoloScore(a);
+        return diff;
+      }
       case "soloScore":
-        return calcSoloScore(b.scores) - calcSoloScore(a.scores);
-      case "priceAsc":
-        return a.priceMin - b.priceMin;
       default:
-        return calcSoloScore(b.scores) - calcSoloScore(a.scores);
+        return calcSoloScore(b) - calcSoloScore(a);
     }
   });
 

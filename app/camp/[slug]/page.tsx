@@ -26,12 +26,15 @@ export async function generateMetadata({
   if (!camp) return {};
 
   const title = `${camp.name}【${camp.prefecture}・${camp.area}】`;
+  // 料金が未確認の施設は、検索結果に出る description にも金額を書かない
   const description =
     camp.type === "wild"
       ? `${camp.soloComment} 無料。${camp.season}。`
-      : camp.priceMin === 0 && camp.priceMax === 0
-        ? `${camp.soloComment} 料金は要問合せ。${camp.season}営業。`
-        : `${camp.soloComment} 最安値${camp.priceMin.toLocaleString()}円〜。${camp.season}営業。`;
+      : camp.priceVerified !== true
+        ? `${camp.soloComment} 料金は未確認。${camp.season}営業。`
+        : camp.priceMin === 0 && camp.priceMax === 0
+          ? `${camp.soloComment} 料金は要問合せ。${camp.season}営業。`
+          : `${camp.soloComment} 最安値${camp.priceMin.toLocaleString()}円〜。${camp.season}営業。`;
 
   return {
     title,
@@ -87,22 +90,29 @@ export default async function CampDetailPage({
       : {}),
     ...(camp.tel ? { telephone: camp.tel } : {}),
     ...(camp.officialUrl ? { url: camp.officialUrl } : {}),
-    // 野営地は無料、価格未調査（0/0）は priceRange を出さない
+    // 野営地は無料。価格未調査（0/0）と、裏を取っていない料金は priceRange を出さない。
+    // 構造化データは検索エンジンがそのまま拾うので、根拠のない金額を流さない
     ...(camp.type === "wild"
       ? { priceRange: "0" }
-      : camp.priceMin === 0 && camp.priceMax === 0
+      : camp.priceVerified !== true
         ? {}
-        : { priceRange: `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}` }),
+        : camp.priceMin === 0 && camp.priceMax === 0
+          ? {}
+          : { priceRange: `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}` }),
   };
 
   const f = camp.features;
   const isWild = camp.type === "wild";
   const priceUnknown = !isWild && camp.priceMin === 0 && camp.priceMax === 0;
+  // 値は入っているが裏を取っていないもの。根拠のない金額は出さない
+  const priceUnverified = !isWild && camp.priceVerified !== true;
   const priceLabel = isWild
     ? "無料"
-    : priceUnknown
-      ? (camp.priceNote || "要問合せ")
-      : `¥${camp.priceMin.toLocaleString()}〜`;
+    : priceUnverified
+      ? "料金 要確認"
+      : priceUnknown
+        ? (camp.priceNote || "要問合せ")
+        : `¥${camp.priceMin.toLocaleString()}〜`;
 
   // "2025-01-01" は一括投入時のプレースホルダなので確認済みとは扱わない
   const isUnverified =
@@ -174,6 +184,43 @@ export default async function CampDetailPage({
         */}
         <RestrictionDetails restrictions={camp.restrictions} />
         <EligibilityNote eligibility={camp.eligibility} />
+
+        {/*
+          料金が未確認であること自体を伝える。金額を隠すだけだと
+          「なぜ分からないのか」「どうすれば分かるのか」が伝わらないので、
+          確認先（公式サイト・電話）があれば併記する。
+        */}
+        {priceUnverified && (
+          <div className="mb-4 rounded-xl border-2 border-amber-500 bg-amber-50 px-4 py-3">
+            <p className="text-[13px] sm:text-sm font-bold leading-relaxed text-amber-900">
+              料金は未確認です。訪問前に公式サイトか電話で確認してください
+            </p>
+            {(camp.officialUrl || camp.tel) && (
+              <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[13px] sm:text-sm">
+                {camp.officialUrl && (
+                  <a
+                    href={camp.officialUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-900 underline hover:no-underline"
+                  >
+                    公式サイトで確認 ↗
+                  </a>
+                )}
+                {camp.tel && (
+                  <a href={`tel:${camp.tel}`} className="text-amber-900 underline hover:no-underline">
+                    📞 {camp.tel}
+                  </a>
+                )}
+              </p>
+            )}
+            {!camp.officialUrl && !camp.tel && (
+              <p className="mt-2 text-[12px] sm:text-[13px] leading-relaxed text-amber-800">
+                この施設は公式サイトも電話番号も確認できていません。施設名で検索して最新情報をご確認ください
+              </p>
+            )}
+          </div>
+        )}
 
         {/* Breadcrumb */}
         <nav className="text-xs text-slate-500 mb-4 flex gap-1 items-center flex-wrap">
@@ -339,7 +386,18 @@ export default async function CampDetailPage({
             <section className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-100">
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-1">施設情報</h2>
               <div>
-                <Row label="料金" value={isWild ? "無料" : priceUnknown ? (camp.priceNote || "要問合せ") : `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`} />
+                <Row
+                  label="料金"
+                  value={
+                    isWild
+                      ? "無料"
+                      : priceUnverified
+                        ? "未確認（公式サイトまたは電話で要確認）"
+                        : priceUnknown
+                          ? (camp.priceNote || "要問合せ")
+                          : `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`
+                  }
+                />
                 <Row label="営業期間" value={camp.season} />
                 <Row label="予約" value={`${f.reservation}${f.reservationNote ? `（${f.reservationNote}）` : ""}`} />
                 <Row
