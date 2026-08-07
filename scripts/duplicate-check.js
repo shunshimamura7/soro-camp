@@ -1,5 +1,5 @@
 /**
- * 座標未確定のまま残っている件（coordsVerified !== true）を総当たりで比較し、
+ * 全件を総当たりで比較し、
  * 二重登録の疑いがあるペアを scripts/duplicate-suspects.md に列挙する。
  *
  * データは読むだけで変更しない。
@@ -51,7 +51,11 @@ if (fs.existsSync(RESULT_PATH)) {
   } catch {}
 }
 
-const targets = camps.filter(c => c.coordsVerified !== true && !autoSlugs.has(c.slug));
+// 以前は coordsVerified !== true のものだけを見ていたが、その縛りのせいで
+// nakatsugawa-kasenjiki と nakatsugawa-camp（座標が完全に一致）のペアが
+// 検出対象から外れていた。確認済みフラグが検証をすり抜けさせる構図は
+// 海上・湖面の7件でも起きているので（scripts/sea-coord-check.md）、全件を総当たりする。
+const targets = camps.filter(c => !autoSlugs.has(c.slug));
 
 const pairs = [];
 for (let i = 0; i < targets.length; i++) {
@@ -102,7 +106,9 @@ const esc = s => String(s == null ? '' : s).replace(/\|/g, '\\|').replace(/\n/g,
 
 let md = '';
 md += '# 二重登録の疑いがあるペア\n\n';
-md += `対象: 座標未確定のまま残っている **${targets.length}件**（auto で候補が出た分は除外）\n\n`;
+md += `対象: **${targets.length}件**（auto で候補が出た分は除外）。`;
+md += '以前は coordsVerified !== true のものだけを見ていたが、確認済みフラグが検証を'
+   + 'すり抜けさせていたため全件を対象にした\n\n';
 md += `総当たり ${(targets.length * (targets.length - 1)) / 2} ペアを比較し、**${pairs.length}ペア**を抽出。\n\n`;
 md += '判定基準: 名称の類似（正規化＋編集距離） / 名前の共通部分3文字以上かつ20km以内 / 座標が1km以内 / 県をまたぐのに近接\n\n';
 md += '※ 判定のみ。data/campgrounds.json は変更していない。\n\n';

@@ -8,6 +8,12 @@
  *   node scripts/check-one-coord.js 35.1397,139.1487
  *   node scripts/check-one-coord.js 35.1397,139.1487 34.9762,139.1021 ...
  *   node scripts/check-one-coord.js "真鶴:35.1462,139.1352" "伊東:34.9668,139.1032"
+ *
+ * --pref=山梨 を付けると、逆ジオが返した都道府県と突き合わせて PREF_MISMATCH を出す。
+ * これが無いと「市区町村が引けた＝OK」としか言えず、清里3件のように
+ * 隣県に落ちているケースを OK と表示してしまう。
+ *
+ *   node scripts/check-one-coord.js --pref=山梨 "丘の公園:35.8998,138.4552"
  */
 const MUNI_URL = 'https://maps.gsi.go.jp/js/muni.js';
 const REVERSE_URL = 'https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress';
@@ -59,7 +65,10 @@ async function elevation(lat, lng) {
 }
 
 (async () => {
-  const args = process.argv.slice(2);
+  const raw = process.argv.slice(2);
+  const prefArg = raw.find((a) => a.startsWith('--pref='));
+  const expectPref = prefArg ? prefArg.slice('--pref='.length) : null;
+  const args = raw.filter((a) => !a.startsWith('--'));
   if (args.length === 0) {
     console.error('座標を指定してください。例: node scripts/check-one-coord.js 35.1397,139.1487');
     process.exit(1);
@@ -79,8 +88,11 @@ async function elevation(lat, lng) {
 
     const [addr, elev] = await Promise.all([reverse(lat, lng, muni), elevation(lat, lng)]);
     // 市区町村が引けず標高も取れない＝陸地の外。海上判定
+    // 期待する都道府県が指定されていれば、そこまで見て初めて OK と言う
+    const prefOk = !expectPref || (addr.pref || '').startsWith(expectPref);
     const verdict = !addr.city && elev === null ? 'SEA（市区町村・標高とも取れず）'
       : !addr.city ? `水面の可能性（市区町村が引けない／標高 ${elev}m）`
+      : !prefOk ? `PREF_MISMATCH（期待 ${expectPref} / 実際 ${addr.pref}）`
       : 'OK';
 
     console.log(`${labelPart ? labelPart + '  ' : ''}${lat}, ${lng}`);
