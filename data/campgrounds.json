@@ -45,7 +45,8 @@
     "officialUrl": "https://norolodge.com/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/14164",
     "tel": "042-787-1360",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "ootaki",
@@ -93,7 +94,8 @@
     "officialUrl": "https://ootakicampsite.com/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11681",
     "tel": "0465-75-2717",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "gandahara",
@@ -105,7 +107,7 @@
     "address": "神奈川県足柄下郡真鶴町真鶴1176-2",
     "lat": 35.1397,
     "lng": 139.1487,
-    "coordsVerified": true,
+    "coordsVerified": false,
     "priceMin": 2500,
     "priceMax": 5000,
     "priceNote": "大人2,500円、トロッコ利用料500円〜",
@@ -143,7 +145,8 @@
     "officialUrl": "https://gandahara.wixsite.com/mysite",
     "reservationUrl": "https://reserva.be/gndahara",
     "tel": "090-3535-2346",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "needsCoord": true
   },
   {
     "id": "tanukiko",
@@ -193,7 +196,8 @@
     "officialUrl": "https://tanukiko.com/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11868",
     "tel": "0544-52-0155",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "eichinomori",
@@ -242,7 +246,8 @@
     "officialUrl": "https://www.bt-r.jp/aec/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/14486",
     "tel": "0544-52-1616",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "sorairo",
@@ -293,7 +298,8 @@
     "reservationUrl": "https://www.nap-camp.com/shizuoka/15686",
     "tel": null,
     "telNote": "WEB予約のみ",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "houzan",
@@ -343,7 +349,8 @@
     "officialUrl": "https://urban-camping.jp/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/14093",
     "tel": "0545-38-3646",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "kouan",
@@ -353,9 +360,9 @@
     "area": "本栖湖",
     "status": "active",
     "address": "山梨県南巨摩郡身延町中ノ倉2926",
-    "lat": 35.4727,
-    "lng": 138.5949,
-    "coordsVerified": true,
+    "lat": 35.4732,
+    "lng": 138.574763,
+    "coordsVerified": false,
     "priceMin": 3200,
     "priceMax": 5000,
     "priceNote": "テントサイト平日3,200円〜",
@@ -392,7 +399,8 @@
     "officialUrl": "https://kouan-motosuko.com/",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11256",
     "tel": "0556-38-0117",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "motosulakeside",
@@ -404,7 +412,7 @@
     "address": "山梨県南都留郡富士河口湖町本栖大久保19",
     "lat": 35.4682,
     "lng": 138.5896,
-    "coordsVerified": true,
+    "coordsVerified": false,
     "priceMin": 2500,
     "priceMax": 5000,
     "priceNote": "コスパ◎・連泊割引あり",
@@ -442,7 +450,8 @@
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11329",
     "tel": null,
     "telNote": "メール対応のみ: motosulakeside@gmail.com",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "needsCoord": true
   },
   {
     "id": "picafuji-saiko",
@@ -491,7 +500,8 @@
     "officialUrl": "https://www.pica-resort.jp/saiko/",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11315",
     "tel": "0555-20-4555",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "wellcamp-nishitanzawa",
@@ -542,7 +552,8 @@
     "officialUrl": "https://well-camp.com/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11677",
     "tel": "0465-78-3181",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "shindo",
@@ -591,7 +602,8 @@
     "officialUrl": "https://www.nap-camp.com/kanagawa/11644",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11644",
     "tel": "042-787-0141",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "aone",
@@ -639,7 +651,8 @@
     "officialUrl": "https://aonecamp.jp/",
     "reservationUrl": "https://aonecamp.jp/",
     "tel": "042-787-1380",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "kannogawa",
@@ -692,7 +705,8 @@
     "lastVerified": "2026-08-06",
     "cautions": [
       "予約日から1週間以上前の場合は往復はがきでの受付"
-    ]
+    ],
+    "coordsGsiChecked": true
   },
   {
     "id": "fumotoppara",
@@ -740,7 +754,8 @@
     "officialUrl": "https://fumotoppara.net/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11874",
     "tel": "0544-52-2112",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "asagiri-jamboree",
@@ -788,7 +803,8 @@
     "officialUrl": "https://asagiri-camp.net/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11863",
     "tel": "0544-52-2066",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "pica-omotefuji",
@@ -839,7 +855,8 @@
     "officialUrl": "https://www.pica-resort.jp/omotefuji/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11858",
     "tel": "0544-58-6881",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "doshi-no-mori",
@@ -886,7 +903,8 @@
     "soloComment": "道志川沿い約2kmに広がる大型フリーサイト。予約不要・先着順で、入場料800円+駐車1,000円のソロ計1,800円。夏週末は1,000張超えの激混みになるので平日専用と割り切るべき。上流エリアの木立に囲まれた場所を早朝から押さえるのがソロ攻略の鍵。",
     "officialUrl": "https://doshinomori.jp/",
     "tel": "0554-52-2388",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "saiko-jiyu",
@@ -936,7 +954,8 @@
     "reservationUrl": "https://saiko-jiyuu.camp/calendar/index",
     "tel": "0555-82-2857",
     "telNote": "電話は問い合わせのみ・予約はWEBのみ",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "yamanakako-misaki",
@@ -985,7 +1004,8 @@
     "officialUrl": "https://camp.sotosotodays.com/yamanakako-misaki/",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11263",
     "tel": "0555-65-7981",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "takizawaso",
@@ -1033,7 +1053,8 @@
     "soloComment": "秦野市街から車15分の水無川沿いキャンプ場。フリーサイトは予約不要で思い立ったら行ける手軽さが魅力。場内に露天風呂を完備しながら1,400円〜という驚異のコスパ。夜の露天風呂から星を眺めながら一人時間を満喫できる。",
     "officialUrl": "https://www.takizawaso.com/",
     "tel": "0463-75-0900",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "aonohara-auto",
@@ -1079,7 +1100,8 @@
     "season": "通年",
     "soloComment": "道志川沿いの予約不要コスパ特化キャンプ場。1,500円で車横付きできる川沿いサイトが最高。平日の朝から到着すれば川沿いの好ポジションを確保できる。夏は川遊び、秋は紅葉と季節ごとに表情が変わる。",
     "tel": "042-787-0477",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "nishitanzawa-mountbridge",
@@ -1125,7 +1147,8 @@
     "season": "通年",
     "soloComment": "中川川に架かる吊橋が目印の渓流キャンプ場。内湯完備で冬キャンプでも安心。西丹沢の深い渓谷に囲まれ、秋は紅葉が見られる。ウェルキャンプ西丹沢から車で数分の立地だが雰囲気は落ち着いている。",
     "tel": "0465-78-3378",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "sagamiko-kyuyomura",
@@ -1171,7 +1194,8 @@
     "season": "通年",
     "soloComment": "相模湖ICからわずか5分、JR相模湖駅からも徒歩圏の圧倒的アクセスの良さ。2,000円〜という価格で相模湖を眺める焚き火が楽しめる。仕事帰りに夜発して翌朝帰るデイキャンプ的な使い方に最適。",
     "tel": "042-685-0141",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "miyagase-village",
@@ -1218,7 +1242,8 @@
     "closedDays": "火曜",
     "soloComment": "宮ヶ瀬湖のほとりの隠れ家的キャンプ場。温水シャワー無料・Wi-Fi完備でコスパが高い。湖面の朝霧と静けさはまさに神奈川の秘境感。ライダーにも人気で週末も比較的静か。火曜定休に注意。",
     "tel": "070-9022-3477",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "tanzawako-lodge",
@@ -1309,7 +1334,8 @@
     "season": "通年",
     "soloComment": "丹沢山系の懐・谷太郎川沿いの秘境キャンプ場。場内の露天風呂に浸かりながら渓流の音を聴ける。週末も人が少なく、星空観察に最適な暗さを誇る穴場的存在。",
     "tel": "046-288-3715",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "oiso-longbeach",
@@ -1355,7 +1381,8 @@
     },
     "season": "4月〜10月",
     "soloComment": "相模湾を望む海辺のキャンプサイト。焚き火はできないがオーシャンビューの夕日と朝日が格別。JR大磯駅から徒歩15分でアクセスでき、車なしのソロキャンプが可能。夏は海水浴も楽しめる。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "nanasawa-camp",
@@ -1399,7 +1426,8 @@
     },
     "season": "通年",
     "soloComment": "七沢温泉郷に隣接する森林キャンプ場。場内に風呂はないが歩いて行ける七沢温泉の日帰り入浴が充実。都心から1時間圏で手軽に深い森を体感できる穴場。紅葉シーズンは周辺が色鮮やかに染まる。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "yamakita-camp",
@@ -1443,7 +1471,8 @@
     },
     "season": "4月〜11月",
     "soloComment": "山北町が管理するシンプルな公営キャンプ場。設備は最低限だが格安でソロなら1,500円から利用できる。酒匂川上流の静かな環境で朝は野鳥のさえずりで目が覚める。山北駅から奥地に入った秘境感が魅力。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "fuji-ymca",
@@ -1489,7 +1518,8 @@
     "season": "通年",
     "soloComment": "富士山南麓・標高約650mのYMCA施設内キャンプ場。大浴場（440円）と充実した共用設備が魅力。週末より平日がお得で静か。テント設営後に温かい大浴場に浸かれる安心感がソロ入門者にも◎。",
     "tel": "0544-54-1151",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "kawazu-nanadaru",
@@ -1535,7 +1565,8 @@
     "season": "通年",
     "soloComment": "河津七滝の渓谷美に囲まれたキャンプ場。24時間利用可能な露天温泉が最大の魅力で、深夜に誰もいない温泉に浸かる至福感は格別。冬でも温暖な伊豆のため年中快適。河津桜シーズン（2月）は混雑必至。",
     "tel": "0558-36-8080",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "kumomi-auto",
@@ -1582,7 +1613,8 @@
     "season": "通年",
     "soloComment": "伊豆最南端に近い海辺の絶景キャンプ場。目の前に相模灘が広がり、夕日が海に沈む。露天風呂からの眺望も格別。アクセスは遠く山道が続くが、その不便さを補って余りある絶景が待っている。",
     "tel": "0558-45-0380",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "onoji-family",
@@ -1629,7 +1661,8 @@
     "season": "通年",
     "soloComment": "富士山東麓・裾野市のキャンプ場。ソロサイト専用区画があり2,750円から利用可能。富士山の東面を見上げるロケーションで、ふもとっぱらとは異なる角度から富士を楽しめる。設備充実でシャワーも温かい。",
     "tel": "055-998-1567",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "darumayama-kogen",
@@ -1675,7 +1708,8 @@
     "season": "3月〜11月",
     "soloComment": "標高900mの高原から駿河湾と富士山を一望できる絶景キャンプ場。静岡県営のため料金は格安で、コスパと絶景の両立が抜群。夜景も美しく、晴れた日の富士山ビューは息をのむ美しさ。3〜11月営業なので注意。",
     "tel": "0558-72-0595",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "fujigane-kogen",
@@ -1719,7 +1753,8 @@
     },
     "season": "通年",
     "soloComment": "本栖湖と精進湖の間に広がる高原の予約不要キャンプ場。標高950mで真夏でも涼しく、広大な草原から富士山を見上げる解放感が格別。ふもとっぱらより空いており、富士山ビューキャンプの穴場として密かに人気。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "okooigawa-lake",
@@ -1764,7 +1799,8 @@
     },
     "season": "通年",
     "soloComment": "秘境の湖上駅・奥大井湖上駅そばのキャンプ場。車でのアクセス不可（鉄橋を徒歩で渡る）というハードルがソロキャンパーの冒険心をくすぐる。接岨湖に囲まれた立地で、周囲に人家がない。非日常感を求めるソロに最適。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "ryuyo-marine",
@@ -1810,7 +1846,8 @@
     "season": "通年",
     "soloComment": "遠州灘に面した海辺のオートキャンプ場。シャワー無料・ウォシュレット完備と設備は充実。釣りやサーフィンとの組み合わせが人気で、夕日の美しさは格別。東海エリアからのアクセスが良く静岡西部在住者の定番。",
     "tel": "0538-66-9166",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "izukogen-auto",
@@ -1854,7 +1891,8 @@
     },
     "season": "通年",
     "soloComment": "伊豆高原の別荘地に囲まれた整備されたキャンプ場。伊豆四季の花公園・大室山などの観光スポットが充実。熱川温泉や伊豆北川温泉への日帰り入浴も楽しめ、キャンプと観光を兼ねたソロ旅に最適。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "amagi-kogen",
@@ -1898,7 +1936,8 @@
     },
     "season": "4月〜11月",
     "soloComment": "天城山系のブナ林に囲まれた静かな高原キャンプ場。標高800mで夏でも涼しく、深い森での焚き火が格別。川端康成「伊豆の踊子」の舞台近くという文学的なロケーション。修善寺温泉への日帰り入浴で入浴問題も解決。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "shojiko-camping",
@@ -1908,9 +1947,9 @@
     "area": "精進湖",
     "status": "active",
     "address": "山梨県南都留郡富士河口湖町精進495",
-    "lat": 35.4619,
-    "lng": 138.5811,
-    "coordsVerified": true,
+    "lat": 35.48897,
+    "lng": 138.602625,
+    "coordsVerified": false,
     "priceMin": 1000,
     "priceMax": 4000,
     "priceNote": "テント1,000円+車2,000円=3,000円〜",
@@ -1943,7 +1982,8 @@
     "season": "3月下旬〜12月",
     "soloComment": "5つの富士五湖で最も静かな精進湖畔の予約不要キャンプ場。テント+車で3,000円という破格のコスパ。子抱き富士（精進湖越しの富士山）の眺めが贅沢。シャワーなしの分、静けさと価格で他を圧倒する。",
     "tel": "0555-87-2005",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "tsubakiso-auto",
@@ -2035,7 +2075,8 @@
     "season": "通年",
     "soloComment": "山中湖南岸に位置するアットホームなキャンプ場。湖畔まで徒歩数分で、朝の山中湖の靄がかった静謐な雰囲気が格別。ゆるキャン△聖地にも近く、山中湖越しの富士山ビューを静かに楽しめる中規模キャンプ場。",
     "tel": "090-3246-6844",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "kiyosato-oka",
@@ -2173,7 +2214,8 @@
     "season": "4月〜11月",
     "soloComment": "山中湖村が運営する公営キャンプ場で1,500円〜のお値打ち価格。山中湖北岸に位置し、対岸の富士山と山中湖のコラボビューが楽しめる。村営ゆえの清潔感とリーズナブルな価格が評判。平野エリアで静かな環境。",
     "tel": "0555-62-0146",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "sankoso-auto",
@@ -2264,7 +2306,8 @@
     },
     "season": "3月〜12月",
     "soloComment": "河口湖北岸・大石公園そばの湖畔キャンプ場。岸から富士山と河口湖を同時に眺める絶景が3,300円〜で楽しめる。近くの大石公園ではラベンダー（夏）やコキア（秋）が富士山と共演する写真スポットとしても有名。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "okudoshi-auto",
@@ -2309,7 +2352,8 @@
     },
     "season": "通年（冬季は要確認）",
     "soloComment": "道志川最上流部の本当の意味での秘境キャンプ場。設備は最低限だが直火OK・予約不要・2,000円〜という三拍子が揃ったコスパで本格ソロ向け。夜の暗さは圧倒的で天の川が肉眼で見える環境。電波が届かないのでデジタルデトックスに最高。",
-    "lastVerified": "2026-05-26"
+    "lastVerified": "2026-05-26",
+    "coordsGsiChecked": true
   },
   {
     "id": "woodsman-camp",
@@ -2402,7 +2446,8 @@
     "soloComment": "芦ノ湖を望む絶景キャンプ場。対岸に富士山が見え、芦ノ湖越しの眺めが開ける。箱根温泉街へのアクセスも良く日帰り入浴施設が豊富。箱根ならではの宿泊体験をキャンプで楽しめる。",
     "officialUrl": "https://campmura.com/",
     "tel": "0460-84-8279",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "richland-kiyokawa",
@@ -2449,7 +2494,8 @@
     "season": "通年",
     "soloComment": "清川村の深い山間にある露天風呂付きキャンプ場。天然の露天風呂に浸かりながら丹沢の山々を眺める体験が格別。ファミリーキャンパーに人気だが平日は静か。ウォシュレット完備で設備の充実度は高い。",
     "tel": "046-288-1031",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "karasawa-miyagase",
@@ -2495,7 +2541,8 @@
     "season": "通年",
     "soloComment": "宮ヶ瀬湖畔エリアにある静かなキャンプ場。深い森に囲まれた林間サイトが特徴でプライバシーが高い。宮ヶ瀬ダムの迫力を間近に体感でき、秋は紅葉が素晴らしい。平日はほぼ貸し切り状態になれる穴場。",
     "tel": "046-288-1318",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hidamari-yamakita",
@@ -2541,7 +2588,8 @@
     "season": "通年",
     "soloComment": "山北町の静かな山間キャンプ場。ミカン畑に囲まれた独特のロケーションで春は花、秋は実りを楽しめる。丹沢湖への入口にあたりトレッキングと組み合わせたソロ旅に最適。静かな渓流沿いで鳥の声が心地よい。",
     "tel": "0465-77-2777",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "konomasawa-camp",
@@ -2589,7 +2637,8 @@
     "soloComment": "道志川と支流の此の間沢が流れる渓流サイト。オート約50区画で車を横付けでき、シャワー・売店・ランドリーも揃う。予約制なので事前に押さえてから向かいたい。",
     "tel": "042-787-2735",
     "lastVerified": "2026-08-06",
-    "officialUrl": "https://konomasawacamp.co.jp/"
+    "officialUrl": "https://konomasawacamp.co.jp/",
+    "coordsGsiChecked": true
   },
   {
     "id": "chojayashiki-camp",
@@ -2635,7 +2684,8 @@
     "season": "通年",
     "soloComment": "宮ヶ瀬湖畔の森林キャンプ場。静寂な林間サイトで週末でも人が少なく穴場的存在。宮ヶ瀬湖畔散策や魚釣りが楽しめ、紅葉シーズンの美しさは格別。都心から1.5時間のアクセスも良い。",
     "tel": "046-288-1743",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hakonesono-auto",
@@ -2683,7 +2733,8 @@
     "soloComment": "芦ノ湖畔の高規格キャンプ場。箱根園温泉・遊覧船・水族館と複合リゾート施設が隣接。設備は完璧だが価格は高め。富士山・芦ノ湖の絶景と温泉を一度に楽しめる贅沢なソロ旅に最適。",
     "officialUrl": "https://www.princehotels.co.jp/hakonesono/camp/",
     "tel": "0460-83-1161",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "doshi-no-yu-camp",
@@ -2729,7 +2780,8 @@
     },
     "season": "通年",
     "soloComment": "道志温泉に隣接した便利なキャンプ場。キャンプ後に温泉に入れる手軽さが魅力。道志川沿いの静かな環境で林間サイトと川沿いサイトの両方を選べる。都心から約1時間というアクセスの良さが人気の秘訣。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hadano-togawa-camp",
@@ -2776,7 +2828,8 @@
     "season": "4月〜11月",
     "soloComment": "神奈川県立秦野戸川公園内の公営キャンプ場。格安で渋沢丘陵トレッキングや大山・丹沢表尾根への登山ベースとして最適。水無川沿いの涼しい林間サイトが夏も快適。電車でも行ける公共交通アクセスが嬉しい。",
     "tel": "0463-87-9020",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "mitsumata-camp",
@@ -2821,7 +2874,8 @@
     },
     "season": "通年",
     "soloComment": "西丹沢自然教室近くの渓流キャンプ場。中川川の清流が目の前を流れ直火OKで予約不要の自由度が高い。春のツツジ・秋の紅葉と山岳景観を楽しみながらの渓流沿いキャンプが格別。西丹沢の入口という好立地。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "kabutomushi-mori-camp",
@@ -2912,7 +2966,8 @@
     "season": "通年",
     "soloComment": "相模湖プレジャーフォレスト内の高規格キャンプ場。遊園地・BBQ施設が隣接しており設備充実。設備の充実度と中央道相模湖ICから近いアクセスは評価できる。ソロよりグループ向けだが設備面は安心。",
     "tel": "042-684-7711",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "okumakino-camp",
@@ -2957,7 +3012,8 @@
     },
     "season": "通年",
     "soloComment": "直火OKで予約不要のシンプルなキャンプ場。設備は最低限だが格安で深い山中の静けさを楽しめる。道志川支流沿いの隠れ家的存在で、長期連泊派のソロキャンパーに密かに人気。夜の星空の暗さは格別。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "mikagi-camp",
@@ -3002,7 +3058,8 @@
     },
     "season": "通年",
     "soloComment": "相模原インター近くの便利なキャンプ場。渓流沿いの涼しい環境で夏でも快適。相模湖・道志川・丹沢へのアクセスの良さから各方面への起点として使い勝手が良い。日帰りのついでに使えるコスパの良さも魅力。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "yadoriki-camp",
@@ -3048,7 +3105,8 @@
     },
     "season": "4月〜11月",
     "soloComment": "東海自然歩道沿いの秘境キャンプ場。「寄」（やどりき）のロウバイ・ツツジの名所に隣接。登山・ハイキングの拠点として最適で、標高500mの静かな環境からの展望が素晴らしい。格安だが設備は最低限。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hakone-kojiri-camp",
@@ -3095,7 +3153,8 @@
     "season": "通年",
     "soloComment": "芦ノ湖南端に位置するキャンプ場。湖畔からの富士山ビューと箱根の山並みが絶景。周辺の箱根温泉施設への日帰り入浴が充実しており温泉キャンプの聖地的存在。早朝の芦ノ湖の静けさは特別。",
     "tel": "0460-84-8279",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "mushizawa-camp",
@@ -3140,7 +3199,8 @@
     },
     "season": "4月〜11月",
     "soloComment": "地元NPOが管理する秘境キャンプ場。中津川上流の深い渓谷に位置しアクセスが悪い分、訪れる人が少なく圧倒的な静寂が待っている。古代の里山風景の中でのソロキャンプは格別の体験。紅葉シーズンは穴場。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "camp-baird",
@@ -3187,7 +3247,8 @@
     "soloComment": "ベアードブルワリー直営のクラフトビール天国キャンプ場。醸造所内でクラフトビールを楽しみながら泊まれる全国でも稀有な体験。天城山麓の自然環境と伊豆の透明感ある空気が素晴らしい。ビール好きソロに激推し。",
     "officialUrl": "https://bairdbeer.com/",
     "tel": "0558-73-1225",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "mobility-park-izu",
@@ -3234,7 +3295,8 @@
     "season": "通年",
     "soloComment": "富士山と伊豆の山々を見渡す高台に位置する大型キャンプ場。本格的な設備と広大なフィールドが魅力。高規格キャンプ場として人気が高く、近隣温泉への割引サービスも付いてくる。",
     "tel": "0558-79-0213",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "pica-fuji-greenpa",
@@ -3281,7 +3343,8 @@
     "soloComment": "富士山二合目・標高1,200mの森林型キャンプ場。夏でも涼しい高標高とぐりんぱ遊園地が隣接。設備は充実しているが価格は高め。夏の避暑キャンプとして東京近郊からの人気が高い。",
     "officialUrl": "https://www.pica-resort.jp/greenpa/",
     "tel": "0555-30-4580",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "minamiizu-camping-terrace",
@@ -3291,9 +3354,9 @@
     "area": "南伊豆",
     "status": "active",
     "address": "静岡県賀茂郡南伊豆町子浦1349-6",
-    "lat": 34.6028,
-    "lng": 138.8417,
-    "coordsVerified": true,
+    "lat": 34.673001,
+    "lng": 138.791973,
+    "coordsVerified": false,
     "priceMin": 5000,
     "priceMax": 10000,
     "priceNote": "ソロサイト5,000円〜",
@@ -3326,7 +3389,8 @@
     },
     "season": "通年",
     "soloComment": "伊豆最南端に近い子浦の絶景テラスキャンプ場。太平洋を見下ろす崖上からの眺望と南伊豆独特の青い海が素晴らしい。アクセスは遠いが絶景を独り占めできる価値は十分。真冬でも温暖な南伊豆で快適。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "izu-kakure-auto",
@@ -3373,7 +3437,8 @@
     "season": "通年",
     "soloComment": "天城山中腹に隠れた秘境キャンプ場。「隠れ」の名の通り周囲に民家が少なく圧倒的な静けさが魅力。伊豆の名湯・湯ヶ島温泉へのアクセスも良く温泉キャンプが楽しめる。ウォシュレット完備で快適性も高い。",
     "tel": "080-1624-4715",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hamaoka-sakyuu-camp",
@@ -3418,7 +3483,8 @@
     },
     "season": "4月〜10月",
     "soloComment": "日本最大級の砂丘・浜岡砂丘に隣接したキャンプ場。砂丘越しに夕日が沈む。サーフィンや砂丘ウォーキングと組み合わせたアクティブなソロ旅に最適。太平洋の波音が心地よい夜。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "fujikawa-camp",
@@ -3463,7 +3529,8 @@
     },
     "season": "通年",
     "soloComment": "富士川河川敷のキャンプ場。河口近くから富士山を真正面に見上げる絶景は富士市ならでは。富士川の大きな流れを眼前に、静岡中部エリアからのアクセスが抜群。河川敷の解放感がソロキャンプの醍醐味。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "sumatakyo-camp",
@@ -3509,7 +3576,8 @@
     },
     "season": "4月〜11月",
     "soloComment": "日本一美しいと言われる「夢の吊り橋」で有名な寸又峡の麓キャンプ場。夢の吊り橋への早朝散策がソロならではの楽しみ。寸又峡温泉の日帰り入浴施設が充実しており秘境温泉キャンプが楽しめる。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "ito-marine-town-camp",
@@ -3517,11 +3585,11 @@
     "name": "伊東マリンタウンキャンプ場",
     "prefecture": "静岡",
     "area": "伊東",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県伊東市湯川571-19",
     "lat": 34.9762,
     "lng": 139.1021,
-    "coordsVerified": true,
+    "coordsVerified": false,
     "priceMin": 4000,
     "priceMax": 8000,
     "priceNote": "オートサイト4,000円〜（1名込み）",
@@ -3556,7 +3624,8 @@
     "season": "通年",
     "soloComment": "伊東マリンタウン内の温泉付きキャンプ場。海を見下ろすロケーションと温泉が魅力。伊東の海産物グルメが充実した港町の賑わいも楽しめる。伊豆観光とキャンプを組み合わせたい人向けの便利な立地。",
     "tel": "0557-38-3523",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "needsVerify": true
   },
   {
     "id": "shuzenji-nijinokuni-camp",
@@ -3602,7 +3671,8 @@
     },
     "season": "通年",
     "soloComment": "修善寺温泉に隣接するキャンプ場。修善寺の竹林の路と温泉街へ徒歩でアクセス可能。温泉・抹茶スイーツ・伊豆の自然を一度に楽しめる観光キャンプとして唯一無二のロケーション。日帰り温泉が充実。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hamanako-garden-camp",
@@ -3647,7 +3717,8 @@
     },
     "season": "通年",
     "soloComment": "浜名湖畔のキャンプ場。湖越しの夕日と遠州灘の海風が心地よい。浜名湖でのカヤック・釣りと組み合わせたアクティブなソロ旅に最適。浜松市街からのアクセスも良好で気軽に訪れやすい。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "osezaki-camp",
@@ -3692,7 +3763,8 @@
     },
     "season": "通年",
     "soloComment": "伊豆半島の突端・大瀬崎のキャンプ場。日本有数のダイビングスポットとして有名な大瀬崎の透明な海が目の前。富士山と駿河湾の組み合わせ絶景は静岡でも特別なロケーション。早朝のスノーケリングも最高。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "nishi-amagi-kogen",
@@ -3737,7 +3809,8 @@
     },
     "season": "通年",
     "soloComment": "標高1,000m超の天城高原牧場に隣接したキャンプ場。伊豆半島を見渡す360度パノラマと牧場の緑が絶景。空が暗く、天の川が肉眼で見える。早朝の雲海が神秘的。修善寺温泉へのアクセスも良い。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "nekokodake-camp",
@@ -3783,7 +3856,8 @@
     },
     "season": "4月〜11月",
     "soloComment": "天城山系の猫越岳中腹の山岳キャンプ場。本格的なトレッキングと組み合わせた冒険的ソロキャンプが体験できる。設備は最低限だが山頂からの伊豆の絶景と満点の星空が全てを補う。達成感のある秘境体験。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "asagiri-greenpark-camp",
@@ -3828,7 +3902,8 @@
     },
     "season": "通年",
     "soloComment": "朝霧高原の広大な草原から富士山を一望できるキャンプ場。ふもとっぱらより比較的空いておりコスパも良い。牧場隣接で朝は牧草地から牛の声が聞こえる長閑な環境。朝霧高原らしい乳製品グルメも充実している。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "horaibashi-camp",
@@ -3873,7 +3948,8 @@
     },
     "season": "4月〜10月",
     "soloComment": "ギネス記録に認定された世界一長い木造歩道橋・蓬莱橋（897m）のたもとの河川敷キャンプ場。大井川の雄大な流れと蓬莱橋の絶景が楽しめる。予約不要で格安だが設備は最低限。大井川鐡道でSL乗車と組み合わせた旅も楽しい。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "nakatajima-sakyuu-camp",
@@ -3918,7 +3994,8 @@
     },
     "season": "3月〜11月",
     "soloComment": "日本三大砂丘の一つ・中田島砂丘に隣接したキャンプ場。砂丘を越えると太平洋の絶景が広がる。遠州灘の荒波音が心地よく夕日・星空が格別美しい。浜松からのアクセスが良く日帰り感覚でも利用しやすい。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hottarakashi-camp",
@@ -3965,7 +4042,8 @@
     "season": "通年",
     "soloComment": "ほったらかし温泉の隣に位置する全区画富士山ビューキャンプ場。日の出前に入れる「あっちの湯」との組み合わせは格別で、富士山と甲府盆地を見下ろしながらの温泉は唯一無二の体験。全サイトから甲府盆地の夜景と富士山が楽しめる山梨を代表するキャンプ場。",
     "officialUrl": "https://hottarakashicamp.com/",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "shosenkyo-auto-camp",
@@ -4011,7 +4089,8 @@
     "season": "4月〜11月",
     "soloComment": "日本一の渓谷美と称される昇仙峡の入口に位置するキャンプ場。早朝の昇仙峡散策（仙娥滝・覚円峰）をソロで独り占めできる贅沢なロケーション。秋の紅葉シーズンは特に美しく、山梨の自然美を堪能できる。",
     "tel": "055-287-8778",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "motosu-shore-camp",
@@ -4021,9 +4100,9 @@
     "area": "本栖湖",
     "status": "active",
     "address": "山梨県南都留郡富士河口湖町本栖18",
-    "lat": 35.4721,
-    "lng": 138.5947,
-    "coordsVerified": true,
+    "lat": 35.456549,
+    "lng": 138.600814,
+    "coordsVerified": false,
     "priceMin": 1500,
     "priceMax": 4000,
     "priceNote": "テントサイト1,500円〜",
@@ -4057,7 +4136,8 @@
     "season": "4月〜11月",
     "soloComment": "浩庵キャンプ場と並ぶ本栖湖畔の老舗キャンプ場。透明度の高い本栖湖越しの富士山ビューが格別。浩庵より比較的混雑が少なく静かに本栖湖を楽しめる穴場的存在。1,500円〜のコスパも魅力。",
     "tel": "0555-87-2306",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "kiyosato-chuo-auto",
@@ -4150,7 +4230,8 @@
     "season": "通年",
     "soloComment": "釜無川沿いの高規格キャンプ場。南アルプスの山々を望む景観と場内の露天風呂が魅力。ラフティング体験との組み合わせが人気で、アクティブなソロ旅に最適。設備は全部入りの高規格で安心感がある。",
     "tel": "055-285-6611",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "kawaguchiko-hamanoya-camp",
@@ -4197,7 +4278,8 @@
     "season": "通年",
     "soloComment": "河口湖畔で温泉が楽しめる高規格キャンプ場。河口湖越しの富士山と温泉が一セットになった豪華体験が評判。設備は全て最高水準だが価格も高め。都心からのアクセスが良く週末に人気が集中するため平日利用推奨。",
     "tel": "0555-72-4411",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "retreat-camp-mahoroba",
@@ -4244,7 +4326,8 @@
     },
     "season": "通年",
     "soloComment": "富士山と河口湖を一望する丘の上の高級グランピング系キャンプ場。プライベート感の高い個別サイトと絶景が魅力。ソロ専用サイトとWi-Fiも完備で価格に見合う非日常体験がある。自分へのご褒美ソロキャンプに。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "pica-fujiyama-camp",
@@ -4291,7 +4374,8 @@
     "soloComment": "富士山を正面に望む河口湖畔の高規格キャンプ場。河口湖ICから5分という圧倒的アクセスと充実設備が魅力。ソロには価格帯が高いが手ぶらレンタルが充実しており初心者入門にも最適。Wi-Fi完備で快適。",
     "officialUrl": "https://www.pica-resort.jp/fujiyama/",
     "tel": "0555-72-3358",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "fujigoko-auto-camp",
@@ -4336,7 +4420,8 @@
     },
     "season": "通年",
     "soloComment": "山中湖北岸の整備されたオートキャンプ場。山中湖越しの富士山と静かな湖畔環境が魅力。ゆるキャン△聖地エリアに位置し、周辺の観光スポットも充実。朝のカヌーやSUPと組み合わせた湖上体験も楽しめる。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "makiba-kogen-camp",
@@ -4428,7 +4513,8 @@
     },
     "season": "4月〜11月",
     "soloComment": "八ヶ岳を正面に仰ぎ見る小淵沢のキャンプ場。中央道小淵沢ICから近いアクセスの良さと八ヶ岳の雄大な山並みが両立。スパティオ小淵沢の温泉施設が近くに温泉キャンプも楽しめる。清里丘の公園と合わせて利用も◎。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "takegawa-kyo-camp",
@@ -4473,7 +4559,8 @@
     },
     "season": "通年",
     "soloComment": "山高神代桜（日本三大桜）の近くにある静かなキャンプ場。八ヶ岳と南アルプスの全景が圧巻。4月の桜の時期は特に美しく巨木の桜とキャンプの組み合わせは山梨ならでは。釜無川の清流音が心地よい。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "makioka-fruits-camp",
@@ -4518,7 +4605,8 @@
     },
     "season": "4月〜11月",
     "soloComment": "甲府盆地を見下ろす山梨市の丘陵地帯に位置するキャンプ場。周辺がブドウ・桃・スモモ畑に囲まれており夏〜秋は果物狩りと組み合わせたフルーツキャンプが楽しめる。甲府盆地の夜景と富士山のシルエットが美しい。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "oshino-hakkai-camp",
@@ -4563,7 +4651,8 @@
     },
     "season": "通年",
     "soloComment": "世界遺産・忍野八海を望む絶景キャンプ場。富士山と湧水池の美しいコントラストが目の前に広がる。早朝の忍野八海を観光客なしで独り占めできるキャンプ泊のアドバンテージが最大の魅力。山中湖へのアクセスも良い。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "akeno-fureai-camp",
@@ -4608,7 +4697,8 @@
     },
     "season": "5月〜10月",
     "soloComment": "日照時間が日本一と公称される明野の高台キャンプ場。夏のひまわり畑と八ヶ岳・南アルプスのパノラマが圧巻。星空観察の条件が良く公営なので料金もお値打ち。八ヶ岳を正面に見ながらの焚き火が格別。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hakushu-ojiro-camp",
@@ -4654,7 +4744,8 @@
     },
     "season": "5月〜10月",
     "soloComment": "南アルプス天然水の源流・尾白川沿いのキャンプ場。日本名水百選の尾白川での水遊びと尾白の湯（日帰り温泉）の組み合わせが格別。サントリー白州蒸留所見学と組み合わせた大人のソロ旅に最適。",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "yanagishima",
@@ -4700,7 +4791,8 @@
     "officialUrl": "https://www.yanagishima-camp.com/",
     "reservationUrl": "https://www.yanagishima-camp.com/",
     "tel": "0467-87-1385",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "toyanosawa",
@@ -4745,7 +4837,8 @@
     "soloComment": "道志川上流の清流沿い。無料ヒノキ風呂・マス釣り・川遊びが揃う家族経営の人気キャンプ場。薪・氷・ビール販売あり。石割の湯まで車10分。",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11281",
     "tel": "0554-52-1610",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "suigennnomori",
@@ -4790,7 +4883,8 @@
     "soloComment": "道志川沿いの区画制キャンプ場。料金に氷・炭・薪・焚き火台・トングが付属するオールインクルーシブスタイル。ボルダリング・クラブハウスあり。",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11275",
     "tel": "0554-52-2031",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "pica-sagamiko",
@@ -4836,7 +4930,8 @@
     "officialUrl": "https://www.sagamiko-resort.jp/camp/",
     "reservationUrl": "https://www.sagamiko-resort.jp/camp/",
     "tel": "0555-30-4580",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "minoishtaki",
@@ -4882,7 +4977,8 @@
     "officialUrl": "https://camp-minoishi.com/",
     "reservationUrl": "https://camp-minoishi.com/",
     "tel": "042-685-0330",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "usami-shiroyama",
@@ -4927,7 +5023,8 @@
     "soloComment": "宇佐美城跡の高台に立つキャンプ場。海まで徒歩5分・貸切源泉温泉・テントサウナ完備。ソロ専用区画あり。薪・ビール・チューハイ販売。",
     "officialUrl": "https://www.nap-camp.com/shizuoka/14344",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/14344",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "hikenkayama",
@@ -4972,7 +5069,8 @@
     "soloComment": "2024年リニューアルの小規模キャンプ場。東名菊川ICから17分の好アクセス。ソロ専用区画・エアコン付きバンガロー・ウォシュレット完備。",
     "officialUrl": "https://www.nap-camp.com/shizuoka/15680",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/15680",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "narakoko",
@@ -5016,7 +5114,8 @@
     "season": "通年",
     "soloComment": "清流に囲まれた山あいのキャンプ場。「森掛川」ICから20分。川遊び・天体観測・ロッジ充実。場内に温浴施設あり。",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11853",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "asagiri-foodpark",
@@ -5061,7 +5160,8 @@
     "soloComment": "朝霧高原の食のテーマパーク内キャンプ場。富士山を正面に望む絶好のロケーション。地元食材・クラフトビール・ワイン購入可。トレーラーハウスも。",
     "officialUrl": "https://asagiri-foodpark.com/",
     "reservationUrl": "https://asagiri-foodpark.com/",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "folkwood-yatsugatake",
@@ -5152,7 +5252,8 @@
     "officialUrl": "https://www.nap-camp.com/yamanashi/14594",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/14594",
     "tel": "0555-62-8187",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "momijino-sato",
@@ -5196,7 +5297,8 @@
     "season": "通年",
     "soloComment": "道志川沿いの紅葉が美しいキャンプ場。秋の錦に染まる木立の中でソロキャンプ最適。川遊び・釣り・温泉（道志の湯15分）も充実。",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11288",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "yamaboshi-camp",
@@ -5241,7 +5343,8 @@
     "soloComment": "道志川沿いの静かなオートキャンプ場。木立に囲まれたプライベート感のあるサイトでハンモックにぴったり。川遊び・釣り場完備。",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11283",
     "tel": "0554-52-2230",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "yatsugatake-oizumi",
@@ -5285,7 +5388,8 @@
     "season": "通年",
     "soloComment": "八ヶ岳南麓・標高1,100mの高原キャンプ場。露天風呂完備。コテージ・バンガロー充実。北杜の澄んだ空気と星空が魅力。",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11243",
-    "lastVerified": "2026-05-27"
+    "lastVerified": "2026-05-27",
+    "coordsGsiChecked": true
   },
   {
     "id": "doshigawa-kanko-noen",
@@ -5330,7 +5434,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "道志川沿いの観光農園併設キャンプ場。果物狩りと組み合わせられる。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "marutamura-camp",
@@ -5375,7 +5480,8 @@
     "season": "通年",
     "soloComment": "※この施設は実在を確認できていません。閉鎖済みか、正式名称が異なる可能性があります。訪問前に必ずご確認ください。",
     "lastVerified": "2025-01-01",
-    "needsVerify": true
+    "needsVerify": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "tiny-camp-village",
@@ -5420,7 +5526,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "1日5組限定の隠れ家キャンプ場。七沢温泉まで徒歩3分。完全予約制でソロには贅沢な空間。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "hinata-camp",
@@ -5465,7 +5572,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "大山日向薬師の麓、伊勢原の渓流沿い。アクセス抜群で平日ソロにも最適。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "okuyugawara-auto",
@@ -5510,7 +5618,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "奥湯河原の渓流沿い、温泉街までクルマで5分。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "doshi-fureainomori",
@@ -5555,7 +5664,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "※施設名・所在地を確認中です。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "naminokomura",
@@ -5599,7 +5709,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "湯河原の海岸沿い、目の前に相模湾が広がる稀少な海キャンプ。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "kuragari-camp",
@@ -5647,7 +5758,8 @@
     "telNote": "受付10:00〜21:00",
     "cautions": [
       "玄倉川はダム放流で急激に増水する。河原には降りないこと"
-    ]
+    ],
+    "coordsGsiChecked": true
   },
   {
     "id": "hayatogawa-masu",
@@ -5692,7 +5804,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "宮ヶ瀬北側、マス釣場併設。釣ってその場で焼くソロの楽しみ方。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "yakeyamazawa-shinpukuji",
@@ -5736,7 +5849,8 @@
     "reservationUrl": "",
     "season": "4月-11月",
     "soloComment": "焼山登山口近くの寺所有のキャンプ場。徒歩搬入で完全静寂。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "shiroyama-fureainosato",
@@ -5780,7 +5894,8 @@
     "reservationUrl": "",
     "season": "4月-11月",
     "soloComment": "津久井湖近く相模原市営。林間でひっそり、公営の安心感と価格。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "mountkan-kannogawa",
@@ -5825,7 +5940,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "西丹沢神之川流域の渓谷キャンプ場。林道を奥に進んだ先の隠れ家。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "nelo-gotemba",
@@ -5870,7 +5986,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "御殿場ICから10分の高規格キャンプ場。富士山ビューと整った設備。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "nishiizu-seto",
@@ -5915,7 +6032,8 @@
     "season": "通年",
     "soloComment": "※この施設の実在・正式名称を確認中です。西伊豆の海岸沿いにあるとされ、駿河湾に沈む夕陽が見込めますが、現時点で内容の裏付けが取れていません。訪問前に公式情報をご確認ください。",
     "lastVerified": "2025-01-01",
-    "needsVerify": true
+    "needsVerify": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "fujisan-genshijin",
@@ -5960,7 +6078,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "朝霧高原の麓、富士宮側で富士山を正面に。ふもとっぱらより気軽。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "magic-hour-camp",
@@ -6005,7 +6124,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "標高400m、富士山と駿河湾を見下ろすオフグリッドの5区画のみ。直火の石窯付き。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "kokono-shizuoka",
@@ -6050,7 +6170,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "静岡市街から20分なのに1日3組限定、貸切サウナあり。夏は蛍が舞う。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "makigaya-auto",
@@ -6094,7 +6215,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "静岡市西部、市街から20分の街近キャンプ場。設備充実。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "granpapa-solo-bocchi",
@@ -6139,7 +6261,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "富士宮のキャンプ場内ソロ専用ぼっち区画。25㎡・トイレ近・ソロ最適化設計。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "marubi-auto",
@@ -6184,7 +6307,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "御殿場IC近くの隠れたオートキャンプ場。富士山と箱根を両方眺められる。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "ikawa-auto",
@@ -6229,7 +6353,8 @@
     "reservationUrl": "",
     "season": "4月-11月",
     "soloComment": "南アルプス南部・大井川源流の井川湖そば。ICから2時間超の山奥、完全な静寂。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "sessokyo-camp",
@@ -6274,7 +6399,8 @@
     "season": "通年",
     "soloComment": "接岨峡は大井川上流の山あいにあり、空が暗く星がよく見える。奥大井湖上駅へのシャトルバスがあり、八橋小道ラブロマンスロード（1周約1時間）も近い。星を眺めて過ごす夜向き。",
     "lastVerified": "2026-08-06",
-    "needsVerify": true
+    "needsVerify": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "minamialps-auto-camp",
@@ -6318,7 +6444,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "南アルプス市の麓の小規模オートキャンプ場。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "doshi-minamoto-camp",
@@ -6363,7 +6490,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "道志川源流域、道志村の最奥に近いポジション。源流の冷たい水と静けさが売り。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "yamanakako-minami-auto",
@@ -6408,7 +6536,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "山中湖の南岸、湖と富士山を一望のフリーサイト。温泉あり・炊事場お湯あり。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "camp-akaike",
@@ -6453,7 +6582,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "精進湖の北側、赤池跡近くの素朴なキャンプ場。富士五湖の喧騒を避けた林間。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "tsukiyono-doshi-camp",
@@ -6498,7 +6628,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "道志川沿い、車両乗入は8サイトのみのプライベート感重視。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "ecopa-inagako",
@@ -6543,7 +6674,8 @@
     "reservationUrl": "",
     "season": "4月-11月",
     "soloComment": "南アルプス市の市営。利用料500円〜の破格、ソロなら1000円台で済む。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "village-hakushu",
@@ -6588,7 +6720,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "標高1130mの星降るリゾート、南アルプス甲斐駒のふところ。サントリー白州近く。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "hananomori-camp",
@@ -6633,7 +6766,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "道志村のフィンランド風キャンプ場。直火OKでサウナ系の趣向にもハマる。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "flora-campsite",
@@ -6678,7 +6812,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "南アルプス甲斐駒ヶ岳山麓、1日1-2組限定の森のキャンプ場。1区画500平米の贅沢。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "shinozawa-ootaki-camp",
@@ -6723,7 +6858,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "北杜白州、大武川最上流の川遊び聖地。家族貸切風呂2種、フリーWi-Fi完備。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "oishii-camp",
@@ -6768,7 +6904,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "富士ヶ嶺の富士山ビュー、ソロ専用区画あり。混雑回避にも最適。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "shimobe-yurucamp-sato",
@@ -6813,7 +6950,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "ゆるキャン△聖地の身延町、道の駅と下部温泉直結のオートキャンプ場。",
-    "lastVerified": "2025-01-01"
+    "lastVerified": "2025-01-01",
+    "coordsGsiChecked": true
   },
   {
     "id": "hayato-hakone",
@@ -6858,7 +6996,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "箱根の静かな林間、ソロ専用区画あり。プライベート感十分でサイトは土と砂利。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "bushcraft-shonan",
@@ -6903,7 +7042,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "湘南エリアのブッシュクラフト特化キャンプ場。ソロ向けの設計で自然技術を磨ける。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "akiyamagawa-camp",
@@ -6948,7 +7088,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "相模原秋山川沿い、電車でも行ける。JR藤野駅から徒歩20分とアクセス良好。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "hachibanaen-miroku",
@@ -6993,7 +7134,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "中津川沿い1日数組限定の予約制プライベートキャンプ場。ペットゾーンあり。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "oyama-kogen-camp",
@@ -7037,7 +7179,8 @@
     "reservationUrl": "",
     "season": "4月-11月",
     "soloComment": "山北町大野山山頂付近、360度パノラマの草原。富士山・丹沢・相模湾が一望。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "nakatsugawa-camp",
@@ -7082,7 +7225,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "厚木ICから20分の河川敷キャンプ場。無料〜格安で車の乗り入れ可、手軽な都市近郊の定番。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "tanzawako-roadside-camp",
@@ -7134,7 +7278,8 @@
       "焚き火・直火は全面禁止",
       "おやすみタイム21:00〜6:00。発電機・音楽プレーヤー禁止",
       "水源地のため合成洗剤の使用不可"
-    ]
+    ],
+    "coordsGsiChecked": true
   },
   {
     "id": "sagamiko-camping-village",
@@ -7178,7 +7323,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "相模湖近くの高規格キャンプ場。中央道相模湖ICから近く、設備充実でソロ初心者にも安心。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "miura-camp-beach",
@@ -7222,7 +7368,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "三浦半島の海沿い、東京湾と太平洋の両方が見渡せる稀有なロケーション。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "hadano-camp-valley",
@@ -7266,7 +7413,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "秦野市内の渓谷沿い、丹沢の入り口。東名秦野中井ICから20分の渓流キャンプ場。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "otome-forest-camp",
@@ -7311,7 +7459,8 @@
     "reservationUrl": "",
     "season": "4月-11月",
     "soloComment": "御殿場ICから10分、森の中の公営キャンプ場。富士山ビューで破格の公営料金。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "recamp-fuji-speedway",
@@ -7356,7 +7505,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "2024年9月オープン、富士スピードウェイ敷地内。昼はレーシングカーの轟音、夜は満天の星空。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "camp-bean-izu",
@@ -7401,7 +7551,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "伊豆市大平、焚き火好きオーナーが山を買って開拓した2020年開業の個性派。約18サイト。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "shizunami-beach-camp",
@@ -7445,7 +7596,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "2023年オープン、サーフィン聖地・静波海岸のリゾート内の全面芝生7区画。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "ginga-momiji-camp",
@@ -7534,7 +7686,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "朝霧高原の南、田貫湖の近く。毛無山を背に富士山が見える林間キャンプ場。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "fuji-international-camp",
@@ -7578,7 +7731,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "朝霧高原の大規模キャンプ場、外国人キャンパーも多く国際的な雰囲気。富士山ビューは折り紙付き。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "izukogen-granpal-camp",
@@ -7622,7 +7776,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "伊豆高原の遊園地隣接のキャンプ場。設備充実、伊豆観光の拠点に。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "nishiizu-dogashima-camp",
@@ -7667,7 +7822,8 @@
     "season": "通年",
     "soloComment": "※この施設の実在・正式名称を確認中です。",
     "lastVerified": "2026-05-28",
-    "needsVerify": true
+    "needsVerify": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "kawanehon-camp",
@@ -7712,7 +7868,8 @@
     "season": "通年",
     "soloComment": "※家山は島田市川根町であり川根本町ではない。施設名・所在地を確認中です。",
     "lastVerified": "2026-05-28",
-    "needsVerify": true
+    "needsVerify": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "fujimangan-village",
@@ -7757,7 +7914,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "標高約1000m鳴沢村の赤松林。全サイトに焚き火台、24時間給湯炊事場完備。ソロでも快適。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "nagomino-sato-tsuru",
@@ -7802,7 +7960,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "都留市の全18区画オートキャンプ場。炊事場お湯あり、コテージ隣接。河口湖へのアクセスも良い。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "takaranoyama-fureai",
@@ -7846,7 +8005,8 @@
     "reservationUrl": "",
     "season": "4月-11月",
     "soloComment": "都留市の山上、1日4組限定のフリーサイト。富士山湧水の自然環境、夜の星空が抜群。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "doshi-mori-cottage",
@@ -7891,7 +8051,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "道志村の森の中、時間がゆっくり流れる清流コテージ系キャンプ場。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "sports-train-aokigahara",
@@ -7936,7 +8097,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "青木ヶ原樹海の中の異世界キャンプ場。アウトドアセレクトショップ運営、洗練された空間。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "kirara-yamanakako",
@@ -7981,7 +8143,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "山中湖南岸の公営交流施設内キャンプ場。湖畔で富士山ビュー、公営で料金控えめ。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "fuji-midori-kyuka-auto",
@@ -8025,7 +8188,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "富士五湖エリアの高規格キャンプ場、温泉あり。西湖・精進湖の穴場エリアで富士山眺望抜群。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "kaikoma-camp",
@@ -8069,7 +8233,8 @@
     "reservationUrl": "",
     "season": "4月-11月",
     "soloComment": "北杜市、甲斐駒ヶ岳を正面に望む標高800mの草原。南アルプス・八ヶ岳も見渡せる絶景。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "minobe-camp",
@@ -8114,7 +8279,8 @@
     "season": "通年",
     "soloComment": "※施設名・所在地を確認中です。",
     "lastVerified": "2026-05-28",
-    "needsVerify": true
+    "needsVerify": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "hayakawa-camp",
@@ -8159,7 +8325,8 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "早川町の深山渓谷沿い。日本で最も人口の少ない自治体のひとつ、本物の山奥で孤独を楽しむ。",
-    "lastVerified": "2026-05-28"
+    "lastVerified": "2026-05-28",
+    "coordsGsiChecked": true
   },
   {
     "id": "nakatsugawa-kasenjiki",
@@ -8213,7 +8380,8 @@
     "season": "通年",
     "soloComment": "無料で入れる河川敷。川音を独り占めできるが設備は皆無で、水もトイレも持参前提。焚き火台必須、増水予報を確認してから入るのが鉄則。",
     "tel": null,
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "sumida-ohashi-kasenjiki",
@@ -8267,7 +8435,8 @@
     "season": "通年",
     "soloComment": "簡易トイレがあるぶん河川敷のなかでは入りやすい一枚。無料で車を寄せられ、焚き火台さえあれば十分成立する。週末は場所取りが早い。",
     "tel": null,
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "hasugebashi-kasenjiki",
@@ -8321,7 +8490,8 @@
     "season": "通年",
     "soloComment": "八菅橋のたもとに広がる無料の石河原。設備なし・人目ありで玄人向けだが、荷物を絞ったソロ装備の実験場としては悪くない。",
     "tel": null,
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "wadanagahama-kaigan",
@@ -8385,7 +8555,8 @@
         "reason": "海水浴場の開設期間中は、三浦市海水浴場ルール第25条により焚き火および火気を使用する調理器具が使用できない（焚き火台も不可。開設日は年により数日前後する）",
         "source": "三浦市海水浴場ルール第25条【令和7年度】 https://www.pref.kanagawa.jp/documents/122025/r7miurashi.pdf"
       }
-    ]
+    ],
+    "coordsGsiChecked": true
   },
   {
     "id": "kofu-shinrinyoku-hiroba",
@@ -8454,7 +8625,8 @@
       "label": "甲府市民限定",
       "note": "施設カルテの利用対象者は「甲府市民」",
       "source": "甲府市 施設カルテ 3-10 https://www.city.kofu.yamanashi.jp/file_summary/shisetu_karte/3-10.pdf"
-    }
+    },
+    "coordsGsiChecked": true
   },
   {
     "id": "ogayanagawa-keikoku",
@@ -8511,7 +8683,8 @@
     "soloComment": "5つの滝と10の吊り橋が連なる渓谷の入口に建つ、予約制のキャンプ場。2023年8月に無料開放を終えて有料になり、テント泊は大人1,800円。サウナやグランピング棟もあり、渓谷歩きの拠点として使える。前日までの予約を忘れずに。",
     "tel": null,
     "lastVerified": "2026-08-07",
-    "officialUrl": "https://ooyanagawa-camp.com/"
+    "officialUrl": "https://ooyanagawa-camp.com/",
+    "coordsGsiChecked": true
   },
   {
     "id": "tsuchimura",
@@ -8569,7 +8742,8 @@
     "season": "通年（要確認）",
     "soloComment": "管理棟も受付もない放任スタイル。静かさは折り紙付きだが薪も売店もなく全て持参、路面次第では四駆でないと入れない区画もある。",
     "tel": null,
-    "lastVerified": ""
+    "lastVerified": "",
+    "coordsGsiChecked": true
   },
   {
     "id": "kurokawa-shizuoka",
@@ -8627,7 +8801,8 @@
     "tel": "054-395-2999",
     "lastVerified": "2026-08-07",
     "closedDays": "キャンプ場は年末年始（12/29〜1/5）。受付管理棟は毎週月曜（祝日の場合はその翌平日）",
-    "officialUrl": "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000093.html"
+    "officialUrl": "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000093.html",
+    "coordsGsiChecked": true
   },
   {
     "id": "omuroyama-camp",
@@ -8691,7 +8866,8 @@
     "telNote": "伊東市民体育センター事務室",
     "lastVerified": "2026-08-07",
     "closedDays": "12/28〜1/4",
-    "officialUrl": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/shogaigakushuka/kanko/2379.html"
+    "officialUrl": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/shogaigakushuka/kanko/2379.html",
+    "coordsGsiChecked": true
   },
   {
     "id": "ogurabashi-kasenjiki",
@@ -8747,7 +8923,8 @@
     "season": "通年",
     "soloComment": "旧小倉橋のアーチを眺めながら焚き火ができる無料の河原。トイレはあるが水道はなく、握りこぶし大の石が多いので設営場所は選ぶ。",
     "tel": null,
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "takadabashi-kasenjiki",
@@ -8803,7 +8980,8 @@
     "season": "通年",
     "soloComment": "相模川沿いの無料サイト。小倉橋からバイクで10分と河原のはしごがしやすい。イベント時は使えないことがあるので事前確認を。",
     "tel": null,
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "nishizato-camp-tekichi",
@@ -8858,7 +9036,8 @@
     "season": "通年",
     "soloComment": "興津川沿いの無料適地。トイレと水場があるのに静かで、標高約130mと夏も過ごしやすい。車は入れないので荷物は絞って徒歩で運ぶ。",
     "tel": null,
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "numazu-shimin-no-mori",
@@ -8917,7 +9096,8 @@
     "soloComment": "無料なのに炊事棟もトイレも整い、かまど用の薪まで只でもらえる。展望台からは富士山と駿河湾。1週間前までの予約を忘れずに。",
     "tel": "055-942-3103",
     "lastVerified": "2026-08-07",
-    "officialUrl": "https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/shiminnomori/"
+    "officialUrl": "https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/shiminnomori/",
+    "coordsGsiChecked": true
   },
   {
     "id": "kamioshima-camp",
@@ -8966,7 +9146,8 @@
     "season": "3月1日〜11月30日（宿泊は4〜6月・10〜11月の土日祝と7/1〜9/30に限定）",
     "soloComment": "相模川河川敷の市営サイト。桜の名所で春は花見キャンプができる。アクセスがよく設備も揃うが、静けさを求めるなら時期を外したい。",
     "tel": "042-760-6066",
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "ugusu-camp",
@@ -9023,7 +9204,8 @@
     "soloComment": "伊豆半島最大の海岸公営キャンプ場。全長500mの遠浅海岸が目の前で、水平線に沈む夕陽が最大の魅力。1サイト5m×5mでソロには十分。車両乗入不可なので荷物運搬に注意。",
     "officialUrl": "https://www.nishiizu-kankou.com/stay/ugusucanp",
     "tel": null,
-    "lastVerified": "2026-08-07"
+    "lastVerified": "2026-08-07",
+    "coordsGsiChecked": true
   },
   {
     "id": "ikenoya-family",
@@ -9073,7 +9255,8 @@
     "tel": "0547-59-2746",
     "lastVerified": "2026-08-07",
     "telNote": "川根本町まちづくり観光協会",
-    "soloComment": "千頭にある町営サイト。管理は川根本町まちづくり観光協会で、予約や現地の状況はここに確認できる。ユネスコエコパークの町ならではの澄んだ空が魅力。"
+    "soloComment": "千頭にある町営サイト。管理は川根本町まちづくり観光協会で、予約や現地の状況はここに確認できる。ユネスコエコパークの町ならではの澄んだ空が魅力。",
+    "coordsGsiChecked": true
   },
   {
     "id": "kunowaki-shinsui",
@@ -9128,7 +9311,8 @@
     "soloComment": "敷地4万㎡・収容700人の大規模サイト。半島状の地形で180度のリバービューが広がる。シャワーやコインランドリーもあり、長めの滞在にも耐える。",
     "cautions": [
       "近くに塩郷の吊り橋（恋金橋）・塩郷ダムあり"
-    ]
+    ],
+    "coordsGsiChecked": true
   },
   {
     "id": "yagi-camp",
@@ -9183,7 +9367,8 @@
     "cautions": [
       "予約はオンライン（なっぷ）のみ。電話受付なし",
       "予約は3か月前の月の1日から受付開始"
-    ]
+    ],
+    "coordsGsiChecked": true
   },
   {
     "id": "mitsuboshi-auto",
@@ -9234,7 +9419,8 @@
     "lastVerified": "2026-08-07",
     "telNote": "かわね来風",
     "officialUrl": "http://kawanelife.org/camp/",
-    "soloComment": "上長尾にあるオートサイトで、運営は地元のかわね来風。車を横付けできるので装備を選ばず、川根本町の澄んだ夜空をゆっくり眺められる。"
+    "soloComment": "上長尾にあるオートサイトで、運営は地元のかわね来風。車を横付けできるので装備を選ばず、川根本町の澄んだ夜空をゆっくり眺められる。",
+    "coordsGsiChecked": true
   },
   {
     "id": "fudonotaki-auto",
@@ -9285,7 +9471,8 @@
     "lastVerified": "2026-08-07",
     "telNote": "リバールーツ リサーチ＆ラボ",
     "officialUrl": "https://ffnpcs.com/",
-    "soloComment": "下泉の不動の滝に隣接する自然広場のサイト。水音が絶えず、川根本町のなかでも静けさは上位。焚き火を眺めて過ごす夜に向く。"
+    "soloComment": "下泉の不動の滝に隣接する自然広場のサイト。水音が絶えず、川根本町のなかでも静けさは上位。焚き火を眺めて過ごす夜に向く。",
+    "coordsGsiChecked": true
   },
   {
     "id": "apt-ichishiro",
@@ -9338,7 +9525,8 @@
     "soloComment": "南アルプスの麓、芝サイトからあぷとライン・大井川・長島ダムを望む。全個室ウォシュレット付きで快適、アプトいちしろ駅から徒歩5分と電車派にも。",
     "cautions": [
       "川根本町から静岡市井川への閑蔵林道が通行止めの場合あり。要確認"
-    ]
+    ],
+    "coordsGsiChecked": true
   },
   {
     "id": "fukushigawa-seishonen",
@@ -9394,7 +9582,8 @@
     "cautions": [
       "臨時休業の場合があるため事前確認が必要",
       "予約・問い合わせは奥山温泉へ"
-    ]
+    ],
+    "coordsGsiChecked": true
   },
   {
     "id": "fukushigawa-auto",
@@ -9443,7 +9632,8 @@
     "season": "4月1日〜12月31日",
     "tel": "0556-66-2272",
     "lastVerified": "2026-08-07",
-    "soloComment": "福士川沿いのオートサイト。車を横付けできるので装備を選ばない。井出駅から徒歩40分と歩けなくはないが、車で行きたい立地。"
+    "soloComment": "福士川沿いのオートサイト。車を横付けできるので装備を選ばない。井出駅から徒歩40分と歩けなくはないが、車で行きたい立地。",
+    "coordsGsiChecked": true
   },
   {
     "id": "turkeys-house",
@@ -9493,7 +9683,8 @@
     "tel": "0556-66-3155",
     "lastVerified": "2026-08-07",
     "soloComment": "福士川沿いのこぢんまりとしたキャンプ場。実際の江ノ電車両に泊まれるのが名物で、貸切露天風呂「とと湯」を無料で使える。営業は連休を中心とした限られた日だけなので、公式の営業カレンダーを見てから動きたい。",
-    "officialUrl": "http://www.turkeyshouse.com/"
+    "officialUrl": "http://www.turkeyshouse.com/",
+    "coordsGsiChecked": true
   },
   {
     "id": "lumberjack-nanbu",
@@ -9546,7 +9737,8 @@
     "lastVerified": "2026-08-07",
     "officialUrl": "",
     "soloComment": "福士川のほとりの小さなオートキャンプ場。管理棟に炊事場・トイレ・入浴施設が揃い、ドラム缶BBQコンロも借りられる。薪も現地調達できる。",
-    "telNote": "携帯 090-4763-6987"
+    "telNote": "携帯 090-4763-6987",
+    "coordsGsiChecked": true
   },
   {
     "id": "nekumasanso-auto",

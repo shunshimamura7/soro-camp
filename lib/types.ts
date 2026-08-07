@@ -65,14 +65,32 @@ export type Campground = {
   eligibility?: Eligibility;
   lat: number;
   lng: number;
-  /** 座標を目視確認済みなら true。未設定・false は要確認（scripts/coord-tool.html の対象）。 */
+  /**
+   * **人が地図上で目視確認した**なら true。未設定・false は要確認（scripts/coord-tool.html の対象）。
+   *
+   * 機械検証の結果をここに書かないこと。両者を混ぜていたため、
+   * 実際には海上・湖面を指している7件に true が立ったまま残り、
+   * 「確認済み」を理由に検証対象から外れる危険があった（scripts/sea-coord-check.md）。
+   */
   coordsVerified?: boolean;
+  /**
+   * 国土地理院の逆ジオコーディングを通過したなら true。
+   * 「返ってきた市区町村が prefecture と矛盾せず、海上・湖面でもない」ことだけを意味する。
+   *
+   * 通過しても地点が正しいとは限らない（同じ市内の別地点でも通る）ので、
+   * `coordsVerified` の代わりにはならない。scripts/verify-coords-gsi.js が判定の元になる。
+   */
+  coordsGsiChecked?: boolean;
   /** 施設の同定そのものが怪しく、優先的に裏取りすべきものに true。 */
   needsVerify?: boolean;
   /**
-   * 実在は確認できたが座標だけ取得できていないものに true。
-   * このとき lat/lng は 0 のまま残す（推測値で埋めない）。
-   * `scripts/validate-data.js` は lat===0 && lng===0 のとき本フラグを必須にする。
+   * 正しい座標が確定していないものに true。次の2通りがある。
+   *
+   * 1. 座標をまだ取得できていない … lat/lng は 0 のまま残す（推測値で埋めない）。
+   *    `scripts/validate-data.js` は lat===0 && lng===0 のとき本フラグを必須にする。
+   * 2. 入っている座標が誤りと分かっているが、差し替える値をまだ確定できていない …
+   *    誤った座標をそのまま残すよりフラグで示す。0 で潰すと「未取得」と区別できなくなるため、
+   *    lat/lng は誤った値のまま残す（scripts/sea-coord-check.md の CANDIDATE 2件がこれ）。
    */
   needsCoord?: boolean;
   priceMin: number;
