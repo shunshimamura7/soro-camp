@@ -11,9 +11,28 @@ function kataToHira(s) {
 }
 
 /**
- * NFKC で全角半角を統一 → 括弧内を除去
- * → 「オートキャンプ場」「キャンプ場」「場」を除去
- * → スペース・中黒を除去 → ひらがな化 → 小文字化
+ * 施設名から落とす一般語。**固有名だけを残す**のが狙い。
+ *
+ * これを落とさないと「◯◯キャンピングヴィレッジ」と「◯◯キャンプ場」が
+ * 「きゃんぴ」を共通部分として拾ってしまう。実際 duplicate-check.js で
+ * 「きゃんぴんぐ」「camp」「village」由来の誤検出が大量に出た。
+ *
+ * 長いものから順に消す（「オートキャンプ場」を「キャンプ場」より先に消さないと
+ * 「オート」が残る）。
+ */
+const GENERIC_WORDS = [
+  'オートキャンプ場', 'オートキャンピア', 'キャンピングコテージ', 'キャンピングヴィレッジ',
+  'キャンピングビレッジ', 'キャンプフィールド', 'キャンプグラウンド', 'キャンプサイト',
+  'オートキャンプ', 'キャンピング', 'キャンプ場', 'キャンプ',
+  'campground', 'campsite', 'campfield', 'camping', 'camp',
+  'ヴィレッジ', 'ビレッジ', 'village', 'リゾート', 'resort',
+  'フィールド', 'field', 'オート', 'auto', 'サイト', 'site',
+  'ファミリー', 'family', 'パーク', 'park', '河川敷',
+];
+
+/**
+ * NFKC で全角半角を統一 → 括弧内を除去 → 一般語を除去
+ * → 「場」を除去 → スペース・中黒を除去 → ひらがな化 → 小文字化
  */
 function normalizeName(s) {
   if (!s) return '';
@@ -21,14 +40,32 @@ function normalizeName(s) {
   t = t.replace(/\([^)]*\)/g, '');      // 括弧内（NFKC 後は半角）
   t = t.replace(/\[[^\]]*\]/g, '');
   t = t.replace(/【[^】]*】/g, '');
-  t = t.replace(/オートキャンプ場/g, '');
-  t = t.replace(/キャンプ場/g, '');
-  t = t.replace(/オートキャンプ/g, '');
-  t = t.replace(/キャンプ/g, '');
+  t = kataToHira(t).toLowerCase();
+  for (const w of GENERIC_WORDS) {
+    t = t.split(kataToHira(w).toLowerCase()).join('');
+  }
   t = t.replace(/場/g, '');
   t = t.replace(/[\s・･]/g, '');
-  t = kataToHira(t);
-  return t.toLowerCase();
+  return t;
+}
+
+/**
+ * 住所を比較用に正規化し、「町名まで」と「番地まで」に割る。
+ *
+ * 番地の一致は名前より強い根拠になる。`hakone-kojiri-camp` と
+ * `ashinoko-camp-mura` はどちらも「箱根町…164」で、電話番号も同一だった。
+ */
+function splitAddressForCompare(addr) {
+  if (!addr) return null;
+  const a = String(addr)
+    .normalize('NFKC')
+    .replace(/[－ー−‐]/g, '-')
+    .replace(/\s+/g, '')
+    .replace(/[都道府県]/g, (m, i) => (i <= 4 ? m : m)) // 県名は残す
+    .trim();
+  const m = a.match(/^(.*?)(\d+(?:-\d+)*)(?:番地?|号)?/);
+  if (!m) return { head: a, banchi: null };
+  return { head: m[1], banchi: m[2] };
 }
 
 function levenshtein(a, b) {
@@ -84,4 +121,4 @@ function namesMatch(a, b) {
   return longer.includes(shorter);
 }
 
-module.exports = { kataToHira, normalizeName, levenshtein, similarity, namesMatch };
+module.exports = { kataToHira, normalizeName, levenshtein, similarity, namesMatch, splitAddressForCompare };

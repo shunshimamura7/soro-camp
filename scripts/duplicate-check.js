@@ -8,7 +8,27 @@
 const fs = require('fs');
 const path = require('path');
 
-const { normalizeName, similarity } = require(path.join(__dirname, 'name-match.js'));
+const { normalizeName, similarity, splitAddressForCompare } = require(path.join(__dirname, 'name-match.js'));
+
+/** 電話番号を比較用に正規化（ハイフン・空白を除く） */
+function normalizeTel(t) {
+  if (!t) return '';
+  return String(t).normalize('NFKC').replace(/[^0-9]/g, '');
+}
+
+/**
+ * 共通部分が「その施設のエリア名や県名」に由来するなら、重複の根拠にしない。
+ *
+ * 「富士」「朝霧」「山中湖」「相模湖」のような地名は、同じエリアの別施設どうしで
+ * 当然に一致する。これを根拠に数えていたため誤検出が123件出ていた。
+ */
+function isPlaceName(part, a, b) {
+  if (!part) return false;
+  const pool = [a.area, b.area, a.prefecture, b.prefecture, a.address, b.address]
+    .filter(Boolean)
+    .map((s) => normalizeName(s));
+  return pool.some((p) => p.includes(part));
+}
 
 const DATA_PATH   = path.join(__dirname, '../data/campgrounds.json');
 const REPORT_PATH = path.join(__dirname, 'duplicate-suspects.md');
@@ -71,19 +91,47 @@ for (let i = 0; i < targets.length; i++) {
     const hasCoords = a.lat && a.lng && b.lat && b.lng;
     const dist = hasCoords ? haversineKm(a.lat, a.lng, b.lat, b.lng) : null;
 
-    if (common >= 3 && (dist == null || dist <= SAME_AREA_KM)) {
-      reasons.push(`名前に共通部分「${na.slice(na.indexOf(longestCommonPart(na, nb)), na.indexOf(longestCommonPart(na, nb)) + common)}」（${common}文字）`);
+    // 共通部分は「4文字以上」かつ「地名由来でない」ものだけを根拠にする。
+    // 以前は3文字以上を無条件で数えており、「富士」「朝霧」「きゃんぴ」で誤検出が出ていた。
+    const part = longestCommonPart(na, nb);
+    if (common >= 4 && !isPlaceName(part, a, b) && (dist == null || dist <= SAME_AREA_KM)) {
+      reasons.push(`名前に共通部分「${part}」（${common}文字・地名ではない）`);
     }
     if (dist != null && dist <= NEAR_KM) {
       reasons.push(`座標が近接（${dist.toFixed(2)}km）`);
     }
-    // 同じ山・湖などの地名がエリアをまたいで現れるケース
-    if (common >= 2 && a.prefecture !== b.prefecture && dist != null && dist <= SAME_AREA_KM) {
+
+    // ── 住所の番地一致 ──
+    // 名前より強い根拠。ashinoko-camp-mura と hakone-kojiri-camp は
+    // どちらも「箱根町…164」で、これが同一施設の決め手になった。
+    const aa = splitAddressForCompare(a.address);
+    const ba = splitAddressForCompare(b.address);
+    if (aa && ba && aa.banchi && aa.banchi === ba.banchi) {
+      if (aa.head === ba.head) {
+        reasons.push(`住所が完全に一致（${a.address}）`);
+      } else if (dist != null && dist <= SAME_AREA_KM) {
+        // 町名が違う番地一致は偶然が多い（「2745」「40-1」が100km離れて一致した例がある）。
+        // 近接しているときだけ根拠にする。
+        reasons.push(`番地が一致（${aa.banchi}）。町名は「${aa.head}」と「${ba.head}」`);
+      }
+    }
+
+    // ── 電話番号の一致 ──
+    // 別の施設が同じ番号を持つことはまずない。今回の決め手になった条件。
+    const at = normalizeTel(a.tel);
+    const bt = normalizeTel(b.tel);
+    if (at && at === bt) reasons.push(`電話番号が一致（${a.tel}）`);
+
+    // 同じ山・湖などの地名がエリアをまたいで現れるケース。
+    // 地名由来の共通部分は上で除いているので、ここでも同じ条件を課す。
+    if (common >= 3 && !isPlaceName(part, a, b) && a.prefecture !== b.prefecture && dist != null && dist <= SAME_AREA_KM) {
       reasons.push(`県をまたぐが${dist.toFixed(2)}kmしか離れていない（県の割り当て誤りの疑い）`);
     }
 
     if (reasons.length) {
-      pairs.push({ a, b, dist, reasons, score: reasons.length * 10 + common });
+      // 強い根拠（住所・電話・座標一致）を持つペアを上位に出す
+      const strong = reasons.filter((r) => /住所|番地|電話|座標が近接/.test(r)).length;
+      pairs.push({ a, b, dist, reasons, score: strong * 100 + reasons.length * 10 + common });
     }
   }
 }
@@ -110,7 +158,11 @@ md += `対象: **${targets.length}件**（auto で候補が出た分は除外）
 md += '以前は coordsVerified !== true のものだけを見ていたが、確認済みフラグが検証を'
    + 'すり抜けさせていたため全件を対象にした\n\n';
 md += `総当たり ${(targets.length * (targets.length - 1)) / 2} ペアを比較し、**${pairs.length}ペア**を抽出。\n\n`;
-md += '判定基準: 名称の類似（正規化＋編集距離） / 名前の共通部分3文字以上かつ20km以内 / 座標が1km以内 / 県をまたぐのに近接\n\n';
+md += '判定基準\n\n';
+md += '- **強い根拠**: 住所が完全一致 / 番地が一致（20km以内のとき） / 電話番号が一致 / 座標が1km以内\n';
+md += '- 弱い根拠: 名称の類似（正規化＋編集距離） / 名前の共通部分が**4文字以上かつ地名でない** / 県をまたぐのに近接\n\n';
+md += '共通部分は施設の area・prefecture・address に含まれる文字列を除外している。'
+   + '「富士」「朝霧」「山中湖」のような地名は同じエリアの別施設どうしで当然一致するため。\n\n';
 md += '※ 判定のみ。data/campgrounds.json は変更していない。\n\n';
 
 if (pairs.length) {

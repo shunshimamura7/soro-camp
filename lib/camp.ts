@@ -40,6 +40,26 @@ export function calcSoloScore(camp: Campground): number {
   return Math.round(raw * 10) / 10;
 }
 
+/**
+ * データ全体の「最終確認日」。lastVerified の最大値。
+ *
+ * フッターに固定文字列で書いていたが、データを更新しても直し忘れて古いままになった。
+ * 派生値なので計算に統一する（soloScore と同じ理由）。
+ *
+ * `"2025-01-01"` は一括投入時のプレースホルダなので除く。現在は0件だが、
+ * 将来また混入したときに最終確認日が過去に引き戻されないようにしておく。
+ */
+export const PLACEHOLDER_VERIFIED_DATE = "2025-01-01";
+
+export function latestVerifiedDate(camps: Campground[] = campgrounds): string | null {
+  const dates = camps
+    .map((c) => c.lastVerified)
+    .filter((d): d is string => typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d))
+    .filter((d) => d !== PLACEHOLDER_VERIFIED_DATE);
+  if (dates.length === 0) return null;
+  return dates.reduce((a, b) => (a > b ? a : b));
+}
+
 export function getCampground(slug: string): Campground | undefined {
   return campgrounds.find((c) => c.slug === slug);
 }

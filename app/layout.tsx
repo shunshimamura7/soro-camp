@@ -4,6 +4,7 @@ import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { SITE_URL } from "@/lib/site";
+import { latestVerifiedDate } from "@/lib/camp";
 
 const noto = Noto_Sans_JP({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -40,6 +41,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const lastVerified = latestVerifiedDate();
   return (
     <html lang="ja">
       <body className={`${noto.className} bg-white text-slate-900 min-h-screen`}>
@@ -65,7 +67,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <footer className="border-t border-slate-200 mt-16 py-8 px-4 text-center text-xs text-slate-400">
           <p>© 2026 ソロキャン羅針盤 — 情報の正確性に努めていますが、訪問前に各キャンプ場へご確認ください。</p>
-          <p className="mt-1">最終確認: 2026-05-26</p>
+          {/* データの lastVerified の最大値。固定で書くと更新時に直し忘れる */}
+          {lastVerified && <p className="mt-1">最終確認: {lastVerified}</p>}
         </footer>
 
         {/*
