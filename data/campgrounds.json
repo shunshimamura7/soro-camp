@@ -107,9 +107,9 @@
     "area": "真鶴",
     "status": "active",
     "address": "神奈川県足柄下郡真鶴町真鶴1176-2",
-    "lat": 35.1397,
-    "lng": 139.1487,
-    "coordsVerified": false,
+    "lat": 35.1436301,
+    "lng": 139.1582528,
+    "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 5000,
     "priceNote": "大人2,500円、トロッコ利用料500円〜",
@@ -147,9 +147,9 @@
     "officialUrl": "https://gandahara.wixsite.com/mysite",
     "reservationUrl": "https://reserva.be/gndahara",
     "tel": "090-3535-2346",
-    "lastVerified": "2026-05-26",
-    "needsCoord": true,
-    "priceVerified": true
+    "lastVerified": "2026-08-07",
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "tanukiko",
@@ -418,9 +418,9 @@
     "area": "本栖湖",
     "status": "active",
     "address": "山梨県南都留郡富士河口湖町本栖大久保19",
-    "lat": 35.4682,
-    "lng": 138.5896,
-    "coordsVerified": false,
+    "lat": 35.476964,
+    "lng": 138.5931453,
+    "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 5000,
     "priceNote": "コスパ◎・連泊割引あり",
@@ -458,9 +458,9 @@
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11329",
     "tel": null,
     "telNote": "メール対応のみ: motosulakeside@gmail.com",
-    "lastVerified": "2026-05-26",
-    "needsCoord": true,
-    "priceVerified": true
+    "lastVerified": "2026-08-07",
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "picafuji-saiko",
