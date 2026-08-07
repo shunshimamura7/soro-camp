@@ -7,6 +7,16 @@ export type Campground = {
   address: string;
   /** 省略時は "campground"（管理されたキャンプ場）。"wild" は野営地。 */
   type?: "campground" | "wild";
+  /**
+   * 掲載状態。
+   *
+   * - `"active"` … 通常掲載。一覧に出る。
+   * - `"closed"` … 閉鎖・利用禁止が確認できたもの。一覧から外し、詳細ページに警告を出す。
+   * - `"unverified"` … 営業状況が確認できていないもの。一覧から外し、詳細ページに注意書きを出す。
+   *
+   * 既存リンク対策として `"active"` 以外もページ自体は残し、サイトマップにも含める。
+   */
+  status: "active" | "closed" | "unverified";
   /** 野営地の注意事項。あれば詳細ページに ⚠️ セクションで表示する。 */
   cautions?: string[];
   lat: number;
@@ -15,6 +25,12 @@ export type Campground = {
   coordsVerified?: boolean;
   /** 施設の同定そのものが怪しく、優先的に裏取りすべきものに true。 */
   needsVerify?: boolean;
+  /**
+   * 実在は確認できたが座標だけ取得できていないものに true。
+   * このとき lat/lng は 0 のまま残す（推測値で埋めない）。
+   * `scripts/validate-data.js` は lat===0 && lng===0 のとき本フラグを必須にする。
+   */
+  needsCoord?: boolean;
   priceMin: number;
   priceMax: number;
   priceNote?: string;

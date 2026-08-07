@@ -4,6 +4,17 @@ import data from "../data/campgrounds.json";
 export const campgrounds: Campground[] = data as Campground[];
 
 /**
+ * 一覧・地図・件数表示に使う「掲載中」の施設。
+ *
+ * status が 'active' でないもの（閉鎖・営業状況未確認）は訪問を勧めてはいけないので
+ * 一覧から外す。ただし既存リンク対策として詳細ページとサイトマップは残すため、
+ * そちら側は素の `campgrounds` を使うこと。
+ */
+export const activeCampgrounds: Campground[] = campgrounds.filter(
+  (c) => c.status === "active"
+);
+
+/**
  * ソロ適性スコア。静けさと絶景を2倍で重み付けし、小数第1位に丸める。
  *
  *   (静けさ*2 + 絶景*2 + コスパ + アクセス + 設備) / 7

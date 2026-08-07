@@ -132,6 +132,32 @@ export default async function CampDetailPage({
       <div className="h-[env(safe-area-inset-top,0px)]" />
 
       <div className="max-w-4xl mx-auto px-3 sm:px-4 pt-4 sm:pt-8 pb-[96px] md:pb-8">
+        {/*
+          掲載状態の警告。施設名より前に出す。
+          名前を見てから警告に気づくのでは遅いので、パンくず（施設名を含む）よりも
+          さらに前、ページ内容の先頭に置くこと。
+        */}
+        {camp.status === "closed" && (
+          <div
+            role="alert"
+            className="mb-4 rounded-xl border-2 border-red-600 bg-red-50 px-4 py-3.5"
+          >
+            <p className="text-[13px] sm:text-[15px] font-bold leading-relaxed text-red-700">
+              この場所は現在キャンプが禁止されています。訪問しないでください。
+            </p>
+          </div>
+        )}
+        {camp.status === "unverified" && (
+          <div
+            role="alert"
+            className="mb-4 rounded-xl border-2 border-amber-500 bg-amber-50 px-4 py-3.5"
+          >
+            <p className="text-[13px] sm:text-[15px] font-bold leading-relaxed text-amber-700">
+              営業状況が確認できていません。訪問前に必ず最新情報を確認してください。
+            </p>
+          </div>
+        )}
+
         {/* Breadcrumb */}
         <nav className="text-xs text-slate-500 mb-4 flex gap-1 items-center flex-wrap">
           <Link href="/" className="hover:text-slate-700">← 一覧</Link>

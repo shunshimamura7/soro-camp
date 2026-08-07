@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import dynamic from "next/dynamic";
-import { campgrounds, filterAndSort, filterByType } from "@/lib/camp";
+import { activeCampgrounds, filterAndSort, filterByType } from "@/lib/camp";
 import type { Filters, SortKey, TypeTab } from "@/lib/camp";
 import FilterBar from "@/components/FilterBar";
 import CampCard from "@/components/CampCard";
@@ -20,11 +20,12 @@ const DEFAULT_FILTERS: Filters = {
   bonfire: false,
 };
 
-// タブの件数はフィルターと無関係に「その種別が全部で何件あるか」を示す
+// タブの件数はフィルターと無関係に「その種別が全部で何件あるか」を示す。
+// 閉鎖・営業状況未確認のものは一覧に出さないので件数にも含めない。
 const TYPE_COUNTS = {
-  all: campgrounds.length,
-  campground: campgrounds.filter((c) => c.type !== "wild").length,
-  wild: campgrounds.filter((c) => c.type === "wild").length,
+  all: activeCampgrounds.length,
+  campground: activeCampgrounds.filter((c) => c.type !== "wild").length,
+  wild: activeCampgrounds.filter((c) => c.type === "wild").length,
 };
 
 export default function HomePage() {
@@ -36,7 +37,7 @@ export default function HomePage() {
   // タブで種別を絞ってから、既存のフィルター・ソートを適用する。
   // タブを切り替えても filters / sort は保持される。
   const results = useMemo(
-    () => filterAndSort(filterByType(campgrounds, typeTab), filters, sort),
+    () => filterAndSort(filterByType(activeCampgrounds, typeTab), filters, sort),
     [typeTab, filters, sort]
   );
 

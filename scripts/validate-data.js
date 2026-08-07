@@ -38,6 +38,42 @@ function unsourcedSuperlatives(text) {
     .map(s => s.trim());
 }
 
+// ── 掲載状態と features の整合性 ──────────────────────────────────────────────
+const STATUSES = ['active', 'closed', 'unverified'];
+
+/** 閉鎖施設の soloComment に書いてはいけない、利用を促す語 */
+const INVITING = /焚き火|直火|泊まれ|泊まる|野営できる|キャンプできる|設営/;
+
+/** 「できない」側の文脈。これがあれば焚き火への言及は否定文として扱う */
+const DENIAL = /禁止|不可|できない|できません|厳禁|NG|不許可|お断り|ご遠慮|控え|不可能/;
+/** 可否を断定していない文脈。肯定とも否定とも取らない */
+const NEUTRAL = /可否|要確認|不明|確認中|要問合せ/;
+
+/**
+ * 焚き火・直火に「肯定的に」言及している文だけを返す。
+ * 「直火禁止」「焚き火の可否は要確認」のような文は肯定とみなさない。
+ */
+function positiveBonfireMentions(text) {
+  if (!text) return [];
+  return String(text)
+    .split(/(?<=。)|、/)
+    .filter((s) => /焚き火|直火/.test(s) && !DENIAL.test(s) && !NEUTRAL.test(s))
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+/**
+ * 焚き火そのものを禁じている表現。
+ * 「直火禁止」は焚き火台ならOKという意味で bonfire:true と両立するので含めない。
+ */
+const BONFIRE_BANNED = /焚き火[^。、]{0,6}(?:禁止|不可|できません|できない)|火気厳禁/;
+
+/** 利用可能であることを示す真偽値の features。閉鎖・未確認の施設に true で残っていたら不整合 */
+const USABLE_FEATURES = [
+  'bonfire', 'pet', 'shower', 'bath', 'carIn', 'soloPlan',
+  'convenience', 'shop', 'wifi', 'firewood', 'ice', 'alcohol',
+];
+
 const errors = [];
 const warnings = [];
 let unsetCoords = 0;
@@ -106,6 +142,54 @@ for (const c of camps) {
     unsetCoords++;   // 未設定は別集計。エラーにしない
   } else if (isOutOfBounds(c.prefecture, c.lat, c.lng)) {
     errors.push(`${id}: 座標が${c.prefecture}の範囲外 lat ${c.lat} / lng ${c.lng}（想定 ${describeBounds(c.prefecture)}）`);
+  }
+
+  // ── status ──
+  if (!STATUSES.includes(c.status)) {
+    errors.push(`${id}: status が ${STATUSES.join('/')} のいずれでもない（${JSON.stringify(c.status)}）`);
+  }
+
+  // ── 座標未取得は needsCoord での明示を必須にする ──
+  // 閉鎖施設は訪問させない前提なので座標を持つ意味がなく、対象外にする。
+  // （閉鎖施設に needsCoord を付けると「今後座標を取得すべき対象」という誤ったシグナルになる）
+  if (c.lat === 0 && c.lng === 0 && c.status !== 'closed' && !c.needsCoord) {
+    errors.push(`${id}: 座標が 0,0 のまま。取得できていないなら needsCoord: true を付けること`);
+  }
+
+  const f = c.features || {};
+  const cautionsText = Array.isArray(c.cautions) ? c.cautions.join(' ') : '';
+
+  // ── 閉鎖施設の soloComment に利用を促す記述を残さない ──
+  if (c.status === 'closed') {
+    const hits = (String(c.soloComment || '').match(new RegExp(INVITING, 'g')) || []);
+    if (hits.length) {
+      errors.push(`${id}: status が closed なのに soloComment が利用を促している（該当語: ${[...new Set(hits)].join('・')}）`);
+    }
+  }
+
+  // ── bonfire:false なのに焚き火を肯定的に書いていないか ──
+  if (f.bonfire === false) {
+    const hits = [...positiveBonfireMentions(c.soloComment), ...positiveBonfireMentions(cautionsText)];
+    if (hits.length) {
+      errors.push(`${id}: features.bonfire が false なのに焚き火・直火が肯定的に書かれている → ${hits.join(' / ')}`);
+    }
+  }
+
+  // ── bonfire:true なのに焚き火禁止と書いていないか ──
+  // 「直火禁止」は焚き火台ならOKという意味なので対象外。
+  if (f.bonfire === true && BONFIRE_BANNED.test(String(c.soloComment || ''))) {
+    errors.push(`${id}: features.bonfire が true なのに soloComment が焚き火を禁じている`);
+  }
+
+  // ── 閉鎖施設に「利用可能」を示す true が残っていないか ──
+  // closed のみを対象にする。unverified は「設備が無い」ではなく「今も営業しているか
+  // 分からない」という意味なので、features を false に倒すと別の誤情報になる。
+  // （最後に確認できた設備情報は残し、注意喚起は詳細ページの警告バナーが担う）
+  if (c.status === 'closed') {
+    const left = USABLE_FEATURES.filter((k) => f[k] === true);
+    if (left.length) {
+      errors.push(`${id}: status が closed なのに features に利用可能を示す true が残っている（${left.join(', ')}）`);
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { campgrounds } from "@/lib/camp";
+import { activeCampgrounds } from "@/lib/camp";
 
 export const metadata: Metadata = {
   title: "このサイトについて — スコアの見方とデータの扱い",
@@ -77,9 +77,11 @@ const AXES: Array<{ key: string; label: string; weight: string; desc: string; sc
 ];
 
 export default function AboutPage() {
-  const total = campgrounds.length;
-  const wild = campgrounds.filter((c) => c.type === "wild").length;
-  const unverified = campgrounds.filter(
+  // 「掲載しています」と書く以上、一覧に出る件数（status === 'active'）と一致させる。
+  const total = activeCampgrounds.length;
+  const wild = activeCampgrounds.filter((c) => c.type === "wild").length;
+  // ここでの unverified は lastVerified の鮮度の話で、status: 'unverified' とは別概念。
+  const unverified = activeCampgrounds.filter(
     (c) => !c.lastVerified || c.lastVerified.trim() === "" || c.lastVerified === "2025-01-01"
   ).length;
 
