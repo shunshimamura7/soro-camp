@@ -338,6 +338,22 @@ for (const c of camps) {
     warnings.push(`${id}: status が suspended でないのに suspendedNote が残っている`);
   }
 
+  // ── needsVerify（実在・同定の裏取りが要る） ──
+  // フラグだけでは「まだ調べていない」のか「調べたが確認できなかった」のか分からず、
+  // 次に見た人が同じ調査を最初からやり直す。何を探して何が無かったかを必ず残させる。
+  if (c.needsVerify === true) {
+    if (c.needsVerifyNote == null || String(c.needsVerifyNote).trim() === '') {
+      errors.push(
+        `${id}: needsVerify が true なのに needsVerifyNote が空。何を探して何が無かったかを出典付きで書くこと`
+      );
+    } else if (!/https?:\/\//.test(String(c.needsVerifyNote))) {
+      warnings.push(`${id}: needsVerifyNote に URL がない（${c.needsVerifyNote}）`);
+    }
+  }
+  if (c.needsVerify !== true && c.needsVerifyNote != null) {
+    warnings.push(`${id}: needsVerify が立っていないのに needsVerifyNote が残っている`);
+  }
+
   // ── closed の内訳 ──
   // 詳細ページの赤い警告の文面が closedReason で変わる。未設定だと
   // 「キャンプが禁止されています」側にフォールバックするので、

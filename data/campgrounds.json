@@ -1468,7 +1468,9 @@
     "soloComment": "七沢温泉郷に隣接する森林キャンプ場。場内に風呂はないが歩いて行ける七沢温泉の日帰り入浴が充実。都心から1時間圏で手軽に深い森を体感できる穴場。紅葉シーズンは周辺が色鮮やかに染まる。",
     "lastVerified": "2026-05-26",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。厚木市七沢657 に該当施設なし。七沢のキャンプ場は TINY CAMP VILLAGE（七沢1854・別レコード tiny-camp-village）と 厚木市七沢弁天の森キャンプ場（七沢2891）で、後者は H28/11 時点で閉鎖 https://www.nap-camp.com/kanagawa/11637。2026-08-07 追調査: 七沢657 は七沢温泉郷の実在施設（七沢荘・福元館ほか）のどの番地とも一致せず、同じ大字の tiny-camp-village（七沢1854）からの借用でもない"
   },
   {
     "id": "yamakita-camp",
@@ -1946,7 +1948,9 @@
     "soloComment": "伊豆高原の別荘地に囲まれた整備されたキャンプ場。伊豆四季の花公園・大室山などの観光スポットが充実。熱川温泉や伊豆北川温泉への日帰り入浴も楽しめ、キャンプと観光を兼ねたソロ旅に最適。",
     "lastVerified": "2026-05-26",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。伊東市池672 に該当施設なし。同じ「池」地区にある「伊豆高原テントリゾート」（伊東市池614-168 https://tentresort-izu.com/ ）が近いが名称が違う。「伊豆高原オートキャンプ場」名義の一次情報が出ない"
   },
   {
     "id": "amagi-kogen",
@@ -2997,7 +3001,9 @@
     "season": "4月〜11月",
     "soloComment": "雑木林に囲まれた自然体験型キャンプ場。夏はカブトムシ・クワガタが採れる昆虫の楽園。都心から1時間圏の手軽さで深い雑木林を体験できる。子どもがいないソロには静かな晩秋が特におすすめ。",
     "lastVerified": "2026-05-27",
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。同名の「カブト虫の森」は和歌山県日高川町の施設で閉館済み。座標は八王子市南浅川町を指し、address（相模原市緑区牧野4015）と9.8km離れている。2026-08-07 追調査: データの住所（牧野4015）は牧野地区の実在施設（亀見橋バカンス村12822・藤野芸術の家4819）のどれとも一致せず、借用元が特定できない"
   },
   {
     "id": "sagamiko-pleasure-camp",
@@ -3092,7 +3098,9 @@
     "soloComment": "直火OKで予約不要のシンプルなキャンプ場。設備は最低限だが格安で深い山中の静けさを楽しめる。道志川支流沿いの隠れ家的存在で、長期連泊派のソロキャンパーに密かに人気。夜の星空の暗さは格別。",
     "lastVerified": "2026-05-27",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧に該当名なし https://www.e-sagamihara.com/camp/ 。**「奥牧野キャンプ場」の名で NAVITIME・タウンページに出る「牧野12822 / 042-787-0242」は、実在する別施設「亀見橋バカンス村」のものだった** https://www.e-sagamihara.com/camp/camp-627/ 。データの住所（牧野2108）は、牧野地区の実在施設（バカンス村12822・藤野芸術の家4819）のどれとも一致しない"
   },
   {
     "id": "mikagi-camp",
@@ -3139,7 +3147,9 @@
     "soloComment": "相模原インター近くの便利なキャンプ場。渓流沿いの涼しい環境で夏でも快適。相模湖・道志川・丹沢へのアクセスの良さから各方面への起点として使い勝手が良い。日帰りのついでに使えるコスパの良さも魅力。",
     "lastVerified": "2026-05-27",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。「三ヶ木」は相模原市緑区の実在の地名だが、その名のキャンプ場の一次情報が出ない"
   },
   {
     "id": "yadoriki-camp",
@@ -3187,7 +3197,9 @@
     "soloComment": "東海自然歩道沿いの秘境キャンプ場。「寄」（やどりき）のロウバイ・ツツジの名所に隣接。登山・ハイキングの拠点として最適で、標高500mの静かな環境からの展望が素晴らしい。格安だが設備は最低限。",
     "lastVerified": "2026-05-27",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。松田町公式の「やどりき水源林」ページにキャンプ場の記載なし https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-suigenrin.html 。寄地区のキャンプ場は寄4380-1 と蜂花苑ミロク（別レコード hachibanaen-miroku）。やどりき水源林は529haの森林で、キャンプ場としての施設名は確認できない。2026-08-07 追調査: 寄3048 は寄地区の実在施設（やどりきテラス 寄3415・松田町寄自然休養村 寄4380-1・蜂花苑ミロク 寄7138）のどの番地とも一致せず、借用元が特定できない"
   },
   {
     "id": "mushizawa-camp",
@@ -3234,7 +3246,9 @@
     "soloComment": "地元NPOが管理する秘境キャンプ場。中津川上流の深い渓谷に位置しアクセスが悪い分、訪れる人が少なく圧倒的な静寂が待っている。古代の里山風景の中でのソロキャンプは格別の体験。紅葉シーズンは穴場。",
     "lastVerified": "2026-05-27",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。山北町公式の「キャンプ場の紹介」に該当名なし https://www.town.yamakita.kanagawa.jp/0000000232.html 。「虫沢」は山北町の実在の地名だが、その名のキャンプ場の一次情報が出ない"
   },
   {
     "id": "camp-baird",
@@ -3529,7 +3543,7 @@
   {
     "id": "fujikawa-camp",
     "slug": "fujikawa-camp",
-    "name": "富士川キャンプ場",
+    "name": "野田山健康緑地公園 富士川キャンプ場",
     "prefecture": "静岡",
     "area": "富士",
     "status": "active",
@@ -3568,7 +3582,7 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "富士川河川敷のキャンプ場。河口近くから富士山を真正面に見上げる絶景は富士市ならでは。富士川の大きな流れを眼前に、静岡中部エリアからのアクセスが抜群。河川敷の解放感がソロキャンプの醍醐味。",
+    "soloComment": "富士川西岸・野田山の高台にある富士市の公園内キャンプ場で、標高は約500m。「日本一高い山と日本一深い海の間」を掲げるとおり、富士山と駿河湾の両方を見渡せる。全サイトで焚き火ができ、展望オートサイトからの眺めが目当てになる。2025年9月に区画が約1.5倍へ拡張された。無料Wi-Fiあり。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true
@@ -3668,7 +3682,8 @@
     "tel": "0557-38-3523",
     "lastVerified": "2026-05-27",
     "needsVerify": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerifyNote": "道の駅伊東マリンタウンは実在するが、そこにキャンプ場は無い。施設名・住所・キャンプ場紹介ページを道の駅から借りて作られた記録と見られる（引き継ぎ §6-4）。予約・料金の一次情報がどこにも出ないため status を unverified にしてある https://ito-marinetown.co.jp/"
   },
   {
     "id": "shuzenji-nijinokuni-camp",
@@ -4338,7 +4353,9 @@
     "tel": "0555-72-4411",
     "lastVerified": "2026-05-27",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。「浜の家キャンプ場」は西湖東側の施設で、河口湖ではない。データの住所「富士河口湖町小立5404」は河口湖オートキャンプ場のもの https://www.nap-camp.com/yamanashi/11308 。**住所の借用が疑われる**"
   },
   {
     "id": "retreat-camp-mahoroba",
@@ -4625,7 +4642,9 @@
     "soloComment": "甲府盆地を見下ろす山梨市の丘陵地帯に位置するキャンプ場。周辺がブドウ・桃・スモモ畑に囲まれており夏〜秋は果物狩りと組み合わせたフルーツキャンプが楽しめる。甲府盆地の夜景と富士山のシルエットが美しい。",
     "lastVerified": "2026-05-27",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。「牧丘フルーツ村キャンプ場」の名で山梨市公式・富士の国やまなし（県公式）に該当なし。検索で出る「牧丘フルーツセンター」は山梨市牧丘町窪平358の果樹園で別施設 https://www.city.yamanashi.yamanashi.jp/soshiki/5/2246.html 。座標は甲州市塩山中萩原を指し、address（山梨市牧丘町牧平3041）と17.3km離れている"
   },
   {
     "id": "oshino-hakkai-camp",
@@ -6000,7 +6019,8 @@
     "needsVerify": true,
     "coordsGsiChecked": true,
     "address": "静岡県榛原郡川根本町犬間 長嶋公園敷地内",
-    "needsPrice": true
+    "needsPrice": true,
+    "needsVerifyNote": "実在と2026年の営業（9/19〜12/5の期間限定）は確認済み https://www.nap-camp.com/shizuoka/16796 。残る未確定は**同名2拠点の切り分け**で、「接岨」と「崎平」の YANBY OUTDOOR FIELD が別に登録されており、料金・電話がどちらに属するか決められていない（scripts/price24-check.md バッチ2）。実在を疑うフラグではなく、同定を詰める必要があるという意味"
   },
   {
     "id": "yamanakako-minami-auto",
@@ -6903,7 +6923,8 @@
       "「静波海岸キャンプサイト」という名称の施設は確認できず。静波海岸には静波リゾートキャンプサイト（牧之原市静波2228-43）と静波キャンプ（同2220-515）の2施設が実在する"
     ],
     "needsPrice": true,
-    "needsVerify": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-07 調査。「静波海岸キャンプサイト」という名称の施設は存在しない。静波海岸には静波リゾートキャンプサイト（牧之原市静波2228-43 https://www.nap-camp.com/shizuoka/15655 ）／静波キャンプ（静波2220-515）／オートキャンプ静波 の3施設が実在し、静波キャンプグランドは2020年1月31日に閉業している。soloComment の「リゾート内・全面芝生」は静波リゾートキャンプサイトと一致するが、名称・住所が確定するまで address は埋めていない"
   },
   {
     "id": "tenshino-mori-camp",
@@ -8801,7 +8822,8 @@
     "soloComment": "※詳細を確認中です。民宿・福士川根熊山荘の敷地内にあるオートサイトで、サイトの横を福士川が流れる。川音を聞きながら過ごせる。",
     "needsCoord": true,
     "officialUrl": "https://hukusshigawacamp.eyado.net/",
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerifyNote": "**このフラグの由来が記録に残っていない。**座標が 0,0 で needsCoord も立っており、地図上で所在を確かめられていない状態。address（山梨県南巨摩郡南部町福士15854）の一次情報も未確認。引き継ぎ §7-5「残る needsVerify 4件の確認」の対象 https://www.town.nanbu.yamanashi.jp/"
   },
   {
     "id": "sanogawa-camp",
@@ -8857,6 +8879,7 @@
     ],
     "priceVerified": true,
     "closedReason": "prohibited",
-    "closedNote": "南部町が河川公園として管理しており、公園内でのキャンプ・火気の使用は認められていない。かつて無料の野営地として知られていた場所だが、現在は利用できない"
+    "closedNote": "南部町が河川公園として管理しており、公園内でのキャンプ・火気の使用は認められていない。かつて無料の野営地として知られていた場所だが、現在は利用できない",
+    "needsVerifyNote": "佐野川河川公園として実在するが、**キャンプ場としての実態が無い。**南部町が公園として管理していて公園内でのキャンプ・火気の使用は認められていない（引き継ぎ §6-4）。status は closed / closedReason は prohibited にしてある https://www.town.nanbu.yamanashi.jp/"
   }
 ]
