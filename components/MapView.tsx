@@ -15,6 +15,9 @@ import {
 type Props = { camps: Campground[]; height?: number };
 
 function popupHtml(camp: Campground): string {
+  // 座標を持たない施設（needsCoord）では買い物リンクを出さない。
+  // @0,0 はギニア湾沖を指してしまう。
+  const hasCoord = camp.lat !== 0 && camp.lng !== 0;
   const shop =
     `https://www.google.com/maps/search/` +
     `スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`;
@@ -22,9 +25,11 @@ function popupHtml(camp: Campground): string {
     `<a href="/camp/${camp.slug}" class="camp-popup-link">` +
       `<span class="camp-popup-name">${camp.name}</span>` +
     `</a>` +
-    `<a href="${shop}" target="_blank" rel="noopener noreferrer" ` +
-      `style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">` +
-      `🛒 周辺の買い物を探す</a>`
+    (hasCoord
+      ? `<a href="${shop}" target="_blank" rel="noopener noreferrer" ` +
+        `style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">` +
+        `🛒 周辺の買い物を探す</a>`
+      : '')
   );
 }
 

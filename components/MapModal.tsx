@@ -254,14 +254,17 @@ function CampDetailPanel({
       <a href={`/camp/${camp.slug}`} className="panel-detail-link">
         詳細を見る →
       </a>
-      <a
-        href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#e8611f", textDecoration: "none" }}
-      >
-        🛒 周辺の買い物を探す
-      </a>
+      {/* 座標を持たない施設（needsCoord）では出さない。@0,0 はギニア湾沖を指す */}
+      {camp.lat !== 0 && camp.lng !== 0 && (
+        <a
+          href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#e8611f", textDecoration: "none" }}
+        >
+          🛒 周辺の買い物を探す
+        </a>
+      )}
     </div>
   );
 }

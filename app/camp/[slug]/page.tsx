@@ -27,14 +27,17 @@ export async function generateMetadata({
 
   const title = `${camp.name}【${camp.prefecture}・${camp.area}】`;
   // 料金が未確認の施設は、検索結果に出る description にも金額を書かない
-  const description =
+  // soloComment は実態が確定するまで空にすることがある（推測で埋めない方針）。
+  // 空のまま連結すると description が半角スペースで始まるので trim する。
+  const description = (
     camp.type === "wild"
       ? `${camp.soloComment} 無料。${camp.season}。`
       : camp.priceVerified !== true
         ? `${camp.soloComment} 料金は未確認。${camp.season}営業。`
         : camp.priceMin === 0 && camp.priceMax === 0
           ? `${camp.soloComment} 料金は要問合せ。${camp.season}営業。`
-          : `${camp.soloComment} 最安値${camp.priceMin.toLocaleString()}円〜。${camp.season}営業。`;
+          : `${camp.soloComment} 最安値${camp.priceMin.toLocaleString()}円〜。${camp.season}営業。`
+  ).trim();
 
   return {
     title,
@@ -428,14 +431,21 @@ export default async function CampDetailPage({
                 >
                   📍 Googleマップで開く
                 </a>
-                <a
-                  href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-slate-600 border border-slate-300 rounded-lg font-mono text-sm hover:bg-slate-100 transition-colors"
-                >
-                  🛒 周辺施設を探す
-                </a>
+                {/*
+                  座標を持たない施設（needsCoord）では出さない。
+                  @0,0 はギニア湾沖を指すので、リンク先が完全に無関係な場所になる。
+                  「Googleマップで開く」は施設名＋住所で引くので座標が無くても成立する。
+                */}
+                {camp.lat !== 0 && camp.lng !== 0 && (
+                  <a
+                    href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-slate-600 border border-slate-300 rounded-lg font-mono text-sm hover:bg-slate-100 transition-colors"
+                  >
+                    🛒 周辺施設を探す
+                  </a>
+                )}
                 <a
                   href={`https://www.google.com/search?q=${encodeURIComponent(camp.name)}&tbm=isch`}
                   target="_blank"
