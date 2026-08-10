@@ -2963,7 +2963,7 @@
     "name": "かぶと虫の森キャンプ場",
     "prefecture": "神奈川",
     "area": "相模原",
-    "status": "active",
+    "status": "unverified",
     "address": "神奈川県相模原市緑区牧野4015",
     "lat": 35.6197,
     "lng": 139.2548,
@@ -2999,11 +2999,11 @@
       "nearbyShop": ""
     },
     "season": "4月〜11月",
-    "soloComment": "雑木林に囲まれた自然体験型キャンプ場。夏はカブトムシ・クワガタが採れる昆虫の楽園。都心から1時間圏の手軽さで深い雑木林を体験できる。子どもがいないソロには静かな晩秋が特におすすめ。",
+    "soloComment": "",
     "lastVerified": "2026-05-27",
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。同名の「カブト虫の森」は和歌山県日高川町の施設で閉館済み。座標は八王子市南浅川町を指し、address（相模原市緑区牧野4015）と9.8km離れている。2026-08-07 追調査: データの住所（牧野4015）は牧野地区の実在施設（亀見橋バカンス村12822・藤野芸術の家4819）のどれとも一致せず、借用元が特定できない"
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。同名の「カブト虫の森」は和歌山県日高川町の施設で閉館済み。座標は八王子市南浅川町を指し、address（相模原市緑区牧野4015）と9.8km離れている。2026-08-07 追調査: データの住所（牧野4015）は牧野地区の実在施設（亀見橋バカンス村12822・藤野芸術の家4819）のどれとも一致せず、借用元が特定できない 2026-08-11 判断: district-sweep.js で相模原市の全 L1・L2・L3 に一致せず（ORPHAN） https://www.e-sagamihara.com/camp/ ／ https://midori.city.sagamihara.kanagawa.jp/category/play/camp/ 。相模原市は L1 網羅率80%で、ORPHAN を判定として読める2市町村の1つ（もう1つは道志村75%。scripts/sweep-l1-coverage-2026-08.md）。番地はどこの実在施設のものでもない（捏造型・§6-16）。**ただし ORPHAN の誤検出率は17%あるため、削除ではなく unverified とした。実在が確認できたら active に戻すこと。**地区の突き合わせは scripts/sweep-相模原市緑区牧野.md"
   },
   {
     "id": "sagamiko-pleasure-camp",
@@ -3059,7 +3059,7 @@
     "name": "奥牧野キャンプ場",
     "prefecture": "神奈川",
     "area": "道志川",
-    "status": "active",
+    "status": "unverified",
     "address": "神奈川県相模原市緑区牧野2108",
     "lat": 35.6145,
     "lng": 139.2217,
@@ -3095,12 +3095,12 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "直火OKで予約不要のシンプルなキャンプ場。設備は最低限だが格安で深い山中の静けさを楽しめる。道志川支流沿いの隠れ家的存在で、長期連泊派のソロキャンパーに密かに人気。夜の星空の暗さは格別。",
+    "soloComment": "",
     "lastVerified": "2026-05-27",
     "coordsGsiChecked": true,
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧に該当名なし https://www.e-sagamihara.com/camp/ 。**「奥牧野キャンプ場」の名で NAVITIME・タウンページに出る「牧野12822 / 042-787-0242」は、実在する別施設「亀見橋バカンス村」のものだった** https://www.e-sagamihara.com/camp/camp-627/ 。データの住所（牧野2108）は、牧野地区の実在施設（バカンス村12822・藤野芸術の家4819）のどれとも一致しない"
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧に該当名なし https://www.e-sagamihara.com/camp/ 。**「奥牧野キャンプ場」の名で NAVITIME・タウンページに出る「牧野12822 / 042-787-0242」は、実在する別施設「亀見橋バカンス村」のものだった** https://www.e-sagamihara.com/camp/camp-627/ 。データの住所（牧野2108）は、牧野地区の実在施設（バカンス村12822・藤野芸術の家4819）のどれとも一致しない 2026-08-11 判断: district-sweep.js で相模原市の全 L1・L2・L3 に一致せず（ORPHAN） https://www.e-sagamihara.com/camp/ ／ https://midori.city.sagamihara.kanagawa.jp/category/play/camp/ 。相模原市は L1 網羅率80%で、ORPHAN を判定として読める2市町村の1つ（もう1つは道志村75%。scripts/sweep-l1-coverage-2026-08.md）。番地はどこの実在施設のものでもない（捏造型・§6-16）。**ただし ORPHAN の誤検出率は17%あるため、削除ではなく unverified とした。実在が確認できたら active に戻すこと。**地区の突き合わせは scripts/sweep-相模原市緑区牧野.md"
   },
   {
     "id": "mikagi-camp",
