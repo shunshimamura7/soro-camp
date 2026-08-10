@@ -1,13 +1,13 @@
 # 地区スイープ: 南都留郡山中湖村山中
 
-実行: 2026-08-10 14:09:28　/　`node scripts/district-sweep.js --district "南都留郡山中湖村山中"`
+実行: 2026-08-10 14:16:59　/　`node scripts/district-sweep.js --district "南都留郡山中湖村山中"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **1** |
+| **MISSING**（実在側にあるがデータに無い） | **3** |
 | IN_DATA（両方にある） | 0 |
 | ORPHAN（データにあるがソースに無い） | 1 |
 | データ側のこの地区のレコード | 1 |
@@ -18,7 +18,7 @@
 
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
-| L1 | 山中湖観光協会 キャンプ特集 | OK | 0 | 0 | 宿泊施設 11 件のうち、本文にキャンプ関連語があった 0 件を残した（判定語: キャンプ/テント/オートサイト/バンガロー/野営） |
+| L1 | 山中湖観光協会 泊まる | OK | 9 | 2 | 一覧は先頭5ページまで / 住所を取りに行く詳細ページを 60 件で打ち切った（対象 192 件）。**打ち切った分はこの検査に載らない** / 宿泊施設 192 件のうち、本文にキャンプ関連語があった 9 件を残した（判定語: キャンプ/テント/オートサイト/バンガロー/野営） |
 | L2 | なっぷ yamanashi/yamanakako_oshino | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 山中湖村（cit_194250000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 6 | 0 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_194250000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_194250000/g2_04/page_3/ → HTTP_404 |
 | L2 | hinata スポット 山中湖・忍野（koushinetsu/yamanashi/2004） | OK | 18 | 1 | 一覧は先頭3ページまで |
@@ -29,8 +29,12 @@
 
 取得したページ:
 
-- `L1` https://lake-yamanakako.com/feature/camp → 200（キャッシュ）
-  - 詳細ページ 11 件（住所の取得のため）
+- `L1` https://lake-yamanakako.com/reserve → 200（キャッシュ）
+- `L1` https://lake-yamanakako.com/reserve?page=2 → 200（キャッシュ）
+- `L1` https://lake-yamanakako.com/reserve?page=3 → 200（キャッシュ）
+- `L1` https://lake-yamanakako.com/reserve?page=4 → 200（キャッシュ）
+- `L1` https://lake-yamanakako.com/reserve?page=5 → 200（キャッシュ）
+  - 詳細ページ 60 件（住所の取得のため）
 - `L2` https://www.nap-camp.com/yamanashi/yamanakako_oshino/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/yamanashi/yamanakako_oshino/list?page=2 → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_194250000/g2_04/ → 200（キャッシュ）
@@ -54,7 +58,23 @@
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. moss camp field
+### 1. キャンプ・アンド・キャビンズ山中湖
+
+- **分類**: MISSING
+- **confidence**: HIGH（層: L1）
+- **住所**: 山梨県南都留郡山中湖村山中287-1
+- **出典**:
+  - `L1` 山中湖観光協会 泊まる — https://lake-yamanakako.com/reserve/10531
+
+### 2. 富士見荘キャンプ場
+
+- **分類**: MISSING
+- **confidence**: HIGH（層: L1）
+- **住所**: 山梨県南都留郡山中湖村山中339-3
+- **出典**:
+  - `L1` 山中湖観光協会 泊まる — https://lake-yamanakako.com/reserve/10276
+
+### 3. moss camp field
 
 - **分類**: MISSING
 - **confidence**: MID（層: L2）
@@ -71,7 +91,7 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 山中湖観光協会 キャンプ特集 | 0 | 6 | 0 | 0% | yamanakako-misaki, komeidoso-auto, muraei-yamanakako, fujigoko-auto-camp, fujinomori-yamanakako, yamanakako-minami-auto |
+| 山中湖観光協会 泊まる | 9 | 6 | 1 | 17% | yamanakako-misaki, komeidoso-auto, fujigoko-auto-camp, fujinomori-yamanakako, yamanakako-minami-auto |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 

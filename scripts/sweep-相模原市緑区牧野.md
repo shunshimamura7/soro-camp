@@ -1,16 +1,16 @@
 # 地区スイープ: 相模原市緑区牧野
 
-実行: 2026-08-10 10:26:23　/　`node scripts/district-sweep.js --district "相模原市緑区牧野"`
+実行: 2026-08-10 14:19:22　/　`node scripts/district-sweep.js --district "相模原市緑区牧野"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **4** |
-| IN_DATA（両方にある） | 0 |
+| **MISSING**（実在側にあるがデータに無い） | **3** |
+| IN_DATA（両方にある） | 1 |
 | ORPHAN（データにあるがソースに無い） | 2 |
-| データ側のこの地区のレコード | 2 |
+| データ側のこの地区のレコード | 3 |
 
 ## 必須検証
 
@@ -19,7 +19,7 @@
 | 期待 | 結果 | 実際 |
 |---|---|---|
 | 亀見橋バカンス村 が MISSING かつ confidence HIGH | ✅ PASS | 神奈川県相模原市緑区牧野12822 / 相模原市緑区牧野12822 |
-| 藤野芸術の家 が MISSING かつ confidence HIGH | ✅ PASS | 神奈川県相模原市緑区牧野4819 |
+| fujino-art-camp が IN_DATA（掲載済み。ソース側と一致し続けているか） | ✅ PASS | 藤野芸術の家キャンプ場（名前・HIGH） |
 | kabutomushi-mori-camp が ORPHAN | ✅ PASS | 神奈川県相模原市緑区牧野4015 |
 | okumakino-camp が ORPHAN | ✅ PASS | 神奈川県相模原市緑区牧野2108 |
 
@@ -32,7 +32,7 @@
 | L1 | 相模原市観光協会 キャンプ場一覧 | OK | 22 | 3 |  |
 | L1 | 相模原市 ぐるっと緑区ミドナビ（市公式）キャンプ | OK | 17 | 2 |  |
 | L2 | なっぷ kanagawa/sagamihara | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
-| L2 | じゃらん観光ガイド 相模原市緑区（cit_141510000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 18 | 1 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_141510000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_141510000/g2_04/page_3/ → HTTP_429 |
+| L2 | じゃらん観光ガイド 相模原市緑区（cit_141510000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 18 | 1 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_141510000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_141510000/g2_04/page_3/ → HTTP_404 |
 | L2 | hinata スポット 相模原（kanto/kanagawa/1906） | OK | 29 | 3 | 一覧は先頭3ページまで |
 | L2 | TAKIBI | UNREACHABLE | 0 | 0 | https://takibi-reservation.space/ → UNREACHABLE: fetch failed |
 | L3 | キャンナビ（japancamp.jp）神奈川県 | OK | 69 | 0 | 一覧は先頭8ページまで（無いページは404として記録される） / https://japancamp.jp/camp_area/14-kanagawa/page/4/ → HTTP_404 / https://japancamp.jp/camp_area/14-kanagawa/page/5/ → HTTP_404 / https://japancamp.jp/camp_area/14-kanagawa/page/6/ → HTTP_404 / https://japancamp.jp/camp_area/14-kanagawa/page/7/ → HTTP_404 / https://japancamp.jp/camp_area/14-kanagawa/page/8/ → HTTP_404 |
@@ -50,7 +50,7 @@
 - `L2` https://www.nap-camp.com/kanagawa/sagamihara/list?page=2 → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_141510000/g2_04/ → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_141510000/g2_04/page_2/ → 404
-- `L2` https://www.jalan.net/kankou/cit_141510000/g2_04/page_3/ → 429
+- `L2` https://www.jalan.net/kankou/cit_141510000/g2_04/page_3/ → 404
   - 詳細ページ 18 件（住所の取得のため）
 - `L2` https://camp-spot.hinata.me/kanto/kanagawa/1906/list → 200（キャッシュ）
 - `L2` https://camp-spot.hinata.me/kanto/kanagawa/1906/list?page=2 → 200（キャッシュ）
@@ -92,17 +92,7 @@
   - `L1` 相模原市観光協会 キャンプ場一覧 — https://www.e-sagamihara.com/camp/camp-622/
   - `L2` hinata スポット 相模原（kanto/kanagawa/1906） — https://camp-spot.hinata.me/spots/relax-fujino
 
-### 3. 藤野芸術の家キャンプ場
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1 + L2）
-- **住所**: 神奈川県相模原市緑区牧野4819
-- **表記ゆれ**: 藤野芸術の家キャンプ場 / 藤野芸術の家
-- **出典**:
-  - `L1` 相模原市観光協会 キャンプ場一覧 — https://www.e-sagamihara.com/camp/camp-668/
-  - `L2` hinata スポット 相模原（kanto/kanagawa/1906） — https://camp-spot.hinata.me/spots/fujino-art
-
-### 4. 藤野倶楽部
+### 3. 藤野倶楽部
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1）
@@ -118,8 +108,8 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 相模原市観光協会 キャンプ場一覧 | 22 | 14 | 11 | 79% | doshi-no-yu-camp, ogurabashi-kasenjiki, takadabashi-kasenjiki |
-| 相模原市 ぐるっと緑区ミドナビ（市公式）キャンプ | 17 | 14 | 9 | 64% | aone, doshi-no-yu-camp, sagamiko-pleasure-camp, ogurabashi-kasenjiki, takadabashi-kasenjiki |
+| 相模原市観光協会 キャンプ場一覧 | 22 | 15 | 12 | 80% | doshi-no-yu-camp, ogurabashi-kasenjiki, takadabashi-kasenjiki |
+| 相模原市 ぐるっと緑区ミドナビ（市公式）キャンプ | 17 | 15 | 9 | 60% | aone, doshi-no-yu-camp, sagamiko-pleasure-camp, ogurabashi-kasenjiki, takadabashi-kasenjiki, fujino-art-camp |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 
@@ -135,7 +125,9 @@
 
 ## IN_DATA — 両方にある
 
-なし。
+| データ側 | ソース側の名前 | 一致の根拠 | confidence | 層 |
+|---|---|---|---|---|
+| `fujino-art-camp` 藤野芸術の家キャンプ場 | 藤野芸術の家キャンプ場 | 名前 | HIGH | L1+L2 |
 
 ## 住所が空で、どの地区のスイープにも載らないレコード（全データ横断）
 

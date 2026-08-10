@@ -1,6 +1,6 @@
 # 地区スイープ: 足柄上郡山北町虫沢
 
-実行: 2026-08-10 10:26:42　/　`node scripts/district-sweep.js --district "足柄上郡山北町虫沢"`
+実行: 2026-08-10 14:19:42　/　`node scripts/district-sweep.js --district "足柄上郡山北町虫沢"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
@@ -21,7 +21,7 @@
 | L1 | 山北町公式 キャンプ場の紹介 | OK | 7 | 0 | 施設名・電話・料金の表。**住所欄が無い**ので名前のみ |
 | L1 | 山北町観光協会 自然に泊まる | OK | 9 | 0 | 町公式とは別ページ・別構造で、町公式は観光協会にリンクしていない。独立した2ソースとして数えている |
 | L2 | なっぷ kanagawa/ashigara | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
-| L2 | じゃらん観光ガイド 山北町（cit_143640000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 12 | 0 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_143640000/g2_04/page_2/ → HTTP_429 / https://www.jalan.net/kankou/cit_143640000/g2_04/page_3/ → HTTP_429 |
+| L2 | じゃらん観光ガイド 山北町（cit_143640000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 12 | 0 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_143640000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_143640000/g2_04/page_3/ → HTTP_404 |
 | L2 | hinata スポット 足柄（kanto/kanagawa/1909） | OK | 24 | 0 | 一覧は先頭3ページまで |
 | L2 | TAKIBI | UNREACHABLE | 0 | 0 | https://takibi-reservation.space/ → UNREACHABLE: fetch failed |
 | L3 | キャンナビ（japancamp.jp）神奈川県 | OK | 69 | 0 | 一覧は先頭8ページまで（無いページは404として記録される） / https://japancamp.jp/camp_area/14-kanagawa/page/4/ → HTTP_404 / https://japancamp.jp/camp_area/14-kanagawa/page/5/ → HTTP_404 / https://japancamp.jp/camp_area/14-kanagawa/page/6/ → HTTP_404 / https://japancamp.jp/camp_area/14-kanagawa/page/7/ → HTTP_404 / https://japancamp.jp/camp_area/14-kanagawa/page/8/ → HTTP_404 |
@@ -36,8 +36,8 @@
 - `L2` https://www.nap-camp.com/kanagawa/ashigara/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/kanagawa/ashigara/list?page=2 → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_143640000/g2_04/ → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_143640000/g2_04/page_2/ → 429
-- `L2` https://www.jalan.net/kankou/cit_143640000/g2_04/page_3/ → 429
+- `L2` https://www.jalan.net/kankou/cit_143640000/g2_04/page_2/ → 404
+- `L2` https://www.jalan.net/kankou/cit_143640000/g2_04/page_3/ → 404
   - 詳細ページ 12 件（住所の取得のため）
 - `L2` https://camp-spot.hinata.me/kanto/kanagawa/1909/list → 200（キャッシュ）
 - `L2` https://camp-spot.hinata.me/kanto/kanagawa/1909/list?page=2 → 200（キャッシュ）
@@ -65,8 +65,8 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 山北町公式 キャンプ場の紹介 | 7 | 7 | 3 | 43% | ootaki, wellcamp-nishitanzawa, yamakita-camp, mitsumata-camp |
-| 山北町観光協会 自然に泊まる | 9 | 7 | 4 | 57% | wellcamp-nishitanzawa, yamakita-camp, mitsumata-camp |
+| 山北町公式 キャンプ場の紹介 | 7 | 8 | 3 | 38% | ootaki, wellcamp-nishitanzawa, yamakita-camp, mitsumata-camp, shiraishi-auto-camp |
+| 山北町観光協会 自然に泊まる | 9 | 8 | 5 | 63% | wellcamp-nishitanzawa, yamakita-camp, mitsumata-camp |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 

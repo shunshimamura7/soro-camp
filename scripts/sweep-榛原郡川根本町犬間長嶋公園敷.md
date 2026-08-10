@@ -1,6 +1,6 @@
 # 地区スイープ: 榛原郡川根本町犬間長嶋公園敷
 
-実行: 2026-08-10 10:26:53　/　`node scripts/district-sweep.js --district "榛原郡川根本町犬間長嶋公園敷"`
+実行: 2026-08-10 14:19:54　/　`node scripts/district-sweep.js --district "榛原郡川根本町犬間長嶋公園敷"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。

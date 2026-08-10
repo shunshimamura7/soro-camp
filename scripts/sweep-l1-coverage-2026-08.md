@@ -24,7 +24,7 @@
 | 山梨市 | （L1_NOT_FOUND） | – | 1 | – | – | **使えない** |
 | 川根本町 | 川根本町公式 キャンプ（詳細は川根本町観光協会 okuooi.gr.jp） | 5 | 8 | 5 | 63% | **使えない** |
 | 道志村 | 道志村役場観光情報サイト キャンプ場紹介 | 31 | 12 | 9 | 75% | 使える |
-| 山中湖村 | 山中湖観光協会 キャンプ特集 | 0 | 6 | 0 | 0% | **使えない** |
+| 山中湖村 | 山中湖観光協会 泊まる | 9 | 6 | 1 | 17% | **使えない** |
 | 北杜市 | （L1_NOT_FOUND） | – | 9 | – | – | **使えない** |
 | 伊豆市 | （L1_NOT_FOUND） | – | 8 | – | – | **使えない** |
 | 静岡市 | （L1_NOT_FOUND） | – | 5 | – | – | **使えない** |
@@ -44,7 +44,7 @@
 - **富士河口湖町 / 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる** — `picafuji-saiko`, `fujigane-kogen`, `shojiko-camping`, `kawaguchiko-hanto`, `retreat-camp-mahoroba`, `pica-fujiyama-camp`, `camp-akaike`, `oishii-camp`
 - **川根本町 / 川根本町公式 キャンプ（詳細は川根本町観光協会 okuooi.gr.jp）** — `okooigawa-lake`, `sumatakyo-camp`, `fudonotaki-auto`
 - **道志村 / 道志村役場観光情報サイト キャンプ場紹介** — `woodsman-camp`, `suigennnomori`, `doshi-mori-cottage`
-- **山中湖村 / 山中湖観光協会 キャンプ特集** — `yamanakako-misaki`, `komeidoso-auto`, `muraei-yamanakako`, `fujigoko-auto-camp`, `fujinomori-yamanakako`, `yamanakako-minami-auto`
+- **山中湖村 / 山中湖観光協会 泊まる** — `yamanakako-misaki`, `komeidoso-auto`, `fujigoko-auto-camp`, `fujinomori-yamanakako`, `yamanakako-minami-auto`
 
 ## この測り方の限界
 

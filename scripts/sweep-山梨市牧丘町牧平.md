@@ -1,6 +1,6 @@
 # 地区スイープ: 山梨市牧丘町牧平
 
-実行: 2026-08-10 10:26:52　/　`node scripts/district-sweep.js --district "山梨市牧丘町牧平"`
+実行: 2026-08-10 14:19:52　/　`node scripts/district-sweep.js --district "山梨市牧丘町牧平"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。

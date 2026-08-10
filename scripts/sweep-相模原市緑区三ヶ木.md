@@ -1,6 +1,6 @@
 # 地区スイープ: 相模原市緑区三ヶ木
 
-実行: 2026-08-10 10:26:29　/　`node scripts/district-sweep.js --district "相模原市緑区三ヶ木"`
+実行: 2026-08-10 14:19:29　/　`node scripts/district-sweep.js --district "相模原市緑区三ヶ木"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
@@ -67,8 +67,8 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 相模原市観光協会 キャンプ場一覧 | 22 | 14 | 11 | 79% | doshi-no-yu-camp, ogurabashi-kasenjiki, takadabashi-kasenjiki |
-| 相模原市 ぐるっと緑区ミドナビ（市公式）キャンプ | 17 | 14 | 9 | 64% | aone, doshi-no-yu-camp, sagamiko-pleasure-camp, ogurabashi-kasenjiki, takadabashi-kasenjiki |
+| 相模原市観光協会 キャンプ場一覧 | 22 | 15 | 12 | 80% | doshi-no-yu-camp, ogurabashi-kasenjiki, takadabashi-kasenjiki |
+| 相模原市 ぐるっと緑区ミドナビ（市公式）キャンプ | 17 | 15 | 9 | 60% | aone, doshi-no-yu-camp, sagamiko-pleasure-camp, ogurabashi-kasenjiki, takadabashi-kasenjiki, fujino-art-camp |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 

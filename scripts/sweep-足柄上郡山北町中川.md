@@ -1,16 +1,16 @@
 # 地区スイープ: 足柄上郡山北町中川
 
-実行: 2026-08-10 10:27:00　/　`node scripts/district-sweep.js --district "足柄上郡山北町中川"`
+実行: 2026-08-10 14:20:00　/　`node scripts/district-sweep.js --district "足柄上郡山北町中川"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **12** |
-| IN_DATA（両方にある） | 3 |
+| **MISSING**（実在側にあるがデータに無い） | **8** |
+| IN_DATA（両方にある） | 5 |
 | ORPHAN（データにあるがソースに無い） | 1 |
-| データ側のこの地区のレコード | 4 |
+| データ側のこの地区のレコード | 6 |
 
 ## ソースの取得結果
 
@@ -68,16 +68,7 @@
   - `L2` じゃらん観光ガイド 山北町（cit_143640000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_14364ca3430055125/
   - `L2` hinata スポット 足柄（kanto/kanagawa/1909） — https://camp-spot.hinata.me/spots/bowerhouse
 
-### 2. 白石オートキャンプ場
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1 + L2）
-- **住所**: 神奈川県足柄上郡山北町中川字相馬沢870-3
-- **出典**:
-  - `L1` 山北町観光協会 自然に泊まる — https://www.yamakita.net/stay/detail.php?id=6&type=2
-  - `L2` hinata スポット 足柄（kanto/kanagawa/1909） — https://camp-spot.hinata.me/spots/shiraishi
-
-### 3. 大石キャンプ場
+### 2. 大石キャンプ場
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1 + L2）
@@ -86,15 +77,7 @@
   - `L1` 山北町観光協会 自然に泊まる — https://www.yamakita.net/stay/detail.php?id=5&type=2
   - `L2` hinata スポット 足柄（kanto/kanagawa/1909） — https://camp-spot.hinata.me/spots/oishi-camp
 
-### 4. 西丹沢中川ロッヂ
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1）
-- **住所**: 神奈川県足柄上郡山北町中川字小塚897-111
-- **出典**:
-  - `L1` 山北町観光協会 自然に泊まる — https://www.yamakita.net/stay/detail.php?id=11&type=2
-
-### 5. 笹子沢バンガロー
+### 3. 笹子沢バンガロー
 
 - **分類**: MISSING
 - **confidence**: MID（層: L2）
@@ -105,27 +88,7 @@
   - `L2` じゃらん観光ガイド 山北町（cit_143640000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_14364ca3430052681/
   - `L2` hinata スポット 足柄（kanto/kanagawa/1909） — https://camp-spot.hinata.me/spots/sasagozawa
 
-### 6. 西丹沢中川ロッヂ
-
-- **分類**: MISSING
-- **confidence**: MID（層: L2 + L3）
-- **住所**: 神奈川県足柄上郡山北町中川 / 神奈川県足柄上郡山北町中川897-111 / 足柄上郡山北町中川897-111
-- **出典**:
-  - `L2` じゃらん観光ガイド 山北町（cit_143640000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_14364ca3430055180/
-  - `L2` hinata スポット 足柄（kanto/kanagawa/1909） — https://camp-spot.hinata.me/spots/nishitanzawanakagawa
-  - `L3` キャンナビ（japancamp.jp）神奈川県 — https://japancamp.jp/camp_area/14-kanagawa/
-  - `L3` キャンナビ（japancamp.jp）神奈川県 — https://japancamp.jp/camp_area/14-kanagawa/page/2/
-  - `L3` キャンナビ（japancamp.jp）神奈川県 — https://japancamp.jp/camp_area/14-kanagawa/page/3/
-
-### 7. 白石オートキャンプ場
-
-- **分類**: MISSING
-- **confidence**: LOW（層: L2）
-- **住所**: 神奈川県足柄上郡山北町中川
-- **出典**:
-  - `L2` じゃらん観光ガイド 山北町（cit_143640000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_14364ca3430133613/
-
-### 8. 大滝キャンプ場
+### 4. 大滝キャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -134,7 +97,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 山北町（cit_143640000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_14364ca3430052679/
 
-### 9. SPRINGSVILLAGE足柄・丹沢温泉リゾート＆グランピング
+### 5. SPRINGSVILLAGE足柄・丹沢温泉リゾート＆グランピング
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -142,7 +105,7 @@
 - **出典**:
   - `L2` hinata スポット 足柄（kanto/kanagawa/1909） — https://camp-spot.hinata.me/spots/tokinosumika-camp
 
-### 10. 奥箒沢山の家
+### 6. 奥箒沢山の家
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2 + L3）
@@ -153,7 +116,7 @@
   - `L3` キャンナビ（japancamp.jp）神奈川県 — https://japancamp.jp/camp_area/14-kanagawa/page/2/
   - `L3` キャンナビ（japancamp.jp）神奈川県 — https://japancamp.jp/camp_area/14-kanagawa/page/3/
 
-### 11. 箒沢荘グランピングエリア杢
+### 7. 箒沢荘グランピングエリア杢
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -161,7 +124,7 @@
 - **出典**:
   - `L2` hinata スポット 足柄（kanto/kanagawa/1909） — https://camp-spot.hinata.me/spots/glumping_moku
 
-### 12. KINOBA
+### 8. KINOBA
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -176,8 +139,8 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 山北町公式 キャンプ場の紹介 | 7 | 7 | 3 | 43% | ootaki, wellcamp-nishitanzawa, yamakita-camp, mitsumata-camp |
-| 山北町観光協会 自然に泊まる | 9 | 7 | 4 | 57% | wellcamp-nishitanzawa, yamakita-camp, mitsumata-camp |
+| 山北町公式 キャンプ場の紹介 | 7 | 8 | 3 | 38% | ootaki, wellcamp-nishitanzawa, yamakita-camp, mitsumata-camp, shiraishi-auto-camp |
+| 山北町観光協会 自然に泊まる | 9 | 8 | 5 | 63% | wellcamp-nishitanzawa, yamakita-camp, mitsumata-camp |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 
@@ -197,6 +160,8 @@
 |---|---|---|---|---|
 | `nishitanzawa-mountbridge` 西丹沢マウントブリッジキャンプ場 | マウントブリッジキャンプ場 | 名前 | HIGH | L1+L2+L3 |
 | `ootaki` 西丹沢大滝キャンプ場 | 西丹沢 大滝キャンプ場 | 名前 | HIGH | L1+L2+L3 |
+| `shiraishi-auto-camp` 白石オートキャンプ場 | 白石オートキャンプ場 | 名前 | HIGH | L1+L2 |
+| `nishitanzawa-nakagawa-lodge` 西丹沢中川ロッヂ | 西丹沢中川ロッヂ | 名前 | HIGH | L1+L2+L3 |
 | `wellcamp-nishitanzawa` ウェルキャンプ西丹沢 | ウェルキャンプ西丹沢 | 名前 | MID | L2+L3 |
 
 ## 住所が空で、どの地区のスイープにも載らないレコード（全データ横断）

@@ -1,6 +1,6 @@
 # 地区スイープ: 南巨摩郡南部町
 
-実行: 2026-08-10 10:26:57　/　`node scripts/district-sweep.js --district "南巨摩郡南部町"`
+実行: 2026-08-10 14:19:58　/　`node scripts/district-sweep.js --district "南巨摩郡南部町"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。

@@ -1,13 +1,13 @@
 # 地区スイープ: 南都留郡富士河口湖町精進
 
-実行: 2026-08-10 10:27:45　/　`node scripts/district-sweep.js --district "南都留郡富士河口湖町精進"`
+実行: 2026-08-10 14:24:28　/　`node scripts/district-sweep.js --district "南都留郡富士河口湖町精進"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **2** |
+| **MISSING**（実在側にあるがデータに無い） | **3** |
 | IN_DATA（両方にある） | 2 |
 | ORPHAN（データにあるがソースに無い） | 0 |
 | データ側のこの地区のレコード | 2 |
@@ -18,7 +18,7 @@
 
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
-| L1 | 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる | OK | 17 | 1 | ホテル・旅館と同じ一覧。詳細ページの本文にキャンプ関連語があるかで選別している。町公式サイトはこのサイトへ誘導しているだけなので1ソース扱い（§6-15） / 宿泊施設 231 件のうち、本文にキャンプ関連語があった 17 件を残した（判定語: キャンプ/テント/オートサイト/バンガロー/野営） |
+| L1 | 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる | OK | 17 | 2 | ホテル・旅館と同じ一覧。詳細ページの本文にキャンプ関連語があるかで選別している。町公式サイトはこのサイトへ誘導しているだけなので1ソース扱い（§6-15） / 宿泊施設 231 件のうち、本文にキャンプ関連語があった 17 件を残した（判定語: キャンプ/テント/オートサイト/バンガロー/野営） |
 | L2 | なっぷ yamanashi/motosuko_nishiko_kawaguchiko_fuzjiyoshida_shojiko | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 富士河口湖町（cit_194300000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 22 | 0 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_194300000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_194300000/g2_04/page_3/ → HTTP_404 |
 | L2 | hinata スポット 河口湖・西湖・富士吉田・精進湖・本栖湖（koushinetsu/yamanashi/2005） | OK | 45 | 5 | 一覧は先頭3ページまで |
@@ -78,7 +78,16 @@
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. 精進レークサイドキャンプ
+### 1. キャンプあかいけ
+
+- **分類**: MISSING
+- **confidence**: HIGH（層: L1）
+- **住所**: 山梨県南都留郡富士河口湖精進550-127
+- **同じ番地に別名**: CAMP AKAIKE（キャンプ アカイケ）（同一施設の別表記か、敷地内の別施設か。番地では寄せていない）
+- **出典**:
+  - `L1` 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる — https://fujisan.ne.jp/sightseeing/6464/
+
+### 2. 精進レークサイドキャンプ
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1 + L2）
@@ -87,7 +96,7 @@
   - `L1` 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる — https://fujisan.ne.jp/sightseeing/4019/
   - `L2` hinata スポット 河口湖・西湖・富士吉田・精進湖・本栖湖（koushinetsu/yamanashi/2005） — https://camp-spot.hinata.me/spots/shojin_lake
 
-### 2. 精進湖自由キャンプ場
+### 3. 精進湖自由キャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -102,7 +111,7 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる | 17 | 11 | 3 | 27% | picafuji-saiko, fujigane-kogen, shojiko-camping, kawaguchiko-hanto, retreat-camp-mahoroba, pica-fujiyama-camp, camp-akaike, oishii-camp |
+| 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる | 17 | 13 | 6 | 46% | picafuji-saiko, fujigane-kogen, shojiko-camping, kawaguchiko-hanto, retreat-camp-mahoroba, pica-fujiyama-camp, oishii-camp |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 

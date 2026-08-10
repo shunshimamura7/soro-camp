@@ -380,6 +380,10 @@ const OLD_MUNI_ALIASES = [
   [/南巨摩郡富沢町/g, '南巨摩郡南部町'],
   // 2005 牧之原市（榛原町・相良町）
   [/榛原郡(?:榛原町|相良町)/g, '牧之原市'],
+  // **ソース側の「町」抜け。**富士河口湖町観光連盟が「南都留郡富士河口湖精進550-127」と
+  // 書いていた（キャンプあかいけ）。市町村が取れないとその施設は
+  // **どの地区にも載らず、掲載漏れの検査から丸ごと落ちる。**
+  [/富士河口湖(?!町)/g, '富士河口湖町'],
 ];
 
 function applyMuniAliases(addr) {
@@ -870,12 +874,18 @@ const SRC_DOSHI_VILLAGE = {
 };
 
 /* ---- 山梨・山中湖村 ──────────────────────────────────────────────────
- * 観光協会のキャンプ特集。**キャンプ場以外のスポットも混ざる**
- * （クラフトの里ダラスヴィレッジが入っていた）ので本文で判定する。
+ * 観光協会の「泊まる」一覧。ホテル・ペンションとキャンプ場が混ざるので本文で判定する。
+ *
+ * **最初は「キャンプ特集」(/feature/camp) を登録して 0/6 の網羅率0%になった。**
+ * 原因はデータ側ではなくソース選定の誤りで、特集ページの HTML から取れる
+ * リンク11件は全部「山中湖明神山パノラマ台」「石割神社」「遊覧船 白鳥の湖号」
+ * といった**周辺の観光スポット**だった。キャンプ場（/reserve/…）は
+ * このページの生 HTML には1件も出てこない。
+ * **一覧に見えるページが一覧とは限らない。中身を数えて確かめること。**
  *
  * 判定範囲は `<h1>` から「住所」の手前まで。**ページ全体を見てはいけない。**
  * このサイトはナビゲーションに「キャンプ」の語があり、全ページが通ってしまう。
- * 実測: クラフトの里は落ち、村営山中湖キャンプ場と湖山荘キャンプ場は通った。
+ * 実測: クラフトの里ダラスヴィレッジは落ち、村営山中湖キャンプ場と湖山荘キャンプ場は通った。
  */
 const SRC_YAMANAKAKO = {
   id: 'lake-yamanakako',
@@ -889,8 +899,10 @@ const SRC_YAMANAKAKO = {
     return e > 0 ? t.slice(0, e) : t.slice(0, 1200);
   },
   dropWithoutAddress: true,
-  label: '山中湖観光協会 キャンプ特集',
-  pages: ['https://lake-yamanakako.com/feature/camp'],
+  label: '山中湖観光協会 泊まる',
+  detailLimit: 60,
+  pages: [1, 2, 3, 4, 5].map(n => 'https://lake-yamanakako.com/reserve' + (n === 1 ? '' : `?page=${n}`)),
+  pageCapNote: '一覧は先頭5ページまで',
   list(html) {
     const urls = [...new Set(html.match(/https:\/\/lake-yamanakako\.com\/(?:spot|reserve)\/\d+/g) || [])];
     return urls.map(url => ({ name: null, url }));
@@ -1477,6 +1489,28 @@ function classify(merged, records, district) {
 
 const ORPHAN_TRUST_MIN = 0.7;
 
+/**
+ * `--l1-audit` の判定。**抽出結果を人が1件ずつ見て付けた。**
+ * 自動判定にしていないのは、「キャンプ場かどうか」が名前から機械では決まらないため
+ * （亀見橋バカンス村・藤野芸術の家は名前にキャンプが入らないキャンプ場）。
+ * L1 を足したら、ここも更新すること。
+ */
+const L1_AUDIT_VERDICT = [
+  { label: '相模原市 観光協会', total: 22, verdict: 'OK',
+    bad: ['本田蘭灯商店（ランタン専門店・中央区淵野辺）', '「Twilight SAGAMIHARA」（イベント記事・住所なし）'] },
+  { label: '相模原市 ミドナビ（市公式）', total: 17, verdict: 'OK',
+    bad: ['藤野倶楽部（バーベキュー場）'] },
+  { label: '厚木市 観光協会', total: 1, verdict: 'OK', bad: [] },
+  { label: '松田町 公式', total: 1, verdict: 'OK', bad: [] },
+  { label: '山北町 公式', total: 7, verdict: 'OK', bad: [] },
+  { label: '山北町 観光協会', total: 9, verdict: 'OK', bad: [] },
+  { label: '富士河口湖町 観光連盟', total: 17, verdict: 'OK', bad: [] },
+  { label: '川根本町 公式', total: 5, verdict: 'OK', bad: [] },
+  { label: '道志村 村公式', total: 31, verdict: 'OK', bad: ['貸し別荘 となり（貸別荘。村の一覧には入っている）'] },
+  { label: '山中湖村 観光協会（差し替え後）', total: 9, verdict: 'MIXED',
+    bad: ['東照館', 'the508', '三興荘', '小田急山中湖フォレストコテージ', '富月荘'] },
+];
+
 /** その市町村の「実在がほぼ確実」なレコード。 */
 function groundTruthRecords(records, muniKey) {
   return records.filter(r => {
@@ -1524,7 +1558,12 @@ function orphanTrustable(coverage) {
 
 const SELF_TEST = {
   '相模原市緑区牧野': {
-    missingHigh: ['亀見橋バカンス村', '藤野芸術の家'],
+    missingHigh: ['亀見橋バカンス村'],
+    // **2026-08-10 に藤野芸術の家キャンプ場を掲載したので、MISSING ではなく IN_DATA になった。**
+    // 期待値を IN_DATA に移してある。ここを MISSING のままにしておくと、
+    // 掲載した瞬間に必ず FAIL する検査になり、意味を失う。
+    // 亀見橋バカンス村は営業の現況が確認できず保留中なので MISSING のまま
+    inDataIds: ['fujino-art-camp'],
     orphanIds: ['kabutomushi-mori-camp', 'okumakino-camp'],
   },
 };
@@ -1544,6 +1583,14 @@ function runSelfTest(districtName, results) {
       label: `${name} が MISSING かつ confidence HIGH`,
       pass: !!found,
       detail: found ? found.bucket.addresses.join(' / ') : '出ていない',
+    });
+  }
+  for (const id of spec.inDataIds || []) {
+    const found = results.find(r => r.kind === 'IN_DATA' && r.record.id === id);
+    checks.push({
+      label: `${id} が IN_DATA（掲載済み。ソース側と一致し続けているか）`,
+      pass: !!found,
+      detail: found ? `${found.bucket.name}（${found.matchedBy || '名前'}・${found.bucket.confidence}）` : '一致していない',
     });
   }
   for (const id of spec.orphanIds) {
@@ -2317,6 +2364,99 @@ async function main() {
   const argv = process.argv.slice(2);
   const opts = { useCache: !argv.includes('--no-cache') };
   const records = loadRecords();
+
+  if (argv.includes('--l1-audit')) {
+    // 登録済みの全 L1 について、**取れた件数ではなく中身**を出す。
+    // 山中湖村で「キャンプ特集」を登録したら、取れた11件が全部
+    // 観光スポット（パノラマ台・神社・遊覧船）でキャンプ場0件だった。
+    // 件数だけ見ていると気づけない。名前を並べて人が見る。
+    const L = [];
+    L.push('# L1 の中身の点検（2026-08）');
+    L.push('');
+    L.push('`node scripts/district-sweep.js --l1-audit`');
+    L.push('');
+    L.push('**取れた件数ではなく、取れた施設名を全部出す。**');
+    L.push('山中湖村で「一覧に見えるページ」を登録したら、取れた11件が全部');
+    L.push('観光スポットでキャンプ場が0件だった（`yamanakako-hokuto-check-2026-08.md` K-1）。');
+    L.push('件数だけでは気づけないので、名前を並べて目で見る。');
+    L.push('');
+    L.push('## 判定');
+    L.push('');
+    L.push('| 判定 | 意味 |');
+    L.push('|---|---|');
+    L.push('| **OK** | 抽出結果がキャンプ場中心（キャンプ場でないものの混入が1割未満） |');
+    L.push('| **MIXED** | 宿泊施設等が混ざるが、キャンプ場も取れている |');
+    L.push('| **WRONG_URL** | 入口が一覧ではない。山中湖村と同じ型 → 正しい一覧を探して差し替え |');
+    L.push('');
+    L.push('| L1 | 抽出 | キャンプ場でないもの | 混入率 | 判定 |');
+    L.push('|---|---|---|---|---|');
+    for (const v of L1_AUDIT_VERDICT) {
+      L.push(`| ${v.label} | ${v.total} | ${v.bad.length ? v.bad.join(' / ') : '—'} | ${v.total ? Math.round(v.bad.length / v.total * 100) : 0}% | **${v.verdict}** |`);
+    }
+    L.push('');
+    L.push('**WRONG_URL は0件。**山中湖村の1件は K-1 で差し替え済み');
+    L.push('（`/feature/camp` → `/reserve`。差し替え前は抽出11件が全部観光スポットで、キャンプ場0件だった）。');
+    L.push('');
+    L.push('### 混入が MISSING に与える影響');
+    L.push('');
+    L.push('**混入した施設はそのまま MISSING に化ける。**');
+    L.push('相模原市観光協会の「本田蘭灯商店」は中央区淵野辺のランタン専門店だが、');
+    L.push('データに無いので MISSING として出る。**MISSING を候補にする前に業態を見ること**');
+    L.push('（2026-08-10 の MISSING HIGH 22件では、業態違いで2件が落ちた）。');
+    L.push('');
+    L.push('山中湖村は混入56%と高い。観光協会の「泊まる」がホテル・旅館の一覧で、');
+    L.push('本文判定を通り抜けたものが5件ある（旅館の紹介文にキャンプの語が入っていた）。');
+    L.push('**この市町村の MISSING は半分以上が宿泊施設だと思って見ること。**');
+    L.push('');
+    L.push('## この点検で見つけた検査側の問題');
+    L.push('');
+    L.push('### 1. 富士河口湖町の L1 に「町」抜けの住所があり、地区判定から丸ごと落ちていた');
+    L.push('');
+    L.push('富士河口湖町観光連盟が「キャンプあかいけ」の住所を');
+    L.push('**`南都留郡富士河口湖精進550-127`**（「町」が無い）と書いていた。');
+    L.push('市町村が取れないと `districtKey` が null になり、**その施設はどの地区にも載らない。**');
+    L.push('件数だけ見ていると「取れている17件」に含まれるので気づけない。');
+    L.push('`OLD_MUNI_ALIASES` に `富士河口湖(?!町)` → `富士河口湖町` を足して直した。');
+    L.push('');
+    L.push('### 2. 直した結果、既知の水増しが1件見えた');
+    L.push('');
+    L.push('「町」を補ったことで「キャンプあかいけ」が精進の MISSING HIGH に出るようになったが、');
+    L.push('**これは誤検出。**データには `camp-akaike`（CAMP AKAIKE）として既にあり、');
+    L.push('同じ地区の IN_DATA にも出ている。同じ施設が');
+    L.push('**ローマ字表記とかな表記で別バケットに割れた**ため（I-2 で見つけた名寄せの穴）。');
+    L.push('md には「同じ番地に別名」として注記が出ている。');
+    L.push('');
+    L.push('**MISSING の約9%はこの型の水増し**という既知の見積もりが、ここでも実例で確認された。');
+    L.push('');
+    for (const [muniKey, entry] of Object.entries(MUNI_SOURCES)) {
+      for (const src of entry.sources.filter(s => s.layer === 'L1')) {
+        process.stdout.write(`  ${muniKey} ${src.label} ... `);
+        const c = await collectSource(src, opts);
+        console.log(`${c.status} ${c.items.length}件`);
+        L.push(`## ${muniKey} — ${src.label}`);
+        L.push('');
+        L.push(`- 状態: ${c.status} / 抽出 ${c.items.length}件`);
+        L.push(`- 入口: ${src.pages[0]}${src.pages.length > 1 ? ` ほか${src.pages.length - 1}ページ` : ''}`);
+        if (src.bodyFilter) L.push('- 本文判定あり（宿泊施設の混在一覧）');
+        L.push('');
+        if (!c.items.length) {
+          L.push('**抽出0件。**入口が一覧でない可能性がある（山中湖村と同じ型）。');
+          L.push('');
+          continue;
+        }
+        L.push('| # | 施設名 | 住所 |');
+        L.push('|---|---|---|');
+        c.items.forEach((it, i) => {
+          L.push(`| ${i + 1} | ${mdEscape(it.name)} | ${mdEscape(it.address || '—')} |`);
+        });
+        L.push('');
+      }
+    }
+    const out = path.join(__dirname, 'l1-audit-2026-08.md');
+    fs.writeFileSync(out, L.join('\n'), 'utf8');
+    console.log(`\n→ ${path.relative(ROOT, out)}`);
+    return;
+  }
 
   if (argv.includes('--l1-coverage')) {
     await runL1Coverage(records, opts);

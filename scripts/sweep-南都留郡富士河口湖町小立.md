@@ -1,6 +1,6 @@
 # 地区スイープ: 南都留郡富士河口湖町小立
 
-実行: 2026-08-10 10:26:49　/　`node scripts/district-sweep.js --district "南都留郡富士河口湖町小立"`
+実行: 2026-08-10 14:19:49　/　`node scripts/district-sweep.js --district "南都留郡富士河口湖町小立"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
@@ -157,7 +157,7 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる | 17 | 11 | 3 | 27% | picafuji-saiko, fujigane-kogen, shojiko-camping, kawaguchiko-hanto, retreat-camp-mahoroba, pica-fujiyama-camp, camp-akaike, oishii-camp |
+| 富士河口湖町観光連盟 富士河口湖町観光情報サイト 泊まる | 17 | 13 | 5 | 38% | picafuji-saiko, fujigane-kogen, shojiko-camping, kawaguchiko-hanto, retreat-camp-mahoroba, pica-fujiyama-camp, camp-akaike, oishii-camp |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 

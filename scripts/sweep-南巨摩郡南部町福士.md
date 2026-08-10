@@ -1,6 +1,6 @@
 # 地区スイープ: 南巨摩郡南部町福士
 
-実行: 2026-08-10 10:26:55　/　`node scripts/district-sweep.js --district "南巨摩郡南部町福士"`
+実行: 2026-08-10 14:19:56　/　`node scripts/district-sweep.js --district "南巨摩郡南部町福士"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
@@ -19,7 +19,7 @@
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
 | L2 | なっぷ yamanashi/shimobe_minobu_hayakawa | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
-| L2 | じゃらん観光ガイド 南部町（cit_193660000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 4 | 4 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_193660000/g2_04/page_2/ → HTTP_429 / https://www.jalan.net/kankou/cit_193660000/g2_04/page_3/ → HTTP_429 |
+| L2 | じゃらん観光ガイド 南部町（cit_193660000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 4 | 4 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_193660000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_193660000/g2_04/page_3/ → HTTP_404 |
 | L2 | hinata スポット 下部・身延・早川（koushinetsu/yamanashi/2006） | OK | 8 | 4 | 一覧は先頭3ページまで |
 | L2 | TAKIBI | UNREACHABLE | 0 | 0 | https://takibi-reservation.space/ → UNREACHABLE: fetch failed |
 | L3 | キャンナビ（japancamp.jp）山梨県 | OK | 608 | 16 | 一覧は先頭8ページまで（無いページは404として記録される） |
@@ -43,8 +43,8 @@
 - `L2` https://www.nap-camp.com/yamanashi/shimobe_minobu_hayakawa/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/yamanashi/shimobe_minobu_hayakawa/list?page=2 → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_193660000/g2_04/ → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_193660000/g2_04/page_2/ → 429
-- `L2` https://www.jalan.net/kankou/cit_193660000/g2_04/page_3/ → 429
+- `L2` https://www.jalan.net/kankou/cit_193660000/g2_04/page_2/ → 404
+- `L2` https://www.jalan.net/kankou/cit_193660000/g2_04/page_3/ → 404
   - 詳細ページ 4 件（住所の取得のため）
 - `L2` https://camp-spot.hinata.me/koushinetsu/yamanashi/2006/list → 200（キャッシュ）
 - `L2` https://camp-spot.hinata.me/koushinetsu/yamanashi/2006/list?page=2 → 200（キャッシュ）
