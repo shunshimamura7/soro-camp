@@ -48,10 +48,42 @@ const COORD_FIXED = [
 /** 道志川流域の PREF_MISMATCH 4件。山梨の住所なのに座標が神奈川県側に落ちている */
 const DOSHI = ['tsubakiso-auto', 'sankoso-auto', 'doshi-keikoku', 'woodsman-camp'];
 
+/** 取得済み。しゅんの目視で GoogleマップURL の `!8m2!3d!4d`（実ピン）から取得 */
+const DONE = {
+  'ryokokubashi-camp':     { lat: 35.5386414, lng: 139.1137342, date: '2026-08-11' },
+  'new-tashiro-auto-camp': { lat: 35.526241,  lng: 139.037629,  date: '2026-08-11' },
+  'tsubakiso-auto':        { lat: 35.5316707, lng: 139.0581356, date: '2026-08-11' },
+  'doshi-keikoku':         { lat: 35.539544,  lng: 139.111221,  date: '2026-08-11' },
+  'woodsman-camp':         { lat: 35.5278004, lng: 139.0386523, date: '2026-08-11' },
+};
+
+/** 座標を取る必要が無くなったもの */
+const EXCLUDED = {
+  'murokubo-greenpark':
+    '**閉業のため対象外。**2026-08-11 に閉業が判明し `closed` にした。座標は不要',
+};
+
+/** 座標を取る前に別のことを確定させる必要があるもの */
+const HOLD = {
+  'sankoso-auto':
+    '**⚠ 要調査・保留。施設名の誤りの疑い。**Googleマップで「三光荘オートキャンプ場 道志村5347」も' +
+    '「三光荘 道志村」もヒットしない。かわりに「山光荘オートキャンプ」が' +
+    ' 35.4875176, 138.9678346 にあるが、**これは道志村ではない**（道志村の経度は139.0〜139.1）。' +
+    '`takizawaso`（滝沢園→滝沢荘）や `komeidoso-auto`（湖明荘→古明地荘）と同じ型。' +
+    '**座標を取る前に、実在と正式名称の確定が要る**',
+  'saiko-tsuhara-camp':
+    '**⚠ 住所が確定していない。**出典により西湖351（町観光連盟）と西湖2299（じゃらん）で割れている。' +
+    '**座標より先に住所を決めること。**割れたまま座標を取ると、どちらに合わせた座標か分からなくなる',
+};
+
 const state = new Map();
 for (const c of camps) if (c.needsCoord) state.set(c.id, 'needsCoord');
 for (const id of COORD_FIXED) if (!state.has(id)) state.set(id, 'COORD_FIXED候補');
 for (const id of DOSHI) if (!state.has(id)) state.set(id, '道志川流域(PREF_MISMATCH)');
+// 取得済み・対象外・保留は needsCoord が外れていても一覧に残す（進捗が分かるように）
+for (const id of [...Object.keys(DONE), ...Object.keys(EXCLUDED), ...Object.keys(HOLD)]) {
+  if (!state.has(id)) state.set(id, DONE[id] ? '取得済み' : (EXCLUDED[id] ? '対象外' : '保留'));
+}
 
 /** 市区町村。並び順のグループに使う */
 function muni(address) {
@@ -84,9 +116,11 @@ for (const [id, st] of state) {
   // 住所そのものが確定していないレコードがある。**座標を取る前に住所を決める必要がある**
   // ので、行に警告を出す（`saiko-tsuhara-camp` は出典により番地が割れている）。
   const addrWarn = (c.cautions || []).filter(x => /住所|出典/.test(x));
+  const done = DONE[id] || null;
   rows.push({
     id, name: c.name, address: c.address || '(住所なし)', coord, st,
     q: query(c), muni: muni(c.address), status: c.status, addrWarn,
+    done, excluded: EXCLUDED[id] || null, hold: HOLD[id] || null,
   });
 }
 
@@ -96,9 +130,19 @@ for (const r of rows) {
   if (!byMuni.has(r.muni)) byMuni.set(r.muni, []);
   byMuni.get(r.muni).push(r);
 }
+/**
+ * **次にやる塊を先頭に置く。**
+ * 残り件数（取得済み・対象外・保留を除いた数）が多い市区町村から並べる。
+ * 道志村は取得済みが多いので自動的に後ろに下がる。
+ */
+const remain = list => list.filter(r => !r.done && !r.excluded && !r.hold).length;
 const groups = [...byMuni.entries()]
-  .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], 'ja'));
-for (const [, list] of groups) list.sort((a, b) => a.id.localeCompare(b.id));
+  .sort((a, b) => remain(b[1]) - remain(a[1]) || b[1].length - a[1].length || a[0].localeCompare(b[0], 'ja'));
+for (const [, list] of groups) {
+  // グループ内は 未取得 → 保留 → 取得済み・対象外 の順
+  const rank = r => (r.done || r.excluded ? 2 : (r.hold ? 1 : 0));
+  list.sort((a, b) => rank(a) - rank(b) || a.id.localeCompare(b.id));
+}
 
 const L = [];
 L.push('# 座標の目視取得 作業リスト（2026-08）');
@@ -107,12 +151,28 @@ L.push('`node scripts/coord-worklist.js` で再生成できる。**データは�
 L.push('');
 L.push(`**対象 ${rows.length}件。**引き継ぎ §7 の A（しゅん本人がやる必要があるもの）。`);
 L.push('');
-const cnt = s => rows.filter(r => r.st === s).length;
-L.push(`- \`needsCoord\`（座標を持っていない）… ${cnt('needsCoord')}件`);
-L.push(`- COORD_FIXED候補（address は正しく座標が疑わしい）… ${cnt('COORD_FIXED候補')}件`);
-L.push(`- 道志川流域 PREF_MISMATCH（山梨の住所なのに座標が神奈川側）… ${cnt('道志川流域(PREF_MISMATCH)')}件`);
+const nDone = rows.filter(r => r.done).length;
+const nExc = rows.filter(r => r.excluded).length;
+const nHold = rows.filter(r => r.hold).length;
+const nLeft = rows.length - nDone - nExc - nHold;
+L.push('## 進捗');
 L.push('');
-L.push('**並び順は市区町村ごと。**近い施設を続けて開けたほうが速いため。');
+L.push('| | 件数 |');
+L.push('|---|---|');
+L.push(`| **✅ 取得済み** | **${nDone}** |`);
+L.push(`| 対象外（閉業など） | ${nExc} |`);
+L.push(`| ⚠ 保留（座標より先に決めることがある） | ${nHold} |`);
+L.push(`| **残り** | **${nLeft}** |`);
+L.push(`| 合計 | ${rows.length} |`);
+L.push('');
+const nextGroups = groups.filter(([, l]) => remain(l) > 0).slice(0, 3)
+  .map(([m, l]) => `**${m}${remain(l)}件**`);
+if (nextGroups.length) {
+  L.push(`次にやる塊: ${nextGroups.join(' → ')}。近い施設を続けて開けたほうが速い。`);
+  L.push('');
+}
+L.push('**並び順は市区町村ごとで、残り件数が多いところが先頭。**');
+L.push('グループ内は 未取得 → 保留 → 取得済み・対象外 の順。');
 L.push('');
 
 L.push('## 手順');
@@ -153,7 +213,17 @@ for (const [m, list] of groups) {
   L.push('|---|---|---|---|---|---|---|');
   list.forEach((r, i) => {
     const addr = r.address + (r.addrWarn.length ? `<br><sub>⚠ ${r.addrWarn.join(' / ')}</sub>` : '');
-    L.push(`| ${i + 1} | \`${r.id}\` | ${r.name}${r.status !== 'active' ? `<br><sub>status: ${r.status}</sub>` : ''} | ${addr} | ${r.coord} | ${r.st} | \`${r.q}\` |`);
+    let coord = r.coord, st = r.st, q = '`' + r.q + '`';
+    if (r.done) {
+      coord = `**${r.done.lat}, ${r.done.lng}**`;
+      st = `**✅ 取得済み ${r.done.date}**`;
+      q = '—（完了）';
+    } else if (r.excluded) {
+      st = r.excluded; q = '—';
+    } else if (r.hold) {
+      st = r.hold;
+    }
+    L.push(`| ${i + 1} | \`${r.id}\` | ${r.name}${r.status !== 'active' ? `<br><sub>status: ${r.status}</sub>` : ''} | ${addr} | ${coord} | ${st} | ${q} |`);
   });
   L.push('');
 }
@@ -166,7 +236,7 @@ L.push('');
 L.push('```');
 L.push('slug                      lat         lng');
 for (const [, list] of groups) {
-  for (const r of list) L.push(`${r.id.padEnd(26)}`);
+  for (const r of list) if (!r.done && !r.excluded) L.push(`${r.id.padEnd(26)}`);
 }
 L.push('```');
 L.push('');
