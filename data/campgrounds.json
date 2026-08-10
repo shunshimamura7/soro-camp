@@ -2053,8 +2053,8 @@
     "area": "道志村",
     "status": "active",
     "address": "山梨県南都留郡道志村4150",
-    "lat": 35.5478,
-    "lng": 139.1248,
+    "lat": 35.5316707,
+    "lng": 139.0581356,
     "coordsVerified": true,
     "priceMin": 2000,
     "priceMax": 4500,
@@ -2089,7 +2089,7 @@
     "season": "通年",
     "soloComment": "道志川源流エリアの老舗民宿併設キャンプ場。民宿の浴室をキャンパーも500円で利用可能。ソロ2,000円〜のリーズナブルな価格で道志川の清流サイトを独占。道志温泉も近く、温泉キャンプが楽しめる。",
     "tel": "0554-52-2056",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "priceVerified": true
   },
   {
@@ -2196,8 +2196,8 @@
     "area": "道志村",
     "status": "active",
     "address": "山梨県南都留郡道志村43",
-    "lat": 35.5607,
-    "lng": 139.1432,
+    "lat": 35.539544,
+    "lng": 139.111221,
     "coordsVerified": true,
     "priceMin": 1700,
     "priceMax": 3500,
@@ -2232,7 +2232,7 @@
     "season": "通年（12月〜3月は要確認）",
     "soloComment": "直火OKかつ予約不要で1,700円〜（入場700円+駐車1,000円）。道志川源流域の深い渓谷に囲まれ、夏は川遊び、冬は静寂の雪景色を独り占め。近隣の道の駅どうし温泉で入浴問題も解決。",
     "tel": "042-787-0088",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "priceVerified": true
   },
   {
@@ -2432,8 +2432,8 @@
     "area": "道志村",
     "status": "active",
     "address": "山梨県南都留郡道志村2438",
-    "lat": 35.5438,
-    "lng": 139.1536,
+    "lat": 35.5278004,
+    "lng": 139.0386523,
     "coordsVerified": true,
     "priceMin": 3500,
     "priceMax": 7000,
@@ -2468,7 +2468,7 @@
     },
     "season": "通年",
     "soloComment": "道志川沿いのおしゃれ系キャンプ場。ソロ専用区画が設けられており他のキャンパーに気を遣わず過ごせる環境が魅力。ウッドデッキからの川の眺めが絵になる。温水シャワー・ウォシュレット完備で快適性も高い。",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "priceVerified": true
   },
   {
@@ -9167,9 +9167,8 @@
     "status": "active",
     "address": "山梨県南都留郡道志村49",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.5386414,
+    "lng": 139.1137342,
     "priceMin": 3200,
     "priceMax": 4100,
     "priceNote": "**人数課金＋サイト料＋車両料の3階建て。**テント泊（通常期）大人700円＋サイト料2,000円に、バイク126cc〜500円／普通車・軽1,400円が加算される。ソロ（バイク）3,200円／ソロ（車）4,100円。繁忙期は車両料金が上がる。※オートキャンプ（サイトへの乗り入れ）は受け入れ不可",
@@ -9207,12 +9206,13 @@
     "season": "通年（年末年始休）",
     "soloComment": "",
     "tel": "042-787-2250",
-    "lastVerified": "2026-08-10",
+    "lastVerified": "2026-08-11",
     "priceVerified": true,
     "officialUrl": "http://yukawaya.a.la9.jp/",
     "cautions": [
       "オートキャンプ（サイトへの車の乗り入れ）は不可"
-    ]
+    ],
+    "coordsVerified": true
   },
   {
     "id": "new-tashiro-auto-camp",
@@ -9223,9 +9223,8 @@
     "status": "active",
     "address": "山梨県南都留郡道志村5910",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.526241,
+    "lng": 139.037629,
     "priceMin": 3000,
     "priceMax": 3000,
     "priceNote": "**人数課金＋テントサイト料＋駐車料の3階建て。**利用料金 中学生以上1,000円＋テントサイト利用料 1張1,000円＋駐車料（車1,000円／バイク1,000円）。ソロ3,000円（車・バイクとも同額）。キャンピングカーは3,000円でFサイト限定",
@@ -9264,9 +9263,10 @@
     "season": "通年（2月中旬〜3月上旬休）",
     "soloComment": "",
     "tel": "090-7713-8364",
-    "lastVerified": "2026-08-10",
+    "lastVerified": "2026-08-11",
     "priceVerified": true,
-    "officialUrl": "https://tashiro-autocamp.com/"
+    "officialUrl": "https://tashiro-autocamp.com/",
+    "coordsVerified": true
   },
   {
     "id": "murokubo-greenpark",
