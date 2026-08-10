@@ -407,8 +407,12 @@ function splitAddress(addr) {
   if (city) rest = rest.slice(city.length);
   const ward = (rest.match(/^(.{1,6}?区)/) || [])[1] || null;
   if (ward) rest = rest.slice(ward.length);
+  // 「中川字相馬沢」「中川字小塚」は大字が同じ中川。**字より下は落とす。**
+  // 落とさないと同じ大字が別地区に割れて、同じ市町村を何度も取りに行くことになる
+  // （白石オートキャンプ場と西丹沢中川ロッヂで実際に割れた）。
   const oaza = ((rest.match(/^([^\d]{1,14})/) || [])[1] || '')
     .replace(/[（(].*$/, '')
+    .replace(/字.*$/, '')
     .replace(/(?:地内|地先|先|内)$/, '');
   return { pref, gun, city, ward, oaza, tail: rest, normalized: a };
 }
@@ -832,6 +836,76 @@ const SRC_KAWANEHON = {
   },
 };
 
+/* ---- 山梨・道志村 ────────────────────────────────────────────────────
+ * 村役場の観光情報サイト。**キャンプ場だけの一覧**で、詳細ページに住所がある。
+ * 道志村には大字が無く住所が「道志村＋地番」で完結するので、
+ * データ側の12件も全部「道志村」1地区に入る。地区単位の一致率は
+ * 他の地区と同じ意味では読めない（md に明記する）。
+ */
+const SRC_DOSHI_VILLAGE = {
+  id: 'doshi-kanko-jp',
+  layer: 'L1',
+  kind: 'listDetail',
+  label: '道志村役場観光情報サイト キャンプ場紹介',
+  note: '村内のキャンプ場は数十軒あり、データ側12件との差は大きく出る前提',
+  pages: ['https://www.doshi-kanko.jp/camp/'],
+  list(html) {
+    const out = [];
+    const re = /<a href="(?:\.\.\/)?camp\/([a-z0-9_-]+)\/"[^>]*>([^<]{2,30})<\/a>/g;
+    const seen = new Set();
+    let m;
+    while ((m = re.exec(html))) {
+      const url = 'https://www.doshi-kanko.jp/camp/' + m[1] + '/';
+      if (seen.has(url)) continue;
+      seen.add(url);
+      out.push({ name: cleanText(m[2]), url });
+    }
+    return out;
+  },
+  address(html) {
+    const t = stripTags(html);
+    const m = t.match(/住所\s*(山梨県[^\s]{4,30})/);
+    return m ? tidyAddress(m[1]) : null;
+  },
+};
+
+/* ---- 山梨・山中湖村 ──────────────────────────────────────────────────
+ * 観光協会のキャンプ特集。**キャンプ場以外のスポットも混ざる**
+ * （クラフトの里ダラスヴィレッジが入っていた）ので本文で判定する。
+ *
+ * 判定範囲は `<h1>` から「住所」の手前まで。**ページ全体を見てはいけない。**
+ * このサイトはナビゲーションに「キャンプ」の語があり、全ページが通ってしまう。
+ * 実測: クラフトの里は落ち、村営山中湖キャンプ場と湖山荘キャンプ場は通った。
+ */
+const SRC_YAMANAKAKO = {
+  id: 'lake-yamanakako',
+  layer: 'L1',
+  kind: 'listDetail',
+  bodyFilter: CAMP_BODY_RE,
+  bodyScope(html) {
+    const s = html.indexOf('<h1');
+    const t = stripTags(html.slice(s < 0 ? 0 : s));
+    const e = t.indexOf('住所');
+    return e > 0 ? t.slice(0, e) : t.slice(0, 1200);
+  },
+  dropWithoutAddress: true,
+  label: '山中湖観光協会 キャンプ特集',
+  pages: ['https://lake-yamanakako.com/feature/camp'],
+  list(html) {
+    const urls = [...new Set(html.match(/https:\/\/lake-yamanakako\.com\/(?:spot|reserve)\/\d+/g) || [])];
+    return urls.map(url => ({ name: null, url }));
+  },
+  name(html) {
+    const m = html.match(/<title>([^<|]+)/);
+    return m ? cleanText(m[1]) : null;
+  },
+  address(html) {
+    const t = stripTags(html);
+    const m = t.match(/住所\s*(?:〒?\s*\d{3}-?\d{4})?\s*(山梨県[^\s]{4,30})/);
+    return m ? tidyAddress(m[1]) : null;
+  },
+};
+
 /* ---- L3 集約サイト（県単位。市区町村ページが無いので県で取って住所で絞る） ---- */
 
 function japanCamp(prefSlug, label) {
@@ -1045,6 +1119,116 @@ const MUNI_SOURCES = {
         reason:
           '町公式の一覧が観光協会の詳細ページへ全件直リンクしており、同じ元データ。独立した2ソースにならないので1ソースに畳んだ（§6-15）',
         checked: ['https://okuooi.gr.jp/outdoor/details.php?id=79'],
+      },
+    ],
+  },
+
+  /* ── 2026-08-10 追加（J-2 全地区スイープの上位6市町村） ───────────────── */
+
+  道志村: {
+    pref: '山梨',
+    sources: [
+      SRC_DOSHI_VILLAGE,
+      napCamp('otsuki_turushi', 'yamanashi'),
+      jalan('19422', '道志村'),
+      hinataSpot('koushinetsu/yamanashi/2003', '大月・都留'),
+      hinataSpot('koushinetsu/yamanashi/2004', '山中湖・忍野'),
+      SRC_TAKIBI,
+    ],
+  },
+
+  山中湖村: {
+    pref: '山梨',
+    sources: [
+      SRC_YAMANAKAKO,
+      napCamp('yamanakako_oshino', 'yamanashi'),
+      jalan('19425', '山中湖村'),
+      hinataSpot('koushinetsu/yamanashi/2004', '山中湖・忍野'),
+      SRC_TAKIBI,
+    ],
+  },
+
+  北杜市: {
+    pref: '山梨',
+    sources: [
+      napCamp('yatsygatake_kobuchisawa_kiyosato_oizumi', 'yamanashi'),
+      jalan('19209', '北杜市'),
+      hinataSpot('koushinetsu/yamanashi/2008', '八ヶ岳・小淵沢・清里・大泉'),
+      SRC_TAKIBI,
+    ],
+    l1NotFound: [
+      {
+        label: '北杜市観光協会（ほくとにいくと）',
+        reason:
+          '**施設の詳細ページに施設の住所が無く、載っているのは観光協会自身の所在地（北杜市高根町村山北割3261）。' +
+          'ここから住所を取ると §6-16 の借用をこちらから作ることになる。**' +
+          '引き継ぎが `flora-campsite` の注意として警告していたのと同じ住所。名前だけなら取れるが、' +
+          '北杜市は大字が多く住所が無いと地区を決められないので L1 として登録しない',
+        checked: ['https://www.hokuto-kanko.jp/spot/category/stay/', 'https://www.hokuto-kanko.jp/spot/campinngrandale/'],
+      },
+      {
+        label: '北杜市公式（市サイト）',
+        reason: 'キャンプ場の一覧が見つからない',
+        checked: ['https://www.hokuto-kanko.jp/spot/'],
+      },
+    ],
+  },
+
+  伊豆市: {
+    pref: '静岡',
+    sources: [
+      napCamp('izu', 'shizuoka'),
+      jalan('22222', '伊豆市'),
+      hinataSpot('tokai/shizuoka/2708', '中伊豆'),
+      SRC_TAKIBI,
+    ],
+    l1NotFound: [
+      {
+        label: '伊豆市観光情報サイト（kanko.city.izu.shizuoka.jp）',
+        reason:
+          '施設一覧・詳細とも JavaScript でしか描画されず、HTML には施設名も住所も出てこない（378KB 取得して0件）',
+        checked: ['https://kanko.city.izu.shizuoka.jp/form1.html?c1=4', 'https://kanko.city.izu.shizuoka.jp/form1.html?c1=4&pid=4917'],
+      },
+    ],
+  },
+
+  静岡市: {
+    pref: '静岡',
+    sources: [
+      napCamp('shizuoka_shimizu', 'shizuoka'),
+      jalan('22101', '静岡市葵区'),
+      jalan('22103', '静岡市清水区'),
+      hinataSpot('tokai/shizuoka/2711', '静岡・清水'),
+      SRC_TAKIBI,
+    ],
+    l1NotFound: [
+      {
+        label: 'しずおか観光ナビ（静岡市観光公式・visit-shizuoka.com）',
+        reason: 'スポット一覧にキャンプのジャンル分けが無く、一覧ページにキャンプ場が1件も出てこない',
+        checked: ['https://www.visit-shizuoka.com/spot/index.html', 'https://www.visit-shizuoka.com/spots/?genre=camp'],
+      },
+    ],
+  },
+
+  富士宮市: {
+    pref: '静岡',
+    sources: [
+      napCamp('gotenba_fuzi', 'shizuoka'),
+      jalan('22207', '富士宮市'),
+      hinataSpot('tokai/shizuoka/2710', '御殿場・富士'),
+      SRC_TAKIBI,
+    ],
+    l1NotFound: [
+      {
+        label: '富士宮市公式（市サイト）',
+        reason:
+          '**2025年5月にサイトをリニューアルしており、検索に出る施設ページのURL（/1025110000/p001691.html 型）が全部404。**新URLでのキャンプ場一覧を特定できていない',
+        checked: ['https://www.city.fujinomiya.lg.jp/1025110000/', 'https://www.city.fujinomiya.lg.jp/kanko/p001691.html'],
+      },
+      {
+        label: '富士宮市観光協会（fujinomiya.gr.jp）',
+        reason: 'トップにキャンプ場の記載が無く、スポット一覧（/spot/）は404',
+        checked: ['https://fujinomiya.gr.jp/', 'https://fujinomiya.gr.jp/spot/'],
       },
     ],
   },
@@ -1869,8 +2053,74 @@ function renderSummaryMd(done, records, startedAt) {
   }
   L.push('');
 
+  /* ── 今回回していない地区 ────────────────────────────────────────────
+   * **これを書かないと「MISSING 0件」と「そもそも調べていない」が同じ見た目になる。**
+   * データ全体の地区を数えて、この実行に含まれなかったものを全部出す。
+   */
+  const covered = new Set(done.map(s => s.districtStr));
+  const allDistricts = new Map();
+  for (const r of records) {
+    if (!r.address) continue;
+    const k = districtKey(r.address);
+    if (!k) continue;
+    if (!allDistricts.has(k)) allDistricts.set(k, []);
+    allDistricts.get(k).push(r);
+  }
+  const notCovered = [...allDistricts.entries()]
+    .filter(([k]) => !covered.has(k))
+    .map(([k, rs]) => {
+      const city = parseDistrict(k).city;
+      const entry = MUNI_SOURCES[city];
+      return {
+        key: k, city, n: rs.length,
+        state: !entry ? '**未登録**'
+          : (fs.existsSync(path.join(__dirname, `sweep-${k}.md`)) ? '別の実行で済' : '未実施'),
+      };
+    });
+  const unreg = notCovered.filter(x => x.state === '**未登録**');
+
+  L.push('## 今回の対象範囲 — 回していない地区');
+  L.push('');
+  L.push(`**この実行で回したのは ${done.length} 地区。データ全体は ${allDistricts.size} 地区ある。**`);
+  L.push('');
+  L.push('**回していない地区は「MISSING 0件」ではない。調べていないだけ。**');
+  L.push('この2つを同じ見た目にすると、フラグが立たないことを根拠に使ってしまう。');
+  L.push('');
+  if (unreg.length) {
+    const byCity = new Map();
+    for (const x of unreg) byCity.set(x.city, (byCity.get(x.city) || 0) + x.n);
+    L.push(`### L1 も L2 も未登録で、**一度も調べていない**: ${unreg.length}地区 / ${byCity.size}市町村`);
+    L.push('');
+    L.push('| 市町村 | 地区 | レコード |');
+    L.push('|---|---|---|');
+    for (const [city, n] of [...byCity.entries()].sort((a, b) => b[1] - a[1])) {
+      L.push(`| ${city} | ${unreg.filter(x => x.city === city).length} | ${n} |`);
+    }
+    L.push('');
+    L.push('**この市町村のレコードについては、掲載漏れがあるかどうか何も分かっていない。**');
+    L.push('`MUNI_SOURCES` に L1/L2 を登録するところから。');
+    L.push('');
+  }
+  const other = notCovered.filter(x => x.state !== '**未登録**');
+  if (other.length) {
+    L.push(`ほかに ${other.length} 地区は別の実行で済んでいる（`);
+    L.push(other.slice(0, 8).map(x => x.key).join(' / ') + (other.length > 8 ? ' ほか' : '') + '）。');
+    L.push('');
+  }
+
   L.push('## この検査の限界');
   L.push('');
+  L.push('- **MISSING HIGH は「L1 に1件でもある」以上の意味を持たない。**');
+  L.push('  2026-08-10 に22件を検証したら**17件が落ちた**（旅館・グランピングのみ・');
+  L.push('  バーベキュー場・営業していない施設・既存との重複）。§6-22');
+  L.push('- **同名バケットの分裂で MISSING が約9%水増しされる。**');
+  L.push('  同じ施設が名前の違いで2つに割れると片方が MISSING に化ける（22件中2件で実測）。');
+  L.push('  **候補にする前に大字＋番地で既存と突き合わせること**');
+  L.push('- **ORPHAN を判定として読めるのは網羅率7割以上の L1 がある市町村だけ。**');
+  L.push('  実測で該当するのは**相模原市（80%）と道志村（75%）の2つ**（`sweep-l1-coverage-2026-08.md`）。');
+  L.push('  それ以外の地区の ORPHAN は参考値として出しているだけ');
+  L.push('- **なっぷは各エリア10件しか取れていない**（`?page=2` が1ページ目と同じ内容を返す）。');
+  L.push('  「なっぷに無い＝営業していない」とは言えない');
   L.push('- **ORPHAN を根拠に `status` を変えない**（§6-7）。ソース不在は不在の証明ではない');
   L.push('- **MISSING が0件でも掲載漏れが無いことにはならない。**フラグが立たないことを根拠に使わない');
   L.push('- 群Bの4項目はどれも判定不能。L1 を見つけるまで結論を出せない');
@@ -2070,6 +2320,45 @@ async function main() {
 
   if (argv.includes('--l1-coverage')) {
     await runL1Coverage(records, opts);
+    return;
+  }
+
+  if (argv.includes('--list-all-districts')) {
+    // 全レコードの所在地区を列挙し、L1 の登録状況とスイープ済みかを出す。
+    // `--all`（needsVerify の所在地区だけ）と違い、**データ全体を対象にする**
+    const m = new Map();
+    for (const r of records) {
+      if (!r.address) continue;
+      const k = districtKey(r.address);
+      if (!k) continue;
+      if (!m.has(k)) m.set(k, []);
+      m.get(k).push(r);
+    }
+    const rows = [...m.entries()].map(([k, rs]) => {
+      const city = parseDistrict(k).city;
+      const entry = MUNI_SOURCES[city];
+      const done = fs.existsSync(path.join(__dirname, `sweep-${k}.md`));
+      return {
+        key: k, city, n: rs.length, done,
+        state: !entry ? '未登録'
+          : (entry.sources.some(s => s.layer === 'L1') ? '登録済' : 'L1_NOT_FOUND'),
+      };
+    }).sort((a, b) => a.city.localeCompare(b.city, 'ja') || b.n - a.n);
+
+    const count = f => rows.filter(f).length;
+    console.log(`地区 ${rows.length} / 市町村 ${new Set(rows.map(r => r.city)).size}`);
+    console.log(`  スイープ済み ${count(r => r.done)} / 未実施 ${count(r => !r.done)}`);
+    console.log(`  L1 登録済 ${count(r => r.state === '登録済')} / L1_NOT_FOUND ${count(r => r.state === 'L1_NOT_FOUND')} / 未登録 ${count(r => r.state === '未登録')}`);
+    console.log('');
+    for (const r of rows) {
+      console.log(`${r.done ? '済' : '  '} ${String(r.n).padStart(2)}件 ${r.key.padEnd(26)} ${r.state}`);
+    }
+    console.log('\n── 未登録の市町村（L1 の登録が要る） ──');
+    const un = [...new Set(rows.filter(r => r.state === '未登録').map(r => r.city))];
+    for (const c of un) {
+      const ds = rows.filter(r => r.city === c);
+      console.log(`  ${c.padEnd(10)} 地区${ds.length} / レコード${ds.reduce((a, x) => a + x.n, 0)}件`);
+    }
     return;
   }
 
