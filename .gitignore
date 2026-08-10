@@ -41,6 +41,9 @@ yarn-error.log*
 
 # 座標ツールの作業ファイル
 scripts/.overpass-cache.json
+# 地区スイープの取得キャッシュ（取得先に何度も当たらないため）と実行ログ
+scripts/.sweep-cache/
+scripts/.sweep-*.log
 scripts/coords-fixed.json
 
 # typescript
