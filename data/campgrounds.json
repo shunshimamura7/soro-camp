@@ -6,13 +6,13 @@
     "prefecture": "神奈川",
     "area": "道志川",
     "status": "active",
-    "address": "神奈川県相模原市緑区青野原931",
+    "address": "神奈川県相模原市緑区青野原931-1",
     "lat": 35.5694332,
     "lng": 139.1992778,
     "coordsVerified": true,
-    "priceMin": 1700,
+    "priceMin": 2000,
     "priceMax": 4500,
-    "priceNote": "ツーリング/徒歩ソロ1,700円〜、車ソロ2,200円〜",
+    "priceNote": "ツーリング（バイクソロ）2,000円、車ソロ2,500円。デュオは別料金",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -38,14 +38,15 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "駐車場とキャンプスペースに限りがあり、予約した人が優先で案内される"
     },
     "season": "通年",
-    "soloComment": "1963年創業の老舗。道志川の透明度が圧巻で、川沿いソロサイト多数。Wi-Fi完備で意外と快適。ソロ・ツーリング向けプランが整理されてて初心者でも入りやすい。",
+    "soloComment": "道志川沿いのキャンプ場。直火での焚き火ができ、川遊びもできる。Wi-Fi完備。ツーリング2,000円・車ソロ2,500円とソロ向けの料金が整理されていて初心者でも入りやすい。駐車場とキャンプスペースに限りがあるので、予約しておくと優先して案内される。",
     "officialUrl": "https://norolodge.com/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/14164",
-    "tel": "042-787-1360",
-    "lastVerified": "2026-05-26",
+    "tel": "090-4825-5111",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -56,13 +57,13 @@
     "prefecture": "神奈川",
     "area": "西丹沢",
     "status": "active",
-    "address": "神奈川県足柄上郡山北町中川",
+    "address": "神奈川県足柄上郡山北町中川879-4",
     "lat": 35.4544,
     "lng": 139.0523,
     "coordsVerified": true,
-    "priceMin": 1100,
+    "priceMin": 1500,
     "priceMax": 3500,
-    "priceNote": "土日祝・前日は20%割増",
+    "priceNote": "バイク＋大人1名1,500円。オートキャンプは車1台＋4名まで5,000円、以降1名1,000円",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -88,14 +89,15 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "予約はバンガロー・ログハウスのみ。オートキャンプとデイキャンプはフリーサイトで予約を取っていない"
     },
     "season": "通年",
     "soloComment": "予約不要・直火OKの貴重な渓流キャンプ場。星空が綺麗で平日は貸切感あり。ピザ窯体験もできる。秘境感あって本格派ソロにオススメ。",
     "officialUrl": "https://ootakicampsite.com/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11681",
-    "tel": "0465-75-2717",
-    "lastVerified": "2026-05-26",
+    "tel": "0465-78-3422",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -164,7 +166,7 @@
     "coordsVerified": true,
     "priceMin": 4000,
     "priceMax": 5000,
-    "priceNote": "1サイト4,000円〜（テント1張・タープ1張・大人1名込み）",
+    "priceNote": "2026年4月1日利用分から料金改定が入っており、data の金額（1サイト4,000円〜）の裏が取れない。改定後はテント1張3,500円＋サイト使用料200円/名、土曜・GW・夏季・連休はトップシーズン料1,000円/張が加算という情報があるが、施設公式の料金ページで確認できていない",
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -174,7 +176,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "焚き火台必須",
+      "bonfireNote": "焚き火台必須。キャンプファイヤーは禁止",
       "pet": false,
       "shower": true,
       "showerNote": "温水シャワー",
@@ -198,10 +200,10 @@
     "soloComment": "公営キャンプ場ならではの安定感。逆さ富士・ダブルダイヤモンド富士が拝める絶景湖畔サイト。湖一周サイクリングも楽しめる。オートじゃないので静かに過ごせる。",
     "officialUrl": "https://tanukiko.com/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11868",
-    "tel": "0544-52-0155",
-    "lastVerified": "2026-05-26",
+    "tel": "0544-27-5240",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "telNote": "田貫湖キャンプ場事務局（富士宮市観光協会）。施設直通ではない。0544-52-0155 は E-BIKE レンタル予約の番号"
   },
   {
     "id": "eichinomori",
@@ -226,7 +228,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "焚き火台使用・小さな火なら時間無制限",
+      "bonfireNote": "直火禁止（焚き火台・コロを使用）。小さな火なら時間無制限",
       "pet": false,
       "shower": true,
       "bath": false,
@@ -250,9 +252,10 @@
     "officialUrl": "https://www.bt-r.jp/aec/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/14486",
     "tel": "0544-52-1616",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "closedDays": "月曜（祝日・連休時は変更になる場合あり）"
   },
   {
     "id": "sorairo",
@@ -261,7 +264,7 @@
     "prefecture": "静岡",
     "area": "朝霧高原",
     "status": "active",
-    "address": "静岡県富士宮市麓",
+    "address": "静岡県富士宮市麓624-7",
     "lat": 35.3786,
     "lng": 138.5847,
     "coordsVerified": true,
@@ -301,9 +304,9 @@
     "soloComment": "2023年7月オープンの新しいキャンプ場（トヨタ系）。全面芝生・どこからでも富士山ビュー。設備新しくシャワーお湯使い放題で冬キャンプ向き。ゴミ捨て無料。",
     "officialUrl": "https://sorairo-camp.jp/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/15686",
-    "tel": null,
-    "telNote": "WEB予約のみ",
-    "lastVerified": "2026-05-26",
+    "tel": "0544-21-3955",
+    "telNote": "受付時間 9:15〜17:00",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -354,10 +357,12 @@
     "soloComment": "オーナー手作りの溶岩露天風呂・檜風呂が最大の特徴。風呂入れるキャンプ場って実は希少。富士山ほぼ全景拝める。設備満点。冬季クローズなので注意。",
     "officialUrl": "https://urban-camping.jp/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/14093",
-    "tel": "0545-38-3646",
-    "lastVerified": "2026-05-26",
+    "tel": "0544-66-5070",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "telNote": "受付営業時間 8:30〜20:00",
+    "closedDays": "火曜"
   },
   {
     "id": "kouan",
@@ -509,9 +514,10 @@
     "officialUrl": "https://www.pica-resort.jp/saiko/",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11315",
     "tel": "0555-20-4555",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "closedDays": "水曜午後・木曜（変動する場合あり）"
   },
   {
     "id": "wellcamp-nishitanzawa",
@@ -562,9 +568,10 @@
     "officialUrl": "https://well-camp.com/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11677",
     "tel": "0465-78-3181",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "telNote": "現地 0465-78-3181 のほかコールセンター 0465-20-7065（9:00〜17:30）"
   },
   {
     "id": "shindo",
@@ -589,7 +596,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "焚き火台使用",
+      "bonfireNote": "直火は全面禁止。焚き火台の持参が必要",
       "pet": true,
       "shower": true,
       "showerNote": "温水シャワー",
@@ -610,10 +617,10 @@
     },
     "season": "通年（年末年始休）",
     "soloComment": "予約不要・先着順で、道志川沿いを2,000円から利用できる。温水シャワーと食堂があり基本設備は整っている。橋のたもとのサイトは川音が心地よくソロ向き。夏の週末は激混みなので、平日に狙い撃ちするのが正解。",
-    "officialUrl": "https://www.nap-camp.com/kanagawa/11644",
+    "officialUrl": "https://shindocamp.com/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11644",
     "tel": "042-787-0141",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -628,9 +635,9 @@
     "lat": 35.554,
     "lng": 139.1516,
     "coordsVerified": true,
-    "priceMin": 2800,
-    "priceMax": 5000,
-    "priceNote": "入場料900円+テントサイト700円〜+駐車1,200円",
+    "priceMin": 4800,
+    "priceMax": 6000,
+    "priceNote": "区画課金＋人数課金の併用。入場料（宿泊）大人900円＋テントサイト使用料2,700円（電源なし。電源ありは3,800円）＋駐車料 小型1,200円で、ソロ1名の総額は4,800円。単車なら駐車500円で4,100円",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -656,14 +663,15 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "WEB予約。受付は4〜11月 8:00〜17:00／12〜3月 8:00〜16:30"
     },
     "season": "通年",
     "soloComment": "道志川支流沿いの自然派キャンプ場。場内から徒歩数分の「いやしの湯」で日帰り温泉に入れるのが最大の魅力。桜の名所で4月は満開の中でキャンプができる。ウォシュレット完備で設備は整っており、初心者ソロでも安心。",
     "officialUrl": "https://aonecamp.jp/",
     "reservationUrl": "https://aonecamp.jp/",
     "tel": "042-787-1380",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -768,7 +776,7 @@
     "officialUrl": "https://fumotoppara.net/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11874",
     "tel": "0544-52-2112",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -818,7 +826,7 @@
     "officialUrl": "https://asagiri-camp.net/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11863",
     "tel": "0544-52-2066",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -845,7 +853,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "直火OK",
+      "bonfireNote": "焚き火可のサイトがある。直火の可否は施設公式で確認できていない",
       "pet": false,
       "shower": true,
       "showerNote": "無料シャワー（15:00〜翌10:00）",
@@ -867,11 +875,11 @@
     },
     "season": "4月上旬〜10月上旬",
     "closedDays": "月曜〜木曜定休（7月中旬〜8月は無休）",
-    "soloComment": "富士山2合目・標高1,200mの広葉樹林の中の野営サイト。直火OKかつ無料シャワー付きで1,500円/人という破格の組み合わせが稀有。登山者のベースにも使われ、深い森に囲まれた静寂が格別。月〜木定休・4〜10月限定営業のため日程調整が必要。",
+    "soloComment": "富士山2合目・標高1,200mの広葉樹林の中の野営サイト。無料シャワー付きで1,500円/人という料金が稀有。登山者のベースにも使われ、深い森に囲まれた静寂が格別。月〜木定休・4〜10月限定営業のため日程調整が必要。焚き火はサイトによって条件が違うので、直火にするつもりなら事前に確認すること。",
     "officialUrl": "https://www.pica-resort.jp/omotefuji/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11858",
     "tel": "0544-58-6881",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -898,7 +906,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "直火OK（河川敷エリアは条件あり）",
+      "bonfireNote": "直火禁止（2020年1月1日から全面禁止）。焚き火台の使用が必要",
       "pet": true,
       "shower": true,
       "bath": false,
@@ -917,12 +925,13 @@
       "nearbyShop": ""
     },
     "season": "通年（不定休あり）",
-    "soloComment": "道志川沿い約2kmに広がる大型フリーサイト。予約不要・先着順で、入場料800円+駐車1,000円のソロ計1,800円。夏週末は1,000張超えの激混みになるので平日専用と割り切るべき。上流エリアの木立に囲まれた場所を早朝から押さえるのがソロ攻略の鍵。",
+    "soloComment": "道志川の支流・三ヶ瀬川沿い約2kmに広がる大型フリーサイト。予約不要・先着順で、入場料800円+駐車1,000円のソロ計1,800円。直火は2020年1月1日に全面禁止になったので焚き火台が要る。夏週末は1,000張超えの激混みになるので平日専用と割り切るべき。上流エリアの木立に囲まれた場所を早朝から押さえるのがソロ攻略の鍵。",
     "officialUrl": "https://doshinomori.jp/",
     "tel": "0554-52-2388",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "telNote": "現地携帯 080-4444-2440 もある"
   },
   {
     "id": "saiko-jiyu",
@@ -972,7 +981,7 @@
     "reservationUrl": "https://saiko-jiyuu.camp/calendar/index",
     "tel": "0555-82-2857",
     "telNote": "電話は問い合わせのみ・予約はWEBのみ",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -1023,9 +1032,11 @@
     "officialUrl": "https://camp.sotosotodays.com/yamanakako-misaki/",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11263",
     "tel": "0555-65-7981",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査。施設公式 https://camp.sotosotodays.com/yamanakako-misaki/ に**住所と料金の記載が無く**、電話（0555-65-7981）と予約必須しか確認できなかった。address「山中湖村平野2431-2」と priceMin 6,000 の裏が取れていない。正式名称も施設公式は「sotosotodays CAMPGROUNDS 山中湖みさき」で data と割れている"
   },
   {
     "id": "takizawaso",
@@ -1090,7 +1101,7 @@
     "coordsVerified": true,
     "priceMin": 1500,
     "priceMax": 2500,
-    "priceNote": "テントサイト1,500円（先着・車込み）",
+    "priceNote": "施設公式に料金表が無く、金額の裏が取れていない。公式にあるのは「宿泊利用は日帰り料金の2倍」（バイク入場料 日帰り500円→宿泊1,000円）という記載のみ。入場料・駐車料・サイト使用料の3本立てなので、ソロでも3種類の合計になる",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -1116,14 +1127,15 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bonfireNote": "直火OK"
     },
-    "season": "通年",
-    "soloComment": "道志川沿いの予約不要コスパ特化キャンプ場。1,500円で車横付きできる川沿いサイトが最高。平日の朝から到着すれば川沿いの好ポジションを確保できる。夏は川遊び、秋は紅葉と季節ごとに表情が変わる。",
+    "season": "通年（冬季12月下旬〜3月初旬は年末年始を除く土日祝のみ。年末年始休業）",
+    "soloComment": "道志川沿いの予約不要のオートキャンプ場（小屋付きサイトのみ要予約）。入場料・駐車料・サイト使用料の3本立てで、宿泊は日帰り料金の2倍になる。平日の朝から到着すれば川沿いの好ポジションを確保できる。冬季（12月下旬〜3月初旬）は年末年始を除く土日祝のみの営業で、水道凍結のためシャワーも使えない。夜間入場は禁止。",
     "tel": "042-787-0477",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "officialUrl": "https://www.aonohara-acl.jp/index.html"
   },
   {
     "id": "nishitanzawa-mountbridge",
@@ -1164,14 +1176,17 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bonfireNote": "直火禁止。焚き火台の使用が必要"
     },
     "season": "通年",
     "soloComment": "中川川に架かる吊橋が目印の渓流キャンプ場。内湯完備で冬キャンプでも安心。西丹沢の深い渓谷に囲まれ、秋は紅葉が見られる。ウェルキャンプ西丹沢から車で数分の立地だが雰囲気は落ち着いている。",
     "tel": "0465-78-3378",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://mount-bridge.com/",
+    "telNote": "携帯 090-7738-1407 もある"
   },
   {
     "id": "sagamiko-kyuyomura",
@@ -1212,14 +1227,16 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bonfireNote": "直火の可否は要確認（施設公式サイトが無く一次情報で確定できていない）"
     },
     "season": "通年",
     "soloComment": "相模湖ICからわずか5分、JR相模湖駅からも徒歩圏の圧倒的アクセスの良さ。2,000円〜という価格で相模湖を眺める焚き火が楽しめる。仕事帰りに夜発して翌朝帰るデイキャンプ的な使い方に最適。",
     "tel": "042-685-0141",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "telNote": "ハイシーズンは 042-685-1371、オフシーズン（冬季）は 042-685-0141。予約受付は8:00〜17:00"
   },
   {
     "id": "miyagase-village",
@@ -1234,7 +1251,7 @@
     "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 6000,
-    "priceNote": "バイク/徒歩2,500円〜、車ソロ3,000円〜",
+    "priceNote": "施設公式は「場所貸しプラン（大人2名・車1台込み）6,200〜8,200円、人数・車1台増ごとに+1,000円」というサイト単位課金。予約サイトには「芝生テントサイトE3【ソロ専用】1,500円〜」があり、ソロ1名の総額がどちらになるか確定できていない",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -1266,9 +1283,10 @@
     "closedDays": "火曜",
     "soloComment": "宮ヶ瀬湖のほとりの隠れ家的キャンプ場。温水シャワー無料・Wi-Fi完備でコスパが高い。湖面の朝霧と静けさはまさに神奈川の秘境感。ライダーにも人気で週末も比較的静か。火曜定休に注意。",
     "tel": "070-9022-3477",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "officialUrl": "https://miyagase-village.com/",
+    "telNote": "070-9022-3477 はカフェ。オフィスは 03-5430-3462"
   },
   {
     "id": "tanzawako-lodge",
@@ -1341,7 +1359,7 @@
     "coordsVerified": true,
     "priceMin": 2000,
     "priceMax": 4500,
-    "priceNote": "大人1,000円+車1,000円〜",
+    "priceNote": "施設公式の料金ページにあるのは管理料金（大人600円・子供500円）と持ち込みバーベキュー1,100円で、テントサイトの宿泊料金が無い。駐車場代はかからないと明記されており、data の「大人1,000円+車1,000円」は一次情報と合わない",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -1367,14 +1385,18 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bonfireNote": "直火禁止。施設が指定する場所で脚付きのコンロなどを使用する"
     },
-    "season": "通年",
-    "soloComment": "丹沢山系の懐・谷太郎川沿いの秘境キャンプ場。場内の露天風呂に浸かりながら渓流の音を聴ける。週末も人が少なく、星空観察に最適な暗さを誇る穴場的存在。",
+    "season": "3月〜11月（12月〜2月は休業期間）",
+    "soloComment": "清川村・谷太郎川沿いの施設。釣りと魚のつかみ取り、屋根付きバーベキュー、コテージとバンガローでの宿泊ができる。直火は禁止で、施設が指定する場所で脚付きのコンロを使う。12月から2月は休業期間で、営業期間中も木曜と第1第3水曜が定休。",
     "tel": "046-288-3715",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "officialUrl": "https://k-riverland.jp/",
+    "closedDays": "毎週木曜・第1第3水曜（11月は毎週水木）",
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査。施設は実在する（清川村公式に掲載 https://www.town.kiyokawa.kanagawa.jp/soshiki/sangyokanko/sisetu/3837.html ）が、**テント泊ができるかが確認できない。** 施設公式 https://k-riverland.jp/price/ の料金はBBQ・コテージ・バンガロー・レンタルのみで、予約サイトの施設タイプも「バンガロー / ロッジ・ログハウス・コテージ」だけ。§6-25 の業態確認が要る"
   },
   {
     "id": "oiso-longbeach",
@@ -1389,7 +1411,6 @@
     "coordsVerified": true,
     "priceMin": 5000,
     "priceMax": 12000,
-    "priceNote": "1サイト5,000円〜（1名・1テント）",
     "scores": {
       "quietness": 3,
       "scenery": 4,
@@ -1419,10 +1440,11 @@
       "nearbyShop": ""
     },
     "season": "4月〜10月",
-    "soloComment": "相模湾を望む海辺のキャンプサイト。焚き火はできないがオーシャンビューの夕日と朝日が格別。JR大磯駅から徒歩15分でアクセスでき、車なしのソロキャンプが可能。夏は海水浴も楽しめる。",
-    "lastVerified": "2026-05-26",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査。大磯ロングビーチは大磯プリンスホテル併設の**プール施設**で、住所は大磯町国府本郷546（データは大磯町大磯546-1）。公式のテントは「プールサイドのテントエリア／フリースペース」で日中のみ、宿泊のキャンプサイトは見つからない https://www.princehotels.co.jp/pool/oiso/ 。§9 型C（実在するがキャンプ場ではない）の疑い"
   },
   {
     "id": "nanasawa-camp",
@@ -1437,7 +1459,6 @@
     "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 5000,
-    "priceNote": "フリーサイト2,500円〜、オートサイト4,500円〜",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -1465,12 +1486,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "七沢温泉郷に隣接する森林キャンプ場。場内に風呂はないが歩いて行ける七沢温泉の日帰り入浴が充実。都心から1時間圏で手軽に深い森を体感できる穴場。紅葉シーズンは周辺が色鮮やかに染まる。",
-    "lastVerified": "2026-05-26",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。厚木市七沢657 に該当施設なし。七沢のキャンプ場は TINY CAMP VILLAGE（七沢1854・別レコード tiny-camp-village）と 厚木市七沢弁天の森キャンプ場（七沢2891）で、後者は H28/11 時点で閉鎖 https://www.nap-camp.com/kanagawa/11637。2026-08-07 追調査: 七沢657 は七沢温泉郷の実在施設（七沢荘・福元館ほか）のどの番地とも一致せず、同じ大字の tiny-camp-village（七沢1854）からの借用でもない"
+    "needsVerifyNote": "2026-08-11 調査。厚木市七沢で実在が確認できるのは TINY CAMP VILLAGE（七沢1854）と厚木市七沢弁天の森キャンプ場（七沢2891）の2件で、「七沢キャンプ場 七沢657」は予約・料金のどこにも出てこない。§6-16 で既に捏造住所として挙げられていた1件 https://www.city.atsugi.kanagawa.jp/soshiki/bunkashogaigakushuka/20/51735.html"
   },
   {
     "id": "yamakita-camp",
@@ -1485,7 +1505,6 @@
     "coordsVerified": true,
     "priceMin": 1500,
     "priceMax": 3000,
-    "priceNote": "大人1,000円+駐車500円〜",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -1513,10 +1532,11 @@
       "nearbyShop": ""
     },
     "season": "4月〜11月",
-    "soloComment": "山北町が管理するシンプルな公営キャンプ場。設備は最低限だが格安でソロなら1,500円から利用できる。酒匂川上流の静かな環境で朝は野鳥のさえずりで目が覚める。山北駅から奥地に入った秘境感が魅力。",
-    "lastVerified": "2026-05-26",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査。山北町公式のキャンプ場一覧13施設に「山北キャンプ場」は無い https://www.town.yamakita.kanagawa.jp/0000000232.html 。湯触にあるのは河内川ふれあいビレッジ（湯触322-1）で、令和元年台風19号の土砂流入により当分クローズ https://www.town.yamakita.kanagawa.jp/0000000061.html 。「湯触353」に該当する施設が見つからない"
   },
   {
     "id": "fuji-ymca",
@@ -1531,7 +1551,7 @@
     "coordsVerified": true,
     "priceMin": 3200,
     "priceMax": 6000,
-    "priceNote": "平日2,700円+駐車500円=3,200円〜",
+    "priceNote": "テントサイト 1泊1名 平日2,700円／休日3,100円 ＋ 駐車料 車500円（バイク300円）。平日ソロで計3,200円。ゴミ捨て場が無く全て持ち帰り（焚き火の灰のみ灰捨て場あり）",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -1562,9 +1582,10 @@
     "season": "通年",
     "soloComment": "富士山南麓・標高約650mのYMCA施設内キャンプ場。大浴場（440円）と充実した共用設備が魅力。週末より平日がお得で静か。テント設営後に温かい大浴場に浸かれる安心感がソロ入門者にも◎。",
     "tel": "0544-54-1151",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://www.yokohamaymca.org/fujisan-global/"
   },
   {
     "id": "kawazu-nanadaru",
@@ -1605,14 +1626,17 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bonfireNote": "直火禁止。焚き火台の使用が必要"
     },
     "season": "通年",
     "soloComment": "河津七滝の渓谷美に囲まれたキャンプ場。24時間利用可能な露天温泉が最大の魅力で、深夜に誰もいない温泉に浸かる至福感は格別。冬でも温暖な伊豆のため年中快適。河津桜シーズン（2月）は混雑必至。",
     "tel": "0558-36-8080",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://www.nanatakiauto.com/",
+    "closedDays": "なし"
   },
   {
     "id": "kumomi-auto",
@@ -1627,7 +1651,7 @@
     "coordsVerified": true,
     "priceMin": 3500,
     "priceMax": 7000,
-    "priceNote": "ソロサイト3,500円〜",
+    "priceNote": "ソロキャンプ（大人1名・施設使用料込み）3,500円、ソロバイクキャンプ3,200円。オートキャンプは1区画3,850円＋施設使用料1,100円/人＋駐車1,000円/台。AC電源1,100円。ハイシーズンの割増は無く、ペット料金も無料",
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -1637,7 +1661,7 @@
     },
     "features": {
       "bonfire": true,
-      "pet": false,
+      "pet": true,
       "shower": true,
       "showerNote": "温水シャワー",
       "bath": true,
@@ -1654,14 +1678,16 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "petNote": "ペット料金は無料"
     },
     "season": "通年",
     "soloComment": "伊豆最南端に近い海辺の絶景キャンプ場。目の前に相模灘が広がり、夕日が海に沈む。露天風呂からの眺望も格別。アクセスは遠く山道が続くが、その不便さを補って余りある絶景が待っている。",
     "tel": "0558-45-0380",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://www.kumomi-sunset.com/"
   },
   {
     "id": "onoji-family",
@@ -1670,13 +1696,13 @@
     "prefecture": "静岡",
     "area": "裾野",
     "status": "active",
-    "address": "静岡県裾野市須山2934-3",
+    "address": "静岡県裾野市須山2934-2",
     "lat": 35.2588,
     "lng": 138.8626,
     "coordsVerified": true,
     "priceMin": 2750,
     "priceMax": 6000,
-    "priceNote": "ソロサイト2,750円〜",
+    "priceNote": "ソロ専用サイト（定員1名）はオフシーズン2,200円／レギュラー2,750円／ハイシーズン3,300円。ただし**土曜日とハイシーズンのみ営業**で、それ以外の日は普通サイト（5,000〜6,000円・定員5名のサイト単位課金）になる",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -1705,12 +1731,14 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "通年",
-    "soloComment": "富士山東麓・裾野市のキャンプ場。ソロサイト専用区画があり2,750円から利用可能。富士山の東面を見上げるロケーションで、ふもとっぱらとは異なる角度から富士を楽しめる。設備充実でシャワーも温かい。",
+    "season": "通年（冬期は限定サイトのみ営業）",
+    "soloComment": "富士山東麓・裾野市の日本で最初のオートキャンプ場。定員1名のソロ専用サイトが2,750円から使えるが、**土曜日とハイシーズンしか営業していない**ので日程が合わないと普通サイト（5,000円〜のサイト単位課金）になる。ソロ専用区画はトイレと炊事場から1〜2分離れていて、富士山の眺望は無い。火曜と水曜が定休。",
     "tel": "055-998-1567",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://oonoji.co.jp/camp/",
+    "closedDays": "火曜・水曜"
   },
   {
     "id": "darumayama-kogen",
@@ -1719,13 +1747,13 @@
     "prefecture": "静岡",
     "area": "伊豆",
     "status": "active",
-    "address": "静岡県伊豆市大沢1018-1",
+    "address": "静岡県伊豆市大沢1021-19",
     "lat": 34.9658,
     "lng": 138.9418,
     "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 5000,
-    "priceNote": "フリー2,500円/オート3,500円",
+    "priceNote": "フリーサイト1泊1サイト2,500円／オートサイト3,500円（いずれも税込）。駐車場は無料。デイキャンプは大人500円・子ども300円",
     "scores": {
       "quietness": 5,
       "scenery": 5,
@@ -1751,14 +1779,17 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bonfireNote": "直火禁止。焚き火台の使用が必要",
+      "reservationNote": "電話予約。利用月を含めて6か月前の10:00から受付（4〜9月は17:00まで、10〜3月は16:30まで）"
     },
-    "season": "3月〜11月",
-    "soloComment": "標高900mの高原から駿河湾と富士山を一望できる絶景キャンプ場。静岡県営のため料金は格安で、コスパと絶景の両立が抜群。夜景も美しく、晴れた日の富士山ビューは息をのむ美しさ。3〜11月営業なので注意。",
+    "season": "3月第3土曜〜11月下旬（12月1日〜3月第3金曜は冬期休業）",
+    "soloComment": "標高900mの高原から駿河湾と富士山を一望できる高原キャンプ場。フリーサイト8区画・オートサイト12区画の小規模で、コインシャワーとコインランドリーがある。駐車場は無料。直火は禁止で焚き火台が要る。3月第3土曜から11月下旬までの営業で、12月から3月中旬は冬期休業。",
     "tel": "0558-72-0595",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://kanko.city.izu.shizuoka.jp/sightseeing/darumayamacamp/"
   },
   {
     "id": "fujigane-kogen",
@@ -1822,7 +1853,6 @@
     "coordsVerified": true,
     "priceMin": 1500,
     "priceMax": 3000,
-    "priceNote": "テント1,000円+1人500円〜",
     "scores": {
       "quietness": 5,
       "scenery": 5,
@@ -1851,10 +1881,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "秘境の湖上駅・奥大井湖上駅そばのキャンプ場。車でのアクセス不可（鉄橋を徒歩で渡る）というハードルがソロキャンパーの冒険心をくすぐる。接岨湖に囲まれた立地で、周囲に人家がない。非日常感を求めるソロに最適。",
-    "lastVerified": "2026-05-26",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査。川根本町まちづくり観光協会の奥大井キャンプ場ガイドに「奥大井湖上キャンプ場」は無い http://www.okuooi.gr.jp/wordpress/camp/ 。周辺の実在施設はアプトいちしろキャンプ場・くのわき親水公園キャンプ場など。予約・料金の情報が出てこない"
   },
   {
     "id": "ryuyo-marine",
@@ -1917,7 +1948,6 @@
     "coordsVerified": true,
     "priceMin": 4000,
     "priceMax": 8000,
-    "priceNote": "オートサイト4,000円〜（ソロ割あり）",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -1945,12 +1975,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "伊豆高原の別荘地に囲まれた整備されたキャンプ場。伊豆四季の花公園・大室山などの観光スポットが充実。熱川温泉や伊豆北川温泉への日帰り入浴も楽しめ、キャンプと観光を兼ねたソロ旅に最適。",
-    "lastVerified": "2026-05-26",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。伊東市池672 に該当施設なし。同じ「池」地区にある「伊豆高原テントリゾート」（伊東市池614-168 https://tentresort-izu.com/ ）が近いが名称が違う。「伊豆高原オートキャンプ場」名義の一次情報が出ない"
+    "needsVerifyNote": "2026-08-11 調査。伊東市池で実在が確認できるのは伊豆高原テントリゾート（池614-168）。「伊豆高原オートキャンプ場 池672」は予約・料金のどこにも出てこない。名前の近い伊豆天城高原オートキャンプ場は賀茂郡東伊豆町1458-5 の別施設 https://www.izu-camp.jp/"
   },
   {
     "id": "amagi-kogen",
@@ -1965,7 +1994,6 @@
     "coordsVerified": true,
     "priceMin": 1800,
     "priceMax": 4000,
-    "priceNote": "テントサイト1,800円〜",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -1993,10 +2021,11 @@
       "nearbyShop": ""
     },
     "season": "4月〜11月",
-    "soloComment": "天城山系のブナ林に囲まれた静かな高原キャンプ場。標高800mで夏でも涼しく、深い森での焚き火が格別。川端康成「伊豆の踊子」の舞台近くという文学的なロケーション。修善寺温泉への日帰り入浴で入浴問題も解決。",
-    "lastVerified": "2026-05-26",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査。実在するのは伊豆天城高原オートキャンプ場（賀茂郡東伊豆町1458-5・0557-52-3250）https://www.izu-camp.jp/ で、データの「天城高原キャンプ場 伊豆市湯ヶ島1918」とは市町村から違う。湯ヶ島1918 に該当する施設が見つからない"
   },
   {
     "id": "shojiko-camping",
@@ -2105,7 +2134,7 @@
     "coordsVerified": true,
     "priceMin": 3000,
     "priceMax": 6000,
-    "priceNote": "ソロ3,000円〜（シーズンにより変動）",
+    "priceNote": "ソロ（1名・車1台）3,000円、1泊（4名・車1台）5,000円。デイキャンプは中学生以上1,000円・小学生以下500円",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -2136,9 +2165,10 @@
     "season": "通年",
     "soloComment": "山中湖南岸に位置するアットホームなキャンプ場。湖畔まで徒歩数分で、朝の山中湖の靄がかった静謐な雰囲気が格別。ゆるキャン△聖地にも近く、山中湖越しの富士山ビューを静かに楽しめる中規模キャンプ場。",
     "tel": "090-3246-6844",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "telNote": "ショートメッセージでの予約も受け付けている"
   },
   {
     "id": "kiyosato-oka",
@@ -2274,14 +2304,18 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bonfireNote": "直火禁止。焚き火台の使用が必要",
+      "reservationNote": "予約サイト「なっぷ」から受付。利用月の2か月前から"
     },
     "season": "4月〜11月",
     "soloComment": "山中湖村が運営する公営キャンプ場で1,500円〜のお値打ち価格。山中湖北岸に位置し、対岸の富士山と山中湖のコラボビューが楽しめる。村営ゆえの清潔感とリーズナブルな価格が評判。平野エリアで静かな環境。",
     "tel": "0555-62-0146",
-    "lastVerified": "2026-05-26",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://www.nap-camp.com/yamanashi/11265",
+    "telNote": "080-3347-2038 もある"
   },
   {
     "id": "sankoso-auto",
@@ -2353,7 +2387,6 @@
     "coordsVerified": true,
     "priceMin": 3300,
     "priceMax": 6000,
-    "priceNote": "サイト3,300円〜（車込み）",
     "scores": {
       "quietness": 3,
       "scenery": 5,
@@ -2382,10 +2415,11 @@
       "nearbyShop": ""
     },
     "season": "3月〜12月",
-    "soloComment": "河口湖北岸・大石公園そばの湖畔キャンプ場。岸から富士山と河口湖を同時に眺める絶景が3,300円〜で楽しめる。近くの大石公園ではラベンダー（夏）やコキア（秋）が富士山と共演する写真スポットとしても有名。",
-    "lastVerified": "2026-05-26",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査。富士河口湖町大石2585 は町の**大石公園**（入園無料・駐車無料）の住所 https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=2346 。「河口湖畔キャンプ場」という名称のキャンプ場は予約・料金のどこにも出てこない"
   },
   {
     "id": "okudoshi-auto",
