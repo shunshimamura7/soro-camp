@@ -7,8 +7,8 @@
     "area": "道志川",
     "status": "active",
     "address": "神奈川県相模原市緑区青野原931-1",
-    "lat": 35.5694332,
-    "lng": 139.1992778,
+    "lat": 35.5692444,
+    "lng": 139.1992747,
     "coordsVerified": true,
     "priceMin": 2000,
     "priceMax": 4500,
@@ -58,8 +58,8 @@
     "area": "西丹沢",
     "status": "active",
     "address": "神奈川県足柄上郡山北町中川879-4",
-    "lat": 35.4544,
-    "lng": 139.0523,
+    "lat": 35.4543931,
+    "lng": 139.0523013,
     "coordsVerified": true,
     "priceMin": 1500,
     "priceMax": 3500,
@@ -265,8 +265,8 @@
     "area": "朝霧高原",
     "status": "active",
     "address": "静岡県富士宮市麓624-7",
-    "lat": 35.3786,
-    "lng": 138.5847,
+    "lat": 35.3934589,
+    "lng": 138.5648634,
     "coordsVerified": true,
     "priceMin": 4950,
     "priceMax": 8000,
@@ -1697,8 +1697,8 @@
     "area": "裾野",
     "status": "active",
     "address": "静岡県裾野市須山2934-2",
-    "lat": 35.2588,
-    "lng": 138.8626,
+    "lat": 35.2586003,
+    "lng": 138.862875,
     "coordsVerified": true,
     "priceMin": 2750,
     "priceMax": 6000,
@@ -1747,9 +1747,9 @@
     "prefecture": "静岡",
     "area": "伊豆",
     "status": "active",
-    "address": "静岡県伊豆市大沢1021-19",
-    "lat": 34.9658,
-    "lng": 138.9418,
+    "address": "静岡県伊豆市大沢1018-1",
+    "lat": 34.9744376,
+    "lng": 138.8543504,
     "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 5000,
@@ -1789,7 +1789,7 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "officialUrl": "https://kanko.city.izu.shizuoka.jp/sightseeing/darumayamacamp/"
+    "officialUrl": "https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/928.html"
   },
   {
     "id": "fujigane-kogen",
@@ -2119,7 +2119,8 @@
     "soloComment": "道志川源流エリアの老舗民宿併設キャンプ場。民宿の浴室をキャンパーも500円で利用可能。ソロ2,000円〜のリーズナブルな価格で道志川の清流サイトを独占。道志温泉も近く、温泉キャンプが楽しめる。",
     "tel": "0554-52-2056",
     "lastVerified": "2026-08-11",
-    "priceVerified": true
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "komeidoso-auto",
@@ -2263,7 +2264,8 @@
     "soloComment": "直火OKかつ予約不要で1,700円〜（入場700円+駐車1,000円）。道志川源流域の深い渓谷に囲まれ、夏は川遊び、冬は静寂の雪景色を独り占め。近隣の道の駅どうし温泉で入浴問題も解決。",
     "tel": "042-787-0088",
     "lastVerified": "2026-08-11",
-    "priceVerified": true
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "muraei-yamanakako",
@@ -2325,8 +2327,8 @@
     "area": "道志村",
     "status": "active",
     "address": "山梨県南都留郡道志村11777",
-    "lat": 35.5541,
-    "lng": 139.1329,
+    "lat": 35.4875176,
+    "lng": 138.9678346,
     "priceMin": 3400,
     "priceMax": 4400,
     "priceNote": "区画課金＋人数課金の併用。ソロ1名の総額は「区画サイト料＋入場料600円」。入場料600円（5歳以上）・電源使用時+1,100円・車追加1台800円・アーリーチェックイン+1,000円は施設公式で確認済み。区画サイト料の金額だけが施設公式の料金表（JS描画）から取得できず未確定で、第三者ブログでは平日2,800〜3,300円／土日祝・夏季3,300〜3,800円。priceMin/priceMax はこれに入場料を足した推定値。施設公式には「ソロキャン直前割 3,100円（入場料込・空きがあれば前々日から）」の記載がある。支払いは現金のみ",
@@ -2369,10 +2371,11 @@
     "lastVerified": "2026-08-11",
     "officialUrl": "https://www.sanko2400.com/",
     "closedDays": "水曜日",
-    "needsCoord": true,
     "cautions": [
       "通年営業だが、積雪・地盤凍結により閉場する場合がある。12月から春はシャワーが使えない https://www.sanko2400.com/"
-    ]
+    ],
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "kawaguchiko-hanto",
@@ -2525,7 +2528,8 @@
     "season": "通年",
     "soloComment": "道志川沿いのおしゃれ系キャンプ場。ソロ専用区画が設けられており他のキャンパーに気を遣わず過ごせる環境が魅力。ウッドデッキからの川の眺めが絵になる。温水シャワー・ウォシュレット完備で快適性も高い。",
     "lastVerified": "2026-08-11",
-    "priceVerified": true
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "ashinoko-camp-mura",
@@ -9057,9 +9061,8 @@
     "status": "active",
     "address": "山梨県南都留郡富士河口湖町西湖2299",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.498973,
+    "lng": 138.698817,
     "priceMin": 1500,
     "priceMax": 1500,
     "priceNote": "オートキャンプ（1名）大人1,500円。施設公式の料金表に駐車料の別立ては無い。デイキャンプは大人1,000円",
@@ -9099,7 +9102,9 @@
     "tel": "070-1312-0133",
     "lastVerified": "2026-08-11",
     "priceVerified": true,
-    "officialUrl": "https://tsuhara-camp.jp/"
+    "officialUrl": "https://tsuhara-camp.jp/",
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "shiraishi-auto-camp",
@@ -9265,7 +9270,8 @@
     "cautions": [
       "オートキャンプ（サイトへの車の乗り入れ）は不可"
     ],
-    "coordsVerified": true
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "new-tashiro-auto-camp",
@@ -9319,7 +9325,8 @@
     "lastVerified": "2026-08-11",
     "priceVerified": true,
     "officialUrl": "https://tashiro-autocamp.com/",
-    "coordsVerified": true
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "murokubo-greenpark",
