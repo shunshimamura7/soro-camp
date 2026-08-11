@@ -3209,7 +3209,7 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。「三ヶ木」は相模原市緑区の実在の地名だが、その名のキャンプ場の一次情報が出ない"
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。「三ヶ木」は相模原市緑区の実在の地名だが、その名のキャンプ場の一次情報が出ない 2026-08-11 追調査: **津久井地域観光協会のキャンプ場一覧7件にも該当名なし** https://www.tsukui.ne.jp/kankou/camp.html （青野原オートキャンプ場組合/新戸/緑の休暇村青根/神之川キャンプマス釣り場/このまさわ/うらたんざわ渓流釣場/此の間沢渓流園）。検索で「三ヶ木」が出るのは新戸キャンプ場への路線バスの行き先としてだけ。相模原市は L1 網羅率80%で ORPHAN を判定として読める2市町村の1つ（§6-20）。"
   },
   {
     "id": "yadoriki-camp",
@@ -3259,7 +3259,7 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。松田町公式の「やどりき水源林」ページにキャンプ場の記載なし https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-suigenrin.html 。寄地区のキャンプ場は寄4380-1 と蜂花苑ミロク（別レコード hachibanaen-miroku）。やどりき水源林は529haの森林で、キャンプ場としての施設名は確認できない。2026-08-07 追調査: 寄3048 は寄地区の実在施設（やどりきテラス 寄3415・松田町寄自然休養村 寄4380-1・蜂花苑ミロク 寄7138）のどの番地とも一致せず、借用元が特定できない"
+    "needsVerifyNote": "2026-08-07 調査。松田町公式の「やどりき水源林」ページにキャンプ場の記載なし https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-suigenrin.html 。寄地区のキャンプ場は寄4380-1 と蜂花苑ミロク（別レコード hachibanaen-miroku）。やどりき水源林は529haの森林で、キャンプ場としての施設名は確認できない。2026-08-07 追調査: 寄3048 は寄地区の実在施設（やどりきテラス 寄3415・松田町寄自然休養村 寄4380-1・蜂花苑ミロク 寄7138）のどの番地とも一致せず、借用元が特定できない 2026-08-11 追調査: **松田町公式が「水源林一帯での焚火やBBQなど火気の使用は禁止されています」と明記** https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-bbq.html 。同ページはBBQをするなら寄地区の別施設を使うよう案内している。**データは焚き火可・1,000円・4月〜11月営業のキャンプ場として掲載しており、一次情報と正面から矛盾する。**`sanogawa-camp`（自治体が公園内のキャンプ・火気を不可としている）と同型。status の扱いに判断が要る。"
   },
   {
     "id": "mushizawa-camp",
@@ -3308,7 +3308,7 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。山北町公式の「キャンプ場の紹介」に該当名なし https://www.town.yamakita.kanagawa.jp/0000000232.html 。「虫沢」は山北町の実在の地名だが、その名のキャンプ場の一次情報が出ない"
+    "needsVerifyNote": "2026-08-07 調査。山北町公式の「キャンプ場の紹介」に該当名なし https://www.town.yamakita.kanagawa.jp/0000000232.html 。「虫沢」は山北町の実在の地名だが、その名のキャンプ場の一次情報が出ない 2026-08-11 追調査: 山北町観光協会の「自然に泊まる」一覧にも該当名なし https://www.yamakita.net/stay/natural.php 。**ただし山北町の L1 網羅率は63%（観光協会）/38%（町公式）で、ORPHAN を判定として読める7割の水準に達していない**（§6-20）。「一覧に無い」以上の根拠が取れていない。5件の中でいちばん判定の格が低い。"
   },
   {
     "id": "camp-baird",
@@ -4415,7 +4415,7 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。「浜の家キャンプ場」は西湖東側の施設で、河口湖ではない。データの住所「富士河口湖町小立5404」は河口湖オートキャンプ場のもの https://www.nap-camp.com/yamanashi/11308 。**住所の借用が疑われる**"
+    "needsVerifyNote": "2026-08-07 調査。「浜の家キャンプ場」は西湖東側の施設で、河口湖ではない。データの住所「富士河口湖町小立5404」は河口湖オートキャンプ場のもの https://www.nap-camp.com/yamanashi/11308 。**住所の借用が疑われる** 2026-08-11 追調査: **住所も電話も実在する「河口湖オートキャンプ場」のものだと確定した**（富士河口湖町小立5404 / 0555-72-4411）。富士河口湖町観光連盟 https://fujisan.ne.jp/sightseeing/3951/ ／ なっぷ https://www.nap-camp.com/yamanashi/11308 。実在側の料金は入場料770円＋オート1区画3,630円〜、営業は3月中旬〜11月で、データの6,000円〜・通年とも合わない。**「浜の湯」の名は一次情報のどこにも出ない**（「浜の家キャンプ場」は西湖東側の別施設）。**なお借用元の「河口湖オートキャンプ場」は当サイトに未登録＝掲載漏れの候補。**"
   },
   {
     "id": "retreat-camp-mahoroba",
@@ -4704,7 +4704,7 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。「牧丘フルーツ村キャンプ場」の名で山梨市公式・富士の国やまなし（県公式）に該当なし。検索で出る「牧丘フルーツセンター」は山梨市牧丘町窪平358の果樹園で別施設 https://www.city.yamanashi.yamanashi.jp/soshiki/5/2246.html 。座標は甲州市塩山中萩原を指し、address（山梨市牧丘町牧平3041）と17.3km離れている"
+    "needsVerifyNote": "2026-08-07 調査。「牧丘フルーツ村キャンプ場」の名で山梨市公式・富士の国やまなし（県公式）に該当なし。検索で出る「牧丘フルーツセンター」は山梨市牧丘町窪平358の果樹園で別施設 https://www.city.yamanashi.yamanashi.jp/soshiki/5/2246.html 。座標は甲州市塩山中萩原を指し、address（山梨市牧丘町牧平3041）と17.3km離れている 2026-08-11 追調査: 山梨市牧丘町の実在キャンプ場は琴川キャンプ場（杣口2050-1）・乙女高原グリーンロッジ（北原4143-1）・7inch CAMP（北原1786）の3件で、**牧平3041 に該当なし**。名前の近い2件も別物だった —「牧丘フルーツセンター」は果樹園（山梨市牧丘町窪平358）、**「オートキャンプ・フルーツ村」は千葉県君津市旅名96 / 0439-38-2255** https://fruitsvillage.com/ 。"
   },
   {
     "id": "oshino-hakkai-camp",
