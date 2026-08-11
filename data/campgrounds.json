@@ -2892,14 +2892,13 @@
     "name": "道志の湯キャンプ場",
     "prefecture": "神奈川",
     "area": "道志川",
-    "status": "active",
+    "status": "unverified",
     "address": "神奈川県相模原市緑区長者原40-1",
     "lat": 35.5758,
     "lng": 139.1481,
     "coordsVerified": true,
     "priceMin": 2200,
     "priceMax": 4000,
-    "priceNote": "大人1,000円+サイト1,200円〜",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -2929,10 +2928,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "道志温泉に隣接した便利なキャンプ場。キャンプ後に温泉に入れる手軽さが魅力。道志川沿いの静かな環境で林間サイトと川沿いサイトの両方を選べる。都心から約1時間というアクセスの良さが人気の秘訣。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。「道志の湯」は**道志村の村営温泉**で、データの「相模原市緑区長者原40-1」とは市町村が違う。相模原市観光協会13件 https://www.e-sagamihara.com/camp/ ・津久井地域観光協会7件 https://www.tsukui.ne.jp/kankou/camp.html のどちらにも該当名なし。相模原市は L1 網羅率80%で ORPHAN を判定として読める2市町村の1つ（§6-20）。"
   },
   {
     "id": "hadano-togawa-camp",
@@ -2989,14 +2989,13 @@
     "name": "みつまたキャンプ場",
     "prefecture": "神奈川",
     "area": "西丹沢",
-    "status": "active",
+    "status": "unverified",
     "address": "神奈川県足柄上郡山北町中川896",
     "lat": 35.4215,
     "lng": 138.9482,
     "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 5000,
-    "priceNote": "大人1,000円+サイト1,500円〜",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -3025,10 +3024,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "西丹沢自然教室近くの渓流キャンプ場。中川川の清流が目の前を流れ直火OKで予約不要の自由度が高い。春のツツジ・秋の紅葉と山岳景観を楽しみながらの渓流沿いキャンプが格別。西丹沢の入口という好立地。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。山北町公式のキャンプ場一覧13件に該当名なし https://www.town.yamakita.kanagawa.jp/0000000232.html 。中川で実在が確認できるのは大滝キャンプ場（中川879-4）・西丹沢マウントブリッジ（中川867-7）・ウェルキャンプ西丹沢（中川868）で、**中川896 はどれとも一致しない**。予約・料金の一次情報も出てこない（§6-4）。**ただし山北町の L1 網羅率は63%/38%で、ORPHAN を判定として読める7割の水準に無い**（§6-20）。"
   },
   {
     "id": "kabutomushi-mori-camp",
@@ -3084,14 +3084,13 @@
     "name": "相模湖プレジャーフォレストキャンプ場",
     "prefecture": "神奈川",
     "area": "相模湖",
-    "status": "active",
+    "status": "unverified",
     "address": "神奈川県相模原市緑区若柳1634",
     "lat": 35.5981,
     "lng": 139.1698,
     "coordsVerified": true,
     "priceMin": 4000,
     "priceMax": 9000,
-    "priceNote": "ソロサイト4,000円〜",
     "scores": {
       "quietness": 3,
       "scenery": 3,
@@ -3120,11 +3119,12 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "相模湖プレジャーフォレスト内の高規格キャンプ場。遊園地・BBQ施設が隣接しており設備充実。設備の充実度と中央道相模湖ICから近いアクセスは評価できる。ソロよりグループ向けだが設備面は安心。",
+    "soloComment": "",
     "tel": "042-684-7711",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。住所「相模原市緑区若柳1634」は既存レコード `pica-sagamiko`（PICAさがみ湖）と**完全一致**。さがみ湖リゾート（現「さがみ湖MORI MORI」）内のキャンプ場は PICAさがみ湖で、「相模湖プレジャーフォレストキャンプ場」という別のキャンプ場は一次情報に出てこない https://www.sagamiko-resort.jp/ 。**ただし電話が一致しない。** データの **042-684-7711 はどの一次情報にも出てこず**、リゾートの代表番号は **042-685-1111**、PICAさがみ湖のフロントは 042-685-0917、`pica-sagamiko` が持つ 0555-30-4580 は PICA の予約センター（§6-12）。座標も両レコードで約3.5km離れている。**§10-4 の決め手（電話の完全一致）を満たさず、100%重複と確定できないので削除せず unverified にした。**"
   },
   {
     "id": "okumakino-camp",
@@ -3674,14 +3674,13 @@
     "name": "寸又峡温泉キャンプ場",
     "prefecture": "静岡",
     "area": "川根",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県榛原郡川根本町千頭1225",
     "lat": 35.1134,
     "lng": 138.1087,
     "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 5000,
-    "priceNote": "大人1,000円+サイト1,500円〜",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -3711,10 +3710,11 @@
       "nearbyShop": ""
     },
     "season": "4月〜11月",
-    "soloComment": "日本一美しいと言われる「夢の吊り橋」で有名な寸又峡の麓キャンプ場。夢の吊り橋への早朝散策がソロならではの楽しみ。寸又峡温泉の日帰り入浴施設が充実しており秘境温泉キャンプが楽しめる。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。川根本町公式のキャンプ場一覧に「寸又峡温泉キャンプ場」は無い https://www.town.kawanehon.shizuoka.jp/shisetsu/5/1/1321.html 。町内の実在は池の谷ファミリーキャンプ場（千頭528-5）・くのわき親水公園・八木・三ツ星オート・不動の滝自然広場オート・アプトいちしろ。**千頭1225 に該当する施設が出てこない。**"
   },
   {
     "id": "ito-marine-town-camp",
@@ -3772,14 +3772,13 @@
     "name": "修善寺虹の郷キャンプ場",
     "prefecture": "静岡",
     "area": "伊豆",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県伊豆市修善寺4279-3",
     "lat": 34.9748,
     "lng": 138.9257,
     "coordsVerified": true,
     "priceMin": 3500,
     "priceMax": 7000,
-    "priceNote": "サイト3,500円〜（1名込み）",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -3809,10 +3808,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "修善寺温泉に隣接するキャンプ場。修善寺の竹林の路と温泉街へ徒歩でアクセス可能。温泉・抹茶スイーツ・伊豆の自然を一度に楽しめる観光キャンプとして唯一無二のロケーション。日帰り温泉が充実。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。**修善寺虹の郷は伊豆市のテーマパーク**（イギリス村・カナダ村・日本庭園）で、キャンプ場ではない https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/1293.html 。テント泊・宿泊の記載が無い。"
   },
   {
     "id": "hamanako-garden-camp",
@@ -3820,14 +3820,13 @@
     "name": "浜名湖ガーデンパークキャンプ場",
     "prefecture": "静岡",
     "area": "浜松",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県浜松市中央区村櫛町5475-1",
     "lat": 34.7651,
     "lng": 137.6847,
     "coordsVerified": true,
     "priceMin": 3000,
     "priceMax": 6000,
-    "priceNote": "サイト3,000円〜（車込み）",
     "scores": {
       "quietness": 3,
       "scenery": 4,
@@ -3856,10 +3855,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "浜名湖畔のキャンプ場。湖越しの夕日と遠州灘の海風が心地よい。浜名湖でのカヤック・釣りと組み合わせたアクティブなソロ旅に最適。浜松市街からのアクセスも良好で気軽に訪れやすい。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。**浜名湖ガーデンパークは静岡県営の公園**（浜名湖花博の跡地）で、キャンプ場ではない。浜松市中央区村櫛町で実在が確認できるキャンプ場は**タリカーナ ムラクシビーチ（村櫛町5747-1）** https://www.nap-camp.com/shizuoka/hamamatsu_hamanako/list 。**データの「5475-1」と実在の「5747-1」は数字の入れ替えになっている。**"
   },
   {
     "id": "osezaki-camp",
@@ -3867,14 +3867,13 @@
     "name": "大瀬崎キャンプ場",
     "prefecture": "静岡",
     "area": "沼津",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県沼津市西浦江梨329",
     "lat": 35.0223,
     "lng": 138.7856,
     "coordsVerified": true,
     "priceMin": 3500,
     "priceMax": 7000,
-    "priceNote": "大人1,500円+サイト2,000円〜",
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -3903,10 +3902,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "伊豆半島の突端・大瀬崎のキャンプ場。日本有数のダイビングスポットとして有名な大瀬崎の透明な海が目の前。富士山と駿河湾の組み合わせ絶景は静岡でも特別なロケーション。早朝のスノーケリングも最高。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。沼津市西浦江梨で実在するのは**大瀬テント村（西浦江梨977 / 055-942-3177 / テントサイト800円〜 / 予約不要）** https://www.nap-camp.com/shizuoka/11805 。**データの「大瀬崎キャンプ場 西浦江梨329」は名称も番地も一致しない。**料金3,500円・予約要という記載も、実在側（800円〜・予約不要）と合わない。"
   },
   {
     "id": "nishi-amagi-kogen",
@@ -3914,14 +3914,13 @@
     "name": "西天城高原牧場のキャンプ場",
     "prefecture": "静岡",
     "area": "伊豆",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県伊豆市上船原1519",
     "lat": 34.9487,
     "lng": 138.8782,
     "coordsVerified": true,
     "priceMin": 2000,
     "priceMax": 4000,
-    "priceNote": "大人800円+サイト1,200円〜",
     "scores": {
       "quietness": 5,
       "scenery": 5,
@@ -3950,10 +3949,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "標高1,000m超の天城高原牧場に隣接したキャンプ場。伊豆半島を見渡す360度パノラマと牧場の緑が絶景。空が暗く、天の川が肉眼で見える。早朝の雲海が神秘的。修善寺温泉へのアクセスも良い。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。データの「伊豆市上船原1519」に該当する施設が無い。名前の近い**西天城高原「牧場の家」は賀茂郡西伊豆町**の施設で、市町村から違う。**同一施設として住所を直そうとしたが、2つの理由で確定できなかった。** (1) **住所が公式間で割れている** — 西伊豆町役場公式は「西伊豆町**宇久須3609番地1**」https://www.town.nishiizu.shizuoka.jp/kakuka/sangyou/kankou/yado_shisetsu/makibanoie.html 、観光系の記載は「西伊豆町**仁科2910-2**」（§14 の「自治体公式は1枚岩ではない」型）。(2) **テント泊できるかが確認できない** — 町公式にも観光協会にもテントサイトの記載が無く、あるのはレストラン・コテージ（5人用12,500円〜／8人用16,000円〜）・大型休憩施設・バーベキュー棟だけ。予約サイトのプランもコテージのみ（§6-25 の業態確認）。なお同施設は**冬期（12月〜3月）は凍結のため利用できない**ので、`season: 通年` も誤り。"
   },
   {
     "id": "nekokodake-camp",
@@ -3961,14 +3961,13 @@
     "name": "猫越岳キャンプ場",
     "prefecture": "静岡",
     "area": "伊豆",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県伊豆市湯ヶ島1638",
     "lat": 34.9384,
     "lng": 138.9021,
     "coordsVerified": true,
     "priceMin": 1500,
     "priceMax": 3000,
-    "priceNote": "大人500円+サイト1,000円〜",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -3998,10 +3997,11 @@
       "nearbyShop": ""
     },
     "season": "4月〜11月",
-    "soloComment": "天城山系の猫越岳中腹の山岳キャンプ場。本格的なトレッキングと組み合わせた冒険的ソロキャンプが体験できる。設備は最低限だが山頂からの伊豆の絶景と満点の星空が全てを補う。達成感のある秘境体験。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。**猫越岳は伊豆市のトレッキングコースの山**（仁科峠〜猫越岳〜猫越峠）で、その名のキャンプ場の予約・料金が出てこない。湯ヶ島で実在が確認できるのはファーマーズヒル（旧かたつむり）など https://f-hill.jp/wordpress/camp/ 。**湯ヶ島1638 に該当なし。**"
   },
   {
     "id": "asagiri-greenpark-camp",
@@ -4009,14 +4009,13 @@
     "name": "朝霧高原グリーンパーク",
     "prefecture": "静岡",
     "area": "朝霧高原",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県富士宮市猪之頭1050",
     "lat": 35.3762,
     "lng": 138.5891,
     "coordsVerified": true,
     "priceMin": 3000,
     "priceMax": 6000,
-    "priceNote": "大人1,000円+サイト2,000円〜",
     "scores": {
       "quietness": 3,
       "scenery": 5,
@@ -4045,10 +4044,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "朝霧高原の広大な草原から富士山を一望できるキャンプ場。ふもとっぱらより比較的空いておりコスパも良い。牧場隣接で朝は牧草地から牛の声が聞こえる長閑な環境。朝霧高原らしい乳製品グルメも充実している。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。富士宮市猪之頭で実在するのは**朝霧高原オートキャンプ場（猪之頭2071）**https://www.city.fujinomiya.lg.jp/1025110000/p001691.html 。**「朝霧高原グリーンパーク」という名称の施設は出てこず、番地（猪之頭1050）も一致しない。**"
   },
   {
     "id": "horaibashi-camp",
@@ -4056,14 +4056,13 @@
     "name": "蓬莱橋キャンプ場",
     "prefecture": "静岡",
     "area": "島田",
-    "status": "active",
+    "status": "unverified",
     "address": "静岡県島田市南2丁目（大井川河川敷）",
     "lat": 34.8342,
     "lng": 138.1732,
     "coordsVerified": true,
     "priceMin": 1000,
     "priceMax": 2500,
-    "priceNote": "大人500円+サイト500円〜",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -4092,10 +4091,11 @@
       "nearbyShop": ""
     },
     "season": "4月〜10月",
-    "soloComment": "ギネス記録に認定された世界一長い木造歩道橋・蓬莱橋（897m）のたもとの河川敷キャンプ場。大井川の雄大な流れと蓬莱橋の絶景が楽しめる。予約不要で格安だが設備は最低限。大井川鐡道でSL乗車と組み合わせた旅も楽しい。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。**蓬莱橋は大井川に架かる木造歩道橋**（全長897.4m・ギネス認定・島田市の観光地）https://www.city.shimada.shizuoka.jp/kanko-docs/houraibasi.html 。**河川敷にキャンプ場がある一次情報が無い。**島田市内の実在はグリーンビレッジ川根・山村都市交流センターささまなど。"
   },
   {
     "id": "nakatajima-sakyuu-camp",
@@ -4551,14 +4551,13 @@
     "name": "富士五湖オートキャンプ場",
     "prefecture": "山梨",
     "area": "山中湖",
-    "status": "active",
+    "status": "unverified",
     "address": "山梨県南都留郡山中湖村平野2563-1",
     "lat": 35.4268,
     "lng": 138.8681,
     "coordsVerified": true,
     "priceMin": 4000,
     "priceMax": 8000,
-    "priceNote": "オートサイト4,000円〜（1名込み）",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -4587,10 +4586,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "山中湖北岸の整備されたオートキャンプ場。山中湖越しの富士山と静かな湖畔環境が魅力。ゆるキャン△聖地エリアに位置し、周辺の観光スポットも充実。朝のカヌーやSUPと組み合わせた湖上体験も楽しめる。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。山中湖村平野で実在が確認できるのは湖山荘キャンプ場（平野508）・村営山中湖キャンプ場（平野506-296）・小田急山中湖フォレストコテージなど https://lake-yamanakako.com/reserve/10109 。**「富士五湖オートキャンプ場」という名の施設が出てこない**（平野2563-1 も該当なし）。**ただし山中湖村の L1 網羅率は17%で、ORPHAN を判定として読めない**（§6-20）。"
   },
   {
     "id": "kobuchizawa-auto-camp",
@@ -4598,14 +4598,13 @@
     "name": "小淵沢オートキャンプ場",
     "prefecture": "山梨",
     "area": "北杜",
-    "status": "active",
+    "status": "unverified",
     "address": "山梨県北杜市小淵沢町上笹尾3181",
     "lat": 35.8712,
     "lng": 138.3341,
     "coordsVerified": true,
     "priceMin": 3500,
     "priceMax": 7000,
-    "priceNote": "オートサイト3,500円〜（1名込み）",
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -4635,10 +4634,11 @@
       "nearbyShop": ""
     },
     "season": "4月〜11月",
-    "soloComment": "八ヶ岳を正面に仰ぎ見る小淵沢のキャンプ場。中央道小淵沢ICから近いアクセスの良さと八ヶ岳の雄大な山並みが両立。スパティオ小淵沢の温泉施設が近くに温泉キャンプも楽しめる。清里丘の公園と合わせて利用も◎。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。北杜市小淵沢町上笹尾で実在が確認できるオートキャンプ場は**八ヶ岳オートキャンプ場（上笹尾3332-1936 / 0551-36-4228）**だけで、これは既存レコード `yatsugatake-oizumi`。**当初この2件を重複と見たが、確定できなかった。** データの「上笹尾**3181**」は**株式会社ミヨシ（花卉の育種・生産販売）の所在地**（上笹尾3181-10）で、キャンプ場ではない。つまり番地は `yatsugatake-oizumi` のものですらなく、**重複ではなく単に実在しない**という形。このレコードは `tel` も `officialUrl` も持たないので、§4 の `tanzawako` のような突き合わせができない。**100%重複と確定できないので削除せず unverified にした。** 出典: 八ヶ岳オートキャンプ場 https://www.yatsugatake-autocamp.com/ ／ 上笹尾3181 の所在 https://www.kobuchisawa.com/sonota/miyoshi.html"
   },
   {
     "id": "takegawa-kyo-camp",
@@ -4646,14 +4646,13 @@
     "name": "武川郷キャンプ場",
     "prefecture": "山梨",
     "area": "北杜",
-    "status": "active",
+    "status": "unverified",
     "address": "山梨県北杜市武川町山高3012",
     "lat": 35.8421,
     "lng": 138.3847,
     "coordsVerified": true,
     "priceMin": 2500,
     "priceMax": 5000,
-    "priceNote": "大人1,000円+サイト1,500円〜",
     "scores": {
       "quietness": 5,
       "scenery": 5,
@@ -4682,10 +4681,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "山高神代桜（日本三大桜）の近くにある静かなキャンプ場。八ヶ岳と南アルプスの全景が圧巻。4月の桜の時期は特に美しく巨木の桜とキャンプの組み合わせは山梨ならでは。釜無川の清流音が心地よい。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。北杜市武川町で実在が確認できるのはアグリーブルむかわ（武川町山高3567-212）・フレンドパークむかわ・ウッドランド武川キャンプ場。**「武川郷キャンプ場」（山高3012）は出てこない。** 出典: フレンドパークむかわ https://www.fp-mukawa-kaikoma.com/camp/ ／ ウッドランド武川 https://www.nap-camp.com/yamanashi/11353"
   },
   {
     "id": "makioka-fruits-camp",
@@ -4742,14 +4742,13 @@
     "name": "忍野八海オートキャンプ場",
     "prefecture": "山梨",
     "area": "忍野",
-    "status": "active",
+    "status": "unverified",
     "address": "山梨県南都留郡忍野村忍草2838",
     "lat": 35.4578,
     "lng": 138.8521,
     "coordsVerified": true,
     "priceMin": 4000,
     "priceMax": 8000,
-    "priceNote": "オートサイト4,000円〜（1名込み）",
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -4778,10 +4777,11 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "世界遺産・忍野八海を望む絶景キャンプ場。富士山と湧水池の美しいコントラストが目の前に広がる。早朝の忍野八海を観光客なしで独り占めできるキャンプ泊のアドバンテージが最大の魅力。山中湖へのアクセスも良い。",
-    "lastVerified": "2026-05-27",
+    "soloComment": "",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-11 調査（scripts/batch-2026-05-27-check.md）。**忍野八海は湧水池の観光地**。忍野村観光協会 https://oshino-navi.com/ にキャンプ場の掲載が無く、忍草地区にあるのは民営駐車場。「忍野八海オートキャンプ場」の予約・料金がどこにも出てこない。"
   },
   {
     "id": "akeno-fureai-camp",
