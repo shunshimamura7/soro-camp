@@ -322,3 +322,75 @@ data の 雲見40-1 / 0558-45-0380 は、正しい施設公式 **`kumomi-sunset.
 **このバッチで ③ `reservation` だけが1件も出なかった**のは、
 `sankoso`/`okudoshi` の2件がたまたま「予約不要」を持っていただけで、
 **シグネチャの一般性を過信してはいけない**ことも示している。
+
+---
+
+# 追記 — 実在未確認の7件を `unverified` にした（2026-08-11）
+
+§2 で「しゅんの判断待ち」としていた7件について判断が出たので反映した。
+適用は `scripts/apply-batch-unverified-2026-08.js`。
+
+## 決めたこと
+
+| | |
+|---|---|
+| **`status`** | `active` → **`unverified`** |
+| **削除** | **しない** |
+| `needsVerify` / `needsVerifyNote` | **そのまま維持**（今回の判断根拠が出典URL付きで入っている） |
+| `soloComment` / `priceNote` / `priceVerified` | 既に §2 で落としてあるのでそのまま |
+| 座標 | 触っていない |
+
+対象: `oiso-longbeach` / `nanasawa-camp` / `yamakita-camp` / `okooigawa-lake` /
+`izukogen-auto` / `amagi-kogen` / `kawaguchiko-hanto`
+
+## なぜ削除ではないか
+
+§4 の3件と §9 の GHOST 25件は**レコードごと削除**した。今回それを選ばなかった理由は
+`makino-unverified-2026-08.md` の2件と同じ。
+
+1. **「一覧に無い＝存在しない」は成り立たない**（§6-7）。7件のうち `okooigawa-lake` は
+   川根本町、`izukogen-auto` は伊東市で、**どちらも ORPHAN を判定として読める市町村ではない**
+   （読めるのは相模原市80%・道志村75%だけ。§6-20）
+2. **`unverified` なら一覧から外れるので実害はゼロ。**実在が分かれば `active` に戻せる。
+   削除すると戻せない
+3. **7件とも次の手段が無い。**5件が `tel: null` で、電話で確かめる経路が残っていない。
+   §12 の `murokubo-greenpark` のとおり Web 情報の鮮度には下限があり、
+   **最終的には現地か電話でしか埋まらない。その手段が無い段階で消さない**
+
+**`unverified` は最終判断ではない。実在が確認できたら `active` に戻す。**
+
+## 反映後の確認
+
+`apply-batch-unverified-2026-08.js` は反映前に3つを検査して、満たさなければ例外で止まる。
+
+- `status` が `active` であること（二重適用の防止）
+- `needsVerify: true` であること
+- `needsVerifyNote` が空でないこと（**判断根拠なしで `unverified` にしない**）
+
+ビルド後の `out/` で7件とも次を確認した。
+
+- **一覧（`out/index.html`）から消えている**（`href="/camp/<slug>"` のヒット 0）
+- **詳細ページに黄色の警告が出ている**
+  「営業状況が確認できていません。訪問前に必ず最新情報を確認してください。」（`bg-amber-50`）
+
+## 件数の動き
+
+| | 前 | 後 |
+|---|---|---|
+| `active` | 172件 | **165件** |
+| `unverified` | 4件 | **11件** |
+| `closed` | 7件 | 7件 |
+| `suspended` | 1件 | 1件 |
+| 合計 | 184件 | 184件（**削除なし**） |
+
+`unverified` 11件の内訳。
+
+| 経緯 | 件数 | slug |
+|---|---|---|
+| 既存 | 4 | `ito-marine-town-camp` / `lumberjack-nanbu` / `kabutomushi-mori-camp` / `okumakino-camp` |
+| **今回** | **7** | `oiso-longbeach` / `nanasawa-camp` / `yamakita-camp` / `okooigawa-lake` / `izukogen-auto` / `amagi-kogen` / `kawaguchiko-hanto` |
+
+**11件のうち9件が「同じ作られ方」でつながっている。**
+牧野の2件（§6-17）＋ 今回の7件は、いずれも
+**実在する地名や施設の名前に、どこの施設のものでもない番地を付けた**型（§6-4 の型A・型B／§6-16 の捏造）。
+`nanasawa-camp` は §6-16 の捏造リストに最初から挙がっていた1件でもある。
