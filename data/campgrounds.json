@@ -98,8 +98,8 @@
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11681",
     "tel": "0465-78-3422",
     "lastVerified": "2026-08-11",
-    "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "gandahara",
@@ -307,8 +307,8 @@
     "tel": "0544-21-3955",
     "telNote": "受付時間 9:15〜17:00",
     "lastVerified": "2026-08-11",
-    "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "houzan",
@@ -359,10 +359,10 @@
     "reservationUrl": "https://www.nap-camp.com/shizuoka/14093",
     "tel": "0544-66-5070",
     "lastVerified": "2026-08-11",
-    "coordsGsiChecked": true,
     "priceVerified": true,
     "telNote": "受付営業時間 8:30〜20:00",
-    "closedDays": "火曜"
+    "closedDays": "火曜",
+    "coordsGsiChecked": true
   },
   {
     "id": "kouan",
@@ -5301,8 +5301,8 @@
     "area": "八ヶ岳・小淵沢",
     "status": "active",
     "address": "山梨県北杜市小淵沢町3900-2",
-    "lat": 35.87,
-    "lng": 138.27,
+    "lat": 35.8807379,
+    "lng": 138.3090095,
     "coordsVerified": true,
     "priceMin": 0,
     "priceMax": 0,
@@ -5336,8 +5336,9 @@
     "soloComment": "小淵沢の高原林間。薪焚き本格サウナ・クラフトビール・ワイン量り売りのおしゃれなキャンプ場。地元食材ミールキット付プランも人気。",
     "officialUrl": "https://folkwood-camp.com/",
     "reservationUrl": "https://folkwood.jp/",
-    "lastVerified": "2026-08-07",
-    "needsPrice": true
+    "lastVerified": "2026-08-11",
+    "needsPrice": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "fujinomori-yamanakako",
