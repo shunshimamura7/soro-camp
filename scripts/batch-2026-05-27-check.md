@@ -310,3 +310,53 @@ https://www.town.nishiizu.shizuoka.jp/kakuka/sangyou/kankou/yado_shisetsu/makiba
 借用元が実在するのに未登録のもの6件（河口湖オートキャンプ場・福士川オートキャンプ場・
 タリカーナ ムラクシビーチ・大瀬テント村・朝霧高原オートキャンプ場・亀見橋バカンス村）を
 出典URL付きでまとめてある。**実際の掲載は別タスク。**
+
+---
+
+# 追記 — lastVerified を 2026-08-11 に揃えた（2026-08-11）
+
+**目的は再調査の防止。**`lastVerified` は「情報を最後に確認した日」であって
+「値を変えた日」ではない（`lib/types.ts`）。確認したのに 2026-05-27 のまま置くと、
+§13-4 の「投入回を軸に洗い出す」を次に回したとき**同じ調査をもう一度やることになる。**
+
+適用は `scripts/apply-0527-lastverified.js`。
+
+## 更新した9件
+
+| 群 | 件数 | slug |
+|---|---|---|
+| **1. 照合のみで変更なし** | 2 | `richland-kiyokawa` / `camp-baird` |
+| **2. `needsVerify` 群（2026-08-11 に追調査済み）** | 7 | `kabutomushi-mori-camp` / `okumakino-camp` / `mikagi-camp` / `yadoriki-camp` / `mushizawa-camp` / `kawaguchiko-hamanoya-camp` / `makioka-fruits-camp` |
+
+**群2 を含めた理由。**「確認した結果、確認できなかった」も確認である。
+7件とも `needsVerifyNote` に 2026-08-11 の調査記録が出典URL付きで入っている。
+`apply-0527-unverified-b.js` で `unverified` にした15件は既に 2026-08-11 に更新済みなので、
+**この7件だけ 05-27 で残ると同じ群の中で日付が割れる。**
+
+**残課題があっても `lastVerified` は更新してよい。**
+`richland-kiyokawa`（名称割れ）と `camp-baird`（区画使用料が未確定）には残課題があるが、
+**レコード自体は一次情報に当たっている。**残課題は本ファイルで管理する。
+
+## ⚠ 1件だけ意図的に残した — `ito-marine-town-camp`
+
+**スクリプトのガードが止めた。**
+`needsVerifyNote` に 2026-08-11 の調査記録が無い＝**今回の追調査の対象外だった**
+（`needsVerify` 8件のうち、既に `unverified` だった3件は見送って `active` 5件に絞ったため）。
+
+**確認していないものを「確認済み」にしてはいけない**ので、`lastVerified` は 2026-05-27 のまま残した。
+
+> **「0件にすること」は目的ではない。**
+> 目的は「確認した事実を記録して再調査を防ぐ」ことなので、
+> **確認していない1件を巻き込んで0にしたら、フラグの意味が壊れる。**
+> §6-1（確認済みフラグが検証をすり抜けさせた）と同じ構図が `lastVerified` でも起きうる。
+
+`ito-marine-town-camp` はこの1件だけ次のスイープに残る。**それが正しい状態。**
+
+## 反映後
+
+| | |
+|---|---|
+| `lastVerified: 2026-05-27` | **1件**（`ito-marine-town-camp` のみ） |
+| `lastVerified: 2026-05-26` | **0件**（§13 で解消済み） |
+| status 別 | active 144 / unverified 31 / closed 7 / suspended 2（**変化なし**） |
+| 合計 | 184件（**変化なし**） |
