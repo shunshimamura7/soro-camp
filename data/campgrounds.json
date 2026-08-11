@@ -2432,8 +2432,8 @@
     "area": "道志村",
     "status": "active",
     "address": "山梨県南都留郡道志村12637",
-    "lat": 35.47,
-    "lng": 138.944,
+    "lat": 35.4701461,
+    "lng": 138.9443768,
     "priceMin": 3000,
     "priceMax": 3000,
     "priceNote": "区画課金＋人数課金の併用。サイト料2,000円（車代込）＋大人1,000円で、ソロ1名の総額は3,000円。子供600円。旧データの2,000円はサイト料だけで人数課金が抜けていた。BBQハウスは1泊2,000円（車1台込）、バンガローはA・B棟7,000円／C棟17,000円（寝具持参・車1台込）。温水シャワーは5分200円、薪は針葉樹1束600円で別料金",
@@ -2478,10 +2478,10 @@
     "tel": "0554-52-2027",
     "telNote": "予約先。携帯 090-8817-5035 もある。受付は9:00〜19:00",
     "officialUrl": "https://www.okudoshi.net",
-    "needsCoord": true,
     "cautions": [
       "川遊びだけの利用はできない https://www.okudoshi.net/ryo/ryoukin.html"
-    ]
+    ],
+    "coordsVerified": true
   },
   {
     "id": "woodsman-camp",
@@ -8840,8 +8840,8 @@
     "address": "山梨県南巨摩郡南部町福士15854",
     "type": "campground",
     "status": "active",
-    "lat": 0,
-    "lng": 0,
+    "lat": 35.2188515,
+    "lng": 138.4770251,
     "priceMin": 0,
     "priceMax": 0,
     "priceNote": "要問合せ",
@@ -8880,10 +8880,12 @@
     "lastVerified": "2026-08-06",
     "needsVerify": true,
     "soloComment": "※詳細を確認中です。民宿・福士川根熊山荘の敷地内にあるオートサイトで、サイトの横を福士川が流れる。川音を聞きながら過ごせる。",
-    "needsCoord": true,
     "officialUrl": "https://hukusshigawacamp.eyado.net/",
     "priceVerified": true,
-    "needsVerifyNote": "**このフラグの由来が記録に残っていない。**座標が 0,0 で needsCoord も立っており、地図上で所在を確かめられていない状態。address（山梨県南巨摩郡南部町福士15854）の一次情報も未確認。引き継ぎ §7-5「残る needsVerify 4件の確認」の対象 https://www.town.nanbu.yamanashi.jp/"
+    "needsVerifyNote": "**このフラグの由来が記録に残っていない。**座標が 0,0 で needsCoord も立っており、地図上で所在を確かめられていない状態。address（山梨県南巨摩郡南部町福士15854）の一次情報も未確認。引き継ぎ §7-5「残る needsVerify 4件の確認」の対象 https://www.town.nanbu.yamanashi.jp/",
+    "coordsVerified": true,
+    "telNote": "予約・お問合せは 070-4168-0207。0556-66-3241 は代表・FAX",
+    "coordsGsiChecked": true
   },
   {
     "id": "sanogawa-camp",
@@ -8951,9 +8953,8 @@
     "status": "active",
     "address": "神奈川県相模原市緑区牧野4819",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.5948938,
+    "lng": 139.1521269,
     "priceMin": 3000,
     "priceMax": 3000,
     "priceNote": "テント持込 1張り1泊3,000円。駐車場は無料（普通車20台程度）で入場料の記載なし。1張り単位で最少人数の条件が無いため、ソロ1名でも3,000円",
@@ -8997,7 +8998,9 @@
     "cautions": [
       "7・8月のハイシーズンは抽選",
       "11月〜3月は閉鎖"
-    ]
+    ],
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "saiko-kohan-camp",
@@ -9008,9 +9011,8 @@
     "status": "active",
     "address": "山梨県南都留郡富士河口湖町西湖207-7",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.5048412,
+    "lng": 138.6997185,
     "priceMin": 1500,
     "priceMax": 2500,
     "priceNote": "大人1,500円／1泊／1名。車は別途1台1,000円、バイク500円。徒歩ソロ1,500円／バイクソロ2,000円／車ソロ2,500円。フリーサイトは予約不可・先着順、バンガローは予約制",
@@ -9050,7 +9052,9 @@
     "tel": "0555-82-2858",
     "lastVerified": "2026-08-10",
     "priceVerified": true,
-    "officialUrl": "http://www.saikohan.com/"
+    "officialUrl": "http://www.saikohan.com/",
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "saiko-tsuhara-camp",
@@ -9115,9 +9119,8 @@
     "status": "active",
     "address": "神奈川県足柄上郡山北町中川字相馬沢870-3",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.484174,
+    "lng": 139.063771,
     "priceMin": 4000,
     "priceMax": 7000,
     "priceNote": "**車両単位の課金。ソロでも二輪1台4,000円／車1台7,000円の満額で、1名分に割り引かれない。**二輪車1台2名まで1日4,000円、車1台4名まで7,000円（増員は小学生以上1人500円）。デイキャンプは車1台4名まで3,000円",
@@ -9160,7 +9163,9 @@
     "officialUrl": "https://www.shiraishiautocamp.com/",
     "cautions": [
       "キャンセル料が10日前から100%"
-    ]
+    ],
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "nishitanzawa-nakagawa-lodge",
@@ -9171,9 +9176,8 @@
     "status": "active",
     "address": "神奈川県足柄上郡山北町中川字小塚897-111",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.435518,
+    "lng": 139.0462467,
     "priceMin": 3000,
     "priceMax": 3500,
     "priceNote": "キャンプサイト3,000円〜／名。駐車料は別で普通車500円／台、バイク200円／台。徒歩ソロ3,000円／バイクソロ3,200円／車ソロ3,500円。バンガローは6,000円〜／名",
@@ -9214,7 +9218,9 @@
     "lastVerified": "2026-08-10",
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "営業根拠が町観光協会（山北町観光協会）の更新のみで、施設公式・予約枠が未確認。施設公式サイトが見つからず、なっぷ・じゃらんの掲載も確認できていない。掲載ページ自体の更新日も不明。出典: https://www.yamakita.net/stay/detail.php?id=11&type=2 （同サイトは 2026/07/07 のお知らせを掲載しており、サイト全体は更新されている）。次にやること: 予約専用携帯 090-7715-8522 で営業とソロ利用の可否を確認する。"
+    "needsVerifyNote": "営業根拠が町観光協会（山北町観光協会）の更新のみで、施設公式・予約枠が未確認。施設公式サイトが見つからず、なっぷ・じゃらんの掲載も確認できていない。掲載ページ自体の更新日も不明。出典: https://www.yamakita.net/stay/detail.php?id=11&type=2 （同サイトは 2026/07/07 のお知らせを掲載しており、サイト全体は更新されている）。次にやること: 予約専用携帯 090-7715-8522 で営業とソロ利用の可否を確認する。",
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "ryokokubashi-camp",
