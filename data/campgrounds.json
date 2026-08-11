@@ -2668,14 +2668,17 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "宿泊は要予約。デイキャンプは事前予約ができず当日先着順"
     },
     "season": "通年",
     "soloComment": "宮ヶ瀬湖畔エリアにある静かなキャンプ場。深い森に囲まれた林間サイトが特徴でプライバシーが高い。宮ヶ瀬ダムの迫力を間近に体感でき、秋は紅葉が素晴らしい。平日はほぼ貸し切り状態になれる穴場。",
     "tel": "046-288-1318",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://karasawa-camp.sakura.ne.jp/",
+    "telNote": "携帯 080-4355-1318 もある"
   },
   {
     "id": "hidamari-yamakita",
@@ -2688,9 +2691,9 @@
     "lat": 35.3681,
     "lng": 139.0548,
     "coordsVerified": true,
-    "priceMin": 2000,
-    "priceMax": 4000,
-    "priceNote": "大人1,000円+サイト1,000円〜",
+    "priceMin": 6000,
+    "priceMax": 9000,
+    "priceNote": "オートキャンプ（宿泊）は町民4,000円〜／町外6,000円〜のサイト単位課金。デイキャンプは町民1,000円〜／町外2,000円〜。シャワー100円",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -2716,14 +2719,22 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "メール予約（hidamarinosato@marble.ocn.ne.jp）。利用日の4か月前から受付"
     },
-    "season": "通年",
+    "season": "4月〜11月（12月〜3月は金・土・日・祝のみ営業。年末年始休業）",
     "soloComment": "山北町の静かな山間キャンプ場。ミカン畑に囲まれた独特のロケーションで春は花、秋は実りを楽しめる。丹沢湖への入口にあたりトレッキングと組み合わせたソロ旅に最適。静かな渓流沿いで鳥の声が心地よい。",
     "tel": "0465-77-2777",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://www.town.yamakita.kanagawa.jp/0000000068.html",
+    "eligibility": {
+      "type": "discount",
+      "label": "町外は割高",
+      "note": "山北町民はオートキャンプ4,000円〜、町外は6,000円〜。デイキャンプも町民1,000円／町外2,000円",
+      "source": "山北町公式 https://www.town.yamakita.kanagawa.jp/0000000068.html"
+    }
   },
   {
     "id": "konomasawa-camp",
@@ -2781,8 +2792,8 @@
     "name": "長者屋敷キャンプ場",
     "prefecture": "神奈川",
     "area": "宮ヶ瀬",
-    "status": "active",
-    "address": "神奈川県愛甲郡清川村宮ヶ瀬1644-1",
+    "status": "suspended",
+    "address": "神奈川県愛甲郡清川村宮ヶ瀬1644",
     "lat": 35.4977645,
     "lng": 139.2258682,
     "coordsVerified": true,
@@ -2818,10 +2829,12 @@
     },
     "season": "通年",
     "soloComment": "宮ヶ瀬湖畔の森林キャンプ場。静寂な林間サイトで週末でも人が少なく穴場的存在。宮ヶ瀬湖畔散策や魚釣りが楽しめ、紅葉シーズンの美しさは格別。都心から1.5時間のアクセスも良い。",
-    "tel": "046-288-1743",
-    "lastVerified": "2026-05-27",
+    "tel": "046-241-6999",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "telNote": "清川村公式が予約先として掲載している番号。旧データの 046-288-1743 は一次情報に出てこない",
+    "suspendedNote": "清川村公式のキャンプ場一覧に「令和8年5月1日より当面の間、休業中です」と掲載されている https://www.town.kiyokawa.kanagawa.jp/soshiki/sangyokanko/sisetu/3837.html 。再開時期は示されていない。村公式が一覧から削除するか「廃止」と書いた場合は closed / abolished に移すこと"
   },
   {
     "id": "hakonesono-auto",
@@ -3370,9 +3383,9 @@
     "lat": 35.0641,
     "lng": 138.9267,
     "coordsVerified": true,
-    "priceMin": 3500,
-    "priceMax": 7000,
-    "priceNote": "オートサイト3,500円〜（1名込み）",
+    "priceMin": 5500,
+    "priceMax": 12000,
+    "priceNote": "ソロ（大人1名）5,500円、ファミリー（大人2＋小学生2）7,700円が1泊の目安。テントサイト約100区画は全区画AC電源付き",
     "scores": {
       "quietness": 3,
       "scenery": 4,
@@ -3382,7 +3395,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "焚き火台必須",
+      "bonfireNote": "直火可",
       "pet": true,
       "shower": true,
       "bath": true,
@@ -3404,9 +3417,10 @@
     "season": "通年",
     "soloComment": "富士山と伊豆の山々を見渡す高台に位置する大型キャンプ場。本格的な設備と広大なフィールドが魅力。高規格キャンプ場として人気が高く、近隣温泉への割引サービスも付いてくる。",
     "tel": "0558-79-0213",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://mobility-park.jp/"
   },
   {
     "id": "pica-fuji-greenpa",
@@ -3544,14 +3558,16 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "事前予約のほか、予約なしの当日利用・現地決済にも対応している"
     },
     "season": "通年",
     "soloComment": "天城山中腹に隠れた秘境キャンプ場。「隠れ」の名の通り周囲に民家が少なく圧倒的な静けさが魅力。伊豆の名湯・湯ヶ島温泉へのアクセスも良く温泉キャンプが楽しめる。ウォシュレット完備で快適性も高い。",
     "tel": "080-1624-4715",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://kakure-camp.corpkj.com/"
   },
   {
     "id": "hamaoka-sakyuu-camp",
@@ -3560,13 +3576,12 @@
     "prefecture": "静岡",
     "area": "御前崎",
     "status": "active",
-    "address": "静岡県御前崎市白羽3870-1",
+    "address": "静岡県御前崎市池新田9122-1",
     "lat": 34.6178,
     "lng": 138.1872,
-    "coordsVerified": true,
-    "priceMin": 2500,
-    "priceMax": 5000,
-    "priceNote": "サイト2,500円〜（車込み）",
+    "priceMin": 2000,
+    "priceMax": 4000,
+    "priceNote": "人数課金。サイト利用料 大人1名2,000円／中学生以下1,000円。電源は有料",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -3576,7 +3591,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "焚き火台使用",
+      "bonfireNote": "直火OK",
       "pet": true,
       "shower": true,
       "bath": false,
@@ -3592,13 +3607,19 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "ネット予約。当日予約も受け付けている"
     },
     "season": "4月〜10月",
     "soloComment": "日本最大級の砂丘・浜岡砂丘に隣接したキャンプ場。砂丘越しに夕日が沈む。サーフィンや砂丘ウォーキングと組み合わせたアクティブなソロ旅に最適。太平洋の波音が心地よい夜。",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "tel": "0537-85-2418",
+    "cautions": [
+      "住所は御前崎市池新田9122-1。旧データの「白羽3870-1」は誤り https://www.omaezaki.gr.jp/contents/detail.html?s=1090"
+    ],
+    "needsCoord": true
   },
   {
     "id": "fujikawa-camp",
@@ -4168,9 +4189,11 @@
     "season": "通年",
     "soloComment": "ほったらかし温泉の隣に位置する全区画富士山ビューキャンプ場。日の出前に入れる「あっちの湯」との組み合わせは格別で、富士山と甲府盆地を見下ろしながらの温泉は唯一無二の体験。全サイトから甲府盆地の夜景と富士山が楽しめる山梨を代表するキャンプ場。",
     "officialUrl": "https://hottarakashicamp.com/",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "tel": "080-9677-1010",
+    "telNote": "受付 9:00〜18:00"
   },
   {
     "id": "shosenkyo-auto-camp",
@@ -4183,9 +4206,9 @@
     "lat": 35.7015,
     "lng": 138.5531,
     "coordsVerified": true,
-    "priceMin": 3000,
-    "priceMax": 6000,
-    "priceNote": "オートサイト3,000円〜（1名込み）",
+    "priceMin": 5000,
+    "priceMax": 8000,
+    "priceNote": "区画課金＋人数課金の併用。入場料 大人1,000円（3歳〜小学生500円・ペット2匹まで500円）＋オート1区画4,000円〜で、ソロ1名の総額は5,000円。全28区画がAC電源付き",
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -4211,14 +4234,17 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "reservationNote": "WEB予約（なっぷ）または電話 055-287-8778（9:00〜17:00）"
     },
-    "season": "4月〜11月",
+    "season": "通年",
     "soloComment": "日本一の渓谷美と称される昇仙峡の入口に位置するキャンプ場。早朝の昇仙峡散策（仙娥滝・覚円峰）をソロで独り占めできる贅沢なロケーション。秋の紅葉シーズンは特に美しく、山梨の自然美を堪能できる。",
     "tel": "055-287-8778",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://syosenkyo-camp.com/",
+    "closedDays": "なし"
   },
   {
     "id": "motosu-shore-camp",
@@ -4340,7 +4366,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "焚き火台必須",
+      "bonfireNote": "直火可",
       "pet": true,
       "shower": true,
       "bath": true,
@@ -4362,9 +4388,10 @@
     "season": "通年",
     "soloComment": "釜無川沿いの高規格キャンプ場。南アルプスの山々を望む景観と場内の露天風呂が魅力。ラフティング体験との組み合わせが人気で、アクティブなソロ旅に最適。設備は全部入りの高規格で安心感がある。",
     "tel": "055-285-6611",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://westriver-camp.com/"
   },
   {
     "id": "kawaguchiko-hamanoya-camp",
@@ -4428,9 +4455,9 @@
     "lat": 35.5201,
     "lng": 138.7121,
     "coordsVerified": true,
-    "priceMin": 7000,
+    "priceMin": 3000,
     "priceMax": 14000,
-    "priceNote": "ソロサイト7,000円〜",
+    "priceNote": "ソロキャンプサイト3,000円〜、テントサイト1区画4,000円〜、オートサイト1区画9,000円〜（利用日・タイプで変動）",
     "scores": {
       "quietness": 5,
       "scenery": 5,
@@ -4448,7 +4475,7 @@
       "toilet": "ウォシュレット",
       "carIn": true,
       "soloPlan": true,
-      "soloPlanNote": "ソロ専用サイトあり",
+      "soloPlanNote": "ソロキャンプサイトが3,000円〜で用意されている",
       "reservation": "要",
       "convenience": false,
       "shop": true,
@@ -4462,9 +4489,12 @@
     },
     "season": "通年",
     "soloComment": "富士山と河口湖を一望する丘の上の高級グランピング系キャンプ場。プライベート感の高い個別サイトと絶景が魅力。ソロ専用サイトとWi-Fiも完備で価格に見合う非日常体験がある。自分へのご褒美ソロキャンプに。",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://retreatcamp-mahoroba.net/",
+    "tel": "090-4128-6066",
+    "closedDays": "なし"
   },
   {
     "id": "pica-fujiyama-camp",
@@ -4473,7 +4503,7 @@
     "prefecture": "山梨",
     "area": "河口湖",
     "status": "active",
-    "address": "山梨県南都留郡富士河口湖町船津6662-1",
+    "address": "山梨県南都留郡富士河口湖町船津6662-10",
     "lat": 35.4559,
     "lng": 138.7554,
     "coordsVerified": true,
@@ -4510,8 +4540,8 @@
     "season": "通年",
     "soloComment": "富士山を正面に望む河口湖畔の高規格キャンプ場。河口湖ICから5分という圧倒的アクセスと充実設備が魅力。ソロには価格帯が高いが手ぶらレンタルが充実しており初心者入門にも最適。Wi-Fi完備で快適。",
     "officialUrl": "https://www.pica-resort.jp/fujiyama/",
-    "tel": "0555-72-3358",
-    "lastVerified": "2026-05-27",
+    "tel": "0555-28-6303",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true
   },
@@ -4807,13 +4837,12 @@
     "prefecture": "山梨",
     "area": "北杜",
     "status": "active",
-    "address": "山梨県北杜市白州町白須3090",
+    "address": "山梨県北杜市白州町白須8093-9",
     "lat": 35.8248,
     "lng": 138.3547,
-    "coordsVerified": true,
-    "priceMin": 3000,
-    "priceMax": 6000,
-    "priceNote": "サイト3,000円〜（1名込み）",
+    "priceMin": 4100,
+    "priceMax": 24500,
+    "priceNote": "サイト単位課金。フリーサイト1泊1区画4,100円〜、区画オートサイト4,500〜24,500円。バンガロー7,860円〜。名水公園べるが内",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -4842,11 +4871,14 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "5月〜10月",
+    "season": "4月〜11月",
     "soloComment": "南アルプス天然水の源流・尾白川沿いのキャンプ場。日本名水百選の尾白川での水遊びと尾白の湯（日帰り温泉）の組み合わせが格別。サントリー白州蒸留所見学と組み合わせた大人のソロ旅に最適。",
-    "lastVerified": "2026-05-27",
+    "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://www.verga.info/",
+    "closedDays": "毎週水曜（GW・7月中旬〜8月下旬は無休）",
+    "needsCoord": true
   },
   {
     "id": "yanagishima",
