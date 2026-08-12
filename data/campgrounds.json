@@ -2485,17 +2485,17 @@
   {
     "id": "woodsman-camp",
     "slug": "woodsman-camp",
-    "name": "WOODSMAN CAMP",
+    "name": "WOODSMAN CAMPGROUND",
     "prefecture": "山梨",
     "area": "道志村",
     "status": "active",
-    "address": "山梨県南都留郡道志村2438",
+    "address": "山梨県南都留郡道志村馬場5876",
     "lat": 35.5278004,
     "lng": 139.0386523,
     "coordsVerified": true,
-    "priceMin": 3500,
-    "priceMax": 7000,
-    "priceNote": "ソロサイト3,500円〜",
+    "priceMin": 2500,
+    "priceMax": 7500,
+    "priceNote": "1名単位の課金（シャワー利用付きの料金表）。**平日**はソロサイト2,500円／テントサイト3,500円／オートサイト3,500円（いずれも1名毎）。**ハイシーズンを含む週末**は基本料金1名毎3,500円＋サイト利用料（ソロ0円／野営0円／テント2,000円／オート3,000円／空中デッキ4,000円）。ソロ最安は平日のソロサイト2,500円、上限は週末の空中デッキ7,500円。ソロサイトは3名以上不可",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -2528,7 +2528,14 @@
     "soloComment": "道志川沿いのおしゃれ系キャンプ場。ソロ専用区画が設けられており他のキャンパーに気を遣わず過ごせる環境が魅力。ウッドデッキからの川の眺めが絵になる。温水シャワー・ウォシュレット完備で快適性も高い。",
     "lastVerified": "2026-08-11",
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "officialUrl": "https://woodsman.jp/",
+    "tel": "0554-67-8131",
+    "cautions": [
+      "料金は施設公式の料金表で確認（2026-08-12） https://woodsman.jp/menu 。旧データの「ソロサイト3,500円〜」は週末料金のみを指しており、平日の2,500円が反映されていなかった",
+      "2026-08-12: 正式名称を施設公式に合わせて「WOODSMAN CAMP」→「WOODSMAN CAMPGROUND」に、住所を「道志村2438」→「道志村馬場5876」に修正 https://woodsman.jp/ 。旧住所の出所は不明",
+      "ハイシーズンを除き火曜・水曜が定休"
+    ]
   },
   {
     "id": "ashinoko-camp-mura",
@@ -3482,9 +3489,9 @@
     "lat": 34.673001,
     "lng": 138.791973,
     "coordsVerified": false,
-    "priceMin": 5000,
-    "priceMax": 10000,
-    "priceNote": "ソロサイト5,000円〜",
+    "priceMin": 7700,
+    "priceMax": 11000,
+    "priceNote": "サイト使用料＋施設使用料。サイトは平日／週末（金土日祝）／ハイシーズン（GW・夏休み・年末年始）で変わり、Deck A・B が7,700／8,800／9,900円、Deck C〜H と Ground 1〜4 が6,600／7,700／8,800円。施設使用料は大人（中学生以上）1,100円・小学生550円・未就学児無料・犬550円。車両かバイク1台分はサイト使用料に含む。ソロ最安は平日の Deck C〜H・Ground で6,600＋1,100＝7,700円",
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -3516,7 +3523,11 @@
     "soloComment": "伊豆最南端に近い子浦の絶景テラスキャンプ場。太平洋を見下ろす崖上からの眺望と南伊豆独特の青い海が素晴らしい。アクセスは遠いが絶景を独り占めできる価値は十分。真冬でも温暖な南伊豆で快適。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://camp.imagining.jp/",
+    "cautions": [
+      "料金は施設公式の料金ページで確認（2026-08-12） https://camp.imagining.jp/price2/ 。旧データの「ソロサイト5,000円〜」は施設使用料が抜けており、実際のソロ最安は7,700円で2,700円低く出ていた"
+    ]
   },
   {
     "id": "izu-kakure-auto",
@@ -4112,9 +4123,8 @@
     "lat": 34.6697,
     "lng": 137.7212,
     "coordsVerified": true,
-    "priceMin": 2500,
-    "priceMax": 5000,
-    "priceNote": "サイト2,500円〜（車込み）",
+    "priceMin": 0,
+    "priceMax": 0,
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -4146,7 +4156,9 @@
     "soloComment": "日本三大砂丘の一つ・中田島砂丘に隣接したキャンプ場。砂丘を越えると太平洋の絶景が広がる。遠州灘の荒波音が心地よく夕日・星空が格別美しい。浜松からのアクセスが良く日帰り感覚でも利用しやすい。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": false,
+    "needsVerify": true,
+    "needsVerifyNote": "2026-08-12 調査（料金の裏取りから開始）。**料金の一次情報が1つも出てこず、施設の実在自体が確認できない。** 中田島砂丘一帯は県営の遠州灘海浜公園（中田島中地区）で、公園公式のサイトにキャンプ場は掲載されていない https://enshunada.hama-park.jp/ 。同地区の施設として載っているのは風車公園（中田島町1674 / 053-441-3766）で、**データの address「中田島町1313-2」とは別番地**。浜松市が持つキャンプ施設として公式に出るのは渚園 https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/charge.html 。「中田島砂丘キャンプ場」という名称で予約枠・料金が出てくる経路はなっぷ・じゃらんを含めて皆無。**ただし「一覧に無い」以上の根拠は取れておらず、公園管理者への直接確認はしていない。** 旧データの料金は `priceMin: 2500` / `priceMax: 5000` / `priceNote: \"サイト2,500円〜（車込み）\"` で、出典は追えなかったため削除した。status を active のままにしてあるので、実在の可否を決めて `unverified` か `closed` に落とすか判断が要る。中田島砂丘はアカウミガメの産卵地で保護区域を含むため、火気・野営の可否も併せて確認すること"
   },
   {
     "id": "hottarakashi-camp",
@@ -7378,16 +7390,20 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "tel": "",
-    "officialUrl": "",
-    "reservationUrl": "",
-    "season": "通年",
-    "soloComment": "富士五湖エリアの高規格キャンプ場、温泉あり。西湖・精進湖の穴場エリアで富士山眺望抜群。",
+    "tel": "0555-85-2236",
+    "officialUrl": "http://www.kyukamura.jp/",
+    "reservationUrl": "https://www.nap-camp.com/yamanashi/14648",
+    "season": "4月1日〜11月30日",
+    "soloComment": "富士五湖エリアの高規格キャンプ場、温泉あり。西湖・精進湖の穴場エリアで富士山眺望抜群。全16区画のオートサイトで、キャンピングカーも乗り入れできる。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "address": "山梨県南都留郡鳴沢村字ジラゴンノ8532-5",
-    "priceNote": "サイト単位課金＋人数課金。1サイト 平日4,400円／休前日5,500円／特別日7,700円＋入場料 大人880円・小人660円 → ソロ1名は平日5,280円。河口湖駅から無料送迎あり（事前予約制）",
-    "priceVerified": true
+    "priceNote": "サイト単位課金＋人数課金。1サイト 平日4,400円／休前日6,600円／特別日7,700円＋入場料 大人880円・小人（4歳〜小学生）660円・ペット220円 → ソロ1名は平日5,280円。河口湖駅から無料送迎あり（事前予約制）",
+    "priceVerified": true,
+    "cautions": [
+      "料金・営業期間は運営の富士観光開発の公式リリースで確認（2026-08-12） https://www.fujikanko.co.jp/newsrelease/2569 ／ 施設情報 https://www.fujikanko.co.jp/business/60 。旧データの休前日5,500円は開業時（2022年）の額で、現在は6,600円",
+      "2026-08-12: season を「通年」→「4月1日〜11月30日」に修正。オートキャンプ場は冬期営業していない（宿泊棟や温泉は通年）"
+    ]
   },
   {
     "id": "hayakawa-camp",
