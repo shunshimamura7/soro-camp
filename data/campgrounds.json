@@ -3230,11 +3230,12 @@
     "name": "やどりき水源林キャンプ場",
     "prefecture": "神奈川",
     "area": "秦野",
-    "status": "unverified",
+    "status": "closed",
+    "closedReason": "prohibited",
     "address": "神奈川県足柄上郡松田町寄3048",
     "lat": 35.3847,
     "lng": 139.0876,
-    "coordsVerified": true,
+    "coordsVerified": false,
     "priceMin": 1000,
     "priceMax": 2500,
     "priceNote": "大人500円+サイト500円〜",
@@ -3246,9 +3247,9 @@
       "facility": 2
     },
     "features": {
-      "bonfire": true,
-      "bonfireNote": "焚き火台使用",
-      "pet": true,
+      "bonfire": false,
+      "bonfireNote": "キャンプ等禁止のため不可",
+      "pet": false,
       "shower": false,
       "bath": false,
       "toilet": "和式",
@@ -3267,12 +3268,13 @@
       "nearbyShop": ""
     },
     "season": "4月〜11月",
-    "soloComment": "東海自然歩道沿いの秘境キャンプ場。「寄」（やどりき）のロウバイ・ツツジの名所に隣接。登山・ハイキングの拠点として最適で、標高500mの静かな環境からの展望が素晴らしい。格安だが設備は最低限。",
+    "soloComment": "現在この場所でのキャンプは禁止されています。やどりき水源林は神奈川県が管理する水源林で、利用上の注意に「たき火禁止」「キャンプ等禁止」と明記されています。キャンプ場として運営された記録は確認できていません。",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true,
+    "priceVerified": false,
+    "closedNote": "キャンプ場として運営された記録が確認できないレコード。閉業ではなく誤登録。神奈川県公式（環境農政局水源環境保全課／かながわトラストみどり財団）がやどりき水源林の利用上の注意に「たき火禁止」「キャンプ等禁止」「禁煙」と明記 https://www.pref.kanagawa.jp/docs/pb5/j/suigen-shinrin/2/yadorikisuigenrin.html 松田町のキャンプ場一覧にも掲載なし https://town.matsuda.kanagawa.jp/site/kankou-sub/camp.html 。2026-05-27 fb9bddc で投入。調査の全文は scripts/yadoriki-check.md",
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。松田町公式の「やどりき水源林」ページにキャンプ場の記載なし https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-suigenrin.html 。寄地区のキャンプ場は寄4380-1 と蜂花苑ミロク（別レコード hachibanaen-miroku）。やどりき水源林は529haの森林で、キャンプ場としての施設名は確認できない。2026-08-07 追調査: 寄3048 は寄地区の実在施設（やどりきテラス 寄3415・松田町寄自然休養村 寄4380-1・蜂花苑ミロク 寄7138）のどの番地とも一致せず、借用元が特定できない 2026-08-11 追調査: **松田町公式が「水源林一帯での焚火やBBQなど火気の使用は禁止されています」と明記** https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-bbq.html 。同ページはBBQをするなら寄地区の別施設を使うよう案内している。**データは焚き火可・1,000円・4月〜11月営業のキャンプ場として掲載しており、一次情報と正面から矛盾する。**`sanogawa-camp`（自治体が公園内のキャンプ・火気を不可としている）と同型。status の扱いに判断が要る。 **⚠ 2026-08-11 unverified 化にあたっての歯止め: この1件は他の4件と性質が違う。**「実在が確認できない」だけでなく、**松田町公式で「水源林一帯での焚火やBBQなど火気の使用は禁止」が確認できている** https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-bbq.html 。**施設の実在が後から確認できたとしても、`bonfire: true` の通常のキャンプ場としては active に戻せない。**火気禁止は「行ってはいけない側」の情報で、`sanogawa-camp`（南部町が公園内のキャンプ・火気を不可としている）と同じ型。戻すときは必ず火気の可否を一次情報で取り直し、禁止のままなら `closed` / `closedReason: prohibited` を検討すること。"
+    "needsVerifyNote": "2026-08-07 調査。松田町公式の「やどりき水源林」ページにキャンプ場の記載なし https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-suigenrin.html 。寄地区のキャンプ場は寄4380-1 と蜂花苑ミロク（別レコード hachibanaen-miroku）。やどりき水源林は529haの森林で、キャンプ場としての施設名は確認できない。2026-08-07 追調査: 寄3048 は寄地区の実在施設（やどりきテラス 寄3415・松田町寄自然休養村 寄4380-1・蜂花苑ミロク 寄7138）のどの番地とも一致せず、借用元が特定できない 2026-08-11 追調査: **松田町公式が「水源林一帯での焚火やBBQなど火気の使用は禁止されています」と明記** https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-bbq.html 。同ページはBBQをするなら寄地区の別施設を使うよう案内している。**データは焚き火可・1,000円・4月〜11月営業のキャンプ場として掲載しており、一次情報と正面から矛盾する。**`sanogawa-camp`（自治体が公園内のキャンプ・火気を不可としている）と同型。status の扱いに判断が要る。 **⚠ 2026-08-11 unverified 化にあたっての歯止め: この1件は他の4件と性質が違う。**「実在が確認できない」だけでなく、**松田町公式で「水源林一帯での焚火やBBQなど火気の使用は禁止」が確認できている** https://town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-bbq.html 。**施設の実在が後から確認できたとしても、`bonfire: true` の通常のキャンプ場としては active に戻せない。**火気禁止は「行ってはいけない側」の情報で、`sanogawa-camp`（南部町が公園内のキャンプ・火気を不可としている）と同じ型。戻すときは必ず火気の可否を一次情報で取り直し、禁止のままなら `closed` / `closedReason: prohibited` を検討すること。 2026-08-12 決着: **神奈川県公式（管理者本人）が利用上の注意に「たき火禁止」「キャンプ等禁止」「禁煙」と明記しているのを確認** https://www.pref.kanagawa.jp/docs/pb5/j/suigen-shinrin/2/yadorikisuigenrin.html 。松田町のキャンプ場一覧の掲載は南丹沢清津峡キャンプ場のみでやどりき水源林は無い https://town.matsuda.kanagawa.jp/site/kankou-sub/camp.html 。なっぷ・じゃらんにも予約枠と料金が無い。**`closed` / `closedReason: prohibited` に確定した。**needsVerify は残す（施設の同定自体が未確定という意味は `sanogawa-camp` と同じく生きている）。調査の全文は scripts/yadoriki-check.md"
   },
   {
     "id": "mushizawa-camp",

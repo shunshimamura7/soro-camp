@@ -22,6 +22,7 @@
 | **大瀬テント村** | 沼津市西浦江梨**977** | 055-942-3177 | テントサイト**800円〜/泊**・バンガロー11,000円〜／**予約不要** | `osezaki-camp`（西浦江梨329） |
 | **朝霧高原オートキャンプ場** | 富士宮市猪之頭**2071** | — | サイト4,950円・バンガロー7,000円・トレーラーハウス12,000円 | `asagiri-greenpark-camp`（猪之頭1050） |
 | **亀見橋バカンス村** | 相模原市緑区牧野12822 | 042-787-0242 | — | `okumakino-camp`（アグリゲータが誤って紐づけていた。§6-18） |
+| **（南丹沢）清津峡キャンプ場** | 松田町**寄1111-2** | 090-2403-7455（沖西） | バンガロー1棟6,300円〜45,000円・**持込みテント1人1,500円**／夏期営業（冬期休） | `yadoriki-camp`（同じ寄地区。借用元とまでは言えないが、**寄地区で唯一の未登録キャンプ場**。2026-08-12 追加） |
 
 ### 参考: 借用ではないが未登録と分かっているもの
 
@@ -40,6 +41,7 @@
 | 大瀬テント村 | なっぷ https://www.nap-camp.com/shizuoka/11805 ／ 沼津市公式観光サイト https://numazukanko.jp/feature/kyanpujoutokushuu/kyanpujoutokushu |
 | 朝霧高原オートキャンプ場 | 富士宮市公式 https://www.city.fujinomiya.lg.jp/1025110000/p001691.html |
 | 亀見橋バカンス村 | 相模原市観光協会 https://www.e-sagamihara.com/camp/camp-627/ |
+| （南丹沢）清津峡キャンプ場 | 松田町公式 https://town.matsuda.kanagawa.jp/site/kankou-sub/kiyotsukyo.html ／ 松田町公式「キャンプ場」一覧 https://town.matsuda.kanagawa.jp/site/kankou-sub/camp.html （調査経緯は scripts/yadoriki-check.md） |
 
 ---
 

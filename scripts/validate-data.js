@@ -48,7 +48,22 @@ function unsourcedSuperlatives(text) {
 
 // ── 掲載状態と features の整合性 ──────────────────────────────────────────────
 const STATUSES = ['active', 'closed', 'unverified', 'suspended'];
-/** status が closed のときの内訳。詳細ページの警告の文面がこれで変わる */
+/**
+ * status が closed のときの内訳。詳細ページの警告の文面がこれで変わる。
+ *
+ * closed は「かつて営業していたが今は無い」だけでなく、
+ * **「そもそもキャンプ場として存在しなかった（誤登録）」も含む。**
+ * 前者は abolished / closed_business、後者は prohibited が受け持つ。
+ * どちらなのかは closedNote に必ず書くこと（一覧から消えるだけで詳細ページは残るため、
+ * 訪問者が「潰れたのか」「元から無いのか」を読み取れる必要がある）。
+ *
+ * - prohibited      … その場所でのキャンプ・火気が禁じられている。施設の廃止とは限らず、
+ *                     「キャンプ場として運営された記録が無い誤登録」もここに入る。
+ *                     例: sanogawa-camp（南部町が河川公園でのキャンプ・火気を不可）、
+ *                         yadoriki-camp（神奈川県が水源林で「たき火禁止」「キャンプ等禁止」）
+ * - abolished       … 設置者が施設として廃止した。例: hinata-camp（伊勢原市が用途廃止）
+ * - closed_business … 事業者が営業を終了した。例: hakonesono-auto（公式が営業終了を掲示）
+ */
 const CLOSED_REASONS = ['prohibited', 'abolished', 'closed_business'];
 
 /** eligibility.type が取りうる値 */
