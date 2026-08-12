@@ -3577,8 +3577,9 @@
     "area": "御前崎",
     "status": "active",
     "address": "静岡県御前崎市池新田9122-1",
-    "lat": 34.6178,
-    "lng": 138.1872,
+    "lat": 34.630427,
+    "lng": 138.122027,
+    "coordsVerified": true,
     "priceMin": 2000,
     "priceMax": 4000,
     "priceNote": "人数課金。サイト利用料 大人1名2,000円／中学生以下1,000円。電源は有料",
@@ -3618,8 +3619,7 @@
     "tel": "0537-85-2418",
     "cautions": [
       "住所は御前崎市池新田9122-1。旧データの「白羽3870-1」は誤り https://www.omaezaki.gr.jp/contents/detail.html?s=1090"
-    ],
-    "needsCoord": true
+    ]
   },
   {
     "id": "fujikawa-camp",
@@ -4838,8 +4838,9 @@
     "area": "北杜",
     "status": "active",
     "address": "山梨県北杜市白州町白須8093-9",
-    "lat": 35.8248,
-    "lng": 138.3547,
+    "lat": 35.800087,
+    "lng": 138.316488,
+    "coordsVerified": true,
     "priceMin": 4100,
     "priceMax": 24500,
     "priceNote": "サイト単位課金。フリーサイト1泊1区画4,100円〜、区画オートサイト4,500〜24,500円。バンガロー7,860円〜。名水公園べるが内",
@@ -4877,8 +4878,7 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://www.verga.info/",
-    "closedDays": "毎週水曜（GW・7月中旬〜8月下旬は無休）",
-    "needsCoord": true
+    "closedDays": "毎週水曜（GW・7月中旬〜8月下旬は無休）"
   },
   {
     "id": "yanagishima",
