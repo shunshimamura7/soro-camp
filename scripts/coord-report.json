@@ -853,14 +853,14 @@
     "prefecture": "神奈川",
     "area": "山北",
     "type": null,
-    "lat": 35.3681,
-    "lng": 139.0548,
+    "lat": 35.402186,
+    "lng": 139.043808,
     "verdict": "OK",
     "coarse": false,
     "gsiPref": "神奈川県",
     "gsiCity": "山北町",
-    "lv01Nm": "都夫良野",
-    "elevation": 351.5,
+    "lv01Nm": "神縄",
+    "elevation": 220.6,
     "noElevation": false
   },
   {
