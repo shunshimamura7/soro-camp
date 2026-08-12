@@ -37,6 +37,9 @@ const PLACEHOLDER_DATE = '2025-01-01';
 const SUPERLATIVE = /日本一|全国一|国内一|世界一|最高峰|最強|随一|No\.?1|ナンバーワン|全国第?\d+位|日本随一|屈指/;
 const ATTRIBUTED  = /と言われ|と言われる|と称され|と呼ばれ|公称|ギネス|認定|指定/;
 
+/** null / undefined / 空白のみ を空とみなす */
+const isEmpty = (v) => v == null || String(v).trim() === '';
+
 /** 最上級表現を含み、かつ同じ文に帰属表現がない文を返す */
 function unsourcedSuperlatives(text) {
   if (!text) return [];
@@ -259,6 +262,31 @@ for (const c of camps) {
   // 内訳を書けないのに「確認した」とは言えない。実質的な判定基準は priceNote の有無。
   if (c.priceVerified === true && (c.priceNote == null || String(c.priceNote).trim() === '')) {
     errors.push(`${id}: priceVerified が true なのに priceNote が空。料金の内訳を書けないなら確認済みにしない`);
+  }
+
+  // ── priceVerified が true なのに出典が1つも無い ──
+  //
+  // priceVerified の定義は lib/types.ts を見ること。「一次情報で確認し、その出典が
+  // officialUrl / tel / cautions のいずれかに記録されている」が条件。
+  //
+  // このフラグの126件は 2026-08-07 の 9fd15e3 が apply-price-verified.js で
+  // **priceNote の有無だけを見て機械的に立てたもの**で、人が1件ずつ確認した結果ではない。
+  // priceNote 自体が生成されていた場合（yadoriki-camp の「大人500円+サイト500円〜」）、
+  // 生成された内訳が確認済みフラグの根拠になる循環が起きる。
+  // 出典が1つも無いレコードは、その循環から抜け出せていない可能性が高い。
+  //
+  // 無料開放（type:wild / priceNote が無料開放）は出典が無くて当然なので対象外。
+  const priceIsFree = c.type === 'wild' || /無料開放/.test(String(c.priceNote || ''));
+  const hasPriceSource =
+    !isEmpty(c.officialUrl) ||
+    !isEmpty(c.tel) ||
+    (Array.isArray(c.cautions) && c.cautions.some((x) => /https?:\/\//.test(String(x))));
+  if (c.priceVerified === true && !priceIsFree && !hasPriceSource) {
+    warnings.push(
+      `${id}: priceVerified が true だが出典が1つも無い（officialUrl / tel / cautions のURL）。` +
+        `このフラグは 9fd15e3 が priceNote の有無から機械的に付けたもので、人が確認した記録ではない。` +
+        `一次情報に当たり直して出典を記録するか、priceVerified を false にして priceMin/priceMax を 0 に落とすこと`
+    );
   }
   // 掲載を続ける状態（active / unverified）だけを対象にする。closed / suspended で料金が
   // 未検証なのは正常で、警告に従って priceVerified を立て直すと誤りになる（yadoriki-camp で実際に起きた）。

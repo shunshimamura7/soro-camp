@@ -3632,9 +3632,9 @@
     "lat": 35.1482,
     "lng": 138.5976,
     "coordsVerified": true,
-    "priceMin": 2000,
-    "priceMax": 4000,
-    "priceNote": "大人1,000円+サイト1,000円〜",
+    "priceMin": 3500,
+    "priceMax": 8000,
+    "priceNote": "サイト利用料＋駐車場使用料の合算。サイトはテント4,000円／平地オート6,000円（駐車1台込）／展望オート7,000円（同）／高台オート8,000円（駐車2台込）。駐車場使用料は普通車1,000円・バイク500円。**1人で1区画を使う場合はサイト利用料が1,000円割引**なので、ソロ最安はテントサイト3,000円＋バイク500円＝3,500円（普通車なら4,000円）",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -3663,10 +3663,14 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "富士川西岸・野田山の高台にある富士市の公園内キャンプ場で、標高は約500m。「日本一高い山と日本一深い海の間」を掲げるとおり、富士山と駿河湾の両方を見渡せる。全サイトで焚き火ができ、展望オートサイトからの眺めが目当てになる。2025年9月に区画が約1.5倍へ拡張された。無料Wi-Fiあり。",
+    "soloComment": "富士川西岸・野田山の高台にある富士市の公園内キャンプ場で、標高は約500m。「日本一高い山と日本一深い海の間」を掲げるとおり、富士山と駿河湾の両方を見渡せる。全サイトで焚き火ができ、展望オートサイトからの眺めが目当てになる。2025年9月に区画が約1.5倍へ拡張された。無料Wi-Fiあり。ソロで1区画を使うとサイト利用料が1,000円割引になる。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://fujikawa-camp.jp/",
+    "cautions": [
+      "料金は施設公式の料金ページで確認（2026-08-12） https://fujikawa-camp.jp/price/ 。サイト利用料と駐車場使用料が別建てで、旧データの「大人1,000円+サイト1,000円〜」（priceMin 2,000／priceMax 4,000）は1人あたり課金の形になっており、実際の課金体系とも金額とも違っていた"
+    ]
   },
   {
     "id": "sumatakyo-camp",
@@ -4794,9 +4798,8 @@
     "lat": 35.8124,
     "lng": 138.4621,
     "coordsVerified": true,
-    "priceMin": 1500,
-    "priceMax": 3500,
-    "priceNote": "大人500円+サイト1,000円〜",
+    "priceMin": 0,
+    "priceMax": 0,
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -4825,10 +4828,17 @@
       "nearbyShop": ""
     },
     "season": "5月〜10月",
-    "soloComment": "日照時間が日本一と公称される明野の高台キャンプ場。夏のひまわり畑と八ヶ岳・南アルプスのパノラマが圧巻。星空観察の条件が良く公営なので料金もお値打ち。八ヶ岳を正面に見ながらの焚き火が格別。",
+    "soloComment": "日照時間が日本一と公称される明野の高台キャンプ場。夏のひまわり畑と八ヶ岳・南アルプスのパノラマが圧巻。星空観察の条件が良い。八ヶ岳を正面に見ながらの焚き火が格別。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": false,
+    "officialUrl": "https://www.pica-resort.jp/akeno/",
+    "tel": "0551-25-4451",
+    "cautions": [
+      "**現在の運営は PICA八ヶ岳明野（旧名: キャンピカ明野ふれあいの里）で、公営ではない。**北杜市公式の施設一覧も「明野ふれあいの里(PICA八ヶ岳明野)」として掲載し、リンク先は PICA の公式サイト https://www.city.hokuto.yamanashi.jp/life/maps/list/1368/ ／ https://www.pica-resort.jp/akeno/",
+      "料金は2026-08-12 時点で一次情報から確定できなかった。PICA は区画単位・日付変動制で、公式の料金はオンライン予約カレンダー https://booking.pica-resort.jp/v3/calendar/stay/5 でしか出ない。旧データの「大人500円+サイト1,000円〜」は1人あたり課金の形で、PICA の課金体系と合わない",
+      "season「5月〜10月」も要再確認。なっぷは通年営業、PICA公式の営業時間表は火・水定休の通年運用に見える https://www.nap-camp.com/yamanashi/11354"
+    ]
   },
   {
     "id": "hakushu-ojiro-camp",
