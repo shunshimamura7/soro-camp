@@ -249,7 +249,11 @@ for (const c of camps) {
   if (c.priceVerified === true && (c.priceNote == null || String(c.priceNote).trim() === '')) {
     errors.push(`${id}: priceVerified が true なのに priceNote が空。料金の内訳を書けないなら確認済みにしない`);
   }
-  if (c.priceVerified !== true && c.priceNote != null && String(c.priceNote).trim() !== '') {
+  // 掲載を続ける状態（active / unverified）だけを対象にする。closed / suspended で料金が
+  // 未検証なのは正常で、警告に従って priceVerified を立て直すと誤りになる（yadoriki-camp で実際に起きた）。
+  // 新しい status を足したときは、警告を出すかどうかをここで明示的に決めること。
+  const priceNoteChecked = c.status === 'active' || c.status === 'unverified';
+  if (priceNoteChecked && c.priceVerified !== true && c.priceNote != null && String(c.priceNote).trim() !== '') {
     warnings.push(`${id}: priceNote があるのに priceVerified が立っていない（付け忘れの疑い）`);
   }
 

@@ -164,8 +164,12 @@ export default async function CampDetailPage({
           閉鎖の警告。closedReason で文面を変える。
           以前は closed 全件に「キャンプが禁止されています。訪問しないでください」を出していたが、
           これが正しいのは自治体がキャンプを禁じた sanogawa-camp だけだった。
-          廃止・閉業に「禁止」と書くのは事実と違うし、「訪問しないでください」は
-          その土地への立ち入り自体が禁じられているように読める。
+          廃止・閉業に「禁止」と書くのは事実と違う。
+
+          prohibited 側からも「訪問しないでください」を外した。禁じられているのは
+          キャンプと火気であって立ち入りではない。sanogawa-camp は南部町が管理する
+          河川公園、yadoriki-camp は神奈川県の水源林（毎週土日に県の森林ガイドがある）で、
+          どちらも訪れること自体は自由。禁止の対象を取り違えて書かないこと。
         */}
         {camp.status === "closed" && (
           <div
@@ -176,7 +180,7 @@ export default async function CampDetailPage({
               {camp.closedReason === "abolished" ||
               camp.closedReason === "closed_business"
                 ? "この施設は営業を終了しています。現地に施設はありません。"
-                : "この場所は現在キャンプが禁止されています。訪問しないでください。"}
+                : "この場所でのキャンプ・火気の使用は禁止されています。宿泊目的で訪れないでください。"}
             </p>
             {camp.closedNote && (() => {
               const src = parseSource(camp.closedNote);
