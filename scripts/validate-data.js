@@ -66,6 +66,17 @@ const STATUSES = ['active', 'closed', 'unverified', 'suspended'];
  */
 const CLOSED_REASONS = ['prohibited', 'abolished', 'closed_business'];
 
+/**
+ * closed のレコードの season を書き始めてよい語。
+ *
+ * season は「営業期間」として表に出るので、閉鎖済みなら一目でそう分かる語で始める。
+ * 「閉業（旧: 通年）」のように旧期間を括弧に残す形が既存の書き方。
+ * 営業実績そのものが無い誤登録（yadoriki-camp）は旧期間を書けないので
+ * 「営業実績なし」、キャンプが禁じられた場所（sanogawa-camp）は「利用不可」を使う。
+ */
+const CLOSED_SEASON_WORDS = ['閉業', '廃止', '閉館', '閉鎖', '利用不可', '営業実績なし'];
+const CLOSED_SEASON_PREFIX = new RegExp(`^(?:${CLOSED_SEASON_WORDS.join('|')})`);
+
 /** eligibility.type が取りうる値 */
 const ELIGIBILITY_TYPES = ['exclusive', 'discount', 'priority', 'membership'];
 
@@ -388,6 +399,16 @@ for (const c of camps) {
     } else if (c.closedReason !== 'prohibited' && !/https?:\/\//.test(String(c.closedNote))) {
       // prohibited は現地の掲示・管理者への確認が根拠になることがあり、URL を必須にしない
       warnings.push(`${id}: closedNote に URL がない（${c.closedNote}）`);
+    }
+
+    // ── closed の season が現在形のまま残っていないか ──
+    // season は詳細ページのヘッダ・「営業期間」行・meta description の3箇所に出る。
+    // 閉鎖済みなのに「4月〜11月」と書いてあると、赤い警告のすぐ下に営業期間が並ぶ。
+    // yadoriki-camp で実際に表示まで通ったので機械で止める。
+    if (!CLOSED_SEASON_PREFIX.test(String(c.season || '').trim())) {
+      warnings.push(
+        `${id}: status が closed なのに season が「${c.season}」。閉鎖済みと分かる書き方にすること（${CLOSED_SEASON_WORDS.join(' / ')} のいずれかで始める。例「閉業（旧: 通年）」）`
+      );
     }
   }
   if (c.status !== 'closed' && (c.closedReason != null || c.closedNote != null)) {

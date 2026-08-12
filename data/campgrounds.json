@@ -1801,9 +1801,8 @@
     "address": "山梨県南都留郡富士河口湖町富士ヶ嶺",
     "lat": 0,
     "lng": 0,
-    "priceMin": 2200,
-    "priceMax": 5000,
-    "priceNote": "大人1,100円+テント1,100円〜",
+    "priceMin": 0,
+    "priceMax": 0,
     "scores": {
       "quietness": 5,
       "scenery": 5,
@@ -1833,12 +1832,12 @@
     "season": "閉業（旧: 通年）",
     "soloComment": "2020年6月に朝霧高原北部の富士ヶ嶺高原に開業したフリーサイトのキャンプ場だったが、現在は閉業している。ふもとっぱらより標高が高く富士山に近い牧草地で、開けた眺めが売りだった。",
     "lastVerified": "2026-08-07",
-    "priceVerified": true,
+    "priceVerified": false,
     "cautions": [
       "閉業済み。利用できない"
     ],
     "closedReason": "closed_business",
-    "closedNote": "2020年6月開業、現在は閉業。所在地は静岡県富士宮市ではなく山梨県富士河口湖町富士ヶ嶺 https://camp-quests.com/39367/"
+    "closedNote": "2020年6月開業、現在は閉業。所在地は静岡県富士宮市ではなく山梨県富士河口湖町富士ヶ嶺 https://camp-quests.com/39367/ 2026-08-12: 営業当時の料金 `priceMin: 2200` / `priceMax: 5000` / `priceNote: \"大人1,100円+テント1,100円〜\"` を削除した。捏造値ではなく実際の料金だが、閉業済みの施設に現役価格として表示されていたため。"
   },
   {
     "id": "okooigawa-lake",
@@ -2858,11 +2857,11 @@
     },
     "features": {
       "bonfire": false,
-      "bonfireNote": "焚き火台必須",
+      "bonfireNote": "閉業のため不可",
       "pet": false,
       "shower": false,
       "bath": false,
-      "bathNote": "箱根園温泉（施設内）",
+      "bathNote": "（閉業前）箱根園温泉（施設内）",
       "toilet": "ウォシュレット",
       "carIn": false,
       "soloPlan": false,
@@ -3253,7 +3252,7 @@
       "bath": false,
       "toilet": "和式",
       "carIn": false,
-      "carInNote": "荷物搬入後駐車場へ移動",
+      "carInNote": "キャンプ等禁止のため不可",
       "soloPlan": false,
       "reservation": "要",
       "convenience": false,
@@ -3266,7 +3265,7 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "4月〜11月",
+    "season": "営業実績なし（キャンプ場として運営された記録が確認できない）",
     "soloComment": "現在この場所でのキャンプは禁止されています。やどりき水源林は神奈川県が管理する水源林で、利用上の注意に「たき火禁止」「キャンプ等禁止」と明記されています。キャンプ場として運営された記録は確認できていません。",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
@@ -8935,7 +8934,7 @@
     "lng": 0,
     "priceMin": 0,
     "priceMax": 0,
-    "priceNote": "無料開放",
+    "priceNote": "（閉鎖前）無料開放されていた",
     "scores": {
       "quietness": 5,
       "scenery": 3,
@@ -8966,7 +8965,7 @@
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "要確認",
+    "season": "利用不可（キャンプ禁止。かつては無料の野営地だった）",
     "tel": null,
     "lastVerified": "2026-08-07",
     "needsVerify": true,
@@ -9375,11 +9374,12 @@
     "name": "室久保グリーンパーク（THE Do-c Camp）",
     "prefecture": "山梨",
     "area": "道志村",
-    "status": "closed",
+    "status": "unverified",
     "address": "山梨県南都留郡道志村7329",
     "type": "campground",
     "lat": 0,
     "lng": 0,
+    "needsCoord": true,
     "priceMin": 3300,
     "priceMax": 4400,
     "priceNote": "**サイト単位課金。ソロでも定員1〜5名分の満額を払う。**9m×9mのサイトが3,300円（週末・祝前日4,400円）で、1〜5名程度まで同額。追加は大人+2,200円／子供+1,650円／ペット+1,100円。予約サイトから事前決済",
@@ -9423,7 +9423,7 @@
     "cautions": [
       "村公式は「室久保グリーンパーク」、施設公式は「THE Do-c Camp」で名称が異なる"
     ],
-    "closedReason": "closed_business",
-    "closedNote": "**Googleマップで閉業表示を確認（2026-08-11・しゅんの目視、座標の取得作業中）。** Web上の一次情報には閉業の告知が無く、施設公式 https://the-do-c.com は2026年の表記と料金表・予約サイトの事前決済が生きたまま、村公式 https://www.doshi-kanko.jp/camp/murokubo-greenpark/ にも記載が無かった（同日実測）。**以下のURLは閉業の出典ではなく、告知が無かったことの記録。**直接の出典が手に入ったら差し替えること。なお 2026-08-10 に「村公式の一覧＋施設公式の2026年表記＋予約サイトの事前決済」の3つが揃った候補として追加した翌日の判明で、この3点が揃っても営業の証明にならない実例（§6-22）。"
+    "needsVerify": true,
+    "needsVerifyNote": "**2026-08-11〜2026-08-12 は `closed` / `closedReason: closed_business` としていたが、2026-08-12 に `unverified` へ戻した。**根拠が Google マップの閉業表示の目視のみで、一次情報に閉業の告知が無かったため。詳細ページは closed だと「この施設は営業を終了しています。現地に施設はありません」と断言するので、この証拠では強すぎると判断した。 以下は closed 化したときの記録（closedNote から移設・原文）: 「**Googleマップで閉業表示を確認（2026-08-11・しゅんの目視、座標の取得作業中）。** Web上の一次情報には閉業の告知が無く、施設公式 https://the-do-c.com は2026年の表記と料金表・予約サイトの事前決済が生きたまま、村公式 https://www.doshi-kanko.jp/camp/murokubo-greenpark/ にも記載が無かった（同日実測）。**以下のURLは閉業の出典ではなく、告知が無かったことの記録。**直接の出典が手に入ったら差し替えること。なお 2026-08-10 に「村公式の一覧＋施設公式の2026年表記＋予約サイトの事前決済」の3つが揃った候補として追加した翌日の判明で、この3点が揃っても営業の証明にならない実例（§6-22）。」 **この経緯を消さないこと。**消すと次に誰かが同じ Google マップの閉業表示を見て、同じ根拠で同じ closed 化を繰り返す。次に必要なのは Google の表示ではなく、施設か村への直接確認（tel は未取得）。 料金について: `priceVerified: true` は維持した。`priceNote` の内訳は 2026-08-10 に施設公式 https://the-do-c.com の料金表と予約サイトの事前決済画面から取ったもので、上記のとおり 2026-08-11 時点でも生きていることを実測している。出典が追える金額なので false に落とす理由が無い（やどりきの捏造値とは性質が違う）。ただし**料金が生きていること自体は営業の証明にならない**（それがこのレコードの論点）。"
   }
 ]

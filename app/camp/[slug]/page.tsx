@@ -109,13 +109,19 @@ export default async function CampDetailPage({
   const priceUnknown = !isWild && camp.priceMin === 0 && camp.priceMax === 0;
   // 値は入っているが裏を取っていないもの。根拠のない金額は出さない
   const priceUnverified = !isWild && camp.priceVerified !== true;
-  const priceLabel = isWild
-    ? "無料"
-    : priceUnverified
-      ? "料金 要確認"
-      : priceUnknown
-        ? (camp.priceNote || "要問合せ")
-        : `¥${camp.priceMin.toLocaleString()}〜`;
+  // 閉鎖済みの施設に金額を出さない。type:"wild" の「無料」も同じで、
+  // キャンプが禁じられた場所に「無料」と出ると、行けば無料で泊まれると読める
+  // （sanogawa-camp で実際にそうなっていた）。金額の裏取り状況より status が優先。
+  const isClosed = camp.status === "closed";
+  const priceLabel = isClosed
+    ? "利用不可"
+    : isWild
+      ? "無料"
+      : priceUnverified
+        ? "料金 要確認"
+        : priceUnknown
+          ? (camp.priceNote || "要問合せ")
+          : `¥${camp.priceMin.toLocaleString()}〜`;
 
   // "2025-01-01" は一括投入時のプレースホルダなので確認済みとは扱わない
   const isUnverified =
@@ -469,13 +475,15 @@ export default async function CampDetailPage({
                 <Row
                   label="料金"
                   value={
-                    isWild
-                      ? "無料"
-                      : priceUnverified
-                        ? "未確認（公式サイトまたは電話で要確認）"
-                        : priceUnknown
-                          ? (camp.priceNote || "要問合せ")
-                          : `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`
+                    isClosed
+                      ? "利用不可（閉鎖のため料金は表示しません）"
+                      : isWild
+                        ? "無料"
+                        : priceUnverified
+                          ? "未確認（公式サイトまたは電話で要確認）"
+                          : priceUnknown
+                            ? (camp.priceNote || "要問合せ")
+                            : `¥${camp.priceMin.toLocaleString()}〜¥${camp.priceMax.toLocaleString()}${camp.priceNote ? `（${camp.priceNote}）` : ""}`
                   }
                 />
                 <Row label="営業期間" value={camp.season} />
