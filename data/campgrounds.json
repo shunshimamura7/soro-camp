@@ -2986,7 +2986,6 @@
     "soloComment": "神奈川県立秦野戸川公園内の公営キャンプ場。格安で渋沢丘陵トレッキングや大山・丹沢表尾根への登山ベースとして最適。水無川沿いの涼しい林間サイトが夏も快適。電車でも行ける公共交通アクセスが嬉しい。",
     "tel": "0463-87-9020",
     "lastVerified": "2026-08-07",
-    "coordsGsiChecked": true,
     "priceVerified": true
   },
   {
@@ -3275,7 +3274,6 @@
     "season": "営業実績なし（キャンプ場として運営された記録が確認できない）",
     "soloComment": "現在この場所でのキャンプは禁止されています。やどりき水源林は神奈川県が管理する水源林で、利用上の注意に「たき火禁止」「キャンプ等禁止」と明記されています。キャンプ場として運営された記録は確認できていません。",
     "lastVerified": "2026-08-11",
-    "coordsGsiChecked": true,
     "priceVerified": false,
     "closedNote": "キャンプ場として運営された記録が確認できないレコード。閉業ではなく誤登録。神奈川県公式（環境農政局水源環境保全課／かながわトラストみどり財団）がやどりき水源林の利用上の注意に「たき火禁止」「キャンプ等禁止」「禁煙」と明記 https://www.pref.kanagawa.jp/docs/pb5/j/suigen-shinrin/2/yadorikisuigenrin.html 松田町のキャンプ場一覧にも掲載なし https://town.matsuda.kanagawa.jp/site/kankou-sub/camp.html 。2026-05-27 fb9bddc で投入。調査の全文は scripts/yadoriki-check.md",
     "needsVerify": true,
@@ -3425,7 +3423,6 @@
     "soloComment": "富士山と伊豆の山々を見渡す高台に位置する大型キャンプ場。本格的な設備と広大なフィールドが魅力。高規格キャンプ場として人気が高く、近隣温泉への割引サービスも付いてくる。",
     "tel": "0558-79-0213",
     "lastVerified": "2026-08-11",
-    "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://mobility-park.jp/"
   },
@@ -4750,7 +4747,6 @@
     "season": "4月〜11月",
     "soloComment": "甲府盆地を見下ろす山梨市の丘陵地帯に位置するキャンプ場。周辺がブドウ・桃・スモモ畑に囲まれており夏〜秋は果物狩りと組み合わせたフルーツキャンプが楽しめる。甲府盆地の夜景と富士山のシルエットが美しい。",
     "lastVerified": "2026-08-11",
-    "coordsGsiChecked": true,
     "priceVerified": true,
     "needsVerify": true,
     "needsVerifyNote": "2026-08-07 調査。「牧丘フルーツ村キャンプ場」の名で山梨市公式・富士の国やまなし（県公式）に該当なし。検索で出る「牧丘フルーツセンター」は山梨市牧丘町窪平358の果樹園で別施設 https://www.city.yamanashi.yamanashi.jp/soshiki/5/2246.html 。座標は甲州市塩山中萩原を指し、address（山梨市牧丘町牧平3041）と17.3km離れている 2026-08-11 追調査: 山梨市牧丘町の実在キャンプ場は琴川キャンプ場（杣口2050-1）・乙女高原グリーンロッジ（北原4143-1）・7inch CAMP（北原1786）の3件で、**牧平3041 に該当なし**。名前の近い2件も別物だった —「牧丘フルーツセンター」は果樹園（山梨市牧丘町窪平358）、**「オートキャンプ・フルーツ村」は千葉県君津市旅名96 / 0439-38-2255** https://fruitsvillage.com/ 。"
@@ -7037,7 +7033,6 @@
     "season": "通年",
     "soloComment": "2023年オープン、サーフィン聖地・静波海岸のリゾート内の全面芝生7区画。",
     "lastVerified": "2026-08-07",
-    "coordsGsiChecked": true,
     "cautions": [
       "「静波海岸キャンプサイト」という名称の施設は確認できず。静波海岸には静波リゾートキャンプサイト（牧之原市静波2228-43）と静波キャンプ（同2220-515）の2施設が実在する"
     ],
@@ -7399,7 +7394,6 @@
     "season": "4月1日〜11月30日",
     "soloComment": "富士五湖エリアの高規格キャンプ場、温泉あり。西湖・精進湖の穴場エリアで富士山眺望抜群。全16区画のオートサイトで、キャンピングカーも乗り入れできる。",
     "lastVerified": "2026-08-07",
-    "coordsGsiChecked": true,
     "address": "山梨県南都留郡鳴沢村字ジラゴンノ8532-5",
     "priceNote": "サイト単位課金＋人数課金。1サイト 平日4,400円／休前日6,600円／特別日7,700円＋入場料 大人880円・小人（4歳〜小学生）660円・ペット220円 → ソロ1名は平日5,280円。河口湖駅から無料送迎あり（事前予約制）",
     "priceVerified": true,
@@ -7687,7 +7681,6 @@
         "source": "三浦市海水浴場ルール第25条【令和7年度】 https://www.pref.kanagawa.jp/documents/122025/r7miurashi.pdf"
       }
     ],
-    "coordsGsiChecked": true,
     "priceVerified": true
   },
   {

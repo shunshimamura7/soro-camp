@@ -42,54 +42,19 @@ const NICKNAME_WORDS = [
   '温泉', '渓谷', '半島', '岬', '浜', '滝', '岳', '演習林', '緑地',
 ];
 
-const KANJI_NUM = { 〇: '0', 一: '1', 二: '2', 三: '3', 四: '4', 五: '5', 六: '6', 七: '7', 八: '8', 九: '9' };
+// 文字列処理は `verify-address-gsi.js` と共通なので scripts/lib/jp-address.js に集約した。
+// **抽出時に挙動は変えていない。**このスクリプトが使う normalize は漢数字を算用数字に直す側
+// （`normalizeNumUnified`）で、`verify-address-gsi.js` のダッシュを統一する側とは別物。
+// 違いはモジュールの冒頭に書いてある。
 
-function normalize(s) {
-  return String(s || '')
-    .normalize('NFKC')
-    .replace(/\s+/g, '')
-    .replace(/大字|字(?=[^\d])/g, '')
-    .replace(/[〇一二三四五六七八九]/g, (c) => KANJI_NUM[c] ?? c);
-}
-
-/** 2つの文字列が共有する最長の連続部分の長さ */
-function longestCommonSubstring(a, b) {
-  if (!a || !b) return 0;
-  let best = 0;
-  for (let i = 0; i < a.length; i++) {
-    for (let j = i + best + 1; j <= a.length; j++) {
-      const sub = a.slice(i, j);
-      if (b.includes(sub)) best = Math.max(best, sub.length);
-      else break;
-    }
-  }
-  return best;
-}
-
-/** address から都道府県・市区町村を落とした残り */
-function remainder(address, city) {
-  let rest = normalize(address).replace(/^(北海道|東京都|(?:京都|大阪)府|.{2,3}県)/, '');
-  const c = normalize(city);
-  const candidates = [c, c.split('郡').pop()].filter(Boolean);
-  for (const cand of candidates) {
-    const i = rest.indexOf(cand);
-    if (i >= 0) return rest.slice(i + cand.length);
-  }
-  return rest;
-}
-
-/** 「長坂町大八田」→「長坂町」。合併市の旧町名の接頭辞を取る。「湖東町」のように後ろが無いものは対象外 */
-function chouPrefix(lv01Nm) {
-  const m = /^(.+?町)(.+)$/.exec(normalize(lv01Nm));
-  return m ? m[1] : null;
-}
-
-/** address 残余の先頭の地名部分（数字の手前まで）。「堀山下1513」→「堀山下」 */
-function addressOaza(address, city) {
-  const rest = remainder(address, city);
-  const m = /^([^\d]+)/.exec(rest);
-  return m ? m[1].replace(/[（(].*$/, '') : rest;
-}
+const {
+  normalizeNumUnified: normalize,
+  longestCommonSubstring,
+  remainder,
+  chouPrefix,
+  addressOaza,
+} = require('./lib/jp-address');
+const { replaceSection, sectionSizes } = require('./lib/md-sections');
 
 /**
  * 1件を仕分ける。
@@ -97,14 +62,34 @@ function addressOaza(address, city) {
  * - chouFreq   … 同じ「◯◯町」接頭辞が何件に出たか（I7）
  * - addrGroups … 同じ市区町村＋同じ address 大字の組で、lv01Nm が何種類に割れたか（I8）
  */
-function classify(row, oazaFreq, chouFreq = new Map(), addrGroups = new Map()) {
+function classify(row, oazaFreq, chouFreq = new Map(), addrGroups = new Map(), lv01Suspects = new Set()) {
   const rest = remainder(row.address, row.city);
   const oaza = normalize(row.lv01Nm);
   const reasons = [];
 
   // I1: GSI が大字を持っていない。「−」は未整備を表すマーカー
+  //
+  // ⚠ **無条件に IGNORABLE にしてはいけない。**「−」が正常なのは
+  // 道志村・鳴沢村のように**そもそも大字を持たない自治体**の場合だけで、
+  // 同じ市区町村の他のレコードが大字を返しているなら異常のほうを疑う。
+  // その判定は `verify-address-gsi.js` が自治体内の相対で行い、md の
+  // `## NO_LV01` → `### SUSPECT` に出す（引き継ぎ §17-4-2）。
+  // **ここで揉み消していたせいで `mitsumata-camp`（山北町・9.03km）が
+  // IGNORABLE に落ちていた。**
   if (!oaza || oaza === '-' || oaza === '−' || oaza === 'なし') {
-    return { verdict: 'IGNORABLE', reason: 'I1 lv01Nm が「−」＝国土地理院側に大字データが無い' };
+    if (!lv01Suspects.has(row.slug)) {
+      return { verdict: 'IGNORABLE', reason: 'I1 lv01Nm が「−」＝国土地理院側に大字データが無い' };
+    }
+    // 相対評価で当たりと出ているものは、ここで SUSPECT に確定させる。
+    // 以降の I2〜I8 は**実在する大字名どうしを比べる前提**の規則なので、「−」に当てても意味がない。
+    // とくに I5（同じ lv01Nm が2件以上に出たら広域スナップ先）は、
+    // **「−」が複数あるというだけで発火して IGNORABLE に落としてしまう。**
+    return {
+      verdict: 'SUSPECT',
+      reason:
+        'I1 を適用しない … `verify-address-gsi.js` の相対評価で、' +
+        `同じ「${row.city}」の他のレコードは大字が取れているのにこの1件だけ「−」（\`## NO_LV01\` の SUSPECT）`,
+    };
   }
 
   // I2: 表記ゆれ・旧字・部分一致。「大平柿木」と「大平」のようなケース
@@ -166,22 +151,75 @@ function classify(row, oazaFreq, chouFreq = new Map(), addrGroups = new Map()) {
   };
 }
 
-/** md の OAZA_MISS の表を読む */
+/**
+ * md の `## NO_LV01` → `### SUSPECT` の表から slug を拾う。
+ *
+ * 「−」を異常と見るかどうかは自治体内の相対でしか決まらず、その判定は
+ * `verify-address-gsi.js` が持っている。**ここで判定をやり直さず、結果を借りる。**
+ * 同じ規則を2か所に書くと、片方だけ直したときに食い違う。
+ */
+function parseLv01Suspects(md) {
+  const sec = md.split(/^## NO_LV01/m)[1];
+  if (!sec) return new Set();
+  const sus = sec.split(/^### SUSPECT/m)[1];
+  if (!sus) return new Set();
+  const table = sus.split(/^#{2,3} /m)[0];
+  const out = new Set();
+  for (const line of table.split(/\r?\n/)) {
+    const m = /^\|\s*`([^`]+)`\s*\|/.exec(line);
+    if (m) out.add(m[1]);
+  }
+  return out;
+}
+
+/** `|` で列に割る。`esc()` が `\|` に逃がした本文中のパイプでは切らない */
+function splitCells(line) {
+  return line
+    .split(/(?<!\\)\|/)
+    .slice(1, -1)
+    .map((s) => s.trim().replace(/\\\|/g, '|'));
+}
+
+/**
+ * md の OAZA_MISS の表を読む。
+ *
+ * ⚠ **列は位置ではなく見出し名で引く。**
+ * 以前は `| slug | 施設名 | address | 逆ジオ | 距離 |` の順を決め打ちしていたので、
+ * `verify-address-gsi.js` に `status` 列が入った瞬間に全列が1つずれ、
+ * **address の位置に施設名が入って38件すべてが IGNORABLE に化けた**（SUSPECT 0件）。
+ * 出力側の表に列が増えても壊れないようにしておく。
+ */
 function parseRows(md) {
   // 「## OAZA_MISS を『住所が誤り』と読まないこと」という解説の見出しが別にあるので、
-  // 件数付きの見出し（## OAZA_MISS（43件））だけを拾う
+  // 件数付きの見出し（## OAZA_MISS（38件））だけを拾う
   const section = md.split(/^## OAZA_MISS（/m)[1]?.split(/^## /m)[0] ?? '';
+  const lines = section.split(/\r?\n/);
+
+  const headIdx = lines.findIndex((l) => /^\|/.test(l) && /slug/.test(l));
+  if (headIdx < 0) return [];
+  const cols = splitCells(lines[headIdx]);
+  const col = (name) => cols.findIndex((c) => c.startsWith(name));
+  const iSlug = col('slug');
+  const iName = col('施設名');
+  const iAddr = col('address');
+  const iGeo = col('逆ジオ');
+  const iDist = col('距離');
+  if ([iSlug, iName, iAddr, iGeo, iDist].some((i) => i < 0)) {
+    throw new Error(`OAZA_MISS の表の見出しを解釈できない: ${cols.join(' / ')}`);
+  }
+
   const rows = [];
-  for (const line of section.split(/\r?\n/)) {
-    const m = /^\|\s*`([^`]+)`\s*\|([^|]*)\|([^|]*)\|([^|]*)\|([^|]*)\|/.exec(line);
-    if (!m) continue;
-    const [, slug, name, address, geo, dist] = m;
-    const [city, lv01Nm] = geo.split('/').map((s) => s.trim());
-    const dm = /([\d.]+)km/.exec(dist);
+  for (const line of lines.slice(headIdx + 1)) {
+    if (!/^\|/.test(line) || /^\|\s*-+/.test(line)) continue;
+    const cells = splitCells(line);
+    const slug = /^`([^`]+)`$/.exec(cells[iSlug] ?? '')?.[1];
+    if (!slug) continue;
+    const [city, lv01Nm] = String(cells[iGeo] ?? '').split('/').map((s) => s.trim());
+    const dm = /([\d.]+)km/.exec(cells[iDist] ?? '');
     rows.push({
       slug,
-      name: name.trim(),
-      address: address.trim(),
+      name: cells[iName] ?? '',
+      address: cells[iAddr] ?? '',
       city,
       lv01Nm,
       distKm: dm ? Number(dm[1]) : null,
@@ -237,7 +275,17 @@ function main() {
     process.exit(1);
   }
 
-  const results = rows.map((r) => ({ ...r, ...classify(r, oazaFreq, chouFreq, addrGroups) }));
+  // 「−」の当たり（自治体内の相対で SUSPECT）は I1 の対象外にする
+  const lv01Suspects = parseLv01Suspects(md);
+  if (lv01Suspects.size) {
+    console.log(`
+NO_LV01 の SUSPECT を I1 の対象外にする: ${[...lv01Suspects].join(', ')}`);
+  }
+
+  const results = rows.map((r) => ({
+    ...r,
+    ...classify(r, oazaFreq, chouFreq, addrGroups, lv01Suspects),
+  }));
   const ORDER = ['SUSPECT', 'UNKNOWN', 'IGNORABLE'];
   const counts = Object.fromEntries(ORDER.map((v) => [v, 0]));
   results.forEach((r) => counts[r.verdict]++);
@@ -344,9 +392,27 @@ ${table('IGNORABLE') || '| （なし） | | | | | |'}
 `;
 
   // 基準を締め直して回し直すことがあるので、自分が前に書いた節は消してから書く。
-  // 追記しっぱなしにすると古い基準の結果が残って、どれが最新か分からなくなる
-  const base = md.split(/^\n*---\n\n# D-1\.5\./m)[0].replace(/\s*$/, '\n');
-  fs.writeFileSync(MD, base + section, 'utf8');
+  // 追記しっぱなしにすると古い基準の結果が残って、どれが最新か分からなくなる。
+  //
+  // ⚠ 以前は `md.split(/# D-1\.5\./)[0] + section` と書き戻していた。
+  // **D-1.5 より後ろにある手書きの D-2・D-3（実測 15,115字）が毎回消えていた。**
+  // 差し替えるのは D-1.5 の節だけで、その前後は1文字も触らない。
+  const out = replaceSection(md, '# D-1.5.', section);
+
+  const before = sectionSizes(md);
+  const after = sectionSizes(out);
+  const lost = before.sections.filter(
+    (s) => !s.heading.startsWith('# D-1.5.') && !after.sections.some((t) => t.heading === s.heading)
+  );
+  if (lost.length) {
+    throw new Error(`書き戻しで節が消える: ${lost.map((s) => s.heading).join(' / ')}。中止する`);
+  }
+
+  fs.writeFileSync(MD, out, 'utf8');
+  const kept = after.sections.filter((s) => !s.heading.startsWith('# D-1.5.'));
+  if (kept.length) {
+    console.log(`\n保持した節: ${kept.map((s) => `${s.heading}（${s.chars}字）`).join(' / ')}`);
+  }
   console.log(`\nSUSPECT ${counts.SUSPECT} / UNKNOWN ${counts.UNKNOWN} / IGNORABLE ${counts.IGNORABLE}`);
   console.log(`→ ${path.relative(path.join(__dirname, '..'), MD)} に追記`);
 }

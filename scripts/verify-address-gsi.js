@@ -31,14 +31,48 @@
  *   node scripts/verify-address-gsi.js
  *   → scripts/address-check-2026-08.md
  *
- * 対象は `status === 'active'` かつ address と lat/lng の両方を持つもの。
+ * 対象は `status` が **active か unverified** で、address と lat/lng の両方を持つもの。
  * **lastVerified や coordsVerified で絞らない**（引き継ぎ §6-1）。
+ *
+ * ## なぜ unverified も対象にするか（2026-08-13 に広げた）
+ *
+ * 以前は `active` だけだった。**いちばん検査したい層が対象外になっていた。**
+ * `unverified` は「実在が確認できていない」という印で、住所が壊れている確率が最も高い。
+ * 実際、`lv01Nm` の相対評価で唯一の当たりだった `mitsumata-camp`（山北町・9.03km）は
+ * `unverified` なので、**active 縛りのままでは判定にも出力にも出てこなかった。**
+ * §6-1（確認済みフラグで対象を絞ると、フラグの誤りを見逃す）と同じ構図が
+ * `status` でも起きていた。
+ *
+ * **`closed` と `suspended` は入れない。**「もう行けない施設の住所が座標と合っているか」は
+ * 行動につながらず、表が読みにくくなるだけ。実測でも相対評価の結果は変わらなかった。
  */
 const fs = require('fs');
 const path = require('path');
 
 const DATA = path.join(__dirname, '..', 'data', 'campgrounds.json');
 const OUT = path.join(__dirname, 'address-check-2026-08.md');
+const COORD_REPORT = path.join(__dirname, 'coord-report.json');
+
+/**
+ * NO_LV01 を「その自治体では異常」と言うために必要な、同じ市区町村で大字が取れたレコード数。
+ *
+ * **絶対値（`−` かどうか）では判定できない。**道志村14件・鳴沢村1件は
+ * そもそも大字を持たない自治体なので `−` が正常で、単独で異常扱いすると偽陽性15件になる。
+ * 効くのは自治体内での相対 —「同じ市区町村の他は大字が取れているのに自分だけ `−`」。
+ *
+ * **3 にした理由。**「この自治体では GSI が大字を持っている」という主張を、
+ * 独立した3件で裏付けてから `−` を異常と呼ぶため。
+ * 掲載は1市町村あたり1〜2件が大半なので、1 にすると
+ * **レコードが1件しかない27市町村で、隣接地点がたまたま `−` を返しただけで SUSPECT が立つ。**
+ * 実測では山北町（大字あり11件）が当たりで、3 でも 11 でも同じ結果になる（引き継ぎ §17-4-2）。
+ */
+const LV01_REL_MIN_NAMED = 3;
+
+/**
+ * 検査対象の `status`。**`closed` と `suspended` は入れない**（冒頭のコメント参照）。
+ * `unverified` を外すと、いちばん壊れている確率が高い層が検査から漏れる。
+ */
+const TARGET_STATUSES = ['active', 'unverified'];
 
 const MUNI_URL = 'https://maps.gsi.go.jp/js/muni.js';
 const REVERSE_URL = 'https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress';
@@ -114,63 +148,24 @@ function haversineKm(a, b) {
 }
 
 // ── 文字列の突き合わせ ──────────────────────────────────────
+//
+// `classify-oaza-miss.js` と同じ処理を別々に持っていたので scripts/lib/jp-address.js に集約した。
+// **抽出時に挙動は変えていない。**このスクリプトが使う normalize はダッシュを `-` に統一する
+// 側（`normalizeDashUnified`）で、`classify-oaza-miss.js` の漢数字を統一する側とは別物。
+// 違いと既知の不具合はモジュールの冒頭に書いてある。
 
-const KANJI_NUM = { 〇: '0', 一: '1', 二: '2', 三: '3', 四: '4', 五: '5', 六: '6', 七: '7', 八: '8', 九: '9' };
-
-/** 全角・大字/字・空白などを落として比較しやすくする */
-function normalize(s) {
-  if (!s) return '';
-  return String(s)
-    .normalize('NFKC')
-    .replace(/[‐‑‒–—―ー−]/g, '-')
-    .replace(/\s+/g, '')
-    .replace(/大字|字(?=[^\d])/g, '');
-}
-
-/**
- * lv01Nm から比較用の候補を作る。
- * 「戸川」はそのまま、「元町一丁目」は「元町1丁目」「元町」も候補にする。
- * 丁目の表記は address 側が「元町1-2-3」のように書くことが多く、そのままでは当たらない。
- */
-function oazaCandidates(lv01Nm) {
-  const base = normalize(lv01Nm);
-  if (!base) return [];
-  const set = new Set([base]);
-  const arabic = base.replace(/[〇一二三四五六七八九]/g, (c) => KANJI_NUM[c] ?? c);
-  set.add(arabic);
-  for (const v of [base, arabic]) {
-    const stripped = v.replace(/[0-9]+丁目$/, '').replace(/[〇一二三四五六七八九十]+丁目$/, '');
-    if (stripped && stripped !== v) set.add(stripped);
-  }
-  return [...set].filter(Boolean);
-}
-
-/** 市区町村名の候補。muni マスタは「南都留郡道志村」のように郡付きで返ることがある */
-function cityCandidates(city) {
-  const c = normalize(city);
-  if (!c) return [];
-  const set = new Set([c]);
-  const afterGun = c.split('郡').pop();
-  if (afterGun && afterGun !== c) set.add(afterGun);
-  return [...set].filter(Boolean);
-}
-
-/** address から都道府県・市区町村を取り除いた残り（＝大字以降）を返す */
-function addressRemainder(address, cityList) {
-  let rest = normalize(address).replace(/^(北海道|東京都|(?:京都|大阪)府|.{2,3}県)/, '');
-  for (const c of cityList) {
-    const i = rest.indexOf(c);
-    if (i >= 0) {
-      rest = rest.slice(i + c.length);
-      break;
-    }
-  }
-  return rest;
-}
+const {
+  normalizeDashUnified: normalize,
+  isLv01Missing,
+  oazaCandidates,
+  cityCandidates,
+  addressRemainder,
+} = require('./lib/jp-address');
+const { replaceHead, sectionSizes } = require('./lib/md-sections');
 
 // ── 判定 ─────────────────────────────────────────────────────
 
-const ORDER = ['CITY_MISS', 'OAZA_MISS', 'NO_OAZA', 'UNRESOLVED', 'MATCH'];
+const ORDER = ['CITY_MISS', 'OAZA_MISS', 'NO_LV01', 'NO_OAZA', 'UNRESOLVED', 'MATCH'];
 
 function judge(camp, geo) {
   const address = String(camp.address);
@@ -189,7 +184,13 @@ function judge(camp, geo) {
   const rest = addressRemainder(address, cities);
   const oazas = oazaCandidates(geo.lv01Nm);
 
-  if (!oazas.length) return { verdict: 'NO_OAZA', note: 'lv01Nm が空' };
+  // GSI 側に大字が無い。**データ側の欠落（NO_OAZA）とは原因が正反対**なので箱を分ける。
+  // ここが正常（大字を持たない自治体）か異常（その自治体では他が大字を返している）かは
+  // 1件だけでは決まらない。全件を回したあとの第2パスで相対評価する
+  if (isLv01Missing(geo.lv01Nm)) {
+    return { verdict: 'NO_LV01', note: `逆ジオが大字を返さない（lv01Nm「${geo.lv01Nm ?? '（空）'}」）` };
+  }
+  if (!oazas.length) return { verdict: 'NO_LV01', note: 'lv01Nm が空' };
   // 市区町村より後ろに日本語が無い＝番地だけ、または市区町村止まり
   if (!/[぀-ヿ一-鿿]/.test(rest)) {
     return { verdict: 'NO_OAZA', note: `address が市区町村までしか無い（残り「${rest || '（なし）'}」）` };
@@ -204,6 +205,94 @@ function judge(camp, geo) {
   };
 }
 
+// ── NO_LV01 の相対評価（第2パス） ────────────────────────────
+
+/**
+ * `judge()` は1件で完結するので、自治体内での相対は見られない。全件を回し終えたあとに走らせる。
+ *
+ * 分母は **`coord-report.json`** から取る。`verify-coords-gsi.js` が
+ * **全レコードぶんの `lv01Nm` を既に保存している**ので、追加のGSIリクエストが要らない。
+ * このスクリプト自身の結果は `closed`・`suspended` を落としているので分母として足りない。
+ * **測っているのは施設の状態ではなく「その自治体で GSI が大字を整備しているか」**なので、
+ * 分母は `status` で絞ってはいけない（実測: 山北町は全12件中11件が大字を返す）。
+ *
+ * **借り物の分母なので、古ければ使わない。**黙って飛ばすと
+ * 「相対評価をしたが何も出なかった」と区別が付かなくなるので、理由を md に出す。
+ */
+function loadLv01Denominator() {
+  if (!fs.existsSync(COORD_REPORT)) {
+    return { ok: false, reason: '`scripts/coord-report.json` が無い。先に `node scripts/verify-coords-gsi.js` を回すこと' };
+  }
+
+  const reportStat = fs.statSync(COORD_REPORT);
+  const dataStat = fs.statSync(DATA);
+  if (reportStat.mtimeMs < dataStat.mtimeMs) {
+    return {
+      ok: false,
+      reason:
+        `\`coord-report.json\` が \`data/campgrounds.json\` より古い` +
+        `（レポート ${reportStat.mtime.toISOString()} / データ ${dataStat.mtime.toISOString()}）。` +
+        'データが動いたあと逆ジオを回し直していないので、分母として使えない',
+    };
+  }
+
+  let report;
+  try {
+    report = JSON.parse(fs.readFileSync(COORD_REPORT, 'utf8'));
+  } catch (e) {
+    return { ok: false, reason: `\`coord-report.json\` を読めない（${e.message}）` };
+  }
+
+  const data = JSON.parse(fs.readFileSync(DATA, 'utf8'));
+  if (!Array.isArray(report) || report.length !== data.length) {
+    return {
+      ok: false,
+      reason:
+        `\`coord-report.json\` の件数（${Array.isArray(report) ? report.length : '不明'}）が ` +
+        `\`data/campgrounds.json\`（${data.length}件）と合わない。レコードの増減後に回し直していない`,
+    };
+  }
+
+  // gsiCity ごとに「大字が取れたレコード数」を数える。これが分母
+  const named = new Map();
+  for (const r of report) {
+    if (!r.gsiCity || isLv01Missing(r.lv01Nm)) continue;
+    named.set(r.gsiCity, (named.get(r.gsiCity) || 0) + 1);
+  }
+  return { ok: true, named, count: report.length, mtime: reportStat.mtime };
+}
+
+/** NO_LV01 の各件に SUSPECT / UNKNOWN を付ける。判定できなければ理由を残す */
+function applyLv01Relative(results) {
+  const denom = loadLv01Denominator();
+  const targets = results.filter((r) => r.verdict === 'NO_LV01');
+
+  if (!denom.ok) {
+    for (const r of targets) {
+      r.lv01Rel = { verdict: 'UNKNOWN', namedCount: null, note: '相対評価をスキップした' };
+    }
+    return denom;
+  }
+
+  for (const r of targets) {
+    const city = r.geo.city;
+    const n = (city && denom.named.get(city)) || 0;
+    r.lv01Rel =
+      n >= LV01_REL_MIN_NAMED
+        ? {
+            verdict: 'SUSPECT',
+            namedCount: n,
+            note: `同じ「${city}」の他 ${n}件は大字が取れているのに、この1件だけ「−」`,
+          }
+        : {
+            verdict: 'UNKNOWN',
+            namedCount: n,
+            note: `「${city}」で大字が取れたレコードは ${n}件しかない（${LV01_REL_MIN_NAMED}件未満なので判定しない）`,
+          };
+  }
+  return denom;
+}
+
 // ── 本体 ─────────────────────────────────────────────────────
 
 async function main() {
@@ -213,21 +302,18 @@ async function main() {
   const slugArg = process.argv.find((a) => a.startsWith('--slug='));
   const onlySlugs = slugArg ? slugArg.slice('--slug='.length).split(',').map((x) => x.trim()) : null;
 
-  const targets = data.filter(
-    (c) =>
-      (onlySlugs ? onlySlugs.includes(c.slug) : c.status === 'active') &&
-      c.address &&
-      String(c.address).trim() &&
-      Number(c.lat) &&
-      Number(c.lng)
-  );
-  const skipped = data.filter(
-    (c) =>
-      c.status === 'active' &&
-      !(c.address && String(c.address).trim() && Number(c.lat) && Number(c.lng))
-  );
+  const usable = (c) => c.address && String(c.address).trim() && Number(c.lat) && Number(c.lng);
+  const inScope = (c) => TARGET_STATUSES.includes(c.status);
 
-  console.log(`verify-address-gsi: 対象 ${targets.length}件（active ${data.filter((c) => c.status === 'active').length}件中）`);
+  const targets = data.filter((c) => (onlySlugs ? onlySlugs.includes(c.slug) : inScope(c)) && usable(c));
+  const skipped = data.filter((c) => inScope(c) && !usable(c));
+
+  const scopeTotal = data.filter(inScope).length;
+  const byStatus = (list) =>
+    TARGET_STATUSES.map((s) => `${s} ${list.filter((c) => c.status === s).length}`).join(' / ');
+  console.log(
+    `verify-address-gsi: 対象 ${targets.length}件（${TARGET_STATUSES.join('+')} ${scopeTotal}件中／${byStatus(targets)}）`
+  );
   console.log(`同時実行1 / リクエスト間隔 ${REQUEST_GAP_MS}ms 以上 / 1件ごとにさらに ${RECORD_GAP_MS}ms`);
   console.log(`1件あたり 逆ジオ1回＋住所検索1回。所要はおよそ ${Math.ceil((targets.length * 2 * REQUEST_GAP_MS + targets.length * RECORD_GAP_MS) / 60000)} 分\n`);
 
@@ -265,6 +351,17 @@ async function main() {
     await sleep(RECORD_GAP_MS);
   }
 
+  // 全件を回し終えてから、NO_LV01 を自治体内の相対で仕分ける
+  const denom = applyLv01Relative(results);
+  const lv01Suspect = results.filter((r) => r.verdict === 'NO_LV01' && r.lv01Rel?.verdict === 'SUSPECT');
+  const lv01Unknown = results.filter((r) => r.verdict === 'NO_LV01' && r.lv01Rel?.verdict !== 'SUSPECT');
+  if (denom.ok) {
+    console.log(`\nNO_LV01 の相対評価（同一市区町村で大字あり ${LV01_REL_MIN_NAMED}件以上）: SUSPECT ${lv01Suspect.length} / UNKNOWN ${lv01Unknown.length}`);
+    for (const r of lv01Suspect) console.log(`  [SUSPECT] ${r.camp.slug} / ${r.camp.address} / ${r.lv01Rel.note}`);
+  } else {
+    console.log(`\n⚠ NO_LV01 の相対評価をスキップした: ${denom.reason}`);
+  }
+
   const counts = Object.fromEntries(ORDER.map((v) => [v, 0]));
   results.forEach((r) => counts[r.verdict]++);
 
@@ -278,11 +375,32 @@ async function main() {
       .sort((a, b) => (b.distKm ?? -1) - (a.distKm ?? -1))
       .map(
         (r) =>
-          `| \`${r.camp.slug}\` | ${esc(r.camp.name)} | ${esc(r.camp.address)} | ${esc(r.geo.city ?? '—')} / ${esc(r.geo.lv01Nm ?? '—')} | ${km(r)} | ${esc(r.note)} |`
+          `| \`${r.camp.slug}\` | ${esc(r.camp.status)} | ${esc(r.camp.name)} | ${esc(r.camp.address)} | ${esc(r.geo.city ?? '—')} / ${esc(r.geo.lv01Nm ?? '—')} | ${km(r)} | ${esc(r.note)} |`
       )
       .join('\n');
 
-  const HEAD = '| slug | 施設名 | address | 逆ジオ（市区町村 / 大字） | 距離の目安 | 備考 |\n|---|---|---|---|---|---|';
+  const HEAD =
+    '| slug | status | 施設名 | address | 逆ジオ（市区町村 / 大字） | 距離の目安 | 備考 |\n|---|---|---|---|---|---|---|';
+  const EMPTY = '| （なし） | | | | | | |';
+
+  /** 判定ごとの status 内訳。closed を混ぜていないことと、どの層に偏っているかを見るため */
+  const statusBreak = (verdict) => {
+    const list = results.filter((r) => r.verdict === verdict);
+    return TARGET_STATUSES.map((s) => `${s} ${list.filter((r) => r.camp.status === s).length}`).join(' / ');
+  };
+
+  const lv01Rows = (list) =>
+    list
+      .sort((a, b) => (b.distKm ?? -1) - (a.distKm ?? -1))
+      .map(
+        (r) =>
+          `| \`${r.camp.slug}\` | ${esc(r.camp.status)} | ${esc(r.camp.name)} | ${esc(r.camp.address)} | ${esc(r.geo.city ?? '—')} | ${
+            r.lv01Rel?.namedCount ?? '—'
+          } | ${km(r)} | ${esc(r.lv01Rel?.note ?? '')} |`
+      )
+      .join('\n') || '| （なし） | | | | | | |';
+  const LV01_HEAD =
+    '| slug | 施設名 | address | 逆ジオの市区町村 | 同市区町村で大字が取れた件数 | 距離の目安 | 備考 |\n|---|---|---|---|---|---|---|';
 
   const md = `# address × 座標 の整合チェック（2026-08）
 
@@ -301,21 +419,34 @@ async function main() {
 データの \`lat\`/\`lng\` との直線距離。**住所と座標がどれだけ離れているかの目安**であって、
 施設の位置の正しさではない。住所検索が町の中心を返すこともあるので、数百m〜1km台は誤差の範囲。
 
-対象: \`status === 'active'\` かつ address と lat/lng の両方を持つ **${targets.length}件**。
-**\`coordsVerified\` や \`lastVerified\` で絞っていない**（引き継ぎ §6-1）。
+対象: \`status\` が **active か unverified** で、address と lat/lng の両方を持つ **${targets.length}件**
+（${byStatus(targets)}）。**\`coordsVerified\` や \`lastVerified\` で絞っていない**（引き継ぎ §6-1）。
+
+**2026-08-13 に \`unverified\` を対象に加えた。**以前は \`active\` だけで、
+**いちばん壊れている確率が高い層が検査から漏れていた。**
+\`lv01Nm\` の相対評価で唯一の当たりだった \`mitsumata-camp\`（山北町・9.03km）は
+\`unverified\` なので、**active 縛りのままでは判定にも出力にも出てこなかった。**
+§6-1（確認済みフラグで対象を絞ると、フラグの誤りを見逃す）と同じ構図が \`status\` でも起きていた。
+\`closed\`・\`suspended\` は入れていない（もう行けない施設の住所の整合は行動につながらない）。
 GSI は公共APIなので、同時実行1・リクエスト間隔${REQUEST_GAP_MS}ms以上・1件ごとにさらに${RECORD_GAP_MS}ms待機で回している。
 
 ## 集計
 
-| 判定 | 件数 | 意味 |
-|---|---|---|
-| **CITY_MISS** | **${counts.CITY_MISS}** | 逆ジオの市区町村が address に見当たらない |
-| **OAZA_MISS** | **${counts.OAZA_MISS}** | 市区町村は一致するが**大字が address に見当たらない**（\`takizawaso\` 型） |
-| NO_OAZA | ${counts.NO_OAZA} | \`lv01Nm\` が空、または address が市区町村までしか無い |
-| UNRESOLVED | ${counts.UNRESOLVED} | 逆ジオが返らない（海上・国有林など） |
-| MATCH | ${counts.MATCH} | 市区町村も大字も一致 |
+| 判定 | 件数 | status 内訳 | 意味 |
+|---|---|---|---|
+| **CITY_MISS** | **${counts.CITY_MISS}** | ${statusBreak('CITY_MISS')} | 逆ジオの市区町村が address に見当たらない |
+| **OAZA_MISS** | **${counts.OAZA_MISS}** | ${statusBreak('OAZA_MISS')} | 市区町村は一致するが**大字が address に見当たらない**（\`takizawaso\` 型） |
+| **NO_LV01** | **${counts.NO_LV01}** | ${statusBreak('NO_LV01')} | **逆ジオが大字を返さない（\`lv01Nm\` が「−」）。GSI 側の欠落** |
+| NO_OAZA | ${counts.NO_OAZA} | ${statusBreak('NO_OAZA')} | **address が市区町村までしか無い。データ側の欠落** |
+| UNRESOLVED | ${counts.UNRESOLVED} | ${statusBreak('UNRESOLVED')} | 逆ジオが返らない（海上・国有林など） |
+| MATCH | ${counts.MATCH} | ${statusBreak('MATCH')} | 市区町村も大字も一致 |
 
-対象外（active だが address か座標が無い）: ${skipped.length}件
+**\`NO_LV01\` と \`NO_OAZA\` は原因が正反対なので分けてある。**
+前者は国土地理院に大字データが無い、後者はこちらの \`address\` が大字まで書けていない。
+以前はどちらも \`NO_OAZA\` に入れていたうえ、**「−」を大字の候補として扱っていたため
+address の番地のハイフンに当たって MATCH になっていた**（引き継ぎ §17-4-2）。
+
+対象外（対象 status だが address か座標が無い）: ${skipped.length}件
 ${skipped.map((c) => `\`${c.slug}\``).join('、') || 'なし'}
 
 ## OAZA_MISS を「住所が誤り」と読まないこと
@@ -333,46 +464,102 @@ ${skipped.map((c) => `\`${c.slug}\``).join('、') || 'なし'}
 ## CITY_MISS（${counts.CITY_MISS}件）
 
 ${HEAD}
-${rows('CITY_MISS') || '| （なし） | | | | | |'}
+${rows('CITY_MISS') || EMPTY}
 
 ## OAZA_MISS（${counts.OAZA_MISS}件）
 
 距離の目安が大きい順。10km 以上は太字。
 
 ${HEAD}
-${rows('OAZA_MISS') || '| （なし） | | | | | |'}
+${rows('OAZA_MISS') || EMPTY}
+
+## NO_LV01（${counts.NO_LV01}件）— 自治体内での相対評価
+
+**「−」を単独で異常扱いすると偽陽性になる。**
+道志村・鳴沢村は**そもそも大字が存在しない自治体**なので「−」が正常で、
+絶対値で判定すると実測15件が全部誤検出になる。
+
+効くのは**自治体内での相対** —「同じ市区町村の他のレコードは大字が取れているのに、
+自分だけ「−」」。分母は \`coord-report.json\`（全レコードの逆ジオ結果）から取っている。
+**このスクリプトの対象は \`status === 'active'\` に絞られていて分母として足りない**
+（山北町は全12件中11件が大字を返すが、active だけだと8件全部が大字ありになり、
+当たりの \`mitsumata-camp\` は unverified なので対象にすら入らない）。
+
+**判定: 同一市区町村で大字が取れたレコードが ${LV01_REL_MIN_NAMED}件以上あれば SUSPECT、満たなければ UNKNOWN。**
+${LV01_REL_MIN_NAMED} は「この自治体では GSI が大字を持っている」を独立した${LV01_REL_MIN_NAMED}件で裏付けてから
+「−」を異常と呼ぶための下限。掲載は1市町村あたり1〜2件が大半なので、
+1 にすると**レコードが1件しかない市町村で、隣接地点がたまたま「−」を返しただけで SUSPECT が立つ。**
+
+**⚠ この規則は「−」が多数派の自治体を想定していない。該当が出たら規則を見直すこと。**
+（現状は該当0件。大字あり10件・「−」9件のような分布でも「−」全件が SUSPECT になる作りのまま）
+
+${
+  denom.ok
+    ? `分母: \`coord-report.json\`（${denom.count}件 / ${denom.mtime.toISOString()}）`
+    : `**⚠ 相対評価をスキップした。**理由: ${denom.reason}\n\n` +
+      `**下の ${counts.NO_LV01}件は「判定していない」のであって「問題なし」ではない。**\n` +
+      '`node scripts/verify-coords-gsi.js` を回して `coord-report.json` を更新してから、このスクリプトを回し直すこと。'
+}
+
+### SUSPECT（${lv01Suspect.length}件）
+
+**同じ市区町村の他は大字が取れているのに、この地点だけ返ってこない。**
+座標がその自治体の外れや別地点を指している疑い。
+
+${LV01_HEAD}
+${lv01Rows(lv01Suspect)}
+
+### UNKNOWN（${lv01Unknown.length}件）
+
+**大字を持たない自治体か、母数が足りず判定できないもの。**
+
+${LV01_HEAD}
+${lv01Rows(lv01Unknown)}
 
 ## NO_OAZA（${counts.NO_OAZA}件）
 
-大字まで書けていないので、この検査では判定できない。**住所を番地まで確定させる対象。**
+**address が市区町村までしか無い。**大字まで書けていないので、この検査では判定できない。
+**住所を番地まで確定させる対象。**
 
 ${HEAD}
-${rows('NO_OAZA') || '| （なし） | | | | | |'}
+${rows('NO_OAZA') || EMPTY}
 
 ## UNRESOLVED（${counts.UNRESOLVED}件）
 
 ${HEAD}
-${rows('UNRESOLVED') || '| （なし） | | | | | |'}
+${rows('UNRESOLVED') || EMPTY}
 
 ## MATCH（${counts.MATCH}件）
 
 ${HEAD}
-${rows('MATCH') || '| （なし） | | | | | |'}
+${rows('MATCH') || EMPTY}
 `;
 
   // --slug 指定は確認のための単発実行なので、全件の md を上書きしない
   if (onlySlugs) {
     console.log('\n--slug 指定のため md は書き換えない');
     for (const r of results) {
+      const rel = r.lv01Rel ? ` → 相対評価 ${r.lv01Rel.verdict}（${r.lv01Rel.note}）` : '';
       console.log(
-        `  ${r.camp.slug}: ${r.verdict} / ${r.note}${r.distKm != null ? ` / ${r.distKm.toFixed(2)}km` : ''}`
+        `  ${r.camp.slug}: ${r.verdict} / ${r.note}${r.distKm != null ? ` / ${r.distKm.toFixed(2)}km` : ''}${rel}`
       );
     }
     return;
   }
 
-  fs.writeFileSync(OUT, md, 'utf8');
+  // ⚠ 以前は md 全体を作り直して上書きしていた。
+  // **`classify-oaza-miss.js` が書く D-1.5 と、手書きの D-2・D-3 が毎回消えていた。**
+  // このスクリプトが責任を持つのは冒頭〜`## MATCH` までで、
+  // 追記された節（`---` ＋ `# 見出し`）はそのまま残す。
+  const prev = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : '';
+  const out = prev ? replaceHead(prev, md) : md;
+
+  const kept = sectionSizes(out).sections;
+  fs.writeFileSync(OUT, out, 'utf8');
   console.log(`\n${ORDER.map((v) => `${v} ${counts[v]}`).join(' / ')}`);
+  if (kept.length) {
+    console.log(`保持した節: ${kept.map((s) => `${s.heading}（${s.chars}字）`).join(' / ')}`);
+  }
   console.log(`→ ${path.relative(path.join(__dirname, '..'), OUT)}`);
 }
 
