@@ -47,15 +47,15 @@ row.verdict = normalizePref(muni.pref) === normalizePref(camp.prefecture) ? 'OK'
 
 | 判定 | 件数 |
 |---|---|
-| `OK` | 172 |
-| `CITY_MISMATCH` | 6 |
+| `OK` | 173 |
+| `CITY_MISMATCH` | 5 |
 | `NO_ADDRESS` | 1 |
 | `PREF_MISMATCH` | 1 |
 | `SEA` | 4 |
 
 うち `WARD_MISMATCH`（OK 扱い）: **0件** ／ address が無く比較できず: **1件**
 
-## CITY_MISMATCH（6件）
+## CITY_MISMATCH（5件）
 
 **逆ジオが返した市区町村が address のどこにも現れないもの。**
 どちらが誤っているか（address か座標か）は**このスクリプトでは決められない。**
@@ -63,12 +63,11 @@ row.verdict = normalizePref(muni.pref) === normalizePref(camp.prefecture) ? 'OK'
 
 | slug | status | address | 逆ジオ（県 / 市区町村 / 大字） | 標高 | `coordsGsiChecked` |
 |---|---|---|---|---|---|
-| `hadano-togawa-camp` | active | 神奈川県秦野市堀山下1513 | 神奈川県 / **松田町** / 寄 | 424.6m | **true** |
-| `yadoriki-camp` | closed | 神奈川県足柄上郡松田町寄3048 | 神奈川県 / **山北町** / 山北 | 402.4m | **true** |
-| `mobility-park-izu` | active | 静岡県伊豆の国市長者原1445-481 | 静岡県 / **函南町** / 日守 | 163.2m | **true** |
-| `makioka-fruits-camp` | unverified | 山梨県山梨市牧丘町牧平3041 | 山梨県 / **甲州市** / 塩山中萩原 | 1176.7m | **true** |
-| `fuji-midori-kyuka-auto` | active | 山梨県南都留郡鳴沢村字ジラゴンノ8532-5 | 山梨県 / **富士河口湖町** / 西湖 | 1247.5m | **true** |
-| `wadanagahama-kaigan` | active | 神奈川県三浦市初声町和田 | 神奈川県 / **横須賀市** / 長井二丁目 | 1.2m | **true** |
+| `hadano-togawa-camp` | active | 神奈川県秦野市堀山下1513 | 神奈川県 / **松田町** / 寄 | 424.6m | — |
+| `yadoriki-camp` | closed | 神奈川県足柄上郡松田町寄3048 | 神奈川県 / **山北町** / 山北 | 402.4m | — |
+| `mobility-park-izu` | active | 静岡県伊豆の国市長者原1445-481 | 静岡県 / **函南町** / 日守 | 163.2m | — |
+| `makioka-fruits-camp` | unverified | 山梨県山梨市牧丘町牧平3041 | 山梨県 / **甲州市** / 塩山中萩原 | 1176.7m | — |
+| `wadanagahama-kaigan` | active | 神奈川県三浦市初声町和田 | 神奈川県 / **横須賀市** / 長井二丁目 | 1.2m | — |
 
 ## WARD_MISMATCH（0件・verdict は OK のまま）
 
@@ -87,7 +86,7 @@ row.verdict = normalizePref(muni.pref) === normalizePref(camp.prefecture) ? 'OK'
 
 | slug | status | address | 逆ジオ（県 / 市区町村 / 大字） | 標高 | `coordsGsiChecked` |
 |---|---|---|---|---|---|
-| `shizunami-beach-camp` | active | （空） | 静岡県 / **牧之原市** / 片浜 | 3.4m | **true** |
+| `shizunami-beach-camp` | active | （空） | 静岡県 / **牧之原市** / 片浜 | 3.4m | — |
 
 ## PREF_MISMATCH（1件・市区町村は見ていない）
 
@@ -101,15 +100,9 @@ row.verdict = normalizePref(muni.pref) === normalizePref(camp.prefecture) ? 'OK'
 
 `apply-gsi-flags.js` は `verdict === 'OK'` のものだけに `coordsGsiChecked: true` を立て、
 それ以外からはフィールドを削除する。今回 `CITY_MISMATCH` と `NO_ADDRESS` が増えたので、
-**再実行すると次の 7件から `coordsGsiChecked` が外れる。**
+**再実行すると次の 0件から `coordsGsiChecked` が外れる。**
 
-- `hadano-togawa-camp`（active / **CITY_MISMATCH**）… address 神奈川県秦野市堀山下1513 / 逆ジオ 松田町
-- `yadoriki-camp`（closed / **CITY_MISMATCH**）… address 神奈川県足柄上郡松田町寄3048 / 逆ジオ 山北町
-- `mobility-park-izu`（active / **CITY_MISMATCH**）… address 静岡県伊豆の国市長者原1445-481 / 逆ジオ 函南町
-- `makioka-fruits-camp`（unverified / **CITY_MISMATCH**）… address 山梨県山梨市牧丘町牧平3041 / 逆ジオ 甲州市
-- `shizunami-beach-camp`（active / **NO_ADDRESS**）… address （空） / 逆ジオ 牧之原市
-- `fuji-midori-kyuka-auto`（active / **CITY_MISMATCH**）… address 山梨県南都留郡鳴沢村字ジラゴンノ8532-5 / 逆ジオ 富士河口湖町
-- `wadanagahama-kaigan`（active / **CITY_MISMATCH**）… address 神奈川県三浦市初声町和田 / 逆ジオ 横須賀市
+（該当なし）
 
 **外すかどうかの判断はしていない。**フラグを外すと「機械検証を通っていない」という
 シグナルが立つので、先に address と座標のどちらが誤りかを決めるほうが筋が通る場合がある。

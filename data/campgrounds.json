@@ -7358,8 +7358,8 @@
     "prefecture": "山梨",
     "area": "鳴沢村",
     "status": "active",
-    "lat": 35.495,
-    "lng": 138.705,
+    "lat": 35.4764213,
+    "lng": 138.6893238,
     "priceMin": 5280,
     "priceMax": 8580,
     "scores": {
@@ -7392,15 +7392,17 @@
     "officialUrl": "http://www.kyukamura.jp/",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/14648",
     "season": "4月1日〜11月30日",
-    "soloComment": "富士五湖エリアの高規格キャンプ場、温泉あり。西湖・精進湖の穴場エリアで富士山眺望抜群。全16区画のオートサイトで、キャンピングカーも乗り入れできる。",
-    "lastVerified": "2026-08-07",
+    "soloComment": "富士五湖エリアの高規格キャンプ場、温泉あり。鳴沢村の富士山北麓・標高約1,000mに位置し、富士山眺望抜群。全16区画のオートサイトで、キャンピングカーも乗り入れできる。日帰り温泉「富士眺望の湯ゆらり」が隣接。",
+    "lastVerified": "2026-08-13",
     "address": "山梨県南都留郡鳴沢村字ジラゴンノ8532-5",
     "priceNote": "サイト単位課金＋人数課金。1サイト 平日4,400円／休前日6,600円／特別日7,700円＋入場料 大人880円・小人（4歳〜小学生）660円・ペット220円 → ソロ1名は平日5,280円。河口湖駅から無料送迎あり（事前予約制）",
     "priceVerified": true,
     "cautions": [
       "料金・営業期間は運営の富士観光開発の公式リリースで確認（2026-08-12） https://www.fujikanko.co.jp/newsrelease/2569 ／ 施設情報 https://www.fujikanko.co.jp/business/60 。旧データの休前日5,500円は開業時（2022年）の額で、現在は6,600円",
       "2026-08-12: season を「通年」→「4月1日〜11月30日」に修正。オートキャンプ場は冬期営業していない（宿泊棟や温泉は通年）"
-    ]
+    ],
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "hayakawa-camp",
