@@ -3241,7 +3241,7 @@
     "type": null,
     "status": "active",
     "address": "山梨県南都留郡鳴沢村字ジラゴンノ8532-5",
-    "coordsGsiChecked": false,
+    "coordsGsiChecked": true,
     "lat": 35.4764213,
     "lng": 138.6893238,
     "verdict": "OK",
