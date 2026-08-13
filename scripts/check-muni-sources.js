@@ -207,26 +207,32 @@ async function crawlDelayMs(host) {
  * 作りなので、**ページ単位で EMPTY を出すと正常なページ送りの終端が大量に鳴る**
  * （初版をキャッシュHTMLで再生したら23ページが誤検出になった）。
  * 「全ページ合算で0件」のときだけ、抽出器が腐った疑いとして EMPTY を出す。
+ *
+ * **404 の判定も同じ理由でソース単位に送る**（`finalizeDeadPages`）。
+ * ここでは素直に DEAD を返しておいて、あとからソース単位で救済する。
  */
 function judge(target, res) {
-  if (res.status === 0) return { verdict: 'DEAD', note: res.error || '接続できない' };
+  if (res.status === 0) return { status: 0, verdict: 'DEAD', note: res.error || '接続できない' };
   if (res.status === 403 || res.status === 429) {
-    return { verdict: 'BLOCKED', note: `HTTP ${res.status}（ボット遮断の可能性。ブラウザで確認）` };
+    return { status: res.status, verdict: 'BLOCKED', note: `HTTP ${res.status}（ボット遮断の可能性。ブラウザで確認）` };
   }
-  if (res.status >= 400) return { verdict: 'DEAD', note: `HTTP ${res.status}` };
+  if (res.status >= 400) return { status: res.status, verdict: 'DEAD', note: `HTTP ${res.status}` };
   const hit = PARKED_PATTERNS.find((p) => res.body.includes(p));
-  if (hit) return { verdict: 'PARKED', note: `定型文「${hit}」` };
-  if (target.kind === 'notFound') return { verdict: 'OK', note: '到達のみ確認（不在の根拠URL）' };
+  if (hit) return { status: res.status, verdict: 'PARKED', note: `定型文「${hit}」` };
+  if (target.kind === 'notFound') return { status: res.status, verdict: 'OK', note: '到達のみ確認（不在の根拠URL）' };
   let names = null;
   try {
     names = target.source.list(res.body) || [];
   } catch (e) {
-    return { verdict: 'EMPTY', note: `list() が例外: ${e.message}` };
+    return { status: res.status, verdict: 'EMPTY', note: `list() が例外: ${e.message}` };
   }
-  return { verdict: 'OK', note: `${names.length}件抽出`, extracted: names.length };
+  return { status: res.status, verdict: 'OK', note: `${names.length}件抽出`, extracted: names.length };
 }
 
-/** ソース単位の集計で、全ページ0件のソースのページを EMPTY に格下げする */
+/**
+ * ソース単位の集計で、全ページ0件のソースのページを EMPTY に格下げする。
+ * ページ単位で見るとページ送りの終端が誤検出になるため（`judge` のdocコメント参照）。
+ */
 function finalizeEmpties(results) {
   const byGroup = new Map();
   for (const r of results) {
@@ -243,6 +249,35 @@ function finalizeEmpties(results) {
     } else if (r.extracted === 0) {
       r.note = `0件（同ソース全体で${total}件。ページ送りの終端）`;
     }
+  }
+}
+
+/**
+ * ソース単位の集計で、ページ送りの終端の 404 を DEAD から OK に戻す。
+ *
+ * `page_2` / `page_3` を機械的に生やしているソースは、掲載が少ない自治体で
+ * 後ろのページが 404 を返す。これは**リンク切れではなく単にページが無いだけ**で、
+ * 同じソースの別ページが中身を返しているなら死活としては生きている
+ * （初版では jalan 16自治体・japancamp 神奈川の計38件がこれで DEAD に鳴った）。
+ *
+ * 救済するのは **404 だけ**。403 / 429 は `judge` が BLOCKED として分けており、
+ * 500 番台はサーバ側の障害でページの不在ではないので DEAD のままにする。
+ * グループの全ページが 404 か接続不能なら、救済の根拠が無いので DEAD のまま。
+ */
+function finalizeDeadPages(results) {
+  const alive = new Map(); // group → 生きているページの抽出合計
+  for (const r of results) {
+    if (r.kind !== 'source' || !r.group) continue;
+    if (r.verdict !== 'OK' || !(r.extracted > 0)) continue;
+    alive.set(r.group, (alive.get(r.group) ?? 0) + r.extracted);
+  }
+  for (const r of results) {
+    if (r.kind !== 'source' || !r.group) continue;
+    if (r.verdict !== 'DEAD' || r.status !== 404) continue;
+    const total = alive.get(r.group);
+    if (!total) continue; // 同ソースに生きているページが無い＝本当に死んでいる
+    r.verdict = 'OK';
+    r.note = `HTTP 404（ページ送りの終端。同ソース全体で${total}件）`;
   }
 }
 
@@ -283,8 +318,9 @@ async function main() {
     })
   );
 
-  // ソース単位の集計で EMPTY を確定させる（ページ単位では判定しない。judge の docコメント参照）
+  // ソース単位の集計で EMPTY と 404 を確定させる（ページ単位では判定しない。judge の docコメント参照）
   finalizeEmpties(results);
+  finalizeDeadPages(results);
 
   // 集計と出力
   const bad = results.filter((r) => r.verdict !== 'OK');
@@ -329,4 +365,4 @@ if (require.main === module) {
 }
 
 // オフライン検証用（scripts/.sweep-cache の実HTMLで judge / finalizeEmpties を再生できる）
-module.exports = { collectTargets, judge, finalizeEmpties };
+module.exports = { collectTargets, judge, finalizeEmpties, finalizeDeadPages };
