@@ -117,19 +117,18 @@ export type Campground = {
   lat: number;
   lng: number;
   /**
-   * **人が地図上で目視確認した**なら true。未設定・false は要確認（scripts/coord-tool.html の対象）。
-   *
-   * 機械検証の結果をここに書かないこと。両者を混ぜていたため、
-   * 実際には海上・湖面を指している7件に true が立ったまま残り、
-   * 「確認済み」を理由に検証対象から外れる危険があった（scripts/sea-coord-check.md）。
-   */
-  /**
    * 人が地図上で目視確認したなら true。**Google マップの実ピン**
    * （URL の `!8m2!3d緯度!4d経度`。`@緯度,経度` は表示中心なので使わない）から取る。
+   * 未設定・false は要確認（`scripts/coord-tool.html` の対象）。
+   *
+   * **機械検証の結果をここに書かないこと。**両者を混ぜていたため、
+   * 実際には海上・湖面を指している7件に true が立ったまま残り、
+   * 「確認済み」を理由に検証対象から外れる危険があった（`scripts/sea-coord-check.md`）。
+   * 機械検証は `coordsGsiChecked` が持つ。
    *
    * ## ⚠ このフラグは全部が人の目視の記録ではない
    *
-   * **cc751ab（2026-08-06）以前に立った114件は `scripts/mark-verified.js` が付けたもの。**
+   * **cc751ab（2026-08-06）以前に立った114件は `scripts/apply-mark-verified-2026-08.js` が付けたもの。**
    * 判定基準は「**batch6/batch7 由来でなく、座標が 0 でない**」＝確認済みと見なす、というもので、
    * **人が1件ずつ見た記録ではない。**§17-3 の `priceVerified` と同じ構図
    * （あちらは `priceNote` の有無から機械的に126件へ true を立てていた）。

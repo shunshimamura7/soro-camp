@@ -1,3 +1,26 @@
+/**
+ * ⚠ **実行済みの適用スクリプト。再実行しないこと。**
+ *
+ * 座標19件を書き戻す。**再実行すると7件が巻き戻る**（2026-08-14 実測）。
+ *   `osezaki-camp` は 35.0223,138.7856 → 35.0285,138.8590 で**約7km 動く。**
+ *   ほかに `okudoshi-auto` `nishitanzawa-ootaki` `onoji-family` `kawazu-nanadaru`
+ *   `karasawa-miyagase` `fujinomori-yamanakako` が丸めた値に戻る。
+ *   **7件とも現在 `coordsVerified: true`**（§14〜§18 で人が実ピンを取り直したもの）。
+ *
+ * 実行時期: 2026-05（初出コミット）
+ *
+ * **ここのベタ書きは「何をどう変えたか」の記録なので、動的判定に書き換えない。**
+ * 腐るのは「データの現在の状態を写した一覧」であって、適用の記録ではない（引き継ぎ §18-3）。
+ * ただし**再実行すると記録どおりにデータを巻き戻す**ので、事故を防ぐガードを付けてある。
+ *
+ * 意図して再実行する場合のみ `--force` を付ける。
+ */
+if (!process.argv.includes('--force')) {
+  console.error('[実行済み] ' + require('path').basename(__filename) + ' は一度きりの適用スクリプト。');
+  console.error('再実行するとデータを当時の値に巻き戻す。意図する場合のみ --force を付けること。');
+  process.exit(1);
+}
+
 const fs = require('fs');
 const data = JSON.parse(fs.readFileSync('data/campgrounds.json', 'utf-8'));
 

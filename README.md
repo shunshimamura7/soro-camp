@@ -128,7 +128,7 @@ Overpass のレスポンスは `scripts/.overpass-cache.json` にキャッシュ
 Googleマップと突き合わせて1件ずつ確認・修正するためのローカルツール。
 
 ```bash
-node scripts/mark-verified.js               # 初回のみ: 確認済みデータに coordsVerified: true を付与
+node scripts/apply-mark-verified-2026-08.js               # 初回のみ: 確認済みデータに coordsVerified: true を付与
 node scripts/build-coord-tool.js            # 全対象を抽出して scripts/coord-tool.html を生成
 node scripts/build-coord-tool.js --pending  # 自動照合で決まらなかったものだけに絞る
 node scripts/build-coord-tool.js --slugs a,b # slug 指定

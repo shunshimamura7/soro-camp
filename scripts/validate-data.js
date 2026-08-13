@@ -447,7 +447,7 @@ for (const c of camps) {
 // ── coordsVerified の裏付け ─────────────────────────────────────────────────
 //
 // **`coordsVerified` は「人が地図上で目視確認した」と定義しているが、
-// cc751ab 以前に立った分は `mark-verified.js` の推定で付いている。**
+// cc751ab 以前に立った分は `apply-mark-verified-2026-08.js` の推定で付いている。**
 // 判定基準は「batch6/batch7 由来でなく、座標が 0 でない」＝確認済みと見なす、というもので、
 // 人が1件ずつ見た記録ではない（§17-3 の `priceVerified` と同型。§18-11）。
 //
@@ -522,7 +522,7 @@ try {
 for (const t of cvTiers.strong) {
   warnings.push(
     `${t.slug}: coordsVerified が true だが機械検証を通っていない（${t.verdict}${t.km != null ? ` / 住所と ${t.km}km` : ''}）。` +
-      'このフラグは cc751ab 以前は mark-verified.js が「batch6/batch7 由来でなければ確認済み」と' +
+      'このフラグは cc751ab 以前は apply-mark-verified-2026-08.js が「batch6/batch7 由来でなければ確認済み」と' +
       '推定して付けたもので、人の目視の記録ではない。**実ピンを引き直すこと**（§18-11）'
   );
 }
@@ -541,7 +541,7 @@ if (placeholderVerified || emptyVerified) {
   const { strong, coarse, far, ok } = cvTiers;
   const weak = coarse.length + far.length;
   if (strong.length || weak || cvNote) {
-    console.log(`\n  coordsVerified の裏付け（cc751ab 以前の分は mark-verified.js の推定。§18-11）`);
+    console.log(`\n  coordsVerified の裏付け（cc751ab 以前の分は apply-mark-verified-2026-08.js の推定。§18-11）`);
     console.log(`    ① 機械検証を通っていない        ${String(strong.length).padStart(3)}件  ← 上の警告に出ている。**位置が誤っているのが確定**`);
     console.log(`    ② 小数3桁以下（粒度100m〜1km）  ${String(coarse.length).padStart(3)}件${coarse.length ? `  例: ${coarse.slice(0, 3).join(', ')}` : ''}`);
     console.log(`    ③ 住所と2km以上離れている        ${String(far.length).padStart(3)}件${far.length ? `  例: ${far.slice(0, 3).join(', ')}` : ''}`);
