@@ -661,14 +661,12 @@ function hinataSpot(areaPath, label) {
  * 取れなかったことを md に残すために、外さずに登録しておく
  * （黙って落とすと「そのソースには無かった」と読めてしまう）。
  */
-const SRC_TAKIBI = {
-  id: 'takibi',
-  layer: 'L2',
-  kind: 'nameOnly',
-  label: 'TAKIBI',
-  pages: ['https://takibi-reservation.space/'],
-  list() { return []; },
-};
+// ⚠ SRC_TAKIBI は廃止した（2026-08-13 の check-muni-sources.js 初走で発覚）。
+// `takibi-reservation.space` は DNS ごと消えており、運営自身が
+// 「TAKIBI予約サイト サービス終了のお知らせ」を出している
+// （https://www.takibi-reservation.style/media/news/138104）。
+// もともと list() が空実装のプレースホルダで、sweep には何も寄与していなかった。
+// 全 MUNI_SOURCES から外した。復活させるなら別サービスとして登録し直すこと。
 
 /* ---- 神奈川・厚木市 --------------------------------------------------- */
 
@@ -1002,7 +1000,7 @@ const MUNI_SOURCES = {
       napCamp('sagamihara', 'kanagawa'),
       jalan('14151', '相模原市緑区'),
       hinataSpot('kanto/kanagawa/1906', '相模原'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
   },
 
@@ -1013,7 +1011,7 @@ const MUNI_SOURCES = {
       napCamp('atsugi_ebina', 'kanagawa'),
       jalan('14212', '厚木市'),
       hinataSpot('kanto/kanagawa/1905', '厚木・海老名'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1031,7 +1029,7 @@ const MUNI_SOURCES = {
       napCamp('ashigara', 'kanagawa'),
       jalan('14363', '松田町'),
       hinataSpot('kanto/kanagawa/1909', '足柄'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1051,7 +1049,7 @@ const MUNI_SOURCES = {
       napCamp('ashigara', 'kanagawa'),
       jalan('14364', '山北町'),
       hinataSpot('kanto/kanagawa/1909', '足柄'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
   },
 
@@ -1062,7 +1060,7 @@ const MUNI_SOURCES = {
       jalan('22208', '伊東市'),
       hinataSpot('tokai/shizuoka/2702', '伊東・宇佐美・川奈'),
       hinataSpot('tokai/shizuoka/2703', '伊豆高原'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1086,7 +1084,7 @@ const MUNI_SOURCES = {
       napCamp('motosuko_nishiko_kawaguchiko_fuzjiyoshida_shojiko', 'yamanashi'),
       jalan('19430', '富士河口湖町'),
       hinataSpot('koushinetsu/yamanashi/2005', '河口湖・西湖・富士吉田・精進湖・本栖湖'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
   },
 
@@ -1097,7 +1095,7 @@ const MUNI_SOURCES = {
       jalan('19205', '山梨市'),
       hinataSpot('koushinetsu/yamanashi/2001', '甲府・湯村・昇仙峡'),
       hinataSpot('koushinetsu/yamanashi/2002', '石和・勝沼・塩山'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1123,7 +1121,7 @@ const MUNI_SOURCES = {
       napCamp('oigawa_sumatakyo_kawane', 'shizuoka'),
       jalan('22429', '川根本町'),
       hinataSpot('tokai/shizuoka/2713', '大井川・寸又峡・川根'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1145,7 +1143,7 @@ const MUNI_SOURCES = {
       jalan('19422', '道志村'),
       hinataSpot('koushinetsu/yamanashi/2003', '大月・都留'),
       hinataSpot('koushinetsu/yamanashi/2004', '山中湖・忍野'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
   },
 
@@ -1156,7 +1154,7 @@ const MUNI_SOURCES = {
       napCamp('yamanakako_oshino', 'yamanashi'),
       jalan('19425', '山中湖村'),
       hinataSpot('koushinetsu/yamanashi/2004', '山中湖・忍野'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
   },
 
@@ -1166,7 +1164,7 @@ const MUNI_SOURCES = {
       napCamp('yatsygatake_kobuchisawa_kiyosato_oizumi', 'yamanashi'),
       jalan('19209', '北杜市'),
       hinataSpot('koushinetsu/yamanashi/2008', '八ヶ岳・小淵沢・清里・大泉'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1192,7 +1190,7 @@ const MUNI_SOURCES = {
       napCamp('izu', 'shizuoka'),
       jalan('22222', '伊豆市'),
       hinataSpot('tokai/shizuoka/2708', '中伊豆'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1211,7 +1209,7 @@ const MUNI_SOURCES = {
       jalan('22101', '静岡市葵区'),
       jalan('22103', '静岡市清水区'),
       hinataSpot('tokai/shizuoka/2711', '静岡・清水'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1228,7 +1226,7 @@ const MUNI_SOURCES = {
       napCamp('gotenba_fuzi', 'shizuoka'),
       jalan('22207', '富士宮市'),
       hinataSpot('tokai/shizuoka/2710', '御殿場・富士'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1251,7 +1249,7 @@ const MUNI_SOURCES = {
       napCamp('shimobe_minobu_hayakawa', 'yamanashi'),
       jalan('19366', '南部町'),
       hinataSpot('koushinetsu/yamanashi/2006', '下部・身延・早川'),
-      SRC_TAKIBI,
+      // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
     ],
     l1NotFound: [
       {
@@ -1555,20 +1553,34 @@ function orphanTrustable(coverage) {
 }
 
 /* ============================================================================
- * 8. 必須検証（牧野）
+ * 8. 必須検証（牧野）— 案B: 外の事実だけを焼き込む
  *
- * この2組が出なければ名寄せかソース選定が間違っている。**先に進まない。**
+ * これが通らなければ名寄せかソース選定が間違っている。**先に進まない。**
+ *
+ * ## 何を焼き込み、何を焼き込まないか（§18・2026-08-14 の設計変更）
+ *
+ * 旧実装は「亀見橋が MISSING」「fujino-art-camp が IN_DATA」「かぶと虫の森と
+ * 奥牧野が ORPHAN」という**データの状態**を焼き込んでいた。データの状態は
+ * こちらの作業で正しく変わる（藤野芸術の家を掲載した瞬間、MISSING → IN_DATA に
+ * なって FAIL した）。**状態を焼き込んだ検査は、作業が進むたびに腐る。**
+ *
+ * 案Bでは**外の世界の事実＝実在側の施設名だけ**を焼き込む。
+ *
+ *   real   … 一次情報で実在が確認できている施設。**ソース側（実在側）に出続けること**
+ *            だけを検査する。データに載っているか（MISSING か IN_DATA か）は問わない
+ *   absent … 一次情報を探しても予約・料金が出てこなかった名前（§6-4 を満たさない。
+ *            2026-08-13 のWeb精査で確認）。**ソース側に「出ない」ことを検査する。**
+ *            出たら実在の判断が変わったということなので、機械で通さず手で調べ直す
+ *
+ * これらは「その施設が現実に存在するか」という**データの外の事実**なので、
+ * こちらの作業では変わらない。変わるとしたら世界側（閉業・新規掲載）で、
+ * そのときに FAIL するのは検査として正しい挙動。
  * ========================================================================== */
 
 const SELF_TEST = {
   '相模原市緑区牧野': {
-    missingHigh: ['亀見橋バカンス村'],
-    // **2026-08-10 に藤野芸術の家キャンプ場を掲載したので、MISSING ではなく IN_DATA になった。**
-    // 期待値を IN_DATA に移してある。ここを MISSING のままにしておくと、
-    // 掲載した瞬間に必ず FAIL する検査になり、意味を失う。
-    // 亀見橋バカンス村は営業の現況が確認できず保留中なので MISSING のまま
-    inDataIds: ['fujino-art-camp'],
-    orphanIds: ['kabutomushi-mori-camp', 'okumakino-camp'],
+    real: ['亀見橋バカンス村', '藤野芸術の家'],
+    absent: ['かぶと虫の森キャンプ場', '奥牧野キャンプ場'],
   },
 };
 
@@ -1576,33 +1588,32 @@ function runSelfTest(districtName, results) {
   const spec = SELF_TEST[districtName];
   if (!spec) return null;
   const checks = [];
-  for (const name of spec.missingHigh) {
+  // ソース側（実在側）に出た名前 = MISSING か IN_DATA の bucket。ORPHAN はデータ側のみ
+  const sourceSide = results.filter(r => r.bucket);
+  const findByName = (name) => {
     const want = sweepNormalizeName(name);
-    const found = results.find(
-      r => r.kind === 'MISSING' &&
-        [...r.bucket.norms].some(n => n === want || namesMatch(n, want)) &&
-        r.bucket.confidence === 'HIGH'
+    return sourceSide.find(
+      r => [...r.bucket.norms].some(n => n === want || namesMatch(n, want))
     );
+  };
+  for (const name of spec.real || []) {
+    const found = findByName(name);
     checks.push({
-      label: `${name} が MISSING かつ confidence HIGH`,
+      label: `${name} が実在側（ソース側）に出ている`,
       pass: !!found,
-      detail: found ? found.bucket.addresses.join(' / ') : '出ていない',
+      detail: found
+        ? `${found.kind}・${found.bucket.confidence}${found.bucket.addresses.length ? ' / ' + found.bucket.addresses.join(' / ') : ''}`
+        : '出ていない（ソースが落ちたか、名寄せが壊れたか、現実に閉業したか）',
     });
   }
-  for (const id of spec.inDataIds || []) {
-    const found = results.find(r => r.kind === 'IN_DATA' && r.record.id === id);
+  for (const name of spec.absent || []) {
+    const found = findByName(name);
     checks.push({
-      label: `${id} が IN_DATA（掲載済み。ソース側と一致し続けているか）`,
-      pass: !!found,
-      detail: found ? `${found.bucket.name}（${found.matchedBy || '名前'}・${found.bucket.confidence}）` : '一致していない',
-    });
-  }
-  for (const id of spec.orphanIds) {
-    const found = results.find(r => r.kind === 'ORPHAN' && r.record.id === id);
-    checks.push({
-      label: `${id} が ORPHAN`,
-      pass: !!found,
-      detail: found ? found.record.address : '出ていない（どこかのソースに一致した可能性）',
+      label: `${name} が実在側（ソース側）に出ない（一次情報で実在が確認できなかった名前）`,
+      pass: !found,
+      detail: found
+        ? `出てしまった: ${found.kind}・${found.bucket.confidence}。実在の判断が変わった可能性。手で調べ直すこと`
+        : '出ていない（期待どおり）',
     });
   }
   return { checks, pass: checks.every(c => c.pass) };
@@ -2617,7 +2628,15 @@ async function main() {
   }
 }
 
-main().catch(e => {
-  console.error(e);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch(e => {
+    console.error(e);
+    process.exitCode = 1;
+  });
+}
+
+// `check-muni-sources.js` が URL の死活を機械で回すために公開する。
+// **ここに載る URL が死んでいると、その地区は「調べたつもりで何も見ていない」状態になる**
+// （check-official-urls.js の DEAD と同じ型。ハードコードは必ず腐る。§18-3）
+// SELF_TEST / runSelfTest はオフラインの検証用（sweep はネットが要るが、判定は要らない）
+module.exports = { MUNI_SOURCES, PREF_SOURCES, SELF_TEST, runSelfTest, sweepNormalizeName };
