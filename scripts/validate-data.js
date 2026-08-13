@@ -475,7 +475,7 @@ const decimals = (n) => {
   return i < 0 ? 0 : s.length - i - 1;
 };
 
-const cvTiers = { strong: [], coarse: [], far: [], ok: 0 };
+const cvTiers = { strong: [], coarse: [], far: [], unmeasured: [], ok: 0 };
 let cvNote = null;
 
 try {
@@ -484,21 +484,10 @@ try {
 
   // 住所と座標の距離は `verify-address-gsi.js` の出力にしかない。無ければ ③ は測らない。
   // **黙って飛ばさない。**測っていないことを出力に書く。
-  let distOf = null;
-  try {
-    const md = fs.readFileSync(path.join(__dirname, 'address-check-2026-08.md'), 'utf-8')
-      .split(/^---\r?\n\r?\n# /m)[0];
-    const m = new Map();
-    for (const line of md.split(/\r?\n/)) {
-      const row = /^\|\s*`([^`]+)`\s*\|(?:[^|]*\|){4}([^|]*)\|/.exec(line);
-      if (!row) continue;
-      const km = /([\d.]+)km/.exec(row[2]);
-      if (km) m.set(row[1], Number(km[1]));
-    }
-    if (m.size) distOf = m;
-  } catch {
-    /* 無ければ ③ を測らないだけ */
-  }
+  // パーサは `coordsverified-triage.js` と共通（md の書式変更で片方だけ壊れるのを防ぐ。§18-3）
+  const { readDistances } = require('./lib/address-check-md');
+  const distRead = readDistances();
+  const distOf = distRead.distances.size ? distRead.distances : null;
 
   for (const c of camps) {
     if (c.coordsVerified !== true) continue;
@@ -508,13 +497,19 @@ try {
       cvTiers.strong.push({ slug: c.slug, status: c.status, verdict: v, km: distOf?.get(c.slug) ?? null });
     } else if (Math.min(decimals(c.lat), decimals(c.lng)) <= 3) {
       cvTiers.coarse.push(c.slug);
-    } else if ((distOf?.get(c.slug) ?? 0) >= 2) {
+    } else if (!distOf || !distOf.has(c.slug)) {
+      // **「距離が測れていない」を「距離0」と同一視しない。**
+      // 旧実装は `?? 0` で ④「位置は妥当」に落としていた（md に行が無い＝検証後に
+      // 入ったレコードが、無検査のまま「妥当」という**肯定の主張**にカウントされていた。
+      // 2026-08-13 のレビューで発覚）
+      cvTiers.unmeasured.push(c.slug);
+    } else if (distOf.get(c.slug) >= 2) {
       cvTiers.far.push(c.slug);
     } else {
       cvTiers.ok++;
     }
   }
-  if (!distOf) cvNote = '`address-check-2026-08.md` が読めないので ③（住所との距離）は測っていない';
+  if (distRead.note) cvNote = distRead.note;
 } catch {
   cvNote = '`coord-report.json` が読めないので coordsVerified の裏付けを検査していない。`node scripts/verify-coords-gsi.js` を回すこと';
 }
@@ -538,17 +533,21 @@ if (placeholderVerified || emptyVerified) {
 
 // coordsVerified の裏付けは件数だけ出す。①は上の警告に1件ずつ出ている
 {
-  const { strong, coarse, far, ok } = cvTiers;
+  const { strong, coarse, far, unmeasured, ok } = cvTiers;
   const weak = coarse.length + far.length;
-  if (strong.length || weak || cvNote) {
+  if (strong.length || weak || unmeasured.length || cvNote) {
     console.log(`\n  coordsVerified の裏付け（cc751ab 以前の分は apply-mark-verified-2026-08.js の推定。§18-11）`);
     console.log(`    ① 機械検証を通っていない        ${String(strong.length).padStart(3)}件  ← 上の警告に出ている。**位置が誤っているのが確定**`);
     console.log(`    ② 小数3桁以下（粒度100m〜1km）  ${String(coarse.length).padStart(3)}件${coarse.length ? `  例: ${coarse.slice(0, 3).join(', ')}` : ''}`);
     console.log(`    ③ 住所と2km以上離れている        ${String(far.length).padStart(3)}件${far.length ? `  例: ${far.slice(0, 3).join(', ')}` : ''}`);
     console.log(`    ④ 位置は妥当（警告しない）      ${String(ok).padStart(3)}件`);
+    if (unmeasured.length) {
+      console.log(`    ⑤ 距離が未計測                  ${String(unmeasured.length).padStart(3)}件  例: ${unmeasured.slice(0, 3).join(', ')}`);
+      console.log('      ← 検証後に入った・座標が動いたレコード。node scripts/verify-address-gsi.js を回し直すこと');
+    }
     if (cvNote) console.log(`    ⚠ ${cvNote}`);
     if (weak) {
-      console.log(`    → ②③は距離だけでは判定できない（§6-15）。精査すると減る見込み。`);
+      console.log(`    → ②③は距離だけでは判定できない（§6-15）。仕分けは node scripts/coordsverified-triage.js`);
       console.log('      一覧は node scripts/coord-worklist.js');
     }
   }
