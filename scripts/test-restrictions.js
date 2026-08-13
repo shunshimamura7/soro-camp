@@ -19,7 +19,9 @@ function check(name, actual, expected) {
   else failures.push(`${name}\n      期待: ${JSON.stringify(expected)}\n      実際: ${JSON.stringify(actual)}`);
 }
 
-// ── 同一年内の期間（和田長浜海岸: 海水浴場開設期間 07-03〜08-31） ──────────────
+// ── 同一年内の期間 ─────────────────────────────────────────────────────────
+// 値は架空の固定値（出どころは和田長浜の海水浴場開設期間だが、実データとの一致は
+// ここでは検査しない。実データは下の「実データとの突き合わせ（動的）」が全件見る）
 const summer = { type: 'bonfire', from: '07-03', to: '08-31', reason: 'x', source: 'y' };
 
 check('同年内: 期間の前日は対象外',      isActive(summer, '07-02'), false);
@@ -30,7 +32,8 @@ check('同年内: 期間の翌日は対象外',      isActive(summer, '09-01'), 
 check('同年内: 真冬は対象外',            isActive(summer, '01-01'), false);
 check('同年内: 大晦日は対象外',          isActive(summer, '12-31'), false);
 
-// ── 年をまたぐ期間（甲府市 森林浴広場: 冬期林道通行止 12-10〜04-25） ──────────
+// ── 年をまたぐ期間 ─────────────────────────────────────────────────────────
+// 値は架空の固定値（出どころは甲府市森林浴広場の冬期林道通行止。同上）
 const winter = { type: 'access', from: '12-10', to: '04-25', reason: 'x', source: 'y' };
 
 check('年またぎ: 期間の前日は対象外',       isActive(winter, '12-09'), false);
@@ -94,29 +97,66 @@ check('parseSource: URLなし', parseSource('甲府市 施設カルテ 3-10'), {
   url: null,
 });
 
-// ── 実データとの突き合わせ ─────────────────────────────────────────────────
-// 型が通っていても期間が意図とずれていたら気づけないので、実際の値を固定する
+// ── 実データとの突き合わせ（動的） ─────────────────────────────────────────
+//
+// 旧実装は「restrictions を持つのは2件」と slug を焼き込んでいた。
+// **3件目を足した瞬間に必ず FAIL する検査**で、しかも FAIL の内容は
+// 「データが増えた」であって「ロジックが壊れた」ではない（§18-3 のハードコードの腐り）。
+//
+// かわりに、**データに何件あっても全件を同じ性質で検査する。**
+//   1. スキーマ: from/to が MM-DD として妥当、reason / source が空でない
+//   2. 差分検査: isActive を素朴な別実装（オラクル）と 366日ぶんの全日付で突き合わせる。
+//      年またぎ（from > to）の扱いが本実装とオラクルで一致することを確認する
+//   3. 境界: from 当日・to 当日は必ず対象。期間の前日・翌日は、期間がその日を
+//      覆っていない限り対象外（覆っているかはオラクルで判定する）
+//
+// **検査した件数を必ず出力する。**0件なら0件と出る（黙って素通りしない）。
 const camps = require(path.join(__dirname, '../data/campgrounds.json'));
-const withRestrictions = camps.filter((c) => Array.isArray(c.restrictions) && c.restrictions.length);
 
-check(
-  '実データ: restrictions を持つのは2件',
-  withRestrictions.map((c) => c.slug).sort(),
-  ['kofu-shinrinyoku-hiroba', 'wadanagahama-kaigan'],
-);
-
-const wada = camps.find((c) => c.slug === 'wadanagahama-kaigan');
-if (wada && wada.restrictions) {
-  check('実データ: 和田長浜は 8/7 時点で制限中', isActive(wada.restrictions[0], '08-07'), true);
-  check('実データ: 和田長浜は 9/1 時点で制限外', isActive(wada.restrictions[0], '09-01'), false);
+/** 閏年の全366日を MM-DD で列挙 */
+const ALL_DAYS = [];
+{
+  const dim = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  for (let m = 1; m <= 12; m++) {
+    for (let d = 1; d <= dim[m - 1]; d++) {
+      ALL_DAYS.push(`${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`);
+    }
+  }
 }
 
-const kofu = camps.find((c) => c.slug === 'kofu-shinrinyoku-hiroba');
-if (kofu && kofu.restrictions) {
-  check('実データ: 甲府は 1/1 時点で制限中',  isActive(kofu.restrictions[0], '01-01'), true);
-  check('実データ: 甲府は 12/31 時点で制限中', isActive(kofu.restrictions[0], '12-31'), true);
-  check('実データ: 甲府は 8/7 時点で制限外',  isActive(kofu.restrictions[0], '08-07'), false);
+/** オラクル: isActive の素朴な別実装。MM-DD のゼロ埋め文字列は辞書順で日付順になる */
+function oracleActive(r, md) {
+  if (!r || !isValidMD(r.from) || !isValidMD(r.to) || !isValidMD(md)) return false;
+  return r.from <= r.to ? r.from <= md && md <= r.to : md >= r.from || md <= r.to;
 }
+
+let checkedRestrictions = 0;
+for (const c of camps) {
+  if (!Array.isArray(c.restrictions)) continue;
+  c.restrictions.forEach((r, i) => {
+    checkedRestrictions++;
+    const tag = `実データ ${c.slug}[${i}]`;
+    // 1. スキーマ
+    check(`${tag}: from が妥当な MM-DD`, isValidMD(r.from), true);
+    check(`${tag}: to が妥当な MM-DD`,   isValidMD(r.to), true);
+    check(`${tag}: reason がある`, typeof r.reason === 'string' && r.reason.length > 0, true);
+    check(`${tag}: source がある`, typeof r.source === 'string' && r.source.length > 0, true);
+    // 2. 全日付の差分検査（不一致の日だけ列挙する）
+    const diff = ALL_DAYS.filter((md) => isActive(r, md) !== oracleActive(r, md));
+    check(`${tag}: isActive がオラクルと366日すべて一致`, diff.slice(0, 5), []);
+    // 3. 境界
+    if (isValidMD(r.from) && isValidMD(r.to)) {
+      check(`${tag}: from 当日（${r.from}）は対象`, isActive(r, r.from), true);
+      check(`${tag}: to 当日（${r.to}）は対象`,     isActive(r, r.to), true);
+      const idx = (md) => ALL_DAYS.indexOf(md);
+      const prev = ALL_DAYS[(idx(r.from) + ALL_DAYS.length - 1) % ALL_DAYS.length];
+      const next = ALL_DAYS[(idx(r.to) + 1) % ALL_DAYS.length];
+      check(`${tag}: 期間前日（${prev}）の判定がオラクルと一致`, isActive(r, prev), oracleActive(r, prev));
+      check(`${tag}: 期間翌日（${next}）の判定がオラクルと一致`, isActive(r, next), oracleActive(r, next));
+    }
+  });
+}
+console.log(`test-restrictions: 実データの restrictions ${checkedRestrictions}件を検査（0件なら要注意）`);
 
 // ── 結果 ───────────────────────────────────────────────────────────────────
 if (failures.length) {

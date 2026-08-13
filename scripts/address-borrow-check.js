@@ -157,8 +157,15 @@ function analyze(records, mismatched = new Map()) {
 /**
  * 必須の検証。**借用が起きた当時のデータ**を通す。
  *
- *   takizawaso          … 秦野市堀山下1513（誤・hadano-togawa-camp から借用）
+ *   takizawaso          … 秦野市堀山下1513（誤）
  *   hadano-togawa-camp  … 秦野市堀山下777（こちらも誤）
+ *
+ * ⚠ 1513 の借用元は **hadano-togawa-camp ではない**（§6-16 の訂正・2026-08-14）。
+ * 当時どのレコードにも 1513 は無く、**データの外にある実在施設
+ * （県立秦野戸川公園＝堀山下1513）から借用されていた。**
+ * 「レコード間の一致」を探す検査には**原理的に出ない型**で、
+ * ここで検証しているのは大字レベルの集積（BORROW_SUSPECT）が拾えるか、まで。
+ * **データ外からの借用そのものは、この検査では検出できない**（限界として明記する）。
  *
  * 当時は D-1 で takizawaso が OAZA_MISS-SUSPECT、hadano-togawa-camp が CITY_MISS だった。
  *
