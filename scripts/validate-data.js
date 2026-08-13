@@ -444,6 +444,89 @@ for (const c of camps) {
   }
 }
 
+// ── coordsVerified の裏付け ─────────────────────────────────────────────────
+//
+// **`coordsVerified` は「人が地図上で目視確認した」と定義しているが、
+// cc751ab 以前に立った分は `mark-verified.js` の推定で付いている。**
+// 判定基準は「batch6/batch7 由来でなく、座標が 0 でない」＝確認済みと見なす、というもので、
+// 人が1件ずつ見た記録ではない（§17-3 の `priceVerified` と同型。§18-11）。
+//
+// ## 警告を段階に分ける理由
+//
+// 該当は83件ある。**全部を警告にすると `npm run validate` が毎回83行出て、
+// 警告そのものが読まれなくなる。**位置が誤っているのが確定している4件だけを強い警告にし、
+// 残りは件数のサマリに留める。
+//
+//   ① verdict が OK でない       … 目視したはずなのに機械検証を通っていない → **1件ずつ警告**
+//   ② 小数3桁以下                … 粒度が100m〜1km。位置が特定できていない → 件数のみ
+//   ③ 住所と2km以上離れている     … 機械検証は通るが遠い → 件数のみ（**距離だけでは判定できない。§6-15**）
+//   ④ それ以外                   … 位置は妥当。フラグの意味付けだけの問題 → **出さない**
+//
+// ## slug をハードコードしない
+//
+// 「どの83件か」を焼き込むと、座標を直しても一覧から消えない。
+// `coord-worklist.js` でまさにそれをやらかしている（5本のハードコードのうち4本が腐っていた。§18-3）。
+// **判定は `coord-report.json` と小数桁と距離という現在値だけから出す。**
+// git 履歴は使わない（`prebuild` で毎回走るので遅すぎる）。
+
+const decimals = (n) => {
+  const s = String(n);
+  const i = s.indexOf('.');
+  return i < 0 ? 0 : s.length - i - 1;
+};
+
+const cvTiers = { strong: [], coarse: [], far: [], ok: 0 };
+let cvNote = null;
+
+try {
+  const report = JSON.parse(fs.readFileSync(path.join(__dirname, 'coord-report.json'), 'utf-8'));
+  const verdictOf = new Map(report.map((r) => [r.slug, r.verdict]));
+
+  // 住所と座標の距離は `verify-address-gsi.js` の出力にしかない。無ければ ③ は測らない。
+  // **黙って飛ばさない。**測っていないことを出力に書く。
+  let distOf = null;
+  try {
+    const md = fs.readFileSync(path.join(__dirname, 'address-check-2026-08.md'), 'utf-8')
+      .split(/^---\r?\n\r?\n# /m)[0];
+    const m = new Map();
+    for (const line of md.split(/\r?\n/)) {
+      const row = /^\|\s*`([^`]+)`\s*\|(?:[^|]*\|){4}([^|]*)\|/.exec(line);
+      if (!row) continue;
+      const km = /([\d.]+)km/.exec(row[2]);
+      if (km) m.set(row[1], Number(km[1]));
+    }
+    if (m.size) distOf = m;
+  } catch {
+    /* 無ければ ③ を測らないだけ */
+  }
+
+  for (const c of camps) {
+    if (c.coordsVerified !== true) continue;
+    const v = verdictOf.get(c.slug);
+    if (v === undefined) continue; // レポートに無い。coord-worklist.js 側で拾う
+    if (v !== 'OK') {
+      cvTiers.strong.push({ slug: c.slug, status: c.status, verdict: v, km: distOf?.get(c.slug) ?? null });
+    } else if (Math.min(decimals(c.lat), decimals(c.lng)) <= 3) {
+      cvTiers.coarse.push(c.slug);
+    } else if ((distOf?.get(c.slug) ?? 0) >= 2) {
+      cvTiers.far.push(c.slug);
+    } else {
+      cvTiers.ok++;
+    }
+  }
+  if (!distOf) cvNote = '`address-check-2026-08.md` が読めないので ③（住所との距離）は測っていない';
+} catch {
+  cvNote = '`coord-report.json` が読めないので coordsVerified の裏付けを検査していない。`node scripts/verify-coords-gsi.js` を回すこと';
+}
+
+for (const t of cvTiers.strong) {
+  warnings.push(
+    `${t.slug}: coordsVerified が true だが機械検証を通っていない（${t.verdict}${t.km != null ? ` / 住所と ${t.km}km` : ''}）。` +
+      'このフラグは cc751ab 以前は mark-verified.js が「batch6/batch7 由来でなければ確認済み」と' +
+      '推定して付けたもので、人の目視の記録ではない。**実ピンを引き直すこと**（§18-11）'
+  );
+}
+
 // ── 結果 ────────────────────────────────────────────────────────────────────
 console.log(`validate-data: ${camps.length}件を検査`);
 console.log(`  座標未設定（lat/lng = 0）: ${unsetCoords}件`);
@@ -451,6 +534,24 @@ console.log(`  lastVerified が ${PLACEHOLDER_DATE}（一括投入時のプレ�
 console.log(`  lastVerified が空: ${emptyVerified}件`);
 if (placeholderVerified || emptyVerified) {
   console.log(`  → 未確認 計${placeholderVerified + emptyVerified}件。詳細は node scripts/unverified-list.js`);
+}
+
+// coordsVerified の裏付けは件数だけ出す。①は上の警告に1件ずつ出ている
+{
+  const { strong, coarse, far, ok } = cvTiers;
+  const weak = coarse.length + far.length;
+  if (strong.length || weak || cvNote) {
+    console.log(`\n  coordsVerified の裏付け（cc751ab 以前の分は mark-verified.js の推定。§18-11）`);
+    console.log(`    ① 機械検証を通っていない        ${String(strong.length).padStart(3)}件  ← 上の警告に出ている。**位置が誤っているのが確定**`);
+    console.log(`    ② 小数3桁以下（粒度100m〜1km）  ${String(coarse.length).padStart(3)}件${coarse.length ? `  例: ${coarse.slice(0, 3).join(', ')}` : ''}`);
+    console.log(`    ③ 住所と2km以上離れている        ${String(far.length).padStart(3)}件${far.length ? `  例: ${far.slice(0, 3).join(', ')}` : ''}`);
+    console.log(`    ④ 位置は妥当（警告しない）      ${String(ok).padStart(3)}件`);
+    if (cvNote) console.log(`    ⚠ ${cvNote}`);
+    if (weak) {
+      console.log(`    → ②③は距離だけでは判定できない（§6-15）。精査すると減る見込み。`);
+      console.log('      一覧は node scripts/coord-worklist.js');
+    }
+  }
 }
 
 if (superlativeHits.length) {
