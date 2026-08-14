@@ -975,6 +975,119 @@ const SRC_YAMANAKAKO = {
   },
 };
 
+/* ---- 山梨・大月市 ------------------------------------------------------ */
+
+/**
+ * 大月市公式「宿泊施設・レジャー施設等の紹介」。
+ *
+ * **キャンプ場だけの一覧ではない。**1ページに宿泊・キャンプ・釣り・体験の表が並ぶ。
+ * キャンプ場の表は「キャンプ場・釣り場」という見出しで、**行の1列目が種別**になっている:
+ *
+ *   <td>キャンプ場</td><td>金の森山荘</td><td>大月市大月町真木6188</td><td>0554-23-1021</td>
+ *   <td>釣り場</td>  <td>奈良子釣りセンター</td> …
+ *
+ * 1列目で絞らないと釣り場（奈良子釣りセンター）が混ざる。実HTMLで実測して3件。
+ * 同じページの宿泊の表は列の並びが違う（名前・住所・電話・エリア）ので、
+ * 「キャンプ場」で始まる行だけを見るこの形なら宿泊は拾わない。
+ */
+const SRC_OTSUKI_CITY = {
+  id: 'otsuki-city',
+  layer: 'L1',
+  kind: 'listInline',
+  label: '大月市公式 宿泊施設・レジャー施設等の紹介',
+  pages: ['https://www.city.otsuki.yamanashi.jp/kanko/shukuhakusisetu.html'],
+  list(html) {
+    const out = [];
+    // 1列目が「キャンプ場」の行だけ。2列目が施設名、3列目が住所
+    const re = /<tr>\s*<td[^>]*>\s*キャンプ場\s*<\/td>\s*<td[^>]*>([\s\S]*?)<\/td>\s*<td[^>]*>([\s\S]*?)<\/td>/g;
+    let m;
+    while ((m = re.exec(html))) {
+      const name = cleanText(stripTags(m[1]));
+      const address = tidyAddress(stripTags(m[2]));
+      if (name) out.push({ name, address: address || null, url: null });
+    }
+    return out;
+  },
+};
+
+/**
+ * やまなし観光推進機構「大月・都留エリアのおすすめキャンプ場」。
+ *
+ * ## ページ名を信じない（富士宮の教訓）
+ *
+ * **タイトルは「大月・都留」だが、中身は大月市 0件・上野原市 0件。**
+ * 実HTMLで数えると 道志村20 / 都留市3 / 丹波山村1 の計24件で、
+ * この「エリア」は道志村の一覧に大月・都留の名前が付いているだけだった
+ * （なっぷも同じ括りで、あちらはエリア名が「大月・都留（道志村）」と正直に書いてある）。
+ * **大月市・上野原市にとってこのソースは空。**登録はするが、
+ * ここから両市の MISSING は出ないことを承知の上で持つ（0件と未登録は別物なので登録する）。
+ *
+ * ## nameOnly ではない
+ *
+ * 一覧に住所は無いが、**各スポットの詳細ページに「住所」の行がある**（実測: 都留市大幡5108）。
+ * したがって listDetail として住所まで取れる。裏取り専用の nameOnly より強い。
+ */
+const SRC_YAMANASHI_KANKO_OTSUKI = {
+  id: 'yamanashi-kankou-otsuki',
+  layer: 'L2',
+  kind: 'listDetail',
+  label: 'やまなし観光推進機構 大月・都留エリアのキャンプ場',
+  note: '実測の内訳は 道志村20 / 都留市3 / 丹波山村1。大月市・上野原市は0件',
+  pages: ['https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html'],
+  list(html) {
+    const seen = new Map();
+    const re = /<a href="(\/kankou\/spot\/p2_\d+\.html)"[^>]*>([^<]+)<\/a>/g;
+    let m;
+    while ((m = re.exec(html))) {
+      if (!seen.has(m[1])) seen.set(m[1], cleanText(m[2]));
+    }
+    return [...seen].map(([p, name]) => ({ name, url: 'https://www.yamanashi-kankou.jp' + p }));
+  },
+  address(html) {
+    const m = html.match(/<th[^>]*>\s*<p>\s*住所\s*<\/p>\s*<\/th>\s*<td[^>]*>\s*<p>([^<]+)<\/p>/);
+    return m ? tidyAddress(m[1]) : null;
+  },
+};
+
+/* ---- 神奈川・県央（県公式） -------------------------------------------- */
+
+/**
+ * 神奈川県公式「県央地域（宮ヶ瀬湖・相模原周辺）のバーベキュー・キャンプ」。
+ *
+ * **施設一覧ではなく、ほとんどがリンク集。**本文の表は他団体の一覧ページへの
+ * リンク（相模原市観光協会＝こちらが既に L1 で持っている・津久井観光協会・
+ * 藤野観光協会・大和市の財団）で、**施設として名前と詳細ページを持つのは冒頭の4件だけ**。
+ *
+ *   望地弁天キャンプ場（相模原市）/ 上大島キャンプ場（相模原市）
+ *   ウエインズパーク海老名（海老名市）/ 県立愛川ふれあいの村（愛川町）
+ *
+ * つまり**相模原市には実質2件**しか効かない。
+ * Manus の評価「愛川4件・清川4件の裏取りに効く」は実HTMLと合わない
+ * （愛川町は1件、清川村は0件）。それでも県公式で住所まで取れるので L2 として持つ。
+ * 詳細ページの住所は本文に「【所在地】相模原市中央区田名5835-16」の形で入っている。
+ */
+const SRC_KANAGAWA_KENOU = {
+  id: 'pref-kanagawa-kenou',
+  layer: 'L2',
+  kind: 'listDetail',
+  label: '神奈川県公式 県央地域のバーベキュー・キャンプ',
+  note: '実測4件（相模原2 / 海老名1 / 愛川1）。本文の表は他団体の一覧へのリンク集で施設ではない',
+  pages: ['https://www.pref.kanagawa.jp/docs/u5r/cnt/f550/p12621.html'],
+  list(html) {
+    const seen = new Map();
+    const re = /<a href="(\/docs\/u5r\/cnt\/f550\/tabi-\d+\.html)"[^>]*>([^<]+)<\/a>/g;
+    let m;
+    while ((m = re.exec(html))) {
+      if (!seen.has(m[1])) seen.set(m[1], cleanText(m[2]));
+    }
+    return [...seen].map(([p, name]) => ({ name, url: 'https://www.pref.kanagawa.jp' + p }));
+  },
+  address(html) {
+    const m = html.match(/【所在地】\s*([^<\n]+)/);
+    return m ? tidyAddress(stripTags(m[1])) : null;
+  },
+};
+
 /* ---- L3 集約サイト（県単位。市区町村ページが無いので県で取って住所で絞る） ---- */
 
 function japanCamp(prefSlug, label) {
@@ -1056,6 +1169,7 @@ const MUNI_SOURCES = {
     sources: [
       SRC_SAGAMIHARA_KANKO,
       SRC_SAGAMIHARA_MIDORINAVI,
+      SRC_KANAGAWA_KENOU,
       napCamp('sagamihara', 'kanagawa'),
       jalan('14151', '相模原市緑区'),
       hinataSpot('kanto/kanagawa/1906', '相模原'),
@@ -1328,6 +1442,45 @@ const MUNI_SOURCES = {
         reason: '独立した観光協会サイトが見つからない（町公式の観光ページが兼ねている）',
         checked: ['https://www.town.nanbu.yamanashi.jp/kankou/index.html'],
       },
+    ],
+  },
+
+  /* ── 2026-08-14 追加（山梨東部。データが 大月0 / 上野原0 / 都留2 の空白地帯） ──
+   *
+   * 3市とも **SELF_TEST が無い**。新地区なので「必ず出るはず」の答えを持っていない。
+   * 結果が薄いときに疑うのは、まず抽出器のほう
+   * （`node scripts/check-muni-sources.js --muni=大月市` の抽出件数を見る）。
+   */
+
+  大月市: {
+    pref: '山梨',
+    sources: [
+      SRC_OTSUKI_CITY,
+      SRC_YAMANASHI_KANKO_OTSUKI,
+      napCamp('otsuki_turushi', 'yamanashi'),
+      jalan('19206', '大月市'),
+    ],
+  },
+
+  // 都留市・上野原市は **L1 が無い**。市公式・観光協会の一覧を探していないだけで、
+  // 「無いことを確かめた」わけではないので l1NotFound には書かない
+  // （l1NotFound は不在の根拠であって、未調査の置き場所ではない）。
+  // L1 を探すのは次回。それまでこの2市の ORPHAN は判定として読めない。
+  都留市: {
+    pref: '山梨',
+    sources: [
+      SRC_YAMANASHI_KANKO_OTSUKI,
+      napCamp('otsuki_turushi', 'yamanashi'),
+      jalan('19204', '都留市'),
+    ],
+  },
+
+  上野原市: {
+    pref: '山梨',
+    sources: [
+      SRC_YAMANASHI_KANKO_OTSUKI,
+      napCamp('otsuki_turushi', 'yamanashi'),
+      jalan('19212', '上野原市'),
     ],
   },
 };
@@ -2137,10 +2290,20 @@ function renderSummaryMd(done, records, startedAt) {
   L.push('');
   L.push('### 揃っているか（ORPHAN 全件 vs データ全件）');
   L.push('');
-  L.push('| フィールド | ORPHAN の分布 | データ全件の分布 | 最頻値の割合（ORPHAN → 全件） | 揃っているか |');
-  L.push('|---|---|---|---|---|');
   const orphanRecords = orphanRes.map(r => r.record);
   const verdicts = [];
+  // ORPHAN が1件も無い回がある（2026-08-14 の大月・都留・上野原。データ側が
+  // 空白地帯だと ORPHAN の元になるレコードがそもそも無い）。
+  // **分布を取る対象が空なので最頻値が存在しない。**表を書かずに理由を書く
+  // （空の表を出すと「揃っていない」という判定に読めてしまう。判定不能とは違う）。
+  if (!orphanRecords.length) {
+    L.push('**ORPHAN が0件なので、この検証はできない。**');
+    L.push('対象の地区にデータ側のレコードが無い（または全件がソースに載っている）ため、');
+    L.push('分布を比べる材料が無い。仮説の成否は今回の結果からは何も言えない。');
+    L.push('');
+  } else {
+  L.push('| フィールド | ORPHAN の分布 | データ全件の分布 | 最頻値の割合（ORPHAN → 全件） | 揃っているか |');
+  L.push('|---|---|---|---|---|');
   for (const key of ['lastVerified', 'priceVerified', 'coordsVerified', 'officialUrl']) {
     const d1 = distribution(orphanRecords, key);
     const d2 = distribution(records, key);
@@ -2157,7 +2320,11 @@ function renderSummaryMd(done, records, startedAt) {
     );
   }
   L.push('');
+  }
   const alignedCount = verdicts.filter(v => v.aligned).length;
+  if (!orphanRecords.length) {
+    // 判定基準も結論も書かない。**材料が無いことを「揃わなかった」と書くと嘘になる**
+  } else {
   L.push('**判定基準**: ORPHAN の8割以上が同じ値を取り、かつその値の割合がデータ全件より30ポイント以上高いとき「揃っている」とした。');
   L.push('');
   if (alignedCount === 0) {
@@ -2173,6 +2340,7 @@ function renderSummaryMd(done, records, startedAt) {
     L.push(`**結論: ${alignedCount}/4 のフィールドが揃った。**`);
     L.push('バッチ単位で投入された可能性を示す傍証にはなる。');
     L.push('ただしこれは**傍証であって証明ではない**。ORPHAN は不在の証明ではない（§6-7）。');
+  }
   }
   L.push('');
 
