@@ -11,8 +11,8 @@ T1〜T3 は「距離が誤りの証拠にならない」であって「座標が
 | ③-T1 自治体ぐるみで lv01 欠落 | 10 | 低優先（距離は代表点まで） |
 | ③-T2 大字が一致 | 20 | 低優先(座標は正しい大字の中) |
 | ③-T3 広域スナップ | 14 | 低優先（GSI 側の粒度） |
-| ③-T4 説明がつかない | **12** | **引き直し候補**（実ピンと突き合わせて決める） |
-| 距離未計測 | 5 | 仕分け不能。`verify-address-gsi.js` を回し直してから再仕分け |
+| ③-T4 説明がつかない | **13** | **引き直し候補**（実ピンと突き合わせて決める） |
+| 距離未計測 | 0 | 仕分け不能。`verify-address-gsi.js` を回し直してから再仕分け |
 
 ## ② 小数3桁以下 — 全件引き直し
 
@@ -46,6 +46,7 @@ T1〜T3 は「距離が誤りの証拠にならない」であって「座標が
 | `retreat-camp-mahoroba` | active | 富士河口湖町 | 長浜 | 6.58km | 距離 6.58km に説明がつかない（大字は一致せず、スナップの痕跡も無い） |
 | `oshino-hakkai-camp` | unverified | 忍野村 | 内野 | 3.34km | 距離 3.34km に説明がつかない（大字は一致せず、スナップの痕跡も無い） |
 | `akeno-fureai-camp` | active | 北杜市 | 須玉町江草 | 2.86km | 距離 2.86km に説明がつかない（大字は一致せず、スナップの痕跡も無い） |
+| `hayakawa-camp` | suspended | 早川町 | 保 | 4.95km | 距離 4.95km に説明がつかない（大字は一致せず、スナップの痕跡も無い） |
 | `kofu-shinrinyoku-hiroba` | active | 甲府市 | 黒平町 | 5.29km | 距離 5.29km に説明がつかない（大字は一致せず、スナップの痕跡も無い） |
 
 ## ③-T1 自治体ぐるみで lv01 欠落 — 低優先
@@ -106,15 +107,3 @@ T1〜T3 は「距離が誤りの証拠にならない」であって「座標が
 | `nekokodake-camp` | unverified | 伊豆市 | 大平柿木 | 5.72km | lv01Nm「大平柿木」が食い違い全体で3件に返っている（広域スナップ先。I5型） |
 | `asagiri-greenpark-camp` | unverified | 富士宮市 | 人穴 | 3.16km | 大字「猪之頭」を名乗る施設が3件あり lv01Nm が2種類に割れている（大字が広い。I8型） |
 | `takegawa-kyo-camp` | unverified | 北杜市 | 長坂町大八田 | 8.72km | 旧町名「長坂町」が食い違い全体で2件に返っている（合併市の旧町名スナップ。I7型） |
-
-## 距離未計測 — 仕分け不能（測っていないことを「妥当」と混同しない）
-
-検証後に入った・座標が動いたレコード。`node scripts/verify-address-gsi.js` を回し直すこと。
-
-| slug | status | 市区町村 |
-|---|---|---|
-| `chojayashiki-camp` | suspended | 清川村 |
-| `hakonesono-auto` | closed | 箱根町 |
-| `hinata-camp` | closed | 伊勢原市 |
-| `sports-train-aokigahara` | closed | 富士河口湖町 |
-| `hayakawa-camp` | suspended | 早川町 |

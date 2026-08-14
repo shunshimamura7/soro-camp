@@ -15,35 +15,38 @@
 データの `lat`/`lng` との直線距離。**住所と座標がどれだけ離れているかの目安**であって、
 施設の位置の正しさではない。住所検索が町の中心を返すこともあるので、数百m〜1km台は誤差の範囲。
 
-対象: `status` が **active か unverified** で、address と lat/lng の両方を持つ **173件**
-（active 142 / unverified 31）。**`coordsVerified` や `lastVerified` で絞っていない**（引き継ぎ §6-1）。
+対象: `status` を問わず（**active / unverified / closed / suspended**）address と lat/lng の両方を持つ **180件**
+（active 142 / unverified 31 / closed 5 / suspended 2）。**`coordsVerified` や `lastVerified` で絞っていない**（引き継ぎ §6-1）。
 
 **2026-08-13 に `unverified` を対象に加えた。**以前は `active` だけで、
 **いちばん壊れている確率が高い層が検査から漏れていた。**
 `lv01Nm` の相対評価で唯一の当たりだった `mitsumata-camp`（山北町・9.03km）は
 `unverified` なので、**active 縛りのままでは判定にも出力にも出てこなかった。**
 §6-1（確認済みフラグで対象を絞ると、フラグの誤りを見逃す）と同じ構図が `status` でも起きていた。
-`closed`・`suspended` は入れていない（もう行けない施設の住所の整合は行動につながらない）。
+**同日さらに `closed`・`suspended` も加えた。**この2つを外していたせいで、
+status を問わず数える `validate-data.js` の「⑤ 距離が未計測」に該当5件が居座り、
+「`verify-address-gsi.js` を回し直すこと」という警告に従っても**構造的に消えない**状態だった。
+引き直しの優先度が低いことは下の status 内訳で読めるので、対象から外す理由にはしない。
 GSI は公共APIなので、同時実行1・リクエスト間隔1000ms以上・1件ごとにさらに1000ms待機で回している。
 
 ## 集計
 
 | 判定 | 件数 | status 内訳 | 意味 |
 |---|---|---|---|
-| **CITY_MISS** | **5** | active 3 / unverified 2 | 逆ジオの市区町村が address に見当たらない |
-| **OAZA_MISS** | **40** | active 21 / unverified 19 | 市区町村は一致するが**大字が address に見当たらない**（`takizawaso` 型） |
-| **NO_LV01** | **17** | active 16 / unverified 1 | **逆ジオが大字を返さない（`lv01Nm` が「−」）。GSI 側の欠落** |
-| NO_OAZA | 1 | active 1 / unverified 0 | **address が市区町村までしか無い。データ側の欠落** |
-| UNRESOLVED | 1 | active 0 / unverified 1 | 逆ジオが返らない（海上・国有林など） |
-| MATCH | 109 | active 101 / unverified 8 | 市区町村も大字も一致 |
+| **CITY_MISS** | **6** | active 3 / unverified 2 / closed 1 / suspended 0 | 逆ジオの市区町村が address に見当たらない |
+| **OAZA_MISS** | **41** | active 21 / unverified 19 / closed 1 / suspended 0 | 市区町村は一致するが**大字が address に見当たらない**（`takizawaso` 型） |
+| **NO_LV01** | **17** | active 16 / unverified 1 / closed 0 / suspended 0 | **逆ジオが大字を返さない（`lv01Nm` が「−」）。GSI 側の欠落** |
+| NO_OAZA | 1 | active 1 / unverified 0 / closed 0 / suspended 0 | **address が市区町村までしか無い。データ側の欠落** |
+| UNRESOLVED | 1 | active 0 / unverified 1 / closed 0 / suspended 0 | 逆ジオが返らない（海上・国有林など） |
+| MATCH | 114 | active 101 / unverified 8 / closed 3 / suspended 2 | 市区町村も大字も一致 |
 
 **`NO_LV01` と `NO_OAZA` は原因が正反対なので分けてある。**
 前者は国土地理院に大字データが無い、後者はこちらの `address` が大字まで書けていない。
 以前はどちらも `NO_OAZA` に入れていたうえ、**「−」を大字の候補として扱っていたため
 address の番地のハイフンに当たって MATCH になっていた**（引き継ぎ §17-4-2）。
 
-対象外（対象 status だが address か座標が無い）: 2件
-`shizunami-beach-camp`、`murokubo-greenpark`
+対象外（対象 status だが address か座標が無い）: 4件
+`fujigane-kogen`、`shizunami-beach-camp`、`sanogawa-camp`、`murokubo-greenpark`
 
 ## OAZA_MISS を「住所が誤り」と読まないこと
 
@@ -57,17 +60,18 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 **どちらが誤っているかは、このスクリプトでは決められない。**
 判断には第3の独立ソース（施設公式の住所表記、自治体の施設一覧）が要る。
 
-## CITY_MISS（5件）
+## CITY_MISS（6件）
 
 | slug | status | 施設名 | address | 逆ジオ（市区町村 / 大字） | 距離の目安 | 備考 |
 |---|---|---|---|---|---|---|
 | `makioka-fruits-camp` | unverified | 牧丘フルーツ村キャンプ場 | 山梨県山梨市牧丘町牧平3041 | 甲州市 / 塩山中萩原 | **17.3km** | 逆ジオは「甲州市」だが address に見当たらない |
 | `mobility-park-izu` | active | モビリティーパーク | 静岡県伊豆の国市長者原1445-481 | 函南町 / 日守 | **10.6km** | 逆ジオは「函南町」だが address に見当たらない |
 | `kabutomushi-mori-camp` | unverified | かぶと虫の森キャンプ場 | 神奈川県相模原市緑区牧野4015 | 八王子市 / 南浅川町 | 9.80km | 逆ジオは「八王子市」だが address に見当たらない |
+| `yadoriki-camp` | closed | やどりき水源林キャンプ場 | 神奈川県足柄上郡松田町寄3048 | 山北町 / 山北 | 4.05km | 逆ジオは「山北町」だが address に見当たらない |
 | `hadano-togawa-camp` | active | 秦野戸川公園キャンプ場 | 神奈川県秦野市堀山下1513 | 松田町 / 寄 | 3.17km | 逆ジオは「松田町」だが address に見当たらない |
 | `wadanagahama-kaigan` | active | 和田長浜海岸 | 神奈川県三浦市初声町和田 | 横須賀市 / 長井二丁目 | 1.50km | 逆ジオは「横須賀市」だが address に見当たらない |
 
-## OAZA_MISS（40件）
+## OAZA_MISS（41件）
 
 距離の目安が大きい順。10km 以上は太字。
 
@@ -78,6 +82,7 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 | `izu-kakure-auto` | active | 伊豆隠れオートキャンプ場 | 静岡県伊豆市八木沢2929-5 | 伊豆市 / 大平柿木 | **10.7km** | 逆ジオの大字「大平柿木」が address の「八木沢2929-5」に見当たらない |
 | `doshi-no-yu-camp` | unverified | 道志の湯キャンプ場 | 神奈川県相模原市緑区長者原40-1 | 相模原市　緑区 / 牧野 | **10.6km** | 逆ジオの大字「牧野」が address の「長者原40-1」に見当たらない |
 | `westriver-auto-camp` | active | ウエストリバーオートキャンプ場 | 山梨県南アルプス市須澤131 | 南アルプス市 / 秋山 | **10.0km** | 逆ジオの大字「秋山」が address の「須澤131」に見当たらない |
+| `takaranoyama-fureai` | closed | 宝の山ふれあいの里キャンプ場 | 山梨県都留市大幡5108 | 都留市 / 大野 | 9.90km | 逆ジオの大字「大野」が address の「大幡5108」に見当たらない |
 | `hamanako-garden-camp` | unverified | 浜名湖ガーデンパークキャンプ場 | 静岡県浜松市中央区村櫛町5475-1 | 浜松市　中央区 / 湖東町 | 8.90km | 逆ジオの大字「湖東町」が address の「村櫛町5475-1」に見当たらない |
 | `takegawa-kyo-camp` | unverified | 武川郷キャンプ場 | 山梨県北杜市武川町山高3012 | 北杜市 / 長坂町大八田 | 8.72km | 逆ジオの大字「長坂町大八田」が address の「武川町山高3012」に見当たらない |
 | `sessokyo-camp` | active | 接岨YANBY OUTDOOR FIELD | 静岡県榛原郡川根本町犬間 長嶋公園敷地内 | 川根本町 / 千頭 | 7.50km | 逆ジオの大字「千頭」が address の「犬間長嶋公園敷地内」に見当たらない |
@@ -134,7 +139,7 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 **⚠ この規則は「−」が多数派の自治体を想定していない。該当が出たら規則を見直すこと。**
 （現状は該当0件。大字あり10件・「−」9件のような分布でも「−」全件が SUSPECT になる作りのまま）
 
-分母: `coord-report.json`（184件 / 2026-08-13T21:47:37.339Z）
+分母: `coord-report.json`（184件 / 2026-08-14T09:13:15.768Z）
 
 ### SUSPECT（1件）
 
@@ -183,7 +188,7 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 |---|---|---|---|---|---|---|
 | `ito-marine-town-camp` | unverified | 伊東マリンタウンキャンプ場 | 静岡県伊東市湯川571-19 | — / — | 1.22km | 逆ジオが市区町村を返さない（海上・国有林など） |
 
-## MATCH（109件）
+## MATCH（114件）
 
 | slug | status | 施設名 | address | 逆ジオ（市区町村 / 大字） | 距離の目安 | 備考 |
 |---|---|---|---|---|---|---|
@@ -194,6 +199,7 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 | `apt-ichishiro` | active | アプトいちしろキャンプ場 | 静岡県榛原郡川根本町梅地3-19 | 川根本町 / 梅地 | 5.50km | 大字「梅地」が一致 |
 | `ashinoko-camp-mura` | active | 芦ノ湖キャンプ村 | 神奈川県足柄下郡箱根町元箱根164 | 箱根町 / 元箱根 | 5.39km | 大字「元箱根」が一致 |
 | `shiraishi-auto-camp` | active | 白石オートキャンプ場 | 神奈川県足柄上郡山北町中川字相馬沢870-3 | 山北町 / 中川 | 5.33km | 大字「中川」が一致 |
+| `hayakawa-camp` | suspended | 早川町オートキャンプ場 | 山梨県南巨摩郡早川町保1751番地先 | 早川町 / 保 | 4.95km | 大字「保」が一致 |
 | `hakushu-ojiro-camp` | active | 白州・尾白の森キャンプ場 | 山梨県北杜市白州町白須8093-9 | 北杜市 / 白州町白須 | 4.43km | 大字「白州町白須」が一致 |
 | `wellcamp-nishitanzawa` | active | ウェルキャンプ西丹沢 | 神奈川県足柄上郡山北町中川868 | 山北町 / 中川 | 4.10km | 大字「中川」が一致 |
 | `muraei-yamanakako` | active | 村営山中湖キャンプ場 | 山梨県南都留郡山中湖村平野506-296 | 山中湖村 / 山中 | 4.05km | 大字「山中」が一致 |
@@ -223,6 +229,7 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 | `fujigoko-auto-camp` | unverified | 富士五湖オートキャンプ場 | 山梨県南都留郡山中湖村平野2563-1 | 山中湖村 / 平野 | 2.16km | 大字「平野」が一致 |
 | `ikawa-auto` | active | 南アルプス井川オートキャンプ場 | 静岡県静岡市葵区田代449-2 | 静岡市　葵区 / 田代 | 2.03km | 大字「田代」が一致 |
 | `oishii-camp` | active | 富士ヶ嶺・おいしいキャンプ場 | 山梨県南都留郡富士河口湖町富士ヶ嶺696 | 富士河口湖町 / 富士ヶ嶺 | 2.00km | 大字「富士ヶ嶺」が一致 |
+| `hakonesono-auto` | closed | 箱根園オートキャンプ場 | 神奈川県足柄下郡箱根町元箱根139 | 箱根町 / 箱根 | 1.98km | 大字「箱根」が一致 |
 | `nishitanzawa-ootaki` | active | 西丹沢大滝キャンプ場 | 神奈川県足柄上郡山北町中川879-4 | 山北町 / 中川 | 1.86km | 大字「中川」が一致 |
 | `ecopa-inagako` | active | エコパ伊奈ヶ湖 | 山梨県南アルプス市上市之瀬1760 | 南アルプス市 / 上市之瀬 | 1.82km | 大字「上市之瀬」が一致 |
 | `magic-hour-camp` | active | magic hour | 静岡県静岡市清水区由比入山3497 | 静岡市　清水区 / 由比入山 | 1.78km | 大字「由比入山」が一致 |
@@ -247,6 +254,7 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 | `kawazu-nanadaru` | active | 河津七滝オートキャンプ場 | 静岡県賀茂郡河津町梨本470-1 | 河津町 / 梨本 | 1.21km | 大字「梨本」が一致 |
 | `hikenkayama` | active | 火剣山キャンプ場 | 静岡県菊川市富田3126-6 | 菊川市 / 富田 | 1.12km | 大字「富田」が一致 |
 | `pica-fuji-saiko` | active | PICA富士西湖 | 山梨県南都留郡富士河口湖町西湖2068-1 | 富士河口湖町 / 西湖 | 1.09km | 大字「西湖」が一致 |
+| `chojayashiki-camp` | suspended | 長者屋敷キャンプ場 | 神奈川県愛甲郡清川村宮ヶ瀬1644 | 清川村 / 宮ヶ瀬 | 1.05km | 大字「宮ヶ瀬」が一致 |
 | `nagomino-sato-tsuru` | active | 都留戸沢の森 和みの里キャンプ場 | 山梨県都留市戸沢1126 | 都留市 / 戸沢 | 1.05km | 大字「戸沢」が一致 |
 | `fujisan-genshijin` | active | 富士山オートキャンプ場GENSHIJIN | 静岡県富士宮市上井出2527番地の1 | 富士宮市 / 上井出 | 1.02km | 大字「上井出」が一致 |
 | `shinozawa-ootaki-camp` | active | 篠沢大滝キャンプ場 | 山梨県北杜市白州町大坊1181 | 北杜市 / 白州町大坊 | 1.00km | 大字「白州町大坊」が一致 |
@@ -277,6 +285,7 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 | `asagiri-jamboree` | active | 朝霧ジャンボリーオートキャンプ場 | 静岡県富士宮市猪之頭1162-3 | 富士宮市 / 猪之頭 | 0.35km | 大字「猪之頭」が一致 |
 | `aonohara-auto` | active | 青野原オートキャンプ場 | 神奈川県相模原市緑区青野原918-1 | 相模原市　緑区 / 青野原 | 0.35km | 大字「青野原」が一致 |
 | `nishitanzawa-nakagawa-lodge` | active | 西丹沢中川ロッヂ | 神奈川県足柄上郡山北町中川字小塚897-111 | 山北町 / 中川 | 0.34km | 大字「中川」が一致 |
+| `sports-train-aokigahara` | closed | SPORTS TRAIN in Forest CAMP | 山梨県南都留郡富士河口湖町西湖2169-1 | 富士河口湖町 / 西湖 | 0.31km | 大字「西湖」が一致 |
 | `minamiizu-camping-terrace` | active | 南伊豆キャンピングテラス | 静岡県賀茂郡南伊豆町子浦1349-6 | 南伊豆町 / 子浦 | 0.30km | 大字「子浦」が一致 |
 | `akiyamagawa-camp` | active | 秋山川キャンプ場 | 神奈川県相模原市緑区名倉25 | 相模原市　緑区 / 名倉 | 0.30km | 大字「名倉」が一致 |
 | `pica-fuji-greenpa` | active | PICA富士ぐりんぱ | 静岡県裾野市須山藤原2427 | 裾野市 / 須山 | 0.29km | 大字「須山」が一致 |
@@ -291,6 +300,7 @@ address の番地のハイフンに当たって MATCH になっていた**（引
 | `onoji-family` | active | 大野路ファミリーキャンプ場 | 静岡県裾野市須山2934-2 | 裾野市 / 須山 | 0.14km | 大字「須山」が一致 |
 | `yamanakako-minami-auto` | active | 山中湖みなみオートキャンプ場 | 山梨県南都留郡山中湖村平野520-45 | 山中湖村 / 平野 | 0.14km | 大字「平野」が一致 |
 | `otome-forest-camp` | active | 乙女森林公園第1キャンプ場 | 静岡県御殿場市深沢2190 | 御殿場市 / 深沢 | 0.13km | 大字「深沢」が一致 |
+| `hinata-camp` | closed | ふれあいの森日向キャンプ場 | 神奈川県伊勢原市日向2190-2 | 伊勢原市 / 日向 | 0.10km | 大字「日向」が一致 |
 | `marubi-auto` | active | 御殿場まるびオートキャンプ場 | 静岡県御殿場市印野1379-1 | 御殿場市 / 印野 | 0.10km | 大字「印野」が一致 |
 | `takadabashi-kasenjiki` | active | 高田橋多目的広場 | 神奈川県相模原市中央区水郷田名4-11-23 | 相模原市　中央区 / 田名 | 0.09km | 大字「田名」が一致 |
 | `saiko-jiyu` | active | 西湖自由キャンプ場 | 山梨県南都留郡富士河口湖町西湖1003-2 | 富士河口湖町 / 西湖 | 0.08km | 大字「西湖」が一致 |
@@ -690,3 +700,8 @@ CITY_MISS の −1 と NO_LV01 の +1 は**同じ1件の裏表**であって、�
 **GSI の逆ジオは同じ座標でも回によって隣接自治体を返すことがある。**
 村境に近い座標は、前回比の差分だけを見て「直った」「悪化した」と読まないこと。
 差分が出たら、まず件数の合計が動いているかを確かめる。合計が同じなら箱の間の移動を疑う。
+
+**⚠ その後 2026-08-13 に `TARGET_STATUSES` へ `closed` / `suspended` を足した。**
+対象は 173→180件に増えており、**ここから先の前回比は母集団の変化を含む**
+（この変更の直後は CITY_MISS 5→6 / OAZA_MISS 40→41 / MATCH 109→114 で、増分7件は全て新規対象）。
+上の「合計が同じなら箱の間の移動を疑う」は、**合計が動いていないときの読み方**として残す。
