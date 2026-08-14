@@ -641,7 +641,7 @@
     "scores": {
       "quietness": 4,
       "scenery": 3,
-      "value": 4,
+      "value": 3,
       "access": 4,
       "facility": 4
     },
@@ -2187,7 +2187,7 @@
     "scores": {
       "quietness": 5,
       "scenery": 5,
-      "value": 5,
+      "value": 4,
       "access": 3,
       "facility": 4
     },
@@ -2703,7 +2703,7 @@
     "scores": {
       "quietness": 4,
       "scenery": 4,
-      "value": 4,
+      "value": 3,
       "access": 3,
       "facility": 3
     },
@@ -4228,7 +4228,7 @@
     "scores": {
       "quietness": 4,
       "scenery": 5,
-      "value": 4,
+      "value": 3,
       "access": 3,
       "facility": 3
     },
@@ -4868,7 +4868,7 @@
     "scores": {
       "quietness": 5,
       "scenery": 4,
-      "value": 4,
+      "value": 3,
       "access": 3,
       "facility": 4
     },
@@ -5212,7 +5212,7 @@
     "scores": {
       "quietness": 4,
       "scenery": 2,
-      "value": 4,
+      "value": 5,
       "access": 4,
       "facility": 4
     },
@@ -5261,7 +5261,7 @@
     "scores": {
       "quietness": 4,
       "scenery": 3,
-      "value": 3,
+      "value": 4,
       "access": 4,
       "facility": 4
     },
@@ -5311,7 +5311,7 @@
     "scores": {
       "quietness": 3,
       "scenery": 4,
-      "value": 3,
+      "value": 4,
       "access": 4,
       "facility": 4
     },
@@ -5657,7 +5657,7 @@
     "scores": {
       "quietness": 3,
       "scenery": 5,
-      "value": 4,
+      "value": 3,
       "access": 4,
       "facility": 3
     },
@@ -6005,7 +6005,7 @@
     "scores": {
       "quietness": 4,
       "scenery": 4,
-      "value": 4,
+      "value": 3,
       "access": 4,
       "facility": 3
     },
@@ -6546,7 +6546,7 @@
     "scores": {
       "quietness": 4,
       "scenery": 5,
-      "value": 3,
+      "value": 4,
       "access": 3,
       "facility": 4
     },
@@ -8311,7 +8311,7 @@
     "scores": {
       "quietness": 2,
       "scenery": 5,
-      "value": 3,
+      "value": 4,
       "access": 3,
       "facility": 4
     },
