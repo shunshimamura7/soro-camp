@@ -435,3 +435,21 @@
 | OK | https://www.yamakita.net/stay/natural.php | 山北町 | 9件抽出 |
 | OK | https://www.yamanashishi-kankou.com/nature-facilities/ | 山梨市 | 到達のみ確認（不在の根拠URL） |
 | OK | https://www.yamanashishi-kankou.com/stay/ | 山梨市 | 到達のみ確認（不在の根拠URL） |
+
+## 第3回（2026-08-13 21:51 UTC） — 富士宮市 のみ
+
+対象 11件 / 問題 0件
+
+| 判定 | URL | 使っている自治体 | 備考 |
+|---|---|---|---|
+| OK | https://camp-spot.hinata.me/tokai/shizuoka/2710/list | 富士宮市 | 20件抽出 |
+| OK | https://camp-spot.hinata.me/tokai/shizuoka/2710/list?page=2 | 富士宮市 | 20件抽出 |
+| OK | https://camp-spot.hinata.me/tokai/shizuoka/2710/list?page=3 | 富士宮市 | 18件抽出 |
+| OK | https://fujinomiya.gr.jp/guides/play/?term=camp | 富士宮市 | 12件抽出 |
+| OK | https://www.city.fujinomiya.lg.jp/kanko/ | 富士宮市 | 到達のみ確認（不在の根拠URL） |
+| OK | https://www.fujiyama-navi.jp/areas/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82/categories/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97 | 富士宮市 | 17件抽出 |
+| OK | https://www.jalan.net/kankou/cit_222070000/g2_04/ | 富士宮市 | 12件抽出 |
+| OK | https://www.jalan.net/kankou/cit_222070000/g2_04/page_2/ | 富士宮市 | HTTP 404（ページ送りの終端。同ソース全体で12件） |
+| OK | https://www.jalan.net/kankou/cit_222070000/g2_04/page_3/ | 富士宮市 | HTTP 404（ページ送りの終端。同ソース全体で12件） |
+| OK | https://www.nap-camp.com/shizuoka/gotenba_fuzi/list | 富士宮市 | 10件抽出 |
+| OK | https://www.nap-camp.com/shizuoka/gotenba_fuzi/list?page=2 | 富士宮市 | 10件抽出 |
