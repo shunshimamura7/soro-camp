@@ -512,3 +512,17 @@
 | OK | https://www.nap-camp.com/kanagawa/sagamihara/list | 相模原市 | 10件抽出 |
 | OK | https://www.nap-camp.com/kanagawa/sagamihara/list?page=2 | 相模原市 | 10件抽出 |
 | OK | https://www.pref.kanagawa.jp/docs/u5r/cnt/f550/p12621.html | 相模原市 | 4件抽出 |
+
+## 第8回（2026-08-14 11:55 UTC） — 上野原市 のみ
+
+対象 7件 / 問題 1件
+
+| 判定 | URL | 使っている自治体 | 備考 |
+|---|---|---|---|
+| BLOCKED | https://www.jalan.net/kankou/cit_192120000/g2_04/page_3/ | 上野原市 | HTTP 429（ボット遮断の可能性。ブラウザで確認） |
+| OK | https://www.city.uenohara.yamanashi.jp/site/kankou/list152-468.html | 上野原市 | 4件抽出 |
+| OK | https://www.jalan.net/kankou/cit_192120000/g2_04/ | 上野原市 | 6件抽出 |
+| OK | https://www.jalan.net/kankou/cit_192120000/g2_04/page_2/ | 上野原市 | HTTP 404（ページ送りの終端。同ソース全体で6件） |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list | 上野原市 | 10件抽出 |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list?page=2 | 上野原市 | 10件抽出 |
+| OK | https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html | 上野原市 | 24件抽出 |
