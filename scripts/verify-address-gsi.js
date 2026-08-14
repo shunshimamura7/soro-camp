@@ -43,8 +43,13 @@
  * §6-1（確認済みフラグで対象を絞ると、フラグの誤りを見逃す）と同じ構図が
  * `status` でも起きていた。
  *
- * **`closed` と `suspended` は入れない。**「もう行けない施設の住所が座標と合っているか」は
- * 行動につながらず、表が読みにくくなるだけ。実測でも相対評価の結果は変わらなかった。
+ * **`closed` と `suspended` も入れる（2026-08-13 に方針変更）。**
+ * もとは「もう行けない施設の住所の整合は行動につながらない」として外していたが、
+ * **`validate-data.js` の「⑤ 距離が未計測」は status を問わず全件を数えている。**
+ * そのため対象外の5件がいつまでも⑤に残り、「回し直せば埋まる」と書かれた警告に従って
+ * 何度回しても消えない、という状態になっていた（実測で5件とも closed / suspended）。
+ * 距離を測ること自体は安いので、**⑤を実際に0にできるほうを採る。**
+ * 引き直しの優先度が低いことは status 内訳の表で読めるので、対象から外す理由にはしない。
  */
 const fs = require('fs');
 const path = require('path');
@@ -69,10 +74,11 @@ const COORD_REPORT = path.join(__dirname, 'coord-report.json');
 const LV01_REL_MIN_NAMED = 3;
 
 /**
- * 検査対象の `status`。**`closed` と `suspended` は入れない**（冒頭のコメント参照）。
+ * 検査対象の `status`。**全 status を入れる**（冒頭のコメント参照）。
  * `unverified` を外すと、いちばん壊れている確率が高い層が検査から漏れる。
+ * `closed` / `suspended` を外すと、`validate-data.js` の⑤が構造的に0にならない。
  */
-const TARGET_STATUSES = ['active', 'unverified'];
+const TARGET_STATUSES = ['active', 'unverified', 'closed', 'suspended'];
 
 const MUNI_URL = 'https://maps.gsi.go.jp/js/muni.js';
 const REVERSE_URL = 'https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress';
@@ -212,7 +218,6 @@ function judge(camp, geo) {
  *
  * 分母は **`coord-report.json`** から取る。`verify-coords-gsi.js` が
  * **全レコードぶんの `lv01Nm` を既に保存している**ので、追加のGSIリクエストが要らない。
- * このスクリプト自身の結果は `closed`・`suspended` を落としているので分母として足りない。
  * **測っているのは施設の状態ではなく「その自治体で GSI が大字を整備しているか」**なので、
  * 分母は `status` で絞ってはいけない（実測: 山北町は全12件中11件が大字を返す）。
  *
@@ -423,7 +428,7 @@ async function main() {
 データの \`lat\`/\`lng\` との直線距離。**住所と座標がどれだけ離れているかの目安**であって、
 施設の位置の正しさではない。住所検索が町の中心を返すこともあるので、数百m〜1km台は誤差の範囲。
 
-対象: \`status\` が **active か unverified** で、address と lat/lng の両方を持つ **${targets.length}件**
+対象: \`status\` を問わず（**${TARGET_STATUSES.join(' / ')}**）address と lat/lng の両方を持つ **${targets.length}件**
 （${byStatus(targets)}）。**\`coordsVerified\` や \`lastVerified\` で絞っていない**（引き継ぎ §6-1）。
 
 **2026-08-13 に \`unverified\` を対象に加えた。**以前は \`active\` だけで、
@@ -431,7 +436,10 @@ async function main() {
 \`lv01Nm\` の相対評価で唯一の当たりだった \`mitsumata-camp\`（山北町・9.03km）は
 \`unverified\` なので、**active 縛りのままでは判定にも出力にも出てこなかった。**
 §6-1（確認済みフラグで対象を絞ると、フラグの誤りを見逃す）と同じ構図が \`status\` でも起きていた。
-\`closed\`・\`suspended\` は入れていない（もう行けない施設の住所の整合は行動につながらない）。
+**同日さらに \`closed\`・\`suspended\` も加えた。**この2つを外していたせいで、
+status を問わず数える \`validate-data.js\` の「⑤ 距離が未計測」に該当5件が居座り、
+「\`verify-address-gsi.js\` を回し直すこと」という警告に従っても**構造的に消えない**状態だった。
+引き直しの優先度が低いことは下の status 内訳で読めるので、対象から外す理由にはしない。
 GSI は公共APIなので、同時実行1・リクエスト間隔${REQUEST_GAP_MS}ms以上・1件ごとにさらに${RECORD_GAP_MS}ms待機で回している。
 
 ## 集計
