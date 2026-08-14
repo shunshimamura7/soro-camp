@@ -453,3 +453,62 @@
 | OK | https://www.jalan.net/kankou/cit_222070000/g2_04/page_3/ | 富士宮市 | HTTP 404（ページ送りの終端。同ソース全体で12件） |
 | OK | https://www.nap-camp.com/shizuoka/gotenba_fuzi/list | 富士宮市 | 10件抽出 |
 | OK | https://www.nap-camp.com/shizuoka/gotenba_fuzi/list?page=2 | 富士宮市 | 10件抽出 |
+
+## 第4回（2026-08-14 11:34 UTC） — 大月市 のみ
+
+対象 7件 / 問題 3件
+
+| 判定 | URL | 使っている自治体 | 備考 |
+|---|---|---|---|
+| DEAD | https://www.jalan.net/kankou/cit_192060000/g2_04/page_2/ | 大月市 | HTTP 404 |
+| DEAD | https://www.jalan.net/kankou/cit_192060000/g2_04/page_3/ | 大月市 | HTTP 404 |
+| EMPTY | https://www.jalan.net/kankou/cit_192060000/g2_04/ | 大月市 | HTTP は正常だがソース全ページで抽出0件。構造変更で抽出器が腐った疑い |
+| OK | https://www.city.otsuki.yamanashi.jp/kanko/shukuhakusisetu.html | 大月市 | 3件抽出 |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list | 大月市 | 10件抽出 |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list?page=2 | 大月市 | 10件抽出 |
+| OK | https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html | 大月市 | 24件抽出 |
+
+## 第5回（2026-08-14 11:35 UTC） — 都留市 のみ
+
+対象 6件 / 問題 0件
+
+| 判定 | URL | 使っている自治体 | 備考 |
+|---|---|---|---|
+| OK | https://www.jalan.net/kankou/cit_192040000/g2_04/ | 都留市 | 6件抽出 |
+| OK | https://www.jalan.net/kankou/cit_192040000/g2_04/page_2/ | 都留市 | HTTP 404（ページ送りの終端。同ソース全体で6件） |
+| OK | https://www.jalan.net/kankou/cit_192040000/g2_04/page_3/ | 都留市 | HTTP 404（ページ送りの終端。同ソース全体で6件） |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list | 都留市 | 10件抽出 |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list?page=2 | 都留市 | 10件抽出 |
+| OK | https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html | 都留市 | 24件抽出 |
+
+## 第6回（2026-08-14 11:35 UTC） — 上野原市 のみ
+
+対象 6件 / 問題 0件
+
+| 判定 | URL | 使っている自治体 | 備考 |
+|---|---|---|---|
+| OK | https://www.jalan.net/kankou/cit_192120000/g2_04/ | 上野原市 | 6件抽出 |
+| OK | https://www.jalan.net/kankou/cit_192120000/g2_04/page_2/ | 上野原市 | HTTP 404（ページ送りの終端。同ソース全体で6件） |
+| OK | https://www.jalan.net/kankou/cit_192120000/g2_04/page_3/ | 上野原市 | HTTP 404（ページ送りの終端。同ソース全体で6件） |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list | 上野原市 | 10件抽出 |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list?page=2 | 上野原市 | 10件抽出 |
+| OK | https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html | 上野原市 | 24件抽出 |
+
+## 第7回（2026-08-14 11:36 UTC） — 相模原市 のみ
+
+対象 12件 / 問題 0件
+
+| 判定 | URL | 使っている自治体 | 備考 |
+|---|---|---|---|
+| OK | https://camp-spot.hinata.me/kanto/kanagawa/1906/list | 相模原市 | 20件抽出 |
+| OK | https://camp-spot.hinata.me/kanto/kanagawa/1906/list?page=2 | 相模原市 | 9件抽出 |
+| OK | https://camp-spot.hinata.me/kanto/kanagawa/1906/list?page=3 | 相模原市 | 0件（同ソース全体で29件。ページ送りの終端） |
+| OK | https://midori.city.sagamihara.kanagawa.jp/category/play/camp/ | 相模原市 | 18件抽出 |
+| OK | https://midori.city.sagamihara.kanagawa.jp/category/play/camp/page/2/ | 相模原市 | 12件抽出 |
+| OK | https://www.e-sagamihara.com/camp/ | 相模原市 | 22件抽出 |
+| OK | https://www.jalan.net/kankou/cit_141510000/g2_04/ | 相模原市 | 18件抽出 |
+| OK | https://www.jalan.net/kankou/cit_141510000/g2_04/page_2/ | 相模原市 | HTTP 404（ページ送りの終端。同ソース全体で18件） |
+| OK | https://www.jalan.net/kankou/cit_141510000/g2_04/page_3/ | 相模原市 | HTTP 404（ページ送りの終端。同ソース全体で18件） |
+| OK | https://www.nap-camp.com/kanagawa/sagamihara/list | 相模原市 | 10件抽出 |
+| OK | https://www.nap-camp.com/kanagawa/sagamihara/list?page=2 | 相模原市 | 10件抽出 |
+| OK | https://www.pref.kanagawa.jp/docs/u5r/cnt/f550/p12621.html | 相模原市 | 4件抽出 |
