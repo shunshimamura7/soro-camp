@@ -838,6 +838,65 @@ const SRC_KAWANEHON = {
   },
 };
 
+/* ---- 静岡・富士宮市 --------------------------------------------------- */
+
+/**
+ * 富士宮市観光協会。**絞り込みはクエリ `?term=camp` で行う。**
+ *
+ * 旧 `/spot/` は404。移転先として `/play/camp/` が 200 を返すが、
+ * **これは罠で、中身は `/guides/play/`（「遊ぶ」カテゴリ全体）と1バイトも違わない**
+ * （どちらも `<h1>遊ぶ</h1>` で dt は同じ57件。実測で完全一致を確認した）。
+ * パスに `camp` が入っているのにキャンプで絞られていないので、
+ * これを登録するとゴルフ場・博物館・温泉・ハイキングコースが45件混ざる
+ * ——`jalan()` の docコメントが「入口で絞るしかない」と書いているのと同じ穴。
+ *
+ * 実際に効く絞り込みはページ内のタブが使っている `?term=camp` のほうで、
+ * こちらは12件に落ちる。**URL のパスではなくクエリを見ること。**
+ *
+ * 一覧に住所が無く、詳細ページ（/guide/NN/）も住所が定型でないので名前のみ。
+ */
+const SRC_FUJINOMIYA_KANKO = {
+  id: 'fujinomiya-kankou',
+  layer: 'L1',
+  kind: 'nameOnly',
+  label: '富士宮市観光協会 遊ぶ（?term=camp で絞り込み）',
+  note: '一覧に住所が無いため名前のみ。`/play/camp/` はカテゴリ全体が返るので使わない',
+  pages: ['https://fujinomiya.gr.jp/guides/play/?term=camp'],
+  list(html) {
+    const out = [];
+    const re = /<dt>\s*<a [^>]*href="([^"]*\/guide\/\d+\/)"[^>]*>([^<]{2,60})<\/a>\s*<\/dt>/g;
+    let m;
+    while ((m = re.exec(html))) out.push({ name: cleanText(m[2]), url: m[1] });
+    return out;
+  },
+};
+
+/**
+ * フジヤマNAVI（富士急行運営）。富士宮市 × キャンプの絞り込みが URL で効く。
+ * 観光協会の12件に対してこちらは17件で、重なりは半分ほど。**補完として L2 に置く。**
+ * コテージ・ホテルが2件混ざる（`伊豆高原コテッジ`・`コテージホテル 大いなる海`）。
+ * 一覧に住所が無いので名前のみ。
+ */
+const SRC_FUJIYAMA_NAVI_FUJINOMIYA = {
+  id: 'fujiyama-navi',
+  layer: 'L2',
+  kind: 'nameOnly',
+  label: 'フジヤマNAVI 富士宮市 × キャンプ',
+  note: '一覧に住所が無いため名前のみ。コテージ・ホテルが混ざる',
+  pages: [
+    'https://www.fujiyama-navi.jp/areas/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82/categories/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97',
+  ],
+  list(html) {
+    const out = [];
+    const re = /<a [^>]*ga-event-label="([^"]{2,60})"[^>]*href="(\/spots\/[A-Za-z0-9]+)"/g;
+    let m;
+    while ((m = re.exec(html))) {
+      out.push({ name: cleanText(m[1]), url: 'https://www.fujiyama-navi.jp' + m[2] });
+    }
+    return out;
+  },
+};
+
 /* ---- 山梨・道志村 ────────────────────────────────────────────────────
  * 村役場の観光情報サイト。**キャンプ場だけの一覧**で、詳細ページに住所がある。
  * 道志村には大字が無く住所が「道志村＋地番」で完結するので、
@@ -1223,6 +1282,8 @@ const MUNI_SOURCES = {
   富士宮市: {
     pref: '静岡',
     sources: [
+      SRC_FUJINOMIYA_KANKO,
+      SRC_FUJIYAMA_NAVI_FUJINOMIYA,
       napCamp('gotenba_fuzi', 'shizuoka'),
       jalan('22207', '富士宮市'),
       hinataSpot('tokai/shizuoka/2710', '御殿場・富士'),
@@ -1232,13 +1293,13 @@ const MUNI_SOURCES = {
       {
         label: '富士宮市公式（市サイト）',
         reason:
-          '**2025年5月にサイトをリニューアルしており、検索に出る施設ページのURL（/1025110000/p001691.html 型）が全部404。**新URLでのキャンプ場一覧を特定できていない',
-        checked: ['https://www.city.fujinomiya.lg.jp/1025110000/', 'https://www.city.fujinomiya.lg.jp/kanko/p001691.html'],
-      },
-      {
-        label: '富士宮市観光協会（fujinomiya.gr.jp）',
-        reason: 'トップにキャンプ場の記載が無く、スポット一覧（/spot/）は404',
-        checked: ['https://fujinomiya.gr.jp/', 'https://fujinomiya.gr.jp/spot/'],
+          '**2025年5月のリニューアルでキャンプ場一覧ごと消滅した。**旧URL（p001678 / p001688 / p001691 と FAQ）は全部404、' +
+          '施設一覧の入口 /1025110000/ は403。新サイトに引き継がれた一覧は無く、' +
+          '**観光ページ /kanko/ には「キャンプ」の語が1回も出てこない**（2026-08-13 実測）。' +
+          '観光協会側（SRC_FUJINOMIYA_KANKO）で代替できているので、市公式は追わない',
+        // 404 のURLは reason に書き残すだけにして、checked には**生きている**ページを置く。
+        // check-muni-sources は checked を到達確認するので、404 を置くと毎回 DEAD が鳴り続ける
+        checked: ['https://www.city.fujinomiya.lg.jp/kanko/'],
       },
     ],
   },
