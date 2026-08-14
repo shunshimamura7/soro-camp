@@ -27,6 +27,55 @@ function calcSoloScore(camp) {
   return Math.round(((s.quietness * 2 + s.scenery * 2 + value + s.access + s.facility) / 7) * 10) / 10;
 }
 
+/**
+ * value（コスパ）を価格帯で揃えるための帯。2026-08-13 決定。
+ *
+ * 発端は本栖湖キャンプ場。2026年の料金改定でソロ1,500円→3,000円になったのに
+ * value が 5 のまま残っていた（priceVerified は「確認した時点」の記録でしかなく、
+ * 料金改定では無言で腐る。scripts/manus-batch1-2026-08.md ★）。
+ * 同じ本栖湖・同じ3,000円の浩庵が value 4、ふもとっぱら3,000円も value 4 で、
+ * 同条件・同価格が別のスコアになっていた。同じことが起きたら機械で気づけるようにする。
+ *
+ * ## 帯
+ *   value 5 … priceMin 2,500円以下
+ *   value 4 … priceMin 1,500〜4,000円
+ *   value 3 … priceMin 2,500円以上
+ *
+ * **帯はわざと重ねてある。**2,500円は 3/4/5 のどれでも通る。
+ * コスパは価格だけで一意に決まるものではない（設備・立地・料金に含まれる範囲が効く）ので、
+ * 拾いたいのは「明らかにズレている」ものだけ。境界の1件ずつを揺らすための基準ではない。
+ *
+ * ## 検査しないもの
+ * - **priceVerified が true でないレコード。** 未検証の施設は表示側でコスパを中立値3として
+ *   扱う運用（この上の calcSoloScore と lib/camp.ts の calcSoloScore）なので、
+ *   JSON の value が何であれ画面に出ない。帯を当てても直す動機が無い。
+ *   帯の value 3 に「または未検証」が入るのはこの運用のことで、
+ *   その分岐はスコープの側（下の条件）で既に落ちている。
+ * - **closed / suspended。** 掲載を続ける状態（active / unverified）だけを見る。
+ *   priceNote の検査と同じ理由で、閉鎖済みの料金を今の相場と突き合わせても意味がない。
+ * - **priceMin が 0（無料）。** wild の value は価格以外の性質で付いている。
+ * - **value 1 と 2。** 2026-08-13 に帯を決めたのは 3/4/5 だけで、高額帯の線引きは
+ *   まだ決まっていない。**決めたらここに足すこと**（足すまでは検査されない＝
+ *   「違反0件」は 1/2 について何も言っていない）。
+ *
+ * ## 自動修正はしない
+ * 帯から外れたとき、腐っているのが value なのか priceMin なのかは一次情報を見ないと
+ * 決められない（本栖湖は priceMin が正しく value のほうが腐っていた）。
+ * だからこれは**ズレの検出**に留める。直すのは人の仕事。
+ */
+const VALUE_BANDS = {
+  5: { min: 0, max: 2500 },
+  4: { min: 1500, max: 4000 },
+  3: { min: 2500, max: Infinity },
+};
+
+/** 帯を警告文に出すための表示。上限・下限が無い側は書かない */
+function describeBand(b) {
+  if (b.max === Infinity) return `${b.min.toLocaleString()}円以上`;
+  if (b.min === 0) return `${b.max.toLocaleString()}円以下`;
+  return `${b.min.toLocaleString()}〜${b.max.toLocaleString()}円`;
+}
+
 const camps = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
 
 // batch 一括投入時のプレースホルダ。実際の確認日ではないので未確認として数える
@@ -294,6 +343,21 @@ for (const c of camps) {
   const priceNoteChecked = c.status === 'active' || c.status === 'unverified';
   if (priceNoteChecked && c.priceVerified !== true && c.priceNote != null && String(c.priceNote).trim() !== '') {
     warnings.push(`${id}: priceNote があるのに priceVerified が立っていない（付け忘れの疑い）`);
+  }
+
+  // ── value（コスパ）が価格帯と噛み合っているか ──
+  // 帯の定義と、何を検査しないかは上の VALUE_BANDS のコメント。
+  // 1件ずつ警告に出す。自動修正はしない（どちらが腐っているかは機械には決められない）。
+  if (priceNoteChecked && c.priceVerified === true && Number(c.priceMin) > 0 && c.scores) {
+    const band = VALUE_BANDS[c.scores.value];
+    const price = Number(c.priceMin);
+    if (band && (price < band.min || price > band.max)) {
+      warnings.push(
+        `${id}: 価格とvalueの帯が合わない（value ${c.scores.value} の帯は ${describeBand(band)} だが ` +
+          `priceMin ${price.toLocaleString()}円）。料金改定で value が取り残されていないか、` +
+          `priceMin の裏が古くないかを一次情報で確かめること。帯の定義は validate-data.js の VALUE_BANDS のコメント`
+      );
+    }
   }
 
   // ── needsPrice（探したが料金が公開されていなかった） ──
