@@ -989,6 +989,14 @@ const SRC_YAMANAKAKO = {
  * 1列目で絞らないと釣り場（奈良子釣りセンター）が混ざる。実HTMLで実測して3件。
  * 同じページの宿泊の表は列の並びが違う（名前・住所・電話・エリア）ので、
  * 「キャンプ場」で始まる行だけを見るこの形なら宿泊は拾わない。
+ *
+ * ## 名前が古い（2026-08-14 時点）
+ *
+ * 「KAGARIBI Camp Terrace」（賑岡町奥山1473）は **2026-07-01 に
+ * `eureka camp village` へ改称してリニューアル済み**（`yamanashi-east-precheck-2026-08.md`）。
+ * **市の一覧が追いついていない。**このソースからは旧名で出てくるので、
+ * データに入れるときは新名称にして notes に旧名を残すこと。
+ * 名寄せは変えない——旧名で出ること自体は誤りではなく、市の一覧の現在値がそうだというだけ。
  */
 const SRC_OTSUKI_CITY = {
   id: 'otsuki-city',
@@ -1007,6 +1015,65 @@ const SRC_OTSUKI_CITY = {
       if (name) out.push({ name, address: address || null, url: null });
     }
     return out;
+  },
+};
+
+/* ---- 山梨・上野原市 ---------------------------------------------------- */
+
+/**
+ * 上野原市公式「発見うえのはら」の**キャンプ**カテゴリ一覧。
+ *
+ * ## 見つけ方（次に同じことをする人へ）
+ *
+ * 入口は sweep の L3 ヒットが出典に出していた `1018585.html`（平野田休養村の詳細）。
+ * **詳細ページの1枚上にカテゴリ一覧があった。**`list152-468.html` がそれで、
+ * `list152.html`（Enjoy）の下位カテゴリ。市サイトの検索や観光トップからは辿れておらず、
+ * 詳細ページのパンくずから上がって初めて見つかった。
+ *
+ * ## 中身（2026-08-14 実測・4件）
+ *
+ *   平野田休養村キャンプ場   上野原市西原7293
+ *   緑と太陽の丘キャンプ場   上野原市秋山5030番地
+ *   ミューの森               上野原市棡原13880
+ *   CALM MOUNTAIN AKIYAMA（旧アオゲラの森キャンプ場）  上野原市秋山12003
+ *
+ * 4件とも詳細ページに「住所」の行があるので listDetail で住所まで取れる。
+ * 一覧の `/site/kankou/\d+.html` リンクはこの4件だけで、ナビは別の形なので混ざらない。
+ *
+ * ## 「ミューの森」は L2/L3 に出てこなかった
+ *
+ * じゃらん・なっぷ・キャンナビ・ウォーカープラスのどれにも無く、**この L1 でしか出ない。**
+ * L1 を持たない市町村で MISSING が薄く見えるのは、掲載漏れが無いからではないという実例。
+ *
+ * ## 名前は市の一覧が正とは限らない（が、ここでは市が正しかった）
+ *
+ * 「CALM MOUNTAIN AKIYAMA」は**市の一覧の表記が正しい**。
+ * sweep が `CARM MOUNTAIN AKIYAMA` と出していたのは**じゃらん側の誤記**
+ * （`spt_guide000000199751`）で、市一覧の誤りではない。
+ * 逆に大月市では市一覧のほうが古い（SRC_OTSUKI_CITY の注記参照）。
+ * **どちらが正かはソースの種類では決まらない。施設側で確かめること。**
+ */
+const SRC_UENOHARA_CITY = {
+  id: 'uenohara-city',
+  layer: 'L1',
+  kind: 'listDetail',
+  label: '上野原市公式 発見うえのはら キャンプ',
+  pages: ['https://www.city.uenohara.yamanashi.jp/site/kankou/list152-468.html'],
+  list(html) {
+    const seen = new Map();
+    const re = /<a href="(\/site\/kankou\/\d+\.html)"[^>]*>([^<]+)<\/a>/g;
+    let m;
+    while ((m = re.exec(html))) {
+      if (!seen.has(m[1])) seen.set(m[1], cleanText(m[2]));
+    }
+    return [...seen].map(([p, name]) => ({
+      name,
+      url: 'https://www.city.uenohara.yamanashi.jp' + p,
+    }));
+  },
+  address(html) {
+    const m = html.match(/<th[^>]*>\s*住所\s*<\/th>\s*<td[^>]*>([^<]+)<\/td>/);
+    return m ? tidyAddress(m[1]) : null;
   },
 };
 
@@ -1462,10 +1529,10 @@ const MUNI_SOURCES = {
     ],
   },
 
-  // 都留市・上野原市は **L1 が無い**。市公式・観光協会の一覧を探していないだけで、
+  // 都留市は **L1 が無い**。市公式・観光協会の一覧を探していないだけで、
   // 「無いことを確かめた」わけではないので l1NotFound には書かない
   // （l1NotFound は不在の根拠であって、未調査の置き場所ではない）。
-  // L1 を探すのは次回。それまでこの2市の ORPHAN は判定として読めない。
+  // L1 を探すまで、この市の ORPHAN は判定として読めない。
   都留市: {
     pref: '山梨',
     sources: [
@@ -1478,6 +1545,7 @@ const MUNI_SOURCES = {
   上野原市: {
     pref: '山梨',
     sources: [
+      SRC_UENOHARA_CITY,
       SRC_YAMANASHI_KANKO_OTSUKI,
       napCamp('otsuki_turushi', 'yamanashi'),
       jalan('19212', '上野原市'),
