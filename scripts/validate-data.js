@@ -54,9 +54,12 @@ function calcSoloScore(camp) {
  * - **closed / suspended。** 掲載を続ける状態（active / unverified）だけを見る。
  *   priceNote の検査と同じ理由で、閉鎖済みの料金を今の相場と突き合わせても意味がない。
  * - **priceMin が 0（無料）。** wild の value は価格以外の性質で付いている。
- * - **value 1 と 2。** 2026-08-13 に帯を決めたのは 3/4/5 だけで、高額帯の線引きは
- *   まだ決まっていない。**決めたらここに足すこと**（足すまでは検査されない＝
- *   「違反0件」は 1/2 について何も言っていない）。
+ * - **value 1 と 2。帯を定義しない**（2026-08-14 の判断。「まだ決めていない」ではない）。
+ *   **2 と 3 は価格で分離できない。**実データで両者の価格帯は重なっていて、
+ *   同じ5,000円のレコードが 2 にも 3 にも居る。両者を分けているのは価格そのものではなく
+ *   「その値段に見合うか」で、そこには設備・立地・料金に含まれる範囲が効く。
+ *   機械が引ける線が無い以上、**割高感の判断はまだ人が持つ。**
+ *   したがって「帯違反0件」は value 1・2 のレコードについて何も言っていない。
  *
  * ## 自動修正はしない
  * 帯から外れたとき、腐っているのが value なのか priceMin なのかは一次情報を見ないと
@@ -195,6 +198,7 @@ let unsetCoords = 0;
 let placeholderVerified = 0;
 let emptyVerified = 0;
 const superlativeHits = [];
+const bandMismatches = [];
 
 // ── slug の重複 ─────────────────────────────────────────────────────────────
 const seen = new Map();
@@ -347,16 +351,16 @@ for (const c of camps) {
 
   // ── value（コスパ）が価格帯と噛み合っているか ──
   // 帯の定義と、何を検査しないかは上の VALUE_BANDS のコメント。
-  // 1件ずつ警告に出す。自動修正はしない（どちらが腐っているかは機械には決められない）。
+  // 自動修正はしない（どちらが腐っているかは機械には決められない）。
+  //
+  // **warnings には積まない。**warnings は表示が20件で打ち切られるので、
+  // 混ぜると「1件ずつ出す」という趣旨が件数次第で欠ける（実際に欠けた）。
+  // 独立したセクションで全件出す。
   if (priceNoteChecked && c.priceVerified === true && Number(c.priceMin) > 0 && c.scores) {
     const band = VALUE_BANDS[c.scores.value];
     const price = Number(c.priceMin);
     if (band && (price < band.min || price > band.max)) {
-      warnings.push(
-        `${id}: 価格とvalueの帯が合わない（value ${c.scores.value} の帯は ${describeBand(band)} だが ` +
-          `priceMin ${price.toLocaleString()}円）。料金改定で value が取り残されていないか、` +
-          `priceMin の裏が古くないかを一次情報で確かめること。帯の定義は validate-data.js の VALUE_BANDS のコメント`
-      );
+      bandMismatches.push({ slug: c.slug || id, value: c.scores.value, band, price });
     }
   }
 
@@ -625,6 +629,18 @@ if (superlativeHits.length) {
     console.log(`  ! ${h.slug}`);
     h.sentences.forEach(t => console.log(`      ${t}`));
   });
+}
+
+// 帯のズレは独立セクションで**全件**出す（下の warnings の20件上限に混ぜない）
+if (bandMismatches.length) {
+  console.log(`\n警告: 価格とvalueの帯が合わない ${bandMismatches.length}件`);
+  console.log('  （帯の定義と対象外の条件は validate-data.js の VALUE_BANDS のコメント。自動修正はしない）');
+  bandMismatches.forEach((m) => {
+    console.log(
+      `  ! ${m.slug}: value ${m.value} の帯は ${describeBand(m.band)} だが priceMin ${m.price.toLocaleString()}円`
+    );
+  });
+  console.log('  → 料金改定で value が取り残されていないか、priceMin の裏が古くないかを一次情報で確かめること');
 }
 
 if (warnings.length) {
