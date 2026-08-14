@@ -2043,7 +2043,7 @@
     "scores": {
       "quietness": 5,
       "scenery": 5,
-      "value": 5,
+      "value": 4,
       "access": 3,
       "facility": 2
     },
@@ -2439,7 +2439,7 @@
     "scores": {
       "quietness": 5,
       "scenery": 3,
-      "value": 5,
+      "value": 4,
       "access": 3,
       "facility": 2
     },
@@ -6850,7 +6850,7 @@
     "scores": {
       "quietness": 4,
       "scenery": 5,
-      "value": 5,
+      "value": 4,
       "access": 4,
       "facility": 3
     },
