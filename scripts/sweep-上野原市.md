@@ -1,16 +1,16 @@
 # 地区スイープ: 上野原市
 
-実行: 2026-08-14 11:55:31　/　`node scripts/district-sweep.js --district "上野原市"`
+実行: 2026-08-14 12:05:56　/　`node scripts/district-sweep.js --district "上野原市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **8** |
-| IN_DATA（両方にある） | 0 |
+| **MISSING**（実在側にあるがデータに無い） | **6** |
+| IN_DATA（両方にある） | 2 |
 | ORPHAN（データにあるがソースに無い） | 0 |
-| データ側のこの地区のレコード | 0 |
+| データ側のこの地区のレコード | 2 |
 
 ## ソースの取得結果
 
@@ -18,7 +18,7 @@
 
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
-| L1 | 上野原市公式 発見うえのはら キャンプ | OK | 4 | 3 |  |
+| L1 | 上野原市公式 発見うえのはら キャンプ | OK | 4 | 4 |  |
 | L2 | やまなし観光推進機構 大月・都留エリアのキャンプ場 | OK | 24 | 0 | 実測の内訳は 道志村20 / 都留市3 / 丹波山村1。大月市・上野原市は0件 |
 | L2 | なっぷ yamanashi/otsuki_turushi | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 上野原市（cit_192120000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 6 | 6 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_192120000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_192120000/g2_04/page_3/ → HTTP_404 |
@@ -28,7 +28,7 @@
 
 取得したページ:
 
-- `L1` https://www.city.uenohara.yamanashi.jp/site/kankou/list152-468.html → 200
+- `L1` https://www.city.uenohara.yamanashi.jp/site/kankou/list152-468.html → 200（キャッシュ）
   - 詳細ページ 4 件（住所の取得のため）
 - `L2` https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html → 200（キャッシュ）
   - 詳細ページ 24 件（住所の取得のため）
@@ -50,27 +50,7 @@
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. 平野田休養村キャンプ場
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1 + L2）
-- **住所**: 山梨県上野原市西原7293 / 山梨県上野原市西原
-- **表記ゆれ**: 平野田休養村キャンプ場 / 平野田休養村
-- **出典**:
-  - `L1` 上野原市公式 発見うえのはら キャンプ — https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html
-  - `L2` じゃらん観光ガイド 上野原市（cit_192120000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000200111/
-  - `L2` じゃらん観光ガイド 上野原市（cit_192120000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19441ca3430055340/
-
-### 2. 緑と太陽の丘キャンプ場
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1 + L2）
-- **住所**: 山梨県上野原市秋山5030番地 / 山梨県上野原市秋山5030
-- **出典**:
-  - `L1` 上野原市公式 発見うえのはら キャンプ — https://www.city.uenohara.yamanashi.jp/site/kankou/1018586.html
-  - `L2` じゃらん観光ガイド 上野原市（cit_192120000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19421ca3430054609/
-
-### 3. ミューの森
+### 1. ミューの森
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1）
@@ -78,7 +58,7 @@
 - **出典**:
   - `L1` 上野原市公式 発見うえのはら キャンプ — https://www.city.uenohara.yamanashi.jp/site/kankou/1018584.html
 
-### 4. CALM MOUNTAIN AKIYAMA（旧アオゲラの森キャンプ場）
+### 2. CALM MOUNTAIN AKIYAMA（旧アオゲラの森キャンプ場）
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1）
@@ -87,7 +67,7 @@
 - **出典**:
   - `L1` 上野原市公式 発見うえのはら キャンプ — https://www.city.uenohara.yamanashi.jp/site/kankou/1018587.html
 
-### 5. CARM MOUNTAIN AKIYAMA
+### 3. CARM MOUNTAIN AKIYAMA
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -96,7 +76,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 上野原市（cit_192120000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000199751/
 
-### 6. さがざわキャンプ場
+### 4. さがざわキャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -104,7 +84,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 上野原市（cit_192120000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19421ca3430052774/
 
-### 7. 西原ife体験宿したで
+### 5. 西原ife体験宿したで
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -112,7 +92,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 上野原市（cit_192120000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000220739/
 
-### 8. 平野田休養村キャンプ場
+### 6. 平野田休養村キャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L3）
@@ -127,13 +107,12 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 上野原市公式 発見うえのはら キャンプ | 4 | 0 | 0 | – | – |
+| 上野原市公式 発見うえのはら キャンプ | 4 | 2 | 2 | 100% | – |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 
-**⚠ この地区の ORPHAN は判定に使えない。参考値として出しているだけ。**
-網羅率 70% 以上の L1 が1つも無い。
-一覧に載らない実在施設がある以上、「載っていない」ことに意味が無い。
+網羅率 70% 以上の L1 があるので、**判定として読める**。
+ただし対照群での実測で **active レコードの17%を誤って撃つ**（10地区・24件中4件）。
 
 **いずれにせよ、これを根拠に `status` を変えない（§6-7）。**
 
@@ -141,7 +120,10 @@
 
 ## IN_DATA — 両方にある
 
-なし。
+| データ側 | ソース側の名前 | 一致の根拠 | confidence | 層 |
+|---|---|---|---|---|
+| `hiranoda-kyuyoson` 平野田休養村キャンプ場 | 平野田休養村キャンプ場 | 名前 | HIGH | L1+L2 |
+| `midori-taiyo-oka` 緑と太陽の丘キャンプ場 | 緑と太陽の丘キャンプ場 | 名前 | HIGH | L1+L2 |
 
 ## 住所が空で、どの地区のスイープにも載らないレコード（全データ横断）
 

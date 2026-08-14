@@ -1,16 +1,16 @@
 # 地区スイープ: 大月市
 
-実行: 2026-08-14 11:39:44　/　`node scripts/district-sweep.js --district "大月市"`
+実行: 2026-08-14 12:06:16　/　`node scripts/district-sweep.js --district "大月市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **3** |
-| IN_DATA（両方にある） | 0 |
+| **MISSING**（実在側にあるがデータに無い） | **1** |
+| IN_DATA（両方にある） | 2 |
 | ORPHAN（データにあるがソースに無い） | 0 |
-| データ側のこの地区のレコード | 0 |
+| データ側のこの地区のレコード | 2 |
 
 ## ソースの取得結果
 
@@ -48,27 +48,11 @@
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. 金の森山荘
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1）
-- **住所**: 大月市大月町真木6188
-- **出典**:
-  - `L1` 大月市公式 宿泊施設・レジャー施設等の紹介 — https://www.city.otsuki.yamanashi.jp/kanko/shukuhakusisetu.html
-
-### 2. 月尾根自然の森
+### 1. 月尾根自然の森
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1）
 - **住所**: 大月市梁川町立野106
-- **出典**:
-  - `L1` 大月市公式 宿泊施設・レジャー施設等の紹介 — https://www.city.otsuki.yamanashi.jp/kanko/shukuhakusisetu.html
-
-### 3. KAGARIBI Camp Terrace
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1）
-- **住所**: 大月市賑岡町奥山1473
 - **出典**:
   - `L1` 大月市公式 宿泊施設・レジャー施設等の紹介 — https://www.city.otsuki.yamanashi.jp/kanko/shukuhakusisetu.html
 
@@ -79,13 +63,12 @@
 
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
-| 大月市公式 宿泊施設・レジャー施設等の紹介 | 3 | 0 | 0 | – | – |
+| 大月市公式 宿泊施設・レジャー施設等の紹介 | 3 | 2 | 2 | 100% | – |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 
-**⚠ この地区の ORPHAN は判定に使えない。参考値として出しているだけ。**
-網羅率 70% 以上の L1 が1つも無い。
-一覧に載らない実在施設がある以上、「載っていない」ことに意味が無い。
+網羅率 70% 以上の L1 があるので、**判定として読める**。
+ただし対照群での実測で **active レコードの17%を誤って撃つ**（10地区・24件中4件）。
 
 **いずれにせよ、これを根拠に `status` を変えない（§6-7）。**
 
@@ -93,7 +76,10 @@
 
 ## IN_DATA — 両方にある
 
-なし。
+| データ側 | ソース側の名前 | 一致の根拠 | confidence | 層 |
+|---|---|---|---|---|
+| `kananomori-sanso` 金の森山荘 | 金の森山荘 | 名前 | HIGH | L1 |
+| `eureka-camp-village` eureka camp village | KAGARIBI Camp Terrace | 番地（名前は不一致） | HIGH | L1 |
 
 ## 住所が空で、どの地区のスイープにも載らないレコード（全データ横断）
 
