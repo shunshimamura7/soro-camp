@@ -75,6 +75,40 @@ const TIMEOUT_MS = 20000;
 const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 const DEFAULT_DETAIL_LIMIT = 45; // 住所を取りに行く詳細ページの上限（1ソースあたり）
 
+/* ---- 429（レート制限）の扱い ------------------------------------------------
+ *
+ * **429 と 404 を同じ「取れなかった」に潰さないこと。意味が逆。**
+ *
+ *   404          … そこに無い。再試行しても無駄
+ *   429          … あとで取れる。**測っていないだけ**で、結果は不完全
+ *
+ * 2026-08-15 の全市町村スイープで、じゃらんへのリクエストが延べ1,000件を超えた結果
+ * **後半の市町村（松田町・静岡市葵区）が1ページ目から 429 を食い、`UNREACHABLE` になった。**
+ * `UNREACHABLE:0件` は「そのソースには無かった」と読めてしまうし、
+ * **同じスクリプトを同じ日に走らせても、順番が違えば結果が変わる**（再現性が無い）。
+ */
+const RATE_LIMIT_MAX_ATTEMPTS = 3;      // 初回を含めた試行回数。3回とも429なら RATE_LIMITED
+const RATE_LIMIT_BASE_BACKOFF_MS = 2000; // 指数バックオフの基準（2秒 → 4秒）
+const RATE_LIMIT_MAX_BACKOFF_MS = 60000; // Retry-After が長すぎるときの上限
+const ORIGIN_PENALTY_START_MS = 3000;    // 429 を1度食ったオリジンに足す間隔
+const ORIGIN_PENALTY_MAX_MS = 30000;
+
+const originPenalty = new Map();  // origin → 追加の間隔（429 を食うたびに倍にする）
+
+/**
+ * 429 対策（ソース単位の間隔延長・再試行・オリジンのペナルティ）を**切る**ためのスイッチ。
+ *
+ * **切れないと「429 が出なかった」の意味が確かめられない。**対策が効いたのか、
+ * その日そもそも 429 が出ないのかを区別するには、**同じ条件で対策だけ外した1回**が要る
+ * （静かな結果を「直った」と読むのが一番危ない。§18-3）。
+ *
+ * **robots.txt の Crawl-delay はこのスイッチでは切れない。**礼儀の下限であって対策ではない。
+ */
+let rateGuard = true;
+
+/** テスト用に fetch を差し替える。**本体からは使わない**（`_internal.setFetchImpl`） */
+let fetchImpl = (...a) => fetch(...a);
+
 /* ============================================================================
  * 1. 取得層（robots.txt・オリジンごとの間隔・ディスクキャッシュ）
  * ========================================================================== */
@@ -133,7 +167,7 @@ async function getRobots(origin) {
   if (robotsCache.has(origin)) return robotsCache.get(origin);
   let parsed = { rules: [], crawlDelayMs: 0 };
   try {
-    const res = await fetch(origin + '/robots.txt', {
+    const res = await fetchImpl(origin + '/robots.txt', {
       headers: { 'User-Agent': UA },
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
@@ -173,7 +207,40 @@ function writeCache(url, entry) {
 }
 
 /**
- * オリジンごとに直列化して取得する。戻りは { ok, status, body, url, note }。
+ * 429 を1度食ったオリジンは、**そのソースの残りも自動で遅くする。**
+ * 全市町村版で後半だけが 429 を食う（＝結果が実行順に依存する）のを減らすため。
+ */
+function bumpPenalty(origin) {
+  const cur = originPenalty.get(origin) || 0;
+  originPenalty.set(origin, Math.min(cur ? cur * 2 : ORIGIN_PENALTY_START_MS, ORIGIN_PENALTY_MAX_MS));
+}
+
+/**
+ * 次の再試行までの待ち。**`Retry-After` があれば必ずそちらに従う**（秒数・HTTP-date の両方）。
+ * 無ければ指数バックオフ（2秒 → 4秒）。サーバが極端に長い値を返したときのために上限を置く。
+ */
+function backoffMs(res, attempt) {
+  const ra = res.headers && res.headers.get && res.headers.get('retry-after');
+  if (ra) {
+    const sec = Number(ra);
+    if (Number.isFinite(sec) && sec >= 0) return Math.min(sec * 1000, RATE_LIMIT_MAX_BACKOFF_MS);
+    const at = Date.parse(ra);
+    if (!Number.isNaN(at)) return Math.min(Math.max(0, at - Date.now()), RATE_LIMIT_MAX_BACKOFF_MS);
+  }
+  return Math.min(RATE_LIMIT_BASE_BACKOFF_MS * 2 ** (attempt - 1), RATE_LIMIT_MAX_BACKOFF_MS);
+}
+
+/**
+ * オリジンごとに直列化して取得する。戻りは { ok, status, body, url, note, attempts }。
+ *
+ * `note` は取れなかった理由を**分けて**持つ。
+ *
+ *   `''`             … 取れた
+ *   `HTTP_404` ほか  … そこに無い（再試行しない）
+ *   `RATE_LIMITED`   … 429 を最大 RATE_LIMIT_MAX_ATTEMPTS 回まで再試行しても取れなかった。
+ *                      **「無い」ではなく「測れていない」。**結果は不完全
+ *   `UNREACHABLE: …` … DNS・接続・タイムアウト
+ *   `SKIPPED_ROBOTS` … robots.txt で止めた
  *
  * Shift_JIS のサイト（じゃらん）があるので Content-Type の charset を見る。
  */
@@ -190,41 +257,64 @@ async function fetchPage(url, opts = {}) {
     return entry; // robots で止めたものはキャッシュしない（robots が変わることがある）
   }
 
-  const interval = Math.max(MIN_INTERVAL_MS, robots.crawlDelayMs, extraDelayMs);
   const prev = originChain.get(origin) || Promise.resolve();
   const task = prev.then(async () => {
-    const wait = interval - (Date.now() - (lastHit.get(origin) || 0));
-    if (wait > 0) await sleep(wait);
-    lastHit.set(origin, Date.now());
-    try {
-      const res = await fetch(url, {
-        headers: { 'User-Agent': UA, 'Accept-Language': 'ja,en;q=0.8' },
-        redirect: 'follow',
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-      });
-      const buf = await res.arrayBuffer();
-      const ct = res.headers.get('content-type') || '';
-      const cm = ct.match(/charset=([\w-]+)/i);
-      let body;
+    let last = null;
+    const maxAttempts = rateGuard ? RATE_LIMIT_MAX_ATTEMPTS : 1;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      // **間隔は毎回計算し直す。**429 を食うとこのオリジンのペナルティが上がるので、
+      // 同じソースの残りのリクエストが自動で遅くなる。robots の Crawl-delay があれば必ずそちらが優先。
+      // `rateGuard` を切ると、ソース単位の上乗せとペナルティだけが外れる（Crawl-delay は残る）
+      const interval = Math.max(
+        MIN_INTERVAL_MS,
+        robots.crawlDelayMs,
+        rateGuard ? extraDelayMs : 0,
+        rateGuard ? (originPenalty.get(origin) || 0) : 0
+      );
+      const wait = interval - (Date.now() - (lastHit.get(origin) || 0));
+      if (wait > 0) await sleep(wait);
+      lastHit.set(origin, Date.now());
       try {
-        body = new TextDecoder(cm ? cm[1] : 'utf-8').decode(buf);
-      } catch {
-        body = Buffer.from(buf).toString('utf8');
+        const res = await fetchImpl(url, {
+          headers: { 'User-Agent': UA, 'Accept-Language': 'ja,en;q=0.8' },
+          redirect: 'follow',
+          signal: AbortSignal.timeout(TIMEOUT_MS),
+        });
+        const buf = await res.arrayBuffer();
+        const ct = res.headers.get('content-type') || '';
+        const cm = ct.match(/charset=([\w-]+)/i);
+        let body;
+        try {
+          body = new TextDecoder(cm ? cm[1] : 'utf-8').decode(buf);
+        } catch {
+          body = Buffer.from(buf).toString('utf8');
+        }
+        const entry = {
+          ok: res.ok,
+          status: res.status,
+          body,
+          url: res.url || url,
+          note: res.ok ? '' : (res.status === 429 ? 'RATE_LIMITED' : 'HTTP_' + res.status),
+          attempts: attempt,
+          ts: Date.now(),
+        };
+        if (res.ok) {
+          writeCache(url, entry);
+          return entry;
+        }
+        // **429 以外は再試行しない。**404 でバックオフを回しても遅くなるだけ
+        if (res.status !== 429) return entry;
+
+        if (rateGuard) bumpPenalty(origin);
+        last = entry;
+        if (attempt < maxAttempts) await sleep(backoffMs(res, attempt));
+      } catch (e) {
+        // DNS 不能・接続不能・タイムアウト。**取れなかったことを記録する**（無かったことにしない）
+        return { ok: false, status: 0, body: '', url, note: 'UNREACHABLE: ' + e.message, attempts: attempt, ts: Date.now() };
       }
-      const entry = {
-        ok: res.ok,
-        status: res.status,
-        body,
-        url: res.url || url,
-        note: res.ok ? '' : 'HTTP_' + res.status,
-        ts: Date.now(),
-      };
-      if (res.ok) writeCache(url, entry);
-      return entry;
-    } catch (e) {
-      // DNS 不能・接続不能・タイムアウト。**取れなかったことを記録する**（無かったことにしない）
-      return { ok: false, status: 0, body: '', url, note: 'UNREACHABLE: ' + e.message, ts: Date.now() };
     }
+    // 全部429。**UNREACHABLE と混ぜない。**「そこに無い」ではなく「測れていない」
+    return { ...last, note: 'RATE_LIMITED', attempts: maxAttempts };
   });
   originChain.set(origin, task.then(() => {}, () => {}));
   return task;
@@ -601,6 +691,16 @@ function jalan(jisCode, label) {
       n => `https://www.jalan.net/kankou/cit_${jisCode}0000/g2_04/` + (n === 1 ? '' : `page_${n}/`)
     ),
     pageCapNote: 'ジャンル g2_04 のみ / 一覧は先頭3ページまで',
+    // **じゃらんだけ間隔を厚くする（2026-08-15）。ただし効果は未実証。**
+    //
+    // 2026-08-15 の全市町村スイープで**松田町と静岡市葵区が1ページ目から 429 を食い、
+    // `UNREACHABLE:0件` になった**（＝「そのソースには無かった」と読めてしまう）のがきっかけ。
+    // **当初「実行順の後半に負荷が集中したせい」と考えたが、これは確かめていない。**
+    // その実行の jalan への実リクエストは40数件で、あとから 233件（キャッシュ無し・同じ順）を
+    // 流したときは 429 が1件も出ていない。**回数では説明が付いていない。**
+    // robots.txt に Crawl-delay の指定があればそちらが優先される（`Math.max`）。
+    // 切り分けは `_internal.setRateGuard(false)` で対策だけ外して比べること
+    extraDelayMs: 3000,
     list(html) {
       return extractJsonLd(html)
         .filter(n => n.name && typeof n.url === 'string' && /\/kankou\/spt_/.test(n.url))
@@ -640,6 +740,11 @@ function hinataSpot(areaPath, label) {
       n => `https://camp-spot.hinata.me/${areaPath}/list` + (n === 1 ? '' : `?page=${n}`)
     ),
     pageCapNote: '一覧は先頭3ページまで',
+    // **既定45 → 60（2026-08-15）。既定の 45 に理由は書かれていなかった。**
+    // 一覧3ページで1エリア最大60件出るので、45 だと**エリアの一覧を全部見ないまま終わる。**
+    // 実測の打ち切り: 道志村15件（一覧60）/ 富士宮市13件（一覧58）。60 で両方収まる。
+    // camp-spot.hinata.me の robots.txt に Crawl-delay は無いので 1秒間隔で踏む。
+    detailLimit: 60,
     list(html) {
       const out = [];
       const re = /<a href="(\/spots\/[a-zA-Z0-9_-]+)"[^>]*>[\s\S]{0,400}?<h2[^>]*>([^<]+)<\/h2>/g;
@@ -957,7 +1062,15 @@ const SRC_YAMANAKAKO = {
   },
   dropWithoutAddress: true,
   label: '山中湖観光協会 泊まる',
-  detailLimit: 60,
+  // **60 → 250（2026-08-15）。元の 60 に理由は書かれていなかった。**
+  // 一覧は宿泊施設の混在一覧で、キャンプ場かどうかは `bodyFilter` が**詳細ページの本文**で
+  // 決める。つまり**踏まなかった項目は campOk が付かず、そこで捨てられる**
+  // （`uniq.filter(it => it.campOk)`）。b1-1 にも b1-2 にも残らず、どの集計にも出ない。
+  // 実測: 詳細対象192件に対し上限60で **132件が未取得のまま消えていた。**
+  // `fujikawaguchiko-renmei` が同じ理由で 250 にしてある（「本文で判定するので全件開く必要がある」）
+  // のと同じ扱いに揃えた。**負荷は detailLimit ではなく MIN_INTERVAL_MS と robots で見ている**
+  // （lake-yamanakako.com の robots.txt に Crawl-delay は無く、1秒間隔が効く）。
+  detailLimit: 250,
   pages: [1, 2, 3, 4, 5].map(n => 'https://lake-yamanakako.com/reserve' + (n === 1 ? '' : `?page=${n}`)),
   pageCapNote: '一覧は先頭5ページまで',
   list(html) {
@@ -1584,9 +1697,10 @@ async function collectSource(src, opts) {
 
   for (const pageUrl of src.pages) {
     const res = await fetchPage(pageUrl, { useCache: opts.useCache, extraDelayMs: src.extraDelayMs || 0 });
-    fetched.push({ url: pageUrl, status: res.status, note: res.note, fromCache: !!res.fromCache });
+    fetched.push({ url: pageUrl, status: res.status, note: res.note, fromCache: !!res.fromCache, attempts: res.attempts });
     if (!res.ok) {
-      notes.push(`${pageUrl} → ${res.note || 'HTTP_' + res.status}`);
+      notes.push(`${pageUrl} → ${res.note || 'HTTP_' + res.status}` +
+        (res.note === 'RATE_LIMITED' ? `（${res.attempts}回試行。**測れていない**。「無い」ではない）` : ''));
       continue;
     }
     listOk++;
@@ -1628,7 +1742,7 @@ async function collectSource(src, opts) {
     }
     for (const it of targets) {
       const res = await fetchPage(it.url, { useCache: opts.useCache, extraDelayMs: src.extraDelayMs || 0 });
-      fetched.push({ url: it.url, status: res.status, note: res.note, fromCache: !!res.fromCache, detail: true });
+      fetched.push({ url: it.url, status: res.status, note: res.note, fromCache: !!res.fromCache, detail: true, attempts: res.attempts });
       if (!res.ok) continue;
       if (!it.name && src.name) it.name = src.name(res.body);
       if (src.address) it.address = src.address(res.body);
@@ -1658,12 +1772,22 @@ async function collectSource(src, opts) {
     if (src.dropWithoutAddress) uniq = uniq.filter(it => it.address);
   }
 
+  // **429 は UNREACHABLE と混ぜない。**一覧が1ページも取れず、その理由が 429 なら
+  // 「そこに無い」ではなく「測れていない」。`0件` と同じ扱いにすると、
+  // 実行順によって同じソースが `UNREACHABLE:0件` になったり `OK:4件` になったりする
+  const rateLimited = fetched.filter(f => f.note === 'RATE_LIMITED');
   const status =
     listOk === 0
-      ? (fetched.some(f => f.note === 'SKIPPED_ROBOTS') ? 'SKIPPED_ROBOTS' : 'UNREACHABLE')
+      ? (fetched.some(f => f.note === 'SKIPPED_ROBOTS') ? 'SKIPPED_ROBOTS'
+        : rateLimited.some(f => !f.detail) ? 'RATE_LIMITED' : 'UNREACHABLE')
       : 'OK';
 
-  return { source: src, status, items: uniq.filter(it => it.name), fetched, notes, detailBudget };
+  // 一覧が取れていても詳細が 429 で落ちていれば、そのソースの結果は不完全。
+  // **status だけ見ると OK に見えるので、別に持って md に出す**
+  return {
+    source: src, status, items: uniq.filter(it => it.name), fetched, notes, detailBudget,
+    rateLimited: rateLimited.map(f => ({ url: f.url, detail: !!f.detail, attempts: f.attempts })),
+  };
 }
 
 /* ============================================================================
@@ -1993,6 +2117,27 @@ function mdEscape(s) {
  * 実例: やまなし観光推進機構の 24件中6件が詳細を取れておらず、
  * うち2件は他ソースの住所でも救われず b1 に落ちていた。
  */
+/**
+ * この実行が**不完全かどうか**を1か所で決める。
+ *
+ * 429 は「そこに無い」ではなく「測れていない」なので、**1件でもあれば結果全体が不完全。**
+ * 件数を表の中に埋めると「取得失敗 N件」に潰れて意味が消えるので、
+ * **呼び出し側は md の先頭に出すこと。**
+ *
+ * 戻りは `null`（完全）か `{ list, detail, total, urls }`。
+ */
+function incompleteNote(collectedList) {
+  const all = [];
+  for (const c of collectedList) for (const r of c.rateLimited || []) all.push({ ...r, sourceId: c.source.id });
+  if (!all.length) return null;
+  return {
+    total: all.length,
+    list: all.filter(r => !r.detail).length,
+    detail: all.filter(r => r.detail).length,
+    urls: all,
+  };
+}
+
 function failedDetailUrls(collected) {
   const per = new Map();
   for (const c of collected) {
@@ -3222,5 +3367,14 @@ module.exports = { MUNI_SOURCES, PREF_SOURCES, SELF_TEST, runSelfTest, sweepNorm
 // 判定が効いていることを確かめるため（§18-3）だけに公開している。
 module.exports._internal = {
   mergeItems, classify, analyzeDropped, droppedBySource, inDistrict, parseDistrict,
-  collectSource, sourcesFor, failedDetailUrls, loadRecords, dataStamp,
+  collectSource, sourcesFor, failedDetailUrls, loadRecords, dataStamp, fetchPage, incompleteNote,
+  RATE_LIMIT_MAX_ATTEMPTS,
+  // 429 は意図的に起こせないのでモックで検証する（`.mock-ratelimit-test.js`）。
+  // **本体からは絶対に使わない。**
+  setFetchImpl(fn) { fetchImpl = fn || ((...a) => fetch(...a)); },
+  resetRateLimitState() { originPenalty.clear(); robotsCache.clear(); lastHit.clear(); originChain.clear(); },
+  // 対策を切って走らせるためのスイッチ（切り分け用。robots の Crawl-delay は切れない）
+  setRateGuard(on) { rateGuard = on !== false; },
+  getRateGuard() { return rateGuard; },
+  getOriginPenalty(origin) { return originPenalty.get(origin) || 0; },
 };

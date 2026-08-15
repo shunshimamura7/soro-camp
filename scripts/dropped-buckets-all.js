@@ -111,8 +111,43 @@ function causeOf(b, badDetail) {
 
 const esc = s => String(s == null ? '' : s).replace(/\|/g, '\\|').replace(/\n/g, ' ');
 
-main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
+/**
+ * md の冒頭（H1 と、この実行が何を測ったか）を作る。
+ *
+ * **`incomplete` があるときは H1 の直後に出す。**429 で取れなかったぶんは
+ * 「そこに無い」ではなく「測っていない」なので、**表の中の1行にすると
+ * 「取得失敗 N件」に潰れて、md 全体が不完全であることが読み手に伝わらない。**
+ *
+ * 関数に切り出してあるのは、モックで検証できるようにするため（`.mock-ratelimit-test.js` (d)）。
+ */
+function headLines({ scopeTitle, muniDone, districts, allMuniCount, allDistricts, isPartial, stamp, cmd, outName, incomplete }) {
   const L = [];
+  L.push(`# 出力に載らなかったソース側の項目 — ${scopeTitle} 2026-08-15`);
+  L.push('');
+  if (incomplete) {
+    L.push(`> **⚠ この実行は不完全。**429（レート制限）で取れなかったリクエストが **${incomplete.total}件** ある` +
+      `（一覧 ${incomplete.list} / 詳細 ${incomplete.detail}）。`);
+    L.push('> **これは「そこに無い」ではなく「測っていない」。**下の件数は下限であって、実数ではない。');
+    L.push('> 内訳は §7。時間を空けて再実行すること。');
+    L.push('');
+  }
+  L.push(`**この md は ${muniDone.length}市町村 / ${districts}地区 の結果。** ` +
+    (isPartial
+      ? `**全体は ${allMuniCount}市町村 / ${allDistricts}地区 なので、これは一部です。`
+        + `ここに出ていない市町村は「0件」ではなく「回していない」。**`
+      : `（\`sweep-*.md\` のある全 ${allMuniCount}市町村 / ${allDistricts}地区。絞り込み無し。）`));
+  L.push('');
+  L.push(`実行: ${stamp}　/　\`${cmd}\``);
+  L.push(`出力: \`scripts/${outName}\``);
+  L.push(`対象市町村: ${muniDone.join(' / ')}`);
+  return L;
+}
+
+module.exports = { headLines };
+
+if (require.main !== module) return;
+
+main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
   const stamp = new Date().toISOString().slice(0, 19).replace('T', ' ');
 
   /* ---- 0. 対象のラベル（すべて実測値から作る。固定文字列を置かない） ---- */
@@ -120,18 +155,12 @@ main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
   const allMuniCount = new Set(allDistricts.map(muniOf).filter(Boolean)).size;
   const scopeTitle = onlyMuni ? `${onlyMuni}のみ` : '全市町村';
   const isPartial = districts.length < allDistricts.length;
+  const incomplete = I.incompleteNote([...collectedByMuni.values()].flat());
 
-  L.push(`# 出力に載らなかったソース側の項目 — ${scopeTitle} 2026-08-15`);
-  L.push('');
-  L.push(`**この md は ${muniDone.length}市町村 / ${districts.length}地区 の結果。** ` +
-    (isPartial
-      ? `**全体は ${allMuniCount}市町村 / ${allDistricts.length}地区 なので、これは一部です。`
-        + `ここに出ていない市町村は「0件」ではなく「回していない」。**`
-      : `（\`sweep-*.md\` のある全 ${allMuniCount}市町村 / ${allDistricts.length}地区。絞り込み無し。）`));
-  L.push('');
-  L.push(`実行: ${stamp}　/　\`${CMD}\``);
-  L.push(`出力: \`scripts/${OUT_NAME}\``);
-  L.push(`対象市町村: ${muniDone.join(' / ')}`);
+  const L = headLines({
+    scopeTitle, muniDone, districts: districts.length, allMuniCount,
+    allDistricts: allDistricts.length, isPartial, stamp, cmd: CMD, outName: OUT_NAME, incomplete,
+  });
   L.push('');
   L.push('**調査のみ。`data/campgrounds.json` は読むだけ。既存の `sweep-*.md` は1つも上書きしていない。**');
   L.push('**判定は `district-sweep.js` の関数をそのまま呼んでいる**（このスクリプトは判定を持たない）。');
@@ -167,12 +196,20 @@ main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
       }
     }
   }
-  const b12uniq = [...new Map(b12.map(x => [x.muni + '|' + x.url, x])).values()];
+  // **404 と RATE_LIMITED を同じ表に並べない。**「そこに無い」と「測っていない」で
+  // 次の一手が正反対（前者は実在確認、後者は再実行）。同じ表だと「取得失敗 N件」に潰れる
+  const b12all = [...new Map(b12.map(x => [x.muni + '|' + x.url, x])).values()];
+  const b12uniq = b12all.filter(x => x.status !== 'RATE_LIMITED');
+  const b12rate = b12all.filter(x => x.status === 'RATE_LIMITED');
 
-  L.push('## 1. b1-2 — 一覧には載っているが、詳細ページが取得できず住所が取れなかった');
+  L.push('## 1. b1-2 — 一覧には載っているが、詳細ページが「そこに無い」で住所が取れなかった');
   L.push('');
   L.push('**これが原理的な検出漏れ。**一覧に名前があるのに住所が決まらないので地区に入らず、');
   L.push('`MISSING` にも `ORPHAN` にも `IN_DATA` にも出ない。**省略せず全件出す。**');
+  L.push('');
+  L.push('**★ この節は 404 など「そこに無い」だけ。**429（レート制限）で取れなかったぶんは');
+  L.push('**「測っていない」なので §7 に分けてある。**同じ表に並べると「取得失敗 N件」に潰れ、');
+  L.push('再実行すれば取れるものと、再実行しても取れないものの区別が消える。');
   L.push('');
   L.push('**★ 404 の意味は分類していない。**「ページが消えた＝施設が無くなった」と');
   L.push('「サイト改装で URL が変わっただけ」の両方がありうる。**ここは事実だけ並べる。**');
@@ -526,9 +563,61 @@ main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
   L.push('この行が空でも「打ち切り0」ではなく「対象外」。分類は §2 を見ること。');
   L.push('');
 
+  /* ---- 7. 取れなかった理由の分離（404 = 無い / 429 = 測っていない） ---- */
+  L.push('## 7. 429（レート制限）で取れなかったぶん — 「無い」ではなく「測っていない」');
+  L.push('');
+  L.push('**404 とは意味が逆。**404 は再試行しても取れない（そこに無い）が、');
+  L.push('429 は**時間を空ければ取れる**。ここに1件でもあれば、この md の件数は**下限**であって実数ではない。');
+  L.push('');
+  L.push(`\`fetchPage\` は 429 を最大 ${I.RATE_LIMIT_MAX_ATTEMPTS || 3} 回まで再試行する（\`Retry-After\` があれば従い、`);
+  L.push('無ければ指数バックオフ）。それでも取れなかったものだけがここに出る。');
+  L.push('**404 では再試行しない**（無いものにバックオフを回しても遅くなるだけ）。');
+  L.push('');
+  if (!incomplete) {
+    L.push('**0件。この実行は 429 を1件も食っていない。**');
+    L.push('（ソース収集も詳細ページも、レート制限で落ちたリクエストは無い。');
+    L.push('この節が「なし」なのは §0 の「出していない」とは違い、**実際に測って0**）。');
+  } else {
+    L.push(`**⚠ 合計 ${incomplete.total}件（一覧 ${incomplete.list} / 詳細 ${incomplete.detail}）。この実行は不完全。**`);
+    L.push('');
+    L.push('| ソース | 種別 | 試行回数 | URL |');
+    L.push('|---|---|---:|---|');
+    for (const r of incomplete.urls) {
+      L.push(`| ${esc(r.sourceId)} | ${r.detail ? '詳細' : '**一覧**'} | ${r.attempts || '-'} | ${esc(r.url)} |`);
+    }
+    L.push('');
+    L.push('**一覧が 429 で落ちたソースは、そのソースの結果が丸ごと欠けている**（`status: RATE_LIMITED`）。');
+    L.push('`UNREACHABLE`（DNS・接続不能）とは別物なので混ぜないこと。');
+  }
+  L.push('');
+  {
+    // status ごとのソース数。**OK 以外を1つに潰さない**
+    const byStatus = new Map();
+    for (const c of [...collectedByMuni.values()].flat()) {
+      byStatus.set(c.status, (byStatus.get(c.status) || 0) + 1);
+    }
+    L.push('### 7-1. ソースの取得状態（延べ）');
+    L.push('');
+    L.push('| status | 件数 | 意味 |');
+    L.push('|---|---:|---|');
+    const MEAN = {
+      OK: '一覧が1ページ以上取れた',
+      RATE_LIMITED: '**429 で一覧が1ページも取れなかった。測れていない**',
+      UNREACHABLE: 'DNS・接続不能・タイムアウト',
+      SKIPPED_ROBOTS: 'robots.txt で止めた',
+    };
+    for (const [s, n] of [...byStatus].sort((a, b) => b[1] - a[1])) {
+      L.push(`| ${esc(s)} | ${n} | ${MEAN[s] || '—'} |`);
+    }
+    L.push('');
+  }
+
   fs.writeFileSync(OUT, L.join('\n'), 'utf8');
   console.log(`\n→ ${OUT}`);
   console.log(`対象: ${muniDone.length}市町村 / ${districts.length}地区（全体 ${allMuniCount}市町村 / ${allDistricts.length}地区）${isPartial ? ' ★一部' : ''}`);
   console.log(`b1-2 延べ${b12uniq.length}行/ユニークURL${new Set(b12uniq.map(x => x.url)).size} / b1-1 延べ${b11uniq.length}件/ユニーク名${b11Names.size}（合流しうる ${mergeable.length} / 新規 ${brandNew.length}）/ b2-b ${b2b.length}件 / detailLimit打ち切り ${totalSkipped}件`);
   console.log(`§5 突合: ❌不一致 ${mismatch} / ❌PARSE_ERROR ${parseErr} / ⚠drift ${drift} / ⚠判定不能 ${undecided}`);
+  console.log(incomplete
+    ? `⚠ この実行は不完全: 429 で取れなかったリクエスト ${incomplete.total}件（一覧 ${incomplete.list} / 詳細 ${incomplete.detail}）`
+    : '429 は0件。取得は完全');
 }).catch(e => { console.error(e); process.exit(1); });
