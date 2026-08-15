@@ -3371,6 +3371,9 @@ module.exports._internal = {
   RATE_LIMIT_MAX_ATTEMPTS,
   // 住所の分解。**測定側で作り直さないために公開する**（同じ規則を2か所に書くと片方だけ直る。§18-3）
   splitAddress, banchiKey, districtKey,
+  // 異体字表。**いまは名前（sweepNormalizeName）にしか当てていない。**住所には当てていないので
+  // 「武川町柳沢」と「武川町柳澤」が別の地区キーになる（2026-08-15 実測）
+  VARIANT_CHARS,
   // 429 は意図的に起こせないのでモックで検証する（`.mock-ratelimit-test.js`）。
   // **本体からは絶対に使わない。**
   setFetchImpl(fn) { fetchImpl = fn || ((...a) => fetch(...a)); },
