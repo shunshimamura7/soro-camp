@@ -47,10 +47,13 @@
 > `md-sections.js` は使っていない）。**`--district "都留市"` や `--all` を回すとこの枠は消える。**
 > 消えても困らないよう、同じ内容は `sweep-tsuru-2026-08.md` 側にも書いてある。**再生成したら書き戻すこと。**
 
-実行: 2026-08-15 00:17:34　/　`node scripts/district-sweep.js --district "都留市"`
+
+実行: 2026-08-15 11:59:58　/　`node scripts/district-sweep.js --district "都留市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
+
+データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-15 20:27:38
 
 | | 件数 |
 |---|---|
@@ -383,9 +386,9 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 | 西湖キャンプ・ビレッジノーム | 南都留郡富士河口湖町西湖1030 | L3 japancamp |
 | フレンドパークむかわ キャンプ場 | 山梨県北杜市 | L3 walkerplus |
 | 平野田休養村キャンプ場 | 山梨県上野原市 | L3 walkerplus |
+| 大自然に抱かれたキャンプ場ウッドペッカー | 山梨県北杜市 | L3 walkerplus |
 | 精進湖キャンピングコテージ | 山梨県南都留郡富士河口湖町 | L3 walkerplus |
 | ノースランドキャンパーズビレッジ | 山梨県甲斐市 | L3 walkerplus |
-| 大自然に抱かれたキャンプ場ウッドペッカー | 山梨県北杜市 | L3 walkerplus |
 | BUB RESORT Yatsugatake (バブ リゾート 八ヶ岳) | 山梨県北杜市 | L3 walkerplus |
 | 大人のキャンプ場 | 山梨県北杜市 | L3 walkerplus |
 | LScamp山中湖 | 山梨県南都留郡山中湖村 | L3 walkerplus |
