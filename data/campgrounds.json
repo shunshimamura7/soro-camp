@@ -9453,10 +9453,9 @@
   {
     "prefecture": "山梨",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
-    "lastVerified": "2026-08-14",
+    "lat": 35.6272737,
+    "lng": 138.899017,
+    "lastVerified": "2026-08-15",
     "id": "kananomori-sanso",
     "slug": "kananomori-sanso",
     "name": "金の森山荘",
@@ -9501,15 +9500,16 @@
     "season": "通年",
     "soloComment": "旅館の金の森山荘が併設するテントサイト。テント泊でも850円で山荘の風呂とシャワーを使えるのが個性。大月ICから国道20号経由で約5km、真木の渓流沿いで渓流釣りと川遊びができる。テント・タープのレンタルは無いので装備は持参すること。",
     "tel": "0554-23-1021",
-    "officialUrl": "https://kananomori.com/"
+    "officialUrl": "https://kananomori.com/",
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "prefecture": "山梨",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
-    "lastVerified": "2026-08-14",
+    "lat": 35.5762244,
+    "lng": 139.0993435,
+    "lastVerified": "2026-08-15",
     "id": "midori-taiyo-oka",
     "slug": "midori-taiyo-oka",
     "name": "緑と太陽の丘キャンプ場",
@@ -9557,15 +9557,16 @@
     "closedDays": "火曜（希望すれば応相談）",
     "soloComment": "公式の料金表に「平日限定ソロテントは半額」と明記している、ソロを名指しで歓迎する上野原のキャンプ場。区画が無く、静かに過ごしたい人向けのエリアもある。上野原ICの近くにコンビニ・スーパー・ホームセンターが揃うので買い出しがしやすい。",
     "tel": "080-7493-0268",
-    "officialUrl": "https://midoritotaiyounooka.com/"
+    "officialUrl": "https://midoritotaiyounooka.com/",
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "prefecture": "山梨",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
-    "lastVerified": "2026-08-14",
+    "lat": 35.6929287,
+    "lng": 139.0264078,
+    "lastVerified": "2026-08-15",
     "id": "hiranoda-kyuyoson",
     "slug": "hiranoda-kyuyoson",
     "name": "平野田休養村キャンプ場",
@@ -9610,15 +9611,16 @@
     "season": "4月〜10月（毎日）、11月は土日祝のみ。12月〜3月は休業",
     "soloComment": "上野原市公式が案内する西原の休養村キャンプ場。入村料+テント+駐車で2,700円に収まる。4月〜10月は毎日、11月は土日祝のみの営業で、12月〜3月は休業する。JR上野原駅から富士急バス「阿寺沢」下車、徒歩20分で公共交通でも行ける。場内は電波がつながりにくい場所があると市が案内している。",
     "tel": "0554-68-2931",
-    "officialUrl": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html"
+    "officialUrl": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html",
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "prefecture": "山梨",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
-    "lastVerified": "2026-08-14",
+    "lat": 35.6401008,
+    "lng": 138.9193386,
+    "lastVerified": "2026-08-15",
     "id": "eureka-camp-village",
     "slug": "eureka-camp-village",
     "name": "eureka camp village",
@@ -9668,6 +9670,8 @@
     "cautions": [
       "2026-07 に KAGARIBI Camp Terrace から eureka camp village へ改称してリニューアルした。大月市公式の一覧は旧名 KAGARIBI Camp Terrace のまま（2026-08-14 時点）",
       "料金の出典は予約サイト「なっぷ」 https://www.nap-camp.com/yamanashi/14539 （施設公式サイトは未取得）"
-    ]
+    ],
+    "coordsVerified": true,
+    "coordsGsiChecked": true
   }
 ]

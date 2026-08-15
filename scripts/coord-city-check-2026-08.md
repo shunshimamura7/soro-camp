@@ -43,11 +43,11 @@ row.verdict = normalizePref(muni.pref) === normalizePref(camp.prefecture) ? 'OK'
 比較元は **`address` だけ**。`area` は「道志川」「朝霧高原」のような通称なので使えず、
 `prefecture` は address と同じ人が同じ推測から書くので突き合わせても意味がない（§6-15）。
 
-## 集計（全 184件）
+## 集計（全 188件）
 
 | 判定 | 件数 |
 |---|---|
-| `OK` | 173 |
+| `OK` | 177 |
 | `CITY_MISMATCH` | 5 |
 | `NO_ADDRESS` | 1 |
 | `PREF_MISMATCH` | 1 |
