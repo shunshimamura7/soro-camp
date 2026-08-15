@@ -1942,6 +1942,110 @@ function mdEscape(s) {
   return String(s == null ? '' : s).replace(/\|/g, '\\|').replace(/\n/g, ' ');
 }
 
+/* ----------------------------------------------------------------------------
+ * 9-2. 出力に載らなかったソース側の項目の列挙
+ *
+ * `classify()` は `merged.filter(b => b.inDistrict)` しか見ない。
+ * **落選したバケットは MISSING にも ORPHAN にも IN_DATA にも出ず、
+ * ログにも md にも残らなかった。**ここはそれを数えるだけの節で、
+ * **判定には一切使わない**（`results` を作り終えたあとに、別の入力から数える）。
+ *
+ * ## 3つに分ける理由（1つにまとめない）
+ *
+ *   b1  addressKnown === false           ソースが住所を持っていない
+ *   b2  addressKnown && !inDistrict      住所はあるが地区外
+ *   b3  住所なしの項目が地区内バケットに合流した（＝漏れていない）
+ *
+ * **b1 と b2 は対処が正反対。**b1 は**ソース側の仕様**（なっぷは一覧に住所が無い）で、
+ * 抽出器を直しても取れない。b2 は**住所が誤っている**か**本当に地区外**かのどちらかで、
+ * 前者なら抽出器かソースの問題、後者は正常。混ぜると原因が特定できない。
+ *
+ * **b3 を必ず併記するのは、b1 の件数だけ見ると過大に見えるから。**
+ * 名前しか無い項目でも、住所を持つ別ソースと名寄せで合流すれば出力に載っている。
+ *
+ * ## 正常な b2 が支配的であることを忘れない
+ *
+ * じゃらん等は**市単位**で取るが、地区は「北杜市高根町清里」のような**大字単位**。
+ * したがって **b2 の大半は正常**（同じ市の別の大字）。
+ * だから「同じ市区町村か」で分けて出す。異常を疑うのは市が一致するほうではなく、
+ * **市区町村ごと違うもの**。
+ * ========================================================================== */
+
+/**
+ * 詳細ページの取得に失敗した URL を、ソースごとに集める。
+ *
+ * **`fetchPage` は成功したものしかキャッシュしない**（222行）ので、
+ * 失敗した詳細ページは毎回取りに行き、毎回住所が取れない。
+ * **これは「ソースが住所を持っていない」とは別の原因。**
+ * 前者は抽出器を直しても取れないが、こちらは**取得さえ通れば取れる**。
+ * 実例: やまなし観光推進機構の 24件中6件が詳細を取れておらず、
+ * うち2件は他ソースの住所でも救われず b1 に落ちていた。
+ */
+function failedDetailUrls(collected) {
+  const per = new Map();
+  for (const c of collected) {
+    const bad = new Map();
+    for (const f of c.fetched) {
+      if (!f.detail) continue;
+      const ok = f.status >= 200 && f.status < 300;
+      if (!ok) bad.set(f.url, f.note || `HTTP_${f.status}`);
+    }
+    per.set(c.source.id, bad);
+  }
+  return per;
+}
+
+function analyzeDropped(merged, results, district) {
+  const b1 = merged.filter(b => !b.addressKnown);
+  const b2 = merged.filter(b => b.addressKnown && !b.inDistrict);
+  const survived = merged.filter(b => b.inDistrict);
+
+  // b2 をさらに「同じ市区町村か」で割る。市が違うものだけが疑う対象。
+  const sameCity = a => {
+    const p = splitAddress(a);
+    return !!(p && p.city && p.city === district.city);
+  };
+  for (const b of b2) b.dropSameCity = b.addresses.some(sameCity);
+
+  // b3: 住所を持たない hit が、地区内バケットに合流したもの（＝出力に載っている）
+  const bucketKind = new Map();
+  for (const r of results) if (r.bucket) bucketKind.set(r.bucket, r.kind);
+  const b3 = [];
+  for (const b of survived) {
+    const noAddr = b.hits.filter(h => !h.address);
+    if (noAddr.length) b3.push({ bucket: b, hits: noAddr, kind: bucketKind.get(b) || '(不明)' });
+  }
+  return { b1, b2, b3, survived };
+}
+
+/**
+ * ソース別の行方。**`collected` の取得件数と突き合わせて、合わなければ md に警告を出す。**
+ * 合計が合わないのは、どこかで黙って消えている項目があるということ。
+ */
+function droppedBySource(merged, collected) {
+  const per = new Map();
+  const row = id => {
+    if (!per.has(id)) per.set(id, { id, label: '', items: 0, normDropped: 0, inDist: 0, b1: 0, b2: 0 });
+    return per.get(id);
+  };
+  for (const c of collected) {
+    const r = row(c.source.id);
+    r.label = c.source.label;
+    r.items += c.items.length;
+    // mergeItems は名前が正規化できない項目を捨てる（バケットにも入らない）
+    r.normDropped += c.items.filter(i => !sweepNormalizeName(i.name)).length;
+  }
+  for (const b of merged) {
+    const where = b.inDistrict ? 'inDist' : (b.addressKnown ? 'b2' : 'b1');
+    for (const h of b.hits) row(h.sourceId)[where]++;
+  }
+  for (const r of per.values()) {
+    r.accounted = r.normDropped + r.inDist + r.b1 + r.b2;
+    r.reconciles = r.accounted === r.items;
+  }
+  return [...per.values()];
+}
+
 function renderMd(ctx) {
   const { districtName, collected, results, inData, selfTest, startedAt, pref, muniKey, skippedRecords } = ctx;
   const L = [];
@@ -2129,6 +2233,138 @@ function renderMd(ctx) {
       );
     }
     L.push('');
+  }
+
+  /* ---- 出力に載らなかったソース側の項目 ------------------------------- */
+  {
+    const { b1, b2, b3 } = analyzeDropped(ctx.merged, results, ctx.district);
+    const bySrc = droppedBySource(ctx.merged, collected);
+
+    L.push('## 出力に載らなかったソース側の項目');
+    L.push('');
+    L.push('**判定には使っていない。**`MISSING` / `ORPHAN` / `IN_DATA` を作り終えたあとに数えているだけで、');
+    L.push('この節が何件になっても上の判定は1件も動かない。');
+    L.push('');
+    L.push('`classify()` は地区内のバケットしか見ない。**落選した分はこれまでどこにも残らなかった。**');
+    L.push('');
+    L.push('| | 意味 | 件数 |');
+    L.push('|---|---|---|');
+    L.push(`| **b1** | **住所が無い**（名前だけ）。他ソースとも合流できなかった。原因は2つ（下記で分割） | **${b1.length}** |`);
+    L.push(`| **b2** | 住所はあるが**地区外**。うち市区町村も違う ${b2.filter(b => !b.dropSameCity).length} 件 | **${b2.length}** |`);
+    L.push(`| b3 | 住所なしの項目が地区内バケットに**合流した**（＝漏れていない。参考） | ${b3.length} |`);
+    L.push('');
+    L.push('**b1 と b2 は分けてある。対処が正反対だから。**');
+    L.push('b1 は**ソース側の仕様**（一覧に住所が無い）で、抽出器を直しても取れない。');
+    L.push('b2 は**住所が誤っている**か**本当に地区外**かのどちらかで、切り分けが要る。');
+    L.push('');
+    L.push('**⚠ b2 の大半は正常。**じゃらん等は市単位で取るが、地区は大字単位なので、');
+    L.push('同じ市の別の大字は必ずここに落ちる。**疑うのは「市区町村ごと違う」ほうだけ。**');
+    L.push('');
+
+    L.push('### ソース別の行方');
+    L.push('');
+    L.push('| ソース | 取得 | 名前が空 | 地区内 | b1 住所なし | b2 地区外 | 突合 |');
+    L.push('|---|---|---|---|---|---|---|');
+    for (const r of bySrc) {
+      L.push(
+        `| ${mdEscape(r.label)} | ${r.items} | ${r.normDropped} | ${r.inDist} | ${r.b1} | ${r.b2} | ${r.reconciles ? 'OK' : `**⚠ ${r.accounted} ≠ ${r.items}**`} |`
+      );
+    }
+    L.push('');
+    if (bySrc.some(r => !r.reconciles)) {
+      L.push('> **⚠ 突合が合わないソースがある。**取得件数と行方の合計が一致しない＝');
+      L.push('> どこかでさらに黙って消えている。**この節の件数を信用する前に原因を特定すること。**');
+      L.push('');
+    }
+
+    const renderDropped = (arr, title, note) => {
+      L.push(`### ${title}`);
+      L.push('');
+      if (note) { L.push(note); L.push(''); }
+      if (!arr.length) {
+        L.push('なし。**0件が「本当に0件」か「数え方が壊れている」かは、');
+        L.push('意図的に壊して非ゼロが出ることを確認してから信じること**（§18-3）。');
+        L.push('');
+        return;
+      }
+      L.push('| 名前 | 住所 | 出典（層 / ソース） |');
+      L.push('|---|---|---|');
+      for (const b of arr) {
+        const srcs = [...new Set(b.hits.map(h => `${h.layer} ${h.sourceId}`))].join(' / ');
+        L.push(`| ${mdEscape(b.name)} | ${mdEscape(b.addresses.join(' / ')) || '（住所なし）'} | ${mdEscape(srcs)} |`);
+      }
+      L.push('');
+    };
+
+    /* b1 は原因が2つある。混ぜると対処が決まらないので分けて出す。 */
+    const badDetail = failedDetailUrls(collected);
+    const causeOf = b => {
+      const fails = b.hits
+        .map(h => (badDetail.get(h.sourceId) || new Map()).get(h.url))
+        .filter(Boolean);
+      return fails.length ? `**詳細ページの取得に失敗**（${[...new Set(fails)].join(' / ')}）` : '一覧に住所が無い';
+    };
+    const b1fetch = b1.filter(b => causeOf(b) !== '一覧に住所が無い');
+    const b1spec = b1.filter(b => causeOf(b) === '一覧に住所が無い');
+
+    L.push('### b1 — 住所が無く、他ソースとも合流できなかった');
+    L.push('');
+    L.push('**このソースにしか無い施設は、名前しか無いので地区が決まらず、単独では MISSING を立てられない。**');
+    L.push('これまで「限界」節に文章で書いてあっただけで、実数が出るのは初めて。');
+    L.push('');
+    L.push(`**⚠ 原因が2つある。分けてある。** b1-1（ソース側の仕様）${b1spec.length} 件 / b1-2（取得失敗）${b1fetch.length} 件。`);
+    L.push('**b1-1 は抽出器を直しても取れない。b1-2 は取得さえ通れば取れる。**');
+    L.push('');
+
+    const b1Table = (arr, title, note) => {
+      L.push(`#### ${title}`);
+      L.push('');
+      L.push(note);
+      L.push('');
+      if (!arr.length) {
+        L.push('なし。**0件が「本当に0件」か「数え方が壊れている」かは、');
+        L.push('意図的に壊して非ゼロが出ることを確認してから信じること**（§18-3）。');
+        L.push('');
+        return;
+      }
+      L.push('| 名前 | 出典（層 / ソース） | 原因 | URL |');
+      L.push('|---|---|---|---|');
+      for (const b of arr) {
+        const srcs = [...new Set(b.hits.map(h => `${h.layer} ${h.sourceId}`))].join(' / ');
+        const url = b.hits.map(h => h.url).find(Boolean) || '–';
+        L.push(`| ${mdEscape(b.name)} | ${mdEscape(srcs)} | ${causeOf(b)} | ${mdEscape(url)} |`);
+      }
+      L.push('');
+    };
+
+    b1Table(b1spec, 'b1-1 — ソースが一覧に住所を持っていない（ソース側の仕様）',
+      '**抽出器の不具合ではない。**そのソースの一覧に住所という項目が存在しない。');
+    b1Table(b1fetch, 'b1-2 — 詳細ページの取得に失敗して住所が取れなかった',
+      '**これは直せる可能性がある。**`fetchPage` は成功したものしかキャッシュしないので、\n' +
+      '失敗した詳細ページは毎回取りに行って毎回失敗する。URL が生きているか確認すること。');
+
+    const b2out = b2.filter(b => !b.dropSameCity);
+    const b2in = b2.filter(b => b.dropSameCity);
+    renderDropped(b2out, 'b2-a — 住所の市区町村が、この地区の市区町村と違う',
+      '**ここだけが「住所が誤っている」疑いの対象。**ただし市単位のソースが\n' +
+      '広域を含んでいるだけのこともある（じゃらんは市全体、キャンナビは県全体）。');
+    renderDropped(b2in, 'b2-b — 市区町村は同じだが、大字が違う',
+      '**大半は正常。**市単位で取ったソースを大字単位の地区に当てれば必ず出る。');
+
+    L.push('### b3 — 住所なしの項目が合流したもの（漏れていない）');
+    L.push('');
+    if (!b3.length) {
+      L.push('なし。');
+      L.push('');
+    } else {
+      L.push('| 合流先 | 分類 | 合流した住所なしの出典 |');
+      L.push('|---|---|---|');
+      for (const x of b3) {
+        const srcs = [...new Set(x.hits.map(h => `${h.layer} ${h.sourceId}`))].join(' / ');
+        L.push(`| ${mdEscape(x.bucket.name)} | ${x.kind} | ${mdEscape(srcs)} |`);
+      }
+      L.push('');
+    }
   }
 
   if (skippedRecords.length) {
@@ -2567,6 +2803,7 @@ async function sweepDistrict(districtStr, records, opts) {
     districtName: districtStr, district, collected, results, inData,
     selfTest, startedAt, pref, muniKey, skippedRecords, l1NotFound,
     coverage, orphanTrustable: trustable,
+    merged,   // 落選分の列挙のため。判定には使わない（9-2）
   });
   const outPath = path.join(__dirname, `sweep-${districtStr}.md`);
   fs.writeFileSync(outPath, md, 'utf8');
@@ -2946,3 +3183,10 @@ if (require.main === module) {
 // （check-official-urls.js の DEAD と同じ型。ハードコードは必ず腐る。§18-3）
 // SELF_TEST / runSelfTest はオフラインの検証用（sweep はネットが要るが、判定は要らない）
 module.exports = { MUNI_SOURCES, PREF_SOURCES, SELF_TEST, runSelfTest, sweepNormalizeName };
+
+// テスト専用。**本体からは使わない。**答えが分かっている入力を通して
+// 判定が効いていることを確かめるため（§18-3）だけに公開している。
+module.exports._internal = {
+  mergeItems, classify, analyzeDropped, droppedBySource, inDistrict, parseDistrict,
+  collectSource, sourcesFor, failedDetailUrls, loadRecords,
+};
