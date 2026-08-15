@@ -17,6 +17,7 @@ const fs = require('fs');
 const path = require('path');
 const { MUNI_SOURCES, sweepNormalizeName, _internal: I } = require('./district-sweep.js');
 const { namesMatch } = require('./name-match');
+const { readSummary } = require('./lib/sweep-summary-md');
 
 /* ---- 対象の決定と、そのラベル ---------------------------------------------
  *
@@ -188,9 +189,24 @@ main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
       L.push(`| ${esc(x.muni)} | ${esc(x.src)} | ${esc(x.name)} | ${esc(x.url)} | ${esc(x.status)} |`);
     }
     L.push('');
-    const uniqUrls = new Set(b12uniq.map(x => x.url));
-    L.push(`合計 ${b12uniq.length} 行 / **ユニークURL ${uniqUrls.size} 件**`);
-    L.push('（同じ L2 を複数の市町村が共有しているため、同じ URL が複数行に出る）');
+    const uniqUrls = [...new Set(b12uniq.map(x => x.url))];
+    const uniqNames = new Set(b12uniq.map(x => x.name));
+    L.push(`**延べ ${b12uniq.length} 行（市町村×URL）/ ユニークURL ${uniqUrls.length} 件 / ユニーク施設名 ${uniqNames.size} 件。**`);
+    L.push('');
+    L.push('**延べとユニークを両方出すのは、全市町村版と単一市町村版を比べられるようにするため。**');
+    L.push('`yamanashi-kankou-otsuki` は大月市・都留市・上野原市が共有するソースなので、');
+    L.push('**全件走らせると同じ404が市町村の数だけ延べに出る。**延べだけ見ると増えたように見え、');
+    L.push('ユニークだけ見ると「どの市町村の検出が穴になっているか」が消える。');
+    L.push('');
+    if (uniqUrls.length !== b12uniq.length) {
+      L.push('| 詳細URL | 出てくる市町村 |');
+      L.push('|---|---|');
+      for (const u of uniqUrls) {
+        const ms = [...new Set(b12uniq.filter(x => x.url === u).map(x => x.muni))];
+        L.push(`| ${esc(u)} | ${esc(ms.join(' / '))}（${ms.length}） |`);
+      }
+      L.push('');
+    }
   }
   L.push('');
 
@@ -301,8 +317,22 @@ main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
   const mergeable = b11uniq.filter(x => x.cand.length);
   const brandNew = b11uniq.filter(x => !x.cand.length);
 
-  L.push(`**合計 ${b11uniq.length} 件（市町村×名前でユニーク）。合流しうる ${mergeable.length} / 既存に無い ${brandNew.length}。**`);
+  const b11Names = new Set(b11uniq.map(x => x.name));
+  L.push(`**延べ ${b11uniq.length} 件（市町村×名前）/ ユニーク施設名 ${b11Names.size} 件。**`);
+  L.push(`合流しうる ${mergeable.length} / 既存に無い ${brandNew.length}（いずれも延べ）。`);
   L.push('');
+  if (b11Names.size !== b11uniq.length) {
+    L.push('**延べとユニークが違うのは、共有ソース（なっぷ等）の同じ施設が複数の市町村に出るため。**');
+    L.push('全市町村版と単一市町村版を比べるときは、延べ同士・ユニーク同士で比べること。');
+    L.push('');
+    L.push('| 施設名 | 出てくる市町村 |');
+    L.push('|---|---|');
+    for (const n of [...b11Names].sort()) {
+      const ms = [...new Set(b11uniq.filter(x => x.name === n).map(x => x.muni))];
+      if (ms.length > 1) L.push(`| ${esc(n)} | ${esc(ms.join(' / '))}（${ms.length}） |`);
+    }
+    L.push('');
+  }
   L.push('### 3-1. 既存レコードと名前が部分一致する（＝名寄せ漏れの疑い）');
   L.push('');
   L.push('**同一施設なら、いま MISSING にも IN_DATA にも出ていないのは名寄せの取りこぼし。**');
@@ -381,28 +411,70 @@ main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
   L.push('## 5. 既存の判定と一致しているか');
   L.push('');
   L.push('各地区の `MISSING` / `ORPHAN` / `IN_DATA` の件数を、既存 `sweep-*.md` の');
-  L.push('冒頭の表と突き合わせた。**このスクリプトは判定を持たず、本体の関数を呼んでいるだけ**なので、');
+  L.push('集計表と突き合わせた。**このスクリプトは判定を持たず、本体の関数を呼んでいるだけ**なので、');
   L.push('ここが食い違うならソース側かデータ側が変わったということ。');
   L.push('');
-  L.push('| 地区 | MISSING | ORPHAN | IN_DATA | 既存 md | 一致 |');
-  L.push('|---|---|---|---|---|---|');
-  let mismatch = 0;
+  L.push('**読み取りは `lib/sweep-summary-md.js`。**見出しで節に切り、引用ブロックを除き、');
+  L.push('MISSING/IN_DATA/ORPHAN を揃って持つ表が**ちょうど1つ**のときだけ数字を返す。');
+  L.push('値の列はヘッダの「件数」から決め、ラベルの太字には依存しない。');
+  L.push('**どの行の表を読んだかを下の「読んだ表」列に出す。**出ていないと、');
+  L.push('本物の表を読んだのか手書きの表を読んだのかを人が確かめられない（§18-3 の3回目）。');
+  L.push('');
+  L.push('**「数が合わない」を1つの ❌ にまとめない。**原因が違うものを同じ記号にすると、');
+  L.push('データが動いただけの差分に本物のバグが埋もれる。');
+  L.push('');
+  L.push('| 判定 | 意味 | 次の一手 |');
+  L.push('|---|---|---|');
+  L.push('| ✅ 一致 | 同じデータで同じ数 | なし |');
+  L.push('| **⚠ データが変わっている** | md を作ったあとに `campgrounds.json` が動いた | **再sweep**（バグではない） |');
+  L.push('| **❌ 不一致** | **データは同じなのに数が違う** | **判定のバグ。原因を特定するまで先に進まない** |');
+  L.push('| ⚠ 判定不能 | md にデータ鮮度の記録が無く、drift と区別できない | 再sweepで記録が付く |');
+  L.push('| **❌ PARSE_ERROR** | 集計表を1つに特定できない | md の書式かパーサを直す |');
+  L.push('');
+  L.push('| 地区 | MISSING | ORPHAN | IN_DATA | 既存 md | 読んだ表 | データ鮮度 | 判定 |');
+  L.push('|---|---|---|---|---|---|---|---|');
+  const nowStamp = I.dataStamp();
+  let mismatch = 0, drift = 0, parseErr = 0, undecided = 0;
   for (const p of per) {
-    const md = fs.readFileSync(path.join(__dirname, `sweep-${p.d}.md`), 'utf8');
-    const pick = re => { const m = md.match(re); return m ? Number(m[1]) : null; };
-    const oldM = pick(/\|\s*\*\*MISSING\*\*[^|]*\|\s*\*\*(\d+)\*\*\s*\|/);
-    const oldO = pick(/\|\s*ORPHAN[^|]*\|\s*(\d+)\s*\|/);
-    const oldI = pick(/\|\s*IN_DATA[^|]*\|\s*(\d+)\s*\|/);
+    const mdPath = path.join(__dirname, `sweep-${p.d}.md`);
+    const s = readSummary(mdPath);
     const nm = p.results.filter(r => r.kind === 'MISSING').length;
     const no = p.results.filter(r => r.kind === 'ORPHAN').length;
     const ni = p.results.filter(r => r.kind === 'IN_DATA').length;
-    const ok = nm === oldM && no === oldO && ni === oldI;
-    if (!ok) mismatch++;
-    L.push(`| ${esc(p.d)} | ${nm} | ${no} | ${ni} | ${oldM}/${oldO}/${oldI} | ${ok ? 'OK' : '**❌ 不一致**'} |`);
+
+    if (!s.ok) {
+      parseErr++;
+      L.push(`| ${esc(p.d)} | ${nm} | ${no} | ${ni} | — | ${esc((s.at && s.at.candidates || []).join(' / ')) || '—'} | — | **❌ PARSE_ERROR** |`);
+      L.push(`| | | | | | ${esc(s.reason)} | | |`);
+      continue;
+    }
+
+    const read = `${s.at.section} ${s.at.table}行目（M:${s.at.rows.MISSING} O:${s.at.rows.ORPHAN} I:${s.at.rows.IN_DATA}行）`;
+    const same = nm === s.values.MISSING && no === s.values.ORPHAN && ni === s.values.IN_DATA;
+    const ds = s.dataStamp;
+    // **データ鮮度を先に見る。**数が違う理由が drift なのかバグなのかは、
+    // ここでしか分けられない（記録が無い md は分けられないと言い切る）
+    const fresh = ds ? (ds.count === nowStamp.count && ds.mtime === nowStamp.mtime) : null;
+    const dsCol = ds
+      ? `${ds.count}件 / ${ds.mtime}${fresh ? '（現在と同じ）' : ` → **現在 ${nowStamp.count}件 / ${nowStamp.mtime}**`}`
+      : '**記録なし**';
+
+    let verdict;
+    if (same) verdict = fresh === false ? '✅ 一致（データは動いているが数は同じ）' : '✅ 一致';
+    else if (fresh === false) { verdict = '**⚠ データが変わっている（再sweep要）**'; drift++; }
+    else if (fresh === null) { verdict = '**⚠ 判定不能（鮮度の記録なし）**'; undecided++; }
+    else { verdict = '**❌ 不一致**'; mismatch++; }
+
+    L.push(`| ${esc(p.d)} | ${nm} | ${no} | ${ni} | ${s.values.MISSING}/${s.values.ORPHAN}/${s.values.IN_DATA} | ${esc(read)} | ${esc(dsCol)} | ${verdict} |`);
   }
   L.push('');
-  L.push(mismatch
-    ? `> **❌ ${mismatch}地区で不一致。**この監査の数字を読む前に原因を特定すること。`
+  const bad = [];
+  if (parseErr) bad.push(`**❌ PARSE_ERROR ${parseErr}地区**（集計表を特定できない）`);
+  if (mismatch) bad.push(`**❌ 不一致 ${mismatch}地区**（データは同じなのに数が違う＝判定のバグ）`);
+  if (drift) bad.push(`⚠ データが変わっている ${drift}地区（再sweepで解消する。バグではない）`);
+  if (undecided) bad.push(`⚠ 判定不能 ${undecided}地区（md に鮮度の記録が無い。再sweepで付く）`);
+  L.push(bad.length
+    ? `> ${bad.join(' / ')}。**❌ が残っている間は、この監査の数字を読まないこと。**`
     : '> **全地区で一致。**この監査は既存の判定を1件も動かしていない。');
   L.push('');
 
@@ -457,5 +529,6 @@ main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
   fs.writeFileSync(OUT, L.join('\n'), 'utf8');
   console.log(`\n→ ${OUT}`);
   console.log(`対象: ${muniDone.length}市町村 / ${districts.length}地区（全体 ${allMuniCount}市町村 / ${allDistricts.length}地区）${isPartial ? ' ★一部' : ''}`);
-  console.log(`b1-2 ${b12uniq.length}行 / b1-1 ${b11uniq.length}件（合流しうる ${mergeable.length} / 新規 ${brandNew.length}）/ b2-b ${b2b.length}件 / detailLimit打ち切り ${totalSkipped}件 / 判定不一致 ${mismatch}地区`);
+  console.log(`b1-2 延べ${b12uniq.length}行/ユニークURL${new Set(b12uniq.map(x => x.url)).size} / b1-1 延べ${b11uniq.length}件/ユニーク名${b11Names.size}（合流しうる ${mergeable.length} / 新規 ${brandNew.length}）/ b2-b ${b2b.length}件 / detailLimit打ち切り ${totalSkipped}件`);
+  console.log(`§5 突合: ❌不一致 ${mismatch} / ❌PARSE_ERROR ${parseErr} / ⚠drift ${drift} / ⚠判定不能 ${undecided}`);
 }).catch(e => { console.error(e); process.exit(1); });

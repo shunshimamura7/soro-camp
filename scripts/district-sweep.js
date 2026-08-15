@@ -2072,6 +2072,13 @@ function renderMd(ctx) {
   L.push('**調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**');
   L.push('反映は人が中身を見てから別途行う。');
   L.push('');
+  {
+    // **この行はあとで突き合わせる側が読む。**下の数字が「いつのデータで出たか」が
+    // 分からないと、データが動いただけの差分と判定のバグが同じ ❌ になる
+    const ds = dataStamp();
+    L.push(`データ: \`data/campgrounds.json\` ${ds.count}件 / 最終更新 ${ds.mtime}`);
+    L.push('');
+  }
   L.push(`| | 件数 |`);
   L.push(`|---|---|`);
   L.push(`| **MISSING**（実在側にあるがデータに無い） | **${missing.length}** |`);
@@ -2754,6 +2761,21 @@ function loadRecords() {
   return JSON.parse(fs.readFileSync(DATA, 'utf8'));
 }
 
+/**
+ * この md を作ったときの `campgrounds.json` の件数と最終更新。
+ *
+ * **数が合わない理由を2つに分けるために要る。**あとから突き合わせる側
+ * （`dropped-buckets-all.js` の §5）は、これが現在値と違えば
+ * 「データが変わった（再sweep要）」、同じなのに数が違えば「判定のバグ」と読める。
+ * 記録が無いと**両方とも同じ ❌ になり、本物のバグが drift に埋もれる。**
+ */
+function dataStamp() {
+  const st = fs.statSync(DATA);
+  const count = JSON.parse(fs.readFileSync(DATA, 'utf8')).length;
+  const t = new Date(st.mtimeMs - new Date().getTimezoneOffset() * 60000);
+  return { count, mtime: t.toISOString().slice(0, 19).replace('T', ' ') };
+}
+
 function needsVerifyDistricts(records) {
   const out = [];
   for (const r of records.filter(x => x.needsVerify)) {
@@ -3200,5 +3222,5 @@ module.exports = { MUNI_SOURCES, PREF_SOURCES, SELF_TEST, runSelfTest, sweepNorm
 // 判定が効いていることを確かめるため（§18-3）だけに公開している。
 module.exports._internal = {
   mergeItems, classify, analyzeDropped, droppedBySource, inDistrict, parseDistrict,
-  collectSource, sourcesFor, failedDetailUrls, loadRecords,
+  collectSource, sourcesFor, failedDetailUrls, loadRecords, dataStamp,
 };

@@ -98,4 +98,70 @@ function sectionSizes(md) {
   };
 }
 
-module.exports = { splitSections, replaceHead, replaceSection, sectionSizes };
+/**
+ * md を `## 見出し` で区切る。**読み取り側が「どの節を見ているか」を持てるようにする。**
+ *
+ * 上の `splitSections` は「再生成の担当範囲」を切るためのもので、切れ目は `---` + `# `。
+ * こちらは**消費側が節の中だけを探す**ためのもので、切れ目は `## `。
+ *
+ * ## なぜ要るか（§18-3 の3回目）
+ *
+ * `dropped-buckets-all.js` の §5 は `sweep-{地区}.md` から MISSING / IN_DATA / ORPHAN を
+ * 正規表現で読んでいたが、**アンカーが無く「ファイル内で最初に当たった表」を採っていた。**
+ * `sweep-都留市.md` に人が引用ブロックで手書きの差分表を足したところ、
+ * 生成された集計表より前にある `> | IN_DATA | 3 | **2** |` を先に拾い、
+ * **本物は一致しているのに ❌ 不一致を出した。**
+ *
+ * 節で範囲を切り、引用ブロックを除き、候補の表が1つでなければ落とす——という形にすれば、
+ * 「どこかに同じ形の表がある」だけでは壊れない。
+ *
+ * 返り値は `[{ heading, level, startLine, endLine, lines }]`。**行番号は1始まり**で、
+ * 読んだ場所を出力に書けるようにするために持つ（出力が無いと検証できない）。
+ * 先頭の `## ` より前は `heading: null`（H1 と前書きの範囲）で必ず1件目に入る。
+ */
+function splitH2Sections(md) {
+  const lines = String(md).split(/\r?\n/);
+  const out = [{ heading: null, level: 1, startLine: 1, endLine: lines.length, lines: [] }];
+  lines.forEach((line, i) => {
+    const m = /^(#{2,6})\s+(.*)$/.exec(line);
+    if (m) {
+      out[out.length - 1].endLine = i; // 直前の節は見出しの1行前まで
+      out.push({ heading: m[2].trim(), level: m[1].length, startLine: i + 1, endLine: lines.length, lines: [] });
+    }
+    out[out.length - 1].lines.push({ n: i + 1, text: line });
+  });
+  return out;
+}
+
+/** 行頭が `>` の行（引用ブロック）を落とす。手書きのメモや過去版の表を読まないため */
+function dropBlockquotes(lines) {
+  return lines.filter((l) => !/^\s*>/.test(l.text));
+}
+
+/**
+ * 連続する `|` 行を1つの表としてまとめる。返り値は `[{ startLine, rows: [{n, cells}] }]`。
+ * 区切り行（`|---|---|`）は落とすが、**ヘッダ行は残す**（列をラベルで引くため）。
+ */
+function tablesIn(lines) {
+  const tables = [];
+  let cur = null;
+  for (const l of lines) {
+    const t = l.text.trim();
+    if (t.startsWith('|')) {
+      const parts = t.split('|').map((s) => s.trim());
+      if (parts.length && parts[0] === '') parts.shift();
+      if (parts.length && parts[parts.length - 1] === '') parts.pop();
+      if (parts.every((c) => /^:?-+:?$/.test(c))) continue; // 区切り行
+      if (!cur) { cur = { startLine: l.n, rows: [] }; tables.push(cur); }
+      cur.rows.push({ n: l.n, cells: parts });
+    } else if (t !== '') {
+      cur = null; // 空行以外が挟まったら別の表
+    }
+  }
+  return tables;
+}
+
+module.exports = {
+  splitSections, replaceHead, replaceSection, sectionSizes,
+  splitH2Sections, dropBlockquotes, tablesIn,
+};
