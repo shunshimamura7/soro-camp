@@ -3369,6 +3369,8 @@ module.exports._internal = {
   mergeItems, classify, analyzeDropped, droppedBySource, inDistrict, parseDistrict,
   collectSource, sourcesFor, failedDetailUrls, loadRecords, dataStamp, fetchPage, incompleteNote,
   RATE_LIMIT_MAX_ATTEMPTS,
+  // 住所の分解。**測定側で作り直さないために公開する**（同じ規則を2か所に書くと片方だけ直る。§18-3）
+  splitAddress, banchiKey, districtKey,
   // 429 は意図的に起こせないのでモックで検証する（`.mock-ratelimit-test.js`）。
   // **本体からは絶対に使わない。**
   setFetchImpl(fn) { fetchImpl = fn || ((...a) => fetch(...a)); },
