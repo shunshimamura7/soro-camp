@@ -54,7 +54,12 @@ const MAX_NEWS_LINKS = 3;
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
-/** ドメインの失効・売却・停止を示す定型文 */
+/**
+ * ドメインの失効・売却・停止を示す定型文（**完全一致**）。
+ *
+ * **消さないこと。**`ConnectYourDomain` は `sports-train-aokigahara` を捕まえた実績がある。
+ * ただし**これだけでは足りない**（下の `classifyParked` の理由を読むこと）。
+ */
 const PARKED_PATTERNS = [
   'ConnectYourDomain',
   'このドメインは',
@@ -70,6 +75,63 @@ const PARKED_PATTERNS = [
   'Account Suspended',
   'サービス提供を終了',
 ];
+
+/* ── パーキング判定の第2段（2026-08-15 追加）──────────────────────────
+ *
+ * ## なぜ足したか
+ *
+ * `forestpartymineyama.com`（フォレストパーティー峰山の**旧**ドメイン）が
+ * **HTTP 200 を返し、中身は Afternic/GoDaddy の売却ページ**だったのに、
+ * 上の13語では**一致0件**で `OK` 判定になった（本文9,161字に対して実測）。
+ *
+ * 原因は**完全な文を前提にしていた**こと。実際のページはこう書いてある:
+ *
+ *   期待: `This domain is for sale` / `Domain for sale` / `Buy this domain`
+ *   実物: `For sale` / `Premium domain` / `Buy-it-now $195 USD` / `Afternic` / `GoDaddy`
+ *
+ * ## なぜ単独の語で判定しないか
+ *
+ * `for sale` や `GoDaddy` 単独で切ると**キャンプ場の正常なページが落ちる。**
+ * 「サイト for sale」のような英語表記や、フッタの「Powered by GoDaddy」で誤爆する。
+ * **売却の文言とマーケットプレイス名の"同時出現"**を主判定にした。
+ *
+ * ## 3段
+ *
+ *   1. 停止・準備中の定型（`PARK_SUSPEND`）… 単独でも確実なのでこれだけ即断
+ *   2. `PARK_MARKETPLACE` と `PARK_SELL` の**両方**
+ *   3. `PARK_SELL` だけでも**本文が薄い**（20,000字未満）… 売却専用ページ型
+ *
+ * 判定は `PARKED` のまま増やさない（`ORDER` や md の節を増やさずに済む）。
+ * どの段で当たったかは evidence に書く。
+ */
+const PARK_MARKETPLACE =
+  /(afternic|sedo\.com|\bdan\.com\b|godaddy|hugedomains|bodis|porkbun|namecheap\s+market|value-?domain|お名前\.com|エックスサーバー|さくらのレンタルサーバ|ムームードメイン)/i;
+const PARK_SELL =
+  /(buy[-\s]it[-\s]now|buy this domain|domain (?:name )?(?:is )?for sale|premium domain|make an offer|this domain (?:is )?(?:available|may be for sale)|ドメインの有効期限|このドメインは.{0,12}(?:売|販売|取得|移管))/i;
+const PARK_SUSPEND =
+  /(account suspended|このサイトは現在準備中|サービス提供を終了|connectyourdomain|domain (?:has )?expired|ドメインの有効期限が切れ)/i;
+
+/** 本文がこれより短くて売却文言があれば、売却専用ページとみなす */
+const PARK_THIN_CHARS = 20000;
+
+/**
+ * 戻りは `null`（パーキングではない）か `{ why, hit }`。
+ * `text` は `stripTags` 済みの本文。
+ */
+function classifyParked(text) {
+  const m1 = PARK_SUSPEND.exec(text);
+  if (m1) return { why: '停止/準備中', hit: m1[0] };
+
+  const mk = PARK_MARKETPLACE.exec(text);
+  const sell = PARK_SELL.exec(text);
+  if (mk && sell) return { why: 'マーケットプレイス名+売却文言', hit: `${mk[0]} / ${sell[0]}` };
+
+  // **単独の売却文言は本文が薄いときだけ採る。**厚いページで拾うと誤爆する
+  if (sell && text.replace(/\s/g, '').length < PARK_THIN_CHARS) {
+    return { why: `売却文言+本文が薄い(<${PARK_THIN_CHARS}字)`, hit: sell[0] };
+  }
+  return null;
+}
 
 /** 閉業・閉鎖の可能性を示す語（トップページ用） */
 const CLOSED_PATTERNS = ['閉業', '閉鎖', '営業終了', '廃止', '当面の間休業', '閉館'];
@@ -282,9 +344,18 @@ async function checkOne(camp) {
     if (text.includes(p)) {
       return {
         camp, verdict: 'PARKED', status, newsLinks: [],
-        evidence: `「${p}」… ${snippet(text, p)}${finalUrl ? ` / 最終URL: ${finalUrl}` : ''}`,
+        evidence: `完全一致「${p}」… ${snippet(text, p)}${finalUrl ? ` / 最終URL: ${finalUrl}` : ''}`,
       };
     }
+  }
+  // 第2段。完全一致で拾えない売却ページ（峰山の .com 型）
+  const parked2 = classifyParked(text);
+  if (parked2) {
+    return {
+      camp, verdict: 'PARKED', status, newsLinks: [],
+      evidence: `${parked2.why}「${parked2.hit}」… ${snippet(text, parked2.hit.split(' / ')[0])}` +
+        `${finalUrl ? ` / 最終URL: ${finalUrl}` : ''}`,
+    };
   }
   for (const p of CLOSED_PATTERNS) {
     if (text.includes(p)) {
@@ -561,7 +632,13 @@ ${rows('OK') || '| （なし） | | | | |'}
   console.log(`→ ${path.relative(path.join(__dirname, '..'), OUT)} に第${runCount}回として追記`);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+// 判定だけを検証用に公開する。**本体からは使わない。**
+// `require` しただけで全件を叩きに行かないよう、実行は require.main で囲む（§18-3）。
+module.exports = { classifyParked, PARKED_PATTERNS, PARK_THIN_CHARS, toPlainText };
+
+if (require.main === module) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}

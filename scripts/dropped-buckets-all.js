@@ -125,10 +125,20 @@ function headLines({ scopeTitle, muniDone, districts, allMuniCount, allDistricts
   L.push(`# 出力に載らなかったソース側の項目 — ${scopeTitle} 2026-08-15`);
   L.push('');
   if (incomplete) {
-    L.push(`> **⚠ この実行は不完全。**429（レート制限）で取れなかったリクエストが **${incomplete.total}件** ある` +
-      `（一覧 ${incomplete.list} / 詳細 ${incomplete.detail}）。`);
+    // **429 と 403 を分けて書く。**再実行で直るのは429だけで、403 は待っても変わらない
+    const br = incomplete.byReason || { rateLimited: incomplete, forbidden: { total: 0 } };
+    const parts = [];
+    if (br.rateLimited.total) parts.push(`429（レート制限）${br.rateLimited.total}件`);
+    if (br.forbidden.total) parts.push(`403（先方がこの UA を拒否）${br.forbidden.total}件`);
+    L.push(`> **⚠ この実行は不完全。**取れなかったリクエストが **${incomplete.total}件** ある` +
+      `（${parts.join(' / ')}｜一覧 ${incomplete.list} / 詳細 ${incomplete.detail}）。`);
     L.push('> **これは「そこに無い」ではなく「測っていない」。**下の件数は下限であって、実数ではない。');
-    L.push('> 内訳は §7。時間を空けて再実行すること。');
+    if (br.rateLimited.total) L.push('> 429 は時間を空けて再実行すること。');
+    if (br.forbidden.total) {
+      L.push('> **403 は再実行しても変わらない。**先方がこの UA を拒んでいるので、' +
+        'そのソースは**この収集器では測れない**（UA を偽装して回避しない）。');
+    }
+    L.push('> 内訳は §7。');
     L.push('');
   }
   L.push(`**この md は ${muniDone.length}市町村 / ${districts}地区 の結果。** ` +
@@ -618,6 +628,9 @@ main().then(({ per, records, districts, allDistricts, collectedByMuni }) => {
   console.log(`b1-2 延べ${b12uniq.length}行/ユニークURL${new Set(b12uniq.map(x => x.url)).size} / b1-1 延べ${b11uniq.length}件/ユニーク名${b11Names.size}（合流しうる ${mergeable.length} / 新規 ${brandNew.length}）/ b2-b ${b2b.length}件 / detailLimit打ち切り ${totalSkipped}件`);
   console.log(`§5 突合: ❌不一致 ${mismatch} / ❌PARSE_ERROR ${parseErr} / ⚠drift ${drift} / ⚠判定不能 ${undecided}`);
   console.log(incomplete
-    ? `⚠ この実行は不完全: 429 で取れなかったリクエスト ${incomplete.total}件（一覧 ${incomplete.list} / 詳細 ${incomplete.detail}）`
-    : '429 は0件。取得は完全');
+    ? `⚠ この実行は不完全: 取れなかったリクエスト ${incomplete.total}件` +
+      `（429 ${incomplete.byReason ? incomplete.byReason.rateLimited.total : incomplete.total} / ` +
+      `403 ${incomplete.byReason ? incomplete.byReason.forbidden.total : 0}｜` +
+      `一覧 ${incomplete.list} / 詳細 ${incomplete.detail}）`
+    : '429 も 403 も0件。取得は完全');
 }).catch(e => { console.error(e); process.exit(1); });

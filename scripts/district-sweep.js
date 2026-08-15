@@ -239,6 +239,9 @@ function backoffMs(res, attempt) {
  *   `HTTP_404` ほか  … そこに無い（再試行しない）
  *   `RATE_LIMITED`   … 429 を最大 RATE_LIMIT_MAX_ATTEMPTS 回まで再試行しても取れなかった。
  *                      **「無い」ではなく「測れていない」。**結果は不完全
+ *   `HTTP_403`       … 先方がこの UA を拒否している。**再試行しない**（待っても変わらない）。
+ *                      collectSource がこれを `FORBIDDEN` に畳む。
+ *                      **「無い」ではなく「測ることを許されていない」。**サイト自体は生きている
  *   `UNREACHABLE: …` … DNS・接続・タイムアウト
  *   `SKIPPED_ROBOTS` … robots.txt で止めた
  *
@@ -1792,17 +1795,37 @@ async function collectSource(src, opts) {
   // 「そこに無い」ではなく「測れていない」。`0件` と同じ扱いにすると、
   // 実行順によって同じソースが `UNREACHABLE:0件` になったり `OK:4件` になったりする
   const rateLimited = fetched.filter(f => f.note === 'RATE_LIMITED');
+  // **403 も UNREACHABLE と混ぜない（2026-08-15 追加）。**
+  //
+  // きっかけは千葉。`japancamp.jp` `seiwanomori.jp` `1059dai.com` `kazusa-autocamp.com` が
+  // そろって ClaudeBot に 403 を返していた。**サイトは生きていて、人間には見える。**
+  // これを DNS が消えた `takibi-reservation.space` や `hello-net.info` のサブドメインと
+  // 同じ `UNREACHABLE` 箱に入れると、**「そこに無い」と読めてしまう。**
+  // 429 で作った区別（RATE_LIMITED＝測れていない）と同じ理屈で、
+  // 403 は「**測ることを許されていない**」。どちらも 0件ではない。
+  //
+  // **429 と違って再試行しない。**待っても変わらないので `fetchPage` 側もそのまま
+  // （`res.status !== 429` は即 return する）。
+  //
+  // **robots.txt だけ見て判断しない。**`1059dai.com` は robots.txt が 200 で
+  // `Crawl-delay: 5` まで書いてあるのに本体が 403。逆に `japancamp.jp` は
+  // robots.txt 自体が 403（`getRobots` は res.ok でなければ「制限なし」に倒すので、
+  // **拒否しているサイトを1秒間隔で叩き続けることになる**）。
+  // オリジンごと止める判断は getRobots 側の課題として残す。
+  const forbidden = fetched.filter(f => f.note === 'HTTP_403');
   const status =
     listOk === 0
       ? (fetched.some(f => f.note === 'SKIPPED_ROBOTS') ? 'SKIPPED_ROBOTS'
-        : rateLimited.some(f => !f.detail) ? 'RATE_LIMITED' : 'UNREACHABLE')
+        : forbidden.some(f => !f.detail) ? 'FORBIDDEN'
+          : rateLimited.some(f => !f.detail) ? 'RATE_LIMITED' : 'UNREACHABLE')
       : 'OK';
 
-  // 一覧が取れていても詳細が 429 で落ちていれば、そのソースの結果は不完全。
+  // 一覧が取れていても詳細が 429 / 403 で落ちていれば、そのソースの結果は不完全。
   // **status だけ見ると OK に見えるので、別に持って md に出す**
   return {
     source: src, status, items: uniq.filter(it => it.name), fetched, notes, detailBudget,
     rateLimited: rateLimited.map(f => ({ url: f.url, detail: !!f.detail, attempts: f.attempts })),
+    forbidden: forbidden.map(f => ({ url: f.url, detail: !!f.detail })),
   };
 }
 
@@ -2136,21 +2159,34 @@ function mdEscape(s) {
 /**
  * この実行が**不完全かどうか**を1か所で決める。
  *
- * 429 は「そこに無い」ではなく「測れていない」なので、**1件でもあれば結果全体が不完全。**
+ * 429 は「そこに無い」ではなく「測れていない」、403 は「測ることを許されていない」。
+ * **どちらも 0件ではない**ので、1件でもあれば結果全体が不完全。
  * 件数を表の中に埋めると「取得失敗 N件」に潰れて意味が消えるので、
  * **呼び出し側は md の先頭に出すこと。**
  *
- * 戻りは `null`（完全）か `{ list, detail, total, urls }`。
+ * 戻りは `null`（完全）か `{ total, list, detail, urls, byReason }`。
+ * `total/list/detail/urls` は **429と403を合わせた数**（既存の呼び出し側の意味を保つ）。
+ * 内訳は `byReason.rateLimited` / `byReason.forbidden` を見る。
  */
 function incompleteNote(collectedList) {
   const all = [];
-  for (const c of collectedList) for (const r of c.rateLimited || []) all.push({ ...r, sourceId: c.source.id });
+  for (const c of collectedList) {
+    for (const r of c.rateLimited || []) all.push({ ...r, reason: 'RATE_LIMITED', sourceId: c.source.id });
+    for (const r of c.forbidden || []) all.push({ ...r, reason: 'FORBIDDEN', sourceId: c.source.id });
+  }
   if (!all.length) return null;
+  const count = f => ({
+    total: f.length,
+    list: f.filter(r => !r.detail).length,
+    detail: f.filter(r => r.detail).length,
+    urls: f,
+  });
   return {
-    total: all.length,
-    list: all.filter(r => !r.detail).length,
-    detail: all.filter(r => r.detail).length,
-    urls: all,
+    ...count(all),
+    byReason: {
+      rateLimited: count(all.filter(r => r.reason === 'RATE_LIMITED')),
+      forbidden: count(all.filter(r => r.reason === 'FORBIDDEN')),
+    },
   };
 }
 
@@ -2274,8 +2310,13 @@ function renderMd(ctx) {
   for (const c of collected) {
     const here = c.items.filter(i => i.address && inDistrict(i.address, ctx.district)).length;
     const notes = [c.source.note, c.source.pageCapNote, ...c.notes].filter(Boolean).join(' / ');
+    // **測れていない状態を「0」と読ませない。**件数の欄に数字を出すと、
+    // FORBIDDEN:0 / RATE_LIMITED:0 が「そのソースには無かった」に見える
+    const measured = c.status === 'OK';
+    const cnt = measured ? c.items.length : `**測れず**（${c.items.length}）`;
+    const hereCnt = measured ? here : '–';
     L.push(
-      `| ${c.source.layer} | ${mdEscape(c.source.label)} | ${c.status} | ${c.items.length} | ${here} | ${mdEscape(notes)} |`
+      `| ${c.source.layer} | ${mdEscape(c.source.label)} | ${c.status} | ${cnt} | ${hereCnt} | ${mdEscape(notes)} |`
     );
   }
   for (const nf of ctx.l1NotFound) {
@@ -3378,6 +3419,11 @@ if (require.main === module) {
 // （check-official-urls.js の DEAD と同じ型。ハードコードは必ず腐る。§18-3）
 // SELF_TEST / runSelfTest はオフラインの検証用（sweep はネットが要るが、判定は要らない）
 module.exports = { MUNI_SOURCES, PREF_SOURCES, SELF_TEST, runSelfTest, sweepNormalizeName };
+
+// 県ごとのソース定義を別ファイルに置くための足場（`chiba-sources.js` が使う）。
+// **同じ抽出規則を2か所に書かないために公開する**（§18-3）。
+// ここに足しても本体の挙動は変わらない（MUNI_SOURCES に混ぜるのは接続時）。
+module.exports.helpers = { jalan, napCamp, hinataSpot, cleanText, tidyAddress, stripTags };
 
 // テスト専用。**本体からは使わない。**答えが分かっている入力を通して
 // 判定が効いていることを確かめるため（§18-3）だけに公開している。
