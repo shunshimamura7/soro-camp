@@ -490,11 +490,27 @@ function applyMuniAliases(addr) {
  */
 function splitAddress(addr) {
   if (!addr) return null;
-  let a = String(addr).normalize('NFKC').replace(/\s+/g, '');
+  // **異体字は住所にも当てる（2026-08-15）。**
+  // `VARIANT_CHARS` は `sweepNormalizeName`（施設名）にしか当たっていなかったので、
+  // **`北杜市武川町柳沢` と `北杜市武川町柳澤` が別の地区キーになっていた**（実測 9件 / 3件）。
+  //
+  // **当てる場所を `districtKey` ではなく `splitAddress` にした理由:**
+  // `districtKey` だけ揃えてもキーの文字列が一致するだけで、`inDistrict` は
+  // `splitAddress` が返す `oaza` 同士を比べるので**項目はその地区に入らない**。
+  // 見た目だけ直って中身が直らないので、分解の時点で揃える。
+  let a = String(addr).normalize('NFKC').replace(/\s+/g, '').replace(/./gu, ch => VARIANT_CHARS[ch] || ch);
   a = a.replace(/^〒?\d{3}-?\d{4}/, '');
   a = applyMuniAliases(a);
-  const pref = (a.match(/^(北海道|東京都|京都府|大阪府|.{2,3}?県)/) || [])[1] || null;
-  let rest = pref ? a.slice(pref.length) : a;
+  // **都道府県が2回書かれた住所がある**（`山梨県山梨県南都留郡道志村5821-2` など実測5件）。
+  // 1回しか剥がさないと、残った県名が郡や市区町村に食い込んで
+  // `gun=山梨県南都留郡` `city=山梨県大月市` になり、**どの地区にも入らなくなる。**
+  // 先頭から繰り返し剥がす。
+  const PREF_RE = /^(北海道|東京都|京都府|大阪府|.{2,3}?県)/;
+  let rest = a, pref = null, pm;
+  while ((pm = PREF_RE.exec(rest))) {
+    if (!pref) pref = pm[1];
+    rest = rest.slice(pm[1].length);
+  }
   const gun = (rest.match(/^(.{1,6}?郡)/) || [])[1] || null;
   if (gun) rest = rest.slice(gun.length);
   const city = (rest.match(/^(.{1,8}?[市町村])/) || [])[1] || null;
