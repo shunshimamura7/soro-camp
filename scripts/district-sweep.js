@@ -1567,14 +1567,20 @@ const MUNI_SOURCES = {
  * ========================================================================== */
 
 /**
- * 1ソースぶんを取る。戻りは { source, status, items, fetched, notes }。
+ * 1ソースぶんを取る。戻りは { source, status, items, fetched, notes, detailBudget }。
  * items は { name, address|null, url|null }。
+ *
+ * `detailBudget` は `detailLimit` の打ち切り実績。**打ち切りは長らく `notes` の
+ * 日本語1行にしか残っておらず、集計に出せなかった。**消費側が人向けの文字列を
+ * 解析するのは §18-3 そのものなので、構造化した値で返す。
+ * `listDetail` 以外は詳細を踏まない実装なので `null`（0ではない。§18-3 の「出していない」）。
  */
 async function collectSource(src, opts) {
   const items = [];
   const notes = [];
   const fetched = [];
   let listOk = 0;
+  let detailBudget = null;
 
   for (const pageUrl of src.pages) {
     const res = await fetchPage(pageUrl, { useCache: opts.useCache, extraDelayMs: src.extraDelayMs || 0 });
@@ -1610,6 +1616,12 @@ async function collectSource(src, opts) {
   if (src.kind === 'listDetail') {
     let targets = uniq.filter(it => !it.address && it.url);
     const limit = src.detailLimit || DEFAULT_DETAIL_LIMIT;
+    detailBudget = {
+      limit,
+      targets: targets.length,                              // 打ち切る前の対象数
+      fetched: Math.min(targets.length, limit),
+      skipped: Math.max(0, targets.length - limit),
+    };
     if (targets.length > limit) {
       notes.push(`住所を取りに行く詳細ページを ${limit} 件で打ち切った（対象 ${targets.length} 件）。**打ち切った分はこの検査に載らない**`);
       targets = targets.slice(0, limit);
@@ -1651,7 +1663,7 @@ async function collectSource(src, opts) {
       ? (fetched.some(f => f.note === 'SKIPPED_ROBOTS') ? 'SKIPPED_ROBOTS' : 'UNREACHABLE')
       : 'OK';
 
-  return { source: src, status, items: uniq.filter(it => it.name), fetched, notes };
+  return { source: src, status, items: uniq.filter(it => it.name), fetched, notes, detailBudget };
 }
 
 /* ============================================================================
