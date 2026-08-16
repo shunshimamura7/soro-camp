@@ -1,11 +1,26 @@
 /**
- * **案C実装前の基準線を固定する。**実装後にこれと比べる。
+ * **案C実装前の基準線。**実装後にこれと比べる。
  *
- * **ネットを踏まない。**既存の `sweep-*.md` と `data/campgrounds.json` と
+ * **ネットを踏まない。**`sweep-*.md` と `data/campgrounds.json` と
  * 既存の監査 md から数字を集めるだけ。判定も実装も変えない。
  *
- *   node scripts/.baseline-before-planc.js
- *   → scripts/baseline-before-planc-2026-08-16.md
+ *   node scripts/.baseline-before-planc.js            # 検証（既定）
+ *   node scripts/.baseline-before-planc.js --freeze   # 凍結し直す（**明示的にのみ**）
+ *
+ * ## ★ 対象は「凍結した76本」に固定してある（2026-08-16）
+ *
+ * 以前は `sweep-*.md` を**その場のディレクトリから全部拾って**いた。
+ * これだと**新しい地区 md が1本増えるだけで基準線が動く。**実際に踏んだ:
+ * 「内」バグの確認で `--district` を1回走らせたら
+ * `sweep-榛原郡川根本町犬間長島公園.md` ができて **77地区・ORPHAN 48→49** になった。
+ *
+ * **案Cは 18本の `sweep-<市町村>.md` を新しく作る。**拾い方が「全部」のままだと、
+ * **実装した瞬間に基準線が案C後の数字に置き換わり、比較する相手が消える。**
+ *
+ * そこで **`.baseline-before-planc.json` に入っている76本の地区名を対象リストとして使う。**
+ * このファイルが**凍結の実体**で、スクリプトは既定ではそれを**読むだけ**。
+ * 増えた md は**無視する**（ドリフトにしない）。
+ * 凍結し直すのは `--freeze` を付けたときだけ。
  */
 const fs = require('fs');
 const path = require('path');
@@ -13,6 +28,8 @@ const { MUNI_SOURCES, _internal: I, sweepNormalizeName } = require('./district-s
 
 const SKIP = /^(all-districts|summary|control|control-vs-needsverify|l1-coverage|yamanashi-east|tsuru)/;
 const OUT = path.join(__dirname, 'baseline-before-planc-2026-08-16.md');
+const SNAP = path.join(__dirname, '.baseline-before-planc.json');
+const FREEZE = process.argv.includes('--freeze');
 
 /** sweep md から MISSING/IN_DATA/ORPHAN を読む */
 function readSweep(file) {
@@ -28,8 +45,31 @@ function readSweep(file) {
   return { missing, conf, orphan, inData, sum };
 }
 
-const files = fs.readdirSync(__dirname).filter(f => /^sweep-.+\.md$/.test(f) && !SKIP.test(f.replace(/^sweep-|\.md$/g, '')));
-const rows = files.map(f => ({ district: f.replace(/^sweep-|\.md$/g, ''), ...readSweep(f) })).sort((a, b) => a.district.localeCompare(b.district, 'ja'));
+/** 凍結スナップショット（あれば）。**これが対象リストの実体。** */
+const snap = fs.existsSync(SNAP) ? JSON.parse(fs.readFileSync(SNAP, 'utf8')) : null;
+
+/**
+ * 対象の地区名を決める。
+ *
+ * - 凍結済み（既定） … スナップショットの76本**だけ**を見る。**増えた md は無視する**
+ * - `--freeze`      … いまディレクトリにある sweep-*.md から**作り直す**
+ */
+let districtNames;
+if (snap && !FREEZE) {
+  districtNames = snap.rows.map(r => r.district);
+} else {
+  districtNames = fs.readdirSync(__dirname)
+    .filter(f => /^sweep-.+\.md$/.test(f) && !SKIP.test(f.replace(/^sweep-|\.md$/g, '')))
+    .map(f => f.replace(/^sweep-|\.md$/g, ''));
+}
+
+/** 凍結対象なのにファイルが消えている＝これはドリフト（無視しない） */
+const gone = districtNames.filter(d => !fs.existsSync(path.join(__dirname, `sweep-${d}.md`)));
+
+const rows = districtNames
+  .filter(d => !gone.includes(d))
+  .map(d => ({ district: d, ...readSweep(`sweep-${d}.md`) }))
+  .sort((a, b) => a.district.localeCompare(b.district, 'ja'));
 
 const totMissing = rows.reduce((a, r) => a + r.missing.length, 0);
 const totOrphan = rows.reduce((a, r) => a + (r.sum.ORPHAN ?? r.orphan.length), 0);
@@ -139,22 +179,57 @@ L.push('- MISSING のユニークが **' + uniq.size + ' から大きく減ら�
 L.push('- **126件**が0に近づく（地区がレコード由来でなくなるため）');
 L.push('- 大字検査が**5件前後**出る（§19-5。判定には使わない）');
 
-fs.writeFileSync(OUT, L.join('\n') + '\n', 'utf8');
-fs.writeFileSync(path.join(__dirname, '.baseline-before-planc.json'),
-  JSON.stringify({ rows: rows.map(r => ({ district: r.district, missing: r.missing.length, names: r.missing, inData: r.sum.IN_DATA ?? r.inData.length, orphan: r.sum.ORPHAN ?? r.orphan.length })), totMissing, uniq: uniq.size, totIn, totOrphan, confTot, overlaps }, null, 1), 'utf8');
+const nextSnap = {
+  rows: rows.map(r => ({ district: r.district, missing: r.missing.length, names: r.missing, inData: r.sum.IN_DATA ?? r.inData.length, orphan: r.sum.ORPHAN ?? r.orphan.length })),
+  totMissing, uniq: uniq.size, totIn, totOrphan, confTot, overlaps,
+};
+
+// **md とスナップショットを書き換えるのは `--freeze` のときだけ。**
+// 既定は読むだけ。案C実装後にうっかり走らせても、比較する相手が消えない
+if (FREEZE || !snap) {
+  fs.writeFileSync(OUT, L.join('\n') + '\n', 'utf8');
+  fs.writeFileSync(SNAP, JSON.stringify(nextSnap, null, 1), 'utf8');
+  console.log(snap ? '**凍結し直した**（--freeze）' : '初回なので凍結した');
+}
 
 console.log(`地区 ${rows.length} / MISSING 延べ ${totMissing} / ユニーク ${uniq.size} / IN_DATA ${totIn} / ORPHAN ${totOrphan}`);
 console.log(`包含ペア ${overlaps.length} 組 / confidence HIGH ${confTot.HIGH || 0} MID ${confTot.MID || 0} LOW ${confTot.LOW || 0}`);
-console.log('→ ' + path.relative(path.join(__dirname, '..'), OUT));
-// **基準線が汚れていないかを自分で確かめる。**
-// 2026-08-16、`--district` を1本走らせただけで77地区になり ORPHAN が 48→49 に動いた。
-// 凍結した76本に新しい sweep md が混ざると、比較の土台が静かにずれる。
-const EXPECT = { districts: 76, missing: 214, uniq: 184, inData: 103, orphan: 48, pairs: 7 };
-const got = { districts: rows.length, missing: totMissing, uniq: uniq.size, inData: totIn, orphan: totOrphan, pairs: overlaps.length };
-const drift = Object.keys(EXPECT).filter(k => EXPECT[k] !== got[k]);
-if (drift.length) {
-  console.error('\n⚠ **基準線がずれている。**案C実装前の凍結値と違う:');
-  drift.forEach(k => console.error(`   ${k}: 期待 ${EXPECT[k]} / 実際 ${got[k]}`));
-  console.error('   sweep-*.md が増減していないか確認すること（検証用に走らせた地区 md が残っていないか）。');
-  process.exitCode = 1;
+if (FREEZE || !snap) console.log('→ ' + path.relative(path.join(__dirname, '..'), OUT) + ' を書いた');
+else console.log('（検証モード。**md もスナップショットも書いていない**）');
+/* ── ドリフト検出 ──────────────────────────────────────
+ *
+ * **鳴らしたいもの**: 凍結した76本の**中身が変わった** / **消えた**
+ * **鳴らしたくないもの**: 案Cが作る18本のような**新しい md が増えただけ**
+ *
+ * 前者は比較の土台が壊れたということ。後者は正常な前進。
+ */
+if (snap && !FREEZE) {
+  const drift = [];
+  if (gone.length) drift.push(`凍結した地区 md が消えている: ${gone.join(' / ')}`);
+
+  const was = new Map(snap.rows.map(r => [r.district, r]));
+  for (const r of rows) {
+    const w = was.get(r.district);
+    if (!w) continue;
+    const now = { missing: r.missing.length, inData: r.sum.IN_DATA ?? r.inData.length, orphan: r.sum.ORPHAN ?? r.orphan.length };
+    for (const k of ['missing', 'inData', 'orphan']) {
+      if (w[k] !== now[k]) drift.push(`${r.district} の ${k}: 凍結 ${w[k]} / 実際 ${now[k]}`);
+    }
+  }
+  for (const [k, label] of [['totMissing', 'MISSING 延べ'], ['totIn', 'IN_DATA'], ['totOrphan', 'ORPHAN']]) {
+    const now = { totMissing, totIn, totOrphan }[k];
+    if (snap[k] !== now) drift.push(`${label}: 凍結 ${snap[k]} / 実際 ${now}`);
+  }
+  if (snap.uniq !== uniq.size) drift.push(`ユニーク: 凍結 ${snap.uniq} / 実際 ${uniq.size}`);
+  if (snap.overlaps.length !== overlaps.length) drift.push(`包含ペア: 凍結 ${snap.overlaps.length} / 実際 ${overlaps.length}`);
+
+  if (drift.length) {
+    console.error('\n⚠ **基準線がずれている。**案C実装前の凍結値と中身が違う:');
+    drift.forEach(d => console.error('   ' + d));
+    console.error('\n   **凍結76本のどれかが書き換わっている。**案Cの比較の土台が壊れているので、');
+    console.error('   直してから進むこと。意図して凍結し直すなら --freeze。');
+    process.exitCode = 1;
+  } else {
+    console.log(`凍結76本と一致（新しく増えた sweep md は無視した）`);
+  }
 }
