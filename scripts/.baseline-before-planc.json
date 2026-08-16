@@ -7,28 +7,38 @@
     "UMIHOTEL ANNEX"
    ],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW"
+   ],
+   "sha256": "37dc11d234700a36"
   },
   {
    "district": "伊東市池",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "825fd82689242cc9"
   },
   {
    "district": "伊東市湯川",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "726c1037e83ef686"
   },
   {
    "district": "伊豆市修善寺",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "c7acc32439f37132"
   },
   {
    "district": "伊豆市上船原",
@@ -37,21 +47,29 @@
     "天城ふるさと広場キャンプ場"
    ],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "MID"
+   ],
+   "sha256": "5b0ff75a11d78b58"
   },
   {
    "district": "伊豆市大沢",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "a18b70fd46380106"
   },
   {
    "district": "伊豆市大平",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "32e73016392b24d2"
   },
   {
    "district": "伊豆市湯ヶ島",
@@ -60,35 +78,47 @@
     "かたつむり＆ファーマーズヒル"
    ],
    "inData": 0,
-   "orphan": 2
+   "orphan": 2,
+   "conf": [
+    "LOW"
+   ],
+   "sha256": "1fa4b5a0dcd8bba6"
   },
   {
    "district": "伊豆市八木沢",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "dcf637091266a81e"
   },
   {
    "district": "厚木市七沢",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 2
+   "orphan": 2,
+   "conf": [],
+   "sha256": "a70d8a66ecc0a83f"
   },
   {
    "district": "山梨市牧丘町牧平",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "6c5557fe60459717"
   },
   {
    "district": "山梨市矢坪",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "aeb84cf63200b257"
   },
   {
    "district": "上野原市",
@@ -102,7 +132,16 @@
     "平野田休養村キャンプ場"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "c7452ca4651f8dd9"
   },
   {
    "district": "榛原郡川根本町奥泉",
@@ -111,56 +150,74 @@
     "時之栖 もりのくに"
    ],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW"
+   ],
+   "sha256": "3e644f17ac27f3d4"
   },
   {
    "district": "榛原郡川根本町下泉",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "dec7e586fbbf519a"
   },
   {
    "district": "榛原郡川根本町久野脇",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "f61a1f58c82f7b74"
   },
   {
    "district": "榛原郡川根本町犬間長嶋公園敷",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "7d758e33cc894e86"
   },
   {
    "district": "榛原郡川根本町上長尾",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "dbef40acebf39b9a"
   },
   {
    "district": "榛原郡川根本町千頭",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 2
+   "orphan": 2,
+   "conf": [],
+   "sha256": "2c9685bdb56e1042"
   },
   {
    "district": "榛原郡川根本町梅地",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "8ef106cf291e0781"
   },
   {
    "district": "静岡市葵区新間",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "ef3ad435eae73843"
   },
   {
    "district": "静岡市葵区田代",
@@ -169,7 +226,11 @@
     "赤石小屋"
    ],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW"
+   ],
+   "sha256": "e3eff895c94ab033"
   },
   {
    "district": "静岡市清水区",
@@ -181,7 +242,14 @@
     "三保ハーバルキャンプ場"
    ],
    "inData": 2,
-   "orphan": 2
+   "orphan": 2,
+   "conf": [
+    "MID",
+    "MID",
+    "MID",
+    "LOW"
+   ],
+   "sha256": "9da8af9dc8308c93"
   },
   {
    "district": "静岡市清水区西里",
@@ -190,49 +258,65 @@
     "清水森林公園 黒川キャンプ場"
    ],
    "inData": 1,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "MID"
+   ],
+   "sha256": "8119a1e0aa0ed8c6"
   },
   {
    "district": "静岡市清水区由比入山",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "383a29bf1dc96b5d"
   },
   {
    "district": "相模原市中央区水郷田名",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "7cb84d06f9f9e10c"
   },
   {
    "district": "相模原市緑区三ヶ木",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "cc5cff0c98661684"
   },
   {
    "district": "相模原市緑区若柳",
    "missing": 0,
    "names": [],
    "inData": 2,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "97f328077a71925e"
   },
   {
    "district": "相模原市緑区小倉",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "df918ea12f6d2d32"
   },
   {
    "district": "相模原市緑区寸沢嵐",
    "missing": 0,
    "names": [],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "c8f6db2384f083bd"
   },
   {
    "district": "相模原市緑区青根",
@@ -247,7 +331,17 @@
     "いやしの湯・青根緑の休暇村センター"
    ],
    "inData": 3,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "MID",
+    "LOW"
+   ],
+   "sha256": "0f72a1654eff38e1"
   },
   {
    "district": "相模原市緑区青野原",
@@ -256,21 +350,29 @@
     "青野原オートキャンプ場組合"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "HIGH"
+   ],
+   "sha256": "1d9543b63a2ed576"
   },
   {
    "district": "相模原市緑区大島",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "dbcf9499d5bc6693"
   },
   {
    "district": "相模原市緑区長者原",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "f75adfdd5c3b70fe"
   },
   {
    "district": "相模原市緑区牧野",
@@ -281,7 +383,13 @@
     "藤野倶楽部"
    ],
    "inData": 1,
-   "orphan": 2
+   "orphan": 2,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "HIGH"
+   ],
+   "sha256": "54cdd46651c6c845"
   },
   {
    "district": "相模原市緑区名倉",
@@ -290,7 +398,11 @@
     "遊魚園"
    ],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW"
+   ],
+   "sha256": "8f9cd2eb0bdcc21f"
   },
   {
    "district": "足柄上郡山北町玄倉",
@@ -300,14 +412,21 @@
     "【閉鎖中】ウッディハウス玄倉"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "e84af90592b07da4"
   },
   {
    "district": "足柄上郡山北町神縄",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "d184cc32734d601d"
   },
   {
    "district": "足柄上郡山北町中川",
@@ -323,14 +442,27 @@
     "KINOBA"
    ],
    "inData": 5,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "MID",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "000ca39bf21b03e3"
   },
   {
    "district": "足柄上郡山北町虫沢",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "c9edfd71ddcb9296"
   },
   {
    "district": "足柄上郡山北町湯触",
@@ -339,7 +471,11 @@
     "河内川ふれあいビレッジ"
    ],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "LOW"
+   ],
+   "sha256": "ac267e1b4b52ef2b"
   },
   {
    "district": "足柄上郡松田町寄",
@@ -352,7 +488,15 @@
     "蜂花苑キャンプ場(やどろぎ荘・ミロクキャンプ場)"
    ],
    "inData": 1,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "MID",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "c5a56b6617c708db"
   },
   {
    "district": "大月市",
@@ -361,7 +505,11 @@
     "月尾根自然の森"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "HIGH"
+   ],
+   "sha256": "0de323379abf4b29"
   },
   {
    "district": "都留市",
@@ -378,7 +526,19 @@
     "せせらぎ荘キャンプ場"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "MID",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "930f35539cce2c6a"
   },
   {
    "district": "南巨摩郡南部町",
@@ -388,7 +548,12 @@
     "福士川根熊山荘ファミリーオートキャンプ場"
    ],
    "inData": 4,
-   "orphan": 2
+   "orphan": 2,
+   "conf": [
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "600b4b0ed8bb0753"
   },
   {
    "district": "南巨摩郡南部町福士",
@@ -398,7 +563,12 @@
     "福士川根熊山荘ファミリーオートキャンプ場"
    ],
    "inData": 4,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "02580e4140c885dd"
   },
   {
    "district": "南都留郡山中湖村山中",
@@ -412,7 +582,16 @@
     "moss camp field"
    ],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "MID"
+   ],
+   "sha256": "7bb5a105105bd06f"
   },
   {
    "district": "南都留郡山中湖村平野",
@@ -444,7 +623,34 @@
     "小田急山中湖フォレストコテージ"
    ],
    "inData": 4,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "MID",
+    "MID",
+    "MID",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "8bd2524bd1fb5d30"
   },
   {
    "district": "南都留郡道志村",
@@ -503,7 +709,61 @@
     "スカイバレーキャンプ場"
    ],
    "inData": 15,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "MID",
+    "MID",
+    "MID",
+    "MID",
+    "MID",
+    "MID",
+    "MID",
+    "MID",
+    "MID",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "67b50765903ad986"
   },
   {
    "district": "南都留郡道志村長又",
@@ -514,14 +774,22 @@
     "山伏オートキャンプ場"
    ],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "MID",
+    "MID",
+    "LOW"
+   ],
+   "sha256": "e8a563eeb4040506"
   },
   {
    "district": "南都留郡道志村馬場",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "1f4c2d070778a62d"
   },
   {
    "district": "南都留郡富士河口湖町河口山宮",
@@ -533,7 +801,14 @@
     "河口湖コテージMINAMI"
    ],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "88d7d1b5d361fac4"
   },
   {
    "district": "南都留郡富士河口湖町小立",
@@ -548,7 +823,17 @@
     "ヴィラ メイクイーン貸別荘"
    ],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "MID",
+    "MID",
+    "MID",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "bb362f2a1bde945d"
   },
   {
    "district": "南都留郡富士河口湖町精進",
@@ -559,7 +844,13 @@
     "精進湖自由キャンプ場"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "LOW"
+   ],
+   "sha256": "51d150ac9a665752"
   },
   {
    "district": "南都留郡富士河口湖町西湖",
@@ -583,7 +874,26 @@
     "キャンピングリゾートＷＡＮ"
    ],
    "inData": 4,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "b6efda30ec14553f"
   },
   {
    "district": "南都留郡富士河口湖町船津",
@@ -596,7 +906,15 @@
     "創造の森オートキャンプ場"
    ],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "HIGH",
+    "MID",
+    "LOW"
+   ],
+   "sha256": "c718a5e8e364eb19"
   },
   {
    "district": "南都留郡富士河口湖町大石",
@@ -608,14 +926,23 @@
     "明光山キャンプ場【H27/3現在閉鎖中】"
    ],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "68b7b3bf11001c7b"
   },
   {
    "district": "南都留郡富士河口湖町富士ヶ嶺",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "2a28715eb45b68bd"
   },
   {
    "district": "南都留郡富士河口湖町本栖",
@@ -625,7 +952,12 @@
     "本栖湖スポーツセンター（本栖湖 SUMIKA CAMP FIELD）"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "MID",
+    "LOW"
+   ],
+   "sha256": "494eecbb5a7e6c19"
   },
   {
    "district": "南都留郡富士河口湖町本栖大久保",
@@ -635,21 +967,30 @@
     "本栖湖スポーツセンター（本栖湖 SUMIKA CAMP FIELD）"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "MID",
+    "LOW"
+   ],
+   "sha256": "f0e2772dce4e6853"
   },
   {
    "district": "富士宮市粟倉",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "7c4f751c7650fff5"
   },
   {
    "district": "富士宮市原",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "b34eee57fa8f64e8"
   },
   {
    "district": "富士宮市根原",
@@ -659,14 +1000,21 @@
     "スタイルキャビンあさぎり"
    ],
    "inData": 3,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "61958f14ea89b1fd"
   },
   {
    "district": "富士宮市佐折",
    "missing": 0,
    "names": [],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "b5e5a101f6e7ab2a"
   },
   {
    "district": "富士宮市上井出",
@@ -679,7 +1027,15 @@
     "表富士キャンピング場"
    ],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "MID",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "35137dff9a30f876"
   },
   {
    "district": "富士宮市猪之頭",
@@ -694,7 +1050,17 @@
     "ラ・フォンテーヌ・バカンス田貫橋"
    ],
    "inData": 2,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [
+    "HIGH",
+    "HIGH",
+    "MID",
+    "MID",
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "1292d273d63274cd"
   },
   {
    "district": "富士宮市麓",
@@ -704,7 +1070,12 @@
     "【閉鎖中】朝霧高原ふもとオートキャンプ場"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "HIGH",
+    "LOW"
+   ],
+   "sha256": "e9d4ab398a190778"
   },
   {
    "district": "北杜市高根町清里",
@@ -718,7 +1089,16 @@
     "清泉寮自然学校キャンプ場"
    ],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "MID",
+    "MID",
+    "MID",
+    "MID",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "e95fc7e493eb30e5"
   },
   {
    "district": "北杜市高根町浅川水頭",
@@ -727,7 +1107,11 @@
     "清里中央オートキャンプ場"
    ],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW"
+   ],
+   "sha256": "925cd2b1221698b9"
   },
   {
    "district": "北杜市小淵沢町",
@@ -736,7 +1120,11 @@
     "PAWS GROUND"
    ],
    "inData": 1,
-   "orphan": 2
+   "orphan": 2,
+   "conf": [
+    "MID"
+   ],
+   "sha256": "02c2ef8b60362435"
   },
   {
    "district": "北杜市小淵沢町上笹尾",
@@ -745,14 +1133,20 @@
     "PAWS GROUND"
    ],
    "inData": 1,
-   "orphan": 2
+   "orphan": 2,
+   "conf": [
+    "MID"
+   ],
+   "sha256": "dbabcfa42cab7318"
   },
   {
    "district": "北杜市白州町上教来石平久保",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "c52f657cb9c7b6e2"
   },
   {
    "district": "北杜市白州町大坊",
@@ -761,7 +1155,11 @@
     "ACNオートリゾートパーク・ビッグランド"
    ],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW"
+   ],
+   "sha256": "8996e637a4c12f2f"
   },
   {
    "district": "北杜市白州町白須",
@@ -772,21 +1170,31 @@
     "AIRSTREAM RESORT®︎ HAKUSHU BASE"
    ],
    "inData": 2,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [
+    "LOW",
+    "LOW",
+    "LOW"
+   ],
+   "sha256": "b77cd6b775c5a6d1"
   },
   {
    "district": "北杜市武川町山高",
    "missing": 0,
    "names": [],
    "inData": 0,
-   "orphan": 1
+   "orphan": 1,
+   "conf": [],
+   "sha256": "5ecc4a9ef41f6809"
   },
   {
    "district": "北杜市明野町浅尾",
    "missing": 0,
    "names": [],
    "inData": 1,
-   "orphan": 0
+   "orphan": 0,
+   "conf": [],
+   "sha256": "2213c662d404c3e8"
   }
  ],
  "totMissing": 214,

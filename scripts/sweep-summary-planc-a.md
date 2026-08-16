@@ -1,6 +1,6 @@
 # 地区スイープ 全体まとめ（needsVerify 14件の所在地区）
 
-実行: 2026-08-16 13:20:01　/　`node scripts/district-sweep.js --all`
+実行: 2026-08-16 14:08:57　/　`node scripts/district-sweep.js --all`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 
