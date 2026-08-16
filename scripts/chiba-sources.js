@@ -1,19 +1,28 @@
 /**
- * 千葉県のソース定義。**まだ sweep に接続していない。**
+ * 千葉県のソース定義。**2026-08-16 に sweep へ接続した。**
  *
- * ## なぜ定義だけで止めてあるか
+ * ## なぜ長く定義だけで止めてあったか（経緯。消さないこと）
  *
- * 地区の作り方（19-5 の 案A / 案B / 案C）が未決だから。
- * いまの district-sweep は**データにレコードがある大字しか地区にしない**ので、
- * レコード0件の大字は測定対象にすらならない（既存3県で126件が落ちている穴）。
- * **千葉は `data/campgrounds.json` にレコードが0件**（2026-08-15 実測。
- * 全188件の内訳は 山梨72 / 静岡61 / 神奈川55）なので、いま走らせると
- * **全地区がこの穴に落ちる。**同じ穴を千葉にもう一度掘ることになる。
+ * 地区の作り方（19-5 の 案A / 案B / 案C）が未決だったから。
+ * 旧 district-sweep は**データにレコードがある大字しか地区にしなかった**ので、
+ * レコード0件の大字は測定対象にすらならなかった（既存3県で126件が落ちていた穴）。
+ * **千葉は `data/campgrounds.json` にレコードが0件**（2026-08-16 現在も0件。
+ * 全188件の内訳は 山梨72 / 静岡61 / 神奈川55）なので、その頃に走らせると
+ * **全地区がこの穴に落ちた。**同じ穴を千葉にもう一度掘ることになる。
  *
- * ソース定義そのものは案の選択と独立なので、先に作って寝かせておく。
- * 接続は `district-sweep.js` の `MUNI_SOURCES` に
- * `Object.assign(MUNI_SOURCES, require('./chiba-sources').MUNI_SOURCES_CHIBA)` の1行。
- * **案Cを決めるまでこの1行を書かないこと。**
+ * **案Cで地区は `MUNI_SOURCES` のキー由来になり、その前提が消えた。**
+ * 接続は `district-sweep.js` の `MUNI_SOURCES` 定義の直後の1行:
+ *
+ *   Object.assign(MUNI_SOURCES, require('./chiba-sources.js').chibaMuniSources({ jalan, napCamp }));
+ *
+ * **接続は定義の追加であって実行ではない。**`--all` の対象が 18 → 26 に増えるだけで、
+ * 既存18市区町村のソースは1本も変わらない（`.check-chiba-connect.js` で実測）。
+ *
+ * ## ★ 千葉だけ層が薄い
+ *
+ * 既存3県は `PREF_SOURCES` に県単位の L3（キャンナビ・ウォーカープラス）が入っているが、
+ * **千葉には無い。**L1 + なっぷ + じゃらんだけ。
+ * **MISSING が少なく出ても「掲載漏れが少ない」ではなく「見ている層が少ない」。**
  *
  * ## この県で新しいこと（既存18市町村には無かった型）
  *
@@ -28,9 +37,34 @@
 
 'use strict';
 
-const { helpers, _internal } = require('./district-sweep.js');
-const { banchiKey, splitAddress, districtKey } = _internal;
-const { jalan, napCamp, cleanText, tidyAddress, stripTags } = helpers;
+/* ── ★ 循環参照を避ける取り方（2026-08-16、接続にあたって変えた）─────────
+ *
+ * このファイルは `district-sweep.js` のヘルパを使い、
+ * 接続後は `district-sweep.js` がこのファイルを require する。**相互参照になる。**
+ *
+ * Node は循環を検出しても止めず、**まだ組み立て途中の `module.exports`（空のオブジェクト）**
+ * を返す。`district-sweep.js` は `module.exports` をファイル末尾で組み立てるので、
+ * **上から素直に分割代入すると `helpers` が undefined で落ちる。**
+ *
+ * 分けて対処する:
+ *
+ *   - `list` / `address` の中で使うもの（`stripTags` 等）… **遅延**。
+ *     取得時にしか呼ばれないので、そのときには揃っている
+ *   - `MUNI_SOURCES_CHIBA` を組み立てるのに要るもの（`jalan` / `napCamp`）… **注入**。
+ *     定義時に必要なので、`district-sweep.js` 側から渡してもらう（`chibaMuniSources()`）
+ *
+ * 単体実行（`node scripts/chiba-sources.js`）でも動く。そのときは
+ * `district-sweep.js` が先に完全に読み込まれるので、遅延も注入も普通に解決する。
+ * ------------------------------------------------------------------------ */
+let _sweep = null;
+const SW = () => (_sweep || (_sweep = require('./district-sweep.js')));
+
+const stripTags = (...a) => SW().helpers.stripTags(...a);
+const cleanText = (...a) => SW().helpers.cleanText(...a);
+const tidyAddress = (...a) => SW().helpers.tidyAddress(...a);
+const banchiKey = (...a) => SW()._internal.banchiKey(...a);
+const splitAddress = (...a) => SW()._internal.splitAddress(...a);
+const districtKey = (...a) => SW()._internal.districtKey(...a);
 
 /* ============================================================================
  * L1 — 千葉県公立社会体育施設一覧（キャンプ場）
@@ -342,7 +376,21 @@ const SRC_KIMITSU_CITY = {
 /** 県の台帳は1本で14市町村にまたがるので、各市町村に同じ定義を配る。 */
 const PREF_L1 = SRC_CHIBA_PREF_SPORTS;
 
-const MUNI_SOURCES_CHIBA = {
+/**
+ * 千葉の市町村ソースを組み立てる。
+ *
+ * **引数で受け取るのは循環参照を避けるため**（上の注釈）。
+ * `district-sweep.js` が `MUNI_SOURCES` を定義した直後に呼ぶ。
+ *
+ *   Object.assign(MUNI_SOURCES, chibaMuniSources({ jalan, napCamp }));
+ *
+ * 引数を省くと `district-sweep.js` から取る（単体実行・テスト用）。
+ */
+let _chibaMuni = null;
+function chibaMuniSources(injected) {
+  if (_chibaMuni) return _chibaMuni;
+  const { jalan, napCamp } = injected || SW().helpers;
+  _chibaMuni = {
   南房総市: {
     pref: '千葉',
     sources: [
@@ -458,7 +506,9 @@ const MUNI_SOURCES_CHIBA = {
       },
     ],
   },
-};
+  };
+  return _chibaMuni;
+}
 
 /* ============================================================================
  * オフライン自己検査
@@ -580,7 +630,9 @@ function runChibaSelfTest() {
 }
 
 module.exports = {
-  MUNI_SOURCES_CHIBA,
+  chibaMuniSources,
+  /** @deprecated 互換のため。接続側は chibaMuniSources() を使う */
+  get MUNI_SOURCES_CHIBA() { return chibaMuniSources(); },
   SRC_CHIBA_PREF_SPORTS,
   SRC_MINAMIBOSO_KANKO,
   SRC_KIMITSU_CITY,
@@ -595,6 +647,6 @@ if (require.main === module) {
     fails.forEach(f => console.log('  ✗ ' + f));
     process.exitCode = 1;
   } else {
-    console.log('自己検査 OK（千葉のソース定義。**sweep には未接続**）');
+    console.log('自己検査 OK（千葉のソース定義。**sweep に接続済み**。走らせるのは --district で別途）');
   }
 }
