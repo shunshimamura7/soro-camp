@@ -8,8 +8,16 @@
  *
  * そこで**実在側を先に作って、データ側と双方向に突き合わせる。**
  *
- *   node scripts/district-sweep.js --district "相模原市緑区牧野"
- *   node scripts/district-sweep.js --all          # needsVerify 14件の所在地区をまとめて
+ *   node scripts/district-sweep.js --district "相模原市"
+ *   node scripts/district-sweep.js --all          # MUNI_SOURCES 登録済みの18市区町村
+ *
+ * ## 地区の粒度（★2026-08-16 に変えた・案C）
+ *
+ * 地区は**市区町村単位**。以前は大字単位（76地区）だった。
+ * 大字単位だと `麓` と `麓朝霧` が別地区になり（§1-1 の包含問題）、
+ * さらに `--all` が **needsVerify の立ったレコードの所在大字**だけを回していたため、
+ * 「データに無いものを探す」検査の対象が**データによって決まる**という循環があった（§19-5）。
+ * 大字は判定から外し、**突合後の検査**としてだけ使う（`oazaCheck`）。
  *   node scripts/district-sweep.js --district "..." --no-cache
  *   node scripts/district-sweep.js --list-districts
  *
@@ -1942,6 +1950,16 @@ function mergeItems(collected, district) {
     bucket.aliases.add(item.name);
     if (item.address && !bucket.addresses.includes(item.address)) bucket.addresses.push(item.address);
     bucket.hits.push({ sourceId: src.id, layer: src.layer, label: src.label, url: item.url, address: item.address || null });
+    // 案C ステップ1: 「市区町村までは取れるが大字が取れない」項目に印を付ける。
+    // 大字単位の地区では、この住所は **どの地区にも入れず落ちていた**（実測146件）。
+    // 市町村単位にすると突合の対象に入るので、**どこに落ちたかの内訳を出せるようにする**。
+    // 内訳が無いと「MISSING が増えた」で終わり、増えた分の出どころを説明できない。
+    if (item.address) {
+      const p = splitAddress(item.address);
+      if (p && p.city && !p.oaza) {
+        bucket.noOaza.push({ name: item.name, address: item.address, sourceId: src.id });
+      }
+    }
   };
 
   for (const { source: src, items } of collected) {
@@ -1965,7 +1983,7 @@ function mergeItems(collected, district) {
         return theirs.length === 0 || theirs.includes(myOaza);
       });
       if (!bucket) {
-        bucket = { norms: new Set(), aliases: new Set(), addresses: [], hits: [] };
+        bucket = { norms: new Set(), aliases: new Set(), addresses: [], hits: [], noOaza: [] };
         merged.push(bucket);
       }
       bucket.norms.add(norm);
@@ -2035,6 +2053,88 @@ function classify(merged, records, district) {
     results.push({ kind: 'ORPHAN', bucket: null, record: r });
   }
   return { results, inData };
+}
+
+/* ============================================================================
+ * 6-4. 大字検査（案C ステップ2）— **判定には使わない**
+ *
+ * 地区が市町村単位になると、大字の制約が外れて
+ * **名前だけで市内のどのレコードにも当たれるようになる。**
+ * §19-5 の実測では、新しく出た誤突合5件のうち3件が案C自身が作った/残したものだった。
+ *
+ * ## これは「もう一度大字単位でスイープすること」ではない
+ *
+ * 大字単位でもう一度回すと、§1-1 の包含問題（`麓` と `麓朝霧` が別地区になる）が
+ * **検査側に復活する。**そうではなく、
+ *
+ *   **突合が成立した (ソース項目, レコード) の組だけ**を後から見て、
+ *   ソース側の住所の大字とレコード側の住所の大字を比べる。
+ *
+ * 取りに行くページは1枚も増えない。地区の切り方にも触らない。
+ *
+ * ## 出力の3分類
+ *
+ *   一致        大字が同じ。md には出さない
+ *   包含        `麓` と `麓朝霧` のような前方一致。**粒度の違いで、別施設の根拠にならない**
+ *   不一致      大字が別。**誤突合の疑い**（ペンギン村(猪之頭) → `eichinomori`(根原) の型）
+ *   検査対象外  どちらかの大字が取れない。`nameOnly` のソースはここに落ちる
+ *
+ * ## ★ 検査に出なかったことを「正しい」の根拠に使わない
+ *
+ * 住所を持たないソース（`nameOnly`）で当たった突合は、**この検査を素通りする。**
+ * 「不一致0件」は「誤突合が無い」ではなく「**比べられた分には不一致が無かった**」。
+ * だから md には必ず検査対象外の件数を併記する。
+ * ========================================================================== */
+
+function oazaOfAddr(a) {
+  const p = a ? splitAddress(a) : null;
+  return p && p.oaza ? p.oaza : null;
+}
+
+function oazaCheck(results) {
+  const rows = [];
+  for (const r of results) {
+    if (r.kind !== 'IN_DATA' || !r.record || !r.bucket) continue;
+    const recOaza = oazaOfAddr(r.record.address);
+    const srcOazas = [...new Set(r.bucket.addresses.map(oazaOfAddr).filter(Boolean))];
+    const base = {
+      id: r.record.id, recordName: r.record.name, recordAddress: r.record.address || null,
+      sourceName: r.bucket.name, sourceAddresses: r.bucket.addresses.slice(),
+      matchedBy: r.matchedBy || '名前', recOaza, srcOazas,
+    };
+    if (!recOaza || !srcOazas.length) {
+      rows.push({ ...base, verdict: '検査対象外' });
+      continue;
+    }
+    if (srcOazas.includes(recOaza)) continue;                       // 一致。出さない
+    const contained = srcOazas.some(o => o.startsWith(recOaza) || recOaza.startsWith(o));
+    rows.push({ ...base, verdict: contained ? '包含' : '不一致' });
+  }
+  return rows;
+}
+
+/**
+ * 「大字が取れないソース項目」がどこに落ちたかの内訳（案C ステップ1）。
+ *
+ * 大字単位の地区では **`inDistrict` が必ず false になって落ちていた**群。
+ * 市町村単位にすると入ってくるので、MISSING が増える。
+ * **その増分がここから来ていることを、数字で言えるようにするための節。**
+ */
+function noOazaBreakdown(merged, results) {
+  const kindOf = new Map();
+  for (const r of results) if (r.bucket) kindOf.set(r.bucket, r.kind);
+
+  const rows = [];
+  for (const b of merged) {
+    if (!b.noOaza || !b.noOaza.length) continue;
+    const where = !b.addressKnown ? 'b1（バケットに住所なし）'
+      : !b.inDistrict ? 'b2（地区外）'
+        : kindOf.get(b) || '（判定に出ていない）';
+    for (const it of b.noOaza) rows.push({ ...it, where, bucketName: b.name || [...b.aliases][0] || '' });
+  }
+  const counts = {};
+  for (const r of rows) counts[r.where] = (counts[r.where] || 0) + 1;
+  return { rows, counts, total: rows.length };
 }
 
 /* ============================================================================
@@ -2144,11 +2244,25 @@ function orphanTrustable(coverage) {
  * そのときに FAIL するのは検査として正しい挙動。
  * ========================================================================== */
 
+const MAKINO_SELF_TEST = {
+  real: ['亀見橋バカンス村', '藤野芸術の家'],
+  absent: ['かぶと虫の森キャンプ場', '奥牧野キャンプ場'],
+};
+
 const SELF_TEST = {
-  '相模原市緑区牧野': {
-    real: ['亀見橋バカンス村', '藤野芸術の家'],
-    absent: ['かぶと虫の森キャンプ場', '奥牧野キャンプ場'],
-  },
+  // ★ 案C（2026-08-16）で地区が市区町村単位になったので、キーを '相模原市' に移した。
+  //
+  // **焼き込んでいるのが地区の性質ではなく施設の実在だから、そのまま持ち上げられる。**
+  // `real` は「その施設が現実に存在する」、`absent` は「一次情報を探しても
+  // 予約・料金が出てこなかった」であって、どちらも牧野という地区の話ではない。
+  //
+  // ただし `absent` は**当たり判定が広がる。**ソースの母数が牧野だけから相模原市全体に
+  // 増えるので、市内のどこかにその名前が出れば FAIL する。
+  // **それは検査として正しい挙動**（実在の判断が変わったなら手で調べ直す）だが、
+  // 「牧野で出なかった」より強い主張になっている点は意識しておくこと。
+  '相模原市': MAKINO_SELF_TEST,
+  // 旧キー。大字単位で回したときの記録として残す（`--district "相模原市緑区牧野"` は今も動く）
+  '相模原市緑区牧野': MAKINO_SELF_TEST,
 };
 
 function runSelfTest(districtName, results) {
@@ -2555,6 +2669,99 @@ function renderMd(ctx) {
       );
     }
     L.push('');
+  }
+
+  /* ---- 大字検査（案C ステップ2）--------------------------------------- */
+  {
+    const rows = ctx.oazaRows || [];
+    const ng = rows.filter(r => r.verdict === '不一致');
+    const contained = rows.filter(r => r.verdict === '包含');
+    const skipped = rows.filter(r => r.verdict === '検査対象外');
+    const checked = inDataRes.length - skipped.length;
+
+    L.push('## 大字検査 — IN_DATA の突合が本当に同じ場所か');
+    L.push('');
+    L.push('**判定には使っていない。**上の `MISSING` / `ORPHAN` / `IN_DATA` はこの節を見る前に確定している。');
+    L.push('');
+    L.push('地区が市町村単位になったので、**名前だけで市内のどのレコードにも当たれる。**');
+    L.push('大字の制約が外れたぶん、新しい誤突合が生まれうる。');
+    L.push('そこで突合が成立した組だけを後から見て、両側の大字を比べている。');
+    L.push('**もう一度大字単位でスイープしているのではない**（それをすると包含問題が検査側に戻る）。');
+    L.push('');
+    L.push(`| 分類 | 件数 |`);
+    L.push('|---|---:|');
+    L.push(`| **不一致（誤突合の疑い）** | **${ng.length}** |`);
+    L.push(`| 包含（粒度違い・無害） | ${contained.length} |`);
+    L.push(`| 一致 | ${Math.max(0, checked - ng.length - contained.length)} |`);
+    L.push(`| 検査対象外（どちらかの大字が取れない） | ${skipped.length} |`);
+    L.push('');
+    L.push(`> **★ 「不一致 ${ng.length}件」を「誤突合が ${ng.length}件」と読まないこと。**`);
+    L.push(`> 検査対象外が ${skipped.length}件ある。住所を持たないソース（\`nameOnly\`）で当たった突合は`);
+    L.push('> この検査を素通りする。**検査に出なかったことは、正しいことの根拠にならない。**');
+    L.push('');
+    if (ng.length) {
+      L.push('### 不一致 — 大字が別');
+      L.push('');
+      L.push('| データ側 | データ側の大字 | ソース側 | ソース側の大字 | 一致の根拠 |');
+      L.push('|---|---|---|---|---|');
+      for (const r of ng) {
+        L.push(`| \`${r.id}\` ${mdEscape(r.recordName)} | ${mdEscape(r.recOaza)} | ${mdEscape(r.sourceName)} | ${mdEscape(r.srcOazas.join(' / '))} | ${r.matchedBy} |`);
+      }
+      L.push('');
+      L.push('**「不一致＝誤突合」でもない。**同じ施設でソース側の住所が古い、という型がある');
+      L.push('（田貫湖の例: ソースが猪之頭、データが佐折。移転ではなく表記の世代違い）。');
+      L.push('**1件ずつ人が見るための一覧**であって、自動で外す根拠には使わない。');
+      L.push('');
+    }
+    if (contained.length) {
+      L.push('### 包含 — 前方一致（無害として分けた）');
+      L.push('');
+      L.push('`麓` と `麓朝霧` のような粒度の違い。**別施設の根拠にならない。**');
+      L.push('');
+      for (const r of contained) {
+        L.push(`- \`${r.id}\` ${mdEscape(r.recordName)}（${mdEscape(r.recOaza)}）↔ ${mdEscape(r.sourceName)}（${mdEscape(r.srcOazas.join(' / '))}）`);
+      }
+      L.push('');
+    }
+  }
+
+  /* ---- 大字が取れないソース項目の行き先（案C ステップ1）---------------- */
+  {
+    const nb = ctx.noOaza || { rows: [], counts: {}, total: 0 };
+    L.push('## 大字が取れないソース項目の行き先');
+    L.push('');
+    L.push('住所が**市区町村どまり**（`南都留郡道志村1388` のように大字が無い）の項目。');
+    L.push('大字単位の地区では `inDistrict` が必ず false になり、**どの地区にも入れず落ちていた。**');
+    L.push('市町村単位にすると突合の対象に入ってくる。');
+    L.push('');
+    L.push(`**この地区では ${nb.total}件。**`);
+    L.push('');
+    if (nb.total) {
+      L.push('| 落ちた先 | 件数 | 意味 |');
+      L.push('|---|---:|---|');
+      const MEAN = {
+        MISSING: '実在するがデータに無い。**案Cで増えた MISSING の出どころ**',
+        IN_DATA: 'データにあった。**大字が無いせいで突合できていなかっただけ**',
+        ORPHAN: '（この分類には出ないはず。出たら判定側のバグ）',
+        'b1（バケットに住所なし）': '他ソースと合流した結果、バケット全体で住所が無い',
+        'b2（地区外）': '市区町村が別。地区の粒度とは無関係',
+        '（判定に出ていない）': '名前の正規化で落ちた等。**地区の粒度とは別の問題**',
+      };
+      for (const [k, v] of Object.entries(nb.counts).sort((a, b) => b[1] - a[1])) {
+        L.push(`| ${k} | ${v} | ${MEAN[k] || '–'} |`);
+      }
+      L.push('');
+      L.push('<details><summary>内訳（項目ごと）</summary>');
+      L.push('');
+      L.push('| ソース | 名前 | 住所 | 行き先 |');
+      L.push('|---|---|---|---|');
+      for (const r of nb.rows) {
+        L.push(`| \`${r.sourceId}\` | ${mdEscape(r.name)} | ${mdEscape(r.address)} | ${r.where} |`);
+      }
+      L.push('');
+      L.push('</details>');
+      L.push('');
+    }
   }
 
   /* ---- 出力に載らなかったソース側の項目 ------------------------------- */
@@ -2983,44 +3190,45 @@ function renderSummaryMd(done, records, startedAt) {
    * **これを書かないと「MISSING 0件」と「そもそも調べていない」が同じ見た目になる。**
    * データ全体の地区を数えて、この実行に含まれなかったものを全部出す。
    */
+  // ★ 案C（2026-08-16）で粒度を市区町村に合わせた。
+  // 以前は districtKey()（大字まで）で数えていたので、地区が市町村単位になると
+  // **回した地区が1つも covered に入らず、全部が「回していない」に見える。**
   const covered = new Set(done.map(s => s.districtStr));
-  const allDistricts = new Map();
+  const allMunis = new Map();
   for (const r of records) {
     if (!r.address) continue;
-    const k = districtKey(r.address);
-    if (!k) continue;
-    if (!allDistricts.has(k)) allDistricts.set(k, []);
-    allDistricts.get(k).push(r);
+    const p = splitAddress(r.address);
+    if (!p || !p.city) continue;
+    const k = [p.gun || '', p.city].join('');
+    if (!allMunis.has(k)) allMunis.set(k, { city: p.city, records: [] });
+    allMunis.get(k).records.push(r);
   }
-  const notCovered = [...allDistricts.entries()]
-    .filter(([k]) => !covered.has(k))
-    .map(([k, rs]) => {
-      const city = parseDistrict(k).city;
-      const entry = MUNI_SOURCES[city];
+  const notCovered = [...allMunis.entries()]
+    .filter(([k, v]) => !covered.has(k) && !covered.has(v.city))
+    .map(([k, v]) => {
+      const entry = MUNI_SOURCES[v.city];
       return {
-        key: k, city, n: rs.length,
+        key: k, city: v.city, n: v.records.length,
         state: !entry ? '**未登録**'
-          : (fs.existsSync(path.join(__dirname, `sweep-${k}.md`)) ? '別の実行で済' : '未実施'),
+          : (fs.existsSync(path.join(__dirname, `sweep-${v.city}.md`)) ? '別の実行で済' : '未実施'),
       };
     });
   const unreg = notCovered.filter(x => x.state === '**未登録**');
 
-  L.push('## 今回の対象範囲 — 回していない地区');
+  L.push('## 今回の対象範囲 — 回していない市区町村');
   L.push('');
-  L.push(`**この実行で回したのは ${done.length} 地区。データ全体は ${allDistricts.size} 地区ある。**`);
+  L.push(`**この実行で回したのは ${done.length} 市区町村。データ側にレコードがあるのは ${allMunis.size} 市区町村。**`);
   L.push('');
-  L.push('**回していない地区は「MISSING 0件」ではない。調べていないだけ。**');
+  L.push('**回していない市区町村は「MISSING 0件」ではない。調べていないだけ。**');
   L.push('この2つを同じ見た目にすると、フラグが立たないことを根拠に使ってしまう。');
   L.push('');
   if (unreg.length) {
-    const byCity = new Map();
-    for (const x of unreg) byCity.set(x.city, (byCity.get(x.city) || 0) + x.n);
-    L.push(`### L1 も L2 も未登録で、**一度も調べていない**: ${unreg.length}地区 / ${byCity.size}市町村`);
+    L.push(`### L1 も L2 も未登録で、**一度も調べていない**: ${unreg.length}市区町村`);
     L.push('');
-    L.push('| 市町村 | 地区 | レコード |');
-    L.push('|---|---|---|');
-    for (const [city, n] of [...byCity.entries()].sort((a, b) => b[1] - a[1])) {
-      L.push(`| ${city} | ${unreg.filter(x => x.city === city).length} | ${n} |`);
+    L.push('| 市区町村 | レコード |');
+    L.push('|---|---:|');
+    for (const x of [...unreg].sort((a, b) => b.n - a.n)) {
+      L.push(`| ${x.key} | ${x.n} |`);
     }
     L.push('');
     L.push('**この市町村のレコードについては、掲載漏れがあるかどうか何も分かっていない。**');
@@ -3029,7 +3237,7 @@ function renderSummaryMd(done, records, startedAt) {
   }
   const other = notCovered.filter(x => x.state !== '**未登録**');
   if (other.length) {
-    L.push(`ほかに ${other.length} 地区は別の実行で済んでいる（`);
+    L.push(`ほかに ${other.length} 市区町村は別の実行で済んでいる（`);
     L.push(other.slice(0, 8).map(x => x.key).join(' / ') + (other.length > 8 ? ' ほか' : '') + '）。');
     L.push('');
   }
@@ -3135,11 +3343,13 @@ async function sweepDistrict(districtStr, records, opts) {
 
   const coverage = l1Coverage(collected, records, muniKey);
   const trustable = orphanTrustable(coverage);
+  const oazaRows = oazaCheck(results);            // 案C ステップ2。判定には使わない
+  const noOaza = noOazaBreakdown(merged, results); // 案C ステップ1の内訳
 
   const md = renderMd({
     districtName: districtStr, district, collected, results, inData,
     selfTest, startedAt, pref, muniKey, skippedRecords, l1NotFound,
-    coverage, orphanTrustable: trustable,
+    coverage, orphanTrustable: trustable, oazaRows, noOaza,
     merged,   // 落選分の列挙のため。判定には使わない（9-2）
   });
   const outPath = path.join(__dirname, `sweep-${districtStr}.md`);
@@ -3150,10 +3360,18 @@ async function sweepDistrict(districtStr, records, opts) {
   const counts = {
     missing: n('MISSING'), high: conf('HIGH'), mid: conf('MID'), low: conf('LOW'),
     inData: n('IN_DATA'), orphan: n('ORPHAN'), l1NotFound: l1NotFound.length + 1, // +1 は県オープンデータ
+    oazaNg: oazaRows.filter(r => r.verdict === '不一致').length,
+    oazaContained: oazaRows.filter(r => r.verdict === '包含').length,
+    oazaSkipped: oazaRows.filter(r => r.verdict === '検査対象外').length,
+    noOaza: noOaza.total,
   };
   console.log(
     `  → MISSING ${counts.missing}（HIGH ${counts.high} / MID ${counts.mid} / LOW ${counts.low}）` +
     ` / IN_DATA ${counts.inData} / ORPHAN ${counts.orphan} / L1_NOT_FOUND ${counts.l1NotFound}`
+  );
+  console.log(
+    `  → 大字検査: 不一致 ${counts.oazaNg} / 包含 ${counts.oazaContained} / 検査対象外 ${counts.oazaSkipped}` +
+    `　大字なし項目 ${counts.noOaza}件（${Object.entries(noOaza.counts).map(([k, v]) => `${k}:${v}`).join(' ') || '–'}）`
   );
   if (selfTest) console.log(`  → 必須検証: ${selfTest.pass ? 'PASS' : 'FAIL'}`);
   console.log(`  → ${path.relative(ROOT, outPath)}`);
@@ -3165,6 +3383,7 @@ async function sweepDistrict(districtStr, records, opts) {
   return {
     districtStr, skipped: false, results, selfTest, outPath, counts, muniKey,
     l1Sources, l1Registered: l1Sources.length > 0, coverage, orphanTrustable: trustable,
+    oazaRows, noOaza,
   };
 }
 
@@ -3437,15 +3656,25 @@ async function main() {
   if (named.length) {
     districts = named;
   } else if (argv.includes('--all')) {
-    districts = needsVerifyDistricts(records).filter(d => d.key).map(d => d.key);
+    // ★ 案C（2026-08-16）で意味が変わった。
+    //
+    //   旧: needsVerifyDistricts(records) …… **needsVerify が立ったレコードの所在大字だけ**
+    //   新: Object.keys(MUNI_SOURCES) …… **ソースを登録した市区町村ぜんぶ**
+    //
+    // 旧は §19-5 の循環そのものだった。「データに無いものを探す」検査なのに、
+    // 対象地区が**データにあるレコード**（しかも needsVerify が立ったものだけ）で決まっていた。
+    // 掲載漏れは needsVerify を持たないので、**原理的に対象地区に入れない。**
+    // 126件という穴のサイズも、この絞り込みを含んだ数字だった。
+    districts = Object.keys(MUNI_SOURCES);
     const noAddr = needsVerifyDistricts(records).filter(d => !d.key);
     for (const d of noAddr) {
       console.log(`住所が空で地区が決まらない: ${d.record.id} ${d.record.name} → この検査の対象外`);
     }
+    console.log(`--all: MUNI_SOURCES 登録済みの ${districts.length} 市区町村を回す（案C以降、needsVerify では絞らない）`);
   } else {
     console.log('使い方:');
-    console.log('  node scripts/district-sweep.js --district "相模原市緑区牧野"');
-    console.log('  node scripts/district-sweep.js --all');
+    console.log('  node scripts/district-sweep.js --district "相模原市"          # 市区町村単位（案C以降の粒度）');
+    console.log('  node scripts/district-sweep.js --all                          # MUNI_SOURCES 登録済みの18市区町村');
     console.log('  node scripts/district-sweep.js --list-districts');
     console.log('  （--no-cache で取得キャッシュを無視）');
     process.exitCode = 1;
@@ -3473,6 +3702,22 @@ async function main() {
       `${String(tot('missing')).padStart(3)}(${tot('high')}/${tot('mid')}/${tot('low')})`.padEnd(17) +
       String(tot('inData')).padStart(5) + String(tot('orphan')).padStart(8)
     );
+
+    // 案C ステップ1/2 の効果測定。**判定には使わない数字**だが、
+    // 「MISSING が増えた」の出どころを説明できないと効果測定にならない。
+    const nb = {};
+    for (const s of done) for (const [k, v] of Object.entries(s.noOaza.counts)) nb[k] = (nb[k] || 0) + v;
+    console.log(
+      `\n大字検査: 不一致 ${tot('oazaNg')} / 包含 ${tot('oazaContained')} / 検査対象外 ${tot('oazaSkipped')}` +
+      '　← **判定には使っていない。検査対象外は「正しい」ではなく「比べられなかった」**'
+    );
+    console.log(`大字が取れないソース項目: ${tot('noOaza')}件`);
+    for (const [k, v] of Object.entries(nb).sort((a, b) => b[1] - a[1])) console.log(`  ${k}: ${v}`);
+    for (const s of done) {
+      for (const r of s.oazaRows.filter(x => x.verdict === '不一致')) {
+        console.log(`  [不一致] ${s.districtStr} ${r.id}（${r.recOaza}） ↔ ${r.sourceName}（${r.srcOazas.join('/')}）${r.matchedBy}`);
+      }
+    }
     // IN_DATA が 0〜1 の地区。牧野の型（掲載と実在の入れ替わり）が疑われる
     const thin = done.filter(s => s.counts.inData <= 1);
     if (thin.length) {
@@ -3529,7 +3774,7 @@ module.exports.helpers = { jalan, napCamp, hinataSpot, cleanText, tidyAddress, s
 // テスト専用。**本体からは使わない。**答えが分かっている入力を通して
 // 判定が効いていることを確かめるため（§18-3）だけに公開している。
 module.exports._internal = {
-  mergeItems, classify, analyzeDropped, droppedBySource, inDistrict, parseDistrict,
+  mergeItems, classify, oazaCheck, noOazaBreakdown, analyzeDropped, droppedBySource, inDistrict, parseDistrict,
   collectSource, sourcesFor, failedDetailUrls, loadRecords, dataStamp, fetchPage, incompleteNote,
   RATE_LIMIT_MAX_ATTEMPTS,
   // 住所の分解。**測定側で作り直さないために公開する**（同じ規則を2か所に書くと片方だけ直る。§18-3）
