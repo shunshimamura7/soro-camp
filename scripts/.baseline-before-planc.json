@@ -1,0 +1,831 @@
+{
+ "rows": [
+  {
+   "district": "伊東市宇佐美",
+   "missing": 1,
+   "names": [
+    "UMIHOTEL ANNEX"
+   ],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "伊東市池",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 1
+  },
+  {
+   "district": "伊東市湯川",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "伊豆市修善寺",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "伊豆市上船原",
+   "missing": 1,
+   "names": [
+    "天城ふるさと広場キャンプ場"
+   ],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "伊豆市大沢",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "伊豆市大平",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 1
+  },
+  {
+   "district": "伊豆市湯ヶ島",
+   "missing": 1,
+   "names": [
+    "かたつむり＆ファーマーズヒル"
+   ],
+   "inData": 0,
+   "orphan": 2
+  },
+  {
+   "district": "伊豆市八木沢",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "厚木市七沢",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 2
+  },
+  {
+   "district": "山梨市牧丘町牧平",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "山梨市矢坪",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "上野原市",
+   "missing": 6,
+   "names": [
+    "ミューの森",
+    "CALM MOUNTAIN AKIYAMA（旧アオゲラの森キャンプ場）",
+    "CARM MOUNTAIN AKIYAMA",
+    "さがざわキャンプ場",
+    "西原ife体験宿したで",
+    "平野田休養村キャンプ場"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "榛原郡川根本町奥泉",
+   "missing": 1,
+   "names": [
+    "時之栖 もりのくに"
+   ],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "榛原郡川根本町下泉",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "榛原郡川根本町久野脇",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "榛原郡川根本町犬間長嶋公園敷",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "榛原郡川根本町上長尾",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "榛原郡川根本町千頭",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 2
+  },
+  {
+   "district": "榛原郡川根本町梅地",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "静岡市葵区新間",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "静岡市葵区田代",
+   "missing": 1,
+   "names": [
+    "赤石小屋"
+   ],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "静岡市清水区",
+   "missing": 4,
+   "names": [
+    "おきつがわオートキャンプ場",
+    "清水森林公園 黒川キャンプ場",
+    "静岡市浜石野外センター",
+    "三保ハーバルキャンプ場"
+   ],
+   "inData": 2,
+   "orphan": 2
+  },
+  {
+   "district": "静岡市清水区西里",
+   "missing": 1,
+   "names": [
+    "清水森林公園 黒川キャンプ場"
+   ],
+   "inData": 1,
+   "orphan": 1
+  },
+  {
+   "district": "静岡市清水区由比入山",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "相模原市中央区水郷田名",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "相模原市緑区三ヶ木",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "相模原市緑区若柳",
+   "missing": 0,
+   "names": [],
+   "inData": 2,
+   "orphan": 1
+  },
+  {
+   "district": "相模原市緑区小倉",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "相模原市緑区寸沢嵐",
+   "missing": 0,
+   "names": [],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "相模原市緑区青根",
+   "missing": 7,
+   "names": [
+    "音久和キャンプ場",
+    "此の間沢渓流園",
+    "高瀬野キャンプ場",
+    "緑の休暇村 青根キャンプ場",
+    "夫婦園キャンプ場",
+    "神之川キャンプ場",
+    "いやしの湯・青根緑の休暇村センター"
+   ],
+   "inData": 3,
+   "orphan": 0
+  },
+  {
+   "district": "相模原市緑区青野原",
+   "missing": 1,
+   "names": [
+    "青野原オートキャンプ場組合"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "相模原市緑区大島",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "相模原市緑区長者原",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "相模原市緑区牧野",
+   "missing": 3,
+   "names": [
+    "バカンス村",
+    "日比谷花壇のSTAY「里楽巣FUJINO」",
+    "藤野倶楽部"
+   ],
+   "inData": 1,
+   "orphan": 2
+  },
+  {
+   "district": "相模原市緑区名倉",
+   "missing": 1,
+   "names": [
+    "遊魚園"
+   ],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "足柄上郡山北町玄倉",
+   "missing": 2,
+   "names": [
+    "丹沢湖キャンプサイト",
+    "【閉鎖中】ウッディハウス玄倉"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "足柄上郡山北町神縄",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "足柄上郡山北町中川",
+   "missing": 8,
+   "names": [
+    "バウアーハウスジャパン",
+    "大石キャンプ場",
+    "笹子沢バンガロー",
+    "大滝キャンプ場",
+    "SPRINGSVILLAGE足柄・丹沢温泉リゾート＆グランピング",
+    "奥箒沢山の家",
+    "箒沢荘グランピングエリア杢",
+    "KINOBA"
+   ],
+   "inData": 5,
+   "orphan": 1
+  },
+  {
+   "district": "足柄上郡山北町虫沢",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "足柄上郡山北町湯触",
+   "missing": 1,
+   "names": [
+    "河内川ふれあいビレッジ"
+   ],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "足柄上郡松田町寄",
+   "missing": 5,
+   "names": [
+    "南丹沢清津峡キャンプ場",
+    "蜂花苑やどろぎ荘ミロクキャンプ場",
+    "ミロクキャンプ場",
+    "ぽにぃている",
+    "蜂花苑キャンプ場(やどろぎ荘・ミロクキャンプ場)"
+   ],
+   "inData": 1,
+   "orphan": 1
+  },
+  {
+   "district": "大月市",
+   "missing": 1,
+   "names": [
+    "月尾根自然の森"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "都留市",
+   "missing": 9,
+   "names": [
+    "鹿留オートキャンプ場",
+    "ベリーパーク in ＦＩＳＨ-ＯＮ！鹿留",
+    "すげのレジャー（キャンプ））",
+    "大沢オートキャンプ場",
+    "ホテル&薬草風呂 スターらんど",
+    "都留星と風キャンプフィールド",
+    "THE FOREST",
+    "ＦＩＳＨ・ＯＮ！鹿留",
+    "せせらぎ荘キャンプ場"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "南巨摩郡南部町",
+   "missing": 2,
+   "names": [
+    "福士川オートキャプ場",
+    "福士川根熊山荘ファミリーオートキャンプ場"
+   ],
+   "inData": 4,
+   "orphan": 2
+  },
+  {
+   "district": "南巨摩郡南部町福士",
+   "missing": 2,
+   "names": [
+    "福士川オートキャプ場",
+    "福士川根熊山荘ファミリーオートキャンプ場"
+   ],
+   "inData": 4,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡山中湖村山中",
+   "missing": 6,
+   "names": [
+    "キャンプ・アンド・キャビンズ山中湖",
+    "富士見荘キャンプ場",
+    "ヴィヒタ山中湖",
+    "GRAMERCY VILLAGE山中湖GLAMPING&SAUNA",
+    "ザデイ・ポストジェネラルグランピングビィレッジ山中湖",
+    "moss camp field"
+   ],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡山中湖村平野",
+   "missing": 24,
+   "names": [
+    "PICA山中湖ヴィレッジ",
+    "東照館",
+    "the508",
+    "小田急山中湖フォレストコテージ",
+    "三興荘",
+    "富月荘",
+    "湖山荘キャンプ場",
+    "コテージ上機嫌",
+    "LAKE LODGE YAMANAKA",
+    "グリーンヒルズニューみなみ",
+    "VIASSO（ビアッソ）",
+    "MaukaResortAZMY",
+    "東照館 オートキャンプ山中湖",
+    "コンテナワークスin山中湖",
+    "ニュー福寿荘",
+    "LOTUS FUJI",
+    "地球元気村｢山中湖キャンプ場｣",
+    "ビアッソ",
+    "山中湖ハウス",
+    "プライベートハウス・バイロン",
+    "ペンション 飛遊人",
+    "飛遊人キャンプ場",
+    "みさきキャンプ場",
+    "小田急山中湖フォレストコテージ"
+   ],
+   "inData": 4,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡道志村",
+   "missing": 51,
+   "names": [
+    "川端オートキャンプ場",
+    "椿キャンプ場",
+    "大栗オートキャンプ場",
+    "ネイチャーランドオム",
+    "オートキャンプINむじな",
+    "オートキャンプせせらぎ",
+    "ラビットオートキャンプ場",
+    "水の元オートキャンプ場",
+    "オートキャンプしろいだいら",
+    "リバーサイドマイシーン",
+    "センタービレッジキャンプ場",
+    "スカイバレーキャンプ場",
+    "オートキャンプ長又",
+    "山伏オートキャンプ場",
+    "やぐら沢キャンプ場",
+    "久保キャンプ場",
+    "貸し別荘 となり",
+    "9じ17じ道志オートキャンプ場",
+    "ブナの森キャンプ＆コテージ",
+    "久保キャンプ場",
+    "オートキャンプ長又",
+    "道志観光農園キャンプ場",
+    "オートキャンプｉｎむじな",
+    "谷相郷キャンプ場",
+    "月夜野キャンプ場",
+    "椿キャンプ場",
+    "滝原オートキャンプ場",
+    "モモンガの森",
+    "両国橋キャンプ場 湯川屋",
+    "道志川荘キャンプ場",
+    "下村キャンプ場",
+    "山伏オートキャンプ場",
+    "オートキャンプしろいだいら",
+    "水之元オートキャンプ場",
+    "オートキャンプせせらぎ",
+    "室久保グリーンパーク",
+    "やぐら沢キャンプ場",
+    "花の森オートキャンピア",
+    "下村キャンプ場",
+    "両国橋キャンプ場",
+    "大栗オートキャンプ場",
+    "道志川荘キャンプ場",
+    "山伏オートキャンプ場",
+    "椿荘オートキャンプ場",
+    "オートキャンプしろいだいら",
+    "ラビットオートキャンプ場",
+    "滝原オートキャンプ場",
+    "水之元オートキャンプ場",
+    "オートキャンプせせらぎ",
+    "道志の森キャンプ場",
+    "スカイバレーキャンプ場"
+   ],
+   "inData": 15,
+   "orphan": 0
+  },
+  {
+   "district": "南都留郡道志村長又",
+   "missing": 3,
+   "names": [
+    "オートキャンプ長又",
+    "モモンガの森",
+    "山伏オートキャンプ場"
+   ],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡道志村馬場",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡富士河口湖町河口山宮",
+   "missing": 4,
+   "names": [
+    "ハーブの里コテージ・オートキャンプ場",
+    "RetreatCamp まほろば",
+    "レイクヴィラ河口湖",
+    "河口湖コテージMINAMI"
+   ],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡富士河口湖町小立",
+   "missing": 7,
+   "names": [
+    "DOTEKAGE CAMP GROUND",
+    "森と湖の楽園 Work Shop Camp Resort",
+    "ニューブリッヂキャンプ場",
+    "WorkShopCampResort森と湖の楽園",
+    "TheVillaGlamping河口湖",
+    "ツーリストヴィラ河口湖",
+    "ヴィラ メイクイーン貸別荘"
+   ],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "南都留郡富士河口湖町精進",
+   "missing": 3,
+   "names": [
+    "キャンプあかいけ",
+    "精進レークサイドキャンプ",
+    "精進湖自由キャンプ場"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "南都留郡富士河口湖町西湖",
+   "missing": 16,
+   "names": [
+    "観岳園キャンプ場",
+    "紅葉台キャンプ場",
+    "西の海キャンプ場",
+    "浜の家キャンプ場",
+    "西湖キャンプビレッジ・ノーム",
+    "FUNOUT! PARK FUJI",
+    "オートキャンプ・ボア",
+    "大和キャンプ場",
+    "西湖レークサイドキャンプ村",
+    "湖畔キャンプ場",
+    "西湖キャンプ場テント村",
+    "青木ケ原自由テント村キャンプ場",
+    "富士キャンプ場",
+    "紅葉台キャンプ場",
+    "福住オートキャンプ場",
+    "キャンピングリゾートＷＡＮ"
+   ],
+   "inData": 4,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡富士河口湖町船津",
+   "missing": 5,
+   "names": [
+    "すばるランド CAMP FIELD",
+    "tourist base kawaguchiko（ツーリストベース河口湖）",
+    "ニューブリッジキャンプ場",
+    "&GREEN",
+    "創造の森オートキャンプ場"
+   ],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡富士河口湖町大石",
+   "missing": 4,
+   "names": [
+    "夢見る河口湖 コテージ戸沢センター",
+    "Glampark S.O.P 富士河口湖",
+    "河口湖明光山キャンプ場",
+    "明光山キャンプ場【H27/3現在閉鎖中】"
+   ],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡富士河口湖町富士ヶ嶺",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 1
+  },
+  {
+   "district": "南都留郡富士河口湖町本栖",
+   "missing": 2,
+   "names": [
+    "レークサイドキャンプ場",
+    "本栖湖スポーツセンター（本栖湖 SUMIKA CAMP FIELD）"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "南都留郡富士河口湖町本栖大久保",
+   "missing": 2,
+   "names": [
+    "レークサイドキャンプ場",
+    "本栖湖スポーツセンター（本栖湖 SUMIKA CAMP FIELD）"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "富士宮市粟倉",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "富士宮市原",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "富士宮市根原",
+   "missing": 2,
+   "names": [
+    "アサギリ高原パラグライダーキャンプ場",
+    "スタイルキャビンあさぎり"
+   ],
+   "inData": 3,
+   "orphan": 0
+  },
+  {
+   "district": "富士宮市佐折",
+   "missing": 0,
+   "names": [],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "富士宮市上井出",
+   "missing": 5,
+   "names": [
+    "富士山ワイルドアドベンチャー（FWA）",
+    "表富士キャンピング場",
+    "富士山キャンプランド",
+    "富士桜モビランドキャンプ場",
+    "表富士キャンピング場"
+   ],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "富士宮市猪之頭",
+   "missing": 7,
+   "names": [
+    "Field Dogs Garden",
+    "田貫湖（たぬきこ）",
+    "猪の頭オートキャンプ場",
+    "Foresters Village Kobitto あさぎりキャンプフィールド",
+    "グランパパ -大人の隠れ場- キャンプ場",
+    "FUJIYAMA 泉の森キャンピングフィールド",
+    "ラ・フォンテーヌ・バカンス田貫橋"
+   ],
+   "inData": 2,
+   "orphan": 1
+  },
+  {
+   "district": "富士宮市麓",
+   "missing": 2,
+   "names": [
+    "富士オートキャンプ場ふもと村",
+    "【閉鎖中】朝霧高原ふもとオートキャンプ場"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "北杜市高根町清里",
+   "missing": 6,
+   "names": [
+    "新栄清里キャンプ場",
+    "untitled",
+    "モーモーランド清里オートキャンプ場",
+    "清里ブレーメンリゾートクラブ",
+    "Shin-Ei-Kiyosato Camp Field（新栄清里キャンプ場）",
+    "清泉寮自然学校キャンプ場"
+   ],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "北杜市高根町浅川水頭",
+   "missing": 1,
+   "names": [
+    "清里中央オートキャンプ場"
+   ],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "北杜市小淵沢町",
+   "missing": 1,
+   "names": [
+    "PAWS GROUND"
+   ],
+   "inData": 1,
+   "orphan": 2
+  },
+  {
+   "district": "北杜市小淵沢町上笹尾",
+   "missing": 1,
+   "names": [
+    "PAWS GROUND"
+   ],
+   "inData": 1,
+   "orphan": 2
+  },
+  {
+   "district": "北杜市白州町上教来石平久保",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "北杜市白州町大坊",
+   "missing": 1,
+   "names": [
+    "ACNオートリゾートパーク・ビッグランド"
+   ],
+   "inData": 1,
+   "orphan": 0
+  },
+  {
+   "district": "北杜市白州町白須",
+   "missing": 3,
+   "names": [
+    "白州観光尾白キャンプ場",
+    "尾白川リゾートオートキャンプ場",
+    "AIRSTREAM RESORT®︎ HAKUSHU BASE"
+   ],
+   "inData": 2,
+   "orphan": 0
+  },
+  {
+   "district": "北杜市武川町山高",
+   "missing": 0,
+   "names": [],
+   "inData": 0,
+   "orphan": 1
+  },
+  {
+   "district": "北杜市明野町浅尾",
+   "missing": 0,
+   "names": [],
+   "inData": 1,
+   "orphan": 0
+  }
+ ],
+ "totMissing": 214,
+ "uniq": 184,
+ "totIn": 103,
+ "totOrphan": 48,
+ "confTot": {
+  "LOW": 111,
+  "MID": 39,
+  "HIGH": 64
+ },
+ "overlaps": [
+  [
+   "静岡市清水区",
+   "静岡市清水区西里"
+  ],
+  [
+   "静岡市清水区",
+   "静岡市清水区由比入山"
+  ],
+  [
+   "南巨摩郡南部町",
+   "南巨摩郡南部町福士"
+  ],
+  [
+   "南都留郡道志村",
+   "南都留郡道志村長又"
+  ],
+  [
+   "南都留郡道志村",
+   "南都留郡道志村馬場"
+  ],
+  [
+   "南都留郡富士河口湖町本栖",
+   "南都留郡富士河口湖町本栖大久保"
+  ],
+  [
+   "北杜市小淵沢町",
+   "北杜市小淵沢町上笹尾"
+  ]
+ ]
+}
