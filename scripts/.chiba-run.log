@@ -1,0 +1,95 @@
+
+[南房総市] 市区町村=南房総市 県=千葉 ソース4件
+  L1 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） ... OK 20件
+  L1 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） ... OK 7件
+  L2 なっぷ chiba/tateyama_minamiboso ... OK 20件
+  L2 じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） ... OK 13件
+  → MISSING 20（HIGH 9 / MID 0 / LOW 11） / IN_DATA 0 / ORPHAN 0 / L1_NOT_FOUND 1
+  → 大字検査: 不一致 0 / 包含 0 / 検査対象外 0　大字なし項目 0件（–）
+  → scripts\sweep-南房総市.md
+
+[館山市] 市区町村=館山市 県=千葉 ソース3件
+  L1 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） ... OK 20件
+  L2 なっぷ chiba/tateyama_minamiboso ... OK 20件
+  L2 じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） ... OK 9件
+  → MISSING 9（HIGH 0 / MID 2 / LOW 7） / IN_DATA 0 / ORPHAN 0 / L1_NOT_FOUND 3
+  → 大字検査: 不一致 0 / 包含 0 / 検査対象外 0　大字なし項目 0件（–）
+  → scripts\sweep-館山市.md
+
+[君津市] 市区町村=君津市 県=千葉 ソース4件
+  L1 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） ... OK 20件
+  L1 君津市公式 きみつの観光情報「遊ぶ・体験」内のキャンプ場一覧 ... OK 14件
+  L2 なっぷ chiba/kisarazu_kimitsu_uttsu ... OK 20件
+  L2 じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） ... OK 15件
+  → MISSING 23（HIGH 14 / MID 1 / LOW 8） / IN_DATA 0 / ORPHAN 0 / L1_NOT_FOUND 1
+  → 大字検査: 不一致 0 / 包含 0 / 検査対象外 0　大字なし項目 0件（–）
+  → scripts\sweep-君津市.md
+
+[富津市] 市区町村=富津市 県=千葉 ソース3件
+  L1 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） ... OK 20件
+  L2 なっぷ chiba/kisarazu_kimitsu_uttsu ... OK 20件
+  L2 じゃらん観光ガイド 富津市（cit_122260000 / ジャンル キャンプ・バンガロー・コテージ） ... OK 5件
+  → MISSING 5（HIGH 1 / MID 2 / LOW 2） / IN_DATA 0 / ORPHAN 0 / L1_NOT_FOUND 1
+  → 大字検査: 不一致 0 / 包含 0 / 検査対象外 0　大字なし項目 0件（–）
+  → scripts\sweep-富津市.md
+
+[木更津市] 市区町村=木更津市 県=千葉 ソース3件
+  L1 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） ... OK 20件
+  L2 なっぷ chiba/kisarazu_kimitsu_uttsu ... OK 20件
+  L2 じゃらん観光ガイド 木更津市（cit_122060000 / ジャンル キャンプ・バンガロー・コテージ） ... OK 3件
+  → MISSING 3（HIGH 0 / MID 0 / LOW 3） / IN_DATA 0 / ORPHAN 0 / L1_NOT_FOUND 1
+  → 大字検査: 不一致 0 / 包含 0 / 検査対象外 0　大字なし項目 0件（–）
+  → scripts\sweep-木更津市.md
+
+[鴨川市] 市区町村=鴨川市 県=千葉 ソース3件
+  L1 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） ... OK 20件
+  L2 なっぷ chiba/katsuura_kamogawa ... OK 20件
+  L2 じゃらん観光ガイド 鴨川市（cit_122230000 / ジャンル キャンプ・バンガロー・コテージ） ... OK 0件
+  → MISSING 1（HIGH 1 / MID 0 / LOW 0） / IN_DATA 0 / ORPHAN 0 / L1_NOT_FOUND 1
+  → 大字検査: 不一致 0 / 包含 0 / 検査対象外 0　大字なし項目 0件（–）
+  → scripts\sweep-鴨川市.md
+
+[大多喜町] 市区町村=大多喜町 県=千葉 ソース3件
+  L1 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） ... OK 20件
+  L2 なっぷ chiba/katsuura_kamogawa ... OK 20件
+  L2 じゃらん観光ガイド 大多喜町（cit_124410000 / ジャンル キャンプ・バンガロー・コテージ） ... OK 0件
+  → MISSING 1（HIGH 1 / MID 0 / LOW 0） / IN_DATA 0 / ORPHAN 0 / L1_NOT_FOUND 1
+  → 大字検査: 不一致 0 / 包含 0 / 検査対象外 0　大字なし項目 0件（–）
+  → scripts\sweep-大多喜町.md
+
+[鋸南町] 市区町村=鋸南町 県=千葉 ソース3件
+  L1 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） ... OK 20件
+  L2 なっぷ chiba/tateyama_minamiboso ... OK 20件
+  L2 じゃらん観光ガイド 鋸南町（cit_124630000 / ジャンル キャンプ・バンガロー・コテージ） ... OK 2件
+  → MISSING 2（HIGH 0 / MID 0 / LOW 2） / IN_DATA 0 / ORPHAN 0 / L1_NOT_FOUND 2
+  → 大字検査: 不一致 0 / 包含 0 / 検査対象外 0　大字なし項目 0件（–）
+  → scripts\sweep-鋸南町.md
+
+=== 地区別まとめ ===
+地区                        MISSING(H/M/L)   IN_DATA  ORPHAN  L1_NOT_FOUND
+南房総市                       20(9/0/11)          0       0          1
+館山市                         9(0/2/7)           0       0          3
+君津市                        23(14/1/8)          0       0          1
+富津市                         5(1/2/2)           0       0          1
+木更津市                        3(0/0/3)           0       0          1
+鴨川市                         1(1/0/0)           0       0          1
+大多喜町                        1(1/0/0)           0       0          1
+鋸南町                         2(0/0/2)           0       0          2
+合計                         64(26/5/33)         0       0
+
+大字検査: 不一致 0 / 包含 0 / 検査対象外 0　← **判定には使っていない。検査対象外は「正しい」ではなく「比べられなかった」**
+大字が取れないソース項目: 0件
+
+IN_DATA が 0〜1 件の地区（掲載と実在が噛み合っていない可能性）:
+  南房総市  IN_DATA 0 / MISSING 20 / ORPHAN 0
+  館山市  IN_DATA 0 / MISSING 9 / ORPHAN 0
+  君津市  IN_DATA 0 / MISSING 23 / ORPHAN 0
+  富津市  IN_DATA 0 / MISSING 5 / ORPHAN 0
+  木更津市  IN_DATA 0 / MISSING 3 / ORPHAN 0
+  鴨川市  IN_DATA 0 / MISSING 1 / ORPHAN 0
+  大多喜町  IN_DATA 0 / MISSING 1 / ORPHAN 0
+  鋸南町  IN_DATA 0 / MISSING 2 / ORPHAN 0
+
+ORPHAN のうち needsVerify が立っていないもの: 0件
+
+→ scripts\sweep-summary-chiba.md
