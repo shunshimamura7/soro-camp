@@ -1,0 +1,1046 @@
+[
+ {
+  "id": "norolodge",
+  "url": "https://norolodge.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "ootaki",
+  "url": "https://ootakicampsite.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "gandahara",
+  "url": "https://gandahara.wixsite.com/mysite",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "tanukiko",
+  "url": "https://tanukiko.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "eichinomori",
+  "url": "https://www.bt-r.jp/aec/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "sorairo",
+  "url": "https://sorairo-camp.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "houzan",
+  "url": "https://urban-camping.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "kouan",
+  "url": "https://kouan-motosuko.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "motosulakeside",
+  "url": "https://motosulakeside.com/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "picafuji-saiko",
+  "url": "https://www.pica-resort.jp/saiko/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "wellcamp-nishitanzawa",
+  "url": "https://well-camp.com/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "shindo",
+  "url": "https://shindocamp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "aone",
+  "url": "https://aonecamp.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "kannogawa",
+  "url": "https://kannogawa.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fumotoppara",
+  "url": "https://fumotoppara.net/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "asagiri-jamboree",
+  "url": "https://asagiri-camp.net/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "pica-omotefuji",
+  "url": "https://www.pica-resort.jp/omotefuji/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "doshi-no-mori",
+  "url": "https://doshinomori.jp/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "saiko-jiyu",
+  "url": "https://saiko-jiyuu.camp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "yamanakako-misaki",
+  "url": "https://camp.sotosotodays.com/yamanakako-misaki/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "takizawaso",
+  "url": "https://takizawaen.com/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "aonohara-auto",
+  "url": "https://www.aonohara-acl.jp/index.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "nishitanzawa-mountbridge",
+  "url": "https://mount-bridge.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "miyagase-village",
+  "url": "https://miyagase-village.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "tanzawako-lodge",
+  "url": "https://tanzawakolodge.com/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "yataro-camp",
+  "url": "https://k-riverland.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fuji-ymca",
+  "url": "https://www.yokohamaymca.org/fujisan-global/",
+  "raw": "UNREACHABLE",
+  "page": "UNREACHABLE",
+  "rawStatus": 0,
+  "pageStatus": 0,
+  "fromCache": false
+ },
+ {
+  "id": "kawazu-nanadaru",
+  "url": "https://www.nanatakiauto.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "kumomi-auto",
+  "url": "https://www.kumomi-sunset.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "onoji-family",
+  "url": "https://oonoji.co.jp/camp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "darumayama-kogen",
+  "url": "https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/928.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "muraei-yamanakako",
+  "url": "https://www.nap-camp.com/yamanashi/11265",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "sankoso-auto",
+  "url": "https://www.sanko2400.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "okudoshi-auto",
+  "url": "https://www.okudoshi.net",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "woodsman-camp",
+  "url": "https://woodsman.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "ashinoko-camp-mura",
+  "url": "https://campmura.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "karasawa-miyagase",
+  "url": "https://karasawa-camp.sakura.ne.jp/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "hidamari-yamakita",
+  "url": "https://www.town.yamakita.kanagawa.jp/0000000068.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "konomasawa-camp",
+  "url": "https://konomasawacamp.co.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "hakonesono-auto",
+  "url": "https://www.princehotels.co.jp/hakone-en/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "camp-baird",
+  "url": "https://bairdbeer.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "mobility-park-izu",
+  "url": "https://mobility-park.jp/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "pica-fuji-greenpa",
+  "url": "https://www.pica-resort.jp/grinpa/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "minamiizu-camping-terrace",
+  "url": "https://camp.imagining.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "izu-kakure-auto",
+  "url": "https://kakure-camp.corpkj.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fujikawa-camp",
+  "url": "https://fujikawa-camp.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "hottarakashi-camp",
+  "url": "https://hottarakashicamp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "shosenkyo-auto-camp",
+  "url": "https://syosenkyo-camp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "kiyosato-chuo-auto",
+  "url": "https://autocamp.co.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "westriver-auto-camp",
+  "url": "https://westriver-camp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "retreat-camp-mahoroba",
+  "url": "https://retreatcamp-mahoroba.net/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "pica-fujiyama-camp",
+  "url": "https://www.pica-resort.jp/fujiyama/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "akeno-fureai-camp",
+  "url": "https://www.pica-resort.jp/akeno/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "hakushu-ojiro-camp",
+  "url": "https://www.verga.info/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "yanagishima",
+  "url": "https://www.yanagishima-camp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "suigennnomori",
+  "url": "https://www.doshisuigen-mori.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "pica-sagamiko",
+  "url": "https://www.sagamiko-resort.jp/camp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "minoishtaki",
+  "url": "https://camp-minoishi.com/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "usami-shiroyama",
+  "url": "https://www.nap-camp.com/shizuoka/14344",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "hikenkayama",
+  "url": "https://www.hitsurugi-camp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "narakoko",
+  "url": "https://www.narakoko.info/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "asagiri-foodpark",
+  "url": "https://asagiri-foodpark.com/afp.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "folkwood-yatsugatake",
+  "url": "https://folkwood-camp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fujinomori-yamanakako",
+  "url": "https://www.nap-camp.com/yamanashi/14555",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "yatsugatake-oizumi",
+  "url": "https://www.yatsugatake-autocamp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "tiny-camp-village",
+  "url": "https://www.tiny-camp-village.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "kuragari-camp",
+  "url": "https://tanzawa-camp.sakura.ne.jp/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "nelo-gotemba",
+  "url": "https://challengeoutdoor.co/nelogotemba/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fujisan-genshijin",
+  "url": "https://genshijin-fujinomiya.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "granpapa-solo-bocchi",
+  "url": "https://www.gran-papa.com/site/solo/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "marubi-auto",
+  "url": "https://marubi.main.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "ikawa-auto",
+  "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0001021.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "yamanakako-minami-auto",
+  "url": "https://www.minami-camp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "camp-akaike",
+  "url": "https://www.camp-akaike.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "ecopa-inagako",
+  "url": "https://ecopa-inagako.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "village-hakushu",
+  "url": "https://www.village-hakushu.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "hananomori-camp",
+  "url": "https://www.hananomori.jp/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "flora-campsite",
+  "url": "https://www.floracampsite.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "shinozawa-ootaki-camp",
+  "url": "https://shinozawa-ootaki-camp.com/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "oishii-camp",
+  "url": "https://oic-camp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "shimobe-yurucamp-sato",
+  "url": "https://www.michinoeki-shimobe.jp/camp/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "bushcraft-shonan",
+  "url": "https://bush-craft.biz/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "akiyamagawa-camp",
+  "url": "http://www.akikawaya.co.jp/",
+  "raw": "FORBIDDEN",
+  "page": "HTTP_403",
+  "rawStatus": 403,
+  "pageStatus": 403,
+  "fromCache": false
+ },
+ {
+  "id": "hachibanaen-miroku",
+  "url": "https://houkaen.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "otome-forest-camp",
+  "url": "https://www.gotemba-otome.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "recamp-fuji-speedway",
+  "url": "https://www.recamp.co.jp/fujispeedway",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "camp-bean-izu",
+  "url": "https://www.campbean.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "tenshino-mori-camp",
+  "url": "https://tenshinomori.net/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fujimangan-village",
+  "url": "https://fuji-manganvillage.com/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "takaranoyama-fureai",
+  "url": "https://takaranoyama.camp/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "doshi-mori-cottage",
+  "url": "https://doshi-kanko.com/moricote/moricote_ryokin/moricote_ryokin.html",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fuji-midori-kyuka-auto",
+  "url": "http://www.kyukamura.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "hayakawa-camp",
+  "url": "https://www.town.hayakawa.yamanashi.jp/tour/spot/camp/car-camping.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "ogayanagawa-keikoku",
+  "url": "https://ooyanagawa-camp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "kurokawa-shizuoka",
+  "url": "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000093.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "omuroyama-camp",
+  "url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/shogaigakushuka/kanko/2379.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "numazu-shimin-no-mori",
+  "url": "https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/shiminnomori/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "ugusu-camp",
+  "url": "https://www.nishiizu-kankou.com/stay/ugusucanp",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "kunowaki-shinsui",
+  "url": "https://www.kunowaki.net/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "yagi-camp",
+  "url": "https://okuooi.gr.jp/contact_camp_yagi/index.php",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "mitsuboshi-auto",
+  "url": "http://kawanelife.org/camp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fudonotaki-auto",
+  "url": "https://ffnpcs.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "apt-ichishiro",
+  "url": "https://abt-camp.shizu.website/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fukushigawa-seishonen",
+  "url": "https://www.town.nanbu.yamanashi.jp/kankou/leisure/Camp-Okuyama.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "turkeys-house",
+  "url": "http://www.turkeyshouse.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "nekumasanso-auto",
+  "url": "https://hukusshigawacamp.eyado.net/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "fujino-art-camp",
+  "url": "https://fujino-art.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "saiko-kohan-camp",
+  "url": "http://www.saikohan.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "saiko-tsuhara-camp",
+  "url": "https://tsuhara-camp.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "shiraishi-auto-camp",
+  "url": "https://www.shiraishiautocamp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "ryokokubashi-camp",
+  "url": "http://yukawaya.a.la9.jp/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "new-tashiro-auto-camp",
+  "url": "https://tashiro-autocamp.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "murokubo-greenpark",
+  "url": "https://the-do-c.com",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "kananomori-sanso",
+  "url": "https://kananomori.com/",
+  "raw": "FORBIDDEN",
+  "page": "OK",
+  "rawStatus": 403,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "midori-taiyo-oka",
+  "url": "https://midoritotaiyounooka.com/",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ },
+ {
+  "id": "hiranoda-kyuyoson",
+  "url": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html",
+  "raw": "OK",
+  "page": "OK",
+  "rawStatus": 200,
+  "pageStatus": 200,
+  "fromCache": false
+ }
+]

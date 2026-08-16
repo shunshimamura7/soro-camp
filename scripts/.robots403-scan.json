@@ -1,0 +1,712 @@
+[
+ {
+  "origin": "http://kawanelife.org",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "http://www.akikawaya.co.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "http://www.kyukamura.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "http://www.saikohan.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "http://www.turkeyshouse.com",
+  "status": 429,
+  "note": ""
+ },
+ {
+  "origin": "http://yukawaya.a.la9.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://abt-camp.shizu.website",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://aonecamp.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://asagiri-camp.net",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://asagiri-foodpark.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://autocamp.co.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://bairdbeer.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://bush-craft.biz",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://camp-minoishi.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://camp-spot.hinata.me",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://camp.imagining.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://camp.sotosotodays.com",
+  "status": 500,
+  "note": ""
+ },
+ {
+  "origin": "https://campmura.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://challengeoutdoor.co",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://doshi-kanko.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://doshinomori.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://ecopa-inagako.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://ffnpcs.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://folkwood-camp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://folkwood.jp",
+  "status": 0,
+  "note": "ENOTFOUND"
+ },
+ {
+  "origin": "https://fuji-manganvillage.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://fujikawa-camp.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://fujino-art.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://fujinomiya.gr.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://fujisan.ne.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://fumotoppara.net",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://gandahara.wixsite.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://genshijin-fujinomiya.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://hottarakashicamp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://houkaen.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://hukusshigawacamp.eyado.net",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://itospa.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://japancamp.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://k-riverland.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://kakure-camp.corpkj.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://kananomori.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://kanko.city.izu.shizuoka.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://kannogawa.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://karasawa-camp.sakura.ne.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://konomasawacamp.co.jp",
+  "status": 429,
+  "note": ""
+ },
+ {
+  "origin": "https://kouan-motosuko.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://lake-yamanakako.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://marubi.main.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://midori.city.sagamihara.kanagawa.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://midoritotaiyounooka.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://miyagase-village.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://mobility-park.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://motosulakeside.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://mount-bridge.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://norolodge.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://oic-camp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://okuooi.gr.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://oonoji.co.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://ootakicampsite.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://ooyanagawa-camp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://reserva.be",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://retreatcamp-mahoroba.net",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://saiko-jiyuu.camp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://shindocamp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://shinozawa-ootaki-camp.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://sorairo-camp.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://syosenkyo-camp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://takaranoyama.camp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://takizawaen.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://tanukiko.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://tanzawa-camp.sakura.ne.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://tanzawakolodge.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://tashiro-autocamp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://tateyamacity.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://tenshinomori.net",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://the-do-c.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://town.matsuda.kanagawa.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://tsuhara-camp.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://urban-camping.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://well-camp.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://westriver-camp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://woodsman.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.aonohara-acl.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.atsugi-kankou.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://www.bt-r.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://www.camp-akaike.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.campbean.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.fujinomiya.lg.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.ito.shizuoka.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.izu.shizuoka.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.kimitsu.lg.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.numazu.shizuoka.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.otsuki.yamanashi.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.shizuoka.lg.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.tateyama.chiba.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.uenohara.yamanashi.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.city.yamanashi.yamanashi.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.cm-boso.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.doshi-kanko.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.doshisuigen-mori.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.e-sagamihara.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.floracampsite.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.fujiyama-navi.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.gotemba-otome.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.gran-papa.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.hananomori.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://www.hitsurugi-camp.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.hokuto-kanko.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.jalan.net",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.kumomi-sunset.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.kunowaki.net",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.michinoeki-shimobe.jp",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://www.minami-camp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.nanatakiauto.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.nap-camp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.narakoko.info",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://www.nishiizu-kankou.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.okudoshi.net",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.pica-resort.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.pref.chiba.lg.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.pref.kanagawa.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.princehotels.co.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.recamp.co.jp",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.sagamiko-resort.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.sanko2400.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.shiraishiautocamp.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.tiny-camp-village.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.town.hayakawa.yamanashi.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.town.kawanehon.shizuoka.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.town.kyonan.chiba.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.town.nanbu.yamanashi.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.town.yamakita.kanagawa.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.verga.info",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.village-hakushu.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.visit-shizuoka.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.walkerplus.com",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.yamakita.net",
+  "status": 200,
+  "note": ""
+ },
+ {
+  "origin": "https://www.yamanashi-kankou.jp",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.yamanashishi-kankou.com",
+  "status": 403,
+  "note": ""
+ },
+ {
+  "origin": "https://www.yanagishima-camp.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.yatsugatake-autocamp.com",
+  "status": 404,
+  "note": ""
+ },
+ {
+  "origin": "https://www.yokohamaymca.org",
+  "status": 0,
+  "note": "UNABLE_TO_VERIFY_LEAF_SIGNATUR"
+ }
+]

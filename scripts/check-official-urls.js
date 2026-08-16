@@ -41,8 +41,32 @@
  *     **必ず evidence の前後を読んでから判断する。**
  *   - JS でしか描画しないサイトは本文が空に近く、告知があっても拾えない。OK は「無罪」ではない。
  */
+/**
+ * ## この repo は**スクリプトによって名乗る UA が違う**（2026-08-16 に明記）
+ *
+ *   district-sweep.js / check-official-urls.js … **Chrome を名乗る**
+ *   .parked-scan.js / l1-link-rot.js / robots-guard.js … **ClaudeBot**
+ *
+ * **揃っていないのは、揃えるコストと影響を測った結果。**
+ *
+ * `officialUrl` 116件を両方の UA で叩いて比べた（`scripts/.fetch-layer-compare.js`）:
+ *
+ *   ClaudeBot … OK 92 / 403 **23**
+ *   Chrome    … OK 114 / 403 **1**
+ *
+ * **全部 ClaudeBot に揃えると22サイトが403になり、千葉の L1 調査の一部が再現しなくなる。**
+ * **全部 Chrome に揃えると、断っているサイトに対して名前を偽ることを全面化する。**
+ * どちらも代償が大きいので、**現状のまま「どれが何を名乗るか」を明記する**方を採った。
+ *
+ * → **数字を引用するときは、どの UA で測ったかを必ず書くこと。**
+ * `l1-link-rot` の「測れず」も `.parked-scan` の403も、**ClaudeBot での数字**。
+ *
+ * なお **robots.txt 自体を403で断っているオリジンは、UA に関係なく踏まない**
+ * （`robots-guard.js`。判定は常に ClaudeBot で行う）。
+ */
 const fs = require('fs');
 const path = require('path');
+const { assertOriginAllowed } = require('./robots-guard.js');
 
 const DATA = path.join(__dirname, '..', 'data', 'campgrounds.json');
 const OUT = path.join(__dirname, 'url-check-2026-08.md');
@@ -51,6 +75,7 @@ const CONCURRENCY = 3;
 const SPACING_MS = 1000; // リクエストの開始間隔。相手に負荷をかけない
 const TIMEOUT_MS = 10000;
 const MAX_NEWS_LINKS = 3;
+// **Chrome を名乗る。**上の注記を参照（ClaudeBot だと23件が403で読めなくなる）
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
@@ -230,6 +255,13 @@ async function fetchPage(url) {
     if (!/^https?:$/.test(parsed.protocol)) throw new Error('http/https ではない');
   } catch (e) {
     return { failed: `URLとして解釈できない: ${e.message}` };
+  }
+
+  // **robots.txt を403で断っているオリジンは踏まない**（robots-guard.js）。
+  // このスクリプトは Chrome を名乗るので取れてしまうが、明示的な拒否は尊重する
+  const guard = await assertOriginAllowed(url);
+  if (!guard.allowed) {
+    return { failed: `${guard.note}（robots.txt が ${guard.status}。明示的な拒否なので踏まない）` };
   }
 
   const ac = new AbortController();

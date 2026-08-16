@@ -68,6 +68,8 @@ const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data', 'campgrounds.json');
 const CACHE_DIR = path.join(__dirname, '.sweep-cache');
 
+const { assertOriginAllowed } = require('./robots-guard.js');
+
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 const MIN_INTERVAL_MS = 1000;   // 同一オリジンへの最小間隔。robots の Crawl-delay が長ければそちら
@@ -243,7 +245,9 @@ function backoffMs(res, attempt) {
  *                      collectSource がこれを `FORBIDDEN` に畳む。
  *                      **「無い」ではなく「測ることを許されていない」。**サイト自体は生きている
  *   `UNREACHABLE: …` … DNS・接続・タイムアウト
- *   `SKIPPED_ROBOTS` … robots.txt で止めた
+ *   `SKIPPED_ROBOTS` … robots.txt の Disallow で止めた
+ *   `SKIPPED_ROBOTS_403` … **robots.txt 自体が403**。先方が明示的に断っているので踏まない。
+ *                      **Chrome を名乗れば取れる場合でも踏まない**（`robots-guard.js`）
  *
  * Shift_JIS のサイト（じゃらん）があるので Content-Type の charset を見る。
  */
@@ -254,6 +258,16 @@ async function fetchPage(url, opts = {}) {
 
   const u = new URL(url);
   const origin = u.origin;
+
+  // **robots.txt 自体を 403 で断っているオリジンは踏まない**（2026-08-16 追加）。
+  // このスクリプトは Chrome を名乗るので取れてしまうが、
+  // **robots.txt を見せないのは明示的な拒否**なので尊重する。判定は `robots-guard.js`
+  // が ClaudeBot で行う（こちらの正体で聞いて断られたかを見るため）。
+  const guard = await assertOriginAllowed(url);
+  if (!guard.allowed) {
+    return { ok: false, status: guard.status, body: '', url, note: guard.note, ts: Date.now() };
+  }
+
   const robots = await getRobots(origin);
   if (!robotsPathAllowed(robots.rules, u.pathname + u.search)) {
     const entry = { ok: false, status: 0, body: '', url, note: 'SKIPPED_ROBOTS', ts: Date.now() };
@@ -1815,7 +1829,7 @@ async function collectSource(src, opts) {
   const forbidden = fetched.filter(f => f.note === 'HTTP_403');
   const status =
     listOk === 0
-      ? (fetched.some(f => f.note === 'SKIPPED_ROBOTS') ? 'SKIPPED_ROBOTS'
+      ? (fetched.some(f => (f.note || '').startsWith('SKIPPED_ROBOTS')) ? 'SKIPPED_ROBOTS'
         : forbidden.some(f => !f.detail) ? 'FORBIDDEN'
           : rateLimited.some(f => !f.detail) ? 'RATE_LIMITED' : 'UNREACHABLE')
       : 'OK';

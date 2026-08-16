@@ -20,11 +20,34 @@
  *
  * `district-sweep` に入れた `FORBIDDEN` の理屈を**このスキャン自身にも当てる。**
  * 403 は「リンク切れ」ではなく「**測れず**」。生存率の分母から外す。
- * **UA は ClaudeBot のまま。偽装しない。**
+ * **UA は ClaudeBot。**（`district-sweep` は Chrome を名乗る。下の注記を読むこと）
  *
  *   node scripts/l1-link-rot.js                 # 登録済み全市町村の L1
  *   node scripts/l1-link-rot.js --muni=君津市    # 1市町村だけ
  *   node scripts/l1-link-rot.js --detail=8      # 詳細ページを踏む上限（既定6）
+ */
+/**
+ * ## この repo は**スクリプトによって名乗る UA が違う**（2026-08-16 に明記）
+ *
+ *   district-sweep.js / check-official-urls.js … **Chrome を名乗る**
+ *   .parked-scan.js / l1-link-rot.js / robots-guard.js … **ClaudeBot**
+ *
+ * **揃っていないのは、揃えるコストと影響を測った結果。**
+ *
+ * `officialUrl` 116件を両方の UA で叩いて比べた（`scripts/.fetch-layer-compare.js`）:
+ *
+ *   ClaudeBot … OK 92 / 403 **23**
+ *   Chrome    … OK 114 / 403 **1**
+ *
+ * **全部 ClaudeBot に揃えると22サイトが403になり、千葉の L1 調査の一部が再現しなくなる。**
+ * **全部 Chrome に揃えると、断っているサイトに対して名前を偽ることを全面化する。**
+ * どちらも代償が大きいので、**現状のまま「どれが何を名乗るか」を明記する**方を採った。
+ *
+ * → **数字を引用するときは、どの UA で測ったかを必ず書くこと。**
+ * `l1-link-rot` の「測れず」も `.parked-scan` の403も、**ClaudeBot での数字**。
+ *
+ * なお **robots.txt 自体を403で断っているオリジンは、UA に関係なく踏まない**
+ * （`robots-guard.js`。判定は常に ClaudeBot で行う）。
  */
 const fs = require('fs');
 const path = require('path');
@@ -36,7 +59,8 @@ const only = (argv.find(a => a.startsWith('--muni=')) || '').slice(7);
 const DETAIL_CAP = Number((argv.find(a => a.startsWith('--detail=')) || '').slice(9)) || 6;
 const OUT = path.join(__dirname, 'l1-link-rot-2026-08.md');
 
-const UA = 'ClaudeBot';
+const UA = 'ClaudeBot';   // ← 上の注記を参照
+const { assertOriginAllowed } = require('./robots-guard.js');
 const TIMEOUT_MS = 12000;
 const SPACING_MS = 1200;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -84,6 +108,11 @@ function externalLinks(html, baseUrl) {
 
 /** 1URLの死活。403 は DEAD と分ける */
 async function probe(url) {
+  // **robots.txt を403で断っているオリジンは踏まない**（robots-guard.js）
+  const guard = await assertOriginAllowed(url);
+  if (!guard.allowed) {
+    return { verdict: 'FORBIDDEN', status: guard.status, note: 'robots.txt が403。踏まない（測れず）' };
+  }
   try {
     const res = await fetch(url, {
       headers: { 'User-Agent': UA, 'Accept-Language': 'ja,en;q=0.8' },

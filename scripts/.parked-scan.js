@@ -4,15 +4,39 @@
  * 目的は1つ: **既存の `check-official-urls.js` の PARKED_PATTERNS が
  * GoDaddy/Afternic 型の売却ページを素通りしていないか**を、既存188件で確かめる。
  *
- * **UA は ClaudeBot のまま**（既存スクリプトは Chrome UA を名乗るが、こちらは偽装しない）。
+ * **UA は ClaudeBot。**（`check-official-urls.js` は Chrome を名乗る。下の注記を読むこと）
  * そのぶん 403 が増えるが、403 は FORBIDDEN として別に数える。
  *
  *   node scripts/.parked-scan.js
  */
+/**
+ * ## この repo は**スクリプトによって名乗る UA が違う**（2026-08-16 に明記）
+ *
+ *   district-sweep.js / check-official-urls.js … **Chrome を名乗る**
+ *   .parked-scan.js / l1-link-rot.js / robots-guard.js … **ClaudeBot**
+ *
+ * **揃っていないのは、揃えるコストと影響を測った結果。**
+ *
+ * `officialUrl` 116件を両方の UA で叩いて比べた（`scripts/.fetch-layer-compare.js`）:
+ *
+ *   ClaudeBot … OK 92 / 403 **23**
+ *   Chrome    … OK 114 / 403 **1**
+ *
+ * **全部 ClaudeBot に揃えると22サイトが403になり、千葉の L1 調査の一部が再現しなくなる。**
+ * **全部 Chrome に揃えると、断っているサイトに対して名前を偽ることを全面化する。**
+ * どちらも代償が大きいので、**現状のまま「どれが何を名乗るか」を明記する**方を採った。
+ *
+ * → **数字を引用するときは、どの UA で測ったかを必ず書くこと。**
+ * `l1-link-rot` の「測れず」も `.parked-scan` の403も、**ClaudeBot での数字**。
+ *
+ * なお **robots.txt 自体を403で断っているオリジンは、UA に関係なく踏まない**
+ * （`robots-guard.js`。判定は常に ClaudeBot で行う）。
+ */
 const fs = require('fs');
 const path = require('path');
 
-const UA = 'ClaudeBot';
+const UA = 'ClaudeBot';   // ← 上の注記を参照。district-sweep / check-official-urls は Chrome
+const { assertOriginAllowed } = require('./robots-guard.js');
 const SPACING_MS = 1100;
 const TIMEOUT_MS = 12000;
 
@@ -62,6 +86,16 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   const out = [];
   for (const r of targets) {
     let status = 0, note = '', text = '', len = 0;
+    // **robots.txt を403で断っているオリジンは踏まない**（robots-guard.js）
+    const guard = await assertOriginAllowed(r.officialUrl);
+    if (!guard.allowed) {
+      out.push({ id: r.id, name: r.name, status: r.status, url: r.officialUrl,
+        http: guard.status, note: guard.note, len: 0,
+        existingParked: false, existingHit: [], proposedParked: false, proposedWhy: '' });
+      console.log(`${(r.id || '').padEnd(28)} ${guard.note}  ← robots.txt が403。踏まない`);
+      await sleep(SPACING_MS);
+      continue;
+    }
     try {
       const res = await fetch(r.officialUrl, {
         headers: { 'User-Agent': UA, 'Accept-Language': 'ja,en;q=0.8' },
@@ -108,6 +142,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   console.log('RATE_LIMITED (429)     :', n(r => r.note === 'RATE_LIMITED'));
   console.log('その他 HTTP エラー      :', n(r => /^HTTP_/.test(r.note)));
   console.log('UNREACHABLE            :', n(r => /^UNREACHABLE/.test(r.note)));
+  console.log('SKIPPED_ROBOTS_403     :', n(r => /^SKIPPED_ROBOTS/.test(r.note)), '← robots.txt が403なので踏まなかった');
   console.log('既存判定で PARKED       :', n(r => r.existingParked));
   console.log('提案判定で PARKED       :', n(r => r.proposedParked));
   console.log('**提案だけが拾った**     :', n(r => r.proposedParked && !r.existingParked));
