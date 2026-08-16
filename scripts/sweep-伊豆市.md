@@ -1,6 +1,6 @@
-# 地区スイープ: 伊東市
+# 地区スイープ: 伊豆市
 
-実行: 2026-08-16 13:15:30　/　`node scripts/district-sweep.js --district "伊東市"`
+実行: 2026-08-16 13:16:20　/　`node scripts/district-sweep.js --district "伊豆市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
@@ -9,10 +9,10 @@
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **8** |
+| **MISSING**（実在側にあるがデータに無い） | **10** |
 | IN_DATA（両方にある） | 2 |
-| ORPHAN（データにあるがソースに無い） | 2 |
-| データ側のこの地区のレコード | 4 |
+| ORPHAN（データにあるがソースに無い） | 6 |
+| データ側のこの地区のレコード | 8 |
 
 ## ソースの取得結果
 
@@ -21,40 +21,32 @@
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
 | L2 | なっぷ shizuoka/izu | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
-| L2 | じゃらん観光ガイド 伊東市（cit_222080000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 3 | 3 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_222080000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_222080000/g2_04/page_3/ → HTTP_404 |
-| L2 | hinata スポット 伊東・宇佐美・川奈（tokai/shizuoka/2702） | OK | 8 | 8 | 一覧は先頭3ページまで |
-| L2 | hinata スポット 伊豆高原（tokai/shizuoka/2703） | OK | 2 | 1 | 一覧は先頭3ページまで |
+| L2 | じゃらん観光ガイド 伊豆市（cit_222220000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 8 | 7 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_222220000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_222220000/g2_04/page_3/ → HTTP_404 |
+| L2 | hinata スポット 中伊豆（tokai/shizuoka/2708） | OK | 8 | 7 | 一覧は先頭3ページまで |
 | L3 | キャンナビ（japancamp.jp）静岡県 | SKIPPED_ROBOTS | **測れず**（0） | – | 一覧は先頭8ページまで（無いページは404として記録される） / https://japancamp.jp/camp_area/22-shizuoka/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/22-shizuoka/page/2/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/22-shizuoka/page/3/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/22-shizuoka/page/4/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/22-shizuoka/page/5/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/22-shizuoka/page/6/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/22-shizuoka/page/7/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/22-shizuoka/page/8/ → SKIPPED_ROBOTS_403 |
 | L3 | ウォーカープラス 静岡県 | OK | 10 | 0 | robots.txt が ClaudeBot に Crawl-delay: 3 を指定しているので3秒あける。住所は市区町村まで |
-| L1 | 伊東市公式（市サイト） | **L1_NOT_FOUND** | – | – | 観光行政ページにキャンプ場の記載が無い |
-| L1 | 伊東観光協会（伊豆・伊東観光ガイド itospa.com） | **L1_NOT_FOUND** | – | – | 宿泊施設一覧・観光体験一覧のどちらにもキャンプ場のカテゴリが無く、一覧中にキャンプ場が1件も出てこない |
+| L1 | 伊豆市観光情報サイト（kanko.city.izu.shizuoka.jp） | **L1_NOT_FOUND** | – | – | 施設一覧・詳細とも JavaScript でしか描画されず、HTML には施設名も住所も出てこない（378KB 取得して0件） |
 | L1 | 都道府県オープンデータ（静岡） | **L1_NOT_FOUND** | – | – | 静岡県のオープンデータに観光施設（キャンプ場）一覧の CSV は未確認 |
 
 **L1_NOT_FOUND は「探したが一覧が存在しない」。**「まだ探していない」とは違う。
 次に見る人が同じ探索を繰り返さないために、確認したURLを残しておく。
 
-- **伊東市公式（市サイト）** — 観光行政ページにキャンプ場の記載が無い
-  - 確認: https://www.city.ito.shizuoka.jp/kanko/index.html
-- **伊東観光協会（伊豆・伊東観光ガイド itospa.com）** — 宿泊施設一覧・観光体験一覧のどちらにもキャンプ場のカテゴリが無く、一覧中にキャンプ場が1件も出てこない
-  - 確認: https://itospa.com/stay/index.html
-  - 確認: https://itospa.com/spot/index.html
+- **伊豆市観光情報サイト（kanko.city.izu.shizuoka.jp）** — 施設一覧・詳細とも JavaScript でしか描画されず、HTML には施設名も住所も出てこない（378KB 取得して0件）
+  - 確認: https://kanko.city.izu.shizuoka.jp/form1.html?c1=4
+  - 確認: https://kanko.city.izu.shizuoka.jp/form1.html?c1=4&pid=4917
 
 取得したページ:
 
 - `L2` https://www.nap-camp.com/shizuoka/izu/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/shizuoka/izu/list?page=2 → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_222080000/g2_04/ → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_222080000/g2_04/page_2/ → 404
-- `L2` https://www.jalan.net/kankou/cit_222080000/g2_04/page_3/ → 404
-  - 詳細ページ 3 件（住所の取得のため）
-- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2702/list → 200（キャッシュ）
-- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2702/list?page=2 → 200（キャッシュ）
-- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2702/list?page=3 → 200（キャッシュ）
+- `L2` https://www.jalan.net/kankou/cit_222220000/g2_04/ → 200（キャッシュ）
+- `L2` https://www.jalan.net/kankou/cit_222220000/g2_04/page_2/ → 404
+- `L2` https://www.jalan.net/kankou/cit_222220000/g2_04/page_3/ → 404
   - 詳細ページ 8 件（住所の取得のため）
-- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2703/list → 200（キャッシュ）
-- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2703/list?page=2 → 200（キャッシュ）
-- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2703/list?page=3 → 200（キャッシュ）
-  - 詳細ページ 2 件（住所の取得のため）
+- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2708/list → 200（キャッシュ）
+- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2708/list?page=2 → 200（キャッシュ）
+- `L2` https://camp-spot.hinata.me/tokai/shizuoka/2708/list?page=3 → 200（キャッシュ）
+  - 詳細ページ 8 件（住所の取得のため）
 - `L3` https://japancamp.jp/camp_area/22-shizuoka/ → 403
 - `L3` https://japancamp.jp/camp_area/22-shizuoka/page/2/ → 403
 - `L3` https://japancamp.jp/camp_area/22-shizuoka/page/3/ → 403
@@ -67,70 +59,87 @@
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. 伊豆高原テントリゾート
+### 1. 天城ふるさと広場キャンプ場
 
 - **分類**: MISSING
 - **confidence**: MID（層: L2）
-- **住所**: 静岡県伊東市池614-171 / 静岡県伊東市池614-168
+- **住所**: 静岡県伊豆市上船原1120-1
+- **表記ゆれ**: 天城ふるさと広場キャンプ場 / 天城ふるさと広場
 - **出典**:
-  - `L2` じゃらん観光ガイド 伊東市（cit_222080000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000218739/
-  - `L2` hinata スポット 伊東・宇佐美・川奈（tokai/shizuoka/2702） — https://camp-spot.hinata.me/spots/izukogen-tentresort
+  - `L2` じゃらん観光ガイド 伊豆市（cit_222220000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_22328ca3430052878/
+  - `L2` hinata スポット 中伊豆（tokai/shizuoka/2708） — https://camp-spot.hinata.me/spots/amagifurusato
 
-### 2. お宿らんたん
+### 2. 土肥オートキャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
-- **住所**: 静岡県伊東市富戸887-16
+- **住所**: 静岡県伊豆市小土肥2021-35
 - **出典**:
-  - `L2` じゃらん観光ガイド 伊東市（cit_222080000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000188781/
+  - `L2` じゃらん観光ガイド 伊豆市（cit_222220000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_22324ca3430052876/
 
-### 3. 自由キャンプ場 伊東
+### 3. サザ波キャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
-- **住所**: 静岡県伊東市荻649−2
+- **住所**: 静岡県伊豆市土肥2906-3
 - **出典**:
-  - `L2` hinata スポット 伊東・宇佐美・川奈（tokai/shizuoka/2702） — https://camp-spot.hinata.me/spots/02141
+  - `L2` じゃらん観光ガイド 伊豆市（cit_222220000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_22324ca3430053727/
 
-### 4. WEHOMEVILLA～城ケ崎温泉～
+### 4. RECAMP中伊豆（萬城の滝キャンプ場）
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
-- **住所**: 静岡県伊東市八幡野1086-66
+- **住所**: 静岡県伊豆市地蔵堂776-1
 - **出典**:
-  - `L2` hinata スポット 伊東・宇佐美・川奈（tokai/shizuoka/2702） — https://camp-spot.hinata.me/spots/wehome-jogasaki
+  - `L2` じゃらん観光ガイド 伊豆市（cit_222220000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_22329ca3432011831/
 
-### 5. ログハウスの宿LOG LOG inn
+### 5. koniwa CAMP 天城湯ヶ島
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
-- **住所**: 静岡県伊東市富戸1273ー131
+- **住所**: 静岡県伊豆市湯ケ島895-1
 - **出典**:
-  - `L2` hinata スポット 伊東・宇佐美・川奈（tokai/shizuoka/2702） — https://camp-spot.hinata.me/spots/log-log-inn
+  - `L2` じゃらん観光ガイド 伊豆市（cit_222220000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000229756/
 
-### 6. 貸別荘 レイクタウン
+### 6. 合同会社アースリング
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
-- **住所**: 静岡県伊東市吉田836-93
+- **住所**: 静岡県伊豆市小下田1899-1
 - **出典**:
-  - `L2` hinata スポット 伊東・宇佐美・川奈（tokai/shizuoka/2702） — https://camp-spot.hinata.me/spots/kashibesso-laketown
+  - `L2` じゃらん観光ガイド 伊豆市（cit_222220000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000231102/
 
-### 7. 貸別荘 ロイヤルハイランド
+### 7. UFUFU VILLAGE
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
-- **住所**: 静岡県伊東市十足関場614-160
+- **住所**: 静岡県伊豆市月ケ瀬425-1
 - **出典**:
-  - `L2` hinata スポット 伊東・宇佐美・川奈（tokai/shizuoka/2702） — https://camp-spot.hinata.me/spots/kashibesso-loyal-highland
+  - `L2` hinata スポット 中伊豆（tokai/shizuoka/2708） — https://camp-spot.hinata.me/spots/ufufu-village
 
-### 8. UMIHOTEL ANNEX
+### 8. かたつむり＆ファーマーズヒル
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
-- **住所**: 静岡県伊東市宇佐美1746-2
+- **住所**: 静岡県伊豆市湯ヶ島892-66
 - **出典**:
-  - `L2` hinata スポット 伊東・宇佐美・川奈（tokai/shizuoka/2702） — https://camp-spot.hinata.me/spots/umihotel-annex
+  - `L2` hinata スポット 中伊豆（tokai/shizuoka/2708） — https://camp-spot.hinata.me/spots/katatsumuri-and-farmers-hill
+
+### 9. もちこし来楽歩
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 静岡県伊豆市持越692
+- **出典**:
+  - `L2` hinata スポット 中伊豆（tokai/shizuoka/2708） — https://camp-spot.hinata.me/spots/mochikoshi-club
+
+### 10. 伊豆自然村キャンプフィールド
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 静岡県伊豆市徳永1097
+- **出典**:
+  - `L2` hinata スポット 中伊豆（tokai/shizuoka/2708） — https://camp-spot.hinata.me/spots/izushizenmura
 
 ## L1 の網羅率（この市町村）
 
@@ -149,15 +158,19 @@
 
 | id | 名前 | 住所 | status | needsVerify |
 |---|---|---|---|---|
-| `ito-marine-town-camp` | 伊東マリンタウンキャンプ場 | 静岡県伊東市湯川571-19 | unverified | true |
-| `omuroyama-camp` | 伊東市青少年キャンプ場 | 静岡県伊東市池字柏戸676-1 | active |  |
+| `amagi-kogen` | 天城高原キャンプ場 | 静岡県伊豆市湯ヶ島1918 | unverified | true |
+| `izu-kakure-auto` | 伊豆隠れオートキャンプ場 | 静岡県伊豆市八木沢2929-5 | active |  |
+| `shuzenji-nijinokuni-camp` | 修善寺虹の郷キャンプ場 | 静岡県伊豆市修善寺4279-3 | unverified | true |
+| `nishi-amagi-kogen` | 西天城高原牧場のキャンプ場 | 静岡県伊豆市上船原1519 | unverified | true |
+| `nekokodake-camp` | 猫越岳キャンプ場 | 静岡県伊豆市湯ヶ島1638 | unverified | true |
+| `camp-bean-izu` | CAMP BEAN | 静岡県伊豆市大平1499-2 | active |  |
 
 ## IN_DATA — 両方にある
 
 | データ側 | ソース側の名前 | 一致の根拠 | confidence | 層 |
 |---|---|---|---|---|
-| `usami-shiroyama` 宇佐美城山公園キャンプ場 | 宇佐美城山公園キャンプ場 USAMI SHIROYAMA CAMP FIELD | 名前 | MID | L2 |
-| `izukogen-auto` 伊豆高原オートキャンプ場 | K's CAMP伊豆高原グランピング | 名前 | MID | L2 |
+| `camp-baird` キャンプベアード | キャンプベアード | 名前 | MID | L2 |
+| `darumayama-kogen` だるま山高原キャンプ場 | だるま山高原キャンプ場 | 名前 | MID | L2 |
 
 ## 大字検査 — IN_DATA の突合が本当に同じ場所か
 
@@ -170,24 +183,14 @@
 
 | 分類 | 件数 |
 |---|---:|
-| **不一致（誤突合の疑い）** | **1** |
+| **不一致（誤突合の疑い）** | **0** |
 | 包含（粒度違い・無害） | 0 |
-| 一致 | 1 |
+| 一致 | 2 |
 | 検査対象外（どちらかの大字が取れない） | 0 |
 
-> **★ 「不一致 1件」を「誤突合が 1件」と読まないこと。**
+> **★ 「不一致 0件」を「誤突合が 0件」と読まないこと。**
 > 検査対象外が 0件ある。住所を持たないソース（`nameOnly`）で当たった突合は
 > この検査を素通りする。**検査に出なかったことは、正しいことの根拠にならない。**
-
-### 不一致 — 大字が別
-
-| データ側 | データ側の大字 | ソース側 | ソース側の大字 | 一致の根拠 |
-|---|---|---|---|---|
-| `izukogen-auto` 伊豆高原オートキャンプ場 | 池 | K's CAMP伊豆高原グランピング | 富戸 | 名前 |
-
-**「不一致＝誤突合」でもない。**同じ施設でソース側の住所が古い、という型がある
-（田貫湖の例: ソースが猪之頭、データが佐折。移転ではなく表記の世代違い）。
-**1件ずつ人が見るための一覧**であって、自動で外す根拠には使わない。
 
 ## 大字が取れないソース項目の行き先
 
@@ -243,8 +246,8 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 | ソース | 取得 | 名前が空 | 地区内 | b1 住所なし | b2 地区外 | 突合 |
 |---|---|---|---|---|---|---|
 | なっぷ shizuoka/izu | 20 | 0 | 2 | 18 | 0 | OK |
-| じゃらん観光ガイド 伊東市（cit_222080000 / ジャンル キャンプ・バンガロー・コテージ） | 3 | 0 | 3 | 0 | 0 | OK |
-| hinata スポット 伊豆高原（tokai/shizuoka/2703） | 10 | 0 | 9 | 0 | 1 | OK |
+| じゃらん観光ガイド 伊豆市（cit_222220000 / ジャンル キャンプ・バンガロー・コテージ） | 8 | 0 | 7 | 0 | 1 | OK |
+| hinata スポット 中伊豆（tokai/shizuoka/2708） | 8 | 0 | 7 | 0 | 1 | OK |
 | キャンナビ（japancamp.jp）静岡県 | 0 | 0 | 0 | 0 | 0 | OK |
 | ウォーカープラス 静岡県 | 10 | 0 | 0 | 0 | 10 | OK |
 
@@ -262,9 +265,9 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 
 | 名前 | 出典（層 / ソース） | 原因 | URL |
 |---|---|---|---|
+| 宇佐美城山公園キャンプ場 USAMI SHIROYAMA CAMP FIELD | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/shizuoka/izu/list |
 | 宇久須キャンプ場 | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/shizuoka/izu/list |
 | 西伊豆オートキャンプ場 | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/shizuoka/izu/list |
-| キャンプベアード | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/shizuoka/izu/list |
 | LScamp中伊豆（萬城の滝キャンプ場） | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/shizuoka/izu/list |
 | キャンプ黄金崎 | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/shizuoka/izu/list |
 | ストーンチェアキャンプ場 | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/shizuoka/izu/list |
@@ -287,7 +290,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 
 | 名前 | 住所 | 出典（層 / ソース） |
 |---|---|---|
-| CAMP BEAN | 静岡県伊豆市大平1499-2 | L2 hinata-spot |
+| モビリティーパーク | 静岡県伊豆の国市長者原1445-481 | L2 jalan / L2 hinata-spot |
 | 市民の森(沼津市) | 静岡県沼津市 | L3 walkerplus |
 | おれっぷ大久保キャンプ場 | 静岡県藤枝市 | L3 walkerplus |
 | 御殿場欅平ファミリーキャンプ場 | 静岡県御殿場市 | L3 walkerplus |
@@ -310,7 +313,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 
 | 合流先 | 分類 | 合流した住所なしの出典 |
 |---|---|---|
-| 宇佐美城山公園キャンプ場 USAMI SHIROYAMA CAMP FIELD | IN_DATA | L2 nap-camp |
+| キャンプベアード | IN_DATA | L2 nap-camp |
 
 ## 住所が空で、どの地区のスイープにも載らないレコード（全データ横断）
 

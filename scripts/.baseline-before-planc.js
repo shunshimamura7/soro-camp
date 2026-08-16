@@ -63,12 +63,32 @@ if (snap && !FREEZE) {
     .map(f => f.replace(/^sweep-|\.md$/g, ''));
 }
 
+/**
+ * 凍結した地区 md の実体を返す。
+ *
+ * ## ★ 3本だけ、案Cが同じファイル名で上書きしてしまった（2026-08-16 に実際に踏んだ）
+ *
+ * 凍結の対象リストは地区名で持っている。**大字を持たない市町村の地区名は、
+ * 市町村名そのもの。**`上野原市` / `大月市` / `都留市` の3本がそれで、
+ * 案Cの `--all` が `sweep-都留市.md` を**同じ名前で書き直した。**
+ *
+ * リスト固定は「新しく増える md を無視する」ためのもので、
+ * **既存の名前を奪われる場合は守れない。**
+ *
+ * そこで案C前の中身を `sweep-<地区>.before-planc.md` に退避してある（git HEAD から復元）。
+ * **退避があればそちらを読む。**無ければ従来どおり `sweep-<地区>.md`。
+ */
+function frozenFile(d) {
+  const arch = `sweep-${d}.before-planc.md`;
+  return fs.existsSync(path.join(__dirname, arch)) ? arch : `sweep-${d}.md`;
+}
+
 /** 凍結対象なのにファイルが消えている＝これはドリフト（無視しない） */
-const gone = districtNames.filter(d => !fs.existsSync(path.join(__dirname, `sweep-${d}.md`)));
+const gone = districtNames.filter(d => !fs.existsSync(path.join(__dirname, frozenFile(d))));
 
 const rows = districtNames
   .filter(d => !gone.includes(d))
-  .map(d => ({ district: d, ...readSweep(`sweep-${d}.md`) }))
+  .map(d => ({ district: d, ...readSweep(frozenFile(d)) }))
   .sort((a, b) => a.district.localeCompare(b.district, 'ja'));
 
 const totMissing = rows.reduce((a, r) => a + r.missing.length, 0);

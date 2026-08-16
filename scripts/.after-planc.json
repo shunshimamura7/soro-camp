@@ -1,0 +1,312 @@
+{
+ "rows": [
+  {
+   "district": "伊東市",
+   "missing": 8,
+   "inData": 2,
+   "orphan": 2,
+   "b1": 9,
+   "b2": 11,
+   "b2other": 11,
+   "oza": {
+    "ng": 1,
+    "contained": 0,
+    "same": 1,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "伊豆市",
+   "missing": 10,
+   "inData": 2,
+   "orphan": 6,
+   "b1": 9,
+   "b2": 11,
+   "b2other": 11,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 2,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "厚木市",
+   "missing": 1,
+   "inData": 0,
+   "orphan": 2,
+   "b1": 4,
+   "b2": 16,
+   "b2other": 16,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "山中湖村",
+   "missing": 30,
+   "inData": 4,
+   "orphan": 2,
+   "b1": 2,
+   "b2": 10,
+   "b2other": 10,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 4,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "山北町",
+   "missing": 15,
+   "inData": 8,
+   "orphan": 3,
+   "b1": 6,
+   "b2": 15,
+   "b2other": 15,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 8,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "山梨市",
+   "missing": 5,
+   "inData": 1,
+   "orphan": 1,
+   "b1": 6,
+   "b2": 27,
+   "b2other": 27,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 1,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "松田町",
+   "missing": 5,
+   "inData": 1,
+   "orphan": 1,
+   "b1": 3,
+   "b2": 32,
+   "b2other": 32,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 1,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "上野原市",
+   "missing": 6,
+   "inData": 2,
+   "orphan": 0,
+   "b1": 15,
+   "b2": 26,
+   "b2other": 26,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 2,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "静岡市",
+   "missing": 12,
+   "inData": 3,
+   "orphan": 3,
+   "b1": 1,
+   "b2": 10,
+   "b2other": 10,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 3,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "川根本町",
+   "missing": 2,
+   "inData": 6,
+   "orphan": 3,
+   "b1": 4,
+   "b2": 15,
+   "b2other": 15,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 6,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "相模原市",
+   "missing": 23,
+   "inData": 12,
+   "orphan": 7,
+   "b1": 6,
+   "b2": 12,
+   "b2other": 12,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 12,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "大月市",
+   "missing": 1,
+   "inData": 2,
+   "orphan": 0,
+   "b1": 15,
+   "b2": 27,
+   "b2other": 27,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 2,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "都留市",
+   "missing": 6,
+   "inData": 2,
+   "orphan": 0,
+   "b1": 15,
+   "b2": 24,
+   "b2other": 24,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 2,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "道志村",
+   "missing": 42,
+   "inData": 15,
+   "orphan": 0,
+   "b1": 5,
+   "b2": 53,
+   "b2other": 53,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 1,
+    "skipped": 14
+   }
+  },
+  {
+   "district": "南部町",
+   "missing": 2,
+   "inData": 4,
+   "orphan": 2,
+   "b1": 6,
+   "b2": 14,
+   "b2other": 14,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 4,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "富士河口湖町",
+   "missing": 37,
+   "inData": 10,
+   "orphan": 5,
+   "b1": 7,
+   "b2": 22,
+   "b2other": 22,
+   "oza": {
+    "ng": 0,
+    "contained": 0,
+    "same": 10,
+    "skipped": 0
+   }
+  },
+  {
+   "district": "富士宮市",
+   "missing": 24,
+   "inData": 11,
+   "orphan": 2,
+   "b1": 10,
+   "b2": 34,
+   "b2other": 34,
+   "oza": {
+    "ng": 2,
+    "contained": 1,
+    "same": 7,
+    "skipped": 1
+   }
+  },
+  {
+   "district": "北杜市",
+   "missing": 39,
+   "inData": 7,
+   "orphan": 4,
+   "b1": 3,
+   "b2": 7,
+   "b2other": 7,
+   "oza": {
+    "ng": 0,
+    "contained": 1,
+    "same": 6,
+    "skipped": 0
+   }
+  }
+ ],
+ "totMissing": 268,
+ "uniq": 249,
+ "totIn": 92,
+ "totOrphan": 43,
+ "confTot": {
+  "MID": 62,
+  "LOW": 149,
+  "HIGH": 57
+ },
+ "overlaps": [],
+ "totB1": 126,
+ "totB2": 366,
+ "totB2other": 366,
+ "oza": {
+  "ng": 3,
+  "contained": 2,
+  "same": 72,
+  "skipped": 15
+ },
+ "noOazaTotal": 298,
+ "noOazaUniq": 98,
+ "noOazaByWhere": {
+  "b2（地区外）": 217,
+  "MISSING": 52,
+  "IN_DATA": 29
+ },
+ "noOazaUniqByWhere": {
+  "b2（地区外）": 39,
+  "MISSING": 41,
+  "IN_DATA": 18
+ },
+ "gap": {
+  "a. 凍結76地区（大字単位）": 106,
+  "b. 旧 --all が実際に回した地区（needsVerify で絞られた分）": 275,
+  "c. 案C後の18市区町村": 0
+ },
+ "gapSurfaced": 100,
+ "oldAllDistricts": 33
+}

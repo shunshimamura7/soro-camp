@@ -1,6 +1,6 @@
 # 地区スイープ: 富士宮市
 
-実行: 2026-08-16 13:09:08　/　`node scripts/district-sweep.js --district "富士宮市"`
+実行: 2026-08-16 13:16:49　/　`node scripts/district-sweep.js --district "富士宮市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
