@@ -146,3 +146,15 @@ fs.writeFileSync(path.join(__dirname, '.baseline-before-planc.json'),
 console.log(`地区 ${rows.length} / MISSING 延べ ${totMissing} / ユニーク ${uniq.size} / IN_DATA ${totIn} / ORPHAN ${totOrphan}`);
 console.log(`包含ペア ${overlaps.length} 組 / confidence HIGH ${confTot.HIGH || 0} MID ${confTot.MID || 0} LOW ${confTot.LOW || 0}`);
 console.log('→ ' + path.relative(path.join(__dirname, '..'), OUT));
+// **基準線が汚れていないかを自分で確かめる。**
+// 2026-08-16、`--district` を1本走らせただけで77地区になり ORPHAN が 48→49 に動いた。
+// 凍結した76本に新しい sweep md が混ざると、比較の土台が静かにずれる。
+const EXPECT = { districts: 76, missing: 214, uniq: 184, inData: 103, orphan: 48, pairs: 7 };
+const got = { districts: rows.length, missing: totMissing, uniq: uniq.size, inData: totIn, orphan: totOrphan, pairs: overlaps.length };
+const drift = Object.keys(EXPECT).filter(k => EXPECT[k] !== got[k]);
+if (drift.length) {
+  console.error('\n⚠ **基準線がずれている。**案C実装前の凍結値と違う:');
+  drift.forEach(k => console.error(`   ${k}: 期待 ${EXPECT[k]} / 実際 ${got[k]}`));
+  console.error('   sweep-*.md が増減していないか確認すること（検証用に走らせた地区 md が残っていないか）。');
+  process.exitCode = 1;
+}
