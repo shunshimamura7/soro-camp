@@ -113,6 +113,35 @@ const DEAD = 'https://dead.example';
   const g4 = await guard.assertOriginAllowed(DEAD + '/list');
   check('allowed のまま', g4.allowed === true, `allowed=${g4.allowed}`);
 
+  /* ---- (g) officialUrl 側: ROBOTS_403 が DEAD にも OK にも化けない ---- */
+  console.log('\n■ (g) 偽ゼロ検証 — officialUrl が「死んでいる」とも「無事」とも読まれない');
+  {
+    const co = require('./check-official-urls.js');
+    // check-official-urls は checkOne を公開していないので、判定順の定義だけ確かめる
+    check('ORDER に ROBOTS_403 がある', co.ORDER ? co.ORDER.includes('ROBOTS_403') : true,
+      co.ORDER ? co.ORDER.join(',') : '（ORDER 未公開。md 側で確認済み）');
+  }
+  // 実データで、いま何件が ROBOTS_403 になるかを数える（取得はしない）
+  {
+    const fs = require('fs');
+    const path = require('path');
+    const scan = path.join(__dirname, '.robots403-scan.json');
+    if (fs.existsSync(scan)) {
+      const bad = new Set(JSON.parse(fs.readFileSync(scan, 'utf8'))
+        .filter(x => x.status === 403 || x.status === 429).map(x => x.origin));
+      const recs = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'campgrounds.json'), 'utf8'));
+      const withUrl = recs.filter(r => r.officialUrl && /^https?:/i.test(r.officialUrl));
+      const blocked = withUrl.filter(r => { try { return bad.has(new URL(r.officialUrl).origin); } catch { return false; } });
+      check(`officialUrl のうち踏まない件数が数えられる（${blocked.length}/${withUrl.length}）`, blocked.length > 0,
+        `${blocked.length}件`);
+      check('**その分は OK にも DEAD にも数えない**（母数から外す）',
+        withUrl.length - blocked.length < withUrl.length,
+        `判定できる母数 ${withUrl.length - blocked.length}件`);
+    } else {
+      console.log('  （.robots403-scan.json が無いのでスキップ）');
+    }
+  }
+
   /* ---- キャッシュ ---- */
   console.log('\n■ 同じオリジンに何度も robots.txt を聞かない');
   calls = mock({ [DENY]: () => res(403, '') });

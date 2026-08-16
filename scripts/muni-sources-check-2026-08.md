@@ -526,3 +526,29 @@
 | OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list | 上野原市 | 10件抽出 |
 | OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list?page=2 | 上野原市 | 10件抽出 |
 | OK | https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html | 上野原市 | 24件抽出 |
+
+## 第9回（2026-08-16 11:18 UTC） — 厚木市 のみ
+
+対象 12件 / 問題 1件
+
+> **⚠ 1件は測っていない（`ROBOTS_403`）。**
+> robots.txt 自体が403のオリジンなので、`robots-guard.js` で踏んでいない。
+> **「取れなかった」でも「0件」でもなく、「取らないと決めた」。**
+> 対象オリジン: https://www.atsugi-kankou.jp
+> **403 は変わりうる。**解ければ次の実行で自動的に取れるようになるので、
+> ここの件数が減ったら、その自治体の L1 が復活したということ。
+
+| 判定 | URL | 使っている自治体 | 備考 |
+|---|---|---|---|
+| ROBOTS_403 | https://www.atsugi-kankou.jp/life/6/ | 厚木市 | robots.txt が HTTP 403。**明示的な拒否なので踏んでいない**（0件ではない） |
+| OK | https://camp-spot.hinata.me/kanto/kanagawa/1905/list | 厚木市 | 6件抽出 |
+| OK | https://camp-spot.hinata.me/kanto/kanagawa/1905/list?page=2 | 厚木市 | 0件（同ソース全体で6件。ページ送りの終端） |
+| OK | https://camp-spot.hinata.me/kanto/kanagawa/1905/list?page=3 | 厚木市 | 0件（同ソース全体で6件。ページ送りの終端） |
+| OK | https://www.city.atsugi.kanagawa.jp/kanko_reja/index.html | 厚木市 | 到達のみ確認（不在の根拠URL） |
+| OK | https://www.city.atsugi.kanagawa.jp/kanko_reja/kanko/index.html | 厚木市 | 到達のみ確認（不在の根拠URL） |
+| OK | https://www.city.atsugi.kanagawa.jp/kanko_reja/kankojoho/2/index.html | 厚木市 | 到達のみ確認（不在の根拠URL） |
+| OK | https://www.jalan.net/kankou/cit_142120000/g2_04/ | 厚木市 | 1件抽出 |
+| OK | https://www.jalan.net/kankou/cit_142120000/g2_04/page_2/ | 厚木市 | HTTP 404（ページ送りの終端。同ソース全体で1件） |
+| OK | https://www.jalan.net/kankou/cit_142120000/g2_04/page_3/ | 厚木市 | HTTP 404（ページ送りの終端。同ソース全体で1件） |
+| OK | https://www.nap-camp.com/kanagawa/atsugi_ebina/list | 厚木市 | 10件抽出 |
+| OK | https://www.nap-camp.com/kanagawa/atsugi_ebina/list?page=2 | 厚木市 | 10件抽出 |

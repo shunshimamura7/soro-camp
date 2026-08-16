@@ -1249,27 +1249,59 @@ const SRC_UENOHARA_CITY = {
  * 一覧に住所は無いが、**各スポットの詳細ページに「住所」の行がある**（実測: 都留市大幡5108）。
  * したがって listDetail として住所まで取れる。裏取り専用の nameOnly より強い。
  */
-const SRC_YAMANASHI_KANKO_OTSUKI = {
-  id: 'yamanashi-kankou-otsuki',
-  layer: 'L2',
-  kind: 'listDetail',
-  label: 'やまなし観光推進機構 大月・都留エリアのキャンプ場',
-  note: '実測の内訳は 道志村20 / 都留市3 / 丹波山村1。大月市・上野原市は0件',
-  pages: ['https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html'],
-  list(html) {
-    const seen = new Map();
-    const re = /<a href="(\/kankou\/spot\/p2_\d+\.html)"[^>]*>([^<]+)<\/a>/g;
-    let m;
-    while ((m = re.exec(html))) {
-      if (!seen.has(m[1])) seen.set(m[1], cleanText(m[2]));
-    }
-    return [...seen].map(([p, name]) => ({ name, url: 'https://www.yamanashi-kankou.jp' + p }));
-  },
-  address(html) {
-    const m = html.match(/<th[^>]*>\s*<p>\s*住所\s*<\/p>\s*<\/th>\s*<td[^>]*>\s*<p>([^<]+)<\/p>/);
-    return m ? tidyAddress(m[1]) : null;
-  },
-};
+/**
+ * やまなし観光推進機構「山梨のキャンプ場」特集のエリアページ。
+ *
+ * **ページ名を信じない（富士宮の教訓）。**エリア名と中身は一致しないことがある。
+ * 実在するエリアページは特集トップ（`/special/yamanashicamp/`）のリンクから拾った:
+ *
+ *   kiyosato / kofu / isawa / fujikawa / mtfuji / otsuki
+ *
+ * 新しく足すときは**必ず詳細ページの住所を数えて市町村の内訳を確かめる**こと。
+ */
+function yamanashiKankoCamp(slug, label, note) {
+  return {
+    id: 'yamanashi-kankou-' + slug,
+    layer: 'L2',
+    kind: 'listDetail',
+    label: `やまなし観光推進機構 ${label}`,
+    note,
+    pages: [`https://www.yamanashi-kankou.jp/special/yamanashicamp/${slug}.html`],
+    list(html) {
+      const seen = new Map();
+      const re = /<a href="(\/kankou\/spot\/p2_\d+\.html)"[^>]*>([^<]+)<\/a>/g;
+      let m;
+      while ((m = re.exec(html))) {
+        if (!seen.has(m[1])) seen.set(m[1], cleanText(m[2]));
+      }
+      return [...seen].map(([p, name]) => ({ name, url: 'https://www.yamanashi-kankou.jp' + p }));
+    },
+    address(html) {
+      const m = html.match(/<th[^>]*>\s*<p>\s*住所\s*<\/p>\s*<\/th>\s*<td[^>]*>\s*<p>([^<]+)<\/p>/);
+      return m ? tidyAddress(m[1]) : null;
+    },
+  };
+}
+
+const SRC_YAMANASHI_KANKO_OTSUKI = yamanashiKankoCamp(
+  'otsuki', '大月・都留エリアのキャンプ場',
+  '実測の内訳は 道志村20 / 都留市3 / 丹波山村1。大月市・上野原市は0件'
+);
+
+/**
+ * **富士河口湖町観光連盟（L1）の代わりに足した**（2026-08-16）。
+ *
+ * `fujisan.ne.jp` が robots.txt を403で返すようになり、`robots-guard.js` で踏まなくなったため、
+ * **富士河口湖町の L1 が抽出0件になった。**町公式（`town.fujikawaguchiko.lg.jp`）も探したが
+ * **キャンプの語が0回**で、観光情報を丸ごと `fujisan.ne.jp` に委ねている。
+ *
+ * **これは L1 の代替ではない（層が違う）。**L2 で住所を拾い直すための穴埋め。
+ * 実測17件の内訳は **富士河口湖町7 / 山中湖村3 / 住所が取れないもの7**。
+ */
+const SRC_YAMANASHI_KANKO_MTFUJI = yamanashiKankoCamp(
+  'mtfuji', '富士山・富士五湖エリアのキャンプ場',
+  '実測17件のうち住所が取れたのは 富士河口湖町7 / 山中湖村3。fujisan.ne.jp が robots 403 になった穴埋め（L1 の代替ではない）'
+);
 
 /* ---- 神奈川・県央（県公式） -------------------------------------------- */
 
@@ -1411,8 +1443,25 @@ const MUNI_SOURCES = {
     l1NotFound: [
       {
         label: '厚木市公式（市サイト）',
-        reason: '観光・施設のページにキャンプ場の一覧が無い。市営キャンプ場が無いため個別ページも立っていない',
-        checked: ['https://www.atsugi-kankou.jp/detailsearch/index.php'],
+        reason:
+          '観光・施設のページにキャンプ場の一覧が無い。市営キャンプ場が無いため個別ページも立っていない。' +
+          '**2026-08-16 に再確認。**君津市の型（「泊る」ではなく「遊ぶ・体験」の下にあった）を踏まえて' +
+          '分類名で決めつけずに探したが、「観光・レジャー」トップ・「レジャー」・「観光ジャンル」・「施設を探す」の' +
+          '**どれも「キャンプ」の語が0回**。市公式に一覧は無い（robots.txt は404で制限なし＝踏めるが、中身が無い）',
+        checked: [
+          'https://www.city.atsugi.kanagawa.jp/kanko_reja/index.html',
+          'https://www.city.atsugi.kanagawa.jp/kanko_reja/kankojoho/2/index.html',
+          'https://www.city.atsugi.kanagawa.jp/kanko_reja/kanko/index.html',
+        ],
+      },
+      {
+        label: '厚木市観光協会 あつぎ観光なび（登録済み L1）',
+        reason:
+          '**「無い」ではなく「取らないと決めた」。**`atsugi-kankou.jp` が robots.txt を **403** で返すため、' +
+          '`robots-guard.js` で踏まないことにした（2026-08-16）。**Chrome を名乗れば取れるが踏まない。**' +
+          'ソース定義は外していないので、403 が解けたら自動で復活する。' +
+          '結果は `SKIPPED_ROBOTS` で、**0件とは別物**',
+        checked: ['https://www.city.atsugi.kanagawa.jp/kanko_reja/index.html'],
       },
     ],
   },
@@ -1475,11 +1524,34 @@ const MUNI_SOURCES = {
   富士河口湖町: {
     pref: '山梨',
     sources: [
+      // ⚠ SRC_FUJIKAWAGUCHIKO は **robots-guard で踏まなくなった**（2026-08-16）。
+      // `fujisan.ne.jp` が robots.txt を403で返すため。**外さずに残す**（0件と未登録は別物）。
+      // status は SKIPPED_ROBOTS になり、`OK:0件` にはならない
       SRC_FUJIKAWAGUCHIKO,
+      SRC_YAMANASHI_KANKO_MTFUJI,
       napCamp('motosuko_nishiko_kawaguchiko_fuzjiyoshida_shojiko', 'yamanashi'),
       jalan('19430', '富士河口湖町'),
       hinataSpot('koushinetsu/yamanashi/2005', '河口湖・西湖・富士吉田・精進湖・本栖湖'),
       // SRC_TAKIBI は廃止（サービス終了。定義部の墓標コメント参照）
+    ],
+    l1NotFound: [
+      {
+        label: '富士河口湖町観光連盟（登録済み L1・fujisan.ne.jp）',
+        reason:
+          '**「無い」ではなく「取らないと決めた」。**`fujisan.ne.jp` が robots.txt を **403** で返すため、' +
+          '`robots-guard.js` で踏まないことにした（2026-08-16）。**Chrome を名乗れば取れるが踏まない。**' +
+          '**MISSING 43件を抱える主要エリアなので損失が大きい。**穴埋めに ' +
+          'SRC_YAMANASHI_KANKO_MTFUJI（L2・富士河口湖町7件）を足したが、**層が違うので L1 の代替ではない。**' +
+          'ソース定義は外していないので、403 が解けたら自動で復活する',
+        checked: ['https://www.town.fujikawaguchiko.lg.jp/'],
+      },
+      {
+        label: '富士河口湖町公式（町サイト）',
+        reason:
+          '**トップに「キャンプ」の語が0回。**観光情報を丸ごと `fujisan.ne.jp`（観光連盟）へのリンクで' +
+          '委ねていて、町公式側に施設一覧が無い（2026-08-16 実測）。robots.txt は404で制限なし＝踏めるが、中身が無い',
+        checked: ['https://www.town.fujikawaguchiko.lg.jp/'],
+      },
     ],
   },
 
@@ -1522,8 +1594,12 @@ const MUNI_SOURCES = {
       {
         label: '川根本町観光協会（okuooi.gr.jp）を独立ソースとして',
         reason:
-          '町公式の一覧が観光協会の詳細ページへ全件直リンクしており、同じ元データ。独立した2ソースにならないので1ソースに畳んだ（§6-15）',
-        checked: ['https://okuooi.gr.jp/outdoor/details.php?id=79'],
+          '町公式の一覧が観光協会の詳細ページへ全件直リンクしており、同じ元データ。独立した2ソースにならないので1ソースに畳んだ（§6-15）。' +
+          '**2026-08-16 追記: `okuooi.gr.jp` が robots.txt を403で返すため踏まなくなった。**' +
+          '町公式の一覧（5件）は取れるが、**詳細が全部 okuooi.gr.jp なので住所が0件になる**。' +
+          '住所が無いと地区が決まらないので、この L1 からは MISSING を立てられない。' +
+          '**「無い」ではなく「取らないと決めた」。**403 が解ければ自動で戻る',
+        checked: ['https://www.town.kawanehon.shizuoka.jp/kanko_site/tanoshimu/camp/index.html'],
       },
     ],
   },

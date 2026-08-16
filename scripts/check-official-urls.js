@@ -28,6 +28,8 @@
  *   PARKED            到達するが、ドメイン失効・売却・停止の定型文が本文にある
  *   CLOSED_HINT       トップページの本文に閉業・閉鎖・営業終了・廃止・当面の間休業・閉館がある
  *   CLOSED_HINT_NEWS  トップは正常だが、**お知らせページ**に上記の語がある
+ *   ROBOTS_403        **robots.txt 自体が403のオリジン。踏んでいない**（`robots-guard.js`）。
+ *                     **死活もパーキングも判定していない。**`DEAD` とも `OK` とも読まないこと
  *   OK                上記のどれでもない
  *   NO_URL            officialUrl が空
  *
@@ -261,7 +263,7 @@ async function fetchPage(url) {
   // このスクリプトは Chrome を名乗るので取れてしまうが、明示的な拒否は尊重する
   const guard = await assertOriginAllowed(url);
   if (!guard.allowed) {
-    return { failed: `${guard.note}（robots.txt が ${guard.status}。明示的な拒否なので踏まない）` };
+    return { robotsBlocked: true, status: guard.status };
   }
 
   const ac = new AbortController();
@@ -356,6 +358,14 @@ async function checkOne(camp) {
 
   const page = await fetchPage(url);
 
+  // **robots.txt が403のオリジンは踏んでいない。**DEAD（死んでいる）と混ぜない
+  if (page.robotsBlocked) {
+    return {
+      camp, verdict: 'ROBOTS_403', status: page.status, newsLinks: [],
+      evidence: `robots.txt が HTTP ${page.status}。**明示的な拒否なので踏んでいない**。死活もパーキングも判定していない`,
+    };
+  }
+
   if (page.httpError) {
     const hint =
       page.status === 403 || page.status === 429
@@ -432,7 +442,7 @@ async function checkNews(result, gate) {
 
 // ── 出力 ─────────────────────────────────────────────────────
 
-const ORDER = ['DEAD', 'PARKED', 'CLOSED_HINT', 'CLOSED_HINT_NEWS', 'NO_URL', 'OK'];
+const ORDER = ['DEAD', 'PARKED', 'CLOSED_HINT', 'CLOSED_HINT_NEWS', 'ROBOTS_403', 'NO_URL', 'OK'];
 
 /**
  * 既存の md から前回の判定を拾う。同じ slug が複数回出たら**後のほうが新しい**。
@@ -638,6 +648,20 @@ ${rows('CLOSED_HINT') || '| （なし） | | | | |'}
 |---|---|---|---|---|
 ${rows('CLOSED_HINT_NEWS') || '| （なし） | | | | |'}
 
+## ROBOTS_403（${counts.ROBOTS_403}件）— **測っていない**
+
+**robots.txt 自体が403のオリジンなので踏んでいない**（\`scripts/robots-guard.js\`）。
+**「取れなかった」でも「0件」でもなく、「取らないと決めた」。**
+この${counts.ROBOTS_403}件は**死活もパーキングも判定していない。**
+${counts.ROBOTS_403 ? '下の OK・DEAD・PARKED の件数は、**この' + counts.ROBOTS_403 + '件を除いた母数**での数字。' : ''}
+
+**403 は変わりうる。**解ければ次回から自動で測れるようになるので、
+ここの件数が減ったら、その分だけ判定できる母数が増えたということ。
+
+| 施設名 | slug | URL | HTTP | evidence |
+|---|---|---|---|---|
+${rows('ROBOTS_403') || '| （なし） | | | | |'}
+
 ## NO_URL（${counts.NO_URL}件）
 
 \`officialUrl\` が無いので死活を確かめようがない。
@@ -666,7 +690,7 @@ ${rows('OK') || '| （なし） | | | | |'}
 
 // 判定だけを検証用に公開する。**本体からは使わない。**
 // `require` しただけで全件を叩きに行かないよう、実行は require.main で囲む（§18-3）。
-module.exports = { classifyParked, PARKED_PATTERNS, PARK_THIN_CHARS, toPlainText };
+module.exports = { classifyParked, PARKED_PATTERNS, PARK_THIN_CHARS, toPlainText, ORDER };
 
 if (require.main === module) {
   main().catch((e) => {

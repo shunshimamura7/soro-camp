@@ -19,6 +19,9 @@
  *   DEAD     DNS解決失敗 / 接続不能 / タイムアウト / 4xx / 5xx
  *            （403 / 429 はボット遮断の可能性が高いので BLOCKED として分ける）
  *   BLOCKED  403 / 429。サイト自体は生きていることが多い。ブラウザで開いて確認
+ *   ROBOTS_403  **robots.txt 自体が403のオリジン。踏んでいない**（`robots-guard.js`）。
+ *            「取れなかった」ではなく「取らないと決めた」。**0件と読まない。**
+ *            403 は変わりうるので、**定期実行でここを見ていれば解けたときに気づける**
  *   PARKED   到達するが、ドメイン失効・売却・停止の定型文が本文にある
  *   EMPTY    HTTP は正常だが `list()` の抽出が0件。**構造変更で抽出器が腐った疑い**
  *   OK       抽出できた（件数を出す）
@@ -48,6 +51,7 @@
  * （検査結果が「きれいすぎる」ときと同じで、まず検査自体を疑う）。
  */
 const fs = require('fs');
+const { assertOriginAllowed } = require('./robots-guard.js');
 const path = require('path');
 
 const { MUNI_SOURCES, PREF_SOURCES } = require('./district-sweep.js');
@@ -161,6 +165,14 @@ function decodeBody(buf, contentType) {
 }
 
 async function fetchPage(url) {
+  // **robots.txt を403で断っているオリジンは踏まない**（robots-guard.js）。
+  // **ここで止まったことが記録に残るのが肝。**403 は変わりうるので、
+  // 定期実行でこの判定を見ていれば「解けた」ことに気づける（§20-9）
+  const guard = await assertOriginAllowed(url);
+  if (!guard.allowed) {
+    return { status: guard.status, robotsBlocked: true, body: '' };
+  }
+
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
   try {
@@ -212,6 +224,12 @@ async function crawlDelayMs(host) {
  * ここでは素直に DEAD を返しておいて、あとからソース単位で救済する。
  */
 function judge(target, res) {
+  if (res.robotsBlocked) {
+    return {
+      status: res.status, verdict: 'ROBOTS_403',
+      note: `robots.txt が HTTP ${res.status}。**明示的な拒否なので踏んでいない**（0件ではない）`,
+    };
+  }
   if (res.status === 0) return { status: 0, verdict: 'DEAD', note: res.error || '接続できない' };
   if (res.status === 403 || res.status === 429) {
     return { status: res.status, verdict: 'BLOCKED', note: `HTTP ${res.status}（ボット遮断の可能性。ブラウザで確認）` };
@@ -324,7 +342,7 @@ async function main() {
 
   // 集計と出力
   const bad = results.filter((r) => r.verdict !== 'OK');
-  const order = { DEAD: 0, PARKED: 1, EMPTY: 2, BLOCKED: 3, OK: 4 };
+  const order = { DEAD: 0, PARKED: 1, EMPTY: 2, BLOCKED: 3, ROBOTS_403: 4, OK: 5 };
   results.sort((a, b) => order[a.verdict] - order[b.verdict] || a.url.localeCompare(b.url));
 
   const prev = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : '# MUNI_SOURCES の死活チェック\n';
@@ -333,8 +351,19 @@ async function main() {
   const L = [];
   L.push(`\n## 第${nth}回（${stamp} UTC）${muniFilter ? ` — ${muniFilter} のみ` : ''}`);
   L.push('');
+  const robots403 = results.filter((r) => r.verdict === 'ROBOTS_403');
   L.push(`対象 ${results.length}件 / 問題 ${bad.length}件`);
   L.push('');
+  if (robots403.length) {
+    const origins = [...new Set(robots403.map((r) => { try { return new URL(r.url).origin; } catch { return r.url; } }))];
+    L.push(`> **⚠ ${robots403.length}件は測っていない（\`ROBOTS_403\`）。**`);
+    L.push('> robots.txt 自体が403のオリジンなので、`robots-guard.js` で踏んでいない。');
+    L.push('> **「取れなかった」でも「0件」でもなく、「取らないと決めた」。**');
+    L.push(`> 対象オリジン: ${origins.join(' / ')}`);
+    L.push('> **403 は変わりうる。**解ければ次の実行で自動的に取れるようになるので、');
+    L.push('> ここの件数が減ったら、その自治体の L1 が復活したということ。');
+    L.push('');
+  }
   L.push('| 判定 | URL | 使っている自治体 | 備考 |');
   L.push('|---|---|---|---|');
   for (const r of results) {
@@ -346,6 +375,7 @@ async function main() {
     `PARKED ${results.filter((r) => r.verdict === 'PARKED').length} / ` +
     `EMPTY ${results.filter((r) => r.verdict === 'EMPTY').length} / ` +
     `BLOCKED ${results.filter((r) => r.verdict === 'BLOCKED').length}）`);
+  console.log(`ROBOTS_403 ${robots403.length}件（踏んでいない。0件ではない）`);
   const blocked = results.filter((r) => r.verdict === 'BLOCKED').length;
   if (blocked > results.length / 2) {
     console.log('\n⚠ 過半数が BLOCKED。**サイト側ではなく回線側（データセンター・プロキシ）の遮断の疑い。**');
