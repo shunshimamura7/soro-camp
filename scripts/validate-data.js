@@ -356,7 +356,22 @@ for (const c of camps) {
   // **warnings には積まない。**warnings は表示が20件で打ち切られるので、
   // 混ぜると「1件ずつ出す」という趣旨が件数次第で欠ける（実際に欠けた）。
   // 独立したセクションで全件出す。
-  if (priceNoteChecked && c.priceVerified === true && Number(c.priceMin) > 0 && c.scores) {
+  //
+  // ★ `scoresVerified: false` は帯検査から外す（2026-08-17）。
+  //
+  // 千葉のレコードは料金だけ一次情報で確定していて、**scores は1軸も評価していない。**
+  // 全軸3を置いてあるのは「中庸」ではなく**「まだ測っていない」**の意味で、
+  // 帯と噛み合わないのは当たり前（大多喜県民の森は630円で value 3）。
+  //
+  // **警告を消すために value を価格から逆算するのは順序が逆。**
+  // 逆算した value は「価格から作った数字」でしかなく、評価したことにはならない。
+  // だから**値ではなく状態のほうを明示する。**
+  //
+  // ★ **明示的に false のときだけ**外す。フィールドが無いレコードは今までどおり検査する。
+  // 「未指定＝評価済み」と推定すると、`priceVerified` を priceNote の有無から機械的に
+  // 付けた 9fd15e3 と同じ轍になる（人が確認した記録ではないフラグが増える）。
+  const scoresUnrated = c.scoresVerified === false;
+  if (priceNoteChecked && !scoresUnrated && c.priceVerified === true && Number(c.priceMin) > 0 && c.scores) {
     const band = VALUE_BANDS[c.scores.value];
     const price = Number(c.priceMin);
     if (band && (price < band.min || price > band.max)) {

@@ -68,7 +68,7 @@ const oaza = a => (I.splitAddress(a) || {}).oaza;
     '※ 削れていた頃は「堀之」同士で一致してしまう型');
 
   /* ---- ★ 既存データで変わるのが1件だけ ---- */
-  console.log('\n■ ★ 既存データで地区キーが変わるのは1件だけ');
+  console.log('\n■ ★ 既存データで地区キーが変わるのは想定の2件だけ');
   const recs = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'campgrounds.json'), 'utf8'));
   // 旧実装を再現して比べる
   const V = I.VARIANT_CHARS;
@@ -85,13 +85,39 @@ const oaza = a => (I.splitAddress(a) || {}).oaza;
     return ((rest.match(/^([^\d]{1,14})/) || [])[1] || '')
       .replace(/[（(].*$/, '').replace(/字.*$/, '').replace(OLD, '');
   }
+  // ★ 2026-08-17 に1件から2件になった。**緩めたのではなく、当事者が増えた。**
+  //
+  // 千葉の `otaki-sabo`（夷隅郡大多喜町堀之内595）を投入したため。
+  // **このバグを見つけたきっかけの住所そのもの**が、いまデータ側にも入った。
+  // 旧実装なら `堀之内` → `堀之` に削れる。**修正の生きた証人が2件目**。
+  //
+  // ここは件数だけでなく **id を名指しで固定する。**
+  // 件数だけだと、別のレコードが増減したときに素通りする。
+  const EXPECTED = {
+    'sessokyo-camp': ['犬間長島公園敷', '犬間長島公園'],   // 「敷地内」の「内」を食っていた
+    'otaki-sabo': ['堀之', '堀之内'],                       // 大字の最後の1文字を削っていた
+  };
   const changed = recs.filter(r => r.address && oldOaza(r.address) !== oaza(r.address));
-  check('変わるレコードは1件', changed.length === 1, changed.map(r => r.id).join(',') || '0件');
-  check('その1件は sessokyo-camp', changed.length === 1 && changed[0].id === 'sessokyo-camp',
-    changed[0] ? changed[0].id : '-');
-  if (changed[0]) {
-    console.log(`      ${changed[0].address}`);
-    console.log(`      旧「${oldOaza(changed[0].address)}」→ 新「${oaza(changed[0].address)}」`);
+  const ids = changed.map(r => r.id).sort();
+  check(`変わるレコードは ${Object.keys(EXPECTED).length}件`, changed.length === Object.keys(EXPECTED).length,
+    ids.join(',') || '0件');
+  check('その id が想定どおり', ids.join(',') === Object.keys(EXPECTED).sort().join(','),
+    ids.join(',') || '-');
+  for (const r of changed) {
+    const want = EXPECTED[r.id];
+    const got = [oldOaza(r.address), oaza(r.address)];
+    check(`  ${r.id}: 旧「${got[0]}」→ 新「${got[1]}」`,
+      !!want && want[0] === got[0] && want[1] === got[1],
+      want ? '' : '**想定に無いレコードが変わった**');
+    console.log(`      ${r.address}`);
+  }
+  // ★ 堀之内は「案Cで地区が市町村単位になったから関係ない」ではない。
+  // 大字は突合後の**大字検査**で使うので、削れたままだと検査が別の大字と一致してしまう
+  const sabo = recs.find(r => r.id === 'otaki-sabo');
+  if (sabo) {
+    check('★ 堀之内の地区キーが削れていない', I.districtKey(sabo.address) === '夷隅郡大多喜町堀之内',
+      I.districtKey(sabo.address));
+    check('★ 番地キーも保たれる', I.banchiKey(sabo.address) === '堀之内595', I.banchiKey(sabo.address));
   }
 
   const ng = results.filter(r => !r.ok);

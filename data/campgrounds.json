@@ -9697,6 +9697,7 @@
       "access": 3,
       "facility": 3
     },
+    "scoresVerified": false,
     "features": {
       "bonfire": false,
       "bonfireNote": "要確認",
@@ -9752,6 +9753,7 @@
       "access": 3,
       "facility": 3
     },
+    "scoresVerified": false,
     "features": {
       "bonfire": false,
       "bonfireNote": "要確認",
@@ -9810,6 +9812,7 @@
       "access": 3,
       "facility": 3
     },
+    "scoresVerified": false,
     "features": {
       "bonfire": false,
       "bonfireNote": "要確認",
