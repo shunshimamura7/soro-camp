@@ -1,18 +1,18 @@
 # 地区スイープ: 木更津市
 
-実行: 2026-08-17 09:33:41　/　`node scripts/district-sweep.js --district "木更津市"`
+実行: 2026-08-17 10:28:16　/　`node scripts/district-sweep.js --district "木更津市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 191件 / 最終更新 2026-08-17 18:33:24
+データ: `data/campgrounds.json` 192件 / 最終更新 2026-08-17 19:28:07
 
 | | 件数 |
 |---|---|
 | **MISSING**（実在側にあるがデータに無い） | **3** |
 | IN_DATA（両方にある） | 0 |
-| ORPHAN（データにあるがソースに無い） | 0 |
-| データ側のこの地区のレコード | 0 |
+| ORPHAN（データにあるがソースに無い） | 1 |
+| データ側のこの地区のレコード | 1 |
 
 ## ソースの取得結果
 
@@ -80,7 +80,9 @@
 
 **いずれにせよ、これを根拠に `status` を変えない（§6-7）。**
 
-なし。
+| id | 名前 | 住所 | status | needsVerify |
+|---|---|---|---|---|
+| `kisarazu-camp-organic` | きさらづCAMP ORGANIC FIELD in みたて | 千葉県木更津市中島4416 | unverified | true |
 
 ## IN_DATA — 両方にある
 
