@@ -1,6 +1,6 @@
 # 地区スイープ: 木更津市
 
-実行: 2026-08-17 11:50:42　/　`node scripts/district-sweep.js --district "木更津市"`
+実行: 2026-08-17 12:05:14　/　`node scripts/district-sweep.js --district "木更津市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
@@ -21,7 +21,7 @@
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
 | L1 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | OK | 20 | 0 | 公営のみ（民間は原理的に載らない）。実測21行 → 県外1行を落として20行 / 14市町村にまたがる。住所は管理主体の列から市町村を補って作る |
-| L2 | 木更津市公式 観光情報「目的別で探す > 山であそぶ」 | OK | 5 | 1 | **キャンプ場の一覧ではない。**目的別ページで、実測4件のうちキャンプ場は1件（少年自然の家キャンプ場）。その1件が県台帳・ちば観光ナビ・なっぷ・じゃらんのどれにも無い。「海であそぶ」(mokuteki/8035.html) も確認したが「キャンプ」の語が無いので対象外。「泊まる」に相当する分類は存在しない |
+| L1 | 木更津市公式 観光情報「目的別で探す > 山であそぶ」 | OK | 5 | 1 | **キャンプ場の一覧ではない。**目的別ページで、実測4件のうちキャンプ場は1件（少年自然の家キャンプ場）。その1件が県台帳・ちば観光ナビ・なっぷ・じゃらんのどれにも無い。「海であそぶ」(mokuteki/8035.html) も確認したが「キャンプ」の語が無いので対象外。「泊まる」に相当する分類は存在しない |
 | L2 | ちば観光ナビ（千葉県公式）木更津市 × バーベキュー・キャンプ・グランピング | OK | 3 | 3 | エリアコード 56（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress) |
 | L2 | なっぷ chiba/kisarazu_kimitsu_uttsu | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 木更津市（cit_122060000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 3 | 3 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_122060000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_122060000/g2_04/page_3/ → HTTP_404 |
@@ -30,7 +30,7 @@
 取得したページ:
 
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
-- `L2` https://www.city.kisarazu.lg.jp/kanko_bunka_sports/kankojoho/mokuteki/8039.html → 200（キャッシュ）
+- `L1` https://www.city.kisarazu.lg.jp/kanko_bunka_sports/kankojoho/mokuteki/8039.html → 200（キャッシュ）
   - 詳細ページ 5 件（住所の取得のため）
 - `L2` https://maruchiba.jp/spot/index_1_2_56_7.html → 200（キャッシュ）
   - 詳細ページ 3 件（住所の取得のため）
@@ -46,10 +46,10 @@
 ### 1. 少年自然の家キャンプ場
 
 - **分類**: MISSING
-- **confidence**: LOW（層: L2）
+- **confidence**: HIGH（層: L1）
 - **住所**: 千葉県木更津市真里谷5343番地8
 - **出典**:
-  - `L2` 木更津市公式 観光情報「目的別で探す > 山であそぶ」 — https://www.city.kisarazu.lg.jp/soshiki/kyoiku/shogaigakushu/1/1-seisyonen/1342.html
+  - `L1` 木更津市公式 観光情報「目的別で探す > 山であそぶ」 — https://www.city.kisarazu.lg.jp/soshiki/kyoiku/shogaigakushu/1/1-seisyonen/1342.html
 
 ### 2. KURKKU FIELDS
 
@@ -101,6 +101,7 @@
 | L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
 |---|---|---|---|---|---|
 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | 20 | 0 | 0 | – | – |
+| 木更津市公式 観光情報「目的別で探す > 山であそぶ」 | 5 | 0 | 0 | – | – |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 
@@ -200,10 +201,10 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 
 | 名前 | 出典（層 / ソース） | 原因 | URL |
 |---|---|---|---|
-| 旬を味わう市民観光農園 | L2 kisarazu-city | 一覧に住所が無い | https://www.city.kisarazu.lg.jp/soshiki/keizai/norinsuisan/1/2370.html |
-| 豊かな自然がフィールド自然を体験する | L2 kisarazu-city | 一覧に住所が無い | https://www.city.kisarazu.lg.jp/soshiki/keizai/norinsuisan/1/2372.html |
-| ブルーベリーの一大産地 | L2 kisarazu-city | 一覧に住所が無い | https://www.city.kisarazu.lg.jp/soshiki/keizai/nourinsinkou/2/2366.html |
-| 木更津市観光協会のトップページ | L2 kisarazu-city | 一覧に住所が無い | https://www.kisarazu.gr.jp/ |
+| 旬を味わう市民観光農園 | L1 kisarazu-city | 一覧に住所が無い | https://www.city.kisarazu.lg.jp/soshiki/keizai/norinsuisan/1/2370.html |
+| 豊かな自然がフィールド自然を体験する | L1 kisarazu-city | 一覧に住所が無い | https://www.city.kisarazu.lg.jp/soshiki/keizai/norinsuisan/1/2372.html |
+| ブルーベリーの一大産地 | L1 kisarazu-city | 一覧に住所が無い | https://www.city.kisarazu.lg.jp/soshiki/keizai/nourinsinkou/2/2366.html |
+| 木更津市観光協会のトップページ | L1 kisarazu-city | 一覧に住所が無い | https://www.kisarazu.gr.jp/ |
 | CAMPさくらの丘 | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list |
 | イレブンオートキャンプパーク | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list |
 | 千石台オートキャンプ場 | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list |
