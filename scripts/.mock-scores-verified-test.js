@@ -58,11 +58,19 @@ const recs = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'camp
 
 console.log('\n■ いまのデータ');
 check('帯違反は0件', mismatches(recs).length === 0, mismatches(recs).join(' / ') || 'なし');
-const flagged = recs.filter(c => c.scoresVerified === false).map(c => c.id);
-check('scoresVerified:false は千葉3件だけ', flagged.length === 3, flagged.join(' / '));
-check('★ 既存188件には1件も付いていない（推定で付けていない）',
-  recs.filter(c => 'scoresVerified' in c).length === 3,
-  `フィールドを持つ ${recs.filter(c => 'scoresVerified' in c).length}件`);
+// ★ 件数を直書きしない。**千葉が増えるたびにテストを直すことになり、
+// そのとき「数を合わせる」だけの修正をして意図が消える。**
+// 見たいのは「未評価と分かっているものにだけ付いていること」なので、
+// **付いている集合と、付いていて当然の集合が一致するか**を見る。
+const flagged = recs.filter(c => c.scoresVerified === false).map(c => c.id).sort();
+const chiba = recs.filter(c => c.prefecture === '千葉').map(c => c.id).sort();
+check(`scoresVerified:false は千葉のレコードだけ（${flagged.length}件）`,
+  flagged.join(',') === chiba.join(','),
+  flagged.join(' / ') + (flagged.join(',') === chiba.join(',') ? '' : ` ／ 千葉は ${chiba.join(' / ')}`));
+const has = recs.filter(c => 'scoresVerified' in c);
+check('★ 既存3県には1件も付いていない（推定で付けていない）',
+  has.every(c => c.prefecture === '千葉'),
+  `フィールドを持つ ${has.length}件 / うち千葉以外 ${has.filter(c => c.prefecture !== '千葉').length}件`);
 
 console.log('\n■ ★ フラグを外すと帯違反が戻る（＝抑止が効いている証拠）');
 const withoutFlag = recs.map(c => { const x = { ...c }; delete x.scoresVerified; return x; });
