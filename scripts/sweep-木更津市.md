@@ -1,11 +1,11 @@
 # 地区スイープ: 木更津市
 
-実行: 2026-08-16 14:24:09　/　`node scripts/district-sweep.js --district "木更津市"`
+実行: 2026-08-17 09:33:41　/　`node scripts/district-sweep.js --district "木更津市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-16 08:02:18
+データ: `data/campgrounds.json` 191件 / 最終更新 2026-08-17 18:33:24
 
 | | 件数 |
 |---|---|
@@ -30,7 +30,7 @@
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list?page=2 → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_122060000/g2_04/ → 200
+- `L2` https://www.jalan.net/kankou/cit_122060000/g2_04/ → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_122060000/g2_04/page_2/ → 404
 - `L2` https://www.jalan.net/kankou/cit_122060000/g2_04/page_3/ → 404
   - 詳細ページ 3 件（住所の取得のため）

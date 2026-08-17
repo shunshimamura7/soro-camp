@@ -1,18 +1,18 @@
 # 地区スイープ: 大多喜町
 
-実行: 2026-08-17 08:44:11　/　`node scripts/district-sweep.js --district "大多喜町"`
+実行: 2026-08-17 09:33:37　/　`node scripts/district-sweep.js --district "大多喜町"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 190件 / 最終更新 2026-08-17 17:34:40
+データ: `data/campgrounds.json` 191件 / 最終更新 2026-08-17 18:33:24
 
 | | 件数 |
 |---|---|
 | **MISSING**（実在側にあるがデータに無い） | **0** |
 | IN_DATA（両方にある） | 1 |
-| ORPHAN（データにあるがソースに無い） | 0 |
-| データ側のこの地区のレコード | 1 |
+| ORPHAN（データにあるがソースに無い） | 1 |
+| データ側のこの地区のレコード | 2 |
 
 ## ソースの取得結果
 
@@ -55,7 +55,9 @@
 
 **いずれにせよ、これを根拠に `status` を変えない（§6-7）。**
 
-なし。
+| id | 名前 | 住所 | status | needsVerify |
+|---|---|---|---|---|
+| `otaki-sabo` | 大多喜SABO | 千葉県夷隅郡大多喜町堀之内595 | unverified | true |
 
 ## IN_DATA — 両方にある
 
