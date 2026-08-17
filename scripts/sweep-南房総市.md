@@ -1,6 +1,6 @@
 # 地区スイープ: 南房総市
 
-実行: 2026-08-17 08:36:21　/　`node scripts/district-sweep.js --district "南房総市"`
+実行: 2026-08-17 08:44:07　/　`node scripts/district-sweep.js --district "南房総市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。

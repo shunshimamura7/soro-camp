@@ -1,6 +1,6 @@
 # 地区スイープ: 大多喜町
 
-実行: 2026-08-17 08:36:25　/　`node scripts/district-sweep.js --district "大多喜町"`
+実行: 2026-08-17 08:44:11　/　`node scripts/district-sweep.js --district "大多喜町"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
