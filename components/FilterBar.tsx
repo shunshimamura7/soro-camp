@@ -1,5 +1,6 @@
 "use client";
 
+import { activeCampgrounds } from "@/lib/camp";
 import type { Filters, SortKey } from "@/lib/camp";
 
 type Props = {
@@ -11,7 +12,35 @@ type Props = {
   onMapOpen?: () => void;
 };
 
-const PREFECTURES = ["全部", "神奈川", "静岡", "山梨", "千葉"] as const;
+/**
+ * 県の絞り込みの選択肢。**データで決まる。ハードコードで隠さない。**
+ *
+ * ## なぜ「県を並べるだけ」にしないか（2026-08-17）
+ *
+ * この一覧に出るのは `activeCampgrounds`＝`status: "active"` だけ。
+ * **active が0件の県のチップを出すと、選んだ瞬間に
+ * 「条件に合うキャンプ場が見つかりませんでした。」になる。**
+ * 選択肢があるのに必ず空になるのは、サイトが壊れて見える。
+ *
+ * 千葉で実際にそうなった。2026-08-17 に千葉のレコードを2件入れたが、
+ * どちらも設備・座標が未確認で `status: "unverified"`。
+ * 詳細ページ（`/camp/orange-mura-auto` など）は 200 を返すが、一覧には出ない。
+ *
+ * ## だから条件を**データから判定する**
+ *
+ * 「千葉を出さない」と書いて隠すと、**千葉が active になったときに誰も外しに来ない。**
+ * `PREFECTURE_ORDER` に県名を足しておけば、
+ * **その県に active が1件でも入った時点で自動的に選択肢が出る。**
+ *
+ * 新しい県を足すときにここへ書き足すのは**並び順を決めるためだけ**。
+ * 出す出さないは触らなくていい。
+ */
+const PREFECTURE_ORDER = ["神奈川", "静岡", "山梨", "千葉"] as const;
+
+const PREFECTURES: string[] = [
+  "全部",
+  ...PREFECTURE_ORDER.filter((p) => activeCampgrounds.some((c) => c.prefecture === p)),
+];
 
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "soloScore", label: "おすすめ順" },
