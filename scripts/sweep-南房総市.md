@@ -1,18 +1,18 @@
 # 地区スイープ: 南房総市
 
-実行: 2026-08-16 14:20:14　/　`node scripts/district-sweep.js --district "南房総市"`
+実行: 2026-08-17 08:36:21　/　`node scripts/district-sweep.js --district "南房総市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-16 08:02:18
+データ: `data/campgrounds.json` 190件 / 最終更新 2026-08-17 17:34:40
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **20** |
-| IN_DATA（両方にある） | 0 |
+| **MISSING**（実在側にあるがデータに無い） | **19** |
+| IN_DATA（両方にある） | 1 |
 | ORPHAN（データにあるがソースに無い） | 0 |
-| データ側のこの地区のレコード | 0 |
+| データ側のこの地区のレコード | 1 |
 
 ## ソースの取得結果
 
@@ -28,11 +28,11 @@
 
 取得したページ:
 
-- `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200
-- `L1` https://www.cm-boso.com/camp.html → 200
-- `L2` https://www.nap-camp.com/chiba/tateyama_minamiboso/list → 200
-- `L2` https://www.nap-camp.com/chiba/tateyama_minamiboso/list?page=2 → 200
-- `L2` https://www.jalan.net/kankou/cit_122340000/g2_04/ → 200
+- `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
+- `L1` https://www.cm-boso.com/camp.html → 200（キャッシュ）
+- `L2` https://www.nap-camp.com/chiba/tateyama_minamiboso/list → 200（キャッシュ）
+- `L2` https://www.nap-camp.com/chiba/tateyama_minamiboso/list?page=2 → 200（キャッシュ）
+- `L2` https://www.jalan.net/kankou/cit_122340000/g2_04/ → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_122340000/g2_04/page_2/ → 404
 - `L2` https://www.jalan.net/kankou/cit_122340000/g2_04/page_3/ → 404
   - 詳細ページ 13 件（住所の取得のため）
@@ -65,17 +65,7 @@
   - `L1` 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） — https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12461ca3430053628/
 
-### 4. 千倉オレンジセンター（オレンジ村オートキャンプ場）
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1 + L2）
-- **住所**: 千葉県南房総市千倉町久保1494
-- **表記ゆれ**: 千倉オレンジセンター（オレンジ村オートキャンプ場） / 千倉オレンジセンター オレンジ村キャンプ場
-- **出典**:
-  - `L1` 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） — https://www.cm-boso.com/camp.html
-  - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12234ca3432062629/
-
-### 5. THE CHIKURA UMI BASE CAMP
+### 4. THE CHIKURA UMI BASE CAMP
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1）
@@ -83,7 +73,7 @@
 - **出典**:
   - `L1` 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） — https://www.cm-boso.com/camp.html
 
-### 6. 南房総市大房岬自然の家キャンプ場
+### 5. 南房総市大房岬自然の家キャンプ場
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1）
@@ -91,7 +81,7 @@
 - **出典**:
   - `L1` 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） — https://www.cm-boso.com/camp.html
 
-### 7. 根本マリンキャンプ場
+### 6. 根本マリンキャンプ場
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1）
@@ -99,7 +89,7 @@
 - **出典**:
   - `L1` 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） — https://www.cm-boso.com/camp.html
 
-### 8. しおさいキャンプフィールド
+### 7. しおさいキャンプフィールド
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1 + L2）
@@ -109,7 +99,7 @@
   - `L2` なっぷ chiba/tateyama_minamiboso — https://www.nap-camp.com/chiba/tateyama_minamiboso/list
   - `L2` なっぷ chiba/tateyama_minamiboso — https://www.nap-camp.com/chiba/tateyama_minamiboso/list?page=2
 
-### 9. SOUTH BIRD INN（サウス バード イン）
+### 8. SOUTH BIRD INN（サウス バード イン）
 
 - **分類**: MISSING
 - **confidence**: HIGH（層: L1）
@@ -117,7 +107,7 @@
 - **出典**:
   - `L1` 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） — https://www.cm-boso.com/camp.html
 
-### 10. 隠れ家リトリート施設 UMIKAZE
+### 9. 隠れ家リトリート施設 UMIKAZE
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -125,7 +115,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000223543/
 
-### 11. 白浜フラワーパーク
+### 10. 白浜フラワーパーク
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -133,7 +123,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_themeF80024000000/
 
-### 12. BONｰMAL HOLIDAY
+### 11. BONｰMAL HOLIDAY
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -141,7 +131,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000223542/
 
-### 13. 多田良海岸キャンプ場
+### 12. 多田良海岸キャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -149,7 +139,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12461ca3430054542/
 
-### 14. 根本マリンキャンプ場
+### 13. 根本マリンキャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -157,7 +147,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12465ca3430052662/
 
-### 15. OCEAN VIEW MINT
+### 14. OCEAN VIEW MINT
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -165,7 +155,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225184/
 
-### 16. OCEAN RESORT MINT
+### 15. OCEAN RESORT MINT
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -173,7 +163,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225185/
 
-### 17. OCEAN VILLA MINT
+### 16. OCEAN VILLA MINT
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -181,7 +171,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225192/
 
-### 18. ユニアス レンタカー
+### 17. ユニアス レンタカー
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -189,7 +179,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225782/
 
-### 19. UNIUS SEASIDE CAMP ユニアスシーサイドキャンプ
+### 18. UNIUS SEASIDE CAMP ユニアスシーサイドキャンプ
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -197,7 +187,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225784/
 
-### 20. オアシス南房総
+### 19. オアシス南房総
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -227,7 +217,9 @@
 
 ## IN_DATA — 両方にある
 
-なし。
+| データ側 | ソース側の名前 | 一致の根拠 | confidence | 層 |
+|---|---|---|---|---|
+| `orange-mura-auto` 野宮農園 オレンジ村オートキャンプ場 | 千倉オレンジセンター（オレンジ村オートキャンプ場） | 番地（名前は不一致） | HIGH | L1+L2 |
 
 ## 大字検査 — IN_DATA の突合が本当に同じ場所か
 
@@ -242,7 +234,7 @@
 |---|---:|
 | **不一致（誤突合の疑い）** | **0** |
 | 包含（粒度違い・無害） | 0 |
-| 一致 | 0 |
+| 一致 | 1 |
 | 検査対象外（どちらかの大字が取れない） | 0 |
 
 > **★ 「不一致 0件」を「誤突合が 0件」と読まないこと。**

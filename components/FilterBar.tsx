@@ -11,7 +11,7 @@ type Props = {
   onMapOpen?: () => void;
 };
 
-const PREFECTURES = ["全部", "神奈川", "静岡", "山梨"] as const;
+const PREFECTURES = ["全部", "神奈川", "静岡", "山梨", "千葉"] as const;
 
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "soloScore", label: "おすすめ順" },

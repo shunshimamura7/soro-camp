@@ -57,7 +57,7 @@ export type Campground = {
   id: string;
   slug: string;
   name: string;
-  prefecture: "神奈川" | "静岡" | "山梨";
+  prefecture: "神奈川" | "静岡" | "山梨" | "千葉";
   area: string;
   address: string;
   /** 省略時は "campground"（管理されたキャンプ場）。"wild" は野営地。 */

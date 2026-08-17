@@ -1,18 +1,18 @@
 # 地区スイープ: 大多喜町
 
-実行: 2026-08-16 14:25:04　/　`node scripts/district-sweep.js --district "大多喜町"`
+実行: 2026-08-17 08:36:25　/　`node scripts/district-sweep.js --district "大多喜町"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-16 08:02:18
+データ: `data/campgrounds.json` 190件 / 最終更新 2026-08-17 17:34:40
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **1** |
-| IN_DATA（両方にある） | 0 |
+| **MISSING**（実在側にあるがデータに無い） | **0** |
+| IN_DATA（両方にある） | 1 |
 | ORPHAN（データにあるがソースに無い） | 0 |
-| データ側のこの地区のレコード | 0 |
+| データ側のこの地区のレコード | 1 |
 
 ## ソースの取得結果
 
@@ -30,19 +30,13 @@
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/katsuura_kamogawa/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/katsuura_kamogawa/list?page=2 → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_124410000/g2_04/ → 200
+- `L2` https://www.jalan.net/kankou/cit_124410000/g2_04/ → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_124410000/g2_04/page_2/ → 404
 - `L2` https://www.jalan.net/kankou/cit_124410000/g2_04/page_3/ → 404
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. 大多喜県民の森キャンプ場
-
-- **分類**: MISSING
-- **confidence**: HIGH（層: L1）
-- **住所**: 千葉県大多喜町大多喜486-1
-- **出典**:
-  - `L1` 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） — https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html
+この地区では出なかった。**ただし「掲載漏れが無い」という意味ではない**（上の限界を参照）。
 
 ## L1 の網羅率（この市町村）
 
@@ -65,7 +59,9 @@
 
 ## IN_DATA — 両方にある
 
-なし。
+| データ側 | ソース側の名前 | 一致の根拠 | confidence | 層 |
+|---|---|---|---|---|
+| `otaki-kenminnomori` 千葉県立大多喜県民の森 キャンプ場 | 大多喜県民の森キャンプ場 | 名前 | HIGH | L1 |
 
 ## 大字検査 — IN_DATA の突合が本当に同じ場所か
 
@@ -80,7 +76,7 @@
 |---|---:|
 | **不一致（誤突合の疑い）** | **0** |
 | 包含（粒度違い・無害） | 0 |
-| 一致 | 0 |
+| 一致 | 1 |
 | 検査対象外（どちらかの大字が取れない） | 0 |
 
 > **★ 「不一致 0件」を「誤突合が 0件」と読まないこと。**
