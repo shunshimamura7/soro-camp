@@ -110,33 +110,85 @@ for (const m of ['HIGH', 'MID', 'LOW']) {
   console.log('');
 }
 
-/* ── 3. L1 の網羅率（母数は候補側）──────────────────────────────── */
-console.log('【3】L1 の網羅率 — ★ 母数はレコードではなく候補（理由はファイル冒頭）\n');
-console.log('  千葉のレコードは0件なので `l1Coverage()` の母数は空。**0% ではなく測れない。**');
-console.log('  代わりに verify A/B（一次情報で実在を確認済み）を母数にする。\n');
-const truth = in8.filter(c => c.verify === 'A' || c.verify === 'B');
-const L1S = {};
-for (const s of sweeps) for (const src of s.sources.filter(x => x.layer === 'L1')) {
-  (L1S[src.label] = L1S[src.label] || { munis: [], got: 0 }).munis.push(s.muni);
-  L1S[src.label].got += Number(String(src.got).replace(/[^\d]/g, '')) || 0;
-}
-console.log('| L1 | 取得(延べ) | 実在確実(A/B) | うち載っている | 網羅率 |');
-console.log('|---|---:|---:|---:|---:|');
-for (const [label, info] of Object.entries(L1S)) {
-  const scope = truth.filter(c => info.munis.includes(muniOf(c.address)));
-  const hit = scope.filter(c => {
-    const mi = hitOf(c);
-    return mi && mi.srcs.some(l => l.replace(/\\/g, '') === label);
-  });
-  const rate = scope.length ? Math.round(hit.length / scope.length * 100) + '%' : '–（母数0）';
-  console.log(`| ${label.slice(0, 44)} | ${info.got} | ${scope.length} | ${hit.length} | **${rate}** |`);
-  const missed = scope.filter(c => !hit.includes(c));
-  if (missed.length) console.log(`|   └ 載っていない | | | | ${missed.map(c => c.name).join(' / ')} |`);
-}
+/* ── 3. 網羅率（母数は候補側）────────────────────────────────────
+ *
+ * ★ md からではなく **ソースの項目を直接** 見る（2026-08-17 に直した）。
+ *
+ * md 経由で測ったら2か所で壊れた:
+ *
+ *   1. MISSING の出典欄は**市町村ごとにラベルが違う**（「ちば観光ナビ…木更津市…」）。
+ *      ソースをまとめるためにラベルを正規化したら、突き合わせる相手と合わなくなり
+ *      **全ソースが 0% になった**
+ *   2. **候補がレコードになると MISSING から消える。**大多喜県民の森は県台帳に
+ *      載っているのに、投入した瞬間 IN_DATA へ移り「載っていない」に数えられた
+ *
+ * どちらも「測りたいもの（ソースに載っているか）」を
+ * 「判定の出力（MISSING に出ているか）」で代用したのが原因。
+ * **`l1Coverage()` と同じく、収集した items を直接見る。**
+ */
+(async () => {
+  const records = I.loadRecords();
+  console.log('【3】網羅率 — ★ 母数はレコードではなく候補（理由はファイル冒頭）');
+  console.log('');
+  console.log('  千葉のレコードは4件しかないので `l1Coverage()` の母数が作れない。');
+  console.log('  代わりに verify A/B（一次情報で実在を確認済み）を母数にする。');
+  console.log('  **ソースの items を直接見る。**MISSING に出ているかでは代用しない');
+  console.log('');
 
-console.log('\n★ 読み方の注意');
-console.log('  - 母数が候補なので、**候補の集め方の偏りがそのまま網羅率に乗る。**');
-console.log('    既存3県（母数=レコード）の網羅率と直接は比べられない');
-console.log('  - 県台帳は**公営しか載らない**台帳。民間が載っていないのは仕様であって漏れではない');
-console.log('  - 千葉には PREF_SOURCES（キャンナビ・ウォーカープラス）が無い。');
-console.log('    **既存3県より層が1段薄い状態での MISSING 64件**であることを忘れない');
+  const truth = in8.filter(c => c.verify === 'A' || c.verify === 'B');
+  const per = new Map();
+  for (const muni of MUNIS) {
+    const { sources } = I.sourcesFor(muni, records);
+    for (const src of sources) {
+      const c = await I.collectSource(src, { useCache: true });
+      const e = per.get(src.id) || { layer: src.layer, label: src.label.replace(/（.*/, ''), munis: new Set(), items: [], got: 0 };
+      e.munis.add(muni);
+      e.items.push(...c.items);
+      e.got += c.items.length;
+      per.set(src.id, e);
+    }
+  }
+
+  console.log('| 層 | ソース | 取得(延べ) | 実在確実(A/B) | うち載っている | 網羅率 |');
+  console.log('|---|---|---:|---:|---:|---:|');
+  const rows = [];
+  for (const [id, e] of per) {
+    const scope = truth.filter(c => e.munis.has(muniOf(c.address)));
+    const keys = new Set(e.items.map(i => i.address && bk(i.address)).filter(Boolean));
+    const hit = scope.filter(c => {
+      const n = N(c.name);
+      if (e.items.some(i => { const x = N(i.name); return x && (x === n || namesMatch(x, n)); })) return true;
+      const k = bk(c.address);
+      return !!k && keys.has(k);
+    });
+    const rate = scope.length ? hit.length / scope.length : null;
+    rows.push({ id, e, scope, hit, rate });
+    const shown = rate === null ? '–（母数0）' : Math.round(rate * 100) + '%';
+    console.log(`| ${e.layer} | \`${id}\` ${e.label.slice(0, 28)} | ${e.got} | ${scope.length} | ${hit.length} | **${shown}** |`);
+  }
+
+  console.log('');
+  console.log('── 載っていない候補（ソース別）');
+  for (const r of rows) {
+    const missed = r.scope.filter(c => !r.hit.includes(c));
+    if (missed.length) console.log(`  ${r.id}: ${missed.map(c => c.name).join(' / ')}`);
+  }
+
+  console.log('');
+  console.log('── ★ L1 に上げてよいか（7割が線。相模原市80% / 道志村75% が前例）');
+  const navi = rows.find(r => r.id === 'chiba-kanko-navi');
+  if (navi) {
+    const shown = navi.rate === null ? '測れない' : Math.round(navi.rate * 100) + '%';
+    console.log(`  ちば観光ナビ: ${navi.hit.length}/${navi.scope.length} = ${shown}`);
+    const ok = navi.rate !== null && navi.rate >= 0.7;
+    console.log(`  → ${ok ? '**7割を超えている。L1 に上げる判断ができる**' : '**7割に届かない。L2 のまま**'}`);
+  }
+
+  console.log('');
+  console.log('★ 読み方の注意');
+  console.log('  - 母数が候補なので、**候補の集め方の偏りがそのまま網羅率に乗る。**');
+  console.log('    既存3県（母数=レコード）の網羅率と直接は比べられない');
+  console.log('  - 県台帳は**公営しか載らない**台帳。民間が載っていないのは仕様であって漏れではない');
+  console.log('  - 千葉には PREF_SOURCES（キャンナビ・ウォーカープラス）が無い。');
+  console.log('    **既存3県より層が1段薄い**ことを忘れない');
+})();

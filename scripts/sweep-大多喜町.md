@@ -1,15 +1,15 @@
 # 地区スイープ: 大多喜町
 
-実行: 2026-08-17 09:33:37　/　`node scripts/district-sweep.js --district "大多喜町"`
+実行: 2026-08-17 10:48:08　/　`node scripts/district-sweep.js --district "大多喜町"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 191件 / 最終更新 2026-08-17 18:33:24
+データ: `data/campgrounds.json` 192件 / 最終更新 2026-08-17 19:28:07
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **0** |
+| **MISSING**（実在側にあるがデータに無い） | **2** |
 | IN_DATA（両方にある） | 1 |
 | ORPHAN（データにあるがソースに無い） | 1 |
 | データ側のこの地区のレコード | 2 |
@@ -21,6 +21,7 @@
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
 | L1 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | OK | 20 | 1 | 公営のみ（民間は原理的に載らない）。実測21行 → 県外1行を落として20行 / 14市町村にまたがる。住所は管理主体の列から市町村を補って作る |
+| L2 | ちば観光ナビ（千葉県公式）大多喜町 × バーベキュー・キャンプ・グランピング | OK | 2 | 2 | エリアコード 52（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress) |
 | L2 | なっぷ chiba/katsuura_kamogawa | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 大多喜町（cit_124410000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 0 | 0 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_124410000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_124410000/g2_04/page_3/ → HTTP_404 |
 | L1 | 都道府県オープンデータ（千葉） | **L1_NOT_FOUND** | – | – | 未調査 |
@@ -28,6 +29,8 @@
 取得したページ:
 
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
+- `L2` https://maruchiba.jp/spot/index_1_2_52_7.html → 200（キャッシュ）
+  - 詳細ページ 2 件（住所の取得のため）
 - `L2` https://www.nap-camp.com/chiba/katsuura_kamogawa/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/katsuura_kamogawa/list?page=2 → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_124410000/g2_04/ → 200（キャッシュ）
@@ -36,7 +39,26 @@
 
 ## MISSING — 実在側にあるがデータに無い
 
-この地区では出なかった。**ただし「掲載漏れが無い」という意味ではない**（上の限界を参照）。
+### 1. Fika by TAKIVILLAGE
+
+- **分類**: MISSING
+- **confidence**: MID（層: L2）
+- **住所**: 千葉県大多喜町粟又183-1
+- **表記ゆれ**: Fika by TAKIVILLAGE / TAKIVILLAGE
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）大多喜町 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_14095.html
+  - `L2` なっぷ chiba/katsuura_kamogawa — https://www.nap-camp.com/chiba/katsuura_kamogawa/list
+  - `L2` なっぷ chiba/katsuura_kamogawa — https://www.nap-camp.com/chiba/katsuura_kamogawa/list
+  - `L2` なっぷ chiba/katsuura_kamogawa — https://www.nap-camp.com/chiba/katsuura_kamogawa/list?page=2
+  - `L2` なっぷ chiba/katsuura_kamogawa — https://www.nap-camp.com/chiba/katsuura_kamogawa/list?page=2
+
+### 2. 山の駅 養老渓谷 喜楽里
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県夷隅郡大多喜町小田代148-24
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）大多喜町 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_10351.html
 
 ## L1 の網羅率（この市町村）
 
@@ -102,9 +124,9 @@
 
 | | 意味 | 件数 |
 |---|---|---|
-| **b1** | **住所が無い**（名前だけ）。他ソースとも合流できなかった。原因は2つ（下記で分割） | **9** |
+| **b1** | **住所が無い**（名前だけ）。他ソースとも合流できなかった。原因は2つ（下記で分割） | **8** |
 | **b2** | 住所はあるが**地区外**。うち市区町村も違う 19 件 | **19** |
-| b3 | 住所なしの項目が地区内バケットに**合流した**（＝漏れていない。参考） | 0 |
+| b3 | 住所なしの項目が地区内バケットに**合流した**（＝漏れていない。参考） | 1 |
 
 **b1 と b2 は分けてある。対処が正反対だから。**
 b1 は**ソース側の仕様**（一覧に住所が無い）で、抽出器を直しても取れない。
@@ -128,7 +150,8 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 | ソース | 取得 | 名前が空 | 地区内 | b1 住所なし | b2 地区外 | 突合 |
 |---|---|---|---|---|---|---|
 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | 20 | 0 | 1 | 0 | 19 | OK |
-| なっぷ chiba/katsuura_kamogawa | 20 | 0 | 0 | 20 | 0 | OK |
+| ちば観光ナビ（千葉県公式）大多喜町 × バーベキュー・キャンプ・グランピング | 2 | 0 | 2 | 0 | 0 | OK |
+| なっぷ chiba/katsuura_kamogawa | 20 | 0 | 4 | 16 | 0 | OK |
 | じゃらん観光ガイド 大多喜町（cit_124410000 / ジャンル キャンプ・バンガロー・コテージ） | 0 | 0 | 0 | 0 | 0 | OK |
 
 ### b1 — 住所が無く、他ソースとも合流できなかった
@@ -136,7 +159,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 **このソースにしか無い施設は、名前しか無いので地区が決まらず、単独では MISSING を立てられない。**
 これまで「限界」節に文章で書いてあっただけで、実数が出るのは初めて。
 
-**⚠ 原因が2つある。分けてある。** b1-1（ソース側の仕様）9 件 / b1-2（取得失敗）0 件。
+**⚠ 原因が2つある。分けてある。** b1-1（ソース側の仕様）8 件 / b1-2（取得失敗）0 件。
 **b1-1 は抽出器を直しても取れない。b1-2 は取得さえ通れば取れる。**
 
 #### b1-1 — ソースが一覧に住所を持っていない（ソース側の仕様）
@@ -147,7 +170,6 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 |---|---|---|---|
 | RECAMP 勝浦 | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/katsuura_kamogawa/list |
 | NAT PARK | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/katsuura_kamogawa/list |
-| Fika by TAKIVILLAGE | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/katsuura_kamogawa/list |
 | だいやもんどへっど | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/katsuura_kamogawa/list |
 | しげキャン | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/katsuura_kamogawa/list |
 | ACNオートキャンプ in 勝浦まんぼう | L2 nap-camp | 一覧に住所が無い | https://www.nap-camp.com/chiba/katsuura_kamogawa/list |
@@ -203,7 +225,9 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 
 ### b3 — 住所なしの項目が合流したもの（漏れていない）
 
-なし。
+| 合流先 | 分類 | 合流した住所なしの出典 |
+|---|---|---|
+| Fika by TAKIVILLAGE | MISSING | L2 nap-camp |
 
 ## 住所が空で、どの地区のスイープにも載らないレコード（全データ横断）
 

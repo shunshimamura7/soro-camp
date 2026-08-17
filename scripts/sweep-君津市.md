@@ -1,15 +1,15 @@
 # 地区スイープ: 君津市
 
-実行: 2026-08-16 14:22:08　/　`node scripts/district-sweep.js --district "君津市"`
+実行: 2026-08-17 10:47:05　/　`node scripts/district-sweep.js --district "君津市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-16 08:02:18
+データ: `data/campgrounds.json` 192件 / 最終更新 2026-08-17 19:28:07
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **23** |
+| **MISSING**（実在側にあるがデータに無い） | **24** |
 | IN_DATA（両方にある） | 0 |
 | ORPHAN（データにあるがソースに無い） | 0 |
 | データ側のこの地区のレコード | 0 |
@@ -22,6 +22,7 @@
 |---|---|---|---|---|---|
 | L1 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | OK | 20 | 1 | 公営のみ（民間は原理的に載らない）。実測21行 → 県外1行を落として20行 / 14市町村にまたがる。住所は管理主体の列から市町村を補って作る |
 | L1 | 君津市公式 きみつの観光情報「遊ぶ・体験」内のキャンプ場一覧 | OK | 14 | 13 | 一覧は「泊る」ではなく「遊ぶ・体験」(2201.html) の下。実測14件。清和県民の森・奥米/木村農園は「その他」の区間なので取れない |
+| L2 | ちば観光ナビ（千葉県公式）君津市 × バーベキュー・キャンプ・グランピング | OK | 1 | 1 | エリアコード 57（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress) |
 | L2 | なっぷ chiba/kisarazu_kimitsu_uttsu | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 15 | 15 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_122250000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_122250000/g2_04/page_3/ → HTTP_404 |
 | L1 | 都道府県オープンデータ（千葉） | **L1_NOT_FOUND** | – | – | 未調査 |
@@ -29,11 +30,13 @@
 取得したページ:
 
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
-- `L1` https://www.city.kimitsu.lg.jp/site/kanko/2201.html → 200
+- `L1` https://www.city.kimitsu.lg.jp/site/kanko/2201.html → 200（キャッシュ）
   - 詳細ページ 14 件（住所の取得のため）
-- `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list → 200
-- `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list?page=2 → 200
-- `L2` https://www.jalan.net/kankou/cit_122250000/g2_04/ → 200
+- `L2` https://maruchiba.jp/spot/index_1_2_57_7.html → 200（キャッシュ）
+  - 詳細ページ 1 件（住所の取得のため）
+- `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list → 200（キャッシュ）
+- `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list?page=2 → 200（キャッシュ）
+- `L2` https://www.jalan.net/kankou/cit_122250000/g2_04/ → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_122250000/g2_04/page_2/ → 404
 - `L2` https://www.jalan.net/kankou/cit_122250000/g2_04/page_3/ → 404
   - 詳細ページ 15 件（住所の取得のため）
@@ -181,7 +184,15 @@
   - `L2` なっぷ chiba/kisarazu_kimitsu_uttsu — https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list?page=2
   - `L2` じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000226321/
 
-### 16. 千葉県立君津亀山少年自然の家
+### 16. マザー牧場グランピングGreen Base
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県君津市鹿野山288
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）君津市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_13203.html
+
+### 17. 千葉県立君津亀山少年自然の家
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -189,7 +200,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000199173/
 
-### 17. ホウリーウッズ久留里キャンプ村
+### 18. ホウリーウッズ久留里キャンプ村
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -197,7 +208,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12225ca3430054923/
 
-### 18. 笹本農園ロッジ&ファミリーキャンプ
+### 19. 笹本農園ロッジ&ファミリーキャンプ
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -205,7 +216,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12225ca3430054709/
 
-### 19. 名水の里久留里 かずさオートキャンプ場
+### 20. 名水の里久留里 かずさオートキャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -214,7 +225,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12225ca3430126771/
 
-### 20. ロマンの森キャンピングロッジ
+### 21. ロマンの森キャンピングロッジ
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -222,7 +233,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12225ca3430052658/
 
-### 21. 大自然の静寂と天然自噴温泉を愉しむ湯宿 亀山温泉ホテル
+### 22. 大自然の静寂と天然自噴温泉を愉しむ湯宿 亀山温泉ホテル
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -230,7 +241,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000183685/
 
-### 22. 奥米・木村農園
+### 23. 奥米・木村農園
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -238,7 +249,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000212061/
 
-### 23. PGF LAND
+### 24. PGF LAND
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -334,6 +345,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 |---|---|---|---|---|---|---|
 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | 20 | 0 | 1 | 0 | 19 | OK |
 | 君津市公式 きみつの観光情報「遊ぶ・体験」内のキャンプ場一覧 | 14 | 0 | 13 | 1 | 0 | OK |
+| ちば観光ナビ（千葉県公式）君津市 × バーベキュー・キャンプ・グランピング | 1 | 0 | 1 | 0 | 0 | OK |
 | なっぷ chiba/kisarazu_kimitsu_uttsu | 20 | 0 | 10 | 10 | 0 | OK |
 | じゃらん観光ガイド 君津市（cit_122250000 / ジャンル キャンプ・バンガロー・コテージ） | 15 | 0 | 15 | 0 | 0 | OK |
 

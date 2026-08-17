@@ -1,6 +1,6 @@
 # 地区スイープ: 木更津市
 
-実行: 2026-08-17 10:28:16　/　`node scripts/district-sweep.js --district "木更津市"`
+実行: 2026-08-17 10:47:26　/　`node scripts/district-sweep.js --district "木更津市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
@@ -9,9 +9,9 @@
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **3** |
-| IN_DATA（両方にある） | 0 |
-| ORPHAN（データにあるがソースに無い） | 1 |
+| **MISSING**（実在側にあるがデータに無い） | **5** |
+| IN_DATA（両方にある） | 1 |
+| ORPHAN（データにあるがソースに無い） | 0 |
 | データ側のこの地区のレコード | 1 |
 
 ## ソースの取得結果
@@ -21,6 +21,7 @@
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
 | L1 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | OK | 20 | 0 | 公営のみ（民間は原理的に載らない）。実測21行 → 県外1行を落として20行 / 14市町村にまたがる。住所は管理主体の列から市町村を補って作る |
+| L2 | ちば観光ナビ（千葉県公式）木更津市 × バーベキュー・キャンプ・グランピング | OK | 3 | 3 | エリアコード 56（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress) |
 | L2 | なっぷ chiba/kisarazu_kimitsu_uttsu | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 木更津市（cit_122060000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 3 | 3 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_122060000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_122060000/g2_04/page_3/ → HTTP_404 |
 | L1 | 都道府県オープンデータ（千葉） | **L1_NOT_FOUND** | – | – | 未調査 |
@@ -28,6 +29,8 @@
 取得したページ:
 
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
+- `L2` https://maruchiba.jp/spot/index_1_2_56_7.html → 200（キャッシュ）
+  - 詳細ページ 3 件（住所の取得のため）
 - `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list?page=2 → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_122060000/g2_04/ → 200（キャッシュ）
@@ -37,7 +40,23 @@
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. 木更津かんらんしゃパーク キサラピア
+### 1. KURKKU FIELDS
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県木更津市矢那2503
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）木更津市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_10323.html
+
+### 2. ETOWA KISARAZU（エトワ木更津）
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県木更津市下郡1886
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）木更津市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_10623.html
+
+### 3. 木更津かんらんしゃパーク キサラピア
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -46,7 +65,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 木更津市（cit_122060000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000184837/
 
-### 2. 泊まれるお城 Cocon Garden
+### 4. 泊まれるお城 Cocon Garden
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -54,7 +73,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 木更津市（cit_122060000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000223865/
 
-### 3. WILDBEACH木更津
+### 5. WILDBEACH木更津
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -80,13 +99,13 @@
 
 **いずれにせよ、これを根拠に `status` を変えない（§6-7）。**
 
-| id | 名前 | 住所 | status | needsVerify |
-|---|---|---|---|---|
-| `kisarazu-camp-organic` | きさらづCAMP ORGANIC FIELD in みたて | 千葉県木更津市中島4416 | unverified | true |
+なし。
 
 ## IN_DATA — 両方にある
 
-なし。
+| データ側 | ソース側の名前 | 一致の根拠 | confidence | 層 |
+|---|---|---|---|---|
+| `kisarazu-camp-organic` きさらづCAMP ORGANIC FIELD in みたて | きさらづCAMP ORGANIC FIELD in みたて | 名前 | LOW | L2 |
 
 ## 大字検査 — IN_DATA の突合が本当に同じ場所か
 
@@ -101,7 +120,7 @@
 |---|---:|
 | **不一致（誤突合の疑い）** | **0** |
 | 包含（粒度違い・無害） | 0 |
-| 一致 | 0 |
+| 一致 | 1 |
 | 検査対象外（どちらかの大字が取れない） | 0 |
 
 > **★ 「不一致 0件」を「誤突合が 0件」と読まないこと。**
@@ -151,6 +170,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 | ソース | 取得 | 名前が空 | 地区内 | b1 住所なし | b2 地区外 | 突合 |
 |---|---|---|---|---|---|---|
 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | 20 | 0 | 0 | 0 | 20 | OK |
+| ちば観光ナビ（千葉県公式）木更津市 × バーベキュー・キャンプ・グランピング | 3 | 0 | 3 | 0 | 0 | OK |
 | なっぷ chiba/kisarazu_kimitsu_uttsu | 20 | 0 | 0 | 18 | 2 | OK |
 | じゃらん観光ガイド 木更津市（cit_122060000 / ジャンル キャンプ・バンガロー・コテージ） | 3 | 0 | 3 | 0 | 0 | OK |
 

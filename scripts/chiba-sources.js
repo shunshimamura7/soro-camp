@@ -376,6 +376,97 @@ const SRC_KIMITSU_CITY = {
 /** 県の台帳は1本で14市町村にまたがるので、各市町村に同じ定義を配る。 */
 const PREF_L1 = SRC_CHIBA_PREF_SPORTS;
 
+/* ============================================================================
+ * L2 — ちば観光ナビ（千葉県公式観光サイト）
+ * ========================================================================== */
+
+/**
+ * 千葉県公式観光サイト「ちば観光ナビ」（`maruchiba.jp` / 千葉県観光物産協会）。
+ *
+ * ## ★ なぜ L2 か — 「県か市町村か」ではなく「行政の台帳か、観光の紹介か」
+ *
+ * 層の定義は「L1 一次 自治体公式・観光協会・都道府県オープンデータ」で、
+ * **字面だけなら県の観光協会なので L1 に読める。**だが既存の運用はそうなっていない。
+ *
+ *   やまなし観光推進機構（県の観光特集）          → **L2**
+ *   神奈川県公式 県央地域のバーベキュー・キャンプ  → **L2**（観光紹介の記事）
+ *   千葉県 公立社会体育施設一覧（県の行政台帳）    → **L1**
+ *   市区町村の公式・観光協会                      → **L1**
+ *
+ * ちば観光ナビはスポット紹介なので前例に従って **L2**。
+ *
+ * **決め手は HIGH の意味を壊さないこと。**木更津市の実測（2026-08-17）で、
+ * このサイトは **WILDBEACH木更津 も 木更津かんらんしゃパーク キサラピア も載せていない。**
+ * L1 にすると「県公式に載っている」だけで HIGH になり、
+ * **HIGH が「実在の確度」ではなく「このサイトに載っているか」になる。**
+ *
+ * **可逆な判断。**`--l1-coverage` で網羅率を測って7割を超えるなら L1 に上げてよい
+ * （相模原市80% / 道志村75% が前例）。上げるのは1行で済む。
+ *
+ * ## エリアコードは**全部実測した。推測で振っていない**
+ *
+ * `/spot/index.html` の絞り込みチェックボックス（`id="areaNN"` と `<label>`）から拾った:
+ *
+ *   館山市47 / 鴨川市49 / 南房総市50 / 大多喜町52 / 鋸南町54 / 木更津市56 / 君津市57 / 富津市58
+ *
+ * URL は `index_1_2_<エリア>_<ジャンル>.html`。ジャンル **7 = バーベキュー・キャンプ・グランピング**。
+ *
+ * ## kind は listDetail
+ *
+ * 一覧には施設名とエリア名しか無く、**住所が無い。**住所は詳細ページから取る。
+ *
+ * ## ★ 住所は JSON-LD から取る（表示の「住所」欄からではない）
+ *
+ * 詳細ページに schema.org の `PostalAddress` が入っている:
+ *
+ *     "address": {"@type":"PostalAddress","streetAddress":"中島4416",
+ *                 "addressLocality":"木更津市","addressRegion":"千葉県", …}
+ *
+ * **表示の DOM より壊れにくい。**県名・市区町村名・番地が分かれているので、
+ * 連結するだけで `splitAddress` が読める形になる。
+ * 順序に依存しないよう、`address` ブロックを取ってからキーごとに引く。
+ *
+ * ## robots.txt
+ *
+ * `https://maruchiba.jp/robots.txt` は **404**（403 ではない）。
+ * `robots-guard.js` の判定も `{allowed:true, status:404}`。**踏んでよい。**
+ *
+ * ## 混入について
+ *
+ * ジャンル7は「バーベキュー・キャンプ・**グランピング**」なので、
+ * **グランピング専門やBBQ場が混ざる。**木更津市の3件のうち
+ * KURKKU FIELDS と ETOWA KISARAZU はグランピング寄り。
+ * **名前から業態は機械では決まらない**ので、`--l1-audit` の型で人が1件ずつ見ること。
+ */
+function chibaKankoNavi(areaCode, label) {
+  return {
+    id: 'chiba-kanko-navi',
+    layer: 'L2',
+    kind: 'listDetail',
+    label: `ちば観光ナビ（千葉県公式）${label} × バーベキュー・キャンプ・グランピング`,
+    note:
+      `エリアコード ${areaCode}（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ` +
+      'ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress)',
+    pages: [`https://maruchiba.jp/spot/index_1_2_${areaCode}_7.html`],
+    list(html) {
+      const seen = new Map();
+      for (const m of html.matchAll(/<a href="(detail_\d+\.html)"[^>]*title="([^"]*)"/g)) {
+        const url = 'https://maruchiba.jp/spot/' + m[1];
+        const name = cleanText(m[2]);
+        if (name && !seen.has(url)) seen.set(url, { name, address: null, url });
+      }
+      return [...seen.values()];
+    },
+    address(html) {
+      const blk = html.match(/"address":\s*\{[\s\S]{0,500}?\}/);
+      if (!blk) return null;
+      const g = k => (blk[0].match(new RegExp(`"${k}":\\s*"([^"]*)"`)) || [])[1] || '';
+      const a = (g('addressRegion') + g('addressLocality') + g('streetAddress')).trim();
+      return a ? tidyAddress(a) : null;
+    },
+  };
+}
+
 /**
  * 千葉の市町村ソースを組み立てる。
  *
@@ -396,6 +487,7 @@ function chibaMuniSources(injected) {
     sources: [
       PREF_L1,
       SRC_MINAMIBOSO_KANKO,
+      chibaKankoNavi('50', '南房総市'),
       napCamp('tateyama_minamiboso', 'chiba'),
       jalan('12234', '南房総市'),
     ],
@@ -406,6 +498,7 @@ function chibaMuniSources(injected) {
     sources: [
       // 県の台帳に館山市の行は無い（0件）。**未登録ではなく0件**なので登録はする
       PREF_L1,
+      chibaKankoNavi('47', '館山市'),
       napCamp('tateyama_minamiboso', 'chiba'),
       jalan('12205', '館山市'),
     ],
@@ -438,6 +531,7 @@ function chibaMuniSources(injected) {
     sources: [
       PREF_L1,
       SRC_KIMITSU_CITY,
+      chibaKankoNavi('57', '君津市'),
       napCamp('kisarazu_kimitsu_uttsu', 'chiba'),
       jalan('12225', '君津市'),
     ],
@@ -447,6 +541,7 @@ function chibaMuniSources(injected) {
     pref: '千葉',
     sources: [
       PREF_L1,
+      chibaKankoNavi('58', '富津市'),
       napCamp('kisarazu_kimitsu_uttsu', 'chiba'),
       jalan('12226', '富津市'),
     ],
@@ -456,6 +551,7 @@ function chibaMuniSources(injected) {
     pref: '千葉',
     sources: [
       PREF_L1,
+      chibaKankoNavi('56', '木更津市'),
       napCamp('kisarazu_kimitsu_uttsu', 'chiba'),
       jalan('12206', '木更津市'),
     ],
@@ -465,6 +561,7 @@ function chibaMuniSources(injected) {
     pref: '千葉',
     sources: [
       PREF_L1,
+      chibaKankoNavi('49', '鴨川市'),
       napCamp('katsuura_kamogawa', 'chiba'),
       jalan('12223', '鴨川市'),
     ],
@@ -475,6 +572,7 @@ function chibaMuniSources(injected) {
     sources: [
       PREF_L1,
       // なっぷに大多喜を含むエリアが無い。勝浦・鴨川が最寄りだが**町を含む保証は無い**
+      chibaKankoNavi('52', '大多喜町'),
       napCamp('katsuura_kamogawa', 'chiba'),
       jalan('12441', '大多喜町'),
     ],
@@ -485,6 +583,7 @@ function chibaMuniSources(injected) {
     sources: [
       // 県の台帳に鋸南町の行は無い（0件）
       PREF_L1,
+      chibaKankoNavi('54', '鋸南町'),
       napCamp('tateyama_minamiboso', 'chiba'),
       jalan('12463', '鋸南町'),
     ],

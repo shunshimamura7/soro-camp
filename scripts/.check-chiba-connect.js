@@ -95,9 +95,26 @@ check('キャンナビ・ウォーカープラスが付いていない',
 console.log('    ※ 既存3県は県単位の L3 が付く。**千葉だけ層が薄い**ので、');
 console.log('       MISSING の少なさを「掲載漏れが少ない」と読まないこと。');
 
-console.log('\n■ データ側に千葉のレコードはまだ1件も無い');
-const chibaRecs = records.filter(r => r.prefecture === '千葉' || (r.address || '').includes('千葉県'));
-check('0件（＝ ORPHAN は構造上0、IN_DATA も0になる）', chibaRecs.length === 0, `${chibaRecs.length}件`);
+// ★ 2026-08-17 に書き換えた。
+// 元は「千葉のレコードは0件」を検査していた。**接続が無害であることの確認**として
+// 書いたもので、当時は正しかったが、**投入が進めば必ず落ちる。**
+// 落ちたときに件数を書き換えるだけの修正をすると、検査の意図が消える。
+//
+// いま意味があるのは「**千葉のレコードの市町村が、全部ソース登録済みか**」。
+// 未登録の市町村にレコードを入れると、その施設は
+// **「MISSING 0件」ではなく「調べたことにならない」**状態で放置される。
+console.log('\n■ 千葉のレコードは、すべてソース登録済みの市町村にある');
+const chibaRecs = records.filter(r => r.prefecture === '千葉');
+const unreg = chibaRecs.filter(r => {
+  const p = r.address && I.splitAddress(r.address);
+  return !p || !p.city || !CHIBA.includes(p.city);
+});
+check(`千葉のレコード ${chibaRecs.length}件がすべて登録済み市町村にある`, unreg.length === 0,
+  unreg.length ? unreg.map(r => `${r.id}(${r.address})`).join(' / ')
+    : chibaRecs.map(r => r.id).join(' / ') || '（まだ0件）');
+console.log(`    ※ 登録済み8市町: ${CHIBA.join(' / ')}`);
+console.log('    ※ 対象外の市町村（いすみ・香取・成田・佐倉・大網白里ほか）に投入するなら、');
+console.log('       **先に chiba-sources.js へ登録すること。**登録前に入れると「未登録」のまま埋もれる');
 
 const ng = results.filter(r => !r.ok);
 console.log(`\n${ng.length ? `❌ ${ng.length}件 NG` : `✅ 全${results.length}件 OK`}`);

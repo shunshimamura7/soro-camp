@@ -1,15 +1,15 @@
 # 地区スイープ: 鴨川市
 
-実行: 2026-08-16 14:24:27　/　`node scripts/district-sweep.js --district "鴨川市"`
+実行: 2026-08-17 10:47:38　/　`node scripts/district-sweep.js --district "鴨川市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-16 08:02:18
+データ: `data/campgrounds.json` 192件 / 最終更新 2026-08-17 19:28:07
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **1** |
+| **MISSING**（実在側にあるがデータに無い） | **2** |
 | IN_DATA（両方にある） | 0 |
 | ORPHAN（データにあるがソースに無い） | 0 |
 | データ側のこの地区のレコード | 0 |
@@ -21,6 +21,7 @@
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
 | L1 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | OK | 20 | 1 | 公営のみ（民間は原理的に載らない）。実測21行 → 県外1行を落として20行 / 14市町村にまたがる。住所は管理主体の列から市町村を補って作る |
+| L2 | ちば観光ナビ（千葉県公式）鴨川市 × バーベキュー・キャンプ・グランピング | OK | 2 | 2 | エリアコード 49（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress) |
 | L2 | なっぷ chiba/katsuura_kamogawa | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 鴨川市（cit_122230000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 0 | 0 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_122230000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_122230000/g2_04/page_3/ → HTTP_404 |
 | L1 | 都道府県オープンデータ（千葉） | **L1_NOT_FOUND** | – | – | 未調査 |
@@ -28,9 +29,11 @@
 取得したページ:
 
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
-- `L2` https://www.nap-camp.com/chiba/katsuura_kamogawa/list → 200
-- `L2` https://www.nap-camp.com/chiba/katsuura_kamogawa/list?page=2 → 200
-- `L2` https://www.jalan.net/kankou/cit_122230000/g2_04/ → 200
+- `L2` https://maruchiba.jp/spot/index_1_2_49_7.html → 200（キャッシュ）
+  - 詳細ページ 2 件（住所の取得のため）
+- `L2` https://www.nap-camp.com/chiba/katsuura_kamogawa/list → 200（キャッシュ）
+- `L2` https://www.nap-camp.com/chiba/katsuura_kamogawa/list?page=2 → 200（キャッシュ）
+- `L2` https://www.jalan.net/kankou/cit_122230000/g2_04/ → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_122230000/g2_04/page_2/ → 404
 - `L2` https://www.jalan.net/kankou/cit_122230000/g2_04/page_3/ → 404
 
@@ -39,10 +42,20 @@
 ### 1. 内浦山県民の森キャンプ場
 
 - **分類**: MISSING
-- **confidence**: HIGH（層: L1）
+- **confidence**: HIGH（層: L1 + L2）
 - **住所**: 千葉県鴨川市内浦3228
+- **表記ゆれ**: 内浦山県民の森キャンプ場 / 内浦山県民の森
 - **出典**:
   - `L1` 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） — https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html
+  - `L2` ちば観光ナビ（千葉県公式）鴨川市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_10591.html
+
+### 2. シーサイドテラス 千葉鴨川
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県鴨川市江見太夫崎300
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）鴨川市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_12542.html
 
 ## L1 の網羅率（この市町村）
 
@@ -130,6 +143,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 | ソース | 取得 | 名前が空 | 地区内 | b1 住所なし | b2 地区外 | 突合 |
 |---|---|---|---|---|---|---|
 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | 20 | 0 | 1 | 0 | 19 | OK |
+| ちば観光ナビ（千葉県公式）鴨川市 × バーベキュー・キャンプ・グランピング | 2 | 0 | 2 | 0 | 0 | OK |
 | なっぷ chiba/katsuura_kamogawa | 20 | 0 | 0 | 20 | 0 | OK |
 | じゃらん観光ガイド 鴨川市（cit_122230000 / ジャンル キャンプ・バンガロー・コテージ） | 0 | 0 | 0 | 0 | 0 | OK |
 

@@ -1,15 +1,15 @@
 # 地区スイープ: 富津市
 
-実行: 2026-08-16 14:23:45　/　`node scripts/district-sweep.js --district "富津市"`
+実行: 2026-08-17 10:47:11　/　`node scripts/district-sweep.js --district "富津市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-16 08:02:18
+データ: `data/campgrounds.json` 192件 / 最終更新 2026-08-17 19:28:07
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **5** |
+| **MISSING**（実在側にあるがデータに無い） | **9** |
 | IN_DATA（両方にある） | 0 |
 | ORPHAN（データにあるがソースに無い） | 0 |
 | データ側のこの地区のレコード | 0 |
@@ -21,6 +21,7 @@
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
 | L1 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | OK | 20 | 1 | 公営のみ（民間は原理的に載らない）。実測21行 → 県外1行を落として20行 / 14市町村にまたがる。住所は管理主体の列から市町村を補って作る |
+| L2 | ちば観光ナビ（千葉県公式）富津市 × バーベキュー・キャンプ・グランピング | OK | 5 | 5 | エリアコード 58（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress) |
 | L2 | なっぷ chiba/kisarazu_kimitsu_uttsu | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 富津市（cit_122260000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 5 | 5 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_122260000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_122260000/g2_04/page_3/ → HTTP_404 |
 | L1 | 都道府県オープンデータ（千葉） | **L1_NOT_FOUND** | – | – | 未調査 |
@@ -28,9 +29,11 @@
 取得したページ:
 
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
+- `L2` https://maruchiba.jp/spot/index_1_2_58_7.html → 200（キャッシュ）
+  - 詳細ページ 5 件（住所の取得のため）
 - `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list?page=2 → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_122260000/g2_04/ → 200
+- `L2` https://www.jalan.net/kankou/cit_122260000/g2_04/ → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_122260000/g2_04/page_2/ → 404
 - `L2` https://www.jalan.net/kankou/cit_122260000/g2_04/page_3/ → 404
   - 詳細ページ 5 件（住所の取得のため）
@@ -52,6 +55,7 @@
 - **confidence**: MID（層: L2）
 - **住所**: 千葉県富津市金谷784-1
 - **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）富津市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_13182.html
   - `L2` なっぷ chiba/kisarazu_kimitsu_uttsu — https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list
   - `L2` なっぷ chiba/kisarazu_kimitsu_uttsu — https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list?page=2
   - `L2` じゃらん観光ガイド 富津市（cit_122260000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225468/
@@ -67,7 +71,39 @@
   - `L2` なっぷ chiba/kisarazu_kimitsu_uttsu — https://www.nap-camp.com/chiba/kisarazu_kimitsu_uttsu/list?page=2
   - `L2` じゃらん観光ガイド 富津市（cit_122260000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000223902/
 
-### 4. オートキャンプ場志駒
+### 4. マザー牧場
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県富津市田倉940-3
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）富津市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_10327.html
+
+### 5. BAYSIDE KANAYA（ベイサイド金谷）
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県富津市金谷2171
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）富津市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_11268.html
+
+### 6. HOTEL＆GLAMPING ACT FUTTSU
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県富津市千種新田750-25
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）富津市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_11270.html
+
+### 7. 和心村ー古民家とグランピングと自然森山川海
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県富津市高溝14
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）富津市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_11271.html
+
+### 8. オートキャンプ場志駒
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -75,7 +111,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 富津市（cit_122260000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000199240/
 
-### 5. 富津公園キャンプ場
+### 9. 富津公園キャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -169,6 +205,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 | ソース | 取得 | 名前が空 | 地区内 | b1 住所なし | b2 地区外 | 突合 |
 |---|---|---|---|---|---|---|
 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | 20 | 0 | 1 | 0 | 19 | OK |
+| ちば観光ナビ（千葉県公式）富津市 × バーベキュー・キャンプ・グランピング | 5 | 0 | 5 | 0 | 0 | OK |
 | なっぷ chiba/kisarazu_kimitsu_uttsu | 20 | 0 | 4 | 14 | 2 | OK |
 | じゃらん観光ガイド 富津市（cit_122260000 / ジャンル キャンプ・バンガロー・コテージ） | 5 | 0 | 5 | 0 | 0 | OK |
 

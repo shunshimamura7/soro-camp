@@ -1,15 +1,15 @@
 # 地区スイープ: 南房総市
 
-実行: 2026-08-17 08:44:07　/　`node scripts/district-sweep.js --district "南房総市"`
+実行: 2026-08-17 10:46:52　/　`node scripts/district-sweep.js --district "南房総市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 190件 / 最終更新 2026-08-17 17:34:40
+データ: `data/campgrounds.json` 192件 / 最終更新 2026-08-17 19:28:07
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **19** |
+| **MISSING**（実在側にあるがデータに無い） | **20** |
 | IN_DATA（両方にある） | 1 |
 | ORPHAN（データにあるがソースに無い） | 0 |
 | データ側のこの地区のレコード | 1 |
@@ -22,6 +22,7 @@
 |---|---|---|---|---|---|
 | L1 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | OK | 20 | 3 | 公営のみ（民間は原理的に載らない）。実測21行 → 県外1行を落として20行 / 14市町村にまたがる。住所は管理主体の列から市町村を補って作る |
 | L1 | 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） | OK | 7 | 7 | 1ページに会員カード48枚。「キャンプ関連施設一覧」の区間7枚だけを取る。区間で切らないと41枚の BBQ 民宿が混ざる（混入85%） |
+| L2 | ちば観光ナビ（千葉県公式）南房総市 × バーベキュー・キャンプ・グランピング | OK | 2 | 2 | エリアコード 50（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress) |
 | L2 | なっぷ chiba/tateyama_minamiboso | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 13 | 13 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_122340000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_122340000/g2_04/page_3/ → HTTP_404 |
 | L1 | 都道府県オープンデータ（千葉） | **L1_NOT_FOUND** | – | – | 未調査 |
@@ -30,6 +31,8 @@
 
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
 - `L1` https://www.cm-boso.com/camp.html → 200（キャッシュ）
+- `L2` https://maruchiba.jp/spot/index_1_2_50_7.html → 200（キャッシュ）
+  - 詳細ページ 2 件（住所の取得のため）
 - `L2` https://www.nap-camp.com/chiba/tateyama_minamiboso/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/tateyama_minamiboso/list?page=2 → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_122340000/g2_04/ → 200（キャッシュ）
@@ -42,11 +45,12 @@
 ### 1. 多田良北浜海岸キャンプ場
 
 - **分類**: MISSING
-- **confidence**: HIGH（層: L1）
-- **住所**: 千葉県南房総市富浦町多田良
+- **confidence**: HIGH（層: L1 + L2）
+- **住所**: 千葉県南房総市富浦町多田良 / 千葉県南房総市富浦町多田良地先
 - **出典**:
   - `L1` 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） — https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html
   - `L1` 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） — https://www.cm-boso.com/camp.html
+  - `L2` ちば観光ナビ（千葉県公式）南房総市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_11787.html
 
 ### 2. 根本キャンプ場
 
@@ -107,7 +111,15 @@
 - **出典**:
   - `L1` 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） — https://www.cm-boso.com/camp.html
 
-### 9. 隠れ家リトリート施設 UMIKAZE
+### 9. ちくらつなぐホテル
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県南房総市千倉町北朝夷2967
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）南房総市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_10634.html
+
+### 10. 隠れ家リトリート施設 UMIKAZE
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -115,7 +127,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000223543/
 
-### 10. 白浜フラワーパーク
+### 11. 白浜フラワーパーク
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -123,7 +135,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_themeF80024000000/
 
-### 11. BONｰMAL HOLIDAY
+### 12. BONｰMAL HOLIDAY
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -131,7 +143,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000223542/
 
-### 12. 多田良海岸キャンプ場
+### 13. 多田良海岸キャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -139,7 +151,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12461ca3430054542/
 
-### 13. 根本マリンキャンプ場
+### 14. 根本マリンキャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -147,7 +159,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_12465ca3430052662/
 
-### 14. OCEAN VIEW MINT
+### 15. OCEAN VIEW MINT
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -155,7 +167,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225184/
 
-### 15. OCEAN RESORT MINT
+### 16. OCEAN RESORT MINT
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -163,7 +175,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225185/
 
-### 16. OCEAN VILLA MINT
+### 17. OCEAN VILLA MINT
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -171,7 +183,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225192/
 
-### 17. ユニアス レンタカー
+### 18. ユニアス レンタカー
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -179,7 +191,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225782/
 
-### 18. UNIUS SEASIDE CAMP ユニアスシーサイドキャンプ
+### 19. UNIUS SEASIDE CAMP ユニアスシーサイドキャンプ
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -187,7 +199,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225784/
 
-### 19. オアシス南房総
+### 20. オアシス南房総
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -285,6 +297,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 |---|---|---|---|---|---|---|
 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | 20 | 0 | 3 | 0 | 17 | OK |
 | 南房総市観光協会 南房総でキャンプをしよう！（キャンプ関連施設一覧） | 7 | 0 | 7 | 0 | 0 | OK |
+| ちば観光ナビ（千葉県公式）南房総市 × バーベキュー・キャンプ・グランピング | 2 | 0 | 2 | 0 | 0 | OK |
 | なっぷ chiba/tateyama_minamiboso | 20 | 0 | 2 | 18 | 0 | OK |
 | じゃらん観光ガイド 南房総市（cit_122340000 / ジャンル キャンプ・バンガロー・コテージ） | 13 | 0 | 13 | 0 | 0 | OK |
 

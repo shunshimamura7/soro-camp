@@ -1,15 +1,15 @@
 # 地区スイープ: 館山市
 
-実行: 2026-08-16 14:21:32　/　`node scripts/district-sweep.js --district "館山市"`
+実行: 2026-08-17 10:46:56　/　`node scripts/district-sweep.js --district "館山市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-16 08:02:18
+データ: `data/campgrounds.json` 192件 / 最終更新 2026-08-17 19:28:07
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **9** |
+| **MISSING**（実在側にあるがデータに無い） | **11** |
 | IN_DATA（両方にある） | 0 |
 | ORPHAN（データにあるがソースに無い） | 0 |
 | データ側のこの地区のレコード | 0 |
@@ -21,6 +21,7 @@
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
 | L1 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | OK | 20 | 0 | 公営のみ（民間は原理的に載らない）。実測21行 → 県外1行を落として20行 / 14市町村にまたがる。住所は管理主体の列から市町村を補って作る |
+| L2 | ちば観光ナビ（千葉県公式）館山市 × バーベキュー・キャンプ・グランピング | OK | 3 | 3 | エリアコード 47（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress) |
 | L2 | なっぷ chiba/tateyama_minamiboso | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 9 | 9 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_122050000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_122050000/g2_04/page_3/ → HTTP_404 |
 | L1 | 館山市観光協会（tateyamacity.com）「キャンプ場」カテゴリ | **L1_NOT_FOUND** | – | – | **カテゴリとしては存在するのに、施設の住所がどこにも無い。**`/camp` に「キャンプ場」カテゴリがあり、詳細（`/archives/2608` お台場海浜庭園など）も生きているが、**詳細ページに施設の住所が無く、ページ内で唯一の住所は「館山市北条1879-2」＝観光協会自身の所在地。****ここから住所を取ると §6-16 の借用をこちらから作る**（北杜市観光協会と完全に同じ型）。館山市は候補が2件（マリンサイド・キャンプマナビス）あって L1 が1本も無い市なので惜しいが、住所が取れない以上 L1 として登録しない |
@@ -39,16 +40,27 @@
 取得したページ:
 
 - `L1` https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html → 200（キャッシュ）
+- `L2` https://maruchiba.jp/spot/index_1_2_47_7.html → 200（キャッシュ）
+  - 詳細ページ 3 件（住所の取得のため）
 - `L2` https://www.nap-camp.com/chiba/tateyama_minamiboso/list → 200（キャッシュ）
 - `L2` https://www.nap-camp.com/chiba/tateyama_minamiboso/list?page=2 → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_122050000/g2_04/ → 200
+- `L2` https://www.jalan.net/kankou/cit_122050000/g2_04/ → 200（キャッシュ）
 - `L2` https://www.jalan.net/kankou/cit_122050000/g2_04/page_2/ → 404
 - `L2` https://www.jalan.net/kankou/cit_122050000/g2_04/page_3/ → 404
   - 詳細ページ 9 件（住所の取得のため）
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. 館山サザンビレッジ（旧：館山シーサイドビレッジ）
+### 1. CAMPGROUND BREEZE TATEYAMA
+
+- **分類**: MISSING
+- **confidence**: MID（層: L2）
+- **住所**: 千葉県館山市那古1672-6
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）館山市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_10624.html
+  - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000214947/
+
+### 2. 館山サザンビレッジ（旧：館山シーサイドビレッジ）
 
 - **分類**: MISSING
 - **confidence**: MID（層: L2）
@@ -59,7 +71,7 @@
   - `L2` なっぷ chiba/tateyama_minamiboso — https://www.nap-camp.com/chiba/tateyama_minamiboso/list?page=2
   - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000182788/
 
-### 2. ブエナビスタビーチクラブ
+### 3. ブエナビスタビーチクラブ
 
 - **分類**: MISSING
 - **confidence**: MID（層: L2）
@@ -70,7 +82,23 @@
   - `L2` なっぷ chiba/tateyama_minamiboso — https://www.nap-camp.com/chiba/tateyama_minamiboso/list?page=2
   - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000226131/
 
-### 3. コーラル館山オートキャンプ場
+### 4. 道の駅グリーンファーム館山
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県館山市稲274
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）館山市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_11708.html
+
+### 5. 別庭 雫花
+
+- **分類**: MISSING
+- **confidence**: LOW（層: L2）
+- **住所**: 千葉県館山市塩見249-1
+- **出典**:
+  - `L2` ちば観光ナビ（千葉県公式）館山市 × バーベキュー・キャンプ・グランピング — https://maruchiba.jp/spot/detail_10625.html
+
+### 6. コーラル館山オートキャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -78,7 +106,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000194228/
 
-### 4. 海紅豆オートキャンプ場
+### 7. 海紅豆オートキャンプ場
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -86,7 +114,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000195281/
 
-### 5. HOMIE TERRACE Funakata
+### 8. HOMIE TERRACE Funakata
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -94,7 +122,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000225333/
 
-### 6. お台場海浜庭園
+### 9. お台場海浜庭園
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -102,7 +130,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000198913/
 
-### 7. エメラルディア
+### 10. エメラルディア
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -110,21 +138,13 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000223401/
 
-### 8. コテージ海華(館山マリン)
+### 11. コテージ海華(館山マリン)
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
 - **住所**: 千葉県館山市正木1303-1
 - **出典**:
   - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000223077/
-
-### 9. CAMPGROUND BREEZE TATEYAMA
-
-- **分類**: MISSING
-- **confidence**: LOW（層: L2）
-- **住所**: 千葉県館山市那古1672-6
-- **出典**:
-  - `L2` じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000214947/
 
 ## L1 の網羅率（この市町村）
 
@@ -212,6 +232,7 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 | ソース | 取得 | 名前が空 | 地区内 | b1 住所なし | b2 地区外 | 突合 |
 |---|---|---|---|---|---|---|
 | 千葉県 公立社会体育施設一覧・キャンプ場（令和5年4月1日現在） | 20 | 0 | 0 | 0 | 20 | OK |
+| ちば観光ナビ（千葉県公式）館山市 × バーベキュー・キャンプ・グランピング | 3 | 0 | 3 | 0 | 0 | OK |
 | なっぷ chiba/tateyama_minamiboso | 20 | 0 | 4 | 16 | 0 | OK |
 | じゃらん観光ガイド 館山市（cit_122050000 / ジャンル キャンプ・バンガロー・コテージ） | 9 | 0 | 9 | 0 | 0 | OK |
 
