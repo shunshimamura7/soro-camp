@@ -85,6 +85,25 @@ const TIMEOUT_MS = 20000;
 const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 const DEFAULT_DETAIL_LIMIT = 45; // 住所を取りに行く詳細ページの上限（1ソースあたり）
 
+/**
+ * ページ送りのあるソースの `pages` を作る。**URL の作り方を関数として残すのが要点。**
+ *
+ * ★ 2026-08-18（§22）。以前は `[1,2,3].map(...)` を直書きしていて、
+ * **N+1ページ目の URL を作る手段が呼び出し元に無かった。**
+ * そのため「3ページで打ち切ったのか、元々3ページしか無いのか」が**区別できなかった。**
+ * `pageUrl` を持たせておくと、`collectSource()` が**N+1を1回だけ叩いて判定できる。**
+ *
+ * @param {(n:number)=>string} pageUrl 1始まりのページ番号から URL を作る
+ * @param {number} count 既定で取るページ数
+ */
+function paged(pageUrl, count) {
+  return {
+    pages: Array.from({ length: count }, (_, i) => pageUrl(i + 1)),
+    pageUrl,
+    pageCount: count,
+  };
+}
+
 /* ---- 429（レート制限）の扱い ------------------------------------------------
  *
  * **429 と 404 を同じ「取れなかった」に潰さないこと。意味が逆。**
@@ -754,9 +773,7 @@ function jalan(jisCode, label) {
     layer: 'L2',
     kind: 'listDetail',
     label: `じゃらん観光ガイド ${label}（cit_${jisCode}0000 / ジャンル キャンプ・バンガロー・コテージ）`,
-    pages: [1, 2, 3].map(
-      n => `https://www.jalan.net/kankou/cit_${jisCode}0000/g2_04/` + (n === 1 ? '' : `page_${n}/`)
-    ),
+    ...paged(n => `https://www.jalan.net/kankou/cit_${jisCode}0000/g2_04/` + (n === 1 ? '' : `page_${n}/`), 3),
     pageCapNote: 'ジャンル g2_04 のみ / 一覧は先頭3ページまで',
     // **じゃらんだけ間隔を厚くする（2026-08-15）。ただし効果は未実証。**
     //
@@ -803,9 +820,7 @@ function hinataSpot(areaPath, label) {
     layer: 'L2',
     kind: 'listDetail',
     label: `hinata スポット ${label}（${areaPath}）`,
-    pages: [1, 2, 3].map(
-      n => `https://camp-spot.hinata.me/${areaPath}/list` + (n === 1 ? '' : `?page=${n}`)
-    ),
+    ...paged(n => `https://camp-spot.hinata.me/${areaPath}/list` + (n === 1 ? '' : `?page=${n}`), 3),
     pageCapNote: '一覧は先頭3ページまで',
     // **既定45 → 60（2026-08-15）。既定の 45 に理由は書かれていなかった。**
     // 一覧3ページで1エリア最大60件出るので、45 だと**エリアの一覧を全部見ないまま終わる。**
@@ -1138,7 +1153,7 @@ const SRC_YAMANAKAKO = {
   // のと同じ扱いに揃えた。**負荷は detailLimit ではなく MIN_INTERVAL_MS と robots で見ている**
   // （lake-yamanakako.com の robots.txt に Crawl-delay は無く、1秒間隔が効く）。
   detailLimit: 250,
-  pages: [1, 2, 3, 4, 5].map(n => 'https://lake-yamanakako.com/reserve' + (n === 1 ? '' : `?page=${n}`)),
+  ...paged(n => 'https://lake-yamanakako.com/reserve' + (n === 1 ? '' : `?page=${n}`), 5),
   pageCapNote: '一覧は先頭5ページまで',
   list(html) {
     const urls = [...new Set(html.match(/https:\/\/lake-yamanakako\.com\/(?:spot|reserve)\/\d+/g) || [])];
@@ -1470,9 +1485,7 @@ function japanCamp(prefSlug, label) {
     layer: 'L3',
     kind: 'listInline',
     label: `キャンナビ（japancamp.jp）${label}`,
-    pages: Array.from({ length: 8 }, (_, i) =>
-      `https://japancamp.jp/camp_area/${prefSlug}/` + (i === 0 ? '' : `page/${i + 1}/`)
-    ),
+    ...paged(n => `https://japancamp.jp/camp_area/${prefSlug}/` + (n === 1 ? '' : `page/${n}/`), 8),
     pageCapNote: '一覧は先頭8ページまで（無いページは404として記録される）',
     list(html) {
       const out = [];
@@ -1923,14 +1936,21 @@ const MUNI_SOURCES = {
  * 定義時に要る2つだけ渡す（残りは向こうが遅延で取る）。
  * 詳しくは `chiba-sources.js` の冒頭。
  * ------------------------------------------------------------------------ */
-Object.assign(MUNI_SOURCES, require('./chiba-sources.js').chibaMuniSources({ jalan, napCamp }));
+Object.assign(MUNI_SOURCES, require('./chiba-sources.js').chibaMuniSources({ jalan, napCamp, paged }));
 
 /* ============================================================================
  * 6. 収集
  * ========================================================================== */
 
 /**
- * 1ソースぶんを取る。戻りは { source, status, items, fetched, notes, detailBudget }。
+ * 1ソースぶんを取る。戻りは { source, status, items, fetched, notes, detailBudget, pageCap }。
+ *
+ * `pageCap` は**ページ送りの打ち切り実績**（§22）。`detailBudget` と同じ立て方で、
+ * 「先頭Nページまで」という**宣言**ではなく、**N+1を1回叩いた観測**を返す。
+ *   `verdict`: MORE（まだ続きがある＝打ち切っている）/ END_EMPTY / END_404 /
+ *              SAME（同じ集合。ページ送りが効いていない）/ UNREACHABLE（判定できていない）/
+ *              NOT_PROBED（`pageUrl` を持たないソース）
+ *   `duplicatePages`: 宣言ページの中で、前ページと同じ集合しか返さなかったページ数
  * items は { name, address|null, url|null }。
  *
  * `detailBudget` は `detailLimit` の打ち切り実績。**打ち切りは長らく `notes` の
@@ -1938,12 +1958,19 @@ Object.assign(MUNI_SOURCES, require('./chiba-sources.js').chibaMuniSources({ jal
  * 解析するのは §18-3 そのものなので、構造化した値で返す。
  * `listDetail` 以外は詳細を踏まない実装なので `null`（0ではない。§18-3 の「出していない」）。
  */
+/** ページ内の項目を集合として比べるためのキー。**URL があれば URL、無ければ正規化名** */
+const pageItemKey = (it) => (it.url ? 'u:' + it.url : 'n:' + sweepNormalizeName(it.name || ''));
+
 async function collectSource(src, opts) {
   const items = [];
   const notes = [];
   const fetched = [];
   let listOk = 0;
   let detailBudget = null;
+  /** ★ §22。ページ送りを「取れたか」ではなく「**違う集合が返ったか**」で見る */
+  let pageCap = null;
+  const seenKeys = new Set();       // これまでのページで見たキー
+  let duplicatePages = 0;           // 前ページと同じ集合しか返さなかったページ数
 
   for (const pageUrl of src.pages) {
     const res = await fetchPage(pageUrl, { useCache: opts.useCache, extraDelayMs: src.extraDelayMs || 0 });
@@ -1961,16 +1988,73 @@ async function collectSource(src, opts) {
       notes.push(`${pageUrl} の解析に失敗: ${e.message}`);
       continue;
     }
+    // **このページが新しい集合を返したか。**なっぷ型（page2 が page1 と同一）を検出する
+    const keys = got.map(pageItemKey);
+    const fresh = keys.filter(k => !seenKeys.has(k)).length;
+    if (got.length > 0 && fresh === 0 && seenKeys.size > 0) {
+      duplicatePages++;
+      notes.push(`${pageUrl} は**前のページと同じ集合**を返した（${got.length}件すべて既出）。`
+        + '**ページ送りが効いていない疑い**（§21-5 のなっぷ型）');
+    }
+    for (const k of keys) seenKeys.add(k);
     for (const it of got) {
       if (!it.name && !it.url) continue;
-      items.push({ name: it.name, address: it.address || null, url: it.url || pageUrl });
+      // `ownUrl` は「項目が**自分の URL を持っていたか**」。持っていなければ一覧ページの URL で埋めるが、
+      // **それを同一性の判定に使うと、同じ施設が別ページに出たときに別物になる**（§22）。
+      items.push({ name: it.name, address: it.address || null, url: it.url || pageUrl, ownUrl: !!it.url });
     }
+  }
+
+  /* ★ N+1 ページ目を1回だけ叩いて、打ち切りか終端かを判定する（§22-3）。
+   *
+   * `pageCapNote` の「先頭Nページまで」は**宣言であって観測ではない。**
+   * 打ち切ったのか、元々そこまでなのかを区別できないと、母数が過小のまま気づけない。
+   * **判定は「取れたか」ではなく「新しい集合が返ったか」で行う。** */
+  if (src.pageUrl && src.pageCount && listOk > 0) {
+    const probeUrl = src.pageUrl(src.pageCount + 1);
+    const res = await fetchPage(probeUrl, { useCache: opts.useCache, extraDelayMs: src.extraDelayMs || 0 });
+    fetched.push({ url: probeUrl, status: res.status, note: res.note, fromCache: !!res.fromCache, probe: true });
+    let verdict, newItems = 0;
+    if (!res.ok) {
+      verdict = res.status === 404 ? 'END_404' : 'UNREACHABLE';
+    } else {
+      let got = [];
+      try { got = src.list(res.body) || []; } catch { got = []; }
+      const freshKeys = got.map(pageItemKey).filter(k => !seenKeys.has(k));
+      newItems = freshKeys.length;
+      if (got.length === 0) verdict = 'END_EMPTY';
+      else if (newItems === 0) verdict = 'SAME';       // 同じ集合。ページ送りが効いていない
+      else {
+        verdict = 'MORE';                              // **まだ続きがある＝打ち切っている**
+        for (const it of got) {
+          if (!it.name && !it.url) continue;
+          items.push({ name: it.name, address: it.address || null, url: it.url || probeUrl, ownUrl: !!it.url });
+        }
+        for (const k of got.map(pageItemKey)) seenKeys.add(k);
+      }
+    }
+    pageCap = { declared: src.pageCount, probeUrl, verdict, newItemsOnProbe: newItems, duplicatePages };
+    if (verdict === 'MORE') {
+      notes.push(`**${src.pageCount + 1}ページ目に新しい項目が ${newItems} 件あった＝打ち切っている。`
+        + `この一覧はまだ続きがある**（${src.pageCount + 1}ページ目は取り込んだが、それ以降は見ていない）`);
+    } else if (verdict === 'SAME') {
+      notes.push(`**${src.pageCount + 1}ページ目が既出と同じ集合を返した。ページ送りが効いていない疑い**（§21-5）`);
+    } else if (verdict === 'UNREACHABLE') {
+      notes.push(`${src.pageCount + 1}ページ目が取れず（${res.note || 'HTTP_' + res.status}）。**打ち切りかどうか判定できていない**`);
+    }
+  } else if (src.pageCount) {
+    pageCap = { declared: src.pageCount, probeUrl: null, verdict: 'NOT_PROBED', newItemsOnProbe: 0, duplicatePages };
   }
 
   // 同一ソース内の重複（ページ間で同じ施設が出る）をURL/名前でまとめる
   const seen = new Map();
   for (const it of items) {
-    const key = it.url && it.url.includes('/spt_') ? it.url : (it.url || '') + '|' + sweepNormalizeName(it.name || '');
+    /* ★ 2026-08-18（§22）。**自分の URL を持たない項目は、名前だけで同一性を見る。**
+     * 以前は一覧ページの URL で埋めた値をキーに入れていたので、
+     * **同じ施設が2ページに出ると別物として2回数えていた**（なっぷの 10+10=20 の正体）。
+     * 自分の URL を持つ項目（じゃらんの `/spt_` 等）はこれまでどおり URL で見る。 */
+    const own = it.ownUrl ? it.url : '';
+    const key = own && own.includes('/spt_') ? own : own + '|' + sweepNormalizeName(it.name || '');
     if (!seen.has(key)) seen.set(key, it);
     else if (!seen.get(key).address && it.address) seen.get(key).address = it.address;
   }
@@ -2054,7 +2138,7 @@ async function collectSource(src, opts) {
   // 一覧が取れていても詳細が 429 / 403 で落ちていれば、そのソースの結果は不完全。
   // **status だけ見ると OK に見えるので、別に持って md に出す**
   return {
-    source: src, status, items: uniq.filter(it => it.name), fetched, notes, detailBudget,
+    source: src, status, items: uniq.filter(it => it.name), fetched, notes, detailBudget, pageCap,
     rateLimited: rateLimited.map(f => ({ url: f.url, detail: !!f.detail, attempts: f.attempts })),
     forbidden: forbidden.map(f => ({ url: f.url, detail: !!f.detail })),
   };
@@ -2655,6 +2739,28 @@ function renderMd(ctx) {
   L.push('');
   L.push('**0件と「取れなかった」を区別すること。**取れなかったソースは、そこに無いことの根拠にならない。');
   L.push('');
+  /* ★ §22。ページ送りの打ち切りを**宣言ではなく観測**として出す。
+   *   「先頭Nページまで」という note だけだと、打ち切ったのか終端なのか読めない。 */
+  const caps = collected.filter(c => c.pageCap && c.pageCap.verdict);
+  if (caps.length) {
+    L.push('### ページ送りの打ち切り（N+1ページ目を1回叩いた観測）');
+    L.push('');
+    L.push('**「先頭Nページまで」は宣言であって観測ではない。**ここは実際に N+1 を叩いた結果。');
+    L.push('');
+    L.push('| ソース | 宣言 | N+1 の判定 | 新規 | 同一集合ページ |');
+    L.push('|---|---:|---|---:|---:|');
+    const label = { MORE: '**MORE — まだ続きがある（打ち切り）**', END_EMPTY: 'END_EMPTY（終端）',
+      END_404: 'END_404（終端）', SAME: '**SAME — ページ送りが効いていない**',
+      UNREACHABLE: '**UNREACHABLE — 判定できていない**', NOT_PROBED: 'NOT_PROBED（未検査）' };
+    for (const c of caps) {
+      const pc = c.pageCap;
+      L.push(`| ${mdEscape(c.source.label)} | ${pc.declared} | ${label[pc.verdict] || pc.verdict} | ${pc.newItemsOnProbe} | ${pc.duplicatePages} |`);
+    }
+    L.push('');
+    L.push('> **MORE は母数が過小だという意味。**その一覧はまだ続きがあり、この検査には載っていない。');
+    L.push('> **SAME はページ送りが機能していない**（§21-5 のなっぷ型）。件数だけ増えて中身が増えない。');
+    L.push('');
+  }
   L.push('| 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |');
   L.push('|---|---|---|---|---|---|');
   for (const c of collected) {
@@ -3930,7 +4036,7 @@ module.exports = { MUNI_SOURCES, PREF_SOURCES, SELF_TEST, runSelfTest, sweepNorm
 // 県ごとのソース定義を別ファイルに置くための足場（`chiba-sources.js` が使う）。
 // **同じ抽出規則を2か所に書かないために公開する**（§18-3）。
 // ここに足しても本体の挙動は変わらない（MUNI_SOURCES に混ぜるのは接続時）。
-module.exports.helpers = { jalan, napCamp, hinataSpot, cleanText, tidyAddress, stripTags };
+module.exports.helpers = { jalan, napCamp, hinataSpot, cleanText, tidyAddress, stripTags, paged };
 
 // テスト専用。**本体からは使わない。**答えが分かっている入力を通して
 // 判定が効いていることを確かめるため（§18-3）だけに公開している。

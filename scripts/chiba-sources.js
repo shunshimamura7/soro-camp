@@ -568,6 +568,9 @@ const PREF_L1 = SRC_CHIBA_PREF_SPORTS;
  * KURKKU FIELDS と ETOWA KISARAZU はグランピング寄り。
  * **名前から業態は機械では決まらない**ので、`--l1-audit` の型で人が1件ずつ見ること。
  */
+/** `chibaMuniSources()` が注入時に差す。**定義時に必要なので遅延取得できない**（循環参照） */
+let _paged = null;
+
 function chibaKankoNavi(areaCode, label) {
   return {
     id: 'chiba-kanko-navi',
@@ -577,7 +580,11 @@ function chibaKankoNavi(areaCode, label) {
     note:
       `エリアコード ${areaCode}（/spot/index.html の絞り込みから実測。**推測で振っていない**）/ ` +
       'ジャンル7はグランピング・BBQ場を含むので業態は人が見る / 住所は詳細ページの JSON-LD (PostalAddress)',
-    pages: [`https://maruchiba.jp/spot/index_1_2_${areaCode}_7.html`],
+    /* ★ ページ番号は URL の**先頭**（`index_{page}_2_{area}_{genre}.html`）。2026-08-18 実測。
+     * 南房総市（エリア50）は 1ページ目2件・2ページ目は 200 で0件＝終端だった。
+     * **1ページで足りているかはエリアごとに違う**ので、`paged()` にして
+     * `collectSource()` の N+1 探査に判定させる（§22）。 */
+    ..._paged(n => `https://maruchiba.jp/spot/index_${n}_2_${areaCode}_7.html`, 1),
     list(html) {
       const seen = new Map();
       for (const m of html.matchAll(/<a href="(detail_\d+\.html)"[^>]*title="([^"]*)"/g)) {
@@ -610,7 +617,8 @@ function chibaKankoNavi(areaCode, label) {
 let _chibaMuni = null;
 function chibaMuniSources(injected) {
   if (_chibaMuni) return _chibaMuni;
-  const { jalan, napCamp } = injected || SW().helpers;
+  const { jalan, napCamp, paged } = injected || SW().helpers;
+  _paged = paged;
   _chibaMuni = {
   南房総市: {
     pref: '千葉',
