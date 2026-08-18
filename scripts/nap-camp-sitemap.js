@@ -181,16 +181,35 @@ async function main() {
   if (!process.argv.includes('--harvest')) return;
 
   const limit = Number(arg('limit') || ids.length);
-  const out = [];
-  console.error(`詳細を取得: ${Math.min(limit, ids.length)}件 × ${CRAWL_DELAY_MS / 1000}秒 = 約${Math.round(Math.min(limit, ids.length) * CRAWL_DELAY_MS / 60000)}分`);
-  for (const id of ids.slice(0, limit)) {
+  const dest = arg('out');
+
+  /* ★ レジューム。**途中で落ちても取り直さない。**
+   * Crawl-delay 30 秒だと全件で数時間かかるので、中断が前提。
+   * 取得済みは `--out` の JSON に逐次書き、次回はそれを読んで**残りだけ**叩く。 */
+  let out = [];
+  if (dest && fs.existsSync(dest)) {
+    try { out = JSON.parse(fs.readFileSync(dest, 'utf8')); } catch { out = []; }
+  }
+  const done = new Set(out.filter((r) => r.status === 200).map((r) => String(r.id)));
+  const todo = ids.slice(0, limit).filter((id) => !done.has(String(id)));
+
+  const progress = dest ? dest.replace(/\.json$/, '') + '.progress.txt' : null;
+  const note = (s) => { console.error(s); if (progress) fs.writeFileSync(progress, s + '\n', 'utf8'); };
+
+  note(`[${pref}] 全${ids.length}件 / 取得済み${done.size}件 / 残り${todo.length}件`
+    + ` … 約${Math.round(todo.length * CRAWL_DELAY_MS / 60000)}分`);
+
+  let n = 0;
+  for (const id of todo) {
     const r = await get(`https://www.nap-camp.com/${pref}/${id}`, { delay: CRAWL_DELAY_MS });
     const d = r.ok ? parseDetail(r.body) : { name: null, address: null };
-    out.push({ id, status: r.status, ...d });
-    console.error(`  ${id} ${r.status} ${d.name || ''} / ${d.address || '住所なし'}`);
-    const dest = arg('out');
+    out = out.filter((x) => String(x.id) !== String(id));
+    out.push({ id, status: r.status, url: `https://www.nap-camp.com/${pref}/${id}`, ...d });
+    n++;
     if (dest) fs.writeFileSync(dest, JSON.stringify(out, null, 2), 'utf8');
+    note(`[${pref}] ${done.size + n}/${ids.length}  ${id} ${r.status}  ${d.name || ''} / ${d.address || '住所なし'}`);
   }
+  note(`[${pref}] 完了 ${out.filter((r) => r.status === 200).length}/${ids.length}`);
 }
 
 module.exports = { listIds, parseDetail, CRAWL_DELAY_MS };

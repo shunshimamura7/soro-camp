@@ -41,6 +41,9 @@ yarn-error.log*
 
 # 座標ツールの作業ファイル
 scripts/.overpass-cache.json
+# なっぷ sitemap 収穫の中間ファイル（1件ごとに書き換わる）とレジューム用の進捗
+# **成果物はマージ後の md を別途コミットする。**中間ファイルは残さない
+scripts/.nap-harvest/
 # 地区スイープの取得キャッシュ（取得先に何度も当たらないため）と実行ログ
 scripts/.sweep-cache/
 scripts/.sweep-*.log
