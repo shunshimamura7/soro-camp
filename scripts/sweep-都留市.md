@@ -1,15 +1,15 @@
 # 地区スイープ: 都留市
 
-実行: 2026-08-16 14:08:41　/　`node scripts/district-sweep.js --district "都留市"`
+実行: 2026-08-18 08:55:01　/　`node scripts/district-sweep.js --district "都留市"`
 
 **調査のみ。`data/campgrounds.json` は読むだけで書き換えていない。**
 反映は人が中身を見てから別途行う。
 
-データ: `data/campgrounds.json` 188件 / 最終更新 2026-08-16 08:02:18
+データ: `data/campgrounds.json` 192件 / 最終更新 2026-08-17 19:28:07
 
 | | 件数 |
 |---|---|
-| **MISSING**（実在側にあるがデータに無い） | **6** |
+| **MISSING**（実在側にあるがデータに無い） | **8** |
 | IN_DATA（両方にある） | 2 |
 | ORPHAN（データにあるがソースに無い） | 0 |
 | データ側のこの地区のレコード | 2 |
@@ -20,20 +20,23 @@
 
 | 層 | ソース | 状態 | 取得件数 | うちこの地区 | 備考 |
 |---|---|---|---|---|---|
+| L1 | 都留市観光協会 つるのルーツ発掘巡り キャンプ | OK | 7 | 7 | タグ一覧。キャンプ場以外（温泉・グランピング）が混ざる前提 |
 | L2 | やまなし観光推進機構 大月・都留エリアのキャンプ場 | OK | 24 | 2 | 実測の内訳は 道志村20 / 都留市3 / 丹波山村1。大月市・上野原市は0件 |
 | L2 | なっぷ yamanashi/otsuki_turushi | OK | 20 | 0 | robots.txt に Crawl-delay: 30。一覧に住所が無いため名前のみ |
 | L2 | じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） | OK | 6 | 6 | ジャンル g2_04 のみ / 一覧は先頭3ページまで / https://www.jalan.net/kankou/cit_192040000/g2_04/page_2/ → HTTP_404 / https://www.jalan.net/kankou/cit_192040000/g2_04/page_3/ → HTTP_404 |
 | L3 | キャンナビ（japancamp.jp）山梨県 | SKIPPED_ROBOTS | **測れず**（0） | – | 一覧は先頭8ページまで（無いページは404として記録される） / https://japancamp.jp/camp_area/19-yamanashi/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/19-yamanashi/page/2/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/19-yamanashi/page/3/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/19-yamanashi/page/4/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/19-yamanashi/page/5/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/19-yamanashi/page/6/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/19-yamanashi/page/7/ → SKIPPED_ROBOTS_403 / https://japancamp.jp/camp_area/19-yamanashi/page/8/ → SKIPPED_ROBOTS_403 |
-| L3 | ウォーカープラス 山梨県 | OK | 10 | 1 | robots.txt が ClaudeBot に Crawl-delay: 3 を指定しているので3秒あける。住所は市区町村まで |
+| L3 | ウォーカープラス 山梨県 | OK | 10 | 0 | robots.txt が ClaudeBot に Crawl-delay: 3 を指定しているので3秒あける。住所は市区町村まで |
 | L1 | 都道府県オープンデータ（山梨） | **L1_NOT_FOUND** | – | – | 山梨県のオープンデータに観光施設（キャンプ場）一覧の CSV は未確認 |
 
 取得したページ:
 
-- `L2` https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html → 200（キャッシュ）
+- `L1` https://tsurukankou.jp/discovery-tag/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/ → 200
+  - 詳細ページ 7 件（住所の取得のため）
+- `L2` https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html → 200
   - 詳細ページ 24 件（住所の取得のため）
-- `L2` https://www.nap-camp.com/yamanashi/otsuki_turushi/list → 200（キャッシュ）
-- `L2` https://www.nap-camp.com/yamanashi/otsuki_turushi/list?page=2 → 200（キャッシュ）
-- `L2` https://www.jalan.net/kankou/cit_192040000/g2_04/ → 200（キャッシュ）
+- `L2` https://www.nap-camp.com/yamanashi/otsuki_turushi/list → 200
+- `L2` https://www.nap-camp.com/yamanashi/otsuki_turushi/list?page=2 → 200
+- `L2` https://www.jalan.net/kankou/cit_192040000/g2_04/ → 200
 - `L2` https://www.jalan.net/kankou/cit_192040000/g2_04/page_2/ → 404
 - `L2` https://www.jalan.net/kankou/cit_192040000/g2_04/page_3/ → 404
   - 詳細ページ 6 件（住所の取得のため）
@@ -45,20 +48,64 @@
 - `L3` https://japancamp.jp/camp_area/19-yamanashi/page/6/ → 403
 - `L3` https://japancamp.jp/camp_area/19-yamanashi/page/7/ → 403
 - `L3` https://japancamp.jp/camp_area/19-yamanashi/page/8/ → 403
-- `L3` https://www.walkerplus.com/spot_list/ar0419/sg0112/ → 200（キャッシュ）
+- `L3` https://www.walkerplus.com/spot_list/ar0419/sg0112/ → 200
 
 ## MISSING — 実在側にあるがデータに無い
 
-### 1. 鹿留オートキャンプ場
+### 1. THE FOREST（フォレスト）
 
 - **分類**: MISSING
-- **confidence**: MID（層: L2）
-- **住所**: 都留市鹿留1180 / 山梨県都留市鹿留1288番地
+- **confidence**: HIGH（層: L1）
+- **住所**: 山梨県都留市戸沢1068
 - **出典**:
+  - `L1` 都留市観光協会 つるのルーツ発掘巡り キャンプ — https://tsurukankou.jp/discovery/1165/
+
+### 2. 芭蕉 月待ちの湯
+
+- **分類**: MISSING
+- **confidence**: HIGH（層: L1）
+- **住所**: 山梨県都留市戸沢874-1
+- **出典**:
+  - `L1` 都留市観光協会 つるのルーツ発掘巡り キャンプ — https://tsurukankou.jp/discovery/1082/
+
+### 3. Berry Park in FISH ON!鹿留
+
+- **分類**: MISSING
+- **confidence**: HIGH（層: L1）
+- **住所**: 山梨県都留市鹿留1543
+- **出典**:
+  - `L1` 都留市観光協会 つるのルーツ発掘巡り キャンプ — https://tsurukankou.jp/discovery/949/
+
+### 4. 大沢オートキャンプ場
+
+- **分類**: MISSING
+- **confidence**: HIGH（層: L1 + L2）
+- **住所**: 山梨県都留市鹿留2961
+- **出典**:
+  - `L1` 都留市観光協会 つるのルーツ発掘巡り キャンプ — https://tsurukankou.jp/discovery/919/
+  - `L2` じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19204ca3432067547/
+
+### 5. 鹿留オートキャンプ場
+
+- **分類**: MISSING
+- **confidence**: HIGH（層: L1 + L2）
+- **住所**: 山梨県都留市鹿留1180 / 都留市鹿留1180 / 山梨県都留市鹿留1288番地
+- **出典**:
+  - `L1` 都留市観光協会 つるのルーツ発掘巡り キャンプ — https://tsurukankou.jp/discovery/909/
   - `L2` やまなし観光推進機構 大月・都留エリアのキャンプ場 — https://www.yamanashi-kankou.jp/kankou/spot/p2_3133.html
   - `L2` じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19204ca3432067545/
 
-### 2. ベリーパーク in ＦＩＳＨ-ＯＮ！鹿留
+### 6. すげのレジャー
+
+- **分類**: MISSING
+- **confidence**: HIGH（層: L1 + L2）
+- **住所**: 山梨県都留市大野2410
+- **表記ゆれ**: すげのレジャー / すげのレジャー（キャンプ））
+- **出典**:
+  - `L1` 都留市観光協会 つるのルーツ発掘巡り キャンプ — https://tsurukankou.jp/discovery/897/
+  - `L2` じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19204cb3532095132/
+
+### 7. ベリーパーク in ＦＩＳＨ-ＯＮ！鹿留
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -66,23 +113,7 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19204ca3432067548/
 
-### 3. すげのレジャー（キャンプ））
-
-- **分類**: MISSING
-- **confidence**: LOW（層: L2）
-- **住所**: 山梨県都留市大野2410
-- **出典**:
-  - `L2` じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19204cb3532095132/
-
-### 4. 大沢オートキャンプ場
-
-- **分類**: MISSING
-- **confidence**: LOW（層: L2）
-- **住所**: 山梨県都留市鹿留2961
-- **出典**:
-  - `L2` じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_19204ca3432067547/
-
-### 5. ホテル&薬草風呂 スターらんど
+### 8. ホテル&薬草風呂 スターらんど
 
 - **分類**: MISSING
 - **confidence**: LOW（層: L2）
@@ -90,20 +121,14 @@
 - **出典**:
   - `L2` じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） — https://www.jalan.net/kankou/spt_guide000000160061/
 
-### 6. せせらぎ荘キャンプ場
-
-- **分類**: MISSING
-- **confidence**: LOW（層: L3）
-- **住所**: 山梨県都留市
-- **出典**:
-  - `L3` ウォーカープラス 山梨県 — https://www.walkerplus.com/spot_list/ar0419/sg0112/
-
 ## L1 の網羅率（この市町村）
 
 `priceVerified: true` かつ `needsVerify` なし＝**実在がほぼ確実なレコード**のうち、
 その L1 に何件が載っているか。**ORPHAN を判定として使ってよいかの根拠。**
 
-この市町村に L1 は無い（L1_NOT_FOUND）。**ORPHAN は判定として使えない。**
+| L1 | 一覧の件数 | 実在確実 | うち掲載 | 網羅率 | 落ちている id |
+|---|---|---|---|---|---|
+| 都留市観光協会 つるのルーツ発掘巡り キャンプ | 7 | 1 | 0 | 0% | nagomino-sato-tsuru |
 
 ## ORPHAN — データにあるが、どのソースにも出てこない
 
@@ -119,7 +144,7 @@
 
 | データ側 | ソース側の名前 | 一致の根拠 | confidence | 層 |
 |---|---|---|---|---|
-| `takaranoyama-fureai` 宝の山ふれあいの里キャンプ場 | 宝の山ふれあいの里 | 名前 | LOW | L2 |
+| `takaranoyama-fureai` 宝の山ふれあいの里キャンプ場 | 宝の山 ふれあいの里 キャンプ場/ネイチャーセンター | 名前 | HIGH | L1+L2 |
 | `nagomino-sato-tsuru` 都留戸沢の森 和みの里キャンプ場 | 都留市戸沢の森和みの里キャンプ場 | 番地（名前は不一致） | LOW | L2 |
 
 ## 大字検査 — IN_DATA の突合が本当に同じ場所か
@@ -152,8 +177,7 @@
 
 | 落ちた先 | 件数 | 意味 |
 |---|---:|---|
-| `b2（地区外）` | 23 | 市区町村が別。地区の粒度とは無関係 |
-| `MISSING` | 1 | 実在するがデータに無い。**案Cで増えた MISSING の出どころ** |
+| `b2（地区外）` | 24 | 市区町村が別。地区の粒度とは無関係 |
 
 <details><summary>内訳（項目ごと）</summary>
 
@@ -174,15 +198,15 @@
 | `yamanashi-kankou-otsuki` | 川端オートキャンプ場 | 南都留郡道志村3074 | b2（地区外） |
 | `yamanashi-kankou-otsuki` | オートキャンプしろいだいら | 南都留郡道志村11674 | b2（地区外） |
 | `yamanashi-kankou-otsuki` | とやの沢 オートキャンプ場 | 南都留郡道志村12433長又 | b2（地区外） |
-| `walkerplus` | せせらぎ荘キャンプ場 | 山梨県都留市 | MISSING |
 | `walkerplus` | フレンドパークむかわ キャンプ場 | 山梨県北杜市 | b2（地区外） |
-| `walkerplus` | ACNオートリゾートパーク・ビッグランド | 山梨県北杜市 | b2（地区外） |
-| `walkerplus` | 平野田休養村キャンプ場 | 山梨県上野原市 | b2（地区外） |
-| `walkerplus` | 精進湖キャンピングコテージ | 山梨県南都留郡富士河口湖町 | b2（地区外） |
 | `walkerplus` | 大自然に抱かれたキャンプ場ウッドペッカー | 山梨県北杜市 | b2（地区外） |
+| `walkerplus` | 精進湖キャンピングコテージ | 山梨県南都留郡富士河口湖町 | b2（地区外） |
+| `walkerplus` | ACNオートリゾートパーク・ビッグランド | 山梨県北杜市 | b2（地区外） |
 | `walkerplus` | ノースランドキャンパーズビレッジ | 山梨県甲斐市 | b2（地区外） |
+| `walkerplus` | 平野田休養村キャンプ場 | 山梨県上野原市 | b2（地区外） |
 | `walkerplus` | BUB RESORT Yatsugatake (バブ リゾート 八ヶ岳) | 山梨県北杜市 | b2（地区外） |
 | `walkerplus` | 大人のキャンプ場 | 山梨県北杜市 | b2（地区外） |
+| `walkerplus` | LScamp山中湖 | 山梨県南都留郡山中湖村 | b2（地区外） |
 
 </details>
 
@@ -196,7 +220,7 @@
 | | 意味 | 件数 |
 |---|---|---|
 | **b1** | **住所が無い**（名前だけ）。他ソースとも合流できなかった。原因は2つ（下記で分割） | **15** |
-| **b2** | 住所はあるが**地区外**。うち市区町村も違う 24 件 | **24** |
+| **b2** | 住所はあるが**地区外**。うち市区町村も違う 25 件 | **25** |
 | b3 | 住所なしの項目が地区内バケットに**合流した**（＝漏れていない。参考） | 0 |
 
 **b1 と b2 は分けてある。対処が正反対だから。**
@@ -220,11 +244,12 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 
 | ソース | 取得 | 名前が空 | 地区内 | b1 住所なし | b2 地区外 | 突合 |
 |---|---|---|---|---|---|---|
+| 都留市観光協会 つるのルーツ発掘巡り キャンプ | 7 | 0 | 7 | 0 | 0 | OK |
 | やまなし観光推進機構 大月・都留エリアのキャンプ場 | 24 | 0 | 2 | 6 | 16 | OK |
 | なっぷ yamanashi/otsuki_turushi | 20 | 0 | 0 | 18 | 2 | OK |
 | じゃらん観光ガイド 都留市（cit_192040000 / ジャンル キャンプ・バンガロー・コテージ） | 6 | 0 | 6 | 0 | 0 | OK |
 | キャンナビ（japancamp.jp）山梨県 | 0 | 0 | 0 | 0 | 0 | OK |
-| ウォーカープラス 山梨県 | 10 | 0 | 1 | 0 | 9 | OK |
+| ウォーカープラス 山梨県 | 10 | 0 | 0 | 0 | 10 | OK |
 
 ### b1 — 住所が無く、他ソースとも合流できなかった
 
@@ -289,13 +314,14 @@ b2 は**住所が誤っている**か**本当に地区外**かのどちらかで
 | オートキャンプしろいだいら | 南都留郡道志村11674 | L2 yamanashi-kankou-otsuki |
 | とやの沢 オートキャンプ場 | 南都留郡道志村12433長又 | L2 yamanashi-kankou-otsuki |
 | フレンドパークむかわ キャンプ場 | 山梨県北杜市 | L3 walkerplus |
-| ACNオートリゾートパーク・ビッグランド | 山梨県北杜市 | L3 walkerplus |
-| 平野田休養村キャンプ場 | 山梨県上野原市 | L3 walkerplus |
-| 精進湖キャンピングコテージ | 山梨県南都留郡富士河口湖町 | L3 walkerplus |
 | 大自然に抱かれたキャンプ場ウッドペッカー | 山梨県北杜市 | L3 walkerplus |
+| 精進湖キャンピングコテージ | 山梨県南都留郡富士河口湖町 | L3 walkerplus |
+| ACNオートリゾートパーク・ビッグランド | 山梨県北杜市 | L3 walkerplus |
 | ノースランドキャンパーズビレッジ | 山梨県甲斐市 | L3 walkerplus |
+| 平野田休養村キャンプ場 | 山梨県上野原市 | L3 walkerplus |
 | BUB RESORT Yatsugatake (バブ リゾート 八ヶ岳) | 山梨県北杜市 | L3 walkerplus |
 | 大人のキャンプ場 | 山梨県北杜市 | L3 walkerplus |
+| LScamp山中湖 | 山梨県南都留郡山中湖村 | L3 walkerplus |
 
 ### b2-b — 市区町村は同じだが、大字が違う
 

@@ -988,7 +988,7 @@
   {
     "id": "yamanakako-misaki",
     "slug": "yamanakako-misaki",
-    "name": "sotosotodays 山中湖みさき",
+    "name": "sotosotodays CAMPGROUNDS 山中湖みさき",
     "prefecture": "山梨",
     "area": "山中湖",
     "status": "active",
@@ -1028,7 +1028,7 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "ゆるキャン△聖地・山中湖南岸の高規格キャンプ場。富士山と山中湖のコラボビューとソロ専用サイトが魅力。ウォシュレット・温水シャワーと設備は充実。ソロ6,000円〜と価格は高めだが都心から約90分のアクセスと湖畔ロケーションで納得感がある。ペダルカヤックレンタルも楽しい。",
+    "soloComment": "ゆるキャン△聖地・山中湖北東岸の高規格キャンプ場。山中湖で唯一の岬状の地形にあり、サイトの両側が湖に面している。富士山と山中湖のコラボビューとソロ専用サイトが魅力。ウォシュレット・温水シャワーと設備は充実。ソロ6,000円〜と価格は高めだが都心から約90分のアクセスと湖畔ロケーションで納得感がある。ペダルカヤックレンタルも楽しい。",
     "officialUrl": "https://camp.sotosotodays.com/yamanakako-misaki/",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11263",
     "tel": "0555-65-7981",
@@ -1349,7 +1349,7 @@
   {
     "id": "yataro-camp",
     "slug": "yataro-camp",
-    "name": "谷太郎キャンプ場",
+    "name": "谷太郎キャンプ場清川リバーランド",
     "prefecture": "神奈川",
     "area": "丹沢",
     "status": "active",
@@ -2589,7 +2589,7 @@
   {
     "id": "richland-kiyokawa",
     "slug": "richland-kiyokawa",
-    "name": "リッチランドキャンプ場",
+    "name": "法論堂キャンプ場リッチランド",
     "prefecture": "神奈川",
     "area": "宮ヶ瀬",
     "status": "active",
@@ -2633,7 +2633,8 @@
     "tel": "046-288-1031",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "officialUrl": "https://www.richland-kiyokawa-camp.com/"
   },
   {
     "id": "karasawa-miyagase",
@@ -2689,7 +2690,7 @@
   {
     "id": "hidamari-yamakita",
     "slug": "hidamari-yamakita",
-    "name": "ひだまりの里キャンプ場",
+    "name": "ひだまりの里",
     "prefecture": "神奈川",
     "area": "山北",
     "status": "active",
@@ -2729,7 +2730,7 @@
       "reservationNote": "メール予約（hidamarinosato@marble.ocn.ne.jp）。利用日の4か月前から受付"
     },
     "season": "4月〜11月（12月〜3月は金・土・日・祝のみ営業。年末年始休業）",
-    "soloComment": "山北町の静かな山間キャンプ場。ミカン畑に囲まれた独特のロケーションで春は花、秋は実りを楽しめる。丹沢湖への入口にあたりトレッキングと組み合わせたソロ旅に最適。静かな渓流沿いで鳥の声が心地よい。",
+    "soloComment": "山北町の静かな山間キャンプ場。区画は電源サイト・茶畑サイト・芝サイトに分かれ、茶畑越しの眺めが独特。丹沢湖への入口にあたりトレッキングと組み合わせたソロ旅に最適。テニスコートや多目的ホール「ひだまり館」を併設した町の複合施設で、キャンプ場はその一部。町民料金と町外料金があり、町外はやや高い。",
     "tel": "0465-77-2777",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,

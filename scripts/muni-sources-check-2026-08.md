@@ -552,3 +552,17 @@
 | OK | https://www.jalan.net/kankou/cit_142120000/g2_04/page_3/ | 厚木市 | HTTP 404（ページ送りの終端。同ソース全体で1件） |
 | OK | https://www.nap-camp.com/kanagawa/atsugi_ebina/list | 厚木市 | 10件抽出 |
 | OK | https://www.nap-camp.com/kanagawa/atsugi_ebina/list?page=2 | 厚木市 | 10件抽出 |
+
+## 第10回（2026-08-18 08:54 UTC） — 都留市 のみ
+
+対象 7件 / 問題 0件
+
+| 判定 | URL | 使っている自治体 | 備考 |
+|---|---|---|---|
+| OK | https://tsurukankou.jp/discovery-tag/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/ | 都留市 | 7件抽出 |
+| OK | https://www.jalan.net/kankou/cit_192040000/g2_04/ | 都留市 | 6件抽出 |
+| OK | https://www.jalan.net/kankou/cit_192040000/g2_04/page_2/ | 都留市 | HTTP 404（ページ送りの終端。同ソース全体で6件） |
+| OK | https://www.jalan.net/kankou/cit_192040000/g2_04/page_3/ | 都留市 | HTTP 404（ページ送りの終端。同ソース全体で6件） |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list | 都留市 | 10件抽出 |
+| OK | https://www.nap-camp.com/yamanashi/otsuki_turushi/list?page=2 | 都留市 | 10件抽出 |
+| OK | https://www.yamanashi-kankou.jp/special/yamanashicamp/otsuki.html | 都留市 | 24件抽出 |
