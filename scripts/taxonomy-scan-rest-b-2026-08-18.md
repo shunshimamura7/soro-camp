@@ -15,43 +15,80 @@
 | `https://www.city.yamanashi.yamanashi.jp/sitemap_index.xml` | index | 子 1本 |
 | `https://www.city.yamanashi.yamanashi.jp/sitemap01.xml` | urlset | 2797 URL |
 
-### ディレクトリ構成（上位30／全66）— **語彙に頼らない列挙**
+### ディレクトリ構成（全66件）— **語彙に頼らない列挙**
 
 キーワード一致は**綴りを外すと沈黙する**（実例: 山梨市の観光ツリーは `/site/tuorism/`）。
 **ここは語彙を使わず、URL のディレクトリを数えただけ。**目で見て当たりを付けるための材料。
+**パス順に並べてある**（件数順だと小さいディレクトリが常に下に沈むため）。
 
 | ディレクトリ | URL数 |
 |---|---:|
-| `/site/cultural-assets/` | 185 |
-| `/site/mayor/` | 137 |
-| `/site/kosodate/` | 135 |
-| `/life/7/` | 129 |
-| `/site/shinsei-navi/` | 129 |
-| `/soshiki/17/` | 110 |
+| `/index.html/` | 1 |
+| `/life/` | 1 |
 | `/life/1/` | 107 |
-| `/soshiki/7/` | 97 |
-| `/site/everydaylife/` | 90 |
-| `/soshiki/15/` | 83 |
-| `/soshiki/9/` | 69 |
-| `/soshiki/25/` | 64 |
-| `/soshiki/14/` | 63 |
-| `/site/assembly/` | 56 |
-| `/life/6/` | 55 |
-| `/site/koho-yamanashi/` | 54 |
-| `/soshiki/5/` | 52 |
-| `/soshiki/21/` | 52 |
-| `/soshiki/` | 47 |
-| `/soshiki/24/` | 47 |
-| `/soshiki/4/` | 46 |
-| `/soshiki/18/` | 46 |
-| `/soshiki/13/` | 46 |
-| `/life/3/` | 45 |
-| `/soshiki/16/` | 44 |
-| `/soshiki/10/` | 44 |
 | `/life/2/` | 41 |
+| `/life/3/` | 45 |
+| `/life/4/` | 33 |
+| `/life/5/` | 27 |
+| `/life/6/` | 55 |
+| `/life/7/` | 129 |
+| `/search.html/` | 1 |
+| `/site/20th-memorial/` | 18 |
+| `/site/agri-heritage/` | 25 |
+| `/site/assembly/` | 56 |
+| `/site/city-bus/` | 16 |
 | `/site/city-library/` | 41 |
+| `/site/cultural-assets/` | 185 |
+| `/site/everydaylife/` | 90 |
+| `/site/furusato/` | 25 |
+| `/site/heat-stroke/` | 7 |
+| `/site/iju/` | 36 |
+| `/site/koho-yamanashi/` | 54 |
+| `/site/kokoro/` | 10 |
+| `/site/kosodate/` | 135 |
+| `/site/local-announcer/` | 20 |
+| `/site/mayor/` | 137 |
+| `/site/mogitate/` | 4 |
+| `/site/neo-mujin/` | 8 |
+| `/site/nezu-kinenkan/` | 39 |
+| `/site/playground/` | 20 |
 | `/site/school-lunch/` | 40 |
+| `/site/shinsei-navi/` | 129 |
+| `/site/tuorism/` | 26 |
+| `/site/userguide/` | 30 |
+| `/sitemap.html/` | 1 |
+| `/soshiki/` | 47 |
+| `/soshiki/0/` | 3 |
+| `/soshiki/10/` | 44 |
+| `/soshiki/11/` | 24 |
+| `/soshiki/12/` | 32 |
+| `/soshiki/13/` | 46 |
+| `/soshiki/14/` | 63 |
+| `/soshiki/15/` | 83 |
+| `/soshiki/16/` | 44 |
+| `/soshiki/17/` | 110 |
+| `/soshiki/18/` | 46 |
+| `/soshiki/19/` | 17 |
 | `/soshiki/2/` | 40 |
+| `/soshiki/20/` | 30 |
+| `/soshiki/21/` | 52 |
+| `/soshiki/22/` | 3 |
+| `/soshiki/23/` | 2 |
+| `/soshiki/24/` | 47 |
+| `/soshiki/25/` | 64 |
+| `/soshiki/26/` | 4 |
+| `/soshiki/27/` | 5 |
+| `/soshiki/28/` | 4 |
+| `/soshiki/29/` | 2 |
+| `/soshiki/3/` | 40 |
+| `/soshiki/30/` | 2 |
+| `/soshiki/31/` | 17 |
+| `/soshiki/4/` | 46 |
+| `/soshiki/5/` | 52 |
+| `/soshiki/6/` | 37 |
+| `/soshiki/7/` | 97 |
+| `/soshiki/8/` | 33 |
+| `/soshiki/9/` | 69 |
 
 ### URL にキーワードが出たページ（20件）— **分類ではない**
 
@@ -82,13 +119,17 @@ URL 自体に手がかりが出ることがある。**分類一覧ではない�
 ### HTML フォールバック（XML で分類系が0本だったため）
 
 対象: `https://www.city.yamanashi.yamanashi.jp/`
-- 分類アーカイブらしきリンク: **7本**
-- キーワードに当たったものは**なし**
+- 分類アーカイブらしきリンク: **11本**
+- **キーワードに当たったもの:**
+  - 観光情報 — https://www.city.yamanashi.yamanashi.jp/site/tuorism/
+  - 施設情報 — https://www.city.yamanashi.yamanashi.jp/life/7/35/
+  - 山梨市万力公園指定管理者を募集します — https://www.city.yamanashi.yamanashi.jp/soshiki/20/20581.html
+  - 「峡東地域広域水道企業団水道施設運転管理等業務委託」公募型プロポーザルの実施について — https://www.city.yamanashi.yamanashi.jp/soshiki/21/20645.html
 
 > **⚠ HTML 経路は XML と同じ網羅性を持たない。**トップから辿れないものは出ない。
 > ここで0件でも「分類が無い」の根拠にはならない。
 
-> 使ったキーワード（28語）: キャンプ / きゃんぷ / camp / キャンプ場 / オートキャンプ / グランピング / glamping / アウトドア / outdoor / 泊まる / 宿泊 / とまる / stay / lodging / accommodation / レジャー / leisure / あそぶ / 遊ぶ / play / 自然 / nature / 体験 / バーベキュー / bbq / 野営 / テント / tent
+> 使ったキーワード（42語）: キャンプ / きゃんぷ / camp / キャンプ場 / オートキャンプ / グランピング / glamping / アウトドア / outdoor / 泊まる / 宿泊 / とまる / stay / lodging / accommodation / レジャー / leisure / あそぶ / 遊ぶ / play / 自然 / nature / 体験 / バーベキュー / bbq / 野営 / テント / tent / 観光 / kanko / kankou / tourism / sightsee / kankou_joho / kanko_jyouho / 施設 / shisetsu / 公園 / kouen / koen / asobu / tomaru
 > **この一覧に無い語で分類されていれば取り逃す。**ヒット0を「無い」と読む前にここを見ること。
 
 ---
@@ -107,7 +148,7 @@ URL 自体に手がかりが出ることがある。**分類一覧ではない�
 
 なし。
 
-> 使ったキーワード（28語）: キャンプ / きゃんぷ / camp / キャンプ場 / オートキャンプ / グランピング / glamping / アウトドア / outdoor / 泊まる / 宿泊 / とまる / stay / lodging / accommodation / レジャー / leisure / あそぶ / 遊ぶ / play / 自然 / nature / 体験 / バーベキュー / bbq / 野営 / テント / tent
+> 使ったキーワード（42語）: キャンプ / きゃんぷ / camp / キャンプ場 / オートキャンプ / グランピング / glamping / アウトドア / outdoor / 泊まる / 宿泊 / とまる / stay / lodging / accommodation / レジャー / leisure / あそぶ / 遊ぶ / play / 自然 / nature / 体験 / バーベキュー / bbq / 野営 / テント / tent / 観光 / kanko / kankou / tourism / sightsee / kankou_joho / kanko_jyouho / 施設 / shisetsu / 公園 / kouen / koen / asobu / tomaru
 > **この一覧に無い語で分類されていれば取り逃す。**ヒット0を「無い」と読む前にここを見ること。
 
 ---
@@ -135,5 +176,5 @@ URL 自体に手がかりが出ることがある。**分類一覧ではない�
 > **⚠ HTML 経路は XML と同じ網羅性を持たない。**トップから辿れないものは出ない。
 > ここで0件でも「分類が無い」の根拠にはならない。
 
-> 使ったキーワード（28語）: キャンプ / きゃんぷ / camp / キャンプ場 / オートキャンプ / グランピング / glamping / アウトドア / outdoor / 泊まる / 宿泊 / とまる / stay / lodging / accommodation / レジャー / leisure / あそぶ / 遊ぶ / play / 自然 / nature / 体験 / バーベキュー / bbq / 野営 / テント / tent
+> 使ったキーワード（42語）: キャンプ / きゃんぷ / camp / キャンプ場 / オートキャンプ / グランピング / glamping / アウトドア / outdoor / 泊まる / 宿泊 / とまる / stay / lodging / accommodation / レジャー / leisure / あそぶ / 遊ぶ / play / 自然 / nature / 体験 / バーベキュー / bbq / 野営 / テント / tent / 観光 / kanko / kankou / tourism / sightsee / kankou_joho / kanko_jyouho / 施設 / shisetsu / 公園 / kouen / koen / asobu / tomaru
 > **この一覧に無い語で分類されていれば取り逃す。**ヒット0を「無い」と読む前にここを見ること。

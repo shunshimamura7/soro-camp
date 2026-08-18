@@ -393,6 +393,52 @@ async function scan(siteUrl, opts = {}) {
 
 /* ── 出力 ─────────────────────────────────────────────────────── */
 
+/**
+ * ディレクトリ構成の表。**語彙に頼らない安全網なので、既定では1件も切らない。**
+ *
+ * ## ★ 2026-08-18: 上位30件で打ち切っていて、肝心のものが隠れていた
+ *
+ * この節は §21-3（キーワードは綴りを外すと沈黙する）の対策として入れたのに、
+ * **件数の多い順に並べて上位30件だけ出していた。**
+ * 山梨市の観光ツリー `/site/tuorism/`（26 URL）は**全66ディレクトリ中31位以下**で、
+ * **表に出ていなかった。**綴り誤り対策の節が、打ち切りで沈黙していた。
+ *
+ * **§21-5 と同じ型の失敗**——「取れた」と「全部取れた」を混同していた。
+ *
+ * ## 直し方
+ *
+ * 1. **既定は全件出す**（`cap = 0`）。表示の都合で切る必要は、ファイル出力には無い
+ * 2. **切るなら必ず「全N件中M件のみ表示」と本文に書く。**サイレントな切り捨てはしない
+ * 3. **並びは件数順をやめてパス順にした。**件数順だと
+ *    キャンプ場のような小さいディレクトリが構造的に下に沈む。
+ *    **全件出せば並び順の問題自体が消える**ので、読みやすいパス順にする
+ */
+const DIR_LIST_CAP = 0;   // 0 = 全件。正の数にすると切るが、そのときは切ったと明記される
+
+function renderDirTrees(pathTrees, cap = DIR_LIST_CAP) {
+  const all = [...pathTrees].sort((a, b) => a[0].localeCompare(b[0]));
+  const shown = cap > 0 ? all.slice(0, cap) : all;
+  const truncated = shown.length < all.length;
+  const L = [];
+  L.push(`### ディレクトリ構成（${truncated ? `**全${all.length}件中 ${shown.length}件のみ表示（切り捨てあり）**` : `全${all.length}件`}）— **語彙に頼らない列挙**`);
+  L.push('');
+  L.push('キーワード一致は**綴りを外すと沈黙する**（実例: 山梨市の観光ツリーは `/site/tuorism/`）。');
+  L.push('**ここは語彙を使わず、URL のディレクトリを数えただけ。**目で見て当たりを付けるための材料。');
+  L.push('**パス順に並べてある**（件数順だと小さいディレクトリが常に下に沈むため）。');
+  if (truncated) {
+    L.push('');
+    L.push(`> **⚠ 切り捨てている。**全${all.length}件のうち${shown.length}件しか出していない。`);
+    L.push('> **ここで見つからないことを「無い」の根拠にしないこと。**');
+  }
+  L.push('');
+  L.push('| ディレクトリ | URL数 |');
+  L.push('|---|---:|');
+  for (const [k, v] of shown) L.push(`| \`${k}\` | ${v} |`);
+  L.push('');
+  return L;
+}
+
+
 function render(r, label) {
   const L = [];
   L.push(`## ${label || r.site}`);
@@ -439,18 +485,7 @@ function render(r, label) {
   }
   L.push('');
 
-  if (r.pathTrees.size) {
-    const trees = [...r.pathTrees].sort((a, b) => b[1] - a[1]).slice(0, 30);
-    L.push(`### ディレクトリ構成（上位${trees.length}／全${r.pathTrees.size}）— **語彙に頼らない列挙**`);
-    L.push('');
-    L.push('キーワード一致は**綴りを外すと沈黙する**（実例: 山梨市の観光ツリーは `/site/tuorism/`）。');
-    L.push('**ここは語彙を使わず、URL のディレクトリを数えただけ。**目で見て当たりを付けるための材料。');
-    L.push('');
-    L.push('| ディレクトリ | URL数 |');
-    L.push('|---|---:|');
-    for (const [k, v] of trees) L.push(`| \`${k}\` | ${v} |`);
-    L.push('');
-  }
+  if (r.pathTrees.size) L.push(...renderDirTrees(r.pathTrees));
 
   if (r.urlKeywordHits.length) {
     L.push(`### URL にキーワードが出たページ（${r.urlKeywordHits.length}件）— **分類ではない**`);
@@ -549,8 +584,40 @@ function selfTestFileNameHints() {
   console.log(`  ✅ ファイル名のトークン境界: 拾う${shouldHit.length}件 / 拾わない${shouldMiss.length}件 とも期待どおり`);
 }
 
+/**
+ * ★ 合成データの検証。**切り捨てが起きたら本文に必ず出ること**を見る。
+ * 既定（cap=0）では1件も切らないことも同時に確かめる。ネットワークを使わない。
+ */
+function selfTestDirTruncation() {
+  const m = new Map();
+  for (let i = 0; i < 40; i++) m.set(`/dir${String(i).padStart(2, '0')}/`, 40 - i);
+  const fails = [];
+
+  const full = renderDirTrees(m).join('\n');
+  if (!/全40件/.test(full)) fails.push('既定で「全40件」と出ていない');
+  if (/切り捨て/.test(full)) fails.push('既定なのに切り捨ての表記が出た');
+  if ((full.match(/^\| `\/dir/gm) || []).length !== 40) fails.push('既定で40行すべて出ていない');
+
+  const cut = renderDirTrees(m, 10).join('\n');
+  if (!/全40件中 10件のみ表示/.test(cut)) fails.push('切ったのに「全40件中 10件のみ表示」が出ていない');
+  if (!/⚠ 切り捨てている/.test(cut)) fails.push('切ったのに警告が出ていない');
+  if ((cut.match(/^\| `\/dir/gm) || []).length !== 10) fails.push('切った側の行数が10でない');
+
+  // 並びがパス順であること（件数順だと dir00 が先頭のまま気づけないので、末尾で見る）
+  const rows = (full.match(/^\| `([^`]+)`/gm) || []).map(x => x.replace(/^\| `/, '').replace(/`$/, ''));
+  if (rows[0] !== '/dir00/' || rows[rows.length - 1] !== '/dir39/') fails.push('パス順に並んでいない');
+
+  if (fails.length) {
+    console.error('❌ SELF_TEST（ディレクトリ列挙の切り捨て表示）失敗');
+    for (const f of fails) console.error('   - ' + f);
+    process.exit(1);
+  }
+  console.log('  ✅ ディレクトリ列挙: 既定は全件・切ったら明記・パス順、すべて期待どおり');
+}
+
 async function selfTest(opts) {
   selfTestFileNameHints();
+  selfTestDirTruncation();
   console.log(`SELF_TEST: ${SELF_TEST_SITE}`);
   const r = await scan(SELF_TEST_SITE, opts);
   const fails = [];
