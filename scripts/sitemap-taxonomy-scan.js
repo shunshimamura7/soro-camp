@@ -74,7 +74,16 @@ const KEYWORDS = [
   '施設', 'shisetsu', '公園', 'kouen', 'koen', 'asobu', 'tomaru',
 ];
 
-/** ファイル名・URL からタクソノミー系を疑う手がかり。**これだけで決めない**（下の判定を参照） */
+/**
+ * ファイル名からタクソノミー系を疑う手がかり。**これだけで決めない**（下の判定を参照）。
+ *
+ * ★ **URL 全体に部分一致させてはいけない**（2026-08-18 に踏んだ）。
+ * いすみ市の `.../lifescene/okuyami/longterm_care/sitemap.dir.xml` が
+ * **`longterm` の中の "term"** に当たって「タクソノミー1本」と誤検出した。
+ * 実測で同型が他にもある: `education`→"cat" / `heritage`→"tag" /
+ * `kindergarten`→"kind" / `prototype`→"type" / `location`→"cat"。
+ * **ディレクトリ型 CMS はパスが長いので、URL 全体に当てると必ず誤爆する。**
+ */
 const TAXONOMY_HINTS = [
   'cat', 'categor', 'tag', 'taxonom', 'term', 'genre', 'label',
   'topic', 'theme', 'type', 'group', 'section', 'kind',
@@ -165,13 +174,32 @@ function termOf(url) {
 }
 
 /**
+ * ヒント語が**サイトマップ自身のファイル名**に、**トークンの前方か後方として**現れるか。
+ *
+ * 2点で絞っている。**どちらか片方だけでは足りなかった。**
+ *
+ * 1. **見るのはファイル名だけ**（最後のセグメント）。ディレクトリ名は見ない。
+ *    `longterm_care/sitemap.dir.xml` のファイル名は `sitemap.dir.xml` なので当たらない
+ * 2. **トークンに割って前方/後方一致**。`- _ .` で割る。
+ *    `discoverytag`（後方一致 "tag"）や `category`（前方一致 "cat"）は拾いたいので、
+ *    完全一致だけにはしない。**中間一致はしない**のが肝
+ *
+ * 実URL 62本で旧実装と比較して、**誤検出が7本消え、取りこぼしは0本**（2026-08-18 実測）。
+ */
+function hintInFileName(sitemapUrl) {
+  let file;
+  try { file = (new URL(sitemapUrl).pathname.split('/').pop() || '').toLowerCase(); } catch { return undefined; }
+  const tokens = file.split(/[-_.]+/).filter(Boolean);
+  return TAXONOMY_HINTS.find(h => tokens.some(t => t === h || t.startsWith(h) || t.endsWith(h)));
+}
+
+/**
  * その sitemap がタクソノミー系か。**ファイル名だけで決めない。**
  * ファイル名の手がかり **または** 収録 URL の形（/category/ /tag/ /genre/ …）で判定し、
  * **どちらで判定したかを理由として残す。**
  */
 function classify(sitemapUrl, urls) {
-  const name = sitemapUrl.toLowerCase();
-  const byName = TAXONOMY_HINTS.find(h => name.includes(h));
+  const byName = hintInFileName(sitemapUrl);
   const pathHint = /\/(category|categories|tag|tags|genre|taxonomy|term|label|topic|type|cat)\//i;
   const hitPath = urls.filter(u => pathHint.test(u)).length;
   const byPath = urls.length > 0 && hitPath / urls.length >= 0.5;
@@ -302,6 +330,9 @@ async function scan(siteUrl, opts = {}) {
       }
       let take = kids;
       if (kids.length > WIDE_INDEX_LIMIT) {
+        // ★ ここは **URL 全体への部分一致のままにする。**判定ではなく「踏むかどうか」なので、
+        //   緩いほうが安全（余計に踏むだけで、取りこぼしは増えない）。
+        //   厳しくすると観光ツリーを踏まずに終わる側の事故になる。**判定は厳しく、取得は緩く。**
         take = kids.filter(k => {
           const s = decodeURIComponent(k).toLowerCase();
           return matchedKeywords(s).length || TAXONOMY_HINTS.some(h => s.includes(h));
@@ -482,7 +513,44 @@ function render(r, label) {
  * **本数（8本・44語）のような可変値は焼き込まない。**先方の更新で増減する。 */
 const SELF_TEST_SITE = 'https://tsurukankou.jp';
 
+/**
+ * ★ 合成データの検証。**外の事実ではないので、こちらは自由に足してよい種類。**
+ * 「ディレクトリ名の部分一致を拾わないこと」だけを見る。ネットワークを使わない。
+ */
+function selfTestFileNameHints() {
+  const shouldHit = [
+    'https://x.jp/category-sitemap.xml',        // 前方一致 cat
+    'https://x.jp/discoverytag-sitemap.xml',    // 後方一致 tag
+    'https://x.jp/post_tag-sitemap.xml',        // 完全一致 tag
+    'https://x.jp/featurecat-sitemap.xml',
+    'https://x.jp/taxonomy-sitemap.xml',
+    'https://x.jp/genre-sitemap.xml',
+  ];
+  // **すべて実在の型。**ディレクトリ名に語が埋まっているだけで、分類一覧ではない
+  const shouldMiss = [
+    'https://x.jp/gyosei/longterm_care/sitemap.dir.xml',   // longterm の "term"
+    'https://x.jp/education/sitemap.dir.xml',              // education の "cat"
+    'https://x.jp/heritage/sitemap.dir.xml',               // heritage の "tag"
+    'https://x.jp/kindergarten/sitemap.dir.xml',           // kindergarten の "kind"
+    'https://x.jp/prototype/sitemap.dir.xml',              // prototype の "type"
+    'https://x.jp/location/sitemap.dir.xml',               // location の "cat"
+  ];
+  const fails = [];
+  for (const u of shouldHit) if (!hintInFileName(u)) fails.push(`拾えていない: ${u}`);
+  for (const u of shouldMiss) {
+    const h = hintInFileName(u);
+    if (h) fails.push(`部分一致を拾ってしまった: ${u}（"${h}"）`);
+  }
+  if (fails.length) {
+    console.error('❌ SELF_TEST（ファイル名のトークン境界）失敗');
+    for (const f of fails) console.error('   - ' + f);
+    process.exit(1);
+  }
+  console.log(`  ✅ ファイル名のトークン境界: 拾う${shouldHit.length}件 / 拾わない${shouldMiss.length}件 とも期待どおり`);
+}
+
 async function selfTest(opts) {
+  selfTestFileNameHints();
   console.log(`SELF_TEST: ${SELF_TEST_SITE}`);
   const r = await scan(SELF_TEST_SITE, opts);
   const fails = [];
