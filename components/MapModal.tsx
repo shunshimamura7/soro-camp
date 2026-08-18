@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
+import { hasUsableCoord } from "@/lib/camp";
 import { createPortal } from "react-dom";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
@@ -254,8 +255,8 @@ function CampDetailPanel({
       <a href={`/camp/${camp.slug}`} className="panel-detail-link">
         詳細を見る →
       </a>
-      {/* 座標を持たない施設（needsCoord）では出さない。@0,0 はギニア湾沖を指す */}
-      {camp.lat !== 0 && camp.lng !== 0 && (
+      {/* 正しい位置が分からない施設では出さない（hasUsableCoord）。@0,0 はギニア湾沖を指す */}
+      {hasUsableCoord(camp) && (
         <a
           href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
           target="_blank"

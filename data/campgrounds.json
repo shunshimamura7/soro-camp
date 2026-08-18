@@ -3426,7 +3426,8 @@
     "tel": "0558-79-0213",
     "lastVerified": "2026-08-11",
     "priceVerified": true,
-    "officialUrl": "https://mobility-park.jp/"
+    "officialUrl": "https://mobility-park.jp/",
+    "needsCoord": true
   },
   {
     "id": "pica-fuji-greenpa",

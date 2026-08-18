@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { hasUsableCoord } from "@/lib/camp";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCampground, getAllSlugs } from "@/lib/camp";
@@ -81,8 +82,9 @@ export default async function CampDetailPage({
       streetAddress: camp.address,
       addressCountry: "JP",
     },
-    // 座標未確認（0）の場合は geo を出さない — 0,0 は誤った位置を主張してしまうため
-    ...(camp.lat !== 0 && camp.lng !== 0
+    // 正しい位置が分からない場合は geo を出さない（hasUsableCoord）。
+    // 構造化データは検索エンジンがそのまま拾うので、誤った座標を流すと外まで汚す
+    ...(hasUsableCoord(camp)
       ? {
           geo: {
             "@type": "GeoCoordinates",
@@ -442,11 +444,11 @@ export default async function CampDetailPage({
                   📍 Googleマップで開く
                 </a>
                 {/*
-                  座標を持たない施設（needsCoord）では出さない。
-                  @0,0 はギニア湾沖を指すので、リンク先が完全に無関係な場所になる。
+                  正しい位置が分からない施設では出さない（hasUsableCoord）。
+                  @0,0 はギニア湾沖を指し、誤った座標なら無関係な土地の周辺施設が出る。
                   「Googleマップで開く」は施設名＋住所で引くので座標が無くても成立する。
                 */}
-                {camp.lat !== 0 && camp.lng !== 0 && (
+                {hasUsableCoord(camp) && (
                   <a
                     href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
                     target="_blank"

@@ -25,6 +25,7 @@ import type {
   Point as MlPoint,
 } from "maplibre-gl";
 import type { FeatureCollection, Point } from "geojson";
+import { hasUsableCoord } from "./camp";
 import type { Campground } from "./types";
 
 // ── 色 ────────────────────────────────────────────────────────────────────
@@ -134,15 +135,15 @@ const TAP_PAD = 16;
 
 // ── GeoJSON 変換 ──────────────────────────────────────────────────────────
 /**
- * 座標未確認（lat/lng が 0）のものはピンを打たない。
- * 0,0 はギニア湾沖なので、描くと地図の外に飛ぶだけでなく
- * 「確認済みの座標」だと誤認させる。
+ * **正しい位置が分からないものはピンを打たない。**判定は `hasUsableCoord` に一本化。
+ * 未取得（0,0）だけでなく、**誤りと確定した座標（`needsCoord: true`）も打たない。**
+ * 0,0 はギニア湾沖なので地図の外に飛び、誤った座標は「確認済み」だと誤認させる。
  */
 export function toPinFeatures(camps: Campground[]): FeatureCollection<Point> {
   return {
     type: "FeatureCollection",
     features: camps
-      .filter((c) => c.lat !== 0 && c.lng !== 0)
+      .filter(hasUsableCoord)
       .map((c) => ({
         type: "Feature" as const,
         geometry: { type: "Point" as const, coordinates: [c.lng, c.lat] },
