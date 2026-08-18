@@ -43,19 +43,19 @@ row.verdict = normalizePref(muni.pref) === normalizePref(camp.prefecture) ? 'OK'
 比較元は **`address` だけ**。`area` は「道志川」「朝霧高原」のような通称なので使えず、
 `prefecture` は address と同じ人が同じ推測から書くので突き合わせても意味がない（§6-15）。
 
-## 集計（全 188件）
+## 集計（全 192件）
 
 | 判定 | 件数 |
 |---|---|
-| `OK` | 177 |
-| `CITY_MISMATCH` | 5 |
+| `OK` | 179 |
+| `CITY_MISMATCH` | 3 |
 | `NO_ADDRESS` | 1 |
 | `PREF_MISMATCH` | 1 |
-| `SEA` | 4 |
+| `SEA` | 8 |
 
 うち `WARD_MISMATCH`（OK 扱い）: **0件** ／ address が無く比較できず: **1件**
 
-## CITY_MISMATCH（5件）
+## CITY_MISMATCH（3件）
 
 **逆ジオが返した市区町村が address のどこにも現れないもの。**
 どちらが誤っているか（address か座標か）は**このスクリプトでは決められない。**
@@ -63,11 +63,9 @@ row.verdict = normalizePref(muni.pref) === normalizePref(camp.prefecture) ? 'OK'
 
 | slug | status | address | 逆ジオ（県 / 市区町村 / 大字） | 標高 | `coordsGsiChecked` |
 |---|---|---|---|---|---|
-| `hadano-togawa-camp` | active | 神奈川県秦野市堀山下1513 | 神奈川県 / **松田町** / 寄 | 424.6m | — |
 | `yadoriki-camp` | closed | 神奈川県足柄上郡松田町寄3048 | 神奈川県 / **山北町** / 山北 | 402.4m | — |
 | `mobility-park-izu` | active | 静岡県伊豆の国市長者原1445-481 | 静岡県 / **函南町** / 日守 | 163.2m | — |
 | `makioka-fruits-camp` | unverified | 山梨県山梨市牧丘町牧平3041 | 山梨県 / **甲州市** / 塩山中萩原 | 1176.7m | — |
-| `wadanagahama-kaigan` | active | 神奈川県三浦市初声町和田 | 神奈川県 / **横須賀市** / 長井二丁目 | 1.2m | — |
 
 ## WARD_MISMATCH（0件・verdict は OK のまま）
 

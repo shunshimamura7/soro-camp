@@ -2949,8 +2949,8 @@
     "area": "秦野",
     "status": "active",
     "address": "神奈川県秦野市堀山下1513",
-    "lat": 35.4028,
-    "lng": 139.1465,
+    "lat": 35.404724,
+    "lng": 139.169517,
     "coordsVerified": true,
     "priceMin": 1500,
     "priceMax": 3000,
@@ -2987,7 +2987,8 @@
     "soloComment": "神奈川県立秦野戸川公園内の公営キャンプ場。格安で渋沢丘陵トレッキングや大山・丹沢表尾根への登山ベースとして最適。水無川沿いの涼しい林間サイトが夏も快適。電車でも行ける公共交通アクセスが嬉しい。",
     "tel": "0463-87-9020",
     "lastVerified": "2026-08-07",
-    "priceVerified": true
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "mitsumata-camp",
@@ -7638,8 +7639,8 @@
       "ゴミは完全持ち帰り",
       "海水浴シーズンは利用制限の可能性あり。要現地確認"
     ],
-    "lat": 35.1906528,
-    "lng": 139.6148426,
+    "lat": 35.1897461,
+    "lng": 139.6166147,
     "coordsVerified": true,
     "priceMin": 0,
     "priceMax": 0,
@@ -7685,7 +7686,8 @@
         "source": "三浦市海水浴場ルール第25条【令和7年度】 https://www.pref.kanagawa.jp/documents/122025/r7miurashi.pdf"
       }
     ],
-    "priceVerified": true
+    "priceVerified": true,
+    "coordsGsiChecked": true
   },
   {
     "id": "kofu-shinrinyoku-hiroba",
