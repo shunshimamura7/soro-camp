@@ -1,0 +1,4851 @@
+{
+  "stages": {
+    "napRaw": 342,
+    "napKept": 341,
+    "excluded": 1,
+    "jalanRaw": 47,
+    "prefRaw": 20,
+    "prefUniq": 20,
+    "db": 4,
+    "sumBefore": 412,
+    "uniqAfter": 359
+  },
+  "byMuni": {
+    "いすみ市": 30,
+    "旭市": 6,
+    "御宿町": 7,
+    "大多喜町": 18,
+    "印西市": 3,
+    "我孫子市": 1,
+    "鴨川市": 10,
+    "館山市": 26,
+    "君津市": 34,
+    "佐倉市": 3,
+    "九十九里町": 4,
+    "山武市": 7,
+    "四街道市": 1,
+    "市原市": 14,
+    "市川市": 1,
+    "勝浦市": 16,
+    "成田市": 8,
+    "匝瑳市": 6,
+    "袖ケ浦市": 3,
+    "長南町": 2,
+    "長柄町": 5,
+    "南房総市": 49,
+    "八千代市": 4,
+    "富津市": 18,
+    "木更津市": 11,
+    "野田市": 2,
+    "千葉市": 10,
+    "横芝光町": 2,
+    "香取市": 6,
+    "東金市": 4,
+    "柏市": 10,
+    "長生村": 1,
+    "一宮町": 8,
+    "睦沢町": 5,
+    "八街市": 2,
+    "白子町": 3,
+    "銚子市": 1,
+    "船橋市": 4,
+    "芝山町": 1,
+    "鋸南町": 5,
+    "大網白里市": 1,
+    "酒々井町": 2,
+    "鎌ケ谷市": 2,
+    "多古町": 2,
+    "白井市": 1
+  },
+  "sourceOnly": {
+    "nap": 292,
+    "jalan": 14,
+    "pref": 7,
+    "db": 0,
+    "multi": 46
+  },
+  "coords": {
+    "has": 331,
+    "addrOnly": 28,
+    "neither": 0
+  },
+  "groups": [
+    {
+      "name": "大原上布施オートキャンプ場",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:大原上布施オートキャンプ場"
+      ]
+    },
+    {
+      "name": "大原オートキャンプインそとぼう",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:大原オートキャンプインそとぼう"
+      ]
+    },
+    {
+      "name": "宮原オートキャンプ場",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:宮原オートキャンプ場"
+      ]
+    },
+    {
+      "name": "ワイルドキッズ岬オートキャンプ場",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ワイルドキッズ岬オートキャンプ場"
+      ]
+    },
+    {
+      "name": "九十九里オートキャンプ場　太陽と海",
+      "city": "旭市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:九十九里オートキャンプ場　太陽と海"
+      ]
+    },
+    {
+      "name": "実谷オートキャンプ場",
+      "city": "御宿町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:実谷オートキャンプ場"
+      ]
+    },
+    {
+      "name": "グリーンファームおおたき戸田オートキャンプ場",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:グリーンファームおおたき戸田オートキャンプ場"
+      ]
+    },
+    {
+      "name": "千葉県立大多喜県民の森 キャンプ場",
+      "city": "大多喜町",
+      "srcs": [
+        "db",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:千葉県立大多喜県民の森",
+        "db:千葉県立大多喜県民の森 キャンプ場"
+      ]
+    },
+    {
+      "name": "千葉県立北総花の丘公園",
+      "city": "印西市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:千葉県立北総花の丘公園"
+      ]
+    },
+    {
+      "name": "Camp field MARC WEST",
+      "city": "印西市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Camp field MARC WEST"
+      ]
+    },
+    {
+      "name": "我孫子市ふれあいキャンプ場",
+      "city": "我孫子市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:我孫子市 ふれあいキャンプ場",
+        "pref:我孫子市ふれあいキャンプ場"
+      ]
+    },
+    {
+      "name": "キャンピングヒルズ鴨川",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:キャンピングヒルズ鴨川"
+      ]
+    },
+    {
+      "name": "オートキャンプオーシャンビュー鴨川",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:オートキャンプオーシャンビュー鴨川"
+      ]
+    },
+    {
+      "name": "内浦山県民の森キャンプ場",
+      "city": "鴨川市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:内浦山県民の森",
+        "pref:内浦山県民の森キャンプ場"
+      ]
+    },
+    {
+      "name": "お台場海浜庭園",
+      "city": "館山市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:お台場海浜庭園",
+        "jalan:お台場海浜庭園"
+      ]
+    },
+    {
+      "name": "【R2/7現在閉鎖中】コーラル＊館山オートキャンプ場(旧：館山フォレストキャンプ場)",
+      "city": "館山市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R2/7現在閉鎖中】コーラル＊館山オートキャンプ場(旧：館山フォレストキャンプ場)",
+        "nap:【R6/1閉鎖】OUTLAND オートキャンプ場",
+        "jalan:コーラル館山オートキャンプ場"
+      ]
+    },
+    {
+      "name": "人魚の湯　オートキャンプ場　マリンサイド",
+      "city": "館山市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:人魚の湯　オートキャンプ場　マリンサイド",
+        "jalan:海紅豆オートキャンプ場"
+      ]
+    },
+    {
+      "name": "ホウリー・ウッズ久留里キャンプ村",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ホウリー・ウッズ久留里キャンプ村",
+        "jalan:ホウリーウッズ久留里キャンプ村"
+      ]
+    },
+    {
+      "name": "オートキャンプ七里川",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:オートキャンプ七里川",
+        "jalan:オートキャンプ七里川"
+      ]
+    },
+    {
+      "name": "イレブンオートキャンプパーク",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:イレブンオートキャンプパーク",
+        "jalan:イレブンオートキャンプパーク"
+      ]
+    },
+    {
+      "name": "かずさオートキャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:かずさオートキャンプ場",
+        "jalan:名水の里久留里 かずさオートキャンプ場"
+      ]
+    },
+    {
+      "name": "長崎キャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:長崎キャンプ場",
+        "jalan:長崎キャンプ場"
+      ]
+    },
+    {
+      "name": "千葉県立君津亀山少年自然の家",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:千葉県立君津亀山少年自然の家",
+        "jalan:千葉県立君津亀山少年自然の家"
+      ]
+    },
+    {
+      "name": "三島湖畔正木キャンプ場【H27/3現在閉鎖中】",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:三島湖畔正木キャンプ場【H27/3現在閉鎖中】"
+      ]
+    },
+    {
+      "name": "亀山湖オートキャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:亀山湖オートキャンプ場"
+      ]
+    },
+    {
+      "name": "稲ヶ崎キャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:稲ヶ崎キャンプ場",
+        "jalan:稲ヶ崎キャンプ場"
+      ]
+    },
+    {
+      "name": "千石台オートキャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:千石台オートキャンプ場"
+      ]
+    },
+    {
+      "name": "フォレストパーティー峰山",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:フォレストパーティー峰山"
+      ]
+    },
+    {
+      "name": "柿山田オートキャンプガーデン",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:柿山田オートキャンプガーデン",
+        "jalan:柿山田オートキャンプガーデン"
+      ]
+    },
+    {
+      "name": "ロマンの森共和国 キャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ロマンの森共和国 キャンプ場"
+      ]
+    },
+    {
+      "name": "千葉県立　清和県民の森",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:千葉県立　清和県民の森",
+        "jalan:清和県民の森ロッジ村・キャンプ場"
+      ]
+    },
+    {
+      "name": "オートキャンプ・フルーツ村",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:オートキャンプ・フルーツ村"
+      ]
+    },
+    {
+      "name": "佐倉 草ぶえの丘",
+      "city": "佐倉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:佐倉 草ぶえの丘"
+      ]
+    },
+    {
+      "name": "印旛沼サンセットヒルズ キャンプ場",
+      "city": "佐倉市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:印旛沼サンセットヒルズ",
+        "pref:印旛沼サンセットヒルズ キャンプ場"
+      ]
+    },
+    {
+      "name": "九十九里ハーブガーデン",
+      "city": "九十九里町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:九十九里ハーブガーデン"
+      ]
+    },
+    {
+      "name": "有野実苑オートキャンプ場",
+      "city": "山武市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:有野実苑オートキャンプ場"
+      ]
+    },
+    {
+      "name": "四街道総合公園キャンプ場",
+      "city": "四街道市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:四街道総合公園キャンプ場"
+      ]
+    },
+    {
+      "name": "いちはらクオードの森",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:いちはらクオードの森"
+      ]
+    },
+    {
+      "name": "奥養老ヴィレッジ",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:奥養老ヴィレッジ"
+      ]
+    },
+    {
+      "name": "ミニキャンプ場・憩",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ミニキャンプ場・憩"
+      ]
+    },
+    {
+      "name": "いちかわ市民キャンプ場",
+      "city": "市川市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:いちかわ市民キャンプ場",
+        "pref:いちかわ市民キャンプ場"
+      ]
+    },
+    {
+      "name": "うばら よつば荘 バンガロー村",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:うばら よつば荘 バンガロー村"
+      ]
+    },
+    {
+      "name": "RECAMP 勝浦",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:RECAMP 勝浦"
+      ]
+    },
+    {
+      "name": "勝浦チロリン村オートキャンプ場",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:勝浦チロリン村オートキャンプ場"
+      ]
+    },
+    {
+      "name": "ACNオートキャンプ in 勝浦まんぼう",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ACNオートキャンプ in 勝浦まんぼう"
+      ]
+    },
+    {
+      "name": "勝浦つるんつるん温泉直営オートキャンプ場",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:勝浦つるんつるん温泉直営オートキャンプ場"
+      ]
+    },
+    {
+      "name": "下総運動公園キャンプ場",
+      "city": "成田市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:下総運動公園（フレンドリーパーク）",
+        "pref:下総運動公園キャンプ場"
+      ]
+    },
+    {
+      "name": "坂田ヶ池総合公園キャンプ場",
+      "city": "成田市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:坂田ケ池総合公園",
+        "pref:坂田ヶ池総合公園キャンプ場"
+      ]
+    },
+    {
+      "name": "成田ゆめ牧場ファミリーオートキャンプ場",
+      "city": "成田市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:成田ゆめ牧場ファミリーオートキャンプ場"
+      ]
+    },
+    {
+      "name": "【R01/10現在　閉鎖】いすみ 泉の森 ネイチャー・フィールド キャンプ場",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R01/10現在　閉鎖】いすみ 泉の森 ネイチャー・フィールド キャンプ場"
+      ]
+    },
+    {
+      "name": "ナインテンナインオートキャンプ場",
+      "city": "匝瑳市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ナインテンナインオートキャンプ場"
+      ]
+    },
+    {
+      "name": "九十九里浜シーサイドオートキャンプ場",
+      "city": "匝瑳市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:九十九里浜シーサイドオートキャンプ場"
+      ]
+    },
+    {
+      "name": "森のまきばオートキャンプ場",
+      "city": "袖ケ浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:森のまきばオートキャンプ場"
+      ]
+    },
+    {
+      "name": "長南町野営場",
+      "city": "長南町",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:長南町野営場",
+        "pref:長南町野営場"
+      ]
+    },
+    {
+      "name": "勝古沢キャンプ場",
+      "city": "長柄町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:勝古沢キャンプ場"
+      ]
+    },
+    {
+      "name": "野宮農園 オレンジ村オートキャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "db",
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:オレンジ村オートキャンプ場",
+        "jalan:千倉オレンジセンター オレンジ村キャンプ場",
+        "db:野宮農園 オレンジ村オートキャンプ場"
+      ]
+    },
+    {
+      "name": "根本マリンキャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:根本マリンキャンプ場",
+        "jalan:根本マリンキャンプ場"
+      ]
+    },
+    {
+      "name": "【R.1/8 現在閉鎖】原岡海岸キャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R.1/8 現在閉鎖】原岡海岸キャンプ場"
+      ]
+    },
+    {
+      "name": "多田良北浜海岸キャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:多田良北浜海岸キャンプ場",
+        "pref:多田良北浜海岸キャンプ場"
+      ]
+    },
+    {
+      "name": "大房岬キャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:大房岬キャンプ場"
+      ]
+    },
+    {
+      "name": "八千代市 ガキ大将の森キャンプ場",
+      "city": "八千代市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:八千代市 ガキ大将の森キャンプ場"
+      ]
+    },
+    {
+      "name": "オートキャンプ場志駒",
+      "city": "富津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:オートキャンプ場志駒",
+        "jalan:オートキャンプ場志駒"
+      ]
+    },
+    {
+      "name": "花はなの里",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:花はなの里"
+      ]
+    },
+    {
+      "name": "富津公園キャンプ場",
+      "city": "富津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:富津公園キャンプ場",
+        "jalan:富津公園キャンプ場"
+      ]
+    },
+    {
+      "name": "市民の森キャンプ場",
+      "city": "富津市",
+      "srcs": [
+        "jalan",
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:富津市民の森キャンプ場",
+        "jalan:市民の森キャンプ場",
+        "pref:市民の森キャンプ場"
+      ]
+    },
+    {
+      "name": "少年自然の家キャンプ場",
+      "city": "木更津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:少年自然の家キャンプ場"
+      ]
+    },
+    {
+      "name": "清水公園　キャンプ場",
+      "city": "野田市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:清水公園　キャンプ場"
+      ]
+    },
+    {
+      "name": "昭和の森フォレストビレッジ",
+      "city": "千葉市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:昭和の森フォレストビレッジ",
+        "pref:昭和の森フォレストビレッジ"
+      ]
+    },
+    {
+      "name": "館山サザンビレッジ（旧：館山シーサイドビレッジ）",
+      "city": "館山市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:館山サザンビレッジ（旧：館山シーサイドビレッジ）",
+        "jalan:館山サザンビレッジ"
+      ]
+    },
+    {
+      "name": "一番星ヴィレッジ",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:一番星ヴィレッジ"
+      ]
+    },
+    {
+      "name": "高滝湖オートキャンプ場",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:高滝湖オートキャンプ場"
+      ]
+    },
+    {
+      "name": "コテージ＆ペンションNANJA MONJA",
+      "city": "横芝光町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:コテージ＆ペンションNANJA MONJA"
+      ]
+    },
+    {
+      "name": "Dogコテージ 海の音",
+      "city": "九十九里町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Dogコテージ 海の音"
+      ]
+    },
+    {
+      "name": "ファームイン市原",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ファームイン市原"
+      ]
+    },
+    {
+      "name": "ファームイン南房総・杉田棟",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ファームイン南房総・杉田棟"
+      ]
+    },
+    {
+      "name": "ブラウンズフィールド",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ブラウンズフィールド"
+      ]
+    },
+    {
+      "name": "白浜フラワーパークOcean's",
+      "city": "南房総市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:白浜フラワーパークOcean's",
+        "jalan:白浜フラワーパーク"
+      ]
+    },
+    {
+      "name": "みよしファミリーキャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:みよしファミリーキャンプ場"
+      ]
+    },
+    {
+      "name": "【R7/5月閉鎖】館山BBQ＆キャンプ場「マリンガーデンCarmel」",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R7/5月閉鎖】館山BBQ＆キャンプ場「マリンガーデンCarmel」"
+      ]
+    },
+    {
+      "name": "【R2/11現在　営業休止】BBQガーデン平砂浦BBQガーデン平砂浦",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:【R2/11現在　営業休止】BBQガーデン平砂浦BBQガーデン平砂浦"
+      ]
+    },
+    {
+      "name": "農園リゾートTHE FARM（ザファーム）",
+      "city": "香取市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:農園リゾートTHE FARM（ザファーム）"
+      ]
+    },
+    {
+      "name": "Glee Club（グリークラブ）/犬と星見るグランピングサイト",
+      "city": "東金市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Glee Club（グリークラブ）/犬と星見るグランピングサイト"
+      ]
+    },
+    {
+      "name": "いすみガーデンリトリート",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:いすみガーデンリトリート"
+      ]
+    },
+    {
+      "name": "柏しょうなんゆめファーム",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:柏しょうなんゆめファーム"
+      ]
+    },
+    {
+      "name": "プライベートガーデン大多喜",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:プライベートガーデン大多喜"
+      ]
+    },
+    {
+      "name": "Glamping in CAMEL RESORT（キャメルリゾート）",
+      "city": "御宿町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Glamping in CAMEL RESORT（キャメルリゾート）"
+      ]
+    },
+    {
+      "name": "River side village Loa（リバーサイドビレッジロア）",
+      "city": "長生村",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:River side village Loa（リバーサイドビレッジロア）"
+      ]
+    },
+    {
+      "name": "WILD BEACH SEASIDE GLAMPING PARK",
+      "city": "木更津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:WILD BEACH SEASIDE GLAMPING PARK",
+        "jalan:木更津かんらんしゃパーク キサラピア",
+        "jalan:WILDBEACH木更津"
+      ]
+    },
+    {
+      "name": "Lucky’s trailer village（ラッキーズトレーラービレッジ）",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Lucky’s trailer village（ラッキーズトレーラービレッジ）"
+      ]
+    },
+    {
+      "name": "フリースタイルコテージ　オリゾン～Horizon～",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:フリースタイルコテージ　オリゾン～Horizon～"
+      ]
+    },
+    {
+      "name": "アルビンスポーツパーク　キャンプ広場",
+      "city": "長柄町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:アルビンスポーツパーク　キャンプ広場"
+      ]
+    },
+    {
+      "name": "【R2/11現在　バーベキュー閉店】柏あけぼの山農業公園",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:【R2/11現在　バーベキュー閉店】柏あけぼの山農業公園"
+      ]
+    },
+    {
+      "name": "CIMA（シーマ） たてやま体験センター",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CIMA（シーマ） たてやま体験センター"
+      ]
+    },
+    {
+      "name": "奥養老渓谷グランピングリゾート花山水-Hanasansui-",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:奥養老渓谷グランピングリゾート花山水-Hanasansui-"
+      ]
+    },
+    {
+      "name": "Nakadaki Art Village（中滝アートビレッジ）",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Nakadaki Art Village（中滝アートビレッジ）"
+      ]
+    },
+    {
+      "name": "LOCAL LOCAL GARDEN",
+      "city": "八千代市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:LOCAL LOCAL GARDEN"
+      ]
+    },
+    {
+      "name": "Campus Field Nakadaki",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Campus Field Nakadaki"
+      ]
+    },
+    {
+      "name": "【22/1閉鎖】Indian Coast　(インディアン コースト)",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【22/1閉鎖】Indian Coast　(インディアン コースト)"
+      ]
+    },
+    {
+      "name": "【R6/4現在閉鎖中】Tree Club(ツリークラブ)",
+      "city": "御宿町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R6/4現在閉鎖中】Tree Club(ツリークラブ)"
+      ]
+    },
+    {
+      "name": "Fika by TAKIVILLAGE",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Fika by TAKIVILLAGE"
+      ]
+    },
+    {
+      "name": "プライベートガーデン ザ ウエスト",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:プライベートガーデン ザ ウエスト"
+      ]
+    },
+    {
+      "name": "中野屋　haconiwa Camp・古民家",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:中野屋　haconiwa Camp・古民家"
+      ]
+    },
+    {
+      "name": "Camping GREEN（キャンピンググリーン）",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Camping GREEN（キャンピンググリーン）"
+      ]
+    },
+    {
+      "name": "THE CHIKURAUMI BASECAMP",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:THE CHIKURAUMI BASECAMP"
+      ]
+    },
+    {
+      "name": "大多喜わんぱくキャンプ場",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:大多喜わんぱくキャンプ場"
+      ]
+    },
+    {
+      "name": "Hale Luana",
+      "city": "東金市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Hale Luana"
+      ]
+    },
+    {
+      "name": "NEO GRAND",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:NEO GRAND"
+      ]
+    },
+    {
+      "name": "TENT",
+      "city": "一宮町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:TENT"
+      ]
+    },
+    {
+      "name": "さぬきファームオートキャンプ場",
+      "city": "睦沢町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:さぬきファームオートキャンプ場"
+      ]
+    },
+    {
+      "name": "南房総オーシャンフロントヴィラ岩船",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:南房総オーシャンフロントヴィラ岩船"
+      ]
+    },
+    {
+      "name": "アメリカントレーラーヴィラ一宮",
+      "city": "一宮町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:アメリカントレーラーヴィラ一宮"
+      ]
+    },
+    {
+      "name": "だいやもんどへっど",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:だいやもんどへっど"
+      ]
+    },
+    {
+      "name": "SANDEN VILLAGE",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:SANDEN VILLAGE"
+      ]
+    },
+    {
+      "name": "Ocean’s Camp TORAMII -Ichinomiya-",
+      "city": "一宮町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Ocean’s Camp TORAMII -Ichinomiya-"
+      ]
+    },
+    {
+      "name": "FARMER’S FIELDZ(ファーマーズフィールズ)",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:FARMER’S FIELDZ(ファーマーズフィールズ)"
+      ]
+    },
+    {
+      "name": "紅葉の家　古民家＆グランピング",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:紅葉の家　古民家＆グランピング"
+      ]
+    },
+    {
+      "name": "鹿野山自然学校",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:鹿野山自然学校"
+      ]
+    },
+    {
+      "name": "【R4/10閉鎖】清海学園シーサイドオートキャンプ（旧：清海学園校庭オートキャンプ）",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R4/10閉鎖】清海学園シーサイドオートキャンプ（旧：清海学園校庭オートキャンプ）"
+      ]
+    },
+    {
+      "name": "GOODHILL いい丘キャンプ場",
+      "city": "香取市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:GOODHILL いい丘キャンプ場"
+      ]
+    },
+    {
+      "name": "Petit village(プティ・ビラージ)",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Petit village(プティ・ビラージ)"
+      ]
+    },
+    {
+      "name": "しおさいキャンプフィールド",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:しおさいキャンプフィールド"
+      ]
+    },
+    {
+      "name": "Hunt+ -1日1組完全貸切の星空と絶景のパノラマグランピング場-",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Hunt+ -1日1組完全貸切の星空と絶景のパノラマグランピング場-"
+      ]
+    },
+    {
+      "name": "まるがやつ貸切キャンプ",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:まるがやつ貸切キャンプ"
+      ]
+    },
+    {
+      "name": "アソビーズ",
+      "city": "八街市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:アソビーズ"
+      ]
+    },
+    {
+      "name": "【R6/6 閉鎖】FORESTLIVING",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R6/6 閉鎖】FORESTLIVING"
+      ]
+    },
+    {
+      "name": "ハワイアンコテージヴィラ白子",
+      "city": "白子町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ハワイアンコテージヴィラ白子"
+      ]
+    },
+    {
+      "name": "海土里～umidori～",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:海土里～umidori～"
+      ]
+    },
+    {
+      "name": "キャンプマナビス",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:キャンプマナビス"
+      ]
+    },
+    {
+      "name": "リソルの森キャンプサイト／RESOL NO MORI CAMP SITE（旧：Sport & Do Resort リソルの森）",
+      "city": "長柄町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:リソルの森キャンプサイト／RESOL NO MORI CAMP SITE（旧：Sport & Do Resort リソルの森）"
+      ]
+    },
+    {
+      "name": "TAKIVILLAGE",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:TAKIVILLAGE"
+      ]
+    },
+    {
+      "name": "THE BAMBOO FOREST",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:THE BAMBOO FOREST"
+      ]
+    },
+    {
+      "name": "手賀の丘公園キャンプ場(RECAMPしょうなん）",
+      "city": "柏市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:RECAMP しょうなん（手賀の丘公園内）",
+        "pref:手賀の丘公園キャンプ場(RECAMPしょうなん）"
+      ]
+    },
+    {
+      "name": "ナインテンナイン海の見えるコテージ・バーベキュー場",
+      "city": "匝瑳市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ナインテンナイン海の見えるコテージ・バーベキュー場"
+      ]
+    },
+    {
+      "name": "【R4/24 現在閉鎖】さすらいカフェ SASURAI CAMPING HILL",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R4/24 現在閉鎖】さすらいカフェ SASURAI CAMPING HILL"
+      ]
+    },
+    {
+      "name": "REWILD GREEN FIELD CAMP（リワイルド グリーン フィールド キャンプ）",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:REWILD GREEN FIELD CAMP（リワイルド グリーン フィールド キャンプ）"
+      ]
+    },
+    {
+      "name": "Ready to Flight! NARITA",
+      "city": "成田市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Ready to Flight! NARITA"
+      ]
+    },
+    {
+      "name": "UJackむつざわオートキャンプ場",
+      "city": "睦沢町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:UJackむつざわオートキャンプ場"
+      ]
+    },
+    {
+      "name": "The Camp",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:The Camp"
+      ]
+    },
+    {
+      "name": "NAT PARK",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:NAT PARK"
+      ]
+    },
+    {
+      "name": "銚子スポーツタウン",
+      "city": "銚子市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:銚子スポーツタウン"
+      ]
+    },
+    {
+      "name": "【R6/7 キャンプ場のみ休業】ホテルニューカネイ",
+      "city": "白子町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:【R6/7 キャンプ場のみ休業】ホテルニューカネイ"
+      ]
+    },
+    {
+      "name": "シーサイド太東海岸BBQ Village",
+      "city": "一宮町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:シーサイド太東海岸BBQ Village"
+      ]
+    },
+    {
+      "name": "白浜プライベート古民家SHIOKAZE",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:白浜プライベート古民家SHIOKAZE"
+      ]
+    },
+    {
+      "name": "コーラル南房総オートキャンプ場（移転：コーラル＊館山オートキャンプ場）",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:コーラル南房総オートキャンプ場（移転：コーラル＊館山オートキャンプ場）"
+      ]
+    },
+    {
+      "name": "Out Tail Dog Camp 館山",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Out Tail Dog Camp 館山"
+      ]
+    },
+    {
+      "name": "御宿ドローン＆キャンプ",
+      "city": "御宿町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:御宿ドローン＆キャンプ"
+      ]
+    },
+    {
+      "name": "BLACK RAMS",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:BLACK RAMS"
+      ]
+    },
+    {
+      "name": "隠れ家リトリート -UMIKAZE-",
+      "city": "南房総市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:隠れ家リトリート -UMIKAZE-",
+        "jalan:隠れ家リトリート施設 UMIKAZE"
+      ]
+    },
+    {
+      "name": "TouTou Garden Glamping Villa",
+      "city": "長柄町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:TouTou Garden Glamping Villa"
+      ]
+    },
+    {
+      "name": "ちょうなん西小キャンプ場",
+      "city": "長南町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ちょうなん西小キャンプ場"
+      ]
+    },
+    {
+      "name": "THE DOG DEPT GARDEN RESORT-安房白浜-",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:THE DOG DEPT GARDEN RESORT-安房白浜-"
+      ]
+    },
+    {
+      "name": "CAMPGROUND BREEZE TATEYAMA（旧：BREEZE FamilyCamp）",
+      "city": "館山市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CAMPGROUND BREEZE TATEYAMA（旧：BREEZE FamilyCamp）",
+        "jalan:CAMPGROUND BREEZE TATEYAMA"
+      ]
+    },
+    {
+      "name": "たてやま倶楽部",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:たてやま倶楽部"
+      ]
+    },
+    {
+      "name": "りんごの輪",
+      "city": "船橋市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:りんごの輪"
+      ]
+    },
+    {
+      "name": "遊房",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:遊房"
+      ]
+    },
+    {
+      "name": "大多喜紅源CAMPINGBASE",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:大多喜紅源CAMPINGBASE"
+      ]
+    },
+    {
+      "name": "【R6/5閉鎖】成田スカイウェイBBQ（CAMP）",
+      "city": "成田市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R6/5閉鎖】成田スカイウェイBBQ（CAMP）"
+      ]
+    },
+    {
+      "name": "やまももキャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:やまももキャンプ場"
+      ]
+    },
+    {
+      "name": "キャンプ番長 ASAHI BASE",
+      "city": "旭市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:キャンプ番長 ASAHI BASE"
+      ]
+    },
+    {
+      "name": "【R4/10移転の為閉鎖】Tiny house isumi こまきち",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R4/10移転の為閉鎖】Tiny house isumi こまきち",
+        "nap:Tiny house isumi こまきち"
+      ]
+    },
+    {
+      "name": "亀山温泉ホテル",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:亀山温泉ホテル"
+      ]
+    },
+    {
+      "name": "富津金谷オートキャンプヒルズ",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:富津金谷オートキャンプヒルズ"
+      ]
+    },
+    {
+      "name": "カーディフトレーラーハウス",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:カーディフトレーラーハウス"
+      ]
+    },
+    {
+      "name": "The Forest Garden KIMINOMORI",
+      "city": "東金市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:The Forest Garden KIMINOMORI"
+      ]
+    },
+    {
+      "name": "【R6/2閉鎖】千葉県立柏の葉公園バーベキュー広場",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R6/2閉鎖】千葉県立柏の葉公園バーベキュー広場"
+      ]
+    },
+    {
+      "name": "RECAMP館山（旧：館山ファミリーパークキャンプ場）",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:RECAMP館山（旧：館山ファミリーパークキャンプ場）"
+      ]
+    },
+    {
+      "name": "【R4.10／閉鎖】KAMOhill Glampark",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R4.10／閉鎖】KAMOhill Glampark"
+      ]
+    },
+    {
+      "name": "TAKIVILLAGE-LEPO- (キャンプ&サウナ)",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:TAKIVILLAGE-LEPO- (キャンプ&サウナ)"
+      ]
+    },
+    {
+      "name": "ゆめパーク牧野",
+      "city": "芝山町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ゆめパーク牧野"
+      ]
+    },
+    {
+      "name": "ＬＯＴＵＳ　ＮＩＧＨＴ",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ＬＯＴＵＳ　ＮＩＧＨＴ"
+      ]
+    },
+    {
+      "name": "検見川総合運動場",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:検見川総合運動場"
+      ]
+    },
+    {
+      "name": "大多喜わんぱく自然農園併設キャンプ場（旧：大多喜わんぱくキャンプ場No.2）",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:大多喜わんぱく自然農園併設キャンプ場（旧：大多喜わんぱくキャンプ場No.2）"
+      ]
+    },
+    {
+      "name": "REMIX BASE KISARAZU キャンプ場",
+      "city": "木更津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:REMIX BASE KISARAZU キャンプ場"
+      ]
+    },
+    {
+      "name": "ヤマソブキャンプ場（旧：Yamasobu campground）",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ヤマソブキャンプ場（旧：Yamasobu campground）",
+        "nap:野営&ブッシュクラフト　野営人"
+      ]
+    },
+    {
+      "name": "１９",
+      "city": "香取市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:１９"
+      ]
+    },
+    {
+      "name": "サンビレッジ金谷キャンプ場",
+      "city": "富津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:サンビレッジ金谷キャンプ場",
+        "jalan:サンビレッジ金谷キャンプ場"
+      ]
+    },
+    {
+      "name": "サ二ーサイドオートキャンプ",
+      "city": "山武市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:サ二ーサイドオートキャンプ"
+      ]
+    },
+    {
+      "name": "カッパドキアFAMILY",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:カッパドキアFAMILY"
+      ]
+    },
+    {
+      "name": "foo dee's woodland プライベート campsite",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:foo dee's woodland プライベート campsite"
+      ]
+    },
+    {
+      "name": "Katsuura Natural Space Camp",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Katsuura Natural Space Camp"
+      ]
+    },
+    {
+      "name": "【R5/5 閉鎖】ささやかD.I.Yキャンプ富貴富津",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R5/5 閉鎖】ささやかD.I.Yキャンプ富貴富津"
+      ]
+    },
+    {
+      "name": "CAMP GO4SURF",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CAMP GO4SURF"
+      ]
+    },
+    {
+      "name": "大多喜SABO",
+      "city": "大多喜町",
+      "srcs": [
+        "db",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:大多喜SABOキャンプ場",
+        "db:大多喜SABO"
+      ]
+    },
+    {
+      "name": "ゴールドマウンテンオートキャンプ場",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ゴールドマウンテンオートキャンプ場"
+      ]
+    },
+    {
+      "name": "しげキャン",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:しげキャン"
+      ]
+    },
+    {
+      "name": "CAMPiece横芝光",
+      "city": "横芝光町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CAMPiece横芝光"
+      ]
+    },
+    {
+      "name": "CAMPiece君津",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CAMPiece君津"
+      ]
+    },
+    {
+      "name": "【R4/9閉鎖】満天の森　CAMPCHIBA",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R4/9閉鎖】満天の森　CAMPCHIBA"
+      ]
+    },
+    {
+      "name": "PGFキャンプ",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:PGFキャンプ",
+        "jalan:PGF LAND"
+      ]
+    },
+    {
+      "name": "おとキャン広場",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:おとキャン広場"
+      ]
+    },
+    {
+      "name": "つりぼり　とり亀　キャンプ場",
+      "city": "睦沢町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:つりぼり　とり亀　キャンプ場"
+      ]
+    },
+    {
+      "name": "kitみずさわ",
+      "city": "睦沢町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:kitみずさわ"
+      ]
+    },
+    {
+      "name": "【R8/5月閉鎖】鋸南ほしふるキャンプ場",
+      "city": "鋸南町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R8/5月閉鎖】鋸南ほしふるキャンプ場"
+      ]
+    },
+    {
+      "name": "笑炎の森　CAMP&BBQ",
+      "city": "匝瑳市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:笑炎の森　CAMP&BBQ"
+      ]
+    },
+    {
+      "name": "nigovillagecamp",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:nigovillagecamp"
+      ]
+    },
+    {
+      "name": "【R5/11統合移転】ほしふるキャンプ場",
+      "city": "鋸南町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:【R5/11統合移転】ほしふるキャンプ場"
+      ]
+    },
+    {
+      "name": "ワンコのお家SEASONS+plus K-village",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ワンコのお家SEASONS+plus K-village"
+      ]
+    },
+    {
+      "name": "ANKR VILLAGE KUJUKURI PRIVATE CAMP",
+      "city": "山武市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ANKR VILLAGE KUJUKURI PRIVATE CAMP"
+      ]
+    },
+    {
+      "name": "Camp David",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Camp David"
+      ]
+    },
+    {
+      "name": "ogawa GRAND lodge FIELD",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ogawa GRAND lodge FIELD"
+      ]
+    },
+    {
+      "name": "CampsiteTORAMI",
+      "city": "一宮町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CampsiteTORAMI"
+      ]
+    },
+    {
+      "name": "Beach Camp 九十九里",
+      "city": "大網白里市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Beach Camp 九十九里"
+      ]
+    },
+    {
+      "name": "鴨川シーリゾートSTAY GOLD",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:鴨川シーリゾートSTAY GOLD"
+      ]
+    },
+    {
+      "name": "DINING PORT 御料鶴",
+      "city": "成田市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:DINING PORT 御料鶴"
+      ]
+    },
+    {
+      "name": "千葉フィンランドの森",
+      "city": "山武市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:千葉フィンランドの森"
+      ]
+    },
+    {
+      "name": "奥米・木村農園キャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:奥米・木村農園キャンプ場",
+        "jalan:奥米・木村農園"
+      ]
+    },
+    {
+      "name": "旭市海上キャンプ場",
+      "city": "旭市",
+      "srcs": [
+        "nap",
+        "pref"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:旭市海上キャンプ場",
+        "pref:旭市海上キャンプ場"
+      ]
+    },
+    {
+      "name": "NANSO CAMP",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:NANSO CAMP"
+      ]
+    },
+    {
+      "name": "エスイーグルキャンプ",
+      "city": "一宮町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:エスイーグルキャンプ"
+      ]
+    },
+    {
+      "name": "SUN MOVEキャンプ場",
+      "city": "山武市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:SUN MOVEキャンプ場"
+      ]
+    },
+    {
+      "name": "江見吉浦　海辺のキャンプ場",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:江見吉浦　海辺のキャンプ場"
+      ]
+    },
+    {
+      "name": "マザー牧場 グランピング THE FARM",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:マザー牧場 グランピング THE FARM"
+      ]
+    },
+    {
+      "name": "橘ふれあい公園キャンプ場",
+      "city": "香取市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:橘ふれあい公園キャンプ場"
+      ]
+    },
+    {
+      "name": "いすみパドルクラブ",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:いすみパドルクラブ"
+      ]
+    },
+    {
+      "name": "Snail",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Snail"
+      ]
+    },
+    {
+      "name": "千葉ウシノヒロバ",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:千葉ウシノヒロバ"
+      ]
+    },
+    {
+      "name": "MBSドッグキャンプ場",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:MBSドッグキャンプ場"
+      ]
+    },
+    {
+      "name": "きのえね　SAKE　CAMP",
+      "city": "酒々井町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:きのえね　SAKE　CAMP"
+      ]
+    },
+    {
+      "name": "MA SAISON （マセゾン）キャンプ場 in 千葉大多喜",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:MA SAISON （マセゾン）キャンプ場 in 千葉大多喜"
+      ]
+    },
+    {
+      "name": "Wakamatsu Preserve",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Wakamatsu Preserve"
+      ]
+    },
+    {
+      "name": "シラハマ校舎",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:シラハマ校舎"
+      ]
+    },
+    {
+      "name": "【R6 閉鎖】スパイクル@カーニバルヒルズ",
+      "city": "香取市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R6 閉鎖】スパイクル@カーニバルヒルズ"
+      ]
+    },
+    {
+      "name": "Private Camp KEICA",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Private Camp KEICA"
+      ]
+    },
+    {
+      "name": "楽々ガーデン",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:楽々ガーデン"
+      ]
+    },
+    {
+      "name": "星野農園くぬぎの憩いの森キャンプ場",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:星野農園くぬぎの憩いの森キャンプ場"
+      ]
+    },
+    {
+      "name": "マザー牧場 グランピング Green Base",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:マザー牧場 グランピング Green Base"
+      ]
+    },
+    {
+      "name": "SHELTER BASE",
+      "city": "鎌ケ谷市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:SHELTER BASE"
+      ]
+    },
+    {
+      "name": "T&C Garden Kimitsu",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:T&C Garden Kimitsu"
+      ]
+    },
+    {
+      "name": "KOUMAFARM～星空が見えるキャンプ場～オートキャンプサイト",
+      "city": "成田市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:KOUMAFARM～星空が見えるキャンプ場～オートキャンプサイト",
+        "nap:【R6/6現在閉鎖】KOUMAFARM～星空が見えるキャンプ場～野営キャンプサイト"
+      ]
+    },
+    {
+      "name": "多古の星キャンプ場",
+      "city": "多古町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:多古の星キャンプ場"
+      ]
+    },
+    {
+      "name": "Ｋｏーｅｄａ　Ｖｉｌｌａｇｅ",
+      "city": "旭市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Ｋｏーｅｄａ　Ｖｉｌｌａｇｅ"
+      ]
+    },
+    {
+      "name": "WestFall 船橋・アルゼンチン公園",
+      "city": "船橋市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:WestFall 船橋・アルゼンチン公園"
+      ]
+    },
+    {
+      "name": "evergreen",
+      "city": "白井市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:evergreen"
+      ]
+    },
+    {
+      "name": "REMIX BASE SODEGAURA オートキャンプ場",
+      "city": "袖ケ浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:REMIX BASE SODEGAURA オートキャンプ場"
+      ]
+    },
+    {
+      "name": "【R5/6閉鎖→移転】Tarareba riverside base camp",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R5/6閉鎖→移転】Tarareba riverside base camp"
+      ]
+    },
+    {
+      "name": "バンブーグローブ オートキャンプ場",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:バンブーグローブ オートキャンプ場"
+      ]
+    },
+    {
+      "name": "RV Park-NOTEHAMA Beach Station",
+      "city": "匝瑳市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:RV Park-NOTEHAMA Beach Station"
+      ]
+    },
+    {
+      "name": "foo dee's BBQ & Dog run campsite",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:foo dee's BBQ & Dog run campsite"
+      ]
+    },
+    {
+      "name": "Private Valcony",
+      "city": "木更津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Private Valcony"
+      ]
+    },
+    {
+      "name": "リスッコ・ファミリーキャンプ場",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:リスッコ・ファミリーキャンプ場"
+      ]
+    },
+    {
+      "name": "エアストリームガーデンCAPUCAPU",
+      "city": "御宿町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:エアストリームガーデンCAPUCAPU"
+      ]
+    },
+    {
+      "name": "HIDEAWAY NAMUYA",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:HIDEAWAY NAMUYA"
+      ]
+    },
+    {
+      "name": "Dog Pool Village 富津海岸",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Dog Pool Village 富津海岸"
+      ]
+    },
+    {
+      "name": "South One Village 館山",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:South One Village 館山"
+      ]
+    },
+    {
+      "name": "ソラスの森キャンプ場",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ソラスの森キャンプ場"
+      ]
+    },
+    {
+      "name": "BINGE TRAILER",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:BINGE TRAILER"
+      ]
+    },
+    {
+      "name": "~private loghouse~ HOCCOREE",
+      "city": "御宿町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:~private loghouse~ HOCCOREE"
+      ]
+    },
+    {
+      "name": "TACO GLAMP",
+      "city": "多古町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:TACO GLAMP"
+      ]
+    },
+    {
+      "name": "レイクサイド亀山キャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:レイクサイド亀山キャンプ場"
+      ]
+    },
+    {
+      "name": "ICHINOMIYABASE73",
+      "city": "一宮町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ICHINOMIYABASE73"
+      ]
+    },
+    {
+      "name": "キャンプ ワイワイ",
+      "city": "旭市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:キャンプ ワイワイ"
+      ]
+    },
+    {
+      "name": "アークの森キャンプ場",
+      "city": "八千代市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:アークの森キャンプ場"
+      ]
+    },
+    {
+      "name": "ETOWA木更津",
+      "city": "木更津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ETOWA木更津"
+      ]
+    },
+    {
+      "name": "HEALTHY CAMP VILLAGE",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:HEALTHY CAMP VILLAGE"
+      ]
+    },
+    {
+      "name": "キャンプ番長ライダースベース99",
+      "city": "匝瑳市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:キャンプ番長ライダースベース99"
+      ]
+    },
+    {
+      "name": "オートキャンプ場しーたけ村【ドッグフリーサイト】",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:オートキャンプ場しーたけ村【ドッグフリーサイト】"
+      ]
+    },
+    {
+      "name": "small planet CAMP&GRILL",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:small planet CAMP&GRILL"
+      ]
+    },
+    {
+      "name": "ペパーミント　イン　キャンプ",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ペパーミント　イン　キャンプ"
+      ]
+    },
+    {
+      "name": "VILLA SOTOBO CAMP",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:VILLA SOTOBO CAMP"
+      ]
+    },
+    {
+      "name": "きさらづCAMP ORGANIC FIELD in みたて",
+      "city": "木更津市",
+      "srcs": [
+        "db",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:きさらづCAMP ORGANIC FIELD in みたて",
+        "db:きさらづCAMP ORGANIC FIELD in みたて"
+      ]
+    },
+    {
+      "name": "CamCam Dome house",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CamCam Dome house"
+      ]
+    },
+    {
+      "name": "glampark 亀山温泉",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:glampark 亀山温泉",
+        "jalan:大自然の静寂と天然自噴温泉を愉しむ湯宿 亀山温泉ホテル"
+      ]
+    },
+    {
+      "name": "高滝湖ＢＡＳＥ",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:高滝湖ＢＡＳＥ"
+      ]
+    },
+    {
+      "name": "TAVISTAR （タヴィスター）",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:TAVISTAR （タヴィスター）"
+      ]
+    },
+    {
+      "name": "プラネットキャンプフィールド",
+      "city": "御宿町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:プラネットキャンプフィールド"
+      ]
+    },
+    {
+      "name": "真里谷キャンプ場",
+      "city": "木更津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:真里谷キャンプ場"
+      ]
+    },
+    {
+      "name": "ポセイドン　グランピング",
+      "city": "九十九里町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ポセイドン　グランピング"
+      ]
+    },
+    {
+      "name": "【R6/12月閉鎖】池のほとり",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R6/12月閉鎖】池のほとり"
+      ]
+    },
+    {
+      "name": "セルジュトラミ コーストサイド",
+      "city": "一宮町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:セルジュトラミ コーストサイド"
+      ]
+    },
+    {
+      "name": "SOUTH BIRD INN-LK Boyz, Chitose Beach Surf Camp",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:SOUTH BIRD INN-LK Boyz, Chitose Beach Surf Camp"
+      ]
+    },
+    {
+      "name": "富崎館キャンプ場",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:富崎館キャンプ場"
+      ]
+    },
+    {
+      "name": "あさひシーサイドコテージ",
+      "city": "旭市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:あさひシーサイドコテージ"
+      ]
+    },
+    {
+      "name": "コテージ海華",
+      "city": "館山市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:コテージ海華",
+        "jalan:コテージ海華(館山マリン)"
+      ]
+    },
+    {
+      "name": "℃HILL VALLEY 養老渓谷",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:℃HILL VALLEY 養老渓谷"
+      ]
+    },
+    {
+      "name": "いっせんぼく Camp field (旧ブルーベリーキャンプノムさん王国)",
+      "city": "木更津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:いっせんぼく Camp field (旧ブルーベリーキャンプノムさん王国)"
+      ]
+    },
+    {
+      "name": "タラレバ",
+      "city": "大多喜町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:タラレバ"
+      ]
+    },
+    {
+      "name": "マリンステーション波左間",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:マリンステーション波左間"
+      ]
+    },
+    {
+      "name": "Bee Camp Field",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Bee Camp Field"
+      ]
+    },
+    {
+      "name": "c.c.c. camp site",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:c.c.c. camp site"
+      ]
+    },
+    {
+      "name": "CAMPかぐや",
+      "city": "八千代市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CAMPかぐや"
+      ]
+    },
+    {
+      "name": "かたくりの里キャンプ場",
+      "city": "成田市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:かたくりの里キャンプ場"
+      ]
+    },
+    {
+      "name": "SHONAN BASE",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:SHONAN BASE"
+      ]
+    },
+    {
+      "name": "bonfirebase富津キャンプビレッジ",
+      "city": "富津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:bonfirebase富津キャンプビレッジ",
+        "jalan:BonfireBase 富津キャンプビレッジ"
+      ]
+    },
+    {
+      "name": "海土里hutte",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:海土里hutte"
+      ]
+    },
+    {
+      "name": "キャンプガーデン印西",
+      "city": "印西市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:キャンプガーデン印西"
+      ]
+    },
+    {
+      "name": "CAMP&SAUNA UUSi 鴨川",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CAMP&SAUNA UUSi 鴨川"
+      ]
+    },
+    {
+      "name": "WILDオートキャンプ NOMADSITE",
+      "city": "野田市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:WILDオートキャンプ NOMADSITE"
+      ]
+    },
+    {
+      "name": "RVパーク&CAMP 214KATSUURA",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:RVパーク&CAMP 214KATSUURA"
+      ]
+    },
+    {
+      "name": "キクバリィ",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:キクバリィ"
+      ]
+    },
+    {
+      "name": "野良里キャンプ場",
+      "city": "佐倉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:野良里キャンプ場"
+      ]
+    },
+    {
+      "name": "パームヴィレッジ",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:パームヴィレッジ"
+      ]
+    },
+    {
+      "name": "【R7閉鎖】東京ドイツ村 芝生広場ファミリーキャンプ場",
+      "city": "袖ケ浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R7閉鎖】東京ドイツ村 芝生広場ファミリーキャンプ場"
+      ]
+    },
+    {
+      "name": "SOTOVERSE ICHIHARA",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:SOTOVERSE ICHIHARA"
+      ]
+    },
+    {
+      "name": "UNIUS SEASIDE CAMP ユニアスシーサイドキャンプ",
+      "city": "南房総市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:UNIUS SEASIDE CAMP ユニアスシーサイドキャンプ",
+        "jalan:UNIUS SEASIDE CAMP ユニアスシーサイドキャンプ"
+      ]
+    },
+    {
+      "name": "High Garden",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:High Garden"
+      ]
+    },
+    {
+      "name": "ブエナビスタビーチクラブ",
+      "city": "館山市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ブエナビスタビーチクラブ",
+        "jalan:ブエナビスタ ビーチクラブ"
+      ]
+    },
+    {
+      "name": "Villa Mountainman",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Villa Mountainman"
+      ]
+    },
+    {
+      "name": "Bamboo Camp Site 『いすみ源氏ぼたるの里』",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Bamboo Camp Site 『いすみ源氏ぼたるの里』"
+      ]
+    },
+    {
+      "name": "feelnature campbase",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:feelnature campbase"
+      ]
+    },
+    {
+      "name": "Wonderful Gardenオートキャンプ場",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Wonderful Gardenオートキャンプ場"
+      ]
+    },
+    {
+      "name": "長柄町都市農村交流センター",
+      "city": "長柄町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:長柄町都市農村交流センター"
+      ]
+    },
+    {
+      "name": "香取キャンプ場",
+      "city": "香取市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:香取キャンプ場"
+      ]
+    },
+    {
+      "name": "せんさんの庭　薬膳ガーデンキャンプ",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:せんさんの庭　薬膳ガーデンキャンプ"
+      ]
+    },
+    {
+      "name": "アウトランドⅡ",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:アウトランドⅡ"
+      ]
+    },
+    {
+      "name": "南総学舎野営地（旧：南総学舎キャンプ場）",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:南総学舎野営地（旧：南総学舎キャンプ場）"
+      ]
+    },
+    {
+      "name": "THE BLUE LAGOON",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:THE BLUE LAGOON"
+      ]
+    },
+    {
+      "name": "CAMPさくらの丘",
+      "city": "君津市",
+      "srcs": [
+        "jalan",
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:CAMPさくらの丘",
+        "jalan:CAMPさくらの丘"
+      ]
+    },
+    {
+      "name": "戦国七雄グランピングリゾート",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:戦国七雄グランピングリゾート"
+      ]
+    },
+    {
+      "name": "星海の香AutoCampHills",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:星海の香AutoCampHills"
+      ]
+    },
+    {
+      "name": "Base Camp Kisarazu",
+      "city": "木更津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Base Camp Kisarazu"
+      ]
+    },
+    {
+      "name": "リバーマウス,オーシャンフロントエリア99base白子",
+      "city": "白子町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:リバーマウス,オーシャンフロントエリア99base白子"
+      ]
+    },
+    {
+      "name": "IN TO THE WILD.",
+      "city": "九十九里町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:IN TO THE WILD."
+      ]
+    },
+    {
+      "name": "Frog Cafe & Site",
+      "city": "勝浦市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Frog Cafe & Site"
+      ]
+    },
+    {
+      "name": "リバーサイドロッジ",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:リバーサイドロッジ"
+      ]
+    },
+    {
+      "name": "【R7/3閉鎖】SecretbaseTATEYAMA",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R7/3閉鎖】SecretbaseTATEYAMA"
+      ]
+    },
+    {
+      "name": "Render Fika Sammu",
+      "city": "山武市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Render Fika Sammu"
+      ]
+    },
+    {
+      "name": "HANABUSACAMP",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:HANABUSACAMP"
+      ]
+    },
+    {
+      "name": "ブルーベリーの森オートキャンプ場",
+      "city": "木更津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ブルーベリーの森オートキャンプ場"
+      ]
+    },
+    {
+      "name": "テントサウナ露天風呂焚火BBQ外房ホテル＆キャンプ場",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:テントサウナ露天風呂焚火BBQ外房ホテル＆キャンプ場"
+      ]
+    },
+    {
+      "name": "筍の里BeSSO",
+      "city": "酒々井町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:筍の里BeSSO"
+      ]
+    },
+    {
+      "name": "鴨川プライベートヴィラうら庭",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:鴨川プライベートヴィラうら庭"
+      ]
+    },
+    {
+      "name": "KOZUKA House",
+      "city": "鴨川市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:KOZUKA House"
+      ]
+    },
+    {
+      "name": "うちべんけい茶屋キャンプ場",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:うちべんけい茶屋キャンプ場"
+      ]
+    },
+    {
+      "name": "みんなの里山キャンプ場",
+      "city": "千葉市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:みんなの里山キャンプ場"
+      ]
+    },
+    {
+      "name": "アークの森キャンプ場　ふなばしサイト",
+      "city": "船橋市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:アークの森キャンプ場　ふなばしサイト"
+      ]
+    },
+    {
+      "name": "UE GARDEN RESORT",
+      "city": "東金市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:UE GARDEN RESORT"
+      ]
+    },
+    {
+      "name": "【R8/3閉鎖】SHIP / SHIBUYA IWAI PARK",
+      "city": "南房総市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": true,
+      "names": [
+        "nap:【R8/3閉鎖】SHIP / SHIBUYA IWAI PARK"
+      ]
+    },
+    {
+      "name": "犬の遊び場DOG FIELD",
+      "city": "富津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:犬の遊び場DOG FIELD"
+      ]
+    },
+    {
+      "name": "WASHINOYA OUTDOOR DINING GLOBAR",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:WASHINOYA OUTDOOR DINING GLOBAR"
+      ]
+    },
+    {
+      "name": "久留里ヒュッテ",
+      "city": "君津市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:久留里ヒュッテ"
+      ]
+    },
+    {
+      "name": "Strawhat Camp Field（ストローハットキャンプフィールド）",
+      "city": "いすみ市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Strawhat Camp Field（ストローハットキャンプフィールド）"
+      ]
+    },
+    {
+      "name": "月夜湖むつざわオートキャンプ場",
+      "city": "睦沢町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:月夜湖むつざわオートキャンプ場"
+      ]
+    },
+    {
+      "name": "mizuokabase～Grandma～",
+      "city": "館山市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:mizuokabase～Grandma～"
+      ]
+    },
+    {
+      "name": "イノセンスリゾート in千葉レゾール",
+      "city": "山武市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:イノセンスリゾート in千葉レゾール"
+      ]
+    },
+    {
+      "name": "Kingfisher Garden",
+      "city": "柏市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:Kingfisher Garden"
+      ]
+    },
+    {
+      "name": "ナイトビスタキャンプ場 (nightvista.camp)",
+      "city": "鋸南町",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:ナイトビスタキャンプ場 (nightvista.camp)"
+      ]
+    },
+    {
+      "name": "里山キャンプウッドクリフ",
+      "city": "市原市",
+      "srcs": [
+        "nap"
+      ],
+      "hasCoord": true,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "nap:里山キャンプウッドクリフ"
+      ]
+    },
+    {
+      "name": "大房岬自然公園キャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "jalan",
+        "pref"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:大房岬自然公園キャンプ場",
+        "pref:大房岬自然公園キャンプ場"
+      ]
+    },
+    {
+      "name": "BONｰMAL HOLIDAY",
+      "city": "南房総市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:BONｰMAL HOLIDAY"
+      ]
+    },
+    {
+      "name": "多田良海岸キャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:多田良海岸キャンプ場"
+      ]
+    },
+    {
+      "name": "OCEAN VIEW MINT",
+      "city": "南房総市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:OCEAN VIEW MINT"
+      ]
+    },
+    {
+      "name": "OCEAN RESORT MINT",
+      "city": "南房総市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:OCEAN RESORT MINT"
+      ]
+    },
+    {
+      "name": "OCEAN VILLA MINT",
+      "city": "南房総市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:OCEAN VILLA MINT"
+      ]
+    },
+    {
+      "name": "ユニアス レンタカー",
+      "city": "南房総市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:ユニアス レンタカー"
+      ]
+    },
+    {
+      "name": "オアシス南房総",
+      "city": "南房総市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:オアシス南房総"
+      ]
+    },
+    {
+      "name": "HOMIE TERRACE Funakata",
+      "city": "館山市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:HOMIE TERRACE Funakata"
+      ]
+    },
+    {
+      "name": "エメラルディア",
+      "city": "館山市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:エメラルディア"
+      ]
+    },
+    {
+      "name": "笹本農園ロッジ&ファミリーキャンプ",
+      "city": "君津市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:笹本農園ロッジ&ファミリーキャンプ"
+      ]
+    },
+    {
+      "name": "ロマンの森キャンピングロッジ",
+      "city": "君津市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:ロマンの森キャンピングロッジ"
+      ]
+    },
+    {
+      "name": "泊まれるお城 Cocon Garden",
+      "city": "木更津市",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:泊まれるお城 Cocon Garden"
+      ]
+    },
+    {
+      "name": "BASE 1901",
+      "city": "鋸南町",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:BASE 1901"
+      ]
+    },
+    {
+      "name": "BASK HOTA",
+      "city": "鋸南町",
+      "srcs": [
+        "jalan"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "jalan:BASK HOTA"
+      ]
+    },
+    {
+      "name": "船橋市立大神保青少年キャンプ場",
+      "city": "船橋市",
+      "srcs": [
+        "pref"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "pref:船橋市立大神保青少年キャンプ場"
+      ]
+    },
+    {
+      "name": "鎌ケ谷市営キャンプ場",
+      "city": "鎌ケ谷市",
+      "srcs": [
+        "pref"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "pref:鎌ケ谷市営キャンプ場"
+      ]
+    },
+    {
+      "name": "やちまたキャンプ場",
+      "city": "八街市",
+      "srcs": [
+        "pref"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "pref:やちまたキャンプ場"
+      ]
+    },
+    {
+      "name": "根本キャンプ場",
+      "city": "南房総市",
+      "srcs": [
+        "pref"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "pref:根本キャンプ場"
+      ]
+    },
+    {
+      "name": "千葉県いすみ環境と文化のさとセンターデイキャンプ場",
+      "city": "いすみ市",
+      "srcs": [
+        "pref"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "pref:千葉県いすみ環境と文化のさとセンターデイキャンプ場"
+      ]
+    },
+    {
+      "name": "大多喜県民の森キャンプ場",
+      "city": "大多喜町",
+      "srcs": [
+        "pref"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "pref:大多喜県民の森キャンプ場"
+      ]
+    },
+    {
+      "name": "清和県民の森キャンプ場",
+      "city": "君津市",
+      "srcs": [
+        "pref"
+      ],
+      "hasCoord": false,
+      "hasAddr": true,
+      "napClosedMarker": false,
+      "names": [
+        "pref:清和県民の森キャンプ場"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "14942",
+      "name": "CAMPieceかすみがうら",
+      "address": "千葉県かすみがうら市坂2039-1佐賀小学校跡地",
+      "url": "https://www.nap-camp.com/chiba/14942",
+      "excludedReason": "PREF_MISMATCH"
+    }
+  ]
+}
