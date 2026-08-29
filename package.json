@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "validate": "node scripts/validate-data.js",
-    "test": "node scripts/test-restrictions.js",
-    "prebuild": "node scripts/validate-data.js && node scripts/test-restrictions.js",
+    "test": "node scripts/test-restrictions.js && node scripts/test-filters.js",
+    "prebuild": "node scripts/validate-data.js && node scripts/test-restrictions.js && node scripts/test-filters.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "next build && wrangler deploy"
+    "deploy": "node scripts/deploy-guard.js",
+    "deploy:pages": "npm run build && npx wrangler pages deploy out --project-name soro-camp --branch main"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
