@@ -204,15 +204,30 @@ check('isIsland に true 以外を渡しても検査は止まらない（誤っ�
   isOutOfBounds('東京', 34.68, 139.40, 1) === true,
   '文字列 "true" や 1 では止まらない。厳密に true のときだけ');
 
-console.log('\n■ 実データ: 島嶼レコードに isIsland が付いているか');
+/* ---------------------------------------------------------------------
+ * 実データ側 — ★ いまは島嶼レコードが0件である
+ *
+ * 2026-08-29 に大島・新島・八丈の3件を入れたが、同じ日に撤回した
+ * （対象は東京都の本島＝23区・多摩地域で、離島は対象外という方針）。
+ *
+ * ★ ここは `every()` で書くと**0件でも true を返して緑になる**（偽ゼロ）。
+ * 「検査が通った」のか「検査するものが無かった」のかが区別できなくなるので、
+ * **0件であること自体を明示して固定する。**
+ * 離島候補を入れる日が来たら、この検査は落ちる。**そのときに中身を書くこと。**
+ * ------------------------------------------------------------------- */
+console.log('\n■ 実データ: いまは島嶼レコードが0件（撤回済み）');
 // 下の section 4 でも同じファイルを読むが、あちらは const recs でこの時点ではまだ宣言前。
 const allRecs = require('../data/campgrounds.json');
-const islandRecs = allRecs.filter(r => r.prefecture === '東京' && /大島町|新島村|八丈町|青ヶ島村|三宅村|御蔵島村|利島村|神津島村|小笠原村/.test(String(r.address || '')));
-check('東京の島嶼レコードはすべて isIsland: true', islandRecs.every(r => r.isIsland === true),
-  islandRecs.map(r => `${r.slug}=${r.isIsland}`).join(' / ') || '該当なし');
-check('★ 島嶼レコードは座標未取得のまま（実ピンは人が取る）',
-  islandRecs.every(r => r.lat === 0 && r.lng === 0 && r.needsCoord === true),
-  islandRecs.map(r => `${r.slug} lat${r.lat}/needsCoord=${r.needsCoord}`).join(' / ') || '該当なし');
+const ISLAND_MUNI = /大島町|新島村|八丈町|青ヶ島村|三宅村|御蔵島村|利島村|神津島村|小笠原村/;
+const islandRecs = allRecs.filter(r => r.prefecture === '東京' && ISLAND_MUNI.test(String(r.address || '')));
+const flagged = allRecs.filter(r => r.isIsland === true);
+check('★ 島嶼の住所を持つレコードは0件', islandRecs.length === 0,
+  islandRecs.map(r => r.slug).join(' / ') || `東京のレコード自体 ${allRecs.filter(r => r.prefecture === '東京').length}件`);
+check('★ isIsland が立っているレコードも0件', flagged.length === 0,
+  flagged.map(r => r.slug).join(' / ') || '仕組みだけ残してある（次に離島候補を検討するときに使う）');
+check('★ 両者は一致する（片方だけ増えたら付け忘れ／付けすぎ）',
+  islandRecs.length === flagged.length,
+  `島嶼住所 ${islandRecs.length}件 / isIsland ${flagged.length}件`);
 check('★ 遠くの県の取り違えは捕まる（これがこの検査の役目）',
   isOutOfBounds('千葉', 35.48, 138.80) === true,
   '山梨県富士吉田市＝県台帳に実際に混ざっていた県外施設');

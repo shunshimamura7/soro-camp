@@ -12,6 +12,7 @@ const MapView = dynamic(() => import("@/components/MapView"), { ssr: false });
 const MapModal = dynamic(() => import("@/components/MapModal"), { ssr: false });
 
 const ACTIVE_TOTAL = activeCampgrounds.length;
+const CHIBA_COUNT = activeCampgrounds.filter((c) => c.prefecture === "千葉").length;
 const EVIDENCE_BACKED_COUNT = evidenceBackedCampgrounds.length;
 const EVIDENCE_PENDING_COUNT = evidencePendingCampgrounds.length;
 
@@ -62,7 +63,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="px-4 md:px-8 py-6 sm:py-10 text-center max-w-4xl mx-auto">
         <h1 className="text-[22px] sm:text-4xl font-bold leading-tight mb-3 text-slate-900">
-          神奈川・静岡・山梨・千葉・東京の<br className="sm:hidden" />
+          神奈川・静岡・山梨・千葉の<br className="sm:hidden" />
           <span className="text-[#e8611f]">ソロキャンプ場</span>を探す
         </h1>
         <p className="text-slate-500 text-[13px] sm:text-base max-w-xl mx-auto">
@@ -71,10 +72,8 @@ export default function HomePage() {
           自分に合うサイトを見つけよう。
         </p>
         <p className="mt-3 text-xs sm:text-sm text-[#a54a20]">
-          {/* 都度更新方式の告知。県を追加したら、その時点でこの1文を書き換える。
-              内訳（「うち◯◯県はN件」）は、追加した県に active レコードがある時だけ出す。
-              東京は追加時点で0件なので出していない。 */}
-          東京都を追加。5県あわせて{ACTIVE_TOTAL}件を掲載中。
+          千葉県を追加。4県あわせて{ACTIVE_TOTAL}件を掲載中
+          {CHIBA_COUNT > 0 && `（うち千葉県は${CHIBA_COUNT}件）`}。
           <span className="block mt-1 text-slate-500">
             いま表示しているのは、情報源を確認できた{EVIDENCE_BACKED_COUNT}件です。
           </span>
