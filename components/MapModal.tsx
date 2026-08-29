@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { hasUsableCoord } from "@/lib/camp";
-import { nearbyShoppingUrl } from "@/lib/maps";
+import { nearbyBathUrl, nearbyShoppingUrl } from "@/lib/maps";
 import { createPortal } from "react-dom";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
@@ -265,6 +265,16 @@ function CampDetailPanel({
           style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#e8611f", textDecoration: "none" }}
         >
           🛒 周辺の買い物を探す
+        </a>
+      )}
+      {hasUsableCoord(camp) && (
+        <a
+          href={nearbyBathUrl(camp)}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#e8611f", textDecoration: "none" }}
+        >
+          ♨️ 周辺の温泉を探す
         </a>
       )}
     </div>

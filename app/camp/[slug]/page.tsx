@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { hasUsableCoord } from "@/lib/camp";
-import { campMapUrl, nearbyShoppingUrl } from "@/lib/maps";
+import { campMapUrl, nearbyBathUrl, nearbyShoppingUrl } from "@/lib/maps";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCampground, getAllSlugs } from "@/lib/camp";
@@ -452,6 +452,16 @@ export default async function CampDetailPage({
                     className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-slate-600 border border-slate-300 rounded-lg font-mono text-sm hover:bg-slate-100 transition-colors"
                   >
                     🛒 周辺の買い物を探す
+                  </a>
+                )}
+                {hasUsableCoord(camp) && (
+                  <a
+                    href={nearbyBathUrl(camp)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-slate-600 border border-slate-300 rounded-lg font-mono text-sm hover:bg-slate-100 transition-colors"
+                  >
+                    ♨️ 周辺の温泉を探す
                   </a>
                 )}
                 <a

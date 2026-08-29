@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { hasUsableCoord } from "@/lib/camp";
-import { nearbyShoppingUrl } from "@/lib/maps";
+import { nearbyBathUrl, nearbyShoppingUrl } from "@/lib/maps";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
 import {
@@ -20,6 +20,7 @@ function popupHtml(camp: Campground): string {
   // 場所を特定できていない施設には買い物リンクを出さない（判定は hasUsableCoord に一本化）。
   const hasCoord = hasUsableCoord(camp);
   const shop = nearbyShoppingUrl(camp);
+  const bath = nearbyBathUrl(camp);
   return (
     `<a href="/camp/${camp.slug}" class="camp-popup-link">` +
       `<span class="camp-popup-name">${camp.name}</span>` +
@@ -27,7 +28,10 @@ function popupHtml(camp: Campground): string {
     (hasCoord
       ? `<a href="${shop}" target="_blank" rel="noopener noreferrer" ` +
         `style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">` +
-        `🛒 周辺の買い物を探す</a>`
+        `🛒 周辺の買い物を探す</a>` +
+        `<a href="${bath}" target="_blank" rel="noopener noreferrer" ` +
+        `style="display:block;margin-top:4px;font-size:11px;color:#e8611f;text-decoration:none;">` +
+        `♨️ 周辺の温泉を探す</a>`
       : '')
   );
 }
