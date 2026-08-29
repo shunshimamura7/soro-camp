@@ -27,7 +27,7 @@ type Props = {
   onMapOpen?: () => void;
 };
 
-const PREFECTURE_ORDER = ["神奈川", "静岡", "山梨", "千葉"] as const;
+const PREFECTURE_ORDER = ["神奈川", "静岡", "山梨", "千葉", "東京"] as const;
 const PREFECTURES: string[] = [
   "全部",
   ...PREFECTURE_ORDER.filter((p) => activeCampgrounds.some((c) => c.prefecture === p)),

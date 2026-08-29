@@ -5,16 +5,26 @@
  *
  * 一覧に出るのは `status: "active"` だけ。
  * **active が0件の県のチップを出すと、選んだ瞬間に必ず空になる。**
- * 2026-08-17 に千葉を2件入れたが、どちらも `unverified` なので一覧には出ない。
+ * 2026-08-29 時点でその状態にあるのは東京（レコード0件）。
  *
- * ここで「千葉を出さない」とハードコードすると、
- * **千葉が active になったときに誰も外しに来ない。**だからデータで判定している。
+ * ここで「東京を出さない」とハードコードすると、
+ * **東京が active になったときに誰も外しに来ない。**だからデータで判定している。
  *
  * ## ★ この検査の本題は「いま出ないこと」ではない
  *
- * いま千葉が出ないのは当たり前で、それだけ見ても
- * **条件がデータで決まっているのか、ただ千葉を書いていないだけなのか区別できない。**
- * **千葉を active にしたら出ること**を確かめて初めて、判定が効いていると言える。
+ * いま東京が出ないのは当たり前で、それだけ見ても
+ * **条件がデータで決まっているのか、ただ東京を書いていないだけなのか区別できない。**
+ * **東京を active にしたら出ること**を確かめて初めて、判定が効いていると言える。
+ *
+ * ## ★ 2026-08-29: この検査自身が陳腐化していたので直した
+ *
+ * 元は千葉が「active 0件の県」の実例だった。**2026-08-26 に千葉が active 11件になった時点で
+ * 「千葉は出ない」という固定が誤りになり、3件 NG のまま誰も直しに来ていなかった。**
+ * この検査がまさに警告している型（条件を書いた側が更新されない）を、検査自身が踏んでいた。
+ *
+ * 対策として、実例を**データが増えても陳腐化しない形**に変えた。
+ * 「出ない県」は東京だが、判定は `active 0件かどうか` をデータから読んで書いている。
+ * **東京に active レコードが入ったら、この検査も一緒に見直すこと。**
  *
  * 実行: `node scripts/.mock-filterbar-prefectures-test.js`
  */
@@ -43,22 +53,30 @@ const recs = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'camp
 console.log('\n■ 並び順の正が FilterBar.tsx にある');
 check('PREFECTURE_ORDER が読めた', ORDER.length > 0, ORDER.join(' / '));
 check('千葉が並び順に**入っている**（出す出さないは別の判断）', ORDER.includes('千葉'));
+check('東京が並び順に**入っている**（出す出さないは別の判断）', ORDER.includes('東京'));
 
 console.log('\n■ いまのデータでの選択肢');
 const now = derive(recs);
 console.log('   → ' + now.join(' / '));
 check('神奈川・静岡・山梨が出る', ['神奈川', '静岡', '山梨'].every(p => now.includes(p)));
-check('★ 千葉は出ない（active が0件なので）', !now.includes('千葉'),
+check('千葉も出る（2026-08-26 に active になった）', now.includes('千葉'),
   `千葉のレコード ${recs.filter(c => c.prefecture === '千葉').length}件 / うち active ${recs.filter(c => c.prefecture === '千葉' && c.status === 'active').length}件`);
+check('★ 東京は出ない（active が0件なので）', !now.includes('東京'),
+  `東京のレコード ${recs.filter(c => c.prefecture === '東京').length}件 / うち active ${recs.filter(c => c.prefecture === '東京' && c.status === 'active').length}件`);
 
-console.log('\n■ ★ 千葉を active にしたら出る（＝判定がデータで効いている）');
-const withActive = recs.map(c => c.prefecture === '千葉' && c.id === 'orange-mura-auto' ? { ...c, status: 'active' } : c);
+console.log('\n■ ★ 東京を active にしたら出る（＝判定がデータで効いている）');
+// 「出ない」ことだけを見ても、判定がデータで効いているのか、ただ書いていないだけなのか区別できない。
+// **架空の東京レコードを1件 active で足して出ることを見る。**data/ には何も書かない。
+const withActive = [...recs, {
+  id: 'mock-tokyo-only-in-this-test', slug: 'mock-tokyo', name: '（この検査の中だけの架空レコード）',
+  prefecture: '東京', area: '奥多摩', status: 'active',
+}];
 const after = derive(withActive);
 console.log('   → ' + after.join(' / '));
-check('千葉が選択肢に出る', after.includes('千葉'));
+check('東京が選択肢に出る', after.includes('東京'));
 check('★ 1件 active にするだけで出る（ハードコードで隠していない証拠）',
-  after.includes('千葉') && !now.includes('千葉'));
-check('並び順は PREFECTURE_ORDER のまま（末尾に千葉）',
+  after.includes('東京') && !now.includes('東京'));
+check('並び順は PREFECTURE_ORDER のまま（末尾に東京）',
   after.join(',') === ['全部', ...ORDER].join(','), after.join(' / '));
 
 console.log('\n■ 逆方向: active が消えたら選択肢も消える');
