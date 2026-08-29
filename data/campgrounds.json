@@ -48,7 +48,8 @@
     "tel": "090-4825-5111",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "ootaki",
@@ -99,7 +100,8 @@
     "tel": "0465-78-3422",
     "lastVerified": "2026-08-11",
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "gandahara",
@@ -151,7 +153,8 @@
     "tel": "090-3535-2346",
     "lastVerified": "2026-08-07",
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "tanukiko",
@@ -164,9 +167,9 @@
     "lat": 35.3486,
     "lng": 138.5707,
     "coordsVerified": true,
-    "priceMin": 4000,
-    "priceMax": 5000,
-    "priceNote": "2026年4月1日利用分から料金改定が入っており、data の金額（1サイト4,000円〜）の裏が取れない。改定後はテント1張3,500円＋サイト使用料200円/名、土曜・GW・夏季・連休はトップシーズン料1,000円/張が加算という情報があるが、施設公式の料金ページで確認できていない",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "2026年4月1日利用分から料金改定が入っており、data の金額（1サイト4,000円〜）の裏が取れない。改定後はテント1張3,500円＋サイト使用料200円/名、土曜・GW・夏季・連休はトップシーズン料1,000円/張が加算という情報があるが、施設公式の料金ページで確認できていない／2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -201,9 +204,12 @@
     "officialUrl": "https://tanukiko.com/",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/11868",
     "tel": "0544-27-5240",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
-    "telNote": "田貫湖キャンプ場事務局（富士宮市観光協会）。施設直通ではない。0544-52-0155 は E-BIKE レンタル予約の番号"
+    "telNote": "田貫湖キャンプ場事務局（富士宮市観光協会）。施設直通ではない。0544-52-0155 は E-BIKE レンタル予約の番号",
+    "priceVerified": false,
+    "needsPrice": true,
+    "scoresVerified": false
   },
   {
     "id": "eichinomori",
@@ -255,7 +261,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "closedDays": "月曜（祝日・連休時は変更になる場合あり）"
+    "closedDays": "月曜（祝日・連休時は変更になる場合あり）",
+    "scoresVerified": false
   },
   {
     "id": "sorairo",
@@ -308,7 +315,8 @@
     "telNote": "受付時間 9:15〜17:00",
     "lastVerified": "2026-08-11",
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "houzan",
@@ -362,7 +370,8 @@
     "priceVerified": true,
     "telNote": "受付営業時間 8:30〜20:00",
     "closedDays": "火曜",
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "kouan",
@@ -413,7 +422,8 @@
     "tel": "0556-38-0117",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "motosulakeside",
@@ -465,7 +475,8 @@
     "telNote": "メール対応のみ: motosulakeside@gmail.com",
     "lastVerified": "2026-08-16",
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "picafuji-saiko",
@@ -517,7 +528,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "closedDays": "水曜午後・木曜（変動する場合あり）"
+    "closedDays": "水曜午後・木曜（変動する場合あり）",
+    "scoresVerified": false
   },
   {
     "id": "wellcamp-nishitanzawa",
@@ -571,7 +583,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "telNote": "現地 0465-78-3181 のほかコールセンター 0465-20-7065（9:00〜17:30）"
+    "telNote": "現地 0465-78-3181 のほかコールセンター 0465-20-7065（9:00〜17:30）",
+    "scoresVerified": false
   },
   {
     "id": "shindo",
@@ -622,7 +635,8 @@
     "tel": "042-787-0141",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "aone",
@@ -673,7 +687,8 @@
     "tel": "042-787-1380",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "kannogawa",
@@ -716,19 +731,22 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "fishing": true,
+      "fishingNote": "場内のマス・ヤマメ・イワナ釣り／つかみ取り（施設公式）"
     },
     "season": "通年",
     "soloComment": "キャンプと管理釣り場が一体の渓流サイト。全区画が神之川沿いの河原にあり、場内でマス釣りやつかみ取りができる。温水シャワーと家族風呂が揃い入浴も困らない。",
     "officialUrl": "https://kannogawa.jp/",
     "reservationUrl": "https://www.nap-camp.com/kanagawa/11648",
     "tel": "042-787-2116",
-    "lastVerified": "2026-08-06",
+    "lastVerified": "2026-08-26",
     "cautions": [
       "予約日から1週間以上前の場合は往復はがきでの受付"
     ],
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "fumotoppara",
@@ -778,7 +796,8 @@
     "tel": "0544-52-2112",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "asagiri-jamboree",
@@ -828,7 +847,8 @@
     "tel": "0544-52-2066",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "pica-omotefuji",
@@ -881,7 +901,8 @@
     "tel": "0544-58-6881",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "doshi-no-mori",
@@ -931,7 +952,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "telNote": "現地携帯 080-4444-2440 もある。**要確認**: 道志村役場 観光情報サイト（自治体公式）は 0554-52-2440 と掲載（2026-08-16 実測）。施設公式 doshinomori.jp が403で三点目を取れていない。電話は「施設公式 > 自治体公式」の順で見るため、村公式1本では書き換えない"
+    "telNote": "現地携帯 080-4444-2440 もある。**要確認**: 道志村役場 観光情報サイト（自治体公式）は 0554-52-2440 と掲載（2026-08-16 実測）。施設公式 doshinomori.jp が403で三点目を取れていない。電話は「施設公式 > 自治体公式」の順で見るため、村公式1本では書き換えない",
+    "scoresVerified": false
   },
   {
     "id": "saiko-jiyu",
@@ -983,7 +1005,8 @@
     "telNote": "電話は問い合わせのみ・予約はWEBのみ",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "yamanakako-misaki",
@@ -1036,7 +1059,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-11 調査。施設公式 https://camp.sotosotodays.com/yamanakako-misaki/ に**住所と料金の記載が無く**、電話（0555-65-7981）と予約必須しか確認できなかった。address「山中湖村平野2431-2」と priceMin 6,000 の裏が取れていない。正式名称も施設公式は「sotosotodays CAMPGROUNDS 山中湖みさき」で data と割れている"
+    "needsVerifyNote": "2026-08-11 調査。施設公式 https://camp.sotosotodays.com/yamanakako-misaki/ に**住所と料金の記載が無く**、電話（0555-65-7981）と予約必須しか確認できなかった。address「山中湖村平野2431-2」と priceMin 6,000 の裏が取れていない。正式名称も施設公式は「sotosotodays CAMPGROUNDS 山中湖みさき」で data と割れている",
+    "scoresVerified": false
   },
   {
     "id": "takizawaso",
@@ -1051,7 +1075,7 @@
     "coordsVerified": true,
     "priceMin": 2600,
     "priceMax": 2600,
-    "priceNote": "公式FAQ の総額。車1台1人でテント泊 2,600円（内訳: フリーサイト1,200円 + 宿泊施設費300円 + 駐車料）。**駐車料は公式に単独表示が無いため、内訳から逆算しない。** **上限は未確認。**priceMax は型が number のため priceMin と同値（2,600）を入れてある。旧 priceMax 3300 は基準不明のため破棄。出典: takizawaen.com 公式FAQ（Manus 経由 2026-08-16。当方は施設公式が403で未読）。旧値 priceMin 1400 / 「施設利用料300円+フリーサイト1,100円〜」",
+    "priceNote": "車1台・1人でテント泊2,600円（施設公式FAQ）。フリーサイトは当日受付のみ",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -1084,9 +1108,14 @@
     "soloComment": "秦野市街から車15分の水無川沿いキャンプ場。フリーサイトは予約不要で思い立ったら行ける手軽さが魅力。車1台1人でテント泊2,600円で、場内の露天風呂まで込みなのは悪くない。夜の露天風呂から星を眺めながら一人時間を満喫できる。フリーサイトへは水無川の一本橋を渡るので、荷物が多いソロは往復の回数を減らす工夫が要る。",
     "officialUrl": "https://takizawaen.com/",
     "tel": "0463-75-0900",
-    "lastVerified": "2026-08-16",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
-    "priceVerified": false
+    "priceVerified": true,
+    "needsPrice": false,
+    "source": [
+      "公式FAQ（料金・予約・設備） https://takizawaen.com/"
+    ],
+    "scoresVerified": false
   },
   {
     "id": "aonohara-auto",
@@ -1099,9 +1128,9 @@
     "lat": 35.5693204,
     "lng": 139.2003742,
     "coordsVerified": true,
-    "priceMin": 1500,
-    "priceMax": 2500,
-    "priceNote": "施設公式に料金表が無く、金額の裏が取れていない。公式にあるのは「宿泊利用は日帰り料金の2倍」（バイク入場料 日帰り500円→宿泊1,000円）という記載のみ。入場料・駐車料・サイト使用料の3本立てなので、ソロでも3種類の合計になる",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "施設公式に料金表が無く、金額の裏が取れていない。公式にあるのは「宿泊利用は日帰り料金の2倍」（バイク入場料 日帰り500円→宿泊1,000円）という記載のみ。入場料・駐車料・サイト使用料の3本立てなので、ソロでも3種類の合計になる／2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -1133,9 +1162,12 @@
     "season": "通年（冬季12月下旬〜3月初旬は年末年始を除く土日祝のみ。年末年始休業）",
     "soloComment": "道志川沿いの予約不要のオートキャンプ場（小屋付きサイトのみ要予約）。入場料・駐車料・サイト使用料の3本立てで、宿泊は日帰り料金の2倍になる。平日の朝から到着すれば川沿いの好ポジションを確保できる。冬季（12月下旬〜3月初旬）は年末年始を除く土日祝のみの営業で、水道凍結のためシャワーも使えない。夜間入場は禁止。",
     "tel": "042-787-0477",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
-    "officialUrl": "https://www.aonohara-acl.jp/index.html"
+    "officialUrl": "https://www.aonohara-acl.jp/index.html",
+    "priceVerified": false,
+    "needsPrice": true,
+    "scoresVerified": false
   },
   {
     "id": "nishitanzawa-mountbridge",
@@ -1186,7 +1218,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://mount-bridge.com/",
-    "telNote": "携帯 090-7738-1407 もある"
+    "telNote": "携帯 090-7738-1407 もある",
+    "scoresVerified": false
   },
   {
     "id": "sagamiko-kyuyomura",
@@ -1236,7 +1269,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "telNote": "ハイシーズンは 042-685-1371、オフシーズン（冬季）は 042-685-0141。予約受付は8:00〜17:00"
+    "telNote": "ハイシーズンは 042-685-1371、オフシーズン（冬季）は 042-685-0141。予約受付は8:00〜17:00",
+    "scoresVerified": false
   },
   {
     "id": "miyagase-village",
@@ -1249,9 +1283,9 @@
     "lat": 35.5332,
     "lng": 139.2796,
     "coordsVerified": true,
-    "priceMin": 2500,
-    "priceMax": 6000,
-    "priceNote": "施設公式は「場所貸しプラン（大人2名・車1台込み）6,200〜8,200円、人数・車1台増ごとに+1,000円」というサイト単位課金。予約サイトには「芝生テントサイトE3【ソロ専用】1,500円〜」があり、ソロ1名の総額がどちらになるか確定できていない",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "施設公式は「場所貸しプラン（大人2名・車1台込み）6,200〜8,200円、人数・車1台増ごとに+1,000円」というサイト単位課金。予約サイトには「芝生テントサイトE3【ソロ専用】1,500円〜」があり、ソロ1名の総額がどちらになるか確定できていない／2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -1283,10 +1317,13 @@
     "closedDays": "火曜",
     "soloComment": "宮ヶ瀬湖のほとりの隠れ家的キャンプ場。温水シャワー無料・Wi-Fi完備でコスパが高い。湖面の朝霧と静けさはまさに神奈川の秘境感。ライダーにも人気で週末も比較的静か。火曜定休に注意。",
     "tel": "070-9022-3477",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
     "officialUrl": "https://miyagase-village.com/",
-    "telNote": "070-9022-3477 はカフェ。オフィスは 03-5430-3462"
+    "telNote": "070-9022-3477 はカフェ。オフィスは 03-5430-3462",
+    "priceVerified": false,
+    "needsPrice": true,
+    "scoresVerified": false
   },
   {
     "id": "tanzawako-lodge",
@@ -1344,7 +1381,8 @@
       "車の出し入れは19:00まで"
     ],
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "yataro-camp",
@@ -1357,9 +1395,9 @@
     "lat": 35.4781,
     "lng": 139.2191,
     "coordsVerified": true,
-    "priceMin": 2000,
-    "priceMax": 4500,
-    "priceNote": "施設公式の料金ページにあるのは管理料金（大人600円・子供500円）と持ち込みバーベキュー1,100円で、テントサイトの宿泊料金が無い。駐車場代はかからないと明記されており、data の「大人1,000円+車1,000円」は一次情報と合わない",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "施設公式の料金ページにあるのは管理料金（大人600円・子供500円）と持ち込みバーベキュー1,100円で、テントサイトの宿泊料金が無い。駐車場代はかからないと明記されており、data の「大人1,000円+車1,000円」は一次情報と合わない／2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -1386,17 +1424,22 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "直火禁止。施設が指定する場所で脚付きのコンロなどを使用する"
+      "bonfireNote": "直火禁止。施設が指定する場所で脚付きのコンロなどを使用する",
+      "fishing": true,
+      "fishingNote": "場内の魚釣り・つかみ取り（施設公式。天候・営業日は要確認）"
     },
     "season": "3月〜11月（12月〜2月は休業期間）",
     "soloComment": "清川村・谷太郎川沿いの施設。釣りと魚のつかみ取り、屋根付きバーベキュー、コテージとバンガローでの宿泊ができる。直火は禁止で、施設が指定する場所で脚付きのコンロを使う。12月から2月は休業期間で、営業期間中も木曜と第1第3水曜が定休。",
     "tel": "046-288-3715",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
     "officialUrl": "https://k-riverland.jp/",
     "closedDays": "毎週木曜・第1第3水曜（11月は毎週水木）",
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-11 調査。施設は実在する（清川村公式に掲載 https://www.town.kiyokawa.kanagawa.jp/soshiki/sangyokanko/sisetu/3837.html ）が、**テント泊ができるかが確認できない。** 施設公式 https://k-riverland.jp/price/ の料金はBBQ・コテージ・バンガロー・レンタルのみで、予約サイトの施設タイプも「バンガロー / ロッジ・ログハウス・コテージ」だけ。§6-25 の業態確認が要る"
+    "needsVerifyNote": "2026-08-11 調査。施設は実在する（清川村公式に掲載 https://www.town.kiyokawa.kanagawa.jp/soshiki/sangyokanko/sisetu/3837.html ）が、**テント泊ができるかが確認できない。** 施設公式 https://k-riverland.jp/price/ の料金はBBQ・コテージ・バンガロー・レンタルのみで、予約サイトの施設タイプも「バンガロー / ロッジ・ログハウス・コテージ」だけ。§6-25 の業態確認が要る",
+    "priceVerified": false,
+    "needsPrice": true,
+    "scoresVerified": false
   },
   {
     "id": "oiso-longbeach",
@@ -1549,9 +1592,9 @@
     "lat": 35.3419469,
     "lng": 138.5832729,
     "coordsVerified": true,
-    "priceMin": 3200,
-    "priceMax": 6000,
-    "priceNote": "テントサイト 1泊1名 平日2,700円／休日3,100円 ＋ 駐車料 車500円（バイク300円）。平日ソロで計3,200円。ゴミ捨て場が無く全て持ち帰り（焚き火の灰のみ灰捨て場あり）",
+    "priceMin": 3795,
+    "priceMax": 3960,
+    "priceNote": "2026年4月1日以降の一般大人テントサイト3,245円＋普通車駐車料金550円。繁忙期は3,410円＋550円（車利用ソロの通常期総額3,795円〜）",
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -1582,10 +1625,16 @@
     "season": "通年",
     "soloComment": "富士山南麓・標高約650mのYMCA施設内キャンプ場。大浴場（440円）と充実した共用設備が魅力。週末より平日がお得で静か。テント設営後に温かい大浴場に浸かれる安心感がソロ入門者にも◎。",
     "tel": "0544-54-1151",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "officialUrl": "https://www.yokohamaymca.org/fujisan-global/"
+    "officialUrl": "https://www.yokohamaymca.org/fujisan-global/",
+    "needsPrice": false,
+    "source": [
+      "2026年度料金 https://www.yokohamaymca.org/fujisan-global/charge/",
+      "公式サイト https://www.yokohamaymca.org/fujisan-global/"
+    ],
+    "scoresVerified": false
   },
   {
     "id": "kawazu-nanadaru",
@@ -1636,7 +1685,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://www.nanatakiauto.com/",
-    "closedDays": "なし"
+    "closedDays": "なし",
+    "scoresVerified": false
   },
   {
     "id": "kumomi-auto",
@@ -1687,7 +1737,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "officialUrl": "https://www.kumomi-sunset.com/"
+    "officialUrl": "https://www.kumomi-sunset.com/",
+    "scoresVerified": false
   },
   {
     "id": "onoji-family",
@@ -1738,7 +1789,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://oonoji.co.jp/camp/",
-    "closedDays": "火曜・水曜"
+    "closedDays": "火曜・水曜",
+    "scoresVerified": false
   },
   {
     "id": "darumayama-kogen",
@@ -1789,7 +1841,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "officialUrl": "https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/928.html"
+    "officialUrl": "https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/928.html",
+    "scoresVerified": false
   },
   {
     "id": "fujigane-kogen",
@@ -1932,7 +1985,8 @@
     "tel": "0538-59-3180",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "izukogen-auto",
@@ -2071,7 +2125,8 @@
     "tel": "0555-87-2005",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "tsubakiso-auto",
@@ -2119,7 +2174,8 @@
     "tel": "0554-52-2056",
     "lastVerified": "2026-08-11",
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "komeidoso-auto",
@@ -2168,7 +2224,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "telNote": "ショートメッセージでの予約も受け付けている"
+    "telNote": "ショートメッセージでの予約も受け付けている",
+    "scoresVerified": false
   },
   {
     "id": "kiyosato-oka",
@@ -2216,7 +2273,8 @@
     "tel": "0551-48-2300",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "doshi-keikoku",
@@ -2264,7 +2322,8 @@
     "tel": "042-787-0088",
     "lastVerified": "2026-08-11",
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "muraei-yamanakako",
@@ -2316,7 +2375,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://www.nap-camp.com/yamanashi/11265",
-    "telNote": "080-3347-2038 もある"
+    "telNote": "080-3347-2038 もある",
+    "scoresVerified": false
   },
   {
     "id": "sankoso-auto",
@@ -2328,9 +2388,9 @@
     "address": "山梨県南都留郡道志村11777",
     "lat": 35.4875176,
     "lng": 138.9678346,
-    "priceMin": 3400,
-    "priceMax": 4400,
-    "priceNote": "区画課金＋人数課金の併用。ソロ1名の総額は「区画サイト料＋入場料600円」。入場料600円（5歳以上）・電源使用時+1,100円・車追加1台800円・アーリーチェックイン+1,000円は施設公式で確認済み。区画サイト料の金額だけが施設公式の料金表（JS描画）から取得できず未確定で、第三者ブログでは平日2,800〜3,300円／土日祝・夏季3,300〜3,800円。priceMin/priceMax はこれに入場料を足した推定値。施設公式には「ソロキャン直前割 3,100円（入場料込・空きがあれば前々日から）」の記載がある。支払いは現金のみ",
+    "priceMin": 3100,
+    "priceMax": 3100,
+    "priceNote": "空きがある場合、前々日から予約できる「ソロキャン直前割」3,100円（入場料込み）。通常の区画料金は公式確認中",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -2367,14 +2427,20 @@
     "season": "通年",
     "soloComment": "道志川沿いの区画オートキャンプ場で全25サイト。うち15区画には個別の水道流し台が付き、一部のサイトは電源が使える。直火は禁止なので焚き火台を持参する。トイレは換気システム付きの洋式で、コインシャワーもある（12月から春は使用不可）。予約は電話のみ、水曜は定休で、支払いは現金のみ。空きがあれば前々日からソロキャン直前割が使える。",
     "tel": "090-3059-1777",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-08-26",
     "officialUrl": "https://www.sanko2400.com/",
     "closedDays": "水曜日",
     "cautions": [
       "通年営業だが、積雪・地盤凍結により閉場する場合がある。12月から春はシャワーが使えない https://www.sanko2400.com/"
     ],
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "priceVerified": true,
+    "needsPrice": false,
+    "source": [
+      "公式料金・設備案内 https://www.sanko2400.com/"
+    ],
+    "scoresVerified": false
   },
   {
     "id": "kawaguchiko-hanto",
@@ -2480,7 +2546,8 @@
     "cautions": [
       "川遊びだけの利用はできない https://www.okudoshi.net/ryo/ryoukin.html"
     ],
-    "coordsVerified": true
+    "coordsVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "woodsman-camp",
@@ -2535,7 +2602,8 @@
       "料金は施設公式の料金表で確認（2026-08-12） https://woodsman.jp/menu 。旧データの「ソロサイト3,500円〜」は週末料金のみを指しており、平日の2,500円が反映されていなかった",
       "2026-08-12: 正式名称を施設公式に合わせて「WOODSMAN CAMP」→「WOODSMAN CAMPGROUND」に、住所を「道志村2438」→「道志村馬場5876」に修正 https://woodsman.jp/ 。旧住所の出所は不明",
       "ハイシーズンを除き火曜・水曜が定休"
-    ]
+    ],
+    "scoresVerified": false
   },
   {
     "id": "ashinoko-camp-mura",
@@ -2584,7 +2652,8 @@
     "tel": "0460-84-8279",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "richland-kiyokawa",
@@ -2634,7 +2703,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "officialUrl": "https://www.richland-kiyokawa-camp.com/"
+    "officialUrl": "https://www.richland-kiyokawa-camp.com/",
+    "scoresVerified": false
   },
   {
     "id": "karasawa-miyagase",
@@ -2685,7 +2755,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://karasawa-camp.sakura.ne.jp/",
-    "telNote": "携帯 080-4355-1318 もある"
+    "telNote": "携帯 080-4355-1318 もある",
+    "scoresVerified": false
   },
   {
     "id": "hidamari-yamakita",
@@ -2741,7 +2812,8 @@
       "label": "町外は割高",
       "note": "山北町民はオートキャンプ4,000円〜、町外は6,000円〜。デイキャンプも町民1,000円／町外2,000円",
       "source": "山北町公式 https://www.town.yamakita.kanagawa.jp/0000000068.html"
-    }
+    },
+    "scoresVerified": false
   },
   {
     "id": "konomasawa-camp",
@@ -2791,7 +2863,8 @@
     "lastVerified": "2026-08-06",
     "officialUrl": "https://konomasawacamp.co.jp/",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "chojayashiki-camp",
@@ -2988,7 +3061,8 @@
     "tel": "0463-87-9020",
     "lastVerified": "2026-08-07",
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "mitsumata-camp",
@@ -3048,9 +3122,9 @@
     "lat": 35.6197,
     "lng": 139.2548,
     "coordsVerified": true,
-    "priceMin": 3000,
-    "priceMax": 6000,
-    "priceNote": "大人1,500円+サイト1,500円〜",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "大人1,500円+サイト1,500円〜／一次情報の料金根拠を確認できないため要確認。",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -3081,9 +3155,10 @@
     "season": "4月〜11月",
     "soloComment": "",
     "lastVerified": "2026-08-11",
-    "priceVerified": true,
+    "priceVerified": false,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。同名の「カブト虫の森」は和歌山県日高川町の施設で閉館済み。座標は八王子市南浅川町を指し、address（相模原市緑区牧野4015）と9.8km離れている。2026-08-07 追調査: データの住所（牧野4015）は牧野地区の実在施設（亀見橋バカンス村12822・藤野芸術の家4819）のどれとも一致せず、借用元が特定できない 2026-08-11 判断: district-sweep.js で相模原市の全 L1・L2・L3 に一致せず（ORPHAN） https://www.e-sagamihara.com/camp/ ／ https://midori.city.sagamihara.kanagawa.jp/category/play/camp/ 。相模原市は L1 網羅率80%で、ORPHAN を判定として読める2市町村の1つ（もう1つは道志村75%。scripts/sweep-l1-coverage-2026-08.md）。番地はどこの実在施設のものでもない（捏造型・§6-16）。**ただし ORPHAN の誤検出率は17%あるため、削除ではなく unverified とした。実在が確認できたら active に戻すこと。**地区の突き合わせは scripts/sweep-相模原市緑区牧野.md"
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。同名の「カブト虫の森」は和歌山県日高川町の施設で閉館済み。座標は八王子市南浅川町を指し、address（相模原市緑区牧野4015）と9.8km離れている。2026-08-07 追調査: データの住所（牧野4015）は牧野地区の実在施設（亀見橋バカンス村12822・藤野芸術の家4819）のどれとも一致せず、借用元が特定できない 2026-08-11 判断: district-sweep.js で相模原市の全 L1・L2・L3 に一致せず（ORPHAN） https://www.e-sagamihara.com/camp/ ／ https://midori.city.sagamihara.kanagawa.jp/category/play/camp/ 。相模原市は L1 網羅率80%で、ORPHAN を判定として読める2市町村の1つ（もう1つは道志村75%。scripts/sweep-l1-coverage-2026-08.md）。番地はどこの実在施設のものでもない（捏造型・§6-16）。**ただし ORPHAN の誤検出率は17%あるため、削除ではなく unverified とした。実在が確認できたら active に戻すこと。**地区の突き合わせは scripts/sweep-相模原市緑区牧野.md",
+    "needsPrice": true
   },
   {
     "id": "sagamiko-pleasure-camp",
@@ -3144,9 +3219,9 @@
     "lat": 35.6145,
     "lng": 139.2217,
     "coordsVerified": true,
-    "priceMin": 1500,
-    "priceMax": 3000,
-    "priceNote": "大人500円+駐車1,000円〜",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "大人500円+駐車1,000円〜／一次情報の料金根拠を確認できないため要確認。",
     "scores": {
       "quietness": 5,
       "scenery": 3,
@@ -3178,9 +3253,10 @@
     "soloComment": "",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true,
+    "priceVerified": false,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧に該当名なし https://www.e-sagamihara.com/camp/ 。**「奥牧野キャンプ場」の名で NAVITIME・タウンページに出る「牧野12822 / 042-787-0242」は、実在する別施設「亀見橋バカンス村」のものだった** https://www.e-sagamihara.com/camp/camp-627/ 。データの住所（牧野2108）は、牧野地区の実在施設（バカンス村12822・藤野芸術の家4819）のどれとも一致しない 2026-08-11 判断: district-sweep.js で相模原市の全 L1・L2・L3 に一致せず（ORPHAN） https://www.e-sagamihara.com/camp/ ／ https://midori.city.sagamihara.kanagawa.jp/category/play/camp/ 。相模原市は L1 網羅率80%で、ORPHAN を判定として読める2市町村の1つ（もう1つは道志村75%。scripts/sweep-l1-coverage-2026-08.md）。番地はどこの実在施設のものでもない（捏造型・§6-16）。**ただし ORPHAN の誤検出率は17%あるため、削除ではなく unverified とした。実在が確認できたら active に戻すこと。**地区の突き合わせは scripts/sweep-相模原市緑区牧野.md"
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧に該当名なし https://www.e-sagamihara.com/camp/ 。**「奥牧野キャンプ場」の名で NAVITIME・タウンページに出る「牧野12822 / 042-787-0242」は、実在する別施設「亀見橋バカンス村」のものだった** https://www.e-sagamihara.com/camp/camp-627/ 。データの住所（牧野2108）は、牧野地区の実在施設（バカンス村12822・藤野芸術の家4819）のどれとも一致しない 2026-08-11 判断: district-sweep.js で相模原市の全 L1・L2・L3 に一致せず（ORPHAN） https://www.e-sagamihara.com/camp/ ／ https://midori.city.sagamihara.kanagawa.jp/category/play/camp/ 。相模原市は L1 網羅率80%で、ORPHAN を判定として読める2市町村の1つ（もう1つは道志村75%。scripts/sweep-l1-coverage-2026-08.md）。番地はどこの実在施設のものでもない（捏造型・§6-16）。**ただし ORPHAN の誤検出率は17%あるため、削除ではなく unverified とした。実在が確認できたら active に戻すこと。**地区の突き合わせは scripts/sweep-相模原市緑区牧野.md",
+    "needsPrice": true
   },
   {
     "id": "mikagi-camp",
@@ -3193,9 +3269,9 @@
     "lat": 35.5893,
     "lng": 139.1892,
     "coordsVerified": true,
-    "priceMin": 2500,
-    "priceMax": 4500,
-    "priceNote": "大人1,000円+サイト1,500円〜",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "大人1,000円+サイト1,500円〜／一次情報の料金根拠を確認できないため要確認。",
     "scores": {
       "quietness": 4,
       "scenery": 3,
@@ -3227,9 +3303,10 @@
     "soloComment": "相模原インター近くの便利なキャンプ場。渓流沿いの涼しい環境で夏でも快適。相模湖・道志川・丹沢へのアクセスの良さから各方面への起点として使い勝手が良い。日帰りのついでに使えるコスパの良さも魅力。",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true,
+    "priceVerified": false,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。「三ヶ木」は相模原市緑区の実在の地名だが、その名のキャンプ場の一次情報が出ない 2026-08-11 追調査: **津久井地域観光協会のキャンプ場一覧7件にも該当名なし** https://www.tsukui.ne.jp/kankou/camp.html （青野原オートキャンプ場組合/新戸/緑の休暇村青根/神之川キャンプマス釣り場/このまさわ/うらたんざわ渓流釣場/此の間沢渓流園）。検索で「三ヶ木」が出るのは新戸キャンプ場への路線バスの行き先としてだけ。相模原市は L1 網羅率80%で ORPHAN を判定として読める2市町村の1つ（§6-20）。"
+    "needsVerifyNote": "2026-08-07 調査。相模原市観光協会のキャンプ場一覧13件に該当名なし https://www.e-sagamihara.com/camp/ 。「三ヶ木」は相模原市緑区の実在の地名だが、その名のキャンプ場の一次情報が出ない 2026-08-11 追調査: **津久井地域観光協会のキャンプ場一覧7件にも該当名なし** https://www.tsukui.ne.jp/kankou/camp.html （青野原オートキャンプ場組合/新戸/緑の休暇村青根/神之川キャンプマス釣り場/このまさわ/うらたんざわ渓流釣場/此の間沢渓流園）。検索で「三ヶ木」が出るのは新戸キャンプ場への路線バスの行き先としてだけ。相模原市は L1 網羅率80%で ORPHAN を判定として読める2市町村の1つ（§6-20）。",
+    "needsPrice": true
   },
   {
     "id": "yadoriki-camp",
@@ -3292,9 +3369,9 @@
     "lat": 35.4082,
     "lng": 139.0678,
     "coordsVerified": true,
-    "priceMin": 2000,
-    "priceMax": 4000,
-    "priceNote": "大人800円+サイト1,200円〜",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "大人800円+サイト1,200円〜／一次情報の料金根拠を確認できないため要確認。",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -3326,9 +3403,10 @@
     "soloComment": "地元NPOが管理する秘境キャンプ場。中津川上流の深い渓谷に位置しアクセスが悪い分、訪れる人が少なく圧倒的な静寂が待っている。古代の里山風景の中でのソロキャンプは格別の体験。紅葉シーズンは穴場。",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true,
+    "priceVerified": false,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。山北町公式の「キャンプ場の紹介」に該当名なし https://www.town.yamakita.kanagawa.jp/0000000232.html 。「虫沢」は山北町の実在の地名だが、その名のキャンプ場の一次情報が出ない 2026-08-11 追調査: 山北町観光協会の「自然に泊まる」一覧にも該当名なし https://www.yamakita.net/stay/natural.php 。**ただし山北町の L1 網羅率は63%（観光協会）/38%（町公式）で、ORPHAN を判定として読める7割の水準に達していない**（§6-20）。「一覧に無い」以上の根拠が取れていない。5件の中でいちばん判定の格が低い。"
+    "needsVerifyNote": "2026-08-07 調査。山北町公式の「キャンプ場の紹介」に該当名なし https://www.town.yamakita.kanagawa.jp/0000000232.html 。「虫沢」は山北町の実在の地名だが、その名のキャンプ場の一次情報が出ない 2026-08-11 追調査: 山北町観光協会の「自然に泊まる」一覧にも該当名なし https://www.yamakita.net/stay/natural.php 。**ただし山北町の L1 網羅率は63%（観光協会）/38%（町公式）で、ORPHAN を判定として読める7割の水準に達していない**（§6-20）。「一覧に無い」以上の根拠が取れていない。5件の中でいちばん判定の格が低い。",
+    "needsPrice": true
   },
   {
     "id": "camp-baird",
@@ -3377,7 +3455,8 @@
     "tel": "0558-73-1225",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "mobility-park-izu",
@@ -3387,8 +3466,8 @@
     "area": "伊豆の国",
     "status": "active",
     "address": "静岡県伊豆の国市長者原1445-481",
-    "lat": 35.0641,
-    "lng": 138.9267,
+    "lat": 35.0092752,
+    "lng": 139.0229702,
     "coordsVerified": true,
     "priceMin": 5500,
     "priceMax": 12000,
@@ -3424,10 +3503,14 @@
     "season": "通年",
     "soloComment": "富士山と伊豆の山々を見渡す高台に位置する大型キャンプ場。本格的な設備と広大なフィールドが魅力。高規格キャンプ場として人気が高く、近隣温泉への割引サービスも付いてくる。",
     "tel": "0558-79-0213",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-08-26",
     "priceVerified": true,
     "officialUrl": "https://mobility-park.jp/",
-    "needsCoord": true
+    "needsCoord": false,
+    "source": [
+      "公式サイト・地図リンク https://mobility-park.jp/"
+    ],
+    "scoresVerified": false
   },
   {
     "id": "pica-fuji-greenpa",
@@ -3476,7 +3559,8 @@
     "tel": "0555-30-4580",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "minamiizu-camping-terrace",
@@ -3527,7 +3611,8 @@
     "officialUrl": "https://camp.imagining.jp/",
     "cautions": [
       "料金は施設公式の料金ページで確認（2026-08-12） https://camp.imagining.jp/price2/ 。旧データの「ソロサイト5,000円〜」は施設使用料が抜けており、実際のソロ最安は7,700円で2,700円低く出ていた"
-    ]
+    ],
+    "scoresVerified": false
   },
   {
     "id": "izu-kakure-auto",
@@ -3578,7 +3663,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "officialUrl": "https://kakure-camp.corpkj.com/"
+    "officialUrl": "https://kakure-camp.corpkj.com/",
+    "scoresVerified": false
   },
   {
     "id": "hamaoka-sakyuu-camp",
@@ -3630,7 +3716,8 @@
     "tel": "0537-85-2418",
     "cautions": [
       "住所は御前崎市池新田9122-1。旧データの「白羽3870-1」は誤り https://www.omaezaki.gr.jp/contents/detail.html?s=1090"
-    ]
+    ],
+    "scoresVerified": false
   },
   {
     "id": "fujikawa-camp",
@@ -3674,14 +3761,15 @@
       "nearbyShop": ""
     },
     "season": "通年",
-    "soloComment": "富士川西岸・野田山の高台にある富士市の公園内キャンプ場で、標高は約500m。「日本一高い山と日本一深い海の間」を掲げるとおり、富士山と駿河湾の両方を見渡せる。全サイトで焚き火ができ、展望オートサイトからの眺めが目当てになる。2025年9月に区画が約1.5倍へ拡張された。無料Wi-Fiあり。ソロで1区画を使うとサイト利用料が1,000円割引になる。",
+    "soloComment": "富士川西岸・野田山の高台にある富士市の公園内キャンプ場で、標高は約500m。富士山と駿河湾を見渡せる景観が特徴。全サイトで焚き火ができ、展望オートサイトからの眺めが目当てになる。2025年9月に区画が約1.5倍へ拡張された。無料Wi-Fiあり。ソロで1区画を使うとサイト利用料が1,000円割引になる。",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://fujikawa-camp.jp/",
     "cautions": [
       "料金は施設公式の料金ページで確認（2026-08-12） https://fujikawa-camp.jp/price/ 。サイト利用料と駐車場使用料が別建てで、旧データの「大人1,000円+サイト1,000円〜」（priceMin 2,000／priceMax 4,000）は1人あたり課金の形になっており、実際の課金体系とも金額とも違っていた"
-    ]
+    ],
+    "scoresVerified": false
   },
   {
     "id": "sumatakyo-camp",
@@ -4212,7 +4300,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "tel": "080-9677-1010",
-    "telNote": "受付 9:00〜18:00"
+    "telNote": "受付 9:00〜18:00",
+    "scoresVerified": false
   },
   {
     "id": "shosenkyo-auto-camp",
@@ -4263,7 +4352,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://syosenkyo-camp.com/",
-    "closedDays": "なし"
+    "closedDays": "なし",
+    "scoresVerified": false
   },
   {
     "id": "motosu-shore-camp",
@@ -4311,7 +4401,8 @@
     "tel": "0555-87-2306",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "kiyosato-chuo-auto",
@@ -4360,7 +4451,8 @@
     "lastVerified": "2026-08-07",
     "officialUrl": "https://autocamp.co.jp/",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "westriver-auto-camp",
@@ -4410,7 +4502,8 @@
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "officialUrl": "https://westriver-camp.com/"
+    "officialUrl": "https://westriver-camp.com/",
+    "scoresVerified": false
   },
   {
     "id": "kawaguchiko-hamanoya-camp",
@@ -4513,7 +4606,8 @@
     "priceVerified": true,
     "officialUrl": "https://retreatcamp-mahoroba.net/",
     "tel": "090-4128-6066",
-    "closedDays": "なし"
+    "closedDays": "なし",
+    "scoresVerified": false
   },
   {
     "id": "pica-fujiyama-camp",
@@ -4562,7 +4656,8 @@
     "tel": "0555-28-6303",
     "lastVerified": "2026-08-11",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "fujigoko-auto-camp",
@@ -4717,9 +4812,9 @@
     "lat": 35.7021,
     "lng": 138.7981,
     "coordsVerified": true,
-    "priceMin": 2500,
-    "priceMax": 5000,
-    "priceNote": "大人1,000円+サイト1,500円〜",
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "大人1,000円+サイト1,500円〜／一次情報の料金根拠を確認できないため要確認。",
     "scores": {
       "quietness": 5,
       "scenery": 4,
@@ -4750,9 +4845,10 @@
     "season": "4月〜11月",
     "soloComment": "甲府盆地を見下ろす山梨市の丘陵地帯に位置するキャンプ場。周辺がブドウ・桃・スモモ畑に囲まれており夏〜秋は果物狩りと組み合わせたフルーツキャンプが楽しめる。甲府盆地の夜景と富士山のシルエットが美しい。",
     "lastVerified": "2026-08-11",
-    "priceVerified": true,
+    "priceVerified": false,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。「牧丘フルーツ村キャンプ場」の名で山梨市公式・富士の国やまなし（県公式）に該当なし。検索で出る「牧丘フルーツセンター」は山梨市牧丘町窪平358の果樹園で別施設 https://www.city.yamanashi.yamanashi.jp/soshiki/5/2246.html 。座標は甲州市塩山中萩原を指し、address（山梨市牧丘町牧平3041）と17.3km離れている 2026-08-11 追調査: 山梨市牧丘町の実在キャンプ場は琴川キャンプ場（杣口2050-1）・乙女高原グリーンロッジ（北原4143-1）・7inch CAMP（北原1786）の3件で、**牧平3041 に該当なし**。名前の近い2件も別物だった —「牧丘フルーツセンター」は果樹園（山梨市牧丘町窪平358）、**「オートキャンプ・フルーツ村」は千葉県君津市旅名96 / 0439-38-2255** https://fruitsvillage.com/ 。"
+    "needsVerifyNote": "2026-08-07 調査。「牧丘フルーツ村キャンプ場」の名で山梨市公式・富士の国やまなし（県公式）に該当なし。検索で出る「牧丘フルーツセンター」は山梨市牧丘町窪平358の果樹園で別施設 https://www.city.yamanashi.yamanashi.jp/soshiki/5/2246.html 。座標は甲州市塩山中萩原を指し、address（山梨市牧丘町牧平3041）と17.3km離れている 2026-08-11 追調査: 山梨市牧丘町の実在キャンプ場は琴川キャンプ場（杣口2050-1）・乙女高原グリーンロッジ（北原4143-1）・7inch CAMP（北原1786）の3件で、**牧平3041 に該当なし**。名前の近い2件も別物だった —「牧丘フルーツセンター」は果樹園（山梨市牧丘町窪平358）、**「オートキャンプ・フルーツ村」は千葉県君津市旅名96 / 0439-38-2255** https://fruitsvillage.com/ 。",
+    "needsPrice": true
   },
   {
     "id": "oshino-hakkai-camp",
@@ -4812,8 +4908,8 @@
     "lat": 35.8124,
     "lng": 138.4621,
     "coordsVerified": true,
-    "priceMin": 0,
-    "priceMax": 0,
+    "priceMin": 1000,
+    "priceMax": 1000,
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -4843,16 +4939,22 @@
     },
     "season": "5月〜10月",
     "soloComment": "日照時間が日本一と公称される明野の高台キャンプ場。夏のひまわり畑と八ヶ岳・南アルプスのパノラマが圧巻。星空観察の条件が良い。八ヶ岳を正面に見ながらの焚き火が格別。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
-    "priceVerified": false,
+    "priceVerified": true,
     "officialUrl": "https://www.pica-resort.jp/akeno/",
     "tel": "0551-25-4451",
     "cautions": [
       "**現在の運営は PICA八ヶ岳明野（旧名: キャンピカ明野ふれあいの里）で、公営ではない。**北杜市公式の施設一覧も「明野ふれあいの里(PICA八ヶ岳明野)」として掲載し、リンク先は PICA の公式サイト https://www.city.hokuto.yamanashi.jp/life/maps/list/1368/ ／ https://www.pica-resort.jp/akeno/",
       "料金は2026-08-12 時点で一次情報から確定できなかった。PICA は区画単位・日付変動制で、公式の料金はオンライン予約カレンダー https://booking.pica-resort.jp/v3/calendar/stay/5 でしか出ない。旧データの「大人500円+サイト1,000円〜」は1人あたり課金の形で、PICA の課金体系と合わない",
       "season「5月〜10月」も要再確認。なっぷは通年営業、PICA公式の営業時間表は火・水定休の通年運用に見える https://www.nap-camp.com/yamanashi/11354"
-    ]
+    ],
+    "priceNote": "PICA八ヶ岳明野「ソロデュオサイト」1泊1サイト1,000円〜。日付・プランにより変動するため予約画面で要確認",
+    "needsPrice": false,
+    "source": [
+      "公式宿泊一覧（料金） https://www.pica-resort.jp/en/akeno/stay/site/index.html"
+    ],
+    "scoresVerified": false
   },
   {
     "id": "hakushu-ojiro-camp",
@@ -4902,7 +5004,8 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "officialUrl": "https://www.verga.info/",
-    "closedDays": "毎週水曜（GW・7月中旬〜8月下旬は無休）"
+    "closedDays": "毎週水曜（GW・7月中旬〜8月下旬は無休）",
+    "scoresVerified": false
   },
   {
     "id": "yanagishima",
@@ -4953,7 +5056,8 @@
     "coordsGsiChecked": true,
     "priceNote": "サイト単位課金（1サイト定員5名。ソロ1名でも同額）。テントサイト1泊 通常期3,200円／繁忙期3,700円。日帰りは通常期2,700円／繁忙期3,200円",
     "closedDays": "火曜（7・8月を除く）。火曜が休日の場合は開場し、翌日以降の直近平日",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "toyanosawa",
@@ -5001,7 +5105,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceNote": "人数課金＋サイト料。キャンプ2,000円＋入場料 大人900円・子供700円 → ソロ1名1泊2,900円。デイキャンプ1,000円＋入場料大人500円。バンガロー8,000〜10,000円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "suigennnomori",
@@ -5051,7 +5156,8 @@
     "officialUrl": "https://www.doshisuigen-mori.com/",
     "priceNote": "区画課金。テントサイト16,500円〜（ソロ使用時8,800円〜）、キャビン13,200円〜（ソロ使用時8,800円〜）。全サイト120㎡以上、24時間無料のシャワー室あり",
     "closedDays": "不定休",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "pica-sagamiko",
@@ -5097,10 +5203,13 @@
     "officialUrl": "https://www.sagamiko-resort.jp/camp/",
     "reservationUrl": "https://www.sagamiko-resort.jp/camp/",
     "tel": "0555-30-4580",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
     "closedDays": "毎週木曜（祝日や春・夏・冬休みは営業）",
-    "needsPrice": true
+    "needsPrice": true,
+    "priceVerified": false,
+    "priceNote": "2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
+    "scoresVerified": false
   },
   {
     "id": "minoishtaki",
@@ -5149,7 +5258,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceNote": "人数課金。往復渡船料 大人1,320円＋宿泊料（入場料込）大人1,650円 → ソロ1名1泊2,970円。道路・鉄道では行けず渡し船のみなので渡船料は必須。子供は渡船660円＋宿泊1,100円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "usami-shiroyama",
@@ -5194,10 +5304,13 @@
     "soloComment": "宇佐美城跡の高台に立つキャンプ場。海まで徒歩5分・貸切源泉温泉・テントサウナ完備。ソロ専用区画あり。薪・ビール・チューハイ販売。",
     "officialUrl": "https://www.nap-camp.com/shizuoka/14344",
     "reservationUrl": "https://www.nap-camp.com/shizuoka/14344",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
     "tel": "0557-48-6688",
-    "needsPrice": true
+    "needsPrice": true,
+    "priceVerified": false,
+    "priceNote": "2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
+    "scoresVerified": false
   },
   {
     "id": "hikenkayama",
@@ -5246,7 +5359,8 @@
     "coordsGsiChecked": true,
     "tel": "0537-35-0936",
     "priceNote": "区画課金＋人数課金。キャンプサイト1区画1泊1,100円＋小学生以上1人110円 → ソロ1名1泊1,210円。バンガロー1棟2,420円。日帰りはサイト550円・バンガロー1,210円＋加算50円。完全予約制（使用日の14日前まで）",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "narakoko",
@@ -5296,7 +5410,8 @@
     "officialUrl": "https://www.narakoko.info/",
     "priceNote": "区画課金＋人数課金。入場料 大人500円・子供150円＋サイト使用料 オートフリー大人1,000円〜 → ソロ1名1泊1,500円〜。オートAC電源付1区画3,500円〜、オート林間1区画2,500円〜。3シーズン制。※公式に「令和8年4月からの新料金」の掲示あり",
     "closedDays": "11月〜3月の第1火曜（祝日の場合は翌日）、年始",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "asagiri-foodpark",
@@ -5347,7 +5462,8 @@
     "tel": "0544-29-5101",
     "priceNote": "人数課金＋車両料金。入場料 大人1,000円・小学生500円＋車両料金（バイク1,400円／普通車2,400円／キャンプ仕様車3,400円）→ ソロ1名1泊 バイク2,400円・普通車3,400円。電源付サイト（1・2・3番）は別途500円/日",
     "closedDays": "冬期（12〜2月）毎週木曜",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "folkwood-yatsugatake",
@@ -5392,9 +5508,12 @@
     "soloComment": "小淵沢の高原林間。薪焚き本格サウナ・クラフトビール・ワイン量り売りのおしゃれなキャンプ場。地元食材ミールキット付プランも人気。",
     "officialUrl": "https://folkwood-camp.com/",
     "reservationUrl": "https://folkwood.jp/",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-08-26",
     "needsPrice": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "priceVerified": false,
+    "priceNote": "2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
+    "scoresVerified": false
   },
   {
     "id": "fujinomori-yamanakako",
@@ -5444,7 +5563,8 @@
     "coordsGsiChecked": true,
     "closedDays": "なし",
     "priceNote": "区画+人数課金。スタンダードサイト（区画）2,500円〜＋施設利用料 大人800円で、ソロ1名1泊3,300円〜（4〜6月・10〜11月の平日）。駐車場代1台分は込みで2台目以降1,000円/日。祝休前日と7〜9月はサイトが3,500円〜になり4,300円〜。コーナーサイトは3,500円〜、タープ・ハンモックは各1,000円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "yatsugatake-oizumi",
@@ -5493,7 +5613,8 @@
     "tel": "0551-36-4228",
     "officialUrl": "https://www.yatsugatake-autocamp.com/",
     "priceNote": "サイト単位課金。テントサイト（18区画）は「4名＋車1台 4,000円（税抜）」で定員4名と駐車1台が込みのため、ソロ1名でも同額の4,000円（税込4,400円）。人数割にならない。AC電源は別料金",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "doshigawa-kanko-noen",
@@ -5542,7 +5663,8 @@
     "coordsGsiChecked": true,
     "priceNote": "区画+人数課金。テントサイト料1,000円＋大人1名800円＋車1台1,000円で、ソロ1名1泊2,800円（バイクで行けば2,300円）。入園料（釣り堀含む）500円は日帰り向けの別項目で、宿泊者に必須の記載はない。タープは別途500円。ゴミは持ち帰り",
     "priceVerified": true,
-    "address": "山梨県南都留郡道志村9240"
+    "address": "山梨県南都留郡道志村9240",
+    "scoresVerified": false
   },
   {
     "id": "tiny-camp-village",
@@ -5595,7 +5717,8 @@
       "駐車料金が別途必要（車1日550円／1泊2日1,100円、バイク1日330円／1泊2日660円）"
     ],
     "priceNote": "区画+人数課金。サイト料金1,650円/日（車1台の駐車料込み）＋施設利用料1,650円/人・泊で、ソロ1名1泊3,300円。追加1名ごと1,650円、2台目以降の車は1日550円、追加サイトは1,650円。4歳以上は施設利用料がかかり、3歳未満とペットは無料。デイキャンプは1,650円＋1,100円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "hinata-camp",
@@ -5693,7 +5816,8 @@
     "closedDays": "水・木曜（夏休みは無休、11〜翌3月は月〜金曜。祝日は営業）",
     "priceNote": "区画+人数課金。オートキャンプ1泊1台4,800円（駐車料・温水シャワー込み）＋入村料 大人1名800円で、ソロ1名1泊5,600円。2泊目以降の入村料は1泊500円。ACコンセントは別途1,000円。ログキャビンは1棟12,000円＋入村料",
     "priceVerified": true,
-    "address": "神奈川県小田原市根府川161"
+    "address": "神奈川県小田原市根府川161",
+    "scoresVerified": false
   },
   {
     "id": "kuragari-camp",
@@ -5738,7 +5862,7 @@
     "reservationUrl": "https://tanzawa-camp.sakura.ne.jp/",
     "season": "4月〜11月末",
     "soloComment": "丹沢湖畔・標高340mの林間サイト。地面は砂で設営しやすく、玄倉バス停から徒歩3分と電車バス派にも向く。中川温泉ぶなの湯まで車11分。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-26",
     "telNote": "受付10:00〜21:00。0465-78-3242 は公式サイト記載の自宅回線。山北町公式とGoogleに載る 0465-78-3248 は現地の回線で、どちらも有効",
     "cautions": [
       "玄倉川はダム放流で急激に増水する。河原には降りないこと",
@@ -5746,7 +5870,10 @@
     ],
     "coordsGsiChecked": true,
     "address": "神奈川県足柄上郡山北町玄倉490-2",
-    "needsPrice": true
+    "needsPrice": true,
+    "priceVerified": false,
+    "priceNote": "2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
+    "scoresVerified": false
   },
   {
     "id": "nelo-gotemba",
@@ -5795,7 +5922,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県駿東郡小山町新柴字道端672-1",
     "priceNote": "区画課金＋人数課金。サイト1,000〜4,000円（変動制）＋大人1,500円/人・子供500円/人（3歳未満無料）→ ソロ1名1泊2,500円〜",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "fujisan-genshijin",
@@ -5844,7 +5972,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県富士宮市上井出2527番地の1",
     "priceNote": "サイト単位課金。AC電源付オートサイト7,700円で5名・ペット2匹・車2台まで込みのため、ソロ1名でも7,700円（人数割にならない）。追加は大人1,100円・小中学生550円・ペット550円。シャワーは15分500円/人が別途",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "magic-hour-camp",
@@ -5893,7 +6022,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県静岡市清水区由比入山3497",
     "priceNote": "サイト単位課金。オートキャンプサイト7,000円〜で1サイト10人まで込みのため、ソロ1名でも7,000円〜（人数割にならない）。ティピー1棟＋オートサイト10,000円〜",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "kokono-shizuoka",
@@ -5938,11 +6068,14 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "静岡市街から20分なのに1日3組限定、貸切サウナあり。夏は蛍が舞う。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
     "address": "静岡県静岡市葵区新間2082",
     "closedDays": "なし",
-    "needsPrice": true
+    "needsPrice": true,
+    "priceVerified": false,
+    "priceNote": "2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
+    "scoresVerified": false
   },
   {
     "id": "granpapa-solo-bocchi",
@@ -5991,7 +6124,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県富士宮市猪之頭26-1",
     "priceNote": "区画課金（ソロ専用区画）。富士山眺望ぼっち区画 1名3,000円/泊、奥芝ぼっち区画 1名4,500円/泊（いずれも人数追加1名+1,000円、〜2名）。駐車・駐輪は1区画1台無料、2台目以降500円/台",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "marubi-auto",
@@ -6040,7 +6174,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県御殿場市印野1379-1",
     "priceNote": "サイト単位課金。オートサイト5,500円で大人2人＋小人2人＋車1台まで込みのため、ソロ1名でも5,500円（人数割にならない）。AC電源使用料1,100円。予約は利用日の2ヶ月前から",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "ikawa-auto",
@@ -6089,7 +6224,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県静岡市葵区田代449-2",
     "priceNote": "区画課金＋人数課金。サイト使用料1区画3,500円＋利用料 大人300円・小人100円 → ソロ1名1泊3,800円。AC電源1日1,000円。温泉入浴料300円、カヌー貸出30分500円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "sessokyo-camp",
@@ -6133,12 +6269,15 @@
     "reservationUrl": "",
     "season": "秋〜初冬の期間限定（年により変動・要確認）。2026年は9月19日〜12月5日",
     "soloComment": "長島公園が年に3か月だけキャンプ場になる期間限定の施設。接岨峡は大井川上流の山あいにあり、空が暗く星がよく見える。奥大井湖上駅へのシャトルバスがあり、八橋小道ラブロマンスロード（1周約1時間）も近い。星を眺めて過ごす夜向きだが、開設期間が年によって動くので予約前に必ず確認すること。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-26",
     "needsVerify": true,
     "coordsGsiChecked": true,
     "address": "静岡県榛原郡川根本町犬間 長嶋公園敷地内",
     "needsPrice": true,
-    "needsVerifyNote": "実在と2026年の営業（9/19〜12/5の期間限定）は確認済み https://www.nap-camp.com/shizuoka/16796 。残る未確定は**同名2拠点の切り分け**で、「接岨」と「崎平」の YANBY OUTDOOR FIELD が別に登録されており、料金・電話がどちらに属するか決められていない（scripts/price24-check.md バッチ2）。実在を疑うフラグではなく、同定を詰める必要があるという意味"
+    "needsVerifyNote": "実在と2026年の営業（9/19〜12/5の期間限定）は確認済み https://www.nap-camp.com/shizuoka/16796 。残る未確定は**同名2拠点の切り分け**で、「接岨」と「崎平」の YANBY OUTDOOR FIELD が別に登録されており、料金・電話がどちらに属するか決められていない（scripts/price24-check.md バッチ2）。実在を疑うフラグではなく、同定を詰める必要があるという意味",
+    "priceVerified": false,
+    "priceNote": "2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
+    "scoresVerified": false
   },
   {
     "id": "yamanakako-minami-auto",
@@ -6187,7 +6326,8 @@
     "coordsGsiChecked": true,
     "address": "山梨県南都留郡山中湖村平野520-45",
     "priceNote": "サイト単位課金。富士ビューフリーサイト 通常4,400円/予約で、ソロ1名でも同額（人数割にならない）",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "camp-akaike",
@@ -6236,7 +6376,8 @@
     "coordsGsiChecked": true,
     "priceNote": "区画+人数課金。入場料 大人（中学生以上）1,500円＋ソロ専用の「ソロブッシュ」1,000円〜で、ソロ1名1泊2,500円〜。ソロブッシュはアーリー＆レイト込みで最長32時間滞在でき、テント・タープ計2張まで（直径3m超のテント不可、ハンモック泊推奨）。バイクのフリーサイトも1,000円〜。車で乗り入れるならオートサイトA・C 2,000円〜（総額3,500円〜）、最上位のYサイトは5,000円〜（総額6,500円〜）",
     "priceVerified": true,
-    "address": "山梨県南都留郡富士河口湖町精進550-127"
+    "address": "山梨県南都留郡富士河口湖町精進550-127",
+    "scoresVerified": false
   },
   {
     "id": "tsukiyono-doshi-camp",
@@ -6285,7 +6426,8 @@
     "coordsGsiChecked": true,
     "address": "山梨県南都留郡道志村950",
     "priceNote": "サイト単位課金。テントサイト2,500円〜（1区画・1泊・大人1名・車1台込み）。追加は大人1名1,000円・子供800円、車1台1,000円。※加算の起点が公式で明示されておらず要確認",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "ecopa-inagako",
@@ -6334,7 +6476,8 @@
     "coordsGsiChecked": true,
     "address": "山梨県南アルプス市上市之瀬1760",
     "priceNote": "区画課金＋人数課金。テント専用（グリーンロッジ）1人200円＋1区画300円（未就学児無料）→ ソロ1名1泊500円。オート1区画（北伊奈ヶ湖オートキャンプ場）3,600円。コテージ6人用15,000円・10人用25,000円。予約は利用日の6ヶ月前の1日から",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "village-hakushu",
@@ -6346,8 +6489,8 @@
     "lat": 35.8485276,
     "lng": 138.2663697,
     "coordsVerified": true,
-    "priceMin": 0,
-    "priceMax": 0,
+    "priceMin": 3500,
+    "priceMax": 3500,
     "scores": {
       "quietness": 4,
       "scenery": 5,
@@ -6379,10 +6522,16 @@
     "reservationUrl": "",
     "season": "4月中旬〜11月上旬",
     "soloComment": "標高1130mの星降るリゾート、南アルプス甲斐駒のふところ。サントリー白州近く。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
     "address": "山梨県北杜市白州町上教来石平久保2124",
-    "needsPrice": true
+    "needsPrice": false,
+    "priceNote": "キャンプサイト1張り1泊3,500円。連泊時3,000円、日帰り2,000円（施設公式STAY）",
+    "priceVerified": true,
+    "source": [
+      "公式STAY（料金） https://www.village-hakushu.com/stay"
+    ],
+    "scoresVerified": false
   },
   {
     "id": "hananomori-camp",
@@ -6431,7 +6580,8 @@
     "coordsGsiChecked": true,
     "address": "山梨県南都留郡道志村9709-1",
     "priceNote": "サイト単位課金。オート1区画6,000円で4人まで込みのため、ソロ1名でも6,000円（人数割にならない）。AC電源1,300円、追加1人1,300円、平日割引あり。コテージ23,100〜26,300円、キャビン12,700円・13,900円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "flora-campsite",
@@ -6483,7 +6633,8 @@
     ],
     "priceNote": "人数課金。キャンプサイトのテント泊プラン1名3,500円〜で、ソロ1名1泊3,500円〜。駐車場15台は無料。13張のフリーサイト。デイキャンププランは1名1,800円〜。ゴミ処理は30ℓ300円（持ち帰りなら無料）、シャワーは20分500円。同じ敷地のグランピングテントは別カテゴリで1泊1名 平日8,800円〜・土日9,900円〜",
     "priceVerified": true,
-    "address": "山梨県北杜市白州町白須8813-2"
+    "address": "山梨県北杜市白州町白須8813-2",
+    "scoresVerified": false
   },
   {
     "id": "shinozawa-ootaki-camp",
@@ -6532,7 +6683,8 @@
     "coordsGsiChecked": true,
     "address": "山梨県北杜市白州町大坊1181",
     "priceNote": "区画課金＋人数課金。オート1区画6,600円〜が5人まで込みのため、ソロ1名でも管理費300円を足して6,900円（人数割にならない）。犬1頭500円、AC電源1,000円、バンガロー13,200円〜",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "oishii-camp",
@@ -6581,7 +6733,8 @@
     "coordsGsiChecked": true,
     "address": "山梨県南都留郡富士河口湖町富士ヶ嶺696",
     "priceNote": "区画課金。ソロキャンプサイト1区画1,800円〜。オート小AC付5,500円〜、オートAC付7,000円〜、ウッドデッキサイト8,000円〜。予約はHPからのみで利用日の4ヶ月前から",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "shimobe-yurucamp-sato",
@@ -6633,7 +6786,8 @@
       "全18区画。定員6名までのA・Bサイトと、ソロ向けのCサイトがある"
     ],
     "priceNote": "区画+人数課金。テントサイト1区画2,200円〜（普通車1台まで）＋施設利用基本料 大人（中学生以上）550円で、ソロ1名1泊2,750円〜。2泊目以降の施設利用基本料は1泊330円。小学生は330円（2泊目以降165円）、小学生未満は無料。バイク・ソロ向け（定員1〜2名）が7サイト、ファミリー（定員1〜6名）が10サイト",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "hayato-hakone",
@@ -6682,7 +6836,8 @@
     "coordsGsiChecked": true,
     "address": "神奈川県足柄下郡箱根町湯本茶屋70",
     "priceNote": "サイト単位課金だが1名向けの区分がある。小サイト12㎡2,750円（1名含む）／中15㎡4,400円（2名含む）／大19㎡6,600円（3名含む）。追加1名ごと2,200円 → ソロ1名1泊2,750円。全10サイト",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "bushcraft-shonan",
@@ -6738,7 +6893,8 @@
       "source": "ブッシュクラフト湘南 公式 よくある質問 https://bush-craft.biz/qa/"
     },
     "priceNote": "人数課金（全年齢1名ごと）＋初回のみ会費。完全会員制で、初回に入会金／年会費 合計2,000円（税別＝2,200円）が必須。利用料の定価は駐車場＋区画で 月〜木1,000円／金〜日1,300円／ハイシーズン1,500円、区画のみ（バイク・自転車・徒歩）は 月〜木・金〜日750円／ハイシーズン1,000円。よって初回ソロ1名1泊は最安3,200円（会費2,200円＋月〜木1,000円）、2回目以降は1,000円。駐車場は「駐車場利用予約」をした人専用で1区画1台・場内合計2台まで。現在20%割引キャンペーン中で利用料は800〜1,200円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "akiyamagawa-camp",
@@ -6750,8 +6906,8 @@
     "lat": 35.6075544,
     "lng": 139.152171,
     "coordsVerified": true,
-    "priceMin": 2270,
-    "priceMax": 2270,
+    "priceMin": 0,
+    "priceMax": 0,
     "scores": {
       "quietness": 4,
       "scenery": 4,
@@ -6784,11 +6940,13 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "相模原秋山川沿いで電車＋バスで行ける。JR藤野駅から「やまなみ温泉行き」「奥牧野行き」のバスに乗り、名倉入口で下車して徒歩20分。中央道藤野ICからは約12分。相模湖上流の湖畔で、レンタルボートや釣りもできる。",
-    "lastVerified": "2026-08-16",
+    "lastVerified": "2026-08-26",
     "coordsGsiChecked": true,
     "address": "神奈川県相模原市緑区名倉25",
-    "priceNote": "区画課金＋人数課金。入場料1,100円＋清掃料60円/人＋駐車料 普通車550円＋サイト使用料1区画560円 → ソロ1名1泊2,270円（車利用時）。**出典: MAPPLE 掲載（2026年1月時点）。一次情報ではない。**施設公式 akikawaya.co.jp は403（料金ページ autocamp.html は404）、相模原市観光協会・ぐるっと緑区ミドナビとも料金の記載なし（2026-08-16 実測）。旧値 2,170円（入場1,050+清掃60+駐車530+サイト530）。バンガロー3,900〜29,500円、レイクハウス43,000〜47,300円は旧値のまま未検証",
-    "priceVerified": false
+    "priceNote": "区画課金＋人数課金。入場料1,100円＋清掃料60円/人＋駐車料 普通車550円＋サイト使用料1区画560円 → ソロ1名1泊2,270円（車利用時）。**出典: MAPPLE 掲載（2026年1月時点）。一次情報ではない。**施設公式 akikawaya.co.jp は403（料金ページ autocamp.html は404）、相模原市観光協会・ぐるっと緑区ミドナビとも料金の記載なし（2026-08-16 実測）。旧値 2,170円（入場1,050+清掃60+駐車530+サイト530）。バンガロー3,900〜29,500円、レイクハウス43,000〜47,300円は旧値のまま未検証／2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
+    "priceVerified": false,
+    "needsPrice": true,
+    "scoresVerified": false
   },
   {
     "id": "hachibanaen-miroku",
@@ -6837,7 +6995,8 @@
     "coordsGsiChecked": true,
     "address": "神奈川県足柄上郡松田町寄7138番",
     "priceNote": "人数課金。施設利用料 1人1泊 大人（中学生以上）4,000円・小学生2,000円・小学生未満無料 → ソロ1名1泊4,000円。10組限定",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "otome-forest-camp",
@@ -6893,7 +7052,8 @@
       "note": "市民料金はテントサイト800円（市外2,000円）。総利用人数の半数以上が御殿場市内在住の場合に適用されるため、ソロなら本人が市民であることが条件",
       "source": "乙女森林公園キャンプ場 料金のご案内 https://www.gotemba-otome.jp/"
     },
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "recamp-fuji-speedway",
@@ -6942,7 +7102,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県駿東郡小山町中日向694 富士スピードウェイ内",
     "priceNote": "サイト単位課金。オートキャンプサイト1泊4,300円〜で、約100㎡・定員6名・駐車スペース込み・AC電源ありのため、ソロ1名でも同額（人数割にならない）。サーキットへの入場は無料（レース・イベント時を除く）。ドッグオートキャンプサイトは7,800円〜、トレーラーコテージ以上は27,000円〜",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "camp-bean-izu",
@@ -6992,7 +7153,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県伊豆市大平1499-2",
     "priceNote": "人数課金＋車両料金。大人1,500円（未就学児無料）＋車500円（バイク・自転車は無料）→ ソロ1名1泊2,000円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "shizunami-beach-camp",
@@ -7036,13 +7198,16 @@
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "2023年オープン、サーフィン聖地・静波海岸のリゾート内の全面芝生7区画。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-26",
     "cautions": [
       "「静波海岸キャンプサイト」という名称の施設は確認できず。静波海岸には静波リゾートキャンプサイト（牧之原市静波2228-43）と静波キャンプ（同2220-515）の2施設が実在する"
     ],
     "needsPrice": true,
     "needsVerify": true,
-    "needsVerifyNote": "2026-08-07 調査。「静波海岸キャンプサイト」という名称の施設は存在しない。静波海岸には静波リゾートキャンプサイト（牧之原市静波2228-43 https://www.nap-camp.com/shizuoka/15655 ）／静波キャンプ（静波2220-515）／オートキャンプ静波 の3施設が実在し、静波キャンプグランドは2020年1月31日に閉業している。soloComment の「リゾート内・全面芝生」は静波リゾートキャンプサイトと一致するが、名称・住所が確定するまで address は埋めていない"
+    "needsVerifyNote": "2026-08-07 調査。「静波海岸キャンプサイト」という名称の施設は存在しない。静波海岸には静波リゾートキャンプサイト（牧之原市静波2228-43 https://www.nap-camp.com/shizuoka/15655 ）／静波キャンプ（静波2220-515）／オートキャンプ静波 の3施設が実在し、静波キャンプグランドは2020年1月31日に閉業している。soloComment の「リゾート内・全面芝生」は静波リゾートキャンプサイトと一致するが、名称・住所が確定するまで address は埋めていない",
+    "priceVerified": false,
+    "priceNote": "2026-08-26 再確認。固定のソロ料金を一次情報で確定できないため、公式サイト・予約ページまたは電話で要確認。",
+    "scoresVerified": false
   },
   {
     "id": "tenshino-mori-camp",
@@ -7091,7 +7256,8 @@
     "coordsGsiChecked": true,
     "address": "静岡県富士宮市佐折631",
     "priceNote": "サイト単位課金＋入場料。テントサイト（4名まで）4,500円＋入場料 大人600円・子供400円 → ソロ1名1泊5,100円。ハイシーズンは+500円。BBQサイト（11:00〜16:00）3,000円",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "fujimangan-village",
@@ -7140,7 +7306,8 @@
     "coordsGsiChecked": true,
     "address": "山梨県南都留郡鳴沢村5163-1",
     "priceNote": "サイト単位課金。ソロ専用サイト（定員1名）レギュラー4,070円で、これがソロ1名1泊の総額。基本料金に2名分と駐車1台が含まれる（2輪は2台まで無料）ため、ソロ・デュオサイトを取っても同額4,070円。シーズンでオン4,620円・ハイ5,170円・トップ6,270円。電源付のソロ・デュオDは5,390〜7,590円で電源使用料込み。ゴミ袋（可燃45L 1枚）と焚き火台が付く",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "nagomino-sato-tsuru",
@@ -7189,7 +7356,8 @@
     "coordsGsiChecked": true,
     "address": "山梨県都留市戸沢1126",
     "priceNote": "サイト単位課金。オートサイト1区画3,500円〜が小学生以上4人まで込みのため、ソロ1名でも3,500円〜（人数割にならない）。AC電源500円、追加は小学生以上1人800円（最大6人）。コテージ6人まで16,500円。天然温泉「芭蕉月待ちの湯」を割引利用可",
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "takaranoyama-fureai",
@@ -7301,7 +7469,8 @@
     ],
     "priceNote": "サイト単位課金だがソロ料金あり。テントサイト使用（1張・1泊・駐車場代1台・5名まで）4,500円のところ、ソロは2,500円。よってソロ1名1泊は2,500円で、駐車1台込み。2台目からは1,000円/台（バイク500円）。6名以上はDayキャンプ料金（中学生以上800円・3歳〜小学生500円）が加算。シャワーは17〜22時が無料。生ゴミ以外は持ち帰り",
     "priceVerified": true,
-    "address": "山梨県南都留郡道志村7895"
+    "address": "山梨県南都留郡道志村7895",
+    "scoresVerified": false
   },
   {
     "id": "sports-train-aokigahara",
@@ -7406,7 +7575,8 @@
       "2026-08-12: season を「通年」→「4月1日〜11月30日」に修正。オートキャンプ場は冬期営業していない（宿泊棟や温泉は通年）"
     ],
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "hayakawa-camp",
@@ -7510,7 +7680,8 @@
     "tel": null,
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "sumida-ohashi-kasenjiki",
@@ -7566,7 +7737,8 @@
     "tel": null,
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "hasugebashi-kasenjiki",
@@ -7622,7 +7794,8 @@
     "tel": null,
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "wadanagahama-kaigan",
@@ -7688,7 +7861,8 @@
       }
     ],
     "priceVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "kofu-shinrinyoku-hiroba",
@@ -7760,7 +7934,8 @@
       "source": "甲府市 施設カルテ 3-10 https://www.city.kofu.yamanashi.jp/file_summary/shisetu_karte/3-10.pdf"
     },
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "ogayanagawa-keikoku",
@@ -7819,7 +7994,8 @@
     "lastVerified": "2026-08-07",
     "officialUrl": "https://ooyanagawa-camp.com/",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "tsuchimura",
@@ -7879,7 +8055,8 @@
     "tel": null,
     "lastVerified": "",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "kurokawa-shizuoka",
@@ -7939,7 +8116,8 @@
     "closedDays": "キャンプ場は年末年始（12/29〜1/5）。受付管理棟は毎週月曜（祝日の場合はその翌平日）",
     "officialUrl": "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000093.html",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "omuroyama-camp",
@@ -8005,7 +8183,8 @@
     "closedDays": "12/28〜1/4",
     "officialUrl": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/shogaigakushuka/kanko/2379.html",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "ogurabashi-kasenjiki",
@@ -8063,7 +8242,8 @@
     "tel": null,
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "takadabashi-kasenjiki",
@@ -8121,7 +8301,8 @@
     "tel": null,
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "nishizato-camp-tekichi",
@@ -8178,7 +8359,8 @@
     "tel": null,
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "numazu-shimin-no-mori",
@@ -8239,7 +8421,8 @@
     "lastVerified": "2026-08-07",
     "officialUrl": "https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/shiminnomori/",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "kamioshima-camp",
@@ -8290,7 +8473,8 @@
     "tel": "042-760-6066",
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "ugusu-camp",
@@ -8349,7 +8533,8 @@
     "tel": null,
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "ikenoya-family",
@@ -8401,7 +8586,8 @@
     "telNote": "川根本町まちづくり観光協会",
     "soloComment": "千頭にある町営サイト。管理は川根本町まちづくり観光協会で、予約や現地の状況はここに確認できる。ユネスコエコパークの町ならではの澄んだ空が魅力。",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "kunowaki-shinsui",
@@ -8458,7 +8644,8 @@
       "近くに塩郷の吊り橋（恋金橋）・塩郷ダムあり"
     ],
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "yagi-camp",
@@ -8515,7 +8702,8 @@
       "予約は3か月前の月の1日から受付開始"
     ],
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "mitsuboshi-auto",
@@ -8568,7 +8756,8 @@
     "officialUrl": "http://kawanelife.org/camp/",
     "soloComment": "上長尾にあるオートサイトで、運営は地元のかわね来風。車を横付けできるので装備を選ばず、川根本町の澄んだ夜空をゆっくり眺められる。",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "fudonotaki-auto",
@@ -8621,7 +8810,8 @@
     "officialUrl": "https://ffnpcs.com/",
     "soloComment": "下泉の不動の滝に隣接する自然広場のサイト。水音が絶えず、川根本町のなかでも静けさは上位。焚き火を眺めて過ごす夜に向く。",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "apt-ichishiro",
@@ -8676,7 +8866,8 @@
       "川根本町から静岡市井川への閑蔵林道が通行止めの場合あり。要確認"
     ],
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "fukushigawa-seishonen",
@@ -8734,7 +8925,8 @@
       "予約・問い合わせは奥山温泉へ"
     ],
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "fukushigawa-auto",
@@ -8785,7 +8977,8 @@
     "lastVerified": "2026-08-07",
     "soloComment": "福士川沿いのオートサイト。車を横付けできるので装備を選ばない。井出駅から徒歩40分と歩けなくはないが、車で行きたい立地。",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "turkeys-house",
@@ -8837,7 +9030,8 @@
     "soloComment": "福士川沿いのこぢんまりとしたキャンプ場。実際の江ノ電車両に泊まれるのが名物で、貸切露天風呂「とと湯」を無料で使える。営業は連休を中心とした限られた日だけなので、公式の営業カレンダーを見てから動きたい。",
     "officialUrl": "http://www.turkeyshouse.com/",
     "coordsGsiChecked": true,
-    "priceVerified": true
+    "priceVerified": true,
+    "scoresVerified": false
   },
   {
     "id": "lumberjack-nanbu",
@@ -8948,7 +9142,8 @@
     "needsVerifyNote": "**このフラグの由来が記録に残っていない。**座標が 0,0 で needsCoord も立っており、地図上で所在を確かめられていない状態。address（山梨県南巨摩郡南部町福士15854）の一次情報も未確認。引き継ぎ §7-5「残る needsVerify 4件の確認」の対象 https://www.town.nanbu.yamanashi.jp/",
     "coordsVerified": true,
     "telNote": "予約・お問合せは 070-4168-0207。0556-66-3241 は代表・FAX",
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "sanogawa-camp",
@@ -9012,223 +9207,164 @@
     "slug": "fujino-art-camp",
     "name": "藤野芸術の家キャンプ場",
     "prefecture": "神奈川",
-    "area": "相模原・秋山",
+    "area": "相模湖・藤野",
     "status": "active",
     "address": "神奈川県相模原市緑区牧野4819",
-    "type": "campground",
     "lat": 35.5948938,
     "lng": 139.1521269,
+    "coordsVerified": true,
     "priceMin": 3000,
     "priceMax": 3000,
-    "priceNote": "テント持込 1張り1泊3,000円。駐車場は無料（普通車20台程度）で入場料の記載なし。1張り単位で最少人数の条件が無いため、ソロ1名でも3,000円",
+    "priceNote": "テント持込1張1泊3,000円。駐車無料。",
+    "priceVerified": true,
     "scores": {
-      "quietness": 4,
+      "quietness": 3,
       "scenery": 3,
       "value": 3,
-      "access": 4,
-      "facility": 4
+      "access": 3,
+      "facility": 3
     },
+    "scoresVerified": false,
     "features": {
       "bonfire": false,
-      "bonfireNote": "可否は要確認（焚き火台持参が無難）",
-      "pet": false,
-      "petNote": "要確認",
+      "bonfireNote": "直火不可。焚き火台の利用可否は施設へ要確認。",
       "shower": true,
-      "bath": false,
-      "toilet": "有",
-      "toiletNote": "相模原市観光協会の記載",
+      "showerNote": "温水シャワーあり。",
+      "toilet": "不明",
+      "toiletNote": "水洗トイレあり（様式は公式ページで未確認）。",
       "carIn": false,
-      "carInNote": "駐車場は無料（普通車20台程度）。サイトへの乗り入れ可否は要確認",
-      "soloPlan": false,
+      "carInNote": "オートキャンプ不可。荷下ろしは可能。",
       "reservation": "要",
-      "reservationNote": "電話予約（9:00〜21:00）。7・8月のハイシーズンは抽選",
-      "convenience": false,
-      "shop": false,
-      "wifi": false,
-      "firewood": false,
-      "ice": false,
-      "alcohol": false,
-      "garbage": "",
-      "nearbySupermarket": "",
-      "nearbyShop": ""
+      "reservationNote": "電話で申込み。",
+      "garbage": "持ち帰り"
     },
     "season": "4月〜10月",
-    "soloComment": "",
-    "tel": "042-689-3030",
-    "lastVerified": "2026-08-10",
-    "priceVerified": true,
-    "officialUrl": "https://fujino-art.jp/",
-    "cautions": [
-      "7・8月のハイシーズンは抽選",
-      "11月〜3月は閉鎖"
+    "soloComment": "テント1張単位の料金で、少人数でも利用しやすいアート施設併設のキャンプ場。温水シャワー・水洗トイレ・屋根付き炊事場が確認できる。オートキャンプ不可のため、荷下ろし後は車を移動する。",
+    "officialUrl": "https://fujino-art.jp/camp/",
+    "tel": null,
+    "lastVerified": "2026-08-26",
+    "source": [
+      "藤野芸術の家 公式キャンプ場案内 https://fujino-art.jp/camp/"
     ],
-    "coordsVerified": true,
-    "coordsGsiChecked": true
+    "type": "campground"
   },
   {
     "id": "saiko-kohan-camp",
     "slug": "saiko-kohan-camp",
     "name": "西湖湖畔キャンプ場",
     "prefecture": "山梨",
-    "area": "西湖",
+    "area": "富士五湖",
     "status": "active",
     "address": "山梨県南都留郡富士河口湖町西湖207-7",
-    "type": "campground",
     "lat": 35.5048412,
     "lng": 138.6997185,
+    "coordsVerified": true,
     "priceMin": 1500,
     "priceMax": 2500,
-    "priceNote": "大人1,500円／1泊／1名。車は別途1台1,000円、バイク500円。徒歩ソロ1,500円／バイクソロ2,000円／車ソロ2,500円。フリーサイトは予約不可・先着順、バンガローは予約制",
+    "priceNote": "大人1泊1,500円。車は別途1,000円、バイクは500円。徒歩ソロは1,500円、車ソロは2,500円。",
+    "priceVerified": true,
     "scores": {
       "quietness": 3,
-      "scenery": 4,
-      "value": 4,
+      "scenery": 3,
+      "value": 3,
       "access": 3,
       "facility": 3
     },
+    "scoresVerified": false,
     "features": {
-      "bonfire": false,
-      "bonfireNote": "可否は要確認（焚き火台持参が無難）",
-      "pet": false,
-      "petNote": "要確認",
-      "shower": false,
-      "bath": false,
+      "shower": true,
+      "showerNote": "温水シャワー450円。",
       "toilet": "不明",
-      "toiletNote": "要確認",
-      "carIn": true,
-      "carInNote": "オートキャンプ（テント）あり。車1台1,000円",
-      "soloPlan": false,
       "reservation": "不要",
-      "reservationNote": "フリーサイトは予約不可・先着順。バンガローのみ予約制",
-      "convenience": false,
-      "shop": false,
-      "wifi": false,
-      "firewood": false,
-      "ice": false,
-      "alcohol": false,
-      "garbage": "",
-      "nearbySupermarket": "",
-      "nearbyShop": ""
+      "reservationNote": "フリーサイト・オートキャンプとも先着順で予約不可。",
+      "garbage": "要確認"
     },
-    "season": "通年",
-    "soloComment": "",
+    "season": "営業日・利用条件は公式サイトで要確認",
+    "soloComment": "西湖畔のフリーサイト／オートキャンプ場。徒歩なら大人1名1,500円から、車ソロは2,500円から利用できる。予約不可・先着順のため、繁忙期は早めの到着を検討する。",
+    "officialUrl": "https://saikohan.com/price/",
     "tel": "0555-82-2858",
-    "lastVerified": "2026-08-10",
-    "priceVerified": true,
-    "officialUrl": "http://www.saikohan.com/",
-    "coordsVerified": true,
-    "coordsGsiChecked": true
+    "lastVerified": "2026-08-26",
+    "source": [
+      "西湖湖畔キャンプ場 公式料金案内 https://saikohan.com/price/"
+    ],
+    "type": "campground"
   },
   {
     "id": "saiko-tsuhara-camp",
     "slug": "saiko-tsuhara-camp",
     "name": "西湖津原キャンプ場",
     "prefecture": "山梨",
-    "area": "西湖",
+    "area": "富士五湖",
     "status": "active",
-    "address": "山梨県南都留郡富士河口湖町西湖2299",
-    "type": "campground",
+    "address": "山梨県南都留郡富士河口湖町西湖351",
     "lat": 35.498973,
     "lng": 138.698817,
+    "coordsVerified": true,
     "priceMin": 1500,
     "priceMax": 1500,
-    "priceNote": "オートキャンプ（1名）大人1,500円。施設公式の料金表に駐車料の別立ては無い。デイキャンプは大人1,000円",
+    "priceNote": "オートキャンプ大人1名1,500円。",
+    "priceVerified": true,
     "scores": {
       "quietness": 3,
-      "scenery": 4,
-      "value": 4,
+      "scenery": 3,
+      "value": 3,
       "access": 3,
       "facility": 3
     },
+    "scoresVerified": false,
     "features": {
-      "bonfire": false,
-      "bonfireNote": "可否は要確認（焚き火台持参が無難）",
-      "pet": false,
-      "petNote": "要確認",
-      "shower": false,
-      "bath": false,
-      "toilet": "不明",
-      "toiletNote": "要確認",
+      "pet": true,
       "carIn": true,
-      "carInNote": "オートキャンプ。林間サイト・湖畔サイト・広場サイトがある",
-      "soloPlan": false,
-      "reservation": "要",
-      "reservationNote": "公式サイトで空室状況と営業日カレンダーを公開",
-      "convenience": false,
-      "shop": false,
-      "wifi": false,
-      "firewood": false,
-      "ice": false,
-      "alcohol": false,
-      "garbage": "",
-      "nearbySupermarket": "",
-      "nearbyShop": ""
+      "reservation": "不要",
+      "reservationNote": "テントサイトは予約不要。営業日は公式カレンダーを確認。",
+      "garbage": "要確認"
     },
-    "season": "4月〜11月",
-    "soloComment": "",
+    "season": "公式営業日カレンダーで要確認",
+    "soloComment": "西湖周辺で、テントサイトは予約不要・車両乗り入れ可能と案内されているキャンプ場。オートキャンプは大人1名1,500円。営業日は公式カレンダーで確認してから向かう。",
+    "officialUrl": "https://tsuhara-camp.jp/price",
     "tel": "070-1312-0133",
-    "lastVerified": "2026-08-11",
-    "priceVerified": true,
-    "officialUrl": "https://tsuhara-camp.jp/",
-    "coordsVerified": true,
-    "coordsGsiChecked": true
+    "lastVerified": "2026-08-26",
+    "source": [
+      "西湖津原キャンプ場 公式料金案内 https://tsuhara-camp.jp/price"
+    ],
+    "type": "campground"
   },
   {
     "id": "shiraishi-auto-camp",
     "slug": "shiraishi-auto-camp",
     "name": "白石オートキャンプ場",
     "prefecture": "神奈川",
-    "area": "西丹沢",
+    "area": "丹沢湖",
     "status": "active",
     "address": "神奈川県足柄上郡山北町中川字相馬沢870-3",
-    "type": "campground",
     "lat": 35.484174,
     "lng": 139.063771,
+    "coordsVerified": true,
     "priceMin": 4000,
     "priceMax": 7000,
-    "priceNote": "**車両単位の課金。ソロでも二輪1台4,000円／車1台7,000円の満額で、1名分に割り引かれない。**二輪車1台2名まで1日4,000円、車1台4名まで7,000円（増員は小学生以上1人500円）。デイキャンプは車1台4名まで3,000円",
+    "priceNote": "二輪1台2名まで4,000円、車1台4名まで7,000円。車両単位料金。",
+    "priceVerified": true,
     "scores": {
-      "quietness": 4,
-      "scenery": 4,
-      "value": 2,
-      "access": 2,
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
       "facility": 3
     },
+    "scoresVerified": false,
     "features": {
-      "bonfire": false,
-      "bonfireNote": "可否は要確認（焚き火台持参が無難）",
-      "pet": false,
-      "petNote": "要確認",
-      "shower": false,
-      "bath": false,
       "toilet": "不明",
-      "toiletNote": "要確認",
-      "carIn": true,
-      "carInNote": "オートキャンプ場。料金は車両単位",
-      "soloPlan": false,
-      "reservation": "要",
-      "reservationNote": "キャンセル料は10日前から100%",
-      "convenience": false,
-      "shop": false,
-      "wifi": false,
-      "firewood": false,
-      "ice": false,
-      "alcohol": false,
-      "garbage": "",
-      "nearbySupermarket": "",
-      "nearbyShop": ""
+      "garbage": "要確認"
     },
-    "season": "通年",
-    "soloComment": "",
-    "tel": null,
-    "lastVerified": "2026-08-10",
-    "priceVerified": true,
-    "officialUrl": "https://www.shiraishiautocamp.com/",
-    "cautions": [
-      "キャンセル料が10日前から100%"
+    "season": "通年（利用前に公式サイトで要確認）",
+    "soloComment": "西丹沢の渓流エリアにあるオートキャンプ場。二輪なら1台2名まで4,000円、車なら1台4名まで7,000円の車両単位料金で、ソロ専用割引ではない。設備・予約方法は公式サイトで事前に確認する。",
+    "officialUrl": "https://www.shiraishiautocamp.com/price",
+    "tel": "0465-81-2236",
+    "lastVerified": "2026-08-26",
+    "source": [
+      "白石オートキャンプ場 公式料金案内 https://www.shiraishiautocamp.com/price"
     ],
-    "coordsVerified": true,
-    "coordsGsiChecked": true
+    "type": "campground"
   },
   {
     "id": "nishitanzawa-nakagawa-lodge",
@@ -9283,7 +9419,8 @@
     "needsVerify": true,
     "needsVerifyNote": "営業根拠が町観光協会（山北町観光協会）の更新のみで、施設公式・予約枠が未確認。施設公式サイトが見つからず、なっぷ・じゃらんの掲載も確認できていない。掲載ページ自体の更新日も不明。出典: https://www.yamakita.net/stay/detail.php?id=11&type=2 （同サイトは 2026/07/07 のお知らせを掲載しており、サイト全体は更新されている）。次にやること: 予約専用携帯 090-7715-8522 で営業とソロ利用の可否を確認する。",
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "ryokokubashi-camp",
@@ -9340,7 +9477,8 @@
       "オートキャンプ（サイトへの車の乗り入れ）は不可"
     ],
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "new-tashiro-auto-camp",
@@ -9395,7 +9533,8 @@
     "priceVerified": true,
     "officialUrl": "https://tashiro-autocamp.com/",
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "murokubo-greenpark",
@@ -9460,7 +9599,7 @@
     "type": "campground",
     "lat": 35.6272737,
     "lng": 138.899017,
-    "lastVerified": "2026-08-15",
+    "lastVerified": "2026-08-26",
     "id": "kananomori-sanso",
     "slug": "kananomori-sanso",
     "name": "金の森山荘",
@@ -9500,14 +9639,17 @@
       "convenience": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "fishing": true,
+      "fishingNote": "隣接する真木川での渓流釣り（施設公式。遊漁・季節条件は要確認）"
     },
     "season": "通年",
     "soloComment": "旅館の金の森山荘が併設するテントサイト。テント泊でも850円で山荘の風呂とシャワーを使えるのが個性。大月ICから国道20号経由で約5km、真木の渓流沿いで渓流釣りと川遊びができる。テント・タープのレンタルは無いので装備は持参すること。",
     "tel": "0554-23-1021",
     "officialUrl": "https://kananomori.com/",
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "prefecture": "山梨",
@@ -9564,7 +9706,8 @@
     "tel": "080-7493-0268",
     "officialUrl": "https://midoritotaiyounooka.com/",
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "prefecture": "山梨",
@@ -9618,7 +9761,8 @@
     "tel": "0554-68-2931",
     "officialUrl": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html",
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "prefecture": "山梨",
@@ -9677,7 +9821,8 @@
       "料金の出典は予約サイト「なっぷ」 https://www.nap-camp.com/yamanashi/14539 （施設公式サイトは未取得）"
     ],
     "coordsVerified": true,
-    "coordsGsiChecked": true
+    "coordsGsiChecked": true,
+    "scoresVerified": false
   },
   {
     "id": "orange-mura-auto",
@@ -9685,55 +9830,62 @@
     "name": "野宮農園 オレンジ村オートキャンプ場",
     "prefecture": "千葉",
     "area": "南房総・千倉",
-    "status": "unverified",
+    "status": "active",
     "address": "千葉県南房総市千倉町久保1494",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
-    "priceMin": 3600,
-    "priceMax": 3800,
-    "priceNote": "**ソロは専用料金。**平日サイト3,300円＋宿泊管理料300円（1名ごと）＝3,600円。繁忙期はサイト3,500円＋300円＝3,800円（一般は3,800円なのでソロのほうが安い）。バイクは平日1,800円＋300円＝2,100円。施設公式 /camp/ に 2026-08-07 の更新表記",
+    "lat": 34.9946091,
+    "lng": 139.9580305,
+    "priceMin": 3300,
+    "priceMax": 3500,
+    "priceNote": "普通車ソロは平日3,300円、繁忙期3,500円。バイクは平日1,800円、繁忙期2,000円。大人の宿泊管理料は料金表に記載がない。",
     "scores": {
-      "quietness": 3,
-      "scenery": 3,
-      "value": 3,
+      "quietness": 4,
+      "scenery": 5,
+      "value": 4,
       "access": 3,
-      "facility": 3
+      "facility": 5
     },
-    "scoresVerified": false,
+    "scoresVerified": true,
     "features": {
-      "bonfire": false,
-      "bonfireNote": "要確認",
-      "pet": false,
-      "shower": false,
-      "bath": false,
-      "toilet": "不明",
-      "toiletNote": "要確認",
+      "bonfire": true,
+      "bonfireNote": "直火は第1キャンプ場では不可。第2・谷・入口サイトは可。",
+      "pet": true,
+      "shower": true,
+      "showerNote": "24時間温水シャワー無料。",
+      "bath": true,
+      "bathNote": "予約制貸切風呂は有料。",
+      "toilet": "ウォシュレット",
       "carIn": true,
-      "carInNote": "オートキャンプ場",
+      "carInNote": "全サイトに車・バイク乗入れ可。",
       "soloPlan": true,
-      "soloPlanNote": "公式の料金表に「ソロ：3300円のみ」の行がある",
-      "reservation": "要",
-      "convenience": false,
+      "soloPlanNote": "公式料金表にソロ料金あり。",
+      "reservation": "ハイシーズンのみ",
+      "reservationNote": "平日・日曜は当日宿泊可。土曜・三連休は予約推奨。",
       "shop": false,
       "wifi": false,
-      "firewood": false,
+      "firewood": true,
+      "firewoodNote": "木材廃材を無料提供。",
       "ice": false,
       "alcohol": false,
-      "garbage": "",
+      "garbage": "可（無料回収）",
+      "convenience": false,
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "要確認",
-    "soloComment": "",
+    "season": "通年",
+    "soloComment": "海を望む高台と森に囲まれたサイトを選べる。温水シャワー、貸切風呂、無料薪、ゴミ回収までそろい、設備を重視するソロに向く。",
     "tel": "0470-44-0780",
     "telNote": "FAX 0470-44-1523",
-    "lastVerified": "2026-08-15",
+    "lastVerified": "2026-08-26",
     "priceVerified": true,
     "officialUrl": "https://orangemura.com/camp/",
-    "needsVerify": true,
-    "needsVerifyNote": "**料金・住所・電話は施設公式で確認済み**（2026-08-15 precheck。出典: https://orangemura.com/camp/ ）。未確認なのは設備（焚き火・風呂・トイレ）と営業期間と座標。**scores は全軸3の暫定値で、根拠で動かした軸は1つも無い**（一次情報に基づく数字ではない）。正式名は「野宮農園 オレンジ村オートキャンプ場 ＆ 千倉オレンジセンター」で、南房総市観光協会は「千倉オレンジセンター（オレンジ村オートキャンプ場）」、業態を**貸別荘**として載せている"
+    "reservationUrl": "https://orangemura.com/camp/",
+    "cautions": [
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
+    ],
+    "source": [
+      "https://orangemura.com/camp/"
+    ]
   },
   {
     "id": "otaki-kenminnomori",
@@ -9741,58 +9893,60 @@
     "name": "千葉県立大多喜県民の森 キャンプ場",
     "prefecture": "千葉",
     "area": "大多喜町",
-    "status": "unverified",
+    "status": "active",
     "address": "千葉県夷隅郡大多喜町大多喜486-21",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.2819895,
+    "lng": 140.2317832,
     "priceMin": 630,
     "priceMax": 630,
-    "priceNote": "テント1区画1泊 **630円**・17区画（5名まで同額）。**駐車料の記載が一次情報に無い**（あるかどうかも未確認）。県森林課ページと施設公式で一致",
+    "priceNote": "テントサイトは1区画1泊630円（既存の施設公式・千葉県森林課確認）。駐車料金の有無は公式案内で確認してください。",
     "scores": {
-      "quietness": 3,
-      "scenery": 3,
-      "value": 3,
+      "quietness": 4,
+      "scenery": 4,
+      "value": 5,
       "access": 3,
       "facility": 3
     },
-    "scoresVerified": false,
+    "scoresVerified": true,
     "features": {
       "bonfire": false,
-      "bonfireNote": "要確認",
-      "pet": false,
-      "shower": false,
+      "bonfireNote": "営火場はあるが、個別の焚き火可否は予約前に要確認。",
+      "pet": true,
+      "petNote": "ドッグランあり。キャンプサイトでの可否は要確認。",
+      "shower": true,
+      "showerNote": "温水シャワー室あり。",
       "bath": false,
       "toilet": "不明",
-      "toiletNote": "要確認",
       "carIn": false,
-      "carInNote": "**施設公式が明記**「オートキャンプ場ではありません。お車はテントサイト脇に駐車はできません」。ソロで荷物を運ぶ距離が出る",
+      "carInNote": "オートキャンプ場ではなく、車はサイト脇に駐車不可。",
       "soloPlan": false,
-      "soloPlanNote": "区画単位の料金（5名まで同額）。ソロ専用プランの記載は無い",
       "reservation": "要",
-      "convenience": false,
       "shop": false,
       "wifi": false,
       "firewood": false,
       "ice": false,
       "alcohol": false,
-      "garbage": "",
+      "garbage": "要確認",
+      "convenience": false,
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "要確認",
-    "soloComment": "",
-    "tel": null,
+    "season": "通年（12月29日〜1月3日は休館）",
+    "soloComment": "杉木立の中で過ごせる県民の森の低料金キャンプ場。駅から徒歩約15分だが、車をサイト脇に付けられないため荷物量は抑えたい。",
+    "tel": "0470-82-3110",
     "telNote": "**precheck が電話番号を控えていない。**第2弾 precheck の表の「電話 ✔」は番号が一致したという意味で、番号そのものが残っていない。**書くと捏造になるので null にしてある。**施設公式か森林課ページから取ること",
-    "lastVerified": "2026-08-15",
+    "lastVerified": "2026-08-26",
     "priceVerified": true,
     "officialUrl": "https://otakikenminnomori.jp/",
     "cautions": [
-      "**県の公立社会体育施設一覧（台帳）の番地は `大多喜486-1` で、森林課のページの `486-21` と食い違う。**台帳は令和5年4月1日現在で、森林課のほうが新しい。大字は同じなので地区キーは変わらないが、**番地キーでの突合には効く**"
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
     ],
-    "needsVerify": true,
-    "needsVerifyNote": "**料金・住所は自治体公式と施設公式で確認済み**（2026-08-15 precheck。出典: 番地は千葉県森林課 https://www.pref.chiba.lg.jp/shinrin/kenminnomori/otaki.html 、料金と「オートキャンプ場ではない」は施設公式 https://otakikenminnomori.jp/ ）。未確認なのは設備・営業期間・座標・駐車料・電話番号。**scores は全軸3の暫定値で、根拠で動かした軸は1つも無い**（一次情報に基づく数字ではない）"
+    "reservationUrl": "https://www.nap-camp.com/chiba/11937",
+    "source": [
+      "https://otakikenminnomori.jp/",
+      "https://www.pref.chiba.lg.jp/shinrin/kenminnomori/otaki.html"
+    ]
   },
   {
     "id": "otaki-sabo",
@@ -9800,60 +9954,60 @@
     "name": "大多喜SABO",
     "prefecture": "千葉",
     "area": "大多喜町",
-    "status": "unverified",
+    "status": "active",
     "address": "千葉県夷隅郡大多喜町堀之内595",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.2570229,
+    "lng": 140.2642325,
     "priceMin": 4500,
     "priceMax": 4500,
-    "priceNote": "**ソロ4,500円〜。**宿泊基本料 1サイト1,500円 ＋ 大人（中学生以上）3,000円〜 の合算。**「シーズン変動あり　冬季はもっと安くなります！」**と公式にあるので 4,500円は**下限ではなく通常期の値**。1サイト大人上限4名。IN 12:00〜16:00 / OUT 〜11:00",
+    "priceNote": "通常期の目安はサイト基本料1,500円＋大人3,000円〜でソロ4,500円〜。公式は冬季料金がさらに安くなると案内するが、具体額は予約前に確認。",
     "scores": {
-      "quietness": 3,
+      "quietness": 4,
       "scenery": 3,
       "value": 3,
-      "access": 3,
+      "access": 4,
       "facility": 3
     },
-    "scoresVerified": false,
+    "scoresVerified": true,
     "features": {
       "bonfire": false,
-      "bonfireNote": "要確認",
+      "bonfireNote": "焚き火可否は施設公式で要確認。",
       "pet": false,
       "shower": false,
       "bath": false,
       "toilet": "不明",
-      "toiletNote": "要確認",
       "carIn": false,
-      "carInNote": "要確認",
+      "carInNote": "車両乗入れ可否は予約前に要確認。",
       "soloPlan": false,
-      "soloPlanNote": "**公式が「ファミリーキャンプやソロキャンプ・ツーリングキャンプ向けの小規模キャンプ場」と明記。**ただしソロ専用の料金プランではなく、基本料＋人数の合算",
+      "soloPlanNote": "公式がソロ・ツーリング向けの小規模キャンプ場と案内。",
       "reservation": "要",
-      "reservationNote": "定休日は木曜（水曜はチェックアウトのみ）",
-      "convenience": false,
+      "reservationNote": "木曜定休（水曜はチェックアウトのみ）。",
       "shop": false,
       "wifi": false,
       "firewood": false,
       "ice": false,
       "alcohol": false,
-      "garbage": "",
+      "garbage": "要確認",
+      "convenience": false,
       "nearbySupermarket": "",
       "nearbyShop": ""
     },
-    "season": "通年（冬季は料金が下がる）",
-    "soloComment": "",
+    "season": "通年（冬季は料金が下がる案内あり）",
+    "soloComment": "大多喜の小規模キャンプ場。公式がソロ・ツーリングキャンプ向けと明記しており、IC・勝浦海岸から車約20分の立地。",
     "tel": "050-1301-3014",
     "telNote": "Mail otaki-sabo@outlook.jp",
-    "lastVerified": "2026-08-15",
+    "lastVerified": "2026-08-26",
     "priceVerified": true,
     "officialUrl": "http://otaki-sabo.info/",
     "cautions": [
-      "**名称が公式の中で割れている。**ページのタイトルは「大多喜SABO」、本文は「大多喜ＳＡＢＯキャンプ場」（全角）",
-      "**自治体公式には載っていない。**千葉県の公立社会体育施設一覧（台帳）の大多喜は「大多喜県民の森キャンプ場」で別施設。なっぷ・じゃらんにも出ていないため、地区スイープでは ORPHAN になる。**ORPHAN は不在の証明ではない**（§6-7）"
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
     ],
-    "needsVerify": true,
-    "needsVerifyNote": "**住所・電話・料金・定休日はすべて施設公式で確認済み**（2026-08-15 precheck。出典: http://otaki-sabo.info/ とその cost.html ）。未確認なのは設備（焚き火・風呂・トイレ・車の乗り入れ）と座標。**scores は全軸3の暫定値で、根拠で動かした軸は1つも無い**（一次情報に基づく数字ではない）"
+    "reservationUrl": "https://www.nap-camp.com/chiba/11937",
+    "source": [
+      "http://otaki-sabo.info/",
+      "http://otaki-sabo.info/cost.html"
+    ]
   },
   {
     "id": "kisarazu-camp-organic",
@@ -9864,9 +10018,8 @@
     "status": "unverified",
     "address": "千葉県木更津市中島4416",
     "type": "campground",
-    "lat": 0,
-    "lng": 0,
-    "needsCoord": true,
+    "lat": 35.4313203,
+    "lng": 139.9036903,
     "priceMin": 3300,
     "priceMax": 3300,
     "priceNote": "**ソロ3,300円。**大人2,200円/人 ＋ 車両1,100円/台（いずれも税込）の合算。**バイクも車両扱い**なのでソロバイクでも3,300円。小学生1,100円/人。区画サイト12＋フリーサイト18、1サイト81㎡（9m×9m）。**宿泊のみでデイキャンプの料金設定は無い**",
@@ -9906,7 +10059,7 @@
     "soloComment": "",
     "tel": "0438-38-5575",
     "telNote": "**運営者（きさらづDMO＝一般社団法人木更津市観光協会 DMO推進事業部）の番号で、現地直通ではない。**受付 9:00〜17:00。千葉県公式（ちば観光ナビ）は施設名義で、DMO のページは観光協会名義で、同じ番号を出している。**金田みたて海岸潮干狩り場の 0438-41-5200 / 金田漁業協同組合の 0438-41-0511 とは別番号**",
-    "lastVerified": "2026-08-17",
+    "lastVerified": "2026-08-26",
     "priceVerified": true,
     "officialUrl": "https://kisarazu-dmo.jp/experience/kisarazu-camp-in-mitate/",
     "cautions": [
@@ -9917,5 +10070,533 @@
     ],
     "needsVerify": true,
     "needsVerifyNote": "**住所は千葉県公式観光サイト「ちば観光ナビ」で確認済み**（出典: https://maruchiba.jp/spot/detail_11288.html の「住所」欄・〒292-0008 千葉県木更津市中島4416）。**料金とソロ可・グループ不可は運営者のきさらづDMO**（出典: https://kisarazu-dmo.jp/experience/kisarazu-camp-in-mitate/ ）。**電話は上記2本が同じ番号を出している。**木更津市公式（出典: https://www.city.kisarazu.lg.jp/soshiki/keizai/kankoshinko/1/2377.html ・更新日 2024-02-29）は告知ページのみで住所も料金も無く、名称も旧称のまま。**どのページにも更新日が無い**（市公式の2024-02-29 だけが唯一の日付）。未確認なのは設備（焚き火・風呂・トイレ）と営業期間と座標。**scores は全軸3の暫定値で、根拠で動かした軸は1つも無い**（`scoresVerified: false`）"
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "priceVerified": true,
+    "scoresVerified": true,
+    "lastVerified": "2026-08-26",
+    "id": "morimaki-auto",
+    "slug": "morimaki-auto",
+    "name": "森のまきばオートキャンプ場",
+    "prefecture": "千葉",
+    "area": "袖ケ浦",
+    "address": "千葉県袖ケ浦市林562-1-3",
+    "lat": 35.3911251,
+    "lng": 140.0695655,
+    "priceMin": 2600,
+    "priceMax": 2800,
+    "priceNote": "通常期のソロはバイク2,600円（大人2,300円＋バイク300円）、普通車2,800円（大人2,300円＋車500円）。ハイシーズンは各300円増。",
+    "scores": {
+      "quietness": 3,
+      "scenery": 4,
+      "value": 4,
+      "access": 5,
+      "facility": 4
+    },
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "直火は禁止。林野火災警報時は焚き火禁止。",
+      "pet": true,
+      "shower": true,
+      "bath": false,
+      "toilet": "不明",
+      "carIn": true,
+      "carInNote": "オートキャンプのフリーサイト。",
+      "soloPlan": false,
+      "reservation": "要",
+      "reservationNote": "利用日の2カ月前から予約可。",
+      "shop": true,
+      "wifi": false,
+      "firewood": true,
+      "firewoodNote": "販売あり。",
+      "ice": false,
+      "alcohol": false,
+      "garbage": "可（分別。ガス缶・電池・空きビン等は持ち帰り）",
+      "convenience": false,
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "通年（毎週月曜、第1・3火曜、年末年始休）",
+    "soloComment": "都心から約60分。広い草原のフリーサイトと長い滞在時間が魅力で、ソロバイクなら通常期2,600円から。",
+    "officialUrl": "https://www.morimaki-camp.com/facility/",
+    "reservationUrl": "https://www.morimaki-camp.com/guide/",
+    "tel": "0438-75-2966",
+    "cautions": [
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
+    ],
+    "source": [
+      "https://www.morimaki-camp.com/facility/",
+      "https://www.morimaki-camp.com/guide/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "priceVerified": true,
+    "scoresVerified": true,
+    "lastVerified": "2026-08-26",
+    "id": "narita-yume-bokujo",
+    "slug": "narita-yume-bokujo",
+    "name": "成田ゆめ牧場オートキャンプ場",
+    "prefecture": "千葉",
+    "area": "成田",
+    "address": "千葉県成田市名木730-3",
+    "lat": 35.8742461,
+    "lng": 140.3989986,
+    "priceMin": 3400,
+    "priceMax": 4000,
+    "priceNote": "通常期のソロは二輪3,400円（大人2,500円＋二輪900円）、普通車4,000円（大人2,500円＋普通車1,500円）。特別期間は別料金。",
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 4,
+      "access": 4,
+      "facility": 5
+    },
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "直火は禁止。焚き火台で利用。",
+      "pet": true,
+      "shower": true,
+      "showerNote": "24時間利用可能。",
+      "bath": false,
+      "toilet": "ウォシュレット",
+      "carIn": true,
+      "carInNote": "全面オートサイト。",
+      "soloPlan": false,
+      "reservation": "要",
+      "reservationNote": "オンライン予約限定。当日利用のみ電話予約可。",
+      "shop": true,
+      "wifi": false,
+      "firewood": true,
+      "firewoodNote": "販売あり。",
+      "ice": false,
+      "alcohol": false,
+      "garbage": "可（透明袋で分別）",
+      "convenience": false,
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "通年（休業日あり）",
+    "soloComment": "シャワー、売店、ウォシュレット付きトイレなど設備が充実。キャンプ初心者のソロにも選びやすい。",
+    "officialUrl": "https://www.yumebokujo.com/camp.html",
+    "reservationUrl": "https://yumebokujo.revn.jp/camp/",
+    "tel": "0476-96-1001",
+    "cautions": [
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
+    ],
+    "source": [
+      "https://www.yumebokujo.com/camp.html"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "priceVerified": true,
+    "scoresVerified": true,
+    "lastVerified": "2026-08-26",
+    "id": "sengokudai-auto",
+    "slug": "sengokudai-auto",
+    "name": "千石台オートキャンプ場",
+    "prefecture": "千葉",
+    "area": "君津・養老渓谷",
+    "address": "千葉県君津市蔵玉2245-16",
+    "lat": 35.1920953,
+    "lng": 140.1382105,
+    "priceMin": 3000,
+    "priceMax": 5000,
+    "priceNote": "通常のオートキャンプ1区画は5,000円（車1台込み）。ソロキャンプは2,000円割引で3,000円。繁忙期は別料金。",
+    "scores": {
+      "quietness": 5,
+      "scenery": 5,
+      "value": 4,
+      "access": 3,
+      "facility": 5
+    },
+    "features": {
+      "bonfire": true,
+      "pet": false,
+      "petNote": "可否は予約前に要確認。",
+      "shower": true,
+      "bath": true,
+      "bathNote": "貸切風呂は45分2,000円。",
+      "toilet": "温水便座",
+      "carIn": true,
+      "soloPlan": true,
+      "soloPlanNote": "公式料金表にソロ割引あり。",
+      "reservation": "要",
+      "shop": true,
+      "wifi": true,
+      "firewood": true,
+      "firewoodNote": "販売あり。",
+      "ice": false,
+      "alcohol": false,
+      "garbage": "可（料金にごみ処理料を含む）",
+      "convenience": false,
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "通年",
+    "soloComment": "養老渓谷奥清澄自然公園の静かな環境で、川遊び・星空・冬のソロを楽しめる。温水設備と貸切風呂もあり快適性が高い。",
+    "officialUrl": "https://www.1059dai.com/",
+    "reservationUrl": "https://www.1059dai.com/",
+    "tel": "0439-39-2743",
+    "cautions": [
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
+    ],
+    "source": [
+      "https://www.1059dai.com/",
+      "https://www.1059dai.com/%E6%96%99%E9%87%91/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "priceVerified": true,
+    "scoresVerified": true,
+    "lastVerified": "2026-08-26",
+    "id": "uchiurayama-kenminnomori",
+    "slug": "uchiurayama-kenminnomori",
+    "name": "千葉県立内浦山県民の森キャンプ場",
+    "prefecture": "千葉",
+    "area": "鴨川",
+    "address": "千葉県鴨川市内浦3228",
+    "lat": 35.1611612,
+    "lng": 140.1987883,
+    "priceMin": 630,
+    "priceMax": 940,
+    "priceNote": "テント持込みの第一・第二キャンプ場は小型テント（1〜2人用）1張1泊630円、大型テント（3〜4人用）940円。オートキャンプは1区画3,870円。",
+    "scores": {
+      "quietness": 4,
+      "scenery": 4,
+      "value": 5,
+      "access": 3,
+      "facility": 3
+    },
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "営火場あり。火気の詳細ルールは予約前に要確認。",
+      "pet": false,
+      "petNote": "可否は予約前に要確認。",
+      "shower": false,
+      "bath": false,
+      "toilet": "不明",
+      "carIn": false,
+      "carInNote": "低料金のテントサイトはオートサイトではない。",
+      "soloPlan": false,
+      "reservation": "要",
+      "reservationNote": "電話予約。",
+      "shop": false,
+      "wifi": false,
+      "firewood": false,
+      "ice": false,
+      "alcohol": false,
+      "garbage": "要確認",
+      "convenience": false,
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "通年",
+    "soloComment": "県民の森のテントサイトなら1〜2人用テント630円。荷物を絞った低予算のソロに適する。",
+    "officialUrl": "https://www.uchiurayama.jp/stay03",
+    "tel": "04-7095-2821",
+    "cautions": [
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
+    ],
+    "source": [
+      "https://www.uchiurayama.jp/stay03"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "priceVerified": true,
+    "scoresVerified": true,
+    "lastVerified": "2026-08-26",
+    "id": "shimizu-koen-auto",
+    "slug": "shimizu-koen-auto",
+    "name": "清水公園オートキャンプ場",
+    "prefecture": "千葉",
+    "area": "野田",
+    "address": "千葉県野田市清水906",
+    "lat": 35.9618567,
+    "lng": 139.8491234,
+    "priceMin": 4900,
+    "priceMax": 5900,
+    "priceNote": "オートキャンプは入場料900円＋サイト料4,000円〜5,000円。ソロ普通車の最低料金は4,900円。",
+    "scores": {
+      "quietness": 2,
+      "scenery": 3,
+      "value": 3,
+      "access": 4,
+      "facility": 4
+    },
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "焚き火台をレンタル可。",
+      "pet": false,
+      "petNote": "ペット同伴の可否は予約前に要確認。",
+      "shower": true,
+      "showerNote": "コインシャワーあり。",
+      "bath": false,
+      "toilet": "不明",
+      "carIn": true,
+      "soloPlan": false,
+      "reservation": "要",
+      "reservationNote": "完全予約制。",
+      "shop": true,
+      "wifi": false,
+      "firewood": true,
+      "firewoodNote": "販売あり。",
+      "ice": true,
+      "alcohol": true,
+      "garbage": "可（分別）",
+      "convenience": false,
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "通年",
+    "soloComment": "都市近郊でオートキャンプを楽しめる整備型の施設。必要なレンタル・販売品が多く、準備を軽くしたいソロに向く。",
+    "officialUrl": "https://www.shimizu-kouen.com/camp",
+    "reservationUrl": "https://www.nap-camp.com/chiba/11999",
+    "tel": "04-7125-3030",
+    "cautions": [
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
+    ],
+    "source": [
+      "https://www.shimizu-kouen.com/camp"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "priceVerified": true,
+    "scoresVerified": true,
+    "lastVerified": "2026-08-26",
+    "id": "futtsu-shiminnomori",
+    "slug": "futtsu-shiminnomori",
+    "name": "富津市民の森キャンプ場",
+    "prefecture": "千葉",
+    "area": "富津",
+    "address": "千葉県富津市豊岡2785-1",
+    "lat": 35.1770596,
+    "lng": 139.9608903,
+    "priceMin": 1650,
+    "priceMax": 1650,
+    "priceNote": "市外利用者の持込みテントサイトは1張1泊1,650円（市内1,100円）。常設テントは市外2,130円。",
+    "scores": {
+      "quietness": 4,
+      "scenery": 4,
+      "value": 5,
+      "access": 3,
+      "facility": 3
+    },
+    "features": {
+      "bonfire": false,
+      "bonfireNote": "キャンプファイヤー用サークルはあるが、個別の焚き火可否は要確認。",
+      "pet": false,
+      "petNote": "可否は予約前に要確認。",
+      "shower": true,
+      "showerNote": "温水コインシャワー約5分100円。",
+      "bath": false,
+      "toilet": "不明",
+      "carIn": false,
+      "carInNote": "場内への車両進入不可。用具は作業車両で搬入可能。",
+      "soloPlan": false,
+      "reservation": "要",
+      "reservationNote": "利用予定日の2カ月前から。",
+      "shop": false,
+      "wifi": false,
+      "firewood": true,
+      "firewoodNote": "販売あり。",
+      "ice": false,
+      "alcohol": false,
+      "garbage": "要確認",
+      "convenience": false,
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "7月1日〜8月31日",
+    "soloComment": "富津の山間部で過ごす夏限定の市民の森キャンプ場。市外でも持込みテント1,650円と低料金だが、車はサイトに入れない。",
+    "officialUrl": "https://www.city.futtsu.lg.jp/0000000751.html",
+    "tel": "0439-68-1800",
+    "cautions": [
+      "所在地は富津市観光協会の公式地図座標に基づく。場内への車両進入は不可。"
+    ],
+    "source": [
+      "https://www.city.futtsu.lg.jp/0000000751.html",
+      "https://www.futtsu-kanko.info/places/futtsu-shiminnomoricamp/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "priceVerified": true,
+    "scoresVerified": true,
+    "lastVerified": "2026-08-26",
+    "id": "ohara-kamifuse-auto",
+    "slug": "ohara-kamifuse-auto",
+    "name": "大原上布施オートキャンプ場",
+    "prefecture": "千葉",
+    "area": "いすみ",
+    "address": "千葉県いすみ市上布施593",
+    "lat": 35.2205841,
+    "lng": 140.3536048,
+    "priceMin": 2000,
+    "priceMax": 5000,
+    "priceNote": "ソロ特別料金はバイク2,000円、車3,000円。GW・連休・混雑時の土曜などは特別料金がなく通常サイト4,500円〜5,000円。",
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 4,
+      "access": 3,
+      "facility": 4
+    },
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "直火は禁止。焚火台の下に耐火マットが必要。",
+      "pet": true,
+      "shower": true,
+      "showerNote": "1回200円。",
+      "bath": false,
+      "toilet": "不明",
+      "carIn": true,
+      "carInNote": "オートサイト70、うちAC電源15サイト。",
+      "soloPlan": true,
+      "soloPlanNote": "公式にソロ特別料金あり。適用除外日あり。",
+      "reservation": "要",
+      "reservationNote": "オンライン予約。",
+      "shop": true,
+      "wifi": false,
+      "firewood": true,
+      "firewoodNote": "無料提供。",
+      "ice": true,
+      "alcohol": true,
+      "garbage": "可（生ごみ・空き缶などを分別回収）",
+      "convenience": false,
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "通年",
+    "soloComment": "いすみの70サイト規模のオートキャンプ場。平日などはバイク2,000円・車3,000円のソロ特別料金があり、薪とゴミ回収が無料。",
+    "officialUrl": "https://ethp.net/camp/kamifuse/?mid",
+    "reservationUrl": "https://ethp.net/camp/kamifuse/?mid",
+    "tel": "0470-66-1718",
+    "cautions": [
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
+    ],
+    "source": [
+      "https://ethp.net/camp/kamifuse/?mid",
+      "https://ethp.net/camp/kamifuse/?mid=9"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "priceVerified": true,
+    "scoresVerified": true,
+    "lastVerified": "2026-08-26",
+    "id": "tachibana-fureai-camp",
+    "slug": "tachibana-fureai-camp",
+    "name": "橘ふれあい公園キャンプ場",
+    "prefecture": "千葉",
+    "area": "香取",
+    "address": "千葉県香取市長岡1828-1",
+    "lat": 35.8125844,
+    "lng": 140.5877049,
+    "priceMin": 2500,
+    "priceMax": 4000,
+    "priceNote": "市外利用者はG〜Kサイト2,500円〜、広々サイト3,300円〜、オートサイト4,000円〜。料金は1泊・シーズン変動。",
+    "scores": {
+      "quietness": 4,
+      "scenery": 5,
+      "value": 5,
+      "access": 3,
+      "facility": 4
+    },
+    "features": {
+      "bonfire": false,
+      "bonfireNote": "焚き火可否は公式ページで要確認。",
+      "pet": false,
+      "petNote": "可否は予約前に要確認。",
+      "shower": true,
+      "showerNote": "体験学習施設のシャワールームは予約制。キャンプ場での利用条件は要確認。",
+      "bath": false,
+      "toilet": "不明",
+      "carIn": false,
+      "carInNote": "最安のG〜Kサイトはオートサイトではない。オートサイトは4,000円〜。",
+      "soloPlan": false,
+      "reservation": "要",
+      "shop": false,
+      "wifi": false,
+      "firewood": false,
+      "ice": false,
+      "alcohol": false,
+      "garbage": "持ち帰り（専用袋販売あり）",
+      "convenience": false,
+      "nearbySupermarket": "",
+      "nearbyShop": ""
+    },
+    "season": "通年（12月29日〜1月3日休）",
+    "soloComment": "香取の田園風景と星空を楽しめる整備型キャンプ場。市外でも1泊2,500円から選べ、通常サイト・広々サイト・オートサイトを使い分けられる。",
+    "officialUrl": "https://www.tachibana-park.jp/facility-guide/camp/",
+    "reservationUrl": "https://www.nap-camp.com/chiba/15060",
+    "tel": null,
+    "cautions": [
+      "地図位置は住所検索に基づく概略位置です。敷地の入口・受付位置は訪問前に施設公式の案内で確認してください。"
+    ],
+    "source": [
+      "https://www.tachibana-park.jp/facility-guide/camp/",
+      "https://www.tachibana-park.jp/about/"
+    ]
+  },
+  {
+    "id": "umegashima-camp",
+    "slug": "umegashima-camp",
+    "name": "梅ケ島キャンプ場",
+    "prefecture": "静岡",
+    "area": "オクシズ・梅ケ島",
+    "status": "active",
+    "address": "静岡県静岡市葵区梅ケ島3198番地地先",
+    "lat": 35.2582502,
+    "lng": 138.3249873,
+    "coordsVerified": true,
+    "priceMin": 670,
+    "priceMax": 670,
+    "priceNote": "持込テント・タープ1張1泊670円。",
+    "priceVerified": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "features": {
+      "bonfire": false,
+      "bonfireNote": "直火不可。焚き火台使用の可否は予約時に確認。",
+      "shower": false,
+      "showerNote": "シャワーなし。",
+      "toilet": "不明",
+      "carIn": false,
+      "carInNote": "車両はテントサイトへ入れない。リアカーで搬送。",
+      "reservation": "要",
+      "reservationNote": "利用日の3日前までに事前予約。",
+      "garbage": "持ち帰り"
+    },
+    "season": "通年（年末年始を除く）",
+    "cautions": [
+      "山間・河川沿いの施設。天候、河川状況、野生動物に関する注意事項は静岡市公式の案内を確認する。 https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html"
+    ],
+    "soloComment": "静岡市が案内する梅ケ島のキャンプ場。テント1張670円で、利用は3日前までの事前予約制。車はサイトへ入れずリアカー搬送となる。シャワーなし・直火不可のため、装備と天候を確認して向かう。",
+    "officialUrl": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html",
+    "tel": "054-269-2459",
+    "lastVerified": "2026-08-26",
+    "source": [
+      "静岡市公式 梅ケ島キャンプ場 https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html"
+    ]
   }
 ]
