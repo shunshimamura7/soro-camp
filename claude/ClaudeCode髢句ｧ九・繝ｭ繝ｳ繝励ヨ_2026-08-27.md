@@ -37,20 +37,20 @@ git log --oneline -5 と git status で状態を報告。
 
 【今日やること：報告だけ。書き込みはしない】
 1. npm install → npm run validate && npm test && npm run build を実行して結果を報告。
-   validate は警告8件で通るのが正常（2026-08-29 更新）。内訳は
+   validate は警告7件で通るのが正常（2026-08-29 更新）。内訳は
    coordsVerified 3件（kabutomushi-mori-camp / mobility-park-izu / makioka-fruits-camp）＝実ピン待ち、
-   wildStatus "不明" 5件（nakatsugawa-kasenjiki / sumida-ohashi-kasenjiki / hasugebashi-kasenjiki /
-   wadanagahama-kaigan / kofu-shinrinyoku-hiroba）＝一次情報の調査待ち・既定表示からは外してある。
-   この8件以外の警告が出たら、それが差分。
+   wildStatus "不明" 4件（nakatsugawa-kasenjiki / sumida-ohashi-kasenjiki / hasugebashi-kasenjiki /
+   wadanagahama-kaigan）＝一次情報の調査待ち・既定表示からは外してある。
+   この7件以外の警告が出たら、それが差分。
    test は test-restrictions 64件 と test-filters 10条件の両方が成功すること
 2. データ実測を報告：
    総レコード数 / status 別件数 / active の県別 / active の type 別（wild と非wild）/
    active のうち hasEvidenceUrl を満たす件数と満たさない件数 /
    active の priceVerified・needsPrice・coordsVerified・scoresVerified の件数
    （期待値：201 / active159・unverified33・closed7・suspended2 / 神奈川40・静岡50・山梨58・千葉11 /
-     wild11・非wild148 / hasEvidence あり132（キャンプ場126・野営地6）・なし27（キャンプ場22・野営地5） /
+     wild11・非wild148 / hasEvidence あり133（キャンプ場126・野営地7）・なし26（キャンプ場22・野営地4） /
      pv147・needsPrice12・coordsVerified124・scoresVerified11 /
-     wildStatus 公認2・黙認4・不明5）
+     wildStatus 公認3・黙認4・不明4）
    ★ 根拠の判定は hasEvidence()。野営地はURLではなく「使える座標＋cautions 3件以上、
      かつ wildStatus が "不明" でない」で見る（2026-08-29 更新）
    ★ 期待値と1件でもズレたら、直さずに差分だけ報告して止まる
@@ -96,7 +96,7 @@ scripts/list-price-pending-2026-08-26.js の12件について、公式（施設�
 ```
 active かつ hasEvidence が false のキャンプ場22件を一覧化（slug / 名前 / 県 / 住所 / tel）。
 ※ 野営地は 2026-08-27 に判定を分けたので、この22件に野営地は含まれない。
-※ hasEvidence が false は全部で27件だが、残る5件は wildStatus: "不明" の野営地で、
+※ hasEvidence が false は全部で26件だが、残る4件は wildStatus: "不明" の野営地で、
   必要なのは officialUrl ではなく管理者（自治体・河川管理者）の一次情報。別件として扱う。
 そのうち公式サイトか自治体ページが見つかったものだけ officialUrl（または reservationUrl / source[]）と
 lastVerified を埋める。見つからないものは触らない。既定表示に戻す判断はこちらでする。

@@ -18,8 +18,8 @@
 | ホスティング | Cloudflare Pages、ダイレクトアップロード |
 | 通常掲載 | 159件（キャンプ場148件、野営地11件） |
 | 対象地域 | 神奈川・静岡・山梨・千葉 |
-| 標準表示 | 根拠を確認できた132件（キャンプ場126・野営地6）を優先表示 |
-| 情報確認中 | 27件は利用者が明示的に切り替えた時だけ表示（キャンプ場22・野営地5） |
+| 標準表示 | 根拠を確認できた133件（キャンプ場126・野営地7）を優先表示 |
+| 情報確認中 | 26件は利用者が明示的に切り替えた時だけ表示（キャンプ場22・野営地4） |
 | 5軸評価を確認済み | 11件。残りは「評価確認中」で中立扱い |
 | 釣り可 | 公式に確認できた3施設だけを検索対象に登録 |
 | URL正規化 | `sitemap.xml` / OGP / canonical は `https://soro-camp.pages.dev` を指す |
@@ -66,14 +66,14 @@ npm run build
 
 `prebuild` でデータ検証・利用制限テスト・こだわり条件の構造テスト（`scripts/test-filters.js`）が走り、`build` は静的ファイルを `out/` に生成する。
 
-**現在の正常状態は「validate が警告8件で通る」である**（2026-08-29 更新）。内訳は次のとおりで、すべて既知。
+**現在の正常状態は「validate が警告7件で通る」である**（2026-08-29 更新）。内訳は次のとおりで、すべて既知。
 
 | 種類 | 件数 | 対象 | 待っているもの |
 |---|---:|---|---|
 | `coordsVerified` が機械検証を通っていない | 3件 | `kabutomushi-mori-camp` / `mobility-park-izu` / `makioka-fruits-camp` | 実ピンの引き直し（しゅん本人の目視） |
-| `wildStatus: "不明"` | 5件 | `nakatsugawa-kasenjiki` / `sumida-ohashi-kasenjiki` / `hasugebashi-kasenjiki` / `wadanagahama-kaigan` / `kofu-shinrinyoku-hiroba` | 一次情報の調査。**既定表示からは外してある**（削除ではない） |
+| `wildStatus: "不明"` | 4件 | `nakatsugawa-kasenjiki` / `sumida-ohashi-kasenjiki` / `hasugebashi-kasenjiki` / `wadanagahama-kaigan` | 一次情報の調査。**既定表示からは外してある**（削除ではない） |
 
-**この8件以外の警告が出たら、それが自分の変更による差分である。8件以外の警告を無視して公開しないこと。**
+**この7件以外の警告が出たら、それが自分の変更による差分である。7件以外の警告を無視して公開しないこと。**
 
 > **`npm run deploy` は使わない。** 2026-08-27 に Pages へ移行したため、`deploy` は誤爆ガード（`scripts/deploy-guard.js`）に置き換えてある。実行すると正規手順を表示して終了する。`wrangler.toml` は記録として残しているが使用しない。
 
@@ -123,7 +123,7 @@ npm run deploy:pages
 
 ### 表示・検索の原則
 
-- デフォルトでは `hasEvidence(camp)` を満たす施設を表示する。満たさない27件（根拠URLなしのキャンプ場22件＋`wildStatus: "不明"` の野営地5件）は「情報確認中も表示」を押した時のみ一覧・地図に出す。**レコードも詳細ページも消さない。表示の分離であって削除ではない。**
+- デフォルトでは `hasEvidence(camp)` を満たす施設を表示する。満たさない26件（根拠URLなしのキャンプ場22件＋`wildStatus: "不明"` の野営地4件）は「情報確認中も表示」を押した時のみ一覧・地図に出す。**レコードも詳細ページも消さない。表示の分離であって削除ではない。**
 - **野営地（`type: "wild"`）に施設公式URLを求めない。** 管理者不在で公式サイトが存在しないため、URLで判定すると構造的に全件落ちる（実際に11件中9件が落ちていた）。代わりに「使える座標がある」かつ「cautions が3件以上ある」かつ「`wildStatus` が `"不明"` でない」を条件にする。
 - **野営地の公認/黙認は `wildStatus` フィールドで判定する**（`"公認" | "黙認" | "不明"`）。2026-08-29 まで `cautions` の文字列（「黙認」など）を正規表現で見ていたが、**文言を書き換えると「公認なし」の表示が警告なく消えていた**。公認された無料開放地と黙認の河川敷では利用者が負う責任が違うので、フィールドに固定した。`validate-data.js` が「野営地なのに wildStatus が無い」でビルドを止める。
 - 予算フィルタは `priceVerified` の最安額だけを判定に使う。未確認価格は予算内に混ぜない。
@@ -153,11 +153,11 @@ npm run deploy:pages
 
 ### 最優先：掲載情報の再確認
 
-1. **地図実ピンの人手確認**：`kabutomushi-mori-camp`（住所と 9.8km / PREF_MISMATCH）、`mobility-park-izu`（0.21km / CITY_MISMATCH）、`makioka-fruits-camp`（17.3km / CITY_MISMATCH）は、いずれも `coordsVerified: true` のまま機械検証を通っていない。**この3件が `npm run validate` の警告8件のうち3件の中身である。**実ピンを引き直してフラグと整合させること。`scripts/verify-address-gsi.js`、`scripts/coordsverified-triage.js`、`scripts/coord-worklist.js` を参照する。
+1. **地図実ピンの人手確認**：`kabutomushi-mori-camp`（住所と 9.8km / PREF_MISMATCH）、`mobility-park-izu`（0.21km / CITY_MISMATCH）、`makioka-fruits-camp`（17.3km / CITY_MISMATCH）は、いずれも `coordsVerified: true` のまま機械検証を通っていない。**この3件が `npm run validate` の警告7件のうち3件の中身である。**実ピンを引き直してフラグと整合させること。`scripts/verify-address-gsi.js`、`scripts/coordsverified-triage.js`、`scripts/coord-worklist.js` を参照する。
 2. **根拠URLなしの22件**：公式サイト・自治体・公式予約先を見つけたものから `officialUrl` / `reservationUrl` / `source[]` / `cautions[]` のいずれかと `lastVerified` を補う。無理に通常表示へ戻さない。
-3. **`wildStatus: "不明"` の野営地5件**：管理者（自治体・河川管理者）の一次情報を探し、取れたものから `公認` / `黙認` に確定する。調べる順は **甲府市 森林浴広場 → 愛川町の3河川敷 → 和田長浜海岸**（理由は `claude/継続メモ-2026-08-27.md` の 2026-08-29 節）。これが validate の警告8件のうち残り5件の中身。
-3. **料金要確認の12件**：`data/price-pending-active-2026-08-26.md`（`node scripts/list-price-pending-2026-08-26.js` の出力を台帳化したもの。再生成できる）を使い、公式料金を確認できたものだけ再表示する。うち3件は公式URL自体が未特定、1件は予約サイトのURLしか無い。
-4. **5軸評価の148件**：まとめて推測採点せず、施設ごとの根拠を蓄積してから段階的に `scoresVerified` を上げる。
+3. **`wildStatus: "不明"` の野営地4件**：`nakatsugawa-kasenjiki` / `sumida-ohashi-kasenjiki` / `hasugebashi-kasenjiki` / `wadanagahama-kaigan`。管理者（自治体・河川管理者）の一次情報を探し、取れたものから `公認` / `黙認` に確定する。**2026-08-29 に5件を一巡済み**で、残る4件は当たり先まで絞れている（`claude/継続メモ-2026-08-27.md` の 2026-08-29 節を先に読むこと。同じ調査を繰り返さないため）。これが validate の警告7件のうち残り4件の中身。
+4. **料金要確認の12件**：`data/price-pending-active-2026-08-26.md`（`node scripts/list-price-pending-2026-08-26.js` の出力を台帳化したもの。再生成できる）を使い、公式料金を確認できたものだけ再表示する。うち3件は公式URL自体が未特定、1件は予約サイトのURLしか無い。
+5. **5軸評価の148件**：まとめて推測採点せず、施設ごとの根拠を蓄積してから段階的に `scoresVerified` を上げる。
 
 ### 次の掲載候補（第2弾）
 
