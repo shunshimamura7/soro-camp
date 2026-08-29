@@ -10,7 +10,7 @@ const noto = Noto_Sans_JP({ subsets: ["latin"], weight: ["400", "700"] });
 
 const SITE_NAME = "ソロキャン羅針盤";
 const SITE_DESCRIPTION =
-  "神奈川・静岡・山梨のソロキャンプ場を徹底比較。静か・絶景・コスパ・アクセス・設備の5軸スコアで自分だけの最高のサイトを見つけよう。";
+  "神奈川・静岡・山梨・千葉のソロキャンプ場を比較。予算・車横付け・釣り・売店などの希望条件と、料金・位置・評価の確認状況から自分に合うサイトを探せます。";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -21,11 +21,26 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | ソロキャンプ場ガイド 神奈川・静岡・山梨`,
+    default: `${SITE_NAME} | ソロキャンプ場ガイド 神奈川・静岡・山梨・千葉`,
     template: `%s | ${SITE_NAME}`,
   },
-  description: SITE_DESCRIPTION,
+    description: SITE_DESCRIPTION,
+  keywords: [
+    "ソロキャンプ",
+    "ソロキャンプ場",
+    "千葉県 キャンプ場",
+    "神奈川県 キャンプ場",
+    "静岡県 キャンプ場",
+    "山梨県 キャンプ場",
+    "釣り キャンプ場",
+    "売店あり キャンプ場",
+    "予約不要 キャンプ場",
+  ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
+
     type: "website",
     locale: "ja_JP",
     url: SITE_URL,
@@ -52,7 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/" className="text-slate-900 font-bold text-base sm:text-lg leading-none hover:text-blue-500 transition-colors">
                 ソロキャン羅針盤
               </Link>
-              <p className="text-xs text-slate-500 mt-0.5 hidden sm:block">神奈川・静岡・山梨 ソロキャンプ場ガイド</p>
+              <p className="text-xs text-slate-500 mt-0.5 hidden sm:block">神奈川・静岡・山梨・千葉 ソロキャンプ場ガイド</p>
             </div>
             <Link
               href="/about"

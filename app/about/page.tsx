@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { activeCampgrounds } from "@/lib/camp";
+import { activeCampgrounds, hasEvidence, hasVerifiedScores } from "@/lib/camp";
 
 export const metadata: Metadata = {
   title: "このサイトについて — スコアの見方とデータの扱い",
@@ -84,6 +84,8 @@ export default function AboutPage() {
   const unverified = activeCampgrounds.filter(
     (c) => !c.lastVerified || c.lastVerified.trim() === "" || c.lastVerified === "2025-01-01"
   ).length;
+  const scoresVerified = activeCampgrounds.filter(hasVerifiedScores).length;
+  const evidenceBacked = activeCampgrounds.filter(hasEvidence).length;
 
   return (
     <div className="max-w-4xl mx-auto px-3 sm:px-4 pt-4 sm:pt-8 pb-16">
@@ -97,7 +99,7 @@ export default function AboutPage() {
         このサイトについて
       </h1>
       <p className="text-[15px] text-slate-600 leading-[1.9] mb-8">
-        神奈川・静岡・山梨のキャンプ場と野営地を、ソロキャンプの視点で比較するためのサイトです。
+        神奈川・静岡・山梨・千葉のキャンプ場と野営地を、ソロキャンプの視点で比較するためのサイトです。
         現在 {total} 件（うち野営地 {wild} 件）を掲載しています。
       </p>
 
@@ -107,7 +109,7 @@ export default function AboutPage() {
           5軸スコアの定義
         </h2>
         <p className="text-[14px] text-slate-600 leading-[1.9] mb-4">
-          各キャンプ場を5つの軸で1〜5の整数で評価しています。
+          5軸は、根拠がそろった施設だけを1〜5の整数で評価します。現在は {scoresVerified} 件が評価確認済みで、残りは「評価確認中」として点数をおすすめに使いません。
         </p>
 
         <div className="flex flex-col gap-4">
@@ -146,8 +148,7 @@ export default function AboutPage() {
           soloScore の計算式
         </h2>
         <p className="text-[14px] text-slate-600 leading-[1.9] mb-3">
-          一覧の「おすすめ順」はこの値の降順です。5軸から計算した派生値なので、
-          データに直接持たせてはいません。
+          一覧の「おすすめ順」は、評価確認済みの施設ではこの値の降順です。評価確認中の施設は、仮の点数を使わず中立扱いで後ろに表示します。
         </p>
         <div className="bg-[#0e0d0b] rounded-2xl p-4 sm:p-5 mb-4 overflow-x-auto">
           <code className="font-['JetBrains_Mono',monospace] text-[12px] sm:text-[13px] text-[#e8c89a] whitespace-nowrap">
@@ -182,7 +183,7 @@ export default function AboutPage() {
         </h2>
         <p className="text-[14px] text-slate-600 leading-[1.9] mb-4">
           掲載情報は各キャンプ場の公式サイト、予約サイト、地図サービス、および公開情報をもとに整理しています。
-          座標は OpenStreetMap との照合と目視確認を併用しています。
+          現在は {evidenceBacked} 件に情報源の入口を記録し、根拠URLのない施設は一覧で「情報確認中」と表示します。
           スコアは公開情報にもとづく当サイトの評価であり、実測値ではありません。
         </p>
 
