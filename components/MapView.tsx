@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { hasUsableCoord } from "@/lib/camp";
+import { nearbyShoppingUrl } from "@/lib/maps";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
 import {
@@ -16,12 +17,9 @@ import {
 type Props = { camps: Campground[]; height?: number };
 
 function popupHtml(camp: Campground): string {
-  // 正しい位置が分からない施設では買い物リンクを出さない（判定は hasUsableCoord に一本化）。
-  // @0,0 はギニア湾沖を指し、誤った座標は無関係な場所の周辺を出してしまう。
+  // 場所を特定できていない施設には買い物リンクを出さない（判定は hasUsableCoord に一本化）。
   const hasCoord = hasUsableCoord(camp);
-  const shop =
-    `https://www.google.com/maps/search/` +
-    `スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`;
+  const shop = nearbyShoppingUrl(camp);
   return (
     `<a href="/camp/${camp.slug}" class="camp-popup-link">` +
       `<span class="camp-popup-name">${camp.name}</span>` +

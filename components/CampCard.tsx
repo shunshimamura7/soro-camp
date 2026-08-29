@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Campground } from "@/lib/types";
+import { campMapUrl } from "@/lib/maps";
 import { RestrictionChips, EligibilityChip } from "@/components/RestrictionChip";
 import FavoriteButton from "@/components/FavoriteButton";
 
@@ -31,9 +32,7 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
   // 値は入っているが裏を取っていないもの。根拠のない金額は出さない
   const priceUnverified = !isWild && camp.priceVerified !== true;
   const noBonfire = isNoBonfire(camp.features);
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    camp.name + " " + (camp.address ?? "")
-  )}`;
+  const mapsUrl = campMapUrl(camp);
 
   return (
     <article className="bg-white rounded-2xl border border-[#e2ddd8] hover:border-[#e8611f]/40 hover:shadow-lg transition-all overflow-hidden">

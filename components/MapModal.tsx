@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { hasUsableCoord } from "@/lib/camp";
+import { nearbyShoppingUrl } from "@/lib/maps";
 import { createPortal } from "react-dom";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
@@ -255,10 +256,10 @@ function CampDetailPanel({
       <a href={`/camp/${camp.slug}`} className="panel-detail-link">
         詳細を見る →
       </a>
-      {/* 正しい位置が分からない施設では出さない（hasUsableCoord）。@0,0 はギニア湾沖を指す */}
+      {/* 場所を特定できていない施設には出さない（hasUsableCoord）。URL は lib/maps.ts */}
       {hasUsableCoord(camp) && (
         <a
-          href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
+          href={nearbyShoppingUrl(camp)}
           target="_blank"
           rel="noopener noreferrer"
           style={{ display: "block", marginTop: "6px", fontSize: "11px", color: "#e8611f", textDecoration: "none" }}

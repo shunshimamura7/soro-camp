@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { hasUsableCoord } from "@/lib/camp";
+import { campMapUrl, nearbyShoppingUrl } from "@/lib/maps";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCampground, getAllSlugs } from "@/lib/camp";
@@ -144,14 +145,9 @@ export default async function CampDetailPage({
   if (f.firewood) featureBadges.push(["firewood","🪵 薪販売"]);
   if (f.shop)     featureBadges.push(["shop",    "🏪 売店"]);
 
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    camp.name + " " + (camp.address ?? "")
-  )}`;
-
-  // ?q= パラメータ形式：Google Maps が文字列全体を検索クエリとして扱い、
-  // キャンプ場名が検索バーに確実に表示される。
-  // path 形式（/search/QUERY/@lat,lng）だと先頭のキャンプ場名を POI と判定して
-  // 検索バーに表示されないため、こちらの形式を採用。
+  // URL の組み立ては lib/maps.ts に集約（3か所にベタ書きされていたのをまとめた）。
+  // api=1 形式を使う理由もそちらに書いてある。
+  const mapsUrl = campMapUrl(camp);
   return (
     <>
       <script
@@ -436,7 +432,7 @@ export default async function CampDetailPage({
               <h2 className="text-xs sm:text-sm font-bold text-slate-700 mb-2">アクセスマップ</h2>
               <div className="flex flex-wrap gap-2">
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(camp.name + ' ' + (camp.address ?? ''))}`}
+                  href={mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-[#e8611f] border border-[#e8611f]/40 rounded-lg font-mono text-sm hover:bg-[#e8611f] hover:text-white transition-colors"
@@ -444,18 +440,18 @@ export default async function CampDetailPage({
                   📍 Googleマップで開く
                 </a>
                 {/*
-                  正しい位置が分からない施設では出さない（hasUsableCoord）。
-                  @0,0 はギニア湾沖を指し、誤った座標なら無関係な土地の周辺施設が出る。
+                  URL に座標を埋めるのはやめたが、場所を特定できていない施設に
+                  「周辺の買い物」を出しても意味がないので hasUsableCoord の門は残す。
                   「Googleマップで開く」は施設名＋住所で引くので座標が無くても成立する。
                 */}
                 {hasUsableCoord(camp) && (
                   <a
-                    href={`https://www.google.com/maps/search/スーパーマーケット+精肉店+鮮魚店+スーパー銭湯+銭湯/@${camp.lat},${camp.lng},11z`}
+                    href={nearbyShoppingUrl(camp)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-slate-600 border border-slate-300 rounded-lg font-mono text-sm hover:bg-slate-100 transition-colors"
                   >
-                    🛒 周辺施設を探す
+                    🛒 周辺の買い物を探す
                   </a>
                 )}
                 <a
