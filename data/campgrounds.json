@@ -7681,7 +7681,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "不明"
   },
   {
     "id": "sumida-ohashi-kasenjiki",
@@ -7738,7 +7739,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "不明"
   },
   {
     "id": "hasugebashi-kasenjiki",
@@ -7795,7 +7797,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "不明"
   },
   {
     "id": "wadanagahama-kaigan",
@@ -7862,7 +7865,8 @@
     ],
     "priceVerified": true,
     "coordsGsiChecked": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "不明"
   },
   {
     "id": "kofu-shinrinyoku-hiroba",
@@ -7935,7 +7939,8 @@
     },
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "不明"
   },
   {
     "id": "ogayanagawa-keikoku",
@@ -8056,7 +8061,8 @@
     "lastVerified": "",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "黙認"
   },
   {
     "id": "kurokawa-shizuoka",
@@ -8184,7 +8190,8 @@
     "officialUrl": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/shogaigakushuka/kanko/2379.html",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "公認"
   },
   {
     "id": "ogurabashi-kasenjiki",
@@ -8243,7 +8250,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "黙認"
   },
   {
     "id": "takadabashi-kasenjiki",
@@ -8302,7 +8310,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "黙認"
   },
   {
     "id": "nishizato-camp-tekichi",
@@ -8360,7 +8369,8 @@
     "lastVerified": "2026-08-07",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "黙認"
   },
   {
     "id": "numazu-shimin-no-mori",
@@ -8422,7 +8432,8 @@
     "officialUrl": "https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/shiminnomori/",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "wildStatus": "公認"
   },
   {
     "id": "kamioshima-camp",

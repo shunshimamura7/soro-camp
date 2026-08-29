@@ -63,6 +63,14 @@ export type Campground = {
   /** 省略時は "campground"（管理されたキャンプ場）。"wild" は野営地。 */
   type?: "campground" | "wild";
   /**
+   * 野営地がその場所の管理者に認められているか。
+   *
+   * 公認 … 自治体・河川管理者が野営地／無料開放地として案内している
+   * 黙認 … 禁止されてはいないが、公認された野営地ではない
+   * 不明 … 裏付けが取れていない。**掲載しない**
+   */
+  wildStatus?: "公認" | "黙認" | "不明";
+  /**
    * 掲載状態。
    *
    * - `"active"` … 通常掲載。一覧に出る。
@@ -274,33 +282,40 @@ export type Campground = {
     facility: number;
   };
   features: {
-    bonfire: boolean;
+    /**
+     * boolean の未指定は「未確認」。false は、公式情報で「なし・不可・禁止」と確認できた場合だけ使う。
+     * 一覧・フィルタでは未確認を「あり」としては扱わないが、不可表示にも使わない。
+     */
+    bonfire?: boolean;
     bonfireNote?: string;
-    pet: boolean;
+    pet?: boolean;
     petNote?: string;
-    shower: boolean;
+    shower?: boolean;
     showerNote?: string;
-    bath: boolean;
+    bath?: boolean;
     bathNote?: string;
-    /** "不明" は「トイレはあるが様式が未確認」。無いことが確認できていれば "なし"。 */
-    toilet: "和式" | "洋式" | "ウォシュレット" | "温水便座" | "簡易" | "なし" | "不明";
+    /** "不明" は「トイレはあるが様式が未確認」。未指定はトイレ自体を未確認。 */
+    toilet?: "和式" | "洋式" | "ウォシュレット" | "温水便座" | "簡易" | "なし" | "不明";
     toiletNote?: string;
-    carIn: boolean;
+    carIn?: boolean;
     carInNote?: string;
-    soloPlan: boolean;
+    soloPlan?: boolean;
     soloPlanNote?: string;
-    reservation: "要" | "不要" | "ハイシーズンのみ";
+    reservation?: "要" | "不要" | "ハイシーズンのみ";
     reservationNote?: string;
-    convenience: boolean;
-    shop: boolean;
+    convenience?: boolean;
+    shop?: boolean;
+    /** 場内・隣接地で釣りができることを一次情報で確認できた場合のみ true。未指定は要確認。 */
+    fishing?: boolean;
+    fishingNote?: string;
     wifi?: boolean;
-    firewood: boolean;
+    firewood?: boolean;
     firewoodNote?: string;
-    ice: boolean;
-    alcohol: boolean;
-    garbage: string;
-    nearbySupermarket: string;
-    nearbyShop: string;
+    ice?: boolean;
+    alcohol?: boolean;
+    garbage?: string;
+    nearbySupermarket?: string;
+    nearbyShop?: string;
   };
   season: string;
   closedDays?: string;

@@ -109,6 +109,40 @@ if (!/camp\.type === "wild"/.test(campSrc.match(/export function hasEvidence\([\
   );
 }
 
+// ── 6. 野営地の「公認なし」判定が wildStatus を見ているか ─────────────────────
+// かつては cautions の文字列（「黙認」など）を正規表現で見ていた。**文言を書き換えると
+// 判定が静かに壊れ**、公認された無料開放地と黙認の河川敷が同じ顔で並ぶ。
+// 利用者が負う責任が違うので、フィールドを見ていることを機械的に守る。
+/** コメントを落としてから見る。説明文に「黙認」と書いただけで落ちないようにするため。 */
+const stripComments = (s) => s.replace(/\/\*[\s\S]*?\*\//g, "").replace(/\/\/.*$/gm, "");
+const toleratedFn = stripComments(
+  campSrc.match(/export function isToleratedWildSite\([\s\S]*?\n\}/)?.[0] ?? ""
+);
+if (!/camp\.wildStatus/.test(toleratedFn)) {
+  errors.push(
+    "isToleratedWildSite() が wildStatus を見ていない。cautions の文字列で判定すると、" +
+      "文言を書き換えた瞬間に「公認なし」の表示が警告なく消える"
+  );
+}
+if (/黙認|公認した野営地ではない/.test(toleratedFn)) {
+  errors.push(
+    "isToleratedWildSite() に cautions の文字列判定が残っている。" +
+      "wildStatus は全野営地に付いているので、二重の判定基準を持たせない"
+  );
+}
+
+// 裏付けの取れていない野営地（wildStatus: "不明"）を既定のおすすめに混ぜない。
+// 根拠URLのないキャンプ場を既定表示から外しているのと同じ扱い。削除ではなく表示の分離。
+const evidenceFn = stripComments(
+  campSrc.match(/export function hasEvidence\([\s\S]*?\n\}/)?.[0] ?? ""
+);
+if (!/wildStatus === "不明"/.test(evidenceFn)) {
+  errors.push(
+    'hasEvidence() が wildStatus === "不明" を見ていない。管理者の裏付けが取れていない' +
+      "野営地が、公認された無料開放地と同じ既定表示に並ぶ"
+  );
+}
+
 // 表示側は hasEvidence を使う。hasEvidenceUrl を直接呼ぶと、その画面だけ野営地が
 // 「情報確認中」に見える（判定が2種類に割れる）。
 const viewFiles = [

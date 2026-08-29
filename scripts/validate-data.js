@@ -103,6 +103,8 @@ function unsourcedSuperlatives(text) {
 
 // ── 掲載状態と features の整合性 ──────────────────────────────────────────────
 const STATUSES = ['active', 'closed', 'unverified', 'suspended'];
+/** 野営地が管理者に認められているか。lib/types.ts の Campground['wildStatus'] と同じ並び。 */
+const WILD_STATUSES = ['公認', '黙認', '不明'];
 /**
  * status が closed のときの内訳。詳細ページの警告の文面がこれで変わる。
  *
@@ -268,6 +270,24 @@ for (const c of camps) {
     errors.push(`${id}: status が ${STATUSES.join('/')} のいずれでもない（${JSON.stringify(c.status)}）`);
   }
 
+  // ── 野営地の wildStatus ──
+  // 公認された無料開放地と、黙認されているだけの河川敷は、利用者が負う責任が違う。
+  // かつては cautions の文字列（「黙認」など）で判定していたので、**文言を書き換えると
+  // 「公認なし」の表示が静かに消えていた**。フィールドを必須にして、消えたら落ちるようにする。
+  //
+  // closed は対象外。キャンプ禁止が確認できた場所に公認/黙認/不明のどれを入れても
+  // 意味が誤りになる（sanogawa-camp）。理由は closedNote が持っている。
+  if (c.type === 'wild' && c.status !== 'closed') {
+    if (!c.wildStatus) {
+      errors.push(`${id}: type が "wild" なのに wildStatus が無い（公認 / 黙認 / 不明 のいずれかを付けること）`);
+    } else if (!WILD_STATUSES.includes(c.wildStatus)) {
+      errors.push(`${id}: wildStatus が ${WILD_STATUSES.join('/')} のいずれでもない（${JSON.stringify(c.wildStatus)}）`);
+    } else if (c.wildStatus === '不明') {
+      // 掲載を止めているわけではない。既定表示から外して調査待ちにしている印。
+      warnings.push(`${id}: wildStatus が "不明"。管理者の裏付けが取れていないため既定表示から外れている（調査待ち）`);
+    }
+  }
+
   // ── 座標未取得は needsCoord での明示を必須にする ──
   // 閉鎖施設は訪問させない前提なので座標を持つ意味がなく、対象外にする。
   // （閉鎖施設に needsCoord を付けると「今後座標を取得すべき対象」という誤ったシグナルになる）
@@ -345,7 +365,7 @@ for (const c of camps) {
   // 未検証なのは正常で、警告に従って priceVerified を立て直すと誤りになる（yadoriki-camp で実際に起きた）。
   // 新しい status を足したときは、警告を出すかどうかをここで明示的に決めること。
   const priceNoteChecked = c.status === 'active' || c.status === 'unverified';
-  if (priceNoteChecked && c.priceVerified !== true && c.priceNote != null && String(c.priceNote).trim() !== '') {
+  if (priceNoteChecked && c.needsPrice !== true && c.priceVerified !== true && c.priceNote != null && String(c.priceNote).trim() !== '') {
     warnings.push(`${id}: priceNote があるのに priceVerified が立っていない（付け忘れの疑い）`);
   }
 

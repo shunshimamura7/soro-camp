@@ -36,9 +36,17 @@ export function hasEvidenceUrl(camp: Campground): boolean {
  */
 export function isToleratedWildSite(camp: Campground): boolean {
   if (camp.type !== "wild") return false;
-  return (camp.cautions ?? []).some((c) =>
-    /黙認|公認した野営地ではない|公認の裏付けは取れていない/.test(c)
-  );
+  /**
+   * `wildStatus` だけを見る。
+   *
+   * 2026-08-29 まではここで `cautions` の文字列（「黙認」など）を正規表現で見ていた。
+   * **文言を書き換えると「公認なし」の表示が静かに消え**、公認された無料開放地と
+   * 黙認の河川敷が同じ顔で並んでいた。フィールドに移して固定し、
+   * 全野営地に付け終わったので文字列判定は削除した。
+   *
+   * 付け忘れは `validate-data.js` が「野営地なのに wildStatus が無い」でビルドを止める。
+   */
+  return camp.wildStatus !== "公認";
 }
 
 /**
@@ -62,6 +70,12 @@ export function isToleratedWildSite(camp: Campground): boolean {
  */
 export function hasEvidence(camp: Campground): boolean {
   if (camp.type === "wild") {
+    /**
+     * 裏付けが取れていない野営地を既定のおすすめに混ぜない。
+     * 根拠URLのないキャンプ場を既定表示から外しているのと同じ扱いで、
+     * 削除ではなく表示の分離。調べがついたら戻る。
+     */
+    if (camp.wildStatus === "不明") return false;
     return hasUsableCoord(camp) && (camp.cautions?.length ?? 0) >= 3;
   }
   return hasEvidenceUrl(camp);
