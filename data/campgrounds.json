@@ -7636,7 +7636,7 @@
     "type": "wild",
     "status": "active",
     "cautions": [
-      "直火禁止（焚き火台必須）",
+      "直火禁止（焚火台・バーベキューコンロを使用）。愛川町商工観光課が河川敷利用のルールとして明記",
       "トイレ・水場なし（田代運動公園の設備が使えるかは要現地確認）",
       "増水時は立入危険。上流の降雨でも急増水することがある",
       "ゴミは完全持ち帰り",
@@ -7678,11 +7678,14 @@
     "season": "通年",
     "soloComment": "無料で入れる河川敷。川音を独り占めできるが設備は皆無で、水もトイレも持参前提。焚き火台必須、増水予報を確認してから入るのが鉄則。",
     "tel": null,
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-29",
     "coordsGsiChecked": true,
     "priceVerified": true,
     "scoresVerified": false,
-    "wildStatus": "不明"
+    "wildStatus": "不明",
+    "source": [
+      "愛川町 商工観光課「河川敷利用のマナーを守ろう！」 https://www.town.aikawa.kanagawa.jp/soshiki/kankyou_keizai/syoko/kanko/info/1629185895426.html"
+    ]
   },
   {
     "id": "sumida-ohashi-kasenjiki",
@@ -7694,7 +7697,7 @@
     "type": "wild",
     "status": "active",
     "cautions": [
-      "直火禁止（焚き火台必須）",
+      "直火禁止（焚火台・バーベキューコンロを使用）。愛川町商工観光課が河川敷利用のルールとして明記",
       "簡易トイレあり。水場なし（設置状況は要現地確認）",
       "増水時は立入危険。上流の降雨でも急増水することがある",
       "ゴミは完全持ち帰り",
@@ -7736,11 +7739,14 @@
     "season": "通年",
     "soloComment": "簡易トイレがあるぶん河川敷のなかでは入りやすい一枚。無料で車を寄せられ、焚き火台さえあれば十分成立する。週末は場所取りが早い。",
     "tel": null,
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-29",
     "coordsGsiChecked": true,
     "priceVerified": true,
     "scoresVerified": false,
-    "wildStatus": "不明"
+    "wildStatus": "不明",
+    "source": [
+      "愛川町 商工観光課「河川敷利用のマナーを守ろう！」 https://www.town.aikawa.kanagawa.jp/soshiki/kankyou_keizai/syoko/kanko/info/1629185895426.html"
+    ]
   },
   {
     "id": "hasugebashi-kasenjiki",
@@ -7752,7 +7758,7 @@
     "type": "wild",
     "status": "active",
     "cautions": [
-      "直火禁止（焚き火台必須）",
+      "直火禁止（焚火台・バーベキューコンロを使用）。愛川町商工観光課が河川敷利用のルールとして明記",
       "トイレ・水場なし",
       "増水時は立入危険。上流の降雨でも急増水することがある",
       "ゴミは完全持ち帰り",
@@ -7794,11 +7800,14 @@
     "season": "通年",
     "soloComment": "八菅橋のたもとに広がる無料の石河原。設備なし・人目ありで玄人向けだが、荷物を絞ったソロ装備の実験場としては悪くない。",
     "tel": null,
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-29",
     "coordsGsiChecked": true,
     "priceVerified": true,
     "scoresVerified": false,
-    "wildStatus": "不明"
+    "wildStatus": "不明",
+    "source": [
+      "愛川町 商工観光課「河川敷利用のマナーを守ろう！」 https://www.town.aikawa.kanagawa.jp/soshiki/kankyou_keizai/syoko/kanko/info/1629185895426.html"
+    ]
   },
   {
     "id": "wadanagahama-kaigan",
@@ -7879,11 +7888,13 @@
     "status": "active",
     "cautions": [
       "直火の可否は要現地確認（焚き火台持参が無難）",
-      "トイレなし。炊事棟・簡易水道は市の台帳上あるが機能しておらず、水は沢頼み（要浄水）",
-      "熊の出没注意。落石・倒木の恐れもあり、悪天時は入山を避ける",
+      "トイレなし。水は沢頼み（要浄水）。炊事棟（9.72㎡・平成元年建築）と簡易水道滅菌処理施設が市の施設台帳にある。ただし施設カルテの設備等情報は「調理設備：なし」、光熱水費は0円。実際に使える状態かは現地で確認すること",
+      "熊の出没注意。林道奥の山中で管理者が常駐しないため、落石・倒木は自己判断。悪天時は入山を避ける",
       "ゴミは完全持ち帰り",
       "甲府市の無料開放。マナー違反で閉鎖の恐れ",
-      "上級者向け"
+      "上級者向け",
+      "甲府市林政課の直営施設。市の施設台帳では小分類「キャンプ場」、利用対象者は甲府市民。ただし市は一般向けの利用案内を出しておらず、市のアウトドア特集ページにも掲載がない（マウントピア黒平・創作の森おびな等は掲載）。予約先・問い合わせ先の案内も無い。市の施設カルテには設置根拠が「不明」と記載されている（条例・要綱が特定できていないという意味で、市有・直営であること自体は台帳で確認できる）",
+      "浸水想定区域・土砂災害警戒区域・液状化のいずれも該当なし（甲府市施設カルテ）。ただし区域指定が無いことは、落石・倒木が起きないことを意味しない"
     ],
     "lat": 35.8195963,
     "lng": 138.5988191,
@@ -7919,9 +7930,9 @@
       "nearbyShop": ""
     },
     "season": "通年（冬期林道通行止期間 12/10〜4/25 は休館）",
-    "soloComment": "甲府市が無料開放する林間の広場。市街から林道を1時間、黒平集落のさらに奥で携帯も圏外。市の施設記録でも利用者は年間ゼロが続く無人の静けさ。トイレも水道もなく（水は沢頼み）、熊の気配もある、装備と経験が前提の上級者向け。",
+    "soloComment": "甲府市が無料開放する林間の広場。市街から林道を1時間、黒平集落のさらに奥で携帯も圏外。市の施設カルテでは年間利用者数30人（令和4〜6年度）で、ほぼ人に会わない静けさ。トイレも水道もなく（水は沢頼み）、熊の気配もある、装備と経験が前提の上級者向け。",
     "tel": null,
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-08-29",
     "restrictions": [
       {
         "type": "access",
@@ -7940,7 +7951,10 @@
     "coordsGsiChecked": true,
     "priceVerified": true,
     "scoresVerified": false,
-    "wildStatus": "不明"
+    "wildStatus": "公認",
+    "source": [
+      "甲府市 施設カルテ 3-10（基準日 令和7年3月31日） https://www.city.kofu.yamanashi.jp/file_summary/shisetu_karte/3-10.pdf"
+    ]
   },
   {
     "id": "ogayanagawa-keikoku",
