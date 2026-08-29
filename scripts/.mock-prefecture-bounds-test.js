@@ -163,6 +163,56 @@ check('★ 島嶼：小笠原村父島 (27.09, 142.19) は**範囲外**（設計
 check('★ 四至を素直に取っていたら那覇も範囲内になっていた（＝検査が死ぬ）',
   isOutOfBounds('東京', 26.21, 127.68) === true,
   '沖ノ鳥島・南鳥島まで含む矩形なら false になる。本土に限ったので true のまま');
+
+/* ---------------------------------------------------------------------
+ * ★ isIsland — 島嶼だけ矩形検査を外す（2026-08-29 追加）
+ *
+ * 島嶼の3件（大島・新島・八丈）を入れるにあたって決めた方式。
+ * **検査を止めるフラグなので、黙って素通りする方向に壊れる。**だから両方向を固定する。
+ *
+ *   1. isIsland を渡すと、島の座標が範囲外にならない（＝スキップが効いている）
+ *   2. **isIsland を渡さないと範囲外に戻る**（＝フラグを外したら検査が復活する）
+ *   3. 本土の座標に付けても矩形の内側のまま（validate 側の矛盾検査に回る）
+ *
+ * 2 が本題。1 だけ見ても「スキップが効いている」のか
+ * 「もともと範囲内だった」のか区別できない。
+ * ------------------------------------------------------------------- */
+console.log('\n■ ★ isIsland で島嶼だけ矩形検査を外す');
+const ISLANDS = [
+  ['トウシキ（大島町差木地）', 34.68, 139.40],
+  ['羽伏浦（新島村）', 34.37, 139.28],
+  ['底土（八丈町）', 33.12, 139.80],
+  ['小笠原村父島', 27.09, 142.19],
+];
+for (const [label, lat, lng] of ISLANDS) {
+  check(`${label} は isIsland:true なら範囲外にならない`,
+    isOutOfBounds('東京', lat, lng, true) === false);
+}
+console.log('  ── ★ ここが本題: フラグを外すと検査が戻る ──');
+for (const [label, lat, lng] of ISLANDS) {
+  check(`★ ${label} は isIsland を渡さないと**範囲外**`,
+    isOutOfBounds('東京', lat, lng) === true,
+    'フラグを消したら落ちる＝スキップが効いていた証拠');
+}
+check('★ 本土の座標に isIsland を付けても矩形の内側のまま（奥多摩町）',
+  isOutOfBounds('東京', 35.81, 139.10, true) === false &&
+  isOutOfBounds('東京', 35.81, 139.10) === false,
+  '**この組み合わせは矩形では捕まらない。**validate-data.js が ' +
+  '「isIsland が true なのに本土矩形の内側」を警告して拾う');
+check('isIsland に true 以外を渡しても検査は止まらない（誤った真値で素通りさせない）',
+  isOutOfBounds('東京', 34.68, 139.40, 'true') === true &&
+  isOutOfBounds('東京', 34.68, 139.40, 1) === true,
+  '文字列 "true" や 1 では止まらない。厳密に true のときだけ');
+
+console.log('\n■ 実データ: 島嶼レコードに isIsland が付いているか');
+// 下の section 4 でも同じファイルを読むが、あちらは const recs でこの時点ではまだ宣言前。
+const allRecs = require('../data/campgrounds.json');
+const islandRecs = allRecs.filter(r => r.prefecture === '東京' && /大島町|新島村|八丈町|青ヶ島村|三宅村|御蔵島村|利島村|神津島村|小笠原村/.test(String(r.address || '')));
+check('東京の島嶼レコードはすべて isIsland: true', islandRecs.every(r => r.isIsland === true),
+  islandRecs.map(r => `${r.slug}=${r.isIsland}`).join(' / ') || '該当なし');
+check('★ 島嶼レコードは座標未取得のまま（実ピンは人が取る）',
+  islandRecs.every(r => r.lat === 0 && r.lng === 0 && r.needsCoord === true),
+  islandRecs.map(r => `${r.slug} lat${r.lat}/needsCoord=${r.needsCoord}`).join(' / ') || '該当なし');
 check('★ 遠くの県の取り違えは捕まる（これがこの検査の役目）',
   isOutOfBounds('千葉', 35.48, 138.80) === true,
   '山梨県富士吉田市＝県台帳に実際に混ざっていた県外施設');
@@ -183,7 +233,7 @@ for (const [pref, b] of Object.entries(WAS)) {
 }
 // 実データ全件で out of bounds が0件のままか
 const recs = require('../data/campgrounds.json');
-const out = recs.filter(r => r.lat && r.lng && isOutOfBounds(r.prefecture, r.lat, r.lng));
+const out = recs.filter(r => r.lat && r.lng && isOutOfBounds(r.prefecture, r.lat, r.lng, r.isIsland));
 check('既存レコードで範囲外になるものは0件', out.length === 0,
   out.map(r => `${r.id}(${r.prefecture} ${r.lat},${r.lng})`).join(' / ') || `${recs.length}件を検査`);
 

@@ -261,8 +261,17 @@ for (const c of camps) {
     errors.push(`${id}: lat/lng が数値でない（lat=${JSON.stringify(c.lat)} lng=${JSON.stringify(c.lng)}）`);
   } else if (c.lat === 0 || c.lng === 0) {
     unsetCoords++;   // 未設定は別集計。エラーにしない
-  } else if (isOutOfBounds(c.prefecture, c.lat, c.lng)) {
+  } else if (isOutOfBounds(c.prefecture, c.lat, c.lng, c.isIsland)) {
     errors.push(`${id}: 座標が${c.prefecture}の範囲外 lat ${c.lat} / lng ${c.lng}（想定 ${describeBounds(c.prefecture)}）`);
+  } else if (c.isIsland === true && !isOutOfBounds(c.prefecture, c.lat, c.lng)) {
+    // isIsland は矩形検査を止めるフラグなので、誤って付けても何も起きない＝黙って素通りする。
+    // 止めた判断が正しかったかを逆向きに確かめる：本土の矩形の内側にあるなら、
+    // フラグが不要（本土の施設に付けた）か、座標のほうが誤っている。どちらも人が見るべき。
+    warnings.push(
+      `${id}: isIsland が true だが、座標が${c.prefecture}の本土矩形の内側にある ` +
+        `lat ${c.lat} / lng ${c.lng}（${describeBounds(c.prefecture)}）。` +
+        `島嶼でないなら isIsland を外すこと。島嶼なら座標を疑うこと`
+    );
   }
 
   // ── status ──

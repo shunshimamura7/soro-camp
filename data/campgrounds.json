@@ -10623,5 +10623,145 @@
     "source": [
       "静岡市公式 梅ケ島キャンプ場 https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html"
     ]
+  },
+  {
+    "id": "toshiki-camp",
+    "slug": "toshiki-camp",
+    "name": "トウシキキャンプ場",
+    "prefecture": "東京",
+    "area": "伊豆大島",
+    "address": "東京都大島町差木地字クダッチ",
+    "type": "campground",
+    "isIsland": true,
+    "status": "active",
+    "cautions": [
+      "常駐する管理人はいない。大島町観光課 施設管理係が管理 https://www.town.oshima.tokyo.jp/soshiki/kankou/toshiki-camp.html",
+      "事前予約が必須。原則Web予約のみで、会員登録（無料）が必要 https://toshikicamp-nakanoharabbq.com",
+      "施設は洗い場・かまど2基・トイレ（シャワー付）・休憩舎・ゴミ集積場所。トイレの様式は公式ページに記載がない",
+      "直火の可否は公式ページに記載がない。かまどが2基設置されている",
+      "送迎は実施していない。元町港からバス約25分「海洋国際高校前」下車、徒歩約5分",
+      "離島のため、船・航空機の欠航で予定どおり帰れないことがある"
+    ],
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "無料",
+    "priceVerified": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "features": {
+      "shower": true,
+      "toilet": "不明",
+      "reservation": "要",
+      "reservationNote": "事前予約が必須。原則Web予約のみ・会員登録が必要",
+      "garbage": "ゴミ集積場所あり"
+    },
+    "tel": "04992-2-1446",
+    "telNote": "大島町 観光課 施設管理係",
+    "lastVerified": "2026-08-29",
+    "officialUrl": "https://www.town.oshima.tokyo.jp/soshiki/kankou/toshiki-camp.html",
+    "reservationUrl": "https://toshikicamp-nakanoharabbq.com"
+  },
+  {
+    "id": "hafusaura-yaeijo",
+    "slug": "hafusaura-yaeijo",
+    "name": "都立羽伏浦野営場",
+    "prefecture": "東京",
+    "area": "新島",
+    "address": "東京都新島村羽伏浦",
+    "type": "campground",
+    "isIsland": true,
+    "status": "active",
+    "cautions": [
+      "予約不要で通年利用できるが、当日受付が必要。新島村スポーツ広場クラブハウスで「羽伏浦野営場キャンプ届」を9:00〜16:00に提出する https://www.niijima.com/soshiki/sangyoukankouka/news/2023-1026-1806-101.html",
+      "毎週木曜はクラブハウスが休業。利用開始日が木曜の場合は翌日9:00〜16:00に届を提出する",
+      "新島・式根島とも島内での野宿は禁止。式根島地区の野営場は継続閉場中",
+      "1日あたり100名まで、連続利用は5泊6日まで。当日受付は先着順",
+      "設備は共用トイレ・共用炊事場・野外炉・シャワー（水のみで温水は出ない）。貸テント・食材・炭の販売と電源はない",
+      "野外炉は破損している場所が複数ある。焚き火台やバーベキュー台の用意があると安心と案内されている",
+      "20名以上の団体は事前に新島村産業観光課へ連絡が必要（定員超過で利用できない場合がある）",
+      "離島のため、船・航空機の欠航で予定どおり帰れないことがある"
+    ],
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "無料",
+    "priceVerified": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "features": {
+      "shower": true,
+      "showerNote": "水のみ・温水なし",
+      "toilet": "不明",
+      "reservation": "不要",
+      "reservationNote": "予約不要だが当日受付（キャンプ届の提出）が必要",
+      "bonfire": true,
+      "bonfireNote": "野外炉あり。破損箇所が複数あり焚き火台の用意が案内されている"
+    },
+    "season": "通年",
+    "tel": "04992-5-0284",
+    "telNote": "新島村役場 産業観光課 観光係",
+    "lastVerified": "2026-08-29",
+    "officialUrl": "https://www.niijima.com/soshiki/sangyoukankouka/news/2023-1026-1806-101.html"
+  },
+  {
+    "id": "sokodo-yaeijo",
+    "slug": "sokodo-yaeijo",
+    "name": "底土野営場",
+    "prefecture": "東京",
+    "area": "八丈島",
+    "address": "東京都八丈町底土",
+    "type": "campground",
+    "isIsland": true,
+    "status": "active",
+    "cautions": [
+      "東京都八丈支庁 土木課が所管する園地施設。野営には予約（先着順）が必要 https://www.soumu.metro.tokyo.lg.jp/09hatijou/kakuka_top/c-doboku/naturalpark",
+      "たき火は禁止されている（除外は大潟浦園地の窪地での手持ち花火とキャンプファイヤーのみ）。花火も禁止",
+      "バーベキュー施設以外の場所での火の使用は遠慮するよう案内されている。バーベキュー施設は大潟浦園地・南原園地で、底土野営場は含まれない",
+      "ゴミは所定の場所に捨てる（他の園地は各自持ち帰り。底土野営場だけの例外）",
+      "野営場以外の場所での宿泊（野営）は断られている。野営場以外での個人用テントは日よけ目的の固定しない小型簡易テントのみ",
+      "利用料金は公式ページに記載がない。予約時に八丈支庁土木課へ確認すること",
+      "離島のため、船・航空機の欠航で予定どおり帰れないことがある"
+    ],
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 0,
+    "priceMax": 0,
+    "needsPrice": true,
+    "priceVerified": false,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "features": {
+      "bonfire": false,
+      "bonfireNote": "たき火・花火は禁止事項に明記",
+      "reservation": "要",
+      "reservationNote": "野営は予約（先着順）が必要",
+      "garbage": "所定の場所に捨てる"
+    },
+    "lastVerified": "2026-08-29",
+    "officialUrl": "https://www.soumu.metro.tokyo.lg.jp/09hatijou/kakuka_top/c-doboku/naturalpark"
   }
 ]

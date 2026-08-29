@@ -93,7 +93,8 @@ for (const c of targets) {
 
   // (d) 座標の bounds 外れ
   const hasCoords = c.lat !== 0 && c.lng !== 0;
-  if (hasCoords && isOutOfBounds(c.prefecture, c.lat, c.lng)) {
+  // isIsland を渡す。渡さないと島嶼（伊豆諸島・小笠原）が毎回「範囲外」で挙がる。
+  if (hasCoords && isOutOfBounds(c.prefecture, c.lat, c.lng, c.isIsland)) {
     issues.push({
       severity: '高',
       text: `座標が${c.prefecture}の想定範囲外: lat ${c.lat} / lng ${c.lng}（想定 ${describeBounds(c.prefecture)}）`,

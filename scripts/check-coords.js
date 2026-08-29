@@ -10,7 +10,8 @@ const zeros = camps.filter(c => c.lat === 0 || c.lng === 0);
 const issues = [];
 camps.forEach(c => {
   if (c.lat === 0 || c.lng === 0) return; // 未設定は下でまとめて報告
-  if (isOutOfBounds(c.prefecture, c.lat, c.lng)) {
+  // isIsland を渡す。渡さないと島嶼（伊豆諸島・小笠原）が毎回「範囲外」で挙がる。
+  if (isOutOfBounds(c.prefecture, c.lat, c.lng, c.isIsland)) {
     issues.push(`[${c.prefecture}] ${c.name} / lat:${c.lat} lng:${c.lng} / slug:${c.slug}`);
     issues.push(`    想定範囲: ${describeBounds(c.prefecture)}`);
   }
