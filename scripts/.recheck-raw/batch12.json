@@ -1,0 +1,367 @@
+[
+ {
+  "slug": "mitsuboshi-auto",
+  "checkedUrls": [
+   "http://kawanelife.org/camp/",
+   "http://kawanelife.org/camp/fee/",
+   "http://kawanelife.org/camp/access/",
+   "http://kawanelife.org/camp/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://kawanelife.org/camp/fee/",
+   "quote": "シャワー 100円/3分 ・両替機がありませんので100円玉をご用意ください"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "http://kawanelife.org/camp/fee/",
+   "quote": "薪 広葉樹：800円/1束 針葉樹：700円/1束"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "http://kawanelife.org/camp/",
+   "quote": "「川根本町ゆずクラフトビール」のカップまたはビンでの飲食販売をしています。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://kawanelife.org/camp/",
+   "quote": "ペットOK ただし、リードから離さないこと・フンの始末は徹底してください。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "fudonotaki-auto",
+  "checkedUrls": [
+   "https://ffnpcs.com/",
+   "https://ffnpcs.com/camping/",
+   "https://ffnpcs.com/charge/",
+   "https://ffnpcs.com/notes/",
+   "https://ffnpcs.com/nearby/",
+   "https://ffnpcs.com/tentsauna/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://ffnpcs.com/camping/",
+   "quote": "キャンプサイト内サニタリー棟に24時間ご利用可能なシャワールームが2室ございます。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://ffnpcs.com/camping/",
+   "quote": "こちらで受付をお願いいたします。薪や炭などの販売もしております。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://ffnpcs.com/camping/",
+   "quote": "併設のRNB DINERでお食事やお飲み物の販売もございます。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://ffnpcs.com/notes/",
+   "quote": "場内では必ずペットにリードを付け、責任をもって監理してください"
+  },
+  "nearbyOnsen": {
+   "value": "川根温泉 ふれあいの泉／川根町／キャンプ場から約14分（10.4km）"
+  }
+ },
+ {
+  "slug": "apt-ichishiro",
+  "checkedUrls": [
+   "https://abt-camp.shizu.website/",
+   "https://abt-camp.shizu.website/facility_rate/",
+   "https://abt-camp.shizu.website/faq/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": false,
+   "evidenceUrl": "https://abt-camp.shizu.website/faq/",
+   "quote": "Q.お風呂はありますか？ A.コインシャワーのみとなっております。"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://abt-camp.shizu.website/facility_rate/",
+   "quote": "コインシャワー 合計３分、100円 24時間使用可能です。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://abt-camp.shizu.website/facility_rate/",
+   "quote": "販売品 木炭 600円 木炭着火剤 200円 薪 400円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://abt-camp.shizu.website/facility_rate/",
+   "quote": "販売品 釣りエサ 300円 替え釣り糸 100円 木炭 600円"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://abt-camp.shizu.website/faq/",
+   "quote": "ペットの同伴は可能です。ただし、リードでつなぎ、フンの後始末をお願いします。"
+  },
+  "nearbyOnsen": {
+   "value": "キャンプ場近隣（車で５分程度）に温泉施設がございます。"
+  }
+ },
+ {
+  "slug": "fukushigawa-seishonen",
+  "checkedUrls": [
+   "https://www.town.nanbu.yamanashi.jp/kankou/leisure/Camp-Okuyama.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": "隣接施設に奥山温泉があり、バーベキューの後に温泉で一息なんて使い方も可能です。"
+  }
+ },
+ {
+  "slug": "turkeys-house",
+  "checkedUrls": [
+   "http://www.turkeyshouse.com/",
+   "http://www.turkeyshouse.com/information/guide.htm",
+   "http://www.turkeyshouse.com/information/charge.htm",
+   "http://www.turkeyshouse.com/common/faq_top.htm",
+   "http://www.turkeyshouse.com/guide/guide_rotenburo.htm",
+   "http://www.turkeyshouse.com/guide/guide_pet.htm"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "http://www.turkeyshouse.com/guide/guide_rotenburo.htm",
+   "quote": "「とと湯」は清流・福士川を眺めながら入浴できるターキーズハウス自慢のお風呂です。"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://www.turkeyshouse.com/information/charge.htm",
+   "quote": "コインシャワー／5分 200yen"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "http://www.turkeyshouse.com/information/charge.htm",
+   "quote": "ターキーズハウス内の売店にて、スモークウッドを販売しています。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://www.turkeyshouse.com/guide/guide_pet.htm",
+   "quote": "ターキーズハウスでは、大好きなペットを連れてキャンプを楽しむことができます。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "nekumasanso-auto",
+  "checkedUrls": [
+   "https://hukusshigawacamp.eyado.net/",
+   "https://hukusshigawacamp.eyado.net/facility.html",
+   "https://hukusshigawacamp.eyado.net/plan.html",
+   "https://hukusshigawacamp.eyado.net/faq.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": false,
+   "evidenceUrl": "https://hukusshigawacamp.eyado.net/facility.html",
+   "quote": "※民宿休業に伴い、お風呂の利用は現在停止させていただいております。"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://hukusshigawacamp.eyado.net/facility.html",
+   "quote": "シャワールーム 広めの脱衣場を備えています ５分２００円"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://hukusshigawacamp.eyado.net/plan.html",
+   "quote": "販売品 炭/マキ/専用ゴミ袋 等"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://hukusshigawacamp.eyado.net/plan.html",
+   "quote": "販売品 炭/マキ/専用ゴミ袋 等"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://hukusshigawacamp.eyado.net/faq.html",
+   "quote": "大人しいペットなら大丈夫です。予約時にご連絡ください。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "fujino-art-camp",
+  "checkedUrls": [
+   "https://fujino-art.jp/camp/",
+   "https://fujino-art.jp/info/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://fujino-art.jp/camp/",
+   "quote": "施設・設備 温水シャワー（16:00～20:45）"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://fujino-art.jp/camp/",
+   "quote": "販売 燃料用薪束：¥700 炭（2.5kg）：¥700"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://fujino-art.jp/camp/",
+   "quote": "販売 燃料用薪束：¥700 炭（2.5kg）：¥700 着火剤：¥200"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://fujino-art.jp/camp/",
+   "quote": "ペット同伴でのテント泊、犬を放すこと等、他のお客様のご迷惑になることはご遠慮ください。"
+  },
+  "nearbyOnsen": {
+   "value": "日帰り温泉「やまなみ温泉」まで約2ｋｍです。"
+  }
+ },
+ {
+  "slug": "saiko-kohan-camp",
+  "checkedUrls": [
+   "https://saikohan.com/price/",
+   "https://saikohan.com/faq/",
+   "https://saikohan.com/about/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://saikohan.com/price/",
+   "quote": "温水シャワー / 1回 450円"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://saikohan.com/faq/",
+   "quote": "売店では何が買えますか？ 薪、炭、着火剤などを取り扱っています。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://saikohan.com/faq/",
+   "quote": "薪、炭、着火剤、調味料、カップ麺、お菓子などを取り扱っています。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://saikohan.com/faq/",
+   "quote": "ペット同伴については、周囲のお客様へのご配慮をお願いします。リードの着用、排泄物の処理"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "saiko-tsuhara-camp",
+  "checkedUrls": [
+   "https://tsuhara-camp.jp/price",
+   "https://tsuhara-camp.jp/facilities",
+   "https://tsuhara-camp.jp/faq",
+   "https://tsuhara-camp.jp/attention"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://tsuhara-camp.jp/faq",
+   "quote": "場内にシャワー室があります。受付で料金をお支払いいただいた後、シャワー室の鍵をお渡しします。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://tsuhara-camp.jp/price",
+   "quote": "販売 炭・薪：時価 網：250円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://tsuhara-camp.jp/faq",
+   "quote": "釣り券は、キャンプ場の売店で販売しています。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://tsuhara-camp.jp/faq",
+   "quote": "テントサイトはペットと一緒にご利用いただけます。"
+  },
+  "nearbyOnsen": {
+   "value": "車で約5分の場所に温泉施設があり、割引券もご用意しています。"
+  }
+ },
+ {
+  "slug": "shiraishi-auto-camp",
+  "checkedUrls": [
+   "https://www.shiraishiautocamp.com/price",
+   "https://www.shiraishiautocamp.com/item",
+   "https://www.shiraishiautocamp.com/blank-3",
+   "https://www.shiraishiautocamp.com/info"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.shiraishiautocamp.com/blank-3",
+   "quote": "お風呂場・シャワー室 浴室（入浴時間AM10:00～PM20:00迄）"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.shiraishiautocamp.com/blank-3",
+   "quote": "シャワー １回（５００円）"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.shiraishiautocamp.com/item",
+   "quote": "★販売 薪 ７００円 （1束）"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.shiraishiautocamp.com/item",
+   "quote": "★販売 炭 ７００円〜（3ｋｇ） 薪 ７００円（1束） 氷（角氷）３００円"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.shiraishiautocamp.com/info",
+   "quote": "・ペット同伴可能です。リードで管理してください"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ }
+]

@@ -1,0 +1,332 @@
+[
+ {
+  "slug": "kameyamako-autocamp",
+  "checkedUrls": [
+   "https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/",
+   "https://www.kameyamacamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+   "https://www.kameyamacamp.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.kameyamacamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+   "quote": "施設　フロント・区画サイト(50サイト)　トイレ・炊事・シャワー"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/",
+   "quote": "レンタル品の受付、薪・炭などの販売もこちらで行っております。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/",
+   "quote": "受付・売店　キャンプ場の受付はこちらで承っております。売店の営業時間：10時～17時"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.kameyamacamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+   "quote": "ペット　可／ペット同伴の際には、必ずケージやリードを使用し"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "inagasaki-camp",
+  "checkedUrls": [
+   "https://inagasaki.world.coocan.jp/facilities.html",
+   "https://inagasaki.world.coocan.jp/caution.html",
+   "https://inagasaki.world.coocan.jp/index.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://inagasaki.world.coocan.jp/facilities.html",
+   "quote": "管理棟(受付　管理人室)　売店　炊飯棟　コインシャワー棟"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://inagasaki.world.coocan.jp/facilities.html",
+   "quote": "売店販売　薪：1束　800円　木炭：1箱800円(3㎏入り)"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://inagasaki.world.coocan.jp/facilities.html",
+   "quote": "管理棟内には管理人室　売店　ラウンジがありキャンプ用品から食品　日用品などを販売しています"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://inagasaki.world.coocan.jp/index.html",
+   "quote": "令和7年4月1日(火)より飼い犬との宿泊がオートサイトのみ可能となります"
+  },
+  "nearbyOnsen": {
+   "value": null
+  },
+  "note": "pet はページ間で矛盾。caution.html には「ペットの持ち込みは禁止です。」とあるが、index.html の日付入り新着（令和7年4月1日、飼い犬料金1,100円）で犬宿泊可に変更されたため true と判定"
+ },
+ {
+  "slug": "lakeside-kameyama",
+  "checkedUrls": [
+   "https://www.city.kimitsu.lg.jp/site/kanko/77120.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.city.kimitsu.lg.jp/site/kanko/77120.html",
+   "quote": "ペット同伴　フリーサイトのみ可"
+  },
+  "nearbyOnsen": {
+   "value": null
+  },
+  "note": "officialUrl は君津市公式ホームページの観光紹介ページで、設備詳細は掲載されていない（公式HPリンク先は reservationUrl と同じ なっぷ）"
+ },
+ {
+  "slug": "ohara-sotobou",
+  "checkedUrls": [
+   "https://oohara-ac-inn.jimdofree.com/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
+   "https://oohara-ac-inn.jimdofree.com/%E6%96%BD%E8%A8%AD%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85/",
+   "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/",
+   "https://oohara-ac-inn.jimdofree.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://oohara-ac-inn.jimdofree.com/%E6%96%BD%E8%A8%AD%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85/",
+   "quote": "コインシャワー　温かいお湯が出ます。6分間200円です。"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://oohara-ac-inn.jimdofree.com/%E6%96%BD%E8%A8%AD%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85/",
+   "quote": "管理棟　簡単なキャンプ道具やお菓子・氷を用意しています。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/",
+   "quote": "当キャンプ場はペットとのキャンプを楽しんでいただけます。"
+  },
+  "nearbyOnsen": {
+   "value": "近隣の温泉　九十九里ヴィラそとぼう（クルマで5分）",
+   "evidenceUrl": "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/",
+   "quote": "近隣の温泉　九十九里ヴィラそとぼう (クルマで5分）"
+  }
+ },
+ {
+  "slug": "futtsu-kanaya-hills",
+  "checkedUrls": [
+   "http://www.autocamphills.com/charge.html",
+   "http://www.autocamphills.com/guide.html",
+   "http://www.autocamphills.com/rental.html",
+   "http://www.autocamphills.com/rule.html",
+   "http://www.autocamphills.com/surroundings.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://www.autocamphills.com/guide.html",
+   "quote": "男性用2室、女性用2室のコインシャワー室をご用意しております。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "http://www.autocamphills.com/rental.html",
+   "quote": "現在販売を行っている商品は、薪・炭・氷・着火剤・ガス缶（CB・OD）"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "http://www.autocamphills.com/rental.html",
+   "quote": "管理棟内売店にて、各種販売を行っています。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://www.autocamphills.com/charge.html",
+   "quote": "ペット同伴最大５匹まで、無料（6匹以上不可）大型犬可"
+  },
+  "nearbyOnsen": {
+   "value": "天然日帰り温泉「海辺の湯」（漁師料理かなや隣接）まで2.3km・車で約5分",
+   "evidenceUrl": "http://www.autocamphills.com/surroundings.html",
+   "quote": "富津金谷オートキャンプヒルズから漁師料理かなや・日帰り温泉海辺の湯まで2.3km　車で約5分"
+  }
+ },
+ {
+  "slug": "futtsu-koen-camp",
+  "checkedUrls": [
+   "https://www.cue-net.or.jp/kouen/futtsu/annai/camp.html",
+   "https://www.cue-net.or.jp/kouen/futtsu/annai/index.html",
+   "https://www.cue-net.or.jp/kouen/futtsu/index.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  },
+  "note": "officialUrl（千葉県立富津公園サイト）のキャンプ場ページは「キャンプ場は富津市観光協会で運営しています。利用時間、利用料金等のお問い合わせは富津市観光協会富津支部へ」と外部リンクのみで、設備記載が一切ない"
+ },
+ {
+  "slug": "recamp-tateyama",
+  "checkedUrls": [
+   "https://www.recamp.co.jp/recamptateyama",
+   "https://www.recamp.co.jp/contact-tateyama"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  },
+  "note": "officialUrl は住所「千葉県館山市布沼１２１０」でタイトルも「RECAMP館山」のため担当施設で一致。ただし設備・料金情報は一切なく「プラン・サイト 詳細を見る」が外部の なっぷ（nap-camp.com/chiba/14639）へ遷移するだけ。なお同ページには別施設（RECAMPしょうなん・柏市片山275）のテンプレート残存ブロックが混在している"
+ },
+ {
+  "slug": "ningyonoyu-marineside",
+  "checkedUrls": [
+   "http://kaikouzu.com/camp.html",
+   "http://kaikouzu.com/spa.html",
+   "http://kaikouzu.com/facilities.html",
+   "http://kaikouzu.com/access.html",
+   "http://kaikouzu.com/reservation.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "http://kaikouzu.com/camp.html",
+   "quote": "本館入浴料【オートキャンプ場利用の方】大人800円／子供600円／3歳以下無料"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  },
+  "note": "入浴は近隣ではなく併設本館（旅館海紅豆）の天然温泉「人魚の湯」大浴場。キャンプ利用者向け割引入浴料が明記されているため bath=true。nearbyOnsen は場内扱いのため null"
+ },
+ {
+  "slug": "okugome-kimura-nouen",
+  "checkedUrls": [
+   "https://okugomekimuranouen.wixsite.com/site",
+   "https://okugomekimuranouen.wixsite.com/site/camp",
+   "https://okugomekimuranouen.wixsite.com/site/plan",
+   "https://okugomekimuranouen.wixsite.com/site/contact"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  },
+  "note": "薪については「落ちている枝や木は薪としてご利用ください」とあるのみで販売ではない。設備はサイトごとの仮設トイレ・自宅トイレ・外水場の記述のみ。トップページに「【Jimdo】偽物のサイトがあります。ご注意ください。」との注意書きあり（AIへの指示ではない）"
+ },
+ {
+  "slug": "miyahara-autocamp",
+  "checkedUrls": [
+   "http://www.camp-miyahara.com/rate",
+   "http://www.camp-miyahara.com/",
+   "http://www.camp-miyahara.com/guide",
+   "http://www.camp-miyahara.com/map"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://www.camp-miyahara.com/rate",
+   "quote": "その他の料金　シャワー　1回　200円"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ }
+]

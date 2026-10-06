@@ -1,0 +1,259 @@
+[
+ {
+  "slug": "nightvista-camp",
+  "checkedUrls": [
+   "https://nightvista3.com/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://nightvista3.com/",
+   "quote": "シャワー 300円 ※場所／ヴィラハウス鋸南2号館内 ※1人1回15分"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://nightvista3.com/",
+   "quote": "薪使い放題 1,200円／薪はこちらから(有料)"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://nightvista3.com/",
+   "quote": "季節の魚・野菜セット 1,300円／猪肉 (1人前・冷凍) 600円／ゴミ袋 (10ℓ) 100円"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://nightvista3.com/",
+   "quote": "ペットOK 3区画 (東エリア1段目)"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "campgarden-inzai",
+  "checkedUrls": [
+   "https://campg-inzai.com/price/",
+   "https://campg-inzai.com/faq/",
+   "https://campg-inzai.com/",
+   "https://campg-inzai.com/reserve/",
+   "https://campg-inzai.com/day-camp/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://campg-inzai.com/",
+   "quote": "2022年4月28日にオープンしたばかりなので、トイレやシャワー室も新しくキレイです。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://campg-inzai.com/",
+   "quote": "バドニングや薪割り焚火を楽しめる薪をご用意しています。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://campg-inzai.com/reserve/",
+   "quote": "アウトドア洗剤（受付にて200円（税込）で販売）／ミネラルウォーター２Ｌ 100円（税込）で販売"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://campg-inzai.com/faq/",
+   "quote": "狂犬病予防接種及びワクチン接種済みのワンちゃんのみ、ドッグサイトがご利用が可能です。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "inbanuma-sunset-hills",
+  "checkedUrls": [
+   "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html",
+   "https://www.city.sakura.lg.jp/material/files/group/114/riyoucyuui2.pdf"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html",
+   "quote": "シャワールーム 料金：100円で10分間 利用：午前8：00～午後9：30"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html",
+   "quote": "印旛沼サンセットヒルズのオリジナルグッズが完成しました。売店で販売中です！"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html",
+   "quote": "1サイトペット2匹までとしてください"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "ichinose-kogen-camp",
+  "checkedUrls": [
+   "https://www.cosmo.ne.jp/camp/index.htm",
+   "https://www.cosmo.ne.jp/camp/goriyouhohou.htm",
+   "https://www.cosmo.ne.jp/camp/kyannpujounoannnaizu2.htm",
+   "https://www.cosmo.ne.jp/camp/dai1.htm",
+   "https://www.cosmo.ne.jp/camp/banngarouearia.htm",
+   "https://www.cosmo.ne.jp/camp/hiroba.htm",
+   "https://www.cosmo.ne.jp/camp/syukaipage.htm"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.cosmo.ne.jp/camp/index.htm",
+   "quote": "当方では､マキ（1000円）の販売はあります。"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "autocamp-suzuran",
+  "checkedUrls": [
+   "http://park15.wakwak.com/~suzuran/ryoukin/index.htm",
+   "http://park15.wakwak.com/~suzuran/sisetsu/index.htm",
+   "http://park15.wakwak.com/~suzuran/index.htm",
+   "http://park15.wakwak.com/~suzuran/kankou/index.htm",
+   "http://park15.wakwak.com/~suzuran/tentsauna/index.html",
+   "http://park15.wakwak.com/~suzuran/yoyakuhouhou.htm"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://park15.wakwak.com/~suzuran/ryoukin/index.htm",
+   "quote": "温水シャワー・サイトの駐車料金は 無料 です。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "http://park15.wakwak.com/~suzuran/tentsauna/index.html",
+   "quote": "リクライニングチェア1人770円 薪一束 770円"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "http://park15.wakwak.com/~suzuran/index.htm",
+   "quote": "当キャンプ場は、ペットは禁止となっております。"
+  },
+  "nearbyOnsen": {
+   "value": "石和温泉から車で20分！（河口湖湖畔から車で５分！）",
+   "evidenceUrl": "http://park15.wakwak.com/~suzuran/index.htm",
+   "quote": "石和温泉から車で20分！"
+  }
+ },
+ {
+  "slug": "fuefukigoya-camp",
+  "checkedUrls": [
+   "http://www.fuefukigoya.com/ryoukin.html",
+   "http://www.fuefukigoya.com/sisetu.html",
+   "http://www.fuefukigoya.com/onsen.html",
+   "http://www.fuefukigoya.com/riyoukitei.html",
+   "http://www.fuefukigoya.com/index.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "http://www.fuefukigoya.com/ryoukin.html",
+   "quote": "（焚き火（たきび）用、炊事（すいじ）用の薪(まき)は販売しております）／薪 １袋 700円"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://www.fuefukigoya.com/ryoukin.html",
+   "quote": "※ペット同伴希望の方は必ず電話の際にお伝えください。（バンガローはペット同伴不可）"
+  },
+  "nearbyOnsen": {
+   "value": "三富温泉 白龍閣（日帰り入浴10:00～20:00、大人800円）、三富温泉 みとみ笛吹の湯（市営）、窪平温泉 花かげの湯（市営）、鼓川温泉（市営）、はやぶさ温泉、川浦温泉 山県館、一之橋温泉 一之橋館",
+   "evidenceUrl": "http://www.fuefukigoya.com/onsen.html",
+   "quote": "周辺の温泉情報 ■三富温泉 白龍閣 ［時間］10:00～20:00（日帰り入浴）"
+  }
+ },
+ {
+  "slug": "kurosaka-autocamp",
+  "checkedUrls": [
+   "https://www.kurosaka.net/",
+   "https://www.kurosaka.net/facility",
+   "https://www.kurosaka.net/question",
+   "https://www.kurosaka.net/tebura",
+   "https://www.kurosaka.net/user-guide",
+   "https://www.kurosaka.net/neighborhood"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": false,
+   "evidenceUrl": "https://www.kurosaka.net/question",
+   "quote": "シャワーは管理棟の前にございます。お風呂はございません。"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.kurosaka.net/facility",
+   "quote": "シャワー 温水シャワー2つ 使用料5分 200円"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.kurosaka.net/facility",
+   "quote": "管理棟 営業時間10:00〜17:00 薪と炭を販売しています。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.kurosaka.net/question",
+   "quote": "販売品はありますか？ 炭・薪の販売を行なっております。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.kurosaka.net/user-guide",
+   "quote": "ペットは無駄吠えがなく、リードに繋いでいただける場合、お連れいただくことができます。"
+  },
+  "nearbyOnsen": {
+   "value": "寺尾の湯（車で10分・一番近くの立ち寄り温泉）、みたまの湯（車で21分）、ほったらかし温泉（車で38分）",
+   "evidenceUrl": "https://www.kurosaka.net/neighborhood",
+   "quote": "日帰り温泉 ・寺尾の湯 近い キャンプ場からの距離 車で10分"
+  }
+ }
+]

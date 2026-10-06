@@ -1,0 +1,347 @@
+[
+ {
+  "slug": "hakushu-ojiro-camp",
+  "checkedUrls": [
+   "https://www.verga.info/",
+   "https://www.verga.info/onsen",
+   "https://www.verga.info/shopping",
+   "https://www.verga.info/stay"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.verga.info/",
+   "quote": "露天風呂、希釈露天風呂、内風呂、寝湯、打たせ湯、水風呂、ドライサウナ"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.verga.info/shopping",
+   "quote": "キャンプでつい忘れがちな着火剤やライターなどなど、細々したものを揃えることができます。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.verga.info/stay",
+   "quote": "ペット同伴可能なドッグランサイトなど様々なプランをご用意しています。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "yanagishima",
+  "checkedUrls": [
+   "https://www.yanagishima-camp.com/",
+   "https://www.yanagishima-camp.com/?page_id=88"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.yanagishima-camp.com/?page_id=88",
+   "quote": "トイレ・シャワー(温水もでます)"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.yanagishima-camp.com/?page_id=88",
+   "quote": "飲み物は当日管理棟で購入できます"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.yanagishima-camp.com/?page_id=88",
+   "quote": "ネットフェンスで囲われたドッグランサイトは、テントの横で愛犬を自由に走らせることが出来ます"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "toyanosawa",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/11281"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/yamanashi/11281",
+   "quote": "場内設備：お風呂"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/yamanashi/11281",
+   "quote": "場内設備：売店・自動販売機"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/yamanashi/11281",
+   "quote": "お役立ちサービス・条件：ペットOK"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "suigennnomori",
+  "checkedUrls": [
+   "https://www.doshisuigen-mori.com/",
+   "https://www.nap-camp.com/yamanashi/16897"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "pica-sagamiko",
+  "checkedUrls": [
+   "https://www.sagamiko-resort.jp/camp/",
+   "https://www.pica-resort.jp/sagamiko/about/guidance.html",
+   "https://www.pica-resort.jp/sagamiko/about/index.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.pica-resort.jp/sagamiko/about/guidance.html",
+   "quote": "場内の共同シャワーは利用無料です。",
+   "allowExternalHost": true
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.pica-resort.jp/sagamiko/about/index.html",
+   "quote": "木炭、焚木、虫除け等も販売しています",
+   "allowExternalHost": true
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.sagamiko-resort.jp/camp/",
+   "quote": "パノラマロッジはキャンプの受付・レンタル、売店、研修にもご利用頂けます。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.pica-resort.jp/sagamiko/about/guidance.html",
+   "quote": "ペットの同伴は、ご予約の際その旨をお申し付けいただいた方に限ります。",
+   "allowExternalHost": true
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "minoishtaki",
+  "checkedUrls": [
+   "https://camp-minoishi.com/",
+   "https://camp-minoishi.com/facility/",
+   "https://camp-minoishi.com/charge/",
+   "https://camp-minoishi.com/faq/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://camp-minoishi.com/facility/",
+   "quote": "コインシャワー（5分300円）が4室あります"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://camp-minoishi.com/charge/",
+   "quote": "薪 660 お釜や鍋を使って煮たり炊いたりする料理用。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://camp-minoishi.com/facility/",
+   "quote": "管理棟では受付、会計の他、薪、炭、飲み物やお菓子などの販売"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://camp-minoishi.com/faq/",
+   "quote": "ペットの同伴はできますが、苦手な方やアレルギーの方もいらっしゃいますので、他のお客様にご迷惑がかからない事を条件にご来場頂いています。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "usami-shiroyama",
+  "checkedUrls": [
+   "https://www.nap-camp.com/shizuoka/14344"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/shizuoka/14344",
+   "quote": "自家源泉100％かけ流し温泉が楽しめて、宇佐美海水浴場すぐそばの立地。"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/shizuoka/14344",
+   "quote": "場内設備：売店・自動販売機"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/shizuoka/14344",
+   "quote": "お役立ちサービス・条件：ペットOK"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "hikenkayama",
+  "checkedUrls": [
+   "https://www.hitsurugi-camp.com/",
+   "https://www.hitsurugi-camp.com/facility.html",
+   "https://www.hitsurugi-camp.com/shop.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.hitsurugi-camp.com/facility.html",
+   "quote": "シャワー室(20時まで/無料）"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.hitsurugi-camp.com/facility.html",
+   "quote": "【薪別途（管理棟販売中）、薪持ち込みOK】"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.hitsurugi-camp.com/shop.html",
+   "quote": "炭・着火剤・電池等は管理棟でも販売しています。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.hitsurugi-camp.com/price.html",
+   "quote": "区画サイト（電源付き）～ペットOK～"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "narakoko",
+  "checkedUrls": [
+   "https://www.narakoko.info/",
+   "https://www.narakoko.info/wp/spa",
+   "https://www.narakoko.info/wp/other",
+   "https://www.narakoko.info/wp/guide"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.narakoko.info/wp/spa",
+   "quote": "源泉100％の掛川市の天然温泉。一番遠いキャンプサイトからでも徒歩５分。"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.narakoko.info/wp/other",
+   "quote": "受付棟横（2室）、バンガローエリア（４室）の2ヶ所。5分100円のコイン式です。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.narakoko.info/wp/guide",
+   "quote": "受付棟、管理棟にて薪や炭などの燃料、その他キャンプに必要なものを販売しております。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.narakoko.info/wp/other",
+   "quote": "売店コーナーもあり、木炭や薪、ロック氷や調味料が購入できます。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.narakoko.info/wp/guide",
+   "quote": "フリーサイト、電源区画サイト・林間区画サイトなどのテントエリアがペット可のエリアです。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "asagiri-foodpark",
+  "checkedUrls": [
+   "https://asagiri-foodpark.com/afp.html",
+   "https://asagiri-foodpark.com/facilities.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://asagiri-foodpark.com/afp.html",
+   "quote": "フードパーク総合受付横に共用シャワールーム有。受付時間内のご利用が可能です。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://asagiri-foodpark.com/afp.html",
+   "quote": "※薪・木炭はインフォメーション売店にて販売しております。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://asagiri-foodpark.com/afp.html",
+   "quote": "受付場所：インフォメーション売店 ※第一駐車場前"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://asagiri-foodpark.com/afp.html",
+   "quote": "基本的にペット同伴可能ですが、スタイルキャビンについてはペット同伴不可となります。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ }
+]

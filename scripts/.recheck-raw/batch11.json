@@ -1,0 +1,374 @@
+[
+ {
+  "slug": "fujimangan-village",
+  "checkedUrls": [
+   "https://fuji-manganvillage.com/",
+   "https://fuji-manganvillage.com/facilityinfo/",
+   "https://fuji-manganvillage.com/info/",
+   "https://fuji-manganvillage.com/ryoukin/",
+   "https://fuji-manganvillage.com/ryoukin/sell_rental/",
+   "https://fuji-manganvillage.com/info/pet/",
+   "https://fuji-manganvillage.com/access/area/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://fuji-manganvillage.com/facilityinfo/",
+   "quote": "シャワー：無料でご利用いただけます。男女別で3室あり各個室は施錠が出来るようになっています。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://fuji-manganvillage.com/ryoukin/sell_rental/",
+   "quote": "薪 ￥880～"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://fuji-manganvillage.com/info/",
+   "quote": "受付棟の営業時間は9:00～17:00となります。レンタル品、販売品その他の申し付けは17:00までにお願いいたします"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://fuji-manganvillage.com/info/pet/",
+   "quote": "1予約につき2頭までとなります。ワンちゃんの場合、しつけの出来た犬に限ります"
+  },
+  "nearbyOnsen": {
+   "value": "富士眺望の湯 ゆらり（山梨県南都留郡鳴沢村鳴沢8532-5）車で約１１分（５．６ｋｍ）",
+   "evidenceUrl": "https://fuji-manganvillage.com/access/area/"
+  }
+ },
+ {
+  "slug": "nagomino-sato-tsuru",
+  "checkedUrls": [
+   "https://www.nagomi-camp.com/",
+   "https://www.nagomi-camp.com/home",
+   "https://www.nagomi-camp.com/qa",
+   "https://www.nagomi-camp.com/topics",
+   "https://www.nagomi-camp.com/spring",
+   "https://www.nagomi-camp.com/summer",
+   "https://www.nagomi-camp.com/outumn",
+   "https://www.nagomi-camp.com/winter"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.nagomi-camp.com/topics",
+   "quote": "ペット同伴も可能です。（別途500円）"
+  },
+  "nearbyOnsen": {
+   "value": "天然温泉「芭蕉 月待ちの湯」※徒歩4分。キャンプ場利用者は大人510円・小人310円・未就学児無料（通常大人720円）、営業10時～21時（最終入館20時30分）",
+   "evidenceUrl": "https://www.nagomi-camp.com/home"
+  }
+ },
+ {
+  "slug": "doshi-mori-cottage",
+  "checkedUrls": [
+   "https://doshi-kanko.com/moricote/moricote_ryokin/moricote_ryokin.html",
+   "https://doshi-kanko.com/moricote/moricote_info/moricote_info.html",
+   "https://doshi-kanko.com/moricote/moricote_coteji/moricote_coteji.html",
+   "https://doshi-kanko.com/moricote/",
+   "https://doshi-kanko.com/moricote/index.htm",
+   "https://doshi-kanko.com/moricote/moricote_yoyaku/index.html",
+   "https://doshi-kanko.com/moricote/moricote_ac/morikote_ac.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://doshi-kanko.com/moricote/",
+   "quote": "無料温水シャワー棟は男性が個室2、女性が個室3あり、午後5時から午後10時までご利用できます"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://doshi-kanko.com/moricote/moricote_ryokin/moricote_ryokin.html",
+   "quote": "薪（3束）800円"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://doshi-kanko.com/moricote/moricote_info/moricote_info.html",
+   "quote": "コテージへのペット持ち込みは禁止です"
+  },
+  "nearbyOnsen": {
+   "value": "当施設から徒歩10分で楽しめる村営の温泉施設があります。泉質は硫酸塩泉で、露天風呂もあり、当施設ご宿泊者向け割引券もご利用いただけます（道志の湯）",
+   "evidenceUrl": "https://doshi-kanko.com/moricote/"
+  }
+ },
+ {
+  "slug": "fuji-midori-kyuka-auto",
+  "checkedUrls": [
+   "https://www.kyukamura.jp/",
+   "https://www.kyukamura.jp/facilities/",
+   "https://www.kyukamura.jp/qa/",
+   "https://www.kyukamura.jp/stay/",
+   "https://www.kyukamura.jp/spa/",
+   "https://www.kyukamura.jp/sitemap/",
+   "https://www.kyukamura.jp/archives/blog/blog-2505",
+   "https://www.kyukamura.jp/archives/2353"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.kyukamura.jp/archives/blog/blog-2505",
+   "quote": "お風呂は、お1人様500円でご利用いただける"
+  },
+  "shower": {
+   "value": false,
+   "evidenceUrl": "https://www.kyukamura.jp/archives/blog/blog-2505",
+   "quote": "シャワーなし　※有料にて入浴可能"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.kyukamura.jp/archives/blog/blog-2505",
+   "quote": "アルコール類や地元の銘菓などを取りそろえた売店、コインランドリー（有料）などもご利用いただけます"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.kyukamura.jp/archives/blog/blog-2505",
+   "quote": "ワンちゃんもOKですので、愛犬とキャンプを楽しんでください！"
+  },
+  "nearbyOnsen": {
+   "value": "隣接する日帰り温泉施設『富士眺望の湯ゆらり』へのアクセスも抜群です！大人入泉料特別割引券（200円割引）をフロントにてお渡しいたします",
+   "evidenceUrl": "https://www.kyukamura.jp/archives/blog/blog-2505"
+  }
+ },
+ {
+  "slug": "ogayanagawa-keikoku",
+  "checkedUrls": [
+   "https://ooyanagawa-camp.com/",
+   "https://ooyanagawa-camp.com/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85-%e3%81%94%e5%88%a9%e7%94%a8%e6%96%99%e9%87%91%e6%96%b0%e6%96%99%e9%87%91/",
+   "https://ooyanagawa-camp.com/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%ef%bc%88faq%ef%bc%89/",
+   "https://ooyanagawa-camp.com/%e5%91%a8%e8%be%ba%e6%83%85%e5%a0%b1/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": false,
+   "evidenceUrl": "https://ooyanagawa-camp.com/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%ef%bc%88faq%ef%bc%89/",
+   "quote": "お風呂、シャワーの設備はございません。"
+  },
+  "shower": {
+   "value": false,
+   "evidenceUrl": "https://ooyanagawa-camp.com/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%ef%bc%88faq%ef%bc%89/",
+   "quote": "お風呂、シャワーの設備はございません。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://ooyanagawa-camp.com/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85-%e3%81%94%e5%88%a9%e7%94%a8%e6%96%99%e9%87%91%e6%96%b0%e6%96%99%e9%87%91/",
+   "quote": "販売品　薪 660円(税込)　炭 770円(税込)"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://ooyanagawa-camp.com/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85-%e3%81%94%e5%88%a9%e7%94%a8%e6%96%99%e9%87%91%e6%96%b0%e6%96%99%e9%87%91/",
+   "quote": "管理棟／レンタル品・販売品　薪 660円(税込)　炭 770円(税込)"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://ooyanagawa-camp.com/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%ef%bc%88faq%ef%bc%89/",
+   "quote": "当キャンプ場では、ペットと一緒にキャンプをお楽しみいただけます。"
+  },
+  "nearbyOnsen": {
+   "value": "キャンプ場から車で5分の「かじかの湯」をご利用ください。（甲州鰍沢温泉かじかの湯）",
+   "evidenceUrl": "https://ooyanagawa-camp.com/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%ef%bc%88faq%ef%bc%89/"
+  }
+ },
+ {
+  "slug": "kurokawa-shizuoka",
+  "checkedUrls": [
+   "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000093.html",
+   "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000145.html",
+   "https://www.city.shizuoka.lg.jp/shisetsu/s0001032.html",
+   "https://www.city.shizuoka.lg.jp/shisetsu/s0001031.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": "清水西里温泉浴場「やませみの湯」（清水区西里1449）。公式に「清水森林公園内にあり、黒川キャンプ場とも近く」と記載。大人700円、小人300円",
+   "evidenceUrl": "https://www.city.shizuoka.lg.jp/shisetsu/s0001032.html"
+  }
+ },
+ {
+  "slug": "kamioshima-camp",
+  "checkedUrls": [
+   "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html",
+   "https://www.city.sagamihara.kanagawa.jp/shisei/1026875/faq/kouen/1001579.html",
+   "https://www.city.sagamihara.kanagawa.jp/midoriku/1009271/index.html",
+   "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html",
+   "quote": "まき、炭等の有償貸し出しと販売をしています"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html",
+   "quote": "バーベキューコンロセット（網、鉄板セット）、まき、炭等の有償貸し出しと販売をしています"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html",
+   "quote": "ペット類の同伴はできません（盲導犬可）"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "ugusu-camp",
+  "checkedUrls": [
+   "https://www.nishiizu-kankou.com/stay/ugusucanp",
+   "https://www.nishiizu-kankou.com/stay",
+   "https://www.nishiizu-kankou.com/spa",
+   "https://www.nishiizu-kankou.com/spa/shiosai",
+   "https://www.nishiizu-kankou.com/spa/nagisa"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.nishiizu-kankou.com/stay/ugusucanp",
+   "quote": "管理棟のほか水洗トイレ、温水シャワー、炊事棟、更衣室を完備"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://www.nishiizu-kankou.com/stay/ugusucanp",
+   "quote": "【禁止事項】ペット類の持ち込み"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "kunowaki-shinsui",
+  "checkedUrls": [
+   "https://www.kunowaki.net/",
+   "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+   "https://www.kunowaki.net/%E3%83%9B%E3%83%BC%E3%83%A0-%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E6%A1%88%E5%86%85/%E3%81%94%E4%BA%88%E7%B4%84-%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/",
+   "https://www.kunowaki.net/%E3%81%97%E3%81%8A%E3%81%94%E3%81%86-%E3%81%8F%E3%81%AE%E3%82%8F%E3%81%8D%E3%81%8A%E6%95%A3%E6%AD%A9%E3%83%9E%E3%83%83%E3%83%97/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+   "quote": "売店、水洗トイレ、洗濯機、温水シャワー、酒類販売、まき販売、炊事棟"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+   "quote": "温水シャワー、酒類販売、まき販売、炊事棟、グラウンドゴルフ場"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+   "quote": "売店、水洗トイレ、洗濯機、温水シャワー、酒類販売、まき販売"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://www.kunowaki.net/",
+   "quote": "※ペット連れ込み禁止。"
+  },
+  "nearbyOnsen": {
+   "value": "近くには川根温泉もあります。",
+   "evidenceUrl": "https://www.kunowaki.net/"
+  }
+ },
+ {
+  "slug": "yagi-camp",
+  "checkedUrls": [
+   "https://okuooi.gr.jp/contact_camp_yagi/index.php",
+   "https://okuooi.gr.jp/outdoor/details.php?id=79",
+   "https://okuooi.gr.jp/topics/page.php?id=62",
+   "https://okuooi.gr.jp/outdoor/index.php",
+   "https://okuooi.gr.jp/pickup/page.php?id=63",
+   "https://www.okuooi.gr.jp/contact_camp_yagi/index_end.php",
+   "https://okuooi.gr.jp/stay/details.php?id=9"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://okuooi.gr.jp/topics/page.php?id=62",
+   "quote": "設備：管理棟・炊事場・温水シャワー・水洗トイレ"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://okuooi.gr.jp/topics/page.php?id=62",
+   "quote": "ペット可・直火可・花火可・川遊び・釣り"
+  },
+  "nearbyOnsen": {
+   "value": "歩いて行ける距離に日帰り温泉、吊り橋もあり様々な楽しみ方ができます。（施設名の明記なし）",
+   "evidenceUrl": "https://okuooi.gr.jp/outdoor/details.php?id=79"
+  }
+ }
+]

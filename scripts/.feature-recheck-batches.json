@@ -1,0 +1,1100 @@
+[
+ [
+  {
+   "slug": "norolodge",
+   "name": "青野原野呂ロッジキャンプ場",
+   "address": "神奈川県相模原市緑区青野原931-1",
+   "url": "https://norolodge.com/"
+  },
+  {
+   "slug": "nishitanzawa-ootaki",
+   "name": "西丹沢大滝キャンプ場",
+   "address": "神奈川県足柄上郡山北町中川879-4",
+   "url": "https://ootakicampsite.com/"
+  },
+  {
+   "slug": "gandahara-manazuru",
+   "name": "ガンダーラ真鶴シーサイドキャンプ場",
+   "address": "神奈川県足柄下郡真鶴町真鶴1176-2",
+   "url": "https://gandahara.wixsite.com/mysite"
+  },
+  {
+   "slug": "tanukiko",
+   "name": "田貫湖キャンプ場",
+   "address": "静岡県富士宮市佐折634-1",
+   "url": "https://tanukiko.com/"
+  },
+  {
+   "slug": "asagiri-eichinomori",
+   "name": "朝霧高原 英知の杜キャンプ場",
+   "address": "静岡県富士宮市根原71-3",
+   "url": "https://www.bt-r.jp/aec/"
+  },
+  {
+   "slug": "asagiri-sorairo",
+   "name": "朝霧Camp Base そらいろ",
+   "address": "静岡県富士宮市麓624-7",
+   "url": "https://sorairo-camp.jp/"
+  },
+  {
+   "slug": "urban-camping-asagiri-houzan",
+   "name": "アーバンキャンピング朝霧宝山",
+   "address": "静岡県富士宮市根原371-5",
+   "url": "https://urban-camping.jp/"
+  },
+  {
+   "slug": "kouan-motosuko",
+   "name": "浩庵キャンプ場",
+   "address": "山梨県南巨摩郡身延町中ノ倉2926",
+   "url": "https://kouan-motosuko.com/"
+  },
+  {
+   "slug": "motosu-lakeside",
+   "name": "本栖レークサイドキャンプ場",
+   "address": "山梨県南都留郡富士河口湖町本栖大久保19",
+   "url": "https://motosulakeside.com/"
+  },
+  {
+   "slug": "pica-fuji-saiko",
+   "name": "PICA富士西湖",
+   "address": "山梨県南都留郡富士河口湖町西湖2068-1",
+   "url": "https://www.pica-resort.jp/saiko/"
+  }
+ ],
+ [
+  {
+   "slug": "wellcamp-nishitanzawa",
+   "name": "ウェルキャンプ西丹沢",
+   "address": "神奈川県足柄上郡山北町中川868",
+   "url": "https://well-camp.com/"
+  },
+  {
+   "slug": "shindo",
+   "name": "新戸キャンプ場",
+   "address": "神奈川県相模原市緑区寸沢嵐2362",
+   "url": "https://shindocamp.com/"
+  },
+  {
+   "slug": "aone",
+   "name": "青根キャンプ場",
+   "address": "神奈川県相模原市緑区青根807",
+   "url": "https://aonecamp.jp/"
+  },
+  {
+   "slug": "kannogawa",
+   "name": "神之川キャンプ・マス釣り場",
+   "address": "神奈川県相模原市緑区青根3685",
+   "url": "https://kannogawa.jp/"
+  },
+  {
+   "slug": "fumotoppara",
+   "name": "ふもとっぱらキャンプ場",
+   "address": "静岡県富士宮市麓156",
+   "url": "https://fumotoppara.net/"
+  },
+  {
+   "slug": "asagiri-jamboree",
+   "name": "朝霧ジャンボリーオートキャンプ場",
+   "address": "静岡県富士宮市猪之頭1162-3",
+   "url": "https://asagiri-camp.net/"
+  },
+  {
+   "slug": "pica-omotefuji",
+   "name": "PICA表富士",
+   "address": "静岡県富士宮市粟倉2745",
+   "url": "https://www.pica-resort.jp/omotefuji/"
+  },
+  {
+   "slug": "doshi-no-mori",
+   "name": "道志の森キャンプ場",
+   "address": "山梨県南都留郡道志村10041",
+   "url": "https://doshinomori.jp/"
+  },
+  {
+   "slug": "saiko-jiyu",
+   "name": "西湖自由キャンプ場",
+   "address": "山梨県南都留郡富士河口湖町西湖1003-2",
+   "url": "https://saiko-jiyuu.camp/"
+  },
+  {
+   "slug": "yamanakako-misaki",
+   "name": "sotosotodays CAMPGROUNDS 山中湖みさき",
+   "address": "山梨県南都留郡山中湖村平野2431-2",
+   "url": "https://camp.sotosotodays.com/yamanakako-misaki/"
+  }
+ ],
+ [
+  {
+   "slug": "takizawaso",
+   "name": "滝沢園キャンプ場",
+   "address": "神奈川県秦野市戸川1445",
+   "url": "https://takizawaen.com/"
+  },
+  {
+   "slug": "aonohara-auto",
+   "name": "青野原オートキャンプ場",
+   "address": "神奈川県相模原市緑区青野原918-1",
+   "url": "https://www.aonohara-acl.jp/index.html"
+  },
+  {
+   "slug": "nishitanzawa-mountbridge",
+   "name": "西丹沢マウントブリッジキャンプ場",
+   "address": "神奈川県足柄上郡山北町中川867-7",
+   "url": "https://mount-bridge.com/"
+  },
+  {
+   "slug": "sagamiko-kyuyomura",
+   "name": "相模湖休養村キャンプ場",
+   "address": "神奈川県相模原市緑区寸沢嵐3574",
+   "url": "https://midori.city.sagamihara.kanagawa.jp/2023/02/15/kyuyou-camp/"
+  },
+  {
+   "slug": "miyagase-village",
+   "name": "宮ヶ瀬ヴィレッジキャンプ場",
+   "address": "神奈川県愛甲郡愛川町半原2574",
+   "url": "https://miyagase-village.com/"
+  },
+  {
+   "slug": "tanzawako-lodge",
+   "name": "丹沢湖ロッヂ",
+   "address": "神奈川県足柄上郡山北町玄倉514",
+   "url": "https://tanzawakolodge.com/"
+  },
+  {
+   "slug": "yataro-camp",
+   "name": "谷太郎キャンプ場清川リバーランド",
+   "address": "神奈川県愛甲郡清川村煤ヶ谷2450",
+   "url": "https://k-riverland.jp/"
+  },
+  {
+   "slug": "fuji-ymca",
+   "name": "富士山YMCAグローバル・エコ・ヴィレッジ",
+   "address": "静岡県富士宮市原1423",
+   "url": "https://www.yokohamaymca.org/fujisan-global/"
+  },
+  {
+   "slug": "kawazu-nanadaru",
+   "name": "河津七滝オートキャンプ場",
+   "address": "静岡県賀茂郡河津町梨本470-1",
+   "url": "https://www.nanatakiauto.com/"
+  },
+  {
+   "slug": "kumomi-auto",
+   "name": "雲見オートキャンプ場",
+   "address": "静岡県賀茂郡松崎町雲見40-1",
+   "url": "https://www.kumomi-sunset.com/"
+  }
+ ],
+ [
+  {
+   "slug": "onoji-family",
+   "name": "大野路ファミリーキャンプ場",
+   "address": "静岡県裾野市須山2934-2",
+   "url": "https://oonoji.co.jp/camp/"
+  },
+  {
+   "slug": "darumayama-kogen",
+   "name": "だるま山高原キャンプ場",
+   "address": "静岡県伊豆市大沢1018-1",
+   "url": "https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/928.html"
+  },
+  {
+   "slug": "ryuyo-marine",
+   "name": "竜洋海洋公園オートキャンプ場",
+   "address": "静岡県磐田市駒場6866-10",
+   "url": "https://www.city.iwata.shizuoka.jp/shisetsu_guide/koen_shisetsu/kouen/1005910.html"
+  },
+  {
+   "slug": "shojiko-camping",
+   "name": "精進湖キャンピングコテージ",
+   "address": "山梨県南都留郡富士河口湖町精進495",
+   "url": "https://shojiko.jp/"
+  },
+  {
+   "slug": "tsubakiso-auto",
+   "name": "椿荘オートキャンプ場",
+   "address": "山梨県南都留郡道志村4150",
+   "url": "https://doushi-tsubakiso.com/"
+  },
+  {
+   "slug": "kiyosato-oka",
+   "name": "清里丘の公園キャンプ場",
+   "address": "山梨県北杜市高根町清里3545-5",
+   "url": "https://kiyosato-okanokouen.net/"
+  },
+  {
+   "slug": "doshi-keikoku",
+   "name": "道志渓谷キャンプ場",
+   "address": "山梨県南都留郡道志村43",
+   "url": "https://doushi-keikoku.jp/"
+  },
+  {
+   "slug": "muraei-yamanakako",
+   "name": "村営山中湖キャンプ場",
+   "address": "山梨県南都留郡山中湖村平野506-296",
+   "url": "https://www.nap-camp.com/yamanashi/11265"
+  },
+  {
+   "slug": "sankoso-auto",
+   "name": "山光荘オートキャンプ",
+   "address": "山梨県南都留郡道志村11777",
+   "url": "https://www.sanko2400.com/"
+  },
+  {
+   "slug": "okudoshi-auto",
+   "name": "奥道志オートキャンプ場",
+   "address": "山梨県南都留郡道志村12637",
+   "url": "https://www.okudoshi.net"
+  }
+ ],
+ [
+  {
+   "slug": "woodsman-camp",
+   "name": "WOODSMAN CAMPGROUND",
+   "address": "山梨県南都留郡道志村馬場5876",
+   "url": "https://woodsman.jp/"
+  },
+  {
+   "slug": "ashinoko-camp-mura",
+   "name": "芦ノ湖キャンプ村",
+   "address": "神奈川県足柄下郡箱根町元箱根164",
+   "url": "https://campmura.com/"
+  },
+  {
+   "slug": "richland-kiyokawa",
+   "name": "法論堂キャンプ場リッチランド",
+   "address": "神奈川県愛甲郡清川村煤ヶ谷4513-1",
+   "url": "https://www.richland-kiyokawa-camp.com/"
+  },
+  {
+   "slug": "karasawa-miyagase",
+   "name": "唐沢キャンプ場",
+   "address": "神奈川県愛甲郡清川村宮ヶ瀬1700",
+   "url": "https://karasawa-camp.sakura.ne.jp/"
+  },
+  {
+   "slug": "hidamari-yamakita",
+   "name": "ひだまりの里",
+   "address": "神奈川県足柄上郡山北町神縄438",
+   "url": "https://www.town.yamakita.kanagawa.jp/0000000068.html"
+  },
+  {
+   "slug": "konomasawa-camp",
+   "name": "このまさわキャンプ場",
+   "address": "神奈川県相模原市緑区青根2745",
+   "url": "https://konomasawacamp.co.jp/"
+  },
+  {
+   "slug": "camp-baird",
+   "name": "キャンプベアード",
+   "address": "静岡県伊豆市大平1052-1",
+   "url": "https://bairdbeer.com/"
+  },
+  {
+   "slug": "mobility-park-izu",
+   "name": "モビリティーパーク",
+   "address": "静岡県伊豆の国市長者原1445-481",
+   "url": "https://mobility-park.jp/"
+  },
+  {
+   "slug": "pica-fuji-greenpa",
+   "name": "PICA富士ぐりんぱ",
+   "address": "静岡県裾野市須山藤原2427",
+   "url": "https://www.pica-resort.jp/grinpa/"
+  },
+  {
+   "slug": "minamiizu-camping-terrace",
+   "name": "南伊豆キャンピングテラス",
+   "address": "静岡県賀茂郡南伊豆町子浦1349-6",
+   "url": "https://camp.imagining.jp/"
+  }
+ ],
+ [
+  {
+   "slug": "izu-kakure-auto",
+   "name": "伊豆隠れオートキャンプ場",
+   "address": "静岡県伊豆市八木沢2929-5",
+   "url": "https://kakure-camp.corpkj.com/"
+  },
+  {
+   "slug": "fujikawa-camp",
+   "name": "野田山健康緑地公園 富士川キャンプ場",
+   "address": "静岡県富士市中之郷4482-141",
+   "url": "https://fujikawa-camp.jp/"
+  },
+  {
+   "slug": "hottarakashi-camp",
+   "name": "ほったらかしキャンプ場",
+   "address": "山梨県山梨市矢坪1669-25",
+   "url": "https://hottarakashicamp.com/"
+  },
+  {
+   "slug": "shosenkyo-auto-camp",
+   "name": "昇仙峡オートキャンプ場",
+   "address": "山梨県甲府市平瀬町3157",
+   "url": "https://syosenkyo-camp.com/"
+  },
+  {
+   "slug": "motosu-shore-camp",
+   "name": "本栖湖キャンプ場",
+   "address": "山梨県南都留郡富士河口湖町本栖18",
+   "url": "https://www.motosuko-camp.com/"
+  },
+  {
+   "slug": "kiyosato-chuo-auto",
+   "name": "清里中央オートキャンプ場",
+   "address": "山梨県北杜市高根町浅川水頭152-1",
+   "url": "https://autocamp.co.jp/"
+  },
+  {
+   "slug": "westriver-auto-camp",
+   "name": "ウエストリバーオートキャンプ場",
+   "address": "山梨県南アルプス市須澤131",
+   "url": "https://westriver-camp.com/"
+  },
+  {
+   "slug": "retreat-camp-mahoroba",
+   "name": "リトリートキャンプまほろば",
+   "address": "山梨県南都留郡富士河口湖町河口山宮2553",
+   "url": "https://retreatcamp-mahoroba.net/"
+  },
+  {
+   "slug": "pica-fujiyama-camp",
+   "name": "PICA Fujiyama",
+   "address": "山梨県南都留郡富士河口湖町船津6662-10",
+   "url": "https://www.pica-resort.jp/fujiyama/"
+  },
+  {
+   "slug": "akeno-fureai-camp",
+   "name": "北杜市明野ふれあいの里キャンプ場",
+   "address": "山梨県北杜市明野町浅尾5260-5",
+   "url": "https://www.pica-resort.jp/akeno/"
+  }
+ ],
+ [
+  {
+   "slug": "hakushu-ojiro-camp",
+   "name": "白州・尾白の森キャンプ場",
+   "address": "山梨県北杜市白州町白須8093-9",
+   "url": "https://www.verga.info/"
+  },
+  {
+   "slug": "yanagishima",
+   "name": "ちがさき柳島キャンプ場",
+   "address": "神奈川県茅ヶ崎市柳島海岸1592番1地先",
+   "url": "https://www.yanagishima-camp.com/"
+  },
+  {
+   "slug": "toyanosawa",
+   "name": "とやの沢キャンプ場",
+   "address": "山梨県南都留郡道志村長又12704",
+   "url": "https://www.nap-camp.com/yamanashi/11281"
+  },
+  {
+   "slug": "suigennnomori",
+   "name": "水源の森 キャンプ・ランド",
+   "address": "山梨県南都留郡道志村馬場5821-2",
+   "url": "https://www.doshisuigen-mori.com/"
+  },
+  {
+   "slug": "pica-sagamiko",
+   "name": "PICAさがみ湖",
+   "address": "神奈川県相模原市緑区若柳1634",
+   "url": "https://www.sagamiko-resort.jp/camp/"
+  },
+  {
+   "slug": "minoishtaki",
+   "name": "みの石滝キャンプ場",
+   "address": "神奈川県相模原市緑区若柳1628",
+   "url": "https://camp-minoishi.com/"
+  },
+  {
+   "slug": "usami-shiroyama",
+   "name": "宇佐美城山公園キャンプ場",
+   "address": "静岡県伊東市宇佐美1721-5",
+   "url": "https://www.nap-camp.com/shizuoka/14344"
+  },
+  {
+   "slug": "hikenkayama",
+   "name": "火剣山キャンプ場",
+   "address": "静岡県菊川市富田3126-6",
+   "url": "https://www.hitsurugi-camp.com/"
+  },
+  {
+   "slug": "narakoko",
+   "name": "ならここの里キャンプ場",
+   "address": "静岡県掛川市居尻179番地",
+   "url": "https://www.narakoko.info/"
+  },
+  {
+   "slug": "asagiri-foodpark",
+   "name": "AFPオートキャンプ場（スタイルキャビンあさぎり）",
+   "address": "静岡県富士宮市根原449-11",
+   "url": "https://asagiri-foodpark.com/afp.html"
+  }
+ ],
+ [
+  {
+   "slug": "folkwood-yatsugatake",
+   "name": "FOLKWOOD VILLAGE 八ヶ岳",
+   "address": "山梨県北杜市小淵沢町3900-2",
+   "url": "https://folkwood-camp.com/"
+  },
+  {
+   "slug": "fujinomori-yamanakako",
+   "name": "山中湖ふじのもりオートキャンプ場",
+   "address": "山梨県南都留郡山中湖村平野1134-3",
+   "url": "https://www.nap-camp.com/yamanashi/14555"
+  },
+  {
+   "slug": "yatsugatake-oizumi",
+   "name": "八ヶ岳オートキャンプ場",
+   "address": "山梨県北杜市小淵沢町上笹尾3332-1936",
+   "url": "https://www.yatsugatake-autocamp.com/"
+  },
+  {
+   "slug": "doshigawa-kanko-noen",
+   "name": "道志川観光農園オートキャンプ場",
+   "address": "山梨県南都留郡道志村9240",
+   "url": "https://www.doshi-kanko.jp/camp/kanko-nouen/"
+  },
+  {
+   "slug": "tiny-camp-village",
+   "name": "TINY CAMP VILLAGE",
+   "address": "神奈川県厚木市七沢1854",
+   "url": "https://www.tiny-camp-village.com/"
+  },
+  {
+   "slug": "naminokomura",
+   "name": "なみのこ村",
+   "address": "神奈川県小田原市根府川161",
+   "url": "https://www.naminokomura.jp/"
+  },
+  {
+   "slug": "kuragari-camp",
+   "name": "丹沢湖キャンプサイト",
+   "address": "神奈川県足柄上郡山北町玄倉490-2",
+   "url": "https://tanzawa-camp.sakura.ne.jp/"
+  },
+  {
+   "slug": "nelo-gotemba",
+   "name": "NELO Gotemba",
+   "address": "静岡県駿東郡小山町新柴字道端672-1",
+   "url": "https://challengeoutdoor.co/nelogotemba/"
+  },
+  {
+   "slug": "fujisan-genshijin",
+   "name": "富士山オートキャンプ場GENSHIJIN",
+   "address": "静岡県富士宮市上井出2527番地の1",
+   "url": "https://genshijin-fujinomiya.com/"
+  },
+  {
+   "slug": "granpapa-solo-bocchi",
+   "name": "富士山GranPapaソロぼっち区画サイト",
+   "address": "静岡県富士宮市猪之頭26-1",
+   "url": "https://www.gran-papa.com/site/solo/"
+  }
+ ],
+ [
+  {
+   "slug": "marubi-auto",
+   "name": "御殿場まるびオートキャンプ場",
+   "address": "静岡県御殿場市印野1379-1",
+   "url": "https://marubi.main.jp/"
+  },
+  {
+   "slug": "ikawa-auto",
+   "name": "南アルプス井川オートキャンプ場",
+   "address": "静岡県静岡市葵区田代449-2",
+   "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0001021.html"
+  },
+  {
+   "slug": "yamanakako-minami-auto",
+   "name": "山中湖みなみオートキャンプ場",
+   "address": "山梨県南都留郡山中湖村平野520-45",
+   "url": "https://www.minami-camp.com/"
+  },
+  {
+   "slug": "camp-akaike",
+   "name": "CAMP AKAIKE",
+   "address": "山梨県南都留郡富士河口湖町精進550-127",
+   "url": "https://www.camp-akaike.jp/"
+  },
+  {
+   "slug": "tsukiyono-doshi-camp",
+   "name": "月夜野キャンプ場",
+   "address": "山梨県南都留郡道志村950",
+   "url": "https://www.doshi-kanko.jp/camp/tsukiyono/"
+  },
+  {
+   "slug": "ecopa-inagako",
+   "name": "エコパ伊奈ヶ湖",
+   "address": "山梨県南アルプス市上市之瀬1760",
+   "url": "https://ecopa-inagako.jp/"
+  },
+  {
+   "slug": "village-hakushu",
+   "name": "ヴィレッヂ白州",
+   "address": "山梨県北杜市白州町上教来石平久保2124",
+   "url": "https://www.village-hakushu.com/"
+  },
+  {
+   "slug": "hananomori-camp",
+   "name": "花の森オートキャンピア",
+   "address": "山梨県南都留郡道志村9709-1",
+   "url": "https://www.hananomori.jp/"
+  },
+  {
+   "slug": "flora-campsite",
+   "name": "白州・尾白 FLORA Campsite in the Natural Garden",
+   "address": "山梨県北杜市白州町白須8813-2",
+   "url": "https://www.floracampsite.com/"
+  },
+  {
+   "slug": "shinozawa-ootaki-camp",
+   "name": "篠沢大滝キャンプ場",
+   "address": "山梨県北杜市白州町大坊1181",
+   "url": "https://shinozawa-ootaki-camp.com/"
+  }
+ ],
+ [
+  {
+   "slug": "oishii-camp",
+   "name": "富士ヶ嶺・おいしいキャンプ場",
+   "address": "山梨県南都留郡富士河口湖町富士ヶ嶺696",
+   "url": "https://oic-camp.com/"
+  },
+  {
+   "slug": "shimobe-yurucamp-sato",
+   "name": "道の駅しもべ オートキャンプ場〜ゆるキャン△の里〜",
+   "address": "山梨県南巨摩郡身延町古関4321",
+   "url": "https://www.michinoeki-shimobe.jp/camp/"
+  },
+  {
+   "slug": "hayato-hakone",
+   "name": "HAYATO 箱根キャンプ場",
+   "address": "神奈川県足柄下郡箱根町湯本茶屋70",
+   "url": "https://hayatohakoneguesthouse.com/page/hakone-camp/"
+  },
+  {
+   "slug": "bushcraft-shonan",
+   "name": "BUSHCRAFT湘南",
+   "address": "神奈川県平塚市土屋2588-85",
+   "url": "https://bush-craft.biz/"
+  },
+  {
+   "slug": "akiyamagawa-camp",
+   "name": "秋山川キャンプ場",
+   "address": "神奈川県相模原市緑区名倉25",
+   "url": "http://www.akikawaya.co.jp/"
+  },
+  {
+   "slug": "hachibanaen-miroku",
+   "name": "蜂花苑 寄・中津川 源流の郷キャンプ場",
+   "address": "神奈川県足柄上郡松田町寄7138番",
+   "url": "https://houkaen.jp/"
+  },
+  {
+   "slug": "otome-forest-camp",
+   "name": "乙女森林公園第1キャンプ場",
+   "address": "静岡県御殿場市深沢2190",
+   "url": "https://www.gotemba-otome.jp/"
+  },
+  {
+   "slug": "recamp-fuji-speedway",
+   "name": "RECAMP富士スピードウェイ",
+   "address": "静岡県駿東郡小山町中日向694 富士スピードウェイ内",
+   "url": "https://www.recamp.co.jp/fujispeedway"
+  },
+  {
+   "slug": "camp-bean-izu",
+   "name": "CAMP BEAN",
+   "address": "静岡県伊豆市大平1499-2",
+   "url": "https://www.campbean.jp/"
+  },
+  {
+   "slug": "tenshino-mori-camp",
+   "name": "天子の森オートキャンプ場",
+   "address": "静岡県富士宮市佐折631",
+   "url": "https://tenshinomori.net/"
+  }
+ ],
+ [
+  {
+   "slug": "fujimangan-village",
+   "name": "富士満願ビレッジファミリーキャンプ場",
+   "address": "山梨県南都留郡鳴沢村5163-1",
+   "url": "https://fuji-manganvillage.com/"
+  },
+  {
+   "slug": "nagomino-sato-tsuru",
+   "name": "都留戸沢の森 和みの里キャンプ場",
+   "address": "山梨県都留市戸沢1126",
+   "url": "https://www.nagomi-camp.com"
+  },
+  {
+   "slug": "doshi-mori-cottage",
+   "name": "道志森のコテージ",
+   "address": "山梨県南都留郡道志村7895",
+   "url": "https://doshi-kanko.com/moricote/moricote_ryokin/moricote_ryokin.html"
+  },
+  {
+   "slug": "fuji-midori-kyuka-auto",
+   "name": "富士緑の休暇村オートキャンプ場",
+   "address": "山梨県南都留郡鳴沢村字ジラゴンノ8532-5",
+   "url": "http://www.kyukamura.jp/"
+  },
+  {
+   "slug": "ogayanagawa-keikoku",
+   "name": "大柳川渓流キャンプ場",
+   "address": "山梨県南巨摩郡富士川町十谷",
+   "url": "https://ooyanagawa-camp.com/"
+  },
+  {
+   "slug": "kurokawa-shizuoka",
+   "name": "黒川キャンプ場（清水森林公園）",
+   "address": "静岡県静岡市清水区西里1310-1",
+   "url": "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000093.html"
+  },
+  {
+   "slug": "kamioshima-camp",
+   "name": "上大島キャンプ場",
+   "address": "神奈川県相模原市緑区大島3657付近",
+   "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html"
+  },
+  {
+   "slug": "ugusu-camp",
+   "name": "宇久須キャンプ場",
+   "address": "静岡県賀茂郡西伊豆町宇久須2102-13",
+   "url": "https://www.nishiizu-kankou.com/stay/ugusucanp"
+  },
+  {
+   "slug": "kunowaki-shinsui",
+   "name": "くのわき親水公園キャンプ場",
+   "address": "静岡県榛原郡川根本町久野脇280",
+   "url": "https://www.kunowaki.net/"
+  },
+  {
+   "slug": "yagi-camp",
+   "name": "八木キャンプ場",
+   "address": "静岡県榛原郡川根本町奥泉761-2地先",
+   "url": "https://okuooi.gr.jp/contact_camp_yagi/index.php"
+  }
+ ],
+ [
+  {
+   "slug": "mitsuboshi-auto",
+   "name": "三ツ星オートキャンプ場",
+   "address": "静岡県榛原郡川根本町上長尾1143",
+   "url": "http://kawanelife.org/camp/"
+  },
+  {
+   "slug": "fudonotaki-auto",
+   "name": "不動の滝自然広場オートキャンプ場",
+   "address": "静岡県榛原郡川根本町下泉1122",
+   "url": "https://ffnpcs.com/"
+  },
+  {
+   "slug": "apt-ichishiro",
+   "name": "アプトいちしろキャンプ場",
+   "address": "静岡県榛原郡川根本町梅地3-19",
+   "url": "https://abt-camp.shizu.website/"
+  },
+  {
+   "slug": "fukushigawa-seishonen",
+   "name": "青少年旅行村（キャンプ場）",
+   "address": "山梨県南巨摩郡南部町福士26842",
+   "url": "https://www.town.nanbu.yamanashi.jp/kankou/leisure/Camp-Okuyama.html"
+  },
+  {
+   "slug": "turkeys-house",
+   "name": "ターキーズハウス 江ノ電に泊まれるキャンプ場",
+   "address": "山梨県南巨摩郡南部町福士16095",
+   "url": "http://www.turkeyshouse.com/"
+  },
+  {
+   "slug": "nekumasanso-auto",
+   "name": "福士川根熊山荘ファミリーオートキャンプ場",
+   "address": "山梨県南巨摩郡南部町福士15854",
+   "url": "https://hukusshigawacamp.eyado.net/"
+  },
+  {
+   "slug": "fujino-art-camp",
+   "name": "藤野芸術の家キャンプ場",
+   "address": "神奈川県相模原市緑区牧野4819",
+   "url": "https://fujino-art.jp/camp/"
+  },
+  {
+   "slug": "saiko-kohan-camp",
+   "name": "西湖湖畔キャンプ場",
+   "address": "山梨県南都留郡富士河口湖町西湖207-7",
+   "url": "https://saikohan.com/price/"
+  },
+  {
+   "slug": "saiko-tsuhara-camp",
+   "name": "西湖津原キャンプ場",
+   "address": "山梨県南都留郡富士河口湖町西湖351",
+   "url": "https://tsuhara-camp.jp/price"
+  },
+  {
+   "slug": "shiraishi-auto-camp",
+   "name": "白石オートキャンプ場",
+   "address": "神奈川県足柄上郡山北町中川字相馬沢870-3",
+   "url": "https://www.shiraishiautocamp.com/price"
+  }
+ ],
+ [
+  {
+   "slug": "ryokokubashi-camp",
+   "name": "両国橋キャンプ場",
+   "address": "山梨県南都留郡道志村49",
+   "url": "http://yukawaya.a.la9.jp/"
+  },
+  {
+   "slug": "new-tashiro-auto-camp",
+   "name": "ニュー田代オートキャンプ場",
+   "address": "山梨県南都留郡道志村5910",
+   "url": "https://tashiro-autocamp.com/"
+  },
+  {
+   "slug": "kananomori-sanso",
+   "name": "金の森山荘",
+   "address": "山梨県大月市大月町真木6188",
+   "url": "https://kananomori.com/"
+  },
+  {
+   "slug": "midori-taiyo-oka",
+   "name": "緑と太陽の丘キャンプ場",
+   "address": "山梨県上野原市秋山5030",
+   "url": "https://midoritotaiyounooka.com/"
+  },
+  {
+   "slug": "hiranoda-kyuyoson",
+   "name": "平野田休養村キャンプ場",
+   "address": "山梨県上野原市西原7293",
+   "url": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html"
+  },
+  {
+   "slug": "eureka-camp-village",
+   "name": "eureka camp village",
+   "address": "山梨県大月市賑岡町奥山1473",
+   "url": "https://www.nap-camp.com/yamanashi/14539"
+  },
+  {
+   "slug": "orange-mura-auto",
+   "name": "野宮農園 オレンジ村オートキャンプ場",
+   "address": "千葉県南房総市千倉町久保1494",
+   "url": "https://orangemura.com/camp/"
+  },
+  {
+   "slug": "otaki-kenminnomori",
+   "name": "千葉県立大多喜県民の森 キャンプ場",
+   "address": "千葉県夷隅郡大多喜町大多喜486-21",
+   "url": "https://otakikenminnomori.jp/"
+  },
+  {
+   "slug": "otaki-sabo",
+   "name": "大多喜SABO",
+   "address": "千葉県夷隅郡大多喜町堀之内595",
+   "url": "http://otaki-sabo.info/"
+  },
+  {
+   "slug": "kisarazu-camp-organic",
+   "name": "きさらづCAMP ORGANIC FIELD in みたて",
+   "address": "千葉県木更津市中島4416",
+   "url": "https://www.city.kisarazu.lg.jp/soshiki/keizai/kankoshinko/1/2377.html"
+  }
+ ],
+ [
+  {
+   "slug": "morimaki-auto",
+   "name": "森のまきばオートキャンプ場",
+   "address": "千葉県袖ケ浦市林562-1-3",
+   "url": "https://www.morimaki-camp.com/facility/"
+  },
+  {
+   "slug": "narita-yume-bokujo",
+   "name": "成田ゆめ牧場オートキャンプ場",
+   "address": "千葉県成田市名木730-3",
+   "url": "https://www.yumebokujo.com/camp.html"
+  },
+  {
+   "slug": "sengokudai-auto",
+   "name": "千石台オートキャンプ場",
+   "address": "千葉県君津市蔵玉2245-16",
+   "url": "https://www.1059dai.com/"
+  },
+  {
+   "slug": "uchiurayama-kenminnomori",
+   "name": "千葉県立内浦山県民の森キャンプ場",
+   "address": "千葉県鴨川市内浦3228",
+   "url": "https://www.uchiurayama.jp/stay03"
+  },
+  {
+   "slug": "shimizu-koen-auto",
+   "name": "清水公園オートキャンプ場",
+   "address": "千葉県野田市清水906",
+   "url": "https://www.shimizu-kouen.com/camp"
+  },
+  {
+   "slug": "futtsu-shiminnomori",
+   "name": "富津市民の森キャンプ場",
+   "address": "千葉県富津市豊岡2785-1",
+   "url": "https://www.city.futtsu.lg.jp/0000000751.html"
+  },
+  {
+   "slug": "ohara-kamifuse-auto",
+   "name": "大原上布施オートキャンプ場",
+   "address": "千葉県いすみ市上布施593",
+   "url": "https://ethp.net/camp/kamifuse/?mid"
+  },
+  {
+   "slug": "tachibana-fureai-camp",
+   "name": "橘ふれあい公園キャンプ場",
+   "address": "千葉県香取市長岡1828-1",
+   "url": "https://www.tachibana-park.jp/facility-guide/camp/"
+  },
+  {
+   "slug": "umegashima-camp",
+   "name": "梅ケ島キャンプ場",
+   "address": "静岡県静岡市葵区梅ケ島3198番地地先",
+   "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html"
+  },
+  {
+   "slug": "sugari-camp",
+   "name": "キャンプすがり",
+   "address": "静岡県浜松市天竜区横川741-2",
+   "url": "https://sugari.camp/lp/solo-camp.php"
+  }
+ ],
+ [
+  {
+   "slug": "fuji-anmo-camp",
+   "name": "富士山あんもの森Camp Field",
+   "address": "静岡県富士宮市山宮3690",
+   "url": "https://fuji-anmonomori.com/menu/"
+  },
+  {
+   "slug": "okitsugawa-auto",
+   "name": "おきつがわオートキャンプ場",
+   "address": "静岡県静岡市清水区茂野島1100",
+   "url": "https://camp-joe.com/okitsugawa/"
+  },
+  {
+   "slug": "kaaji-no-mori",
+   "name": "カージの杜",
+   "address": "千葉県君津市馬登729",
+   "url": "https://www.tschiba.com/kaaji/plan.html"
+  },
+  {
+   "slug": "seiwa-kenminnomori",
+   "name": "千葉県立清和県民の森キャンプ場",
+   "address": "千葉県君津市豊英660",
+   "url": "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/"
+  },
+  {
+   "slug": "fruits-village",
+   "name": "オートキャンプ・フルーツ村",
+   "address": "千葉県君津市旅名96",
+   "url": "http://fruitsvillage.com/custom11.html"
+  },
+  {
+   "slug": "laqlaq-garden",
+   "name": "楽々ガーデン",
+   "address": "千葉県千葉市若葉区中野町2050",
+   "url": "https://laqlaqgarden.com/"
+  },
+  {
+   "slug": "taibusamisaki-camp",
+   "name": "大房岬自然公園キャンプ場",
+   "address": "千葉県南房総市富浦町多田良1212-29",
+   "url": "https://taibusa-misaki.jp/mp/goriyouhouhou_ryokinhyo"
+  },
+  {
+   "slug": "kazusa-autocamp",
+   "name": "かずさオートキャンプ場",
+   "address": "千葉県君津市向郷766-1",
+   "url": "https://www.kazusa-autocamp.com/k-ryoukinn2020.htm"
+  },
+  {
+   "slug": "nanasatogawa-autocamp",
+   "name": "オートキャンプ七里川",
+   "address": "千葉県君津市黄和田畑969-1",
+   "url": "https://www.city.kimitsu.lg.jp/site/kanko/10224.html"
+  },
+  {
+   "slug": "miyoshi-family-camp",
+   "name": "みよしファミリーキャンプ場",
+   "address": "千葉県南房総市千代4",
+   "url": "https://miyoshi1185.wixsite.com/miyoshi-family-camp"
+  }
+ ],
+ [
+  {
+   "slug": "kameyamako-autocamp",
+   "name": "亀山湖オートキャンプ場",
+   "address": "千葉県君津市折木沢湯の川1306",
+   "url": "https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/"
+  },
+  {
+   "slug": "inagasaki-camp",
+   "name": "稲ヶ崎キャンプ場",
+   "address": "千葉県君津市草川原866",
+   "url": "https://inagasaki.world.coocan.jp/facilities.html"
+  },
+  {
+   "slug": "lakeside-kameyama",
+   "name": "レイクサイド亀山キャンプ場",
+   "address": "千葉県君津市川俣旧押込68-3",
+   "url": "https://www.city.kimitsu.lg.jp/site/kanko/77120.html"
+  },
+  {
+   "slug": "ohara-sotobou",
+   "name": "大原オートキャンプインそとぼう",
+   "address": "千葉県いすみ市深堀1831",
+   "url": "https://oohara-ac-inn.jimdofree.com/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91"
+  },
+  {
+   "slug": "futtsu-kanaya-hills",
+   "name": "富津金谷オートキャンプヒルズ",
+   "address": "千葉県富津市金谷894-1",
+   "url": "http://www.autocamphills.com/charge.html"
+  },
+  {
+   "slug": "futtsu-koen-camp",
+   "name": "富津公園キャンプ場",
+   "address": "千葉県富津市富津2280",
+   "url": "https://www.cue-net.or.jp/kouen/futtsu/annai/camp.html"
+  },
+  {
+   "slug": "recamp-tateyama",
+   "name": "RECAMP館山",
+   "address": "千葉県館山市布沼1210",
+   "url": "https://www.recamp.co.jp/recamptateyama"
+  },
+  {
+   "slug": "ningyonoyu-marineside",
+   "name": "人魚の湯 オートキャンプ場 マリンサイド",
+   "address": "千葉県館山市大賀85-1",
+   "url": "http://kaikouzu.com/camp.html"
+  },
+  {
+   "slug": "okugome-kimura-nouen",
+   "name": "奥米・木村農園キャンプ場",
+   "address": "千葉県君津市奥米143",
+   "url": "https://okugomekimuranouen.wixsite.com/site"
+  },
+  {
+   "slug": "miyahara-autocamp",
+   "name": "宮原オートキャンプ場",
+   "address": "千葉県いすみ市大野2843",
+   "url": "http://www.camp-miyahara.com/rate"
+  }
+ ],
+ [
+  {
+   "slug": "katsuura-tsuruntsurun",
+   "name": "勝浦つるんつるん温泉直営オートキャンプ場",
+   "address": "千葉県勝浦市松野1126-2",
+   "url": "http://katuuraonsen.com/camp/camp.html"
+  },
+  {
+   "slug": "tomisakikan-camp",
+   "name": "富崎館キャンプ場",
+   "address": "千葉県館山市布良303-1",
+   "url": "https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E5%AF%8C%E5%B4%8E%E9%A4%A8%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4"
+  },
+  {
+   "slug": "wildkids-misaki",
+   "name": "ワイルドキッズ岬オートキャンプ場",
+   "address": "千葉県いすみ市岬町和泉687",
+   "url": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/"
+  },
+  {
+   "slug": "acn-katsuura-manbow",
+   "name": "ACNオートキャンプin勝浦まんぼう",
+   "address": "千葉県勝浦市松部1910",
+   "url": "http://www.manbow-camp.jp/reserve/index.html"
+  },
+  {
+   "slug": "shiosai-campfield",
+   "name": "しおさいキャンプフィールド",
+   "address": "千葉県南房総市白子2792",
+   "url": "https://shiosai-minamiboso.com/"
+  },
+  {
+   "slug": "eleven-autocamp",
+   "name": "イレブンオートキャンプパーク",
+   "address": "千葉県君津市栗坪300",
+   "url": "https://www.eleven-camp.com/"
+  },
+  {
+   "slug": "romannomori-camp",
+   "name": "ロマンの森共和国キャンプ場",
+   "address": "千葉県君津市豊英659-1",
+   "url": "https://www.romannomori.co.jp/price/"
+  },
+  {
+   "slug": "abiko-fureai-camp",
+   "name": "我孫子市ふれあいキャンプ場",
+   "address": "千葉県我孫子市岡発戸1395",
+   "url": "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/about.html"
+  },
+  {
+   "slug": "asahi-unakami-camp",
+   "name": "旭市海上キャンプ場",
+   "address": "千葉県旭市岩井1000",
+   "url": "https://www.city.asahi.lg.jp/soshiki/29/24010.html"
+  },
+  {
+   "slug": "campfield-marc-west",
+   "name": "キャンプフィールド マークウエスト",
+   "address": "千葉県印西市平賀2719",
+   "url": "https://www.camp-inba.com/guidance"
+  }
+ ],
+ [
+  {
+   "slug": "nightvista-camp",
+   "name": "ナイトビスタキャンプ場",
+   "address": "千葉県安房郡鋸南町下佐久間2311-5",
+   "url": "https://nightvista3.com/"
+  },
+  {
+   "slug": "campgarden-inzai",
+   "name": "キャンプガーデン印西",
+   "address": "千葉県印西市",
+   "url": "https://campg-inzai.com/price/"
+  },
+  {
+   "slug": "inbanuma-sunset-hills",
+   "name": "印旛沼サンセットヒルズ",
+   "address": "千葉県佐倉市飯野町27",
+   "url": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html"
+  },
+  {
+   "slug": "ichinose-kogen-camp",
+   "name": "一の瀬高原キャンプ場",
+   "address": "山梨県甲州市塩山一之瀬高橋560",
+   "url": "https://www.cosmo.ne.jp/camp/"
+  },
+  {
+   "slug": "autocamp-suzuran",
+   "name": "オートキャンプすずらん",
+   "address": "山梨県笛吹市芦川町上芦川1808",
+   "url": "http://park15.wakwak.com/~suzuran/ryoukin/index.htm"
+  },
+  {
+   "slug": "fuefukigoya-camp",
+   "name": "笛吹小屋キャンプ場",
+   "address": "山梨県山梨市三富川浦1820",
+   "url": "http://www.fuefukigoya.com/ryoukin.html"
+  },
+  {
+   "slug": "kurosaka-autocamp",
+   "name": "黒坂オートキャンプ場",
+   "address": "山梨県笛吹市境川町大黒坂",
+   "url": "https://www.kurosaka.net/"
+  }
+ ]
+]

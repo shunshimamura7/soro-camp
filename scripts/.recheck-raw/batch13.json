@@ -1,0 +1,365 @@
+[
+ {
+  "slug": "ryokokubashi-camp",
+  "checkedUrls": [
+   "http://yukawaya.a.la9.jp/index.html",
+   "http://yukawaya.a.la9.jp/camp/camp_price.html",
+   "http://yukawaya.a.la9.jp/camp/outsite.html",
+   "http://yukawaya.a.la9.jp/camp/bungalow.html",
+   "http://yukawaya.a.la9.jp/camp/daycamp.html",
+   "http://yukawaya.a.la9.jp/camp/rental.html",
+   "http://yukawaya.a.la9.jp/camp/chui.html",
+   "http://yukawaya.a.la9.jp/camp/faq.html",
+   "http://yukawaya.a.la9.jp/plan.html",
+   "http://yukawaya.a.la9.jp/access.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "http://yukawaya.a.la9.jp/camp/outsite.html",
+   "quote": "お風呂　利用できない場合があります"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "http://yukawaya.a.la9.jp/camp/rental.html",
+   "quote": "まき　◎広葉樹　700円　◎針葉樹　500円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "http://yukawaya.a.la9.jp/camp/rental.html",
+   "quote": "【湯川屋売店】その他菓子類、調味料、アイスなども販売しています"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://yukawaya.a.la9.jp/camp/chui.html",
+   "quote": "ペットは鎖でつなぎ、糞はそのままにせず必ず始末してください"
+  },
+  "nearbyOnsen": {
+   "value": "道志の湯：当店から車で約２０分。内風呂と露天風呂がありゆったりした休憩室や食事もできます。この他にいやしの湯、紅椿の湯などあります"
+  }
+ },
+ {
+  "slug": "new-tashiro-auto-camp",
+  "checkedUrls": [
+   "https://tashiro-autocamp.com/index.php/root",
+   "https://tashiro-autocamp.com/index.php/root/info",
+   "https://tashiro-autocamp.com/index.php/root/faq",
+   "https://tashiro-autocamp.com/index.php/root/around-info"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://tashiro-autocamp.com/index.php/root/faq",
+   "quote": "場内にシャワー施設があります。こちらは、２４時間、無料で利用できます。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://tashiro-autocamp.com/index.php/root/info",
+   "quote": "各種販売　炭　￥800／3kg　薪　￥500"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://tashiro-autocamp.com/index.php/root/info",
+   "quote": "各種販売　炭￥800／3kg　薪￥500　釣り餌（イクラ）￥300"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://tashiro-autocamp.com/index.php/root/faq",
+   "quote": "『ペットはＯＫですか？』ＯＫです。場内ではリード（１２０cm以内）やケージを使用し"
+  },
+  "nearbyOnsen": {
+   "value": "紅椿の湯（大人1,000円・子供500円／3時間、10:00〜21:00）、道志の湯（大人700円・子供450円／一日、火曜休館）。いずれも日帰り温泉施設"
+  }
+ },
+ {
+  "slug": "kananomori-sanso",
+  "checkedUrls": [
+   "https://kananomori.com/",
+   "https://kananomori.com/inn.html",
+   "https://kananomori.com/price.html",
+   "https://kananomori.com/bbq.html",
+   "https://kananomori.com/playing.html",
+   "https://kananomori.com/fishing.html",
+   "https://kananomori.com/contact.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://kananomori.com/inn.html",
+   "quote": "お風呂　男風呂、女風呂それぞれに内風呂、サウナ をご用意しました。"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://kananomori.com/price.html",
+   "quote": "お風呂・シャワー利用（大人）850円／（子供）650円"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://kananomori.com/price.html",
+   "quote": "薪（1箱）1,800円"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "midori-taiyo-oka",
+  "checkedUrls": [
+   "http://www.midoritotaiyounooka.com/",
+   "http://www.midoritotaiyounooka.com/ホーム",
+   "https://www.midoritotaiyounooka.com/料金表",
+   "https://www.midoritotaiyounooka.com/レンタル販売",
+   "https://www.midoritotaiyounooka.com/場内説明",
+   "https://www.midoritotaiyounooka.com/キャンプ場のルール",
+   "https://www.midoritotaiyounooka.com/キャンプ場周辺情報"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.midoritotaiyounooka.com/レンタル販売",
+   "quote": "ドラム缶風呂（１日）3.300円"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.midoritotaiyounooka.com/料金表",
+   "quote": "シャワー（大人）220円／(子ども)110円"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.midoritotaiyounooka.com/レンタル販売",
+   "quote": "針葉樹１束550円／広葉樹１束880円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.midoritotaiyounooka.com/レンタル販売",
+   "quote": "ロック氷300円／板氷400円／アイス100円から170円／蚊取り線香55円"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.midoritotaiyounooka.com/キャンプ場のルール",
+   "quote": "ペットも入場できます。場内ではリードの使用をお願いします。"
+  },
+  "nearbyOnsen": {
+   "value": "キャンプ場周辺には秋山温泉やマス釣り場もあります。当キャンプ場をご利用して頂けると割引クーポンが利用できます。"
+  }
+ },
+ {
+  "slug": "hiranoda-kyuyoson",
+  "checkedUrls": [
+   "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html",
+   "quote": "薪（針葉樹）スギ・ヒノキ等　1束　550円／薪（広葉樹）ナラ・ケヤキ等　1束　750円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html",
+   "quote": "炭（2kg）1袋600円／炭（3kg）1袋800円／餌（イクラ）1個1,000円"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html",
+   "quote": "ペット同伴の場合はリードの着用をお願いします"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "eureka-camp-village",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/14539"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/yamanashi/14539",
+   "quote": "場内設備：AC電源、シャワー、お風呂、ウォッシュレット式トイレ、ゴミ捨て場"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/yamanashi/14539",
+   "quote": "場内設備：AC電源、シャワー、お風呂、ウォッシュレット式トイレ"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.nap-camp.com/yamanashi/14539",
+   "quote": "お役立ちサービス・条件：花火OK、ペットOK、携帯電話OK"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "orange-mura-auto",
+  "checkedUrls": [
+   "https://orangemura.com/",
+   "https://orangemura.com/camp/",
+   "https://orangemura.com/access/",
+   "https://orangemura.com/about-us/",
+   "https://orangemura.com/reserve/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://orangemura.com/camp/",
+   "quote": "24時間温水シャワー／予約制貸切風呂(有料)"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://orangemura.com/camp/",
+   "quote": "温水シャワーは24時間無料でご利用できます。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://orangemura.com/camp/",
+   "quote": "薪（木材廃材）無料です。長いのもあるので切ってご使用ください。"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://orangemura.com/camp/",
+   "quote": "ペットOKです。マナー,他の方へのご配慮をお願いいたします。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "otaki-kenminnomori",
+  "checkedUrls": [
+   "https://otakikenminnomori.jp/",
+   "https://otakikenminnomori.jp/camp",
+   "https://otakikenminnomori.jp/sightseeing",
+   "https://otakikenminnomori.jp/square/shop"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://otakikenminnomori.jp/camp",
+   "quote": "炊事場、トイレ、温水シャワー室、営火場が整備されています。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://otakikenminnomori.jp/camp",
+   "quote": "販売品　炊事用マキ　1束　600円　約30㎝、一般炊事1回分(約5名)"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://otakikenminnomori.jp/camp",
+   "quote": "販売品　炊事用マキ1束600円／単一乾電池1本300円"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://otakikenminnomori.jp/camp",
+   "quote": "キャンプ場にペットを連れてのご利用はできません。(施設全体の禁止事項)"
+  },
+  "nearbyOnsen": {
+   "value": "ごりやくの湯：養老渓谷の日帰り温泉「ごりやくの湯」は露天風呂やレストランを備えた眺望抜群の天然温泉を楽しめます。"
+  }
+ },
+ {
+  "slug": "otaki-sabo",
+  "checkedUrls": [
+   "http://otaki-sabo.info/",
+   "http://otaki-sabo.info/cost.html",
+   "http://otaki-sabo.info/concept.html",
+   "http://otaki-sabo.info/policy.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://otaki-sabo.info/cost.html",
+   "quote": "＜共有設備＞シャワールーム・温水洗浄トイレ・洗い場(お湯OK)・炭捨て場等"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "http://otaki-sabo.info/cost.html",
+   "quote": "＜販売品＞　薪　500円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "http://otaki-sabo.info/cost.html",
+   "quote": "受付（兼売店）≪9:00〜17:00≫＜販売品＞薪500円　炭"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://otaki-sabo.info/cost.html",
+   "quote": "ペット　：300円"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "kisarazu-camp-organic",
+  "checkedUrls": [
+   "https://www.city.kisarazu.lg.jp/soshiki/keizai/kankoshinko/1/2377.html",
+   "https://www.city.kisarazu.lg.jp/soshiki/keizai/kankoshinko/1/index.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ }
+]

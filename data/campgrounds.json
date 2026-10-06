@@ -38,7 +38,12 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "駐車場とキャンプスペースに限りがあり、予約した人が優先で案内される"
+      "reservationNote": "駐車場とキャンプスペースに限りがあり、予約した人が優先で案内される",
+      "showerNote": "300円で5分間温水が流れます。24時間ご利用いただけます。（https://norolodge.com/facility/）",
+      "firewoodNote": "薪・各種あります(針葉樹500円〜 / 広葉樹600円〜)（https://norolodge.com/solocamp/）",
+      "shopNote": "薪 ・炭・着火剤、氷 、調味料、紙皿・箸・コップ類、スナック菓子、カップ麺（https://norolodge.com/facility/shop/）",
+      "petNote": "ペット同伴の方は寝具のレンタルはできません。お客様でご持参をお願いいたします。（https://norolodge.com/stay/bungalow/）",
+      "nearbyOnsen": "いやしの湯・緑の休暇村センター（車で20分程度）／藤野やまなみ温泉（車で20分程度）／相模 下九沢温泉 湯楽の里（車で25分程度）／さがみ湖温泉 うるり（車で25分程度）（https://norolodge.com/）"
     },
     "season": "通年",
     "soloComment": "道志川沿いのキャンプ場。直火での焚き火ができ、川遊びもできる。Wi-Fi完備。ツーリング2,000円・車ソロ2,500円とソロ向けの料金が整理されていて初心者でも入りやすい。駐車場とキャンプスペースに限りがあるので、予約しておくと優先して案内される。",
@@ -88,7 +93,12 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "予約はバンガロー・ログハウスのみ。オートキャンプとデイキャンプはフリーサイトで予約を取っていない"
+      "reservationNote": "予約はバンガロー・ログハウスのみ。オートキャンプとデイキャンプはフリーサイトで予約を取っていない",
+      "shower": true,
+      "showerNote": "コインシャワー（24時間）をご利用可能です。（5分300円）（https://ootakicampsite.com/autocamp/）",
+      "firewoodNote": "薪 (一束) 660円（https://ootakicampsite.com/pricelist/）",
+      "shopNote": "薪やレンタル品など、管理室にて販売しております。（17:00まで）（https://ootakicampsite.com/autocamp/）",
+      "petNote": "ワンちゃんのご入場も大歓迎です！（https://ootakicampsite.com/daycamp/）"
     },
     "season": "通年",
     "soloComment": "予約不要・直火OKの貴重な渓流キャンプ場。星空が綺麗で平日は貸切感あり。ピザ窯体験もできる。秘境感あって本格派ソロにオススメ。",
@@ -125,8 +135,8 @@
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
       "shower": true,
-      "bath": true,
-      "bathNote": "ドラム缶風呂・露天風呂（水着着用）",
+      "bath": false,
+      "bathNote": "お風呂に関しては、クレーマーから保健所に苦情が入ったとの事で利用が困難になってしまいました（https://gandahara.wixsite.com/mysite/blank-3）",
       "toilet": "洋式",
       "carIn": false,
       "carInNote": "県営駐車場利用・トロッコで荷物運搬",
@@ -138,7 +148,8 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "温水シャワーも完備されています。（https://gandahara.wixsite.com/mysite/activities）"
     },
     "season": "通年",
     "soloComment": "崖を降りた絶海の孤島感。プライベートビーチ・露天風呂・朝日が真正面から昇る。秘境キャンパー向け。荷物運搬のトロッコは絶対使え。",
@@ -189,7 +200,12 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "薪1束700円（税込）～、炭(3kg入り)700円（税込）で販売（https://tanukiko.com/south/）",
+      "shopNote": "瓔珞の家（売店、食堂併設）（https://tanukiko.com/south/）",
+      "pet": true,
+      "petNote": "可能です。リードの使用、排せつ物の処理を行ってください。（https://tanukiko.com/faq/）",
+      "nearbyOnsen": "風の湯／天母の湯／花の湯（公式「田貫湖付近の立ち寄り湯」案内）（https://tanukiko.com/kankou/）"
     },
     "season": "通年",
     "soloComment": "公営キャンプ場ならではの安定感。逆さ富士・ダブルダイヤモンド富士が拝める絶景湖畔サイト。湖一周サイクリングも楽しめる。オートじゃないので静かに過ごせる。",
@@ -240,7 +256,10 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": false,
+      "bathNote": "当キャンプ場には、入浴施設はありません。（https://www.bt-r.jp/aec/index.html）",
+      "nearbyOnsen": "風の湯（車で10分程）（https://www.bt-r.jp/aec/index.html）"
     },
     "season": "通年",
     "soloComment": "「Private is luxury」がコンセプト。電子音楽再生機器禁止・サイト同士の距離確保・ソロ専用区画。値段は張るが、本気で静寂を求める人向け。広葉樹の森。",
@@ -347,7 +366,11 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワー　男性女性とも20分４００円（https://urban-camping.jp/system.html）",
+      "firewoodNote": "薪（まき）…８００円～（https://urban-camping.jp/system.html）",
+      "shopNote": "キャンプの小物と各種お飲み物も取り揃えております。（https://urban-camping.jp/system.html）",
+      "petNote": "オートサイトは全区画でペット同伴可能、オートサイト以外はすべてペット同伴不可（https://urban-camping.jp/system.html）"
     },
     "season": "3月〜11月",
     "soloComment": "オーナー手作りの溶岩露天風呂・檜風呂が最大の特徴。風呂入れるキャンプ場って実は希少。富士山ほぼ全景拝める。設備満点。冬季クローズなので注意。",
@@ -400,7 +423,12 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "浩庵管理棟にてお風呂(500円)もご利用頂けます。(キャンプ場、キャビン利用者のみ)（https://kouan-motosuko.com/camp/index.html）",
+      "showerNote": "浩庵キャンプ場内にコインシャワー(24h)を完備（https://kouan-motosuko.com/camp/index.html）",
+      "shopNote": "売店は8：00〜20：00まで、レストランはランチタイムのみの営業となります。（https://kouan-motosuko.com/faq/index.html）",
+      "petNote": "ペットは他人の迷惑になる行為(リード無し、トイレ不始末、鳴き声等)は避けてください。（https://kouan-motosuko.com/camp/index.html）"
     },
     "season": "通年",
     "soloComment": "千円札の裏の富士山が見える場所。ゆるキャン△聖地として有名で混雑必至、平日狙い推奨。湖畔サイトは傾斜キツいので、初心者は森林サイトが安全。富士山の絶景は別格。",
@@ -450,7 +478,13 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "管理事務所裏手に２４時間利用可能なシャワー室をご用意しております。（100円／3分間）（https://motosulakeside.com/index.php/inquiry/）",
+      "firewood": true,
+      "firewoodNote": "薪 1把 880円〜（https://motosulakeside.com/index.php/goods/）",
+      "shopNote": "販売品・レンタル品／薪 1把 880円〜、炭 1箱 850円（https://motosulakeside.com/index.php/goods/）",
+      "petNote": "可能です。滞在中は常にリードをご利用いただき、他のお客様のご迷惑にならないようご注意ください。（https://motosulakeside.com/index.php/inquiry/）",
+      "nearbyOnsen": "富士眺望の湯ゆらり（車で約21分）／上九の湯（車で約21分）／ふじやま温泉（車で約33分）／下部温泉（車で約27分）（https://motosulakeside.com/index.php/access/）"
     },
     "season": "2026年度は4月16日〜11月末（予定）。6・10・11月の火水は定休。12月と年末年始は別途HPで案内",
     "soloComment": "三方を松林に囲まれた静かな本栖湖畔。ペットOK・直火OK・車横付けOKの三拍子揃った貴重なキャンプ場。本栖湖の透明度はガチ。連泊する価値あり。",
@@ -502,7 +536,13 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "お風呂棟　男女別の浴場。コインランドリーもあります。（https://www.pica-resort.jp/saiko/about/index.html）",
+      "firewoodNote": "木炭や薪は在庫切れにならないように商品を揃えています（https://www.pica-resort.jp/saiko/stay/option/rental/index.html）",
+      "shopNote": "チェックイン、レンタル品などのご案内はフロントで。ショッピングもこちらです。（https://www.pica-resort.jp/saiko/about/index.html）",
+      "petNote": "『Fire base・TAKIBI』『Fire base・KAMADO』以外の宿泊施設ではペット同伴でご利用いただけます。（https://www.pica-resort.jp/saiko/faq/index.html）",
+      "nearbyOnsen": "ふじやま温泉（富士急ハイランド横、PICAリゾート宿泊者限定の特別料金）（https://www.pica-resort.jp/saiko/faq/index.html）"
     },
     "season": "通年",
     "soloComment": "高規格・設備充実。河口湖ICから30分でアクセス抜群。手ぶら派・初心者向け。西湖の透明度高くカヌーも楽しめる。定休日（水木）あるので事前確認必須。",
@@ -557,7 +597,10 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "売店にて取り扱っております。（炭、広葉樹、針葉樹、焚き付け用薪、スウェーデントーチ）（https://well-camp.com/questions/）",
+      "shopNote": "東沢売店は9:00～17:00営業（https://well-camp.com/questions/）",
+      "petNote": "ワンちゃん連れのお客様も大歓迎です。（https://well-camp.com/questions/）"
     },
     "season": "通年",
     "soloComment": "ソロキャンパー専用料金が2025年12月から整備された大型通年キャンプ場。車利用3,000円〜と料金体系が明確。直火OK・露天風呂・ウォシュレット完備と設備は全部入り。広大な敷地で西丹沢の山に囲まれた環境。週末ファミリーが多いため、静かに過ごすなら平日限定が鉄則。",
@@ -609,7 +652,9 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "薪,針葉樹.広葉樹（https://shindocamp.com/map）",
+      "shopNote": "便利な売店をご利用ください（https://shindocamp.com/map）"
     },
     "season": "通年（年末年始休）",
     "soloComment": "予約不要・先着順で、道志川沿いを2,000円から利用できる。温水シャワーと食堂があり基本設備は整っている。橋のたもとのサイトは川音が心地よくソロ向き。夏の週末は激混みなので、平日に狙い撃ちするのが正解。",
@@ -660,7 +705,8 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "WEB予約。受付は4〜11月 8:00〜17:00／12〜3月 8:00〜16:30"
+      "reservationNote": "WEB予約。受付は4〜11月 8:00〜17:00／12〜3月 8:00〜16:30",
+      "petNote": "グリーンサイトには遊具もあり、小さなお子様も楽しめます！愛犬もご一緒に！（https://aonecamp.jp/about/）"
     },
     "season": "通年",
     "soloComment": "道志川支流沿いの自然派キャンプ場。場内から徒歩数分の「いやしの湯」で日帰り温泉に入れるのが最大の魅力。桜の名所で4月は満開の中でキャンプができる。ウォシュレット完備で設備は整っており、初心者ソロでも安心。",
@@ -715,7 +761,9 @@
       "nearbySupermarket": "",
       "nearbyShop": "",
       "fishing": true,
-      "fishingNote": "場内のマス・ヤマメ・イワナ釣り／つかみ取り（施設公式）"
+      "fishingNote": "場内のマス・ヤマメ・イワナ釣り／つかみ取り（施設公式）",
+      "firewoodNote": "まき　350円（https://kannogawa.jp/fee）",
+      "shopNote": "売店　8：00～20：00（https://kannogawa.jp/facility）"
     },
     "season": "通年",
     "soloComment": "キャンプと管理釣り場が一体の渓流サイト。全区画が神之川沿いの河原にあり、場内でマス釣りやつかみ取りができる。温水シャワーと家族風呂が揃い入浴も困らない。",
@@ -768,7 +816,13 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "大浴場を毎日無料にて開放しております。（https://fumotoppara.net/qanda/）",
+      "showerNote": "メンテナンス等で休止やシャワーのみ提供の場合がございます。（https://fumotoppara.net/qanda/）",
+      "firewoodNote": "薪の販売も17時までとなっております。（https://fumotoppara.net/guide/）",
+      "shopNote": "売店では、キャンプに必要な薪や炭などの備品の他に、ふもとっぱらのオリジナルグッズや、地ビールなどを販売しています（https://fumotoppara.net/about/）",
+      "petNote": "犬のフンの始末もしっかり行って下さい。犬が苦手な方もいらっしゃいます。（https://fumotoppara.net/caution/）"
     },
     "season": "通年",
     "soloComment": "遮るものが何もない広大な草原の正面に富士山が立つ。区画なしフリーサイトで3,000円/ソロ。人気で週末は大混雑なので平日か早朝チェックイン必須。冬は強風と極寒が容赦ないため防寒装備が勝負。笠雲がかかった富士山を独り占めできる瞬間は忘れられない。",
@@ -818,7 +872,11 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "キャンプ中も快適にお過ごしいただけるよう、シャワー設備をご用意しています。（https://asagiri-camp.net/facilities/）",
+      "firewoodNote": "売店では、薪や炭、ガスなどキャンプに必要な用品を取り揃えています。（https://asagiri-camp.net/facilities/）",
+      "shopNote": "キャンプ用品やお土産などを取り揃えた売店、お食事を楽しめるレストラン（https://asagiri-camp.net/camp-guide/）",
+      "petNote": "はい、ペット同伴でご利用いただけます。当キャンプ場では、ペット連れのお客様も歓迎しております。（https://asagiri-camp.net/faq/）"
     },
     "season": "通年",
     "soloComment": "370万m²（日本最大級）のフリーサイトで好きな場所に自由にテントを張れる。区画がないのでソロでも人混みを避けた静かな場所を確保しやすい。ふもとっぱらより比較的空いていてコスパが高い。朝霧高原の朝靄と富士山が交差する早朝の光景は朝4時起きでも見る価値がある。",
@@ -869,7 +927,14 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": false,
+      "bathNote": "当キャンプ場には、入浴施設を備えておりません。近隣の入浴施設をご利用ください。（https://www.pica-resort.jp/omotefuji/about/guidance.html）",
+      "firewoodNote": "木炭、薪、ジュース、お茶、シャンプー・リンス・ボディソープの3点セット（https://www.pica-resort.jp/omotefuji/faq/index.html）",
+      "shopNote": "売店には、どのような物がありますか？（https://www.pica-resort.jp/omotefuji/faq/index.html）",
+      "pet": true,
+      "petNote": "ペットの同伴は、ご予約の際その旨をお申し付けいただいた方に限ります。（https://www.pica-resort.jp/omotefuji/about/guidance.html）",
+      "nearbyOnsen": "富士山 天母の湯（車で20分）（https://www.pica-resort.jp/omotefuji/about/guidance.html）"
     },
     "season": "4月上旬〜10月上旬",
     "closedDays": "月曜〜木曜定休（7月中旬〜8月は無休）",
@@ -920,7 +985,14 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "お風呂場：管理棟裏側に2024年新設しました。繁忙期の週末にご利用戴けます（https://doshinomori.jp/facility.html）",
+      "showerNote": "コインシャワー等もございます（https://doshinomori.jp/camp.html）",
+      "firewoodNote": "薪（針葉樹400円・広葉樹700円・広葉樹ナラ900円）（https://doshinomori.jp/facility.html）",
+      "shopNote": "マキ・炭などは管理棟で販売しています。（https://doshinomori.jp/camp.html）",
+      "petNote": "ペットの入場は可能ですが、必ず手綱を使用してください。（https://doshinomori.jp/camp.html）",
+      "nearbyOnsen": "道志の湯（車で約15分）／石割の湯（車で約20分）／紅椿の湯（車で約20分）／紅富士の湯（車で約40分）（https://doshinomori.jp/access.html）"
     },
     "season": "通年（不定休あり）",
     "soloComment": "道志川の支流・三ヶ瀬川沿い約2kmに広がる大型フリーサイト。予約不要・先着順で、入場料800円+駐車1,000円のソロ計1,800円。直火は2020年1月1日に全面禁止になったので焚き火台が要る。夏週末は1,000張超えの激混みになるので平日専用と割り切るべき。上流エリアの木立に囲まれた場所を早朝から押さえるのがソロ攻略の鍵。",
@@ -970,7 +1042,15 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": false,
+      "bathNote": "シャワーやお風呂の設備はございませんので、近隣の温泉施設などをご利用ください。（https://saiko-jiyuu.camp/page/facility）",
+      "shower": false,
+      "showerNote": "シャワーやお風呂の設備はございませんので、近隣の温泉施設などをご利用ください。（https://saiko-jiyuu.camp/page/facility）",
+      "firewoodNote": "必要最低限のキャンプ用品のレンタル、及び販売をしております。（薪、調理器具・キッチン用品、インスタント食品等）（https://saiko-jiyuu.camp/page/facility）",
+      "shopNote": "売店営業時間 8:00〜18:00 ※土曜日、連休中日は19時まで営業しております。（https://saiko-jiyuu.camp/page/guide）",
+      "petNote": "ペット同伴のお客様は夜間の鳴き声に十分な配慮をお願いします。（https://saiko-jiyuu.camp/page/requests）",
+      "nearbyOnsen": "いずみの湯、富士眺望の湯 ゆらり（距離・所要時間の記載なし）（https://saiko-jiyuu.camp/page/nearby-info）"
     },
     "season": "3月〜12月中旬",
     "soloComment": "西湖畔で直火OKかつ車横付け可能な稀有なキャンプ場。内陸のFエリアは1,000円から、湖畔のAエリアは2,500円と料金差が大きいのでエリア選びが鍵。シャワー・風呂はないが近隣に温泉あり。富士山が西湖越しに見える湖畔Aエリアの早朝の静けさは格別。WEB予約専用なので注意。",
@@ -1022,7 +1102,11 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "男女別の清潔なシャワールームで、一日の汚れを落としましょう。（https://camp.sotosotodays.com/yamanakako-misaki/facility/）",
+      "firewoodNote": "薪 針葉樹（1束）¥500 / 薪 広葉樹（1束）¥900（https://camp.sotosotodays.com/yamanakako-misaki/price/）",
+      "shopNote": "新しくなった管理棟では受付や会計だけでなく、薪や炭などの消耗品などを購入いただけます。（https://camp.sotosotodays.com/yamanakako-misaki/facility/）",
+      "petNote": "ペットは糞の処理を含めて、自己管理でお願いいたします。場内では必ず引き綱をお付けください。（https://camp.sotosotodays.com/yamanakako-misaki/price/）"
     },
     "season": "通年",
     "soloComment": "ゆるキャン△聖地・山中湖北東岸の高規格キャンプ場。山中湖で唯一の岬状の地形にあり、サイトの両側が湖に面している。富士山と山中湖のコラボビューとソロ専用サイトが魅力。ウォシュレット・温水シャワーと設備は充実。ソロ6,000円〜と価格は高めだが都心から約90分のアクセスと湖畔ロケーションで納得感がある。ペダルカヤックレンタルも楽しい。",
@@ -1076,7 +1160,10 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "販売　マキ 800円～(時期や木の種類によって値段が変わります)（https://takizawaen.com/services/rental.html）",
+      "shopNote": "売店の営業時間8：00～19：00（https://takizawaen.com/services/rental.html）",
+      "petNote": "ペット同伴OK！(必ずリードはつけておいてください)（https://takizawaen.com/facilities/tent.html）"
     },
     "season": "通年",
     "soloComment": "秦野市街から車15分の水無川沿いキャンプ場。フリーサイトは予約不要で思い立ったら行ける手軽さが魅力。車1台1人でテント泊2,600円で、場内の露天風呂まで込みなのは悪くない。夜の露天風呂から星を眺めながら一人時間を満喫できる。フリーサイトへは水無川の一本橋を渡るので、荷物が多いソロは往復の回数を減らす工夫が要る。",
@@ -1130,7 +1217,11 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "直火OK"
+      "bonfireNote": "直火OK",
+      "firewoodNote": "売店　■薪 ／ 炭 ／ 氷 ／ ジュース・アルコール類 ／ アイスクリーム等（https://www.aonohara-acl.jp/setsubi_annai.html）",
+      "shopNote": "地元産の地粉、うどん、お菓子等も販売しています。（https://www.aonohara-acl.jp/setsubi_annai.html）",
+      "petNote": "ペットは必ず繋いでおいてください。また、フンの後始末をお願いいたします。（https://www.aonohara-acl.jp/setsubi_annai.html）",
+      "nearbyOnsen": "いやしの湯・緑の休暇村センター（相模原市緑区青根807-2）／ふじの温泉 東尾垂の湯（同区牧野8114-2）（https://www.aonohara-acl.jp/syuhen_shisetsu.html）"
     },
     "season": "通年（冬季12月下旬〜3月初旬は年末年始を除く土日祝のみ。年末年始休業）",
     "soloComment": "道志川沿いの予約不要のオートキャンプ場（小屋付きサイトのみ要予約）。入場料・駐車料・サイト使用料の3本立てで、宿泊は日帰り料金の2倍になる。平日の朝から到着すれば川沿いの好ポジションを確保できる。冬季（12月下旬〜3月初旬）は年末年始を除く土日祝のみの営業で、水道凍結のためシャワーも使えない。夜間入場は禁止。",
@@ -1181,7 +1272,9 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "直火禁止。焚き火台の使用が必要"
+      "bonfireNote": "直火禁止。焚き火台の使用が必要",
+      "shopNote": "場内共有設備・管理棟、売店、自動販売機、オートサイト(80区画)、炊事場、野外炉、風呂、水洗トイレ（https://mount-bridge.com/）",
+      "nearbyOnsen": "中川温泉「ぶなの湯」（アウトドアで遊び疲れたら、中川温泉『ぶなの湯』で疲れを落としましょう。）（https://mount-bridge.com/）"
     },
     "season": "通年",
     "soloComment": "中川川に架かる吊橋が目印の渓流キャンプ場。内湯完備で冬キャンプでも安心。西丹沢の深い渓谷に囲まれ、秋は紅葉が見られる。ウェルキャンプ西丹沢から車で数分の立地だが雰囲気は落ち着いている。",
@@ -1279,7 +1372,10 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "マルチスペース　アパレル・雑貨の展示・販売、イベント時の受付、ワークショップやイートインスペース（https://miyagase-village.com/）",
+      "pet": true,
+      "petNote": "ペットとの利用はできますか？　テラス席や屋上席、また、敷地内の芝生エリアをご利用頂けます。（https://miyagase-village.com/）"
     },
     "season": "通年（火曜定休）",
     "closedDays": "火曜",
@@ -1333,7 +1429,13 @@
       "nearbyShop": "",
       "bonfireNote": "直火禁止・焚き火台必須。林野火災警報の発令中はたき火不可",
       "petNote": "湖サイト・P1サイトのみ可",
-      "reservationNote": "前日までに要予約。宿泊受付は17:00まで"
+      "reservationNote": "前日までに要予約。宿泊受付は17:00まで",
+      "bath": false,
+      "bathNote": "施設情報　お風呂　なし（https://tanzawakolodge.com/about/）",
+      "showerNote": "シャワー　有料（15時～21時）（https://tanzawakolodge.com/about/）",
+      "firewoodNote": "薪（スギ、広葉樹）￥550／￥880（https://tanzawakolodge.com/stay-day-trip/）",
+      "shopNote": "売店　あり／自販機　あり（https://tanzawakolodge.com/about/）",
+      "nearbyOnsen": "中川温泉（日帰り温泉入浴施設、約7km）武田信玄の隠し湯といわれる中川温泉にある日帰り温泉入浴施設です。（https://tanzawakolodge.com/access/）"
     },
     "season": "3月〜12月（期間外は要相談）",
     "soloComment": "丹沢湖を望む玄倉の静かなキャンプ場。おやすみタイムを設けるほど静粛性を重視した運営で、雨天でも使える炊事スペースが揃う。直火は禁止だが焚き火台なら使える。前日までの予約を忘れずに。",
@@ -1392,7 +1494,11 @@
       "nearbyShop": "",
       "bonfireNote": "直火禁止。施設が指定する場所で脚付きのコンロなどを使用する",
       "fishing": true,
-      "fishingNote": "場内の魚釣り・つかみ取り（施設公式。天候・営業日は要確認）"
+      "fishingNote": "場内の魚釣り・つかみ取り（施設公式。天候・営業日は要確認）",
+      "showerNote": "バンガロー　・シャワー（トイレの横にあり）（https://k-riverland.jp/price/bungaiow/）",
+      "firewoodNote": "薪　１束　５００円（当日ご来場いただいてからレンタル・購入してください）（https://k-riverland.jp/price/rental/）",
+      "pet": false,
+      "petNote": "ペット連れでの宿泊はお断りいたします。（https://k-riverland.jp/price/bungaiow/）"
     },
     "season": "3月〜11月（12月〜2月は休業期間）",
     "soloComment": "清川村・谷太郎川沿いの施設。釣りと魚のつかみ取り、屋根付きバーベキュー、コテージとバンガローでの宿泊ができる。直火は禁止で、施設が指定する場所で脚付きのコンロを使う。12月から2月は休業期間で、営業期間中も木曜と第1第3水曜が定休。",
@@ -1573,7 +1679,11 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "販売品　薪（針葉樹）：1束700円（https://www.yokohamaymca.org/fujisan-global/howtousetent202503/）",
+      "shopNote": "バスタオル・フェイスタオル・ナイトウェア・歯ブラシは、フロントにて有料レンタル、販売がございます。（https://www.yokohamaymca.org/fujisan-global/house/）",
+      "pet": false,
+      "petNote": "駐車場・草原も含め施設内にペットを同伴してのご入場はご遠慮いただいております。（https://www.yokohamaymca.org/fujisan-global/howtousetent202503/）"
     },
     "season": "通年",
     "soloComment": "富士山南麓・標高約650mのYMCA施設内キャンプ場。大浴場（440円）と充実した共用設備が魅力。週末より平日がお得で静か。テント設営後に温かい大浴場に浸かれる安心感がソロ入門者にも◎。",
@@ -1628,7 +1738,11 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "直火禁止。焚き火台の使用が必要"
+      "bonfireNote": "直火禁止。焚き火台の使用が必要",
+      "showerNote": "その他にも当キャンプ場には・温水シャワー ・電気コンセント ・自動販売機各種等の設備が備わっており（https://www.nanatakiauto.com/guide/index.html）",
+      "firewoodNote": "また売店にて薪、炭も販売しております。（https://www.nanatakiauto.com/guide/rental/index.html）",
+      "shopNote": "また、受付にて売店も用意しております。もちろんアルコールも売ってますよ！（https://www.nanatakiauto.com/guide/rental/index.html）",
+      "nearbyOnsen": "嵐の湯2号館（河津駅から徒歩10分、9:00～22:00）（https://www.nanatakiauto.com/facility/index.html）"
     },
     "season": "通年",
     "soloComment": "河津七滝の渓谷美に囲まれたキャンプ場。24時間利用可能な露天温泉が最大の魅力で、深夜に誰もいない温泉に浸かる至福感は格別。冬でも温暖な伊豆のため年中快適。河津桜シーズン（2月）は混雑必至。",
@@ -1681,7 +1795,8 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "petNote": "ペット料金は無料"
+      "petNote": "ペット料金は無料",
+      "shopNote": "受付、売店（ＡＭ８：００～ＰＭ８：００）売店ではキャンプ用品・調味料・簡単な食材・氷の販売（https://www.kumomi-sunset.com/02_site.html）"
     },
     "season": "通年",
     "soloComment": "伊豆最南端に近い海辺の絶景キャンプ場。目の前に相模灘が広がり、夕日が海に沈む。露天風呂からの眺望も格別。アクセスは遠く山道が続くが、その不便さを補って余りある絶景が待っている。",
@@ -1731,7 +1846,10 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "売店にてキャンプ用品を扱っております。（https://oonoji.co.jp/camp/）",
+      "pet": true,
+      "petNote": "ペットサイトがありますので大丈夫です。（https://oonoji.co.jp/camp/）"
     },
     "season": "通年（冬期は限定サイトのみ営業）",
     "soloComment": "富士山東麓・裾野市の日本で最初のオートキャンプ場。定員1名のソロ専用サイトが2,750円から使えるが、**土曜日とハイシーズンしか営業していない**ので日程が合わないと普通サイト（5,000円〜のサイト単位課金）になる。ソロ専用区画はトイレと炊事場から1〜2分離れていて、富士山の眺望は無い。火曜と水曜が定休。",
@@ -1782,7 +1900,11 @@
       "nearbySupermarket": "",
       "nearbyShop": "",
       "bonfireNote": "直火禁止。焚き火台の使用が必要",
-      "reservationNote": "電話予約。利用月を含めて6か月前の10:00から受付（4〜9月は17:00まで、10〜3月は16:30まで）"
+      "reservationNote": "電話予約。利用月を含めて6か月前の10:00から受付（4〜9月は17:00まで、10〜3月は16:30まで）",
+      "firewoodNote": "貸し毛布、炭、薪なども販売されています。（https://kanko.city.izu.shizuoka.jp/sightseeing/darumayamacamp/）",
+      "shopNote": "場内は、オートサイト12区画、フリーサイト8区画あり、貸し毛布、炭、薪なども販売されています。（https://kanko.city.izu.shizuoka.jp/sightseeing/darumayamacamp/）",
+      "pet": false,
+      "petNote": "ペット同伴　不可（https://kanko.city.izu.shizuoka.jp/sightseeing/darumayamacamp/）"
     },
     "season": "3月第3土曜〜11月下旬（12月1日〜3月第3金曜は冬期休業）",
     "soloComment": "標高約600mの高原から駿河湾と富士山を一望できる高原キャンプ場。フリーサイト8区画・オートサイト12区画の小規模で、コインシャワーとコインランドリーがある。駐車場は無料。直火は禁止で焚き火台が要る。3月第3土曜から11月下旬までの営業で、12月から3月中旬は冬期休業。",
@@ -1917,7 +2039,11 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "燃料：木炭・薪・ガス缶・着火剤など（https://ryuyo-auto.entetsuassist-dms.com/campsite/）",
+      "shopNote": "食料品、日用品、キッチン用品、燃料などを幅広くお取り扱いしています。（https://ryuyo-auto.entetsuassist-dms.com/campsite/）",
+      "petNote": "犬のみOKです。※大きさや犬種などは制限していません。（https://ryuyo-auto.entetsuassist-dms.com/faq/）",
+      "nearbyOnsen": "しおさい竜洋（キャンプ場の隣。大浴場、露天風呂、気泡風呂、ミストサウナ。10:00～21:00、毎週木曜定休）（https://ryuyo-auto.entetsuassist-dms.com/campsite/）"
     },
     "season": "通年",
     "soloComment": "遠州灘に面した海辺のオートキャンプ場。シャワー無料・ウォシュレット完備と設備は充実。釣りやサーフィンとの組み合わせが人気で、夕日の美しさは格別。東海エリアからのアクセスが良く静岡西部在住者の定番。",
@@ -2051,7 +2177,11 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "薪1束 時価／炭（3キロ） 時価（https://shojiko.jp/doc/bbq.html）",
+      "shopNote": "炭用コンロ、薪や炭などはこちらにございますので（https://shojiko.jp/doc/bbq.html）",
+      "petNote": "あまり無駄吠えをするペットはご遠慮下さい。サイト内では必ずリードをご使用下さい。（https://shojiko.jp/doc/campsite.html）",
+      "nearbyOnsen": "日帰り温泉「富士眺望の湯ゆらり」16種類のお湯と富士山を眺めながらの露天風呂が自慢。(車で10分 割引券あり)／「上九の湯」「風の湯」「いずみの湯」(車で10分)／「三珠の湯」「ふじやま温泉」(車で25分)（https://shojiko.jp/）"
     },
     "season": "3月下旬〜12月",
     "soloComment": "5つの富士五湖で最も静かな精進湖畔の予約不要キャンプ場。テント+車で3,000円という破格のコスパ。子抱き富士（精進湖越しの富士山）の眺めが贅沢。シャワーなしの分、静けさと価格で他を圧倒する。",
@@ -2100,7 +2230,11 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "薪、炭、氷、ビール、備品等は受付で販売しております。（https://doushi-tsubakiso.com/camp.php）",
+      "shopNote": "場内に売店はありません。薪、炭、氷、ビール、備品等は受付で販売しております。（https://doushi-tsubakiso.com/camp.php）",
+      "petNote": "ペットの入場は可能ですが、ほかのお客様の迷惑にならないようご配慮をお願いします。（https://doushi-tsubakiso.com/camp.php）",
+      "nearbyOnsen": "紅椿の湯（当施設から400メートルほど。特別料金・受付時に割引券）（https://doushi-tsubakiso.com/）"
     },
     "season": "通年",
     "soloComment": "道志川源流エリアの老舗民宿併設キャンプ場。民宿の浴室をキャンパーも500円で利用可能。ソロ2,000円〜のリーズナブルな価格で道志川の清流サイトを独占。道志温泉も近く、温泉キャンプが楽しめる。",
@@ -2197,7 +2331,8 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "飲料・アルコール・その他軽食はキャンプ場売店にてお買い求めください。（https://kiyosato-okanokouen.net/cn5/pg4937267.html）"
     },
     "season": "4月下旬〜11月上旬",
     "soloComment": "標高1,400mの清里高原から八ヶ岳と南アルプスを一望できる。2,820円〜という公営ならではの価格でウォシュレット・温水シャワーが揃う。晴れた日の朝は360度の山岳パノラマが広がる。",
@@ -2245,7 +2380,12 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shower": true,
+      "showerNote": "コインシャワー（ボディソープ・リンスインシャンプー備え付け）6分間 300円（https://doushi-keikoku.jp/?page_id=540）",
+      "firewoodNote": "薪（針葉樹／広葉樹） 600円／900円（https://doushi-keikoku.jp/?page_id=540）",
+      "shopNote": "管理棟での販売とレンタル／他にも色々ございます。お気軽に売店へ。（https://doushi-keikoku.jp/?page_id=165）",
+      "petNote": "入場料（1泊料金）… ペット 100円（https://doushi-keikoku.jp/?page_id=540）"
     },
     "season": "通年（12月〜3月は要確認）",
     "soloComment": "直火OKかつ予約不要で1,700円〜（入場700円+駐車1,000円）。道志川源流域の深い渓谷に囲まれ、夏は川遊び、冬は静寂の雪景色を独り占め。近隣の道の駅どうし温泉で入浴問題も解決。",
@@ -2286,7 +2426,7 @@
       "soloPlan": false,
       "reservation": "要",
       "convenience": false,
-      "shop": true,
+      "shop": false,
       "wifi": false,
       "ice": false,
       "alcohol": false,
@@ -2294,7 +2434,11 @@
       "nearbySupermarket": "",
       "nearbyShop": "",
       "bonfireNote": "直火禁止。焚き火台の使用が必要",
-      "reservationNote": "予約サイト「なっぷ」から受付。利用月の2か月前から"
+      "reservationNote": "予約サイト「なっぷ」から受付。利用月の2か月前から",
+      "shopNote": "▼売店なし　物販はありません。自販機なし。車で２分の距離にセブンイレブンあり。（https://www.nap-camp.com/yamanashi/11265）",
+      "pet": true,
+      "petNote": "＜施設利用料＞※1人・1泊あたり … ペット ：500円/頭（https://www.nap-camp.com/yamanashi/11265）",
+      "nearbyOnsen": "日帰り温泉「紅富士の湯」車で約１０分／日帰り温泉「石割の湯」車で約１０分（https://www.nap-camp.com/yamanashi/11265）"
     },
     "season": "4月〜11月",
     "soloComment": "山中湖村が運営する公営キャンプ場で1,500円〜のお値打ち価格。山中湖北岸に位置し、対岸の富士山と山中湖のコラボビューが楽しめる。村営ゆえの清潔感とリーズナブルな価格が評判。平野エリアで静かな環境。",
@@ -2456,7 +2600,9 @@
       "bathNote": "場内に風呂は無いが、管理棟で道志の湯・紅椿の湯・石割の湯の優待券を配布している",
       "toiletNote": "3箇所（男女別）。洋式13で全てウォシュレット付",
       "reservationNote": "電話予約（0554-52-2027／受付9:00〜19:00）。3か月前から受け付ける。サイトの指定は希望のみ",
-      "firewoodNote": "針葉樹1束600円。場内や山の枯れ木を採って燃やすのは禁止"
+      "firewoodNote": "針葉樹1束600円。場内や山の枯れ木を採って燃やすのは禁止",
+      "shopNote": "売店、自動販売機、キャンプ用品（https://www.okudoshi.net/jyo/jyunai.html）",
+      "nearbyOnsen": "温泉優待券を管理棟で配布（道志の湯 入浴料３時間優待券／石割の湯（山中湖）／紅椿の湯（道志村）共通優待券）（https://www.okudoshi.net/index.html）"
     },
     "season": "4月中旬〜11月中旬",
     "soloComment": "道志川沿いの区画オートキャンプ場。ムササビを近くで観察できることを施設公式が売りにしていて、場内はホタルの生息地でもある。トイレは3箇所とも全てウォシュレット付きで、コインランドリーと売店があり、電源付きサイトも6区画ある。直火は不可なので焚き火台と焚き火シートを持参する（レンタルもある）。温水シャワーは5分200円。管理棟で道志の湯・紅椿の湯・石割の湯の優待券がもらえる。予約は電話で、営業は4月中旬から11月中旬まで。",
@@ -2510,7 +2656,9 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "薪(広葉樹) 1,000円／薪（針葉樹） 700円（https://woodsman.jp/menu）",
+      "shopNote": "販売：炭 900円、お酒各種、ソフトドリンク各種（https://woodsman.jp/menu）"
     },
     "season": "通年",
     "soloComment": "道志川沿いのおしゃれ系キャンプ場。ソロ専用区画が設けられており他のキャンパーに気を遣わず過ごせる環境が魅力。ウッドデッキからの川の眺めが絵になる。温水シャワー・ウォシュレット完備で快適性も高い。",
@@ -2550,7 +2698,7 @@
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台必須",
-      "pet": true,
+      "pet": false,
       "shower": true,
       "toilet": "ウォシュレット",
       "carIn": true,
@@ -2564,7 +2712,12 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "共同浴場がございますが、不定期での営業となります。（https://campmura.com/qa/）",
+      "shopNote": "飲料・乾物・生活用品・燃料・雑貨などがあります。生鮮食品はありません。（https://campmura.com/qa/）",
+      "petNote": "犬や猫などのペットご同伴でのご利用はできません。（https://campmura.com/qa/）",
+      "nearbyOnsen": "近隣の日帰り温泉を紹介（徒歩圏内は11:00〜16:00、16時以降営業は車で10分以上。施設名の記載なし）（https://campmura.com/qa/）"
     },
     "season": "4月〜11月",
     "soloComment": "芦ノ湖を望む絶景キャンプ場。対岸に富士山が見え、芦ノ湖越しの眺めが開ける。箱根温泉街へのアクセスも良く日帰り入浴施設が豊富。箱根ならではの宿泊体験をキャンプで楽しめる。",
@@ -2650,7 +2803,7 @@
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
-      "pet": true,
+      "pet": false,
       "shower": true,
       "toilet": "洋式",
       "carIn": true,
@@ -2665,7 +2818,9 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "宿泊は要予約。デイキャンプは事前予約ができず当日先着順"
+      "reservationNote": "宿泊は要予約。デイキャンプは事前予約ができず当日先着順",
+      "shopNote": "木炭・調味料・カップ麺などは売店にございます（https://karasawa-camp.sakura.ne.jp/rental.html）",
+      "petNote": "ペットの場内入場･ご同伴は禁止しております。（https://karasawa-camp.sakura.ne.jp/qa.html）"
     },
     "season": "通年",
     "soloComment": "宮ヶ瀬湖畔エリアにある静かなキャンプ場。深い森に囲まれた林間サイトが特徴でプライバシーが高い。宮ヶ瀬ダムの迫力を間近に体感でき、秋は紅葉が素晴らしい。平日はほぼ貸し切り状態になれる穴場。",
@@ -2715,7 +2870,10 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "メール予約（hidamarinosato@marble.ocn.ne.jp）。利用日の4か月前から受付"
+      "reservationNote": "メール予約（hidamarinosato@marble.ocn.ne.jp）。利用日の4か月前から受付",
+      "showerNote": "水道（シャワー含む） 100円/1人（https://www.town.yamakita.kanagawa.jp/0000000068.html）",
+      "firewood": true,
+      "firewoodNote": "薪（販売） 要お問い合わせ（https://www.town.yamakita.kanagawa.jp/0000000068.html）"
     },
     "season": "4月〜11月（12月〜3月は金・土・日・祝のみ営業。年末年始休業）",
     "soloComment": "山北町の静かな山間キャンプ場。区画は電源サイト・茶畑サイト・芝サイトに分かれ、茶畑越しの眺めが独特。丹沢湖への入口にあたりトレッキングと組み合わせたソロ旅に最適。テニスコートや多目的ホール「ひだまり館」を併設した町の複合施設で、キャンプ場はその一部。町民料金と町外料金があり、町外はやや高い。",
@@ -2771,7 +2929,11 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "carInNote": "オートサイト約50区画"
+      "carInNote": "オートサイト約50区画",
+      "showerNote": "コインシャワー 300円（5分間）（https://konomasawacamp.co.jp/?page_id=15）",
+      "firewoodNote": "売店：薪、木炭、ホワイトガソリン、氷、調味料など（https://konomasawacamp.co.jp/?page_id=15）",
+      "shopNote": "炊事場、ランドリー、売店、トイレ、駐車場(約70台収容)（https://konomasawacamp.co.jp/?page_id=15）",
+      "nearbyOnsen": "いやしの湯、山波み温泉、紅椿の湯、道志の湯（距離・所要時間の記載なし）（https://konomasawacamp.co.jp/?page_id=128）"
     },
     "season": "通年",
     "soloComment": "道志川と支流の此の間沢が流れる渓流サイト。オート約50区画で車を横付けでき、シャワー・売店・ランドリーも揃う。予約制なので事前に押さえてから向かいたい。",
@@ -3326,7 +3488,11 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワー室にはドライヤーはある？脱衣所にドライヤー用の電源はございますが（https://bairdbeer.com/ja/pages/faq）",
+      "firewoodNote": "薪（針葉樹）1束600円／薪（広葉樹）1束1,000円（https://bairdbeer.com/ja/pages/faq）",
+      "shopNote": "4月～10月の土曜日にはクールブリーズサイト内の売店、BAIRD OUTPOSTも営業しており（https://bairdbeer.com/ja/pages/faq）",
+      "petNote": "犬以外のペットもお連れいただけます（キャビン・トレーラーハウスはペット不可）（https://bairdbeer.com/ja/pages/faq）"
     },
     "season": "通年",
     "soloComment": "ベアードブルワリー直営のクラフトビール天国キャンプ場。醸造所内でクラフトビールを楽しみながら泊まれる全国でも稀有な体験。天城山麓の自然環境と伊豆の透明感ある空気が素晴らしい。ビール好きソロに激推し。",
@@ -3377,7 +3543,10 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "売店商品：薪 900円、炭（3㎏）1,750円、着火剤 220円（https://mobility-park.jp/rental）",
+      "shopNote": "売店商品：ロックアイス 380円、板氷 400円、網（45㎝×30㎝）600円（https://mobility-park.jp/rental）",
+      "petNote": "ペットのご同伴／場内では必ずリードを着用してください。（https://mobility-park.jp/information/rules/）"
     },
     "season": "通年",
     "soloComment": "富士山と伊豆の山々を見渡す高台に位置する大型キャンプ場。本格的な設備と広大なフィールドが魅力。高規格キャンプ場として人気が高く、近隣温泉への割引サービスも付いてくる。",
@@ -3428,7 +3597,14 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "男女別の浴場。個室シャワーブースも男女各１つございます。（https://www.pica-resort.jp/grinpa/about/index.html）",
+      "showerNote": "男女別の浴場。個室シャワーブースも男女各１つございます。（https://www.pica-resort.jp/grinpa/about/index.html）",
+      "firewoodNote": "木炭・薪・着火剤・氷・調味料（数種)等販売しております。（https://www.pica-resort.jp/grinpa/faq/index.html）",
+      "shopNote": "木炭・薪・着火剤・氷・調味料（数種)等販売しております。（https://www.pica-resort.jp/grinpa/faq/index.html）",
+      "pet": true,
+      "petNote": "ペットの同伴は、ご予約の際その旨をお申し付けいただいた方に限ります。（https://www.pica-resort.jp/grinpa/about/guidance.html）"
     },
     "season": "4月〜11月",
     "soloComment": "富士山二合目・標高1,200mの森林型キャンプ場。夏でも涼しい高標高とぐりんぱ遊園地が隣接。設備は充実しているが価格は高め。夏の避暑キャンプとして東京近郊からの人気が高い。",
@@ -3474,7 +3650,10 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワールーム：男性用 x 1、女性用 x 1 コイン式 (3分100円)（https://camp.imagining.jp/sites/）",
+      "pet": true,
+      "petNote": "ペット同伴: 中型犬までOK（https://camp.imagining.jp/sites/）"
     },
     "season": "通年",
     "soloComment": "伊豆最南端に近い子浦の絶景テラスキャンプ場。太平洋を見下ろす崖上からの眺望と南伊豆独特の青い海が素晴らしい。アクセスは遠いが絶景を独り占めできる価値は十分。真冬でも温暖な南伊豆で快適。",
@@ -3526,7 +3705,12 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "事前予約のほか、予約なしの当日利用・現地決済にも対応している"
+      "reservationNote": "事前予約のほか、予約なしの当日利用・現地決済にも対応している",
+      "firewood": true,
+      "firewoodNote": "薪は現地でも販売しています。（https://kakure-camp.corpkj.com/）",
+      "shop": true,
+      "shopNote": "薪・道具の現地販売（https://kakure-camp.corpkj.com/）",
+      "petNote": "ペット同伴でご利用いただけます。場内ではリードをご使用いただき、フンは必ずお持ち帰りください。（https://kakure-camp.corpkj.com/）"
     },
     "season": "通年",
     "soloComment": "天城山中腹に隠れた秘境キャンプ場。「隠れ」の名の通り周囲に民家が少なく圧倒的な静けさが魅力。伊豆の名湯・湯ヶ島温泉へのアクセスも良く温泉キャンプが楽しめる。ウォシュレット完備で快適性も高い。",
@@ -3611,7 +3795,7 @@
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台使用",
-      "pet": true,
+      "pet": false,
       "shower": true,
       "toilet": "洋式",
       "carIn": true,
@@ -3623,7 +3807,15 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": false,
+      "bathNote": "場内には入浴施設がありません。（https://fujikawa-camp.jp/faq/）",
+      "firewood": true,
+      "firewoodNote": "食品・薪・日用品などの販売をしています。（https://fujikawa-camp.jp/facilities/）",
+      "shop": true,
+      "shopNote": "売店の営業時間は8:30～17:00です。（https://fujikawa-camp.jp/faq/）",
+      "petNote": "ペット同伴でのキャンプはできません。（https://fujikawa-camp.jp/faq/）",
+      "nearbyOnsen": "お車で40分ほどの距離に『湯らぎの里』というスーパー銭湯があります。（https://fujikawa-camp.jp/faq/）"
     },
     "season": "通年",
     "soloComment": "富士川西岸・野田山の高台にある富士市の公園内キャンプ場で、標高は約500m。富士山と駿河湾を見渡せる景観が特徴。全サイトで焚き火ができ、展望オートサイトからの眺めが目当てになる。2025年9月に区画が約1.5倍へ拡張された。無料Wi-Fiあり。ソロで1区画を使うとサイト利用料が1,000円割引になる。",
@@ -4130,7 +4322,12 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "冷暖房・お手洗い・シャワー等の宿泊に必要な設備があります！（https://hottarakashicamp.com/facility）",
+      "firewoodNote": "薪や炭の販売も、こちらのCenter Houseで行っております（https://hottarakashicamp.com/facility）",
+      "shopNote": "受付(Center House)にて販売をしております。※18:00以降は不在となります（https://hottarakashicamp.com/facility/option）",
+      "petNote": "はい、同伴でご入場いただくことが可能です。ペットは必ずリードに繋いでいただき（https://hottarakashicamp.com/hcfaq）",
+      "nearbyOnsen": "ほったらかし温泉のすぐ奥。温泉までは徒歩3〜4分です。（https://hottarakashicamp.com/）"
     },
     "season": "通年",
     "soloComment": "ほったらかし温泉の隣に位置する全区画富士山ビューキャンプ場。日の出前に入れる「あっちの湯」との組み合わせは格別で、富士山と甲府盆地を見下ろしながらの温泉は唯一無二の体験。全サイトから甲府盆地の夜景と富士山が楽しめる山梨を代表するキャンプ場。",
@@ -4181,7 +4378,11 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "WEB予約（なっぷ）または電話 055-287-8778（9:00〜17:00）"
+      "reservationNote": "WEB予約（なっぷ）または電話 055-287-8778（9:00〜17:00）",
+      "showerNote": "シャワールームは2基。24時間、無料でご利用いただけます。（https://syosenkyo-camp.com/about/）",
+      "firewoodNote": "薪（広葉樹）¥800（https://syosenkyo-camp.com/faq/）",
+      "shopNote": "管理棟が売店を兼ねております（https://syosenkyo-camp.com/faq/）",
+      "petNote": "ちゃんと躾がされており、周りのお客様に恐怖心を与えないようでしたら、小型犬以外のペットでもご同伴は可能（https://syosenkyo-camp.com/faq/）"
     },
     "season": "通年",
     "soloComment": "日本一の渓谷美と称される昇仙峡の入口に位置するキャンプ場。早朝の昇仙峡散策（仙娥滝・覚円峰）をソロで独り占めできる贅沢なロケーション。秋の紅葉シーズンは特に美しく、山梨の自然美を堪能できる。",
@@ -4231,7 +4432,13 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "コテージをご利用いただくと、コテージ内にバスが設置されています。（https://www.motosuko-camp.com/3_price.html）",
+      "showerNote": "キャンプ場内に、誰でもご利用できるコインシャワーがあります。（https://www.motosuko-camp.com/3_price.html）",
+      "firewoodNote": "薪 （焚き火用）１束・・・５００円（https://www.motosuko-camp.com/3_price.html）",
+      "shopNote": "売店 ８：００～１７:００（夏季延長）（https://www.motosuko-camp.com/3_price.html）",
+      "petNote": "ペット同伴にてご利用いただけますが、放し飼いにならない様に（https://www.motosuko-camp.com/4_notes.html）"
     },
     "season": "4月〜11月",
     "soloComment": "浩庵キャンプ場と並ぶ本栖湖畔の老舗キャンプ場。透明度の高い本栖湖越しの富士山ビューが格別。浩庵より比較的混雑が少なく静かに本栖湖を楽しめる穴場的存在。ソロは人数+テント+車で3,000円（2026年改定）。",
@@ -4280,7 +4487,11 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワーはコイン式で4分100円です。（https://autocamp.co.jp/features）",
+      "firewoodNote": "薪 【薪の種類 針葉樹】※instagramのフォローしてると100円引き 900円（https://autocamp.co.jp/rental）",
+      "shopNote": "両替機は管理棟の売店にございますが、営業時間中にしか両替できませんのでご注意ください。（https://autocamp.co.jp/features）",
+      "petNote": "全オートサイトでAC電源やペット可など、家族連れやワンちゃん連れには嬉しい設備が整っています（https://autocamp.co.jp/）"
     },
     "season": "4月〜11月",
     "soloComment": "標高1,300m超の清里高原の中心部に位置するオートキャンプ場。八ヶ岳南麓の広葉樹林に囲まれ夏は避暑・秋は紅葉と季節を問わず楽しめる。清里ならではの高原野菜や乳製品グルメと組み合わせた贅沢なソロ旅を楽しめる。",
@@ -4331,7 +4542,12 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "個室タイプのコイン式シャワーが4機設置してあります。（https://westriver-camp.com/facilities/）",
+      "firewoodNote": "調味料やお菓子。木炭や薪の燃料関係などがあります。（https://westriver-camp.com/qa/）",
+      "shopNote": "キャンプ用品やおもちゃ、日用雑貨、調味料まで品数豊富です。（https://westriver-camp.com/facilities/）",
+      "petNote": "ペット同伴宿泊が可能な施設はドッグランサイトの『A・F・G・H・K・L』、ドッグフリーサイトの『M・Nサイト』（https://westriver-camp.com/qa/）",
+      "nearbyOnsen": "車で5分程の場所に公共の温泉施設「白根桃源天笑閣」がございます。（https://westriver-camp.com/qa/）"
     },
     "season": "通年",
     "soloComment": "釜無川沿いの高規格キャンプ場。南アルプスの山々を望む景観と場内の露天風呂が魅力。ラフティング体験との組み合わせが人気で、アクティブなソロ旅に最適。設備は全部入りの高規格で安心感がある。",
@@ -4432,7 +4648,12 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワーは、まほろばご宿泊のお客様は無料で24時間お使い頂けます。（https://retreatcamp-mahoroba.net/guide/）",
+      "firewoodNote": "受付にて売店あり（焚火用薪、BBQ用薪、着火材、ガスコンロ用ガスボンベ（https://retreatcamp-mahoroba.net/facilities/）",
+      "shopNote": "受付にて売店あり（焚火用薪、BBQ用薪、着火材、ガスコンロ用ガスボンベ（https://retreatcamp-mahoroba.net/facilities/）",
+      "pet": true,
+      "petNote": "現在は全てのテントサイトとミニパオスイートのお部屋で一緒にご宿泊いただけます（https://retreatcamp-mahoroba.net/faq/）"
     },
     "season": "通年",
     "soloComment": "富士山と河口湖を一望する丘の上の高級グランピング系キャンプ場。プライベート感の高い個別サイトと絶景が魅力。ソロ専用サイトとWi-Fiも完備で価格に見合う非日常体験がある。自分へのご褒美ソロキャンプに。",
@@ -4481,7 +4702,14 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": false,
+      "bathNote": "※お風呂はありません。車で10分ほどのところに日帰り温泉「ふじやま温泉」があり（https://www.pica-resort.jp/fujiyama/about/map/index.html）",
+      "showerNote": "場内のシャワーは利用無料です。（https://www.pica-resort.jp/fujiyama/about/guidance.html）",
+      "shopNote": "フロント（レンタル受付）、レストラン、売店、シャワールーム、コインランドリーがあります（https://www.pica-resort.jp/fujiyama/about/map/index.html）",
+      "pet": true,
+      "petNote": "ペットの同伴は、『テントサイト』か『PICAトレーラー』にご宿泊される方に限ります。（https://www.pica-resort.jp/fujiyama/about/guidance.html）",
+      "nearbyOnsen": "ふじやま温泉（車で10分ほど。宿泊の領収書提示で特別割引）（https://www.pica-resort.jp/fujiyama/about/map/index.html）"
     },
     "season": "通年",
     "soloComment": "富士山を正面に望む河口湖畔の高規格キャンプ場。河口湖ICから5分という圧倒的アクセスと充実設備が魅力。ソロには価格帯が高いが手ぶらレンタルが充実しており初心者入門にも最適。Wi-Fi完備で快適。",
@@ -4753,7 +4981,14 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": false,
+      "bathNote": "場内にはお風呂施設がございません。（https://www.pica-resort.jp/akeno/faq/index.html）",
+      "showerNote": "有料ですが、センターハウス内に男女別シャワールーム（大人210円・子供100円）がございます。（https://www.pica-resort.jp/akeno/faq/index.html）",
+      "firewoodNote": "薪、木炭、着火剤、ホワイトガソリン、ガスカートリッジ等の燃料、氷（https://www.pica-resort.jp/akeno/faq/index.html）",
+      "shopNote": "ふれあいショップ（売店）（https://www.pica-resort.jp/akeno/about/map/index.html）",
+      "petNote": "ペットの同伴は、「ドッグコテージ」または、「ドッグキャビン」にご宿泊される方に限ります。（https://www.pica-resort.jp/akeno/faq/index.html）",
+      "nearbyOnsen": "天然美肌温泉 クララの湯（割引券あり）（https://www.pica-resort.jp/akeno/faq/index.html）"
     },
     "season": "5月〜10月",
     "soloComment": "日照時間が日本一と公称される明野の高台キャンプ場。夏のひまわり畑と八ヶ岳・南アルプスのパノラマが圧巻。星空観察の条件が良い。八ヶ岳を正面に見ながらの焚き火が格別。",
@@ -4814,7 +5049,9 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "キャンプでつい忘れがちな着火剤やライターなどなど、細々したものを揃えることができます。（https://www.verga.info/shopping）",
+      "petNote": "ペット同伴可能なドッグランサイトなど様々なプランをご用意しています。（https://www.verga.info/stay）"
     },
     "season": "4月〜11月",
     "soloComment": "南アルプス天然水の源流・尾白川沿いのキャンプ場。日本名水百選の尾白川での水遊びと尾白の湯（日帰り温泉）の組み合わせが格別。サントリー白州蒸留所見学と組み合わせた大人のソロ旅に最適。",
@@ -4861,7 +5098,11 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "各サイトの耐火タイルの上でのみ可。灰は炭捨て場へ"
+      "bonfireNote": "各サイトの耐火タイルの上でのみ可。灰は炭捨て場へ",
+      "showerNote": "トイレ・シャワー(温水もでます)（https://www.yanagishima-camp.com/?page_id=88）",
+      "shopNote": "飲み物は当日管理棟で購入できます（https://www.yanagishima-camp.com/?page_id=88）",
+      "pet": true,
+      "petNote": "ネットフェンスで囲われたドッグランサイトは、テントの横で愛犬を自由に走らせることが出来ます（https://www.yanagishima-camp.com/?page_id=88）"
     },
     "season": "通年（年末年始12/29〜1/3も開場）",
     "soloComment": "茅ヶ崎唯一の松林に囲まれた海辺キャンプ場。クロマツ林越しに相模湾を望み、波音を聞きながら焚き火ができる。薪・炭販売あり。公営でコスパ良好。",
@@ -4911,7 +5152,11 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bathNote": "場内設備：お風呂（https://www.nap-camp.com/yamanashi/11281）",
+      "shopNote": "場内設備：売店・自動販売機（https://www.nap-camp.com/yamanashi/11281）",
+      "pet": true,
+      "petNote": "お役立ちサービス・条件：ペットOK（https://www.nap-camp.com/yamanashi/11281）"
     },
     "season": "4月中旬〜11月下旬",
     "soloComment": "道志川上流の清流沿い。無料ヒノキ風呂・マス釣り・川遊びが揃う家族経営の人気キャンプ場。薪・氷・ビール販売あり。石割の湯まで車10分。",
@@ -5007,7 +5252,12 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "場内の共同シャワーは利用無料です。（https://www.pica-resort.jp/sagamiko/about/guidance.html）",
+      "firewoodNote": "木炭、焚木、虫除け等も販売しています（https://www.pica-resort.jp/sagamiko/about/index.html）",
+      "shopNote": "パノラマロッジはキャンプの受付・レンタル、売店、研修にもご利用頂けます。（https://www.sagamiko-resort.jp/camp/）",
+      "pet": true,
+      "petNote": "ペットの同伴は、ご予約の際その旨をお申し付けいただいた方に限ります。（https://www.pica-resort.jp/sagamiko/about/guidance.html）"
     },
     "season": "通年",
     "soloComment": "さがみ湖リゾート内の高規格キャンプ場。温泉施設「うるり」隣接で入浴便利。相模湖ICから車15分とアクセス抜群。ログキャビン・トレーラーハウスも充実。",
@@ -5055,7 +5305,14 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shower": true,
+      "showerNote": "コインシャワー（5分300円）が4室あります（https://camp-minoishi.com/facility/）",
+      "firewood": true,
+      "firewoodNote": "薪 660 お釜や鍋を使って煮たり炊いたりする料理用。（https://camp-minoishi.com/charge/）",
+      "shopNote": "管理棟では受付、会計の他、薪、炭、飲み物やお菓子などの販売（https://camp-minoishi.com/facility/）",
+      "pet": true,
+      "petNote": "ペットの同伴はできますが、苦手な方やアレルギーの方もいらっしゃいますので、他のお客様にご迷惑がかからない事を条件にご来場頂いています。（https://camp-minoishi.com/faq/）"
     },
     "season": "通年",
     "soloComment": "相模湖を渡船10分の孤島感ある秘境キャンプ場。飲料持込禁止・現地購入制の独特ルール。カヌー・SUP体験も可。渡船でしか行けないぶん静かに過ごせる。",
@@ -5104,7 +5361,11 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bathNote": "自家源泉100％かけ流し温泉が楽しめて、宇佐美海水浴場すぐそばの立地。（https://www.nap-camp.com/shizuoka/14344）",
+      "shopNote": "場内設備：売店・自動販売機（https://www.nap-camp.com/shizuoka/14344）",
+      "pet": true,
+      "petNote": "お役立ちサービス・条件：ペットOK（https://www.nap-camp.com/shizuoka/14344）"
     },
     "season": "通年",
     "soloComment": "宇佐美城跡の高台に立つキャンプ場。海まで徒歩5分・貸切源泉温泉・テントサウナ完備。ソロ専用区画あり。薪・ビール・チューハイ販売。",
@@ -5153,7 +5414,12 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワー室(20時まで/無料）（https://www.hitsurugi-camp.com/facility.html）",
+      "firewoodNote": "【薪別途（管理棟販売中）、薪持ち込みOK】（https://www.hitsurugi-camp.com/facility.html）",
+      "shopNote": "炭・着火剤・電池等は管理棟でも販売しています。（https://www.hitsurugi-camp.com/shop.html）",
+      "pet": true,
+      "petNote": "区画サイト（電源付き）～ペットOK～（https://www.hitsurugi-camp.com/price.html）"
     },
     "season": "通年",
     "soloComment": "2024年リニューアルの小規模キャンプ場。東名菊川ICから17分の好アクセス。ソロ専用区画・エアコン付きバンガロー・ウォシュレット完備。",
@@ -5202,7 +5468,13 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bathNote": "源泉100％の掛川市の天然温泉。一番遠いキャンプサイトからでも徒歩５分。（https://www.narakoko.info/wp/spa）",
+      "showerNote": "受付棟横（2室）、バンガローエリア（４室）の2ヶ所。5分100円のコイン式です。（https://www.narakoko.info/wp/other）",
+      "firewoodNote": "受付棟、管理棟にて薪や炭などの燃料、その他キャンプに必要なものを販売しております。（https://www.narakoko.info/wp/guide）",
+      "shopNote": "売店コーナーもあり、木炭や薪、ロック氷や調味料が購入できます。（https://www.narakoko.info/wp/other）",
+      "pet": true,
+      "petNote": "フリーサイト、電源区画サイト・林間区画サイトなどのテントエリアがペット可のエリアです。（https://www.narakoko.info/wp/guide）"
     },
     "season": "通年（4〜10月は無休、11〜3月は第1火曜と年始が休み）",
     "soloComment": "清流に囲まれた山あいのキャンプ場。「森掛川」ICから20分。川遊び・天体観測・ロッジ充実。場内に温浴施設あり。",
@@ -5252,7 +5524,12 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "直火禁止"
+      "bonfireNote": "直火禁止",
+      "showerNote": "フードパーク総合受付横に共用シャワールーム有。受付時間内のご利用が可能です。（https://asagiri-foodpark.com/afp.html）",
+      "firewoodNote": "※薪・木炭はインフォメーション売店にて販売しております。（https://asagiri-foodpark.com/afp.html）",
+      "shopNote": "受付場所：インフォメーション売店 ※第一駐車場前（https://asagiri-foodpark.com/afp.html）",
+      "pet": true,
+      "petNote": "基本的にペット同伴可能ですが、スタイルキャビンについてはペット同伴不可となります。（https://asagiri-foodpark.com/afp.html）"
     },
     "season": "通年（冬期12〜2月は毎週木曜休）",
     "soloComment": "朝霧高原の食のテーマパーク内キャンプ場。富士山を正面に望む絶好のロケーション。地元食材・クラフトビール・ワイン購入可。トレーラーハウスも。",
@@ -5301,7 +5578,10 @@
       "alcohol": true,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "オートキャンプ場・本格薪サウナ・カフェ・ショップ・子供の遊び場（https://folkwood-camp.com/）",
+      "pet": true,
+      "petNote": "ドッグラン付きキャンプサイトで愛犬とのびのび過ごせます（https://folkwood-camp.com/dog）"
     },
     "season": "通年",
     "soloComment": "小淵沢の高原林間。薪焚き本格サウナ・クラフトビール・ワイン量り売りのおしゃれなキャンプ場。地元食材ミールキット付プランも人気。",
@@ -5349,7 +5629,10 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "場内設備：売店・自動販売機（https://www.nap-camp.com/yamanashi/14555）",
+      "pet": true,
+      "petNote": "お役立ちサービス・条件：ペットOK（https://www.nap-camp.com/yamanashi/14555）"
     },
     "season": "シーズン営業（具体的な期間は未確認）",
     "soloComment": "山中湖IC近く、富士山を望む湖畔オートキャンプ場。ソロサイト完備・SUP・カヤックレンタル充実。山中湖の四季を満喫できる。",
@@ -5399,7 +5682,12 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャーワ―ルーム（男女別）（300円）（https://www.yatsugatake-autocamp.com/amenity.html）",
+      "firewoodNote": "食材以外の販売（炭・薪）、レンタル有（https://www.yatsugatake-autocamp.com/reservation.html）",
+      "shopNote": "バーベキュー用品等は管理棟で購入できます。（https://www.yatsugatake-autocamp.com/amenity.html）",
+      "pet": true,
+      "petNote": "躾けが出来ている飼いならされたペットでしたらお連れいただけます（https://www.yatsugatake-autocamp.com/reservation.html）"
     },
     "season": "4月〜10月中旬",
     "soloComment": "八ヶ岳南麓・標高1,100mの高原キャンプ場。露天風呂完備。コテージ・バンガロー充実。北杜の澄んだ空気と星空が魅力。",
@@ -5447,7 +5735,12 @@
       "convenience": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "■風呂・温水シャワー　風呂：15分500円（https://doshi-kanko.com/kankonouen_camp/ryoukin.htm）",
+      "showerNote": "風呂：15分500円　シャワー：3分：200円（https://doshi-kanko.com/kankonouen_camp/ryoukin.htm）",
+      "firewoodNote": "■燃料販売　・マキ：500円　・炭（1ｋｇ）：600円（https://doshi-kanko.com/kankonouen_camp/ryoukin.htm）",
+      "shopNote": "■燃料販売　・マキ：500円　・炭（1ｋｇ）：600円（https://doshi-kanko.com/kankonouen_camp/ryoukin.htm）"
     },
     "tel": "0554-52-2365",
     "officialUrl": "https://www.doshi-kanko.jp/camp/kanko-nouen/",
@@ -5496,7 +5789,13 @@
       "garbage": "分別",
       "nearbySupermarket": "",
       "nearbyShop": "七沢温泉まで徒歩3分",
-      "reservationNote": "1日5組限定の完全予約制。3ヶ月先（貸切は5ヶ月先）まで予約可。受付9:00〜18:00"
+      "reservationNote": "1日5組限定の完全予約制。3ヶ月先（貸切は5ヶ月先）まで予約可。受付9:00〜18:00",
+      "bath": false,
+      "bathNote": "シャワーなどありませんが、徒歩3分(200m)のところに日帰り利用のできる七沢荘(別料金)があります。（https://www.tiny-camp-village.com/event）",
+      "shower": false,
+      "showerNote": "シャワーなどありませんが、徒歩3分(200m)のところに日帰り利用のできる七沢荘(別料金)があります。（https://www.tiny-camp-village.com/event）",
+      "petNote": "ペットもご利用いただけますが、便の処理などマナーをお守り頂けますようお願い致します（https://www.tiny-camp-village.com/event）",
+      "nearbyOnsen": "七沢荘（徒歩3分・200m、日帰り利用可・別料金。トロトロとした泉質で七沢温泉を代表する美肌の湯、木曜定休 8:00~20:00）（https://www.tiny-camp-village.com/event）"
     },
     "tel": "070-3366-7738",
     "officialUrl": "https://www.tiny-camp-village.com/",
@@ -5590,7 +5889,9 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "○温水シャワー使用　一回／ 500円（https://www.naminokomura.jp/price.html）",
+      "shopNote": "肉・野菜から海鮮、焼きそば、ドリンクまで、必要なものはすべて「魚魚櫓」で手に入ります。（https://www.naminokomura.jp/cn5/bbq.html）"
     },
     "tel": "0465-29-0841",
     "officialUrl": "https://www.naminokomura.jp/",
@@ -5636,7 +5937,13 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shower": true,
+      "showerNote": "○ コインシャワー(３分)……２００円（https://tanzawa-camp.sakura.ne.jp/fee/fee.php）",
+      "firewood": true,
+      "firewoodNote": "○ 薪　一束……６００円（https://tanzawa-camp.sakura.ne.jp/fee/fee.php）",
+      "shop": true,
+      "shopNote": "○ 薪　一束……６００円　○ 炭(着火剤付き) ３ｋｇ……７００円（https://tanzawa-camp.sakura.ne.jp/fee/fee.php）"
     },
     "tel": "0465-78-3242",
     "officialUrl": "https://tanzawa-camp.sakura.ne.jp/",
@@ -5691,7 +5998,8 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "nearbyOnsen": "足柄温泉 車で７分／足柄サービスエリア（温浴施設有り）車で６分（https://challengeoutdoor.co/nelogotemba/）"
     },
     "tel": "",
     "officialUrl": "https://challengeoutdoor.co/nelogotemba/",
@@ -5740,7 +6048,12 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワーが４ユニットつきました。15 分 500 円/人で使用可能です。（https://genshijin-fujinomiya.com/office.html）",
+      "firewoodNote": "管理棟では、薪、干物など、無人販売を行っています！（https://genshijin-fujinomiya.com/about.html）",
+      "shopNote": "24時間・年中無休　管理棟では、薪、干物など、無人販売を行っています！（https://genshijin-fujinomiya.com/about.html）",
+      "petNote": "5名様(小学生以上)まで、犬猫ペット2匹まで、サイト内に入る車2台までが含まれます（https://genshijin-fujinomiya.com/courses.html）",
+      "nearbyOnsen": "あさぎり温泉 風の湯／富嶽温泉 花の湯 - 時之栖／富士山 天母の湯（距離・所要時間の記載なし）（https://genshijin-fujinomiya.com/sightseeing.html）"
     },
     "tel": "080-3689-0045",
     "officialUrl": "https://genshijin-fujinomiya.com/",
@@ -5887,7 +6200,11 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "貸し切りシャワー 30分：1,500円 利用時間：15:00～22:00（https://www.gran-papa.com/plan/）",
+      "firewoodNote": "薪詰め放題 雑木ペール缶／ヒノキ端材（時期により変更あり）（https://www.gran-papa.com/plan/）",
+      "shopNote": "管理棟でゴミ袋1枚10円で販売しています。（https://www.gran-papa.com/site/）",
+      "petNote": "全サイトわんちゃん他ペット可 ※ドッグラン以外はリード必須（https://www.gran-papa.com/plan/）"
     },
     "tel": "",
     "officialUrl": "https://www.gran-papa.com/site/solo/",
@@ -5935,7 +6252,9 @@
       "convenience": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "petNote": "ペット連れは予約時にご相談ください。（https://marubi.main.jp/riyou.html）",
+      "nearbyOnsen": "御胎内温泉（露天風呂から富士山が一望。徒歩2分）（https://marubi.main.jp/kanko.html）"
     },
     "tel": "0550-88-5335",
     "officialUrl": "https://marubi.main.jp/",
@@ -5983,7 +6302,10 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "炊飯室、水洗トイレ、温泉風呂、有料ランドリー、有料温水シャワーがあります。（https://www.city.shizuoka.lg.jp/shisetsu/s0001021.html）",
+      "showerNote": "有料ランドリー、有料温水シャワーがあります。（https://www.city.shizuoka.lg.jp/shisetsu/s0001021.html）"
     },
     "tel": "054-260-2322",
     "officialUrl": "https://www.city.shizuoka.lg.jp/shisetsu/s0001021.html",
@@ -6082,7 +6404,11 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bathNote": "■風呂（併設している宿泊施設のお風呂に入れます※露天風呂付）入浴料：550円/人（https://www.minami-camp.com/）",
+      "showerNote": "お風呂／シャワー／ゴミ捨て場／ランドリー／ウォッシュレット式トイレ（https://www.minami-camp.com/）",
+      "shopNote": "レストラン・食堂／売店・自動販売機／炊事棟 給湯／AC電源（https://www.minami-camp.com/）",
+      "petNote": "車両乗入OK　ペットOK（https://www.minami-camp.com/）"
     },
     "tel": "0555-65-8859",
     "officialUrl": "https://www.minami-camp.com/",
@@ -6130,7 +6456,12 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワー(16:00〜翌8:00) 宿泊者 無料（https://www.camp-akaike.jp/）",
+      "firewoodNote": "売店(受付棟)　薪 500円〜／炭 200円〜（https://www.camp-akaike.jp/）",
+      "shop": true,
+      "shopNote": "売店(受付棟) ジュース類（自動販売機）･アイス類･酒･ビール（https://www.camp-akaike.jp/）",
+      "petNote": "ワンちゃんWELCOME！　ワンちゃん 200円（https://www.camp-akaike.jp/）"
     },
     "tel": "0555-87-2885",
     "officialUrl": "https://www.camp-akaike.jp/",
@@ -6178,7 +6509,12 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "コインシャワー 5分300円（https://tsukiyono.doshi-camp.com/）",
+      "firewoodNote": "その他、薪（針葉樹・広葉樹）・炭の販売もあります。（https://tsukiyono.doshi-camp.com/faq/）",
+      "shopNote": "管理棟（お酒・ジュース・薪・炭 販売してます）（https://tsukiyono.doshi-camp.com/）",
+      "pet": true,
+      "petNote": "テントサイトの同伴は可能ですが、ペットのバンガロー同伴は不可となります。（https://tsukiyono.doshi-camp.com/rules/）"
     },
     "tel": "0554-52-2461",
     "officialUrl": "https://www.doshi-kanko.jp/camp/tsukiyono/",
@@ -6226,7 +6562,10 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワーハウス（コインシャワー）男女３室ずつ　１回３分：200円（https://ecopa-inagako.jp/greenlodge/）",
+      "firewoodNote": "北伊奈ヶ湖サービスセンターには、薪やＢＢＱ用品の販売や、自動販売機がございます。（https://ecopa-inagako.jp/taberu/）",
+      "shopNote": "北伊奈ヶ湖サービスセンターには、薪やＢＢＱ用品（炭や紙コップなど）の販売（https://ecopa-inagako.jp/taberu/）"
     },
     "tel": "055-283-8700",
     "officialUrl": "https://ecopa-inagako.jp/",
@@ -6266,7 +6605,7 @@
       "carIn": true,
       "soloPlan": false,
       "reservation": "要",
-      "shop": true,
+      "shop": false,
       "firewood": true,
       "ice": true,
       "alcohol": false,
@@ -6276,7 +6615,12 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": "サントリー白州蒸溜所近く"
+      "nearbyShop": "サントリー白州蒸溜所近く",
+      "showerNote": "シャワー室あり（有料）／サイト内にシャワー室（¥500/15分）あり。（https://www.village-hakushu.com/about01/）",
+      "firewoodNote": "薪 ： ¥600／束（https://www.village-hakushu.com/about01/）",
+      "shopNote": "レストラン施設、売店なし（https://www.village-hakushu.com/about01/）",
+      "petNote": "犬／コテージ、テントサイト共に同伴可（https://www.village-hakushu.com/about01/）",
+      "nearbyOnsen": "白州塩川温泉 フォッサマグナの湯／尾白の湯（白州・尾白の森名水公園べるが内）／天然温泉 つたの湯（道の駅「信州蔦木宿」内）※距離の記載なし（https://www.village-hakushu.com/area-information/）"
     },
     "tel": "0551-35-4120",
     "officialUrl": "https://www.village-hakushu.com/",
@@ -6330,7 +6674,12 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bathNote": "ご宿泊のお客様は無料でお風呂をご利用いただけます。（https://www.hananomori.jp/price.html）",
+      "showerNote": "お風呂内に洗い場が4つあり、シャワー付きです。独立したシャワーブースの設置はありません。（https://www.hananomori.jp/faq.html）",
+      "firewoodNote": "売店にて薪・炭・ガスランタン用のOD缶を販売しています。（https://www.hananomori.jp/faq.html）",
+      "shopNote": "薪・炭、消耗品、食品、飲料等を取り揃えております。（https://www.hananomori.jp/facility.html）",
+      "petNote": "オートサイトは同伴可能です。キャビン・コテージはご遠慮ください。（https://www.hananomori.jp/faq.html）"
     },
     "tel": "080-7687-7537",
     "officialUrl": "https://www.hananomori.jp/",
@@ -6378,7 +6727,13 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "コインシャワー（15分400円）／携帯決済シャワー×2（20分500円）（https://www.floracampsite.com/facilities）",
+      "firewoodNote": "薪（針葉樹、広葉樹２種）（https://www.floracampsite.com/facilities）",
+      "shop": true,
+      "shopNote": "管理棟にて子供用歯ブラシ、虫かご・虫網、花火なども販売しております（https://www.floracampsite.com/facilities）",
+      "petNote": "ペット同伴　可　放し飼い厳禁　ドッグランあり（https://www.floracampsite.com/camp-site）",
+      "nearbyOnsen": "南アルプス天然温泉『尾白の湯』（距離の記載なし）（https://www.floracampsite.com/）"
     },
     "tel": "0551-45-9164",
     "officialUrl": "https://www.floracampsite.com/",
@@ -6430,7 +6785,14 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bathNote": "キャンプ場内にお風呂（営業日要確認）、シャワーもありますのでご利用下さい。（https://shinozawa-ootaki-camp.com/）",
+      "shower": true,
+      "showerNote": "シャワー 4分 200円（7:00～22:00）（https://shinozawa-ootaki-camp.com/fee/）",
+      "firewoodNote": "売店では何が置いてありますか？　薪・炭あります（https://shinozawa-ootaki-camp.com/contact/faq/）",
+      "shopNote": "売店では何が置いてありますか？　薪・炭あります（https://shinozawa-ootaki-camp.com/contact/faq/）",
+      "petNote": "ワンちゃん１匹（１日）につき 500円が掛かります（https://shinozawa-ootaki-camp.com/fee/）",
+      "nearbyOnsen": "むかわの湯・おじらの湯（車で10分程度。割引券あり）（https://shinozawa-ootaki-camp.com/）"
     },
     "tel": "0551-35-3131",
     "officialUrl": "https://shinozawa-ootaki-camp.com/",
@@ -6479,7 +6841,11 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "有料のシャワー室です。利用料金は、1回300円（https://oic-camp.com/service/utility/）",
+      "firewoodNote": "薪（おいしいキャンプ場産） 660円／１束（https://oic-camp.com/price/sales-item/）",
+      "shopNote": "当キャンプ場では以下のような販売品をご準備させて頂いております（https://oic-camp.com/price/sales-item/）",
+      "petNote": "ペットは、屋根下テントとソロキャンプサイト以外同伴可能です（https://oic-camp.com/price/precaution/）"
     },
     "tel": "080-2627-7364",
     "officialUrl": "https://oic-camp.com/",
@@ -6529,7 +6895,10 @@
       "convenience": true,
       "garbage": "分別",
       "nearbySupermarket": "道の駅併設",
-      "nearbyShop": "下部温泉まで車5分"
+      "nearbyShop": "下部温泉まで車5分",
+      "showerNote": "24時間利用可能　シャワー室、水洗トイレ、多目的トイレ（https://www.michinoeki-shimobe.jp/camp/）",
+      "firewoodNote": "営業時間内　バーベキュー施設、授乳室、キャンプ用品コーナー、薪の販売等（https://www.michinoeki-shimobe.jp/camp/）",
+      "shopNote": "キャンプ用品コーナー、薪の販売等（https://www.michinoeki-shimobe.jp/camp/）"
     },
     "tel": "",
     "officialUrl": "https://www.michinoeki-shimobe.jp/camp/",
@@ -6578,7 +6947,11 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "物販スペース（薪／炭／その他キャンプ消耗品各種）（https://hayatohakoneguesthouse.com/page/hakone-camp/）",
+      "shop": true,
+      "shopNote": "▼管理棟　・受付　・物販スペース（薪／炭／その他キャンプ消耗品各種）（https://hayatohakoneguesthouse.com/page/hakone-camp/）",
+      "nearbyOnsen": "自家源泉100％で泉質の良い日帰り温泉施設『箱根の湯』まで徒歩5分（割引券有）＋『湯の里おかだ』車で5分（割引券有）（https://hayatohakoneguesthouse.com/page/hakone-camp/）"
     },
     "tel": "0460-83-8351",
     "officialUrl": "https://hayatohakoneguesthouse.com/page/hakone-camp/",
@@ -6626,7 +6999,12 @@
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "湘南で唯一「直火も可能」と明記されている"
+      "bonfireNote": "湘南で唯一「直火も可能」と明記されている",
+      "firewoodNote": "在庫は十数束と限りがございますが、現地販売を行わせて頂いております（https://bush-craft.biz/qa/）",
+      "shop": true,
+      "shopNote": "トイレットペーパーをご持参頂くか、フィールド内でお買い求めください（https://bush-craft.biz/qa/）",
+      "pet": true,
+      "petNote": "ペットと一緒にご利用頂くことも可能ですが、必ずリードをお繋ぎください（https://bush-craft.biz/qa/）"
     },
     "tel": "",
     "officialUrl": "https://bush-craft.biz/",
@@ -6680,7 +7058,11 @@
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "観光協会は電話予約と記載（相模原市観光協会 042-687-2030 受付9:00〜20:00 / FAX）。**テントサイト（12）の要否は未確認。**同協会の22施設を対照したところ【予約方法】欄があるのは3施設だけで、DB が「要」の8施設は全て記載なし。**この欄は連絡手段であって要否の根拠にならない**（2026-08-16 実測）"
+      "reservationNote": "観光協会は電話予約と記載（相模原市観光協会 042-687-2030 受付9:00〜20:00 / FAX）。**テントサイト（12）の要否は未確認。**同協会の22施設を対照したところ【予約方法】欄があるのは3施設だけで、DB が「要」の8施設は全て記載なし。**この欄は連絡手段であって要否の根拠にならない**（2026-08-16 実測）",
+      "firewoodNote": "山や土手での薪拾いは禁止です。持参または売店で購入して下さい（http://www.akikawaya.co.jp/caution.html）",
+      "shop": true,
+      "shopNote": "持参または売店で購入して下さい（http://www.akikawaya.co.jp/caution.html）",
+      "petNote": "秋川屋全施設は家族の一員として飼っているペットは全て同伴同宿可能です（http://www.akikawaya.co.jp/pet.html）"
     },
     "tel": "042-687-2030",
     "officialUrl": "http://www.akikawaya.co.jp/",
@@ -6729,7 +7111,12 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワー室、洗い場、シャワー付き水洗トイレは共用になります（https://houkaen.jp/miroku）",
+      "firewoodNote": "※ 薪・炭も販売しております。（https://houkaen.jp/miroku）",
+      "shop": true,
+      "shopNote": "受付・飲み物販売・キャンプ用品の貸し出しを行っております（https://houkaen.jp/miroku）",
+      "petNote": "１日１組限定、ゾーン貸切でペットと一緒にテント泊できます。（https://houkaen.jp/pet）"
     },
     "tel": "",
     "officialUrl": "https://houkaen.jp/",
@@ -6775,7 +7162,12 @@
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewoodNote": "◎薪(針葉樹)　１カゴ５００円　◎薪(広葉樹)　１カゴ８００円（https://www.gotemba-otome.jp/料金のご案内）",
+      "shop": true,
+      "shopNote": "管理棟の売店では、各種受付の他レンタル用品、アイスクリーム、冷たい飲み物などを取りそろえております（https://www.gotemba-otome.jp/第1キャンプ場）",
+      "pet": true,
+      "petNote": "以下のオートキャンプサイトに限り、ペット同伴でご利用できます。（https://www.gotemba-otome.jp/予約のご案内）"
     },
     "tel": "0550-82-2090",
     "officialUrl": "https://www.gotemba-otome.jp/",
@@ -6830,7 +7222,9 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "pet": true,
+      "petNote": "愛犬と一緒に楽しむことができるドッグラン併設サイト（https://www.recamp.co.jp/fujispeedway）"
     },
     "tel": "",
     "officialUrl": "https://www.recamp.co.jp/fujispeedway",
@@ -6878,7 +7272,12 @@
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "指定場所で直火が可能"
+      "bonfireNote": "指定場所で直火が可能",
+      "firewoodNote": "・薪：1束500円（https://www.campbean.jp/information/）",
+      "shop": true,
+      "shopNote": "・販売品　ステッカー：大（10cm）600円、小（7cm）400円（https://www.campbean.jp/information/）",
+      "petNote": "犬やペット同伴でのキャンプは可能です。必ずリードを付けてください（https://www.campbean.jp/information/）",
+      "nearbyOnsen": "筥湯（はこゆ）営業時間：12:00～21:00(受付～20:30)無休／テルメいづみ園 営業時間：10:00～21:30(受付～21:00)火曜定休（https://www.campbean.jp/）"
     },
     "tel": "",
     "officialUrl": "https://www.campbean.jp/",
@@ -6977,7 +7376,11 @@
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bonfireNote": "可。消火器や水バケツを用意して初期消火に備えること"
+      "bonfireNote": "可。消火器や水バケツを用意して初期消火に備えること",
+      "showerNote": "温水シャワー (24h コインタイマー式) 5分 … ￥300-（https://tenshinomori.net/rate/rate-camp）",
+      "firewoodNote": "薪 1束 … ￥600～（https://tenshinomori.net/rate/rate-others）",
+      "shopNote": "アイスクリーム各種 ￥150-　カップラーメン ￥200-　パックご飯 ￥200-（https://tenshinomori.net/rate/rate-foods）",
+      "petNote": "ペットは必ずリードにつなぎ、トイレの始末をきちんとしてください（https://tenshinomori.net/note）"
     },
     "tel": "0544-54-1543",
     "officialUrl": "https://tenshinomori.net/",
@@ -7024,7 +7427,14 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワー：無料でご利用いただけます。男女別で3室あり各個室は施錠が出来るようになっています。（https://fuji-manganvillage.com/facilityinfo/）",
+      "firewoodNote": "薪 ￥880～（https://fuji-manganvillage.com/ryoukin/sell_rental/）",
+      "shop": true,
+      "shopNote": "受付棟の営業時間は9:00～17:00となります。レンタル品、販売品その他の申し付けは17:00までにお願いいたします（https://fuji-manganvillage.com/info/）",
+      "pet": true,
+      "petNote": "1予約につき2頭までとなります。ワンちゃんの場合、しつけの出来た犬に限ります（https://fuji-manganvillage.com/info/pet/）",
+      "nearbyOnsen": "富士眺望の湯 ゆらり（山梨県南都留郡鳴沢村鳴沢8532-5）車で約１１分（５．６ｋｍ）（https://fuji-manganvillage.com/access/area/）"
     },
     "tel": "0555-28-6005",
     "officialUrl": "https://fuji-manganvillage.com/",
@@ -7071,7 +7481,10 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "pet": true,
+      "petNote": "ペット同伴も可能です。（別途500円）（https://www.nagomi-camp.com/topics）",
+      "nearbyOnsen": "天然温泉「芭蕉 月待ちの湯」※徒歩4分。キャンプ場利用者は大人510円・小人310円・未就学児無料（通常大人720円）、営業10時～21時（最終入館20時30分）（https://www.nagomi-camp.com/home）"
     },
     "tel": "0554-46-0753",
     "officialUrl": "https://www.nagomi-camp.com",
@@ -7161,12 +7574,16 @@
       "ice": false,
       "alcohol": false,
       "bonfire": true,
-      "pet": true,
+      "pet": false,
       "toilet": "洋式",
       "convenience": false,
       "garbage": "持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "無料温水シャワー棟は男性が個室2、女性が個室3あり、午後5時から午後10時までご利用できます（https://doshi-kanko.com/moricote/）",
+      "firewoodNote": "薪（3束）800円（https://doshi-kanko.com/moricote/moricote_ryokin/moricote_ryokin.html）",
+      "petNote": "コテージへのペット持ち込みは禁止です（https://doshi-kanko.com/moricote/moricote_info/moricote_info.html）",
+      "nearbyOnsen": "当施設から徒歩10分で楽しめる村営の温泉施設があります。泉質は硫酸塩泉で、露天風呂もあり、当施設ご宿泊者向け割引券もご利用いただけます（道志の湯）（https://doshi-kanko.com/moricote/）"
     },
     "tel": "090-7265-7981",
     "officialUrl": "https://doshi-kanko.com/moricote/moricote_ryokin/moricote_ryokin.html",
@@ -7258,7 +7675,7 @@
     },
     "features": {
       "bath": true,
-      "shower": true,
+      "shower": false,
       "wifi": false,
       "carIn": true,
       "soloPlan": false,
@@ -7272,7 +7689,13 @@
       "convenience": false,
       "garbage": "分別",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bathNote": "お風呂は、お1人様500円でご利用いただける（https://www.kyukamura.jp/archives/blog/blog-2505）",
+      "showerNote": "シャワーなし　※有料にて入浴可能（https://www.kyukamura.jp/archives/blog/blog-2505）",
+      "shopNote": "アルコール類や地元の銘菓などを取りそろえた売店、コインランドリー（有料）などもご利用いただけます（https://www.kyukamura.jp/archives/blog/blog-2505）",
+      "pet": true,
+      "petNote": "ワンちゃんもOKですので、愛犬とキャンプを楽しんでください！（https://www.kyukamura.jp/archives/blog/blog-2505）",
+      "nearbyOnsen": "隣接する日帰り温泉施設『富士眺望の湯ゆらり』へのアクセスも抜群です！大人入泉料特別割引券（200円割引）をフロントにてお渡しいたします（https://www.kyukamura.jp/archives/blog/blog-2505）"
     },
     "tel": "0555-85-2236",
     "officialUrl": "http://www.kyukamura.jp/",
@@ -7690,7 +8113,16 @@
       "garbage": "全て持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "前日までに要予約"
+      "reservationNote": "前日までに要予約",
+      "shower": false,
+      "showerNote": "お風呂、シャワーの設備はございません。（https://ooyanagawa-camp.com/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%ef%bc%88faq%ef%bc%89/）",
+      "firewood": true,
+      "firewoodNote": "販売品　薪 660円(税込)　炭 770円(税込)（https://ooyanagawa-camp.com/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85-%e3%81%94%e5%88%a9%e7%94%a8%e6%96%99%e9%87%91%e6%96%b0%e6%96%99%e9%87%91/）",
+      "shop": true,
+      "shopNote": "管理棟／レンタル品・販売品　薪 660円(税込)　炭 770円(税込)（https://ooyanagawa-camp.com/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85-%e3%81%94%e5%88%a9%e7%94%a8%e6%96%99%e9%87%91%e6%96%b0%e6%96%99%e9%87%91/）",
+      "pet": true,
+      "petNote": "当キャンプ場では、ペットと一緒にキャンプをお楽しみいただけます。（https://ooyanagawa-camp.com/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%ef%bc%88faq%ef%bc%89/）",
+      "nearbyOnsen": "キャンプ場から車で5分の「かじかの湯」をご利用ください。（甲州鰍沢温泉かじかの湯）（https://ooyanagawa-camp.com/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%ef%bc%88faq%ef%bc%89/）"
     },
     "season": "通年（降雪時は休業する場合あり）",
     "soloComment": "5つの滝と10の吊り橋が連なる渓谷の入口に建つ、予約制のキャンプ場。2023年8月に無料開放を終えて有料になり、テント泊は大人1,800円。サウナやグランピング棟もあり、渓谷歩きの拠点として使える。前日までの予約を忘れずに。",
@@ -7803,7 +8235,8 @@
       "garbage": "全て持ち帰り",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "reservationNote": "「オクシズばった」で要予約。管理棟 054-395-2999（9:00〜17:00）"
+      "reservationNote": "「オクシズばった」で要予約。管理棟 054-395-2999（9:00〜17:00）",
+      "nearbyOnsen": "清水西里温泉浴場「やませみの湯」（清水区西里1449）。公式に「清水森林公園内にあり、黒川キャンプ場とも近く」と記載。大人700円、小人300円（https://www.city.shizuoka.lg.jp/shisetsu/s0001032.html）"
     },
     "season": "通年（年末年始休）",
     "soloComment": "森林公園の中にある無料のキャンプ場。33区画に炊事場とトイレが整い、隣はやませみの湯。無料でも「オクシズばった」での予約が要ることと、受付管理棟が月曜休みな点だけ押さえておきたい。",
@@ -8138,7 +8571,13 @@
       "alcohol": false,
       "garbage": "全て持ち帰り",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewood": true,
+      "firewoodNote": "まき、炭等の有償貸し出しと販売をしています（https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html）",
+      "shop": true,
+      "shopNote": "バーベキューコンロセット（網、鉄板セット）、まき、炭等の有償貸し出しと販売をしています（https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html）",
+      "pet": false,
+      "petNote": "ペット類の同伴はできません（盲導犬可）（https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html）"
     },
     "season": "3月1日〜11月30日（宿泊は4〜6月・10〜11月の土日祝と7/1〜9/30に限定）",
     "soloComment": "相模川河川敷の市営サイト。桜の名所で春は花見キャンプができる。アクセスがよく設備も揃うが、静けさを求めるなら時期を外したい。",
@@ -8194,7 +8633,9 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "pet": false,
+      "petNote": "【禁止事項】ペット類の持ち込み（https://www.nishiizu-kankou.com/stay/ugusucanp）"
     },
     "season": "要確認",
     "soloComment": "伊豆半島最大の海岸公営キャンプ場。全長500mの遠浅海岸が目の前で、水平線に沈む夕陽が最大の魅力。1サイト5m×5mでソロには十分。車両乗入不可なので荷物運搬に注意。",
@@ -8292,7 +8733,14 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "showerNote": "シャワーあり"
+      "showerNote": "シャワーあり",
+      "firewood": true,
+      "firewoodNote": "温水シャワー、酒類販売、まき販売、炊事棟、グラウンドゴルフ場（https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/）",
+      "shop": true,
+      "shopNote": "売店、水洗トイレ、洗濯機、温水シャワー、酒類販売、まき販売（https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/）",
+      "pet": false,
+      "petNote": "※ペット連れ込み禁止。（https://www.kunowaki.net/）",
+      "nearbyOnsen": "近くには川根温泉もあります。（https://www.kunowaki.net/）"
     },
     "season": "要確認",
     "tel": "0547-56-1781",
@@ -8344,7 +8792,12 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shower": true,
+      "showerNote": "設備：管理棟・炊事場・温水シャワー・水洗トイレ（https://okuooi.gr.jp/topics/page.php?id=62）",
+      "pet": true,
+      "petNote": "ペット可・直火可・花火可・川遊び・釣り（https://okuooi.gr.jp/topics/page.php?id=62）",
+      "nearbyOnsen": "歩いて行ける距離に日帰り温泉、吊り橋もあり様々な楽しみ方ができます。（施設名の明記なし）（https://okuooi.gr.jp/outdoor/details.php?id=79）"
     },
     "season": "3月15日〜11月30日",
     "tel": "0547-59-2746",
@@ -8397,7 +8850,15 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shower": true,
+      "showerNote": "シャワー 100円/3分 ・両替機がありませんので100円玉をご用意ください（http://kawanelife.org/camp/fee/）",
+      "firewood": true,
+      "firewoodNote": "薪 広葉樹：800円/1束 針葉樹：700円/1束（http://kawanelife.org/camp/fee/）",
+      "shop": true,
+      "shopNote": "「川根本町ゆずクラフトビール」のカップまたはビンでの飲食販売をしています。（http://kawanelife.org/camp/）",
+      "pet": true,
+      "petNote": "ペットOK ただし、リードから離さないこと・フンの始末は徹底してください。（http://kawanelife.org/camp/）"
     },
     "season": "要確認",
     "tel": "090-2137-2551",
@@ -8446,7 +8907,16 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shower": true,
+      "showerNote": "キャンプサイト内サニタリー棟に24時間ご利用可能なシャワールームが2室ございます。（https://ffnpcs.com/camping/）",
+      "firewood": true,
+      "firewoodNote": "こちらで受付をお願いいたします。薪や炭などの販売もしております。（https://ffnpcs.com/camping/）",
+      "shop": true,
+      "shopNote": "併設のRNB DINERでお食事やお飲み物の販売もございます。（https://ffnpcs.com/camping/）",
+      "pet": true,
+      "petNote": "場内では必ずペットにリードを付け、責任をもって監理してください（https://ffnpcs.com/notes/）",
+      "nearbyOnsen": "川根温泉 ふれあいの泉／川根町／キャンプ場から約14分（10.4km）（https://ffnpcs.com/）"
     },
     "season": "要確認",
     "tel": "0547-56-1600",
@@ -8495,7 +8965,18 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": false,
+      "bathNote": "Q.お風呂はありますか？ A.コインシャワーのみとなっております。（https://abt-camp.shizu.website/faq/）",
+      "shower": true,
+      "showerNote": "コインシャワー 合計３分、100円 24時間使用可能です。（https://abt-camp.shizu.website/facility_rate/）",
+      "firewood": true,
+      "firewoodNote": "販売品 木炭 600円 木炭着火剤 200円 薪 400円（https://abt-camp.shizu.website/facility_rate/）",
+      "shop": true,
+      "shopNote": "販売品 釣りエサ 300円 替え釣り糸 100円 木炭 600円（https://abt-camp.shizu.website/facility_rate/）",
+      "pet": true,
+      "petNote": "ペットの同伴は可能です。ただし、リードでつなぎ、フンの後始末をお願いします。（https://abt-camp.shizu.website/faq/）",
+      "nearbyOnsen": "キャンプ場近隣（車で５分程度）に温泉施設がございます。（https://abt-camp.shizu.website/）"
     },
     "season": "通年（冬季営業あり）",
     "tel": null,
@@ -8548,7 +9029,8 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "bathNote": "徒歩圏内に奥山温泉"
+      "bathNote": "徒歩圏内に奥山温泉",
+      "nearbyOnsen": "隣接施設に奥山温泉があり、バーベキューの後に温泉で一息なんて使い方も可能です。（https://www.town.nanbu.yamanashi.jp/kankou/leisure/Camp-Okuyama.html）"
     },
     "season": "要確認",
     "tel": "0556-66-3366",
@@ -8648,7 +9130,15 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "「とと湯」は清流・福士川を眺めながら入浴できるターキーズハウス自慢のお風呂です。（http://www.turkeyshouse.com/guide/guide_rotenburo.htm）",
+      "shower": true,
+      "showerNote": "コインシャワー／5分 200yen（http://www.turkeyshouse.com/information/charge.htm）",
+      "shop": true,
+      "shopNote": "ターキーズハウス内の売店にて、スモークウッドを販売しています。（http://www.turkeyshouse.com/information/charge.htm）",
+      "pet": true,
+      "petNote": "ターキーズハウスでは、大好きなペットを連れてキャンプを楽しむことができます。（http://www.turkeyshouse.com/guide/guide_pet.htm）"
     },
     "season": "連休を中心とした限定営業（公式の営業カレンダー要確認）。夏季は施設貸切",
     "tel": "0556-66-3155",
@@ -8748,7 +9238,17 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": false,
+      "bathNote": "※民宿休業に伴い、お風呂の利用は現在停止させていただいております。（https://hukusshigawacamp.eyado.net/facility.html）",
+      "shower": true,
+      "showerNote": "シャワールーム 広めの脱衣場を備えています ５分２００円（https://hukusshigawacamp.eyado.net/facility.html）",
+      "firewood": true,
+      "firewoodNote": "販売品 炭/マキ/専用ゴミ袋 等（https://hukusshigawacamp.eyado.net/plan.html）",
+      "shop": true,
+      "shopNote": "販売品 炭/マキ/専用ゴミ袋 等（https://hukusshigawacamp.eyado.net/plan.html）",
+      "pet": true,
+      "petNote": "大人しいペットなら大丈夫です。予約時にご連絡ください。（https://hukusshigawacamp.eyado.net/faq.html）"
     },
     "season": "要確認",
     "tel": "0556-66-3241",
@@ -8849,7 +9349,14 @@
       "carInNote": "オートキャンプ不可。荷下ろしは可能。",
       "reservation": "要",
       "reservationNote": "電話で申込み。",
-      "garbage": "持ち帰り"
+      "garbage": "持ち帰り",
+      "firewood": true,
+      "firewoodNote": "販売 燃料用薪束：¥700 炭（2.5kg）：¥700（https://fujino-art.jp/camp/）",
+      "shop": true,
+      "shopNote": "販売 燃料用薪束：¥700 炭（2.5kg）：¥700 着火剤：¥200（https://fujino-art.jp/camp/）",
+      "pet": false,
+      "petNote": "ペット同伴でのテント泊、犬を放すこと等、他のお客様のご迷惑になることはご遠慮ください。（https://fujino-art.jp/camp/）",
+      "nearbyOnsen": "日帰り温泉「やまなみ温泉」まで約2ｋｍです。（https://fujino-art.jp/camp/）"
     },
     "season": "4月〜10月",
     "soloComment": "テント1張単位の料金で、少人数でも利用しやすいアート施設併設のキャンプ場。温水シャワー・水洗トイレ・屋根付き炊事場が確認できる。オートキャンプ不可のため、荷下ろし後は車を移動する。",
@@ -8890,7 +9397,13 @@
       "toilet": "不明",
       "reservation": "不要",
       "reservationNote": "フリーサイト・オートキャンプとも先着順で予約不可。",
-      "garbage": "要確認"
+      "garbage": "要確認",
+      "firewood": true,
+      "firewoodNote": "売店では何が買えますか？ 薪、炭、着火剤などを取り扱っています。（https://saikohan.com/faq/）",
+      "shop": true,
+      "shopNote": "薪、炭、着火剤、調味料、カップ麺、お菓子などを取り扱っています。（https://saikohan.com/faq/）",
+      "pet": true,
+      "petNote": "ペット同伴については、周囲のお客様へのご配慮をお願いします。リードの着用、排泄物の処理（https://saikohan.com/faq/）"
     },
     "season": "営業日・利用条件は公式サイトで要確認",
     "soloComment": "西湖畔のフリーサイト／オートキャンプ場。徒歩なら大人1名1,500円から、車ソロは2,500円から利用できる。予約不可・先着順のため、繁忙期は早めの到着を検討する。",
@@ -8930,7 +9443,15 @@
       "carIn": true,
       "reservation": "不要",
       "reservationNote": "テントサイトは予約不要。営業日は公式カレンダーを確認。",
-      "garbage": "要確認"
+      "garbage": "要確認",
+      "shower": true,
+      "showerNote": "場内にシャワー室があります。受付で料金をお支払いいただいた後、シャワー室の鍵をお渡しします。（https://tsuhara-camp.jp/faq）",
+      "firewood": true,
+      "firewoodNote": "販売 炭・薪：時価 網：250円（https://tsuhara-camp.jp/price）",
+      "shop": true,
+      "shopNote": "釣り券は、キャンプ場の売店で販売しています。（https://tsuhara-camp.jp/faq）",
+      "petNote": "テントサイトはペットと一緒にご利用いただけます。（https://tsuhara-camp.jp/faq）",
+      "nearbyOnsen": "車で約5分の場所に温泉施設があり、割引券もご用意しています。（https://tsuhara-camp.jp/price）"
     },
     "season": "公式営業日カレンダーで要確認",
     "soloComment": "西湖周辺で、テントサイトは予約不要・車両乗り入れ可能と案内されているキャンプ場。オートキャンプは大人1名1,500円。営業日は公式カレンダーで確認してから向かう。",
@@ -8967,7 +9488,17 @@
     "scoresVerified": false,
     "features": {
       "toilet": "不明",
-      "garbage": "要確認"
+      "garbage": "要確認",
+      "bath": true,
+      "bathNote": "お風呂場・シャワー室 浴室（入浴時間AM10:00～PM20:00迄）（https://www.shiraishiautocamp.com/blank-3）",
+      "shower": true,
+      "showerNote": "シャワー １回（５００円）（https://www.shiraishiautocamp.com/blank-3）",
+      "firewood": true,
+      "firewoodNote": "★販売 薪 ７００円 （1束）（https://www.shiraishiautocamp.com/item）",
+      "shop": true,
+      "shopNote": "★販売 炭 ７００円〜（3ｋｇ） 薪 ７００円（1束） 氷（角氷）３００円（https://www.shiraishiautocamp.com/item）",
+      "pet": true,
+      "petNote": "・ペット同伴可能です。リードで管理してください（https://www.shiraishiautocamp.com/info）"
     },
     "season": "通年（利用前に公式サイトで要確認）",
     "soloComment": "西丹沢の渓流エリアにあるオートキャンプ場。二輪なら1台2名まで4,000円、車なら1台4名まで7,000円の車両単位料金で、ソロ専用割引ではない。設備・予約方法は公式サイトで事前に確認する。",
@@ -9055,8 +9586,8 @@
     "features": {
       "bonfire": false,
       "bonfireNote": "可否は要確認（焚き火台持参が無難）",
-      "pet": false,
-      "petNote": "要確認",
+      "pet": true,
+      "petNote": "ペットは鎖でつなぎ、糞はそのままにせず必ず始末してください（http://yukawaya.a.la9.jp/camp/chui.html）",
       "toilet": "不明",
       "toiletNote": "要確認",
       "carIn": false,
@@ -9070,7 +9601,14 @@
       "alcohol": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "お風呂　利用できない場合があります（http://yukawaya.a.la9.jp/camp/outsite.html）",
+      "firewood": true,
+      "firewoodNote": "まき　◎広葉樹　700円　◎針葉樹　500円（http://yukawaya.a.la9.jp/camp/rental.html）",
+      "shop": true,
+      "shopNote": "【湯川屋売店】その他菓子類、調味料、アイスなども販売しています（http://yukawaya.a.la9.jp/camp/rental.html）",
+      "nearbyOnsen": "道志の湯：当店から車で約２０分。内風呂と露天風呂がありゆったりした休憩室や食事もできます。この他にいやしの湯、紅椿の湯などあります（http://yukawaya.a.la9.jp/index.html）"
     },
     "season": "通年（年末年始休）",
     "soloComment": "",
@@ -9109,8 +9647,8 @@
     "features": {
       "bonfire": false,
       "bonfireNote": "可否は要確認（焚き火台持参が無難）",
-      "pet": false,
-      "petNote": "要確認",
+      "pet": true,
+      "petNote": "『ペットはＯＫですか？』ＯＫです。場内ではリード（１２０cm以内）やケージを使用し（https://tashiro-autocamp.com/index.php/root/faq）",
       "shower": true,
       "toilet": "不明",
       "toiletNote": "要確認",
@@ -9126,7 +9664,12 @@
       "garbage": "",
       "nearbySupermarket": "",
       "nearbyShop": "",
-      "showerNote": "宿泊者は無料"
+      "showerNote": "宿泊者は無料",
+      "firewood": true,
+      "firewoodNote": "各種販売　炭　￥800／3kg　薪　￥500（https://tashiro-autocamp.com/index.php/root/info）",
+      "shop": true,
+      "shopNote": "各種販売　炭￥800／3kg　薪￥500　釣り餌（イクラ）￥300（https://tashiro-autocamp.com/index.php/root/info）",
+      "nearbyOnsen": "紅椿の湯（大人1,000円・子供500円／3時間、10:00〜21:00）、道志の湯（大人700円・子供450円／一日、火曜休館）。いずれも日帰り温泉施設（https://tashiro-autocamp.com/index.php/root）"
     },
     "season": "通年（2月中旬〜3月上旬休）",
     "soloComment": "",
@@ -9238,7 +9781,9 @@
       "nearbySupermarket": "",
       "nearbyShop": "",
       "fishing": true,
-      "fishingNote": "隣接する真木川での渓流釣り（施設公式。遊漁・季節条件は要確認）"
+      "fishingNote": "隣接する真木川での渓流釣り（施設公式。遊漁・季節条件は要確認）",
+      "bathNote": "お風呂　男風呂、女風呂それぞれに内風呂、サウナ をご用意しました。（https://kananomori.com/inn.html）",
+      "showerNote": "お風呂・シャワー利用（大人）850円／（子供）650円（https://kananomori.com/price.html）"
     },
     "season": "通年",
     "soloComment": "旅館の金の森山荘が併設するテントサイト。テント泊でも850円で山荘の風呂とシャワーを使えるのが個性。大月ICから国道20号経由で約5km、真木の渓流沿いで渓流釣りと川遊びができる。テント・タープのレンタルは無いので装備は持参すること。",
@@ -9284,15 +9829,22 @@
       "alcohol": false,
       "bonfire": false,
       "bonfireNote": "可否は要確認（公式に焚き火の可否の明記が無い）",
-      "pet": false,
-      "petNote": "可否は要確認",
+      "pet": true,
+      "petNote": "ペットも入場できます。場内ではリードの使用をお願いします。（https://www.midoritotaiyounooka.com/キャンプ場のルール）",
       "toilet": "不明",
       "toiletNote": "要確認",
       "convenience": false,
       "garbage": "有料",
       "garbageNote": "燃えるゴミ45L袋330円・90L袋550円、缶220円、ビン10本まで220円",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "ドラム缶風呂（１日）3.300円（https://www.midoritotaiyounooka.com/レンタル販売）",
+      "firewood": true,
+      "firewoodNote": "針葉樹１束550円／広葉樹１束880円（https://www.midoritotaiyounooka.com/レンタル販売）",
+      "shop": true,
+      "shopNote": "ロック氷300円／板氷400円／アイス100円から170円／蚊取り線香55円（https://www.midoritotaiyounooka.com/レンタル販売）",
+      "nearbyOnsen": "キャンプ場周辺には秋山温泉やマス釣り場もあります。当キャンプ場をご利用して頂けると割引クーポンが利用できます。（http://www.midoritotaiyounooka.com/）"
     },
     "season": "通年（火曜定休）",
     "closedDays": "火曜（希望すれば応相談）",
@@ -9340,8 +9892,8 @@
       "alcohol": false,
       "bonfire": false,
       "bonfireNote": "可否は要確認。市公式は「川遊び無料エリア」についてのみ直火禁止・コンロ使用のBBQ可と書いており、キャンプサイトの焚き火の可否は明記が無い。薪は販売している",
-      "pet": false,
-      "petNote": "可否は要確認",
+      "pet": true,
+      "petNote": "ペット同伴の場合はリードの着用をお願いします（https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html）",
       "toilet": "洋式",
       "convenience": false,
       "garbage": "",
@@ -9399,7 +9951,10 @@
       "convenience": false,
       "garbage": "",
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "場内設備：AC電源、シャワー、お風呂、ウォッシュレット式トイレ、ゴミ捨て場（https://www.nap-camp.com/yamanashi/14539）",
+      "petNote": "お役立ちサービス・条件：花火OK、ペットOK、携帯電話OK（https://www.nap-camp.com/yamanashi/14539）"
     },
     "season": "通年",
     "closedDays": "なし",
@@ -9459,7 +10014,8 @@
       "garbage": "可（無料回収）",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "petNote": "ペットOKです。マナー,他の方へのご配慮をお願いいたします。（https://orangemura.com/camp/）"
     },
     "season": "通年",
     "soloComment": "海を望む高台と森に囲まれたサイトを選べる。温水シャワー、貸切風呂、無料薪、ゴミ回収までそろい、設備を重視するソロに向く。",
@@ -9501,8 +10057,8 @@
     "features": {
       "bonfire": false,
       "bonfireNote": "営火場はあるが、個別の焚き火可否は予約前に要確認。",
-      "pet": true,
-      "petNote": "ドッグランあり。キャンプサイトでの可否は要確認。",
+      "pet": false,
+      "petNote": "キャンプ場にペットを連れてのご利用はできません。(施設全体の禁止事項)（https://otakikenminnomori.jp/camp）",
       "shower": true,
       "showerNote": "温水シャワー室あり。",
       "toilet": "不明",
@@ -9516,7 +10072,12 @@
       "garbage": "要確認",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewood": true,
+      "firewoodNote": "販売品　炊事用マキ　1束　600円　約30㎝、一般炊事1回分(約5名)（https://otakikenminnomori.jp/camp）",
+      "shop": true,
+      "shopNote": "販売品　炊事用マキ1束600円／単一乾電池1本300円（https://otakikenminnomori.jp/camp）",
+      "nearbyOnsen": "ごりやくの湯：養老渓谷の日帰り温泉「ごりやくの湯」は露天風呂やレストランを備えた眺望抜群の天然温泉を楽しめます。（https://otakikenminnomori.jp/）"
     },
     "season": "通年（12月29日〜1月3日は休館）",
     "soloComment": "杉木立の中で過ごせる県民の森の低料金キャンプ場。駅から徒歩約15分だが、車をサイト脇に付けられないため荷物量は抑えたい。",
@@ -9572,7 +10133,15 @@
       "garbage": "要確認",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shower": true,
+      "showerNote": "＜共有設備＞シャワールーム・温水洗浄トイレ・洗い場(お湯OK)・炭捨て場等（http://otaki-sabo.info/cost.html）",
+      "firewood": true,
+      "firewoodNote": "＜販売品＞　薪　500円（http://otaki-sabo.info/cost.html）",
+      "shop": true,
+      "shopNote": "受付（兼売店）≪9:00〜17:00≫＜販売品＞薪500円　炭（http://otaki-sabo.info/cost.html）",
+      "pet": true,
+      "petNote": "ペット　：300円（http://otaki-sabo.info/cost.html）"
     },
     "season": "通年（冬季は料金が下がる案内あり）",
     "soloComment": "大多喜の小規模キャンプ場。公式がソロ・ツーリングキャンプ向けと明記しており、IC・勝浦海岸から車約20分の立地。",
@@ -9692,7 +10261,10 @@
       "garbage": "可（分別。ガス缶・電池・空きビン等は持ち帰り）",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワー（8つ）／シャワー(5分) 300円（https://www.morimaki-camp.com/facility/）",
+      "shopNote": "その他、キャンプ用品・調味料・日用雑貨などをご用意しております（https://www.morimaki-camp.com/facility/）",
+      "petNote": "ペット（犬）1頭 500円（https://www.morimaki-camp.com/facility/）"
     },
     "season": "通年（毎週月曜、第1・3火曜、年末年始休）",
     "soloComment": "都心から約60分。広い草原のフリーサイトと長い滞在時間が魅力で、ソロバイクなら通常期2,600円から。",
@@ -9752,7 +10324,9 @@
       "garbage": "可（透明袋で分別）",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "売店：管理棟営業時間内のみ営業（https://www.yumebokujo.com/camp.html）",
+      "petNote": "わんちゃん：宿泊800円（https://www.yumebokujo.com/camp.html）"
     },
     "season": "通年（休業日あり）",
     "soloComment": "シャワー、売店、ウォシュレット付きトイレなど設備が充実。キャンプ初心者のソロにも選びやすい。",
@@ -9792,8 +10366,8 @@
     },
     "features": {
       "bonfire": true,
-      "pet": false,
-      "petNote": "可否は予約前に要確認。",
+      "pet": true,
+      "petNote": "ペットのご入場は、お客様の責任で管理して頂ければ大丈夫です（https://www.1059dai.com/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/）",
       "shower": true,
       "bath": true,
       "bathNote": "貸切風呂は45分2,000円。",
@@ -9811,7 +10385,10 @@
       "garbage": "可（料金にごみ処理料を含む）",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "showerNote": "シャワー室のご利用は30分単位の予約制で、シャワーは2基と別に更衣室あります（https://www.1059dai.com/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/）",
+      "shopNote": "ホワイトガソリン、炭、薪、カセットボンベ、乾電池、着火剤（https://www.1059dai.com/%E6%96%99%E9%87%91/）",
+      "nearbyOnsen": "キャンプ場から車で5分、房総の秘湯いろりの宿『七里川温泉』（https://www.1059dai.com/）"
     },
     "season": "通年",
     "soloComment": "養老渓谷奥清澄自然公園の静かな環境で、川遊び・星空・冬のソロを楽しめる。温水設備と貸切風呂もあり快適性が高い。",
@@ -9867,7 +10444,9 @@
       "garbage": "要確認",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "bath": true,
+      "bathNote": "木炭を入れた、ミネラル豊富なお風呂でおくつろぎください（https://www.uchiurayama.jp/stay04）"
     },
     "season": "通年",
     "soloComment": "県民の森のテントサイトなら1〜2人用テント630円。荷物を絞った低予算のソロに適する。",
@@ -9907,8 +10486,8 @@
     "features": {
       "bonfire": true,
       "bonfireNote": "焚き火台をレンタル可。",
-      "pet": false,
-      "petNote": "ペット同伴の可否は予約前に要確認。",
+      "pet": true,
+      "petNote": "バンガロー宿泊の方はお断りしております。その他のご利用でペットをご同伴する場合には、基本的には1頭（匹）です（https://www.shimizu-kouen.com/public-questions）",
       "shower": true,
       "showerNote": "コインシャワーあり。",
       "toilet": "不明",
@@ -9925,7 +10504,8 @@
       "garbage": "可（分別）",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "キャンプ場受付にて炭、食器類、調理用品、飲料、日用品などを販売（https://www.shimizu-kouen.com/camp）"
     },
     "season": "通年",
     "soloComment": "都市近郊でオートキャンプを楽しめる整備型の施設。必要なレンタル・販売品が多く、準備を軽くしたいソロに向く。",
@@ -9984,7 +10564,9 @@
       "garbage": "要確認",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shop": true,
+      "shopNote": "炊事用マキ 1束 700円／炭 1箱 750円（キャンプ場で販売）（https://www.city.futtsu.lg.jp/0000000751.html）"
     },
     "season": "7月1日〜8月31日",
     "soloComment": "富津の山間部で過ごす夏限定の市民の森キャンプ場。市外でも持込みテント1,650円と低料金だが、車はサイトに入れない。",
@@ -10044,7 +10626,9 @@
       "garbage": "可（生ごみ・空き缶などを分別回収）",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "shopNote": "管理棟、売店（https://ethp.net/camp/kamifuse/?mid=1）",
+      "petNote": "ペット同伴　無料（https://ethp.net/camp/kamifuse/?mid=9）"
     },
     "season": "通年",
     "soloComment": "いすみの70サイト規模のオートキャンプ場。平日などはバイク2,000円・車3,000円のソロ特別料金があり、薪とゴミ回収が無料。",
@@ -10101,7 +10685,12 @@
       "garbage": "持ち帰り（専用袋販売あり）",
       "convenience": false,
       "nearbySupermarket": "",
-      "nearbyShop": ""
+      "nearbyShop": "",
+      "firewood": true,
+      "firewoodNote": "炭、薪につきましては受付にて販売しております。（https://www.tachibana-park.jp/faq/）",
+      "shop": true,
+      "shopNote": "体験学習施設内に軽食などが売っている販売コーナーがあります。（https://www.tachibana-park.jp/faq/）",
+      "nearbyOnsen": "おふろcaféかりんの湯：橘ふれあい公園キャンプ場から車で12分程度（https://www.tachibana-park.jp/facility-guide/camp/）"
     },
     "season": "通年（12月29日〜1月3日休）",
     "soloComment": "香取の田園風景と星空を楽しめる整備型キャンプ場。市外でも1泊2,500円から選べ、通常サイト・広々サイト・オートサイトを使い分けられる。",
@@ -10149,7 +10738,10 @@
       "carInNote": "車両はテントサイトへ入れない。リアカーで搬送。",
       "reservation": "要",
       "reservationNote": "利用日の3日前までに事前予約。",
-      "garbage": "持ち帰り"
+      "garbage": "持ち帰り",
+      "pet": false,
+      "petNote": "ペットを連れての入場はできません。（https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html）",
+      "nearbyOnsen": "車で10分ほど北上したところに梅ケ島新田温泉浴場黄金の湯があります。（https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html）"
     },
     "season": "通年（年末年始を除く）",
     "cautions": [
@@ -10192,7 +10784,12 @@
       "bonfire": true,
       "bonfireNote": "直火が可能なサイトがあると公式に記載",
       "reservation": "要",
-      "reservationNote": "24時間オンライン予約。4ヶ月前から受付"
+      "reservationNote": "24時間オンライン予約。4ヶ月前から受付",
+      "shower": true,
+      "showerNote": "炊事場・トイレ・シャワーは隣接する事務所棟内にあり、24時間利用可能（https://sugari.camp/profile/）",
+      "pet": true,
+      "petNote": "ペットと泊まれる穴場キャンプ場、シャワー・サウナ完備（https://sugari.camp/profile/）",
+      "nearbyOnsen": "お風呂 すみれの湯：車で17分（https://sugari.camp/lp/solo-camp.php）"
     },
     "season": "要確認（公式に営業期間の記載なし。予約カレンダーで確認）",
     "soloComment": "天竜の山あいにあるソロ専用プランを持つキャンプ場。直火が可能なサイトがあり、22時以降は静粛のルール。チェックイン・アウトとも12時。",
@@ -10239,7 +10836,14 @@
       "carInNote": "荷物の積み下ろし時のみサイトへ車両を入れられる。常時の乗り入れは不可",
       "reservation": "要",
       "reservationNote": "問い合わせフォーム・公式Instagram DM・公式LINE のいずれかで事前予約",
-      "garbage": "ゴミ・灰は指定場所へ"
+      "garbage": "ゴミ・灰は指定場所へ",
+      "firewood": true,
+      "firewoodNote": "売店(薪、ＢＢＱ炭、着火剤、蚊取り線香、飲用水、お茶、紙パックジュース、ステッカー)（https://fuji-anmonomori.com/access/）",
+      "shop": true,
+      "shopNote": "売店(薪、ＢＢＱ炭、着火剤、蚊取り線香、飲用水、お茶、紙パックジュース、ステッカー)（https://fuji-anmonomori.com/access/）",
+      "pet": true,
+      "petNote": "ペットOKですが適正な長さのリードをつけて下さい。（https://fuji-anmonomori.com/menu/）",
+      "nearbyOnsen": "温泉施設の富士山 天母の湯より車で約2分の立地です。（富士山 天母の湯 車で約２分）（https://fuji-anmonomori.com/access/）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "富士宮の全フリーサイトのキャンプ場。ソロはバイクと車で別プランがあり、どちらも定員1名。焚き火は焚き火台と焚き火シートが必須で直火は不可。21時以降は静粛。",
@@ -10288,7 +10892,14 @@
       "toilet": "洋式",
       "toiletNote": "洋式水洗",
       "reservation": "要",
-      "reservationNote": "LINE公式アカウント・なっぷ・じゃらんから予約"
+      "reservationNote": "LINE公式アカウント・なっぷ・じゃらんから予約",
+      "firewood": true,
+      "firewoodNote": "針葉樹・広葉樹（入荷待ち）の薪のほか、数量限定の鹿角キャンプギア（https://camp-joe.com/okitsugawa/）",
+      "shop": true,
+      "shopNote": "静岡ご当地生ビールの「静岡麦酒」をはじめ、静岡蒸留所の「ガイアフロー」（https://camp-joe.com/okitsugawa/）",
+      "pet": true,
+      "petNote": "はい、可能ですがキャンプ慣れしていない犬や無駄吠えする犬はNGです。（https://camp-joe.com/okitsugawa/）",
+      "nearbyOnsen": "キャンプ場周辺には、清水西里の天然温泉「やませみの湯」（https://camp-joe.com/okitsugawa/）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "興津川沿いの全区画オートサイトのキャンプ場。温水シャワーが無料で洋式水洗トイレ・給湯つきの流し台がある。21時以降はクワイエットタイム。静岡市街から約40分。",
@@ -10332,7 +10943,11 @@
       "firewood": true,
       "firewoodNote": "薪の販売あり（500円）",
       "reservation": "要",
-      "reservationNote": "メールまたは電話で受付"
+      "reservationNote": "メールまたは電話で受付",
+      "shower": true,
+      "showerNote": "トイレあり、シャワー別料金。（https://www.tschiba.com/kaaji/dish.html）",
+      "shop": true,
+      "shopNote": "販売は薪程度ですが、ご要望で対応して参ります。（https://www.tschiba.com/kaaji/plan.html）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "君津の小規模なキャンプ場で、公式が「ソロはもちろん」と案内している。最大30名程度の規模。薪の販売があり、チェックイン・アウトとも正午。",
@@ -10379,7 +10994,16 @@
       "carIn": false,
       "carInNote": "荷下ろし時のみサイト近くまで車・バイクを入れ、その後は林間広場駐車場へ移動",
       "reservation": "要",
-      "reservationNote": "なっぷまたは電話（0439-38-2222）で受付"
+      "reservationNote": "なっぷまたは電話（0439-38-2222）で受付",
+      "shower": true,
+      "showerNote": "温水シャワーは、１回１００円で３分間がご利用頂けます。（https://www.seiwanomori.jp/2695-2/）",
+      "firewood": true,
+      "firewoodNote": "炭や薪、着火剤なども販売しておりますので、ご安心ください。（https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/）",
+      "shop": true,
+      "shopNote": "受付は「木のふるさと館」で行っております。炭や薪、着火剤なども販売しております（https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/）",
+      "pet": false,
+      "petNote": "現在、当施設ではペットの同伴はご遠慮いただいております。（https://www.seiwanomori.jp/2695-2/）",
+      "nearbyOnsen": "銭湯：小糸川温泉／四季の湯(房総 四季の蔵)／君津の湯（周辺施設のご案内に掲載、距離・所要時間の記載なし）（https://www.seiwanomori.jp/3247-2/）"
     },
     "season": "要確認（バーベキューサイトは通年と公式に記載。テントサイトの期間は明記なし）",
     "soloComment": "千葉県立の県民の森にある全10サイトのキャンプ場。各サイトにかまどとベンチテーブルがある。小型サイト600円から。焚き火は指定エリアで焚き火台を使う。",
@@ -10426,7 +11050,12 @@
       "carIn": true,
       "carInNote": "オートサイト",
       "reservation": "要",
-      "reservationNote": "インターネット予約と電話（0439-38-2255、8:00〜18:00）"
+      "reservationNote": "インターネット予約と電話（0439-38-2255、8:00〜18:00）",
+      "shower": true,
+      "showerNote": "コインシャワーは空室であれば使用可能です 利用料金は10分￥400円です（http://fruitsvillage.com/fruitsvillage-dust.html）",
+      "pet": true,
+      "petNote": "当キャンプ場はペット可のキャンプ場ですがキャンプサイトにペット連れ用の専用サイトは御座いません。（http://fruitsvillage.com/fruitsvillage-pet.html）",
+      "nearbyOnsen": "大江戸温泉物語・君津の森 キャンプ場から約25分 日帰り入浴のできる近場の施設になります（http://fruitsvillage.com/access.html）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "君津のオートキャンプ場。平日限定で大人1名・車1台のソロ割引があり、電源なし3,000円。週末・祝祭日・GW・お盆・年末年始は割引の対象外で通常料金になる。",
@@ -10470,7 +11099,13 @@
       "carIn": true,
       "carInNote": "オートキャンプ。1区画140㎡以上",
       "reservation": "要",
-      "reservationNote": "なっぷから予約"
+      "reservationNote": "なっぷから予約",
+      "firewood": true,
+      "firewoodNote": "薪１束800円、木炭1000円で販売しています。（https://laqlaqgarden.com/price-guide/）",
+      "shop": true,
+      "shopNote": "販売品 薪800円、炭1000円、着火剤100円 ソフトドリンク、水、炭酸水、お茶、カップヌードル 他（https://laqlaqgarden.com/rental/）",
+      "pet": true,
+      "petNote": "ペット可能区画での入場可能です。ペットの放し飼いは禁止です。（https://laqlaqgarden.com/attention/）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "千葉市若葉区のオートキャンプ場。1区画140㎡以上と広く、フリーサイトも予約数を絞って間隔を確保している。平日3,000円に大人1名・車1台が含まれる。中野ICから車で約3分。",
@@ -10513,7 +11148,13 @@
     "priceNote": "テント・タープ単位の課金。**テント（3m×4mまで）1泊1張630円**、タープも同額。3m×4mを超えると2張分（1,260円〜）。**入場料は無い**のでソロ1名はテント1張の630円。デイキャンプは設営しなければ無料",
     "features": {
       "reservation": "要",
-      "reservationNote": "電話のみ（0470-33-4551）。利用月の1年前の1日9:00から受付"
+      "reservationNote": "電話のみ（0470-33-4551）。利用月の1年前の1日9:00から受付",
+      "firewood": true,
+      "firewoodNote": "杉薪 ￥600 1束／堅薪（広葉樹）￥400 1束（https://taibusa-misaki.jp/mp/buppan）",
+      "shop": true,
+      "shopNote": "大房岬ビジターセンター 販売品 メニュー（https://taibusa-misaki.jp/mp/buppan）",
+      "pet": false,
+      "petNote": "ペットのご同伴はできません。（https://taibusa-misaki.jp/mp/goriyouhouhou_ryokinhyo）"
     },
     "season": "通年（12/29〜1/3を除く）。毎週月曜日は休業",
     "soloComment": "南房総の大房岬にある自然公園のキャンプ場。料金はテント1張630円で、入場料はかからない。通年利用できるが毎週月曜と年末年始は休み。予約は電話のみで、利用月の1年前から受け付けている。",
@@ -10558,7 +11199,14 @@
       "carIn": true,
       "carInNote": "オートサイト",
       "reservation": "要",
-      "reservationNote": "公式サイトの予約ページから。電話は0439-27-2020"
+      "reservationNote": "公式サイトの予約ページから。電話は0439-27-2020",
+      "shower": true,
+      "showerNote": "シャワーは午後４時～午後９時まで無料で利用できます。（https://www.kazusa-autocamp.com/k-onegai.htm）",
+      "firewood": true,
+      "firewoodNote": "売店で薪・炭等を購入される方は、午後５時までにお願いします。（https://www.kazusa-autocamp.com/k-onegai.htm）",
+      "shop": true,
+      "shopNote": "売店で薪・炭等を購入される方は、午後５時までにお願いします。（https://www.kazusa-autocamp.com/k-onegai.htm）",
+      "nearbyOnsen": "大江戸温泉物語（君津の森） 車で８分 温泉（大人700円,子供400円）やランチバイキングなど気軽に楽しめます。（https://www.kazusa-autocamp.com/k-kannko.htm）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "久留里の名水の里にあるオートキャンプ場。公式の料金表に「ソロキャンプについては、1,000円引き」と明記があり、ソロ1名は税込4,400円から。サイト料は5名まで同額。",
@@ -10603,7 +11251,11 @@
       "carIn": true,
       "carInNote": "オートキャンプサイト35区画",
       "reservation": "要",
-      "reservationNote": "君津市公式に「利用の際は事前にご予約下さい」。電話 0439-39-3335 / 090-7728-6441"
+      "reservationNote": "君津市公式に「利用の際は事前にご予約下さい」。電話 0439-39-3335 / 090-7728-6441",
+      "shop": true,
+      "shopNote": "コンロ貸出し、木炭販売あり（https://www.city.kimitsu.lg.jp/site/kanko/10224.html）",
+      "pet": true,
+      "petNote": "ペット同伴 可（https://www.city.kimitsu.lg.jp/site/kanko/10224.html）"
     },
     "season": "不定休（君津市公式の記載。営業期間の明記は無い）",
     "soloComment": "君津市黄和田畑のオートキャンプ場で、サイトは35区画。君津市の観光情報ページに掲載されている。宿泊はチェックイン13時・チェックアウト翌11時、デイキャンプは10時〜16時。",
@@ -10644,7 +11296,13 @@
     "priceMax": 0,
     "features": {
       "reservation": "要",
-      "reservationNote": "電話 0470-36-1185（平日9時〜17時）またはメール miyoshi.1185@gmail.com"
+      "reservationNote": "電話 0470-36-1185（平日9時〜17時）またはメール miyoshi.1185@gmail.com",
+      "bath": false,
+      "bathNote": "キャンプ場の設備です。お風呂や電源の設置はありません。（https://miyoshi1185.wixsite.com/miyoshi-family-camp/site）",
+      "shower": true,
+      "showerNote": "５分１００円でお湯が出るコイン式シャワーです。（https://miyoshi1185.wixsite.com/miyoshi-family-camp/site）",
+      "pet": true,
+      "petNote": "ペット連れOKです。（https://miyoshi1185.wixsite.com/miyoshi-family-camp/site）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "南房総市千代にある地域運営のキャンプ場。運営は地域づくり協議会「みよし」。問い合わせは平日9時から17時の電話またはメールで受け付けている。",
@@ -10689,7 +11347,15 @@
       "carIn": true,
       "carInNote": "区画オートサイト",
       "reservation": "要",
-      "reservationNote": "公式サイトのサイト別予約フォームから"
+      "reservationNote": "公式サイトのサイト別予約フォームから",
+      "shower": true,
+      "showerNote": "施設　フロント・区画サイト(50サイト)　トイレ・炊事・シャワー（https://www.kameyamacamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/）",
+      "firewood": true,
+      "firewoodNote": "レンタル品の受付、薪・炭などの販売もこちらで行っております。（https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/）",
+      "shop": true,
+      "shopNote": "受付・売店　キャンプ場の受付はこちらで承っております。売店の営業時間：10時～17時（https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/）",
+      "pet": true,
+      "petNote": "ペット　可／ペット同伴の際には、必ずケージやリードを使用し（https://www.kameyamacamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "亀山湖に面したオートキャンプ場。料金はサイト料と入場料の合算で、電源なしの区画ならソロ1名4,000円。売店は10時から17時、レンタル品の受付は16時まで。",
@@ -10735,7 +11401,13 @@
       "shower": true,
       "showerNote": "コインシャワー 3分100円（15:00〜21:00）",
       "reservation": "要",
-      "reservationNote": "君津市公共施設予約システム（k6.p-kashikan.jp/kimitsu-city/）または電話 0439-39-3390"
+      "reservationNote": "君津市公共施設予約システム（k6.p-kashikan.jp/kimitsu-city/）または電話 0439-39-3390",
+      "firewood": true,
+      "firewoodNote": "売店販売　薪：1束　800円　木炭：1箱800円(3㎏入り)（https://inagasaki.world.coocan.jp/facilities.html）",
+      "shop": true,
+      "shopNote": "管理棟内には管理人室　売店　ラウンジがありキャンプ用品から食品　日用品などを販売しています（https://inagasaki.world.coocan.jp/facilities.html）",
+      "pet": true,
+      "petNote": "令和7年4月1日(火)より飼い犬との宿泊がオートサイトのみ可能となります（https://inagasaki.world.coocan.jp/index.html）"
     },
     "season": "通年営業（12/29〜1/3は休業）",
     "soloComment": "亀山湖畔のキャンプ場。フリーサイトはテント1張1,100円と安く、オートサイトは1区画3,300円。予約は君津市の公共施設予約システムか電話。通年営業で年末年始だけ休む。",
@@ -10777,7 +11449,9 @@
     "priceNote": "サイト課金＋人数課金の合算。**君津市公式の表示は「4,500円〜」**（サイト料3,000円＋入場料 大人1,500円の組み合わせに相当）。上限は公式に出ていないので下限と同値を置いている",
     "features": {
       "reservation": "要",
-      "reservationNote": "**電話予約は受け付けていない。**予約と最新情報はなっぷから"
+      "reservationNote": "**電話予約は受け付けていない。**予約と最新情報はなっぷから",
+      "pet": true,
+      "petNote": "ペット同伴　フリーサイトのみ可（https://www.city.kimitsu.lg.jp/site/kanko/77120.html）"
     },
     "season": "定休日は月曜・火曜（君津市公式の記載）",
     "soloComment": "亀山湖の湖畔にあるキャンプ場。君津市の観光情報ページに「4,500円〜」と掲載されている。電話予約は受け付けておらず、予約はなっぷから。月曜と火曜が定休日。",
@@ -10822,7 +11496,14 @@
       "carIn": true,
       "carInNote": "オートサイト",
       "reservation": "要",
-      "reservationNote": "公式サイトの予約ページから"
+      "reservationNote": "公式サイトの予約ページから",
+      "shower": true,
+      "showerNote": "コインシャワー　温かいお湯が出ます。6分間200円です。（https://oohara-ac-inn.jimdofree.com/%E6%96%BD%E8%A8%AD%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85/）",
+      "shop": true,
+      "shopNote": "管理棟　簡単なキャンプ道具やお菓子・氷を用意しています。（https://oohara-ac-inn.jimdofree.com/%E6%96%BD%E8%A8%AD%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85/）",
+      "pet": true,
+      "petNote": "当キャンプ場はペットとのキャンプを楽しんでいただけます。（https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/）",
+      "nearbyOnsen": "近隣の温泉　九十九里ヴィラそとぼう（クルマで5分）（https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/）"
     },
     "season": "要確認（公式に営業期間の記載なし。通年だが繁忙期以外は週末中心との情報あり）",
     "soloComment": "いすみ市深堀のオートキャンプ場。サイトはA〜Eの5種で、電源なしのC〜Eなら4,000円。これに大人1人1,000円の利用料が加わる。チェックイン13時〜17時、チェックアウト8時〜11時。",
@@ -10866,7 +11547,16 @@
       "carIn": true,
       "carInNote": "ソロサイトも車1台の乗り入れ可",
       "reservation": "要",
-      "reservationNote": "予約開始は3か月前の1日9:00。毎月1日は電話での予約受付をしていない"
+      "reservationNote": "予約開始は3か月前の1日9:00。毎月1日は電話での予約受付をしていない",
+      "shower": true,
+      "showerNote": "男性用2室、女性用2室のコインシャワー室をご用意しております。（http://www.autocamphills.com/guide.html）",
+      "firewood": true,
+      "firewoodNote": "現在販売を行っている商品は、薪・炭・氷・着火剤・ガス缶（CB・OD）（http://www.autocamphills.com/rental.html）",
+      "shop": true,
+      "shopNote": "管理棟内売店にて、各種販売を行っています。（http://www.autocamphills.com/rental.html）",
+      "pet": true,
+      "petNote": "ペット同伴最大５匹まで、無料（6匹以上不可）大型犬可（http://www.autocamphills.com/charge.html）",
+      "nearbyOnsen": "天然日帰り温泉「海辺の湯」（漁師料理かなや隣接）まで2.3km・車で約5分（http://www.autocamphills.com/surroundings.html）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "富津市金谷の高台にあるオートキャンプ場。**1人専用のEソロサイトが3区画あり**、車1台を乗り入れできる。入場料は無く、サイト料だけで泊まれる。チェックイン13時〜17時。",
@@ -11134,7 +11824,15 @@
       "bath": true,
       "bathNote": "場内の勝浦温泉を大人850円→**キャンプ利用者は500円**、小人450円で利用できる",
       "reservation": "要",
-      "reservationNote": "電話 0470-77-1777"
+      "reservationNote": "電話 0470-77-1777",
+      "shower": true,
+      "showerNote": "施設： 管理棟、水洗トイレ、温水シャワー男女（無料）、洗い場（http://katuuraonsen.com/camp/camp.html）",
+      "firewood": true,
+      "firewoodNote": "薪は無料（廃材）ですが、数に限りがございますので必要最低限でお願いします（http://katuuraonsen.com/camp/camp.html）",
+      "shop": true,
+      "shopNote": "売店・自動販売機： 酒類、ジュース類、ロックアイス、キャンプ用ガス、炭（http://katuuraonsen.com/camp/camp.html）",
+      "pet": true,
+      "petNote": "ペットＯＫ（他のお客様に迷惑がかからないようお願いします）（http://katuuraonsen.com/camp/camp.html）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "勝浦温泉が場内にあるオートキャンプ場。**料金は人数ではなくサイト単位**と公式が明記しているので、ソロ1名でも5,000円。温泉はキャンプ利用者だと大人500円になる。チェックイン13時〜16時。",
@@ -11179,7 +11877,11 @@
       "shower": true,
       "showerNote": "シャワーブースあり",
       "reservation": "要",
-      "reservationNote": "公式サイトの予約導線から。貸切の予約も受け付けていると公式に記載"
+      "reservationNote": "公式サイトの予約導線から。貸切の予約も受け付けていると公式に記載",
+      "shop": true,
+      "shopNote": "キャンプ場・食堂・小売の三事業をもって再生し（https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/）",
+      "pet": true,
+      "petNote": "お車を入れてお使いいただけ、ワンちゃんとも一緒にお泊まり頂けます。（https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E5%AF%8C%E5%B4%8E%E9%A4%A8%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "館山市布良の漁村の高台にある全5サイトの小さなキャンプ場。太平洋を見渡せ、「大島」からは伊豆大島、「富士」からは富士山が見える。元は旅館で、各サイトに当時の部屋名が付いている。営業時間中は併設の富崎館食堂も使える。",
@@ -11223,7 +11925,17 @@
       "carIn": true,
       "carInNote": "オートキャンプ場",
       "reservation": "要",
-      "reservationNote": "公式サイトの予約導線から"
+      "reservationNote": "公式サイトの予約導線から",
+      "bath": true,
+      "bathNote": "露天岩風呂 ヨード風呂 地下70ｍより汲み上げた真っ黒な湯の風呂（https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/）",
+      "shower": true,
+      "showerNote": "シャワールーム 池側・海側両方のエリアにございます。利用可能時間 朝7時～夜21まで（https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/）",
+      "firewood": true,
+      "firewoodNote": "売店： 氷、薪、木炭、ホワイトガソリン、ビール、飲料水、調味料（https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%A6%82%E8%A6%81/）",
+      "shop": true,
+      "shopNote": "施設： 管理棟、売店、水洗トイレ、無料ランドリー、炊事場（https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%A6%82%E8%A6%81/）",
+      "pet": true,
+      "petNote": "その他： ペット可（https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%A6%82%E8%A6%81/）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "いすみ市岬町の太平洋を望むオートキャンプ場。九十九里浜の最南部にあたる。公式サイトから予約できる。",
@@ -11266,7 +11978,15 @@
       "carIn": true,
       "carInNote": "オートキャンプ場",
       "reservation": "要",
-      "reservationNote": "公式サイトの予約フォームと予約TELから。予約金（前金）の入金案内がある"
+      "reservationNote": "公式サイトの予約フォームと予約TELから。予約金（前金）の入金案内がある",
+      "bath": true,
+      "bathNote": "手作り岩風呂 井戸水を沸かした岩風呂で、身体の芯までよく温まります。シャワー付き。（http://www.manbow-camp.jp/information/incidental_facilities.html）",
+      "shower": true,
+      "showerNote": "●コイン温水シャワー：２基 200円 4分毎（http://www.manbow-camp.jp/information/incidental_facilities.html）",
+      "shop": true,
+      "shopNote": "●売店：炭・氷・燃料・酒類など（http://www.manbow-camp.jp/information/incidental_facilities.html）",
+      "pet": true,
+      "petNote": "ペットを室内に入れる場合は、ケージあるいはバスケット保管となります。（http://www.manbow-camp.jp/information/facilities.html）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "勝浦市松部の海沿いにある小さなオートキャンプ場。シーカヤックなどの海のアクティビティを併設している。予約は公式の予約フォームか電話で、予約金の入金で確定する方式。",
@@ -11311,7 +12031,15 @@
       "pet": true,
       "petNote": "ローズマリー公園側・ハナレ・ハナレフリー・RVサイトは3頭まで可。ホテル棟側・木もれ陽・なか庭は不可",
       "reservation": "要",
-      "reservationNote": "**キャンプ泊は電話予約を受け付けていない**（当日予約のみ電話可）。オンライン予約から"
+      "reservationNote": "**キャンプ泊は電話予約を受け付けていない**（当日予約のみ電話可）。オンライン予約から",
+      "bath": true,
+      "bathNote": "大浴場 -ゆったりと入れる大浴場を完備- キャンプ泊のお客様は大人800円、子供500円（https://shiosai-minamiboso.com/）",
+      "shower": true,
+      "showerNote": "コインシャワー（プールハウス内・2ブース）24時間、5分200円でご利用いただけます。（https://shiosai-minamiboso.com/）",
+      "firewood": true,
+      "firewoodNote": "焚火を楽しむ 焚き火台 1,000円／薪(１束) 1,000円（https://shiosai-minamiboso.com/）",
+      "shop": true,
+      "shopNote": "※バスタオル、アメニティセット（歯ブラシ・タオル）販売あり。（https://shiosai-minamiboso.com/）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "道の駅ローズマリー公園の隣にあるキャンプ場。区画は定員5〜6名でホテル棟側・ローズマリー公園側・木もれ陽・なか庭・ハナレ・ハナレフリー・RVサイトに分かれ、電源の有無とペット可否がサイトごとに違う。",
@@ -11356,7 +12084,12 @@
       "carIn": true,
       "carInNote": "オートキャンプ場",
       "reservation": "要",
-      "reservationNote": "Camp-net ほか複数の予約先を公式が案内している"
+      "reservationNote": "Camp-net ほか複数の予約先を公式が案内している",
+      "shower": true,
+      "showerNote": "お湯の出る炊事場、シャワートイレ、温水シャワー、ランドリーを集中させたサニタリーハウス（https://www.eleven-camp.com/access）",
+      "shop": true,
+      "shopNote": "管理棟、売店、バーベキューガーデンなどキャンパーのための施設が充実しています（https://www.eleven-camp.com/access）",
+      "nearbyOnsen": "近隣情報「お風呂」ページに君津市内の浴場を掲載：房総 四季の湯（君津市三直170-1）、千寿の湯（君津市笹1954-17）、大江戸温泉君津の森（君津市法木384-119）、湖水亭・嵯峨和（君津市笹614）、亀山温泉ホテル（君津市豊田旧菅間田65）。距離・所要時間は「近隣浴場MAP」の画像で案内（本文に数値記載なし）（https://www.eleven-camp.com/onsen）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "君津市栗坪のオートキャンプ場。管理棟・売店・炊事棟・温水シャワー・釣り堀などを備える。予約は公式が案内する Camp-net から。",
@@ -11399,7 +12132,15 @@
       "carIn": true,
       "carInNote": "オートキャンプ場",
       "reservation": "要",
-      "reservationNote": "公式サイトの予約導線から。前日までの予約で入園が割引になると公式に記載"
+      "reservationNote": "公式サイトの予約導線から。前日までの予約で入園が割引になると公式に記載",
+      "bath": true,
+      "bathNote": "ロマンの森の露天風呂【白壁の湯】があります。ご宿泊の方はもちろん、日帰り湯としてもご利用いただけます（https://www.romannomori.co.jp/hotspring/）",
+      "shower": true,
+      "showerNote": "エリア内に、温水シャワー・コインランドリー・炊事場・売店が用意されています。（https://www.romannomori.co.jp/stay/）",
+      "shop": true,
+      "shopNote": "エリア内に、共同炊事場・売店・温水シャワー・コインランドリーあり（https://www.romannomori.co.jp/stay/）",
+      "pet": true,
+      "petNote": "ペット同伴の予約 愛犬と同伴で利用する場合の宿泊予約手順 キャンピングロッジ4名棟、又は9名棟のみ対応（https://www.romannomori.co.jp/stay/）"
     },
     "season": "要確認（休園日は公式の「休園日・施設情報」ページを見ること）",
     "soloComment": "君津市豊英にあるレジャー施設「ロマンの森共和国」の中のキャンプ場。コテージやキャンピングロッジも併設している。宿泊者の入場料は500円。",
@@ -11440,7 +12181,9 @@
     "priceNote": "サイト単位課金（1サイト1〜10名）。**市外の人は宿泊キャンプ 午後2時〜翌午前10時が2,400円、午前10時〜翌午前10時が3,000円。**市内に在住・在勤・在学の人はそれぞれ1,200円／1,500円。デイキャンプ（午前10時〜午後5時）は市外1,000円・市内500円。利用者の半数以上が障がい者／市内在住の中学生以下／市内在住の65歳以上で構成される団体は減免がある",
     "features": {
       "reservation": "要",
-      "reservationNote": "事前の申請（予約）が必須。令和6年4月1日利用分からLINE申請が使える（LINEはオンライン決済のみ）。現金払いは窓口申請。返金・キャンセルは利用日の7日前まで"
+      "reservationNote": "事前の申請（予約）が必須。令和6年4月1日利用分からLINE申請が使える（LINEはオンライン決済のみ）。現金払いは窓口申請。返金・キャンセルは利用日の7日前まで",
+      "pet": false,
+      "petNote": "ペット類の同伴は禁止です。（https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/about.html）"
     },
     "eligibility": {
       "type": "discount",
@@ -11546,7 +12289,9 @@
       "pet": true,
       "petNote": "リード着用で一緒に宿泊できると公式に記載",
       "reservation": "要",
-      "reservationNote": "公式サイトの予約ページから。電話は090-9815-3838（受付10:00〜18:00）"
+      "reservationNote": "公式サイトの予約ページから。電話は090-9815-3838（受付10:00〜18:00）",
+      "shop": true,
+      "shopNote": "※炭はBBQコンロのレンタルに含まれません。別途お買い求めください。炭：1,500円／3kg（https://www.camp-inba.com/guidance）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "印西市平賀のキャンプ場。2026年3月に旧オートキャンプユニオンから改称して新たにオープンした。**サイレントサイト（定員2名）**があり、静かに過ごしたいときに選べる。チェックイン13:00、チェックアウト翌10:00。",
@@ -11599,7 +12344,11 @@
       "pet": true,
       "petNote": "ペットOKは3区画（東エリア1段目）。ペット不可が7区画",
       "reservation": "要",
-      "reservationNote": "公式サイトの予約ページから。**現地でのカード決済は不可**"
+      "reservationNote": "公式サイトの予約ページから。**現地でのカード決済は不可**",
+      "firewood": true,
+      "firewoodNote": "薪使い放題 1,200円／薪はこちらから(有料)（https://nightvista3.com/）",
+      "shop": true,
+      "shopNote": "季節の魚・野菜セット 1,300円／猪肉 (1人前・冷凍) 600円／ゴミ袋 (10ℓ) 100円（https://nightvista3.com/）"
     },
     "season": "通年（定休日なし）",
     "soloComment": "鋸南町の小高い山の中腹にあり、東京湾を見渡せる全10区画のオートキャンプ場。全サイトにAC電源（1500Wまで）が無料で付き、洗い場はお湯が出る。製氷機・冷蔵庫・冷凍庫・ピザ窯がある。富津館山道路の鋸南ICから車で約5分。",
@@ -11644,10 +12393,16 @@
     "features": {
       "carIn": true,
       "carInNote": "オートサイト。テント1張り・タープ1張り・車1台まで（ソロ用テントなら2張りまで）",
-      "pet": false,
-      "petNote": "オートサイトはペット不可と公式に明記（ドッグフリーサイトは別区分）",
+      "pet": true,
+      "petNote": "狂犬病予防接種及びワクチン接種済みのワンちゃんのみ、ドッグサイトがご利用が可能です。（https://campg-inzai.com/faq/）",
       "reservation": "要",
-      "reservationNote": "公式サイトのキャンプ（宿泊）予約ページから。デイキャンプは別ページ"
+      "reservationNote": "公式サイトのキャンプ（宿泊）予約ページから。デイキャンプは別ページ",
+      "shower": true,
+      "showerNote": "2022年4月28日にオープンしたばかりなので、トイレやシャワー室も新しくキレイです。（https://campg-inzai.com/）",
+      "firewood": true,
+      "firewoodNote": "バドニングや薪割り焚火を楽しめる薪をご用意しています。（https://campg-inzai.com/）",
+      "shop": true,
+      "shopNote": "アウトドア洗剤（受付にて200円（税込）で販売）／ミネラルウォーター２Ｌ 100円（税込）で販売（https://campg-inzai.com/reserve/）"
     },
     "season": "要確認（公式に営業期間の記載なし）",
     "soloComment": "印西市のオートキャンプ場。全15区画で砂利敷き約100㎡、定員は最大6名。**ソロ用テントなら2張りまで**使えると公式が明記している。サイト料と1人あたりの利用料の合算で、ソロは平日4,400円。",
@@ -11693,7 +12448,13 @@
       "carIn": true,
       "carInNote": "オートキャンプ場。1区画 約7m×8m",
       "reservation": "要",
-      "reservationNote": "**ちば施設予約システム**（ネット）または電話 043-484-1011。利用日が属する月の1ヶ月前の4日 8:30から受付。ネット予約には利用者登録が必要"
+      "reservationNote": "**ちば施設予約システム**（ネット）または電話 043-484-1011。利用日が属する月の1ヶ月前の4日 8:30から受付。ネット予約には利用者登録が必要",
+      "shower": true,
+      "showerNote": "シャワールーム 料金：100円で10分間 利用：午前8：00～午後9：30（https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html）",
+      "shop": true,
+      "shopNote": "印旛沼サンセットヒルズのオリジナルグッズが完成しました。売店で販売中です！（https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html）",
+      "pet": true,
+      "petNote": "1サイトペット2匹までとしてください（https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html）"
     },
     "season": "通年（12月29日〜1月3日の年末年始を除き無休）",
     "soloComment": "印旛沼を見下ろす高台にある佐倉市のオートキャンプ場。空気の澄んだ夕暮れ時には富士山やスカイツリーが見えることがある。1区画は約7m×8mでAC電源は無い。チェックインは11:00〜15:00。",
@@ -11789,7 +12550,12 @@
       "shower": true,
       "showerNote": "温水シャワーは無料と公式に記載",
       "reservation": "要",
-      "reservationNote": "電話 090-2402-9150 / 055-298-2021、FAX、メールで受付"
+      "reservationNote": "電話 090-2402-9150 / 055-298-2021、FAX、メールで受付",
+      "firewood": true,
+      "firewoodNote": "リクライニングチェア1人770円 薪一束 770円（http://park15.wakwak.com/~suzuran/tentsauna/index.html）",
+      "pet": false,
+      "petNote": "当キャンプ場は、ペットは禁止となっております。（http://park15.wakwak.com/~suzuran/index.htm）",
+      "nearbyOnsen": "石和温泉から車で20分！（河口湖湖畔から車で５分！）（http://park15.wakwak.com/~suzuran/index.htm）"
     },
     "season": "4月中旬〜11月中旬",
     "soloComment": "笛吹市芦川町のオートキャンプ場。オートサイトは1区画5,500円で5名まで同額。温水シャワーとサイトの駐車料が無料。一宮・御坂インターから20分で、バードウォッチングや渓流釣り、川遊びができる。",
@@ -11840,7 +12606,8 @@
       "pet": true,
       "petNote": "同伴希望は電話時に申告が必要。**バンガローはペット同伴不可**",
       "reservation": "要",
-      "reservationNote": "予約制。電話 0553-39-2829。休業日は事前に問い合わせること"
+      "reservationNote": "予約制。電話 0553-39-2829。休業日は事前に問い合わせること",
+      "nearbyOnsen": "三富温泉 白龍閣（日帰り入浴10:00～20:00、大人800円）、三富温泉 みとみ笛吹の湯（市営）、窪平温泉 花かげの湯（市営）、鼓川温泉（市営）、はやぶさ温泉、川浦温泉 山県館、一之橋温泉 一之橋館（http://www.fuefukigoya.com/onsen.html）"
     },
     "season": "要確認（予約制。休業日は事前に問い合わせと公式に記載）",
     "soloComment": "山梨市三富、西沢渓谷の近くにあるキャンプ場。**オートキャンプと車中泊はできず**、車は駐車場に置いてテントは別の場所に張る。直火は禁止で、場内の囲炉裏か市販の焚き火台を使う。午後10時に消灯。",
@@ -11886,7 +12653,18 @@
       "carIn": true,
       "carInNote": "オートキャンプ場",
       "reservation": "要",
-      "reservationNote": "公式サイトの「予約はこちら」から"
+      "reservationNote": "公式サイトの「予約はこちら」から",
+      "bath": false,
+      "bathNote": "シャワーは管理棟の前にございます。お風呂はございません。（https://www.kurosaka.net/question）",
+      "shower": true,
+      "showerNote": "シャワー 温水シャワー2つ 使用料5分 200円（https://www.kurosaka.net/facility）",
+      "firewood": true,
+      "firewoodNote": "管理棟 営業時間10:00〜17:00 薪と炭を販売しています。（https://www.kurosaka.net/facility）",
+      "shop": true,
+      "shopNote": "販売品はありますか？ 炭・薪の販売を行なっております。（https://www.kurosaka.net/question）",
+      "pet": true,
+      "petNote": "ペットは無駄吠えがなく、リードに繋いでいただける場合、お連れいただくことができます。（https://www.kurosaka.net/user-guide）",
+      "nearbyOnsen": "寺尾の湯（車で10分・一番近くの立ち寄り温泉）、みたまの湯（車で21分）、ほったらかし温泉（車で38分）（https://www.kurosaka.net/neighborhood）"
     },
     "season": "要確認（公式に営業期間の記載なし。臨時休業は公式のお知らせで告知される）",
     "soloComment": "笛吹市境川町の山の地形を生かした林間のオートキャンプ場。甲府盆地の夜景を見下ろせる。公式が「東京から90分の好立地」と案内し、場内にカフェがある。",

@@ -1,0 +1,352 @@
+[
+ {
+  "slug": "oishii-camp",
+  "checkedUrls": [
+   "https://oic-camp.com/",
+   "https://oic-camp.com/service/",
+   "https://oic-camp.com/service/utility/",
+   "https://oic-camp.com/service/campsite/",
+   "https://oic-camp.com/price/sales-item/",
+   "https://oic-camp.com/price/precaution/",
+   "https://oic-camp.com/faq/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://oic-camp.com/service/utility/",
+   "quote": "有料のシャワー室です。利用料金は、1回300円"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://oic-camp.com/price/sales-item/",
+   "quote": "薪（おいしいキャンプ場産） 660円／１束"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://oic-camp.com/price/sales-item/",
+   "quote": "当キャンプ場では以下のような販売品をご準備させて頂いております"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://oic-camp.com/price/precaution/",
+   "quote": "ペットは、屋根下テントとソロキャンプサイト以外同伴可能です"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "shimobe-yurucamp-sato",
+  "checkedUrls": [
+   "https://www.michinoeki-shimobe.jp/camp/",
+   "https://www.michinoeki-shimobe.jp/about/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.michinoeki-shimobe.jp/camp/",
+   "quote": "24時間利用可能　シャワー室、水洗トイレ、多目的トイレ"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.michinoeki-shimobe.jp/camp/",
+   "quote": "営業時間内　バーベキュー施設、授乳室、キャンプ用品コーナー、薪の販売等"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.michinoeki-shimobe.jp/camp/",
+   "quote": "キャンプ用品コーナー、薪の販売等"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "hayato-hakone",
+  "checkedUrls": [
+   "https://hayatohakoneguesthouse.com/page/hakone-camp/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://hayatohakoneguesthouse.com/page/hakone-camp/",
+   "quote": "物販スペース（薪／炭／その他キャンプ消耗品各種）"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://hayatohakoneguesthouse.com/page/hakone-camp/",
+   "quote": "▼管理棟　・受付　・物販スペース（薪／炭／その他キャンプ消耗品各種）"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": "自家源泉100％で泉質の良い日帰り温泉施設『箱根の湯』まで徒歩5分（割引券有）＋『湯の里おかだ』車で5分（割引券有）"
+  }
+ },
+ {
+  "slug": "bushcraft-shonan",
+  "checkedUrls": [
+   "https://bush-craft.biz/",
+   "https://bush-craft.biz/qa/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://bush-craft.biz/qa/",
+   "quote": "在庫は十数束と限りがございますが、現地販売を行わせて頂いております"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://bush-craft.biz/qa/",
+   "quote": "トイレットペーパーをご持参頂くか、フィールド内でお買い求めください"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://bush-craft.biz/qa/",
+   "quote": "ペットと一緒にご利用頂くことも可能ですが、必ずリードをお繋ぎください"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "akiyamagawa-camp",
+  "checkedUrls": [
+   "http://www.akikawaya.co.jp/",
+   "http://www.akikawaya.co.jp/sisetu.html",
+   "http://www.akikawaya.co.jp/caution.html",
+   "http://www.akikawaya.co.jp/pet.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "http://www.akikawaya.co.jp/caution.html",
+   "quote": "山や土手での薪拾いは禁止です。持参または売店で購入して下さい"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "http://www.akikawaya.co.jp/caution.html",
+   "quote": "持参または売店で購入して下さい"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://www.akikawaya.co.jp/pet.html",
+   "quote": "秋川屋全施設は家族の一員として飼っているペットは全て同伴同宿可能です"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "hachibanaen-miroku",
+  "checkedUrls": [
+   "https://houkaen.jp/",
+   "https://houkaen.jp/miroku",
+   "https://houkaen.jp/price/",
+   "https://houkaen.jp/pet",
+   "https://houkaen.jp/%e5%85%a8%e4%bd%93%e3%83%9e%e3%83%83%e3%83%97/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://houkaen.jp/miroku",
+   "quote": "シャワー室、洗い場、シャワー付き水洗トイレは共用になります"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://houkaen.jp/miroku",
+   "quote": "※ 薪・炭も販売しております。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://houkaen.jp/miroku",
+   "quote": "受付・飲み物販売・キャンプ用品の貸し出しを行っております"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://houkaen.jp/pet",
+   "quote": "１日１組限定、ゾーン貸切でペットと一緒にテント泊できます。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "otome-forest-camp",
+  "checkedUrls": [
+   "https://www.gotemba-otome.jp/",
+   "https://www.gotemba-otome.jp/第1キャンプ場",
+   "https://www.gotemba-otome.jp/料金のご案内",
+   "https://www.gotemba-otome.jp/予約のご案内",
+   "https://www.gotemba-otome.jp/バーベキューサイト"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.gotemba-otome.jp/料金のご案内",
+   "quote": "◎薪(針葉樹)　１カゴ５００円　◎薪(広葉樹)　１カゴ８００円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.gotemba-otome.jp/第1キャンプ場",
+   "quote": "管理棟の売店では、各種受付の他レンタル用品、アイスクリーム、冷たい飲み物などを取りそろえております"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.gotemba-otome.jp/予約のご案内",
+   "quote": "以下のオートキャンプサイトに限り、ペット同伴でご利用できます。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "recamp-fuji-speedway",
+  "checkedUrls": [
+   "https://www.recamp.co.jp/fujispeedway",
+   "https://www.recamp.co.jp/faq"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.recamp.co.jp/fujispeedway",
+   "quote": "愛犬と一緒に楽しむことができるドッグラン併設サイト"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "camp-bean-izu",
+  "checkedUrls": [
+   "https://www.campbean.jp/",
+   "https://www.campbean.jp/information/",
+   "https://www.campbean.jp/map/",
+   "https://www.campbean.jp/neighborhood/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.campbean.jp/information/",
+   "quote": "・薪：1束500円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.campbean.jp/information/",
+   "quote": "・販売品　ステッカー：大（10cm）600円、小（7cm）400円"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.campbean.jp/information/",
+   "quote": "犬やペット同伴でのキャンプは可能です。必ずリードを付けてください"
+  },
+  "nearbyOnsen": {
+   "value": "筥湯（はこゆ）営業時間：12:00～21:00(受付～20:30)無休／テルメいづみ園 営業時間：10:00～21:30(受付～21:00)火曜定休"
+  }
+ },
+ {
+  "slug": "tenshino-mori-camp",
+  "checkedUrls": [
+   "https://tenshinomori.net/",
+   "https://tenshinomori.net/facilities",
+   "https://tenshinomori.net/rate",
+   "https://tenshinomori.net/rate/rate-camp",
+   "https://tenshinomori.net/rate/rate-foods",
+   "https://tenshinomori.net/rate/rate-others",
+   "https://tenshinomori.net/note",
+   "https://tenshinomori.net/access"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://tenshinomori.net/rate/rate-camp",
+   "quote": "温水シャワー (24h コインタイマー式) 5分 … ￥300-"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://tenshinomori.net/rate/rate-others",
+   "quote": "薪 1束 … ￥600～"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://tenshinomori.net/rate/rate-foods",
+   "quote": "アイスクリーム各種 ￥150-　カップラーメン ￥200-　パックご飯 ￥200-"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://tenshinomori.net/note",
+   "quote": "ペットは必ずリードにつなぎ、トイレの始末をきちんとしてください"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ }
+]

@@ -1,0 +1,361 @@
+[
+ {
+  "slug": "katsuura-tsuruntsurun",
+  "checkedUrls": [
+   "http://katuuraonsen.com/camp/camp.html",
+   "http://katuuraonsen.com/faq/faq.html",
+   "http://katuuraonsen.com/onsen/onsen.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "http://katuuraonsen.com/camp/camp.html",
+   "quote": "温泉： 勝浦温泉（場内）大人850円→500円 小人450円"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://katuuraonsen.com/camp/camp.html",
+   "quote": "施設： 管理棟、水洗トイレ、温水シャワー男女（無料）、洗い場"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "http://katuuraonsen.com/camp/camp.html",
+   "quote": "薪は無料（廃材）ですが、数に限りがございますので必要最低限でお願いします"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "http://katuuraonsen.com/camp/camp.html",
+   "quote": "売店・自動販売機： 酒類、ジュース類、ロックアイス、キャンプ用ガス、炭"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://katuuraonsen.com/camp/camp.html",
+   "quote": "ペットＯＫ（他のお客様に迷惑がかからないようお願いします）"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "tomisakikan-camp",
+  "checkedUrls": [
+   "https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E5%AF%8C%E5%B4%8E%E9%A4%A8%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4",
+   "https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/",
+   "https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E5%B9%B2%E7%89%A9%E5%B1%8B%E3%81%95%E3%82%93/",
+   "https://www.tomisakikan.net/%E6%A6%82%E8%A6%81/",
+   "https://www.tomisakikan.net/%E5%AF%8C%E5%B4%8E%E9%A4%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E5%AF%8C%E5%B4%8E%E9%A4%A8%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4",
+   "quote": "□付帯設備 水場、トイレ、シャワーブース、展望デッキ"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/",
+   "quote": "キャンプ場・食堂・小売の三事業をもって再生し"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E5%AF%8C%E5%B4%8E%E9%A4%A8%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4",
+   "quote": "お車を入れてお使いいただけ、ワンちゃんとも一緒にお泊まり頂けます。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "wildkids-misaki",
+  "checkedUrls": [
+   "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/",
+   "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/",
+   "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%A6%82%E8%A6%81/",
+   "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E3%82%B5%E3%82%A4%E3%83%88%E7%B4%B9%E4%BB%8B/",
+   "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E4%BA%88%E7%B4%84/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/",
+   "quote": "露天岩風呂 ヨード風呂 地下70ｍより汲み上げた真っ黒な湯の風呂"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/",
+   "quote": "シャワールーム 池側・海側両方のエリアにございます。利用可能時間 朝7時～夜21まで"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%A6%82%E8%A6%81/",
+   "quote": "売店： 氷、薪、木炭、ホワイトガソリン、ビール、飲料水、調味料"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%A6%82%E8%A6%81/",
+   "quote": "施設： 管理棟、売店、水洗トイレ、無料ランドリー、炊事場"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E6%A6%82%E8%A6%81/",
+   "quote": "その他： ペット可"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "acn-katsuura-manbow",
+  "checkedUrls": [
+   "http://www.manbow-camp.jp/reserve/index.html",
+   "http://www.manbow-camp.jp/index.html",
+   "http://www.manbow-camp.jp/information/index.html",
+   "http://www.manbow-camp.jp/information/incidental_facilities.html",
+   "http://www.manbow-camp.jp/information/facilities.html",
+   "http://www.manbow-camp.jp/reserve/price.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "http://www.manbow-camp.jp/information/incidental_facilities.html",
+   "quote": "手作り岩風呂 井戸水を沸かした岩風呂で、身体の芯までよく温まります。シャワー付き。"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://www.manbow-camp.jp/information/incidental_facilities.html",
+   "quote": "●コイン温水シャワー：２基 200円 4分毎"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "http://www.manbow-camp.jp/information/incidental_facilities.html",
+   "quote": "●売店：炭・氷・燃料・酒類など"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://www.manbow-camp.jp/information/facilities.html",
+   "quote": "ペットを室内に入れる場合は、ケージあるいはバスケット保管となります。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "shiosai-campfield",
+  "checkedUrls": [
+   "https://shiosai-minamiboso.com/",
+   "https://shiosai-minamiboso.com/#facilities",
+   "https://shiosai-minamiboso.com/#camp",
+   "https://shiosai-minamiboso.com/#hotel",
+   "https://shiosai-minamiboso.com/#access"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://shiosai-minamiboso.com/",
+   "quote": "大浴場 -ゆったりと入れる大浴場を完備- キャンプ泊のお客様は大人800円、子供500円"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://shiosai-minamiboso.com/",
+   "quote": "コインシャワー（プールハウス内・2ブース）24時間、5分200円でご利用いただけます。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://shiosai-minamiboso.com/",
+   "quote": "焚火を楽しむ 焚き火台 1,000円／薪(１束) 1,000円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://shiosai-minamiboso.com/",
+   "quote": "※バスタオル、アメニティセット（歯ブラシ・タオル）販売あり。"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://shiosai-minamiboso.com/",
+   "quote": "ハナレサイト（E１～E18）ペット 可（1区画につき3頭まで）"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "eleven-autocamp",
+  "checkedUrls": [
+   "https://www.eleven-camp.com/",
+   "https://www.eleven-camp.com/access",
+   "https://www.eleven-camp.com/shop",
+   "https://www.eleven-camp.com/onsen",
+   "https://www.eleven-camp.com/faq",
+   "https://www.eleven-camp.com/caution",
+   "https://www.eleven-camp.com/map",
+   "https://www.eleven-camp.com/tent-sites",
+   "https://www.eleven-camp.com/rental"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.eleven-camp.com/access",
+   "quote": "お湯の出る炊事場、シャワートイレ、温水シャワー、ランドリーを集中させたサニタリーハウス"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.eleven-camp.com/access",
+   "quote": "管理棟、売店、バーベキューガーデンなどキャンパーのための施設が充実しています"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": "近隣情報「お風呂」ページに君津市内の浴場を掲載：房総 四季の湯（君津市三直170-1）、千寿の湯（君津市笹1954-17）、大江戸温泉君津の森（君津市法木384-119）、湖水亭・嵯峨和（君津市笹614）、亀山温泉ホテル（君津市豊田旧菅間田65）。距離・所要時間は「近隣浴場MAP」の画像で案内（本文に数値記載なし）",
+   "evidenceUrl": "https://www.eleven-camp.com/onsen",
+   "quote": "ONSEN / 湯 房総 四季の湯／千寿の湯／大江戸温泉君津の森／亀山温泉ホテル 近隣浴場MAP"
+  }
+ },
+ {
+  "slug": "romannomori-camp",
+  "checkedUrls": [
+   "https://www.romannomori.co.jp/price/",
+   "https://www.romannomori.co.jp/stay/",
+   "https://www.romannomori.co.jp/hotspring/",
+   "https://www.romannomori.co.jp/faq/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.romannomori.co.jp/hotspring/",
+   "quote": "ロマンの森の露天風呂【白壁の湯】があります。ご宿泊の方はもちろん、日帰り湯としてもご利用いただけます"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.romannomori.co.jp/stay/",
+   "quote": "エリア内に、温水シャワー・コインランドリー・炊事場・売店が用意されています。"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.romannomori.co.jp/stay/",
+   "quote": "エリア内に、共同炊事場・売店・温水シャワー・コインランドリーあり"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.romannomori.co.jp/stay/",
+   "quote": "ペット同伴の予約 愛犬と同伴で利用する場合の宿泊予約手順 キャンピングロッジ4名棟、又は9名棟のみ対応"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "abiko-fureai-camp",
+  "checkedUrls": [
+   "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/about.html",
+   "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/shiyouryou.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/about.html",
+   "quote": "ペット類の同伴は禁止です。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "asahi-unakami-camp",
+  "checkedUrls": [
+   "https://www.city.asahi.lg.jp/soshiki/29/24010.html",
+   "https://www.city.asahi.lg.jp/soshiki/29/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "campfield-marc-west",
+  "checkedUrls": [
+   "https://www.camp-inba.com/guidance",
+   "https://www.camp-inba.com/",
+   "https://www.camp-inba.com/terms-of-service",
+   "https://www.camp-inba.com/access"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.camp-inba.com/guidance",
+   "quote": "※炭はBBQコンロのレンタルに含まれません。別途お買い求めください。炭：1,500円／3kg"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.camp-inba.com/",
+   "quote": "ワンちゃんOK リード着用で一緒に宿泊できます。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ }
+]

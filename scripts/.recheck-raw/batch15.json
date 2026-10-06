@@ -1,0 +1,369 @@
+[
+ {
+  "slug": "fuji-anmo-camp",
+  "checkedUrls": [
+   "https://fuji-anmonomori.com/menu/",
+   "https://fuji-anmonomori.com/gallery/",
+   "https://fuji-anmonomori.com/guide/",
+   "https://fuji-anmonomori.com/access/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://fuji-anmonomori.com/access/",
+   "quote": "売店(薪、ＢＢＱ炭、着火剤、蚊取り線香、飲用水、お茶、紙パックジュース、ステッカー)"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://fuji-anmonomori.com/access/",
+   "quote": "売店(薪、ＢＢＱ炭、着火剤、蚊取り線香、飲用水、お茶、紙パックジュース、ステッカー)"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://fuji-anmonomori.com/menu/",
+   "quote": "ペットOKですが適正な長さのリードをつけて下さい。"
+  },
+  "nearbyOnsen": {
+   "value": "温泉施設の富士山 天母の湯より車で約2分の立地です。（富士山 天母の湯 車で約２分）",
+   "evidenceUrl": "https://fuji-anmonomori.com/access/",
+   "quote": "温泉施設の富士山 天母の湯より車で約2分の立地です。"
+  }
+ },
+ {
+  "slug": "okitsugawa-auto",
+  "checkedUrls": [
+   "https://camp-joe.com/okitsugawa/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://camp-joe.com/okitsugawa/",
+   "quote": "無料の温水シャワー、お湯が出る流し台を備えております。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://camp-joe.com/okitsugawa/",
+   "quote": "針葉樹・広葉樹（入荷待ち）の薪のほか、数量限定の鹿角キャンプギア"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://camp-joe.com/okitsugawa/",
+   "quote": "静岡ご当地生ビールの「静岡麦酒」をはじめ、静岡蒸留所の「ガイアフロー」"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://camp-joe.com/okitsugawa/",
+   "quote": "はい、可能ですがキャンプ慣れしていない犬や無駄吠えする犬はNGです。"
+  },
+  "nearbyOnsen": {
+   "value": "キャンプ場周辺には、清水西里の天然温泉「やませみの湯」",
+   "evidenceUrl": "https://camp-joe.com/okitsugawa/",
+   "quote": "キャンプ場周辺には、清水西里の天然温泉「やませみの湯」"
+  }
+ },
+ {
+  "slug": "kaaji-no-mori",
+  "checkedUrls": [
+   "https://www.tschiba.com/kaaji/plan.html",
+   "https://www.tschiba.com/kaaji/dish.html",
+   "https://www.tschiba.com/kaaji/facilities.html",
+   "https://www.tschiba.com/kaaji/Peripheral.html",
+   "https://www.tschiba.com/kaaji/access.html",
+   "https://www.tschiba.com/kaaji/index.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.tschiba.com/kaaji/dish.html",
+   "quote": "トイレあり、シャワー別料金。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.tschiba.com/kaaji/plan.html",
+   "quote": "薪 一かご￥500（間伐材、廃材含む場合有り）"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.tschiba.com/kaaji/plan.html",
+   "quote": "販売は薪程度ですが、ご要望で対応して参ります。"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "seiwa-kenminnomori",
+  "checkedUrls": [
+   "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/",
+   "https://www.seiwanomori.jp/2695-2/",
+   "https://www.seiwanomori.jp/3247-2/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.seiwanomori.jp/2695-2/",
+   "quote": "温水シャワーは、１回１００円で３分間がご利用頂けます。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/",
+   "quote": "炭や薪、着火剤なども販売しておりますので、ご安心ください。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/",
+   "quote": "受付は「木のふるさと館」で行っております。炭や薪、着火剤なども販売しております"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://www.seiwanomori.jp/2695-2/",
+   "quote": "現在、当施設ではペットの同伴はご遠慮いただいております。"
+  },
+  "nearbyOnsen": {
+   "value": "銭湯：小糸川温泉／四季の湯(房総 四季の蔵)／君津の湯（周辺施設のご案内に掲載、距離・所要時間の記載なし）",
+   "evidenceUrl": "https://www.seiwanomori.jp/3247-2/",
+   "quote": "銭湯 小糸川温泉 四季の湯(房総 四季の蔵) 君津の湯"
+  }
+ },
+ {
+  "slug": "fruits-village",
+  "checkedUrls": [
+   "http://fruitsvillage.com/custom11.html",
+   "http://fruitsvillage.com/index.html",
+   "http://fruitsvillage.com/plan1.html",
+   "http://fruitsvillage.com/fruitsvillage-item.html",
+   "http://fruitsvillage.com/fruitsvillage-pet.html",
+   "http://fruitsvillage.com/fruitsvillage-rule.html",
+   "http://fruitsvillage.com/fruitsvillage-dust.html",
+   "http://fruitsvillage.com/access.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "http://fruitsvillage.com/fruitsvillage-dust.html",
+   "quote": "コインシャワーは空室であれば使用可能です 利用料金は10分￥400円です"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "http://fruitsvillage.com/fruitsvillage-pet.html",
+   "quote": "当キャンプ場はペット可のキャンプ場ですがキャンプサイトにペット連れ用の専用サイトは御座いません。"
+  },
+  "nearbyOnsen": {
+   "value": "大江戸温泉物語・君津の森 キャンプ場から約25分 日帰り入浴のできる近場の施設になります",
+   "evidenceUrl": "http://fruitsvillage.com/access.html",
+   "quote": "大江戸温泉物語・君津の森 キャンプ場から約25分 日帰り入浴のできる近場の施設になります"
+  }
+ },
+ {
+  "slug": "laqlaq-garden",
+  "checkedUrls": [
+   "https://laqlaqgarden.com/",
+   "https://laqlaqgarden.com/attention/",
+   "https://laqlaqgarden.com/price-guide/",
+   "https://laqlaqgarden.com/rental/",
+   "https://laqlaqgarden.com/garden-map/",
+   "https://laqlaqgarden.com/nearby-facilities/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://laqlaqgarden.com/price-guide/",
+   "quote": "薪１束800円、木炭1000円で販売しています。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://laqlaqgarden.com/rental/",
+   "quote": "販売品 薪800円、炭1000円、着火剤100円 ソフトドリンク、水、炭酸水、お茶、カップヌードル 他"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://laqlaqgarden.com/attention/",
+   "quote": "ペット可能区画での入場可能です。ペットの放し飼いは禁止です。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "taibusamisaki-camp",
+  "checkedUrls": [
+   "https://taibusa-misaki.jp/mp/goriyouhouhou_ryokinhyo",
+   "https://taibusa-misaki.jp/mp/camp",
+   "https://taibusa-misaki.jp/mp/buppan",
+   "https://taibusa-misaki.jp/mp/rental",
+   "https://taibusa-misaki.jp/faq/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://taibusa-misaki.jp/mp/buppan",
+   "quote": "杉薪 ￥600 1束／堅薪（広葉樹）￥400 1束"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://taibusa-misaki.jp/mp/buppan",
+   "quote": "大房岬ビジターセンター 販売品 メニュー"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://taibusa-misaki.jp/mp/goriyouhouhou_ryokinhyo",
+   "quote": "ペットのご同伴はできません。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "kazusa-autocamp",
+  "checkedUrls": [
+   "https://www.kazusa-autocamp.com/k-ryoukinn2020.htm",
+   "https://www.kazusa-autocamp.com/index2.htm",
+   "https://www.kazusa-autocamp.com/index3.htm",
+   "https://www.kazusa-autocamp.com/k-annai.htm",
+   "https://www.kazusa-autocamp.com/k-onegai.htm",
+   "https://www.kazusa-autocamp.com/k-yoyaku_setsumei.htm",
+   "https://www.kazusa-autocamp.com/k-kannko.htm"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.kazusa-autocamp.com/k-onegai.htm",
+   "quote": "シャワーは午後４時～午後９時まで無料で利用できます。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.kazusa-autocamp.com/k-onegai.htm",
+   "quote": "売店で薪・炭等を購入される方は、午後５時までにお願いします。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.kazusa-autocamp.com/k-onegai.htm",
+   "quote": "売店で薪・炭等を購入される方は、午後５時までにお願いします。"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": "大江戸温泉物語（君津の森） 車で８分 温泉（大人700円,子供400円）やランチバイキングなど気軽に楽しめます。",
+   "evidenceUrl": "https://www.kazusa-autocamp.com/k-kannko.htm",
+   "quote": "大江戸温泉物語（君津の森） 車で８分 温泉（大人700円,子供400円）"
+  }
+ },
+ {
+  "slug": "nanasatogawa-autocamp",
+  "checkedUrls": [
+   "https://www.city.kimitsu.lg.jp/site/kanko/10224.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.city.kimitsu.lg.jp/site/kanko/10224.html",
+   "quote": "コンロ貸出し、木炭販売あり"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.city.kimitsu.lg.jp/site/kanko/10224.html",
+   "quote": "ペット同伴 可"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "miyoshi-family-camp",
+  "checkedUrls": [
+   "https://miyoshi1185.wixsite.com/miyoshi-family-camp",
+   "https://miyoshi1185.wixsite.com/miyoshi-family-camp/site",
+   "https://miyoshi1185.wixsite.com/miyoshi-family-camp/stay",
+   "https://miyoshi1185.wixsite.com/miyoshi-family-camp/how-to-use",
+   "https://miyoshi1185.wixsite.com/miyoshi-family-camp/camp-site",
+   "https://miyoshi1185.wixsite.com/miyoshi-family-camp/camp-mankitsu"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": false,
+   "evidenceUrl": "https://miyoshi1185.wixsite.com/miyoshi-family-camp/site",
+   "quote": "キャンプ場の設備です。お風呂や電源の設置はありません。"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://miyoshi1185.wixsite.com/miyoshi-family-camp/site",
+   "quote": "５分１００円でお湯が出るコイン式シャワーです。"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://miyoshi1185.wixsite.com/miyoshi-family-camp/site",
+   "quote": "ペット連れOKです。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ }
+]

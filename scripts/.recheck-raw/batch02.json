@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "wellcamp-nishitanzawa",
+    "checkedUrls": ["https://well-camp.com/", "https://well-camp.com/facility/bath/", "https://well-camp.com/price/", "https://well-camp.com/questions/"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": true, "evidenceUrl": "https://well-camp.com/", "quote": "広大な敷地と露天風呂が自慢の通年型キャンプ場"},
+    "shower":   {"value": true, "evidenceUrl": "https://well-camp.com/facility/bath/", "quote": "コインシャワー：24時間営業 ※季節により営業時間変更・冬季休業あり"},
+    "firewood": {"value": true, "evidenceUrl": "https://well-camp.com/questions/", "quote": "売店にて取り扱っております。（炭、広葉樹、針葉樹、焚き付け用薪、スウェーデントーチ）"},
+    "shop":     {"value": true, "evidenceUrl": "https://well-camp.com/questions/", "quote": "東沢売店は9:00～17:00営業"},
+    "pet":      {"value": true, "evidenceUrl": "https://well-camp.com/questions/", "quote": "ワンちゃん連れのお客様も大歓迎です。"},
+    "nearbyOnsen": {"value": null}
+  },
+  {
+    "slug": "shindo",
+    "checkedUrls": ["https://shindocamp.com/", "https://shindocamp.com/map", "https://shindocamp.com/price"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": "記載なし"},
+    "shower":   {"value": true, "evidenceUrl": "https://shindocamp.com/price", "quote": "シャワーのご利用は12月から3月の期間は休止します。"},
+    "firewood": {"value": true, "evidenceUrl": "https://shindocamp.com/map", "quote": "薪,針葉樹.広葉樹"},
+    "shop":     {"value": true, "evidenceUrl": "https://shindocamp.com/map", "quote": "便利な売店をご利用ください"},
+    "pet":      {"value": "記載なし"},
+    "nearbyOnsen": {"value": null}
+  },
+  {
+    "slug": "aone",
+    "checkedUrls": ["https://aonecamp.jp/", "https://aonecamp.jp/about/", "https://aonecamp.jp/price/"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": "記載なし"},
+    "shower":   {"value": "記載なし"},
+    "firewood": {"value": "記載なし"},
+    "shop":     {"value": "記載なし"},
+    "pet":      {"value": true, "evidenceUrl": "https://aonecamp.jp/about/", "quote": "グリーンサイトには遊具もあり、小さなお子様も楽しめます！愛犬もご一緒に！"},
+    "nearbyOnsen": {"value": null}
+  },
+  {
+    "slug": "kannogawa",
+    "checkedUrls": ["https://kannogawa.jp/", "https://kannogawa.jp/facility", "https://kannogawa.jp/onegai", "https://kannogawa.jp/fee", "https://kannogawa.jp/booking"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": true, "evidenceUrl": "https://kannogawa.jp/fee", "quote": "風呂（1人）　500円"},
+    "shower":   {"value": true, "evidenceUrl": "https://kannogawa.jp/fee", "quote": "シャワー（1回）冬季使用不可　300円"},
+    "firewood": {"value": true, "evidenceUrl": "https://kannogawa.jp/fee", "quote": "まき　350円"},
+    "shop":     {"value": true, "evidenceUrl": "https://kannogawa.jp/facility", "quote": "売店　8：00～20：00"},
+    "pet":      {"value": "記載なし"},
+    "nearbyOnsen": {"value": null}
+  },
+  {
+    "slug": "fumotoppara",
+    "checkedUrls": ["https://fumotoppara.net/", "https://fumotoppara.net/guide/", "https://fumotoppara.net/qanda/", "https://fumotoppara.net/about/", "https://fumotoppara.net/caution/"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": true, "evidenceUrl": "https://fumotoppara.net/qanda/", "quote": "大浴場を毎日無料にて開放しております。"},
+    "shower":   {"value": true, "evidenceUrl": "https://fumotoppara.net/qanda/", "quote": "メンテナンス等で休止やシャワーのみ提供の場合がございます。"},
+    "firewood": {"value": true, "evidenceUrl": "https://fumotoppara.net/guide/", "quote": "薪の販売も17時までとなっております。"},
+    "shop":     {"value": true, "evidenceUrl": "https://fumotoppara.net/about/", "quote": "売店では、キャンプに必要な薪や炭などの備品の他に、ふもとっぱらのオリジナルグッズや、地ビールなどを販売しています"},
+    "pet":      {"value": true, "evidenceUrl": "https://fumotoppara.net/caution/", "quote": "犬のフンの始末もしっかり行って下さい。犬が苦手な方もいらっしゃいます。"},
+    "nearbyOnsen": {"value": null}
+  },
+  {
+    "slug": "asagiri-jamboree",
+    "checkedUrls": ["https://asagiri-camp.net/", "https://asagiri-camp.net/facilities/", "https://asagiri-camp.net/rates/", "https://asagiri-camp.net/faq/", "https://asagiri-camp.net/camp-guide/"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": "記載なし"},
+    "shower":   {"value": true, "evidenceUrl": "https://asagiri-camp.net/facilities/", "quote": "キャンプ中も快適にお過ごしいただけるよう、シャワー設備をご用意しています。"},
+    "firewood": {"value": true, "evidenceUrl": "https://asagiri-camp.net/facilities/", "quote": "売店では、薪や炭、ガスなどキャンプに必要な用品を取り揃えています。"},
+    "shop":     {"value": true, "evidenceUrl": "https://asagiri-camp.net/camp-guide/", "quote": "キャンプ用品やお土産などを取り揃えた売店、お食事を楽しめるレストラン"},
+    "pet":      {"value": true, "evidenceUrl": "https://asagiri-camp.net/faq/", "quote": "はい、ペット同伴でご利用いただけます。当キャンプ場では、ペット連れのお客様も歓迎しております。"},
+    "nearbyOnsen": {"value": null}
+  },
+  {
+    "slug": "pica-omotefuji",
+    "checkedUrls": ["https://www.pica-resort.jp/omotefuji/", "https://www.pica-resort.jp/omotefuji/about/guidance.html", "https://www.pica-resort.jp/omotefuji/faq/index.html"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": false, "evidenceUrl": "https://www.pica-resort.jp/omotefuji/about/guidance.html", "quote": "当キャンプ場には、入浴施設を備えておりません。近隣の入浴施設をご利用ください。"},
+    "shower":   {"value": true, "evidenceUrl": "https://www.pica-resort.jp/omotefuji/about/guidance.html", "quote": "シャワーはゲストハウスでご利用いただけます。（無料）"},
+    "firewood": {"value": true, "evidenceUrl": "https://www.pica-resort.jp/omotefuji/faq/index.html", "quote": "木炭、薪、ジュース、お茶、シャンプー・リンス・ボディソープの3点セット"},
+    "shop":     {"value": true, "evidenceUrl": "https://www.pica-resort.jp/omotefuji/faq/index.html", "quote": "売店には、どのような物がありますか？"},
+    "pet":      {"value": true, "evidenceUrl": "https://www.pica-resort.jp/omotefuji/about/guidance.html", "quote": "ペットの同伴は、ご予約の際その旨をお申し付けいただいた方に限ります。"},
+    "nearbyOnsen": {"value": "富士山 天母の湯（車で20分）", "evidenceUrl": "https://www.pica-resort.jp/omotefuji/about/guidance.html", "quote": "最寄りの入浴施設　富士山 天母の湯（車で20分）"}
+  },
+  {
+    "slug": "doshi-no-mori",
+    "checkedUrls": ["https://doshinomori.jp/", "https://doshinomori.jp/facility.html", "https://doshinomori.jp/camp.html", "https://doshinomori.jp/access.html"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": true, "evidenceUrl": "https://doshinomori.jp/facility.html", "quote": "お風呂場：管理棟裏側に2024年新設しました。繁忙期の週末にご利用戴けます"},
+    "shower":   {"value": true, "evidenceUrl": "https://doshinomori.jp/camp.html", "quote": "コインシャワー等もございます"},
+    "firewood": {"value": true, "evidenceUrl": "https://doshinomori.jp/facility.html", "quote": "薪（針葉樹400円・広葉樹700円・広葉樹ナラ900円）"},
+    "shop":     {"value": true, "evidenceUrl": "https://doshinomori.jp/camp.html", "quote": "マキ・炭などは管理棟で販売しています。"},
+    "pet":      {"value": true, "evidenceUrl": "https://doshinomori.jp/camp.html", "quote": "ペットの入場は可能ですが、必ず手綱を使用してください。"},
+    "nearbyOnsen": {"value": "道志の湯（車で約15分）／石割の湯（車で約20分）／紅椿の湯（車で約20分）／紅富士の湯（車で約40分）", "evidenceUrl": "https://doshinomori.jp/access.html", "quote": "道志の湯：相模湖方面へ進み車で約15分ほどにある村営の温泉です。"}
+  },
+  {
+    "slug": "saiko-jiyu",
+    "checkedUrls": ["https://saiko-jiyuu.camp/", "https://saiko-jiyuu.camp/page/facility", "https://saiko-jiyuu.camp/page/guide", "https://saiko-jiyuu.camp/page/faq", "https://saiko-jiyuu.camp/page/requests", "https://saiko-jiyuu.camp/page/nearby-info"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": false, "evidenceUrl": "https://saiko-jiyuu.camp/page/facility", "quote": "シャワーやお風呂の設備はございませんので、近隣の温泉施設などをご利用ください。"},
+    "shower":   {"value": false, "evidenceUrl": "https://saiko-jiyuu.camp/page/facility", "quote": "シャワーやお風呂の設備はございませんので、近隣の温泉施設などをご利用ください。"},
+    "firewood": {"value": true, "evidenceUrl": "https://saiko-jiyuu.camp/page/facility", "quote": "必要最低限のキャンプ用品のレンタル、及び販売をしております。（薪、調理器具・キッチン用品、インスタント食品等）"},
+    "shop":     {"value": true, "evidenceUrl": "https://saiko-jiyuu.camp/page/guide", "quote": "売店営業時間 8:00〜18:00 ※土曜日、連休中日は19時まで営業しております。"},
+    "pet":      {"value": true, "evidenceUrl": "https://saiko-jiyuu.camp/page/requests", "quote": "ペット同伴のお客様は夜間の鳴き声に十分な配慮をお願いします。"},
+    "nearbyOnsen": {"value": "いずみの湯、富士眺望の湯 ゆらり（距離・所要時間の記載なし）", "evidenceUrl": "https://saiko-jiyuu.camp/page/nearby-info", "quote": "周辺日帰り温泉情報：いずみの湯／富士眺望の湯　ゆらり"}
+  },
+  {
+    "slug": "yamanakako-misaki",
+    "checkedUrls": ["https://camp.sotosotodays.com/yamanakako-misaki/", "https://camp.sotosotodays.com/yamanakako-misaki/facility/", "https://camp.sotosotodays.com/yamanakako-misaki/price/", "https://camp.sotosotodays.com/yamanakako-misaki/access/"],
+    "pageMismatch": false,
+    "fetchError": null,
+    "bath":     {"value": "記載なし"},
+    "shower":   {"value": true, "evidenceUrl": "https://camp.sotosotodays.com/yamanakako-misaki/facility/", "quote": "男女別の清潔なシャワールームで、一日の汚れを落としましょう。"},
+    "firewood": {"value": true, "evidenceUrl": "https://camp.sotosotodays.com/yamanakako-misaki/price/", "quote": "薪 針葉樹（1束）¥500 / 薪 広葉樹（1束）¥900"},
+    "shop":     {"value": true, "evidenceUrl": "https://camp.sotosotodays.com/yamanakako-misaki/facility/", "quote": "新しくなった管理棟では受付や会計だけでなく、薪や炭などの消耗品などを購入いただけます。"},
+    "pet":      {"value": true, "evidenceUrl": "https://camp.sotosotodays.com/yamanakako-misaki/price/", "quote": "ペットは糞の処理を含めて、自己管理でお願いいたします。場内では必ず引き綱をお付けください。"},
+    "nearbyOnsen": {"value": null}
+  }
+]

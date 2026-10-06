@@ -1,0 +1,352 @@
+[
+ {
+  "slug": "morimaki-auto",
+  "checkedUrls": [
+   "https://www.morimaki-camp.com/facility/",
+   "https://www.morimaki-camp.com/guide/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.morimaki-camp.com/facility/",
+   "quote": "シャワー（8つ）／シャワー(5分) 300円"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.morimaki-camp.com/facility/",
+   "quote": "薪 700円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.morimaki-camp.com/facility/",
+   "quote": "その他、キャンプ用品・調味料・日用雑貨などをご用意しております"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.morimaki-camp.com/facility/",
+   "quote": "ペット（犬）1頭 500円"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "narita-yume-bokujo",
+  "checkedUrls": [
+   "https://www.yumebokujo.com/camp.html",
+   "https://www.yumebokujo.com/faq.html",
+   "https://www.yumebokujo.com/access.html",
+   "https://www.yumebokujo.com/map.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.yumebokujo.com/camp.html",
+   "quote": "24時間利用可能。男性9部屋、女性8部屋の充実設備。洗面台も完備"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.yumebokujo.com/camp.html",
+   "quote": "ログハウス内には売店をご用意。薪や炭はもちろん"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.yumebokujo.com/camp.html",
+   "quote": "売店：管理棟営業時間内のみ営業"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.yumebokujo.com/camp.html",
+   "quote": "わんちゃん：宿泊800円"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "sengokudai-auto",
+  "checkedUrls": [
+   "https://www.1059dai.com/",
+   "https://www.1059dai.com/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/",
+   "https://www.1059dai.com/%E6%96%99%E9%87%91/",
+   "https://www.1059dai.com/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.1059dai.com/%E6%96%99%E9%87%91/",
+   "quote": "貸切風呂ご利用料（45分）2,000円"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.1059dai.com/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/",
+   "quote": "シャワー室のご利用は30分単位の予約制で、シャワーは2基と別に更衣室あります"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.1059dai.com/%E6%96%99%E9%87%91/",
+   "quote": "薪（１束）600円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.1059dai.com/%E6%96%99%E9%87%91/",
+   "quote": "ホワイトガソリン、炭、薪、カセットボンベ、乾電池、着火剤"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.1059dai.com/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/",
+   "quote": "ペットのご入場は、お客様の責任で管理して頂ければ大丈夫です"
+  },
+  "nearbyOnsen": {
+   "value": "キャンプ場から車で5分、房総の秘湯いろりの宿『七里川温泉』"
+  }
+ },
+ {
+  "slug": "uchiurayama-kenminnomori",
+  "checkedUrls": [
+   "https://www.uchiurayama.jp/stay03",
+   "https://www.uchiurayama.jp/stay04",
+   "https://www.uchiurayama.jp/info",
+   "https://www.uchiurayama.jp/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": true,
+   "evidenceUrl": "https://www.uchiurayama.jp/stay04",
+   "quote": "木炭を入れた、ミネラル豊富なお風呂でおくつろぎください"
+  },
+  "shower": {
+   "value": "記載なし"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "shimizu-koen-auto",
+  "checkedUrls": [
+   "https://www.shimizu-kouen.com/camp",
+   "https://www.shimizu-kouen.com/public-questions",
+   "https://www.shimizu-kouen.com/public-price"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.shimizu-kouen.com/public-questions",
+   "quote": "コインシャワーがございます。200円で5分程度使用いただけます。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.shimizu-kouen.com/camp",
+   "quote": "薪(焚き火用) 850円"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.shimizu-kouen.com/camp",
+   "quote": "キャンプ場受付にて炭、食器類、調理用品、飲料、日用品などを販売"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://www.shimizu-kouen.com/public-questions",
+   "quote": "バンガロー宿泊の方はお断りしております。その他のご利用でペットをご同伴する場合には、基本的には1頭（匹）です"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "futtsu-shiminnomori",
+  "checkedUrls": [
+   "https://www.city.futtsu.lg.jp/0000000751.html",
+   "https://www.city.futtsu.lg.jp/cmsfiles/contents/0000000/751/tebiki.pdf"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.city.futtsu.lg.jp/0000000751.html",
+   "quote": "コインシャワー（温水）約5分間　100円"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.city.futtsu.lg.jp/cmsfiles/contents/0000000/751/tebiki.pdf",
+   "quote": "炊事用マキ、キャンプファイヤー用マキはキャンプ場にて販売いたします。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.city.futtsu.lg.jp/0000000751.html",
+   "quote": "炊事用マキ 1束 700円／炭 1箱 750円（キャンプ場で販売）"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://www.city.futtsu.lg.jp/cmsfiles/contents/0000000/751/tebiki.pdf",
+   "quote": "犬、ねこ等のペットの同伴はご遠慮ください。"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "ohara-kamifuse-auto",
+  "checkedUrls": [
+   "https://ethp.net/camp/kamifuse/?mid",
+   "https://ethp.net/camp/kamifuse/?mid=1",
+   "https://ethp.net/camp/kamifuse/?mid=9",
+   "https://ethp.net/camp/kamifuse/?mid=12"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://ethp.net/camp/kamifuse/?mid=9",
+   "quote": "シャワー1回1人200円(大人同伴の小学生以下無料)"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://ethp.net/camp/kamifuse/?mid=9",
+   "quote": "薪は無料です。(デイキャンプの場合は、1組につき、500円頂きます。)"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://ethp.net/camp/kamifuse/?mid=1",
+   "quote": "管理棟、売店"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://ethp.net/camp/kamifuse/?mid=9",
+   "quote": "ペット同伴　無料"
+  },
+  "nearbyOnsen": {
+   "value": null
+  }
+ },
+ {
+  "slug": "tachibana-fureai-camp",
+  "checkedUrls": [
+   "https://www.tachibana-park.jp/facility-guide/camp/",
+   "https://www.tachibana-park.jp/faq/"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://www.tachibana-park.jp/faq/",
+   "quote": "9時00分~20時30分までご利用可能です。予約制(15分300円)となっております。"
+  },
+  "firewood": {
+   "value": true,
+   "evidenceUrl": "https://www.tachibana-park.jp/faq/",
+   "quote": "炭、薪につきましては受付にて販売しております。"
+  },
+  "shop": {
+   "value": true,
+   "evidenceUrl": "https://www.tachibana-park.jp/faq/",
+   "quote": "体験学習施設内に軽食などが売っている販売コーナーがあります。"
+  },
+  "pet": {
+   "value": "記載なし"
+  },
+  "nearbyOnsen": {
+   "value": "おふろcaféかりんの湯：橘ふれあい公園キャンプ場から車で12分程度"
+  }
+ },
+ {
+  "slug": "umegashima-camp",
+  "checkedUrls": [
+   "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html",
+   "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000068.html"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": false,
+   "evidenceUrl": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html",
+   "quote": "シャワー設備はありません。"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": false,
+   "evidenceUrl": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html",
+   "quote": "ペットを連れての入場はできません。"
+  },
+  "nearbyOnsen": {
+   "value": "車で10分ほど北上したところに梅ケ島新田温泉浴場黄金の湯があります。"
+  }
+ },
+ {
+  "slug": "sugari-camp",
+  "checkedUrls": [
+   "https://sugari.camp/lp/solo-camp.php",
+   "https://sugari.camp/",
+   "https://sugari.camp/profile/",
+   "https://sugari.camp/profile/access.php",
+   "https://sugari.camp/profile/calendar.php",
+   "https://sugari.camp/product/",
+   "https://sugari.camp/profile/terms.php"
+  ],
+  "pageMismatch": false,
+  "fetchError": null,
+  "bath": {
+   "value": "記載なし"
+  },
+  "shower": {
+   "value": true,
+   "evidenceUrl": "https://sugari.camp/profile/",
+   "quote": "炊事場・トイレ・シャワーは隣接する事務所棟内にあり、24時間利用可能"
+  },
+  "firewood": {
+   "value": "記載なし"
+  },
+  "shop": {
+   "value": "記載なし"
+  },
+  "pet": {
+   "value": true,
+   "evidenceUrl": "https://sugari.camp/profile/",
+   "quote": "ペットと泊まれる穴場キャンプ場、シャワー・サウナ完備"
+  },
+  "nearbyOnsen": {
+   "value": "お風呂 すみれの湯：車で17分"
+  }
+ }
+]
