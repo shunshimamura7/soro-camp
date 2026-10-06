@@ -1,0 +1,66 @@
+[
+ {"napId":"16521","name":"99base白子店","pref":"千葉","muni":"白子町","verdict":"宿泊系のため対象外",
+  "reason":"施設公式の住所（長生郡白子町剃金2729-89）は一致するが、公式STAYページの宿泊はVILLA（Airbnb予約）とトレーラーハウスのみで**テント泊の区画が無い**",
+  "checkedUrls":["https://www.99base.co/","https://www.99base.co/stay"],"officialUrl":"https://www.99base.co/"},
+
+ {"napId":"14248","name":"アソビーズ","pref":"千葉","muni":"八街市","verdict":"門落ち(公式なし)",
+  "reason":"なっぷが掲げる公式 asobi-s.com は**DNS解決不可（ドメイン消滅）**。検索でも施設公式・自治体公式・公式予約先は見つからず集約サイトのみ。なお取得ツールの要約が「公式サイトは asobi-s.com です」と断定してきたが、そのドメインは名前解決すらできず**要約が存在しないURLを作っていた**ので自分で開いて弾いた",
+  "checkedUrls":["https://www.nap-camp.com/chiba/14248","https://asobi-s.com/"],"officialUrl":null},
+
+ {"napId":"11992","name":"「ガキ大将の森」キャンプ場","pref":"千葉","muni":"八千代市","verdict":"門落ち(単独利用不可)",
+  "reason":"八千代市公式に利用対象が「**市内に所在する少年関係団体等／市内在住で中学生以下のこどもがいる家族 ※いずれも、20歳以上の引率者がいること**」と明記され1名では利用できない（使用料は無料）",
+  "checkedUrls":["https://www.city.yachiyo.lg.jp/soshiki/64/4700.html"],"officialUrl":"https://www.city.yachiyo.lg.jp/soshiki/64/4700.html"},
+
+ {"napId":"13973","name":"LOCAL LOCAL GARDEN","pref":"千葉","muni":"八千代市","verdict":"門落ち(公式なし)",
+  "reason":"唯一の候補ドメイン local-local-garden.com は現在**「マルナカ梨園」（八千代市村上745）の梨農園サイトに転用**されており、台帳の上高野1539-3のキャンプ場の記載が1文字も無い（sitemap と全内部リンクを確認）",
+  "checkedUrls":["https://www.local-local-garden.com/","https://www.local-local-garden.com/sitemap.xml"],"officialUrl":null},
+
+ {"napId":"15879","name":"アークの森キャンプ場","pref":"千葉","muni":"八千代市","verdict":"追加",
+  "reason":"施設公式（arkforest.jp）の住所（八千代市上高野26）が台帳と一致し、**ソロサイト（小区画）5区画の1泊料金**と共通利用料が公式に明記されている",
+  "checkedUrls":["https://www.arkforest.jp/","https://www.arkforest.jp/site.html","https://www.arkforest.jp/rent.html"],
+  "officialUrl":"https://www.arkforest.jp/","reservationUrl":null,
+  "address":"千葉県八千代市上高野26","priceMin":3000,"priceMax":5000,
+  "priceNote":"サイト課金＋人数課金の合算。NIGHTキャンプの共通料金「【利用料】中学生以上 1,000円」＋ソロサイト（小区画）「平日、日曜 2,000円／土曜、祝日 3,000円／ハイシーズン 4,000円」→ ソロ1名1泊は平日3,000円〜ハイシーズン5,000円。駐車場は「1台無料（2台目〜＋500円/台）」。**予約は電話／LINEのみで公式のWeb予約ページは無い**",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://www.arkforest.jp/site.html","quote":"【薪代】（ひと籠）大 1,200円 小 600円"},
+    "shop":{"value":true,"evidenceUrl":"https://www.arkforest.jp/","quote":"【ザライジングサンコーヒー】さんのドリップコーヒーやお菓子、マグカップなどを全国のキャンプ場初のお取り扱いをさせていただく事になりました。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.arkforest.jp/","quote":"ペットをお連れの方は適切にリード等をご使用頂き、他のご利用者様にご迷惑がかからない様ご配慮下さい。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"16191","name":"CAMPかぐや","pref":"千葉","muni":"八千代市","verdict":"UNMEASURED",
+  "reason":"施設公式サイトが見つからず、根拠候補が予約・店舗ページ（home.tsuku2.jp）と Instagram／Facebook のみ。**tsuku2 は Akamai で403（UA・Referer を付けた curl でも WebFetch でも取得不可）**で内容を確認できない。独自ドメイン候補はいずれもDNS解決不可",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16191","https://home.tsuku2.jp/storeDetail.php?scd=0000158612"],"officialUrl":null},
+
+ {"napId":"14120","name":"さぬきファームオートキャンプ場","pref":"千葉","muni":"睦沢町","verdict":"追加",
+  "reason":"施設公式（sanukifarm.com）の住所（長生郡睦沢町佐貫623）が台帳と一致し、区画単位の1泊料金が公式に明記。ぽつんとサイトは大人2名までなので1名利用できる",
+  "checkedUrls":["https://www.sanukifarm.com/","https://www.sanukifarm.com/営業案内","https://www.sanukifarm.com/近隣観光案内"],
+  "officialUrl":"https://www.sanukifarm.com/","reservationUrl":null,
+  "address":"千葉県長生郡睦沢町佐貫623","priceMin":3000,"priceMax":6000,
+  "priceNote":"区画単位課金。公式「施設情報・料金」より ぽつんとサイト〈通常サイト〉【１区画】（全2区画）3,000円 ※大人２名様まで／オートサイト〈通常サイト〉5,000円・〈AC電源サイト〉6,000円／竹庭サイト 5,000円・6,000円（いずれも1区画・大人5名まで）。車は1サイト1台まで無料（2台目500円）、シャワーは任意で1回200円。**別に〈檜風呂サイト〉11,000円・〈檜風呂サイト（脱衣所付）〉14,000円があるが、これはそのサイトを取った人だけの専用風呂で、3,000円のソロサイトでは使えない**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.sanukifarm.com/営業案内","quote":"食堂棟の横にトイレとシャワー室があります。利用料金は、お一人様1回 200 円です。"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.sanukifarm.com/営業案内","quote":"薪の販売 総合受付の裏に無人販売 一束 500 円"},
+    "shop":{"value":true,"evidenceUrl":"https://www.sanukifarm.com/営業案内","quote":"受付にて売店として備品類、レンタル、代車や遊具の貸し出し薪や炭の販売を行っております。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.sanukifarm.com/営業案内","quote":"ペットの同伴 無料ですが2匹までのご案内になります。（リードの使用をお願い致します）"},
+    "nearbyOnsen":{"value":"むつざわ温泉（睦沢町森2-1、道の駅むつざわ つどいの郷内。10:00〜21:00）","evidenceUrl":"https://www.sanukifarm.com/近隣観光案内","quote":"むつざわ温泉 営業時間： 10:00 - 21:00（最終入場 20:30） 〒299-4422 千葉県長生郡睦沢町森2－１"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14345","name":"UJackむつざわオートキャンプ場","pref":"千葉","muni":"睦沢町","verdict":"追加",
+  "reason":"施設公式のチェックイン窓口住所（睦沢町上之郷2016-5）が台帳と一致し、**1名専用の「ソロサイト」（最大利用人数1名）**の1泊料金が公式に明記されている",
+  "checkedUrls":["https://mutsuzawa.ujack.co.jp/","https://mutsuzawa.ujack.co.jp/plan/","https://mutsuzawa.ujack.co.jp/neighborhood/","https://mutsuzawa.ujack.co.jp/access/"],
+  "officialUrl":"https://mutsuzawa.ujack.co.jp/","reservationUrl":null,
+  "address":"千葉県長生郡睦沢町上之郷1986-1（チェックイン窓口は上之郷2016-5）","priceMin":1000,"priceMax":3000,
+  "priceNote":"1名単位課金。公式「サイト紹介/料金プラン」のソロサイト（最大利用人数1名）「オフシーズン 大人・子ども（中学生以上）：1,000円/人／ハイシーズン 1,400円/人／トップシーズン 3,000円/人」。AC電源なしのサイトなので電源使用料2,000円は不要、駐車場は「※１台無料」",
+  "features":{
+    "shop":{"value":true,"evidenceUrl":"https://mutsuzawa.ujack.co.jp/","quote":"環境保護のため合成洗剤の使用は禁止です。自然せっけん・アウトドア洗剤などをご使用ください。売店でも販売しております。"},
+    "nearbyOnsen":{"value":"むつざわ温泉つどいの湯（徒歩圏内・露天風呂＋サウナ、10:00〜21:00）","evidenceUrl":"https://mutsuzawa.ujack.co.jp/neighborhood/","quote":"キャンプ場周辺には徒歩圏内に露天風呂付きの道の駅…／むつざわ温泉つどいの湯 10：00～21：00"}},
+  "coordsFromOfficialMap":{"lat":35.353210,"lng":140.305118,"url":"https://mutsuzawa.ujack.co.jp/access/"}},
+
+ {"napId":"14878","name":"とり亀つりぼりカフェ・キャンプ場","pref":"千葉","muni":"睦沢町","verdict":"UNMEASURED",
+  "reason":"施設公式（oogami-heraike.com＝釣り堀「大上へら池」時代からの改称型）の住所（睦沢町大上1508）は一致し、フリーサイト3,500円・オートサイト6,500円の単独プランもある。だが**公式のどこにも「1泊」の明記が無く、この額が宿泊料か日帰り料か判別できない**。料金は推測しないため保留",
+  "checkedUrls":["http://oogami-heraike.com/","https://oogami-heraike.com/キャンプ場とbbq場/","https://oogami-heraike.com/とり亀-qa/"],"officialUrl":"http://oogami-heraike.com/"},
+
+ {"napId":"14881","name":"kit みずさわ","pref":"千葉","muni":"睦沢町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"運営の R.project 公式ページは住所（睦沢町大上3220）が一致するが、内容は旧小学校を使った合宿宿泊施設（和室・洋室 全9室）の紹介のみで、**テントサイトの料金もソロ1泊料金も予約方法も公式に無い**（問い合わせフォームのみ）",
+  "checkedUrls":["http://training-camp.rprojectjapan.com/introduce/kit-%E3%81%BF%E3%81%9A%E3%81%95%E3%82%8F/","https://rprojectjapan.com/"],"officialUrl":"http://training-camp.rprojectjapan.com/introduce/kit-%E3%81%BF%E3%81%9A%E3%81%95%E3%82%8F/"}
+]

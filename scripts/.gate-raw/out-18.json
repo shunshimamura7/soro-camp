@@ -1,0 +1,49 @@
+[
+ {"napId":"16135","name":"TARAREBA RIVER SIDE BASE CAMP","pref":"千葉","muni":"大多喜町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（Wix）は存在するが料金表も予約手段も無く（問い合わせ先のみ）、宿泊料金はなっぷ頼み。加えて公式住所は「大多喜町田代996」で台帳の「田代640」と番地が一致しない",
+  "checkedUrls":["https://tararebacamp.wixsite.com/tarareba-river-side","https://tararebacamp.wixsite.com/tarareba-river-side/blank-3"],"officialUrl":"https://tararebacamp.wixsite.com/tarareba-river-side"},
+
+ {"napId":"14957","name":"BEACH CAMP 九十九里","pref":"千葉","muni":"大網白里市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式は実在し住所（大網白里市四天木2761-40）も一致するが、**公式に載るのはデイキャンプ料金とレンタル品価格のみで宿泊のサイト料金が空欄**。公式自身が「各ステイの日程等や料金を含め、予約に関する更なる詳細は情報サイト“なっぷ”にて承っております」と丸投げしている",
+  "checkedUrls":["https://www.beachcamp99.biz/","https://www.beachcamp99.biz/ビーチキャンプ九十九里"],"officialUrl":"https://www.beachcamp99.biz/"},
+
+ {"napId":"14388","name":"銚子スポーツタウン","pref":"千葉","muni":"銚子市","verdict":"門落ち(単独利用不可)",
+  "reason":"公式予約ページに「**当施設では、宿泊人数の合計が10人以上からご予約を承っています**」と明記。合宿向けの宿舎施設でテントサイトの料金設定も無い",
+  "checkedUrls":["https://choshi-sportstown.com/","https://choshi-sportstown.com/yoyaku.html","https://choshi-sportstown.com/price.html"],"officialUrl":"https://choshi-sportstown.com/"},
+
+ {"napId":"11985","name":"長南町野営場","pref":"千葉","muni":"長南町","verdict":"門落ち(宿泊不可)",
+  "reason":"長南町公式に「開設期間：６月１日〜８月３１日まで ※**デイキャンプのみ利用可（テントの設営はできますが、宿泊はできません。）**」と明記",
+  "checkedUrls":["https://www.town.chonan.chiba.jp/shoukai/kankou/502/"],"officialUrl":"https://www.town.chonan.chiba.jp/shoukai/kankou/502/"},
+
+ {"napId":"14477","name":"仲間と泊まる学校 ちょうなん西小","pref":"千葉","muni":"長南町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式の宿泊料金は**団体貸切のみ（20名未満でも1団体あたり132,000円〜220,000円）**でソロ1泊の料金設定が無い。「当施設は『一団体様完全貸し切り宿泊施設』のため」と公式に明記",
+  "checkedUrls":["https://chonan-nishisho.jp/","https://chonan-nishisho.jp/price/","https://chonan-nishisho.jp/qa/"],"officialUrl":"https://chonan-nishisho.jp/"},
+
+ {"napId":"11986","name":"勝古沢キャンプ場","pref":"千葉","muni":"長柄町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイトが存在しない。各所が示す「公式サイト」は Instagram アカウントのみで、長柄町公式サイトにも該当ページが見当たらず公式予約先も無い",
+  "checkedUrls":["https://www.town.nagara.chiba.jp/sitemap.html","https://www.instagram.com/kakkozawa0475/"],"officialUrl":null},
+
+ {"napId":"13914","name":"アルビンスポーツパーク","pref":"千葉","muni":"長柄町","verdict":"追加",
+  "reason":"施設公式に区画テントサイトの1泊料金が明記され、住所（長生郡長柄町長柄山522）も一致。サイト課金（定員5名）なのでソロ1名でも同額で単独利用できる",
+  "checkedUrls":["https://www.aerbinsportspark.com/guide/camp/","https://www.aerbinsportspark.com/price/","https://www.aerbinsportspark.com/faq/","https://www.aerbinsportspark.com/access/"],
+  "officialUrl":"https://www.aerbinsportspark.com/","reservationUrl":"https://www.aerbinsportspark.com/contact/",
+  "address":"千葉県長生郡長柄町長柄山522","priceMin":3000,"priceMax":6000,
+  "priceNote":"区画単位課金で人数課金なし。公式の区画テントサイト（約10m×7m／定員5名／5区画）「オフシーズン 1泊 ¥3,000／通常シーズン 1泊 ¥4,000／ピークシーズン 1泊 ¥5,000／ハイトップシーズン 1泊 ¥6,000」※税込。1区画あたりの料金のため1名でも同額。別途必須の駐車場代・入場料の記載なし",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://www.aerbinsportspark.com/guide/camp/","quote":"合宿施設のトイレや大浴場を利用できるのでアウトドア初心者にも安心！"},
+    "shower":{"value":true,"evidenceUrl":"https://www.aerbinsportspark.com/guide/camp/","quote":"トイレ・シャワーあり※宿泊棟利用可（16:00～20:00）"},
+    "pet":{"value":false,"evidenceUrl":"https://www.aerbinsportspark.com/faq/","quote":"ペットは入場できますか？ ペットの入場はお断りしております。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"16414","name":"長柄町都市農村交流センター ワクワクながら","pref":"千葉","muni":"長柄町","verdict":"宿泊系のため対象外",
+  "reason":"宿泊できるのは4名用コテージ（ロフト付ログハウス）9棟のみ。公式の予約対象施設一覧にテントサイト／キャンプサイトが無い",
+  "checkedUrls":["https://wakuwaku-nagara.com/","http://wakuwaku-nagara.com/コテージ-ログハウス/"],"officialUrl":"https://wakuwaku-nagara.com/"},
+
+ {"napId":"14095","name":"Hale Luana - Maui & Forest","pref":"千葉","muni":"東金市","verdict":"UNMEASURED",
+  "reason":"**「ご利用は１名様でも基本料金2名様分がかかります」で平日35,000円〜・週末39,000円〜**。1名の総額が高額の線を大きく超える。加えて宿泊実体はキャビン／キャンピングトレーラー／ログハウスの1日1組貸切でテントは庭に自分で張る任意扱いなので、宿泊系として対象外にするかの判断も要る",
+  "checkedUrls":["https://www.haleluana-chiba.com/","https://www.haleluana-chiba.com/rooms-rates"],"officialUrl":"https://www.haleluana-chiba.com/"},
+
+ {"napId":"14617","name":"The Forest Garden KIMINOMORI","pref":"千葉","muni":"東金市","verdict":"宿泊系のため対象外",
+  "reason":"公式が「グランピング施設／手ぶらキャンプ場」と称する**施設備付テント（ベッド・電源・寝具付）のみの提供**で、持込テントのサイト設定が無い。飲食物の持ち込みも不可。なお公式の宿泊プラン料金PDFは404",
+  "checkedUrls":["http://the-forest-garden.com/","http://the-forest-garden.com/guide/","http://the-forest-garden.com/faq/"],"officialUrl":"http://the-forest-garden.com/"}
+]

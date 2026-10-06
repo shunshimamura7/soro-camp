@@ -1,0 +1,69 @@
+[
+ {"napId":"16325","name":"SOTOVERSE ICHIHARA","pref":"千葉","muni":"市原市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（sotoverse.net）は住所「市原市栢橋869」が一致するが、全ページに料金表が無く、公式の「ご予約はこちら」はなっぷへのリンクのみ",
+  "checkedUrls":["https://www.sotoverse.net/","https://www.sotoverse.net/concept-3/","https://www.sotoverse.net/%e4%ba%88%e7%b4%84%e3%83%9a%e3%83%bc%e3%82%b8/"],"officialUrl":"https://www.sotoverse.net/"},
+
+ {"napId":"16886","name":"SATOYAMA CAMP WOOD CLIFF","pref":"千葉","muni":"市原市","verdict":"追加",
+  "reason":"施設公式に住所（市原市上原261-1）が一致し、宿泊キャンプ1泊の区画料金（1張単位でソロでも同額）が明記されている",
+  "checkedUrls":["https://www.satoyamacliff-camp.com/","https://www.satoyamacliff-camp.com/guide/","https://www.satoyamacliff-camp.com/faq/"],
+  "officialUrl":"https://www.satoyamacliff-camp.com/","reservationUrl":"https://www.nap-camp.com/chiba/16886",
+  "address":"千葉県市原市上原261-1","priceMin":3000,"priceMax":3500,
+  "priceNote":"区画単位課金で人数課金なし。公式「利用案内」より「宿泊キャンプ（1泊）14:00 チェックイン／〜10:00 チェックアウト　森林A南：区画サイト／森林A北：フリーサイト　平日 3,000円／回、土日・祭前日・ハイシーズン 3,500円／回　※車1台・テント1張、大人４人まで」。**公式FAQに「4月から10月の営業を予定しています」、定休日は火・水。焚き火サイトは準備中で焚き火台利用・直火不可。受付は場外の里山農産物直売所（市原市馬立1169、車で約5分）**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.satoyamacliff-camp.com/guide/","quote":"温水シャワー（施設紹介の設備一覧）"},
+    "pet":{"value":true,"evidenceUrl":"https://www.satoyamacliff-camp.com/faq/","quote":"Q6. ペットと一緒に泊まれますか？ A. 可能です。ペット同伴でご利用いただけますが、場内ではリードの着用など…"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11971","name":"いちかわ市民キャンプ場","pref":"千葉","muni":"市川市","verdict":"UNMEASURED",
+  "reason":"**焚き火禁止**。市川市公式の利用の手引きに「火気の利用は「炊事場のかまど」及び「営火場（要事前許可）」のみ…コンロ等を持ち込んでの火気利用や調理等は出来ません（電磁式コンロ・ガスボンベ等の利用、焚火や花火等も不可）」。ほかの門は全て通り、**利用は無料・宿泊可（最大3泊4日）・市外も可**なので、焚き火禁止を門にするかの判断が要る。公式 https://www.city.ichikawa.lg.jp/page/1807.html",
+  "checkedUrls":["https://www.city.ichikawa.lg.jp/page/1807.html","https://www.city.ichikawa.lg.jp/uploaded/attachment/2628.pdf"],"officialUrl":"https://www.city.ichikawa.lg.jp/page/1807.html"},
+
+ {"napId":"14682","name":"ゆめパーク牧野キャンプ場","pref":"千葉","muni":"芝山町","verdict":"UNMEASURED",
+  "reason":"運営者公式に「【1名宿泊】ソロキャンプ 1泊 2,500円〜」があり芝山町公式にもソロキャンプ・たき火の記述があるが、**同じ公式ページに「※2025年4月25日よりキャンプ料金を変更いたします。詳細はなっぷをご覧下さい。」とあり、載っている2,500円は改定前の旧料金**。新料金が公式に無いため載せられない。加えて公式に載る住所は運営法人本部（芝山町山田1181）のみで、台帳の「牧野324-4」を一次情報で照合できなかった",
+  "checkedUrls":["https://midori-sora.com/camp/","https://midori-sora.com/about/","https://www.town.shibayama.lg.jp/0000004898.html"],"officialUrl":"https://midori-sora.com/camp/"},
+
+ {"napId":"15084","name":"きのえね SAKE CAMP","pref":"千葉","muni":"酒々井町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（飯沼本家）の特設サイトに住所「印旛郡酒々井町馬橋106」が一致し宿泊施設であることも明記されているが、**公式に料金表が一切無く「なっぷで予約」のみ**",
+  "checkedUrls":["https://www.iinumahonke.co.jp/sakagura/sakecamp/","https://www.iinumahonke.co.jp/lp/kinoene-sakecamp/"],"officialUrl":"https://www.iinumahonke.co.jp/lp/kinoene-sakecamp/"},
+
+ {"napId":"16609","name":"筍の里 BeSSO","pref":"千葉","muni":"酒々井町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式に住所「印旛郡酒々井町墨541」は一致するが、キャンプ場の項目は「下記キャンプサイト「なっぷ」よりご予約いただけます」のみで料金なし。**公式に載る料金はBBQレンタル会場と弁当だけでソロの1泊料金が無い**。なお公式は Flutter 製で HTML に本文が無く、main.dart.js のエスケープを復号して本文を読んだ",
+  "checkedUrls":["https://takesatobesso.com/","https://takesatobesso.com/main.dart.js"],"officialUrl":"https://takesatobesso.com/"},
+
+ {"napId":"11978","name":"下総運動公園","pref":"千葉","muni":"成田市","verdict":"追加",
+  "reason":"成田市公式に所在地（成田市高岡1435）とキャンプ場の宿泊利用が明記され、指定管理者（公益財団法人成田市スポーツ・みどり振興財団）の公式料金表にキャンプ場の1人1回の宿泊料金がある",
+  "checkedUrls":["https://www.city.narita.chiba.jp/bunka_sports/page327800.html","https://www.city.narita.chiba.jp/shisetsu/page000151.html","https://www.park-narita.jp/shisetsu/riyoryokin/shimosa/","https://www.park-narita.jp/shisetsu/shisetsu_ichiran/shimosa/"],
+  "officialUrl":"https://www.city.narita.chiba.jp/bunka_sports/page327800.html","reservationUrl":null,
+  "address":"千葉県成田市高岡1435","priceMin":110,"priceMax":330,
+  "priceNote":"1名単位課金。指定管理者の料金表「キャンプ場（1人1回）／午後4時から翌日の午前9時：本市に住所を有し、又は勤務する者 110円、本市に住所を有し、又は勤務する者以外の者 330円」。**市内料金は在住・在勤・在学者のみで、市外からは330円**。予約先は下総運動公園受付事務所（下総公民館内）0476-94-3431で、宿泊利用は3日前までの予約が必要。設備は炊事場・野外卓・トイレのみ。開場期間は1月6日〜12月26日（12/27〜1/5は休館）",
+  "features":{
+    "pet":{"value":false,"evidenceUrl":"https://www.park-narita.jp/shisetsu/shisetsu_ichiran/shimosa/","quote":"キャンプ場…（注意2）ペット同伴不可"}},
+  "coordsFromOfficialMap":{"lat":35.87317688563451,"lng":140.35597443580627,"url":"https://www.city.narita.chiba.jp/shisetsu/page000151.html"}},
+
+ {"napId":"11979","name":"坂田ヶ池総合公園","pref":"千葉","muni":"成田市","verdict":"追加",
+  "reason":"成田市公式に所在地（成田市大竹1450）・テントサイト27か所・宿泊区分（午後4時から翌日午前9時）の1人1回料金が明記されている",
+  "checkedUrls":["https://www.city.narita.chiba.jp/shisetsu/page000195.html","https://www.city.narita.chiba.jp/environment/page187200.html"],
+  "officialUrl":"https://www.city.narita.chiba.jp/shisetsu/page000195.html","reservationUrl":null,
+  "address":"千葉県成田市大竹1450","priceMin":200,"priceMax":300,
+  "priceNote":"1名単位課金。成田市公式「一般テントサイト（No.8以降）…テントサイト（1人1回）：一般・学生 200円（午後4時から翌日の午前9時）」「本市に住所を有し、又は勤務する者以外の者は、50パーセント増とする」＝市外300円。駐車場は無料（普通車148台）。**特別テントサイト（No.1〜No.7）を選ぶと、使用の有無に関係なく「かまど及びテーブルセット（1セット1回）620円」が別途必要**（公式に610円→620円への改定告知あり）。コインシャワーは1回100円。予約は坂田ヶ池総合公園管理事務所 0476-29-1161で、宿泊は3か月前から1週間前まで",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.city.narita.chiba.jp/environment/page187200.html","quote":"コインシャワー利用料金等　利用料金：1回100円（専用コインを公園管理事務所でご購入ください。）"},
+    "pet":{"value":false,"evidenceUrl":"https://www.city.narita.chiba.jp/shisetsu/page000195.html","quote":"【キャンプ場での禁止行為】…・犬などのペットの来場。"}},
+  "coordsFromOfficialMap":{"lat":35.816869222706686,"lng":140.27551889419556,"url":"https://www.city.narita.chiba.jp/shisetsu/page000195.html"}},
+
+ {"napId":"14327","name":"Ready to Flight!NARITA 校庭キャンプ場","pref":"千葉","muni":"成田市","verdict":"追加",
+  "reason":"施設公式に住所（成田市大室680・旧久住第二小学校）が一致し、校庭キャンプ場のオートキャンプ区画料金（6名まで一律でソロも同額）が明記されている",
+  "checkedUrls":["https://rtfn.jp/","https://rtfn.jp/ishiyasuo/"],
+  "officialUrl":"https://rtfn.jp/ishiyasuo/","reservationUrl":null,
+  "address":"千葉県成田市大室680","priceMin":5500,"priceMax":5500,
+  "priceNote":"区画単位課金。公式「料金体系」より「オートキャンプ 区画７ｍ×５ｍ　6名まで5,000円から　追加料金：大人1人につき1,000円、子供1人につき500円」「※金額は税抜きです」→ ソロ1名は区画料金のみで税込5,500円。下限のみ公開（「から」表記）のため priceMax も同額。**公式NEWSに期間限定の「Year end Secret Camp – 校庭キャンプ「年末特別枠」…2025年 12/20(土)〜30(火) オートキャンプ 1区画 4000円 (税込)」の告知あり**。予約は0476-37-5851または公式の問い合わせフォーム",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://rtfn.jp/ishiyasuo/","quote":"共有施設　トイレ／シャワー／…　レンタル可能用品　シャワールーム200円"},
+    "shop":{"value":true,"evidenceUrl":"https://rtfn.jp/ishiyasuo/","quote":"共有施設　…自動販売機／BBQエリア／炊事場／売店／BAR／体育館"},
+    "pet":{"value":false,"evidenceUrl":"https://rtfn.jp/","quote":"ペットの同伴はできますか？　ペット同伴でのご宿泊はご遠慮いただいております。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14978","name":"DINING PORT 御料鶴","pref":"千葉","muni":"成田市","verdict":"門落ち(宿泊不可)",
+  "reason":"施設公式（JAL Agriport）に住所「成田市川上245-219」は一致するが、屋外利用はレストラン芝生エリアのBBQ（11:00〜15:00）と「御料鶴フリーサイト」（1日限定5区画 11:30〜16:00、公式の画像名も Goryokaku DayCamp）のみで**デイキャンプ専用**。公式の農泊ページはトップへリダイレクトし宿泊提供の記載が無い",
+  "checkedUrls":["https://jalagriport.com/service/restaurant/","https://jalagriport.com/service/bbq","https://jalagriport.com/service/nohaku"],"officialUrl":"https://jalagriport.com/service/bbq"}
+]

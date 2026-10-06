@@ -2071,5 +2071,315 @@
   "coordsFromOfficialMap": null,
   "napUrl": "https://www.nap-camp.com/chiba/15677",
   "napName": "多古の星キャンプ場"
+ },
+ {
+  "napId": "16886",
+  "name": "SATOYAMA CAMP WOOD CLIFF",
+  "pref": "千葉",
+  "muni": "市原市",
+  "verdict": "追加",
+  "reason": "施設公式に住所（市原市上原261-1）が一致し、宿泊キャンプ1泊の区画料金（1張単位でソロでも同額）が明記されている",
+  "checkedUrls": [
+   "https://www.satoyamacliff-camp.com/",
+   "https://www.satoyamacliff-camp.com/guide/",
+   "https://www.satoyamacliff-camp.com/faq/"
+  ],
+  "officialUrl": "https://www.satoyamacliff-camp.com/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/16886",
+  "address": "千葉県市原市上原261-1",
+  "priceMin": 3000,
+  "priceMax": 3500,
+  "priceNote": "区画単位課金で人数課金なし。公式「利用案内」より「宿泊キャンプ（1泊）14:00 チェックイン／〜10:00 チェックアウト　森林A南：区画サイト／森林A北：フリーサイト　平日 3,000円／回、土日・祭前日・ハイシーズン 3,500円／回　※車1台・テント1張、大人４人まで」。**公式FAQに「4月から10月の営業を予定しています」、定休日は火・水。焚き火サイトは準備中で焚き火台利用・直火不可。受付は場外の里山農産物直売所（市原市馬立1169、車で約5分）**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.satoyamacliff-camp.com/guide/",
+    "quote": "温水シャワー（施設紹介の設備一覧）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.satoyamacliff-camp.com/faq/",
+    "quote": "Q6. ペットと一緒に泊まれますか？ A. 可能です。ペット同伴でご利用いただけますが、場内ではリードの着用など…"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16886",
+  "napName": "里山キャンプウッドクリフ"
+ },
+ {
+  "napId": "11978",
+  "name": "下総運動公園",
+  "pref": "千葉",
+  "muni": "成田市",
+  "verdict": "追加",
+  "reason": "成田市公式に所在地（成田市高岡1435）とキャンプ場の宿泊利用が明記され、指定管理者（公益財団法人成田市スポーツ・みどり振興財団）の公式料金表にキャンプ場の1人1回の宿泊料金がある",
+  "checkedUrls": [
+   "https://www.city.narita.chiba.jp/bunka_sports/page327800.html",
+   "https://www.city.narita.chiba.jp/shisetsu/page000151.html",
+   "https://www.park-narita.jp/shisetsu/riyoryokin/shimosa/",
+   "https://www.park-narita.jp/shisetsu/shisetsu_ichiran/shimosa/"
+  ],
+  "officialUrl": "https://www.city.narita.chiba.jp/bunka_sports/page327800.html",
+  "reservationUrl": null,
+  "address": "千葉県成田市高岡1435",
+  "priceMin": 110,
+  "priceMax": 330,
+  "priceNote": "1名単位課金。指定管理者の料金表「キャンプ場（1人1回）／午後4時から翌日の午前9時：本市に住所を有し、又は勤務する者 110円、本市に住所を有し、又は勤務する者以外の者 330円」。**市内料金は在住・在勤・在学者のみで、市外からは330円**。予約先は下総運動公園受付事務所（下総公民館内）0476-94-3431で、宿泊利用は3日前までの予約が必要。設備は炊事場・野外卓・トイレのみ。開場期間は1月6日〜12月26日（12/27〜1/5は休館）",
+  "features": {
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://www.park-narita.jp/shisetsu/shisetsu_ichiran/shimosa/",
+    "quote": "キャンプ場…（注意2）ペット同伴不可"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.87317688563451,
+   "lng": 140.35597443580627,
+   "url": "https://www.city.narita.chiba.jp/shisetsu/page000151.html"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/11978",
+  "napName": "下総運動公園（フレンドリーパーク）"
+ },
+ {
+  "napId": "11979",
+  "name": "坂田ヶ池総合公園",
+  "pref": "千葉",
+  "muni": "成田市",
+  "verdict": "追加",
+  "reason": "成田市公式に所在地（成田市大竹1450）・テントサイト27か所・宿泊区分（午後4時から翌日午前9時）の1人1回料金が明記されている",
+  "checkedUrls": [
+   "https://www.city.narita.chiba.jp/shisetsu/page000195.html",
+   "https://www.city.narita.chiba.jp/environment/page187200.html"
+  ],
+  "officialUrl": "https://www.city.narita.chiba.jp/shisetsu/page000195.html",
+  "reservationUrl": null,
+  "address": "千葉県成田市大竹1450",
+  "priceMin": 200,
+  "priceMax": 300,
+  "priceNote": "1名単位課金。成田市公式「一般テントサイト（No.8以降）…テントサイト（1人1回）：一般・学生 200円（午後4時から翌日の午前9時）」「本市に住所を有し、又は勤務する者以外の者は、50パーセント増とする」＝市外300円。駐車場は無料（普通車148台）。**特別テントサイト（No.1〜No.7）を選ぶと、使用の有無に関係なく「かまど及びテーブルセット（1セット1回）620円」が別途必要**（公式に610円→620円への改定告知あり）。コインシャワーは1回100円。予約は坂田ヶ池総合公園管理事務所 0476-29-1161で、宿泊は3か月前から1週間前まで",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.city.narita.chiba.jp/environment/page187200.html",
+    "quote": "コインシャワー利用料金等　利用料金：1回100円（専用コインを公園管理事務所でご購入ください。）"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://www.city.narita.chiba.jp/shisetsu/page000195.html",
+    "quote": "【キャンプ場での禁止行為】…・犬などのペットの来場。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.816869222706686,
+   "lng": 140.27551889419556,
+   "url": "https://www.city.narita.chiba.jp/shisetsu/page000195.html"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/11979",
+  "napName": "坂田ケ池総合公園"
+ },
+ {
+  "napId": "14327",
+  "name": "Ready to Flight!NARITA 校庭キャンプ場",
+  "pref": "千葉",
+  "muni": "成田市",
+  "verdict": "追加",
+  "reason": "施設公式に住所（成田市大室680・旧久住第二小学校）が一致し、校庭キャンプ場のオートキャンプ区画料金（6名まで一律でソロも同額）が明記されている",
+  "checkedUrls": [
+   "https://rtfn.jp/",
+   "https://rtfn.jp/ishiyasuo/"
+  ],
+  "officialUrl": "https://rtfn.jp/ishiyasuo/",
+  "reservationUrl": null,
+  "address": "千葉県成田市大室680",
+  "priceMin": 5500,
+  "priceMax": 5500,
+  "priceNote": "区画単位課金。公式「料金体系」より「オートキャンプ 区画７ｍ×５ｍ　6名まで5,000円から　追加料金：大人1人につき1,000円、子供1人につき500円」「※金額は税抜きです」→ ソロ1名は区画料金のみで税込5,500円。下限のみ公開（「から」表記）のため priceMax も同額。**公式NEWSに期間限定の「Year end Secret Camp – 校庭キャンプ「年末特別枠」…2025年 12/20(土)〜30(火) オートキャンプ 1区画 4000円 (税込)」の告知あり**。予約は0476-37-5851または公式の問い合わせフォーム",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://rtfn.jp/ishiyasuo/",
+    "quote": "共有施設　トイレ／シャワー／…　レンタル可能用品　シャワールーム200円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://rtfn.jp/ishiyasuo/",
+    "quote": "共有施設　…自動販売機／BBQエリア／炊事場／売店／BAR／体育館"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://rtfn.jp/",
+    "quote": "ペットの同伴はできますか？　ペット同伴でのご宿泊はご遠慮いただいております。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/14327",
+  "napName": "Ready to Flight! NARITA"
+ },
+ {
+  "napId": "13914",
+  "name": "アルビンスポーツパーク",
+  "pref": "千葉",
+  "muni": "長柄町",
+  "verdict": "追加",
+  "reason": "施設公式に区画テントサイトの1泊料金が明記され、住所（長生郡長柄町長柄山522）も一致。サイト課金（定員5名）なのでソロ1名でも同額で単独利用できる",
+  "checkedUrls": [
+   "https://www.aerbinsportspark.com/guide/camp/",
+   "https://www.aerbinsportspark.com/price/",
+   "https://www.aerbinsportspark.com/faq/",
+   "https://www.aerbinsportspark.com/access/"
+  ],
+  "officialUrl": "https://www.aerbinsportspark.com/",
+  "reservationUrl": "https://www.aerbinsportspark.com/contact/",
+  "address": "千葉県長生郡長柄町長柄山522",
+  "priceMin": 3000,
+  "priceMax": 6000,
+  "priceNote": "区画単位課金で人数課金なし。公式の区画テントサイト（約10m×7m／定員5名／5区画）「オフシーズン 1泊 ¥3,000／通常シーズン 1泊 ¥4,000／ピークシーズン 1泊 ¥5,000／ハイトップシーズン 1泊 ¥6,000」※税込。1区画あたりの料金のため1名でも同額。別途必須の駐車場代・入場料の記載なし",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://www.aerbinsportspark.com/guide/camp/",
+    "quote": "合宿施設のトイレや大浴場を利用できるのでアウトドア初心者にも安心！"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.aerbinsportspark.com/guide/camp/",
+    "quote": "トイレ・シャワーあり※宿泊棟利用可（16:00～20:00）"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://www.aerbinsportspark.com/faq/",
+    "quote": "ペットは入場できますか？ ペットの入場はお断りしております。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/13914",
+  "napName": "アルビンスポーツパーク　キャンプ広場"
+ },
+ {
+  "napId": "15879",
+  "name": "アークの森キャンプ場",
+  "pref": "千葉",
+  "muni": "八千代市",
+  "verdict": "追加",
+  "reason": "施設公式（arkforest.jp）の住所（八千代市上高野26）が台帳と一致し、**ソロサイト（小区画）5区画の1泊料金**と共通利用料が公式に明記されている",
+  "checkedUrls": [
+   "https://www.arkforest.jp/",
+   "https://www.arkforest.jp/site.html",
+   "https://www.arkforest.jp/rent.html"
+  ],
+  "officialUrl": "https://www.arkforest.jp/",
+  "reservationUrl": null,
+  "address": "千葉県八千代市上高野26",
+  "priceMin": 3000,
+  "priceMax": 5000,
+  "priceNote": "サイト課金＋人数課金の合算。NIGHTキャンプの共通料金「【利用料】中学生以上 1,000円」＋ソロサイト（小区画）「平日、日曜 2,000円／土曜、祝日 3,000円／ハイシーズン 4,000円」→ ソロ1名1泊は平日3,000円〜ハイシーズン5,000円。駐車場は「1台無料（2台目〜＋500円/台）」。**予約は電話／LINEのみで公式のWeb予約ページは無い**",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.arkforest.jp/site.html",
+    "quote": "【薪代】（ひと籠）大 1,200円 小 600円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.arkforest.jp/",
+    "quote": "【ザライジングサンコーヒー】さんのドリップコーヒーやお菓子、マグカップなどを全国のキャンプ場初のお取り扱いをさせていただく事になりました。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.arkforest.jp/",
+    "quote": "ペットをお連れの方は適切にリード等をご使用頂き、他のご利用者様にご迷惑がかからない様ご配慮下さい。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/15879",
+  "napName": "アークの森キャンプ場"
+ },
+ {
+  "napId": "14120",
+  "name": "さぬきファームオートキャンプ場",
+  "pref": "千葉",
+  "muni": "睦沢町",
+  "verdict": "追加",
+  "reason": "施設公式（sanukifarm.com）の住所（長生郡睦沢町佐貫623）が台帳と一致し、区画単位の1泊料金が公式に明記。ぽつんとサイトは大人2名までなので1名利用できる",
+  "checkedUrls": [
+   "https://www.sanukifarm.com/",
+   "https://www.sanukifarm.com/営業案内",
+   "https://www.sanukifarm.com/近隣観光案内"
+  ],
+  "officialUrl": "https://www.sanukifarm.com/",
+  "reservationUrl": null,
+  "address": "千葉県長生郡睦沢町佐貫623",
+  "priceMin": 3000,
+  "priceMax": 6000,
+  "priceNote": "区画単位課金。公式「施設情報・料金」より ぽつんとサイト〈通常サイト〉【１区画】（全2区画）3,000円 ※大人２名様まで／オートサイト〈通常サイト〉5,000円・〈AC電源サイト〉6,000円／竹庭サイト 5,000円・6,000円（いずれも1区画・大人5名まで）。車は1サイト1台まで無料（2台目500円）、シャワーは任意で1回200円。**別に〈檜風呂サイト〉11,000円・〈檜風呂サイト（脱衣所付）〉14,000円があるが、これはそのサイトを取った人だけの専用風呂で、3,000円のソロサイトでは使えない**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.sanukifarm.com/営業案内",
+    "quote": "食堂棟の横にトイレとシャワー室があります。利用料金は、お一人様1回 200 円です。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.sanukifarm.com/営業案内",
+    "quote": "薪の販売 総合受付の裏に無人販売 一束 500 円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.sanukifarm.com/営業案内",
+    "quote": "受付にて売店として備品類、レンタル、代車や遊具の貸し出し薪や炭の販売を行っております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.sanukifarm.com/営業案内",
+    "quote": "ペットの同伴 無料ですが2匹までのご案内になります。（リードの使用をお願い致します）"
+   },
+   "nearbyOnsen": {
+    "value": "むつざわ温泉（睦沢町森2-1、道の駅むつざわ つどいの郷内。10:00〜21:00）",
+    "evidenceUrl": "https://www.sanukifarm.com/近隣観光案内",
+    "quote": "むつざわ温泉 営業時間： 10:00 - 21:00（最終入場 20:30） 〒299-4422 千葉県長生郡睦沢町森2－１"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/14120",
+  "napName": "さぬきファームオートキャンプ場"
+ },
+ {
+  "napId": "14345",
+  "name": "UJackむつざわオートキャンプ場",
+  "pref": "千葉",
+  "muni": "睦沢町",
+  "verdict": "追加",
+  "reason": "施設公式のチェックイン窓口住所（睦沢町上之郷2016-5）が台帳と一致し、**1名専用の「ソロサイト」（最大利用人数1名）**の1泊料金が公式に明記されている",
+  "checkedUrls": [
+   "https://mutsuzawa.ujack.co.jp/",
+   "https://mutsuzawa.ujack.co.jp/plan/",
+   "https://mutsuzawa.ujack.co.jp/neighborhood/",
+   "https://mutsuzawa.ujack.co.jp/access/"
+  ],
+  "officialUrl": "https://mutsuzawa.ujack.co.jp/",
+  "reservationUrl": null,
+  "address": "千葉県長生郡睦沢町上之郷1986-1（チェックイン窓口は上之郷2016-5）",
+  "priceMin": 1000,
+  "priceMax": 3000,
+  "priceNote": "1名単位課金。公式「サイト紹介/料金プラン」のソロサイト（最大利用人数1名）「オフシーズン 大人・子ども（中学生以上）：1,000円/人／ハイシーズン 1,400円/人／トップシーズン 3,000円/人」。AC電源なしのサイトなので電源使用料2,000円は不要、駐車場は「※１台無料」",
+  "features": {
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://mutsuzawa.ujack.co.jp/",
+    "quote": "環境保護のため合成洗剤の使用は禁止です。自然せっけん・アウトドア洗剤などをご使用ください。売店でも販売しております。"
+   },
+   "nearbyOnsen": {
+    "value": "むつざわ温泉つどいの湯（徒歩圏内・露天風呂＋サウナ、10:00〜21:00）",
+    "evidenceUrl": "https://mutsuzawa.ujack.co.jp/neighborhood/",
+    "quote": "キャンプ場周辺には徒歩圏内に露天風呂付きの道の駅…／むつざわ温泉つどいの湯 10：00～21：00"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.35321,
+   "lng": 140.305118,
+   "url": "https://mutsuzawa.ujack.co.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/14345",
+  "napName": "UJackむつざわオートキャンプ場"
  }
 ]

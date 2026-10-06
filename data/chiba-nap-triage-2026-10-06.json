@@ -2987,9 +2987,9 @@
    "latCandidate": "35.40099307984665",
    "lngCandidate": "140.09196046574556",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.sotoverse.net/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式（sotoverse.net）は住所「市原市栢橋869」が一致するが、全ページに料金表が無く、公式の「ご予約はこちら」はなっぷへのリンクのみ"
   },
   {
    "napId": "16886",
@@ -3000,9 +3000,9 @@
    "latCandidate": "35.4211855",
    "lngCandidate": "140.1313026",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.satoyamacliff-camp.com/",
+   "verdict": "追加",
+   "reason": "施設公式に住所（市原市上原261-1）が一致し、宿泊キャンプ1泊の区画料金（1張単位でソロでも同額）が明記されている"
   },
   {
    "napId": "11971",
@@ -3013,9 +3013,9 @@
    "latCandidate": "35.745422",
    "lngCandidate": "139.9737836",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://www.city.ichikawa.lg.jp/page/1807.html",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "**焚き火禁止**。市川市公式の利用の手引きに「火気の利用は「炊事場のかまど」及び「営火場（要事前許可）」のみ…コンロ等を持ち込んでの火気利用や調理等は出来ません（電磁式コンロ・ガスボンベ等の利用、焚火や花火等も不可）」。ほかの門は全て通り、**利用は無料・宿泊可（最大3泊4日）・市外も可**なので、焚き火禁止を門にするかの判断が要る。公式 https://www.city.ichikawa.lg.jp/page/1807.html"
   },
   {
    "napId": "14682",
@@ -3026,9 +3026,9 @@
    "latCandidate": "35.71939690510026",
    "lngCandidate": "140.3842315673828",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://midori-sora.com/camp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "運営者公式に「【1名宿泊】ソロキャンプ 1泊 2,500円〜」があり芝山町公式にもソロキャンプ・たき火の記述があるが、**同じ公式ページに「※2025年4月25日よりキャンプ料金を変更いたします。詳細はなっぷをご覧下さい。」とあり、載っている2,500円は改定前の旧料金**。新料金が公式に無いため載せられない。加えて公式に載る住所は運営法人本部（芝山町山田1181）のみで、台帳の「牧野324-4」を一次情報で照合できなかった"
   },
   {
    "napId": "15084",
@@ -3039,9 +3039,9 @@
    "latCandidate": "35.70829330416944",
    "lngCandidate": "140.2714595772461",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.iinumahonke.co.jp/lp/kinoene-sakecamp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式（飯沼本家）の特設サイトに住所「印旛郡酒々井町馬橋106」が一致し宿泊施設であることも明記されているが、**公式に料金表が一切無く「なっぷで予約」のみ**"
   },
   {
    "napId": "16609",
@@ -3052,9 +3052,9 @@
    "latCandidate": "35.715812",
    "lngCandidate": "140.2836745",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://takesatobesso.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式に住所「印旛郡酒々井町墨541」は一致するが、キャンプ場の項目は「下記キャンプサイト「なっぷ」よりご予約いただけます」のみで料金なし。**公式に載る料金はBBQレンタル会場と弁当だけでソロの1泊料金が無い**。なお公式は Flutter 製で HTML に本文が無く、main.dart.js のエスケープを復号して本文を読んだ"
   },
   {
    "napId": "11978",
@@ -3065,9 +3065,9 @@
    "latCandidate": "35.8727044",
    "lngCandidate": "140.358865",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.narita.chiba.jp/bunka_sports/page327800.html",
+   "verdict": "追加",
+   "reason": "成田市公式に所在地（成田市高岡1435）とキャンプ場の宿泊利用が明記され、指定管理者（公益財団法人成田市スポーツ・みどり振興財団）の公式料金表にキャンプ場の1人1回の宿泊料金がある"
   },
   {
    "napId": "11979",
@@ -3078,9 +3078,9 @@
    "latCandidate": "35.8168466",
    "lngCandidate": "140.275473",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.narita.chiba.jp/shisetsu/page000195.html",
+   "verdict": "追加",
+   "reason": "成田市公式に所在地（成田市大竹1450）・テントサイト27か所・宿泊区分（午後4時から翌日午前9時）の1人1回料金が明記されている"
   },
   {
    "napId": "14327",
@@ -3091,9 +3091,9 @@
    "latCandidate": "35.8340904",
    "lngCandidate": "140.3758094",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://rtfn.jp/ishiyasuo/",
+   "verdict": "追加",
+   "reason": "施設公式に住所（成田市大室680・旧久住第二小学校）が一致し、校庭キャンプ場のオートキャンプ区画料金（6名まで一律でソロも同額）が明記されている"
   },
   {
    "napId": "14533",
@@ -3117,9 +3117,9 @@
    "latCandidate": "35.7928297",
    "lngCandidate": "140.4076047",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://jalagriport.com/service/bbq",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "施設公式（JAL Agriport）に住所「成田市川上245-219」は一致するが、屋外利用はレストラン芝生エリアのBBQ（11:00〜15:00）と「御料鶴フリーサイト」（1日限定5区画 11:30〜16:00、公式の画像名も Goryokaku DayCamp）のみで**デイキャンプ専用**。公式の農泊ページはトップへリダイレクトし宿泊提供の記載が無い"
   },
   {
    "napId": "15676",
@@ -3637,9 +3637,9 @@
    "latCandidate": "35.236522958322944",
    "lngCandidate": "140.20841794443052",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://tararebacamp.wixsite.com/tarareba-river-side",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式（Wix）は存在するが料金表も予約手段も無く（問い合わせ先のみ）、宿泊料金はなっぷ頼み。加えて公式住所は「大多喜町田代996」で台帳の「田代640」と番地が一致しない"
   },
   {
    "napId": "14957",
@@ -3650,9 +3650,9 @@
    "latCandidate": "35.48009080079829",
    "lngCandidate": "140.41730783736494",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.beachcamp99.biz/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式は実在し住所（大網白里市四天木2761-40）も一致するが、**公式に載るのはデイキャンプ料金とレンタル品価格のみで宿泊のサイト料金が空欄**。公式自身が「各ステイの日程等や料金を含め、予約に関する更なる詳細は情報サイト“なっぷ”にて承っております」と丸投げしている"
   },
   {
    "napId": "14388",
@@ -3663,9 +3663,9 @@
    "latCandidate": "35.762218318744736",
    "lngCandidate": "140.74802349748379",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://choshi-sportstown.com/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "公式予約ページに「**当施設では、宿泊人数の合計が10人以上からご予約を承っています**」と明記。合宿向けの宿舎施設でテントサイトの料金設定も無い"
   },
   {
    "napId": "13872",
@@ -3689,9 +3689,9 @@
    "latCandidate": "35.3955163",
    "lngCandidate": "140.219827",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.town.chonan.chiba.jp/shoukai/kankou/502/",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "長南町公式に「開設期間：６月１日〜８月３１日まで ※**デイキャンプのみ利用可（テントの設営はできますが、宿泊はできません。）**」と明記"
   },
   {
    "napId": "14477",
@@ -3702,9 +3702,9 @@
    "latCandidate": "35.3612017",
    "lngCandidate": "140.2347853",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://chonan-nishisho.jp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式の宿泊料金は**団体貸切のみ（20名未満でも1団体あたり132,000円〜220,000円）**でソロ1泊の料金設定が無い。「当施設は『一団体様完全貸し切り宿泊施設』のため」と公式に明記"
   },
   {
    "napId": "11986",
@@ -3716,8 +3716,8 @@
    "lngCandidate": "140.2078791",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式サイトが存在しない。各所が示す「公式サイト」は Instagram アカウントのみで、長柄町公式サイトにも該当ページが見当たらず公式予約先も無い"
   },
   {
    "napId": "13914",
@@ -3728,9 +3728,9 @@
    "latCandidate": "35.448649",
    "lngCandidate": "140.192038",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.aerbinsportspark.com/",
+   "verdict": "追加",
+   "reason": "施設公式に区画テントサイトの1泊料金が明記され、住所（長生郡長柄町長柄山522）も一致。サイト課金（定員5名）なのでソロ1名でも同額で単独利用できる"
   },
   {
    "napId": "14286",
@@ -3767,9 +3767,9 @@
    "latCandidate": "35.46952805267398",
    "lngCandidate": "140.20377800304107",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://wakuwaku-nagara.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "宿泊できるのは4名用コテージ（ロフト付ログハウス）9棟のみ。公式の予約対象施設一覧にテントサイト／キャンプサイトが無い"
   },
   {
    "napId": "13849",
@@ -3793,9 +3793,9 @@
    "latCandidate": "35.50738678659448",
    "lngCandidate": "140.39909828154532",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://www.haleluana-chiba.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "**「ご利用は１名様でも基本料金2名様分がかかります」で平日35,000円〜・週末39,000円〜**。1名の総額が高額の線を大きく超える。加えて宿泊実体はキャビン／キャンピングトレーラー／ログハウスの1日1組貸切でテントは庭に自分で張る任意扱いなので、宿泊系として対象外にするかの判断も要る"
   },
   {
    "napId": "14617",
@@ -3806,9 +3806,9 @@
    "latCandidate": "35.5557602",
    "lngCandidate": "140.3081805",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://the-forest-garden.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式が「グランピング施設／手ぶらキャンプ場」と称する**施設備付テント（ベッド・電源・寝具付）のみの提供**で、持込テントのサイト設定が無い。飲食物の持ち込みも不可。なお公式の宿泊プラン料金PDFは404"
   },
   {
    "napId": "16733",
@@ -4001,9 +4001,9 @@
    "latCandidate": "35.4503089",
    "lngCandidate": "140.4018653",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.99base.co/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式の住所（長生郡白子町剃金2729-89）は一致するが、公式STAYページの宿泊はVILLA（Airbnb予約）とトレーラーハウスのみで**テント泊の区画が無い**"
   },
   {
    "napId": "14248",
@@ -4015,8 +4015,8 @@
    "lngCandidate": "140.3095179",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "なっぷが掲げる公式 asobi-s.com は**DNS解決不可（ドメイン消滅）**。検索でも施設公式・自治体公式・公式予約先は見つからず集約サイトのみ。なお取得ツールの要約が「公式サイトは asobi-s.com です」と断定してきたが、そのドメインは名前解決すらできず**要約が存在しないURLを作っていた**ので自分で開いて弾いた"
   },
   {
    "napId": "11992",
@@ -4027,9 +4027,9 @@
    "latCandidate": "35.7345053",
    "lngCandidate": "140.116331",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.yachiyo.lg.jp/soshiki/64/4700.html",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "八千代市公式に利用対象が「**市内に所在する少年関係団体等／市内在住で中学生以下のこどもがいる家族 ※いずれも、20歳以上の引率者がいること**」と明記され1名では利用できない（使用料は無料）"
   },
   {
    "napId": "13973",
@@ -4041,8 +4041,8 @@
    "lngCandidate": "140.13479894232785",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "唯一の候補ドメイン local-local-garden.com は現在**「マルナカ梨園」（八千代市村上745）の梨農園サイトに転用**されており、台帳の上高野1539-3のキャンプ場の記載が1文字も無い（sitemap と全内部リンクを確認）"
   },
   {
    "napId": "15879",
@@ -4053,9 +4053,9 @@
    "latCandidate": "35.7455592",
    "lngCandidate": "140.1343732",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.arkforest.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（arkforest.jp）の住所（八千代市上高野26）が台帳と一致し、**ソロサイト（小区画）5区画の1泊料金**と共通利用料が公式に明記されている"
   },
   {
    "napId": "16191",
@@ -4068,7 +4068,7 @@
    "priority": 99,
    "officialUrl": null,
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "施設公式サイトが見つからず、根拠候補が予約・店舗ページ（home.tsuku2.jp）と Instagram／Facebook のみ。**tsuku2 は Akamai で403（UA・Referer を付けた curl でも WebFetch でも取得不可）**で内容を確認できない。独自ドメイン候補はいずれもDNS解決不可"
   },
   {
    "napId": "14120",
@@ -4079,9 +4079,9 @@
    "latCandidate": "35.34395420662161",
    "lngCandidate": "140.26355361938476",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.sanukifarm.com/",
+   "verdict": "追加",
+   "reason": "施設公式（sanukifarm.com）の住所（長生郡睦沢町佐貫623）が台帳と一致し、区画単位の1泊料金が公式に明記。ぽつんとサイトは大人2名までなので1名利用できる"
   },
   {
    "napId": "14345",
@@ -4092,9 +4092,9 @@
    "latCandidate": "35.35353748407022",
    "lngCandidate": "140.30447867466467",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://mutsuzawa.ujack.co.jp/",
+   "verdict": "追加",
+   "reason": "施設公式のチェックイン窓口住所（睦沢町上之郷2016-5）が台帳と一致し、**1名専用の「ソロサイト」（最大利用人数1名）**の1泊料金が公式に明記されている"
   },
   {
    "napId": "14878",
@@ -4105,9 +4105,9 @@
    "latCandidate": "35.32603420674006",
    "lngCandidate": "140.28820136011888",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "http://oogami-heraike.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "施設公式（oogami-heraike.com＝釣り堀「大上へら池」時代からの改称型）の住所（睦沢町大上1508）は一致し、フリーサイト3,500円・オートサイト6,500円の単独プランもある。だが**公式のどこにも「1泊」の明記が無く、この額が宿泊料か日帰り料か判別できない**。料金は推測しないため保留"
   },
   {
    "napId": "14881",
@@ -4118,9 +4118,9 @@
    "latCandidate": "35.34411995874215",
    "lngCandidate": "140.28176045417786",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://training-camp.rprojectjapan.com/introduce/kit-%E3%81%BF%E3%81%9A%E3%81%95%E3%82%8F/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "運営の R.project 公式ページは住所（睦沢町大上3220）が一致するが、内容は旧小学校を使った合宿宿泊施設（和室・洋室 全9室）の紹介のみで、**テントサイトの料金もソロ1泊料金も予約方法も公式に無い**（問い合わせフォームのみ）"
   },
   {
    "napId": "16816",
@@ -4282,14 +4282,14 @@
    "門落ち(住所を照合できない)": 1
   },
   "内訳": {
-   "門落ち(料金も予約も公式に無し)": 25,
+   "門落ち(料金も予約も公式に無し)": 32,
    "閉鎖疑い": 32,
-   "門落ち(公式なし)": 28,
-   "追加": 74,
-   "宿泊系のため対象外": 71,
-   "UNMEASURED": 79,
-   "門落ち(宿泊不可)": 5,
-   "門落ち(単独利用不可)": 10,
+   "門落ち(公式なし)": 31,
+   "追加": 82,
+   "宿泊系のため対象外": 74,
+   "UNMEASURED": 54,
+   "門落ち(宿泊不可)": 7,
+   "門落ち(単独利用不可)": 12,
    "門落ち(住所を照合できない)": 2
   }
  },
