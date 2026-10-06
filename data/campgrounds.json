@@ -12088,5 +12088,99 @@
     "source": [
       "https://nightvista3.com/"
     ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "campgarden-inzai",
+    "slug": "campgarden-inzai",
+    "name": "キャンプガーデン印西",
+    "area": "印西",
+    "address": "千葉県印西市",
+    "priceMin": 4400,
+    "priceMax": 5500,
+    "priceNote": "サイト課金＋人数課金の合算。**オートサイト（全15区画・砂利敷き約100㎡）はサイト料3,300円＋利用料 大人1,100円で、ソロ1名4,400円。**金・土・日・祝前日・祝日はサイト料が＋1,100円（ソロ1名5,500円）。子ども（未就学児を除く）の利用料は550円。**ソロ用テントなら2張りまで**使える",
+    "features": {
+      "carIn": true,
+      "carInNote": "オートサイト。テント1張り・タープ1張り・車1台まで（ソロ用テントなら2張りまで）",
+      "pet": false,
+      "petNote": "オートサイトはペット不可と公式に明記（ドッグフリーサイトは別区分）",
+      "reservation": "要",
+      "reservationNote": "公式サイトのキャンプ（宿泊）予約ページから。デイキャンプは別ページ"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "印西市のオートキャンプ場。全15区画で砂利敷き約100㎡、定員は最大6名。**ソロ用テントなら2張りまで**使えると公式が明記している。サイト料と1人あたりの利用料の合算で、ソロは平日4,400円。",
+    "officialUrl": "https://campg-inzai.com/price/",
+    "tel": null,
+    "cautions": [
+      "**利用料が人数分かかる。**サイト料3,300円だけでは泊まれず、大人1人1,100円が加算される",
+      "**オートサイトはペット不可。**ペット同伴はドッグフリーサイト（別料金）",
+      "金・土・日・祝前日・祝日はサイト料が1,100円上がる",
+      "**住所の番地が公式ページに無い。**市町村（印西市）までは確認できているが、番地は訪問前に公式で確かめること",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://campg-inzai.com/price/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "inbanuma-sunset-hills",
+    "slug": "inbanuma-sunset-hills",
+    "name": "印旛沼サンセットヒルズ",
+    "area": "佐倉",
+    "address": "千葉県佐倉市飯野町27",
+    "priceMin": 4180,
+    "priceMax": 4180,
+    "priceNote": "サイト単位課金。**オートキャンプ場の宿泊使用料は11:00〜翌10:30で4,180円。**デイキャンプ（11:00〜18:00）は2,090円。1区画は約7m×8m四方で**AC電源は無い**",
+    "features": {
+      "carIn": true,
+      "carInNote": "オートキャンプ場。1区画 約7m×8m",
+      "reservation": "要",
+      "reservationNote": "**ちば施設予約システム**（ネット）または電話 043-484-1011。利用日が属する月の1ヶ月前の4日 8:30から受付。ネット予約には利用者登録が必要"
+    },
+    "season": "通年（12月29日〜1月3日の年末年始を除き無休）",
+    "soloComment": "印旛沼を見下ろす高台にある佐倉市のオートキャンプ場。空気の澄んだ夕暮れ時には富士山やスカイツリーが見えることがある。1区画は約7m×8mでAC電源は無い。チェックインは11:00〜15:00。",
+    "officialUrl": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html",
+    "tel": "043-484-1011",
+    "cautions": [
+      "**18歳未満もしくは高校生以下の方だけでの宿泊・デイキャンプは断られる**と佐倉市公式に明記。成人の単独利用は可",
+      "**AC電源が無い**",
+      "予約は利用日が属する月の1ヶ月前の4日8:30から。**月初は電話が繋がりにくい**と市公式が案内している",
+      "沼側のウッドデッキは有料サイトになったため、休憩所としては使えなくなったと市公式に告知あり",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html"
+    ]
   }
 ]

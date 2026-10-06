@@ -933,9 +933,9 @@
       "latCandidate": "35.2013511",
       "lngCandidate": "140.066901",
       "priority": 2,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://kimikame.net/stay/",
+      "verdict": "門落ち(単独利用不可)",
+      "reason": "千葉県立君津亀山青少年自然の家。公式が「成人の引率者がいる15名以上の団体がご利用いただけます」と明記"
     },
     {
       "napId": "11954",
@@ -2259,9 +2259,9 @@
       "latCandidate": "35.78837592133005",
       "lngCandidate": "140.1539323947205",
       "priority": 99,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://campg-inzai.com/price/",
+      "verdict": "追加",
+      "reason": "キャンプガーデン印西。公式に料金(サイト3,300+利用料1,100)と「ソロ用テントなら2張りまで」。住所は市町村までの確認"
     },
     {
       "napId": "13689",
@@ -2688,9 +2688,9 @@
       "latCandidate": "35.74749621554722",
       "lngCandidate": "140.21356523036957",
       "priority": 99,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://kusabue.shiteikanri-sakura.jp/stay",
+      "verdict": "門落ち(単独利用不可)",
+      "reason": "佐倉草ぶえの丘。公式が見出しで「キャンプ場（20名様以上の団体のみ ※個人利用受付不可）」と明記"
     },
     {
       "napId": "11964",
@@ -2701,9 +2701,9 @@
       "latCandidate": "35.7478037",
       "lngCandidate": "140.201920",
       "priority": 99,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html",
+      "verdict": "追加",
+      "reason": "印旛沼サンセットヒルズ。佐倉市公式に住所(佐倉市飯野町27)・宿泊4,180円・予約方法・通年営業"
     },
     {
       "napId": "16298",
@@ -4270,19 +4270,20 @@
     "asOf": "2026-10-06",
     "門の対象": 300,
     "宿泊系のため対象外": 49,
-    "追加": 25,
-    "門落ち": 11,
+    "追加": 27,
+    "門落ち": 13,
     "閉鎖疑い": 27,
-    "UNMEASURED": 214,
+    "UNMEASURED": 210,
     "門落ちの内訳": {
       "門落ち(料金も予約も公式に無し)": 2,
       "門落ち(公式なし)": 4,
       "門落ち(宿泊不可)": 1,
-      "門落ち(単独利用不可)": 3,
+      "門落ち(単独利用不可)": 5,
       "門落ち(住所を照合できない)": 1
     }
   },
   "gateRules": [
-    "1名で予約できるのが性別・年齢などで限定されたサイトのみの施設は「単独利用不可」で門落ち（2026-10-06 追加）"
+    "1名で予約できるのが性別・年齢などで限定されたサイトのみの施設は「単独利用不可」で門落ち（2026-10-06 追加）",
+    "団体人数の下限（例：20名以上の団体のみ／成人引率者つき15名以上）がある施設は「単独利用不可」で門落ち（2026-10-06 追加）"
   ]
 }
