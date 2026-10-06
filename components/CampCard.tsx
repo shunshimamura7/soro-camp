@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Campground } from "@/lib/types";
+import { hasEvidence, hasUsableCoord, hasVerifiedScores, isToleratedWildSite } from "@/lib/camp";
 import { campMapUrl } from "@/lib/maps";
 import { RestrictionChips, EligibilityChip } from "@/components/RestrictionChip";
 import FavoriteButton from "@/components/FavoriteButton";
@@ -13,13 +14,14 @@ function getFeatureTags(f: Campground["features"], bathFilterActive: boolean): F
   if (f.carIn)                   tags.push({ key: "carIn",   label: "🚗 車横付け" });
   if (f.wifi)                    tags.push({ key: "wifi",    label: "📶 Wi-Fi" });
   if (f.reservation === "不要")  tags.push({ key: "noRes",   label: "✅ 予約不要" });
+  if (f.fishing)                 tags.push({ key: "fishing", label: "🎣 釣り可" });
   if (f.firewood)                tags.push({ key: "firewood",label: "🪵 薪" });
   return tags;
 }
 
-/** 焚き火不可はソロキャンプでは決定的なので、一覧でも判別できるようにする */
+/** 可否未確認を「焚き火不可」と誤表示しない。明示的な禁止・不可の根拠がある場合だけ出す。 */
 function isNoBonfire(f: Campground["features"]): boolean {
-  return f.bonfire === false;
+  return f.bonfire === false && /禁止|不可|できない|NG/.test(f.bonfireNote ?? "");
 }
 
 type Props = { camp: Campground; bathFilterActive?: boolean };
@@ -32,6 +34,8 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
   // 値は入っているが裏を取っていないもの。根拠のない金額は出さない
   const priceUnverified = !isWild && camp.priceVerified !== true;
   const noBonfire = isNoBonfire(camp.features);
+  // 公認された無料開放地と、黙認されているだけの河川敷を同じ顔で並べない。
+  const tolerated = isToleratedWildSite(camp);
   const mapsUrl = campMapUrl(camp);
 
   return (
@@ -70,6 +74,14 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
             野営地
           </span>
         )}
+        {tolerated && (
+          <span
+            className="ml-2 align-middle inline-flex items-center shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-[#fdf3ea] text-[#9a5b1c] border border-[#e3c6a6]"
+            title="自治体が公認した野営地ではありません。黙認されている場所です"
+          >
+            公認なし
+          </span>
+        )}
         {noBonfire && (
           <span className="ml-2 align-middle inline-flex items-center shrink-0 px-2 py-0.5 rounded text-[11px] font-medium bg-[#f2f0ee] text-[#6b6560] border border-[#d8d3ce]">
             🚫 焚き火不可
@@ -79,6 +91,31 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
           <span className="ml-2 align-middle inline-flex items-center shrink-0 px-2 py-0.5 rounded text-[10px] font-medium bg-[#f2f0ee] text-[#6b6560] border border-[#d8d3ce]">
             要確認
           </span>
+        )}
+      </div>
+
+      {/* 信頼性チップ。未確認を「なし・低評価」と断定せず、確認済み情報と区別する。 */}
+      <div className="px-4 pb-3 flex flex-wrap gap-1.5">
+        {hasEvidence(camp) ? (
+          <span className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
+            {/* 野営地は公式サイトが存在しないので「情報源あり」とは言わない。何を確かめたのかを書く */}
+            {isWild ? "場所・注意点を記録" : "情報源あり"}
+          </span>
+        ) : (
+          <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-800">情報確認中</span>
+        )}
+        {camp.priceVerified === true ? (
+          <span className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700">料金確認済み</span>
+        ) : (
+          <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-800">料金 要確認</span>
+        )}
+        {hasUsableCoord(camp) ? (
+          <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-2 py-0.5 text-[10px] font-semibold text-sky-700">地図位置あり</span>
+        ) : (
+          <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-800">地図位置 要確認</span>
+        )}
+        {!hasVerifiedScores(camp) && (
+          <span className="inline-flex items-center rounded-full border border-[#e2ddd8] bg-white px-2 py-0.5 text-[10px] font-semibold text-[#6b5a4e]">評価確認中</span>
         )}
       </div>
 

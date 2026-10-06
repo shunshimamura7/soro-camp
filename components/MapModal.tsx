@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { hasUsableCoord } from "@/lib/camp";
+import { hasEvidence, hasUsableCoord, hasVerifiedScores, isToleratedWildSite } from "@/lib/camp";
 import { nearbyBathUrl, nearbyShoppingUrl } from "@/lib/maps";
 import { createPortal } from "react-dom";
 import maplibregl from "maplibre-gl";
@@ -19,7 +19,7 @@ function buildTags(camp: Campground): string[] {
   const t: string[] = [];
   if (camp.features.bonfire) t.push("🔥 焚き火OK");
   if (camp.features.reservation === "不要") t.push("📋 予約不要");
-  if (camp.features.soloPlan) t.push("🏕 ソロプランあり");
+  if (camp.features.soloPlan) t.push("🏕 ソロ向けプランあり");
   if (camp.features.bath) t.push("♨ 風呂あり");
   if (camp.features.shower) t.push("🚿 シャワーあり");
   if (camp.features.wifi) t.push("📶 Wi-Fi");
@@ -244,6 +244,17 @@ function CampDetailPanel({
       </p>
 
       <h2 className="panel-name">{camp.name}</h2>
+
+      <p style={{ margin: "5px 0 8px", fontSize: "11px", lineHeight: 1.45, color: hasEvidence(camp) ? "#64748b" : "#a16207" }}>
+        {hasEvidence(camp)
+          ? camp.type === "wild"
+            ? "場所・注意点を記録"
+            : "情報源あり"
+          : "情報確認中"}
+        {isToleratedWildSite(camp) && " ・ 公認なし"}
+        {camp.type !== "wild" && ` ・ ${camp.priceVerified === true ? "料金確認済み" : "料金 要確認"}`}
+        {!hasVerifiedScores(camp) && " ・ 評価確認中"}
+      </p>
 
       {tags.length > 0 && (
         <div className="panel-tags">

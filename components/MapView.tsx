@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { hasUsableCoord } from "@/lib/camp";
+import { hasEvidence, hasUsableCoord, hasVerifiedScores, isToleratedWildSite } from "@/lib/camp";
 import { nearbyBathUrl, nearbyShoppingUrl } from "@/lib/maps";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";
@@ -21,10 +21,20 @@ function popupHtml(camp: Campground): string {
   const hasCoord = hasUsableCoord(camp);
   const shop = nearbyShoppingUrl(camp);
   const bath = nearbyBathUrl(camp);
+  // 野営地に公式サイトは無い。「情報源あり」と書かず、確かめた中身を書く。
+  // 公認されていない場所は、地図の吹き出しでも必ず分かるようにする。
+  const isWild = camp.type === 'wild';
+  const trust = [
+    hasEvidence(camp) ? (isWild ? '場所・注意点を記録' : '情報源あり') : '情報確認中',
+    isToleratedWildSite(camp) ? '公認なし' : '',
+    isWild ? '' : camp.priceVerified === true ? '料金確認済み' : '料金 要確認',
+    !hasVerifiedScores(camp) ? '評価確認中' : '',
+  ].filter(Boolean).join(' · ');
   return (
     `<a href="/camp/${camp.slug}" class="camp-popup-link">` +
       `<span class="camp-popup-name">${camp.name}</span>` +
     `</a>` +
+    `<p style="margin:5px 0 0;font-size:10px;line-height:1.45;color:${hasEvidence(camp) ? '#64748b' : '#a16207'};">${trust}</p>` +
     (hasCoord
       ? `<a href="${shop}" target="_blank" rel="noopener noreferrer" ` +
         `style="display:block;margin-top:6px;font-size:11px;color:#e8611f;text-decoration:none;">` +
@@ -73,8 +83,8 @@ export default function MapView({ camps, height = 520 }: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
-      center: [138.8, 35.45],
-      zoom: 8.0,
+      center: [139.55, 35.55],
+      zoom: 7.35,
       cooperativeGestures: false,
       attributionControl: { compact: true },
     });
@@ -95,7 +105,7 @@ export default function MapView({ camps, height = 520 }: Props) {
     map.once("load", () => {
       map.setMaxBounds([
         [136.5, 34.2],
-        [140.0, 36.2],
+        [141.2, 36.3],
       ]);
 
       addCampPinLayers(map, campsRef.current);
