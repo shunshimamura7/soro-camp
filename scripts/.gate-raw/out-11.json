@@ -1,0 +1,74 @@
+[
+ {"napId":"16627","name":"KOZUKA House","pref":"千葉","muni":"鴨川市","verdict":"宿泊系のため対象外",
+  "reason":"定員12名の一棟貸し貸別荘（コテージ）で一棟平日55,000円〜。テント泊サイトの扱いが確認できず、施設公式サイトも無く掲載は貸別荘・民泊の予約サイトのみ。同名の kozuka513.com は鴨川市金束の別施設",
+  "checkedUrls":["https://www.aco.co.jp/id/66988.html","https://kozuka513.com/"],"officialUrl":null},
+
+ {"napId":"14916","name":"鋸南ほしふるキャンプ場","pref":"千葉","muni":"鋸南町","verdict":"閉鎖疑い",
+  "reason":"**施設公式に閉業告知がある**。お知らせ 2026/05/26「5月25日をもって閉業いたします」、トップ本文に「当キャンプ場は ５月２５日 を 持ちまして 閉業いたしました」。台帳の行は統合移転前の旧サイトで、統合先の公式（下佐久間1586-2）が上記のとおり閉業",
+  "checkedUrls":["https://kyonanhoshifuru-camp.jp/"],"officialUrl":"https://kyonanhoshifuru-camp.jp/"},
+
+ {"napId":"11965","name":"九十九里ハーブガーデン オートキャンプ場","pref":"千葉","muni":"九十九里町","verdict":"追加",
+  "reason":"施設公式に住所（山武郡九十九里町片貝4477）・ソロ1泊料金・予約方法すべてが載っている。公式が「当キャンプ場は、ご家族、ソロ、カップルなど、少人数向け」と明記していて単独利用可",
+  "checkedUrls":["https://www.herb-cool.com/","https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/","https://www.herb-cool.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/"],
+  "officialUrl":"https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+  "reservationUrl":"https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E4%BA%88%E7%B4%84/",
+  "address":"千葉県山武郡九十九里町片貝4477番地","priceMin":3300,"priceMax":4400,
+  "priceNote":"サイト課金＋入場料の合算。公式「■サイト宿泊料金 1泊1サイト ハイシーズン(4〜10月) 3,300円／オフシーズン(11〜3月) 2,200円 ■入場料金 1名様につき 大人（中学生以上）1,100円」→ ソロ1名はオフ3,300円・ハイ4,400円。AC電源1,100円とゴミ処理300円はオプション。駐車は区画内で追加費用なし",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/","quote":"■場内設備 炊事棟（冷蔵庫、冷凍庫、給湯器…）、シャワー（無料）、水洗トイレ"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/","quote":"■販売品 炭3kg 650円 薪・広葉樹５㎏（ナラ、クヌギなど） 1,000円 ・針葉樹３㎏（主にスギなど） 600円"},
+    "shop":{"value":true,"evidenceUrl":"https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/","quote":"自動販売機（ジュース）、薪、炭の販売／その他、併設する九十九里ハーブガーデンで提供しているレストランメニューや飲物、アルコール類、ケーキなどがテイクアウト可能です"},
+    "pet":{"value":true,"evidenceUrl":"https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/","quote":"同伴可能です。場内ではリードを着用し、ペットの排泄物の片付けは飼主様の責任においてお願いいたします（入場料金 ペット 220円）"},
+    "nearbyOnsen":{"value":"スパ＆リゾート九十九里 太陽の里（車で20分）／蓮沼ガーデンハウス マリーノ（車で15分）","evidenceUrl":"https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/","quote":"・日帰り入浴施設 スパ＆リゾート九十九里 太陽の里 （車で20分）"}},
+  "coordsFromOfficialMap":{"lat":35.5461248,"lng":140.4429301,"url":"https://www.herb-cool.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/"}},
+
+ {"napId":"16532","name":"IN TO THE WILD.","pref":"千葉","muni":"九十九里町","verdict":"追加",
+  "reason":"施設公式に料金ページがあり、公式所在地「山武郡九十九里町小関1983-34」が台帳と一致。1日1組貸切だが**ソロ1泊4,000円（1名分込み）**で高額の線に掛からない。公式が「ソロやグループ、BBQなどのデイキャンプでのご利用も可能」と明記",
+  "checkedUrls":["https://in-to-the-wild.jimdosite.com/","https://in-to-the-wild.jimdosite.com/%E6%96%99%E9%87%91/","https://in-to-the-wild.jimdosite.com/%E6%A6%82%E8%A6%81/"],
+  "officialUrl":"https://in-to-the-wild.jimdosite.com/","reservationUrl":null,
+  "address":"千葉県山武郡九十九里町小関1983-34","priceMin":4000,"priceMax":4000,
+  "priceNote":"公式料金ページ「キャンプ(1泊) 4000円(1名様分の料金含む) +2000円/人(中学生以上)」→ ソロ1泊総額4,000円。駐車場代・入場料の別途記載なし。予約は公式の電話（080-3696-0619）のみ",
+  "features":{},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11935","name":"実谷オートキャンプ場","pref":"千葉","muni":"御宿町","verdict":"追加",
+  "reason":"施設公式に**ソロ専用の「S (solo) サイト」1名3,000円**と電話予約の案内がある。公式の住所は「夷隅郡御宿町実谷668-1」で台帳の「実谷492-1」と番地が違うが、施設名が完全一致・同じ大字・公式地図のピンが台帳座標から約130mなので同一施設と判断し、**公式表記の住所を採用**",
+  "checkedUrls":["https://www.jikkokucampsite.com/","https://www.jikkokucampsite.com/cont3/main.html","https://www.jikkokucampsite.com/cont5/main.html","https://www.jikkokucampsite.com/map.html"],
+  "officialUrl":"https://www.jikkokucampsite.com/","reservationUrl":null,
+  "address":"千葉県夷隅郡御宿町実谷668-1","priceMin":3000,"priceMax":3000,
+  "priceNote":"区画単位課金。公式「S (solo) サイト 1区画料金 ￥3000 区画数 〜7 ご利用人数1名／車またはバイク1台まで。テント、タープを各1張りとさせていただきます。ソロキャンパー用のフリーサイトです」。車1台込みで駐車場代の別途記載なし。予約は電話のみ（070-3665-1562）",
+  "features":{
+    "shower":{"value":false,"evidenceUrl":"https://www.jikkokucampsite.com/cont5/main.html","quote":"当キャンプ場には温水の出るシャワー設備はありません。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.jikkokucampsite.com/cont5/main.html","quote":"犬については全てを飼い主の責任で管理していただきます。…噛みつき 脱走 よく吠える等、他の利用者の迷惑になりそうな場合はお断りさせていただきます。"},
+    "nearbyOnsen":{"value":"周辺に有料の日帰り入浴施設が複数あり（希望者には当日リストを配布。施設名の記載なし）","evidenceUrl":"https://www.jikkokucampsite.com/cont5/main.html","quote":"周辺には有料の日帰り入浴施設がいくつかあります。ご希望の方には当日リストをお配りしますのでご利用ください。"}},
+  "coordsFromOfficialMap":{"lat":35.19296836070521,"lng":140.3296712672119,"url":"https://www.jikkokucampsite.com/map.html"}},
+
+ {"napId":"14461","name":"ONJUKU Drone & Camping","pref":"千葉","muni":"御宿町","verdict":"追加",
+  "reason":"施設公式の所在地「夷隅郡御宿町実谷437」が台帳と一致。ソロ・デュオ推奨区画が複数あり、**公式が全区画の予約先として指定している reserva.be** にソロ1名込みの1泊料金がある。焚き火可・宿泊可。既掲載の CAMPGROUND BREEZE TATEYAMA（公式予約先の489banから1名料金を採用）と同じ扱い",
+  "checkedUrls":["https://farmresort-onjuku.com/","https://farmresort-onjuku.com/facility/faq/","https://farmresort-onjuku.com/area/north-hill-ln/","https://farmresort-onjuku.com/reservation/","https://farmresort-onjuku.com/access/","https://reserva.be/onjukudc/reserve"],
+  "officialUrl":"https://farmresort-onjuku.com/","reservationUrl":"https://reserva.be/onjukudc/reserve",
+  "address":"千葉県夷隅郡御宿町実谷437","priceMin":2000,"priceMax":3000,
+  "priceNote":"公式サイト本体に料金表は無く、**公式が全区画の予約リンク先としている公式予約サイト reserva.be**（所在地も実谷437で一致）のD区画（丸池サイド・ソロデュオ推奨）に「現地決済 ￥2,000 〜 ￥3,000（税込）」「プラン料金は1名・車両1台が含まれています。」と記載。公式FAQ「料金には1区画に付き1台の車両が含まれています」で駐車料金の加算なし。別途サブスク（月額）会員制度もあるが上記は非会員の1泊料金",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://farmresort-onjuku.com/facility/faq/","quote":"広葉樹の薪木1束（約５Kg) 600円でゲート前で販売しています。"},
+    "shop":{"value":true,"evidenceUrl":"https://farmresort-onjuku.com/facility/faq/","quote":"氷はロックアイスを管理棟1階にて販売しています。現地係員にお申し付けください。"},
+    "pet":{"value":true,"evidenceUrl":"https://farmresort-onjuku.com/facility/faq/","quote":"はい、犬・猫・うさぎなどペットの同伴は可能です。"},
+    "nearbyOnsen":{"value":"キャメルゴルフ＆ホテルリゾート（御宿町上布施3360。一番近い入浴施設で露天風呂・サウナあり、日帰りは12時〜21時）","evidenceUrl":"https://farmresort-onjuku.com/facility/faq/","quote":"キャメルゴルフ＆ホテルリゾート…一番近い入浴施設です。露天風呂・サウナもあります。日帰り利用の時間帯は12時から午後9時まで"}},
+  "coordsFromOfficialMap":{"lat":35.19747306395697,"lng":140.3291228155416,"url":"https://farmresort-onjuku.com/access/"}},
+
+ {"napId":"15752","name":"エアストリームガーデンCAPUCAPU","pref":"千葉","muni":"御宿町","verdict":"UNMEASURED",
+  "reason":"**1日1組限定の貸切で人数によらず固定料金**。公式料金ページに「1日1組限定／1名でも15名でもご利用料金は同じ、固定料金です」とあり平日15,000円・日祝20,000円・休前日25,000円（ハイシーズンとGWはさらに＋5,000〜15,000円）。ソロ1名の総額が高額の線を超えるため判断が要る。宿泊はテント泊か車中泊（「付属のエアストリームは宿泊施設ではありません」）",
+  "checkedUrls":["https://mekabu1173.wixsite.com/capucapu/%E6%96%99%E9%87%91","https://mekabu1173.wixsite.com/capucapu/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85"],"officialUrl":"https://mekabu1173.wixsite.com/capucapu"},
+
+ {"napId":"15849","name":"private loghouse HOCCOREE","pref":"千葉","muni":"御宿町","verdict":"宿泊系のため対象外",
+  "reason":"公式のタイトル・内容とも「1日1組限定ログハウス」の一棟貸し。設備はログハウス（リビング・キッチン・二段ベッド×2・バス・テラス）と庭で、テント泊サイトの扱いが無い。予約は Airbnb のログハウス1室",
+  "checkedUrls":["https://hoccoree.com/","https://hoccoree.com/facility/"],"officialUrl":"https://hoccoree.com/"},
+
+ {"napId":"16058","name":"プラネットキャンプフィールド","pref":"千葉","muni":"御宿町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"独立した施設公式サイトが存在しない。運営者の店舗ページ（所在地「夷隅郡御宿町高山田136」で台帳と一致）はあるが料金の記載が無く、そこに置かれた「公式ホームページ」リンクの先がなっぷ。独自ドメイン候補はいずれも応答なし",
+  "checkedUrls":["https://order-storeorder.appzone.jp/regi-sys/959/4V2175JZ","https://planetcampfield.com/"],"officialUrl":null},
+
+ {"napId":"14201","name":"GOODHILL いい丘キャンプ場","pref":"千葉","muni":"香取市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（所在地「香取市大崎1262-7」で台帳と一致）の料金ページが「いい丘キャンプ場 料金は「なっぷ」でご確認ください」としており、**公式にソロ1泊料金が一切ない**。もう一つの運営公式も料金は薪販売・庭の手入れのみ（しかも住所が1262-4で公式2つの間でも食い違う）",
+  "checkedUrls":["https://goodhill.amebaownd.com/","https://goodhill.amebaownd.com/pages/2731400/static","https://www.iiokaya1262-7.com/"],"officialUrl":"https://goodhill.amebaownd.com/"}
+]

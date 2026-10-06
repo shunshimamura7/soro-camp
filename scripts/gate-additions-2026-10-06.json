@@ -1130,5 +1130,488 @@
   },
   "napUrl": "https://www.nap-camp.com/chiba/15019",
   "napName": "エスイーグルキャンプ"
+ },
+ {
+  "napId": "15656",
+  "name": "SHELTER BASE",
+  "pref": "千葉",
+  "muni": "鎌ケ谷市",
+  "verdict": "追加",
+  "reason": "公式に住所（鎌ケ谷市軽井沢2100-1）が一致し、**ソロ専用のフリーサイトが1泊5,000円〜／1サイト**で明示されていて単独1泊ができる",
+  "checkedUrls": [
+   "https://www.shelterbase.jp/",
+   "https://www.shelterbase.jp/auto-camp/",
+   "https://www.shelterbase.jp/facility/",
+   "https://www.shelterbase.jp/faq/"
+  ],
+  "officialUrl": "https://www.shelterbase.jp/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/15656",
+  "address": "千葉県鎌ケ谷市軽井沢2100-1",
+  "priceMin": 5000,
+  "priceMax": 5000,
+  "priceNote": "サイト単位課金。公式 AUTO CAMP ページ「ソロフリーサイト／フリーエリア 利用料金 1泊 5,000円〜 /1サイト」「定員 1日3名限定」「車両 1名につき1台まで」。人数課金の記載は無く、公式が下限のみ表示のため priceMax も同額",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.shelterbase.jp/facility/",
+    "quote": "シャワールーム(予約制) 利用時間 8:00~21:00 (最終予約時間20:30)"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.shelterbase.jp/faq/",
+    "quote": "薪・炭は販売していますか? 管理棟にて販売しております 針葉樹 700 円 広葉樹800 円 炭900 円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.shelterbase.jp/facility/",
+    "quote": "センターハウス 営業時間 08:00~21:00 チェックイン、レンタル品、ワークショップの受付、売店もございます。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.shelterbase.jp/auto-camp/",
+    "quote": "ドッグサイト 愛犬と一緒にキャンプが楽しめるサイトです。囲いがあるのでノーリードでお過ごしいただけます。"
+   },
+   "nearbyOnsen": {
+    "value": "近隣温浴施設「さわやかプラザ」（距離の記載なし）",
+    "evidenceUrl": "https://www.shelterbase.jp/facility/",
+    "quote": "近隣温浴施設「さわやかプラザ」をおすすめしております！"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.79590488016775,
+   "lng": 140.022429415262,
+   "url": "https://www.shelterbase.jp/facility/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/15656",
+  "napName": "SHELTER BASE"
+ },
+ {
+  "napId": "11941",
+  "name": "キャンピングヒルズ鴨川",
+  "pref": "千葉",
+  "muni": "鴨川市",
+  "verdict": "追加",
+  "reason": "公式に住所（鴨川市宮2015-62）が一致し、テントサイトは1泊1区画6,000円（5人まで）の区画課金。1名でも公式の仮予約フォームから予約できる",
+  "checkedUrls": [
+   "https://www.kamogawacamp.jp/",
+   "https://www.kamogawacamp.jp/%E3%81%94%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/",
+   "https://www.kamogawacamp.jp/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/"
+  ],
+  "officialUrl": "https://www.kamogawacamp.jp/",
+  "reservationUrl": "https://www.kamogawacamp.jp/%E3%81%94%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/",
+  "address": "千葉県鴨川市宮2015-62",
+  "priceMin": 6000,
+  "priceMax": 6000,
+  "priceNote": "区画単位課金で人数課金なし。公式「● テントサイト 1泊１区画： 6,000 円／車1台、テント１張、タープ1張／5人まで（大人2名、子供3名）／AC電源：＋1,000円」。露天風呂は別途 大人500円、シャワーは大人300円。予約は同ページの仮予約フォーム（24時間以内に可否メール）",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://www.kamogawacamp.jp/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/",
+    "quote": "男女別露天岩風呂（シャワー付き） 一部期間 家族で貸切使用"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.kamogawacamp.jp/%E3%81%94%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/",
+    "quote": "● 露天風呂 大人： 500 円 子供： 250 円（シャワー大人300円、子供150円）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.kamogawacamp.jp/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/",
+    "quote": "●施設概要 … 売店・キャンプ用品"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.kamogawacamp.jp/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/",
+    "quote": "ペットに関しては、周りの方のご迷惑にならない飼い方をして頂ける方に限り可能です。（…バンガロー内へのペットの入場も不可となります。）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/11941",
+  "napName": "キャンピングヒルズ鴨川"
+ },
+ {
+  "napId": "16271",
+  "name": "Camp&Sauna UUSi",
+  "pref": "千葉",
+  "muni": "鴨川市",
+  "verdict": "追加",
+  "reason": "公式に住所（鴨川市内浦1480）が一致。フリーサイトはサイト料＋人数料の合算で1名でも金額が確定し、公式フォームから単独予約できる。**施設全体が25歳以上限定**だが、成人のソロは使えるので既存の印旛沼サンセットヒルズ（18歳未満だけの宿泊は不可）と同じ扱いで通す",
+  "checkedUrls": [
+   "https://www.camp-uusi.com/",
+   "https://www.camp-uusi.com/%E6%96%99%E9%87%91%E3%83%97%E3%83%A9%E3%83%B3/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/",
+   "https://www.camp-uusi.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB/",
+   "https://www.camp-uusi.com/uusi%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84/"
+  ],
+  "officialUrl": "https://www.camp-uusi.com/",
+  "reservationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScGowG3qtxlWim6CMf8cix0tDqX8Djl8sCgXaMspgLieWcBug/viewform",
+  "address": "千葉県鴨川市内浦1480",
+  "priceMin": 5000,
+  "priceMax": 7000,
+  "priceNote": "サイト課金＋人数課金の合算。公式「A：フリーサイト … 平日：基本3,000円＋2,000円 xご利用人数／土日祝日：基本5,000円＋2,000円 xご利用人数」→ ソロ1名は平日5,000円・土日祝7,000円。「*25歳以上限定のキャンプ施設となっております。」「*年末年始（12/30〜1/3）、お盆（8/13,14,15）は、土日祝日料金となります。」。サウナは別料金1名2,500円だが「（２名様より）」で**ソロは使えない**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.camp-uusi.com/",
+    "quote": "男女別温水シャワー/更衣室（ソープ類、ドライヤー完備）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.camp-uusi.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB/",
+    "quote": "※薪につきましてはお持ちいただくか場内でも￥1,100にて販売しています。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.camp-uusi.com/",
+    "quote": "大人のための美味しいお酒のセレクトショップ「兎と寅」も併設しています。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.camp-uusi.com/uusi%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84/",
+    "quote": "【ペットについて】…放し飼いはできません。リードを着けてください。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16271",
+  "napName": "CAMP&amp;SAUNA UUSi 鴨川"
+ },
+ {
+  "napId": "11965",
+  "name": "九十九里ハーブガーデン オートキャンプ場",
+  "pref": "千葉",
+  "muni": "九十九里町",
+  "verdict": "追加",
+  "reason": "施設公式に住所（山武郡九十九里町片貝4477）・ソロ1泊料金・予約方法すべてが載っている。公式が「当キャンプ場は、ご家族、ソロ、カップルなど、少人数向け」と明記していて単独利用可",
+  "checkedUrls": [
+   "https://www.herb-cool.com/",
+   "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+   "https://www.herb-cool.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/"
+  ],
+  "officialUrl": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+  "reservationUrl": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E4%BA%88%E7%B4%84/",
+  "address": "千葉県山武郡九十九里町片貝4477番地",
+  "priceMin": 3300,
+  "priceMax": 4400,
+  "priceNote": "サイト課金＋入場料の合算。公式「■サイト宿泊料金 1泊1サイト ハイシーズン(4〜10月) 3,300円／オフシーズン(11〜3月) 2,200円 ■入場料金 1名様につき 大人（中学生以上）1,100円」→ ソロ1名はオフ3,300円・ハイ4,400円。AC電源1,100円とゴミ処理300円はオプション。駐車は区画内で追加費用なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+    "quote": "■場内設備 炊事棟（冷蔵庫、冷凍庫、給湯器…）、シャワー（無料）、水洗トイレ"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+    "quote": "■販売品 炭3kg 650円 薪・広葉樹５㎏（ナラ、クヌギなど） 1,000円 ・針葉樹３㎏（主にスギなど） 600円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+    "quote": "自動販売機（ジュース）、薪、炭の販売／その他、併設する九十九里ハーブガーデンで提供しているレストランメニューや飲物、アルコール類、ケーキなどがテイクアウト可能です"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+    "quote": "同伴可能です。場内ではリードを着用し、ペットの排泄物の片付けは飼主様の責任においてお願いいたします（入場料金 ペット 220円）"
+   },
+   "nearbyOnsen": {
+    "value": "スパ＆リゾート九十九里 太陽の里（車で20分）／蓮沼ガーデンハウス マリーノ（車で15分）",
+    "evidenceUrl": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+    "quote": "・日帰り入浴施設 スパ＆リゾート九十九里 太陽の里 （車で20分）"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.5461248,
+   "lng": 140.4429301,
+   "url": "https://www.herb-cool.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/11965",
+  "napName": "九十九里ハーブガーデン"
+ },
+ {
+  "napId": "16532",
+  "name": "IN TO THE WILD.",
+  "pref": "千葉",
+  "muni": "九十九里町",
+  "verdict": "追加",
+  "reason": "施設公式に料金ページがあり、公式所在地「山武郡九十九里町小関1983-34」が台帳と一致。1日1組貸切だが**ソロ1泊4,000円（1名分込み）**で高額の線に掛からない。公式が「ソロやグループ、BBQなどのデイキャンプでのご利用も可能」と明記",
+  "checkedUrls": [
+   "https://in-to-the-wild.jimdosite.com/",
+   "https://in-to-the-wild.jimdosite.com/%E6%96%99%E9%87%91/",
+   "https://in-to-the-wild.jimdosite.com/%E6%A6%82%E8%A6%81/"
+  ],
+  "officialUrl": "https://in-to-the-wild.jimdosite.com/",
+  "reservationUrl": null,
+  "address": "千葉県山武郡九十九里町小関1983-34",
+  "priceMin": 4000,
+  "priceMax": 4000,
+  "priceNote": "公式料金ページ「キャンプ(1泊) 4000円(1名様分の料金含む) +2000円/人(中学生以上)」→ ソロ1泊総額4,000円。駐車場代・入場料の別途記載なし。予約は公式の電話（080-3696-0619）のみ",
+  "features": {},
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16532",
+  "napName": "IN TO THE WILD."
+ },
+ {
+  "napId": "11935",
+  "name": "実谷オートキャンプ場",
+  "pref": "千葉",
+  "muni": "御宿町",
+  "verdict": "追加",
+  "reason": "施設公式に**ソロ専用の「S (solo) サイト」1名3,000円**と電話予約の案内がある。公式の住所は「夷隅郡御宿町実谷668-1」で台帳の「実谷492-1」と番地が違うが、施設名が完全一致・同じ大字・公式地図のピンが台帳座標から約130mなので同一施設と判断し、**公式表記の住所を採用**",
+  "checkedUrls": [
+   "https://www.jikkokucampsite.com/",
+   "https://www.jikkokucampsite.com/cont3/main.html",
+   "https://www.jikkokucampsite.com/cont5/main.html",
+   "https://www.jikkokucampsite.com/map.html"
+  ],
+  "officialUrl": "https://www.jikkokucampsite.com/",
+  "reservationUrl": null,
+  "address": "千葉県夷隅郡御宿町実谷668-1",
+  "priceMin": 3000,
+  "priceMax": 3000,
+  "priceNote": "区画単位課金。公式「S (solo) サイト 1区画料金 ￥3000 区画数 〜7 ご利用人数1名／車またはバイク1台まで。テント、タープを各1張りとさせていただきます。ソロキャンパー用のフリーサイトです」。車1台込みで駐車場代の別途記載なし。予約は電話のみ（070-3665-1562）",
+  "features": {
+   "shower": {
+    "value": false,
+    "evidenceUrl": "https://www.jikkokucampsite.com/cont5/main.html",
+    "quote": "当キャンプ場には温水の出るシャワー設備はありません。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.jikkokucampsite.com/cont5/main.html",
+    "quote": "犬については全てを飼い主の責任で管理していただきます。…噛みつき 脱走 よく吠える等、他の利用者の迷惑になりそうな場合はお断りさせていただきます。"
+   },
+   "nearbyOnsen": {
+    "value": "周辺に有料の日帰り入浴施設が複数あり（希望者には当日リストを配布。施設名の記載なし）",
+    "evidenceUrl": "https://www.jikkokucampsite.com/cont5/main.html",
+    "quote": "周辺には有料の日帰り入浴施設がいくつかあります。ご希望の方には当日リストをお配りしますのでご利用ください。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.19296836070521,
+   "lng": 140.3296712672119,
+   "url": "https://www.jikkokucampsite.com/map.html"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/11935",
+  "napName": "実谷オートキャンプ場"
+ },
+ {
+  "napId": "14461",
+  "name": "ONJUKU Drone & Camping",
+  "pref": "千葉",
+  "muni": "御宿町",
+  "verdict": "追加",
+  "reason": "施設公式の所在地「夷隅郡御宿町実谷437」が台帳と一致。ソロ・デュオ推奨区画が複数あり、**公式が全区画の予約先として指定している reserva.be** にソロ1名込みの1泊料金がある。焚き火可・宿泊可。既掲載の CAMPGROUND BREEZE TATEYAMA（公式予約先の489banから1名料金を採用）と同じ扱い",
+  "checkedUrls": [
+   "https://farmresort-onjuku.com/",
+   "https://farmresort-onjuku.com/facility/faq/",
+   "https://farmresort-onjuku.com/area/north-hill-ln/",
+   "https://farmresort-onjuku.com/reservation/",
+   "https://farmresort-onjuku.com/access/",
+   "https://reserva.be/onjukudc/reserve"
+  ],
+  "officialUrl": "https://farmresort-onjuku.com/",
+  "reservationUrl": "https://reserva.be/onjukudc/reserve",
+  "address": "千葉県夷隅郡御宿町実谷437",
+  "priceMin": 2000,
+  "priceMax": 3000,
+  "priceNote": "公式サイト本体に料金表は無く、**公式が全区画の予約リンク先としている公式予約サイト reserva.be**（所在地も実谷437で一致）のD区画（丸池サイド・ソロデュオ推奨）に「現地決済 ￥2,000 〜 ￥3,000（税込）」「プラン料金は1名・車両1台が含まれています。」と記載。公式FAQ「料金には1区画に付き1台の車両が含まれています」で駐車料金の加算なし。別途サブスク（月額）会員制度もあるが上記は非会員の1泊料金",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://farmresort-onjuku.com/facility/faq/",
+    "quote": "広葉樹の薪木1束（約５Kg) 600円でゲート前で販売しています。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://farmresort-onjuku.com/facility/faq/",
+    "quote": "氷はロックアイスを管理棟1階にて販売しています。現地係員にお申し付けください。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://farmresort-onjuku.com/facility/faq/",
+    "quote": "はい、犬・猫・うさぎなどペットの同伴は可能です。"
+   },
+   "nearbyOnsen": {
+    "value": "キャメルゴルフ＆ホテルリゾート（御宿町上布施3360。一番近い入浴施設で露天風呂・サウナあり、日帰りは12時〜21時）",
+    "evidenceUrl": "https://farmresort-onjuku.com/facility/faq/",
+    "quote": "キャメルゴルフ＆ホテルリゾート…一番近い入浴施設です。露天風呂・サウナもあります。日帰り利用の時間帯は12時から午後9時まで"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.19747306395697,
+   "lng": 140.3291228155416,
+   "url": "https://farmresort-onjuku.com/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/14461",
+  "napName": "御宿ドローン＆キャンプ"
+ },
+ {
+  "napId": "11966",
+  "name": "有野実苑オートキャンプ場",
+  "pref": "千葉",
+  "muni": "山武市",
+  "verdict": "追加",
+  "reason": "公式に住所（山武市板中新田224）が一致し、ソロ1名専用サイトの1泊料金がある。入場料・駐車場代の別途徴収なし",
+  "checkedUrls": [
+   "https://arinomi.co.jp/",
+   "https://arinomi.co.jp/charges/",
+   "https://arinomi.co.jp/autocamp/",
+   "https://arinomi.co.jp/access/",
+   "https://arinomi.co.jp/news/"
+  ],
+  "officialUrl": "https://arinomi.co.jp/",
+  "reservationUrl": "https://go-arinomien.reservation.jp/ja",
+  "address": "千葉県山武市板中新田224",
+  "priceMin": 3200,
+  "priceMax": 5400,
+  "priceNote": "1名単位課金。公式「ソロサイト 約5m×約5m／1名様での利用」サイト料金 1人：平日3,200円／通常3,800円／ミドル4,700円／ハイ5,400円（税込）。別途必須の費用は無し（シャワー300円・AC電源1,300円・ペット800円は任意）。**公式お知らせ2026年9月23日に「ソロサイトは当面の間、閉鎖」とあり、代替として「JIKABIサイト（平日）1名：3,200円」を販売中。**また「2026年1月9日より宿泊料金を100円〜300円改定」の告知もある",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://arinomi.co.jp/autocamp/",
+    "quote": "シャワー 通年利用可能（冬季は時短運営）。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://arinomi.co.jp/autocamp/",
+    "quote": "売店・レンタル ランタン・チェア・焚火台など。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://arinomi.co.jp/charges/",
+    "quote": "ペット 3匹まで 1泊 800円"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.67457603033864,
+   "lng": 140.38180917634904,
+   "url": "https://arinomi.co.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/11966",
+  "napName": "有野実苑オートキャンプ場"
+ },
+ {
+  "napId": "14746",
+  "name": "サニーサイドオートキャンプ",
+  "pref": "千葉",
+  "muni": "山武市",
+  "verdict": "追加",
+  "reason": "運営の Hope Digital Solutions が自社ドメインで出している施設公式ページ。住所「山武市横田976-1」が台帳と一致し、**同社の所在地も同じ住所**なのでフッターの本社住所との取り違えではない。宿泊プラン1泊4,400円〜でソロ利用可の明記あり",
+  "checkedUrls": [
+   "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/",
+   "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/plan/",
+   "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/faciltys/"
+  ],
+  "officialUrl": "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/14746",
+  "address": "千葉県山武市横田976-1",
+  "priceMin": 4400,
+  "priceMax": 4400,
+  "priceNote": "サイト単位課金。公式「宿泊プラン オートキャンプ区画サイト（1〜4名用/最大6名）1泊 4,400円〜」。公式は下限のみ掲載のため priceMax も同額。入場料・駐車場代・人数課金の別途記載は公式に無い（貸切プランは35,200円〜）",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/faciltys/",
+    "quote": "シャワースペースにはドライヤーの貸し出しやコンセントのご用意があります。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/",
+    "quote": "薪販売中！！"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/plan/",
+    "quote": "ペットOK（宿泊プラン オートキャンプ区画サイト）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/14746",
+  "napName": "サ二ーサイドオートキャンプ"
+ },
+ {
+  "napId": "16562",
+  "name": "Render Fika Sammu",
+  "pref": "千葉",
+  "muni": "山武市",
+  "verdict": "追加",
+  "reason": "公式に住所（山武市麻生新田112-1）が一致し、テント泊の「ソロ/デュオ サイト」が一式3,950円〜で1名利用できる。焚き火は焚き火台利用で可",
+  "checkedUrls": [
+   "https://renderfika.com/ja",
+   "https://renderfika.com/ja/accommodation",
+   "https://renderfika.com/ja/services",
+   "https://renderfika.com/ja/bath-sauna"
+  ],
+  "officialUrl": "https://renderfika.com/ja",
+  "reservationUrl": "https://www.chillnn.com/ja/1916827faa7376/plan/",
+  "address": "千葉県山武市麻生新田112-1",
+  "priceMin": 3950,
+  "priceMax": 3950,
+  "priceNote": "サイト単位課金。公式「Solo/Duo Site ソロ/デュオ サイト 23〜25 サイト利用料一式 ※時期による料金変動あり ¥3,950 〜 ／定員人数 最大2名 ／駐車台数1台」。公式は下限のみ掲載のため priceMax も同額。入場料・駐車場代の別途記載なし",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://renderfika.com/ja/bath-sauna",
+    "quote": "貸切露天風呂＋貸切サウナ … 薪ストーブサウナ / 水風呂 / 寝湯付き露天風呂 … 料金：8,450円〜 / 2名"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://renderfika.com/ja/services",
+    "quote": "薪１束(針葉樹)¥780 / 薪１束(広葉樹)¥900 / 炭3kg ¥600"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://renderfika.com/ja/services",
+    "quote": "ショップ・カフェカウンター 日用品各種やドリンク・食品・レンタル品・コーヒー類をお買い求めいただけます。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://renderfika.com/ja/accommodation",
+    "quote": "17番 ペットOK ※リード必須"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16562",
+  "napName": "Render Fika Sammu"
+ },
+ {
+  "napId": "11968",
+  "name": "いちはらクオードの森",
+  "pref": "千葉",
+  "muni": "市原市",
+  "verdict": "追加",
+  "reason": "市原市が管理する公式情報サイトで住所（市原市柿木台1011）が一致。持込テントは区画料のみ820円（市外1,230円）で入園料・駐車場は無料、Web予約もある。人数下限・団体限定の制限なし",
+  "checkedUrls": [
+   "https://ichihara-forest.jp/ja/",
+   "https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+   "https://ichihara-forest.jp/%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4%e3%81%ae%e4%ba%88%e7%b4%84/",
+   "https://ichihara-forest.jp/reservation/"
+  ],
+  "officialUrl": "https://ichihara-forest.jp/ja/",
+  "reservationUrl": "https://ichihara-forest.jp/reservation/",
+  "address": "千葉県市原市柿木台1011",
+  "priceMin": 820,
+  "priceMax": 1230,
+  "priceNote": "区画単位課金。公式「持込テント使用の場合、区画料だけがかかります。… 1区画1泊につき、区画料 820円（市外居住者1,230円）」「入園料 無料」「駐車場 50台（無料）」。**市外居住者料金を priceMax に採用**。宿泊キャンプは春・夏・秋・冬の各開設期間内のみで、支払いは現金のみ",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+    "quote": "コインシャワー（１回３分）１００円←キャンプ期間のみ"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+    "quote": "薪（１束）５００円 ・炭（２kg）６００円"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+    "quote": "※ペット不可 ※発電機不可"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/11968",
+  "napName": "いちはらクオードの森"
  }
 ]

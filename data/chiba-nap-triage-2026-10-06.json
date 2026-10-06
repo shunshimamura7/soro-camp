@@ -2207,9 +2207,9 @@
    "latCandidate": "35.356936992727334",
    "lngCandidate": "140.38903625153134",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://ankr-resort.team/privatecamp/ichinomiya/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "施設公式の予約ページに「■最小定員、2名様からの料金設定（最大4名様）」と明記され**1名では予約できない**。実体もエアストリーム1棟（1日1組）のプライベートグランピングでテントサイトの記載なし"
   },
   {
    "napId": "16101",
@@ -2220,9 +2220,9 @@
    "latCandidate": "35.34751976611189",
    "lngCandidate": "140.3908831945816",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://seage.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式施設概要で所在地が一致（長生郡一宮町東浪見7500）。トレーラーハウス12棟＋ジオデシックドーム3棟のみでテント泊の扱いが無い"
   },
   {
    "napId": "11938",
@@ -2233,9 +2233,9 @@
    "latCandidate": "35.8000554",
    "lngCandidate": "140.1235113",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://hayashi-lce.jp/hokusou/",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "県立都市公園の公式（指定管理者）に宿泊・キャンプの記載が一切なく、公式が案内する火気利用は**日帰り枠の手ぶらバーベキューのみ**（11:00〜14:00／15:00〜18:00／11:00〜18:00・事前予約制）"
   },
   {
    "napId": "11939",
@@ -2285,9 +2285,9 @@
    "latCandidate": "35.680878",
    "lngCandidate": "140.4980343",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://campiece.com/area/yokoshibahikari/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式の住所は一致（山武郡横芝光町小田部1054 旧南条小学校）だが、**公式に載る料金は学校丸ごとの団体貸切料（平日12万円／土日祝18万円・8h・税別）だけでソロ1泊の料金が無い**。公式の予約リンクは404"
   },
   {
    "napId": "11940",
@@ -2311,9 +2311,9 @@
    "latCandidate": "35.79596450066229",
    "lngCandidate": "140.02464680118865",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.shelterbase.jp/",
+   "verdict": "追加",
+   "reason": "公式に住所（鎌ケ谷市軽井沢2100-1）が一致し、**ソロ専用のフリーサイトが1泊5,000円〜／1サイト**で明示されていて単独1泊ができる"
   },
   {
    "napId": "11941",
@@ -2324,9 +2324,9 @@
    "latCandidate": "35.09785117537078",
    "lngCandidate": "140.0778881082817",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.kamogawacamp.jp/",
+   "verdict": "追加",
+   "reason": "公式に住所（鴨川市宮2015-62）が一致し、テントサイトは1泊1区画6,000円（5人まで）の区画課金。1名でも公式の仮予約フォームから予約できる"
   },
   {
    "napId": "11943",
@@ -2338,8 +2338,8 @@
    "lngCandidate": "140.0956812",
    "priority": 99,
    "officialUrl": "http://www.ptihotel.com/garden.html",
-   "verdict": "UNMEASURED",
-   "reason": "オートキャンプオーシャンビュー鴨川。公式候補 ptihotel.com/garden.html が403で開けず照合できない"
+   "verdict": "門落ち(公式なし)",
+   "reason": "台帳の公式候補 ptihotel.com/garden.html は404で、**ドメイン本体がオンラインカジノのアフィリエイトサイトに転用済み**。検索で出る ov-kamogawa.com は鴨川市横渚の1棟貸し貸別荘で太海314-1のオートキャンプ場とは別施設。鴨川市公式にも記載なし"
   },
   {
    "napId": "14669",
@@ -2363,9 +2363,9 @@
    "latCandidate": "35.1404073",
    "lngCandidate": "139.9562535",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.hangar-eight.jp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式 hangar-eight.jp の住所は一致（鴨川市金束375）で Camp david の紹介もあるが、**料金の記載が一切なく**、予約は外部（なっぷ）へのリンクのみ。1日1グループ限定の貸切サイトだが総額が公式から確認できない"
   },
   {
    "napId": "14959",
@@ -2391,7 +2391,7 @@
    "priority": 99,
    "officialUrl": "https://umibenocamp.rsvsys.jp/",
    "verdict": "UNMEASURED",
-   "reason": "江見吉浦 海辺のキャンプ場。公式 umibenocamp.rsvsys.jp が403で開けず門1の照合ができない"
+   "reason": "公式予約先 umibenocamp.rsvsys.jp が**全ページ403**（UA変更・Googlebot UA・ヘッドレスChrome すべて拒否）。Wayback の2025-06-15スナップショットで住所一致（鴨川市江見吉浦104／運営 一般社団法人里山里海余暇活動推進協会）・宿泊可（IN11時/OUT翌10時）・1区画5人までソロ可・場内に風呂なし・ペット可までは確認できたが、**料金はJS読込でアーカイブにも残っておらず公式から確認できない**。料金は推測しないため保留。電話 050-3634-0224"
   },
   {
    "napId": "16271",
@@ -2402,9 +2402,9 @@
    "latCandidate": "35.1431298",
    "lngCandidate": "140.1981267",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.camp-uusi.com/",
+   "verdict": "追加",
+   "reason": "公式に住所（鴨川市内浦1480）が一致。フリーサイトはサイト料＋人数料の合算で1名でも金額が確定し、公式フォームから単独予約できる。**施設全体が25歳以上限定**だが、成人のソロは使えるので既存の印旛沼サンセットヒルズ（18歳未満だけの宿泊は不可）と同じ扱いで通す"
   },
   {
    "napId": "16615",
@@ -2429,8 +2429,8 @@
    "lngCandidate": null,
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "宿泊系のため対象外",
+   "reason": "定員12名の一棟貸し貸別荘（コテージ）で一棟平日55,000円〜。テント泊サイトの扱いが確認できず、施設公式サイトも無く掲載は貸別荘・民泊の予約サイトのみ。同名の kozuka513.com は鴨川市金束の別施設"
   },
   {
    "napId": "14888",
@@ -2454,9 +2454,9 @@
    "latCandidate": "35.10796801103753",
    "lngCandidate": "139.84638116304322",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kyonanhoshifuru-camp.jp/",
+   "verdict": "閉鎖疑い",
+   "reason": "**施設公式に閉業告知がある**。お知らせ 2026/05/26「5月25日をもって閉業いたします」、トップ本文に「当キャンプ場は ５月２５日 を 持ちまして 閉業いたしました」。台帳の行は統合移転前の旧サイトで、統合先の公式（下佐久間1586-2）が上記のとおり閉業"
   },
   {
    "napId": "16882",
@@ -2480,9 +2480,9 @@
    "latCandidate": "35.5461443",
    "lngCandidate": "140.4429246",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+   "verdict": "追加",
+   "reason": "施設公式に住所（山武郡九十九里町片貝4477）・ソロ1泊料金・予約方法すべてが載っている。公式が「当キャンプ場は、ご家族、ソロ、カップルなど、少人数向け」と明記していて単独利用可"
   },
   {
    "napId": "13732",
@@ -2519,9 +2519,9 @@
    "latCandidate": "35.546300983692845",
    "lngCandidate": "140.44956003864192",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://in-to-the-wild.jimdosite.com/",
+   "verdict": "追加",
+   "reason": "施設公式に料金ページがあり、公式所在地「山武郡九十九里町小関1983-34」が台帳と一致。1日1組貸切だが**ソロ1泊4,000円（1名分込み）**で高額の線に掛からない。公式が「ソロやグループ、BBQなどのデイキャンプでのご利用も可能」と明記"
   },
   {
    "napId": "11935",
@@ -2532,9 +2532,9 @@
    "latCandidate": "35.193807669561046",
    "lngCandidate": "140.3308367729187",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.jikkokucampsite.com/",
+   "verdict": "追加",
+   "reason": "施設公式に**ソロ専用の「S (solo) サイト」1名3,000円**と電話予約の案内がある。公式の住所は「夷隅郡御宿町実谷668-1」で台帳の「実谷492-1」と番地が違うが、施設名が完全一致・同じ大字・公式地図のピンが台帳座標から約130mなので同一施設と判断し、**公式表記の住所を採用**"
   },
   {
    "napId": "13867",
@@ -2571,9 +2571,9 @@
    "latCandidate": "35.1974687",
    "lngCandidate": "140.3313115",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://farmresort-onjuku.com/",
+   "verdict": "追加",
+   "reason": "施設公式の所在地「夷隅郡御宿町実谷437」が台帳と一致。ソロ・デュオ推奨区画が複数あり、**公式が全区画の予約先として指定している reserva.be** にソロ1名込みの1泊料金がある。焚き火可・宿泊可。既掲載の CAMPGROUND BREEZE TATEYAMA（公式予約先の489banから1名料金を採用）と同じ扱い"
   },
   {
    "napId": "15752",
@@ -2584,9 +2584,9 @@
    "latCandidate": "35.20863146780413",
    "lngCandidate": "140.35163076365015",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://mekabu1173.wixsite.com/capucapu",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "**1日1組限定の貸切で人数によらず固定料金**。公式料金ページに「1日1組限定／1名でも15名でもご利用料金は同じ、固定料金です」とあり平日15,000円・日祝20,000円・休前日25,000円（ハイシーズンとGWはさらに＋5,000〜15,000円）。ソロ1名の総額が高額の線を超えるため判断が要る。宿泊はテント泊か車中泊（「付属のエアストリームは宿泊施設ではありません」）"
   },
   {
    "napId": "15849",
@@ -2597,9 +2597,9 @@
    "latCandidate": "35.2101176",
    "lngCandidate": "140.3528407",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://hoccoree.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式のタイトル・内容とも「1日1組限定ログハウス」の一棟貸し。設備はログハウス（リビング・キッチン・二段ベッド×2・バス・テラス）と庭で、テント泊サイトの扱いが無い。予約は Airbnb のログハウス1室"
   },
   {
    "napId": "16058",
@@ -2611,8 +2611,8 @@
    "lngCandidate": "140.3601089",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "独立した施設公式サイトが存在しない。運営者の店舗ページ（所在地「夷隅郡御宿町高山田136」で台帳と一致）はあるが料金の記載が無く、そこに置かれた「公式ホームページ」リンクの先がなっぷ。独自ドメイン候補はいずれも応答なし"
   },
   {
    "napId": "13847",
@@ -2636,9 +2636,9 @@
    "latCandidate": "35.86106274434316",
    "lngCandidate": "140.48464555092622",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://goodhill.amebaownd.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式（所在地「香取市大崎1262-7」で台帳と一致）の料金ページが「いい丘キャンプ場 料金は「なっぷ」でご確認ください」としており、**公式にソロ1泊料金が一切ない**。もう一つの運営公式も料金は薪販売・庭の手入れのみ（しかも住所が1262-4で公式2つの間でも食い違う）"
   },
   {
    "napId": "14721",
@@ -2649,9 +2649,9 @@
    "latCandidate": "35.8649148",
    "lngCandidate": "140.5795209",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://19camp.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式は「ゴルフプラザサンライズ」敷地内の3,000㎡を**1日1組貸切**。平日44,000円／土日祝71,500円（テント5張りまで）で、1名でも総額が高額の線を大きく超える。ソロ単価の設定は公式に無い"
   },
   {
    "napId": "15116",
@@ -2676,8 +2676,8 @@
    "lngCandidate": "140.53688738220904",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式・公式予約先がいずれも見つからない（なっぷ・Campla・Instagram のみ）。thefarm.jp（香取市下枝）は香取市吉原399の本施設とは別施設だと確認して弾いた"
   },
   {
    "napId": "11963",
@@ -2714,9 +2714,9 @@
    "latCandidate": "35.701302953705174",
    "lngCandidate": "140.16881799697876",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://noraricamp.com/",
+   "verdict": "閉鎖疑い",
+   "reason": "公式トップに「現在、隣接するヤード（解体屋）の騒音のため休業中。今のところ再開見込みはたっておりません。」（2024.03.08付、以後更新なし）。住所（佐倉市畔田593-2）と料金（小学生以上1,200円＋車1,000円＝ソロ2,200円）は確認できるが**営業再開の見込みが立っていない**ため採用せず"
   },
   {
    "napId": "11966",
@@ -2727,9 +2727,9 @@
    "latCandidate": "35.67451992295651",
    "lngCandidate": "140.38432002067566",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://arinomi.co.jp/",
+   "verdict": "追加",
+   "reason": "公式に住所（山武市板中新田224）が一致し、ソロ1名専用サイトの1泊料金がある。入場料・駐車場代の別途徴収なし"
   },
   {
    "napId": "14746",
@@ -2740,9 +2740,9 @@
    "latCandidate": "35.6794806",
    "lngCandidate": "140.3511471",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/",
+   "verdict": "追加",
+   "reason": "運営の Hope Digital Solutions が自社ドメインで出している施設公式ページ。住所「山武市横田976-1」が台帳と一致し、**同社の所在地も同じ住所**なのでフッターの本社住所との取り違えではない。宿泊プラン1泊4,400円〜でソロ利用可の明記あり"
   },
   {
    "napId": "14927",
@@ -2767,8 +2767,8 @@
    "lngCandidate": "140.3522359",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式・公式予約先が見つからない（なっぷ・Campla・楽天トラベルキャンプ・食べログ・Instagram のみ）。finlandnomori.net は**栃木県那須の同名別施設**で住所が一致しないため除外した"
   },
   {
    "napId": "15027",
@@ -2779,9 +2779,9 @@
    "latCandidate": "35.64778955326152",
    "lngCandidate": "140.35131225899966",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://sunmovecamp.rsy-partners.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式に住所（山武市木原938-56）は一致するが「**キャンプ場貸切料金となります。（1日1組のみ）**」で平日・日曜20,000円（2名まで）／土曜・祝前日・ハイシーズン30,000円。1名でも総額が高額の線を超えるため判断が要る"
   },
   {
    "napId": "16562",
@@ -2792,9 +2792,9 @@
    "latCandidate": "35.65101541321722",
    "lngCandidate": "140.4020082",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://renderfika.com/ja",
+   "verdict": "追加",
+   "reason": "公式に住所（山武市麻生新田112-1）が一致し、テント泊の「ソロ/デュオ サイト」が一式3,950円〜で1名利用できる。焚き火は焚き火台利用で可"
   },
   {
    "napId": "16858",
@@ -2818,9 +2818,9 @@
    "latCandidate": "35.6535667",
    "lngCandidate": "140.1914194",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://yotsu-foundation.or.jp/sougou/menu4.html",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "指定管理者（公益財団法人四街道市地域振興財団）公式に「**利用対象 社会教育活動及び生涯学習を目的とした団体または家族**」と明記され個人1名は利用対象外。宿泊キャンプも夏休み期間の団体受付に限定"
   },
   {
    "napId": "11968",
@@ -2831,9 +2831,9 @@
    "latCandidate": "35.3052223",
    "lngCandidate": "140.1302639",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://ichihara-forest.jp/ja/",
+   "verdict": "追加",
+   "reason": "市原市が管理する公式情報サイトで住所（市原市柿木台1011）が一致。持込テントは区画料のみ820円（市外1,230円）で入園料・駐車場は無料、Web予約もある。人数下限・団体限定の制限なし"
   },
   {
    "napId": "11969",
@@ -4282,14 +4282,14 @@
    "門落ち(住所を照合できない)": 1
   },
   "内訳": {
-   "門落ち(料金も予約も公式に無し)": 16,
-   "閉鎖疑い": 30,
-   "門落ち(公式なし)": 19,
-   "追加": 53,
-   "宿泊系のため対象外": 67,
-   "UNMEASURED": 132,
-   "門落ち(宿泊不可)": 1,
-   "門落ち(単独利用不可)": 6,
+   "門落ち(料金も予約も公式に無し)": 20,
+   "閉鎖疑い": 32,
+   "門落ち(公式なし)": 22,
+   "追加": 64,
+   "宿泊系のため対象外": 70,
+   "UNMEASURED": 106,
+   "門落ち(宿泊不可)": 2,
+   "門落ち(単独利用不可)": 8,
    "門落ち(住所を照合できない)": 2
   }
  },

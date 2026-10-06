@@ -1,0 +1,69 @@
+[
+ {"napId":"15860","name":"ICHINOMIYABASE73","pref":"千葉","muni":"一宮町","verdict":"門落ち(単独利用不可)",
+  "reason":"施設公式の予約ページに「■最小定員、2名様からの料金設定（最大4名様）」と明記され**1名では予約できない**。実体もエアストリーム1棟（1日1組）のプライベートグランピングでテントサイトの記載なし",
+  "checkedUrls":["https://ankr-resort.team/privatecamp/ichinomiya/","https://ankr-resort.team/privatecamp/ichinomiya/ichinomiya-reservation/"],"officialUrl":"https://ankr-resort.team/privatecamp/ichinomiya/"},
+
+ {"napId":"16101","name":"SEAGE TORAMI COASTSIDE","pref":"千葉","muni":"一宮町","verdict":"宿泊系のため対象外",
+  "reason":"公式施設概要で所在地が一致（長生郡一宮町東浪見7500）。トレーラーハウス12棟＋ジオデシックドーム3棟のみでテント泊の扱いが無い",
+  "checkedUrls":["https://seage.jp/","https://seage.jp/overview/"],"officialUrl":"https://seage.jp/"},
+
+ {"napId":"11938","name":"千葉県立北総花の丘公園","pref":"千葉","muni":"印西市","verdict":"門落ち(宿泊不可)",
+  "reason":"県立都市公園の公式（指定管理者）に宿泊・キャンプの記載が一切なく、公式が案内する火気利用は**日帰り枠の手ぶらバーベキューのみ**（11:00〜14:00／15:00〜18:00／11:00〜18:00・事前予約制）",
+  "checkedUrls":["https://hayashi-lce.jp/hokusou/","https://hokusou-bbq.com/"],"officialUrl":"https://hayashi-lce.jp/hokusou/"},
+
+ {"napId":"14807","name":"CAMPiece横芝光","pref":"千葉","muni":"横芝光町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式の住所は一致（山武郡横芝光町小田部1054 旧南条小学校）だが、**公式に載る料金は学校丸ごとの団体貸切料（平日12万円／土日祝18万円・8h・税別）だけでソロ1泊の料金が無い**。公式の予約リンクは404",
+  "checkedUrls":["https://campiece.com/area/yokoshibahikari/","https://campiece.com/reserved/","https://reserve.489ban.net/client/campiece-y/0/plan"],"officialUrl":"https://campiece.com/area/yokoshibahikari/"},
+
+ {"napId":"15656","name":"SHELTER BASE","pref":"千葉","muni":"鎌ケ谷市","verdict":"追加",
+  "reason":"公式に住所（鎌ケ谷市軽井沢2100-1）が一致し、**ソロ専用のフリーサイトが1泊5,000円〜／1サイト**で明示されていて単独1泊ができる",
+  "checkedUrls":["https://www.shelterbase.jp/","https://www.shelterbase.jp/auto-camp/","https://www.shelterbase.jp/facility/","https://www.shelterbase.jp/faq/"],
+  "officialUrl":"https://www.shelterbase.jp/","reservationUrl":"https://www.nap-camp.com/chiba/15656",
+  "address":"千葉県鎌ケ谷市軽井沢2100-1","priceMin":5000,"priceMax":5000,
+  "priceNote":"サイト単位課金。公式 AUTO CAMP ページ「ソロフリーサイト／フリーエリア 利用料金 1泊 5,000円〜 /1サイト」「定員 1日3名限定」「車両 1名につき1台まで」。人数課金の記載は無く、公式が下限のみ表示のため priceMax も同額",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.shelterbase.jp/facility/","quote":"シャワールーム(予約制) 利用時間 8:00~21:00 (最終予約時間20:30)"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.shelterbase.jp/faq/","quote":"薪・炭は販売していますか? 管理棟にて販売しております 針葉樹 700 円 広葉樹800 円 炭900 円"},
+    "shop":{"value":true,"evidenceUrl":"https://www.shelterbase.jp/facility/","quote":"センターハウス 営業時間 08:00~21:00 チェックイン、レンタル品、ワークショップの受付、売店もございます。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.shelterbase.jp/auto-camp/","quote":"ドッグサイト 愛犬と一緒にキャンプが楽しめるサイトです。囲いがあるのでノーリードでお過ごしいただけます。"},
+    "nearbyOnsen":{"value":"近隣温浴施設「さわやかプラザ」（距離の記載なし）","evidenceUrl":"https://www.shelterbase.jp/facility/","quote":"近隣温浴施設「さわやかプラザ」をおすすめしております！"}},
+  "coordsFromOfficialMap":{"lat":35.79590488016775,"lng":140.022429415262,"url":"https://www.shelterbase.jp/facility/"}},
+
+ {"napId":"11941","name":"キャンピングヒルズ鴨川","pref":"千葉","muni":"鴨川市","verdict":"追加",
+  "reason":"公式に住所（鴨川市宮2015-62）が一致し、テントサイトは1泊1区画6,000円（5人まで）の区画課金。1名でも公式の仮予約フォームから予約できる",
+  "checkedUrls":["https://www.kamogawacamp.jp/","https://www.kamogawacamp.jp/%E3%81%94%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/","https://www.kamogawacamp.jp/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/"],
+  "officialUrl":"https://www.kamogawacamp.jp/","reservationUrl":"https://www.kamogawacamp.jp/%E3%81%94%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/",
+  "address":"千葉県鴨川市宮2015-62","priceMin":6000,"priceMax":6000,
+  "priceNote":"区画単位課金で人数課金なし。公式「● テントサイト 1泊１区画： 6,000 円／車1台、テント１張、タープ1張／5人まで（大人2名、子供3名）／AC電源：＋1,000円」。露天風呂は別途 大人500円、シャワーは大人300円。予約は同ページの仮予約フォーム（24時間以内に可否メール）",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://www.kamogawacamp.jp/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/","quote":"男女別露天岩風呂（シャワー付き） 一部期間 家族で貸切使用"},
+    "shower":{"value":true,"evidenceUrl":"https://www.kamogawacamp.jp/%E3%81%94%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/","quote":"● 露天風呂 大人： 500 円 子供： 250 円（シャワー大人300円、子供150円）"},
+    "shop":{"value":true,"evidenceUrl":"https://www.kamogawacamp.jp/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/","quote":"●施設概要 … 売店・キャンプ用品"},
+    "pet":{"value":true,"evidenceUrl":"https://www.kamogawacamp.jp/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/","quote":"ペットに関しては、周りの方のご迷惑にならない飼い方をして頂ける方に限り可能です。（…バンガロー内へのペットの入場も不可となります。）"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11943","name":"オートキャンプオーシャンビュー鴨川","pref":"千葉","muni":"鴨川市","verdict":"門落ち(公式なし)",
+  "reason":"台帳の公式候補 ptihotel.com/garden.html は404で、**ドメイン本体がオンラインカジノのアフィリエイトサイトに転用済み**。検索で出る ov-kamogawa.com は鴨川市横渚の1棟貸し貸別荘で太海314-1のオートキャンプ場とは別施設。鴨川市公式にも記載なし",
+  "checkedUrls":["https://www.ptihotel.com/garden.html","https://www.ptihotel.com/","https://ov-kamogawa.com/"],"officialUrl":null},
+
+ {"napId":"14932","name":"Camp david（Hangar eight 内）","pref":"千葉","muni":"鴨川市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式 hangar-eight.jp の住所は一致（鴨川市金束375）で Camp david の紹介もあるが、**料金の記載が一切なく**、予約は外部（なっぷ）へのリンクのみ。1日1グループ限定の貸切サイトだが総額が公式から確認できない",
+  "checkedUrls":["https://www.hangar-eight.jp/"],"officialUrl":"https://www.hangar-eight.jp/"},
+
+ {"napId":"15028","name":"江見吉浦 海辺のキャンプ場","pref":"千葉","muni":"鴨川市","verdict":"UNMEASURED",
+  "reason":"公式予約先 umibenocamp.rsvsys.jp が**全ページ403**（UA変更・Googlebot UA・ヘッドレスChrome すべて拒否）。Wayback の2025-06-15スナップショットで住所一致（鴨川市江見吉浦104／運営 一般社団法人里山里海余暇活動推進協会）・宿泊可（IN11時/OUT翌10時）・1区画5人までソロ可・場内に風呂なし・ペット可までは確認できたが、**料金はJS読込でアーカイブにも残っておらず公式から確認できない**。料金は推測しないため保留。電話 050-3634-0224",
+  "checkedUrls":["https://umibenocamp.rsvsys.jp/","https://web.archive.org/web/20250615053044/https://umibenocamp.rsvsys.jp/info/guide"],"officialUrl":"https://umibenocamp.rsvsys.jp/"},
+
+ {"napId":"16271","name":"Camp&Sauna UUSi","pref":"千葉","muni":"鴨川市","verdict":"追加",
+  "reason":"公式に住所（鴨川市内浦1480）が一致。フリーサイトはサイト料＋人数料の合算で1名でも金額が確定し、公式フォームから単独予約できる。**施設全体が25歳以上限定**だが、成人のソロは使えるので既存の印旛沼サンセットヒルズ（18歳未満だけの宿泊は不可）と同じ扱いで通す",
+  "checkedUrls":["https://www.camp-uusi.com/","https://www.camp-uusi.com/%E6%96%99%E9%87%91%E3%83%97%E3%83%A9%E3%83%B3/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/","https://www.camp-uusi.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB/","https://www.camp-uusi.com/uusi%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84/"],
+  "officialUrl":"https://www.camp-uusi.com/","reservationUrl":"https://docs.google.com/forms/d/e/1FAIpQLScGowG3qtxlWim6CMf8cix0tDqX8Djl8sCgXaMspgLieWcBug/viewform",
+  "address":"千葉県鴨川市内浦1480","priceMin":5000,"priceMax":7000,
+  "priceNote":"サイト課金＋人数課金の合算。公式「A：フリーサイト … 平日：基本3,000円＋2,000円 xご利用人数／土日祝日：基本5,000円＋2,000円 xご利用人数」→ ソロ1名は平日5,000円・土日祝7,000円。「*25歳以上限定のキャンプ施設となっております。」「*年末年始（12/30〜1/3）、お盆（8/13,14,15）は、土日祝日料金となります。」。サウナは別料金1名2,500円だが「（２名様より）」で**ソロは使えない**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.camp-uusi.com/","quote":"男女別温水シャワー/更衣室（ソープ類、ドライヤー完備）"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.camp-uusi.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB/","quote":"※薪につきましてはお持ちいただくか場内でも￥1,100にて販売しています。"},
+    "shop":{"value":true,"evidenceUrl":"https://www.camp-uusi.com/","quote":"大人のための美味しいお酒のセレクトショップ「兎と寅」も併設しています。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.camp-uusi.com/uusi%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84/","quote":"【ペットについて】…放し飼いはできません。リードを着けてください。"}},
+  "coordsFromOfficialMap":null}
+]

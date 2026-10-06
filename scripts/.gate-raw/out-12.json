@@ -1,0 +1,74 @@
+[
+ {"napId":"14721","name":"19-Juke-","pref":"千葉","muni":"香取市","verdict":"UNMEASURED",
+  "reason":"公式は「ゴルフプラザサンライズ」敷地内の3,000㎡を**1日1組貸切**。平日44,000円／土日祝71,500円（テント5張りまで）で、1名でも総額が高額の線を大きく超える。ソロ単価の設定は公式に無い",
+  "checkedUrls":["https://19camp.com/","https://19camp.com/price/","https://19camp.com/facilities/"],"officialUrl":"https://19camp.com/"},
+
+ {"napId":"16420","name":"香取キャンプ場","pref":"千葉","muni":"香取市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先がいずれも見つからない（なっぷ・Campla・Instagram のみ）。thefarm.jp（香取市下枝）は香取市吉原399の本施設とは別施設だと確認して弾いた",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16420","https://www.thefarm.jp/"],"officialUrl":null},
+
+ {"napId":"16298","name":"野良里キャンプ場","pref":"千葉","muni":"佐倉市","verdict":"閉鎖疑い",
+  "reason":"公式トップに「現在、隣接するヤード（解体屋）の騒音のため休業中。今のところ再開見込みはたっておりません。」（2024.03.08付、以後更新なし）。住所（佐倉市畔田593-2）と料金（小学生以上1,200円＋車1,000円＝ソロ2,200円）は確認できるが**営業再開の見込みが立っていない**ため採用せず",
+  "checkedUrls":["https://noraricamp.com/","https://noraricamp.com/category/%e6%96%99%e9%87%91/"],"officialUrl":"https://noraricamp.com/"},
+
+ {"napId":"11966","name":"有野実苑オートキャンプ場","pref":"千葉","muni":"山武市","verdict":"追加",
+  "reason":"公式に住所（山武市板中新田224）が一致し、ソロ1名専用サイトの1泊料金がある。入場料・駐車場代の別途徴収なし",
+  "checkedUrls":["https://arinomi.co.jp/","https://arinomi.co.jp/charges/","https://arinomi.co.jp/autocamp/","https://arinomi.co.jp/access/","https://arinomi.co.jp/news/"],
+  "officialUrl":"https://arinomi.co.jp/","reservationUrl":"https://go-arinomien.reservation.jp/ja",
+  "address":"千葉県山武市板中新田224","priceMin":3200,"priceMax":5400,
+  "priceNote":"1名単位課金。公式「ソロサイト 約5m×約5m／1名様での利用」サイト料金 1人：平日3,200円／通常3,800円／ミドル4,700円／ハイ5,400円（税込）。別途必須の費用は無し（シャワー300円・AC電源1,300円・ペット800円は任意）。**公式お知らせ2026年9月23日に「ソロサイトは当面の間、閉鎖」とあり、代替として「JIKABIサイト（平日）1名：3,200円」を販売中。**また「2026年1月9日より宿泊料金を100円〜300円改定」の告知もある",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://arinomi.co.jp/autocamp/","quote":"シャワー 通年利用可能（冬季は時短運営）。"},
+    "shop":{"value":true,"evidenceUrl":"https://arinomi.co.jp/autocamp/","quote":"売店・レンタル ランタン・チェア・焚火台など。"},
+    "pet":{"value":true,"evidenceUrl":"https://arinomi.co.jp/charges/","quote":"ペット 3匹まで 1泊 800円"}},
+  "coordsFromOfficialMap":{"lat":35.67457603033864,"lng":140.38180917634904,"url":"https://arinomi.co.jp/access/"}},
+
+ {"napId":"14746","name":"サニーサイドオートキャンプ","pref":"千葉","muni":"山武市","verdict":"追加",
+  "reason":"運営の Hope Digital Solutions が自社ドメインで出している施設公式ページ。住所「山武市横田976-1」が台帳と一致し、**同社の所在地も同じ住所**なのでフッターの本社住所との取り違えではない。宿泊プラン1泊4,400円〜でソロ利用可の明記あり",
+  "checkedUrls":["https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/","https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/plan/","https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/faciltys/"],
+  "officialUrl":"https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/","reservationUrl":"https://www.nap-camp.com/chiba/14746",
+  "address":"千葉県山武市横田976-1","priceMin":4400,"priceMax":4400,
+  "priceNote":"サイト単位課金。公式「宿泊プラン オートキャンプ区画サイト（1〜4名用/最大6名）1泊 4,400円〜」。公式は下限のみ掲載のため priceMax も同額。入場料・駐車場代・人数課金の別途記載は公式に無い（貸切プランは35,200円〜）",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/faciltys/","quote":"シャワースペースにはドライヤーの貸し出しやコンセントのご用意があります。"},
+    "firewood":{"value":true,"evidenceUrl":"https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/","quote":"薪販売中！！"},
+    "pet":{"value":true,"evidenceUrl":"https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/plan/","quote":"ペットOK（宿泊プラン オートキャンプ区画サイト）"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14996","name":"千葉フィンランドの森","pref":"千葉","muni":"山武市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先が見つからない（なっぷ・Campla・楽天トラベルキャンプ・食べログ・Instagram のみ）。finlandnomori.net は**栃木県那須の同名別施設**で住所が一致しないため除外した",
+  "checkedUrls":["https://www.nap-camp.com/chiba/14996","https://www.finlandnomori.net/"],"officialUrl":null},
+
+ {"napId":"15027","name":"SUNMOVEキャンプ場","pref":"千葉","muni":"山武市","verdict":"UNMEASURED",
+  "reason":"公式に住所（山武市木原938-56）は一致するが「**キャンプ場貸切料金となります。（1日1組のみ）**」で平日・日曜20,000円（2名まで）／土曜・祝前日・ハイシーズン30,000円。1名でも総額が高額の線を超えるため判断が要る",
+  "checkedUrls":["https://sunmovecamp.rsy-partners.com/","https://sunmovecamp.rsy-partners.com/?page_id=498"],"officialUrl":"https://sunmovecamp.rsy-partners.com/"},
+
+ {"napId":"16562","name":"Render Fika Sammu","pref":"千葉","muni":"山武市","verdict":"追加",
+  "reason":"公式に住所（山武市麻生新田112-1）が一致し、テント泊の「ソロ/デュオ サイト」が一式3,950円〜で1名利用できる。焚き火は焚き火台利用で可",
+  "checkedUrls":["https://renderfika.com/ja","https://renderfika.com/ja/accommodation","https://renderfika.com/ja/services","https://renderfika.com/ja/bath-sauna"],
+  "officialUrl":"https://renderfika.com/ja","reservationUrl":"https://www.chillnn.com/ja/1916827faa7376/plan/",
+  "address":"千葉県山武市麻生新田112-1","priceMin":3950,"priceMax":3950,
+  "priceNote":"サイト単位課金。公式「Solo/Duo Site ソロ/デュオ サイト 23〜25 サイト利用料一式 ※時期による料金変動あり ¥3,950 〜 ／定員人数 最大2名 ／駐車台数1台」。公式は下限のみ掲載のため priceMax も同額。入場料・駐車場代の別途記載なし",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://renderfika.com/ja/bath-sauna","quote":"貸切露天風呂＋貸切サウナ … 薪ストーブサウナ / 水風呂 / 寝湯付き露天風呂 … 料金：8,450円〜 / 2名"},
+    "firewood":{"value":true,"evidenceUrl":"https://renderfika.com/ja/services","quote":"薪１束(針葉樹)¥780 / 薪１束(広葉樹)¥900 / 炭3kg ¥600"},
+    "shop":{"value":true,"evidenceUrl":"https://renderfika.com/ja/services","quote":"ショップ・カフェカウンター 日用品各種やドリンク・食品・レンタル品・コーヒー類をお買い求めいただけます。"},
+    "pet":{"value":true,"evidenceUrl":"https://renderfika.com/ja/accommodation","quote":"17番 ペットOK ※リード必須"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11967","name":"四街道総合公園 キャンプ場","pref":"千葉","muni":"四街道市","verdict":"門落ち(単独利用不可)",
+  "reason":"指定管理者（公益財団法人四街道市地域振興財団）公式に「**利用対象 社会教育活動及び生涯学習を目的とした団体または家族**」と明記され個人1名は利用対象外。宿泊キャンプも夏休み期間の団体受付に限定",
+  "checkedUrls":["http://yotsu-foundation.or.jp/sougou/menu4.html","https://www.city.yotsukaido.chiba.jp/kurashi/sumai/koen/sougoukyanpu.html"],"officialUrl":"http://yotsu-foundation.or.jp/sougou/menu4.html"},
+
+ {"napId":"11968","name":"いちはらクオードの森","pref":"千葉","muni":"市原市","verdict":"追加",
+  "reason":"市原市が管理する公式情報サイトで住所（市原市柿木台1011）が一致。持込テントは区画料のみ820円（市外1,230円）で入園料・駐車場は無料、Web予約もある。人数下限・団体限定の制限なし",
+  "checkedUrls":["https://ichihara-forest.jp/ja/","https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/","https://ichihara-forest.jp/%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4%e3%81%ae%e4%ba%88%e7%b4%84/","https://ichihara-forest.jp/reservation/"],
+  "officialUrl":"https://ichihara-forest.jp/ja/","reservationUrl":"https://ichihara-forest.jp/reservation/",
+  "address":"千葉県市原市柿木台1011","priceMin":820,"priceMax":1230,
+  "priceNote":"区画単位課金。公式「持込テント使用の場合、区画料だけがかかります。… 1区画1泊につき、区画料 820円（市外居住者1,230円）」「入園料 無料」「駐車場 50台（無料）」。**市外居住者料金を priceMax に採用**。宿泊キャンプは春・夏・秋・冬の各開設期間内のみで、支払いは現金のみ",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/","quote":"コインシャワー（１回３分）１００円←キャンプ期間のみ"},
+    "firewood":{"value":true,"evidenceUrl":"https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/","quote":"薪（１束）５００円 ・炭（２kg）６００円"},
+    "pet":{"value":false,"evidenceUrl":"https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/","quote":"※ペット不可 ※発電機不可"}},
+  "coordsFromOfficialMap":null}
+]
