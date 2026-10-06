@@ -1,0 +1,48 @@
+[
+ {"napId":"16816","name":"月夜湖むつざわオートキャンプ場","pref":"千葉","muni":"睦沢町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式（tsukiyoko.ujack.co.jp）は実在し住所も一致するが、**オートキャンプ料金は「なっぷでご確認ください」で公式に無く**、予約先もなっぷのみ。公式にある15,000円〜はグランピングコテージの基本料金。2026/7/7グランドオープン。同じUJack運営の mutsuzawa.ujack.co.jp（上之郷1986-1）は別拠点",
+  "checkedUrls":["https://tsukiyoko.ujack.co.jp/","https://tsukiyoko.ujack.co.jp/stay.html"],"officialUrl":"https://tsukiyoko.ujack.co.jp/"},
+
+ {"napId":"11998","name":"木更津市立少年自然の家キャンプ場","pref":"千葉","muni":"木更津市","verdict":"閉鎖疑い",
+  "reason":"**自治体公式（木更津市）が進入路の崩落により立入禁止・復旧完了まで利用中止と告知**（2026-08-18更新）。「令和7年7月に進入路の一部に亀裂が確認され、その後崩落が発生したため、現在は立入りを禁止しています」。季節休業ではなく期限未定の利用停止",
+  "checkedUrls":["https://www.city.kisarazu.lg.jp/soshiki/kyoiku/shogaigakushu/1/1-seisyonen/14912.html"],"officialUrl":"https://www.city.kisarazu.lg.jp/soshiki/kyoiku/shogaigakushu/1/1-seisyonen/14912.html"},
+
+ {"napId":"14716","name":"REMIX BASE 木更津キャンプ場","pref":"千葉","muni":"木更津市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式 remix-base.com は実在し住所一致（木更津市菅生443）だが、**/kisarazu/ が「ただいまリニューアル中です」で料金ページが無く**、他ページにも宿泊料金の記載が一切ない。予約リンクはなっぷのウィジェットのみ。1日1組限定の貸切営業でソロ1名の額は公式から判定できない",
+  "checkedUrls":["https://remix-base.com/kisarazu/","https://remix-base.com/reservation/","https://remix-base.com/shisetsu/"],"officialUrl":"https://remix-base.com/"},
+
+ {"napId":"15745","name":"PrivateValcony","pref":"千葉","muni":"木更津市","verdict":"UNMEASURED",
+  "reason":"公式に料金あり住所も一致（木更津市真里谷2913-1）だが、**全4区画の区画貸しで最安Bサイトが23,000円＋税＝25,300円**（最高Aサイトは48,000円＋税＝52,800円）。ソロでも同額で高額の線を大きく超える。予約手段もなっぷ／楽天トラベルキャンプ／Instagram DM／電話のみ",
+  "checkedUrls":["https://www.privatevalcony.com/","https://www.privatevalcony.com/price-reservation/"],"officialUrl":"https://www.privatevalcony.com/"},
+
+ {"napId":"15902","name":"エトワ木更津 ETOWA KISARAZU","pref":"千葉","muni":"木更津市","verdict":"宿泊系のため対象外",
+  "reason":"公式（コスモスイニシア運営）が「廃校になった校舎を舞台にしたグランピング施設」で、客室は4BEDS CABIN／2BEDS CABIN／DOG CABIN の3種のみ。**テント泊の扱いが無い**。住所は木更津市下郡1886で一致",
+  "checkedUrls":["https://www.cigr.co.jp/etowa/kisarazu/"],"officialUrl":"https://www.cigr.co.jp/etowa/kisarazu/"},
+
+ {"napId":"16065","name":"真里谷キャンプ場","pref":"千葉","muni":"木更津市","verdict":"門落ち(公式なし)",
+  "reason":"なっぷの hpUrl は null。検索でも施設公式・自治体公式・公式予約先が一切見つからず、出てくるのは予約／まとめサイトのみ。**検索で出た www7b.biglobe.ne.jp/morimaki/ は Shift_JIS の「森のまきばオートキャンプ場」（袖ケ浦市林562-1-3）で別施設**だと cp932 デコードで確認して弾いた",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16065","http://www7b.biglobe.ne.jp/morimaki/"],"officialUrl":null},
+
+ {"napId":"16134","name":"いっせんぼく Camp field","pref":"千葉","muni":"木更津市","verdict":"UNMEASURED",
+  "reason":"旧名（ブルーベリーキャンプ ノムさん王国）の施設公式ブログに**ソロサイト3,000円の明記はあるが、同サイトの所在地表記が「木更津市馬来田」のみで番地が無く**台帳の真里谷465と照合できない。加えて掲載額が2023年11月更新の「プレオープン価格」で現名称・現運営の料金か不明。なっぷ登録の hpUrl は Instagram のみ",
+  "checkedUrls":["https://nomusan.main.jp/","https://nomusan.main.jp/%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4%e5%88%a9%e7%94%a8%e4%be%a1%e6%a0%bc%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/","https://nomusan.main.jp/about/"],"officialUrl":"https://nomusan.main.jp/"},
+
+ {"napId":"16510","name":"ベースキャンプ木更津","pref":"千葉","muni":"木更津市","verdict":"追加",
+  "reason":"施設公式に住所（木更津市矢那3652-2）が一致し、**「滞在利用 一泊 2700円/一人当り」の人数課金のソロ料金**がある。公式のGoogleフォーム予約も「宿泊利用 ￥2,700/1名」で稼働中",
+  "checkedUrls":["https://tenjinfarm.com/","https://tenjinfarm.com/about","https://tenjinfarm.com/fqa-2","https://tenjinfarm.com/access"],
+  "officialUrl":"https://tenjinfarm.com/","reservationUrl":"https://docs.google.com/forms/d/e/1FAIpQLSeb4rCLgLg_NTS0rxQdeeuQ_IIYJIL3ir0l-H9LMqWAY8BkxA/viewform",
+  "address":"千葉県木更津市矢那3652-2","priceMin":2700,"priceMax":2700,
+  "priceNote":"1名単位課金。公式 about ページ「利 用 料 金／滞在利用 一泊 2700円/一人当り（チェックイン:10:00am〜アウト:翌日12:00pm）」。公式予約フォームのプラン選択も「宿泊利用 10:00〜翌日12:00 ￥2,700/1名」。日帰り1,600円・夜間利用1,200円は別枠。駐車場代・入場料の別途徴収の記載なし。テント2,000円・焚き火台500円はレンタル。**公式が「菜園は「天神ホリデイファーム」、キャンプサイトは「ベースキャンプ木更津」と読んでいます」と同一敷地の2名称を明記している**",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://tenjinfarm.com/about","quote":"薪利用一束 針葉樹600円、広葉樹700円"},
+    "pet":{"value":true,"evidenceUrl":"https://tenjinfarm.com/fqa-2","quote":"ペット連れでも良いですか？ ハイ。お連れ下さい。専用のスポットをご活用ください。"}},
+  "coordsFromOfficialMap":{"lat":35.35153127269548,"lng":139.96374697577312,"url":"https://tenjinfarm.com/access"}},
+
+ {"napId":"16582","name":"ブルーベリーの森オートキャンプ場","pref":"千葉","muni":"木更津市","verdict":"門落ち(公式なし)",
+  "reason":"なっぷの hpUrl は空。検索でも施設公式・自治体公式・公式予約先が見つからない。**検索上位の kisarazu-blueberry.com は「木更津市観光ブルーベリー園協議会」の公式サイト**で当キャンプ場の公式ではない（観光団体のため根拠不可）",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16582","https://www.kisarazu-blueberry.com/"],"officialUrl":null},
+
+ {"napId":"16273","name":"WILDオートキャンプ NOMADSITE","pref":"千葉","muni":"野田市","verdict":"門落ち(公式なし)",
+  "reason":"なっぷの hpUrl は空。検索でも公式が出ず、ヒットは個人ブログ・X・まとめサイトのみ。**同時に出た kinosakichi.jp（キノサキチ）は同じ野田市だが木野崎の別キャンプ場**で、台帳の平井211-5とは無関係",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16273","https://kinosakichi.jp/"],"officialUrl":null}
+]

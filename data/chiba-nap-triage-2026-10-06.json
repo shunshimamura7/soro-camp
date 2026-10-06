@@ -4131,9 +4131,9 @@
    "latCandidate": "35.3239828",
    "lngCandidate": "140.278166",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://tsukiyoko.ujack.co.jp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式（tsukiyoko.ujack.co.jp）は実在し住所も一致するが、**オートキャンプ料金は「なっぷでご確認ください」で公式に無く**、予約先もなっぷのみ。公式にある15,000円〜はグランピングコテージの基本料金。2026/7/7グランドオープン。同じUJack運営の mutsuzawa.ujack.co.jp（上之郷1986-1）は別拠点"
   },
   {
    "napId": "11998",
@@ -4144,9 +4144,9 @@
    "latCandidate": "35.343468",
    "lngCandidate": "140.111407",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.kisarazu.lg.jp/soshiki/kyoiku/shogaigakushu/1/1-seisyonen/14912.html",
+   "verdict": "閉鎖疑い",
+   "reason": "**自治体公式（木更津市）が進入路の崩落により立入禁止・復旧完了まで利用中止と告知**（2026-08-18更新）。「令和7年7月に進入路の一部に亀裂が確認され、その後崩落が発生したため、現在は立入りを禁止しています」。季節休業ではなく期限未定の利用停止"
   },
   {
    "napId": "13874",
@@ -4170,9 +4170,9 @@
    "latCandidate": "35.390648841275166",
    "lngCandidate": "139.97178560495377",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://remix-base.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 remix-base.com は実在し住所一致（木更津市菅生443）だが、**/kisarazu/ が「ただいまリニューアル中です」で料金ページが無く**、他ページにも宿泊料金の記載が一切ない。予約リンクはなっぷのウィジェットのみ。1日1組限定の貸切営業でソロ1名の額は公式から判定できない"
   },
   {
    "napId": "15745",
@@ -4183,9 +4183,9 @@
    "latCandidate": "35.35782978627895",
    "lngCandidate": "140.09375276347657",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://www.privatevalcony.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式に料金あり住所も一致（木更津市真里谷2913-1）だが、**全4区画の区画貸しで最安Bサイトが23,000円＋税＝25,300円**（最高Aサイトは48,000円＋税＝52,800円）。ソロでも同額で高額の線を大きく超える。予約手段もなっぷ／楽天トラベルキャンプ／Instagram DM／電話のみ"
   },
   {
    "napId": "15902",
@@ -4196,9 +4196,9 @@
    "latCandidate": "35.35400731548747",
    "lngCandidate": "140.03913838228752",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.cigr.co.jp/etowa/kisarazu/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式（コスモスイニシア運営）が「廃校になった校舎を舞台にしたグランピング施設」で、客室は4BEDS CABIN／2BEDS CABIN／DOG CABIN の3種のみ。**テント泊の扱いが無い**。住所は木更津市下郡1886で一致"
   },
   {
    "napId": "16065",
@@ -4210,8 +4210,8 @@
    "lngCandidate": "140.0780255482982",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "なっぷの hpUrl は null。検索でも施設公式・自治体公式・公式予約先が一切見つからず、出てくるのは予約／まとめサイトのみ。**検索で出た www7b.biglobe.ne.jp/morimaki/ は Shift_JIS の「森のまきばオートキャンプ場」（袖ケ浦市林562-1-3）で別施設**だと cp932 デコードで確認して弾いた"
   },
   {
    "napId": "16134",
@@ -4222,9 +4222,9 @@
    "latCandidate": "35.3688935",
    "lngCandidate": "140.0717449",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://nomusan.main.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "旧名（ブルーベリーキャンプ ノムさん王国）の施設公式ブログに**ソロサイト3,000円の明記はあるが、同サイトの所在地表記が「木更津市馬来田」のみで番地が無く**台帳の真里谷465と照合できない。加えて掲載額が2023年11月更新の「プレオープン価格」で現名称・現運営の料金か不明。なっぷ登録の hpUrl は Instagram のみ"
   },
   {
    "napId": "16510",
@@ -4235,9 +4235,9 @@
    "latCandidate": "35.3512355",
    "lngCandidate": "139.966061",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://tenjinfarm.com/",
+   "verdict": "追加",
+   "reason": "施設公式に住所（木更津市矢那3652-2）が一致し、**「滞在利用 一泊 2700円/一人当り」の人数課金のソロ料金**がある。公式のGoogleフォーム予約も「宿泊利用 ￥2,700/1名」で稼働中"
   },
   {
    "napId": "16582",
@@ -4249,8 +4249,8 @@
    "lngCandidate": "140.0958127",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "なっぷの hpUrl は空。検索でも施設公式・自治体公式・公式予約先が見つからない。**検索上位の kisarazu-blueberry.com は「木更津市観光ブルーベリー園協議会」の公式サイト**で当キャンプ場の公式ではない（観光団体のため根拠不可）"
   },
   {
    "napId": "16273",
@@ -4262,8 +4262,8 @@
    "lngCandidate": "139.81784909159325",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "なっぷの hpUrl は空。検索でも公式が出ず、ヒットは個人ブログ・X・まとめサイトのみ。**同時に出た kinosakichi.jp（キノサキチ）は同じ野田市だが木野崎の別キャンプ場**で、台帳の平井211-5とは無関係"
   }
  ],
  "progress": {
@@ -4282,12 +4282,12 @@
    "門落ち(住所を照合できない)": 1
   },
   "内訳": {
-   "門落ち(料金も予約も公式に無し)": 37,
-   "閉鎖疑い": 32,
-   "門落ち(公式なし)": 37,
-   "追加": 85,
-   "宿泊系のため対象外": 76,
-   "UNMEASURED": 36,
+   "門落ち(料金も予約も公式に無し)": 39,
+   "閉鎖疑い": 33,
+   "門落ち(公式なし)": 40,
+   "追加": 86,
+   "宿泊系のため対象外": 77,
+   "UNMEASURED": 28,
    "門落ち(宿泊不可)": 8,
    "門落ち(単独利用不可)": 13,
    "門落ち(住所を照合できない)": 2

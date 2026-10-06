@@ -45,9 +45,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11234",
    "latCandidate": "35.6513907",
    "lngCandidate": "138.8150084",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://daibosatsu-kankou.com/leisure/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式（住所一致：甲州市大和町田野3番地）の宿泊は**バンガロー1棟単位のみ**で、テントサイトの記載・料金が一切ない（BBQと釣りは日帰り）"
   },
   {
    "napId": "11235",
@@ -57,9 +57,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11235",
    "latCandidate": "35.7784979",
    "lngCandidate": "138.5351796",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://bighorn-camp.com/",
+   "verdict": "追加",
+   "reason": "施設公式に住所（甲斐市上芦沢1159）が一致し、**ソロキャンプサイト（定員1名）4,000円/泊**が明記されていて単独予約できる"
   },
   {
    "napId": "11236",
@@ -69,9 +69,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11236",
    "latCandidate": "35.7955126",
    "lngCandidate": "138.5257327",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.northland-cv.com/",
+   "verdict": "追加",
+   "reason": "施設公式に住所（甲斐市上芦沢1352）が一致し、オートキャンプサイト1区画7,700円（税込・5名まで）で**入場料無料**なので1名でも総額7,700円"
   },
   {
    "napId": "11237",
@@ -93,9 +93,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11238",
    "latCandidate": "35.7596844",
    "lngCandidate": "138.6445206",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://makioka-camp.com/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "公式に「2025年、**8名〜40名様から**通年完全貸し切りの施設としてリニューアルオープン」「ご利用人数：8名〜40名」とあり1名で予約できない"
   },
   {
    "napId": "11240",
@@ -105,9 +105,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11240",
    "latCandidate": "35.5756201",
    "lngCandidate": "139.0699735",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": "さがざわキャンプ場。施設公式を特定できず(hakken-uenohara.jp は上野原市の地域ポータル)。再訪が要る"
+   "officialUrl": "https://okibi-inc.com/sacco-sagazawa/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "運営元公式では**月額8,800円（税抜・原則1年契約）のエリア会員制フィールドに転換済み**で、1泊単位のソロ料金が公式に存在しない（昭和から続く「さがざわキャンプ場」を会員運営の形へ転換）"
   },
   {
    "napId": "11241",
@@ -117,9 +117,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11241",
    "latCandidate": "35.57550147239382",
    "lngCandidate": "139.03721599634923",
-   "officialUrl": null,
+   "officialUrl": "https://www.calmmountainakiyama.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "**1日1グループ完全貸切で基本料金30,000円/泊（大人6人迄）**。人数下限の明記は無いので門1には当たらないが、1名の総額が高額の線を大きく超える。公式の客層表記も「ソロ：－ デュオ：◎」。なおシャワーに「R6.12月中に復旧予定 要確認」という古い注記が残っている"
   },
   {
    "napId": "11243",
@@ -129,9 +129,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11243",
    "latCandidate": "35.5303855",
    "lngCandidate": "138.518776",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://shibirekosms.sub.jp/",
+   "verdict": "追加",
+   "reason": "施設公式に住所（西八代郡市川三郷町山保3378）が一致し、キャンプ1名1泊 大人2,700円（平日）／3,200円（週末・繁忙期）が明記されていて単独利用できる"
   },
   {
    "napId": "11244",
@@ -142,8 +142,8 @@
    "latCandidate": "35.6036827",
    "lngCandidate": "139.036155",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式・公式予約先のいずれも見つからない（予約は管理人宅への電話のみ）。**tsukione.com は売却パーキングページ**で本施設とは無関係"
   },
   {
    "napId": "11245",
@@ -201,9 +201,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11249",
    "latCandidate": "35.51586747561313",
    "lngCandidate": "138.8769052028656",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.osawaautocamp.com/",
+   "verdict": "追加",
+   "reason": "施設公式（なっぷ掲載の hpUrl から特定）に住所（都留市鹿留2961）が一致し、キャンプ（宿泊）1泊1張3,000円で**公式がソロ利用を明記**している"
   },
   {
    "napId": "11250",
@@ -214,8 +214,8 @@
    "latCandidate": "35.5177391",
    "lngCandidate": "138.8821631",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式・公式予約先が見つからない。Yahoo!マップが「公式サイト」として示すのは富士の国やまなし観光ネット＝観光協会で根拠に使えない。**近隣の sisidome.jp は別施設「BerryPark in FISH ON！鹿留」（都留市鹿留1543）で、本施設の鹿留1180とは住所が違う**"
   },
   {
    "napId": "11251",
@@ -2857,10 +2857,12 @@
   "打ち切り": true,
   "打ち切りの理由": "1件あたり検索1〜2回＋公式ページ取得1〜2回。山梨は収穫完了後に8件を調査して打ち切った",
   "内訳": {
-   "門落ち(公式なし)": 3,
-   "追加": 4,
-   "UNMEASURED": 187,
-   "宿泊系のため対象外": 29,
+   "門落ち(公式なし)": 5,
+   "追加": 8,
+   "宿泊系のため対象外": 30,
+   "門落ち(単独利用不可)": 1,
+   "門落ち(料金も予約も公式に無し)": 1,
+   "UNMEASURED": 178,
    "閉鎖疑い": 13
   }
  }

@@ -84,6 +84,7 @@ for (const [id, edit] of Object.entries(EDIT)) {
     stop(`料金が整数でない: ${r.name}（min=${r.priceMin} max=${r.priceMax}）`);
   }
   if (r.priceMax < r.priceMin) stop(`priceMax < priceMin: ${r.name}`);
+  if (!['千葉', '山梨', '静岡', '神奈川'].includes(r.pref)) stop(`県が想定外: ${r.name} / ${r.pref}`);
   if (r.muni && !norm(r.address).includes(norm(r.muni))) {
     stop(`公式住所に市町村名「${r.muni}」が無い: ${r.name} / ${r.address}`);
   }
@@ -107,7 +108,7 @@ for (const [id, edit] of Object.entries(EDIT)) {
     id: edit.slug,
     slug: edit.slug,
     name: r.name,
-    prefecture: '千葉',
+    prefecture: r.pref,          // 台帳の県。**固定値にすると山梨が千葉として入る（実際にやりかけた）**
     area: edit.area,
     status: 'active',
     address: r.address,
@@ -148,7 +149,11 @@ for (const r of added) {
 }
 const withCoord = added.filter((r) => !r.needsCoord).length;
 console.log(`\n  ${added.length} 件（座標あり ${withCoord} / 未取得 ${added.length - withCoord}）`);
-console.log(`  千葉の active キャンプ場: ${list.filter((c) => c.prefecture === '千葉' && c.status === 'active' && c.type !== 'wild').length} → ${list.filter((c) => c.prefecture === '千葉' && c.status === 'active' && c.type !== 'wild').length + added.length}`);
+for (const pref of [...new Set(added.map((r) => r.prefecture))]) {
+  const before = list.filter((c) => c.prefecture === pref && c.status === 'active' && c.type !== 'wild').length;
+  const n = added.filter((r) => r.prefecture === pref).length;
+  console.log(`  ${pref}の active キャンプ場: ${before} → ${before + n}`);
+}
 
 if (!WRITE) {
   console.log(`\ndry run。書くには --write --force${ASKED_WRITE ? '（--force が足りない）' : ''}`);

@@ -2507,5 +2507,215 @@
   "coordsFromOfficialMap": null,
   "napUrl": "https://www.nap-camp.com/chiba/14090",
   "napName": "大多喜わんぱくキャンプ場"
+ },
+ {
+  "napId": "11235",
+  "name": "ビッグホーンオートキャンプ場",
+  "pref": "山梨",
+  "muni": "甲斐市",
+  "verdict": "追加",
+  "reason": "施設公式に住所（甲斐市上芦沢1159）が一致し、**ソロキャンプサイト（定員1名）4,000円/泊**が明記されていて単独予約できる",
+  "checkedUrls": [
+   "https://bighorn-camp.com/",
+   "https://bighorn-camp.com/stay/",
+   "https://bighorn-camp.com/stay/reservation/",
+   "https://bighorn-camp.com/access/"
+  ],
+  "officialUrl": "https://bighorn-camp.com/",
+  "reservationUrl": "https://bighorn-camp.com/reservationform/",
+  "address": "山梨県甲斐市上芦沢1159",
+  "priceMin": 4000,
+  "priceMax": 4000,
+  "priceNote": "サイト単位課金。公式「料金について／ソロキャンプサイト 定員：１名様 4,000 円 / 泊」「１区画：テント１張り、車１台まで」。車両・入場の追加料金なし（オプションはペット500円、アーリーIN／レイトOUT各1,000円）。**利用期間は2026年4月4日〜11月23日。予約はHPのフォームのみ（電話・予約サイト不可）**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://bighorn-camp.com/stay/",
+    "quote": "シャワー室 … 女子 ２ 脱衣所付き（個室ドアあり） 男子 ２ 脱衣所付き（個室ドアあり）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://bighorn-camp.com/stay/",
+    "quote": "売店（ロックアイス、薪、炭、ランタンガス等）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://bighorn-camp.com/stay/",
+    "quote": "売店（ロックアイス、薪、炭、ランタンガス等）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://bighorn-camp.com/stay/reservation/",
+    "quote": "ペット（犬）は１区画につき１頭までとなります。／ペット １頭 500円"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.778805172555955,
+   "lng": 138.53307437579198,
+   "url": "https://bighorn-camp.com/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/11235",
+  "napName": "森の隠れ家ビッグホーンオートキャンプ場"
+ },
+ {
+  "napId": "11236",
+  "name": "ノースランド キャンパーズ ビレッジ",
+  "pref": "山梨",
+  "muni": "甲斐市",
+  "verdict": "追加",
+  "reason": "施設公式に住所（甲斐市上芦沢1352）が一致し、オートキャンプサイト1区画7,700円（税込・5名まで）で**入場料無料**なので1名でも総額7,700円",
+  "checkedUrls": [
+   "http://www.northland-cv.com/",
+   "http://www.northland-cv.com/price.html",
+   "http://www.northland-cv.com/shisetsu_sonota.html",
+   "http://www.northland-cv.com/odekakemaeni.html"
+  ],
+  "officialUrl": "http://www.northland-cv.com/",
+  "reservationUrl": null,
+  "address": "山梨県甲斐市上芦沢1352",
+  "priceMin": 7700,
+  "priceMax": 7700,
+  "priceNote": "区画単位課金。公式「１サイト 車１台/テント1張り ￥7,000+消費税 (税込￥7,700) 人数は１サイト５名まで」。料金表に「キャビン・オート共通 入場料：キャビン・オートをご利用のお客様は入場料無料」とあり別途必須費用なし。AC電源は任意500円/泊。2026年4月の価格改定後の現行料金。**料金一覧が画像（price2026.png）とPDFのみなので、画像から読み取った値。予約は電話のみ（宿泊の休業日は月・火・水）**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "http://www.northland-cv.com/shisetsu_sonota.html",
+    "quote": "お風呂 ■キャビン・オートサイトご利用のお客様、共に無料です。＜No1＞室内＆露天風呂(3〜4人が入れる広さです)＜No2＞室内風呂 ＜No3＞1人用"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.northland-cv.com/shisetsu_sonota.html",
+    "quote": "その他、混雑時のみ稼働のシャワールーム2室があります。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "http://www.northland-cv.com/shisetsu_sonota.html",
+    "quote": "クラブハウス（売店）〔販売物〕・薪 ・炭 ・氷 ・オリジナルグッズ・ワイン"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "http://www.northland-cv.com/shisetsu_sonota.html",
+    "quote": "〔販売物〕・薪 ・炭 ・氷"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "http://www.northland-cv.com/odekakemaeni.html",
+    "quote": "◎ペットについて ・ペットご同伴の時は、リードやケージを必ずお持ち下さい。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11236",
+  "napName": "ノースランドキャンパーズビレッジ"
+ },
+ {
+  "napId": "11243",
+  "name": "四尾連湖 水明荘",
+  "pref": "山梨",
+  "muni": "市川三郷町",
+  "verdict": "追加",
+  "reason": "施設公式に住所（西八代郡市川三郷町山保3378）が一致し、キャンプ1名1泊 大人2,700円（平日）／3,200円（週末・繁忙期）が明記されていて単独利用できる",
+  "checkedUrls": [
+   "http://shibirekosms.sub.jp/",
+   "http://shibirekosms.sub.jp/casestudy.html",
+   "http://shibirekosms.sub.jp/service.html"
+  ],
+  "officialUrl": "http://shibirekosms.sub.jp/",
+  "reservationUrl": null,
+  "address": "山梨県西八代郡市川三郷町山保3378",
+  "priceMin": 2700,
+  "priceMax": 4200,
+  "priceNote": "1名単位課金。公式「料金（税込）1名 1泊2日 大人（中学生以上）平日（月曜〜木曜日）2,700円／週末（金、土、日）祝前日、祝日、連休 GW 夏季（7月、8月）11月などの繁忙期 3,200円」「料金には、テント、タープ張り代を含みます」。**別途「駐車料金（普通車）1日1台 500円 1泊2日は 500円×2日＝1,000円」がかかる**ので priceMax は繁忙期3,200円＋駐車1,000円。完全予約制・電話のみ（受付9:00〜13:00／15:00〜17:00）",
+  "features": {
+   "bath": {
+    "value": false,
+    "evidenceUrl": "http://shibirekosms.sub.jp/casestudy.html",
+    "quote": "キャンプサイトご利用のお客様にシャワー、入浴の対応はしておりません。"
+   },
+   "shower": {
+    "value": false,
+    "evidenceUrl": "http://shibirekosms.sub.jp/casestudy.html",
+    "quote": "キャンプサイトご利用のお客様にシャワー、入浴の対応はしておりません。"
+   },
+   "nearbyOnsen": {
+    "value": "みたまの湯（車で約30分）",
+    "evidenceUrl": "http://shibirekosms.sub.jp/casestudy.html",
+    "quote": "温泉施設 みたまの湯 をお勧めしております。（車で約30分）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11243",
+  "napName": "四尾連湖　水明荘"
+ },
+ {
+  "napId": "11249",
+  "name": "大沢オートキャンプ場",
+  "pref": "山梨",
+  "muni": "都留市",
+  "verdict": "追加",
+  "reason": "施設公式（なっぷ掲載の hpUrl から特定）に住所（都留市鹿留2961）が一致し、キャンプ（宿泊）1泊1張3,000円で**公式がソロ利用を明記**している",
+  "checkedUrls": [
+   "https://www.osawaautocamp.com/",
+   "https://www.osawaautocamp.com/pages-sitemap.xml"
+  ],
+  "officialUrl": "https://www.osawaautocamp.com/",
+  "reservationUrl": null,
+  "address": "山梨県都留市鹿留2961",
+  "priceMin": 3000,
+  "priceMax": 4000,
+  "priceNote": "サイト単位課金。公式「キャンプ (宿泊) … 友達同士やファミリー、カップル、ソロキャンプにもオススメです ￥3,000 (税込) /1泊・1張」「3名様以降 : ￥500/1名」。**別途オプションに「駐車 : 車1台￥1,000 バイク1台￥500」があり車で行くなら必須**なので priceMax は4,000円。1ページのみの Wix サイトで「WEB予約」ボタンのリンク先は静的HTMLから取得できず公式予約先URLは未確認",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.osawaautocamp.com/",
+    "quote": "”場内共有設備” 管理棟、炊事棟、水洗トイレ、温水シャワー、バーベキューハウスなど"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.osawaautocamp.com/",
+    "quote": "薪・鉄板セット : ￥2,000"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11249",
+  "napName": "大沢オートキャンプ場"
+ },
+ {
+  "napId": "16510",
+  "name": "ベースキャンプ木更津",
+  "pref": "千葉",
+  "muni": "木更津市",
+  "verdict": "追加",
+  "reason": "施設公式に住所（木更津市矢那3652-2）が一致し、**「滞在利用 一泊 2700円/一人当り」の人数課金のソロ料金**がある。公式のGoogleフォーム予約も「宿泊利用 ￥2,700/1名」で稼働中",
+  "checkedUrls": [
+   "https://tenjinfarm.com/",
+   "https://tenjinfarm.com/about",
+   "https://tenjinfarm.com/fqa-2",
+   "https://tenjinfarm.com/access"
+  ],
+  "officialUrl": "https://tenjinfarm.com/",
+  "reservationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeb4rCLgLg_NTS0rxQdeeuQ_IIYJIL3ir0l-H9LMqWAY8BkxA/viewform",
+  "address": "千葉県木更津市矢那3652-2",
+  "priceMin": 2700,
+  "priceMax": 2700,
+  "priceNote": "1名単位課金。公式 about ページ「利 用 料 金／滞在利用 一泊 2700円/一人当り（チェックイン:10:00am〜アウト:翌日12:00pm）」。公式予約フォームのプラン選択も「宿泊利用 10:00〜翌日12:00 ￥2,700/1名」。日帰り1,600円・夜間利用1,200円は別枠。駐車場代・入場料の別途徴収の記載なし。テント2,000円・焚き火台500円はレンタル。**公式が「菜園は「天神ホリデイファーム」、キャンプサイトは「ベースキャンプ木更津」と読んでいます」と同一敷地の2名称を明記している**",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://tenjinfarm.com/about",
+    "quote": "薪利用一束 針葉樹600円、広葉樹700円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://tenjinfarm.com/fqa-2",
+    "quote": "ペット連れでも良いですか？ ハイ。お連れ下さい。専用のスポットをご活用ください。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.35153127269548,
+   "lng": 139.96374697577312,
+   "url": "https://tenjinfarm.com/access"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/16510",
+  "napName": "Base Camp Kisarazu"
  }
 ]
