@@ -1,0 +1,1073 @@
+{
+  "generatedAt": "2026-08-26",
+  "counts": {
+    "active": 159,
+    "officialUrl": 125,
+    "sourceBacked": 128,
+    "priceVerified": 147,
+    "coordsVerified": 124,
+    "scoresVerified": 11,
+    "zeroRisk": 0
+  },
+  "riskTop50": [
+    {
+      "id": "naminokomura",
+      "name": "なみのこ村",
+      "prefecture": "神奈川",
+      "area": "小田原市・根府川",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "takadabashi-kasenjiki",
+      "name": "高田橋多目的広場",
+      "prefecture": "神奈川",
+      "area": "相模原市中央区",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "ogurabashi-kasenjiki",
+      "name": "小倉橋河川敷",
+      "prefecture": "神奈川",
+      "area": "相模原市緑区",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "kamioshima-camp",
+      "name": "上大島キャンプ場",
+      "prefecture": "神奈川",
+      "area": "相模原市緑区",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "shojiko-camping",
+      "name": "精進湖キャンピングコテージ",
+      "prefecture": "山梨",
+      "area": "精進湖",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "nishizato-camp-tekichi",
+      "name": "西里キャンプ適地",
+      "prefecture": "静岡",
+      "area": "静岡市清水区",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "ikenoya-family",
+      "name": "池の谷ファミリーキャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "fukushigawa-auto",
+      "name": "福士川オートキャンプ場",
+      "prefecture": "山梨",
+      "area": "南部町",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "motosu-shore-camp",
+      "name": "本栖湖キャンプ場",
+      "prefecture": "山梨",
+      "area": "本栖湖",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 21
+    },
+    {
+      "id": "tsuchimura",
+      "name": "土村キャンプ場",
+      "prefecture": "静岡",
+      "area": "静岡市清水区",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証",
+        "確認日の記録なし"
+      ],
+      "officialUrl": "",
+      "lastVerified": "",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 19
+    },
+    {
+      "id": "shizunami-beach-camp",
+      "name": "静波海岸キャンプサイト",
+      "prefecture": "静岡",
+      "area": "牧之原",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金未検証",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 18
+    },
+    {
+      "id": "sessokyo-camp",
+      "name": "接岨YANBY OUTDOOR FIELD",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金未検証",
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 18
+    },
+    {
+      "id": "hayato-hakone",
+      "name": "HAYATO 箱根キャンプ場",
+      "prefecture": "神奈川",
+      "area": "箱根",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "magic-hour-camp",
+      "name": "magic hour",
+      "prefecture": "静岡",
+      "area": "静岡市清水区",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "sumida-ohashi-kasenjiki",
+      "name": "角田大橋河川敷",
+      "prefecture": "神奈川",
+      "area": "愛川町",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "tsukiyono-doshi-camp",
+      "name": "月夜野キャンプ場",
+      "prefecture": "山梨",
+      "area": "道志村",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "komeidoso-auto",
+      "name": "湖明荘オートキャンプ場",
+      "prefecture": "山梨",
+      "area": "山中湖",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-11",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "kofu-shinrinyoku-hiroba",
+      "name": "甲府市 森林浴広場",
+      "prefecture": "山梨",
+      "area": "甲府市",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "hadano-togawa-camp",
+      "name": "秦野戸川公園キャンプ場",
+      "prefecture": "神奈川",
+      "area": "秦野",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "kiyosato-oka",
+      "name": "清里丘の公園キャンプ場",
+      "prefecture": "山梨",
+      "area": "清里",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "nishitanzawa-nakagawa-lodge",
+      "name": "西丹沢中川ロッヂ",
+      "prefecture": "神奈川",
+      "area": "西丹沢",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-10",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "sagamiko-kyuyomura",
+      "name": "相模湖休養村キャンプ場",
+      "prefecture": "神奈川",
+      "area": "相模湖",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-11",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "nakatsugawa-kasenjiki",
+      "name": "中津川河川敷（田代運動公園）",
+      "prefecture": "神奈川",
+      "area": "愛川町",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "tsubakiso-auto",
+      "name": "椿荘オートキャンプ場",
+      "prefecture": "山梨",
+      "area": "道志村",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-11",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "nagomino-sato-tsuru",
+      "name": "都留戸沢の森 和みの里キャンプ場",
+      "prefecture": "山梨",
+      "area": "都留市",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "doshi-keikoku",
+      "name": "道志渓谷キャンプ場",
+      "prefecture": "山梨",
+      "area": "道志村",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-11",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "doshigawa-kanko-noen",
+      "name": "道志川観光農園オートキャンプ場",
+      "prefecture": "山梨",
+      "area": "道志村",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "hasugebashi-kasenjiki",
+      "name": "八菅橋河川敷",
+      "prefecture": "神奈川",
+      "area": "愛川町",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "ryuyo-marine",
+      "name": "竜洋海洋公園オートキャンプ場",
+      "prefecture": "静岡",
+      "area": "磐田",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "wadanagahama-kaigan",
+      "name": "和田長浜海岸",
+      "prefecture": "神奈川",
+      "area": "三浦市",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金確認済みフラグの根拠なし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 17
+    },
+    {
+      "id": "kokono-shizuoka",
+      "name": "キャンプ場此処野静岡",
+      "prefecture": "静岡",
+      "area": "静岡市葵区",
+      "issues": [
+        "公式URLなし",
+        "一次情報の記録なし",
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": false,
+      "riskScore": 14
+    },
+    {
+      "id": "eureka-camp-village",
+      "name": "eureka camp village",
+      "prefecture": "山梨",
+      "area": "大月市",
+      "issues": [
+        "公式URLなし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-15",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 6
+    },
+    {
+      "id": "toyanosawa",
+      "name": "とやの沢キャンプ場",
+      "prefecture": "山梨",
+      "area": "道志村",
+      "issues": [
+        "公式URLなし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 6
+    },
+    {
+      "id": "hamaoka-sakyuu-camp",
+      "name": "浜岡砂丘キャンプ場",
+      "prefecture": "静岡",
+      "area": "御前崎",
+      "issues": [
+        "公式URLなし",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "",
+      "lastVerified": "2026-08-11",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 6
+    },
+    {
+      "id": "folkwood-yatsugatake",
+      "name": "FOLKWOOD VILLAGE 八ヶ岳",
+      "prefecture": "山梨",
+      "area": "八ヶ岳・小淵沢",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://folkwood-camp.com/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "pica-sagamiko",
+      "name": "PICAさがみ湖",
+      "prefecture": "神奈川",
+      "area": "相模湖",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.sagamiko-resort.jp/camp/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "apt-ichishiro",
+      "name": "アプトいちしろキャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://abt-camp.shizu.website/",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "kunowaki-shinsui",
+      "name": "くのわき親水公園キャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.kunowaki.net/",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "turkeys-house",
+      "name": "ターキーズハウス 江ノ電に泊まれるキャンプ場",
+      "prefecture": "山梨",
+      "area": "南部町",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "http://www.turkeyshouse.com/",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "omuroyama-camp",
+      "name": "伊東市青少年キャンプ場",
+      "prefecture": "静岡",
+      "area": "伊東市",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/shogaigakushuka/kanko/2379.html",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "ugusu-camp",
+      "name": "宇久須キャンプ場",
+      "prefecture": "静岡",
+      "area": "西伊豆町",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.nishiizu-kankou.com/stay/ugusucanp",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "usami-shiroyama",
+      "name": "宇佐美城山公園キャンプ場",
+      "prefecture": "静岡",
+      "area": "伊豆（北伊豆）",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.nap-camp.com/shizuoka/14344",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "miyagase-village",
+      "name": "宮ヶ瀬ヴィレッジキャンプ場",
+      "prefecture": "神奈川",
+      "area": "宮ヶ瀬",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://miyagase-village.com/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "kouan",
+      "name": "浩庵キャンプ場",
+      "prefecture": "山梨",
+      "area": "本栖湖",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://kouan-motosuko.com/",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "mitsuboshi-auto",
+      "name": "三ツ星オートキャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "http://kawanelife.org/camp/",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "akiyamagawa-camp",
+      "name": "秋山川キャンプ場",
+      "prefecture": "神奈川",
+      "area": "相模原・秋山",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "http://www.akikawaya.co.jp/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "numazu-shimin-no-mori",
+      "name": "沼津市民の森",
+      "prefecture": "静岡",
+      "area": "沼津市",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/shiminnomori/",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "fukushigawa-seishonen",
+      "name": "青少年旅行村（キャンプ場）",
+      "prefecture": "山梨",
+      "area": "南部町",
+      "issues": [
+        "位置未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.town.nanbu.yamanashi.jp/kankou/leisure/Camp-Okuyama.html",
+      "lastVerified": "2026-08-07",
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "aonohara-auto",
+      "name": "青野原オートキャンプ場",
+      "prefecture": "神奈川",
+      "area": "道志川",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.aonohara-acl.jp/index.html",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "yataro-camp",
+      "name": "谷太郎キャンプ場清川リバーランド",
+      "prefecture": "神奈川",
+      "area": "丹沢",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://k-riverland.jp/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    }
+  ],
+  "validateWarnings": [
+    {
+      "id": "tanukiko",
+      "name": "田貫湖キャンプ場",
+      "prefecture": "静岡",
+      "area": "朝霧高原",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://tanukiko.com/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "takizawaso",
+      "name": "滝沢園キャンプ場",
+      "prefecture": "神奈川",
+      "area": "秦野",
+      "issues": [
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://takizawaen.com/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 1
+    },
+    {
+      "id": "aonohara-auto",
+      "name": "青野原オートキャンプ場",
+      "prefecture": "神奈川",
+      "area": "道志川",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.aonohara-acl.jp/index.html",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "miyagase-village",
+      "name": "宮ヶ瀬ヴィレッジキャンプ場",
+      "prefecture": "神奈川",
+      "area": "宮ヶ瀬",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://miyagase-village.com/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "yataro-camp",
+      "name": "谷太郎キャンプ場清川リバーランド",
+      "prefecture": "神奈川",
+      "area": "丹沢",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://k-riverland.jp/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "sankoso-auto",
+      "name": "山光荘オートキャンプ",
+      "prefecture": "山梨",
+      "area": "道志村",
+      "issues": [
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://www.sanko2400.com/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 1
+    },
+    {
+      "id": "akiyamagawa-camp",
+      "name": "秋山川キャンプ場",
+      "prefecture": "神奈川",
+      "area": "相模原・秋山",
+      "issues": [
+        "料金未検証",
+        "5軸評価未検証"
+      ],
+      "officialUrl": "http://www.akikawaya.co.jp/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 5
+    },
+    {
+      "id": "mobility-park-izu",
+      "name": "モビリティーパーク",
+      "prefecture": "静岡",
+      "area": "伊豆の国",
+      "issues": [
+        "5軸評価未検証"
+      ],
+      "officialUrl": "https://mobility-park.jp/",
+      "lastVerified": "2026-08-26",
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "sourceBacked": true,
+      "riskScore": 1
+    }
+  ]
+}

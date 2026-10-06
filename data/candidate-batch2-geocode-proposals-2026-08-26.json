@@ -1,0 +1,86 @@
+[
+  {
+    "id": "fujino-art-camp",
+    "name": "藤野芸術の家キャンプ場",
+    "prefecture": "神奈川",
+    "address": "神奈川県相模原市緑区牧野4819",
+    "options": []
+  },
+  {
+    "id": "shiraishi-auto-camp",
+    "name": "白石オートキャンプ場",
+    "prefecture": "神奈川",
+    "address": "神奈川県足柄上郡山北町中川字相馬沢870-3",
+    "options": []
+  },
+  {
+    "id": "saiko-kohan-camp",
+    "name": "西湖湖畔キャンプ場",
+    "prefecture": "山梨",
+    "address": "山梨県南都留郡富士河口湖町西湖207-7",
+    "options": []
+  },
+  {
+    "id": "saiko-tsuhara-camp",
+    "name": "西湖津原キャンプ場",
+    "prefecture": "山梨",
+    "address": "山梨県南都留郡富士河口湖町西湖351",
+    "options": []
+  },
+  {
+    "id": "umegashima-camp",
+    "name": "梅ケ島キャンプ場",
+    "prefecture": "静岡",
+    "address": "静岡県静岡市葵区梅ケ島3198番地地先",
+    "options": []
+  },
+  {
+    "id": "sugari-camp",
+    "name": "キャンプすがり",
+    "prefecture": "静岡",
+    "address": "静岡県浜松市天竜区横川741-2",
+    "options": []
+  },
+  {
+    "id": "fuji-anmo-camp",
+    "name": "富士山あんもの森Camp Field",
+    "prefecture": "静岡",
+    "address": "静岡県富士宮市山宮3690",
+    "options": []
+  },
+  {
+    "id": "okitsugawa-auto",
+    "name": "おきつがわオートキャンプ場",
+    "prefecture": "静岡",
+    "address": "静岡県静岡市清水区茂野島1100",
+    "options": []
+  },
+  {
+    "id": "kaaji-no-mori",
+    "name": "カージの杜",
+    "prefecture": "千葉",
+    "address": "千葉県君津市馬登729",
+    "options": []
+  },
+  {
+    "id": "seiwa-kenminnomori",
+    "name": "清和県民の森キャンプ場",
+    "prefecture": "千葉",
+    "address": "千葉県君津市豊英660",
+    "options": []
+  },
+  {
+    "id": "fruits-village",
+    "name": "オートキャンプ・フルーツ村",
+    "prefecture": "千葉",
+    "address": "千葉県君津市旅名96",
+    "options": []
+  },
+  {
+    "id": "laqlaq-garden",
+    "name": "楽々ガーデン",
+    "prefecture": "千葉",
+    "address": "千葉県千葉市若葉区中野町2050",
+    "options": []
+  }
+]

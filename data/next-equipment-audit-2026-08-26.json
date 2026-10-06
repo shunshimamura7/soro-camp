@@ -1,0 +1,590 @@
+{
+  "generatedAt": "2026-08-26",
+  "rules": {
+    "active": "衛生・火気・予約・車両・ゴミ・入浴・ソロ条件の未確認を優先。料金・座標・同定の不確実性を上乗せ。",
+    "backlog": "公式料金・ソロ根拠があり、30観点レビューの品質指数が高く、解消すべき阻害要因が相対的に少ない候補を優先。"
+  },
+  "activeTop25": [
+    {
+      "id": "shiraishi-auto-camp",
+      "name": "白石オートキャンプ場",
+      "prefecture": "神奈川",
+      "area": "丹沢湖",
+      "status": "active",
+      "priority": 21,
+      "gaps": [
+        "トイレ",
+        "シャワー",
+        "焚き火",
+        "車両・荷下ろし",
+        "予約方法",
+        "ゴミ",
+        "入浴",
+        "ソロ条件"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://www.shiraishiautocamp.com/price",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "saiko-kohan-camp",
+      "name": "西湖湖畔キャンプ場",
+      "prefecture": "山梨",
+      "area": "富士五湖",
+      "status": "active",
+      "priority": 16,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "車両・荷下ろし",
+        "ゴミ",
+        "入浴",
+        "ソロ条件"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://saikohan.com/price/",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "saiko-tsuhara-camp",
+      "name": "西湖津原キャンプ場",
+      "prefecture": "山梨",
+      "area": "富士五湖",
+      "status": "active",
+      "priority": 16,
+      "gaps": [
+        "トイレ",
+        "シャワー",
+        "焚き火",
+        "ゴミ",
+        "入浴",
+        "ソロ条件"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://tsuhara-camp.jp/price",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "otaki-sabo",
+      "name": "大多喜SABO",
+      "prefecture": "千葉",
+      "area": "大多喜町",
+      "status": "active",
+      "priority": 14,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "車両・荷下ろし",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": true,
+      "officialUrl": "http://otaki-sabo.info/",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "ikenoya-family",
+      "name": "池の谷ファミリーキャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "status": "active",
+      "priority": 14,
+      "gaps": [
+        "トイレ",
+        "車両・荷下ろし",
+        "予約方法",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "",
+      "lastVerified": "2026-08-07"
+    },
+    {
+      "id": "nishitanzawa-nakagawa-lodge",
+      "name": "西丹沢中川ロッヂ",
+      "prefecture": "神奈川",
+      "area": "西丹沢",
+      "status": "active",
+      "priority": 13,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "",
+      "lastVerified": "2026-08-10"
+    },
+    {
+      "id": "nekumasanso-auto",
+      "name": "福士川根熊山荘ファミリーオートキャンプ場",
+      "prefecture": "山梨",
+      "area": "南部町",
+      "status": "active",
+      "priority": 13,
+      "gaps": [
+        "トイレ",
+        "予約方法",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://hukusshigawacamp.eyado.net/",
+      "lastVerified": "2026-08-06"
+    },
+    {
+      "id": "new-tashiro-auto-camp",
+      "name": "ニュー田代オートキャンプ場",
+      "prefecture": "山梨",
+      "area": "道志村",
+      "status": "active",
+      "priority": 12,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "予約方法",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://tashiro-autocamp.com/",
+      "lastVerified": "2026-08-11"
+    },
+    {
+      "id": "fujino-art-camp",
+      "name": "藤野芸術の家キャンプ場",
+      "prefecture": "神奈川",
+      "area": "相模湖・藤野",
+      "status": "active",
+      "priority": 12,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "入浴",
+        "ソロ条件"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://fujino-art.jp/camp/",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "tachibana-fureai-camp",
+      "name": "橘ふれあい公園キャンプ場",
+      "prefecture": "千葉",
+      "area": "香取",
+      "status": "active",
+      "priority": 12,
+      "gaps": [
+        "トイレ",
+        "シャワー",
+        "焚き火"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": true,
+      "officialUrl": "https://www.tachibana-park.jp/facility-guide/camp/",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "mitsuboshi-auto",
+      "name": "三ツ星オートキャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "status": "active",
+      "priority": 12,
+      "gaps": [
+        "トイレ",
+        "予約方法",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "http://kawanelife.org/camp/",
+      "lastVerified": "2026-08-07"
+    },
+    {
+      "id": "otaki-kenminnomori",
+      "name": "千葉県立大多喜県民の森 キャンプ場",
+      "prefecture": "千葉",
+      "area": "大多喜町",
+      "status": "active",
+      "priority": 12,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": true,
+      "officialUrl": "https://otakikenminnomori.jp/",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "fudonotaki-auto",
+      "name": "不動の滝自然広場オートキャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "status": "active",
+      "priority": 12,
+      "gaps": [
+        "トイレ",
+        "予約方法",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "https://ffnpcs.com/",
+      "lastVerified": "2026-08-07"
+    },
+    {
+      "id": "futtsu-shiminnomori",
+      "name": "富津市民の森キャンプ場",
+      "prefecture": "千葉",
+      "area": "富津",
+      "status": "active",
+      "priority": 12,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": true,
+      "officialUrl": "https://www.city.futtsu.lg.jp/0000000751.html",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "fukushigawa-auto",
+      "name": "福士川オートキャンプ場",
+      "prefecture": "山梨",
+      "area": "南部町",
+      "status": "active",
+      "priority": 12,
+      "gaps": [
+        "トイレ",
+        "予約方法",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "",
+      "lastVerified": "2026-08-07"
+    },
+    {
+      "id": "turkeys-house",
+      "name": "ターキーズハウス 江ノ電に泊まれるキャンプ場",
+      "prefecture": "山梨",
+      "area": "南部町",
+      "status": "active",
+      "priority": 11,
+      "gaps": [
+        "トイレ",
+        "車両・荷下ろし",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "http://www.turkeyshouse.com/",
+      "lastVerified": "2026-08-07"
+    },
+    {
+      "id": "fukushigawa-seishonen",
+      "name": "青少年旅行村（キャンプ場）",
+      "prefecture": "山梨",
+      "area": "南部町",
+      "status": "active",
+      "priority": 11,
+      "gaps": [
+        "トイレ",
+        "車両・荷下ろし",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "https://www.town.nanbu.yamanashi.jp/kankou/leisure/Camp-Okuyama.html",
+      "lastVerified": "2026-08-07"
+    },
+    {
+      "id": "yagi-camp",
+      "name": "八木キャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "status": "active",
+      "priority": 11,
+      "gaps": [
+        "トイレ",
+        "車両・荷下ろし",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "https://okuooi.gr.jp/contact_camp_yagi/index.php",
+      "lastVerified": "2026-08-07"
+    },
+    {
+      "id": "yataro-camp",
+      "name": "谷太郎キャンプ場清川リバーランド",
+      "prefecture": "神奈川",
+      "area": "丹沢",
+      "status": "active",
+      "priority": 10,
+      "gaps": [
+        "ゴミ"
+      ],
+      "priceVerified": false,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://k-riverland.jp/",
+      "lastVerified": "2026-08-11"
+    },
+    {
+      "id": "kananomori-sanso",
+      "name": "金の森山荘",
+      "prefecture": "山梨",
+      "area": "大月市",
+      "status": "active",
+      "priority": 9,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://kananomori.com/",
+      "lastVerified": "2026-08-15"
+    },
+    {
+      "id": "umegashima-camp",
+      "name": "梅ケ島キャンプ場",
+      "prefecture": "静岡",
+      "area": "オクシズ・梅ケ島",
+      "status": "active",
+      "priority": 9,
+      "gaps": [
+        "トイレ",
+        "入浴",
+        "ソロ条件"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "ryokokubashi-camp",
+      "name": "両国橋キャンプ場",
+      "prefecture": "山梨",
+      "area": "道志村",
+      "status": "active",
+      "priority": 9,
+      "gaps": [
+        "トイレ",
+        "焚き火",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": true,
+      "scoresVerified": false,
+      "officialUrl": "http://yukawaya.a.la9.jp/",
+      "lastVerified": "2026-08-11"
+    },
+    {
+      "id": "kamioshima-camp",
+      "name": "上大島キャンプ場",
+      "prefecture": "神奈川",
+      "area": "相模原市緑区",
+      "status": "active",
+      "priority": 9,
+      "gaps": [
+        "トイレ",
+        "車両・荷下ろし"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "",
+      "lastVerified": "2026-08-07"
+    },
+    {
+      "id": "uchiurayama-kenminnomori",
+      "name": "千葉県立内浦山県民の森キャンプ場",
+      "prefecture": "千葉",
+      "area": "鴨川",
+      "status": "active",
+      "priority": 9,
+      "gaps": [
+        "トイレ",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": true,
+      "officialUrl": "https://www.uchiurayama.jp/stay03",
+      "lastVerified": "2026-08-26"
+    },
+    {
+      "id": "apt-ichishiro",
+      "name": "アプトいちしろキャンプ場",
+      "prefecture": "静岡",
+      "area": "川根本町",
+      "status": "active",
+      "priority": 8,
+      "gaps": [
+        "予約方法",
+        "ゴミ"
+      ],
+      "priceVerified": true,
+      "coordsVerified": false,
+      "scoresVerified": false,
+      "officialUrl": "https://abt-camp.shizu.website/",
+      "lastVerified": "2026-08-07"
+    }
+  ],
+  "backlog": [
+    {
+      "id": "okitsugawa-auto",
+      "name": "おきつがわオートキャンプ場",
+      "prefecture": "静岡",
+      "area": "清水・オクシズ",
+      "priority": 78,
+      "qualityIndex": 56.7,
+      "blockers": 19,
+      "knownGaps": [
+        "実ピン確認",
+        "最安サイト区画の面積・週末料金確認",
+        "焚き火監査：掲載前に公式情報で以下を明示してください：①直火（地面での焚き火）可否、②焚き火台の使用可否・推奨仕様や禁止事項、③焚火可能な場所（指定エリア）とその写真または地図、④薪・炭の持込可否と場内販売の有無、⑤火の始末方法・消火義務・消火時刻（時間制限）、⑥火気違反時の罰則・対応、⑦該当記載のある公式ページや規約の該当抜粋（URLと引用文）。これらが確認できる資料を提示してください。",
+        "営業運用監査：公式情報で以下を明示してください：1) 営業日／営業期間と定休日、2) 予約締切・予約可能期間（何日前まで受付か等）、3) 休業条件・臨時休業時の対応（キャンセル規定や悪天候時の扱い）。"
+      ],
+      "officialUrl": "https://camp-joe.com/okitsugawa/",
+      "priceMin": 3000
+    },
+    {
+      "id": "sugari-camp",
+      "name": "キャンプすがり",
+      "prefecture": "静岡",
+      "area": "浜松・天竜",
+      "priority": 69,
+      "qualityIndex": 50,
+      "blockers": 21,
+      "knownGaps": [
+        "価格・設備の一般料金ページとの整合確認",
+        "実ピン確認",
+        "トイレ監査：公式サイトか管理者に連絡して、トイレの有無と種類（洋式/和式）、水洗か簡易か、数や位置、男女別・バリアフリー対応・利用可能時間を明示した根拠を取得して掲載すること。",
+        "入浴監査：公式情報または運営確認で、シャワー／風呂の有無・温水の有無・利用可能時間・料金、近隣入浴施設の名称・距離・アクセスを明示した根拠（該当ページの抜粋／スクリーンショット／運営からの確認連絡）を提示してください。"
+      ],
+      "officialUrl": "https://sugari.camp/lp/solo-camp.php",
+      "priceMin": 1500
+    },
+    {
+      "id": "laqlaq-garden",
+      "name": "楽々ガーデン",
+      "prefecture": "千葉",
+      "area": "千葉市若葉区",
+      "priority": 67,
+      "qualityIndex": 48.9,
+      "blockers": 22,
+      "knownGaps": [
+        "実ピン確認",
+        "衛生設備・焚き火・騒音ルールを確認",
+        "補給監査：以下を公式情報で明記してください：①飲料水の供給（飲用可否・給水場所の数と位置）、②場内売店や自販機の有無・取扱品目と営業時間、③薪・炭・ガス缶等燃料の場内販売可否、④最寄りのコンビニ・スーパー・ガソリンスタンドまでの距離・所要時間（車・徒歩）、⑤ゴミ分別・廃棄方法と衛生設備（トイレ・シャワー）の状況。これらが提供されて初めて掲載可とします。",
+        "トイレ監査：公式情報または現地確認でトイレの有無・数・種類（洋式/和式/ウォシュレット）、男女別・多目的（バリアフリー）トイレの有無、紙・手洗い設備の有無、清掃頻度や衛生管理、各トイレの位置（地図/写真）を提示し、該当箇所の引用または写真を添付すること。"
+      ],
+      "officialUrl": "https://laqlaqgarden.com/",
+      "priceMin": 3000
+    },
+    {
+      "id": "fuji-anmo-camp",
+      "name": "富士山あんもの森Camp Field",
+      "prefecture": "静岡",
+      "area": "富士宮",
+      "priority": 67,
+      "qualityIndex": 47.8,
+      "blockers": 21,
+      "knownGaps": [
+        "実ピン確認",
+        "シャワー・トイレ等の設備情報を追加確認",
+        "補給監査：以下を公式情報（サイト記載または運営への確認）で明記・提示すること：1) 飲料水（飲用可の給水ポイント）や炊事場の有無・場所、24時間利用可否。2) 売店・自動販売機の有無と取扱品目（食料・燃料・着火具等）または最寄り買い出しポイントの距離・移動手段。3) 薪・ガス缶等燃料の販売可否と量の目安（無い場合は持参推奨内容）。4) サイトと車両停車位置間の平均搬送距離・搬入路の状況（キャリーカートの可否を含む）。5) シャワー・トイレ等設備の位置と利用条件。これらが確認できるまでは「食料・水・燃料の事前準備難度」を掲載しないか、明確な注意書きを付けること。",
+        "トイレ監査：公式情報または現地確認でトイレの有無、数、様式（洋式/和式）、男女別・多目的トイレの有無、バリアフリー対応、清掃状況・利用時間、温水洗浄便座やシャワーの有無等を明記し、該当箇所の引用または写真を提示してください。"
+      ],
+      "officialUrl": "https://fuji-anmonomori.com/menu/",
+      "priceMin": 2500
+    },
+    {
+      "id": "seiwa-kenminnomori",
+      "name": "清和県民の森キャンプ場",
+      "prefecture": "千葉",
+      "area": "君津",
+      "priority": 67,
+      "qualityIndex": 47.8,
+      "blockers": 21,
+      "knownGaps": [
+        "実ピン確認",
+        "営業期間・シャワー等のテントサイト設備を確認",
+        "日付条件監査：平日・休日・繁忙期それぞれの料金・適用条件の有無と、繁忙期の具体的な期間（該当する日付や曜日基準）を明記してください。営業期間との関係も合わせて確認・記載してください。",
+        "トイレ監査：公式サイトまたは管理者にてトイレの有無、位置、設備種別（洋式/和式/水洗/仮設）、個数、男女別・多機能トイレの有無、清掃頻度・利用可能時間、バリアフリー対応などを確認し、根拠を添えて情報を追記すること。"
+      ],
+      "officialUrl": "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/",
+      "priceMin": 600
+    },
+    {
+      "id": "fruits-village",
+      "name": "オートキャンプ・フルーツ村",
+      "prefecture": "千葉",
+      "area": "君津",
+      "priority": 66,
+      "qualityIndex": 46.7,
+      "blockers": 21,
+      "knownGaps": [
+        "実ピン確認",
+        "平日割引の現行性・設備の詳細確認",
+        "補給監査：現地での飲料水の供給（飲用可否・水場の場所）、売店や自動販売機の有無（食品・燃料／薪の販売可否）、燃料（薪・ガス・灯油等）と調理器具の貸出の有無、燃料持ち込み・火気使用に関する規則、最寄りのコンビニ・スーパ―やガソリンスタンドの場所と所要時間を公式情報で確認して追記すること。",
+        "トイレ監査：トイレの有無を公式根拠で提示してください（男女別の有無、洋式/和式、水洗/非水洗、個室数や位置、24時間利用可否、バリアフリー対応（車椅子対応・オムツ替え台等）、清掃頻度や管理体制、可能なら公式記載の引用または現地写真を提供）。"
+      ],
+      "officialUrl": "http://fruitsvillage.com/custom11.html",
+      "priceMin": 3000
+    },
+    {
+      "id": "kaaji-no-mori",
+      "name": "カージの杜",
+      "prefecture": "千葉",
+      "area": "君津",
+      "priority": 56,
+      "qualityIndex": 41.1,
+      "blockers": 24,
+      "knownGaps": [
+        "実ピン確認",
+        "焚き火・トイレ・予約方法の詳細確認",
+        "アクセス監査：公式情報で駐車場の位置・台数と車両進入可否、荷下ろし場所と荷降ろし後の徒歩距離・所要時間、段差や坂の有無（安全上の注意点）を明示すること。",
+        "日付条件監査：公式情報で平日・休日・繁忙期（繁忙期の期間）ごとの料金、割増・割引の有無、適用条件を確認して明示する。必要であれば繁忙期日程と料金表を掲載すること。"
+      ],
+      "officialUrl": "https://www.tschiba.com/kaaji/plan.html",
+      "priceMin": 2500
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "tanukiko",
+    "name": "田貫湖キャンプ場",
+    "prefecture": "静岡",
+    "officialUrl": "https://tanukiko.com/",
+    "reservationUrl": "https://www.nap-camp.com/shizuoka/11868",
+    "tel": "0544-27-5240"
+  },
+  {
+    "id": "aonohara-auto",
+    "name": "青野原オートキャンプ場",
+    "prefecture": "神奈川",
+    "officialUrl": "https://www.aonohara-acl.jp/index.html",
+    "reservationUrl": "",
+    "tel": "042-787-0477"
+  },
+  {
+    "id": "miyagase-village",
+    "name": "宮ヶ瀬ヴィレッジキャンプ場",
+    "prefecture": "神奈川",
+    "officialUrl": "https://miyagase-village.com/",
+    "reservationUrl": "",
+    "tel": "070-9022-3477"
+  },
+  {
+    "id": "yataro-camp",
+    "name": "谷太郎キャンプ場清川リバーランド",
+    "prefecture": "神奈川",
+    "officialUrl": "https://k-riverland.jp/",
+    "reservationUrl": "",
+    "tel": "046-288-3715"
+  },
+  {
+    "id": "pica-sagamiko",
+    "name": "PICAさがみ湖",
+    "prefecture": "神奈川",
+    "officialUrl": "https://www.sagamiko-resort.jp/camp/",
+    "reservationUrl": "https://www.sagamiko-resort.jp/camp/",
+    "tel": "0555-30-4580"
+  },
+  {
+    "id": "usami-shiroyama",
+    "name": "宇佐美城山公園キャンプ場",
+    "prefecture": "静岡",
+    "officialUrl": "https://www.nap-camp.com/shizuoka/14344",
+    "reservationUrl": "https://www.nap-camp.com/shizuoka/14344",
+    "tel": "0557-48-6688"
+  },
+  {
+    "id": "folkwood-yatsugatake",
+    "name": "FOLKWOOD VILLAGE 八ヶ岳",
+    "prefecture": "山梨",
+    "officialUrl": "https://folkwood-camp.com/",
+    "reservationUrl": "https://folkwood.jp/",
+    "tel": ""
+  },
+  {
+    "id": "kuragari-camp",
+    "name": "丹沢湖キャンプサイト",
+    "prefecture": "神奈川",
+    "officialUrl": "https://tanzawa-camp.sakura.ne.jp/",
+    "reservationUrl": "https://tanzawa-camp.sakura.ne.jp/",
+    "tel": "0465-78-3242"
+  },
+  {
+    "id": "kokono-shizuoka",
+    "name": "キャンプ場此処野静岡",
+    "prefecture": "静岡",
+    "officialUrl": "",
+    "reservationUrl": "",
+    "tel": ""
+  },
+  {
+    "id": "sessokyo-camp",
+    "name": "接岨YANBY OUTDOOR FIELD",
+    "prefecture": "静岡",
+    "officialUrl": "",
+    "reservationUrl": "",
+    "tel": ""
+  },
+  {
+    "id": "akiyamagawa-camp",
+    "name": "秋山川キャンプ場",
+    "prefecture": "神奈川",
+    "officialUrl": "http://www.akikawaya.co.jp/",
+    "reservationUrl": "",
+    "tel": "042-687-2030"
+  },
+  {
+    "id": "shizunami-beach-camp",
+    "name": "静波海岸キャンプサイト",
+    "prefecture": "静岡",
+    "officialUrl": "",
+    "reservationUrl": "",
+    "tel": ""
+  }
+]

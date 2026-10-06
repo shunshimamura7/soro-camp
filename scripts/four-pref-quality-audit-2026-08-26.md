@@ -1,0 +1,201 @@
+# 4県掲載品質監査（2026-08-26）
+
+| 都県 | 登録 | 通常掲載 | 保留等 | 料金確認 | 採点確認 | 座標可 | 一次情報URL | 総合要確認 | 90日超 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 神奈川 | 54 | 40 | 14 | 33/40 | 0/40 | 40/40 | 28/40 | 2 | 0 |
+| 静岡 | 63 | 50 | 13 | 45/50 | 0/50 | 49/50 | 42/50 | 2 | 1 |
+| 山梨 | 72 | 58 | 14 | 54/58 | 0/58 | 58/58 | 46/58 | 2 | 0 |
+| 千葉 | 12 | 11 | 1 | 11/11 | 11/11 | 11/11 | 11/11 | 0 | 0 |
+
+## 優先確認リスト（190件）
+
+- **千葉｜きさらづCAMP ORGANIC FIELD in みたて** (kisarazu-camp-organic) — status:unverified、採点未検証、総合要確認
+- **山梨｜CAMP AKAIKE** (camp-akaike) — 採点未検証
+- **山梨｜eureka camp village** (eureka-camp-village) — 採点未検証
+- **山梨｜FOLKWOOD VILLAGE 八ヶ岳** (folkwood-yatsugatake) — 価格未検証、採点未検証
+- **山梨｜PICA Fujiyama** (pica-fujiyama-camp) — 採点未検証
+- **山梨｜PICA富士西湖** (picafuji-saiko) — 採点未検証
+- **山梨｜sotosotodays CAMPGROUNDS 山中湖みさき** (yamanakako-misaki) — 採点未検証、総合要確認
+- **山梨｜SPORTS TRAIN in Forest CAMP** (sports-train-aokigahara) — status:closed、価格未検証、採点未検証、一次情報URL不足
+- **山梨｜STAR MEADOWS 富士ケ嶺高原キャンプ場** (fujigane-kogen) — status:closed、価格未検証、採点未検証、座標要確認、一次情報URL不足
+- **山梨｜WOODSMAN CAMPGROUND** (woodsman-camp) — 採点未検証
+- **山梨｜ヴィレッヂ白州** (village-hakushu) — 価格未検証、採点未検証
+- **山梨｜ウエストリバーオートキャンプ場** (westriver-auto-camp) — 採点未検証
+- **山梨｜エコパ伊奈ヶ湖** (ecopa-inagako) — 採点未検証
+- **山梨｜ターキーズハウス 江ノ電に泊まれるキャンプ場** (turkeys-house) — 採点未検証
+- **山梨｜とやの沢キャンプ場** (toyanosawa) — 採点未検証、一次情報URL不足
+- **山梨｜ニュー田代オートキャンプ場** (new-tashiro-auto-camp) — 採点未検証
+- **山梨｜ほったらかしキャンプ場** (hottarakashi-camp) — 採点未検証
+- **山梨｜ランバージャック** (lumberjack-nanbu) — status:unverified、採点未検証、一次情報URL不足
+- **山梨｜リトリートキャンプまほろば** (retreat-camp-mahoroba) — 採点未検証
+- **山梨｜奥道志オートキャンプ場** (okudoshi-auto) — 採点未検証
+- **山梨｜河口湖オートキャンプ場 浜の湯** (kawaguchiko-hamanoya-camp) — status:unverified、採点未検証、総合要確認、一次情報URL不足
+- **山梨｜河口湖畔キャンプ場** (kawaguchiko-hanto) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **山梨｜花の森オートキャンピア** (hananomori-camp) — 採点未検証
+- **山梨｜金の森山荘** (kananomori-sanso) — 採点未検証
+- **山梨｜月夜野キャンプ場** (tsukiyono-doshi-camp) — 採点未検証、一次情報URL不足
+- **山梨｜湖明荘オートキャンプ場** (komeidoso-auto) — 採点未検証、一次情報URL不足
+- **山梨｜浩庵キャンプ場** (kouan) — 採点未検証
+- **山梨｜甲府市 森林浴広場** (kofu-shinrinyoku-hiroba) — 採点未検証、一次情報URL不足
+- **山梨｜佐野川河川公園** (sanogawa-camp) — status:closed、採点未検証、座標要確認、総合要確認、一次情報URL不足
+- **山梨｜山光荘オートキャンプ** (sankoso-auto) — 価格未検証、採点未検証
+- **山梨｜山中湖ふじのもりオートキャンプ場** (fujinomori-yamanakako) — 採点未検証
+- **山梨｜山中湖みなみオートキャンプ場** (yamanakako-minami-auto) — 採点未検証
+- **山梨｜室久保グリーンパーク（THE Do-c Camp）** (murokubo-greenpark) — status:unverified、採点未検証、座標要確認、総合要確認
+- **山梨｜篠沢大滝キャンプ場** (shinozawa-ootaki-camp) — 採点未検証
+- **山梨｜小淵沢オートキャンプ場** (kobuchizawa-auto-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **山梨｜昇仙峡オートキャンプ場** (shosenkyo-auto-camp) — 採点未検証
+- **山梨｜水源の森 キャンプ・ランド** (suigennnomori) — 採点未検証
+- **山梨｜清里丘の公園キャンプ場** (kiyosato-oka) — 採点未検証、一次情報URL不足
+- **山梨｜清里中央オートキャンプ場** (kiyosato-chuo-auto) — 採点未検証
+- **山梨｜精進湖キャンピングコテージ** (shojiko-camping) — 採点未検証、一次情報URL不足
+- **山梨｜西湖湖畔キャンプ場** (saiko-kohan-camp) — 採点未検証
+- **山梨｜西湖自由キャンプ場** (saiko-jiyu) — 採点未検証
+- **山梨｜西湖津原キャンプ場** (saiko-tsuhara-camp) — 採点未検証
+- **山梨｜青少年旅行村（キャンプ場）** (fukushigawa-seishonen) — 採点未検証
+- **山梨｜早川町オートキャンプ場** (hayakawa-camp) — status:suspended、価格未検証、採点未検証
+- **山梨｜村営山中湖キャンプ場** (muraei-yamanakako) — 採点未検証
+- **山梨｜大柳川渓流キャンプ場** (ogayanagawa-keikoku) — 採点未検証
+- **山梨｜椿荘オートキャンプ場** (tsubakiso-auto) — 採点未検証、一次情報URL不足
+- **山梨｜都留戸沢の森 和みの里キャンプ場** (nagomino-sato-tsuru) — 採点未検証、一次情報URL不足
+- **山梨｜道の駅しもべ オートキャンプ場〜ゆるキャン△の里〜** (shimobe-yurucamp-sato) — 採点未検証
+- **山梨｜道志の森キャンプ場** (doshi-no-mori) — 採点未検証
+- **山梨｜道志渓谷キャンプ場** (doshi-keikoku) — 採点未検証、一次情報URL不足
+- **山梨｜道志森のコテージ** (doshi-mori-cottage) — 採点未検証
+- **山梨｜道志川観光農園オートキャンプ場** (doshigawa-kanko-noen) — 採点未検証、一次情報URL不足
+- **山梨｜忍野八海オートキャンプ場** (oshino-hakkai-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **山梨｜白州・尾白 FLORA Campsite in the Natural Garden** (flora-campsite) — 採点未検証
+- **山梨｜白州・尾白の森キャンプ場** (hakushu-ojiro-camp) — 採点未検証
+- **山梨｜八ヶ岳オートキャンプ場** (yatsugatake-oizumi) — 採点未検証
+- **山梨｜富士ヶ嶺・おいしいキャンプ場** (oishii-camp) — 採点未検証
+- **山梨｜富士五湖オートキャンプ場** (fujigoko-auto-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **山梨｜富士満願ビレッジファミリーキャンプ場** (fujimangan-village) — 採点未検証
+- **山梨｜富士緑の休暇村オートキャンプ場** (fuji-midori-kyuka-auto) — 採点未検証
+- **山梨｜武川郷キャンプ場** (takegawa-kyo-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **山梨｜福士川オートキャンプ場** (fukushigawa-auto) — 採点未検証、一次情報URL不足
+- **山梨｜福士川根熊山荘ファミリーオートキャンプ場** (nekumasanso-auto) — 採点未検証、総合要確認
+- **山梨｜平野田休養村キャンプ場** (hiranoda-kyuyoson) — 採点未検証
+- **山梨｜宝の山ふれあいの里キャンプ場** (takaranoyama-fureai) — status:closed、価格未検証、採点未検証
+- **山梨｜北杜市明野ふれあいの里キャンプ場** (akeno-fureai-camp) — 価格未検証、採点未検証
+- **山梨｜牧丘フルーツ村キャンプ場** (makioka-fruits-camp) — status:unverified、採点未検証、総合要確認、一次情報URL不足
+- **山梨｜本栖レークサイドキャンプ場** (motosulakeside) — 採点未検証
+- **山梨｜本栖湖キャンプ場** (motosu-shore-camp) — 採点未検証、一次情報URL不足
+- **山梨｜両国橋キャンプ場** (ryokokubashi-camp) — 採点未検証
+- **山梨｜緑と太陽の丘キャンプ場** (midori-taiyo-oka) — 採点未検証
+- **神奈川｜BUSHCRAFT湘南** (bushcraft-shonan) — 採点未検証
+- **神奈川｜HAYATO 箱根キャンプ場** (hayato-hakone) — 採点未検証、一次情報URL不足
+- **神奈川｜PICAさがみ湖** (pica-sagamiko) — 価格未検証、採点未検証
+- **神奈川｜TINY CAMP VILLAGE** (tiny-camp-village) — 採点未検証
+- **神奈川｜ウェルキャンプ西丹沢** (wellcamp-nishitanzawa) — 採点未検証
+- **神奈川｜かぶと虫の森キャンプ場** (kabutomushi-mori-camp) — status:unverified、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜ガンダーラ真鶴シーサイドキャンプ場** (gandahara) — 採点未検証
+- **神奈川｜このまさわキャンプ場** (konomasawa-camp) — 採点未検証
+- **神奈川｜ちがさき柳島キャンプ場** (yanagishima) — 採点未検証
+- **神奈川｜なみのこ村** (naminokomura) — 採点未検証、一次情報URL不足
+- **神奈川｜ひだまりの里** (hidamari-yamakita) — 採点未検証
+- **神奈川｜ふれあいの森日向キャンプ場** (hinata-camp) — status:closed、価格未検証、採点未検証、一次情報URL不足
+- **神奈川｜みつまたキャンプ場** (mitsumata-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜みの石滝キャンプ場** (minoishtaki) — 採点未検証
+- **神奈川｜やどりき水源林キャンプ場** (yadoriki-camp) — status:closed、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜芦ノ湖キャンプ村** (ashinoko-camp-mura) — 採点未検証
+- **神奈川｜奥牧野キャンプ場** (okumakino-camp) — status:unverified、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜角田大橋河川敷** (sumida-ohashi-kasenjiki) — 採点未検証、一次情報URL不足
+- **神奈川｜宮ヶ瀬ヴィレッジキャンプ場** (miyagase-village) — 価格未検証、採点未検証
+- **神奈川｜高田橋多目的広場** (takadabashi-kasenjiki) — 採点未検証、一次情報URL不足
+- **神奈川｜三ヶ木キャンプ場** (mikagi-camp) — status:unverified、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜山北キャンプ場** (yamakita-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜七沢キャンプ場** (nanasawa-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜秋山川キャンプ場** (akiyamagawa-camp) — 価格未検証、採点未検証
+- **神奈川｜小倉橋河川敷** (ogurabashi-kasenjiki) — 採点未検証、一次情報URL不足
+- **神奈川｜上大島キャンプ場** (kamioshima-camp) — 採点未検証、一次情報URL不足
+- **神奈川｜新戸キャンプ場** (shindo) — 採点未検証
+- **神奈川｜神之川キャンプ・マス釣り場** (kannogawa) — 採点未検証
+- **神奈川｜秦野戸川公園キャンプ場** (hadano-togawa-camp) — 採点未検証、一次情報URL不足
+- **神奈川｜西丹沢マウントブリッジキャンプ場** (nishitanzawa-mountbridge) — 採点未検証
+- **神奈川｜西丹沢大滝キャンプ場** (ootaki) — 採点未検証
+- **神奈川｜西丹沢中川ロッヂ** (nishitanzawa-nakagawa-lodge) — 採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜青根キャンプ場** (aone) — 採点未検証
+- **神奈川｜青野原オートキャンプ場** (aonohara-auto) — 価格未検証、採点未検証
+- **神奈川｜青野原野呂ロッジキャンプ場** (norolodge) — 採点未検証
+- **神奈川｜相模湖プレジャーフォレストキャンプ場** (sagamiko-pleasure-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜相模湖休養村キャンプ場** (sagamiko-kyuyomura) — 採点未検証、一次情報URL不足
+- **神奈川｜大磯ロングビーチキャンプサイト** (oiso-longbeach) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜滝沢園キャンプ場** (takizawaso) — 価格未検証、採点未検証
+- **神奈川｜谷太郎キャンプ場清川リバーランド** (yataro-camp) — 価格未検証、採点未検証、総合要確認
+- **神奈川｜丹沢湖キャンプサイト** (kuragari-camp) — 価格未検証、採点未検証
+- **神奈川｜丹沢湖ロッヂ** (tanzawako-lodge) — 採点未検証
+- **神奈川｜中津川河川敷（田代運動公園）** (nakatsugawa-kasenjiki) — 採点未検証、一次情報URL不足
+- **神奈川｜虫沢古道キャンプ場** (mushizawa-camp) — status:unverified、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜長者屋敷キャンプ場** (chojayashiki-camp) — status:suspended、採点未検証、一次情報URL不足
+- **神奈川｜唐沢キャンプ場** (karasawa-miyagase) — 採点未検証
+- **神奈川｜藤野芸術の家キャンプ場** (fujino-art-camp) — 採点未検証
+- **神奈川｜道志の湯キャンプ場** (doshi-no-yu-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **神奈川｜白石オートキャンプ場** (shiraishi-auto-camp) — 採点未検証
+- **神奈川｜箱根園オートキャンプ場** (hakonesono-auto) — status:closed、価格未検証、採点未検証
+- **神奈川｜八菅橋河川敷** (hasugebashi-kasenjiki) — 採点未検証、一次情報URL不足
+- **神奈川｜法論堂キャンプ場リッチランド** (richland-kiyokawa) — 採点未検証
+- **神奈川｜蜂花苑 寄・中津川 源流の郷キャンプ場** (hachibanaen-miroku) — 採点未検証
+- **神奈川｜和田長浜海岸** (wadanagahama-kaigan) — 採点未検証、一次情報URL不足
+- **静岡｜AFPオートキャンプ場（スタイルキャビンあさぎり）** (asagiri-foodpark) — 採点未検証
+- **静岡｜CAMP BEAN** (camp-bean-izu) — 採点未検証
+- **静岡｜magic hour** (magic-hour-camp) — 採点未検証、一次情報URL不足
+- **静岡｜NELO Gotemba** (nelo-gotemba) — 採点未検証
+- **静岡｜PICA表富士** (pica-omotefuji) — 採点未検証
+- **静岡｜PICA富士ぐりんぱ** (pica-fuji-greenpa) — 採点未検証
+- **静岡｜RECAMP富士スピードウェイ** (recamp-fuji-speedway) — 採点未検証
+- **静岡｜アーバンキャンピング朝霧宝山** (houzan) — 採点未検証
+- **静岡｜アプトいちしろキャンプ場** (apt-ichishiro) — 採点未検証
+- **静岡｜キャンプベアード** (camp-baird) — 採点未検証
+- **静岡｜キャンプ場此処野静岡** (kokono-shizuoka) — 価格未検証、採点未検証、一次情報URL不足
+- **静岡｜くのわき親水公園キャンプ場** (kunowaki-shinsui) — 採点未検証
+- **静岡｜だるま山高原キャンプ場** (darumayama-kogen) — 採点未検証
+- **静岡｜ならここの里キャンプ場** (narakoko) — 採点未検証
+- **静岡｜ふもとっぱらキャンプ場** (fumotoppara) — 採点未検証
+- **静岡｜モビリティーパーク** (mobility-park-izu) — 採点未検証、座標要確認
+- **静岡｜伊東マリンタウンキャンプ場** (ito-marine-town-camp) — status:unverified、採点未検証、総合要確認、一次情報URL不足、確認日91日前
+- **静岡｜伊東市青少年キャンプ場** (omuroyama-camp) — 採点未検証
+- **静岡｜伊豆隠れオートキャンプ場** (izu-kakure-auto) — 採点未検証
+- **静岡｜伊豆高原オートキャンプ場** (izukogen-auto) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜宇久須キャンプ場** (ugusu-camp) — 採点未検証
+- **静岡｜宇佐美城山公園キャンプ場** (usami-shiroyama) — 価格未検証、採点未検証
+- **静岡｜雲見オートキャンプ場** (kumomi-auto) — 採点未検証
+- **静岡｜奥大井湖上キャンプ場** (okooigawa-lake) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜乙女森林公園第1キャンプ場** (otome-forest-camp) — 採点未検証
+- **静岡｜河津七滝オートキャンプ場** (kawazu-nanadaru) — 採点未検証
+- **静岡｜火剣山キャンプ場** (hikenkayama) — 採点未検証
+- **静岡｜御殿場まるびオートキャンプ場** (marubi-auto) — 採点未検証
+- **静岡｜黒川キャンプ場（清水森林公園）** (kurokawa-shizuoka) — 採点未検証
+- **静岡｜三ツ星オートキャンプ場** (mitsuboshi-auto) — 採点未検証
+- **静岡｜修善寺虹の郷キャンプ場** (shuzenji-nijinokuni-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜沼津市民の森** (numazu-shimin-no-mori) — 採点未検証
+- **静岡｜寸又峡温泉キャンプ場** (sumatakyo-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜西天城高原牧場のキャンプ場** (nishi-amagi-kogen) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜西里キャンプ適地** (nishizato-camp-tekichi) — 採点未検証、一次情報URL不足
+- **静岡｜静波海岸キャンプサイト** (shizunami-beach-camp) — 価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜接岨YANBY OUTDOOR FIELD** (sessokyo-camp) — 価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜大瀬崎キャンプ場** (osezaki-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜大野路ファミリーキャンプ場** (onoji-family) — 採点未検証
+- **静岡｜池の谷ファミリーキャンプ場** (ikenoya-family) — 採点未検証、一次情報URL不足
+- **静岡｜中田島砂丘キャンプ場** (nakatajima-sakyuu-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜朝霧Camp Base そらいろ** (sorairo) — 採点未検証
+- **静岡｜朝霧ジャンボリーオートキャンプ場** (asagiri-jamboree) — 採点未検証
+- **静岡｜朝霧高原 英知の杜キャンプ場** (eichinomori) — 採点未検証
+- **静岡｜朝霧高原グリーンパーク** (asagiri-greenpark-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜天子の森オートキャンプ場** (tenshino-mori-camp) — 採点未検証
+- **静岡｜天城高原キャンプ場** (amagi-kogen) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜田貫湖キャンプ場** (tanukiko) — 価格未検証、採点未検証
+- **静岡｜土村キャンプ場** (tsuchimura) — 採点未検証、一次情報URL不足、確認日なし
+- **静岡｜南アルプス井川オートキャンプ場** (ikawa-auto) — 採点未検証
+- **静岡｜南伊豆キャンピングテラス** (minamiizu-camping-terrace) — 採点未検証
+- **静岡｜猫越岳キャンプ場** (nekokodake-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜梅ケ島キャンプ場** (umegashima-camp) — 採点未検証
+- **静岡｜八木キャンプ場** (yagi-camp) — 採点未検証
+- **静岡｜浜岡砂丘キャンプ場** (hamaoka-sakyuu-camp) — 採点未検証
+- **静岡｜浜名湖ガーデンパークキャンプ場** (hamanako-garden-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜不動の滝自然広場オートキャンプ場** (fudonotaki-auto) — 採点未検証
+- **静岡｜富士山GranPapaソロぼっち区画サイト** (granpapa-solo-bocchi) — 採点未検証
+- **静岡｜富士山YMCAグローバル・エコ・ヴィレッジ** (fuji-ymca) — 採点未検証
+- **静岡｜富士山オートキャンプ場GENSHIJIN** (fujisan-genshijin) — 採点未検証
+- **静岡｜蓬莱橋キャンプ場** (horaibashi-camp) — status:unverified、価格未検証、採点未検証、総合要確認、一次情報URL不足
+- **静岡｜野田山健康緑地公園 富士川キャンプ場** (fujikawa-camp) — 採点未検証
+- **静岡｜竜洋海洋公園オートキャンプ場** (ryuyo-marine) — 採点未検証、一次情報URL不足
