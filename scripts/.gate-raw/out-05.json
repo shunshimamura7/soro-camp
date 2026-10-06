@@ -1,0 +1,68 @@
+[
+ {"napId":"16841","name":"水岡BASE Grandma","pref":"千葉","muni":"館山市","verdict":"追加",
+  "reason":"施設公式で住所（館山市水岡844）・ソロ可サイト・料金を確認。公式料金ページに旧表と「改訂しました！」のサイト課金表が併記されており、改訂後の表を採用した",
+  "checkedUrls":["https://mizuoka-base-grandma.studio.site/","https://mizuoka-base-grandma.studio.site/price","https://mizuoka-base-grandma.studio.site/site-10"],
+  "officialUrl":"https://mizuoka-base-grandma.studio.site/","reservationUrl":"https://www.nap-camp.com/chiba/16841",
+  "address":"千葉県館山市水岡844","priceMin":2000,"priceMax":2500,
+  "priceNote":"サイト単位課金。公式「料金表 改訂しました！」の表から「Site10〜11 1人まで 2000円 / 1人追加毎+1000円 最大2人」「土日祝 サイト利用料金 +500円」→ ソロ1名2,000円（土日祝2,500円）。**同じページに旧料金表（人数課金・キャンペーン）も残っているので訪問前に確認**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://mizuoka-base-grandma.studio.site/price","quote":"シャワールーム・薪使い放題は料金に含まれます。ご自由にお使い下さい。"},
+    "firewood":{"value":true,"evidenceUrl":"https://mizuoka-base-grandma.studio.site/price","quote":"シャワールーム・薪使い放題は料金に含まれます。"},
+    "pet":{"value":true,"evidenceUrl":"https://mizuoka-base-grandma.studio.site/price","quote":"ペット（犬）同伴：2頭まで無料 / 以降1頭追加毎 +500円 / 日"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11948","name":"ホウリーウッズ久留里キャンプ村","pref":"千葉","muni":"君津市","verdict":"追加",
+  "reason":"台帳の officialUrl（holywoodscamp.jimdo.com）は死んでいるが、現公式は holywoodscamp.jimdofree.com。君津市公式でも住所と宿泊可を確認し、公式にソロ料金の記載がある",
+  "checkedUrls":["https://www.city.kimitsu.lg.jp/site/kanko/2154.html","https://holywoodscamp.jimdofree.com/","https://holywoodscamp.jimdofree.com/看板犬/テントサイト/","https://holywoodscamp.jimdofree.com/場内施設/炊事場など/","https://holywoodscamp.jimdofree.com/周辺案内/お風呂/"],
+  "officialUrl":"https://holywoodscamp.jimdofree.com/","reservationUrl":"https://holywoodscamp.jimdofree.com/%E3%81%94%E4%BA%88%E7%B4%84-1/%E4%BA%88%E7%B4%84%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0/",
+  "address":"千葉県君津市芋窪282","priceMin":4000,"priceMax":5500,
+  "priceNote":"公式の本文に「(4)ソロキャンプの場合 １人１サイトとなります」「ハイシーズンにおけるソロ料金は5,500円」。通常営業4,000円／オータム・サマー5,000円は**料金表が画像で、画像から読み取った値**。訪問前に公式で確認すること",
+  "features":{
+    "bath":{"value":false,"evidenceUrl":"https://holywoodscamp.jimdofree.com/%E5%91%A8%E8%BE%BA%E6%A1%88%E5%86%85/%E3%81%8A%E9%A2%A8%E5%91%82/","quote":"キャンプ場にはお風呂はございませんが、シャワーはございます"},
+    "shower":{"value":true,"evidenceUrl":"https://holywoodscamp.jimdofree.com/%E5%A0%B4%E5%86%85%E6%96%BD%E8%A8%AD/%E7%82%8A%E4%BA%8B%E5%A0%B4%E3%81%AA%E3%81%A9/","quote":"＜シャワー＞ 男女1つずつございます。3分200円です。"},
+    "firewood":{"value":true,"evidenceUrl":"https://holywoodscamp.jimdofree.com/%E7%9C%8B%E6%9D%BF%E7%8A%AC/%E5%A3%B2%E5%BA%97-%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%82%AB%E3%83%BC/","quote":"薪（広葉樹 主にコナラ）￥1100"},
+    "shop":{"value":true,"evidenceUrl":"https://holywoodscamp.jimdofree.com/%E7%9C%8B%E6%9D%BF%E7%8A%AC/%E5%A3%B2%E5%BA%97-%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%82%AB%E3%83%BC/","quote":"売店　キッチンカー（薪・木炭・CB缶・飲料等を販売）"},
+    "pet":{"value":true,"evidenceUrl":"https://www.city.kimitsu.lg.jp/site/kanko/2154.html","quote":"ペット同伴　2m以内のリードのみ可"},
+    "nearbyOnsen":{"value":"大江戸温泉物語 君津の森（車で7分）／君津の湯（車で30分）","evidenceUrl":"https://holywoodscamp.jimdofree.com/%E5%91%A8%E8%BE%BA%E6%A1%88%E5%86%85/%E3%81%8A%E9%A2%A8%E5%91%82/","quote":"大江戸温泉物語　君津の森 車で７分"}},
+  "coordsFromOfficialMap":{"lat":35.281847,"lng":140.057121,"url":"https://holywoodscamp.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/"}},
+
+ {"napId":"11958","name":"フォレストパーティー峰山","pref":"千葉","muni":"君津市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"旧公式ドメインは売却中。現公式 forestpartymineyama.jp は「月額17,800円〜のオーナー型会員制キャンプ場」に業態転換しており、1泊料金も1泊予約の導線も無く（受付は見学予約のみ）住所も非公開。君津市公式は旧情報のまま",
+  "checkedUrls":["https://forestpartymineyama.jp/","https://www.city.kimitsu.lg.jp/site/kanko/2150.html"],"officialUrl":"https://forestpartymineyama.jp/"},
+
+ {"napId":"14184","name":"鹿野山自然学校","pref":"千葉","muni":"君津市","verdict":"閉鎖疑い",
+  "reason":"現公式（kanozan.jimdofree.com）に鹿野山での活動終了の告知があり、常駐スタッフ無しでキャンプ場営業の実態が確認できない。公式に料金・予約の記載なし",
+  "checkedUrls":["https://kanozan.jimdofree.com/"],"officialUrl":"https://kanozan.jimdofree.com/"},
+
+ {"napId":"14823","name":"CAMPiece君津","pref":"千葉","muni":"君津市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式も住所（君津市坂畑223-1 旧亀山中学校・旧坂畑小学校）も確認できるが、**公式に載っているのは学校施設丸ごとの貸切料のみ（平日16万円／土日祝28万円）で個人キャンプの料金が無い**。公式記載の予約先は404で、残る導線はなっぷウィジェットのみ。料金を推測せずには載せられないため門落ち",
+  "checkedUrls":["https://campiece.com/area/kimitsu/","https://campiece.com/reserved/","https://reserve.489ban.net/client/campiece-k/0/plan"],"officialUrl":"https://campiece.com/area/kimitsu/"},
+
+ {"napId":"14849","name":"PGFキャンプ","pref":"千葉","muni":"君津市","verdict":"追加",
+  "reason":"施設公式に住所（君津市市宿256）・1名単位の料金・公式予約先があり、ソロ1名で予約できる",
+  "checkedUrls":["https://camp.pgf.land/","https://camp.pgf.land/?page_id=300","https://camp.pgf.land/?page_id=1489"],
+  "officialUrl":"https://camp.pgf.land/","reservationUrl":"https://select-type.com/rsv/?id=DScaZSb1t2k&c_id=303342",
+  "address":"千葉県君津市市宿256","priceMin":6600,"priceMax":6600,
+  "priceNote":"1名単位課金。公式「竹と星のリバーサイド」★利用料金「大人1人：6,600円(税込)」。他サイト（川の上・崖の上）は7,700円〜と書かれるが1名単価の明示がないため下限のみ採用",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://camp.pgf.land/?page_id=1489","quote":"シャワー　天然湧水の滝"},
+    "firewood":{"value":true,"evidenceUrl":"https://camp.pgf.land/?page_id=1489","quote":"焚き火　よく燃えて長持ちな、こだわりの薪をご用意しているよ♪"},
+    "nearbyOnsen":{"value":"小糸川温泉（徒歩1分）","evidenceUrl":"https://camp.pgf.land/?page_id=1489","quote":"温泉　徒歩1分：小糸川温泉"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"15669","name":"T&C Garden Kimitsu","pref":"千葉","muni":"君津市","verdict":"宿泊系のため対象外",
+  "reason":"宿泊メニューがドームハウスのみでテントサイトの設定が無い（持ち込みギアは使えるが泊まるのはドームハウス）。公式予約サイト上の区分も「バンガロー／離れ・コテージ」",
+  "checkedUrls":["https://tandc-garden.jp/","https://tandc-garden.jp/menu/"],"officialUrl":"https://tandc-garden.jp/"},
+
+ {"napId":"16355","name":"High Garden","pref":"千葉","muni":"君津市","verdict":"UNMEASURED",
+  "reason":"門は通る（公式で住所一致、テント持参の宿泊、人数下限なし）が**完全ひと山貸切で1名でも30,000円〜**。UMIKAZE と同じく、solas-no-mori を料金理由で外した前例の水準を大きく超えるため、掲載するかはしゅんの判断が要る。公式 https://high-garden.jp/reservation/",
+  "checkedUrls":["https://high-garden.jp/","https://high-garden.jp/stay/","https://high-garden.jp/reservation/"],"officialUrl":"https://high-garden.jp/"},
+
+ {"napId":"16483","name":"CAMP さくらの丘","pref":"千葉","muni":"君津市","verdict":"門落ち(単独利用不可)",
+  "reason":"公式よくある質問に「大人だけ（家族以外）でのご予約はお受けできません。」と明記。既存の「ファミリー専用」「子連れ必須」と同じ枠で門落ち。住所・料金（区画料3,300円＋入場料大人1,100円）は確認済みだが採用せず",
+  "checkedUrls":["https://www.camp-sakura.com/","https://www.camp-sakura.com/questions"],"officialUrl":"https://www.camp-sakura.com/"},
+
+ {"napId":"16765","name":"久留里ヒュッテ","pref":"千葉","muni":"君津市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先のいずれも見つからない（なっぷ・いこーよ・Instagram のみ）。なっぷ掲載の外部リンク先は「久留里の大井戸・自噴井戸」の無関係なページ",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16765","https://www.city.kimitsu.lg.jp/site/kanko/2186.html"],"officialUrl":null}
+]

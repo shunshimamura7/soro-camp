@@ -1,0 +1,68 @@
+[
+ {"napId":"14281","name":"キャンプマナビス","pref":"千葉","muni":"館山市","verdict":"追加",
+  "reason":"施設公式で住所（館山市布良886）・ソロ割料金・設備・公式予約先をすべて確認。1〜3名の少人数利用が明記されている",
+  "checkedUrls":["https://campmanavis.com/","https://campmanavis.com/facility/forest","https://campmanavis.com/facility/centerhouse","https://campmanavis.com/sale","https://campmanavis.com/other"],
+  "officialUrl":"https://campmanavis.com/","reservationUrl":"https://www.nap-camp.com/chiba/14281",
+  "address":"千葉県館山市布良886","priceMin":5500,"priceMax":14300,
+  "priceNote":"サイト単位課金。森エリア芝生・Mサイト「レギュラーシーズン 7,000円 税込(7,700円)／ソロ/ペア割 5,000円 税込(5,500円)」「※レギュラーシーズンの下段価格は2名までのソロ割・ペア割価格になります」。**ソロ割はレギュラーシーズンのみ**で、トップシーズン（GW・お盆）は13,000円 税込14,300円",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://campmanavis.com/facility/centerhouse","quote":"センターハウス３階には、太平洋を一望できる源泉かけ流しの温泉があります。"},
+    "shower":{"value":true,"evidenceUrl":"https://campmanavis.com/facility/ocean","quote":"【シーサイドハウス】炊事場/トイレ/有料シャワールーム(200円/5分)/電子レンジ"},
+    "firewood":{"value":true,"evidenceUrl":"https://campmanavis.com/sale","quote":"薪/スギ 746円(税込820円)／薪/広葉樹(特大) 1,073円(税込1,180円)"},
+    "shop":{"value":true,"evidenceUrl":"https://campmanavis.com/facility/centerhouse","quote":"併設するショップでは、食料品、キャンプ用品の販売、キャンプ用品のレンタルを行なっております。"},
+    "pet":{"value":true,"evidenceUrl":"https://campmanavis.com/other","quote":"ペットは1サイトにつき3匹までとさせて頂きます。"}},
+  "coordsFromOfficialMap":{"lat":34.9155978,"lng":139.8278351,"url":"https://campmanavis.com/access"}},
+
+ {"napId":"14351","name":"The Camp（たてやま温泉 千里の風 内）","pref":"千葉","muni":"館山市","verdict":"閉鎖疑い",
+  "reason":"千里の風公式のナビに残る /camp/index.html が404、公式予約エンジン（reserve.489ban.net/client/the-camp）も404。なっぷ掲載名も「【R8/8 閉鎖】The Camp」。公式側が404を返す構成なので単なる接続不能とは異なる",
+  "checkedUrls":["https://www.senrinokaze.jp/","https://www.senrinokaze.jp/camp/index.html","https://reserve.489ban.net/client/the-camp/0/plan"],"officialUrl":"https://www.senrinokaze.jp/"},
+
+ {"napId":"14454","name":"Out Tail Dog Camp TATEYAMA","pref":"千葉","muni":"館山市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式はあり予約方法（一般利用はなっぷ）も明記されるが、**キャンプサイトの規定料金が公式に一切無い**（公式にあるのは月額会員料金と古民家価格のみ）。住所テキストも公式に無い。料金を推測せずには載せられないため門落ち",
+  "checkedUrls":["https://tateyama-camp.dogcamp.jp/","https://tateyama-camp.dogcamp.jp/dogcamp-route-guide/"],"officialUrl":"https://tateyama-camp.dogcamp.jp/"},
+
+ {"napId":"14483","name":"CAMPGROUND BREEZE TATEYAMA","pref":"千葉","muni":"館山市","verdict":"追加",
+  "reason":"施設公式で住所（館山市那古1672-6）と設備を確認。公式が予約先として指定している 489ban で持ち込みサイトの1名様料金と定員1〜6名を確認できた",
+  "checkedUrls":["https://breeze-camp.com/","https://breeze-camp.com/facility/","https://reserve.489ban.net/client/breeze-camp/0/plan"],
+  "officialUrl":"https://breeze-camp.com/","reservationUrl":"https://reserve.489ban.net/client/breeze-camp/0/plan",
+  "address":"千葉県館山市那古1672-6","priceMin":5775,"priceMax":5775,
+  "priceNote":"公式予約先の「【GREEN SITE 持込みプラン】リーズナブルな芝区画サイト／電源付き」に「1名様料金（1名様1サイト利用時）5,775円～」「定員 1～6名様」。下限のみ公表のため priceMax も同値。別途「月火金のみ1日2サイト限定｜平日半額特別プラン」は1名様3,960円",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://breeze-camp.com/facility/","quote":"空調設備が完備された清潔なシャワー室にはドライヤー、大型の鏡、椅子、シャンプー、ボディーソープが常備されています。"},
+    "firewood":{"value":true,"evidenceUrl":"https://breeze-camp.com/","quote":"※売店販売品：薪（広葉樹、針葉樹MIX）詰め放題1袋／1,000円"},
+    "shop":{"value":true,"evidenceUrl":"https://breeze-camp.com/facility/","quote":"キャンプ場の中央にある管理棟ではキャンプやBBQに必要な備品を販売している売店も併設しており"},
+    "pet":{"value":true,"evidenceUrl":"https://breeze-camp.com/","quote":"ドッグサイト／四方が木柵や網で囲われており、愛犬がノーリードでキャンプが楽しめるサイト。"},
+    "nearbyOnsen":{"value":"南総城山温泉 里見の湯（車で10分）","evidenceUrl":"https://breeze-camp.com/","quote":"南総城山温泉里見の湯／BREEZEから車で10分のところにある日帰り温泉施設。"}},
+  "coordsFromOfficialMap":{"lat":35.0211825,"lng":139.854991,"url":"https://breeze-camp.com/"}},
+
+ {"napId":"14495","name":"たてやま倶楽部","pref":"千葉","muni":"館山市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式の「料金プラン」セクションがHTMLコメントで丸ごと無効化されており（入場料500円すら表示されない）、サイト使用料の掲載が無い。予約ページはなっぷのウィジェットを埋め込んでいるだけ",
+  "checkedUrls":["https://www.tateyamaclub.tokyo/","https://www.tateyamaclub.tokyo/booking.html"],"officialUrl":"https://www.tateyamaclub.tokyo/"},
+
+ {"napId":"14691","name":"LOTUS NIGHT","pref":"千葉","muni":"館山市","verdict":"宿泊系のため対象外",
+  "reason":"運営会社のリリースで「1日3組限定のグランピング施設」「ロータスベルテント3室」と確認。テント持ち込み泊を扱わない。旧公式ドメインは現在まったく別施設（館山市正木1256-7）に差し替わっており、見物744の施設公式は現存しない",
+  "checkedUrls":["https://prtimes.jp/main/html/rd/p/000000043.000052784.html","https://tateyama-glamping.com/"],"officialUrl":null},
+
+ {"napId":"15075","name":"MBSドッグキャンプ場","pref":"千葉","muni":"館山市","verdict":"門落ち(公式なし)",
+  "reason":"旧公式ドメイン mbs163dogcamp.com がドメイン売却のパーキングページ（This domain may be for sale）になっており施設公式が消滅。残る情報源はなっぷと Instagram のみ",
+  "checkedUrls":["https://www.mbs163dogcamp.com/"],"officialUrl":null},
+
+ {"napId":"16157","name":"マリンステーション波左間","pref":"千葉","muni":"館山市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイトが存在せず、運営者がクラウドファンディングで示しているURLもなっぷと Instagram のみ。近隣の「波左間海中公園」（館山市波左間1012）は住所も違う別施設",
+  "checkedUrls":["https://camp-fire.jp/projects/856419/view","http://hsmop.web.fc2.com/index.html"],"officialUrl":null},
+
+ {"napId":"16362","name":"Buena Vista Beach Club","pref":"千葉","muni":"館山市","verdict":"追加",
+  "reason":"施設公式に住所（館山市見物12-1）と「ソロキャンプ（フリーサイト）」の料金が明記され、公式にソロ1名プランが用意されている",
+  "checkedUrls":["https://www.buenavista-beachclub.com/"],
+  "officialUrl":"https://www.buenavista-beachclub.com/","reservationUrl":null,
+  "address":"千葉県館山市見物12-1","priceMin":3300,"priceMax":6500,
+  "priceNote":"公式「ソロキャンプ（フリーサイト）For Solo Camper (S)／ソロキャンプ（お一人様）のプランです。…料金: 平日 3300 土日、祭日前 5500 ハイシーズン 6500」。公式サイト内の予約カレンダーへのリンクは404で、受付は公式の問い合わせフォームと電話（0470-29-2835）",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.buenavista-beachclub.com/","quote":"■サニタリー棟 ・炊事場(給湯器有り) ・シャワー ・水洗トイレ (ウォシュレット)"},
+    "nearbyOnsen":{"value":"満開のおもてなし 花しぶき（車で約5分）／南総温泉 里見の湯（車で約16分）","evidenceUrl":"https://www.buenavista-beachclub.com/","quote":"・温泉施設　満開のおもてなし 花しぶき（お車で約5分）／南総温泉　里見の湯（お車で約16分）"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"16507","name":"星海の香 Auto Camp Hills","pref":"千葉","muni":"館山市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式に住所（館山市香222-2）と予約方法（なっぷ）はあるが、**サイト使用料の掲載が一切なく「詳しくはなっぷページをご確認ください」**とされている。トップのNEWSにある特売はグランドオープン記念の期間限定で既に終了",
+  "checkedUrls":["http://www.hoshiuminokaori.jp/","http://www.hoshiuminokaori.jp/reserve.html","http://www.hoshiuminokaori.jp/siteplan.html"],"officialUrl":"http://www.hoshiuminokaori.jp/"}
+]

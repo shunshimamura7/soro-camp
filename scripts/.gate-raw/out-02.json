@@ -1,0 +1,77 @@
+[
+ {"napId":"14757","name":"カッパドキアfamily","pref":"千葉","muni":"南房総市","verdict":"追加",
+  "reason":"運営元・館山サザンビレッジの公式サイト内に専用ページがあり、公式アクセスページで住所「南房総市高崎字山の根1010-1」を確認（運営元フッターの館山市住所と混同しないよう別途突合）。区画料金＋施設利用料が公式に明記され1名でも予約できる",
+  "checkedUrls":["https://sunnybase.net/cappa/","https://sunnybase.net/access/"],
+  "officialUrl":"https://sunnybase.net/cappa/","reservationUrl":"https://www.nap-camp.com/chiba/14757",
+  "address":"千葉県南房総市高崎字山の根1010-1","priceMin":7810,"priceMax":11110,
+  "priceNote":"区画課金＋人数課金の合算。「レギュラーシーズン：7,150円/区画（平日、日曜日）」「トップシーズン：10,450円/区画（連休時）」＋「【施設利用料】大人：660円」→ ソロ1名は7,810円〜11,110円",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://sunnybase.net/cappa/","quote":"【利用できる施設】…・温水シャワー"},
+    "firewood":{"value":true,"evidenceUrl":"https://sunnybase.net/cappa/","quote":"・受付スペース　薪や炭などは販売しております。"},
+    "shop":{"value":true,"evidenceUrl":"https://sunnybase.net/cappa/","quote":"・受付スペース　薪や炭などは販売しております。"},
+    "pet":{"value":true,"evidenceUrl":"https://sunnybase.net/cappa/","quote":"☆ペット大歓迎"},
+    "nearbyOnsen":{"value":"近くに日帰り温泉あり（施設名・距離の記載なし）","evidenceUrl":"https://sunnybase.net/cappa/","quote":"☆近くに日帰り温泉もございます。"}},
+  "coordsFromOfficialMap":{"lat":35.08399644073995,"lng":139.8472322038082,"url":"https://sunnybase.net/access/"}},
+
+ {"napId":"14862","name":"おとキャン広場","pref":"千葉","muni":"南房総市","verdict":"追加",
+  "reason":"施設公式サイトあり。公式アクセスページで住所「南房総市富浦町多田良981-2」が一致し、ソロ1名の料金と公式予約ページを確認",
+  "checkedUrls":["https://oto-camp.jp/","https://oto-camp.jp/?page_id=13","https://oto-camp.jp/?page_id=15","https://oto-camp.jp/?page_id=16"],
+  "officialUrl":"https://oto-camp.jp/","reservationUrl":"https://oto-camp.jp/?page_id=16",
+  "address":"千葉県南房総市富浦町多田良981-2","priceMin":2500,"priceMax":2500,
+  "priceNote":"「ソロ/ファミリー：一区画一泊二日 1人 2,500円」。ペット同伴はプラス500円",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://oto-camp.jp/?page_id=15","quote":"【場内共有設備】…・シャワー"},
+    "firewood":{"value":true,"evidenceUrl":"https://oto-camp.jp/","quote":"薪無料"},
+    "pet":{"value":true,"evidenceUrl":"https://oto-camp.jp/?page_id=15","quote":"※ペット同伴の場合は、プラス 500円"}},
+  "coordsFromOfficialMap":{"lat":35.03918753086249,"lng":139.82990854413472,"url":"https://oto-camp.jp/?page_id=13"}},
+
+ {"napId":"15113","name":"シラハマ校舎","pref":"千葉","muni":"南房総市","verdict":"宿泊系のため対象外",
+  "reason":"施設公式が「＊道の駅・公衆トイレ・キャンプ場等の機能はありません」と明記。宿泊はゲストルームと別館のみで、敷地内の「無印良品の小屋」は所有者の別荘でゲスト宿泊不可",
+  "checkedUrls":["https://www.awashirahama.com/nagao/index.html","https://www.awashirahama.com/nagao/site/faq.html"],"officialUrl":"https://www.awashirahama.com/nagao/index.html"},
+
+ {"napId":"15777","name":"HIDEAWAY NAMUYA","pref":"千葉","muni":"南房総市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設独自の公式サイトが存在せず（候補ドメイン2つは名前解決不可）、自治体公式「南房総いいとこどり」の施設ページは住所のみでホームページ欄はなっぷのURL。料金・予約方法の一次情報が無い",
+  "checkedUrls":["https://www.mboso-etoko.jp/mboso_map/detail.php?poi=731"],"officialUrl":null},
+
+ {"napId":"15838","name":"BINGE TRAILER","pref":"千葉","muni":"南房総市","verdict":"宿泊系のため対象外",
+  "reason":"運営のデュエットリゾート公式が「ペットと泊まれるトレーラーハウス」と明記。エアコン・冷蔵庫付きトレーラーハウス宿泊専業でテントサイトの提供なし",
+  "checkedUrls":["https://www.duetresort.com/binge-trailer"],"officialUrl":"https://www.duetresort.com/binge-trailer"},
+
+ {"napId":"16009","name":"Cam Cam Dome House & SAUNA","pref":"千葉","muni":"南房総市","verdict":"宿泊系のため対象外",
+  "reason":"施設公式が「1日1組限定の贅沢なグランピング体験」「室内はキッチン、お風呂、トイレも完備」のドームハウス2棟のみ。公式埋め込み地図のピンは南房総市富浦町豊岡926で一致するが、テント泊の提供なし",
+  "checkedUrls":["https://camcamdomehouse.com/"],"officialUrl":"https://camcamdomehouse.com/"},
+
+ {"napId":"16056","name":"TAVISTAR","pref":"千葉","muni":"南房総市","verdict":"宿泊系のため対象外",
+  "reason":"施設公式が「星空グランピングリゾート」でキャビン全7棟（セミダブルベッド2台・エアコン・Wi-Fi）と明記。公式フッター住所は南房総市白浜町滝口6177で一致するが、テント泊の提供なし",
+  "checkedUrls":["https://tavistar.jp/"],"officialUrl":"https://tavistar.jp/"},
+
+ {"napId":"16110","name":"SOUTH BIRD INN / Chitose Beach Surf Camp","pref":"千葉","muni":"南房総市","verdict":"追加",
+  "reason":"施設公式（南房総市公式観光サイトもHPとして掲載）にキャンプ専用ページがあり、キャンプ場住所「南房総市白子2594〜2596」が一致。通年営業・1泊料金・1名加算が公式に明記",
+  "checkedUrls":["https://s-birdinn.amebaownd.com/pages/846116/page_201702121325","https://www.mboso-etoko.jp/mboso_map/detail.php?poi=243"],
+  "officialUrl":"https://s-birdinn.amebaownd.com/pages/846116/page_201702121325","reservationUrl":null,
+  "address":"千葉県南房総市白子2594〜2596（受付・会計は宿泊施設1階 白子2591-1）","priceMin":6000,"priceMax":8000,
+  "priceNote":"サイト課金＋人数課金の合算。「サイト料金・場所代＋施設利用料 日（泊）平日３０００円 休前日４０００円 特定日（GW・お盆week ５０００円） 1名様＝＋３０００円」「１泊・駐車代含む・１台」→ ソロ1名は平日6,000円、特定日8,000円",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://s-birdinn.amebaownd.com/pages/846116/page_201702121325","quote":"コイン温水シャワーの利用について：３００円／５分 ※利用可能時間13:00~21:00"},
+    "firewood":{"value":true,"evidenceUrl":"https://s-birdinn.amebaownd.com/pages/846116/page_201702121325","quote":"薪 広葉樹 １束(5kg) = １０００円"},
+    "shop":{"value":true,"evidenceUrl":"https://s-birdinn.amebaownd.com/pages/846116/page_201702121325","quote":"販売品：…薪 広葉樹 １束(5kg) = １０００円 木炭（ｋｇ）3kg = ９００円 着火剤 ２５０円"},
+    "pet":{"value":true,"evidenceUrl":"https://s-birdinn.amebaownd.com/pages/846116/page_201702121325","quote":"ペット同伴（ワンコ） １頭・７００円"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"16186","name":"C.C.C. CAMPSITE","pref":"千葉","muni":"南房総市","verdict":"追加",
+  "reason":"施設公式サイトあり。公式アクセスページの住所「千葉県南房総市平久里中340」が一致。テントサイトの1名1泊料金と公式の予約方法（LINE・電話）を確認",
+  "checkedUrls":["https://ccc-campsite.com/","https://ccc-campsite.com/access/","https://ccc-campsite.com/guide/","https://ccc-campsite.com/reserv/"],
+  "officialUrl":"https://ccc-campsite.com/","reservationUrl":"https://ccc-campsite.com/reserv/",
+  "address":"千葉県南房総市平久里中340","priceMin":2000,"priceMax":4000,
+  "priceNote":"1名単位課金。「テントサイト-A 大人（12歳以上）：1名/1泊 ¥2,000」「テントサイト-B 大人（12歳以上）：1名/1泊 ¥3,000」「※ 土、日、祝、祝前日、＋1000円となります」",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://ccc-campsite.com/guide/","quote":"シャワー ※タオルご用意あります 利用料金： ¥500"},
+    "firewood":{"value":true,"evidenceUrl":"https://ccc-campsite.com/guide/","quote":"薪 ： ¥500"},
+    "shop":{"value":true,"evidenceUrl":"https://ccc-campsite.com/guide/","quote":"お酒類：¥500 ジュース類：¥300 薪：¥500 炭（1kg）：¥1,000 ガスボンベ：¥500 ※その他、箸やお皿、蚊取り線香など100円よりご用意あります"},
+    "pet":{"value":true,"evidenceUrl":"https://ccc-campsite.com/guide/","quote":"※リードやゲージを持たずにペットを同伴させないで下さい。"}},
+  "coordsFromOfficialMap":{"lat":35.1025902,"lng":139.9195316,"url":"https://ccc-campsite.com/access/"}},
+
+ {"napId":"16240","name":"海土里hutte","pref":"千葉","muni":"南房総市","verdict":"門落ち(公式なし)",
+  "reason":"滝口611-7の「海土里hutte」の公式・自治体公式ページが見つからない。運営者の umidori324.jp はメンテナンス中表示のみで、かつ対象住所は滝口324-1（別地）。自治体公式にも611-7の掲載なし",
+  "checkedUrls":["https://umidori324.jp/","https://www.mboso-etoko.jp/mboso_map/detail.php?poi=688"],"officialUrl":null}
+]

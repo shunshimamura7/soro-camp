@@ -1,0 +1,49 @@
+[
+ {"napId":"13734","name":"ファームイン南房総・杉田棟","pref":"千葉","muni":"南房総市","verdict":"宿泊系のため対象外",
+  "reason":"公式は「南房総市の貸別荘」で4棟の客室のみ。公式3ページにテントサイト・キャンプサイトの記載が一切なくテント泊を扱わない。住所は公式「千葉県南房総市池之内374」で一致",
+  "checkedUrls":["https://dskpro.com/farm-inn-minamiboso-sugita/"],"officialUrl":"https://dskpro.com/farm-inn-minamiboso-sugita/"},
+
+ {"napId":"13809","name":"白浜フラワーパーク Ocean's","pref":"千葉","muni":"南房総市","verdict":"閉鎖疑い",
+  "reason":"施設公式サイトが無く（公式Facebookのみ）、複数の第三者媒体が閉業と表示。公式一次情報での閉業確認は取れていないため断定せず閉鎖疑い。門3（公式なし）にも該当",
+  "checkedUrls":["https://www.facebook.com/shirahamaflowerpark/"],"officialUrl":null},
+
+ {"napId":"14078","name":"THE CHIKURA UMI BASE CAMP","pref":"千葉","muni":"南房総市","verdict":"宿泊系のため対象外",
+  "reason":"公式（2026/05/13更新）は「海辺の別荘のように過ごせるアウトドアホテル」。公式トップ全文に「テント」「キャンプサイト」「持ち込み」が0件でテント泊を扱わない",
+  "checkedUrls":["https://chikuraumi.basecamp.style/"],"officialUrl":"https://chikuraumi.basecamp.style/"},
+
+ {"napId":"14100","name":"NEO GRAND","pref":"千葉","muni":"南房総市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式を特定できず。comchiba.com は「ホテル予約ネットワーク」のOTAアフィリエイトで施設公式ではないと確認。自治体公式の掲載も無し",
+  "checkedUrls":["https://www.comchiba.com/ja/property/neo-grand/rooms.html"],"officialUrl":null},
+
+ {"napId":"14171","name":"FARMER'S FIELDZ","pref":"千葉","muni":"南房総市","verdict":"UNMEASURED",
+  "reason":"門は通る（公式に「1サイト人数1〜8人」、料金表あり、住所一致）が**ソロ最安13,200円**で、公式の持ち込みAUTO CAMPプランは「予約不可・当日受け入れ限定」。solas-no-mori を「1名12,000円〜はソロ向けの対象外」として外した前例に当たるため、掲載するかはしゅんの判断が要る。公式 https://jacuzzi0.wixsite.com/farmersfieldz/plan",
+  "checkedUrls":["https://jacuzzi0.wixsite.com/farmersfieldz/plan"],"officialUrl":"https://jacuzzi0.wixsite.com/farmersfieldz"},
+
+ {"napId":"14280","name":"海土里～umidori～","pref":"千葉","muni":"南房総市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式 umidori324.jp の全文が「サイトメンテナンス中につき、ご予約は「なっぷ」からお願いします。」のみ。料金・住所・設備の掲載が一切無く、なっぷ単独は根拠にできない",
+  "checkedUrls":["https://umidori324.jp/"],"officialUrl":"https://umidori324.jp/"},
+
+ {"napId":"14445","name":"コーラル南房総オートキャンプ場（移転：コーラル＊館山オートキャンプ場）","pref":"千葉","muni":"南房総市","verdict":"門落ち(公式なし)",
+  "reason":"公式候補4ドメイン（coral-minamiboso-camp.com / www付き / bosyushirahamaza.jp / coral-tateyama.com）がすべて名前解決不能。検索でも予約サイト・個人ブログのみ。**URLが開けないだけなので閉業とは断定しない**",
+  "checkedUrls":["http://coral-minamiboso-camp.com/","http://coral-tateyama.com/"],"officialUrl":null},
+
+ {"napId":"14473","name":"UMIKAZE","pref":"千葉","muni":"南房総市","verdict":"UNMEASURED",
+  "reason":"門は通る（テント泊あり、料金・設備が公式、住所一致）が**1日1組の完全貸切で1組98,000円〜**。ソロ1名でも総額98,000円になり、solas-no-mori を料金理由で外した前例の水準を大きく超えるため、しゅんの判断が要る。予約は公式記載のとおり Airbnb 経由。公式 https://umikaze-camp.com/stay",
+  "checkedUrls":["https://umikaze-camp.com/stay"],"officialUrl":"https://umikaze-camp.com/"},
+
+ {"napId":"14525","name":"遊房CAMP","pref":"千葉","muni":"南房総市","verdict":"追加",
+  "reason":"公式に「Gardenサイト：5,000円 ※施設使用料として1人500円」とサイト＋人数単価制でソロ1名利用可。宿泊可（IN12:00-18:00／OUT11:00）。住所が一致し料金・設備・空室カレンダーも公式にある",
+  "checkedUrls":["https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/"],
+  "officialUrl":"https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/","reservationUrl":null,
+  "address":"千葉県南房総市千倉町白間津1278-1","priceMin":5500,"priceMax":5500,
+  "priceNote":"公式「ご利用料金 Gardenサイト：5,000円 ※施設使用料として1人500円頂いております。※水道代やごみ処理代を含んでおります。」→ ソロ1名1泊 総額5,500円",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/","quote":"場内共有設備：受付（9時～18時）、簡易売店（薪、炭など、酒類無し）、自動販売機、シャワー、レンタルルーム、炊事場、分別ゴミ箱、水洗トイレ"},
+    "firewood":{"value":true,"evidenceUrl":"https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/","quote":"簡易売店（薪、炭など、酒類無し）"},
+    "shop":{"value":true,"evidenceUrl":"https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/","quote":"簡易売店（薪、炭など、酒類無し）、自動販売機"}},
+  "coordsFromOfficialMap":{"lat":34.91832237150411,"lng":139.93843557627295,"url":"https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/"}},
+
+ {"napId":"14614","name":"カーディフ・トレーラーハウス","pref":"千葉","muni":"南房総市","verdict":"宿泊系のため対象外",
+  "reason":"公式は「トレラーハウスでのグランピング」で宿泊棟は2棟のみ。公式全文に持ち込みテントサイトの記載が無い。住所は公式「千葉県南房総市白浜町根本1520-8」で一致",
+  "checkedUrls":["https://cardiff.jp/camp/"],"officialUrl":"https://cardiff.jp/camp/"}
+]

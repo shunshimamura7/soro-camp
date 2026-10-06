@@ -1,0 +1,65 @@
+[
+ {"napId":"16369","name":"feelnature camp base","pref":"千葉","muni":"勝浦市","verdict":"UNMEASURED",
+  "reason":"施設公式（feelnature.tokyo）は存在し住所「勝浦市杉戸1640」も一致、予約方法も公式に書かれているが、**料金が公式に一切掲載されていない**。公式の予約フォームは決済未設定（There are no active payment gateways）で、実質の予約先はなっぷのプランページ。なっぷを料金の根拠に使えるかの方針判断が要る",
+  "checkedUrls":["https://feelnature.tokyo/","https://feelnature.tokyo/select-site/","https://feelnature.tokyo/booking-site/b-1"],"officialUrl":"https://feelnature.tokyo/"},
+
+ {"napId":"16540","name":"Frog Café & glam Site","pref":"千葉","muni":"勝浦市","verdict":"宿泊系のため対象外",
+  "reason":"公式は「癒しのガーデンカフェ＆グランピング」で、宿泊はテント・サウナ・ジャグジー・エアコンが設置済みのグランピング（1名33,000円）のみ。持ち込みテント泊のサイトが公式に存在しない",
+  "checkedUrls":["https://www.frogcafe-and-gramsite.com/"],"officialUrl":"https://www.frogcafe-and-gramsite.com/"},
+
+ {"napId":"11934","name":"九十九里オートキャンプ場 太陽と海","pref":"千葉","muni":"旭市","verdict":"追加",
+  "reason":"施設公式（tandu.jp）を特定し住所（旭市東足洗2746-10）が一致。オートサイトは1名でも予約でき（制限は上限のみで下限やファミリー限定の記載なし）、公式に料金表と予約方法がある。前回「施設公式を未特定」で UNMEASURED にしていた件が解消",
+  "checkedUrls":["https://tandu.jp/","https://tandu.jp/price","https://tandu.jp/facility","https://tandu.jp/faq","https://tandu.jp/reservation"],
+  "officialUrl":"https://tandu.jp/","reservationUrl":"https://tandu.jp/reservation",
+  "address":"千葉県旭市東足洗2746-10","priceMin":4200,"priceMax":10800,
+  "priceNote":"公式料金表は「基本料金2名（施設使用料込）」制で**1名でも同額**。電源なしRサイト70㎡レギュラー4,200円が最安、フェンスサイト トップシーズン10,800円が最高。「区画内に収容可否に関わらず1区画＝乗用車1台です」で駐車代込み。露天風呂は別途 大人500円、コインシャワーは200円/10分",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://tandu.jp/facility","quote":"露天風呂（ジャクジーバス） 男2ケ、女2ケ … 基本料金 大人500円"},
+    "shower":{"value":true,"evidenceUrl":"https://tandu.jp/facility","quote":"温水シャワー/男シャワー5ケ、女シャワー5ケ … コインシャワー 200円/10分 4台"},
+    "shop":{"value":true,"evidenceUrl":"https://tandu.jp/facility","quote":"売店 8時30分～17時 調味料類、燃料類、飲料水、氷、日用雑貨／他"},
+    "pet":{"value":true,"evidenceUrl":"https://tandu.jp/price","quote":"ペットOK ※頻繁に吠える犬はご遠慮ください。リード厳守。1サイト3匹まで（犬1匹400円）"}},
+  "coordsFromOfficialMap":{"lat":35.69972676537087,"lng":140.68608235342649,"url":"https://tandu.jp/"}},
+
+ {"napId":"14572","name":"キャンプ番長 ASAHI BASE","pref":"千葉","muni":"旭市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先がいずれも見つからない。同じ運営の airsite.jp/campbancho は「キャンプ番長ライダースベース99」で住所が**匝瑳市新堀**＝別施設だと確認して弾いた。Instagram に料金・予約の掲載は無い",
+  "checkedUrls":["https://airsite.jp/campbancho","https://www.nap-camp.com/chiba/14572"],"officialUrl":null},
+
+ {"napId":"15692","name":"Ko-eda Village","pref":"千葉","muni":"旭市","verdict":"宿泊系のため対象外",
+  "reason":"公式は住所（旭市平松1580）が一致するが「コンテナ宿泊施設」「全室コテージ」「アメリカンなトレーラーハウスにご宿泊も可能」で、持ち込みテント泊のサイトが公式に存在しない",
+  "checkedUrls":["https://www.ko-eda.jp/"],"officialUrl":"https://www.ko-eda.jp/"},
+
+ {"napId":"15876","name":"キャンプ ワイワイ","pref":"千葉","muni":"旭市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先がいずれも見つからない。旭市公式サイトのキャンプ場ページは別施設（旭市海上キャンプ場）",
+  "checkedUrls":["https://www.city.asahi.lg.jp/soshiki/29/24010.html","https://www.nap-camp.com/chiba/15876"],"officialUrl":null},
+
+ {"napId":"14118","name":"TENT 一宮 グランピングリゾート","pref":"千葉","muni":"一宮町","verdict":"宿泊系のため対象外",
+  "reason":"公式は住所（長生郡一宮町一宮10217）が一致するが「三角屋根が印象的な『TENT』は、『地球と遊ぶ』をコンセプトにしたグランピングコテージ」で1日6組限定のグランピング宿泊施設。持ち込みテント泊の扱いが無い",
+  "checkedUrls":["https://www.urban-hotel.jp/tent-ichinomiya/","http://tent-ichinomiya.co.jp/"],"officialUrl":"https://www.urban-hotel.jp/tent-ichinomiya/"},
+
+ {"napId":"14167","name":"Ocean's Camp TORAMII -Ichinomiya-","pref":"千葉","muni":"一宮町","verdict":"UNMEASURED",
+  "reason":"門は通る（公式で住所「長生郡一宮町一宮100-1」一致、持ち込みテントのオートサイトあり、料金表と予約先も公式）が、**オートサイトがサイト単位の定額で1名でも11,000円（レギュラー平日）〜33,000円（ハイシーズン土祝前）**。貸切ではなく約400㎡の区画が複数ある通常の区画サイトだが、ソロの負担額が solas-no-mori を外した前例の水準に並ぶため判断が要る",
+  "checkedUrls":["https://toramii.jp/camp-toramii/","https://toramii.jp/camp-toramii/terms.html","https://toramii.jp/camp-toramii/field/"],"officialUrl":"https://toramii.jp/camp-toramii/"},
+
+ {"napId":"14956","name":"Campsite TORAMI","pref":"千葉","muni":"一宮町","verdict":"追加",
+  "reason":"公式（campsite-torami.com）で住所（長生郡一宮町東浪見1611）が一致。「ソロサイト 1名限定 2,000円〜」とソロ専用サイトがあり、宿泊可・公式に料金一覧と予約先の案内がある",
+  "checkedUrls":["https://campsite-torami.com/index.html","https://campsite-torami.com/campsite.html","https://campsite-torami.com/access.html"],
+  "officialUrl":"https://campsite-torami.com/","reservationUrl":"https://www.nap-camp.com/chiba/14956",
+  "address":"千葉県長生郡一宮町東浪見1611","priceMin":2200,"priceMax":2200,
+  "priceNote":"サイト課金＋施設利用料の合算。公式「ソロサイト 木々に囲まれたソロテント1張り分 1名限定 … 2,000円〜」＋「このほかに 施設利用料としてお1人さま200円（税込）を頂戴します」（全プラン共通）＝計2,200円。公式は下限（〜）のみ提示のため priceMax も同額。温水シャワーはコイン式で別途7分300円",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://campsite-torami.com/campsite.html","quote":"温水シャワー コイン式（7分300円）。更衣スペース・棚・鏡つき。"},
+    "firewood":{"value":true,"evidenceUrl":"https://campsite-torami.com/index.html","quote":"RENTAL & SHOP レンタル・販売 テントからランタンまで。薪・炭・消耗品の販売も。"},
+    "shop":{"value":true,"evidenceUrl":"https://campsite-torami.com/index.html","quote":"RENTAL & SHOP レンタル・販売 テントからランタンまで。薪・炭・消耗品の販売も。"},
+    "pet":{"value":true,"evidenceUrl":"https://campsite-torami.com/campsite.html","quote":"ソロサイト … 1名限定 AC電源なし 車両乗入NG ペットOK 2,000円〜"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"15019","name":"S-eagle Camp","pref":"千葉","muni":"一宮町","verdict":"追加",
+  "reason":"公式（camp.souken-firm.com）で住所（長生郡一宮町一宮字鳥内8062）が一致。「デイキャンプから宿泊キャンプまで、テントをお持ち込みのうえ」で宿泊可、公式に人数課金の料金と予約先の案内がある。人数下限・ファミリー限定の記載なし",
+  "checkedUrls":["https://camp.souken-firm.com/","https://camp.souken-firm.com/stayplan/"],
+  "officialUrl":"https://camp.souken-firm.com/","reservationUrl":"https://www.nap-camp.com/chiba/15019",
+  "address":"千葉県長生郡一宮町一宮字鳥内8062","priceMin":3300,"priceMax":3300,
+  "priceNote":"1名単位課金。公式 StayCamp プラン「テント持参プラン：3,300円/人～」。公式は下限（〜）のみ提示のため priceMax も同額。ベルテント利用プランは3,850円/人〜、ペットは1,100円/1匹",
+  "features":{
+    "pet":{"value":true,"evidenceUrl":"https://camp.souken-firm.com/stayplan/","quote":"ペット：1,100円/1匹"}},
+  "coordsFromOfficialMap":{"lat":35.36314645497312,"lng":140.3510817521829,"url":"https://camp.souken-firm.com/"}}
+]

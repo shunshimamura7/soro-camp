@@ -1,0 +1,49 @@
+[
+ {"napId":"16751","name":"犬の遊び場DOG FIELD","pref":"千葉","muni":"富津市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（inuno-asobiba.com・富津市東大和田145番1で一致）は料金表のページが存在せず、公式自身が「宿泊料金等の内訳は、各予約サイト…に掲げるところによります」「ご予約はすべてなっぷからお願い致します」としている。台風7・8号の被災で休業・復興中の告知もあるが閉業とは断定しない。検索上位の futtsu-bonfirebase.com は富津市豊岡3890の別施設で誤認を回避した",
+  "checkedUrls":["https://www.inuno-asobiba.com/","https://www.inuno-asobiba.com/access","https://www.inuno-asobiba.com/house-rule"],"officialUrl":"https://www.inuno-asobiba.com/"},
+
+ {"napId":"11972","name":"よつば荘バンガローロッジ村","pref":"千葉","muni":"勝浦市","verdict":"宿泊系のため対象外",
+  "reason":"公式はバンガロー・コテージ・山小屋・ロッジ（6人用〜30人用／客室48室）のみでテントサイトの扱いが無く、宿泊料金も「案内・御予約はお電話にて受付」で非公開",
+  "checkedUrls":["https://www.yotsubaso.com/"],"officialUrl":"https://www.yotsubaso.com/"},
+
+ {"napId":"11973","name":"RECAMP 勝浦","pref":"千葉","muni":"勝浦市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式で住所「千葉県勝浦市串浜1830」は一致するが、プラン・サイト欄が「Coming Soon...」で料金の記載が一切無い（HTML全文を検索しても金額なし）",
+  "checkedUrls":["https://www.recamp.co.jp/katsuura"],"officialUrl":"https://www.recamp.co.jp/katsuura"},
+
+ {"napId":"14307","name":"REWILD GREEN FIELD CAMP","pref":"千葉","muni":"勝浦市","verdict":"追加",
+  "reason":"運営会社 Camp for Life の施設公式に住所（勝浦市大楠1537）・料金・設備が明記され、ソロ専用サイトが2,750円〜で1名利用できる",
+  "checkedUrls":["https://www.campforlife.jp/rgf/"],
+  "officialUrl":"https://www.campforlife.jp/rgf/","reservationUrl":"https://www.nap-camp.com/chiba/14307",
+  "address":"千葉県勝浦市大楠1537","priceMin":2750,"priceMax":3850,
+  "priceNote":"公式「サイト利用料／ソロ専用サイト 2,750円〜」（下限のみ提示）。**車で行く場合は別途「入場料など 車両1台につき 1,100円」が必要**（公共交通利用時は不要）なので、ソロ1名は2,750円（公共交通）〜3,850円（車1台）。公式に「※シーズンによって料金が変動します」",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.campforlife.jp/rgf/","quote":"温水シャワー 3つ（15分330円・要予約）"},
+    "shop":{"value":true,"evidenceUrl":"https://www.campforlife.jp/rgf/","quote":"管理棟 受付／販売品・レンタル品／ランドリー（1回330円）"},
+    "pet":{"value":true,"evidenceUrl":"https://www.campforlife.jp/rgf/","quote":"子ども（未就学児）・ペット 無料／あそび …ドッグラン"}},
+  "coordsFromOfficialMap":{"lat":35.1941636,"lng":140.2705661,"url":"https://www.campforlife.jp/rgf/"}},
+
+ {"napId":"14463","name":"BLACK RAMS","pref":"千葉","muni":"勝浦市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式で住所「千葉県勝浦市貝掛355」は一致するが、公式に載っている料金はBBQ（基本料金6,000円＋1名1,000円）とフラ教室のみで**キャンプ宿泊料金が無い**",
+  "checkedUrls":["https://www.blackrams.online/"],"officialUrl":"https://www.blackrams.online/"},
+
+ {"napId":"14777","name":"BAMBOO BASE KATSUURA（旧 Katsuura Natural Space Camp）","pref":"千葉","muni":"勝浦市","verdict":"UNMEASURED",
+  "reason":"門は通る（公式に住所・料金・設備あり、勝浦市杉戸919-1で一致、同一地点が Camp for Life 運営の BAMBOO BASE KATSUURA に改称）が**1日1組完全貸切で1名でも29,700〜33,000円**。貸切高額の方針判断が要る。旧サイト katsuura-naturalspace.com も生きていて旧料金（5名まで30,000円）を載せている。公式 https://www.campforlife.jp/bbk/",
+  "checkedUrls":["https://www.campforlife.jp/bbk/","https://katsuura-naturalspace.com/"],"officialUrl":"https://www.campforlife.jp/bbk/"},
+
+ {"napId":"14785","name":"CAMP GO4SURF","pref":"千葉","muni":"勝浦市","verdict":"UNMEASURED",
+  "reason":"住所（勝浦市松部2072）は公式2サイトで一致し1グループ貸切でテント持込可だが、**公式2サイトで料金が食い違う**（go-4-surf.com は基本料金22,000円／2棟44,000円、camp-go4surf.jimdosite.com は平日55,000円／週末77,000円）。かつ貸切で2万円超。どちらが現行かを確かめるまで載せられない",
+  "checkedUrls":["https://www.go-4-surf.com/camp/","https://camp-go4surf.jimdosite.com/ルール・施設案内・料金/"],"officialUrl":"https://www.go-4-surf.com/camp/"},
+
+ {"napId":"15117","name":"Private Camp KEICA","pref":"千葉","muni":"勝浦市","verdict":"UNMEASURED",
+  "reason":"門は通る（公式に住所「勝浦市宿戸409」と料金表・予約案内あり）が**キャンプサイト単独12,000円〜（4名まで）で、しかもそれが使えるのは平日のみ**。土日祝前日は古民家（40,000円〜）との同時利用が条件でソロ単独利用ができない。solas-no-mori を料金理由で外した前例と同水準のため判断が要る",
+  "checkedUrls":["https://privatecamp-keica.com/"],"officialUrl":"https://privatecamp-keica.com/"},
+
+ {"napId":"15958","name":"ペパーミント イン キャンプ","pref":"千葉","muni":"勝浦市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先がいずれも見つからない（なっぷ・いこーよ・campla・トリップアドバイザー・勝浦キャンプ協会・銀行の情報サイトのみ）",
+  "checkedUrls":["https://www.nap-camp.com/chiba/15958"],"officialUrl":null},
+
+ {"napId":"16292","name":"RVパーク&CAMP 214KATSUURA","pref":"千葉","muni":"勝浦市","verdict":"UNMEASURED",
+  "reason":"料金（1台4名まで3,300円）と住所（勝浦市守谷1516-1）は公式と公式予約先の両方で確認できるが、**公式注意事項に「焚き火や花火禁止」「21時以降は車内でお過ごしください」**とあり、ソロキャンプ場として載せるべきRVパークかどうかの方針判断が要る。公式 https://rvpandcamp214katsuura.jimdosite.com/",
+  "checkedUrls":["https://rvpandcamp214katsuura.jimdosite.com/","https://rvpandcamp214katsuura.jimdosite.com/サービス内容/","https://web.rv-park.jp/spaces/detail/29"],"officialUrl":"https://rvpandcamp214katsuura.jimdosite.com/"}
+]

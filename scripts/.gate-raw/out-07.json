@@ -1,0 +1,75 @@
+[
+ {"napId":"16367","name":"いすみ源氏ぼたるの里","pref":"千葉","muni":"いすみ市","verdict":"追加",
+  "reason":"施設公式（genjibotaru.jp）で住所（いすみ市山田4081-8）・ソロ専用サイト料金・予約先を確認。1名可・宿泊可",
+  "checkedUrls":["https://www.genjibotaru.jp/","https://www.genjibotaru.jp/price/","https://www.genjibotaru.jp/facility/facility01/"],
+  "officialUrl":"https://www.genjibotaru.jp/","reservationUrl":"https://www.nap-camp.com/chiba/16367",
+  "address":"千葉県いすみ市山田4081-8","priceMin":2500,"priceMax":3500,
+  "priceNote":"サイト課金＋人数課金の合算。公式「草原サイトソロ／車1台（バイク） 1名まで テント1張り／2,000円/1サイト(土日祝前は3,000円)＋施設使用料(大人500円/1名)」→ 平日2,500円・土日祝前3,500円",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.genjibotaru.jp/facility/facility01/","quote":"共有設備 : トイレ、流し台、シャワー、洗面を完備"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.genjibotaru.jp/facility/facility01/","quote":"薪使い放題 : 1,000円/グループで薪が使い放題。竹は無料で使い放題です。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.genjibotaru.jp/facility/facility01/","quote":"ペットを同伴する場合は、リードを使用し、他のキャンパーへの配慮を忘れないように"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"16601","name":"テントサウナ露天風呂焚火BBQ外房ホテル＆キャンプ場","pref":"千葉","muni":"いすみ市","verdict":"門落ち(住所を照合できない)",
+  "reason":"候補公式（r128hotel.sakura.ne.jp）は施設名が大きく異なり、全ページに住所・郵便番号・地図が無く「いすみ市小池330」と同一施設だと確認できない。料金（1区画2名迄6,980円）までは出ているので、住所が判明すれば追加候補に戻せる",
+  "checkedUrls":["https://r128hotel.sakura.ne.jp/r128hotel/"],"officialUrl":null},
+
+ {"napId":"16779","name":"Strawhat Camp Field","pref":"千葉","muni":"いすみ市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先がいずれも見つからない（なっぷ・いこーよ・campla・JAFナビ・Instagram のみ）",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16779"],"officialUrl":null},
+
+ {"napId":"11994","name":"花はなの里 オートキャンプ場","pref":"千葉","muni":"富津市","verdict":"追加",
+  "reason":"施設公式で住所（富津市上648）・ソロ料金・予約先（RESERVA）を確認。1名可サイトが複数あり通年宿泊可",
+  "checkedUrls":["https://hanahananosato.com/","https://hanahananosato.com/camp","https://hanahananosato.com/camp/policies","https://hanahananosato.com/camp/rental-sales"],
+  "officialUrl":"https://hanahananosato.com/camp","reservationUrl":"https://reserva.be/hanahananosato",
+  "address":"千葉県富津市上648","priceMin":2200,"priceMax":3850,
+  "priceNote":"公式「ソロキャンプ／車：3,300円(税込)／バイク・自転車・徒歩：2,200円(税込)」「※土曜日及び、連休前日・当日、特別期間 ソロキャンプ＋550円」→ 最安2,200円（徒歩等・平日）、最高3,850円（車・土曜等）。入浴／シャワーは別途330円(税込)/人。支払いは現金のみ",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://hanahananosato.com/camp/policies","quote":"共有設備 … 五右衛門風呂 、温水シャワー"},
+    "shower":{"value":true,"evidenceUrl":"https://hanahananosato.com/camp/policies","quote":"共有設備 … 五右衛門風呂 、温水シャワー／シャワー 330円(税込)/人"},
+    "firewood":{"value":true,"evidenceUrl":"https://hanahananosato.com/camp/policies","quote":"管理棟で薪を販売しています。"},
+    "shop":{"value":true,"evidenceUrl":"https://hanahananosato.com/camp/rental-sales","quote":"販売品／薪／他、販売品あり"},
+    "pet":{"value":true,"evidenceUrl":"https://hanahananosato.com/camp","quote":"ペット同伴も可能です。…※一頭550円(税込)の入場料がかかります"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14718","name":"Yamasobu Campground","pref":"千葉","muni":"富津市","verdict":"UNMEASURED",
+  "reason":"フリーソロサイト（1泊1張・1名まで）4,400円〜と住所「富津市志駒434」は確認できるが、**根拠が施設の予約システム（reserva.be）のページだけで、施設公式サイトは公式自身が案内する wixsite が404で存在しない**。前回も同じ理由で UNMEASURED にしており、予約システムのページを公式予約先として認めるかは方針判断が要る",
+  "checkedUrls":["https://reserva.be/yamasobucamp/about","https://yamasobucamp.wixsite.com/my-site"],"officialUrl":null},
+
+ {"napId":"14775","name":"Foodee's Woodland campsite（田倉キャンプヴィレッジ）","pref":"千葉","muni":"富津市","verdict":"UNMEASURED",
+  "reason":"門は通る（公式 tagura-camp.com に住所「富津市田倉491-2」・料金・予約先あり、人数下限なし）が**貸切のみで平日44,000円／土日祝55,000円**。1名でも同額。貸切高額の方針判断が要る。予約時点でキャンセル料10,000円が発生する点も要注意",
+  "checkedUrls":["https://tagura-camp.com/site/woodland-campsite/","https://tagura-camp.com/yoyaku/"],"officialUrl":"https://tagura-camp.com/site/woodland-campsite/"},
+
+ {"napId":"15738","name":"Foodee's Dog run & BBQ Campsite（田倉キャンプヴィレッジ）","pref":"千葉","muni":"富津市","verdict":"UNMEASURED",
+  "reason":"門は通る（公式に住所「富津市田倉512」・料金・予約先あり）が**貸切のみで平日55,000円／土日祝66,000円**。1名でも同額。貸切高額の方針判断が要る",
+  "checkedUrls":["https://tagura-camp.com/site/bbq-campsite/"],"officialUrl":"https://tagura-camp.com/site/bbq-campsite/"},
+
+ {"napId":"16227","name":"Bonfirebase 富津キャンプビレッジ","pref":"千葉","muni":"富津市","verdict":"追加",
+  "reason":"施設公式で住所（富津市豊岡3890）・フリーサイト料金・自社の予約フォームを確認。ソロでも予約可・通年宿泊可",
+  "checkedUrls":["https://futtsu-bonfirebase.com/","https://futtsu-bonfirebase.com/price.html","https://futtsu-bonfirebase.com/manage.html","https://futtsu-bonfirebase.com/freesite.html"],
+  "officialUrl":"https://futtsu-bonfirebase.com/","reservationUrl":"https://futtsu-bonfirebase.com/reservation_free.html",
+  "address":"千葉県富津市豊岡3890","priceMin":3000,"priceMax":4000,
+  "priceNote":"人数課金＋サイト課金の合算。公式「基本料金(1泊) 大人 1,500円」＋「フリーサイト(1泊) テント小1張り(210×130cmまで) 1,500円」= 3,000円。「※特定日（年末年始・GW・夏休み）大人：2,500円」で4,000円。車1台目は追加なし（2台目以降1,000円）。現地決済は現金のみ",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://futtsu-bonfirebase.com/manage.html","quote":"トイレ・シャワー"},
+    "firewood":{"value":true,"evidenceUrl":"https://futtsu-bonfirebase.com/manage.html","quote":"軽食、オリジナルグッズ、薪などの販売も行っております"},
+    "shop":{"value":true,"evidenceUrl":"https://futtsu-bonfirebase.com/manage.html","quote":"管理棟は受付、売店をご用意しております。"},
+    "pet":{"value":true,"evidenceUrl":"https://futtsu-bonfirebase.com/","quote":"リードをつければペット可。犬も猫もOKです！"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"16545","name":"リバーサイドロッジ","pref":"千葉","muni":"富津市","verdict":"宿泊系のため対象外",
+  "reason":"公式が「1日1組限定、一棟貸切のプライベートグランピング」。設備はコテージ・ドームテント2張り・バレルサウナのみでテント持込区画が無い",
+  "checkedUrls":["https://www.riversidelodgejp.com/","https://www.riversidelodgejp.com/facility"],"officialUrl":"https://www.riversidelodgejp.com/"},
+
+ {"napId":"16574","name":"オートキャンプ HANABUSA","pref":"千葉","muni":"富津市","verdict":"追加",
+  "reason":"運営者自身が掲載しているページ（©2026 オートキャンプ HANABUSA。会社概要・料金・場内マップまで運営者が記載）で住所（富津市竹岡2169-5）とフリーサイト料金を確認。住所一致・宿泊可・人数下限なし。なお wedgehome.co.jp は管理棟を建てた工務店のブログなので根拠にしていない",
+  "checkedUrls":["https://www.big-advance.site/c/128/1618","https://www.big-advance.site/c/128/1618/service","https://www.big-advance.site/c/128/1618/profile"],
+  "officialUrl":"https://www.big-advance.site/c/128/1618","reservationUrl":null,
+  "address":"千葉県富津市竹岡2169-5","priceMin":3000,"priceMax":4000,
+  "priceNote":"サイト課金＋人数課金の合算。公式「フリーサイト 2,000円 （トップシーズン）3,000円」＋「大人１名 1,000円」= 通常3,000円／トップシーズン4,000円。区画サイト利用時は車1台のみで、2台目以降は管理棟向いの駐車場",
+  "features":{
+    "shop":{"value":true,"evidenceUrl":"https://www.big-advance.site/c/128/1618/service","quote":"販売品 レンタル品／着火剤 … 炭 BBQ網 軍手 蚊取り線香"},
+    "pet":{"value":true,"evidenceUrl":"https://www.big-advance.site/c/128/1618/service","quote":"ペットをお連れのキャンパー様／リードでつないでください。"}},
+  "coordsFromOfficialMap":null}
+]

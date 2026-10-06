@@ -1,0 +1,56 @@
+[
+ {"napId":"13795","name":"Brown's Field","pref":"千葉","muni":"いすみ市","verdict":"宿泊系のため対象外",
+  "reason":"公式の Stay は古民家宿「慈慈の邸」とコテージのみでテントサイト・キャンプ料金の記載が一切ない。加えて公式住所は「いすみ市岬町桑田1501-1」で、担当行の「岬町1815-1」とも番地が合わない",
+  "checkedUrls":["https://brownsfield-jp.com/","https://brownsfield-jp.com/stay","https://brownsfield-jp.com/accessmap"],"officialUrl":"https://brownsfield-jp.com/"},
+
+ {"napId":"13854","name":"いすみガーデンリトリート＆トーテムの家","pref":"千葉","muni":"いすみ市","verdict":"宿泊系のため対象外",
+  "reason":"公式は「旅館業営業許可を取得したアースバッグの宿家」で1日1組の施設全体貸切（11,000円/1名〜）。持ち込みテントのキャンプサイトが公式に存在しない",
+  "checkedUrls":["https://hanjoedagaya.wixsite.com/isumigardenretreat"],"officialUrl":"https://hanjoedagaya.wixsite.com/isumigardenretreat"},
+
+ {"napId":"14015","name":"Campus Field Nakadaki","pref":"千葉","muni":"いすみ市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式（住所「いすみ市岬町中滝2080」で一致）は設備紹介のみで**料金表が存在せず**、予約導線はなっぷの予約エンジンへの外部リンクだけ。公式が料金を載せれば再評価の価値がある",
+  "checkedUrls":["http://campus-field-nakadaki.com/","http://campus-field-nakadaki.com/rental/"],"officialUrl":"http://campus-field-nakadaki.com/"},
+
+ {"napId":"14047","name":"プライベートガーデンザウエスト","pref":"千葉","muni":"いすみ市","verdict":"宿泊系のため対象外",
+  "reason":"公式タイトルが「関東のグランピング」で、ドームテント／プレミアムドームテントの朝夕2食付きグランピング専業。持ち込みテントのサイトが無い。住所は公式「いすみ市釈迦谷1631-1」で一致",
+  "checkedUrls":["https://www.privategarden-thewest.com/","https://www.privategarden-thewest.com/rooms/rooms"],"officialUrl":"https://www.privategarden-thewest.com/"},
+
+ {"napId":"14145","name":"だいやもんどへっど","pref":"千葉","muni":"いすみ市","verdict":"門落ち(公式なし)",
+  "reason":"複数の検索経路で確認したが施設公式サイト・いすみ市の自治体公式ページともに存在せず、出てくるのは掲載／予約サイトと Instagram のみ",
+  "checkedUrls":["https://www.instagram.com/camp.diamondhead/"],"officialUrl":null},
+
+ {"napId":"14382","name":"NAT PARK","pref":"千葉","muni":"いすみ市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式（住所「いすみ市小池281」で一致）にソロ用「HERMIT PARK」「TENT PARK」は実在するが、**公式に載る価格は月額サブスク（Economy 5,500円/月、First Class 24,800円/月）のみで1泊料金が無く**、各サイトの予約は全てなっぷの外部プランへのリンク。公式が1泊料金を載せれば再評価の価値がある",
+  "checkedUrls":["https://www.natpark-isumi.com/","https://www.natpark-isumi.com/pricing-plans/list","https://www.natpark-isumi.com/campsite-reserve"],"officialUrl":"https://www.natpark-isumi.com/"},
+
+ {"napId":"15018","name":"NANSO CAMP","pref":"千葉","muni":"いすみ市","verdict":"追加",
+  "reason":"公式に住所（いすみ市引田118）・ソロ1名単位の料金・予約先が揃い、公式が「ソロからファミリーまで」とソロ利用を明記している",
+  "checkedUrls":["https://nansocamp.com/","https://nansocamp.com/facility","https://nansocamp.com/2-6","https://nansocamp.com/2-8"],
+  "officialUrl":"https://nansocamp.com/","reservationUrl":"https://www.nap-camp.com/chiba/15018",
+  "address":"千葉県いすみ市引田118","priceMin":4000,"priceMax":4500,
+  "priceNote":"サイト課金＋人数課金の合算。公式「サイト（テント・キャンピングカー共通）1サイト（平日）￥1,000＋￥3,000/1名／1サイト（土日祝日）￥1,000＋￥3,500/1名」「※価格は全て税込です」→ ソロ1名1泊は平日4,000円・土日祝4,500円。駐車場代の別途記載はなし",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://nansocamp.com/2-6","quote":"当キャンプ場にはつぼ湯の露天風呂「星空の湯」を完備しております。"},
+    "shower":{"value":true,"evidenceUrl":"https://nansocamp.com/","quote":"シャワー（予約制）15分 500円"},
+    "shop":{"value":true,"evidenceUrl":"https://nansocamp.com/2-8","quote":"NANSO CAMPの売店では、オリジナルグッズや、ちょっとしたキャンプアイテムをご用意しております。またカフェとしてもご利用いただけます。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"15065","name":"いすみパドルクラブ","pref":"千葉","muni":"いすみ市","verdict":"追加",
+  "reason":"公式（運営 Wow Action Sports）に「ソロサイトA／B」1名4,000円(税込)の記載があり、住所（いすみ市万木1364）も一致。チェックイン13:00／アウト11:00の宿泊利用",
+  "checkedUrls":["https://wowsports.jp/campbbq/","https://wowsports.jp/access/","https://wowsports.jp/campbbq/campinfo/"],
+  "officialUrl":"https://wowsports.jp/campbbq/","reservationUrl":"https://www.nap-camp.com/chiba/15065",
+  "address":"千葉県いすみ市万木1364","priceMin":4000,"priceMax":4000,
+  "priceNote":"1名単位課金。公式「●ソロサイトA … 1名 ￥4,000(税込) 4m×4m ウッドデッキ 2名様まで利用可能」「●ソロサイトB … 1名 ￥4,000(税込)」。公式アクセスに「無料駐車場有り」で駐車場代は不要",
+  "features":{
+    "pet":{"value":true,"evidenceUrl":"https://wowsports.jp/campbbq/","quote":"幼児無料　ペット同伴可能（無料）です。"},
+    "firewood":{"value":true,"evidenceUrl":"https://wowsports.jp/campbbq/","quote":"ただいま 薪（廃材）使い放題キャンペーン中です"}},
+  "coordsFromOfficialMap":{"lat":35.2987209,"lng":140.3338332,"url":"https://wowsports.jp/access/"}},
+
+ {"napId":"15691","name":"Tiny house isumi こまきち","pref":"千葉","muni":"いすみ市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイトが存在しない。公式と思われる発信は Instagram と Facebook のみで、他は掲載サイトと地域経済新聞の記事。自治体公式ページも見つからない",
+  "checkedUrls":["https://www.instagram.com/komakichi_official/"],"officialUrl":null},
+
+ {"napId":"16295","name":"キクバリィ","pref":"千葉","muni":"いすみ市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイト・自治体公式ページがどちらも見つからない。検索結果は掲載／予約サイトのみ",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16295"],"officialUrl":null}
+]

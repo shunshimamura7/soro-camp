@@ -1,0 +1,1134 @@
+[
+ {
+  "napId": "14525",
+  "name": "遊房CAMP",
+  "pref": "千葉",
+  "muni": "南房総市",
+  "verdict": "追加",
+  "reason": "公式に「Gardenサイト：5,000円 ※施設使用料として1人500円」とサイト＋人数単価制でソロ1名利用可。宿泊可（IN12:00-18:00／OUT11:00）。住所が一致し料金・設備・空室カレンダーも公式にある",
+  "checkedUrls": [
+   "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/"
+  ],
+  "officialUrl": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/",
+  "reservationUrl": null,
+  "address": "千葉県南房総市千倉町白間津1278-1",
+  "priceMin": 5500,
+  "priceMax": 5500,
+  "priceNote": "公式「ご利用料金 Gardenサイト：5,000円 ※施設使用料として1人500円頂いております。※水道代やごみ処理代を含んでおります。」→ ソロ1名1泊 総額5,500円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/",
+    "quote": "場内共有設備：受付（9時～18時）、簡易売店（薪、炭など、酒類無し）、自動販売機、シャワー、レンタルルーム、炊事場、分別ゴミ箱、水洗トイレ"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/",
+    "quote": "簡易売店（薪、炭など、酒類無し）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/",
+    "quote": "簡易売店（薪、炭など、酒類無し）、自動販売機"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.91832237150411,
+   "lng": 139.93843557627295,
+   "url": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/14525",
+  "napName": "遊房"
+ },
+ {
+  "napId": "16435",
+  "name": "せんさんの庭 薬膳・ガーデンキャンプ",
+  "pref": "千葉",
+  "muni": "南房総市",
+  "verdict": "追加",
+  "reason": "公式サイトで住所（犬掛471-2）・サイト別料金を確認。公式が「ソロキャンプに最適」と書いたミディアムサイトがあり、人数下限や性別年齢の制限は無い",
+  "checkedUrls": [
+   "https://inukakeyakuzen.wixsite.com/my-site-9",
+   "https://inukakeyakuzen.wixsite.com/my-site-9/利用料金",
+   "https://inukakeyakuzen.wixsite.com/my-site-9/施設紹介",
+   "https://inukakeyakuzen.wixsite.com/my-site-9/利用上の注意"
+  ],
+  "officialUrl": "https://inukakeyakuzen.wixsite.com/my-site-9",
+  "reservationUrl": null,
+  "address": "千葉県南房総市犬掛471-2",
+  "priceMin": 6000,
+  "priceMax": 8000,
+  "priceNote": "サイト単位課金で人数課金なし。「ミディアム・サイトA（電源付）6000円 … 適度な広さでソロキャンプに最適な空間」「スタンダード・サイトD（電源付）8000円」。車で行く場合は別途「駐車場は1日１台：￥１０００です。」",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://inukakeyakuzen.wixsite.com/my-site-9/施設紹介",
+    "quote": "薪販売 一束800円(税込)"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://inukakeyakuzen.wixsite.com/my-site-9",
+    "quote": "ペット同伴も可能ですので大切なペットと一緒に自然をご堪能いただけます"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16435",
+  "napName": "せんさんの庭　薬膳ガーデンキャンプ"
+ },
+ {
+  "napId": "16449",
+  "name": "アウトランドⅡ",
+  "pref": "千葉",
+  "muni": "南房総市",
+  "verdict": "追加",
+  "reason": "公式 outland2.site で住所一致・ソロ料金区分・予約先を確認。公式が車とバイクでソロ料金を明記している",
+  "checkedUrls": [
+   "https://outland2.site/",
+   "https://outland2.site/facility/",
+   "https://outland2.site/access/"
+  ],
+  "officialUrl": "https://outland2.site/facility/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/16449",
+  "address": "千葉県南房総市富浦町大津字大庭415",
+  "priceMin": 3000,
+  "priceMax": 4000,
+  "priceNote": "「1サイト　4000円/泊 定員：2名まで」「※バイク1台で1名利用の場合　3000円/泊」「例）・ソロ利用でバイクの場合・・・3000円/泊 ・ソロ利用で車の場合・・・・・4000円/泊」。支払いは現地現金",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://outland2.site/facility/",
+    "quote": "＊薪はノコギリ１本で調達することが可能です（販売もあります）"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://outland2.site/facility/",
+    "quote": "ペット同伴 不可"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16449",
+  "napName": "アウトランドⅡ"
+ },
+ {
+  "napId": "11945",
+  "name": "お台場海浜庭園 オートキャンプ場",
+  "pref": "千葉",
+  "muni": "館山市",
+  "verdict": "追加",
+  "reason": "公式 odaibakaihinteien.jp で住所一致、ソロキャンプの料金区分と電話予約を確認。人数下限なし",
+  "checkedUrls": [
+   "http://www.odaibakaihinteien.jp/",
+   "http://www.odaibakaihinteien.jp/kyanpu.html"
+  ],
+  "officialUrl": "http://www.odaibakaihinteien.jp/kyanpu.html",
+  "reservationUrl": null,
+  "address": "千葉県館山市洲崎908-22",
+  "priceMin": 2000,
+  "priceMax": 4000,
+  "priceNote": "「ご料金 入園料、施設使用料を含みます。」「4) ソロキャンプ 【車】4,000 円 1人用テント」「5) ソロキャンプ 【バイク】2,000 円 1人用テント」。予約は電話のみ（0470-29-0139）",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "http://www.odaibakaihinteien.jp/kyanpu.html",
+    "quote": "庭園風呂 [当日要予約] 1人/回 大人 600 円"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.odaibakaihinteien.jp/kyanpu.html",
+    "quote": "シャワー 1人/回 大人 300 円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "http://www.odaibakaihinteien.jp/kyanpu.html",
+    "quote": "販売品 … 薪 1000 円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "http://www.odaibakaihinteien.jp/kyanpu.html",
+    "quote": "販売品 木炭 700 円 着火剤 200 円 薪 1000 円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "http://www.odaibakaihinteien.jp/kyanpu.html",
+    "quote": "ペット（犬）は、必ずリードでつないでください。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/11945",
+  "napName": "お台場海浜庭園"
+ },
+ {
+  "napId": "13606",
+  "name": "館山サザンビレッジ",
+  "pref": "千葉",
+  "muni": "館山市",
+  "verdict": "追加",
+  "reason": "公式 sunnybase.net で住所一致。フリーサイトFは1名単位課金で施設利用料込み、ソロ1名の総額が算出できる",
+  "checkedUrls": [
+   "https://sunnybase.net/sazan/",
+   "https://sunnybase.net/camp/フリーサイトf/",
+   "https://sunnybase.net/access/"
+  ],
+  "officialUrl": "https://sunnybase.net/sazan/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/13606",
+  "address": "千葉県館山市波左間153",
+  "priceMin": 2750,
+  "priceMax": 4400,
+  "priceNote": "フリーサイトF「オフシーズン、ハイシーズン（平日、土曜日、日曜日）大人（中学生含む）１名2,750円」「トップシーズン（連休時）大人（中学生含む）１名3,300円」「繁忙期特別休暇 トップシーズン料金＋サイト料金として１予約につき1,100円」「※施設利用料も上記の金額に含まれています」。車1台は無料",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://sunnybase.net/camp/フリーサイトf/",
+    "quote": "【利用できる施設】… 屋外シャワー・温水シャワー・水洗トイレ（ウォシュレット付き）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://sunnybase.net/camp/フリーサイトf/",
+    "quote": "受付スペース　薪や炭ちょっとした消耗品や調味料など販売しています。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://sunnybase.net/camp/フリーサイトf/",
+    "quote": "受付スペース　薪や炭ちょっとした消耗品や調味料など販売しています。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://sunnybase.net/camp/フリーサイトf/",
+    "quote": "☆ペット大歓迎"
+   },
+   "nearbyOnsen": {
+    "value": "歩いて行ける日帰り温泉あり（※公式の紹介ページに「現在利用不可」の注記があるので訪問前に確認）",
+    "evidenceUrl": "https://sunnybase.net/camp/フリーサイトf/",
+    "quote": "☆近くに歩いていける日帰り温泉もございます。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.97072128582323,
+   "lng": 139.78623757126655,
+   "url": "https://sunnybase.net/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/13606",
+  "napName": "館山サザンビレッジ（旧：館山シーサイドビレッジ）"
+ },
+ {
+  "napId": "13932",
+  "name": "CIMAたてやま体験センター",
+  "pref": "千葉",
+  "muni": "館山市",
+  "verdict": "追加",
+  "reason": "運営「野外計画」公式で住所・1泊料金・個人予約先を確認。個人利用の受付があり人数下限なし。なっぷ側の「旧富房育成牧場」は公式「旧豊房育成牧場」の誤記",
+  "checkedUrls": [
+   "https://www.yagaikeikaku.com/cimatateyama"
+  ],
+  "officialUrl": "https://www.yagaikeikaku.com/cimatateyama",
+  "reservationUrl": "https://www.nap-camp.com/chiba/13932",
+  "address": "千葉県館山市神余 旧豊房育成牧場",
+  "priceMin": 3300,
+  "priceMax": 3300,
+  "priceNote": "「【利用料金】1泊利用 3,300円（税込） Day利用 2,200円（税込） ※ 未就学児の場合は無料です。」＝1名あたりの1泊料金。公式の「個人 利用申し込み」リンク先はなっぷ",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.yagaikeikaku.com/cimatateyama",
+    "quote": "無料サービス □ 温水シャワー（24h）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.yagaikeikaku.com/cimatateyama",
+    "quote": "販売品 □ 薪 □ 木炭 □ 着火剤"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.yagaikeikaku.com/cimatateyama",
+    "quote": "販売品 □ 薪 □ 木炭 □ 着火剤"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.yagaikeikaku.com/cimatateyama",
+    "quote": "ペットは必ずリードをつけてください。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/13932",
+  "napName": "CIMA（シーマ） たてやま体験センター"
+ },
+ {
+  "napId": "14757",
+  "name": "カッパドキアfamily",
+  "pref": "千葉",
+  "muni": "南房総市",
+  "verdict": "追加",
+  "reason": "運営元・館山サザンビレッジの公式サイト内に専用ページがあり、公式アクセスページで住所「南房総市高崎字山の根1010-1」を確認（運営元フッターの館山市住所と混同しないよう別途突合）。区画料金＋施設利用料が公式に明記され1名でも予約できる",
+  "checkedUrls": [
+   "https://sunnybase.net/cappa/",
+   "https://sunnybase.net/access/"
+  ],
+  "officialUrl": "https://sunnybase.net/cappa/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/14757",
+  "address": "千葉県南房総市高崎字山の根1010-1",
+  "priceMin": 7810,
+  "priceMax": 11110,
+  "priceNote": "区画課金＋人数課金の合算。「レギュラーシーズン：7,150円/区画（平日、日曜日）」「トップシーズン：10,450円/区画（連休時）」＋「【施設利用料】大人：660円」→ ソロ1名は7,810円〜11,110円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://sunnybase.net/cappa/",
+    "quote": "【利用できる施設】…・温水シャワー"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://sunnybase.net/cappa/",
+    "quote": "・受付スペース　薪や炭などは販売しております。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://sunnybase.net/cappa/",
+    "quote": "・受付スペース　薪や炭などは販売しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://sunnybase.net/cappa/",
+    "quote": "☆ペット大歓迎"
+   },
+   "nearbyOnsen": {
+    "value": "近くに日帰り温泉あり（施設名・距離の記載なし）",
+    "evidenceUrl": "https://sunnybase.net/cappa/",
+    "quote": "☆近くに日帰り温泉もございます。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.08399644073995,
+   "lng": 139.8472322038082,
+   "url": "https://sunnybase.net/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/14757",
+  "napName": "カッパドキアFAMILY"
+ },
+ {
+  "napId": "14862",
+  "name": "おとキャン広場",
+  "pref": "千葉",
+  "muni": "南房総市",
+  "verdict": "追加",
+  "reason": "施設公式サイトあり。公式アクセスページで住所「南房総市富浦町多田良981-2」が一致し、ソロ1名の料金と公式予約ページを確認",
+  "checkedUrls": [
+   "https://oto-camp.jp/",
+   "https://oto-camp.jp/?page_id=13",
+   "https://oto-camp.jp/?page_id=15",
+   "https://oto-camp.jp/?page_id=16"
+  ],
+  "officialUrl": "https://oto-camp.jp/",
+  "reservationUrl": "https://oto-camp.jp/?page_id=16",
+  "address": "千葉県南房総市富浦町多田良981-2",
+  "priceMin": 2500,
+  "priceMax": 2500,
+  "priceNote": "「ソロ/ファミリー：一区画一泊二日 1人 2,500円」。ペット同伴はプラス500円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://oto-camp.jp/?page_id=15",
+    "quote": "【場内共有設備】…・シャワー"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://oto-camp.jp/",
+    "quote": "薪無料"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://oto-camp.jp/?page_id=15",
+    "quote": "※ペット同伴の場合は、プラス 500円"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.03918753086249,
+   "lng": 139.82990854413472,
+   "url": "https://oto-camp.jp/?page_id=13"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/14862",
+  "napName": "おとキャン広場"
+ },
+ {
+  "napId": "16110",
+  "name": "SOUTH BIRD INN / Chitose Beach Surf Camp",
+  "pref": "千葉",
+  "muni": "南房総市",
+  "verdict": "追加",
+  "reason": "施設公式（南房総市公式観光サイトもHPとして掲載）にキャンプ専用ページがあり、キャンプ場住所「南房総市白子2594〜2596」が一致。通年営業・1泊料金・1名加算が公式に明記",
+  "checkedUrls": [
+   "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+   "https://www.mboso-etoko.jp/mboso_map/detail.php?poi=243"
+  ],
+  "officialUrl": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+  "reservationUrl": null,
+  "address": "千葉県南房総市白子2594〜2596（受付・会計は宿泊施設1階 白子2591-1）",
+  "priceMin": 6000,
+  "priceMax": 8000,
+  "priceNote": "サイト課金＋人数課金の合算。「サイト料金・場所代＋施設利用料 日（泊）平日３０００円 休前日４０００円 特定日（GW・お盆week ５０００円） 1名様＝＋３０００円」「１泊・駐車代含む・１台」→ ソロ1名は平日6,000円、特定日8,000円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+    "quote": "コイン温水シャワーの利用について：３００円／５分 ※利用可能時間13:00~21:00"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+    "quote": "薪 広葉樹 １束(5kg) = １０００円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+    "quote": "販売品：…薪 広葉樹 １束(5kg) = １０００円 木炭（ｋｇ）3kg = ９００円 着火剤 ２５０円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+    "quote": "ペット同伴（ワンコ） １頭・７００円"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16110",
+  "napName": "SOUTH BIRD INN-LK Boyz, Chitose Beach Surf Camp"
+ },
+ {
+  "napId": "16186",
+  "name": "C.C.C. CAMPSITE",
+  "pref": "千葉",
+  "muni": "南房総市",
+  "verdict": "追加",
+  "reason": "施設公式サイトあり。公式アクセスページの住所「千葉県南房総市平久里中340」が一致。テントサイトの1名1泊料金と公式の予約方法（LINE・電話）を確認",
+  "checkedUrls": [
+   "https://ccc-campsite.com/",
+   "https://ccc-campsite.com/access/",
+   "https://ccc-campsite.com/guide/",
+   "https://ccc-campsite.com/reserv/"
+  ],
+  "officialUrl": "https://ccc-campsite.com/",
+  "reservationUrl": "https://ccc-campsite.com/reserv/",
+  "address": "千葉県南房総市平久里中340",
+  "priceMin": 2000,
+  "priceMax": 4000,
+  "priceNote": "1名単位課金。「テントサイト-A 大人（12歳以上）：1名/1泊 ¥2,000」「テントサイト-B 大人（12歳以上）：1名/1泊 ¥3,000」「※ 土、日、祝、祝前日、＋1000円となります」",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://ccc-campsite.com/guide/",
+    "quote": "シャワー ※タオルご用意あります 利用料金： ¥500"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://ccc-campsite.com/guide/",
+    "quote": "薪 ： ¥500"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://ccc-campsite.com/guide/",
+    "quote": "お酒類：¥500 ジュース類：¥300 薪：¥500 炭（1kg）：¥1,000 ガスボンベ：¥500 ※その他、箸やお皿、蚊取り線香など100円よりご用意あります"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://ccc-campsite.com/guide/",
+    "quote": "※リードやゲージを持たずにペットを同伴させないで下さい。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.1025902,
+   "lng": 139.9195316,
+   "url": "https://ccc-campsite.com/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/16186",
+  "napName": "c.c.c. camp site"
+ },
+ {
+  "napId": "16841",
+  "name": "水岡BASE Grandma",
+  "pref": "千葉",
+  "muni": "館山市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（館山市水岡844）・ソロ可サイト・料金を確認。公式料金ページに旧表と「改訂しました！」のサイト課金表が併記されており、改訂後の表を採用した",
+  "checkedUrls": [
+   "https://mizuoka-base-grandma.studio.site/",
+   "https://mizuoka-base-grandma.studio.site/price",
+   "https://mizuoka-base-grandma.studio.site/site-10"
+  ],
+  "officialUrl": "https://mizuoka-base-grandma.studio.site/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/16841",
+  "address": "千葉県館山市水岡844",
+  "priceMin": 2000,
+  "priceMax": 2500,
+  "priceNote": "サイト単位課金。公式「料金表 改訂しました！」の表から「Site10〜11 1人まで 2000円 / 1人追加毎+1000円 最大2人」「土日祝 サイト利用料金 +500円」→ ソロ1名2,000円（土日祝2,500円）。**同じページに旧料金表（人数課金・キャンペーン）も残っているので訪問前に確認**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://mizuoka-base-grandma.studio.site/price",
+    "quote": "シャワールーム・薪使い放題は料金に含まれます。ご自由にお使い下さい。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://mizuoka-base-grandma.studio.site/price",
+    "quote": "シャワールーム・薪使い放題は料金に含まれます。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://mizuoka-base-grandma.studio.site/price",
+    "quote": "ペット（犬）同伴：2頭まで無料 / 以降1頭追加毎 +500円 / 日"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16841",
+  "napName": "mizuokabase～Grandma～"
+ },
+ {
+  "napId": "11948",
+  "name": "ホウリーウッズ久留里キャンプ村",
+  "pref": "千葉",
+  "muni": "君津市",
+  "verdict": "追加",
+  "reason": "台帳の officialUrl（holywoodscamp.jimdo.com）は死んでいるが、現公式は holywoodscamp.jimdofree.com。君津市公式でも住所と宿泊可を確認し、公式にソロ料金の記載がある",
+  "checkedUrls": [
+   "https://www.city.kimitsu.lg.jp/site/kanko/2154.html",
+   "https://holywoodscamp.jimdofree.com/",
+   "https://holywoodscamp.jimdofree.com/看板犬/テントサイト/",
+   "https://holywoodscamp.jimdofree.com/場内施設/炊事場など/",
+   "https://holywoodscamp.jimdofree.com/周辺案内/お風呂/"
+  ],
+  "officialUrl": "https://holywoodscamp.jimdofree.com/",
+  "reservationUrl": "https://holywoodscamp.jimdofree.com/%E3%81%94%E4%BA%88%E7%B4%84-1/%E4%BA%88%E7%B4%84%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0/",
+  "address": "千葉県君津市芋窪282",
+  "priceMin": 4000,
+  "priceMax": 5500,
+  "priceNote": "公式の本文に「(4)ソロキャンプの場合 １人１サイトとなります」「ハイシーズンにおけるソロ料金は5,500円」。通常営業4,000円／オータム・サマー5,000円は**料金表が画像で、画像から読み取った値**。訪問前に公式で確認すること",
+  "features": {
+   "bath": {
+    "value": false,
+    "evidenceUrl": "https://holywoodscamp.jimdofree.com/%E5%91%A8%E8%BE%BA%E6%A1%88%E5%86%85/%E3%81%8A%E9%A2%A8%E5%91%82/",
+    "quote": "キャンプ場にはお風呂はございませんが、シャワーはございます"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://holywoodscamp.jimdofree.com/%E5%A0%B4%E5%86%85%E6%96%BD%E8%A8%AD/%E7%82%8A%E4%BA%8B%E5%A0%B4%E3%81%AA%E3%81%A9/",
+    "quote": "＜シャワー＞ 男女1つずつございます。3分200円です。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://holywoodscamp.jimdofree.com/%E7%9C%8B%E6%9D%BF%E7%8A%AC/%E5%A3%B2%E5%BA%97-%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%82%AB%E3%83%BC/",
+    "quote": "薪（広葉樹 主にコナラ）￥1100"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://holywoodscamp.jimdofree.com/%E7%9C%8B%E6%9D%BF%E7%8A%AC/%E5%A3%B2%E5%BA%97-%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%82%AB%E3%83%BC/",
+    "quote": "売店　キッチンカー（薪・木炭・CB缶・飲料等を販売）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.city.kimitsu.lg.jp/site/kanko/2154.html",
+    "quote": "ペット同伴　2m以内のリードのみ可"
+   },
+   "nearbyOnsen": {
+    "value": "大江戸温泉物語 君津の森（車で7分）／君津の湯（車で30分）",
+    "evidenceUrl": "https://holywoodscamp.jimdofree.com/%E5%91%A8%E8%BE%BA%E6%A1%88%E5%86%85/%E3%81%8A%E9%A2%A8%E5%91%82/",
+    "quote": "大江戸温泉物語　君津の森 車で７分"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.281847,
+   "lng": 140.057121,
+   "url": "https://holywoodscamp.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/11948",
+  "napName": "ホウリー・ウッズ久留里キャンプ村"
+ },
+ {
+  "napId": "14849",
+  "name": "PGFキャンプ",
+  "pref": "千葉",
+  "muni": "君津市",
+  "verdict": "追加",
+  "reason": "施設公式に住所（君津市市宿256）・1名単位の料金・公式予約先があり、ソロ1名で予約できる",
+  "checkedUrls": [
+   "https://camp.pgf.land/",
+   "https://camp.pgf.land/?page_id=300",
+   "https://camp.pgf.land/?page_id=1489"
+  ],
+  "officialUrl": "https://camp.pgf.land/",
+  "reservationUrl": "https://select-type.com/rsv/?id=DScaZSb1t2k&c_id=303342",
+  "address": "千葉県君津市市宿256",
+  "priceMin": 6600,
+  "priceMax": 6600,
+  "priceNote": "1名単位課金。公式「竹と星のリバーサイド」★利用料金「大人1人：6,600円(税込)」。他サイト（川の上・崖の上）は7,700円〜と書かれるが1名単価の明示がないため下限のみ採用",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://camp.pgf.land/?page_id=1489",
+    "quote": "シャワー　天然湧水の滝"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://camp.pgf.land/?page_id=1489",
+    "quote": "焚き火　よく燃えて長持ちな、こだわりの薪をご用意しているよ♪"
+   },
+   "nearbyOnsen": {
+    "value": "小糸川温泉（徒歩1分）",
+    "evidenceUrl": "https://camp.pgf.land/?page_id=1489",
+    "quote": "温泉　徒歩1分：小糸川温泉"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/14849",
+  "napName": "PGFキャンプ"
+ },
+ {
+  "napId": "14281",
+  "name": "キャンプマナビス",
+  "pref": "千葉",
+  "muni": "館山市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（館山市布良886）・ソロ割料金・設備・公式予約先をすべて確認。1〜3名の少人数利用が明記されている",
+  "checkedUrls": [
+   "https://campmanavis.com/",
+   "https://campmanavis.com/facility/forest",
+   "https://campmanavis.com/facility/centerhouse",
+   "https://campmanavis.com/sale",
+   "https://campmanavis.com/other"
+  ],
+  "officialUrl": "https://campmanavis.com/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/14281",
+  "address": "千葉県館山市布良886",
+  "priceMin": 5500,
+  "priceMax": 14300,
+  "priceNote": "サイト単位課金。森エリア芝生・Mサイト「レギュラーシーズン 7,000円 税込(7,700円)／ソロ/ペア割 5,000円 税込(5,500円)」「※レギュラーシーズンの下段価格は2名までのソロ割・ペア割価格になります」。**ソロ割はレギュラーシーズンのみ**で、トップシーズン（GW・お盆）は13,000円 税込14,300円",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://campmanavis.com/facility/centerhouse",
+    "quote": "センターハウス３階には、太平洋を一望できる源泉かけ流しの温泉があります。"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://campmanavis.com/facility/ocean",
+    "quote": "【シーサイドハウス】炊事場/トイレ/有料シャワールーム(200円/5分)/電子レンジ"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://campmanavis.com/sale",
+    "quote": "薪/スギ 746円(税込820円)／薪/広葉樹(特大) 1,073円(税込1,180円)"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://campmanavis.com/facility/centerhouse",
+    "quote": "併設するショップでは、食料品、キャンプ用品の販売、キャンプ用品のレンタルを行なっております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://campmanavis.com/other",
+    "quote": "ペットは1サイトにつき3匹までとさせて頂きます。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.9155978,
+   "lng": 139.8278351,
+   "url": "https://campmanavis.com/access"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/14281",
+  "napName": "キャンプマナビス"
+ },
+ {
+  "napId": "14483",
+  "name": "CAMPGROUND BREEZE TATEYAMA",
+  "pref": "千葉",
+  "muni": "館山市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（館山市那古1672-6）と設備を確認。公式が予約先として指定している 489ban で持ち込みサイトの1名様料金と定員1〜6名を確認できた",
+  "checkedUrls": [
+   "https://breeze-camp.com/",
+   "https://breeze-camp.com/facility/",
+   "https://reserve.489ban.net/client/breeze-camp/0/plan"
+  ],
+  "officialUrl": "https://breeze-camp.com/",
+  "reservationUrl": "https://reserve.489ban.net/client/breeze-camp/0/plan",
+  "address": "千葉県館山市那古1672-6",
+  "priceMin": 5775,
+  "priceMax": 5775,
+  "priceNote": "公式予約先の「【GREEN SITE 持込みプラン】リーズナブルな芝区画サイト／電源付き」に「1名様料金（1名様1サイト利用時）5,775円～」「定員 1～6名様」。下限のみ公表のため priceMax も同値。別途「月火金のみ1日2サイト限定｜平日半額特別プラン」は1名様3,960円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://breeze-camp.com/facility/",
+    "quote": "空調設備が完備された清潔なシャワー室にはドライヤー、大型の鏡、椅子、シャンプー、ボディーソープが常備されています。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://breeze-camp.com/",
+    "quote": "※売店販売品：薪（広葉樹、針葉樹MIX）詰め放題1袋／1,000円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://breeze-camp.com/facility/",
+    "quote": "キャンプ場の中央にある管理棟ではキャンプやBBQに必要な備品を販売している売店も併設しており"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://breeze-camp.com/",
+    "quote": "ドッグサイト／四方が木柵や網で囲われており、愛犬がノーリードでキャンプが楽しめるサイト。"
+   },
+   "nearbyOnsen": {
+    "value": "南総城山温泉 里見の湯（車で10分）",
+    "evidenceUrl": "https://breeze-camp.com/",
+    "quote": "南総城山温泉里見の湯／BREEZEから車で10分のところにある日帰り温泉施設。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.0211825,
+   "lng": 139.854991,
+   "url": "https://breeze-camp.com/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/14483",
+  "napName": "CAMPGROUND BREEZE TATEYAMA（旧：BREEZE FamilyCamp）"
+ },
+ {
+  "napId": "16362",
+  "name": "Buena Vista Beach Club",
+  "pref": "千葉",
+  "muni": "館山市",
+  "verdict": "追加",
+  "reason": "施設公式に住所（館山市見物12-1）と「ソロキャンプ（フリーサイト）」の料金が明記され、公式にソロ1名プランが用意されている",
+  "checkedUrls": [
+   "https://www.buenavista-beachclub.com/"
+  ],
+  "officialUrl": "https://www.buenavista-beachclub.com/",
+  "reservationUrl": null,
+  "address": "千葉県館山市見物12-1",
+  "priceMin": 3300,
+  "priceMax": 6500,
+  "priceNote": "公式「ソロキャンプ（フリーサイト）For Solo Camper (S)／ソロキャンプ（お一人様）のプランです。…料金: 平日 3300 土日、祭日前 5500 ハイシーズン 6500」。公式サイト内の予約カレンダーへのリンクは404で、受付は公式の問い合わせフォームと電話（0470-29-2835）",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.buenavista-beachclub.com/",
+    "quote": "■サニタリー棟 ・炊事場(給湯器有り) ・シャワー ・水洗トイレ (ウォシュレット)"
+   },
+   "nearbyOnsen": {
+    "value": "満開のおもてなし 花しぶき（車で約5分）／南総温泉 里見の湯（車で約16分）",
+    "evidenceUrl": "https://www.buenavista-beachclub.com/",
+    "quote": "・温泉施設　満開のおもてなし 花しぶき（お車で約5分）／南総温泉　里見の湯（お車で約16分）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16362",
+  "napName": "ブエナビスタビーチクラブ"
+ },
+ {
+  "napId": "14307",
+  "name": "REWILD GREEN FIELD CAMP",
+  "pref": "千葉",
+  "muni": "勝浦市",
+  "verdict": "追加",
+  "reason": "運営会社 Camp for Life の施設公式に住所（勝浦市大楠1537）・料金・設備が明記され、ソロ専用サイトが2,750円〜で1名利用できる",
+  "checkedUrls": [
+   "https://www.campforlife.jp/rgf/"
+  ],
+  "officialUrl": "https://www.campforlife.jp/rgf/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/14307",
+  "address": "千葉県勝浦市大楠1537",
+  "priceMin": 2750,
+  "priceMax": 3850,
+  "priceNote": "公式「サイト利用料／ソロ専用サイト 2,750円〜」（下限のみ提示）。**車で行く場合は別途「入場料など 車両1台につき 1,100円」が必要**（公共交通利用時は不要）なので、ソロ1名は2,750円（公共交通）〜3,850円（車1台）。公式に「※シーズンによって料金が変動します」",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.campforlife.jp/rgf/",
+    "quote": "温水シャワー 3つ（15分330円・要予約）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.campforlife.jp/rgf/",
+    "quote": "管理棟 受付／販売品・レンタル品／ランドリー（1回330円）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.campforlife.jp/rgf/",
+    "quote": "子ども（未就学児）・ペット 無料／あそび …ドッグラン"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.1941636,
+   "lng": 140.2705661,
+   "url": "https://www.campforlife.jp/rgf/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/14307",
+  "napName": "REWILD GREEN FIELD CAMP（リワイルド グリーン フィールド キャンプ）"
+ },
+ {
+  "napId": "16367",
+  "name": "いすみ源氏ぼたるの里",
+  "pref": "千葉",
+  "muni": "いすみ市",
+  "verdict": "追加",
+  "reason": "施設公式（genjibotaru.jp）で住所（いすみ市山田4081-8）・ソロ専用サイト料金・予約先を確認。1名可・宿泊可",
+  "checkedUrls": [
+   "https://www.genjibotaru.jp/",
+   "https://www.genjibotaru.jp/price/",
+   "https://www.genjibotaru.jp/facility/facility01/"
+  ],
+  "officialUrl": "https://www.genjibotaru.jp/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/16367",
+  "address": "千葉県いすみ市山田4081-8",
+  "priceMin": 2500,
+  "priceMax": 3500,
+  "priceNote": "サイト課金＋人数課金の合算。公式「草原サイトソロ／車1台（バイク） 1名まで テント1張り／2,000円/1サイト(土日祝前は3,000円)＋施設使用料(大人500円/1名)」→ 平日2,500円・土日祝前3,500円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.genjibotaru.jp/facility/facility01/",
+    "quote": "共有設備 : トイレ、流し台、シャワー、洗面を完備"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.genjibotaru.jp/facility/facility01/",
+    "quote": "薪使い放題 : 1,000円/グループで薪が使い放題。竹は無料で使い放題です。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.genjibotaru.jp/facility/facility01/",
+    "quote": "ペットを同伴する場合は、リードを使用し、他のキャンパーへの配慮を忘れないように"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16367",
+  "napName": "Bamboo Camp Site 『いすみ源氏ぼたるの里』"
+ },
+ {
+  "napId": "11994",
+  "name": "花はなの里 オートキャンプ場",
+  "pref": "千葉",
+  "muni": "富津市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（富津市上648）・ソロ料金・予約先（RESERVA）を確認。1名可サイトが複数あり通年宿泊可",
+  "checkedUrls": [
+   "https://hanahananosato.com/",
+   "https://hanahananosato.com/camp",
+   "https://hanahananosato.com/camp/policies",
+   "https://hanahananosato.com/camp/rental-sales"
+  ],
+  "officialUrl": "https://hanahananosato.com/camp",
+  "reservationUrl": "https://reserva.be/hanahananosato",
+  "address": "千葉県富津市上648",
+  "priceMin": 2200,
+  "priceMax": 3850,
+  "priceNote": "公式「ソロキャンプ／車：3,300円(税込)／バイク・自転車・徒歩：2,200円(税込)」「※土曜日及び、連休前日・当日、特別期間 ソロキャンプ＋550円」→ 最安2,200円（徒歩等・平日）、最高3,850円（車・土曜等）。入浴／シャワーは別途330円(税込)/人。支払いは現金のみ",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://hanahananosato.com/camp/policies",
+    "quote": "共有設備 … 五右衛門風呂 、温水シャワー"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://hanahananosato.com/camp/policies",
+    "quote": "共有設備 … 五右衛門風呂 、温水シャワー／シャワー 330円(税込)/人"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://hanahananosato.com/camp/policies",
+    "quote": "管理棟で薪を販売しています。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://hanahananosato.com/camp/rental-sales",
+    "quote": "販売品／薪／他、販売品あり"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://hanahananosato.com/camp",
+    "quote": "ペット同伴も可能です。…※一頭550円(税込)の入場料がかかります"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/11994",
+  "napName": "花はなの里"
+ },
+ {
+  "napId": "16227",
+  "name": "Bonfirebase 富津キャンプビレッジ",
+  "pref": "千葉",
+  "muni": "富津市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（富津市豊岡3890）・フリーサイト料金・自社の予約フォームを確認。ソロでも予約可・通年宿泊可",
+  "checkedUrls": [
+   "https://futtsu-bonfirebase.com/",
+   "https://futtsu-bonfirebase.com/price.html",
+   "https://futtsu-bonfirebase.com/manage.html",
+   "https://futtsu-bonfirebase.com/freesite.html"
+  ],
+  "officialUrl": "https://futtsu-bonfirebase.com/",
+  "reservationUrl": "https://futtsu-bonfirebase.com/reservation_free.html",
+  "address": "千葉県富津市豊岡3890",
+  "priceMin": 3000,
+  "priceMax": 4000,
+  "priceNote": "人数課金＋サイト課金の合算。公式「基本料金(1泊) 大人 1,500円」＋「フリーサイト(1泊) テント小1張り(210×130cmまで) 1,500円」= 3,000円。「※特定日（年末年始・GW・夏休み）大人：2,500円」で4,000円。車1台目は追加なし（2台目以降1,000円）。現地決済は現金のみ",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://futtsu-bonfirebase.com/manage.html",
+    "quote": "トイレ・シャワー"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://futtsu-bonfirebase.com/manage.html",
+    "quote": "軽食、オリジナルグッズ、薪などの販売も行っております"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://futtsu-bonfirebase.com/manage.html",
+    "quote": "管理棟は受付、売店をご用意しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://futtsu-bonfirebase.com/",
+    "quote": "リードをつければペット可。犬も猫もOKです！"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16227",
+  "napName": "bonfirebase富津キャンプビレッジ"
+ },
+ {
+  "napId": "16574",
+  "name": "オートキャンプ HANABUSA",
+  "pref": "千葉",
+  "muni": "富津市",
+  "verdict": "追加",
+  "reason": "運営者自身が掲載しているページ（©2026 オートキャンプ HANABUSA。会社概要・料金・場内マップまで運営者が記載）で住所（富津市竹岡2169-5）とフリーサイト料金を確認。住所一致・宿泊可・人数下限なし。なお wedgehome.co.jp は管理棟を建てた工務店のブログなので根拠にしていない",
+  "checkedUrls": [
+   "https://www.big-advance.site/c/128/1618",
+   "https://www.big-advance.site/c/128/1618/service",
+   "https://www.big-advance.site/c/128/1618/profile"
+  ],
+  "officialUrl": "https://www.big-advance.site/c/128/1618",
+  "reservationUrl": null,
+  "address": "千葉県富津市竹岡2169-5",
+  "priceMin": 3000,
+  "priceMax": 4000,
+  "priceNote": "サイト課金＋人数課金の合算。公式「フリーサイト 2,000円 （トップシーズン）3,000円」＋「大人１名 1,000円」= 通常3,000円／トップシーズン4,000円。区画サイト利用時は車1台のみで、2台目以降は管理棟向いの駐車場",
+  "features": {
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.big-advance.site/c/128/1618/service",
+    "quote": "販売品 レンタル品／着火剤 … 炭 BBQ網 軍手 蚊取り線香"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.big-advance.site/c/128/1618/service",
+    "quote": "ペットをお連れのキャンパー様／リードでつないでください。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16574",
+  "napName": "HANABUSACAMP"
+ },
+ {
+  "napId": "15018",
+  "name": "NANSO CAMP",
+  "pref": "千葉",
+  "muni": "いすみ市",
+  "verdict": "追加",
+  "reason": "公式に住所（いすみ市引田118）・ソロ1名単位の料金・予約先が揃い、公式が「ソロからファミリーまで」とソロ利用を明記している",
+  "checkedUrls": [
+   "https://nansocamp.com/",
+   "https://nansocamp.com/facility",
+   "https://nansocamp.com/2-6",
+   "https://nansocamp.com/2-8"
+  ],
+  "officialUrl": "https://nansocamp.com/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/15018",
+  "address": "千葉県いすみ市引田118",
+  "priceMin": 4000,
+  "priceMax": 4500,
+  "priceNote": "サイト課金＋人数課金の合算。公式「サイト（テント・キャンピングカー共通）1サイト（平日）￥1,000＋￥3,000/1名／1サイト（土日祝日）￥1,000＋￥3,500/1名」「※価格は全て税込です」→ ソロ1名1泊は平日4,000円・土日祝4,500円。駐車場代の別途記載はなし",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://nansocamp.com/2-6",
+    "quote": "当キャンプ場にはつぼ湯の露天風呂「星空の湯」を完備しております。"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://nansocamp.com/",
+    "quote": "シャワー（予約制）15分 500円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://nansocamp.com/2-8",
+    "quote": "NANSO CAMPの売店では、オリジナルグッズや、ちょっとしたキャンプアイテムをご用意しております。またカフェとしてもご利用いただけます。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/15018",
+  "napName": "NANSO CAMP"
+ },
+ {
+  "napId": "15065",
+  "name": "いすみパドルクラブ",
+  "pref": "千葉",
+  "muni": "いすみ市",
+  "verdict": "追加",
+  "reason": "公式（運営 Wow Action Sports）に「ソロサイトA／B」1名4,000円(税込)の記載があり、住所（いすみ市万木1364）も一致。チェックイン13:00／アウト11:00の宿泊利用",
+  "checkedUrls": [
+   "https://wowsports.jp/campbbq/",
+   "https://wowsports.jp/access/",
+   "https://wowsports.jp/campbbq/campinfo/"
+  ],
+  "officialUrl": "https://wowsports.jp/campbbq/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/15065",
+  "address": "千葉県いすみ市万木1364",
+  "priceMin": 4000,
+  "priceMax": 4000,
+  "priceNote": "1名単位課金。公式「●ソロサイトA … 1名 ￥4,000(税込) 4m×4m ウッドデッキ 2名様まで利用可能」「●ソロサイトB … 1名 ￥4,000(税込)」。公式アクセスに「無料駐車場有り」で駐車場代は不要",
+  "features": {
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://wowsports.jp/campbbq/",
+    "quote": "幼児無料　ペット同伴可能（無料）です。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://wowsports.jp/campbbq/",
+    "quote": "ただいま 薪（廃材）使い放題キャンペーン中です"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.2987209,
+   "lng": 140.3338332,
+   "url": "https://wowsports.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/15065",
+  "napName": "いすみパドルクラブ"
+ },
+ {
+  "napId": "11934",
+  "name": "九十九里オートキャンプ場 太陽と海",
+  "pref": "千葉",
+  "muni": "旭市",
+  "verdict": "追加",
+  "reason": "施設公式（tandu.jp）を特定し住所（旭市東足洗2746-10）が一致。オートサイトは1名でも予約でき（制限は上限のみで下限やファミリー限定の記載なし）、公式に料金表と予約方法がある。前回「施設公式を未特定」で UNMEASURED にしていた件が解消",
+  "checkedUrls": [
+   "https://tandu.jp/",
+   "https://tandu.jp/price",
+   "https://tandu.jp/facility",
+   "https://tandu.jp/faq",
+   "https://tandu.jp/reservation"
+  ],
+  "officialUrl": "https://tandu.jp/",
+  "reservationUrl": "https://tandu.jp/reservation",
+  "address": "千葉県旭市東足洗2746-10",
+  "priceMin": 4200,
+  "priceMax": 10800,
+  "priceNote": "公式料金表は「基本料金2名（施設使用料込）」制で**1名でも同額**。電源なしRサイト70㎡レギュラー4,200円が最安、フェンスサイト トップシーズン10,800円が最高。「区画内に収容可否に関わらず1区画＝乗用車1台です」で駐車代込み。露天風呂は別途 大人500円、コインシャワーは200円/10分",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://tandu.jp/facility",
+    "quote": "露天風呂（ジャクジーバス） 男2ケ、女2ケ … 基本料金 大人500円"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://tandu.jp/facility",
+    "quote": "温水シャワー/男シャワー5ケ、女シャワー5ケ … コインシャワー 200円/10分 4台"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://tandu.jp/facility",
+    "quote": "売店 8時30分～17時 調味料類、燃料類、飲料水、氷、日用雑貨／他"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://tandu.jp/price",
+    "quote": "ペットOK ※頻繁に吠える犬はご遠慮ください。リード厳守。1サイト3匹まで（犬1匹400円）"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.69972676537087,
+   "lng": 140.68608235342649,
+   "url": "https://tandu.jp/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/11934",
+  "napName": "九十九里オートキャンプ場　太陽と海"
+ },
+ {
+  "napId": "14956",
+  "name": "Campsite TORAMI",
+  "pref": "千葉",
+  "muni": "一宮町",
+  "verdict": "追加",
+  "reason": "公式（campsite-torami.com）で住所（長生郡一宮町東浪見1611）が一致。「ソロサイト 1名限定 2,000円〜」とソロ専用サイトがあり、宿泊可・公式に料金一覧と予約先の案内がある",
+  "checkedUrls": [
+   "https://campsite-torami.com/index.html",
+   "https://campsite-torami.com/campsite.html",
+   "https://campsite-torami.com/access.html"
+  ],
+  "officialUrl": "https://campsite-torami.com/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/14956",
+  "address": "千葉県長生郡一宮町東浪見1611",
+  "priceMin": 2200,
+  "priceMax": 2200,
+  "priceNote": "サイト課金＋施設利用料の合算。公式「ソロサイト 木々に囲まれたソロテント1張り分 1名限定 … 2,000円〜」＋「このほかに 施設利用料としてお1人さま200円（税込）を頂戴します」（全プラン共通）＝計2,200円。公式は下限（〜）のみ提示のため priceMax も同額。温水シャワーはコイン式で別途7分300円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://campsite-torami.com/campsite.html",
+    "quote": "温水シャワー コイン式（7分300円）。更衣スペース・棚・鏡つき。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://campsite-torami.com/index.html",
+    "quote": "RENTAL & SHOP レンタル・販売 テントからランタンまで。薪・炭・消耗品の販売も。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://campsite-torami.com/index.html",
+    "quote": "RENTAL & SHOP レンタル・販売 テントからランタンまで。薪・炭・消耗品の販売も。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://campsite-torami.com/campsite.html",
+    "quote": "ソロサイト … 1名限定 AC電源なし 車両乗入NG ペットOK 2,000円〜"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/14956",
+  "napName": "CampsiteTORAMI"
+ },
+ {
+  "napId": "15019",
+  "name": "S-eagle Camp",
+  "pref": "千葉",
+  "muni": "一宮町",
+  "verdict": "追加",
+  "reason": "公式（camp.souken-firm.com）で住所（長生郡一宮町一宮字鳥内8062）が一致。「デイキャンプから宿泊キャンプまで、テントをお持ち込みのうえ」で宿泊可、公式に人数課金の料金と予約先の案内がある。人数下限・ファミリー限定の記載なし",
+  "checkedUrls": [
+   "https://camp.souken-firm.com/",
+   "https://camp.souken-firm.com/stayplan/"
+  ],
+  "officialUrl": "https://camp.souken-firm.com/",
+  "reservationUrl": "https://www.nap-camp.com/chiba/15019",
+  "address": "千葉県長生郡一宮町一宮字鳥内8062",
+  "priceMin": 3300,
+  "priceMax": 3300,
+  "priceNote": "1名単位課金。公式 StayCamp プラン「テント持参プラン：3,300円/人～」。公式は下限（〜）のみ提示のため priceMax も同額。ベルテント利用プランは3,850円/人〜、ペットは1,100円/1匹",
+  "features": {
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://camp.souken-firm.com/stayplan/",
+    "quote": "ペット：1,100円/1匹"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.36314645497312,
+   "lng": 140.3510817521829,
+   "url": "https://camp.souken-firm.com/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/15019",
+  "napName": "エスイーグルキャンプ"
+ }
+]
