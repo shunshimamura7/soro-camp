@@ -10635,5 +10635,328 @@
     "source": [
       "静岡市公式 梅ケ島キャンプ場 https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html"
     ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "sugari-camp",
+    "slug": "sugari-camp",
+    "name": "キャンプすがり",
+    "prefecture": "静岡",
+    "area": "浜松・天竜",
+    "address": "静岡県浜松市天竜区横川741-2",
+    "priceMin": 1500,
+    "priceMax": 2500,
+    "priceNote": "サイト単位課金（ソロ専用プラン）。通常期1,500円/泊〜、ハイシーズン2,500円/泊〜。公式のソロキャンプ専用ページに単独利用の料金として掲載",
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "直火が可能なサイトがあると公式に記載",
+      "reservation": "要",
+      "reservationNote": "24時間オンライン予約。4ヶ月前から受付"
+    },
+    "season": "要確認（公式に営業期間の記載なし。予約カレンダーで確認）",
+    "soloComment": "天竜の山あいにあるソロ専用プランを持つキャンプ場。直火が可能なサイトがあり、22時以降は静粛のルール。チェックイン・アウトとも12時。",
+    "officialUrl": "https://sugari.camp/lp/solo-camp.php",
+    "tel": null,
+    "cautions": [
+      "**22時以降は静粛**のルールが公式に明記されている",
+      "予約は24時間オンライン受付（4ヶ月前から）。公式ページから予約システムへ遷移する",
+      "**座標が未取得。**地図にピンを出していない。公式の案内図で場所を確認すること"
+    ],
+    "source": [
+      "https://sugari.camp/lp/solo-camp.php"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "fuji-anmo-camp",
+    "slug": "fuji-anmo-camp",
+    "name": "富士山あんもの森Camp Field",
+    "prefecture": "静岡",
+    "area": "富士宮",
+    "address": "静岡県富士宮市山宮3690",
+    "priceMin": 2500,
+    "priceMax": 3000,
+    "priceNote": "プラン単位課金（定員つき）。**ソロバイク2,500円／ソロ（車）3,000円**、いずれも定員1名。デュオ4,000円（2名）、ファミリー5,500円（3〜5名）。日帰り大人1,000円・小学生以下無料",
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "焚き火台と焚き火シートが必須。**直火不可**",
+      "carIn": false,
+      "carInNote": "荷物の積み下ろし時のみサイトへ車両を入れられる。常時の乗り入れは不可",
+      "reservation": "要",
+      "reservationNote": "問い合わせフォーム・公式Instagram DM・公式LINE のいずれかで事前予約",
+      "garbage": "ゴミ・灰は指定場所へ"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "富士宮の全フリーサイトのキャンプ場。ソロはバイクと車で別プランがあり、どちらも定員1名。焚き火は焚き火台と焚き火シートが必須で直火は不可。21時以降は静粛。",
+    "officialUrl": "https://fuji-anmonomori.com/menu/",
+    "tel": "070-9198-2521",
+    "cautions": [
+      "**全フリーサイト。**サイトへの車両進入は荷物の積み下ろし時のみ",
+      "**21時以降は静粛**のルールが公式に明記されている",
+      "予約は問い合わせフォーム・公式Instagram DM・公式LINE から。**電話予約の案内は公式に無い**",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://fuji-anmonomori.com/menu/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "okitsugawa-auto",
+    "slug": "okitsugawa-auto",
+    "name": "おきつがわオートキャンプ場",
+    "prefecture": "静岡",
+    "area": "清水・オクシズ",
+    "address": "静岡県静岡市清水区茂野島1100",
+    "priceMin": 3000,
+    "priceMax": 3000,
+    "priceNote": "人数課金＋サイト課金の合算。**施設利用料 16才以上1,500円**（小中学生500円）＋**サイト料1,500円〜**（区画サイズによる）で、ソロ1名1泊3,000円〜。日帰りは施設利用料1,000円＋サイト1,000円（土曜・ハイシーズンは3,000円）",
+    "features": {
+      "carIn": true,
+      "carInNote": "全区画オートサイト",
+      "shower": true,
+      "showerNote": "温水シャワー無料",
+      "toilet": "洋式",
+      "toiletNote": "洋式水洗",
+      "reservation": "要",
+      "reservationNote": "LINE公式アカウント・なっぷ・じゃらんから予約"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "興津川沿いの全区画オートサイトのキャンプ場。温水シャワーが無料で洋式水洗トイレ・給湯つきの流し台がある。21時以降はクワイエットタイム。静岡市街から約40分。",
+    "officialUrl": "https://camp-joe.com/okitsugawa/",
+    "tel": "050-3575-7202",
+    "cautions": [
+      "**21時以降はクワイエットタイム**が公式に設定されている",
+      "悪天候時は施設の判断で閉鎖することがあると公式に記載",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://camp-joe.com/okitsugawa/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "kaaji-no-mori",
+    "slug": "kaaji-no-mori",
+    "name": "カージの杜",
+    "prefecture": "千葉",
+    "area": "君津",
+    "address": "千葉県君津市馬登729",
+    "priceMin": 2500,
+    "priceMax": 2500,
+    "priceNote": "人数課金。**キャンプ 1人1泊2,500円**（連泊は1泊2,000円）。デイキャンプ・BBQ は1人1,500円（3名以上）。宿泊棟1棟1,500円、薪500円",
+    "features": {
+      "firewood": true,
+      "firewoodNote": "薪の販売あり（500円）",
+      "reservation": "要",
+      "reservationNote": "メールまたは電話で受付"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "君津の小規模なキャンプ場で、公式が「ソロはもちろん」と案内している。最大30名程度の規模。薪の販売があり、チェックイン・アウトとも正午。",
+    "officialUrl": "https://www.tschiba.com/kaaji/plan.html",
+    "tel": "0439-52-7734",
+    "cautions": [
+      "**公式サイトの住所表記が「君津市君野729」になっているが、併記の郵便番号 299-1115 は君津市「馬登」のもの。**ここでは郵便番号と一致する馬登729 を採っている。訪問前に施設へ確認すること",
+      "運営はカントリー館の木（同一サイト内の施設）。予約はメールまたは電話",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.tschiba.com/kaaji/plan.html",
+      "https://www.tschiba.com/kaaji/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "seiwa-kenminnomori",
+    "slug": "seiwa-kenminnomori",
+    "name": "千葉県立清和県民の森キャンプ場",
+    "prefecture": "千葉",
+    "area": "君津",
+    "address": "千葉県君津市豊英660",
+    "priceMin": 600,
+    "priceMax": 900,
+    "priceNote": "サイト単位課金。**小型テントサイト（2.5×4.2m）600円/泊、大型（4.0×4.2m）900円/泊。**最少人数の条件は公式に無いのでソロ1名600円から。レンタルテントは小型（4人用）800円・大型（6人用）1,000円",
+    "features": {
+      "bonfire": true,
+      "bonfireNote": "指定エリアで焚き火台を使用",
+      "carIn": false,
+      "carInNote": "荷下ろし時のみサイト近くまで車・バイクを入れ、その後は林間広場駐車場へ移動",
+      "reservation": "要",
+      "reservationNote": "なっぷまたは電話（0439-38-2222）で受付"
+    },
+    "season": "要確認（バーベキューサイトは通年と公式に記載。テントサイトの期間は明記なし）",
+    "soloComment": "千葉県立の県民の森にある全10サイトのキャンプ場。各サイトにかまどとベンチテーブルがある。小型サイト600円から。焚き火は指定エリアで焚き火台を使う。",
+    "officialUrl": "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/",
+    "reservationUrl": "https://www.nap-camp.com/chiba/11961",
+    "tel": "0439-38-2222",
+    "cautions": [
+      "千葉県立の施設。**指定管理者は千葉県森林組合**",
+      "**車・バイクは荷下ろし時のみ**サイト近くまで。その後は林間広場駐車場へ移動する",
+      "全10サイトと小規模。予約はなっぷまたは電話",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/",
+      "https://www.pref.chiba.lg.jp/shinrin/kenminnomori/seiwa.html"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "fruits-village",
+    "slug": "fruits-village",
+    "name": "オートキャンプ・フルーツ村",
+    "prefecture": "千葉",
+    "area": "君津",
+    "address": "千葉県君津市旅名96",
+    "priceMin": 3000,
+    "priceMax": 6000,
+    "priceNote": "サイト単位課金。**平日限定のソロ割引（大人1名・車1台）で電源なし3,000円／電源付き4,000円。****通常のオートサイトは6,000円。**週末・祝祭日・GW・お盆・年末年始はソロ割引の対象外",
+    "features": {
+      "carIn": true,
+      "carInNote": "オートサイト",
+      "reservation": "要",
+      "reservationNote": "インターネット予約と電話（0439-38-2255、8:00〜18:00）"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "君津のオートキャンプ場。平日限定で大人1名・車1台のソロ割引があり、電源なし3,000円。週末・祝祭日・GW・お盆・年末年始は割引の対象外で通常料金になる。",
+    "officialUrl": "http://fruitsvillage.com/custom11.html",
+    "tel": "0439-38-2255",
+    "cautions": [
+      "**ソロ割引は平日限定。**週末・祝祭日・GW・お盆・年末年始は対象外で、通常のオートサイト6,000円になる",
+      "対象は「大人1名・車1台」のみと公式に明記",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "http://fruitsvillage.com/custom11.html"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceVerified": true,
+    "lastVerified": "2026-10-06",
+    "id": "laqlaq-garden",
+    "slug": "laqlaq-garden",
+    "name": "楽々ガーデン",
+    "prefecture": "千葉",
+    "area": "千葉市若葉区",
+    "address": "千葉県千葉市若葉区中野町2050",
+    "priceMin": 3000,
+    "priceMax": 4000,
+    "priceNote": "サイト単位課金。**オートキャンプ 平日3,000円／休日・休前日4,000円。大人1名・車1台を含む**ので、ソロ1名は平日3,000円",
+    "features": {
+      "carIn": true,
+      "carInNote": "オートキャンプ。1区画140㎡以上",
+      "reservation": "要",
+      "reservationNote": "なっぷから予約"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "千葉市若葉区のオートキャンプ場。1区画140㎡以上と広く、フリーサイトも予約数を絞って間隔を確保している。平日3,000円に大人1名・車1台が含まれる。中野ICから車で約3分。",
+    "officialUrl": "https://laqlaqgarden.com/",
+    "reservationUrl": "https://www.nap-camp.com/chiba/15124",
+    "tel": null,
+    "cautions": [
+      "**公式サイトは2026年の夏から秋にかけて変更予定**と告知されている。料金・予約方法が変わる可能性がある",
+      "予約はなっぷ経由。公式に電話番号の記載が無い",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://laqlaqgarden.com/"
+    ]
   }
 ]
