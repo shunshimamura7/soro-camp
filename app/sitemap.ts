@@ -1,9 +1,9 @@
 import type { MetadataRoute } from "next";
-import { campgrounds } from "@/lib/camp";
+import { evidenceBackedCampgrounds } from "@/lib/camp";
 import { SITE_URL } from "@/lib/site";
 
 
-// output: "export"（Cloudflare Workers 向け静的書き出し）で必須
+// output: "export"（Cloudflare Pages 向け静的書き出し）で必須
 export const dynamic = "force-static";
 
 /** lastVerified 未設定（野営地など）は Invalid Date になるので現在時刻にフォールバック */
@@ -13,7 +13,8 @@ function verifiedDate(lastVerified: string): Date {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const campPages = campgrounds.map((c) => ({
+  // 閉鎖・営業確認中・根拠URLなしのページは既存リンクのため残すが、検索の主導線にはしない。
+  const campPages = evidenceBackedCampgrounds.map((c) => ({
     url: `${SITE_URL}/camp/${c.slug}`,
     lastModified: verifiedDate(c.lastVerified),
     changeFrequency: "monthly" as const,

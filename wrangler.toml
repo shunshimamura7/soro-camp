@@ -1,3 +1,8 @@
+# 【使用しない】2026-08-27 に Cloudflare Pages へ移行済み。
+# 旧 Workers サービス soro-camp.shun622shun39.workers.dev は同日削除した。
+# この設定で wrangler deploy すると Workers を作り直してしまう。
+# 公開は out/ の中身を ZIP 化して soro-camp.pages.dev の Pages プロジェクトへ手動アップロードする。
+# 削除せず残しているのは、過去のデプロイ設定の記録として追えるようにするため。
 name = "soro-camp"
 compatibility_date = "2026-08-06"
 
