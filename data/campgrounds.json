@@ -1266,11 +1266,12 @@
     "season": "通年",
     "soloComment": "相模湖ICからわずか5分、JR相模湖駅からも徒歩圏の圧倒的アクセスの良さ。2,000円〜という価格で相模湖を眺める焚き火が楽しめる。仕事帰りに夜発して翌朝帰るデイキャンプ的な使い方に最適。",
     "tel": "042-685-0141",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "priceVerified": true,
     "telNote": "ハイシーズンは 042-685-1371、オフシーズン（冬季）は 042-685-0141。予約受付は8:00〜17:00",
-    "scoresVerified": false
+    "scoresVerified": false,
+    "officialUrl": "https://midori.city.sagamihara.kanagawa.jp/2023/02/15/kyuyou-camp/"
   },
   {
     "id": "miyagase-village",
@@ -1983,10 +1984,11 @@
     "season": "通年",
     "soloComment": "遠州灘に面した海辺のオートキャンプ場。シャワー無料・ウォシュレット完備と設備は充実。釣りやサーフィンとの組み合わせが人気で、夕日の美しさは格別。東海エリアからのアクセスが良く静岡西部在住者の定番。",
     "tel": "0538-59-3180",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "officialUrl": "https://www.city.iwata.shizuoka.jp/shisetsu_guide/koen_shisetsu/kouen/1005910.html"
   },
   {
     "id": "izukogen-auto",
@@ -2123,10 +2125,11 @@
     "season": "3月下旬〜12月",
     "soloComment": "5つの富士五湖で最も静かな精進湖畔の予約不要キャンプ場。テント+車で3,000円という破格のコスパ。子抱き富士（精進湖越しの富士山）の眺めが贅沢。シャワーなしの分、静けさと価格で他を圧倒する。",
     "tel": "0555-87-2005",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "officialUrl": "https://shojiko.jp/"
   },
   {
     "id": "tsubakiso-auto",
@@ -2172,10 +2175,11 @@
     "season": "通年",
     "soloComment": "道志川源流エリアの老舗民宿併設キャンプ場。民宿の浴室をキャンパーも500円で利用可能。ソロ2,000円〜のリーズナブルな価格で道志川の清流サイトを独占。道志温泉も近く、温泉キャンプが楽しめる。",
     "tel": "0554-52-2056",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-10-06",
     "priceVerified": true,
     "coordsGsiChecked": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "officialUrl": "https://doushi-tsubakiso.com/"
   },
   {
     "id": "komeidoso-auto",
@@ -2271,10 +2275,11 @@
     "season": "4月下旬〜11月上旬",
     "soloComment": "標高1,400mの清里高原から八ヶ岳と南アルプスを一望できる。2,820円〜という公営ならではの価格でウォシュレット・温水シャワーが揃う。晴れた日の朝は360度の山岳パノラマが広がる。",
     "tel": "0551-48-2300",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "officialUrl": "https://kiyosato-okanokouen.net/"
   },
   {
     "id": "doshi-keikoku",
@@ -2320,10 +2325,11 @@
     "season": "通年（12月〜3月は要確認）",
     "soloComment": "直火OKかつ予約不要で1,700円〜（入場700円+駐車1,000円）。道志川源流域の深い渓谷に囲まれ、夏は川遊び、冬は静寂の雪景色を独り占め。近隣の道の駅どうし温泉で入浴問題も解決。",
     "tel": "042-787-0088",
-    "lastVerified": "2026-08-11",
+    "lastVerified": "2026-10-06",
     "priceVerified": true,
     "coordsGsiChecked": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "officialUrl": "https://doushi-keikoku.jp/"
   },
   {
     "id": "muraei-yamanakako",
@@ -4399,10 +4405,11 @@
     "season": "4月〜11月",
     "soloComment": "浩庵キャンプ場と並ぶ本栖湖畔の老舗キャンプ場。透明度の高い本栖湖越しの富士山ビューが格別。浩庵より比較的混雑が少なく静かに本栖湖を楽しめる穴場的存在。ソロは人数+テント+車で3,000円（2026年改定）。",
     "tel": "0555-87-2306",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "officialUrl": "https://www.motosuko-camp.com/"
   },
   {
     "id": "kiyosato-chuo-auto",
@@ -5655,11 +5662,11 @@
       "nearbyShop": ""
     },
     "tel": "0554-52-2365",
-    "officialUrl": "",
+    "officialUrl": "https://www.doshi-kanko.jp/camp/kanko-nouen/",
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "道志川沿いの観光農園併設キャンプ場。果物狩りと組み合わせられる。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "priceNote": "区画+人数課金。テントサイト料1,000円＋大人1名800円＋車1台1,000円で、ソロ1名1泊2,800円（バイクで行けば2,300円）。入園料（釣り堀含む）500円は日帰り向けの別項目で、宿泊者に必須の記載はない。タープは別途500円。ゴミは持ち帰り",
     "priceVerified": true,
@@ -5807,11 +5814,11 @@
       "nearbyShop": ""
     },
     "tel": "0465-29-0841",
-    "officialUrl": "",
+    "officialUrl": "https://www.naminokomura.jp/",
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "小田原市根府川、JR根府川駅から徒歩10分の海沿いオートキャンプ場。目の前に相模湾が広がる稀少な海キャンプ。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "closedDays": "水・木曜（夏休みは無休、11〜翌3月は月〜金曜。祝日は営業）",
     "priceNote": "区画+人数課金。オートキャンプ1泊1台4,800円（駐車料・温水シャワー込み）＋入村料 大人1名800円で、ソロ1名1泊5,600円。2泊目以降の入村料は1泊500円。ACコンセントは別途1,000円。ログキャビンは1棟12,000円＋入村料",
@@ -6418,11 +6425,11 @@
       "nearbyShop": ""
     },
     "tel": "0554-52-2461",
-    "officialUrl": "",
+    "officialUrl": "https://www.doshi-kanko.jp/camp/tsukiyono/",
     "reservationUrl": "",
     "season": "3月1日〜11月下旬",
     "soloComment": "道志川沿い、車両乗入は8サイトのみのプライベート感重視。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "address": "山梨県南都留郡道志村950",
     "priceNote": "サイト単位課金。テントサイト2,500円〜（1区画・1泊・大人1名・車1台込み）。追加は大人1名1,000円・子供800円、車1台1,000円。※加算の起点が公式で明示されておらず要確認",
@@ -6828,11 +6835,11 @@
       "nearbyShop": ""
     },
     "tel": "0460-83-8351",
-    "officialUrl": "",
+    "officialUrl": "https://hayatohakoneguesthouse.com/page/hakone-camp/",
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "箱根の静かな林間、ソロ専用区画あり。プライベート感十分でサイトは土と砂利。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "address": "神奈川県足柄下郡箱根町湯本茶屋70",
     "priceNote": "サイト単位課金だが1名向けの区分がある。小サイト12㎡2,750円（1名含む）／中15㎡4,400円（2名含む）／大19㎡6,600円（3名含む）。追加1名ごと2,200円 → ソロ1名1泊2,750円。全10サイト",
@@ -7348,11 +7355,11 @@
       "nearbyShop": ""
     },
     "tel": "0554-46-0753",
-    "officialUrl": "",
+    "officialUrl": "https://www.nagomi-camp.com",
     "reservationUrl": "",
     "season": "通年",
     "soloComment": "都留市の全18区画オートキャンプ場。炊事場お湯あり、コテージ隣接。河口湖へのアクセスも良い。",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "address": "山梨県都留市戸沢1126",
     "priceNote": "サイト単位課金。オートサイト1区画3,500円〜が小学生以上4人まで込みのため、ソロ1名でも3,500円〜（人数割にならない）。AC電源500円、追加は小学生以上1人800円（最大6人）。コテージ6人まで16,500円。天然温泉「芭蕉月待ちの湯」を割引利用可",
@@ -8496,10 +8503,11 @@
     "season": "3月1日〜11月30日（宿泊は4〜6月・10〜11月の土日祝と7/1〜9/30に限定）",
     "soloComment": "相模川河川敷の市営サイト。桜の名所で春は花見キャンプができる。アクセスがよく設備も揃うが、静けさを求めるなら時期を外したい。",
     "tel": "042-760-6066",
-    "lastVerified": "2026-08-07",
+    "lastVerified": "2026-10-06",
     "coordsGsiChecked": true,
     "priceVerified": true,
-    "scoresVerified": false
+    "scoresVerified": false,
+    "officialUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html"
   },
   {
     "id": "ugusu-camp",
@@ -10040,7 +10048,7 @@
     "name": "きさらづCAMP ORGANIC FIELD in みたて",
     "prefecture": "千葉",
     "area": "木更津・金田",
-    "status": "unverified",
+    "status": "active",
     "address": "千葉県木更津市中島4416",
     "type": "campground",
     "lat": 35.4313203,
@@ -10084,9 +10092,9 @@
     "soloComment": "",
     "tel": "0438-38-5575",
     "telNote": "**運営者（きさらづDMO＝一般社団法人木更津市観光協会 DMO推進事業部）の番号で、現地直通ではない。**受付 9:00〜17:00。千葉県公式（ちば観光ナビ）は施設名義で、DMO のページは観光協会名義で、同じ番号を出している。**金田みたて海岸潮干狩り場の 0438-41-5200 / 金田漁業協同組合の 0438-41-0511 とは別番号**",
-    "lastVerified": "2026-08-26",
+    "lastVerified": "2026-10-06",
     "priceVerified": true,
-    "officialUrl": "https://kisarazu-dmo.jp/experience/kisarazu-camp-in-mitate/",
+    "officialUrl": "https://www.city.kisarazu.lg.jp/soshiki/keizai/kankoshinko/1/2377.html",
     "cautions": [
       "**名称が割れている。**千葉県公式（ちば観光ナビ）と運営者のきさらづDMO は「きさらづCAMP ORGANIC FIELD in みたて」。**木更津市公式だけ旧称「きさらづCAMP in MITATE」**（更新日 2024-02-29）。2023-04-15 の DMO の告知でリニューアル改称しているので、市公式が追いついていない",
       "**施設独立の公式サイトが無い。**運営者であるきさらづDMO のサイト内ページが実質の公式で、ちば観光ナビの外部リンクも `kisarazu-dmo.jp` を指している",
@@ -10094,7 +10102,8 @@
       "登録済みソース（千葉県台帳・なっぷ・じゃらん）のどれにも載っていないため、地区スイープでは ORPHAN になる。**ORPHAN は不在の証明ではない**（§6-7）。なお**ちば観光ナビには載っている**ので、これを chiba-sources.js に登録すれば IN_DATA に変わる（層が未決・`chiba-kanko-navi-layer-2026-08-17.md`）"
     ],
     "needsVerify": true,
-    "needsVerifyNote": "**住所は千葉県公式観光サイト「ちば観光ナビ」で確認済み**（出典: https://maruchiba.jp/spot/detail_11288.html の「住所」欄・〒292-0008 千葉県木更津市中島4416）。**料金とソロ可・グループ不可は運営者のきさらづDMO**（出典: https://kisarazu-dmo.jp/experience/kisarazu-camp-in-mitate/ ）。**電話は上記2本が同じ番号を出している。**木更津市公式（出典: https://www.city.kisarazu.lg.jp/soshiki/keizai/kankoshinko/1/2377.html ・更新日 2024-02-29）は告知ページのみで住所も料金も無く、名称も旧称のまま。**どのページにも更新日が無い**（市公式の2024-02-29 だけが唯一の日付）。未確認なのは設備（焚き火・風呂・トイレ）と営業期間と座標。**scores は全軸3の暫定値で、根拠で動かした軸は1つも無い**（`scoresVerified: false`）"
+    "needsVerifyNote": "**住所は千葉県公式観光サイト「ちば観光ナビ」で確認済み**（出典: https://maruchiba.jp/spot/detail_11288.html の「住所」欄・〒292-0008 千葉県木更津市中島4416）。**料金とソロ可・グループ不可は運営者のきさらづDMO**（出典: https://kisarazu-dmo.jp/experience/kisarazu-camp-in-mitate/ ）。**電話は上記2本が同じ番号を出している。**木更津市公式（出典: https://www.city.kisarazu.lg.jp/soshiki/keizai/kankoshinko/1/2377.html ・更新日 2024-02-29）は告知ページのみで住所も料金も無く、名称も旧称のまま。**どのページにも更新日が無い**（市公式の2024-02-29 だけが唯一の日付）。未確認なのは設備（焚き火・風呂・トイレ）と営業期間と座標。**scores は全軸3の暫定値で、根拠で動かした軸は1つも無い**（`scoresVerified: false`）",
+    "reservationUrl": "https://kisarazu-dmo.jp/experience/kisarazu-camp-in-mitate/"
   },
   {
     "type": "campground",
