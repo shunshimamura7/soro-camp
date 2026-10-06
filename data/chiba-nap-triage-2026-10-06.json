@@ -3456,8 +3456,8 @@
    "lngCandidate": "140.2556439458137",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式サイトが存在せず（なっぷの hpUrl も空）、検索結果は掲載サイトのみ。それらしい otaki-location.chiba.jp は(株)わくわくカンパニー大多喜（DMO）運営のロケ地紹介で根拠に使えない。大多喜町公式の宿泊案内一覧にも記載なし"
   },
   {
    "napId": "13733",
@@ -3469,8 +3469,8 @@
    "lngCandidate": "140.2065988",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式サイトが見つからない（なっぷの hpUrl は null）。出てくるのは貸別荘・予約・口コミサイトのみ。「山の里ファームイン市原」名でも公式ドメインは存在せず、大多喜町公式の宿泊案内一覧にも記載なし"
   },
   {
    "napId": "13865",
@@ -3481,9 +3481,9 @@
    "latCandidate": "35.27733164372114",
    "lngCandidate": "140.25159358978271",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://privategardencamping.wixsite.com/glamping",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式は「LUXURY CAMPING」のグランピング専業で、客室は Tent & Livingroom／Cottage & Deck／Poolside Tent／Treehouse／各種Dome Tent のみ。**テント持ち込みサイトの掲載が無い**。公式住所「大多喜町新丁223−1」は台帳の「新丁223-2」と枝番が1違いで同一施設と判断"
   },
   {
    "napId": "13945",
@@ -3533,9 +3533,9 @@
    "latCandidate": "35.203668978737866",
    "lngCandidate": "140.22624945640564",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.wanpaku-camp.jp/",
+   "verdict": "追加",
+   "reason": "施設公式あり・営業中。公式記事に「**１号店、２号店ともにどのサイトもソロでご利用いただくことは可能です**」と明記され単独利用可。料金は公式が予約先として指定する489banに掲載（最安8,800円／1サイト）"
   },
   {
    "napId": "14226",
@@ -3546,9 +3546,9 @@
    "latCandidate": "35.3071296",
    "lngCandidate": "140.2601457",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://marugayatsu.com/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "公式の宙（貸切キャンプ場）ページに「**1サイト 4〜15名様**」と記載され最小4名。公式予約先489banにも宙のプランは無く、掲載は萱（4名様から）と蔵（2名様から）の2件だけでいずれも1名不可。公式の料金ページ自体が404（運営側のリンク切れ）"
   },
   {
    "napId": "14531",
@@ -3560,8 +3560,8 @@
    "lngCandidate": "140.17472495700835",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式サイトが存在しない。なっぷの hpUrl は Instagram、運営者の note プロフィールの外部リンクも Instagram のみで、SNS 以外の公式サイト・公式予約先が無い。note 記事は運営者本人の執筆だが読み物で住所・料金・予約の記載なし"
   },
   {
    "napId": "14714",
@@ -3572,9 +3572,9 @@
    "latCandidate": "35.19648003414791",
    "lngCandidate": "140.23246145248413",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://www.wanpaku-camp.jp/no2/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式（wanpaku-camp.jp/no2）と**ソロプラン3,300円（定員1名）は公式予約先 tabichat で確認できた**が、公式のどこにも当施設の住所が無い。No.2 サイト内の特定商取引法ページの所在地は「大多喜町平沢1281-6」＝**1号店の住所**で、台帳の「平沢1498」は公式・公式予約先・しおり・チェックイン案内のいずれにも1文字も無い（同一運営会社の別拠点パターン）。住所が照合できれば単独利用可・3,300円で有力な追加候補"
   },
   {
    "napId": "14805",
@@ -3586,8 +3586,8 @@
    "lngCandidate": "140.2027778",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式サイトが存在しない（なっぷの hpUrl は空）。連絡先はメールと電話のみで、そのメールのドメイン jinriki.net は別事業（ノンフィクション作家ユニット「人力社」）のサイトで施設の記載なし。検索で出た wakuwakuotaki.jp は DMO のふるさと納税／観光ガイドで、**しかもそのページの「事業者URL」自体がなっぷを指している**"
   },
   {
    "napId": "15069",
@@ -3599,8 +3599,8 @@
    "lngCandidate": "140.1869491046768",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式サイトが存在しない（なっぷの hpUrl は空）。検索結果は掲載サイトと個人ブログのみ。町公式のヒットは実際に開くと「粟又の滝」の観光スポットページで無関係だった。**閉業ではなく「冬季期間(12月〜2月末)は気象状況により休業」の季節休業**"
   },
   {
    "napId": "15089",
@@ -3611,9 +3611,9 @@
    "latCandidate": "35.252372922715715",
    "lngCandidate": "140.2591593",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://ma-saison.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式 ma-saison.com は実在し住所（大多喜町石神734）も一致するが、**公式にソロ1泊の料金が一切掲載されておらず**、予約導線は「なっぷで予約する／楽天トラベルキャンプで予約する」の予約サイト2つのみ"
   },
   {
    "napId": "15706",
@@ -3832,9 +3832,9 @@
    "latCandidate": "35.8353944",
    "lngCandidate": "140.0801459",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.yumefarm.jp/",
+   "verdict": "追加",
+   "reason": "公式に住所（柏市布瀬89-1）が一致し、オートキャンプブースのオーバーナイト料金（6名まで6,600円でソロでも同額）が明記されている"
   },
   {
    "napId": "13923",
@@ -3845,9 +3845,9 @@
    "latCandidate": "35.899006",
    "lngCandidate": "140.00900",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://akebonoyama-nougyoukouen.jp/",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "公式は開園時間制の日帰り公園（住所は柏市布施2005-2で一致）。料金案内・ご利用案内・アクセスのいずれにも**キャンプ／宿泊の記載が無い**（料金案内はバーベキュー場と各室使用料のみ）"
   },
   {
    "napId": "14301",
@@ -3858,9 +3858,9 @@
    "latCandidate": "35.8412792",
    "lngCandidate": "140.0594575",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.recamp.co.jp/rcshonan",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "運営元公式に住所一致のページはあるがソロ1泊料金の掲載が無く、**公式約款も「宿泊/日帰り料金・その他の料金については弊社ホームページ上の予約システムに掲示する料金によります」**とし、実際の予約先はなっぷのみ"
   },
   {
    "napId": "14638",
@@ -3884,9 +3884,9 @@
    "latCandidate": "35.8290143171635",
    "lngCandidate": "140.03996051339507",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://gm-autocamp.com/",
+   "verdict": "追加",
+   "reason": "公式に住所（柏市金山576）が一致し、**定員1名の「林間ソロサイト」**の料金（平日3,300円／ハイシーズン4,300円）が明記されている"
   },
   {
    "napId": "14943",
@@ -3897,9 +3897,9 @@
    "latCandidate": "35.833232544292436",
    "lngCandidate": "140.0776228904724",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.campal.co.jp/shops/sort/field/index.html",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "ogawa（キャンパルジャパン）公式に住所一致の直営キャンプ場ページはあるが、**「キャンプ場のご予約は「なっぷ」をご利用ください。※ご利用料金はプランにより異なります。詳しくは「なっぷ」HPをご確認ください。」**と料金・予約を明示的に丸投げしており公式に金額が無い"
   },
   {
    "napId": "16219",
@@ -3910,9 +3910,9 @@
    "latCandidate": "35.848740475205624",
    "lngCandidate": "140.03789953065794",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.shonan-base-washinoya.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式（住所一致：柏市鷲野谷593-1）の宿泊プランは CONTAINER A〜D のコンテナトレーラー客室のみ（1棟 平日40,000円〜）で、**テント泊の区画・料金が存在しない**。他はBBQ・SAUNAの時間制プランだけ"
   },
   {
    "napId": "16371",
@@ -3923,9 +3923,9 @@
    "latCandidate": "35.8906747",
    "lngCandidate": "139.9922246",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.wonderfulgarden.jp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式（住所一致：柏市布施736）にサイト区画の説明はあるが**ソロ1泊のサイト料金が無く**、料金は「予約・空き状況はこちらから」のなっぷのみ。公式に載る金額はシャワー300円・薪1,000円・車2台目1,000円といった付帯費用だけ"
   },
   {
    "napId": "16752",
@@ -3937,8 +3937,8 @@
    "lngCandidate": "140.0467396245156",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・運営公式・公式予約先がいずれも見つからない。候補ドメインは未登録で、**globar.co.jp は無関係の株式会社グローバー（DX事業）、washinoya.com は長野の民宿「鷲の家」**。近隣の SHONAN BASE 公式（鷲野谷593-1）にも鷲野谷137の記載なし"
   },
   {
    "napId": "16863",
@@ -3951,7 +3951,7 @@
    "priority": 99,
    "officialUrl": null,
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "**根拠が予約システム（reserva.be）のページだけで施設公式サイトが存在しない**。所在地の運営元である手賀沼漁業協同組合＝手賀沼フィッシングセンター公式にも Kingfisher Garden やキャンプの記載が無く、残るのは観光協会ページのみ。予約システム側には「臨時ソロキャンプフリーサイト 1室1泊 ￥2,200〜」がある。Yamasobu Campground と同じ型"
   },
   {
    "napId": "15697",
@@ -3962,9 +3962,9 @@
    "latCandidate": "35.76884874312863",
    "lngCandidate": "140.0380565232788",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://nikken47.com/community/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "運営元・株式会社日建住宅の公式サイト内に住所一致（白井市根296-6）の evergreen ページがあり「キャンプ・テント 森林サイト／芝生サイト」も明記されているが、**料金が一切掲載されておらず**予約リンクはなっぷのみ"
   },
   {
    "napId": "14279",
@@ -4282,14 +4282,14 @@
    "門落ち(住所を照合できない)": 1
   },
   "内訳": {
-   "門落ち(料金も予約も公式に無し)": 32,
+   "門落ち(料金も予約も公式に無し)": 37,
    "閉鎖疑い": 32,
-   "門落ち(公式なし)": 31,
-   "追加": 82,
-   "宿泊系のため対象外": 74,
-   "UNMEASURED": 54,
-   "門落ち(宿泊不可)": 7,
-   "門落ち(単独利用不可)": 12,
+   "門落ち(公式なし)": 37,
+   "追加": 85,
+   "宿泊系のため対象外": 76,
+   "UNMEASURED": 36,
+   "門落ち(宿泊不可)": 8,
+   "門落ち(単独利用不可)": 13,
    "門落ち(住所を照合できない)": 2
   }
  },

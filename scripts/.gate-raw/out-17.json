@@ -1,0 +1,50 @@
+[
+ {"napId":"11936","name":"グリーンファームおおたき戸田オートキャンプ場","pref":"千葉","muni":"大多喜町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイトが存在せず（なっぷの hpUrl も空）、検索結果は掲載サイトのみ。それらしい otaki-location.chiba.jp は(株)わくわくカンパニー大多喜（DMO）運営のロケ地紹介で根拠に使えない。大多喜町公式の宿泊案内一覧にも記載なし",
+  "checkedUrls":["https://www.nap-camp.com/chiba/11936","https://www.town.otaki.chiba.jp/kanko_iju_bunka/kanko_iju/kanko_jyouho/7/1492.html"],"officialUrl":null},
+
+ {"napId":"13733","name":"ファームイン市原","pref":"千葉","muni":"大多喜町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイトが見つからない（なっぷの hpUrl は null）。出てくるのは貸別荘・予約・口コミサイトのみ。「山の里ファームイン市原」名でも公式ドメインは存在せず、大多喜町公式の宿泊案内一覧にも記載なし",
+  "checkedUrls":["https://www.nap-camp.com/chiba/13733","https://www.town.otaki.chiba.jp/kanko_iju_bunka/kanko_iju/kanko_jyouho/7/1492.html"],"officialUrl":null},
+
+ {"napId":"13865","name":"PRIVATE GARDEN OTAKI","pref":"千葉","muni":"大多喜町","verdict":"宿泊系のため対象外",
+  "reason":"公式は「LUXURY CAMPING」のグランピング専業で、客室は Tent & Livingroom／Cottage & Deck／Poolside Tent／Treehouse／各種Dome Tent のみ。**テント持ち込みサイトの掲載が無い**。公式住所「大多喜町新丁223−1」は台帳の「新丁223-2」と枝番が1違いで同一施設と判断",
+  "checkedUrls":["https://privategardencamping.wixsite.com/glamping","https://privategardencamping.wixsite.com/glamping/access"],"officialUrl":"https://privategardencamping.wixsite.com/glamping"},
+
+ {"napId":"14090","name":"大多喜わんぱくキャンプ場","pref":"千葉","muni":"大多喜町","verdict":"追加",
+  "reason":"施設公式あり・営業中。公式記事に「**１号店、２号店ともにどのサイトもソロでご利用いただくことは可能です**」と明記され単独利用可。料金は公式が予約先として指定する489banに掲載（最安8,800円／1サイト）",
+  "checkedUrls":["https://www.wanpaku-camp.jp/","https://www.wanpaku-camp.jp/page-8816","https://www.wanpaku-camp.jp/faq","https://www.wanpaku-camp.jp/archives/9547","https://reserve.489ban.net/client/wanpaku-camp/0/plan/"],
+  "officialUrl":"https://www.wanpaku-camp.jp/","reservationUrl":"https://reserve.489ban.net/client/wanpaku-camp/0/plan/",
+  "address":"千葉県夷隅郡大多喜町平沢1281-6","priceMin":8800,"priceMax":8800,
+  "priceNote":"サイト単位課金。公式予約先489banの最安プラン「110平方メートル以上の角サイト（電源無し）」が「8,800円〜（1サイトあたり）」「1サイト料金（2名様利用時）8,800円〜」「定員:1〜6名様」「料金は大人の人数で変わります」。**1名利用時の表示額は予約画面に出ないため8,800円より安い可能性がある。**駐車はサイト内1台込み（場外に停める場合は2,200円のオプション）。参考：デッキオートサイト9,900円、ワイドデッキ11,000円、平日貸切7,700円。**公式サイト本体に料金表は無く、料金の掲載は予約エンジン側のみ**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.wanpaku-camp.jp/page-8816","quote":"無料シャワー（温水）／予約制の有料シャワーの他に、無料の温水シャワーがあります。"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.wanpaku-camp.jp/page-8816","quote":"薪は無料／無料の薪で心ゆくまで焚き火をご堪能ください。薪割り機で薪割り体験もできます。"},
+    "shop":{"value":true,"evidenceUrl":"https://www.wanpaku-camp.jp/archives/9095","quote":"この度１号店でも売店をスタートさせることにしました。…現金を貯金箱に入れてもらうか、PayPayで決済してもらいます。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.wanpaku-camp.jp/faq","quote":"ペットは同伴できますか？ お客様がテントをお持ちになるプランの場合、同伴いただくことができます。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14226","name":"まるがやつ 宙 -SORA-","pref":"千葉","muni":"大多喜町","verdict":"門落ち(単独利用不可)",
+  "reason":"公式の宙（貸切キャンプ場）ページに「**1サイト 4〜15名様**」と記載され最小4名。公式予約先489banにも宙のプランは無く、掲載は萱（4名様から）と蔵（2名様から）の2件だけでいずれも1名不可。公式の料金ページ自体が404（運営側のリンク切れ）",
+  "checkedUrls":["https://marugayatsu.com/sora","https://marugayatsu.com/price/","https://reserve.489ban.net/client/marugayatsu/0/plan/"],"officialUrl":"https://marugayatsu.com/"},
+
+ {"napId":"14531","name":"大多喜紅源CAMPINGBASE","pref":"千葉","muni":"大多喜町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイトが存在しない。なっぷの hpUrl は Instagram、運営者の note プロフィールの外部リンクも Instagram のみで、SNS 以外の公式サイト・公式予約先が無い。note 記事は運営者本人の執筆だが読み物で住所・料金・予約の記載なし",
+  "checkedUrls":["https://www.nap-camp.com/chiba/14531","https://note.com/ikkkkkki/n/n48798822a014","https://www.instagram.com/otaki_kogen/"],"officialUrl":null},
+
+ {"napId":"14714","name":"大多喜わんぱく自然農園併設キャンプ場","pref":"千葉","muni":"大多喜町","verdict":"UNMEASURED",
+  "reason":"公式（wanpaku-camp.jp/no2）と**ソロプラン3,300円（定員1名）は公式予約先 tabichat で確認できた**が、公式のどこにも当施設の住所が無い。No.2 サイト内の特定商取引法ページの所在地は「大多喜町平沢1281-6」＝**1号店の住所**で、台帳の「平沢1498」は公式・公式予約先・しおり・チェックイン案内のいずれにも1文字も無い（同一運営会社の別拠点パターン）。住所が照合できれば単独利用可・3,300円で有力な追加候補",
+  "checkedUrls":["https://www.wanpaku-camp.jp/no2/","https://www.wanpaku-camp.jp/no2/solosite","https://www.wanpaku-camp.jp/no2/page-486","https://tabichat.jp/engine/hotels/wanpaku_camp2"],"officialUrl":"https://www.wanpaku-camp.jp/no2/"},
+
+ {"napId":"14805","name":"しげキャン","pref":"千葉","muni":"大多喜町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイトが存在しない（なっぷの hpUrl は空）。連絡先はメールと電話のみで、そのメールのドメイン jinriki.net は別事業（ノンフィクション作家ユニット「人力社」）のサイトで施設の記載なし。検索で出た wakuwakuotaki.jp は DMO のふるさと納税／観光ガイドで、**しかもそのページの「事業者URL」自体がなっぷを指している**",
+  "checkedUrls":["https://www.nap-camp.com/chiba/14805","https://wakuwakuotaki.jp/hometown_tax/","http://www.jinriki.net/"],"officialUrl":null},
+
+ {"napId":"15069","name":"Snail","pref":"千葉","muni":"大多喜町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式サイトが存在しない（なっぷの hpUrl は空）。検索結果は掲載サイトと個人ブログのみ。町公式のヒットは実際に開くと「粟又の滝」の観光スポットページで無関係だった。**閉業ではなく「冬季期間(12月〜2月末)は気象状況により休業」の季節休業**",
+  "checkedUrls":["https://www.nap-camp.com/chiba/15069","https://www.town.otaki.chiba.jp/kanko_iju_bunka/kanko_iju/kanko_jyouho/5/4/1482.html"],"officialUrl":null},
+
+ {"napId":"15089","name":"MA SAISON キャンプ場 in 千葉大多喜","pref":"千葉","muni":"大多喜町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式 ma-saison.com は実在し住所（大多喜町石神734）も一致するが、**公式にソロ1泊の料金が一切掲載されておらず**、予約導線は「なっぷで予約する／楽天トラベルキャンプで予約する」の予約サイト2つのみ",
+  "checkedUrls":["https://ma-saison.com/","https://ma-saison.com/ferme/"],"officialUrl":"https://ma-saison.com/"}
+]

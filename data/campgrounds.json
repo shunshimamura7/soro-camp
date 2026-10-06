@@ -15525,5 +15525,161 @@
       "https://www.satoyamacliff-camp.com/",
       "https://www.nap-camp.com/chiba/16886"
     ]
+  },
+  {
+    "id": "kashiwa-shonan-yumefarm",
+    "slug": "kashiwa-shonan-yumefarm",
+    "name": "柏しょうなんゆめファーム",
+    "prefecture": "千葉",
+    "area": "柏・布瀬",
+    "status": "active",
+    "address": "千葉県柏市布瀬89-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 6600,
+    "priceMax": 11000,
+    "priceNote": "区画単位課金。公式「通常料金／テントブース（セルフ設営）オーバーナイト 6名まで6,600円(1名追加毎に880円/最高8名まで)」。**ゴールデンウィーク期間（2026年4月25日〜5月6日）とお盆シーズンはオーバーナイト6名まで11,000円**なので priceMax に採用。駐車は「駐車可能台数は、1ブース／1台です」で別途料金なし",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "脱衣所とシャワールームで１坪くらいの個室シャワーとなっております（https://www.yumefarm.jp/facility/oyu）",
+      "shop": true,
+      "shopNote": "園内売店にて販売しているもの シャンプー・リンスセット1個・・・330円（https://www.yumefarm.jp/facility/autocamping）",
+      "pet": false,
+      "petNote": "ペットとご一緒でのご利用は、できません。（https://www.yumefarm.jp/facility/autocamping）",
+      "reservationNote": "公式が案内する予約先: https://www.yumefarm.jp/reserve"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "柏市布瀬、手賀沼の南にある農業公園のテントブース。オーバーナイト（セルフ設営）は6名まで6,600円で、駐車は1ブース1台込み。個室シャワーがあり、園内売店でシャンプー・リンスセットも買える。都心から近いのが強み。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.yumefarm.jp/",
+    "reservationUrl": "https://www.yumefarm.jp/reserve",
+    "cautions": [
+      "**区画単位の課金でソロ割が無い。**6名まで同額6,600円",
+      "**ゴールデンウィーク（2026年4月25日〜5月6日）とお盆は11,000円**",
+      "**ペットとの利用は不可**と公式に明記",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.yumefarm.jp/",
+      "https://www.yumefarm.jp/reserve"
+    ]
+  },
+  {
+    "id": "otaki-wanpaku-camp",
+    "slug": "otaki-wanpaku-camp",
+    "name": "大多喜わんぱくキャンプ場",
+    "prefecture": "千葉",
+    "area": "大多喜・平沢",
+    "status": "active",
+    "address": "千葉県夷隅郡大多喜町平沢1281-6",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 8800,
+    "priceMax": 8800,
+    "priceNote": "サイト単位課金。公式予約先489banの最安プラン「110平方メートル以上の角サイト（電源無し）」が「8,800円〜（1サイトあたり）」「1サイト料金（2名様利用時）8,800円〜」「定員:1〜6名様」「料金は大人の人数で変わります」。**1名利用時の表示額は予約画面に出ないため8,800円より安い可能性がある。**駐車はサイト内1台込み（場外に停める場合は2,200円のオプション）。参考：デッキオートサイト9,900円、ワイドデッキ11,000円、平日貸切7,700円。**公式サイト本体に料金表は無く、料金の掲載は予約エンジン側のみ**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "無料シャワー（温水）／予約制の有料シャワーの他に、無料の温水シャワーがあります。（https://www.wanpaku-camp.jp/page-8816）",
+      "firewood": true,
+      "firewoodNote": "薪は無料／無料の薪で心ゆくまで焚き火をご堪能ください。薪割り機で薪割り体験もできます。（https://www.wanpaku-camp.jp/page-8816）",
+      "shop": true,
+      "shopNote": "この度１号店でも売店をスタートさせることにしました。…現金を貯金箱に入れてもらうか、PayPayで決済してもらいます。（https://www.wanpaku-camp.jp/archives/9095）",
+      "pet": true,
+      "petNote": "ペットは同伴できますか？ お客様がテントをお持ちになるプランの場合、同伴いただくことができます。（https://www.wanpaku-camp.jp/faq）",
+      "reservationNote": "公式が案内する予約先: https://reserve.489ban.net/client/wanpaku-camp/0/plan/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "大多喜町平沢。公式が「**１号店、２号店ともにどのサイトもソロでご利用いただくことは可能です**」と明言しているキャンプ場。**薪が無料**（薪割り機で薪割り体験もできる）で、予約制の有料シャワーに加えて**無料の温水シャワー**もある。売店は貯金箱かPayPayで払う仕組み。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.wanpaku-camp.jp/",
+    "reservationUrl": "https://reserve.489ban.net/client/wanpaku-camp/0/plan/",
+    "cautions": [
+      "**区画単位の課金でソロ割が無い。**最安の角サイト（電源なし）が8,800円〜で、今回の千葉のなかでは高いほう",
+      "**公式サイト本体に料金表が無く、料金は予約サイト側にしか載っていない。**1名利用時の表示額は予約画面に出ないので、8,800円より安い可能性がある。予約前に確認する",
+      "車を場外に停める場合は2,200円のオプション",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.wanpaku-camp.jp/",
+      "https://reserve.489ban.net/client/wanpaku-camp/0/plan/"
+    ]
+  },
+  {
+    "id": "gold-mountain-auto-camp",
+    "slug": "gold-mountain-auto-camp",
+    "name": "ゴールドマウンテンオートキャンプ場",
+    "prefecture": "千葉",
+    "area": "柏・金山",
+    "status": "active",
+    "address": "千葉県柏市金山576",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3300,
+    "priceMax": 4300,
+    "priceNote": "サイト単位課金。公式「林間ソロサイト／定員 1名まで／テント1張／シーズン・利用料金(税込) 平日3,300円・休日前日3,300円・ハイシーズン4,300円」。同サイトは「車両乗入 不可（キャンプ場内のサイト近くの駐車場にお停めください）」で駐車料の別途記載なし",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "面白いコイン式シャワールームあります。（https://gm-autocamp.com/guide/）",
+      "firewood": true,
+      "firewoodNote": "焚き火マットを敷いて焚き火をお楽しみください(直火禁止）（https://gm-autocamp.com/rule/）",
+      "pet": true,
+      "petNote": "ドッグフリーサイトはキャンプ場を代表する人気サイト ノーリードでお過ごしいただけるよう柵で囲われているサイトです。（https://gm-autocamp.com/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "柏市金山。**公式に「林間ソロサイト（定員1名まで・テント1張）」があり平日3,300円**。コイン式シャワーあり、焚き火は焚き火マットを敷けば可（直火禁止）。ノーリードで過ごせるドッグフリーサイトも別にある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://gm-autocamp.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**ソロサイトは車両乗入不可。**場内のサイト近くの駐車場に停めて荷物を運ぶ",
+      "ハイシーズンは4,300円",
+      "**直火禁止。**焚き火マットが必要",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://gm-autocamp.com/"
+    ]
   }
 ]

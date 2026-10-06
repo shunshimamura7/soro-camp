@@ -2381,5 +2381,131 @@
   },
   "napUrl": "https://www.nap-camp.com/chiba/14345",
   "napName": "UJackむつざわオートキャンプ場"
+ },
+ {
+  "napId": "13863",
+  "name": "柏しょうなんゆめファーム",
+  "pref": "千葉",
+  "muni": "柏市",
+  "verdict": "追加",
+  "reason": "公式に住所（柏市布瀬89-1）が一致し、オートキャンプブースのオーバーナイト料金（6名まで6,600円でソロでも同額）が明記されている",
+  "checkedUrls": [
+   "https://www.yumefarm.jp/",
+   "https://www.yumefarm.jp/facility/autocamping",
+   "https://www.yumefarm.jp/reserve",
+   "https://www.yumefarm.jp/facility/oyu"
+  ],
+  "officialUrl": "https://www.yumefarm.jp/",
+  "reservationUrl": "https://www.yumefarm.jp/reserve",
+  "address": "千葉県柏市布瀬89-1",
+  "priceMin": 6600,
+  "priceMax": 11000,
+  "priceNote": "区画単位課金。公式「通常料金／テントブース（セルフ設営）オーバーナイト 6名まで6,600円(1名追加毎に880円/最高8名まで)」。**ゴールデンウィーク期間（2026年4月25日〜5月6日）とお盆シーズンはオーバーナイト6名まで11,000円**なので priceMax に採用。駐車は「駐車可能台数は、1ブース／1台です」で別途料金なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.yumefarm.jp/facility/oyu",
+    "quote": "脱衣所とシャワールームで１坪くらいの個室シャワーとなっております"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.yumefarm.jp/facility/autocamping",
+    "quote": "園内売店にて販売しているもの シャンプー・リンスセット1個・・・330円"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://www.yumefarm.jp/facility/autocamping",
+    "quote": "ペットとご一緒でのご利用は、できません。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/13863",
+  "napName": "柏しょうなんゆめファーム"
+ },
+ {
+  "napId": "14801",
+  "name": "ゴールドマウンテンオートキャンプ場",
+  "pref": "千葉",
+  "muni": "柏市",
+  "verdict": "追加",
+  "reason": "公式に住所（柏市金山576）が一致し、**定員1名の「林間ソロサイト」**の料金（平日3,300円／ハイシーズン4,300円）が明記されている",
+  "checkedUrls": [
+   "https://gm-autocamp.com/",
+   "https://gm-autocamp.com/site/",
+   "https://gm-autocamp.com/guide/",
+   "https://gm-autocamp.com/rule/"
+  ],
+  "officialUrl": "https://gm-autocamp.com/",
+  "reservationUrl": null,
+  "address": "千葉県柏市金山576",
+  "priceMin": 3300,
+  "priceMax": 4300,
+  "priceNote": "サイト単位課金。公式「林間ソロサイト／定員 1名まで／テント1張／シーズン・利用料金(税込) 平日3,300円・休日前日3,300円・ハイシーズン4,300円」。同サイトは「車両乗入 不可（キャンプ場内のサイト近くの駐車場にお停めください）」で駐車料の別途記載なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://gm-autocamp.com/guide/",
+    "quote": "面白いコイン式シャワールームあります。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://gm-autocamp.com/rule/",
+    "quote": "焚き火マットを敷いて焚き火をお楽しみください(直火禁止）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://gm-autocamp.com/",
+    "quote": "ドッグフリーサイトはキャンプ場を代表する人気サイト ノーリードでお過ごしいただけるよう柵で囲われているサイトです。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/14801",
+  "napName": "ゴールドマウンテンオートキャンプ場"
+ },
+ {
+  "napId": "14090",
+  "name": "大多喜わんぱくキャンプ場",
+  "pref": "千葉",
+  "muni": "大多喜町",
+  "verdict": "追加",
+  "reason": "施設公式あり・営業中。公式記事に「**１号店、２号店ともにどのサイトもソロでご利用いただくことは可能です**」と明記され単独利用可。料金は公式が予約先として指定する489banに掲載（最安8,800円／1サイト）",
+  "checkedUrls": [
+   "https://www.wanpaku-camp.jp/",
+   "https://www.wanpaku-camp.jp/page-8816",
+   "https://www.wanpaku-camp.jp/faq",
+   "https://www.wanpaku-camp.jp/archives/9547",
+   "https://reserve.489ban.net/client/wanpaku-camp/0/plan/"
+  ],
+  "officialUrl": "https://www.wanpaku-camp.jp/",
+  "reservationUrl": "https://reserve.489ban.net/client/wanpaku-camp/0/plan/",
+  "address": "千葉県夷隅郡大多喜町平沢1281-6",
+  "priceMin": 8800,
+  "priceMax": 8800,
+  "priceNote": "サイト単位課金。公式予約先489banの最安プラン「110平方メートル以上の角サイト（電源無し）」が「8,800円〜（1サイトあたり）」「1サイト料金（2名様利用時）8,800円〜」「定員:1〜6名様」「料金は大人の人数で変わります」。**1名利用時の表示額は予約画面に出ないため8,800円より安い可能性がある。**駐車はサイト内1台込み（場外に停める場合は2,200円のオプション）。参考：デッキオートサイト9,900円、ワイドデッキ11,000円、平日貸切7,700円。**公式サイト本体に料金表は無く、料金の掲載は予約エンジン側のみ**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.wanpaku-camp.jp/page-8816",
+    "quote": "無料シャワー（温水）／予約制の有料シャワーの他に、無料の温水シャワーがあります。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.wanpaku-camp.jp/page-8816",
+    "quote": "薪は無料／無料の薪で心ゆくまで焚き火をご堪能ください。薪割り機で薪割り体験もできます。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.wanpaku-camp.jp/archives/9095",
+    "quote": "この度１号店でも売店をスタートさせることにしました。…現金を貯金箱に入れてもらうか、PayPayで決済してもらいます。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.wanpaku-camp.jp/faq",
+    "quote": "ペットは同伴できますか？ お客様がテントをお持ちになるプランの場合、同伴いただくことができます。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/14090",
+  "napName": "大多喜わんぱくキャンプ場"
  }
 ]

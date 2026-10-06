@@ -1,0 +1,57 @@
+[
+ {"napId":"13863","name":"柏しょうなんゆめファーム","pref":"千葉","muni":"柏市","verdict":"追加",
+  "reason":"公式に住所（柏市布瀬89-1）が一致し、オートキャンプブースのオーバーナイト料金（6名まで6,600円でソロでも同額）が明記されている",
+  "checkedUrls":["https://www.yumefarm.jp/","https://www.yumefarm.jp/facility/autocamping","https://www.yumefarm.jp/reserve","https://www.yumefarm.jp/facility/oyu"],
+  "officialUrl":"https://www.yumefarm.jp/","reservationUrl":"https://www.yumefarm.jp/reserve",
+  "address":"千葉県柏市布瀬89-1","priceMin":6600,"priceMax":11000,
+  "priceNote":"区画単位課金。公式「通常料金／テントブース（セルフ設営）オーバーナイト 6名まで6,600円(1名追加毎に880円/最高8名まで)」。**ゴールデンウィーク期間（2026年4月25日〜5月6日）とお盆シーズンはオーバーナイト6名まで11,000円**なので priceMax に採用。駐車は「駐車可能台数は、1ブース／1台です」で別途料金なし",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.yumefarm.jp/facility/oyu","quote":"脱衣所とシャワールームで１坪くらいの個室シャワーとなっております"},
+    "shop":{"value":true,"evidenceUrl":"https://www.yumefarm.jp/facility/autocamping","quote":"園内売店にて販売しているもの シャンプー・リンスセット1個・・・330円"},
+    "pet":{"value":false,"evidenceUrl":"https://www.yumefarm.jp/facility/autocamping","quote":"ペットとご一緒でのご利用は、できません。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"13923","name":"あけぼの山農業公園","pref":"千葉","muni":"柏市","verdict":"門落ち(宿泊不可)",
+  "reason":"公式は開園時間制の日帰り公園（住所は柏市布施2005-2で一致）。料金案内・ご利用案内・アクセスのいずれにも**キャンプ／宿泊の記載が無い**（料金案内はバーベキュー場と各室使用料のみ）",
+  "checkedUrls":["https://akebonoyama-nougyoukouen.jp/","https://akebonoyama-nougyoukouen.jp/userguide/charge"],"officialUrl":"https://akebonoyama-nougyoukouen.jp/"},
+
+ {"napId":"14301","name":"RECAMP しょうなん","pref":"千葉","muni":"柏市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"運営元公式に住所一致のページはあるがソロ1泊料金の掲載が無く、**公式約款も「宿泊/日帰り料金・その他の料金については弊社ホームページ上の予約システムに掲示する料金によります」**とし、実際の予約先はなっぷのみ",
+  "checkedUrls":["https://www.recamp.co.jp/rcshonan","https://www.recamp.co.jp/_files/ugd/194e48_ae99072d0e924076ab365e30bfcce3f5.pdf"],"officialUrl":"https://www.recamp.co.jp/rcshonan"},
+
+ {"napId":"14801","name":"ゴールドマウンテンオートキャンプ場","pref":"千葉","muni":"柏市","verdict":"追加",
+  "reason":"公式に住所（柏市金山576）が一致し、**定員1名の「林間ソロサイト」**の料金（平日3,300円／ハイシーズン4,300円）が明記されている",
+  "checkedUrls":["https://gm-autocamp.com/","https://gm-autocamp.com/site/","https://gm-autocamp.com/guide/","https://gm-autocamp.com/rule/"],
+  "officialUrl":"https://gm-autocamp.com/","reservationUrl":null,
+  "address":"千葉県柏市金山576","priceMin":3300,"priceMax":4300,
+  "priceNote":"サイト単位課金。公式「林間ソロサイト／定員 1名まで／テント1張／シーズン・利用料金(税込) 平日3,300円・休日前日3,300円・ハイシーズン4,300円」。同サイトは「車両乗入 不可（キャンプ場内のサイト近くの駐車場にお停めください）」で駐車料の別途記載なし",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://gm-autocamp.com/guide/","quote":"面白いコイン式シャワールームあります。"},
+    "firewood":{"value":true,"evidenceUrl":"https://gm-autocamp.com/rule/","quote":"焚き火マットを敷いて焚き火をお楽しみください(直火禁止）"},
+    "pet":{"value":true,"evidenceUrl":"https://gm-autocamp.com/","quote":"ドッグフリーサイトはキャンプ場を代表する人気サイト ノーリードでお過ごしいただけるよう柵で囲われているサイトです。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14943","name":"ogawa GRAND lodge FIELD","pref":"千葉","muni":"柏市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"ogawa（キャンパルジャパン）公式に住所一致の直営キャンプ場ページはあるが、**「キャンプ場のご予約は「なっぷ」をご利用ください。※ご利用料金はプランにより異なります。詳しくは「なっぷ」HPをご確認ください。」**と料金・予約を明示的に丸投げしており公式に金額が無い",
+  "checkedUrls":["https://www.campal.co.jp/shops/sort/field/index.html","https://www.campal.co.jp/shops/"],"officialUrl":"https://www.campal.co.jp/shops/sort/field/index.html"},
+
+ {"napId":"16219","name":"SHONAN BASE","pref":"千葉","muni":"柏市","verdict":"宿泊系のため対象外",
+  "reason":"公式（住所一致：柏市鷲野谷593-1）の宿泊プランは CONTAINER A〜D のコンテナトレーラー客室のみ（1棟 平日40,000円〜）で、**テント泊の区画・料金が存在しない**。他はBBQ・SAUNAの時間制プランだけ",
+  "checkedUrls":["https://www.shonan-base-washinoya.com/","https://www.shonan-base-washinoya.com/services-9"],"officialUrl":"https://www.shonan-base-washinoya.com/"},
+
+ {"napId":"16371","name":"Wonderful Garden","pref":"千葉","muni":"柏市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（住所一致：柏市布施736）にサイト区画の説明はあるが**ソロ1泊のサイト料金が無く**、料金は「予約・空き状況はこちらから」のなっぷのみ。公式に載る金額はシャワー300円・薪1,000円・車2台目1,000円といった付帯費用だけ",
+  "checkedUrls":["https://www.wonderfulgarden.jp/","https://www.wonderfulgarden.jp/facility/"],"officialUrl":"https://www.wonderfulgarden.jp/"},
+
+ {"napId":"16752","name":"WASHINOYA OUTDOOR DINING GLOBAR","pref":"千葉","muni":"柏市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・運営公式・公式予約先がいずれも見つからない。候補ドメインは未登録で、**globar.co.jp は無関係の株式会社グローバー（DX事業）、washinoya.com は長野の民宿「鷲の家」**。近隣の SHONAN BASE 公式（鷲野谷593-1）にも鷲野谷137の記載なし",
+  "checkedUrls":["https://www.nap-camp.com/chiba/16752","https://globar.co.jp/","https://washinoya.com/"],"officialUrl":null},
+
+ {"napId":"16863","name":"Kingfisher Garden","pref":"千葉","muni":"柏市","verdict":"UNMEASURED",
+  "reason":"**根拠が予約システム（reserva.be）のページだけで施設公式サイトが存在しない**。所在地の運営元である手賀沼漁業協同組合＝手賀沼フィッシングセンター公式にも Kingfisher Garden やキャンプの記載が無く、残るのは観光協会ページのみ。予約システム側には「臨時ソロキャンプフリーサイト 1室1泊 ￥2,200〜」がある。Yamasobu Campground と同じ型",
+  "checkedUrls":["https://reserva.be/kingfishergarden","https://reserva.be/kingfishergarden/about","https://teganumafishing.com/"],"officialUrl":null},
+
+ {"napId":"15697","name":"evergreen","pref":"千葉","muni":"白井市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"運営元・株式会社日建住宅の公式サイト内に住所一致（白井市根296-6）の evergreen ページがあり「キャンプ・テント 森林サイト／芝生サイト」も明記されているが、**料金が一切掲載されておらず**予約リンクはなっぷのみ",
+  "checkedUrls":["https://nikken47.com/community/","https://www.nap-camp.com/chiba/15697"],"officialUrl":"https://nikken47.com/community/"}
+]
