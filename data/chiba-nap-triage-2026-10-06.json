@@ -128,8 +128,8 @@
       "lngCandidate": "139.902899",
       "priority": 0,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14038",
@@ -194,7 +194,7 @@
       "priority": 0,
       "officialUrl": "https://shiosai-minamiboso.com/",
       "verdict": "UNMEASURED",
-      "reason": "公式 shiosai-minamiboso.com を確認。住所・オンライン予約は一致したが料金表の金額を取得できず。ソロ(1名)可否の明記も無い。再判定が要る"
+      "reason": "しおさいキャンプフィールド。公式で住所・オンライン予約は一致したが料金表の金額を取得できず。ソロ可否の明記も無い"
     },
     {
       "napId": "14280",
@@ -219,8 +219,8 @@
       "lngCandidate": "139.84608742397307",
       "priority": 0,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14445",
@@ -258,8 +258,8 @@
       "lngCandidate": "139.82968839805602",
       "priority": 0,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14525",
@@ -323,8 +323,8 @@
       "lngCandidate": "140.0069561",
       "priority": 0,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "15113",
@@ -569,9 +569,9 @@
       "latCandidate": "34.98034275215201",
       "lngCandidate": "139.82408911543106",
       "priority": 1,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "http://kaikouzu.com/camp.html",
+      "verdict": "追加",
+      "reason": "人魚の湯 オートキャンプ場 マリンサイドとして掲載。公式(海紅豆)に施設名・住所・予約導線。料金はなっぷ側で needsPrice"
     },
     {
       "napId": "13606",
@@ -622,8 +622,8 @@
       "lngCandidate": "139.818129",
       "priority": 1,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "13932",
@@ -712,9 +712,9 @@
       "latCandidate": "34.94649714913448",
       "lngCandidate": "139.81397316554146",
       "priority": 1,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.recamp.co.jp/recamptateyama",
+      "verdict": "追加",
+      "reason": "RECAMP館山として掲載。公式(株式会社Recamp)に施設名・住所・予約導線。料金はなっぷ側で needsPrice"
     },
     {
       "napId": "14644",
@@ -765,8 +765,8 @@
       "lngCandidate": "139.87085676193237",
       "priority": 1,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16112",
@@ -791,8 +791,8 @@
       "lngCandidate": "139.86185716865143",
       "priority": 1,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16157",
@@ -868,9 +868,9 @@
       "latCandidate": "35.2818554",
       "lngCandidate": "140.0571376",
       "priority": 2,
-      "officialUrl": null,
+      "officialUrl": "https://holywoodscamp.jimdo.com/",
       "verdict": "UNMEASURED",
-      "reason": null
+      "reason": "ホウリーウッズ久留里キャンプ村。公式 holywoodscamp.jimdo.com がSSLハンドシェイク失敗で開けず門1の照合ができない"
     },
     {
       "napId": "11949",
@@ -896,7 +896,7 @@
       "priority": 2,
       "officialUrl": "https://www.eleven-camp.com/",
       "verdict": "UNMEASURED",
-      "reason": "公式 eleven-camp.com を確認し住所・予約方法は一致したが、料金ページを特定できず(/price/ は404)。門1-3は満たす見込みで、料金確認後に再判定"
+      "reason": "イレブンオートキャンプパーク。公式で住所・予約方法は一致。料金ページを特定できず(/price/ は404)。再訪が要る"
     },
     {
       "napId": "11951",
@@ -959,9 +959,9 @@
       "latCandidate": "35.215901",
       "lngCandidate": "140.106592",
       "priority": 2,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/",
+      "verdict": "追加",
+      "reason": "亀山湖オートキャンプ場として掲載。公式 kameyamacamp.com に料金(区画3,000+入場1,000)と予約フォーム"
     },
     {
       "napId": "11956",
@@ -972,9 +972,9 @@
       "latCandidate": "35.2259786",
       "lngCandidate": "140.0985786",
       "priority": 2,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://inagasaki.world.coocan.jp/facilities.html",
+      "verdict": "追加",
+      "reason": "稲ヶ崎キャンプ場として掲載。公式にフリー1,100円/オート3,300円、予約は君津市公共施設予約システム"
     },
     {
       "napId": "11958",
@@ -1011,9 +1011,9 @@
       "latCandidate": "35.184235446361185",
       "lngCandidate": "140.01011168956757",
       "priority": 2,
-      "officialUrl": null,
+      "officialUrl": "https://www.romannomori.co.jp/price/",
       "verdict": "UNMEASURED",
-      "reason": null
+      "reason": "ロマンの森共和国キャンプ場。公式の料金ページに入場料(宿泊者500円)はあるがオートサイトのサイト料が無い。サイト料の載るページを特定できれば通る見込み"
     },
     {
       "napId": "14184",
@@ -1037,9 +1037,9 @@
       "latCandidate": "35.19301090729833",
       "lngCandidate": "140.07311133278807",
       "priority": 2,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.city.kimitsu.lg.jp/site/kanko/48426.html",
+      "verdict": "閉鎖疑い",
+      "reason": "君津市公式の該当ページが404。第三者サイトに【閉店】の表記。要再確認"
     },
     {
       "napId": "14600",
@@ -1051,8 +1051,8 @@
       "lngCandidate": "140.0839419",
       "priority": 2,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14823",
@@ -1103,8 +1103,8 @@
       "lngCandidate": "139.968016",
       "priority": 2,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "15669",
@@ -1128,9 +1128,9 @@
       "latCandidate": "35.2248659764801",
       "lngCandidate": "140.0821982533035",
       "priority": 2,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.city.kimitsu.lg.jp/site/kanko/77120.html",
+      "verdict": "追加",
+      "reason": "レイクサイド亀山キャンプ場として掲載。君津市公式に「4,500円〜」、予約はなっぷ(電話不可)"
     },
     {
       "napId": "15907",
@@ -1142,8 +1142,8 @@
       "lngCandidate": "140.0211916",
       "priority": 2,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16025",
@@ -1155,8 +1155,8 @@
       "lngCandidate": "140.08396752032533",
       "priority": 2,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16355",
@@ -1181,8 +1181,8 @@
       "lngCandidate": "139.9521798",
       "priority": 2,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16483",
@@ -1207,8 +1207,8 @@
       "lngCandidate": "140.06879620960083",
       "priority": 2,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16765",
@@ -1232,9 +1232,9 @@
       "latCandidate": "35.264937",
       "lngCandidate": "140.396765",
       "priority": 3,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://oohara-ac-inn.jimdofree.com/",
+      "verdict": "追加",
+      "reason": "大原オートキャンプインそとぼうとして掲載。公式に全サイトの料金表と利用料"
     },
     {
       "napId": "11932",
@@ -1245,9 +1245,9 @@
       "latCandidate": "35.2589243",
       "lngCandidate": "140.2964017",
       "priority": 3,
-      "officialUrl": null,
+      "officialUrl": "http://www.camp-miyahara.com/",
       "verdict": "UNMEASURED",
-      "reason": null
+      "reason": "宮原オートキャンプ場。公式 camp-miyahara.com がSSLエラー(WRONG_VERSION_NUMBER)で開けず照合できない"
     },
     {
       "napId": "11933",
@@ -1258,9 +1258,9 @@
       "latCandidate": "35.3195289",
       "lngCandidate": "140.4063708",
       "priority": 3,
-      "officialUrl": null,
+      "officialUrl": "http://wildkids.jp/",
       "verdict": "UNMEASURED",
-      "reason": null
+      "reason": "ワイルドキッズ岬オートキャンプ場。公式 wildkids.jp がHTTPS証明書不一致(*.valueserver.jp)で開けず照合できない"
     },
     {
       "napId": "11981",
@@ -1311,8 +1311,8 @@
       "lngCandidate": "140.3603196144104",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14015",
@@ -1350,8 +1350,8 @@
       "lngCandidate": "140.39244985580444",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14145",
@@ -1376,8 +1376,8 @@
       "lngCandidate": "140.3302066368401",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14211",
@@ -1389,8 +1389,8 @@
       "lngCandidate": "140.40012498859937",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14219",
@@ -1402,8 +1402,8 @@
       "lngCandidate": "140.3206827",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14251",
@@ -1428,8 +1428,8 @@
       "lngCandidate": "140.32881138227845",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14382",
@@ -1467,8 +1467,8 @@
       "lngCandidate": "140.28202595152055",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14908",
@@ -1480,8 +1480,8 @@
       "lngCandidate": "140.2850816",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "15018",
@@ -1545,8 +1545,8 @@
       "lngCandidate": "140.4044164",
       "priority": 3,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16295",
@@ -1598,7 +1598,7 @@
       "priority": 3,
       "officialUrl": null,
       "verdict": "UNMEASURED",
-      "reason": null
+      "reason": "Strawhat Camp Field。施設公式を特定できず(なっぷ・いこーよのみ)。料金も不明"
     },
     {
       "napId": "11993",
@@ -1609,9 +1609,9 @@
       "latCandidate": "35.1944381",
       "lngCandidate": "139.925044",
       "priority": 4,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://maruchiba.jp/sys/data/index/page/id/6481",
+      "verdict": "門落ち(公式なし)",
+      "reason": "「公式」として出るのは maruchiba.jp(千葉県観光物産協会のちば観光ナビ)で施設自身のサイトではない。門4不通過"
     },
     {
       "napId": "11994",
@@ -1635,9 +1635,9 @@
       "latCandidate": "35.31229862027373",
       "lngCandidate": "139.8105460433388",
       "priority": 4,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.cue-net.or.jp/kouen/futtsu/annai/camp.html",
+      "verdict": "追加",
+      "reason": "富津公園キャンプ場として掲載。県立富津公園の公式に施設名・住所・運営者。料金は公式に無く needsPrice"
     },
     {
       "napId": "14147",
@@ -1649,8 +1649,8 @@
       "lngCandidate": "139.9147525",
       "priority": 4,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14610",
@@ -1661,9 +1661,9 @@
       "latCandidate": "35.18061437639645",
       "lngCandidate": "139.82525636567613",
       "priority": 4,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "http://www.autocamphills.com/charge.html",
+      "verdict": "追加",
+      "reason": "富津金谷オートキャンプヒルズとして掲載。公式 charge.html に1人専用Eソロサイトの料金"
     },
     {
       "napId": "14718",
@@ -1687,9 +1687,9 @@
       "latCandidate": "35.1746746",
       "lngCandidate": "139.8204695",
       "priority": 4,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.sunvillagekanayacamp.com/plans",
+      "verdict": "門落ち(住所を照合できない)",
+      "reason": "公式 sunvillagekanayacamp.com にソロサイト2,500円〜の記載はあるが、トップにも施設案内にも住所が無く市町村を照合できない。門1不通過"
     },
     {
       "napId": "14775",
@@ -1727,8 +1727,8 @@
       "lngCandidate": "139.9404346",
       "priority": 4,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "15042",
@@ -1766,8 +1766,8 @@
       "lngCandidate": "139.8464335",
       "priority": 4,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16227",
@@ -1869,9 +1869,9 @@
       "latCandidate": "35.1865618",
       "lngCandidate": "140.2573507",
       "priority": 5,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://camp-chirorin763657.amebaownd.com/",
+      "verdict": "門落ち(料金も予約も公式に無し)",
+      "reason": "公式 amebaownd で施設名・住所(勝浦市小羽戸589-1)は一致したが、料金も予約方法もページに無い。門2不通過"
     },
     {
       "napId": "11975",
@@ -1882,9 +1882,9 @@
       "latCandidate": "35.14111655563635",
       "lngCandidate": "140.28697729110718",
       "priority": 5,
-      "officialUrl": null,
+      "officialUrl": "http://www.manbow-camp.jp/",
       "verdict": "UNMEASURED",
-      "reason": null
+      "reason": "ACNオートキャンプin勝浦まんぼう。公式 manbow-camp.jp がHTTPS証明書不一致(*.xserver.jp)で開けず照合できない"
     },
     {
       "napId": "11976",
@@ -1895,9 +1895,9 @@
       "latCandidate": "35.2037625",
       "lngCandidate": "140.280768",
       "priority": 5,
-      "officialUrl": null,
+      "officialUrl": "http://katuuraonsen.com/camp/camp.html",
       "verdict": "UNMEASURED",
-      "reason": null
+      "reason": "勝浦つるんつるん温泉直営オートキャンプ場。公式 katuuraonsen.com がSSLエラーで開けず照合できない"
     },
     {
       "napId": "14200",
@@ -2117,8 +2117,8 @@
       "lngCandidate": "140.6817777",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14118",
@@ -2143,8 +2143,8 @@
       "lngCandidate": "140.38499331474304",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14167",
@@ -2169,8 +2169,8 @@
       "lngCandidate": "140.3960902",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14956",
@@ -2273,8 +2273,8 @@
       "lngCandidate": "140.5202514",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14807",
@@ -2377,8 +2377,8 @@
       "lngCandidate": "140.10870472572554",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "15028",
@@ -2416,8 +2416,8 @@
       "lngCandidate": "140.1169262",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16627",
@@ -2494,8 +2494,8 @@
       "lngCandidate": null,
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16072",
@@ -2507,8 +2507,8 @@
       "lngCandidate": "140.428777",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16532",
@@ -2546,8 +2546,8 @@
       "lngCandidate": "140.31530560925603",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14039",
@@ -2624,8 +2624,8 @@
       "lngCandidate": "140.5154386",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14201",
@@ -2754,8 +2754,8 @@
       "lngCandidate": "140.49572595515593",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14996",
@@ -2806,8 +2806,8 @@
       "lngCandidate": "140.5049631227539",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "11967",
@@ -3352,8 +3352,8 @@
       "lngCandidate": "140.5676299",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14895",
@@ -3443,8 +3443,8 @@
       "lngCandidate": "140.5175615",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "11936",
@@ -3495,8 +3495,8 @@
       "lngCandidate": "140.194031",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14044",
@@ -3508,8 +3508,8 @@
       "lngCandidate": "140.18752679908903",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14048",
@@ -3521,8 +3521,8 @@
       "lngCandidate": "140.2405005",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14090",
@@ -3677,8 +3677,8 @@
       "lngCandidate": "140.386507",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "11985",
@@ -3742,8 +3742,8 @@
       "lngCandidate": "140.2491549",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14476",
@@ -3755,8 +3755,8 @@
       "lngCandidate": "140.2109252558891",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "16414",
@@ -3781,8 +3781,8 @@
       "lngCandidate": "140.3996703",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14095",
@@ -3820,8 +3820,8 @@
       "lngCandidate": "140.36313533690947",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "13863",
@@ -3976,8 +3976,8 @@
       "lngCandidate": "140.3963793116394",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14404",
@@ -4158,8 +4158,8 @@
       "lngCandidate": "139.9336196",
       "priority": 99,
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "宿泊系のため対象外",
+      "reason": "施設名にグランピング・コテージ・古民家・リゾート・ホテル・ヴィラ・貸別荘・ログハウスのいずれかが含まれ、持ち込みテントのソロキャンプ場ではないと判断した。2026-10-06 の方針で全件を対象外にする（公式の個別確認はしていない）"
     },
     {
       "napId": "14716",
@@ -4269,12 +4269,14 @@
   "progress": {
     "asOf": "2026-10-06",
     "門の対象": 300,
-    "本セッションで調査済み": 13,
-    "追加": 4,
-    "門落ち": 3,
-    "未測定のまま": 287,
+    "宿泊系のため対象外": 49,
+    "調査済み合計": 18,
+    "追加": 12,
+    "門落ち": 6,
+    "閉鎖疑い": 27,
+    "UNMEASURED": 232,
     "打ち切り": true,
-    "打ち切りの理由": "1件あたり検索1〜2回＋公式ページの取得1〜2回が要るため、300件は1セッションで終わらない。優先6市(155件)の先頭から順に処理し、13件で打ち切った。残りは verdict=UNMEASURED のまま。",
-    "次に見るもの": "優先6市かつ名前がキャンプ場系の40件のうち未処理36件。グランピング・コテージ系49件は方針確認が先"
+    "打ち切りの理由": "1件あたり検索1〜2回＋公式ページ取得1〜2回。優先6市のキャンプ場系から順に当たり、2バッチで計34件を調査して打ち切った。",
+    "次に見るもの": "UNMEASURED のうち、HTTPS証明書不一致で開けなかった5件は別の取得手段が要る。料金ページ未特定の3件(ロマンの森・イレブン・しおさい)は再訪で通る見込み"
   }
 }

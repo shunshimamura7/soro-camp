@@ -11132,5 +11132,358 @@
     "source": [
       "https://miyoshi1185.wixsite.com/miyoshi-family-camp"
     ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "kameyamako-autocamp",
+    "slug": "kameyamako-autocamp",
+    "name": "亀山湖オートキャンプ場",
+    "area": "君津・亀山湖",
+    "address": "千葉県君津市折木沢湯の川1306",
+    "priceMin": 4000,
+    "priceMax": 5000,
+    "priceVerified": true,
+    "priceNote": "サイト課金＋人数課金の合算。**下段北側・上段西側・下段南側の区画3,000円＋入場料 大人1,000円で、ソロ1名4,000円。**上段東側（AC電源付き）は4,000円＋入場料で5,000円。子供（3歳〜小学生）の入場料は500円。アーリーチェックイン／レイトチェックアウトは各1時間500円",
+    "features": {
+      "carIn": true,
+      "carInNote": "区画オートサイト",
+      "reservation": "要",
+      "reservationNote": "公式サイトのサイト別予約フォームから"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "亀山湖に面したオートキャンプ場。料金はサイト料と入場料の合算で、電源なしの区画ならソロ1名4,000円。売店は10時から17時、レンタル品の受付は16時まで。",
+    "officialUrl": "https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/",
+    "tel": null,
+    "cautions": [
+      "**入場料が人数分かかる。**サイト料だけでは泊まれない",
+      "予約はサイトごとに専用フォームが分かれている",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.kameyamacamp.com/%E6%96%BD%E8%A8%AD%E3%83%BB%E6%96%99%E9%87%91%E6%A1%88%E5%86%85/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "inagasaki-camp",
+    "slug": "inagasaki-camp",
+    "name": "稲ヶ崎キャンプ場",
+    "area": "君津・亀山湖",
+    "address": "千葉県君津市草川原866",
+    "priceMin": 1100,
+    "priceMax": 3300,
+    "priceVerified": true,
+    "priceNote": "サイト単位課金。**フリーキャンプサイトはテント1張1,100円**で、入場料の設定が無いのでソロ1名1,100円。オートキャンプサイトは1区画1泊3,300円。23〜26番の電源貸出は＋1,100円。コインシャワー3分100円",
+    "features": {
+      "carIn": true,
+      "carInNote": "オートキャンプサイトあり。フリーサイトは別区分",
+      "shower": true,
+      "showerNote": "コインシャワー 3分100円（15:00〜21:00）",
+      "reservation": "要",
+      "reservationNote": "君津市公共施設予約システム（k6.p-kashikan.jp/kimitsu-city/）または電話 0439-39-3390"
+    },
+    "season": "通年営業（12/29〜1/3は休業）",
+    "soloComment": "亀山湖畔のキャンプ場。フリーサイトはテント1張1,100円と安く、オートサイトは1区画3,300円。予約は君津市の公共施設予約システムか電話。通年営業で年末年始だけ休む。",
+    "officialUrl": "https://inagasaki.world.coocan.jp/facilities.html",
+    "tel": "0439-39-3390",
+    "cautions": [
+      "**予約は君津市の公共施設予約システム経由。**市の施設として運用されている",
+      "公式での名称は「稲ヶ崎オートキャンプ＆長崎デイキャンプ場」。なっぷ側の表記と異なる",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://inagasaki.world.coocan.jp/facilities.html"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "lakeside-kameyama",
+    "slug": "lakeside-kameyama",
+    "name": "レイクサイド亀山キャンプ場",
+    "area": "君津・亀山湖",
+    "address": "千葉県君津市川俣旧押込68-3",
+    "priceMin": 4500,
+    "priceMax": 4500,
+    "priceVerified": true,
+    "priceNote": "サイト課金＋人数課金の合算。**君津市公式の表示は「4,500円〜」**（サイト料3,000円＋入場料 大人1,500円の組み合わせに相当）。上限は公式に出ていないので下限と同値を置いている",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "**電話予約は受け付けていない。**予約と最新情報はなっぷから"
+    },
+    "season": "定休日は月曜・火曜（君津市公式の記載）",
+    "soloComment": "亀山湖の湖畔にあるキャンプ場。君津市の観光情報ページに「4,500円〜」と掲載されている。電話予約は受け付けておらず、予約はなっぷから。月曜と火曜が定休日。",
+    "officialUrl": "https://www.city.kimitsu.lg.jp/site/kanko/77120.html",
+    "reservationUrl": "https://www.nap-camp.com/chiba/15852",
+    "tel": "0439-29-6233",
+    "cautions": [
+      "**電話予約は不可。**君津市公式が「電話予約は受け付けておりません」と明記している",
+      "**月曜・火曜が定休日**",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.city.kimitsu.lg.jp/site/kanko/77120.html"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "ohara-sotobou",
+    "slug": "ohara-sotobou",
+    "name": "大原オートキャンプインそとぼう",
+    "area": "いすみ・大原",
+    "address": "千葉県いすみ市深堀1831",
+    "priceMin": 5000,
+    "priceMax": 7000,
+    "priceVerified": true,
+    "priceNote": "サイト課金＋人数課金の合算（2023年4月1日改訂）。**電源なしのC〜Eサイト4,000円＋利用料 大人1,000円でソロ1名5,000円。**電源付きのA・Bサイトは5,000円。繁忙期（連休・8月第1〜3土曜日・年末年始）は各サイト＋1,000円。子供の利用料は500円",
+    "features": {
+      "carIn": true,
+      "carInNote": "オートサイト",
+      "reservation": "要",
+      "reservationNote": "公式サイトの予約ページから"
+    },
+    "season": "要確認（公式に営業期間の記載なし。通年だが繁忙期以外は週末中心との情報あり）",
+    "soloComment": "いすみ市深堀のオートキャンプ場。サイトはA〜Eの5種で、電源なしのC〜Eなら4,000円。これに大人1人1,000円の利用料が加わる。チェックイン13時〜17時、チェックアウト8時〜11時。",
+    "officialUrl": "https://oohara-ac-inn.jimdofree.com/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91",
+    "tel": "0470-62-8277",
+    "cautions": [
+      "**利用料が人数分かかる。**サイト料だけでは泊まれない",
+      "繁忙期（連休・8月第1〜3土曜日・年末年始）はサイト料が1,000円上がる",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://oohara-ac-inn.jimdofree.com/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "futtsu-kanaya-hills",
+    "slug": "futtsu-kanaya-hills",
+    "name": "富津金谷オートキャンプヒルズ",
+    "area": "富津・金谷",
+    "address": "千葉県富津市金谷894-1",
+    "priceMin": 3500,
+    "priceMax": 7700,
+    "priceVerified": true,
+    "priceNote": "サイト単位課金で**入場料なし**。**Eソロサイト（人数1人・車1台乗り入れ可・電源なし・全3サイト）**がオフ4,400円／レギュラー5,500円／ハイ7,700円、2026年4月以降は夏季3,500円。人数追加は2人まで可（中学生以上2,000円／小学生以上1,000円／乳幼児無料）",
+    "features": {
+      "carIn": true,
+      "carInNote": "ソロサイトも車1台の乗り入れ可",
+      "reservation": "要",
+      "reservationNote": "予約開始は3か月前の1日9:00。毎月1日は電話での予約受付をしていない"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "富津市金谷の高台にあるオートキャンプ場。**1人専用のEソロサイトが3区画あり**、車1台を乗り入れできる。入場料は無く、サイト料だけで泊まれる。チェックイン13時〜17時。",
+    "officialUrl": "http://www.autocamphills.com/charge.html",
+    "tel": "0439-32-1115",
+    "cautions": [
+      "**Eソロサイトは全3区画と少ない。**定員1人で電源なし・ペット不可",
+      "予約開始は3か月前の1日9:00。**毎月1日は電話予約を受け付けていない**",
+      "台風時などは前日午前中までに開催可否を判断し、ホームページ・なっぷ・SNSで告知すると公式に記載",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "http://www.autocamphills.com/charge.html",
+      "http://www.autocamphills.com/"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "futtsu-koen-camp",
+    "slug": "futtsu-koen-camp",
+    "name": "富津公園キャンプ場",
+    "area": "富津",
+    "address": "千葉県富津市富津2280",
+    "needsPrice": true,
+    "priceMin": 0,
+    "priceMax": 0,
+    "features": {
+      "reservation": "要",
+      "reservationNote": "キャンプ場の運営は富津市観光協会。問い合わせ・予約は同協会富津支部へ"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "千葉県立富津公園の中にあるキャンプ場。公園全体の指定管理とは別に、キャンプ場は富津市観光協会が運営している。東京湾に面した明治百年記念展望塔のある公園内にある。",
+    "officialUrl": "https://www.cue-net.or.jp/kouen/futtsu/annai/camp.html",
+    "tel": "0439-87-8887",
+    "cautions": [
+      "**料金が公式に出ていない。**県立富津公園の公式は「利用時間、利用料金等のお問い合わせは富津市観光協会富津支部へ」とだけ案内している",
+      "キャンプ場の運営は**富津市観光協会**（公園全体の指定管理者とは別）",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.cue-net.or.jp/kouen/futtsu/annai/camp.html"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "recamp-tateyama",
+    "slug": "recamp-tateyama",
+    "name": "RECAMP館山",
+    "area": "館山",
+    "address": "千葉県館山市布沼1210",
+    "needsPrice": true,
+    "priceMin": 0,
+    "priceMax": 0,
+    "features": {
+      "reservation": "要",
+      "reservationNote": "公式が指定する予約先はなっぷ"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "館山ファミリーパークを引き継いだキャンプ場。運営は株式会社Recamp。富津館山道路・富浦ICから車で約25分。予約は公式が案内するなっぷから。",
+    "officialUrl": "https://www.recamp.co.jp/recamptateyama",
+    "reservationUrl": "https://www.nap-camp.com/chiba/14639",
+    "tel": null,
+    "cautions": [
+      "**料金が公式サイトに出ていない。**公式は予約先としてなっぷを案内しており、金額はそちらにある",
+      "旧称は「館山ファミリーパークキャンプ場」",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.recamp.co.jp/recamptateyama"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "ningyonoyu-marineside",
+    "slug": "ningyonoyu-marineside",
+    "name": "人魚の湯 オートキャンプ場 マリンサイド",
+    "area": "館山",
+    "address": "千葉県館山市大賀85-1",
+    "needsPrice": true,
+    "priceMin": 0,
+    "priceMax": 0,
+    "features": {
+      "carIn": true,
+      "carInNote": "オートサイト",
+      "bath": true,
+      "bathNote": "本館の温泉を利用できる（入浴料 大人800円・子供600円・3歳以下無料）",
+      "reservation": "要",
+      "reservationNote": "公式が指定する予約先はなっぷ"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "館山の温泉旅館「海紅豆」が運営するオートキャンプ場。本館の温泉に入れる（入浴料は大人800円・子供600円）。予約は公式が案内するなっぷから。",
+    "officialUrl": "http://kaikouzu.com/camp.html",
+    "reservationUrl": "https://www.nap-camp.com/chiba/11947",
+    "tel": "0470-23-1212",
+    "cautions": [
+      "**キャンプ料金が公式サイトに出ていない。**公式は予約先としてなっぷを案内しており、金額はそちらにある",
+      "運営は温泉旅館「海紅豆」。**2026年3月19日から宿泊予約システムを変更**と公式に告知がある",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "http://kaikouzu.com/camp.html",
+      "http://kaikouzu.com/"
+    ]
   }
 ]
