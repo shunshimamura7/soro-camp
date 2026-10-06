@@ -329,6 +329,14 @@ export type Campground = {
     reservationNote?: string;
     convenience?: boolean;
     shop?: boolean;
+    /**
+     * 売店の根拠。**2026-10-06 に新設。**
+     *
+     * 他の boolean には `bathNote` などがあったのに `shop` だけ無く、
+     * **`shop: false` は「なし」と書く場所そのものが無かった。**
+     * 根拠を書けないフラグは根拠の無い false を生むので、揃えておく。
+     */
+    shopNote?: string;
     /** 場内・隣接地で釣りができることを一次情報で確認できた場合のみ true。未指定は要確認。 */
     fishing?: boolean;
     fishingNote?: string;
@@ -340,6 +348,17 @@ export type Campground = {
     garbage?: string;
     nearbySupermarket?: string;
     nearbyShop?: string;
+    /**
+     * **場外**の立ち寄り湯・温泉。**2026-10-06 に新設。**
+     *
+     * `bath` は「**場内に入浴施設がある**」の意味に限る。
+     * 「車で10分の日帰り温泉」を `bath: true` にすると、
+     * **風呂で絞り込んだ人が、場内に風呂の無い施設を引く。**意味が違うので別に持つ。
+     *
+     * 文字列。施設名と距離・所要時間など、公式に書いてあることだけを入れる。
+     * 値があることが「近くに温泉あり」の判定になる（`matchesFilters` の `nearbyOnsen`）。
+     */
+    nearbyOnsen?: string;
   };
   season: string;
   closedDays?: string;

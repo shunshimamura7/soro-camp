@@ -15,11 +15,18 @@ const ACTIVE_TOTAL = activeCampgrounds.length;
 const CHIBA_COUNT = activeCampgrounds.filter((c) => c.prefecture === "千葉").length;
 const EVIDENCE_BACKED_COUNT = evidenceBackedCampgrounds.length;
 const EVIDENCE_PENDING_COUNT = evidencePendingCampgrounds.length;
+/**
+ * ヒーローの件数はキャンプ場と野営地を分けて出す。
+ * 合計だけだと、**管理されたキャンプ場と管理者のいない野営地が同じ数に溶ける。**
+ * `filterByType` と同じ判定を使うので、タブの数字とずれない。
+ */
+const EVIDENCE_BACKED_CAMPGROUND = filterByType(evidenceBackedCampgrounds, "campground").length;
+const EVIDENCE_BACKED_WILD = filterByType(evidenceBackedCampgrounds, "wild").length;
 
 export default function HomePage() {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
   const [sort, setSort] = useState<SortKey>("soloScore");
-  const [typeTab, setTypeTab] = useState<TypeTab>("all");
+  const [typeTab, setTypeTab] = useState<TypeTab>("campground");
   const [mapOpen, setMapOpen] = useState(false);
   const [showEvidencePending, setShowEvidencePending] = useState(false);
 
@@ -74,8 +81,14 @@ export default function HomePage() {
         <p className="mt-3 text-xs sm:text-sm text-[#a54a20]">
           千葉県を追加。4県あわせて{ACTIVE_TOTAL}件を掲載中
           {CHIBA_COUNT > 0 && `（うち千葉県は${CHIBA_COUNT}件）`}。
+          {/*
+            キャンプ場と野営地は別物なので、合計だけ出さずに内訳を書く。
+            野営地は予約も料金も管理人も無く、利用者が負う責任が違う。
+          */}
           <span className="block mt-1 text-slate-500">
-            いま表示しているのは、情報源を確認できた{EVIDENCE_BACKED_COUNT}件です。
+            情報源を確認できたのは
+            <b className="text-[#a54a20]">キャンプ場{EVIDENCE_BACKED_CAMPGROUND}件</b>と
+            <b className="text-[#a54a20]">野営地{EVIDENCE_BACKED_WILD}件</b>です。
           </span>
         </p>
       </section>
@@ -90,7 +103,7 @@ export default function HomePage() {
           </p>
           <button
             onClick={() => setShowEvidencePending((value) => !value)}
-            className="shrink-0 min-h-[40px] rounded-xl border border-[#e8611f]/40 bg-white px-3 text-xs font-semibold text-[#c84f18] hover:bg-[#fff5ef] transition-colors"
+            className="shrink-0 min-h-[44px] rounded-xl border border-[#e8611f]/40 bg-white px-3 text-xs font-semibold text-[#c84f18] hover:bg-[#fff5ef] transition-colors"
           >
             {showEvidencePending ? "根拠ありのみ表示" : `情報確認中の${EVIDENCE_PENDING_COUNT}件も表示`}
           </button>
@@ -102,16 +115,53 @@ export default function HomePage() {
         <TypeTabs value={typeTab} onChange={setTypeTab} counts={typeCounts} />
       </section>
 
-      {/* 希望条件を選んでから、地図・一覧の結果を見る */}
-      <FilterBar
-        filters={filters}
-        sort={sort}
-        onFiltersChange={setFilters}
-        onSortChange={setSort}
-        total={results.length}
-        camps={scopedCamps}
-        onMapOpen={() => setMapOpen(true)}
-      />
+      {/*
+        野営地タブではこだわり検索と予算を出さない。
+        **野営地には料金が無く（無料開放）、風呂・売店・Wi-Fi といった設備も無い。**
+        条件を押せば必ず0件になるものを並べるのは、操作できる見た目の行き止まり。
+        代わりに「この場所について」の前提を先に読ませる。
+      */}
+      {typeTab === "wild" ? (
+        <section className="max-w-4xl mx-auto px-4 md:px-8 pb-4 sm:pb-6">
+          <div className="rounded-2xl border border-[#e3c6a6] bg-[#fdf3ea] p-4 sm:p-5">
+            <h2 className="font-['Shippori_Mincho_B1','Noto_Serif_JP',serif] font-bold text-[15px] sm:text-[17px] text-[#0e0d0b] mb-2">
+              この場所について
+            </h2>
+            <ul className="text-[13px] sm:text-sm leading-relaxed text-[#5b4a3d] space-y-1.5 list-disc pl-5">
+              <li>
+                <b>管理人も受付もありません。</b>予約・料金・チェックインの仕組みが無く、
+                設備（風呂・売店・電源など）も基本的にありません。そのため、こだわり検索と予算は表示していません。
+              </li>
+              <li>
+                <b>「公認なし」の場所が含まれます。</b>自治体や河川管理者が野営地として
+                指定・管理しているわけではなく、禁止されていないだけの場所です。各施設の「公認なし」バッジを確認してください。
+              </li>
+              <li>
+                <b>直火は原則できません。</b>焚き火台と、必要に応じて養生シートを使ってください。
+                ゴミ・灰はすべて持ち帰ります。
+              </li>
+              <li>
+                <b>増水・高波で状況が変わります。</b>河川敷は上流の降雨でも急に増水します。
+                行く前に気象情報を見て、危ないと思ったら引き返してください。
+              </li>
+              <li>
+                マナー違反が続けば<b>閉鎖や規制強化につながります。</b>次に来る人のために使ってください。
+              </li>
+            </ul>
+          </div>
+        </section>
+      ) : (
+        /* キャンプ場タブ。希望条件を選んでから、地図・一覧の結果を見る */
+        <FilterBar
+          filters={filters}
+          sort={sort}
+          onFiltersChange={setFilters}
+          onSortChange={setSort}
+          total={results.length}
+          camps={scopedCamps}
+          onMapOpen={() => setMapOpen(true)}
+        />
+      )}
 
       <section className="max-w-4xl mx-auto px-4 md:px-8 pb-4 sm:pb-6">
         {/* PC only: 地図表示 */}

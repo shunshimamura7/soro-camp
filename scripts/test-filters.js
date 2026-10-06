@@ -70,7 +70,12 @@ if (duplicated.length > 0) {
 // 戻すと undefined は落ちるが、将来 "あり" のような文字列が入ったときに素通りする。
 const boolPredicateLines = predicates
   .split("\n")
-  .filter((line) => /c\.features\./.test(line) && !/toilet|reservation/.test(line));
+  // **boolean でない3つだけ除く。**
+  //   toilet      … "洋式" / "ウォシュレット" / "温水便座" の値で判定する
+  //   reservation … "不要" の値で判定する
+  //   nearbyOnsen … **場外の温泉の説明文**。中身があることが「確認できた」印なので
+  //                 boolean ではない（2026-10-06 新設。`bath`＝場内の入浴施設とは別条件）
+  .filter((line) => /c\.features\./.test(line) && !/toilet|reservation|nearbyOnsen/.test(line));
 for (const line of boolPredicateLines) {
   if (!/===\s*true/.test(line)) {
     errors.push(`判定が "=== true" になっていない: ${line.trim()}`);
@@ -201,6 +206,75 @@ for (const file of walk(root)) {
         "背景タイルは lib/map-style.ts（地理院タイル）に一本化すること"
     );
   }
+}
+
+// ── キャンプ場タブに野営地を混ぜない ────────────────
+// 2026-10-06 にタブを「キャンプ場 / 野営地」の2つにし、「すべて」を廃止した。
+// **管理されたキャンプ場と、管理者も受付もいない野営地を同じ一覧に並べない**ための分離で、
+// 混ざると「公認なし」の河川敷が、予約も料金もあるキャンプ場と同じ顔で出てくる。
+//
+// 分離は `filterByType()` の1か所に集約してあるが、**ここが静かに壊れても画面は動く。**
+// 件数が少し増えるだけで、誰も気づかないまま公開される。だから機械で守る。
+
+// 1) TypeTab から "all" が復活していないか
+const tabType = stripComments(campSrc.match(/export type TypeTab =[^;]*;/)?.[0] ?? "");
+if (/"all"/.test(tabType)) {
+  errors.push(
+    'TypeTab に "all" が戻っている。キャンプ場と野営地を混ぜたタブは作らない' +
+      '（利用者が負う責任が違う。2026-10-06 に廃止）'
+  );
+}
+
+// 2) filterByType() のキャンプ場側が wild を落としているか
+const typeFn = stripComments(
+  campSrc.match(/export function filterByType[\s\S]*?\n}/)?.[0] ?? ""
+);
+if (!typeFn) {
+  errors.push("filterByType() が見つからない（名前を変えたらこのテストも直すこと）");
+} else if (!/c\.type\s*!==\s*"wild"/.test(typeFn)) {
+  errors.push(
+    'filterByType() のキャンプ場側が `c.type !== "wild"` で絞っていない。' +
+      "野営地がキャンプ場タブに混ざる"
+  );
+}
+
+// 3) 実データで総当たり。**1件でも wild が混ざったら落とす**
+const campgrounds = JSON.parse(
+  fs.readFileSync(path.join(root, "data", "campgrounds.json"), "utf8")
+);
+const leaked = campgrounds.filter((c) => c.type !== "wild").filter((c) => c.type === "wild");
+if (leaked.length > 0) {
+  errors.push(
+    `キャンプ場タブの結果に type:"wild" が ${leaked.length}件 混ざっている`
+  );
+}
+
+// ── 根拠の無い false を置かない ───────────────────────
+// `lib/types.ts` の features は「false は、公式情報で『なし・不可・禁止』と
+// 確認できた場合だけ使う」と決めている。**note の無い false は、確認していないのに
+// 画面へ「なし」と断定を出す。**2026-10-06 に 473 箇所を未指定へ戻した。戻り防止。
+const NOTE_OF = {
+  bath: "bathNote",
+  shower: "showerNote",
+  firewood: "firewoodNote",
+  pet: "petNote",
+  shop: "shopNote",
+};
+const unbacked = [];
+for (const c of campgrounds) {
+  const f = c.features || {};
+  for (const [key, noteKey] of Object.entries(NOTE_OF)) {
+    if (f[key] !== false) continue;
+    if (String(f[noteKey] || "").trim() !== "") continue;
+    unbacked.push(`${c.slug}.${key}`);
+  }
+}
+if (unbacked.length > 0) {
+  errors.push(
+    `根拠の無い false が ${unbacked.length}件 ある` +
+      `（${unbacked.slice(0, 5).join(", ")}）。` +
+      "確認できていないなら false ではなくフィールドごと外すこと"
+  );
 }
 
 // ── 出力 ──────────────────────────────────────────────────────────────────────

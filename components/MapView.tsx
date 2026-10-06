@@ -157,6 +157,8 @@ export default function MapView({ camps, height = 520 }: Props) {
     background: isDark ? "rgba(14,13,11,0.9)" : "rgba(255,255,255,0.9)",
     color: isDark ? "#e8c89a" : "#333",
     border: "1px solid rgba(0,0,0,0.2)",
+    // タップ領域の下限 44px。絵文字＋短い語だと 30px 台になって指で押しにくい
+    minHeight: 44,
     padding: "6px 12px",
     borderRadius: "4px",
     fontSize: "12px",

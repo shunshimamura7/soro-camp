@@ -41,31 +41,66 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
 type FeatureFilter = { key: FeatureFilterKey; label: string };
 
 /**
- * 常に見えている条件。**該当が全体の2〜7割に収まるもの**を前に置く。
+ * こだわり条件のグループ。**2026-10-06 に「もっと条件」の開閉をやめた。**
  *
- * 8割以上が該当する条件（車横付け・シャワー・洋式トイレ）は、押しても一覧がほとんど減らない。
- * 「絞り込めなかった」という体験になるので、件数を添えたうえで後ろに回す。
- * 逆に1割を切る条件（釣り・予約不要）は、押した瞬間に一覧が消える。こちらも畳む。
+ * 以前は該当件数の多寡で「常に見える5つ」と「畳む5つ」に分けていたが、
+ * **畳まれた側に何があるかが利用者に見えない。**「釣りができる」を探している人は
+ * 「もっと条件」を開くまで、その条件の存在自体を知らない。
+ *
+ * 代わりに**意味でグループ分けして全部出す。**幅360pxでも2列グリッドに収まる。
+ * 件数が0の条件は押せない見た目のまま残すので、「無い」ことも分かる。
  */
-const PRIMARY_FEATURES: FeatureFilter[] = [
-  { key: "bath",     label: "♨️ 風呂あり" },
-  { key: "pet",      label: "🐕 ペット可" },
-  { key: "shop",     label: "🏪 売店あり" },
-  { key: "firewood", label: "🪵 薪を買える" },
-  { key: "shower",   label: "🚿 シャワーあり" },
+type FeatureGroup = { title: string; items: FeatureFilter[] };
+
+const FEATURE_GROUPS: FeatureGroup[] = [
+  {
+    title: "設備",
+    items: [
+      { key: "bath",          label: "♨️ 風呂あり" },
+      { key: "shower",        label: "🚿 シャワー" },
+      { key: "westernToilet", label: "🚽 洋式トイレ" },
+    ],
+  },
+  {
+    title: "買える",
+    items: [
+      { key: "firewood", label: "🪵 薪を買える" },
+      { key: "shop",     label: "🏪 売店あり" },
+    ],
+  },
+  {
+    title: "その他",
+    items: [
+      { key: "pet",           label: "🐕 ペット可" },
+      { key: "carIn",         label: "🚗 車横付け" },
+      { key: "wifi",          label: "📶 Wi-Fi" },
+      { key: "noReservation", label: "✅ 予約不要" },
+      { key: "fishing",       label: "🎣 釣りができる" },
+      /**
+       * `bath`（場内の入浴施設）とは別の条件。
+       * 「近くに温泉がある」を風呂ありに混ぜると、**場内に風呂が無い施設が
+       * 風呂ありで出てくる。**判定は `lib/camp.ts` の `FEATURE_PREDICATES` に1か所だけ。
+       */
+      { key: "nearbyOnsen",   label: "♨️ 近くに温泉" },
+    ],
+  },
 ];
 
-/** 「もっと条件」を開いたときに出るもの。該当が極端に多い／少ない条件はこちら。 */
-const MORE_FEATURES: FeatureFilter[] = [
-  { key: "carIn",         label: "🚗 車横付け" },
-  { key: "westernToilet", label: "🚽 洋式トイレ" },
-  { key: "wifi",          label: "📶 Wi-Fi" },
-  { key: "noReservation", label: "✅ 予約不要" },
-  { key: "fishing",       label: "🎣 釣りができる" },
-];
+/** 「選択中」のチップと「すべて解除」で使う、全条件の平坦なリスト */
+const ALL_FEATURES: FeatureFilter[] = FEATURE_GROUPS.flatMap((g) => g.items);
 
 const pillBase =
-  "inline-flex items-center justify-center gap-1.5 min-h-[40px] px-4 rounded-full text-[14px] font-medium border transition-all duration-150 active:scale-[0.97] shrink-0";
+  "inline-flex items-center justify-center gap-1.5 min-h-[44px] px-4 rounded-full text-[14px] font-medium border transition-all duration-150 active:scale-[0.97] shrink-0";
+
+/**
+ * こだわり条件のボタン。**グリッドの1マスを埋める。**
+ *
+ * `min-h-[44px]` はタップ領域の下限。幅360pxの2列だと1マスが約164pxなので、
+ * ラベルが折り返さないよう `text-[13px]` と `px-2` まで詰め、数字は右端に寄せる。
+ */
+const cellBase =
+  "w-full inline-flex items-center justify-between gap-1 min-h-[44px] px-3 rounded-xl " +
+  "text-[13px] sm:text-[14px] font-medium border transition-all duration-150 active:scale-[0.97] text-left";
 const pillActive = "bg-[#e8611f] text-white border-transparent shadow-sm";
 const pillInactive = "bg-white text-[#0e0d0b] border-[#ccc] hover:border-[#e8611f]/50";
 /** 押しても0件になる条件。消さずに、押せない状態で件数だけ見せる。 */
@@ -79,8 +114,14 @@ const pillEmpty = "bg-white text-[#b3aca6] border-[#e6e2de] cursor-not-allowed";
  * 右端で切れて、**そこに続きがあること自体が見えない**。
  * スクロールバーも消しているので、切れているのか終わりなのか区別がつかなかった。
  */
-const rowClass = "scrollbar-hide overflow-x-auto px-4 sm:overflow-visible";
-const rowInner = "inline-flex items-center gap-2 whitespace-nowrap sm:flex sm:flex-wrap sm:gap-y-2";
+/**
+ * 県の行。**2026-10-06 に横スクロールをやめて折り返しにした。**
+ *
+ * 幅360pxだと「山梨」「千葉」が画面の右端で切れ、**そこに続きがあること自体が見えない**
+ * （スクロールバーも消していた）。県は5つしかないので、折り返せば2行で全部入る。
+ */
+const rowClass = "px-4";
+const rowInner = "flex flex-wrap items-center gap-2 gap-y-2";
 const rowStyle = { WebkitOverflowScrolling: "touch" } as const;
 
 /** ピル内の件数。選択中は白抜き、未選択はグレーで、ラベルより弱く見せる。 */
@@ -104,8 +145,6 @@ export default function FilterBar({
   total,
   camps,
 }: Props) {
-  const [moreOpen, setMoreOpen] = useState(false);
-
   const set = <K extends keyof Filters>(key: K, val: Filters[K]) =>
     onFiltersChange({ ...filters, [key]: val });
   const toggleFeature = (key: FeatureFilterKey) =>
@@ -129,12 +168,12 @@ export default function FilterBar({
   // 黙って減らすと「なぜ減ったのか」が分からないので、件数を出して理由を書く。
   const priceUnverified = camps.filter((c) => c.priceVerified !== true).length;
 
-  const moreSelected = MORE_FEATURES.filter(({ key }) => filters[key]).length;
 
+  /** グリッドの1マス。押すとその条件が入り、数字は「押したあとの件数」 */
   const renderFeature = ({ key, label }: FeatureFilter) => {
     const selected = filters[key];
     const n = countWith({ [key]: true } as Partial<Filters>);
-    // 選択中は 0件でも押せる状態を保つ。解除する手段を奪わない。
+    // 選択中は0件でも押せる状態を保つ。解除する手段を奪わない。
     const disabled = !selected && n === 0;
     return (
       <button
@@ -143,13 +182,22 @@ export default function FilterBar({
         aria-label={`${label.replace(/^\S+\s/, "")} ${n}件`}
         disabled={disabled}
         onClick={() => toggleFeature(key)}
-        className={`${pillBase} ${selected ? pillActive : disabled ? pillEmpty : pillInactive}`}
+        className={`${cellBase} ${selected ? pillActive : disabled ? pillEmpty : pillInactive}`}
       >
-        <span>{label}</span>
+        <span className="truncate">{label}</span>
         <Count n={n} selected={selected} />
       </button>
     );
   };
+
+  /** いま選ばれている条件。上に並べて、1つずつ外せるようにする */
+  const selectedFeatures = ALL_FEATURES.filter(({ key }) => filters[key]);
+
+  /** 条件だけ解除する（県と予算は残す） */
+  const clearFeatures = () =>
+    onFiltersChange(
+      ALL_FEATURES.reduce((f, { key }) => ({ ...f, [key]: false }), filters)
+    );
 
   return (
     <div className="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
@@ -221,29 +269,44 @@ export default function FilterBar({
           </div>
         </div>
 
-        <div className={rowClass} style={rowStyle}>
-          <div className={rowInner}>
-            <span className="text-[12px] font-semibold text-slate-500 shrink-0">こだわり</span>
-            {PRIMARY_FEATURES.map(renderFeature)}
+        {/* 選択中の条件。**1つずつ外せる**ようにして、全解除も置く */}
+        {selectedFeatures.length > 0 && (
+          <div className="px-4 flex flex-wrap items-center gap-1.5">
+            <span className="text-[12px] font-semibold text-slate-500 shrink-0">選択中</span>
+            {selectedFeatures.map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => toggleFeature(key)}
+                aria-label={`${label.replace(/^\S+\s/, "")} を外す`}
+                className="inline-flex items-center gap-1 min-h-[32px] px-2.5 rounded-full bg-[#e8611f] text-white text-[12px] font-medium active:scale-[0.97] transition-transform"
+              >
+                <span>{label.replace(/^\S+\s/, "")}</span>
+                <span aria-hidden="true" className="text-white/80 text-[13px] leading-none">×</span>
+              </button>
+            ))}
             <button
-              aria-expanded={moreOpen}
-              onClick={() => setMoreOpen((v) => !v)}
-              className={`${pillBase} ${moreSelected > 0 && !moreOpen ? pillActive : pillInactive}`}
+              onClick={clearFeatures}
+              className="min-h-[32px] rounded-lg px-2 text-[12px] font-semibold text-[#c84f18] hover:bg-[#fff5ef] transition-colors"
             >
-              <span>{moreOpen ? "条件を閉じる" : "もっと条件"}</span>
-              {moreSelected > 0 && !moreOpen && <Count n={moreSelected} selected />}
+              すべて解除
             </button>
           </div>
-        </div>
-
-        {moreOpen && (
-          <div className={rowClass} style={rowStyle}>
-            <div className={rowInner}>
-              <span className="text-[12px] font-semibold text-slate-500 shrink-0 invisible">こだわり</span>
-              {MORE_FEATURES.map(renderFeature)}
-            </div>
-          </div>
         )}
+
+        {/*
+          こだわり条件。**幅360pxで2列**、sm 以上で3列。
+          折りたたみをやめて全部出す（畳むと、そこに条件があること自体が見えない）。
+        */}
+        <div className="px-4 flex flex-col gap-3">
+          {FEATURE_GROUPS.map((group) => (
+            <div key={group.title}>
+              <p className="text-[12px] font-semibold text-slate-500 mb-1.5">{group.title}</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5 sm:gap-2">
+                {group.items.map(renderFeature)}
+              </div>
+            </div>
+          ))}
+        </div>
 
         <p className="px-4 -mt-1 text-[11px] leading-relaxed text-slate-500">
           予算は、ソロ1名が実際に払う総額の最安額で絞り込みます。

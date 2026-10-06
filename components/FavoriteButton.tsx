@@ -53,7 +53,11 @@ export default function FavoriteButton({ slug }: { slug: string }) {
   return (
     <button
       onClick={toggle}
-      className={`text-lg leading-none transition-transform hover:scale-125 ${fav ? 'text-[#e8611f]' : 'text-slate-300'}`}
+      /*
+        絵文字だけだと高さ18pxで、**指では押せない。**
+        見た目は変えずに、44px角の透明な当たり判定を周りに持たせる。
+      */
+      className={`inline-flex items-center justify-center w-11 h-11 -m-2 text-lg leading-none transition-transform hover:scale-125 ${fav ? 'text-[#e8611f]' : 'text-slate-300'}`}
       title={fav ? 'お気に入り解除' : 'お気に入り追加'}
       aria-label={fav ? 'お気に入り解除' : 'お気に入り追加'}
     >

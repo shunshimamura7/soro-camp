@@ -224,7 +224,8 @@ export type FeatureFilterKey =
   | "westernToilet"
   | "wifi"
   | "noReservation"
-  | "fishing";
+  | "fishing"
+  | "nearbyOnsen";
 
 /**
  * 条件ごとの判定。**未確認を「あり」に混ぜない**ため、すべて厳密な true 判定にする。
@@ -244,6 +245,12 @@ const FEATURE_PREDICATES: Record<FeatureFilterKey, (c: Campground) => boolean> =
   wifi:          (c) => c.features.wifi === true,
   noReservation: (c) => c.features.reservation === "不要",
   fishing:       (c) => c.features.fishing === true,
+  /**
+   * **場外**の立ち寄り湯。`bath`（場内の入浴施設）とは別の条件。
+   * 文字列が入っていることが「公式で近隣の温泉を確認できた」印なので、
+   * 他と違って boolean ではなく中身の有無で判定する。
+   */
+  nearbyOnsen:   (c) => String(c.features.nearbyOnsen || "").trim() !== "",
 };
 
 export const FEATURE_FILTER_KEYS = Object.keys(FEATURE_PREDICATES) as FeatureFilterKey[];
@@ -267,6 +274,7 @@ export const DEFAULT_FILTERS: Filters = {
   wifi: false,
   noReservation: false,
   fishing: false,
+  nearbyOnsen: false,
 };
 
 export function hasActiveConditions(filters: Filters): boolean {
@@ -303,13 +311,23 @@ export function countMatching(camps: Campground[], filters: Filters, patch: Part
   return camps.reduce((n, c) => (matchesFilters(c, merged) ? n + 1 : n), 0);
 }
 
-/** 一覧上部のタブ。キャンプ場と野営地の切り替え。 */
-export type TypeTab = "all" | "campground" | "wild";
+/**
+ * 一覧上部のタブ。**キャンプ場と野営地の2つだけ。既定はキャンプ場。**
+ *
+ * 2026-10-06 に `"all"` を廃止した。管理されたキャンプ場と、管理者のいない野営地を
+ * 同じ一覧に混ぜると、**利用者が負う責任の違いが見えなくなる。**
+ * 野営地は予約も料金も管理人も無く、「公認なし」のものも含む。
+ * 混在した一覧で「風呂あり」を絞り込むような使い方は、そもそも噛み合わない。
+ *
+ * **混ぜない保証は `filterByType()` の1か所に集約**し、`scripts/test-filters.js` が
+ * 「キャンプ場タブの結果に type:"wild" が1件でも入ったら落ちる」で機械的に守る。
+ */
+export type TypeTab = "campground" | "wild";
 
 export function filterByType(camps: Campground[], tab: TypeTab): Campground[] {
   if (tab === "wild") return camps.filter((c) => c.type === "wild");
-  if (tab === "campground") return camps.filter((c) => c.type !== "wild");
-  return camps;
+  // キャンプ場タブ。**野営地を1件も通さない**
+  return camps.filter((c) => c.type !== "wild");
 }
 
 /**
@@ -320,9 +338,8 @@ export function filterByType(camps: Campground[], tab: TypeTab): Campground[] {
  * （既定表示では出てこない根拠URLなしの施設まで数えていて、
  *   野営地タブが 11 と表示しながら一覧には2件しか出ていなかった。2026-08-27 に修正）
  */
-export function countByType(camps: Campground[]): { all: number; campground: number; wild: number } {
+export function countByType(camps: Campground[]): { campground: number; wild: number } {
   return {
-    all: camps.length,
     campground: filterByType(camps, "campground").length,
     wild: filterByType(camps, "wild").length,
   };
