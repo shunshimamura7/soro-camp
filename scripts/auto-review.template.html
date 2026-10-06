@@ -53,7 +53,10 @@
     position: relative; height: 170px; background: #100e0c;
     overflow: hidden; cursor: pointer;
   }
-  .thumb img { position: absolute; width: 256px; height: 256px; image-rendering: auto; }
+  /* 地理院タイルは淡色（明るい紙面）。本体の地図の夜モードと同じ反転をここでも掛け、
+     ピンの ember #e8611f が背景に沈まないようにする。 */
+  .thumb img { position: absolute; width: 256px; height: 256px; image-rendering: auto;
+               filter: invert(1) saturate(0) contrast(1.15); }
   .pin {
     position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px;
     background: var(--ember); border-radius: 50%;
@@ -187,8 +190,9 @@ function buildThumb(el, lat, lng) {
     for (var tx = x0; tx <= x1; tx++) {
       if (ty < 0 || ty >= n) continue;
       var wx = ((tx % n) + n) % n;
-      var sub = 'abc'[Math.abs(tx + ty) % 3];
-      var url = 'https://' + sub + '.basemaps.cartocdn.com/dark_all/' + ZOOM + '/' + wx + '/' + ty + '.png';
+      // 地理院タイル（淡色）。キー不要でサブドメインも無い。
+      // ピンの ember が浮くよう CSS 側で暗く反転させている（.thumb img の filter）。
+      var url = 'https://cyberjapandata.gsi.go.jp/xyz/pale/' + ZOOM + '/' + wx + '/' + ty + '.png';
       var px = tx * TILE - left;
       var py = ty * TILE - top;
       html += '<img loading="lazy" src="' + url + '" style="left:' + px + 'px;top:' + py + 'px" alt="" />';

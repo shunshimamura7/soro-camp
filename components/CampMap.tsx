@@ -2,36 +2,19 @@
 
 import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
+import { MAP_STYLE, setMapTheme } from "@/lib/map-style";
 
-// CartoDB Dark Matter — dark_all は確実に存在するパス
-const CARTO_TILES = [
-  "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://d.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-];
-
-const MAP_STYLE: maplibregl.StyleSpecification = {
-  version: 8,
-  sources: {
-    "carto-dark": {
-      type: "raster",
-      tiles: CARTO_TILES,
-      tileSize: 256,
-      attribution:
-        '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
-    },
-  },
-  layers: [
-    {
-      id: "carto-dark-layer",
-      type: "raster",
-      source: "carto-dark",
-      minzoom: 0,
-      maxzoom: 22,
-    },
-  ],
-};
+/**
+ * タイル定義はここに持たない。`lib/map-style.ts` の MAP_STYLE を共有する。
+ *
+ * 以前はこのファイルが CARTO の dark_all を独自に抱えていて、
+ * 一覧地図の背景を差し替えても**詳細ページの地図だけ古い配信元のまま**だった。
+ * 実際それで、CARTO がキー必須になったとき「API KEY REQUIRED」の透かしが
+ * ここにだけ残った。背景の出所は 1 箇所に集める。
+ *
+ * この地図は常に夜（詳細ページの地の色が炭 #0e0d0b）なので、
+ * 読み込み後に setMapTheme(map, true) で反転をかける。
+ */
 
 /** ember ドット要素を生成（inline styles で確実に描画） */
 function createEmberEl(large = false): HTMLDivElement {
@@ -74,6 +57,10 @@ export default function CampMap({ lat, lng, name, height = 320 }: Props) {
     mapRef.current = map;
 
     map.once("load", () => {
+      // 詳細ページは常に夜モード。ピンのレイヤを持たない地図なので、
+      // setMapTheme は背景のラスタ補正だけを掛けて戻る。
+      setMapTheme(map, true);
+
       const el = createEmberEl(true);
 
       const popup = new maplibregl.Popup({

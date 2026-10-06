@@ -160,6 +160,49 @@ for (const parts of viewFiles) {
   }
 }
 
+// ── 背景タイルに CARTO が残っていないか ──────────────────────────────────────
+// CARTO は 2026 年にキー無しの basemap 配信をやめ、残っている参照は地図一面の
+// 「API KEY REQUIRED」透かしになる。**壊れていることが画面を見るまで分からない**
+// 種類の故障なので、参照そのものをリポジトリから締め出す。
+// 背景は lib/map-style.ts の地理院タイル 1 箇所に集約した（components も scripts も）。
+//
+// 探す文字列は連結で作る。ベタ書きするとこのファイル自身が検出に引っかかり、
+// 「自分を無視する」例外を入れることになって、そこが抜け穴になる。
+const FORBIDDEN_TILE_HOSTS = ["carto" + "cdn", "carto" + ".com"];
+const SCAN_EXT = new Set([
+  ".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs",
+  ".json", ".html", ".css", ".md", ".toml", ".yml", ".yaml",
+]);
+// ビルド成果物と依存は見ない。out/ は .gitignore 済みで、ここを直しても
+// 次の build で作り直されるため、ソース側を直させるのが筋。
+const SKIP_DIRS = new Set(["node_modules", ".git", ".next", "out", "build", ".wrangler", ".vercel"]);
+
+/** リポジトリ内のテキストファイルを列挙する */
+function walk(dir, out = []) {
+  for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (ent.isDirectory()) {
+      if (SKIP_DIRS.has(ent.name)) continue;
+      walk(path.join(dir, ent.name), out);
+    } else if (SCAN_EXT.has(path.extname(ent.name))) {
+      out.push(path.join(dir, ent.name));
+    }
+  }
+  return out;
+}
+
+for (const file of walk(root)) {
+  const src = fs.readFileSync(file, "utf8");
+  for (const host of FORBIDDEN_TILE_HOSTS) {
+    if (!src.includes(host)) continue;
+    const line = src.slice(0, src.indexOf(host)).split("\n").length;
+    errors.push(
+      `${path.relative(root, file)}:${line} に ${host} への参照が残っている。` +
+        "CARTO はキー無しで配信されず、地図が「API KEY REQUIRED」の透かしで埋まる。" +
+        "背景タイルは lib/map-style.ts（地理院タイル）に一本化すること"
+    );
+  }
+}
+
 // ── 出力 ──────────────────────────────────────────────────────────────────────
 if (errors.length > 0) {
   console.error("test-filters: 失敗");

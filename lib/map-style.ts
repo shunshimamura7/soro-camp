@@ -21,7 +21,6 @@ import type {
   StyleSpecification,
   CircleLayerSpecification,
   GeoJSONSource,
-  RasterTileSource,
   Point as MlPoint,
 } from "maplibre-gl";
 import type { FeatureCollection, Point } from "geojson";
@@ -46,48 +45,75 @@ const STROKE_DARK = "#12100e";
 
 // ── タイル ────────────────────────────────────────────────────────────────
 /**
- * CartoDB Positron（light_all）。APIキー不要。
+ * 国土地理院の淡色地図（地理院タイル）。APIキー不要。
  *
- * 以前は素の OpenStreetMap タイルを使っていたが、緑（森林）と青（水域）の彩度が高く、
- * ember のオレンジと同じ強さで主張して地図が騒がしくなっていた。
- * Positron は明るいグレー基調で彩度がほぼ無いので、色を持つのはピンだけになる。
+ * 以前は CARTO の Positron / Dark Matter を使っていたが、2026 年に CARTO が
+ * キー無しの basemap 配信をやめ、地図一面に「API KEY REQUIRED」の透かしタイルが
+ * 出るようになった。**鍵を持たない配信元に背景を預けない**ため、公的機関が
+ * 恒久的に配っている地理院タイルに移す。
  *
- * 夜モードの dark_all と同じ CARTO 系なので、道路網の描き方やラベル位置が揃い、
- * 昼夜を切り替えても地図の骨格が動かない。
+ * 淡色地図を選ぶ理由は Positron と同じで、緑（森林）と青（水域）の彩度が低く、
+ * 色を持つのはピンだけになるから。素の OSM タイルだと ember のオレンジと
+ * 同じ強さで地図が主張して騒がしくなる。
+ *
+ * 配信は z18 まで。それより寄ったときは MapLibre が z18 のタイルを引き伸ばす
+ * （レイヤ側の maxzoom を 22 のままにしてあるのはそのため）。
  */
-export const LIGHT_TILES = [
-  "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
-  "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
-  "https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
-  "https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+export const BASEMAP_TILES = [
+  "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",
 ];
 
-export const DARK_TILES = [
-  "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  "https://d.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-];
-
-/** CARTO のタイルは OSM と CARTO 両方の帰属表示が必要 */
+/** 地理院タイルの利用規約が求める出典表示 */
 const ATTRIBUTION =
-  '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors ' +
-  '&copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>';
+  '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>';
 
-export const TILE_SOURCE_ID = "carto";
+export const TILE_SOURCE_ID = "basemap";
+const TILE_LAYER = "basemap-layer";
+
+/**
+ * 夜モードのラスタ補正。
+ *
+ * 昼夜でタイルを差し替えるのをやめ、**同じタイルを raster paint で反転**させる。
+ * 地理院に Dark Matter 相当の暗色タイルは無いので、暗い版を別配信から持ってくると
+ * 道路網やラベルの位置が昼夜でズレる（CARTO 時代はここが揃っていた）。
+ * 同一タイルを反転すれば、骨格は1ピクセルも動かない。
+ *
+ * - brightness-min: 1 / brightness-max: 0 … 明暗を入れ替える（白い紙面が黒くなる）
+ * - saturation: -1 … 反転で浮く水域の青（反転後は黄土色）を灰に落とす
+ * - contrast: 0.15 … 反転直後は全体が中間調に寄って眠くなる。わずかに締めると
+ *   地の黒が炭 #0e0d0b に近づき、道路の線だけが灰色で残る。
+ *   これ以上上げると等高線と市街地が潰れて、ピンの周りが真っ黒になる。
+ */
+const DARK_RASTER_PAINT = {
+  "raster-brightness-min": 1,
+  "raster-brightness-max": 0,
+  "raster-saturation": -1,
+  "raster-contrast": 0.15,
+} as const;
+
+/** 昼モードは無補正（既定値に戻す） */
+const LIGHT_RASTER_PAINT = {
+  "raster-brightness-min": 0,
+  "raster-brightness-max": 1,
+  "raster-saturation": 0,
+  "raster-contrast": 0,
+} as const;
 
 export const MAP_STYLE: StyleSpecification = {
   version: 8,
   sources: {
     [TILE_SOURCE_ID]: {
       type: "raster",
-      tiles: LIGHT_TILES, // 既定は昼モード
+      tiles: BASEMAP_TILES,
       tileSize: 256,
+      maxzoom: 18,
       attribution: ATTRIBUTION,
     },
   },
   layers: [
-    { id: "carto-layer", type: "raster", source: TILE_SOURCE_ID, minzoom: 0, maxzoom: 22 },
+    // レイヤの maxzoom はソースより大きくする。z18 超のタイルは配信されないので、
+    // ここを 18 で止めると寄った瞬間に背景が消える。
+    { id: TILE_LAYER, type: "raster", source: TILE_SOURCE_ID, minzoom: 0, maxzoom: 22 },
   ],
 };
 
@@ -234,15 +260,20 @@ export function setSelectedPin(map: MlMap, slug: string | null): void {
 }
 
 /**
- * 昼夜の切り替え。タイルとピンの見え方を同時に変える。
+ * 昼夜の切り替え。背景タイルの明暗とピンの見え方を同時に変える。
  *
  * 昼: 白ストローク・発光なし（明るい地図では白が最も分離して見える）
  * 夜: 暗色ストローク＋発光（白い輪郭は暗い地図で浮きすぎるため）
  */
 export function setMapTheme(map: MlMap, isDark: boolean): void {
-  (map.getSource(TILE_SOURCE_ID) as RasterTileSource | undefined)?.setTiles(
-    isDark ? DARK_TILES : LIGHT_TILES
-  );
+  if (map.getLayer(TILE_LAYER)) {
+    const paint = isDark ? DARK_RASTER_PAINT : LIGHT_RASTER_PAINT;
+    for (const [prop, value] of Object.entries(paint)) {
+      map.setPaintProperty(TILE_LAYER, prop, value);
+    }
+  }
+  // 単独施設の地図（CampMap）のようにピンのレイヤを持たない地図でも
+  // 背景の昼夜だけは効かせたいので、ピンの処理より先にタイルを済ませる。
   if (!map.getLayer(PIN_LAYER)) return;
 
   const stroke = isDark ? STROKE_DARK : STROKE_LIGHT;

@@ -210,18 +210,28 @@ function showMap(lat, lng) {
       style: {
         version: 8,
         sources: {
-          carto: {
+          basemap: {
             type: 'raster',
-            tiles: [
-              'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
-              'https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
-              'https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
-            ],
+            // 地理院タイル（淡色）。キー不要。z18 まで配信。
+            tiles: ['https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png'],
             tileSize: 256,
-            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+            maxzoom: 18,
+            attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>'
           }
         },
-        layers: [{ id: 'carto', type: 'raster', source: 'carto' }]
+        // 座標確認は暗い画面で見るので、本体と同じ raster paint で反転させる。
+        layers: [{
+          id: 'basemap',
+          type: 'raster',
+          source: 'basemap',
+          maxzoom: 22,
+          paint: {
+            'raster-brightness-min': 1,
+            'raster-brightness-max': 0,
+            'raster-saturation': -1,
+            'raster-contrast': 0.15
+          }
+        }]
       },
       center: [lng, lat],
       zoom: 15,
