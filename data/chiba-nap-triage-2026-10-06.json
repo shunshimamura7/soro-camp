@@ -193,8 +193,8 @@
       "lngCandidate": "139.976434",
       "priority": 0,
       "officialUrl": "https://shiosai-minamiboso.com/",
-      "verdict": "UNMEASURED",
-      "reason": "しおさいキャンプフィールド。公式で住所・オンライン予約は一致したが料金表の金額を取得できず。ソロ可否の明記も無い"
+      "verdict": "追加",
+      "reason": "しおさいキャンプフィールド。公式にサイト一覧と予約導線。料金は公式に無く needsPrice。ソロ可否の明記も無い(cautions に記載)"
     },
     {
       "napId": "14280",
@@ -778,8 +778,8 @@
       "lngCandidate": "139.8264536",
       "priority": 1,
       "officialUrl": "https://www.tomisakikan.net/",
-      "verdict": "UNMEASURED",
-      "reason": "富崎館キャンプ場。公式 tomisakikan.net が HTTP 403 で開けず門1の照合ができない"
+      "verdict": "追加",
+      "reason": "富崎館キャンプ場。curl で取得。全5サイトの料金(3,300〜5,500円)と住所を公式で確認"
     },
     {
       "napId": "16122",
@@ -870,7 +870,7 @@
       "priority": 2,
       "officialUrl": "https://holywoodscamp.jimdo.com/",
       "verdict": "UNMEASURED",
-      "reason": "ホウリーウッズ久留里キャンプ村。公式 holywoodscamp.jimdo.com がSSLハンドシェイク失敗で開けず門1の照合ができない"
+      "reason": "ホウリーウッズ久留里キャンプ村。holywoodscamp.jimdo.com は curl でも本文が返らず(0バイト)、他に施設公式が見つからない。取得手段が無い"
     },
     {
       "napId": "11949",
@@ -895,8 +895,8 @@
       "lngCandidate": "140.059500458197",
       "priority": 2,
       "officialUrl": "https://www.eleven-camp.com/",
-      "verdict": "UNMEASURED",
-      "reason": "イレブンオートキャンプパーク。公式で住所・予約方法は一致。料金ページを特定できず(/price/ は404)。再訪が要る"
+      "verdict": "追加",
+      "reason": "イレブンオートキャンプパーク。公式に住所・予約先。料金ページは特定できず(/price等すべて404)needsPrice"
     },
     {
       "napId": "11951",
@@ -1012,8 +1012,8 @@
       "lngCandidate": "140.01011168956757",
       "priority": 2,
       "officialUrl": "https://www.romannomori.co.jp/price/",
-      "verdict": "UNMEASURED",
-      "reason": "ロマンの森共和国キャンプ場。公式の料金ページに入場料(宿泊者500円)はあるがオートサイトのサイト料が無い。サイト料の載るページを特定できれば通る見込み"
+      "verdict": "追加",
+      "reason": "ロマンの森共和国キャンプ場。公式に入場料(宿泊者500円)はあるがサイト料が無くソロ総額を作れない needsPrice"
     },
     {
       "napId": "14184",
@@ -1245,9 +1245,9 @@
       "latCandidate": "35.2589243",
       "lngCandidate": "140.2964017",
       "priority": 3,
-      "officialUrl": "http://www.camp-miyahara.com/",
-      "verdict": "UNMEASURED",
-      "reason": "宮原オートキャンプ場。公式 camp-miyahara.com がSSLエラー(WRONG_VERSION_NUMBER)で開けず照合できない"
+      "officialUrl": "http://www.camp-miyahara.com/rate",
+      "verdict": "追加",
+      "reason": "宮原オートキャンプ場。curl で取得。公式に住所・テントサイト5,000円・電話/FAX予約"
     },
     {
       "napId": "11933",
@@ -1258,9 +1258,9 @@
       "latCandidate": "35.3195289",
       "lngCandidate": "140.4063708",
       "priority": 3,
-      "officialUrl": "http://wildkids.jp/",
-      "verdict": "UNMEASURED",
-      "reason": "ワイルドキッズ岬オートキャンプ場。公式 wildkids.jp がHTTPS証明書不一致(*.valueserver.jp)で開けず照合できない"
+      "officialUrl": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/",
+      "verdict": "追加",
+      "reason": "ワイルドキッズ岬オートキャンプ場。旧URLから実サイト(jimdosite)を特定し住所・電話を確認。料金は公式に無く needsPrice"
     },
     {
       "napId": "11981",
@@ -1532,8 +1532,8 @@
       "lngCandidate": "140.37227155277859",
       "priority": 3,
       "officialUrl": "https://solas-glamping.jp/camp/",
-      "verdict": "追加",
-      "reason": "ソラスの森キャンプ場として掲載。公式で住所一致・持ち込みテント可・料金あり。ただし1名予約は女性専用サイトのみで12,000円/名〜（cautionsに明示）"
+      "verdict": "門落ち(単独利用不可)",
+      "reason": "1名で予約できるのは女性専用サイトのみで、フリーサイトと電源付きRVサイトは2名から。料金も1名12,000円〜。2026-10-06 に一度掲載したが、ソロ向けサイトの対象外としてしゅんの判断で削除した（apply-remove-solas-2026-10-06.js）"
     },
     {
       "napId": "15983",
@@ -1882,9 +1882,9 @@
       "latCandidate": "35.14111655563635",
       "lngCandidate": "140.28697729110718",
       "priority": 5,
-      "officialUrl": "http://www.manbow-camp.jp/",
-      "verdict": "UNMEASURED",
-      "reason": "ACNオートキャンプin勝浦まんぼう。公式 manbow-camp.jp がHTTPS証明書不一致(*.xserver.jp)で開けず照合できない"
+      "officialUrl": "http://www.manbow-camp.jp/reserve/index.html",
+      "verdict": "追加",
+      "reason": "ACNオートキャンプin勝浦まんぼう。curl で住所(勝浦市松部1910番地)と予約方法を確認。料金は公式に無く needsPrice"
     },
     {
       "napId": "11976",
@@ -1896,8 +1896,8 @@
       "lngCandidate": "140.280768",
       "priority": 5,
       "officialUrl": "http://katuuraonsen.com/camp/camp.html",
-      "verdict": "UNMEASURED",
-      "reason": "勝浦つるんつるん温泉直営オートキャンプ場。公式 katuuraonsen.com がSSLエラーで開けず照合できない"
+      "verdict": "追加",
+      "reason": "勝浦つるんつるん温泉直営オートキャンプ場。curl で取得。1サイト5,000円「人数ではなくサイト料金」と公式明記"
     },
     {
       "napId": "14200",
@@ -4270,20 +4270,20 @@
     "asOf": "2026-10-06",
     "門の対象": 300,
     "宿泊系のため対象外": 49,
-    "調査済み": 24,
-    "追加": 14,
-    "門落ち": 10,
+    "調査済み": 32,
+    "追加": 21,
+    "門落ち": 11,
     "閉鎖疑い": 27,
-    "UNMEASURED": 226,
+    "UNMEASURED": 218,
     "門落ちの内訳": {
       "門落ち(料金も予約も公式に無し)": 2,
       "門落ち(公式なし)": 4,
       "門落ち(宿泊不可)": 1,
-      "門落ち(単独利用不可)": 2,
+      "門落ち(単独利用不可)": 3,
       "門落ち(住所を照合できない)": 1
-    },
-    "打ち切り": true,
-    "打ち切りの理由": "1件あたり検索1〜2回＋公式ページ取得1〜2回。優先6市のキャンプ場系40件を上から当たり、3バッチで計46件を調査して打ち切った。",
-    "次に見るもの": "UNMEASURED のうち、HTTPS証明書不一致・403で開けなかった6件（まんぼう/ワイルドキッズ/宮原/つるんつるん/ホウリーウッズ/富崎館）は別の取得手段が要る。料金ページ未特定の3件（ロマンの森・イレブン・しおさい）は再訪で通る見込み。優先6市以外の市町村は未着手"
-  }
+    }
+  },
+  "gateRules": [
+    "1名で予約できるのが性別・年齢などで限定されたサイトのみの施設は「単独利用不可」で門落ち（2026-10-06 追加）"
+  ]
 }
