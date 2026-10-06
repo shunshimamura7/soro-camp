@@ -11886,5 +11886,56 @@
     "source": [
       "https://www.romannomori.co.jp/price/"
     ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "id": "abiko-fureai-camp",
+    "slug": "abiko-fureai-camp",
+    "name": "我孫子市ふれあいキャンプ場",
+    "area": "我孫子",
+    "address": "千葉県我孫子市岡発戸1395",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "priceMin": 2400,
+    "priceMax": 3000,
+    "priceVerified": true,
+    "priceNote": "サイト単位課金（1サイト1〜10名）。**市外の人は宿泊キャンプ 午後2時〜翌午前10時が2,400円、午前10時〜翌午前10時が3,000円。**市内に在住・在勤・在学の人はそれぞれ1,200円／1,500円。デイキャンプ（午前10時〜午後5時）は市外1,000円・市内500円。利用者の半数以上が障がい者／市内在住の中学生以下／市内在住の65歳以上で構成される団体は減免がある",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "事前の申請（予約）が必須。令和6年4月1日利用分からLINE申請が使える（LINEはオンライン決済のみ）。現金払いは窓口申請。返金・キャンセルは利用日の7日前まで"
+    },
+    "eligibility": {
+      "type": "discount",
+      "label": "市外は割高",
+      "note": "我孫子市に在住・在勤・在学なら半額（宿泊1,200円／1,500円）。市外は2,400円／3,000円",
+      "source": "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/shiyouryou.html"
+    },
+    "season": "宿泊キャンプは通年（12月29日から1月4日は利用不可）",
+    "soloComment": "我孫子市が運営する市営キャンプ場。1サイトは1〜10名の単位で、市外からでも宿泊2,400円から使える。定員90人、テントサイトは5人用30張り分、駐車場は普通車40台。令和7年11月1日から冬季の宿泊キャンプも利用できるようになった。",
+    "officialUrl": "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/about.html",
+    "tel": "04-7185-1604",
+    "cautions": [
+      "**市外の人は料金が倍。**市内在住・在勤・在学は宿泊1,200円／1,500円、市外は2,400円／3,000円",
+      "**宿泊は原則2泊まで**と市公式に明記",
+      "**12月29日から1月4日は利用不可**",
+      "予約は事前申請が必須。LINE申請はオンライン決済のみで、現金払いは窓口へ行く必要がある",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/about.html",
+      "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/shiyouryou.html"
+    ],
+    "lastVerified": "2026-10-06"
   }
 ]
