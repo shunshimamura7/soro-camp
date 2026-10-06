@@ -2077,9 +2077,9 @@
       "latCandidate": "35.752095725677215",
       "lngCandidate": "140.6901409718277",
       "priority": 99,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.city.asahi.lg.jp/soshiki/29/24010.html",
+      "verdict": "追加",
+      "reason": "旭市海上キャンプ場。旭市公式に所在地・市内/市外料金(テント1,000/1,500円)・開設期間・予約方法。eligibility=discount"
     },
     {
       "napId": "15692",
@@ -2246,9 +2246,9 @@
       "latCandidate": "35.7682706",
       "lngCandidate": "140.2469421",
       "priority": 99,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.camp-inba.com/guidance",
+      "verdict": "追加",
+      "reason": "キャンプフィールド マークウエスト(なっぷ表記 Camp field MARC WEST)。公式で住所(印西市平賀2719)と全サイト料金を確認。旧オートキャンプユニオン"
     },
     {
       "napId": "16247",
@@ -2389,9 +2389,9 @@
       "latCandidate": "35.05798041271016",
       "lngCandidate": "140.07380093862304",
       "priority": 99,
-      "officialUrl": null,
+      "officialUrl": "https://umibenocamp.rsvsys.jp/",
       "verdict": "UNMEASURED",
-      "reason": null
+      "reason": "江見吉浦 海辺のキャンプ場。公式 umibenocamp.rsvsys.jp が403で開けず門1の照合ができない"
     },
     {
       "napId": "16271",
@@ -2467,9 +2467,9 @@
       "latCandidate": "35.10903440180614",
       "lngCandidate": "139.84605929796143",
       "priority": 99,
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://nightvista3.com/",
+      "verdict": "追加",
+      "reason": "ナイトビスタキャンプ場。公式で住所(鋸南町下佐久間2311-5)・全10区画の料金・通年営業を確認"
     },
     {
       "napId": "11965",
@@ -4270,11 +4270,10 @@
     "asOf": "2026-10-06",
     "門の対象": 300,
     "宿泊系のため対象外": 49,
-    "追加": 22,
+    "追加": 25,
     "門落ち": 11,
     "閉鎖疑い": 27,
-    "UNMEASURED": 217,
-    "閉鎖疑いの抜き取り検査": "4件/27件を公式で確認し、4件とも閉鎖・休業を裏付け",
+    "UNMEASURED": 214,
     "門落ちの内訳": {
       "門落ち(料金も予約も公式に無し)": 2,
       "門落ち(公式なし)": 4,
