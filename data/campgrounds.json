@@ -11485,5 +11485,94 @@
       "http://kaikouzu.com/camp.html",
       "http://kaikouzu.com/"
     ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "okugome-kimura-nouen",
+    "slug": "okugome-kimura-nouen",
+    "name": "奥米・木村農園キャンプ場",
+    "area": "君津・奥米",
+    "address": "千葉県君津市奥米143",
+    "priceMin": 2000,
+    "priceMax": 3000,
+    "priceVerified": true,
+    "priceNote": "人数課金。**通常は1泊2,000円/人**（4歳〜小学生は半額）。連休・お盆・年末年始は3,000円/人（4歳〜小学生1,500円/人）。年間パスポート5,000円があり、60分以上の農作業で半額になる仕組みも公式に記載",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "要予約。電話 090-6124-0254（7時〜17時）または公式サイトの予約ページから"
+    },
+    "season": "通年（君津市公式に定休日の記載なし）",
+    "soloComment": "君津市奥米の農園が開いているキャンプ場。料金は1人2,000円の人数課金。農業体験や滝の見学も受け付けている。君津市の観光情報ページにも掲載されている。",
+    "officialUrl": "https://okugomekimuranouen.wixsite.com/site",
+    "tel": "090-6124-0254",
+    "cautions": [
+      "**料金は人数課金。**サイト単位ではなく1人あたり2,000円",
+      "公式サイトが**Jimdoの偽サイトへの注意喚起**を出している。予約前にドメインを確認すること",
+      "君津市公式（経済振興課観光振興係）にも「奥米・木村農園」として掲載がある",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://okugomekimuranouen.wixsite.com/site",
+      "https://www.city.kimitsu.lg.jp/site/kanko/46104.html"
+    ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "千葉",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "lastVerified": "2026-10-06",
+    "id": "solas-no-mori",
+    "slug": "solas-no-mori",
+    "name": "ソラスの森キャンプ場",
+    "area": "いすみ・釈迦谷",
+    "address": "千葉県いすみ市釈迦谷1610-1",
+    "priceMin": 12000,
+    "priceMax": 15000,
+    "priceVerified": true,
+    "priceNote": "**人数課金（1名あたり）。**フリーサイト12,000円/名〜（2名から・最大6名）、**女性専用サイト12,000円/名〜（1名から）**、電源付きRVサイト15,000円/名〜（2名から）。大浴場は別料金で大人1,650円・子供825円・3歳以下無料",
+    "features": {
+      "bath": true,
+      "bathNote": "リゾート本館の大浴場を有料で利用できる（15:00〜23:00 / 6:30〜9:00）",
+      "reservation": "要",
+      "reservationNote": "公式サイトの RESERVATION から"
+    },
+    "season": "要確認（公式に営業期間の記載なし）",
+    "soloComment": "いすみグランピングリゾート＆スパ ソラスに併設されたキャンプ場。フリーサイト・女性専用サイト・RVサイトのいずれもテントを張れる。宿泊者は本館の大浴場を有料で使える。",
+    "officialUrl": "https://solas-glamping.jp/camp/",
+    "tel": "0470-62-5151",
+    "cautions": [
+      "**1名で予約できるのは「女性専用サイト」だけ。**フリーサイトと電源付きRVサイトは**2名から**なので、男性のソロや1名での利用は女性専用サイトを使えない限りできない",
+      "**料金が1名あたり12,000円〜**と、このサイトに載っている他の施設（600〜5,500円程度）とは水準が違う。グランピングリゾート併設のキャンプ場であることを踏まえて選ぶこと",
+      "持ち込みテントは公式が「テントを張ることができます」と明記している",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://solas-glamping.jp/camp/"
+    ]
   }
 ]
