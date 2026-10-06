@@ -1,0 +1,77 @@
+[
+ {"napId":"14512","name":"りんごの輪","pref":"千葉","muni":"船橋市","verdict":"門落ち(公式なし)",
+  "reason":"確認できたのは なっぷ／Instagram／LINE公式アカウント／まとめサイトのみで、施設公式サイト・自治体公式ページ・公式予約先が存在しない（Instagram はログイン壁で内容が読めない）",
+  "checkedUrls":["https://www.nap-camp.com/chiba/14512","https://www.instagram.com/ringo.no.wa/"],"officialUrl":null},
+
+ {"napId":"15696","name":"WestFall 船橋・アルゼンチン公園","pref":"千葉","muni":"船橋市","verdict":"門落ち(公式なし)",
+  "reason":"施設名・シェアハウス名の双方で検索したが、ヒットするのは なっぷ／Campla／hinata／個人ブログ／YouTube のみ。施設公式・自治体公式・公式予約先なし",
+  "checkedUrls":["https://www.nap-camp.com/chiba/15696"],"officialUrl":null},
+
+ {"napId":"16714","name":"アークの森キャンプ場 ふなばしサイト","pref":"千葉","muni":"船橋市","verdict":"門落ち(公式なし)",
+  "reason":"運営の公式 arkforest.jp は存在するが**住所が「八千代市上高野26」の本館のみで、ふなばしサイト（船橋市車方町198-1）の記載が全ページに1文字も無い**（/funabashi.html 等も404）。同名・同運営での誤認を避けて公式なし扱いにした。なっぷ側も「販売準備中プラン一覧」",
+  "checkedUrls":["https://www.arkforest.jp/","https://www.arkforest.jp/site.html","https://www.nap-camp.com/chiba/16714"],"officialUrl":null},
+
+ {"napId":"11982","name":"ナインテンナインオートキャンプ場 in 野手浜","pref":"千葉","muni":"匝瑳市","verdict":"追加",
+  "reason":"施設公式で住所（匝瑳市野手17146-1678）が一致し、**ソロ1名1泊の総額6,000円（入場料・施設利用料なし、車1台とシャワー代込み）**を公式が明記している",
+  "checkedUrls":["https://www.99inakakurashi.com/camp/camp/","https://www.99inakakurashi.com/camp/camp/charge/","https://www.99inakakurashi.com/camp/camp/camp-info/"],
+  "officialUrl":"https://www.99inakakurashi.com/camp/camp/","reservationUrl":null,
+  "address":"千葉県匝瑳市野手17146-1678","priceMin":6000,"priceMax":6000,
+  "priceNote":"サイト単位課金。公式「宿泊キャンプ・ソロキャンプ 1泊4名様まで・車1台 ￥6,000／1サイト 通年料金」「※上記料金には、シャワー代も含みます。」、施設紹介ページに「入場料や施設利用料はかかりません。」",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.99inakakurashi.com/camp/camp/camp-info/","quote":"シャワールーム・・・5ヶ所"},
+    "shop":{"value":true,"evidenceUrl":"https://www.99inakakurashi.com/camp/camp/camp-info/","quote":"現地受付売店に各種レンタル品・販売品を準備しております。"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.99inakakurashi.com/camp/camp/charge/","quote":"薪 1カゴ (買い物カゴ１つ分位） ￥500"},
+    "pet":{"value":true,"evidenceUrl":"https://www.99inakakurashi.com/camp/camp/charge/","quote":"人数追加料金：…子供（0歳～小学生）犬 ￥1,000／1人・1匹"},
+    "nearbyOnsen":{"value":"旭九十九里温泉（亀の井ホテル九十九里）または旭の湯で日帰り入浴可（土日祝 大人1,000円／平日 大人700円）","evidenceUrl":"https://www.99inakakurashi.com/camp/camp/camp-info/","quote":"旭九十九里温泉（亀の井ホテル九十九里）もしくは旭の湯が近くにあり日帰り入浴可"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11983","name":"九十九里浜シーサイドオートキャンプ場 第２キャンプ場","pref":"千葉","muni":"匝瑳市","verdict":"追加",
+  "reason":"施設公式で住所（匝瑳市栢田浜7952）が一致し、**「※１名利用でもこちらの価格からとなります」**と1名利用を公式が明示している",
+  "checkedUrls":["https://www.kujukuri.co.jp/","https://www.kujukuri.co.jp/camp02.html","https://www.kujukuri.co.jp/reserve.html"],
+  "officialUrl":"https://www.kujukuri.co.jp/camp02.html","reservationUrl":"https://www.kujukuri.co.jp/reserve.html",
+  "address":"千葉県匝瑳市栢田浜7952","priceMin":5000,"priceMax":6000,
+  "priceNote":"区画単位課金。公式「１区画サイト１泊２名利用料金 5,000円(通常料金) / 6,000円(ハイシーズン) ※１名利用でもこちらの価格からとなります。」",
+  "features":{
+    "shop":{"value":true,"evidenceUrl":"https://www.kujukuri.co.jp/camp02.html","quote":"売店取扱商品 針葉樹薪500円・広葉樹薪1000円 ヤシガラ炭3キロ800円・着火剤300円・氷500円"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.kujukuri.co.jp/camp02.html","quote":"針葉樹薪500円・広葉樹薪1000円"},
+    "pet":{"value":true,"evidenceUrl":"https://www.kujukuri.co.jp/camp02.html","quote":"ペット利用 OK / ペット１頭 500円"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14895","name":"笑炎の森 CAMP&BBQ","pref":"千葉","muni":"匝瑳市","verdict":"門落ち(宿泊不可)",
+  "reason":"公式の料金案内は**BBQ場2時間制のみ**（1サイト2時間 大人2,200円）で営業時間は午前10時半〜午後9時半、宿泊の記載が無い。なっぷ側もデイプラン／ナイトプランのみ",
+  "checkedUrls":["https://enbinomori.wixsite.com/enbinomori","https://www.nap-camp.com/chiba/14895"],"officialUrl":"https://enbinomori.wixsite.com/enbinomori"},
+
+ {"napId":"15724","name":"RV Park-NOTEHAMA Beach Station","pref":"千葉","muni":"匝瑳市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先いずれも見つからない（なっぷ／楽天トラベルキャンプ／Campla のみ。くるま旅公式や RV-Park.jp にも掲載なし）。加えて施設種別が RV パークで宿泊が車内前提",
+  "checkedUrls":["https://www.nap-camp.com/chiba/15724"],"officialUrl":null},
+
+ {"napId":"15913","name":"キャンプ番長ライダースベース99","pref":"千葉","muni":"匝瑳市","verdict":"追加",
+  "reason":"施設公式で住所（匝瑳市新堀字砂間1464-863）が一致し、区画サイト（**定員〜1名の瓦チップサイトを含む**）が一人あたり3,300円〜と公式に明記されている",
+  "checkedUrls":["https://airsite.jp/campbancho/","https://airsite.jp/campbancho/archives/menu/411","https://airsite.jp/campbancho/archives/menu/412"],
+  "officialUrl":"https://airsite.jp/campbancho/","reservationUrl":null,
+  "address":"千葉県匝瑳市新堀字砂間1464-863","priceMin":3300,"priceMax":3300,
+  "priceNote":"1名単位課金。公式「区画サイト 一人あたり3,300円〜」「フリーサイト 一人あたり3,300円〜」。瓦チップサイトの詳細ページは「定員 〜1名」「一人あたり3,300円〜」。料金は「〜」の下限のみ公開のため priceMax も同額。予約は公式が指定するなっぷのプランURL（オンラインカード決済のみ）",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://airsite.jp/campbancho/archives/menu/411","quote":"共有設備 ウォシュレット付き水洗トイレ　温度調節可能なジャグジー、シャワー室、水風呂、サウナ"},
+    "shower":{"value":true,"evidenceUrl":"https://airsite.jp/campbancho/archives/menu/411","quote":"シャワー室、水風呂、サウナ"},
+    "firewood":{"value":true,"evidenceUrl":"https://airsite.jp/campbancho/archives/menu/411","quote":"薪、炭は無料です！無料キャンプ用品レンタルもあります。"},
+    "pet":{"value":true,"evidenceUrl":"https://airsite.jp/campbancho/archives/menu/411","quote":"ペット同伴 可 ※犬、猫"}},
+  "coordsFromOfficialMap":{"lat":35.6435986,"lng":140.5765181,"url":"https://airsite.jp/campbancho/"}},
+
+ {"napId":"15698","name":"REMIX BASE 袖ヶ浦オートキャンプ場","pref":"千葉","muni":"袖ケ浦市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式 remix-base.com は住所一致（袖ケ浦市大竹538）だが**宿泊料金の掲載が全ページに無く**（レンタル品の価格のみ）、予約は公式がなっぷのウィジェットへ送っている。1日1グループ貸切（最大40名）運用",
+  "checkedUrls":["https://remix-base.com/","https://remix-base.com/shisetsu/","https://remix-base.com/reservation/"],"officialUrl":"https://remix-base.com/"},
+
+ {"napId":"15677","name":"多古の星キャンプ場","pref":"千葉","muni":"多古町","verdict":"追加",
+  "reason":"施設公式で住所（香取郡多古町方田249-1）が一致し、ソロ＆デュオのプランで1名料金3,500〜5,000円を公式が明記している",
+  "checkedUrls":["https://takonohoshi.jp/","https://takonohoshi.jp/price/","https://takonohoshi.jp/facility/","https://takonohoshi.jp/reserve/"],
+  "officialUrl":"https://takonohoshi.jp/","reservationUrl":"https://takonohoshi.jp/reserve/",
+  "address":"千葉県香取郡多古町方田249-1","priceMin":3500,"priceMax":5000,
+  "priceNote":"1名単位課金。公式料金ページのソロ＆デュオ料金「オフシーズン/平日・土日祝日（¥3500 / 1名、追加 ¥1500）／オンシーズン（¥4000 / 1名）／ハイシーズン（¥5000 / 1名）」。別に「ソロ1サイト 一日4組限定 定員1名のソロプラン」もあるが**単価が公式の料金表に載っておらず**予約サイトで確認する形。デイキャンプの団体BBQは20名以上対象で宿泊プランとは別",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://takonohoshi.jp/facility/","quote":"シャワー施設 男女別で各２箇所ご用意しています。シャワー利用可能時間 14:00～22:00、6:00~10:00"},
+    "shop":{"value":true,"evidenceUrl":"https://takonohoshi.jp/facility/","quote":"コミュニティ棟 …飲料・調味料・お菓子やキャンプ用品の販売なども行っております。"},
+    "firewood":{"value":true,"evidenceUrl":"https://takonohoshi.jp/price/","quote":"売店販売 … 薪　大ケース ¥1,000"},
+    "pet":{"value":true,"evidenceUrl":"https://takonohoshi.jp/price/","quote":"一部指定区画のみペット可（2000円/匹）です。"}},
+  "coordsFromOfficialMap":null}
+]

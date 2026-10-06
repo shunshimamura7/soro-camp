@@ -1613,5 +1613,463 @@
   "coordsFromOfficialMap": null,
   "napUrl": "https://www.nap-camp.com/chiba/11968",
   "napName": "いちはらクオードの森"
+ },
+ {
+  "napId": "15072",
+  "name": "千葉ウシノヒロバ",
+  "pref": "千葉",
+  "muni": "千葉市若葉区",
+  "verdict": "追加",
+  "reason": "施設公式に大人1名あたりのキャンプ料金と自社の予約システムがあり、住所（千葉市若葉区富田町983-1）も一致",
+  "checkedUrls": [
+   "https://ushinohiroba.com/app/customer/camping_guide",
+   "https://ushinohiroba.com/user-guide/",
+   "https://ushinohiroba.com/camping-equipment/"
+  ],
+  "officialUrl": "https://ushinohiroba.com/",
+  "reservationUrl": "https://ushinohiroba.com/app/customer/camping/camping_reservation/new",
+  "address": "千葉県千葉市若葉区富田町983-1",
+  "priceMin": 3080,
+  "priceMax": 4000,
+  "priceNote": "1名単位課金。公式「ご利用料金 大人：平日 3,080円（税込）〜／大人：土日・祝日 3,300円（税込）〜」「※キャンプご利用料金には入場料がふくまれます。」。別掲の駐車料金「普通車 【平日】350円 【土日祝日】700円」はキャンプ利用者の免除の記載が無いため、車で行く土日祝は3,300＋700＝4,000円として priceMax に入れた（車なしなら3,080円）。公式に「※ピークシーズンは料金が変更になります」の告知あり",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://ushinohiroba.com/app/customer/camping_guide",
+    "quote": "シャワー棟 男女別にブースが分かれています。事前にこちらのページからご予約ください。※ドライヤー有"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://ushinohiroba.com/user-guide/",
+    "quote": "キャンプサイトにおいては、のんびりサイトのみペットもご入場いただけます"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://ushinohiroba.com/app/customer/camping_guide",
+    "quote": "販売品 炭や割り箸などの消耗品の販売も行っています。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/15072",
+  "napName": "千葉ウシノヒロバ"
+ },
+ {
+  "napId": "15711",
+  "name": "バンブーグローブ オートキャンプ場",
+  "pref": "千葉",
+  "muni": "千葉市若葉区",
+  "verdict": "追加",
+  "reason": "施設公式にサイト別の1区画基本使用料が載っており、住所（千葉市若葉区下泉町943-1）も一致。1名でも区画料金だけで宿泊できる",
+  "checkedUrls": [
+   "https://bamboo-grove-camp.com/plans/",
+   "https://bamboo-grove-camp.com/access/",
+   "https://bamboo-grove-camp.com/userguide/"
+  ],
+  "officialUrl": "https://bamboo-grove-camp.com/",
+  "reservationUrl": null,
+  "address": "千葉県千葉市若葉区下泉町943-1",
+  "priceMin": 9000,
+  "priceMax": 9000,
+  "priceNote": "区画単位課金で人数課金なし。公式「プランの詳細」の最安は林間サイト「料金 9,000円 / 1区画の基本使用料 シーズンにより変動します。」（他はオートサイト9,500円、ウッドデッキ10,000円、オートワイド11,000円）。車1台分を含む（「1予約で車1台またはバイク2台まで」）。下限のみの公開でシーズン変動するため priceMax も同額。ゴミ処理は任意有料（45L袋1枚500円）",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://bamboo-grove-camp.com/plans/",
+    "quote": "無料 ・個室シャワー (1回15分程度を目安にご自由にお使いください)"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://bamboo-grove-camp.com/plans/",
+    "quote": "有料 ・管理棟(薪販売/レンタル用品) 09：00~16:00"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://bamboo-grove-camp.com/plans/",
+    "quote": "有料 ・管理棟(薪販売/レンタル用品) 09：00~16:00"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://bamboo-grove-camp.com/plans/",
+    "quote": "ペット：小型犬2匹または中型犬1匹、大型犬要相談。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/15711",
+  "napName": "バンブーグローブ オートキャンプ場"
+ },
+ {
+  "napId": "16698",
+  "name": "みんなの里山キャンプ場",
+  "pref": "千葉",
+  "muni": "千葉市若葉区",
+  "verdict": "追加",
+  "reason": "施設公式にソロサイトの1泊基本料金が明記され、住所（千葉市若葉区大宮町2918-1）も一致。焚き火台＋シートで焚き火ができる",
+  "checkedUrls": [
+   "https://minna-no-satoyama.com/"
+  ],
+  "officialUrl": "https://minna-no-satoyama.com/",
+  "reservationUrl": null,
+  "address": "千葉県千葉市若葉区大宮町2918-1",
+  "priceMin": 3000,
+  "priceMax": 4000,
+  "priceNote": "サイト単位課金。公式「サイト別の基本料金（1泊／税込）… 林間フリーサイト 3,000 円〜／ソロサイト 3,000 円〜」。「※ フリーサイト・ソロサイト・デイキャンプは、お車1台目からオプションの選択をお願いいたします」「お車2台目以降 1,000 円／台」で**車で行くなら1台目から1,000円が必要**なため priceMax を4,000円とした（公共交通なら3,000円）。電源は別途1,000円／1サイト1泊、ゴミ引き取り500円／回。公式に「※ 最新の料金・空き状況はなっぷ予約ページでご確認ください」の断りあり",
+  "features": {
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://minna-no-satoyama.com/",
+    "quote": "ペットの同伴ができます。場内では必ずリードをつけてください。"
+   },
+   "nearbyOnsen": {
+    "value": "アクアリンク千葉（千葉市美浜区新港224-1）に大浴場あり",
+    "evidenceUrl": "https://minna-no-satoyama.com/",
+    "quote": "・アクアリンク千葉（千葉市美浜区新港224-1）：スケートリンク、温水プール、大浴場があります。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/16698",
+  "napName": "みんなの里山キャンプ場"
+ },
+ {
+  "napId": "11969",
+  "name": "奥養老ヴィレッジ",
+  "pref": "千葉",
+  "muni": "市原市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（市原市戸面746）が一致し、テント泊プラン（1人6,000円〜）が公式に載っていて人数の下限制限も無い。ただし**より安い「川の近くのテントサイト」（1人4,000円〜）は公式FAQで予約休止中・再開未定**",
+  "checkedUrls": [
+   "https://okuyorovillage.com/",
+   "https://okuyorovillage.com/plan/",
+   "https://okuyorovillage.com/faq/",
+   "https://okuyorovillage.com/about/"
+  ],
+  "officialUrl": "https://okuyorovillage.com/",
+  "reservationUrl": null,
+  "address": "千葉県市原市戸面746",
+  "priceMin": 6000,
+  "priceMax": 6000,
+  "priceNote": "人数課金。公式「施設・プラン料金」のテント手ぶらプラン「1人 6,000 円〜」（下限のみ公開のため priceMax も同額）。**公式FAQに「川のテントサイトは現在予約休止中 ※再開日未定」、「バンガロー素泊まりプラン」「日帰りバーベキュー」も「現在休止中※復旧見込み未定」。**公式お知らせに2026/9/21の台風被害と「ロープウェイ復旧しました（2026年10月3日更新）。10月10日（土）から通常営業します」",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://okuyorovillage.com/faq/",
+    "quote": "シャワー室の利用時間は何時から何時までですか？ チェックイン〜チェックアウトまでご利用可能です"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://okuyorovillage.com/faq/",
+    "quote": "薪・炭などは販売していますか？ キャンプ場売店で販売しています。薪（針葉樹・広葉樹ともに）1束700円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://okuyorovillage.com/faq/",
+    "quote": "管理棟には9:00〜18:00までスタッフがおります…売店は通常16-18時までの営業です"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://okuyorovillage.com/faq/",
+    "quote": "ペットと一緒に滞在できますか？ ワンちゃんとの宿泊が可能です"
+   },
+   "nearbyOnsen": {
+    "value": "ごりやくの湯／嵯峨和旅館本店／七里川温泉（2025年6月現在、この3か所のみ日帰り利用可と公式に記載）",
+    "evidenceUrl": "https://okuyorovillage.com/faq/",
+    "quote": "2025年6月現在　ごりやくの湯、嵯峨和旅館本店、七里川温泉の3カ所のみ日帰り温泉ご利用可能です"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.250517,
+   "lng": 140.154144,
+   "url": "https://okuyorovillage.com/about/#access"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/11969",
+  "napName": "奥養老ヴィレッジ"
+ },
+ {
+  "napId": "13613",
+  "name": "一番星ヴィレッジ 市原オートキャンプ場",
+  "pref": "千葉",
+  "muni": "市原市",
+  "verdict": "追加",
+  "reason": "公式で住所（市原市葉木176-1）が一致し、オートキャンプ（宿泊）が1名単位の人数課金で公開されている。区画料金が無いのでソロの負担が軽い",
+  "checkedUrls": [
+   "https://star-village.jp/guide-1.html",
+   "https://star-village.jp/guide-2.html",
+   "https://star-village.jp/reserve/",
+   "https://star-village.jp/access.html"
+  ],
+  "officialUrl": "https://star-village.jp/",
+  "reservationUrl": "https://star-village.jp/reserve/",
+  "address": "千葉県市原市葉木176-1",
+  "priceMin": 2000,
+  "priceMax": 4500,
+  "priceNote": "人数課金＋車両課金。公式「通常料金 オートキャンプ 大人料金（中学生以上）¥2,000/1名、車料金 ¥1,500/1台」→ 車で行くソロは3,500円。ハイシーズンは大人2,500円＋車2,000円＝4,500円で priceMax。「テントやタープの張り数による追加料金、及び区画料金はございません。人数分の利用料金と車両の料金のみ」「バイク、自転車でお越しの方は、1台につき一律1,000円」。priceMin の2,000円は徒歩で行った場合。ドラム缶風呂は別途40分2,000円",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://star-village.jp/guide-1.html",
+    "quote": "当キャンプ場にはドラム缶風呂がございます。…40分 ¥2,000で グループ何名様でもご利用いただけます"
+   },
+   "shower": {
+    "value": false,
+    "evidenceUrl": "https://star-village.jp/guide-1.html",
+    "quote": "シャワールーム、大浴場のご用意はございません。近隣の温泉施設をご利用ください"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://star-village.jp/guide-1.html",
+    "quote": "一番星ヴィレッジの売店「STAR LOUNGE」では、薪や炭、自家製かき氷やドリンクなどを販売しております"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://star-village.jp/guide-1.html",
+    "quote": "一番星ヴィレッジの売店「STAR LOUNGE」では、薪や炭…を販売しております"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://star-village.jp/guide-2.html",
+    "quote": "当キャンプ場はペットの入場も可能となっております"
+   },
+   "nearbyOnsen": {
+    "value": "天然温泉 湯舞音 市原ちはら台店（車で約15分）／市原市憩の家（約10分）／市原温泉 湯楽の里（約27分）",
+    "evidenceUrl": "https://star-village.jp/guide-1.html",
+    "quote": "[温泉施設] 天然温泉 湯舞音 市原ちはら台店 …(一番星ヴィレッジより車で約15分 / 駐車場あり)"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.47809938014521,
+   "lng": 140.1694150508548,
+   "url": "https://star-village.jp/access.html"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/13613",
+  "napName": "一番星ヴィレッジ"
+ },
+ {
+  "napId": "16184",
+  "name": "BEE CAMP FIELD",
+  "pref": "千葉",
+  "muni": "市原市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（市原市高倉272）が一致し、宿泊専用のフリーサイトに**「ソロキャンプ可」の明記**と1名総額3,800円の公式料金がある",
+  "checkedUrls": [
+   "https://beefarm.co.jp/bee-camp/",
+   "https://beefarm.co.jp/bee-camp-field-site/",
+   "https://beefarm.co.jp/bee-camp-field-facilityinfo/",
+   "https://beefarm.co.jp/bee-camp-field-access/"
+  ],
+  "officialUrl": "https://beefarm.co.jp/bee-camp/",
+  "reservationUrl": null,
+  "address": "千葉県市原市高倉272",
+  "priceMin": 3800,
+  "priceMax": 4800,
+  "priceNote": "サイト課金＋人数課金の合算。公式のユリノキ／サクラ／林間サイト（いずれも宿泊専用）「サイト使用料 3,000円（ハイシーズン＋1,000円）※ハイシーズンとはGW・お盆休みなど」＋「代金 大人1名：800円」＝通常3,800円、ハイシーズン4,800円。施設案内に「ユリノキサイト…ソロキャンプ可」「サクラサイト…ソロキャンプ可」（**モミジサイトのみ「ソロキャンプ不可」**）。車1台は乗り入れ可で追加駐車のみ＋500円、AC電源＋1,500円は任意。**公式埋め込みのInstagramに「今朝チェックアウトのお客様をお見送りをして、年内営業終了となりました」の季節休業投稿あり**",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://beefarm.co.jp/bee-camp-field-facilityinfo/",
+    "quote": "センターハウス　販売商品 … 薪　1束 ￥400"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://beefarm.co.jp/bee-camp-field-facilityinfo/",
+    "quote": "HONEY BEE CAFE 10：00〜16：00（夏期延長あり） 国産純粋はちみつの販売のほか…軽食やドリンクをご用意しています"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://beefarm.co.jp/bee-camp-field-site/",
+    "quote": "ペットは犬に限り、2頭まで同伴可能です。…犬1頭：無料"
+   },
+   "nearbyOnsen": {
+    "value": "天然温泉湯舞音 市原ちはら台店（車で10分・100円割引券あり）／市原温泉 湯楽の里（車で20分・レンタルタオルセット無料券あり）",
+    "evidenceUrl": "https://beefarm.co.jp/bee-camp-field-access/",
+    "quote": "天然温泉湯舞音 市原ちはら台店（100円割引券あり）車で10分 … 市原温泉 湯楽の里（レンタルタオルセット無料券あり）車で20分"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.51178267264251,
+   "lng": 140.2147802761956,
+   "url": "https://beefarm.co.jp/bee-camp-field-access/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/16184",
+  "napName": "Bee Camp Field"
+ },
+ {
+  "napId": "11982",
+  "name": "ナインテンナインオートキャンプ場 in 野手浜",
+  "pref": "千葉",
+  "muni": "匝瑳市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（匝瑳市野手17146-1678）が一致し、**ソロ1名1泊の総額6,000円（入場料・施設利用料なし、車1台とシャワー代込み）**を公式が明記している",
+  "checkedUrls": [
+   "https://www.99inakakurashi.com/camp/camp/",
+   "https://www.99inakakurashi.com/camp/camp/charge/",
+   "https://www.99inakakurashi.com/camp/camp/camp-info/"
+  ],
+  "officialUrl": "https://www.99inakakurashi.com/camp/camp/",
+  "reservationUrl": null,
+  "address": "千葉県匝瑳市野手17146-1678",
+  "priceMin": 6000,
+  "priceMax": 6000,
+  "priceNote": "サイト単位課金。公式「宿泊キャンプ・ソロキャンプ 1泊4名様まで・車1台 ￥6,000／1サイト 通年料金」「※上記料金には、シャワー代も含みます。」、施設紹介ページに「入場料や施設利用料はかかりません。」",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.99inakakurashi.com/camp/camp/camp-info/",
+    "quote": "シャワールーム・・・5ヶ所"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.99inakakurashi.com/camp/camp/camp-info/",
+    "quote": "現地受付売店に各種レンタル品・販売品を準備しております。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.99inakakurashi.com/camp/camp/charge/",
+    "quote": "薪 1カゴ (買い物カゴ１つ分位） ￥500"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.99inakakurashi.com/camp/camp/charge/",
+    "quote": "人数追加料金：…子供（0歳～小学生）犬 ￥1,000／1人・1匹"
+   },
+   "nearbyOnsen": {
+    "value": "旭九十九里温泉（亀の井ホテル九十九里）または旭の湯で日帰り入浴可（土日祝 大人1,000円／平日 大人700円）",
+    "evidenceUrl": "https://www.99inakakurashi.com/camp/camp/camp-info/",
+    "quote": "旭九十九里温泉（亀の井ホテル九十九里）もしくは旭の湯が近くにあり日帰り入浴可"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/11982",
+  "napName": "ナインテンナインオートキャンプ場"
+ },
+ {
+  "napId": "11983",
+  "name": "九十九里浜シーサイドオートキャンプ場 第２キャンプ場",
+  "pref": "千葉",
+  "muni": "匝瑳市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（匝瑳市栢田浜7952）が一致し、**「※１名利用でもこちらの価格からとなります」**と1名利用を公式が明示している",
+  "checkedUrls": [
+   "https://www.kujukuri.co.jp/",
+   "https://www.kujukuri.co.jp/camp02.html",
+   "https://www.kujukuri.co.jp/reserve.html"
+  ],
+  "officialUrl": "https://www.kujukuri.co.jp/camp02.html",
+  "reservationUrl": "https://www.kujukuri.co.jp/reserve.html",
+  "address": "千葉県匝瑳市栢田浜7952",
+  "priceMin": 5000,
+  "priceMax": 6000,
+  "priceNote": "区画単位課金。公式「１区画サイト１泊２名利用料金 5,000円(通常料金) / 6,000円(ハイシーズン) ※１名利用でもこちらの価格からとなります。」",
+  "features": {
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.kujukuri.co.jp/camp02.html",
+    "quote": "売店取扱商品 針葉樹薪500円・広葉樹薪1000円 ヤシガラ炭3キロ800円・着火剤300円・氷500円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.kujukuri.co.jp/camp02.html",
+    "quote": "針葉樹薪500円・広葉樹薪1000円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.kujukuri.co.jp/camp02.html",
+    "quote": "ペット利用 OK / ペット１頭 500円"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/11983",
+  "napName": "九十九里浜シーサイドオートキャンプ場"
+ },
+ {
+  "napId": "15913",
+  "name": "キャンプ番長ライダースベース99",
+  "pref": "千葉",
+  "muni": "匝瑳市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（匝瑳市新堀字砂間1464-863）が一致し、区画サイト（**定員〜1名の瓦チップサイトを含む**）が一人あたり3,300円〜と公式に明記されている",
+  "checkedUrls": [
+   "https://airsite.jp/campbancho/",
+   "https://airsite.jp/campbancho/archives/menu/411",
+   "https://airsite.jp/campbancho/archives/menu/412"
+  ],
+  "officialUrl": "https://airsite.jp/campbancho/",
+  "reservationUrl": null,
+  "address": "千葉県匝瑳市新堀字砂間1464-863",
+  "priceMin": 3300,
+  "priceMax": 3300,
+  "priceNote": "1名単位課金。公式「区画サイト 一人あたり3,300円〜」「フリーサイト 一人あたり3,300円〜」。瓦チップサイトの詳細ページは「定員 〜1名」「一人あたり3,300円〜」。料金は「〜」の下限のみ公開のため priceMax も同額。予約は公式が指定するなっぷのプランURL（オンラインカード決済のみ）",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://airsite.jp/campbancho/archives/menu/411",
+    "quote": "共有設備 ウォシュレット付き水洗トイレ　温度調節可能なジャグジー、シャワー室、水風呂、サウナ"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://airsite.jp/campbancho/archives/menu/411",
+    "quote": "シャワー室、水風呂、サウナ"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://airsite.jp/campbancho/archives/menu/411",
+    "quote": "薪、炭は無料です！無料キャンプ用品レンタルもあります。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://airsite.jp/campbancho/archives/menu/411",
+    "quote": "ペット同伴 可 ※犬、猫"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.6435986,
+   "lng": 140.5765181,
+   "url": "https://airsite.jp/campbancho/"
+  },
+  "napUrl": "https://www.nap-camp.com/chiba/15913",
+  "napName": "キャンプ番長ライダースベース99"
+ },
+ {
+  "napId": "15677",
+  "name": "多古の星キャンプ場",
+  "pref": "千葉",
+  "muni": "多古町",
+  "verdict": "追加",
+  "reason": "施設公式で住所（香取郡多古町方田249-1）が一致し、ソロ＆デュオのプランで1名料金3,500〜5,000円を公式が明記している",
+  "checkedUrls": [
+   "https://takonohoshi.jp/",
+   "https://takonohoshi.jp/price/",
+   "https://takonohoshi.jp/facility/",
+   "https://takonohoshi.jp/reserve/"
+  ],
+  "officialUrl": "https://takonohoshi.jp/",
+  "reservationUrl": "https://takonohoshi.jp/reserve/",
+  "address": "千葉県香取郡多古町方田249-1",
+  "priceMin": 3500,
+  "priceMax": 5000,
+  "priceNote": "1名単位課金。公式料金ページのソロ＆デュオ料金「オフシーズン/平日・土日祝日（¥3500 / 1名、追加 ¥1500）／オンシーズン（¥4000 / 1名）／ハイシーズン（¥5000 / 1名）」。別に「ソロ1サイト 一日4組限定 定員1名のソロプラン」もあるが**単価が公式の料金表に載っておらず**予約サイトで確認する形。デイキャンプの団体BBQは20名以上対象で宿泊プランとは別",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://takonohoshi.jp/facility/",
+    "quote": "シャワー施設 男女別で各２箇所ご用意しています。シャワー利用可能時間 14:00～22:00、6:00~10:00"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://takonohoshi.jp/facility/",
+    "quote": "コミュニティ棟 …飲料・調味料・お菓子やキャンプ用品の販売なども行っております。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://takonohoshi.jp/price/",
+    "quote": "売店販売 … 薪　大ケース ¥1,000"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://takonohoshi.jp/price/",
+    "quote": "一部指定区画のみペット可（2000円/匹）です。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/chiba/15677",
+  "napName": "多古の星キャンプ場"
  }
 ]

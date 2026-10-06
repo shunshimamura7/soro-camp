@@ -1,0 +1,65 @@
+[
+ {"napId":"15676","name":"KOUMA FARM","pref":"千葉","muni":"成田市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式 koumafarm.com は実在し住所も一致（成田市前林976-7）だが、**キャンプの料金記載が一切なく**、予約はフッターからなっぷへのリンクのみ。検索で出た n8qt1.crayonsite.net は愛知県美浜町の別施設だと確認して弾いた",
+  "checkedUrls":["https://koumafarm.com/","https://n8qt1.crayonsite.net/p/2/"],"officialUrl":"https://koumafarm.com/"},
+
+ {"napId":"16206","name":"かたくりの郷","pref":"千葉","muni":"成田市","verdict":"UNMEASURED",
+  "reason":"公式（komaino.net）に住所一致（成田市駒井野1617-2）とキャンプページ・予約電話があり「入場料 おひとり様2,000円」も載っているが、**公式に宿泊と日帰りの区別もサイト料金も無く、2,000円がソロ1泊の総額かどうか確認できない**。料金は推測しないため保留。公式表記は「かたくりの郷」でなっぷ表記「かたくりの里」と字が違う点も要確認（住所・市町村は一致）",
+  "checkedUrls":["https://www.komaino.net/","https://www.komaino.net/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97"],"officialUrl":"https://www.komaino.net/"},
+
+ {"napId":"14710","name":"検見川総合運動場・セミナーハウス","pref":"千葉","muni":"千葉市花見川区","verdict":"門落ち(単独利用不可)",
+  "reason":"公式（東京大学施設／R.project運営）は団体合宿・研修専用で、利用区分が「合宿利用（東京大学関係者）／合宿利用（一般団体）／日帰り利用（団体）」のみ。公式全ページにキャンプ・テントの記載が無く個人1名の宿泊商品が存在しない。「合宿利用（一般団体）」にも「セミナーハウスの宿泊棟へはご宿泊できません」と明記",
+  "checkedUrls":["https://kemigawa-rprojectjapan.com/","https://kemigawa-rprojectjapan.com/?page_id=19","https://kemigawa-rprojectjapan.com/?page_id=165"],"officialUrl":"https://kemigawa-rprojectjapan.com/"},
+
+ {"napId":"14060","name":"Camping GREEN","pref":"千葉","muni":"千葉市若葉区","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式 campinggreen.jp は実在し住所一致（千葉市若葉区小倉町1487）だが、**サイト利用料金がどのページにも無い**（掲載はレンタル・販売品の価格のみ）。予約の遷移先もなっぷの予約エンジンのみ。常設テントをスタッフが設営する形態で「当店の用意する焚き火台以外の持ち込み、使用禁止」とあり持ち込みテント泊も扱っていない",
+  "checkedUrls":["https://www.campinggreen.jp/","https://www.campinggreen.jp/blank-1","https://www.campinggreen.jp/blank-5"],"officialUrl":"https://www.campinggreen.jp/"},
+
+ {"napId":"15072","name":"千葉ウシノヒロバ","pref":"千葉","muni":"千葉市若葉区","verdict":"追加",
+  "reason":"施設公式に大人1名あたりのキャンプ料金と自社の予約システムがあり、住所（千葉市若葉区富田町983-1）も一致",
+  "checkedUrls":["https://ushinohiroba.com/app/customer/camping_guide","https://ushinohiroba.com/user-guide/","https://ushinohiroba.com/camping-equipment/"],
+  "officialUrl":"https://ushinohiroba.com/","reservationUrl":"https://ushinohiroba.com/app/customer/camping/camping_reservation/new",
+  "address":"千葉県千葉市若葉区富田町983-1","priceMin":3080,"priceMax":4000,
+  "priceNote":"1名単位課金。公式「ご利用料金 大人：平日 3,080円（税込）〜／大人：土日・祝日 3,300円（税込）〜」「※キャンプご利用料金には入場料がふくまれます。」。別掲の駐車料金「普通車 【平日】350円 【土日祝日】700円」はキャンプ利用者の免除の記載が無いため、車で行く土日祝は3,300＋700＝4,000円として priceMax に入れた（車なしなら3,080円）。公式に「※ピークシーズンは料金が変更になります」の告知あり",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://ushinohiroba.com/app/customer/camping_guide","quote":"シャワー棟 男女別にブースが分かれています。事前にこちらのページからご予約ください。※ドライヤー有"},
+    "pet":{"value":true,"evidenceUrl":"https://ushinohiroba.com/user-guide/","quote":"キャンプサイトにおいては、のんびりサイトのみペットもご入場いただけます"},
+    "shop":{"value":true,"evidenceUrl":"https://ushinohiroba.com/app/customer/camping_guide","quote":"販売品 炭や割り箸などの消耗品の販売も行っています。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"15090","name":"WAKAMATSU PRESERVE","pref":"千葉","muni":"千葉市若葉区","verdict":"UNMEASURED",
+  "reason":"施設公式は実在・住所一致（千葉市若葉区若松町358）だが「完全貸切スタイルのキャンプフィールド」で**公開料金が貸切料金のみ（平日4人まで1泊40,000円税別／土日祝6人まで60,000円税別）**。1名で使っても税込44,000円相当になり、貸切高額の方針判断が要る",
+  "checkedUrls":["https://wakamatsu-preserve.com/"],"officialUrl":"https://wakamatsu-preserve.com/"},
+
+ {"napId":"15711","name":"バンブーグローブ オートキャンプ場","pref":"千葉","muni":"千葉市若葉区","verdict":"追加",
+  "reason":"施設公式にサイト別の1区画基本使用料が載っており、住所（千葉市若葉区下泉町943-1）も一致。1名でも区画料金だけで宿泊できる",
+  "checkedUrls":["https://bamboo-grove-camp.com/plans/","https://bamboo-grove-camp.com/access/","https://bamboo-grove-camp.com/userguide/"],
+  "officialUrl":"https://bamboo-grove-camp.com/","reservationUrl":null,
+  "address":"千葉県千葉市若葉区下泉町943-1","priceMin":9000,"priceMax":9000,
+  "priceNote":"区画単位課金で人数課金なし。公式「プランの詳細」の最安は林間サイト「料金 9,000円 / 1区画の基本使用料 シーズンにより変動します。」（他はオートサイト9,500円、ウッドデッキ10,000円、オートワイド11,000円）。車1台分を含む（「1予約で車1台またはバイク2台まで」）。下限のみの公開でシーズン変動するため priceMax も同額。ゴミ処理は任意有料（45L袋1枚500円）",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://bamboo-grove-camp.com/plans/","quote":"無料 ・個室シャワー (1回15分程度を目安にご自由にお使いください)"},
+    "firewood":{"value":true,"evidenceUrl":"https://bamboo-grove-camp.com/plans/","quote":"有料 ・管理棟(薪販売/レンタル用品) 09：00~16:00"},
+    "shop":{"value":true,"evidenceUrl":"https://bamboo-grove-camp.com/plans/","quote":"有料 ・管理棟(薪販売/レンタル用品) 09：00~16:00"},
+    "pet":{"value":true,"evidenceUrl":"https://bamboo-grove-camp.com/plans/","quote":"ペット：小型犬2匹または中型犬1匹、大型犬要相談。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"16698","name":"みんなの里山キャンプ場","pref":"千葉","muni":"千葉市若葉区","verdict":"追加",
+  "reason":"施設公式にソロサイトの1泊基本料金が明記され、住所（千葉市若葉区大宮町2918-1）も一致。焚き火台＋シートで焚き火ができる",
+  "checkedUrls":["https://minna-no-satoyama.com/"],
+  "officialUrl":"https://minna-no-satoyama.com/","reservationUrl":null,
+  "address":"千葉県千葉市若葉区大宮町2918-1","priceMin":3000,"priceMax":4000,
+  "priceNote":"サイト単位課金。公式「サイト別の基本料金（1泊／税込）… 林間フリーサイト 3,000 円〜／ソロサイト 3,000 円〜」。「※ フリーサイト・ソロサイト・デイキャンプは、お車1台目からオプションの選択をお願いいたします」「お車2台目以降 1,000 円／台」で**車で行くなら1台目から1,000円が必要**なため priceMax を4,000円とした（公共交通なら3,000円）。電源は別途1,000円／1サイト1泊、ゴミ引き取り500円／回。公式に「※ 最新の料金・空き状況はなっぷ予約ページでご確認ください」の断りあり",
+  "features":{
+    "pet":{"value":true,"evidenceUrl":"https://minna-no-satoyama.com/","quote":"ペットの同伴ができます。場内では必ずリードをつけてください。"},
+    "nearbyOnsen":{"value":"アクアリンク千葉（千葉市美浜区新港224-1）に大浴場あり","evidenceUrl":"https://minna-no-satoyama.com/","quote":"・アクアリンク千葉（千葉市美浜区新港224-1）：スケートリンク、温水プール、大浴場があります。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"15933","name":"small planet CAMP&GRILL","pref":"千葉","muni":"千葉市美浜区","verdict":"門落ち(単独利用不可)",
+  "reason":"公式（住所一致：千葉市美浜区高浜7丁目2）の客室は2タイプとも「**最小利用可能人数 2名**」で1名予約ができない。あわせて常設テント・ドームのグランピング施設で持ち込みテント泊の商品も無い",
+  "checkedUrls":["https://www.chiba-glamping.com/","https://reserve.489ban.net/client/s-planet/0/plan"],"officialUrl":"https://www.chiba-glamping.com/"},
+
+ {"napId":"13586","name":"昭和の森フォレストビレッジ","pref":"千葉","muni":"千葉市緑区","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式 forestvillage.jp は実在し住所一致（千葉市緑区小食土町955）だが、公式「利用料金」は合宿施設の宿泊棟・食事・施設使用料のみで**キャンプ場の料金が一切ない**。キャンプの予約もQ&Aも外部（なっぷ）へ丸投げ。なお公式に「キャンプ場は、毎週水曜日と木曜日は定休日」とあるが閉鎖ではない",
+  "checkedUrls":["https://forestvillage.jp/","https://forestvillage.jp/camp/","https://forestvillage.jp/price/"],"officialUrl":"https://forestvillage.jp/"}
+]

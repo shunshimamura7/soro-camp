@@ -1,0 +1,71 @@
+[
+ {"napId":"11969","name":"奥養老ヴィレッジ","pref":"千葉","muni":"市原市","verdict":"追加",
+  "reason":"施設公式で住所（市原市戸面746）が一致し、テント泊プラン（1人6,000円〜）が公式に載っていて人数の下限制限も無い。ただし**より安い「川の近くのテントサイト」（1人4,000円〜）は公式FAQで予約休止中・再開未定**",
+  "checkedUrls":["https://okuyorovillage.com/","https://okuyorovillage.com/plan/","https://okuyorovillage.com/faq/","https://okuyorovillage.com/about/"],
+  "officialUrl":"https://okuyorovillage.com/","reservationUrl":null,
+  "address":"千葉県市原市戸面746","priceMin":6000,"priceMax":6000,
+  "priceNote":"人数課金。公式「施設・プラン料金」のテント手ぶらプラン「1人 6,000 円〜」（下限のみ公開のため priceMax も同額）。**公式FAQに「川のテントサイトは現在予約休止中 ※再開日未定」、「バンガロー素泊まりプラン」「日帰りバーベキュー」も「現在休止中※復旧見込み未定」。**公式お知らせに2026/9/21の台風被害と「ロープウェイ復旧しました（2026年10月3日更新）。10月10日（土）から通常営業します」",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://okuyorovillage.com/faq/","quote":"シャワー室の利用時間は何時から何時までですか？ チェックイン〜チェックアウトまでご利用可能です"},
+    "firewood":{"value":true,"evidenceUrl":"https://okuyorovillage.com/faq/","quote":"薪・炭などは販売していますか？ キャンプ場売店で販売しています。薪（針葉樹・広葉樹ともに）1束700円"},
+    "shop":{"value":true,"evidenceUrl":"https://okuyorovillage.com/faq/","quote":"管理棟には9:00〜18:00までスタッフがおります…売店は通常16-18時までの営業です"},
+    "pet":{"value":true,"evidenceUrl":"https://okuyorovillage.com/faq/","quote":"ペットと一緒に滞在できますか？ ワンちゃんとの宿泊が可能です"},
+    "nearbyOnsen":{"value":"ごりやくの湯／嵯峨和旅館本店／七里川温泉（2025年6月現在、この3か所のみ日帰り利用可と公式に記載）","evidenceUrl":"https://okuyorovillage.com/faq/","quote":"2025年6月現在　ごりやくの湯、嵯峨和旅館本店、七里川温泉の3カ所のみ日帰り温泉ご利用可能です"}},
+  "coordsFromOfficialMap":{"lat":35.250517,"lng":140.154144,"url":"https://okuyorovillage.com/about/#access"}},
+
+ {"napId":"11970","name":"ミニキャンプ場・憩","pref":"千葉","muni":"市原市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先がいずれも見つからず、出てくるのは掲載サイトのみ",
+  "checkedUrls":["https://www.nap-camp.com/chiba/11970"],"officialUrl":null},
+
+ {"napId":"13613","name":"一番星ヴィレッジ 市原オートキャンプ場","pref":"千葉","muni":"市原市","verdict":"追加",
+  "reason":"公式で住所（市原市葉木176-1）が一致し、オートキャンプ（宿泊）が1名単位の人数課金で公開されている。区画料金が無いのでソロの負担が軽い",
+  "checkedUrls":["https://star-village.jp/guide-1.html","https://star-village.jp/guide-2.html","https://star-village.jp/reserve/","https://star-village.jp/access.html"],
+  "officialUrl":"https://star-village.jp/","reservationUrl":"https://star-village.jp/reserve/",
+  "address":"千葉県市原市葉木176-1","priceMin":2000,"priceMax":4500,
+  "priceNote":"人数課金＋車両課金。公式「通常料金 オートキャンプ 大人料金（中学生以上）¥2,000/1名、車料金 ¥1,500/1台」→ 車で行くソロは3,500円。ハイシーズンは大人2,500円＋車2,000円＝4,500円で priceMax。「テントやタープの張り数による追加料金、及び区画料金はございません。人数分の利用料金と車両の料金のみ」「バイク、自転車でお越しの方は、1台につき一律1,000円」。priceMin の2,000円は徒歩で行った場合。ドラム缶風呂は別途40分2,000円",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://star-village.jp/guide-1.html","quote":"当キャンプ場にはドラム缶風呂がございます。…40分 ¥2,000で グループ何名様でもご利用いただけます"},
+    "shower":{"value":false,"evidenceUrl":"https://star-village.jp/guide-1.html","quote":"シャワールーム、大浴場のご用意はございません。近隣の温泉施設をご利用ください"},
+    "firewood":{"value":true,"evidenceUrl":"https://star-village.jp/guide-1.html","quote":"一番星ヴィレッジの売店「STAR LOUNGE」では、薪や炭、自家製かき氷やドリンクなどを販売しております"},
+    "shop":{"value":true,"evidenceUrl":"https://star-village.jp/guide-1.html","quote":"一番星ヴィレッジの売店「STAR LOUNGE」では、薪や炭…を販売しております"},
+    "pet":{"value":true,"evidenceUrl":"https://star-village.jp/guide-2.html","quote":"当キャンプ場はペットの入場も可能となっております"},
+    "nearbyOnsen":{"value":"天然温泉 湯舞音 市原ちはら台店（車で約15分）／市原市憩の家（約10分）／市原温泉 湯楽の里（約27分）","evidenceUrl":"https://star-village.jp/guide-1.html","quote":"[温泉施設] 天然温泉 湯舞音 市原ちはら台店 …(一番星ヴィレッジより車で約15分 / 駐車場あり)"}},
+  "coordsFromOfficialMap":{"lat":35.47809938014521,"lng":140.1694150508548,"url":"https://star-village.jp/access.html"}},
+
+ {"napId":"13656","name":"高滝湖オートキャンプ場","pref":"千葉","muni":"市原市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先が見つからない。同じ高滝湖畔の高滝湖BASE の運営会社サイトは別施設（大和田神丘）で住所が異なると確認して弾いた",
+  "checkedUrls":["https://campla.jp/campsite/2056/","https://www.nap-camp.com/chiba/13656"],"officialUrl":null},
+
+ {"napId":"14299","name":"THE BAMBOO FOREST","pref":"千葉","muni":"市原市","verdict":"宿泊系のため対象外",
+  "reason":"公式（住所一致：市原市山小川790）はドームテント／ロータスベルテントの常設グランピング専業で、持ち込みテント泊の区画が無い",
+  "checkedUrls":["https://bamboo-forest.jp/"],"officialUrl":"https://bamboo-forest.jp/"},
+
+ {"napId":"15135","name":"星野農園高滝湖 デイキャンプ場","pref":"千葉","muni":"市原市","verdict":"門落ち(宿泊不可)",
+  "reason":"公式（住所一致：市原市大和田29-1）はデイキャンプ専用で「朝10時から夕方5時までの入れ替えなし7時間」。宿泊プラン・宿泊料金の記載が一切ない",
+  "checkedUrls":["https://www.hoshinofarm.net/","https://www.hoshinofarm.net/day-camp/day-camp-fees"],"officialUrl":"https://www.hoshinofarm.net/"},
+
+ {"napId":"15916","name":"オートキャンプ場 しーたけ村","pref":"千葉","muni":"市原市","verdict":"UNMEASURED",
+  "reason":"**1日1組完全貸切**のため1名でも基本料金20,000円〜＋施設使用料（大人）2,000円＝22,000円。スペシャルシーズンは40,000円〜＋2,000円。貸切高額の方針判断が要る。公式 https://shi-take.jp/ratechart/",
+  "checkedUrls":["https://shi-take.jp/","https://shi-take.jp/ratechart/","https://shi-take.jp/facilityoverview/"],"officialUrl":"https://shi-take.jp/"},
+
+ {"napId":"16047","name":"高滝湖BASE","pref":"千葉","muni":"市原市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"運営会社（株式会社ラグエルジャパン）の公式サイトは存在し埋め込み地図のピンも台帳座標と一致するが、**公式にソロ1泊の料金が一切なく「キャンプ場は、「なっぷ」で予約受付を承っております」とだけ記載**。公式に載る住所も銀座の本社のみで施設の番地表記が無い。2026/08/02に公式サイトを Google Sites へ移行済み",
+  "checkedUrls":["https://sites.google.com/view/ragueljapan/","https://sites.google.com/view/ragueljapan/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%9C%B0%E5%9B%B3"],"officialUrl":"https://sites.google.com/view/ragueljapan/"},
+
+ {"napId":"16127","name":"CHILL VALLEY 養老渓谷","pref":"千葉","muni":"市原市","verdict":"門落ち(宿泊不可)",
+  "reason":"公式（住所一致：市原市戸面331）はアウトドアサウナ施設で、料金・プランが全て**120分制の日帰り利用のみ**（個人3,000円/人、貸切平日12,000円/組）。宿泊プラン・宿泊料金の記載が無い",
+  "checkedUrls":["https://chill-valley.com/","https://chill-valley.com/plan-2/","https://chill-valley.com/info/"],"officialUrl":"https://chill-valley.com/"},
+
+ {"napId":"16184","name":"BEE CAMP FIELD","pref":"千葉","muni":"市原市","verdict":"追加",
+  "reason":"施設公式で住所（市原市高倉272）が一致し、宿泊専用のフリーサイトに**「ソロキャンプ可」の明記**と1名総額3,800円の公式料金がある",
+  "checkedUrls":["https://beefarm.co.jp/bee-camp/","https://beefarm.co.jp/bee-camp-field-site/","https://beefarm.co.jp/bee-camp-field-facilityinfo/","https://beefarm.co.jp/bee-camp-field-access/"],
+  "officialUrl":"https://beefarm.co.jp/bee-camp/","reservationUrl":null,
+  "address":"千葉県市原市高倉272","priceMin":3800,"priceMax":4800,
+  "priceNote":"サイト課金＋人数課金の合算。公式のユリノキ／サクラ／林間サイト（いずれも宿泊専用）「サイト使用料 3,000円（ハイシーズン＋1,000円）※ハイシーズンとはGW・お盆休みなど」＋「代金 大人1名：800円」＝通常3,800円、ハイシーズン4,800円。施設案内に「ユリノキサイト…ソロキャンプ可」「サクラサイト…ソロキャンプ可」（**モミジサイトのみ「ソロキャンプ不可」**）。車1台は乗り入れ可で追加駐車のみ＋500円、AC電源＋1,500円は任意。**公式埋め込みのInstagramに「今朝チェックアウトのお客様をお見送りをして、年内営業終了となりました」の季節休業投稿あり**",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://beefarm.co.jp/bee-camp-field-facilityinfo/","quote":"センターハウス　販売商品 … 薪　1束 ￥400"},
+    "shop":{"value":true,"evidenceUrl":"https://beefarm.co.jp/bee-camp-field-facilityinfo/","quote":"HONEY BEE CAFE 10：00〜16：00（夏期延長あり） 国産純粋はちみつの販売のほか…軽食やドリンクをご用意しています"},
+    "pet":{"value":true,"evidenceUrl":"https://beefarm.co.jp/bee-camp-field-site/","quote":"ペットは犬に限り、2頭まで同伴可能です。…犬1頭：無料"},
+    "nearbyOnsen":{"value":"天然温泉湯舞音 市原ちはら台店（車で10分・100円割引券あり）／市原温泉 湯楽の里（車で20分・レンタルタオルセット無料券あり）","evidenceUrl":"https://beefarm.co.jp/bee-camp-field-access/","quote":"天然温泉湯舞音 市原ちはら台店（100円割引券あり）車で10分 … 市原温泉 湯楽の里（レンタルタオルセット無料券あり）車で20分"}},
+  "coordsFromOfficialMap":{"lat":35.51178267264251,"lng":140.2147802761956,"url":"https://beefarm.co.jp/bee-camp-field-access/"}}
+]

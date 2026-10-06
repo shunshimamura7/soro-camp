@@ -2844,9 +2844,9 @@
    "latCandidate": "35.25053931381283",
    "lngCandidate": "140.15418386459345",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://okuyorovillage.com/",
+   "verdict": "追加",
+   "reason": "施設公式で住所（市原市戸面746）が一致し、テント泊プラン（1人6,000円〜）が公式に載っていて人数の下限制限も無い。ただし**より安い「川の近くのテントサイト」（1人4,000円〜）は公式FAQで予約休止中・再開未定**"
   },
   {
    "napId": "11970",
@@ -2858,8 +2858,8 @@
    "lngCandidate": "140.155887",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式・公式予約先がいずれも見つからず、出てくるのは掲載サイトのみ"
   },
   {
    "napId": "13613",
@@ -2870,9 +2870,9 @@
    "latCandidate": "35.478970599891035",
    "lngCandidate": "140.17129563061908",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://star-village.jp/",
+   "verdict": "追加",
+   "reason": "公式で住所（市原市葉木176-1）が一致し、オートキャンプ（宿泊）が1名単位の人数課金で公開されている。区画料金が無いのでソロの負担が軽い"
   },
   {
    "napId": "13656",
@@ -2884,8 +2884,8 @@
    "lngCandidate": "140.1564465",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式・公式予約先が見つからない。同じ高滝湖畔の高滝湖BASE の運営会社サイトは別施設（大和田神丘）で住所が異なると確認して弾いた"
   },
   {
    "napId": "14299",
@@ -2896,9 +2896,9 @@
    "latCandidate": "35.35860051694487",
    "lngCandidate": "140.1793262666565",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://bamboo-forest.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式（住所一致：市原市山小川790）はドームテント／ロータスベルテントの常設グランピング専業で、持ち込みテント泊の区画が無い"
   },
   {
    "napId": "14304",
@@ -2922,9 +2922,9 @@
    "latCandidate": "35.35391542951388",
    "lngCandidate": "140.16694402460635",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.hoshinofarm.net/",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "公式（住所一致：市原市大和田29-1）はデイキャンプ専用で「朝10時から夕方5時までの入れ替えなし7時間」。宿泊プラン・宿泊料金の記載が一切ない"
   },
   {
    "napId": "15916",
@@ -2935,9 +2935,9 @@
    "latCandidate": "35.38130000472729",
    "lngCandidate": "140.18145365588913",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://shi-take.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "**1日1組完全貸切**のため1名でも基本料金20,000円〜＋施設使用料（大人）2,000円＝22,000円。スペシャルシーズンは40,000円〜＋2,000円。貸切高額の方針判断が要る。公式 https://shi-take.jp/ratechart/"
   },
   {
    "napId": "16047",
@@ -2948,9 +2948,9 @@
    "latCandidate": "35.35519516077691",
    "lngCandidate": "140.16759848360599",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://sites.google.com/view/ragueljapan/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "運営会社（株式会社ラグエルジャパン）の公式サイトは存在し埋め込み地図のピンも台帳座標と一致するが、**公式にソロ1泊の料金が一切なく「キャンプ場は、「なっぷ」で予約受付を承っております」とだけ記載**。公式に載る住所も銀座の本社のみで施設の番地表記が無い。2026/08/02に公式サイトを Google Sites へ移行済み"
   },
   {
    "napId": "16127",
@@ -2961,9 +2961,9 @@
    "latCandidate": "35.2564393",
    "lngCandidate": "140.1610987",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://chill-valley.com/",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "公式（住所一致：市原市戸面331）はアウトドアサウナ施設で、料金・プランが全て**120分制の日帰り利用のみ**（個人3,000円/人、貸切平日12,000円/組）。宿泊プラン・宿泊料金の記載が無い"
   },
   {
    "napId": "16184",
@@ -2974,9 +2974,9 @@
    "latCandidate": "35.51240921779972",
    "lngCandidate": "140.21760201454163",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://beefarm.co.jp/bee-camp/",
+   "verdict": "追加",
+   "reason": "施設公式で住所（市原市高倉272）が一致し、宿泊専用のフリーサイトに**「ソロキャンプ可」の明記**と1名総額3,800円の公式料金がある"
   },
   {
    "napId": "16325",
@@ -3130,9 +3130,9 @@
    "latCandidate": "35.7964766",
    "lngCandidate": "140.4347324",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://koumafarm.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 koumafarm.com は実在し住所も一致（成田市前林976-7）だが、**キャンプの料金記載が一切なく**、予約はフッターからなっぷへのリンクのみ。検索で出た n8qt1.crayonsite.net は愛知県美浜町の別施設だと確認して弾いた"
   },
   {
    "napId": "15808",
@@ -3156,9 +3156,9 @@
    "latCandidate": "35.767299",
    "lngCandidate": "140.3621104",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://www.komaino.net/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式（komaino.net）に住所一致（成田市駒井野1617-2）とキャンプページ・予約電話があり「入場料 おひとり様2,000円」も載っているが、**公式に宿泊と日帰りの区別もサイト料金も無く、2,000円がソロ1泊の総額かどうか確認できない**。料金は推測しないため保留。公式表記は「かたくりの郷」でなっぷ表記「かたくりの里」と字が違う点も要確認（住所・市町村は一致）"
   },
   {
    "napId": "14710",
@@ -3169,9 +3169,9 @@
    "latCandidate": "35.6580916",
    "lngCandidate": "140.0730189",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kemigawa-rprojectjapan.com/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "公式（東京大学施設／R.project運営）は団体合宿・研修専用で、利用区分が「合宿利用（東京大学関係者）／合宿利用（一般団体）／日帰り利用（団体）」のみ。公式全ページにキャンプ・テントの記載が無く個人1名の宿泊商品が存在しない。「合宿利用（一般団体）」にも「セミナーハウスの宿泊棟へはご宿泊できません」と明記"
   },
   {
    "napId": "14060",
@@ -3182,9 +3182,9 @@
    "latCandidate": "35.64148617908253",
    "lngCandidate": "140.18756127357483",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.campinggreen.jp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 campinggreen.jp は実在し住所一致（千葉市若葉区小倉町1487）だが、**サイト利用料金がどのページにも無い**（掲載はレンタル・販売品の価格のみ）。予約の遷移先もなっぷの予約エンジンのみ。常設テントをスタッフが設営する形態で「当店の用意する焚き火台以外の持ち込み、使用禁止」とあり持ち込みテント泊も扱っていない"
   },
   {
    "napId": "14841",
@@ -3208,9 +3208,9 @@
    "latCandidate": "35.6036597",
    "lngCandidate": "140.246048",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://ushinohiroba.com/",
+   "verdict": "追加",
+   "reason": "施設公式に大人1名あたりのキャンプ料金と自社の予約システムがあり、住所（千葉市若葉区富田町983-1）も一致"
   },
   {
    "napId": "15090",
@@ -3221,9 +3221,9 @@
    "latCandidate": "35.64052899198712",
    "lngCandidate": "140.17221529377903",
    "priority": 99,
-   "officialUrl": null,
+   "officialUrl": "https://wakamatsu-preserve.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "施設公式は実在・住所一致（千葉市若葉区若松町358）だが「完全貸切スタイルのキャンプフィールド」で**公開料金が貸切料金のみ（平日4人まで1泊40,000円税別／土日祝6人まで60,000円税別）**。1名で使っても税込44,000円相当になり、貸切高額の方針判断が要る"
   },
   {
    "napId": "15711",
@@ -3234,9 +3234,9 @@
    "latCandidate": "35.626395",
    "lngCandidate": "140.2291937",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://bamboo-grove-camp.com/",
+   "verdict": "追加",
+   "reason": "施設公式にサイト別の1区画基本使用料が載っており、住所（千葉市若葉区下泉町943-1）も一致。1名でも区画料金だけで宿泊できる"
   },
   {
    "napId": "16698",
@@ -3247,9 +3247,9 @@
    "latCandidate": "35.603523156135346",
    "lngCandidate": "140.17138523005528",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://minna-no-satoyama.com/",
+   "verdict": "追加",
+   "reason": "施設公式にソロサイトの1泊基本料金が明記され、住所（千葉市若葉区大宮町2918-1）も一致。焚き火台＋シートで焚き火ができる"
   },
   {
    "napId": "15933",
@@ -3260,9 +3260,9 @@
    "latCandidate": "35.61620945263603",
    "lngCandidate": "140.0636702872414",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.chiba-glamping.com/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "公式（住所一致：千葉市美浜区高浜7丁目2）の客室は2タイプとも「**最小利用可能人数 2名**」で1名予約ができない。あわせて常設テント・ドームのグランピング施設で持ち込みテント泊の商品も無い"
   },
   {
    "napId": "13586",
@@ -3273,9 +3273,9 @@
    "latCandidate": "35.5177598",
    "lngCandidate": "140.2762551",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://forestvillage.jp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 forestvillage.jp は実在し住所一致（千葉市緑区小食土町955）だが、公式「利用料金」は合宿施設の宿泊棟・食事・施設使用料のみで**キャンプ場の料金が一切ない**。キャンプの予約もQ&Aも外部（なっぷ）へ丸投げ。なお公式に「キャンプ場は、毎週水曜日と木曜日は定休日」とあるが閉鎖ではない"
   },
   {
    "napId": "14512",
@@ -3287,8 +3287,8 @@
    "lngCandidate": "140.0691761",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "確認できたのは なっぷ／Instagram／LINE公式アカウント／まとめサイトのみで、施設公式サイト・自治体公式ページ・公式予約先が存在しない（Instagram はログイン壁で内容が読めない）"
   },
   {
    "napId": "15696",
@@ -3300,8 +3300,8 @@
    "lngCandidate": "140.0528157",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設名・シェアハウス名の双方で検索したが、ヒットするのは なっぷ／Campla／hinata／個人ブログ／YouTube のみ。施設公式・自治体公式・公式予約先なし"
   },
   {
    "napId": "16714",
@@ -3313,8 +3313,8 @@
    "lngCandidate": "140.08317667263032",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "運営の公式 arkforest.jp は存在するが**住所が「八千代市上高野26」の本館のみで、ふなばしサイト（船橋市車方町198-1）の記載が全ページに1文字も無い**（/funabashi.html 等も404）。同名・同運営での誤認を避けて公式なし扱いにした。なっぷ側も「販売準備中プラン一覧」"
   },
   {
    "napId": "11982",
@@ -3325,9 +3325,9 @@
    "latCandidate": "35.6525767610484",
    "lngCandidate": "140.59025537241985",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.99inakakurashi.com/camp/camp/",
+   "verdict": "追加",
+   "reason": "施設公式で住所（匝瑳市野手17146-1678）が一致し、**ソロ1名1泊の総額6,000円（入場料・施設利用料なし、車1台とシャワー代込み）**を公式が明記している"
   },
   {
    "napId": "11983",
@@ -3338,9 +3338,9 @@
    "latCandidate": "35.63138093140517",
    "lngCandidate": "140.55869000434606",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.kujukuri.co.jp/camp02.html",
+   "verdict": "追加",
+   "reason": "施設公式で住所（匝瑳市栢田浜7952）が一致し、**「※１名利用でもこちらの価格からとなります」**と1名利用を公式が明示している"
   },
   {
    "napId": "14303",
@@ -3364,9 +3364,9 @@
    "latCandidate": "35.698209931843174",
    "lngCandidate": "140.5546966791153",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://enbinomori.wixsite.com/enbinomori",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "公式の料金案内は**BBQ場2時間制のみ**（1サイト2時間 大人2,200円）で営業時間は午前10時半〜午後9時半、宿泊の記載が無い。なっぷ側もデイプラン／ナイトプランのみ"
   },
   {
    "napId": "15724",
@@ -3378,8 +3378,8 @@
    "lngCandidate": "140.59015790923158",
    "priority": 99,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式・公式予約先いずれも見つからない（なっぷ／楽天トラベルキャンプ／Campla のみ。くるま旅公式や RV-Park.jp にも掲載なし）。加えて施設種別が RV パークで宿泊が車内前提"
   },
   {
    "napId": "15913",
@@ -3390,9 +3390,9 @@
    "latCandidate": "35.64362957750151",
    "lngCandidate": "140.57651830000003",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://airsite.jp/campbancho/",
+   "verdict": "追加",
+   "reason": "施設公式で住所（匝瑳市新堀字砂間1464-863）が一致し、区画サイト（**定員〜1名の瓦チップサイトを含む**）が一人あたり3,300円〜と公式に明記されている"
   },
   {
    "napId": "15698",
@@ -3403,9 +3403,9 @@
    "latCandidate": "35.36883896470763",
    "lngCandidate": "140.01412963867188",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://remix-base.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 remix-base.com は住所一致（袖ケ浦市大竹538）だが**宿泊料金の掲載が全ページに無く**（レンタル品の価格のみ）、予約は公式がなっぷのウィジェットへ送っている。1日1グループ貸切（最大40名）運用"
   },
   {
    "napId": "16319",
@@ -3429,9 +3429,9 @@
    "latCandidate": "35.75760823490973",
    "lngCandidate": "140.52604563352128",
    "priority": 99,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://takonohoshi.jp/",
+   "verdict": "追加",
+   "reason": "施設公式で住所（香取郡多古町方田249-1）が一致し、ソロ＆デュオのプランで1名料金3,500〜5,000円を公式が明記している"
   },
   {
    "napId": "15850",
@@ -4282,14 +4282,14 @@
    "門落ち(住所を照合できない)": 1
   },
   "内訳": {
-   "門落ち(料金も予約も公式に無し)": 20,
+   "門落ち(料金も予約も公式に無し)": 25,
    "閉鎖疑い": 32,
-   "門落ち(公式なし)": 22,
-   "追加": 64,
-   "宿泊系のため対象外": 70,
-   "UNMEASURED": 106,
-   "門落ち(宿泊不可)": 2,
-   "門落ち(単独利用不可)": 8,
+   "門落ち(公式なし)": 28,
+   "追加": 74,
+   "宿泊系のため対象外": 71,
+   "UNMEASURED": 79,
+   "門落ち(宿泊不可)": 5,
+   "門落ち(単独利用不可)": 10,
    "門落ち(住所を照合できない)": 2
   }
  },
