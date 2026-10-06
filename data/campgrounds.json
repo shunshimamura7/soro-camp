@@ -12331,5 +12331,49 @@
     "source": [
       "http://www.fuefukigoya.com/ryoukin.html"
     ]
+  },
+  {
+    "type": "campground",
+    "status": "active",
+    "prefecture": "山梨",
+    "id": "kurosaka-autocamp",
+    "slug": "kurosaka-autocamp",
+    "name": "黒坂オートキャンプ場",
+    "area": "笛吹・境川",
+    "address": "山梨県笛吹市境川町大黒坂",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "needsPrice": true,
+    "priceMin": 0,
+    "priceMax": 0,
+    "features": {
+      "carIn": true,
+      "carInNote": "オートキャンプ場",
+      "reservation": "要",
+      "reservationNote": "公式サイトの「予約はこちら」から"
+    },
+    "season": "要確認（公式に営業期間の記載なし。臨時休業は公式のお知らせで告知される）",
+    "soloComment": "笛吹市境川町の山の地形を生かした林間のオートキャンプ場。甲府盆地の夜景を見下ろせる。公式が「東京から90分の好立地」と案内し、場内にカフェがある。",
+    "officialUrl": "https://www.kurosaka.net/",
+    "tel": "090-7186-8931",
+    "cautions": [
+      "**料金が取得できなかった。**公式の料金ページ（/user-guide）が本文を返さず、金額を確認できていない。予約前に公式で確かめること",
+      "**台風接近時はキャンセル料を無料にする告知**が公式のお知らせに出ることがある。荒天時は公式を確認",
+      "場内は山の地形に沿っていて**場所ごとにサイトの形状が違う**と公式に記載",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.kurosaka.net/"
+    ],
+    "lastVerified": "2026-10-06"
   }
 ]

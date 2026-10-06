@@ -22,8 +22,8 @@
       "latCandidate": "35.8054347",
       "lngCandidate": "138.8341042",
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "門落ち(公式なし)",
+      "reason": "SK落合キャンプ場。施設公式が見当たらない(なっぷ・Yahoo!ロコ・hinata のみ)"
     },
     {
       "napId": "11233",
@@ -165,9 +165,9 @@
       "napUrl": "https://www.nap-camp.com/yamanashi/11246",
       "latCandidate": "35.5533988",
       "lngCandidate": "138.6669411",
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.fuefuki-kanko.jp/activity/ashigawaauto/menu.html",
+      "verdict": "門落ち(公式なし)",
+      "reason": "芦川オートキャンプ場。料金を載せるのは fuefuki-kanko.jp=「ふえふき観光ナビ」(民間法人名義)で、笛吹市公式でも施設公式でもない。門4不通過"
     },
     {
       "napId": "11247",
@@ -177,9 +177,9 @@
       "napUrl": "https://www.nap-camp.com/yamanashi/11247",
       "latCandidate": "35.58329563099325",
       "lngCandidate": "138.639271658197",
-      "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "officialUrl": "https://www.kurosaka.net/",
+      "verdict": "追加",
+      "reason": "黒坂オートキャンプ場。公式で施設名・住所(笛吹市境川町大黒坂)・予約導線を確認。料金ページが本文を返さず needsPrice"
     },
     {
       "napId": "11248",
@@ -190,8 +190,8 @@
       "latCandidate": "35.5471851",
       "lngCandidate": "138.9612086",
       "officialUrl": null,
-      "verdict": "UNMEASURED",
-      "reason": null
+      "verdict": "門落ち(公式なし)",
+      "reason": "せせらぎ荘キャンプ場。施設公式が存在しない。都留市観光協会(tsuru-kankou.com)のみ"
     },
     {
       "napId": "11249",
@@ -2849,10 +2849,12 @@
   "progress": {
     "asOf": "2026-10-06",
     "門の対象": 194,
-    "追加": 3,
-    "門落ち": 0,
+    "追加": 4,
+    "門落ち": 3,
     "閉鎖疑い": 13,
     "宿泊系のため対象外": 29,
-    "UNMEASURED": 191
+    "UNMEASURED": 187,
+    "打ち切り": true,
+    "打ち切りの理由": "1件あたり検索1〜2回＋公式ページ取得1〜2回。山梨は収穫完了後に8件を調査して打ち切った"
   }
 }
