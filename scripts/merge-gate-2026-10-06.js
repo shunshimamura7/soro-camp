@@ -36,6 +36,7 @@ const LEDGERS = {
   千葉: path.join(ROOT, 'data', 'chiba-nap-triage-2026-10-06.json'),
   山梨: path.join(ROOT, 'data', 'yamanashi-nap-triage-2026-10-06.json'),
   静岡: path.join(ROOT, 'data', 'shizuoka-nap-triage-2026-10-10.json'),
+  神奈川: path.join(ROOT, 'data', 'kanagawa-nap-triage-2026-10-10.json'),
 };
 const ADDITIONS = path.join(__dirname, 'gate-additions-2026-10-06.json');
 

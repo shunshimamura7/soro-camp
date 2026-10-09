@@ -202,4 +202,7 @@ async function main() {
   for (const p of prefs) report(inspect(p, byPref.get(p) || new Set()));
 }
 
-main().catch((e) => { console.error(e); process.exit(1); });
+/** 市町村リストは台帳ビルダー（build-nap-triage）からも使うので、require できるようにする */
+module.exports = { PREF_MUNI, MUNI_ALIAS, PREF_LABEL, canonMuni };
+
+if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });

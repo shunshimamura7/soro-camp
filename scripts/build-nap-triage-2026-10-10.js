@@ -71,6 +71,10 @@ const muniOf = (addr) => {
   return m ? m[2] : null;
 };
 
+/** 市町村名は check-nap-harvest.js の一覧を使う（§18-3 で「別に書かない」と決めている） */
+const { PREF_MUNI, canonMuni } = require('./check-nap-harvest.js');
+const realMuni = new Set(PREF_MUNI[key] || []);
+
 const list = JSON.parse(fs.readFileSync(path.join('data', 'campgrounds.json'), 'utf8'));
 const existingNames = new Set(list.map((c) => norm(c.name)).filter(Boolean));
 const existingAddrs = new Set(list.map((c) => norm(c.address)).filter(Boolean));
@@ -87,6 +91,7 @@ const stats = {
   gateCandidates: 0,
 };
 const prefMismatch = [];
+const badMuni = [];
 
 for (const r of rows) {
   // 住所が空なのと「別の県の住所」は別物。空は落とさず門に回す（収穫が住所を取れなかっただけ）
@@ -103,10 +108,18 @@ for (const r of rows) {
     stats.alreadyListed += 1;
     continue;
   }
+  /* なっぷの住所には誤字がある（実測: 「神奈川県模原市緑区牧野」＝相模原市の「相」落ち）。
+   * 実在しない市町村名をそのまま門に渡すと、公式の住所と照合できず全部弾かれる。
+   * 一覧に無ければ `(不明)` にして、門では県名で照合させる。 */
+  const m0 = canonMuni(muniOf(r.address));
+  // 政令市の区名（「千葉市若葉区」）は一覧に無いが照合に使える。市名が頭に付いていれば通す
+  const usable = !!m0 && (realMuni.has(m0) || [...realMuni].some((x) => m0.startsWith(x)));
+  const muni = usable ? m0 : '(不明)';
+  if (m0 && !usable) badMuni.push({ napId: String(r.id), name: r.name, address: r.address, extracted: m0 });
   const row = {
     napId: String(r.id),
     name: r.name,
-    muni: muniOf(r.address) || '(不明)',
+    muni,
     address: r.address,
     napUrl: r.url,
     latCandidate: r.latCandidate || null,
@@ -131,6 +144,7 @@ const ledger = {
   builtBy: 'scripts/build-nap-triage-2026-10-10.js',
   totals: { ...stats, rows: out.length },
   prefMismatch,
+  badMuni,
   rows: out,
   progress: {
     asOf: '2026-10-10',
@@ -154,6 +168,10 @@ if (prefMismatch.length) {
   if (prefMismatch.length > 10) console.log(`    …ほか ${prefMismatch.length - 10} 件`);
 }
 if (stats.addressMissing) console.log(`    うち 住所が空        ${stats.addressMissing}（門では県名で照合する）`);
+if (badMuni.length) {
+  console.log(`  市町村名が一覧に無い行 ${badMuni.length} 件（なっぷ側の誤字 or 合併前の旧町村名。(不明) にした）:`);
+  for (const b of badMuni) console.log(`    ${b.napId} ${b.name} … ${b.address} → 「${b.extracted}」`);
+}
 const unknownMuni = out.filter((r) => r.muni === '(不明)');
 if (unknownMuni.length) {
   console.log(`  市町村が取れなかった行 ${unknownMuni.length} 件（門では県名で照合する）:`);
