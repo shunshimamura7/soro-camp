@@ -1,8 +1,15 @@
 # ソロキャン羅針盤：Claude 引継ぎ開始ガイド
 
-最終更新: 2026-08-27（同日 2回目：フィールド記述の実装との食い違い、deploy 誤爆ガード、欠落資料を修正）  
+最終更新: **2026-10-10**（掲載件数・デプロイ手順・validate の正常状態・残タスクを更新）  
 対象リポジトリ: `soro-camp`  
 公開先: **https://soro-camp.pages.dev/**
+
+> ## ★ 最初に読むのはここではなく `claude/継続メモ-2026-10-10.md`
+>
+> 本番の件数、門（なっぷ台帳）の残り、なっぷ収穫の状況、次にやること、今回決まったルール、
+> 判断待ちの一覧は**すべて `claude/継続メモ-2026-10-10.md` が正**。
+> このガイドは土台の設計方針を説明するもので、**数字と手順は継続メモのほうが新しい**。
+> 食い違ったら継続メモを採る。
 
 ## まず読むこと
 
@@ -12,19 +19,26 @@
 
 ## 現在の本番状態
 
+**数字は 2026-10-10 時点。最新は `claude/継続メモ-2026-10-10.md` を見ること。**
+
 | 項目 | 状態 |
 |---|---|
 | 本番URL | https://soro-camp.pages.dev/ |
-| ホスティング | Cloudflare Pages、ダイレクトアップロード |
-| 通常掲載 | 159件（キャンプ場148件、野営地11件） |
+| ホスティング | Cloudflare Pages、ダイレクトアップロード（Production ブランチ `main`） |
+| 最後のデプロイ | https://3c919285.soro-camp.pages.dev |
+| 最後のコミット | `7efe6a6`（ブランチ `data-fixes-2026-08-16`） |
+| active 合計 | **366件**（キャンプ場 355・野営地 11） |
+| キャンプ場の県別 | 神奈川34 / 静岡96 / 山梨123 / 千葉102 |
+| 野営地の県別 | 神奈川6 / 静岡4 / 山梨1 |
+| 総レコード | 407（active 366 / unverified 32 / closed 7 / suspended 2） |
 | 対象地域 | 神奈川・静岡・山梨・千葉 |
-| 標準表示 | 根拠を確認できた133件（キャンプ場126・野営地7）を優先表示 |
-| 情報確認中 | 26件は利用者が明示的に切り替えた時だけ表示（キャンプ場22・野営地4） |
+| 実ピン待ち | `needsCoord: true` が135件（山梨44 / 静岡26 / 千葉65） |
 | 5軸評価を確認済み | 11件。残りは「評価確認中」で中立扱い |
-| 釣り可 | 公式に確認できた3施設だけを検索対象に登録 |
 | URL正規化 | `sitemap.xml` / OGP / canonical は `https://soro-camp.pages.dev` を指す |
 
-本番確認では、トップページ、159件の分類、予算・希望条件フィルタ、神之川キャンプ・マス釣り場の詳細、`sitemap.xml` の Pages URLを確認済みである。
+> 2026-08-27 版にあった「通常掲載159件」「標準表示133件」「情報確認中26件」は**古い**。
+> 2026-10-06〜10-10 に千葉・山梨の門を完走し、静岡を100/224件まで進めた結果、
+> active キャンプ場は 265 → 355 に増えている。
 
 ## 技術構成
 
@@ -51,7 +65,7 @@
 | `components/MapView.tsx`, `components/MapModal.tsx` | 地図表示・ポップアップ |
 | `lib/camp.ts` | 検索、並び替え、地図表示、情報源・評価状態の共通判定 |
 | `lib/site.ts` | canonical / sitemap / OGP に使うサイトURL。既定値は Pages URL |
-| `data/campgrounds.json` | 201レコード。通常掲載159件（キャンプ場148・野営地11）と保留レコード42件（unverified 33 / closed 7 / suspended 2）を含む |
+| `data/campgrounds.json` | **407レコード**。active 366件（キャンプ場355・野営地11）と保留レコード41件（unverified 32 / closed 7 / suspended 2）を含む（2026-10-10） |
 | `scripts/` | 検証、監査、公式URL確認、座標確認、過去の調査ログ |
 
 ## ローカル作業と公開手順
@@ -66,39 +80,63 @@ npm run build
 
 `prebuild` でデータ検証・利用制限テスト・こだわり条件の構造テスト（`scripts/test-filters.js`）が走り、`build` は静的ファイルを `out/` に生成する。
 
-**現在の正常状態は「validate が警告7件で通る」である**（2026-08-29 更新）。内訳は次のとおりで、すべて既知。
+**現在の正常状態は「validate が警告3件で通る」である**（2026-10-10 更新）。内訳は次のとおりで、すべて既知。
 
 | 種類 | 件数 | 対象 | 待っているもの |
 |---|---:|---|---|
-| `coordsVerified` が機械検証を通っていない | 3件 | `kabutomushi-mori-camp` / `mobility-park-izu` / `makioka-fruits-camp` | 実ピンの引き直し（しゅん本人の目視） |
-| `wildStatus: "不明"` | 4件 | `nakatsugawa-kasenjiki` / `sumida-ohashi-kasenjiki` / `hasugebashi-kasenjiki` / `wadanagahama-kaigan` | 一次情報の調査。**既定表示からは外してある**（削除ではない） |
+| `coordsVerified` が機械検証を通っていない | 2件 | `kabutomushi-mori-camp`（9.8km / PREF_MISMATCH） / `makioka-fruits-camp`（17.3km / CITY_MISMATCH） | 実ピンの引き直し（しゅん本人の目視） |
+| `wildStatus: "不明"` | 1件 | `wadanagahama-kaigan` | 一次情報の調査。**既定表示からは外してある**（削除ではない） |
 
-**この7件以外の警告が出たら、それが自分の変更による差分である。7件以外の警告を無視して公開しないこと。**
+**この3件以外の警告が出たら、それが自分の変更による差分である。3件以外の警告を無視して公開しないこと。**
+
+> 2026-08-27 版の「警告7件」は古い。`mobility-park-izu` は座標まわりの警告が出なくなり、
+> `wildStatus: "不明"` の野営地も4件から1件に減っている。
 
 > **`npm run deploy` は使わない。** 2026-08-27 に Pages へ移行したため、`deploy` は誤爆ガード（`scripts/deploy-guard.js`）に置き換えてある。実行すると正規手順を表示して終了する。`wrangler.toml` は記録として残しているが使用しない。
 
 ### Cloudflare Pages への公開
 
-**正規手順は `npm run deploy:pages` の1本である。**
+**使うのはこの1本だけ。**
 
 ```bash
-npm run deploy:pages
+npm run build
+npx wrangler pages deploy out --project-name soro-camp --branch main --commit-dirty=true
 ```
 
-中身は `npm run build && npx wrangler pages deploy out --project-name soro-camp --branch main`。`prebuild` で `validate` と `test` が走るので、事前に手で流す必要はない。Pages の本番ブランチは `main`（`npx wrangler pages deployment list --project-name soro-camp` の Environment が `Production` になっているかで確認できる）。
+- **`npm run deploy` は使わない**（`scripts/deploy-guard.js` に差し替えてある）
+- **`npm run deploy:pages` も使わない。**中身は同じ `wrangler pages deploy` だが、
+  2026-10-10 の運用では上のコマンドを直接打つことに決めた（`--commit-dirty=true` を明示したいため）
+- **`wrangler deploy` は Workers 向けなので実行しない**
+- **新しい Pages プロジェクトを作らない**
+- Production ブランチは `main`（`npx wrangler pages deployment list --project-name soro-camp` の
+  Environment が `Production` になっているかで確認できる）
 
 デプロイ後に必ず見る。
 
-1. `https://soro-camp.pages.dev/` が 200 か。本文に掲載件数と「野営地」が出るか（古いビルドが残っていないかの本文照合）
-2. `https://soro-camp.pages.dev/camp/aone` が 200 か（詳細ページが配られているか）
-3. トップHTMLが参照する `/_next/static/...` の CSS と JS が 200 か（アセットが届いているか）
-4. `https://soro-camp.pages.dev/sitemap.xml` の `loc` が `https://soro-camp.pages.dev` か
+1. `https://soro-camp.pages.dev/` が 200 か。本文の掲載件数が今回の数字になっているか
+2. 今回追加した slug の詳細ページ（`https://soro-camp.pages.dev/camp/<slug>`）が 200 か
+3. `https://soro-camp.pages.dev/sitemap.xml` が 200 で `loc` が Pages URL か
 
-> **ダッシュボードの ZIP アップロードは使わない。** 2026-08-29 に、ZIP でアップロードすると **Production のデプロイレコードは作られるのに実ファイルが載らない**事象が起きた。`soro-camp.pages.dev` だけでなく個別デプロイURL（`https://<id>.soro-camp.pages.dev/`）まで 404 になり、**本文ゼロバイトの 404** が症状である。2日前の別デプロイも同じ状態だった。`wrangler pages deploy` で1,986ファイルを直接アップロードして復旧した。
->
-> あわせて、**PowerShell 5.1 の `Compress-Archive` は ZIP のパス区切りにバックスラッシュ（`\`）を書く**。この ZIP を上げると階層が全滅し、`/about` や `/camp/*` の詳細ページと `/_next/*` のアセットが配られない（ルート直下の `index.html` だけは残るので、一見トップだけ生きているように見えることがある）。ZIP 経路は二重に危ない。ZIP をどうしても作る必要がある時は `Compress-Archive` ではなく `[System.IO.Compression.ZipFile]::CreateFromDirectory` を使う。
+> **CDN の反映に数十秒かかる。**デプロイ直後の1回目で古い件数が出たり、新しい詳細ページが 404 に
+> なったりすることがある（2026-10-10 に実際に起きた）。少し置いて見直す。
+> 切り分けたいときは、先に直デプロイURL `https://<id>.soro-camp.pages.dev/` を見る。
 
-> `soro-camp.shun622shun39.workers.dev` は削除済みである。Cloudflareの一覧に今後同名の Workers サービスを作らないこと。**`wrangler deploy`（Workers 向け）と `wrangler pages deploy` は別物で、前者は使わない。** ダッシュボードを見る時はプロジェクト一覧で必ず `soro-camp.pages.dev` の行を選ぶこと。
+> **ダッシュボードの ZIP アップロードは使わない。** 2026-08-29 に、ZIP でアップロードすると
+> **Production のデプロイレコードは作られるのに実ファイルが載らない**事象が起きた。
+> `soro-camp.pages.dev` だけでなく個別デプロイURLまで 404 になり、**本文ゼロバイトの 404** が症状である。
+> `wrangler pages deploy` で直接アップロードして復旧した。
+> あわせて、**PowerShell 5.1 の `Compress-Archive` は ZIP のパス区切りにバックスラッシュ（`\`）を書く**。
+> この ZIP を上げると階層が全滅する。ZIP をどうしても作る必要がある時は `Compress-Archive` ではなく
+> `[System.IO.Compression.ZipFile]::CreateFromDirectory` を使う。
+
+> `soro-camp.shun622shun39.workers.dev` は削除済みである。同名の Workers サービスを作らないこと。
+
+### ディスクに注意
+
+2026-10-10 に **npm キャッシュが13.8GBまで膨らんでCドライブが100%になり、デプロイが `ENOSPC` で失敗した。**
+`npm cache clean --force` すら空き容量不足で動かなくなるので、その場合は
+`%LOCALAPPDATA%
+pm-cache\_cacache` と `_logs` を直接消す（どちらも再生成されるキャッシュ）。
 
 ## 実装済みの品質方針
 
@@ -151,19 +189,24 @@ npm run deploy:pages
 
 ## 残っている作業（優先順位）
 
-### 最優先：掲載情報の再確認
+> **ここは要約。順番と中身の正は `claude/継続メモ-2026-10-10.md` の「4. 次にやること」。**
 
-1. **地図実ピンの人手確認**：`kabutomushi-mori-camp`（住所と 9.8km / PREF_MISMATCH）、`mobility-park-izu`（0.21km / CITY_MISMATCH）、`makioka-fruits-camp`（17.3km / CITY_MISMATCH）は、いずれも `coordsVerified: true` のまま機械検証を通っていない。**この3件が `npm run validate` の警告7件のうち3件の中身である。**実ピンを引き直してフラグと整合させること。`scripts/verify-address-gsi.js`、`scripts/coordsverified-triage.js`、`scripts/coord-worklist.js` を参照する。
-2. **根拠URLなしの22件**：公式サイト・自治体・公式予約先を見つけたものから `officialUrl` / `reservationUrl` / `source[]` / `cautions[]` のいずれかと `lastVerified` を補う。無理に通常表示へ戻さない。
-3. **`wildStatus: "不明"` の野営地4件**：`nakatsugawa-kasenjiki` / `sumida-ohashi-kasenjiki` / `hasugebashi-kasenjiki` / `wadanagahama-kaigan`。管理者（自治体・河川管理者）の一次情報を探し、取れたものから `公認` / `黙認` に確定する。**2026-08-29 に5件を一巡済み**で、残る4件は当たり先まで絞れている（`claude/継続メモ-2026-08-27.md` の 2026-08-29 節を先に読むこと。同じ調査を繰り返さないため）。これが validate の警告7件のうち残り4件の中身。
-4. **料金要確認の12件**：`data/price-pending-active-2026-08-26.md`（`node scripts/list-price-pending-2026-08-26.js` の出力を台帳化したもの。再生成できる）を使い、公式料金を確認できたものだけ再表示する。うち3件は公式URL自体が未特定、1件は予約サイトのURLしか無い。
-5. **5軸評価の148件**：まとめて推測採点せず、施設ごとの根拠を蓄積してから段階的に `scoresVerified` を上げる。
+1. **こだわり検索の画面修正**（最優先）。`components/FilterBar.tsx` の sticky をやめ、細い貼りつきバー・
+   不透明背景・件数をラベル横・スマホは下からのシートに直し、**Playwright で重なり0pxを測る**
+2. **門（なっぷ台帳）の続き**。静岡の残り124件 → 神奈川62件。千葉・山梨は完走済み
+3. **実ピン待ち**。`needsCoord: true` が135件。加えて `coordsVerified: true` なのに機械検証を
+   通っていない `kabutomushi-mori-camp` / `makioka-fruits-camp` は実ピンの引き直し待ち
+4. **公式なしで保留している施設**。`hadano-togawa-camp`（秦野戸川公園）ほか、公式URLも予約URLも無い
+   active レコードが19件（キャンプ場10 / 野営地9）
+5. **`wildStatus: "不明"` の野営地1件**（`wadanagahama-kaigan`）。管理者の一次情報を探す。
+   2026-08-29 に一巡しているので `claude/継続メモ-2026-08-27.md` の 2026-08-29 節を先に読む
+6. **5軸評価**。まとめて推測採点せず、施設ごとの根拠を蓄積してから段階的に `scoresVerified` を上げる
 
-### 次の掲載候補（第2弾）
+### 判断待ち（本人が決めること）
 
-`data/candidate-batch2-four-pref-2026-08-26.json` と `batch2-official-research-2026-08-26.md` に12候補の根拠パケットがある。30の独立観点による360件の構造化レビューは `data/candidate-batch2-30-review-results-2026-08-26.json`、要約は `candidate-batch2-30-review-summary-2026-08-26.md` にある。
-
-候補の魅力が低いのではなく、現時点の根拠パケットでは設備・安全・実ピン・営業条件が不足しているという判定である。特に白石オート、キャンプすがりは一次情報での設備・運用確認を補ってから扱う。確認済み実ピンの記録は `batch2-official-research-2026-08-26.md` を正とし、推測座標を入れない。
+**門の UNMEASURED が53件**（千葉28 / 山梨23 / 静岡2）。いちばん大きいのは
+**「公式が料金を出さず『なっぷで』と誘導している施設を認めるか」**で、認めれば約40件が候補に戻る。
+詳細は `claude/継続メモ-2026-10-10.md` の「6. 判断待ち」。
 
 ### 運用面の改善候補
 
@@ -204,7 +247,7 @@ URLだけを見る。`filterAndSort()` は `features.carIn` と `features.reserv
 2. URLが開けないことだけで閉業と断定しない。季節休業、告知ページ移転、アクセス制限の可能性がある。
 3. 施設の設備・料金・ソロ可否・座標・5軸スコアを推測で補完しない。
 4. 変更後は必ず `npm run validate && npm test && npm run build` を実行する。
-5. Pages公開は `npm run deploy:pages`（内部で `wrangler pages deploy out`）。ダッシュボードのZIPアップロードは使わない（2026-08-29 に実ファイルが載らず404になる事象を確認済み）。`wrangler deploy` は Workers 向けなので実行しない。
+5. Pages公開は `npm run build` のあと `npx wrangler pages deploy out --project-name soro-camp --branch main --commit-dirty=true` の1本だけ。`npm run deploy` / `npm run deploy:pages` / `wrangler deploy` は使わない。ダッシュボードのZIPアップロードも使わない（2026-08-29 に実ファイルが載らず404になる事象を確認済み）。新しい Pages プロジェクトは作らない。
 6. `lib/site.ts` の既定URLを旧 Workers URLへ戻さない。独自ドメインを使う時だけ、ビルド前に `NEXT_PUBLIC_SITE_URL` で上書きする。
 7. 実装を急ぐあまり、根拠なし施設を既定のおすすめ順・予算条件・地図に復帰させない。
 
@@ -213,7 +256,8 @@ URLだけを見る。`filterAndSort()` は `features.carIn` と `features.reserv
 | 資料 | 内容 |
 |---|---|
 | `HANDOVER_ARTIFACT_INDEX_2026-08-27.md` | パッケージに入れたファイルの索引 |
-| `claude/継続メモ-2026-08-27.md` | 起点・残タスク・8/19 までのフェーズとの接続 |
+| **`claude/継続メモ-2026-10-10.md`** | **最新。本番件数・門の残り・なっぷ収穫・次にやること・今回決まったルール・判断待ち。まずこれを読む** |
+| `claude/継続メモ-2026-08-27.md` | 起点・残タスク・8/19 までのフェーズとの接続（野営地の調査経緯はこちら） |
 | `CLAUDE_TASK_PROMPT_2026-08-27.md` | 新規Claudeチャットへ貼り付ける開始プロンプト |
 | `quality-rubric-30-reviewers-2026-08-26.md` | 30観点の品質ルーブリックと公開ゲート |
 | `soro-camp-complete-quality-qa-2026-08-27.md` | 全体UX・SEO・品質改善のQA |
