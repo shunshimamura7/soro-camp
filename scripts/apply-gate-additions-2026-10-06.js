@@ -61,13 +61,42 @@ const stop = (msg) => { console.error('中止: ' + msg); process.exit(1); };
 
 // 台帳は束が返るたびに増えるので、**まだ掲載していない分だけ** EDIT を求める。
 // 既に掲載済みかどうかは施設名で見る（slug は EDIT 側にしか無いため）。
-const existingNames = new Set(list.map((c) => c.name));
-const pending = [...byId.keys()].filter((id) => !existingNames.has(byId.get(id).name));
+// ## 二重掲載の判定は3つの鍵で見る
+//
+// 施設名だけでは足りなかった。実際に擦り抜けた例：
+//
+//   「西湖 津原キャンプ場」 vs 既存「西湖津原キャンプ場」  … 空白違い → 正規化で解決
+//   「RetreatCamp まほろば」 vs 既存「リトリートキャンプまほろば」 … 表記がカタカナ／英字で別物
+//
+// 後者は名前をどう正規化しても一致しない。**住所と公式URLでも照合する。**
+const nameKey = (s) => String(s || '').normalize('NFKC').replace(/ヶ/g, 'ケ').replace(/[\s　]/g, '');
+const urlKey = (u) => String(u || '').trim().replace(/^https?:\/\//, '').replace(/\/+$/, '').toLowerCase();
+
+const existingNames = new Set(list.map((c) => nameKey(c.name)).filter(Boolean));
+const existingAddrs = new Set(list.map((c) => nameKey(c.address)).filter(Boolean));
+const existingUrls = new Set(list.map((c) => urlKey(c.officialUrl)).filter(Boolean));
+
+/** 既に載っている施設か（名前・住所・公式URL のどれかが一致したら同じ施設と見る） */
+const alreadyListed = (r) =>
+  existingNames.has(nameKey(r.name)) ||
+  (r.address && existingAddrs.has(nameKey(r.address))) ||
+  (r.officialUrl && existingUrls.has(urlKey(r.officialUrl)));
+
+const pending = [...byId.keys()].filter((id) => !alreadyListed(byId.get(id)));
 for (const id of pending) if (!EDIT[id]) stop(`台帳の napId ${id}（${byId.get(id).name}）に EDIT が無い`);
 for (const id of Object.keys(EDIT)) if (!byId.has(id)) stop(`EDIT の napId ${id} が台帳に無い`);
-const skipped = [...byId.keys()].filter((id) => existingNames.has(byId.get(id).name));
-if (skipped.length) console.log(`既に掲載済みとして飛ばす: ${skipped.length} 件
-`);
+const skipped = [...byId.keys()].filter((id) => alreadyListed(byId.get(id)));
+if (skipped.length) {
+  console.log(`既に掲載済みとして飛ばす: ${skipped.length} 件`);
+  for (const id of skipped) {
+    const r = byId.get(id);
+    const why = existingNames.has(nameKey(r.name)) ? '施設名'
+      : (r.address && existingAddrs.has(nameKey(r.address))) ? '住所'
+      : '公式URL';
+    console.log(`  = ${r.name}（${why}が既存と一致）`);
+  }
+  console.log('');
+}
 
 const FEATURE_NOTE = {
   bath: 'bathNote', shower: 'showerNote', firewood: 'firewoodNote',
@@ -77,7 +106,7 @@ const FEATURE_NOTE = {
 const added = [];
 for (const [id, edit] of Object.entries(EDIT)) {
   const r = byId.get(id);
-  if (existingNames.has(r.name)) continue;   // もう掲載してある
+  if (alreadyListed(r)) continue;   // もう掲載してある
 
   if (existingSlugs.has(edit.slug)) stop(`slug が既存と衝突: ${edit.slug}`);
   if (!Number.isInteger(r.priceMin) || !Number.isInteger(r.priceMax)) {

@@ -1,0 +1,59 @@
+[
+ {"napId":"11332","name":"PICA富士吉田","pref":"山梨","muni":"富士吉田市","verdict":"追加",
+  "reason":"公式（pica-resort.jp/yoshida）で住所（富士吉田市上吉田4959-4）が一致し、テントサイトが1サイト単位の料金でソロ1泊2,500円〜と公式に明記されている",
+  "checkedUrls":["https://www.pica-resort.jp/yoshida/","https://www.pica-resort.jp/yoshida/stay/site/index.html","https://www.pica-resort.jp/yoshida/about/guidance.html","https://www.pica-resort.jp/yoshida/stay/option/rental/index.html","https://booking.pica-resort.jp/v3/calendar/stay/1"],
+  "officialUrl":"https://www.pica-resort.jp/yoshida/","reservationUrl":"https://booking.pica-resort.jp/v3/calendar/stay/1",
+  "address":"山梨県富士吉田市上吉田4959-4","priceMin":2500,"priceMax":5000,
+  "priceNote":"サイト単位課金（人数課金なし・定員6名・車1台込み）。公式の宿泊施設一覧「広葉樹林間サイト 電源なし（定員6名・10サイト）1泊1サイト 2,500円〜」。**公式オンライン予約の実売カレンダー（2026年11月10〜17日週）では同サイトが3,000〜5,000円表示だったため上限はその最高値を採用。**別途ペット1頭1,000〜1,900円。「場内での直火のたき火…は禁止」（焚き火台持参なら可）",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://www.pica-resort.jp/yoshida/about/guidance.html","quote":"場内の共同浴場は利用無料です。"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.pica-resort.jp/yoshida/stay/option/rental/index.html","quote":"木炭や薪は在庫切れにならないように商品を揃えています"},
+    "shop":{"value":true,"evidenceUrl":"https://www.pica-resort.jp/yoshida/stay/option/rental/index.html","quote":"販売品 ゲストハウスでお求めいただける商品です。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.pica-resort.jp/yoshida/about/guidance.html","quote":"ペットの同伴は、ご予約の際その旨をお申し付けいただいた方に限ります。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11333","name":"サブ・フィールド","pref":"山梨","muni":"富士吉田市","verdict":"宿泊系のため対象外",
+  "reason":"公式料金ページの宿泊はコテージ／ツリーハウス／展望台ツリーハウス／インディアンハウスの**4棟のみ（16,000〜22,000円・棟単位）で、テント持ち込みサイトの設定が公式に存在しない**。デイキャンプも「新型コロナ感染拡大を受け現在休止中」",
+  "checkedUrls":["https://www.sub-field.com/","https://www.sub-field.com/fee","https://www.sub-field.com/fee/camp"],"officialUrl":"https://www.sub-field.com/"},
+
+ {"napId":"11336","name":"AUTOCAMP 牧場チロル","pref":"山梨","muni":"北杜市","verdict":"閉鎖疑い",
+  "reason":"**運営者公式サイトに「オートキャンプ牧場チロルは2026年9月30日をもちまして営業を終了することになりました」との告知**。住所（北杜市武川町柳沢3274-14）は台帳と一致",
+  "checkedUrls":["https://tiroru-camp55.shopinfo.jp/"],"officialUrl":"https://tiroru-camp55.shopinfo.jp/"},
+
+ {"napId":"11338","name":"新栄清里キャンプ場","pref":"山梨","muni":"北杜市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式サイトは生きていて住所（北杜市高根町清里3545-238）も一致するが、**サイト料金が公式に一切なく**、料金・予約の導線はすべてなっぷへのリンクのみ。公式に載るのは販売品・レンタル品の価格だけ。公式の営業期間は「4月13日〜12月13日まで（12月14日〜3月まで冬季休業）」で火曜・水曜定休",
+  "checkedUrls":["https://shinei-camp-field.toki-lab.com/","https://www.city.hokuto.yamanashi.jp/docs/1843.html"],"officialUrl":"https://shinei-camp-field.toki-lab.com/"},
+
+ {"napId":"11341","name":"WOODPECKER","pref":"山梨","muni":"北杜市","verdict":"追加",
+  "reason":"公式サイトで住所（北杜市須玉町上津金2449-5）が一致し、ソロ1泊の内訳（スペース料＋入場料＋環境料）が明記されている。**公式の予約フォームが「一人キャンプ専用キャンプ場」と明示**",
+  "checkedUrls":["https://www.woodpecker-cs.com/","https://www.woodpecker-cs.com/price/18","https://www.woodpecker-cs.com/guide/10","https://www.woodpecker-cs.com/reservation"],
+  "officialUrl":"https://www.woodpecker-cs.com/","reservationUrl":"https://www.woodpecker-cs.com/reservation",
+  "address":"山梨県北杜市須玉町上津金2449-5","priceMin":2900,"priceMax":4400,
+  "priceNote":"スペース料＋入場料＋環境料の合算。公式料金表（1泊）「スペース料 バイク1台 2,500円（入場料:1人分含む）」＋「環境料（ゴミ・汚水処理）400円」＝2,900円（バイク）。車なら「スペース料 車1台 3,000円」＋「入場料 大人1,000円」＋環境料400円＝4,400円。**公式のオープン期間は2026年4月18日〜11月23日。予約は2ヶ月前の1日から電話またはメールフォーム。70歳以上はスペース料20%引き**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.woodpecker-cs.com/guide/10","quote":"温水シャワー室（２箇所）…２分１００円"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.woodpecker-cs.com/price/18","quote":"薪・炭（3KG)、ホワイトガソリン、各種ガスボンベ、マントル、ホヤ等用意してあります。"},
+    "shop":{"value":true,"evidenceUrl":"https://www.woodpecker-cs.com/price/18","quote":"薪・炭（3KG)、ホワイトガソリン、各種ガスボンベ、マントル、ホヤ等用意してあります。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.woodpecker-cs.com/price/18","quote":"ペット同伴・1匹 400円　1日・5匹までといたします"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11342","name":"大人のキャンプ場","pref":"山梨","muni":"北杜市","verdict":"門落ち(単独利用不可)",
+  "reason":"公式の利用要項で**単独利用が性別で限定されている**（「男性は１名利用。（ご家族利用除く）／女性利用は２名。（ご家族利用除く）」）。女性は1名で予約できないため、solas-no-mori と同じ型で門落ち。参考：公式の料金は中学生以上1名2,500円、小学生以下は利用不可",
+  "checkedUrls":["http://xn--u9jyg0exb9d899tm4nmyb.com/","http://xn--u9jyg0exb9d899tm4nmyb.com/yoyaku.html","http://xn--u9jyg0exb9d899tm4nmyb.com/sisetu.html"],"officialUrl":"http://xn--u9jyg0exb9d899tm4nmyb.com/"},
+
+ {"napId":"11343","name":"南清里レジャーセンター","pref":"山梨","muni":"北杜市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"北杜市公式が公式サイトとして挙げる `m-kiyosato.la.coocan.jp` が404。**原因は @nifty LaCoocan のミニプラン提供終了（2025年9月30日）で、閉業告知ではない。**他に施設公式・公式予約先が存在せず、自治体公式にも料金・住所の記載がない",
+  "checkedUrls":["https://www.city.hokuto.yamanashi.jp/docs/1843.html","http://m-kiyosato.la.coocan.jp/"],"officialUrl":null},
+
+ {"napId":"11344","name":"みずがき山森の農園キャンプ場","pref":"山梨","muni":"北杜市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"運営会社公式（巨摩ファームヴィレッジ）で住所（北杜市須玉町小尾8862-1）が一致し施設も現役だが、**旧公式ドメイン mizugakiyama.com はDNS解決せず消滅**し、公式の「予約サイトへ」はなっぷ。公式にソロ1泊料金が無い（公式に五右衛門風呂・ピザ釜の記述はあるが料金不明）。北杜市公式のリンクは消滅したドメインを指したまま",
+  "checkedUrls":["https://komafarmvillage.com/","https://mizugakiyama.com/","https://www.city.hokuto.yamanashi.jp/docs/1843.html"],"officialUrl":"https://komafarmvillage.com/"},
+
+ {"napId":"11348","name":"尾白川リゾートオートキャンプ場","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"出てくるのは観光協会・県観光公式・予約サイト・ポータルと Instagram／Facebook のみで、施設公式サイト・自治体公式の掲載・公式予約先がいずれも見つからない（北杜市公式のキャンプ場一覧にも未掲載）。**誤認回避：FLORA Campsite（白州町白須8813-2）と七賢べるが（verga.info）はどちらも住所が一致しない別施設**",
+  "checkedUrls":["https://www.hokuto-kanko.jp/spot/oziragawa_resort_camp/","https://www.city.hokuto.yamanashi.jp/docs/1843.html","http://village-hakushu.la.coocan.jp/"],"officialUrl":null},
+
+ {"napId":"11350","name":"白州観光尾白川渓谷キャンプ場","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"検索結果は観光協会・県観光公式・予約サイト・ポータルのみ。施設公式サイトも公式予約先も存在せず、北杜市公式のキャンプ場一覧にも掲載がない。観光協会ページにも外部公式リンクは無く Googleマップへのリンクだけ",
+  "checkedUrls":["https://www.hokuto-kanko.jp/spot/oziragawa_camp/","https://www.city.hokuto.yamanashi.jp/docs/1843.html"],"officialUrl":null}
+]

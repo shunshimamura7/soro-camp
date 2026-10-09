@@ -1,0 +1,85 @@
+[
+ {"napId":"11310","name":"河口湖ニューブリッヂキャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"追加",
+  "reason":"施設専用サイト（地域ポータル fujigoko.tv 配下だが、独自の料金表・場内設備・ライブカメラページを持ち運営者作成と判断。なっぷ掲載の電話番号 0555-72-0540 が同ページのFAXと一致）で住所（小立島原1200）が一致し、場内使用料880円＋1人用テントスペース770円＝ソロ1,650円を確認。駐車場は無料",
+  "checkedUrls":["https://www.fujigoko.tv/newbridge/","https://www.fujigoko.tv/newbridge/fee","https://www.fujigoko.tv/newbridge/facility","https://www.fujigoko.tv/newbridge/access"],
+  "officialUrl":"https://www.fujigoko.tv/newbridge/","reservationUrl":null,
+  "address":"山梨県南都留郡富士河口湖町小立島原1200","priceMin":1650,"priceMax":1650,
+  "priceNote":"場内使用料＋テントスペース代の合算。公式「１．場内使用料 中学生以上 880円/1人・1泊」＋「２．持ち込みテントスペース代（区画なし林間テントサイト・無料駐車場利用）1人用 770円/1張り・1泊」＝1,650円。**駐車場は無料と明記。予約・問合せは電話のみ（080-7858-7840）。公式は地域ポータル fujigoko.tv のサブディレクトリに置かれた施設専用サイト**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.fujigoko.tv/newbridge/fee","quote":"コイン式温水シャワー（100円/90秒）"},
+    "shop":{"value":true,"evidenceUrl":"https://www.fujigoko.tv/newbridge/fee","quote":"売店（受付事務所）8:00〜21:00 日用品・マキ・炭・釣り券等"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.fujigoko.tv/newbridge/fee","quote":"売店（受付事務所）… 日用品・マキ・炭・釣り券等"},
+    "nearbyOnsen":{"value":"河口湖温泉郷の日帰り入浴施設が徒歩3分から（割引券が一部あり）","evidenceUrl":"https://www.fujigoko.tv/newbridge/fee","quote":"徒歩3分から河口湖温泉郷日帰り入浴施設あり（割引券一部あり）"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11314","name":"西湖 観岳園キャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"追加",
+  "reason":"施設公式（kangakuen.com）で住所（西湖1131）が一致し、テントサイト【山側】1人1,500円＋駐車料1台1,000円を明記。ソロ予約可",
+  "checkedUrls":["https://www.kangakuen.com/","https://www.kangakuen.com/page002.html","https://www.kangakuen.com/page003.html","https://www.kangakuen.com/page006.html"],
+  "officialUrl":"https://www.kangakuen.com/","reservationUrl":"https://saiko-kangakuen.eyado.net/",
+  "address":"山梨県南都留郡富士河口湖町西湖1131","priceMin":1500,"priceMax":2500,
+  "priceNote":"1名単位課金。公式「テントサイト【山側】１人（４歳以上）１，５００円／駐車料 １台 １，０００円」→ 車を停めなければ1,500円、車1台なら2,500円。**【湖畔側】は4月末〜10月の休日前・繁忙期のみ「１区画 ７，０００円（定員４名+駐車１台）」で1名でも同額（山側は通年1人単価）。湖畔側には炊事場・トイレが無く150mの距離。営業期間は「2026年の営業は11月23日までの予定／2027年の営業再開は3月下旬」。2025年よりキャンプ場予約はホームページからのみ。**公式に「2024年より、料金および利用条件を改定しております」とあり掲載額は改定後",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.kangakuen.com/page003.html","quote":"温水シャワー ４００円／１５ｍ"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.kangakuen.com/page003.html","quote":"マ キ ５００〜８００円"},
+    "nearbyOnsen":{"value":"西湖温泉「いずみの湯」が徒歩2分","evidenceUrl":"https://www.kangakuen.com/page006.html","quote":"西湖温泉「 いずみの湯 」は、当キャンプ場より徒歩２分のとても近い場所にあります。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11317","name":"紅葉台キャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"追加",
+  "reason":"施設公式（koyodai.info）で住所（西湖2202）が一致し、テントサイト1張2,000円＋大人1人1,000円＝ソロ3,000円を明記。公式フォームで予約できる",
+  "checkedUrls":["https://www.koyodai.info/","https://www.koyodai.info/price.html","https://www.koyodai.info/facility.html","https://www.koyodai.info/access.html"],
+  "officialUrl":"https://www.koyodai.info/","reservationUrl":"https://www.koyodai.info/contact.php",
+  "address":"山梨県南都留郡富士河口湖町西湖2202","priceMin":3000,"priceMax":3000,
+  "priceNote":"サイト課金＋人数課金の合算。公式「テントサイト/1張1泊（キャンピングカー/1台1泊）2,000円（税込）」＋「大人/1泊 1,000円（税込）」＝3,000円。駐車料金の別途徴収の記載なし。予約は公式フォーム（利用月の3ヶ月前から）。**直火禁止・焚き火台使用可**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.koyodai.info/facility.html","quote":"午前8:00から午後9:00まで利用できます(1回300円)。"},
+    "shop":{"value":true,"evidenceUrl":"https://www.koyodai.info/facility.html","quote":"売店ではキャンプ用品や、飲み物、食材…レンタルでは寝具セット、炊事セット…の貸し出しも行っています。"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.koyodai.info/price.html","quote":"まき（炊事用）700円〜／まき（大）焚き火用 1,300円〜"},
+    "pet":{"value":true,"evidenceUrl":"https://www.koyodai.info/price.html","quote":"ペット1匹/1日 500円（税込）"},
+    "nearbyOnsen":{"value":"いずみの湯（車で5分）／富士眺望の湯ゆらり（車で10分）","evidenceUrl":"https://www.koyodai.info/access.html","quote":"いずみの湯 紅葉台キャンプ場より車で5分"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11318","name":"西湖津原キャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"追加",
+  "reason":"門は通る（公式 tsuhara-camp.jp にオートキャンプ1名大人1,500円）が、**既に `saiko-tsuhara-camp` として掲載済み**の施設なので新規追加はしない。**ただし既存レコードの住所が「西湖351」で、公式表記の「西湖2299」と食い違う。**住所の訂正が要る",
+  "checkedUrls":["https://tsuhara-camp.jp/","https://tsuhara-camp.jp/price","https://tsuhara-camp.jp/access","https://tsuhara-camp.jp/attention"],
+  "officialUrl":"https://tsuhara-camp.jp/","reservationUrl":"https://tsuhara-camp.jp/form",
+  "address":"山梨県南都留郡富士河口湖町西湖2299","priceMin":1500,"priceMax":1500,
+  "priceNote":"公式「オートキャンプ（1名） チェックアウト 翌朝11:00 大人 1,500円」。車乗り入れ可で駐車料の別記なし。テントサイトは「ご予約は承っておりません。貸し切り等についてはお問い合わせください」＝予約不要の先着。直火禁止・焚き火台＋焚き火シート必須",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://tsuhara-camp.jp/attention","quote":"シャワー … 1名 400円／20分"},
+    "shop":{"value":true,"evidenceUrl":"https://tsuhara-camp.jp/attention","quote":"売店営業時間 平日・日曜日 8:00〜17:00"},
+    "firewood":{"value":true,"evidenceUrl":"https://tsuhara-camp.jp/price","quote":"販売 炭・薪：時価"},
+    "pet":{"value":true,"evidenceUrl":"https://tsuhara-camp.jp/attention","quote":"テントサイトはペット同伴可／バンガロー・コテージはペット不可"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11319","name":"富士西湖 浜の家キャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"追加",
+  "reason":"施設公式（hamanoya-camp.com。2025/04/16のサーバー移転告知があり稼働中）で住所（西湖2334）が一致し、テント・オートキャンプ1泊お1人様1,000円を明記。近隣の「河口湖オートキャンプ場 浜の湯」（小立5404）とは別施設",
+  "checkedUrls":["http://hamanoya-camp.com/","http://hamanoya-camp.com/sub1.htm","http://hamanoya-camp.com/sub3.htm","http://hamanoya-camp.com/sub5.htm"],
+  "officialUrl":"http://hamanoya-camp.com/","reservationUrl":null,
+  "address":"山梨県南都留郡富士河口湖町西湖2334","priceMin":1000,"priceMax":1100,
+  "priceNote":"1名単位課金。公式の施設案内「テント・オートキャンプ（施設使用料）… 1泊・・・お１人様１０００円、小学生以下は５００円」。**料金表ページの見出しが「料金表 （税別）」なので税込1,100円という読みも成立する**（バンガロー額が18,900円等の旧税率表記で、税別注記自体が古い可能性）。両方の読みを幅に収めた。駐車料・テント張り料の別記なし。**営業期間は「３/１(OPEN)〜１２/３１まで」。予約は電話／メールのみ**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"http://hamanoya-camp.com/sub3.htm","quote":"シャワー お１人 ４００円"},
+    "firewood":{"value":true,"evidenceUrl":"http://hamanoya-camp.com/sub3.htm","quote":"薪 （１束） 時価"},
+    "shop":{"value":true,"evidenceUrl":"http://hamanoya-camp.com/sub1.htm","quote":"売店と事務所の間からバンガローに続く入口があります。食料品などはご用意いたします。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11320","name":"西ノ海キャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先が見つからず（なっぷの hpUrl も null、fujigoko.tv 配下の施設サイトも404）。**検索の「公式サイト」欄が saikohan.com（西湖湖畔キャンプ場・住所 西湖207-7）を提示したが、台帳の西湖2403とは住所が一致しない別施設**なので採用しなかった",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/11320","https://saikohan.com/","https://www.fujigoko.tv/nishinoumi/"],"officialUrl":null},
+
+ {"napId":"11321","name":"西湖キャンプ場テント村","pref":"山梨","muni":"富士河口湖町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先が見つからず（なっぷの hpUrl も null）。**検索の「公式サイト」欄が saikohan.com（西湖207-7）と PICA富士西湖 を提示したが、どちらも施設名・住所が台帳の西湖西2515と一致しない別施設**なので採用しなかった",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/11321","https://saikohan.com/","https://www.fujigoko.tv/tentmura/"],"officialUrl":null},
+
+ {"napId":"11322","name":"富久澄キャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先が見つからない（なっぷの hpUrl も null、fujigoko.tv 配下の施設サイトも404）。ヒットは掲載・予約サイトのみ",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/11322","https://www.fujigoko.tv/fukusumi/"],"officialUrl":null},
+
+ {"napId":"11326","name":"プエブロ河口湖","pref":"山梨","muni":"富士河口湖町","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先が見つからない（なっぷの hpUrl は null、プラン数0）。**第三者サイトが「閉業」と記載しているが一次情報ではないため閉鎖とは断定せず**、公式不在として門落ちにした",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/11326","https://www.fujigoko.tv/pueblo/"],"officialUrl":null},
+
+ {"napId":"11331","name":"青木鉱泉 テント場","pref":"山梨","muni":"韮崎市","verdict":"UNMEASURED",
+  "reason":"料金（テント場1名800円＋駐車1泊二日1,600円）と住所（韮崎市清哲町青木3350）は確認できたが、**唯一の根拠が宿泊予約サイト「山の温泉ガイド」(mountaintrad.co.jp) 内の「青木鉱泉 公式ページ」で、独立した施設公式サイトが存在しない**。同ページには運営元の訪問レポートも載るため、一次情報として採れるかの判断が要る。なお内風呂の日帰り入浴（1,000円）がある。営業は4/28〜11/16で冬期休業、支払いは現地現金のみ",
+  "checkedUrls":["https://www.mountaintrad.co.jp/~aokikosen/index.html","https://www.mountaintrad.co.jp/"],"officialUrl":"https://www.mountaintrad.co.jp/~aokikosen/index.html"}
+]

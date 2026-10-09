@@ -1,0 +1,60 @@
+[
+ {"napId":"11296","name":"オートキャンプせせらぎ","pref":"山梨","muni":"道志村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"自治体公式（道志村役場観光情報サイト）に施設ページはあるが**料金の記載が無く「ホームページURL -」で施設公式サイトも存在しない**。検索でも公式は出ずブログ・予約サイトのみ。なお台帳住所（下善之木10202）と公式表記（10201）が1番地違い",
+  "checkedUrls":["https://www.doshi-kanko.jp/camp/seseragi/","https://www.doshi-kanko.jp/camp/"],"officialUrl":"https://www.doshi-kanko.jp/camp/seseragi/"},
+
+ {"napId":"11297","name":"下村キャンプ場","pref":"山梨","muni":"道志村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"自治体公式に施設ページは残っているが**料金・予約先の記載が一切なく**、施設公式サイトも存在しない。**現在のキャンプ場一覧ナビからは外れていて sitemap 経由でしか到達できない**。公式表記住所は道志村3067で台帳の大室指3112と番地が一致しない",
+  "checkedUrls":["https://www.doshi-kanko.jp/camp/shimomura/","https://www.doshi-kanko.jp/sitemap.xml"],"officialUrl":"https://www.doshi-kanko.jp/camp/shimomura/"},
+
+ {"napId":"11298","name":"椿荘オートキャンプ場","pref":"山梨","muni":"道志村","verdict":"追加",
+  "reason":"門は通る（施設公式で住所一致、ソロ1泊2,000〜3,000円）が、**既に `tsubakiso-auto` として掲載済み**の施設なので新規追加はしない。既存レコードと公式URL・住所がともに一致。なお公式の料金は2026年1月に改定済みで、既存の priceMax（4,500円）より新しい情報（ハイシーズン3,000円）が出ている点は後で見直す価値あり",
+  "checkedUrls":["https://doushi-tsubakiso.com/","https://doushi-tsubakiso.com/camp.php","https://www.doshi-kanko.jp/camp/tsubakisou/"],
+  "officialUrl":"https://doushi-tsubakiso.com/","reservationUrl":null,
+  "address":"山梨県南都留郡道志村4150","priceMin":2000,"priceMax":3000,
+  "priceNote":"公式料金案内（2026年1月改定）の計算例「平日 ソロ（車1台1名様）2,000円」。旧料金表に「通常料金（1泊 〜翌日11:00）ソロ（車/バイク1台 1名様）2,000円／ミドルシーズン 2,500円／ハイシーズン（土曜日、連休、GW、お盆）3,000円」。車1台込みで駐車場の別料金なし。AC電源（第二サイト）は1区画1泊1,000円が別途。支払いは現金のみ（受付時の前金制）。予約は電話のみで「平日はご予約をお受けしていませんので、先着順のご案内となります」",
+  "features":{
+    "shop":{"value":true,"evidenceUrl":"https://doushi-tsubakiso.com/camp.php","quote":"場内に売店はありません。薪、炭、氷、ビール、備品等は受付で販売しております。"},
+    "firewood":{"value":true,"evidenceUrl":"https://doushi-tsubakiso.com/camp.php","quote":"場内に売店はありません。薪、炭、氷、ビール、備品等は受付で販売しております。"},
+    "pet":{"value":true,"evidenceUrl":"https://doushi-tsubakiso.com/camp.php","quote":"ペットの入場は可能ですが、ほかのお客様の迷惑にならないようご配慮をお願いします。"},
+    "nearbyOnsen":{"value":"天然温泉「紅椿の湯」まで約400m。特別料金で利用でき受付で割引券をもらえる","evidenceUrl":"https://doushi-tsubakiso.com/camp.php","quote":"当施設から400メートルほどの場所に位置する紅椿の湯を、特別料金でご利用いただけます。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11299","name":"大渡キャンプ場","pref":"山梨","muni":"道志村","verdict":"門落ち(公式なし)",
+  "reason":"自治体公式のキャンプ場一覧・sitemap に本施設のページが存在せず（slug総当たりでも404）、**施設公式とみられる owatacamp.web.fc2.com は FC2 により凍結（403）**。残るのは観光協会・予約サイト・個人ブログのみ",
+  "checkedUrls":["http://owatacamp.web.fc2.com/","https://www.doshi-kanko.jp/sitemap.xml","https://www.doshi-kanko.jp/camp/"],"officialUrl":null},
+
+ {"napId":"11301","name":"オートキャンプ長又","pref":"山梨","muni":"道志村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"自治体公式に施設ページ（営業情報）はあるが料金なし。**公式が案内するホームページは名前解決はできるがTCP接続が通らず開けない**（HTTP 000）。検索でも代替の公式は見つからない。閉業の告知は無いので閉鎖判定はしていない。**公式に岩風呂の存在が示唆されているので、サイト復活時は bath の再確認価値あり**",
+  "checkedUrls":["https://www.doshi-kanko.jp/camp/nagamata/","http://xd969959.html.xdomain.jp/nagamata/"],"officialUrl":"https://www.doshi-kanko.jp/camp/nagamata/"},
+
+ {"napId":"11302","name":"椿キャンプ場","pref":"山梨","muni":"道志村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"自治体公式に施設ページはあるが料金の記載が無く「ホームページURL -」。検索で出た outocamp-doushi413.com は WordPress の致命的エラーで全面500、かつ複数キャンプ場を扱うポータルで施設公式ではない。**同村内の「椿荘オートキャンプ場」（道志村4150）とは別施設**だと自治体公式の別ページで確認済み。公式表記住所は道志村4387で台帳の椿4229と番地が一致しない",
+  "checkedUrls":["https://www.doshi-kanko.jp/camp/tsubaki/","https://outocamp-doushi413.com/thubaki.html"],"officialUrl":"https://www.doshi-kanko.jp/camp/tsubaki/"},
+
+ {"napId":"11303","name":"オートキャンプしろいだいら","pref":"山梨","muni":"道志村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"自治体公式に施設ページはあるが料金の記載が無く「ホームページURL -」で施設公式サイトも検索で見つからない。公式表記住所は道志村12272-1で台帳の11674と一致せず、**台帳の経度（138.84）も道志村の位置と大きくずれている**",
+  "checkedUrls":["https://www.doshi-kanko.jp/camp/shiroidaira/"],"officialUrl":"https://www.doshi-kanko.jp/camp/shiroidaira/"},
+
+ {"napId":"11305","name":"CAMP INNFUJI","pref":"山梨","muni":"忍野村","verdict":"UNMEASURED",
+  "reason":"施設公式で住所（忍野村忍草3236-2）は一致しソロも可だが、**公式トップに「トレーラー・キャンピングカー専用キャンプ場です。」「テントサイトはありません。」と明記され宿泊が車内前提**。さらに**同じ公式サイト内でトップ7,500円・予約ページ6,500円と1サイト料金が食い違う**（旧料金が残っている可能性。copyright表記は2011年）。2つの理由で判断が要る",
+  "checkedUrls":["http://www.sky.hi-ho.ne.jp/camp-innfuji/","http://www.sky.hi-ho.ne.jp/camp-innfuji/reservation.html"],"officialUrl":"http://www.sky.hi-ho.ne.jp/camp-innfuji/"},
+
+ {"napId":"11306","name":"ハーブの里 コテージ＆オートキャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"閉鎖疑い",
+  "reason":"施設公式で住所（河口534）は一致するが、**公式ナビで「オートキャンプ場（休止中）」「キャンプ（休止中）」と表記され、キャンプ場ページ `/autocamp` は404、キャンプ関連の最後の告知が2023年6月18日「ハーブの里『オートキャンプ場』は今シーズンはお休みとさせていただきます。」で以降更新なし**。現行の公式はコテージのみ案内。「営業終了」の明言はないため休止継続の可能性も残る",
+  "checkedUrls":["https://herbnosato.com/","https://herbnosato.com/autocamp","https://herbnosato.com/archives/news/20230618"],"officialUrl":"https://herbnosato.com/"},
+
+ {"napId":"11307","name":"RetreatCamp まほろば","pref":"山梨","muni":"富士河口湖町","verdict":"追加",
+  "reason":"門は通る（施設公式で住所一致、FORESTテントサイト4,000円〜）が、**既に `retreat-camp-mahoroba`（リトリートキャンプまほろば）として掲載済み**の施設なので新規追加はしない。既存レコードと公式URL・住所がともに一致。**施設名の表記が英字とカタカナで違うため名前照合では捕まらず、住所と公式URLの照合で止めた**",
+  "checkedUrls":["https://retreatcamp-mahoroba.net/","https://retreatcamp-mahoroba.net/guide/","https://retreatcamp-mahoroba.net/camparea/forest-tentsite/","https://retreatcamp-mahoroba.net/faq/"],
+  "officialUrl":"https://retreatcamp-mahoroba.net/","reservationUrl":null,
+  "address":"山梨県南都留郡富士河口湖町河口山宮2553","priceMin":4000,"priceMax":8000,
+  "priceNote":"最安区画「FORESTテントサイト」の公式料金：オフシーズン4,000円〜／レギュラー5,000円〜／ハイ6,000円〜／ホリデー8,000円〜。「駐車場・シャワー・トイレ・炊事場の利用料金を含む金額です」「定員 4名」「車両乗入 不可（車は駐車場）」なので1名でも区画料金のみ。各額に「〜」が付く下限表記のため上振れの可能性あり。通年営業",
+  "features":{
+    "bath":{"value":false,"evidenceUrl":"https://retreatcamp-mahoroba.net/faq/","quote":"Q.お風呂はありますか？ A. バスタブが付いているお部屋はVillaのみです。…それ以外のお部屋とテントサイトご宿泊のお客様は共有のシャワールームがございますのでそちらをご利用ください。"},
+    "shower":{"value":true,"evidenceUrl":"https://retreatcamp-mahoroba.net/guide/","quote":"シャワーは、まほろばご宿泊のお客様は無料で24時間お使い頂けます。"},
+    "firewood":{"value":true,"evidenceUrl":"https://retreatcamp-mahoroba.net/guide/","quote":"薪（針葉樹）800円／薪（広葉樹）1,000円"},
+    "shop":{"value":true,"evidenceUrl":"https://retreatcamp-mahoroba.net/guide/","quote":"受付にて売店あり（焚火用薪、BBQ用薪、着火材、ガスコンロ用ガスボンベ、歯ブラシセット、着火マン、飲料水、焼き網など）"},
+    "pet":{"value":true,"evidenceUrl":"https://retreatcamp-mahoroba.net/guide/","quote":"ペットお連れのお客様はご自身のテントでのみご宿泊可能です。必ずリードをお付けください。"}},
+  "coordsFromOfficialMap":null}
+]

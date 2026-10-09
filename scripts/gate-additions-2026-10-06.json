@@ -3118,5 +3118,685 @@
   "coordsFromOfficialMap": null,
   "napUrl": "https://www.nap-camp.com/yamanashi/11295",
   "napName": "たきっぱらキャンプ場"
+ },
+ {
+  "napId": "11310",
+  "name": "河口湖ニューブリッヂキャンプ場",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "施設専用サイト（地域ポータル fujigoko.tv 配下だが、独自の料金表・場内設備・ライブカメラページを持ち運営者作成と判断。なっぷ掲載の電話番号 0555-72-0540 が同ページのFAXと一致）で住所（小立島原1200）が一致し、場内使用料880円＋1人用テントスペース770円＝ソロ1,650円を確認。駐車場は無料",
+  "checkedUrls": [
+   "https://www.fujigoko.tv/newbridge/",
+   "https://www.fujigoko.tv/newbridge/fee",
+   "https://www.fujigoko.tv/newbridge/facility",
+   "https://www.fujigoko.tv/newbridge/access"
+  ],
+  "officialUrl": "https://www.fujigoko.tv/newbridge/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡富士河口湖町小立島原1200",
+  "priceMin": 1650,
+  "priceMax": 1650,
+  "priceNote": "場内使用料＋テントスペース代の合算。公式「１．場内使用料 中学生以上 880円/1人・1泊」＋「２．持ち込みテントスペース代（区画なし林間テントサイト・無料駐車場利用）1人用 770円/1張り・1泊」＝1,650円。**駐車場は無料と明記。予約・問合せは電話のみ（080-7858-7840）。公式は地域ポータル fujigoko.tv のサブディレクトリに置かれた施設専用サイト**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.fujigoko.tv/newbridge/fee",
+    "quote": "コイン式温水シャワー（100円/90秒）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.fujigoko.tv/newbridge/fee",
+    "quote": "売店（受付事務所）8:00〜21:00 日用品・マキ・炭・釣り券等"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.fujigoko.tv/newbridge/fee",
+    "quote": "売店（受付事務所）… 日用品・マキ・炭・釣り券等"
+   },
+   "nearbyOnsen": {
+    "value": "河口湖温泉郷の日帰り入浴施設が徒歩3分から（割引券が一部あり）",
+    "evidenceUrl": "https://www.fujigoko.tv/newbridge/fee",
+    "quote": "徒歩3分から河口湖温泉郷日帰り入浴施設あり（割引券一部あり）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11310",
+  "napName": "ニューブリッヂキャンプ場"
+ },
+ {
+  "napId": "11314",
+  "name": "西湖 観岳園キャンプ場",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "施設公式（kangakuen.com）で住所（西湖1131）が一致し、テントサイト【山側】1人1,500円＋駐車料1台1,000円を明記。ソロ予約可",
+  "checkedUrls": [
+   "https://www.kangakuen.com/",
+   "https://www.kangakuen.com/page002.html",
+   "https://www.kangakuen.com/page003.html",
+   "https://www.kangakuen.com/page006.html"
+  ],
+  "officialUrl": "https://www.kangakuen.com/",
+  "reservationUrl": "https://saiko-kangakuen.eyado.net/",
+  "address": "山梨県南都留郡富士河口湖町西湖1131",
+  "priceMin": 1500,
+  "priceMax": 2500,
+  "priceNote": "1名単位課金。公式「テントサイト【山側】１人（４歳以上）１，５００円／駐車料 １台 １，０００円」→ 車を停めなければ1,500円、車1台なら2,500円。**【湖畔側】は4月末〜10月の休日前・繁忙期のみ「１区画 ７，０００円（定員４名+駐車１台）」で1名でも同額（山側は通年1人単価）。湖畔側には炊事場・トイレが無く150mの距離。営業期間は「2026年の営業は11月23日までの予定／2027年の営業再開は3月下旬」。2025年よりキャンプ場予約はホームページからのみ。**公式に「2024年より、料金および利用条件を改定しております」とあり掲載額は改定後",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.kangakuen.com/page003.html",
+    "quote": "温水シャワー ４００円／１５ｍ"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.kangakuen.com/page003.html",
+    "quote": "マ キ ５００〜８００円"
+   },
+   "nearbyOnsen": {
+    "value": "西湖温泉「いずみの湯」が徒歩2分",
+    "evidenceUrl": "https://www.kangakuen.com/page006.html",
+    "quote": "西湖温泉「 いずみの湯 」は、当キャンプ場より徒歩２分のとても近い場所にあります。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11314",
+  "napName": "観岳園キャンプ場"
+ },
+ {
+  "napId": "11317",
+  "name": "紅葉台キャンプ場",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "施設公式（koyodai.info）で住所（西湖2202）が一致し、テントサイト1張2,000円＋大人1人1,000円＝ソロ3,000円を明記。公式フォームで予約できる",
+  "checkedUrls": [
+   "https://www.koyodai.info/",
+   "https://www.koyodai.info/price.html",
+   "https://www.koyodai.info/facility.html",
+   "https://www.koyodai.info/access.html"
+  ],
+  "officialUrl": "https://www.koyodai.info/",
+  "reservationUrl": "https://www.koyodai.info/contact.php",
+  "address": "山梨県南都留郡富士河口湖町西湖2202",
+  "priceMin": 3000,
+  "priceMax": 3000,
+  "priceNote": "サイト課金＋人数課金の合算。公式「テントサイト/1張1泊（キャンピングカー/1台1泊）2,000円（税込）」＋「大人/1泊 1,000円（税込）」＝3,000円。駐車料金の別途徴収の記載なし。予約は公式フォーム（利用月の3ヶ月前から）。**直火禁止・焚き火台使用可**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.koyodai.info/facility.html",
+    "quote": "午前8:00から午後9:00まで利用できます(1回300円)。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.koyodai.info/facility.html",
+    "quote": "売店ではキャンプ用品や、飲み物、食材…レンタルでは寝具セット、炊事セット…の貸し出しも行っています。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.koyodai.info/price.html",
+    "quote": "まき（炊事用）700円〜／まき（大）焚き火用 1,300円〜"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.koyodai.info/price.html",
+    "quote": "ペット1匹/1日 500円（税込）"
+   },
+   "nearbyOnsen": {
+    "value": "いずみの湯（車で5分）／富士眺望の湯ゆらり（車で10分）",
+    "evidenceUrl": "https://www.koyodai.info/access.html",
+    "quote": "いずみの湯 紅葉台キャンプ場より車で5分"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11317",
+  "napName": "紅葉台キャンプ場"
+ },
+ {
+  "napId": "11318",
+  "name": "西湖津原キャンプ場",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "門は通る（公式 tsuhara-camp.jp にオートキャンプ1名大人1,500円）が、**既に `saiko-tsuhara-camp` として掲載済み**の施設なので新規追加はしない。**ただし既存レコードの住所が「西湖351」で、公式表記の「西湖2299」と食い違う。**住所の訂正が要る",
+  "checkedUrls": [
+   "https://tsuhara-camp.jp/",
+   "https://tsuhara-camp.jp/price",
+   "https://tsuhara-camp.jp/access",
+   "https://tsuhara-camp.jp/attention"
+  ],
+  "officialUrl": "https://tsuhara-camp.jp/",
+  "reservationUrl": "https://tsuhara-camp.jp/form",
+  "address": "山梨県南都留郡富士河口湖町西湖2299",
+  "priceMin": 1500,
+  "priceMax": 1500,
+  "priceNote": "公式「オートキャンプ（1名） チェックアウト 翌朝11:00 大人 1,500円」。車乗り入れ可で駐車料の別記なし。テントサイトは「ご予約は承っておりません。貸し切り等についてはお問い合わせください」＝予約不要の先着。直火禁止・焚き火台＋焚き火シート必須",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://tsuhara-camp.jp/attention",
+    "quote": "シャワー … 1名 400円／20分"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://tsuhara-camp.jp/attention",
+    "quote": "売店営業時間 平日・日曜日 8:00〜17:00"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://tsuhara-camp.jp/price",
+    "quote": "販売 炭・薪：時価"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://tsuhara-camp.jp/attention",
+    "quote": "テントサイトはペット同伴可／バンガロー・コテージはペット不可"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11318",
+  "napName": "津原キャンプ場"
+ },
+ {
+  "napId": "11319",
+  "name": "富士西湖 浜の家キャンプ場",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "施設公式（hamanoya-camp.com。2025/04/16のサーバー移転告知があり稼働中）で住所（西湖2334）が一致し、テント・オートキャンプ1泊お1人様1,000円を明記。近隣の「河口湖オートキャンプ場 浜の湯」（小立5404）とは別施設",
+  "checkedUrls": [
+   "http://hamanoya-camp.com/",
+   "http://hamanoya-camp.com/sub1.htm",
+   "http://hamanoya-camp.com/sub3.htm",
+   "http://hamanoya-camp.com/sub5.htm"
+  ],
+  "officialUrl": "http://hamanoya-camp.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡富士河口湖町西湖2334",
+  "priceMin": 1000,
+  "priceMax": 1100,
+  "priceNote": "1名単位課金。公式の施設案内「テント・オートキャンプ（施設使用料）… 1泊・・・お１人様１０００円、小学生以下は５００円」。**料金表ページの見出しが「料金表 （税別）」なので税込1,100円という読みも成立する**（バンガロー額が18,900円等の旧税率表記で、税別注記自体が古い可能性）。両方の読みを幅に収めた。駐車料・テント張り料の別記なし。**営業期間は「３/１(OPEN)〜１２/３１まで」。予約は電話／メールのみ**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://hamanoya-camp.com/sub3.htm",
+    "quote": "シャワー お１人 ４００円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "http://hamanoya-camp.com/sub3.htm",
+    "quote": "薪 （１束） 時価"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "http://hamanoya-camp.com/sub1.htm",
+    "quote": "売店と事務所の間からバンガローに続く入口があります。食料品などはご用意いたします。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11319",
+  "napName": "浜の家キャンプ場"
+ },
+ {
+  "napId": "11332",
+  "name": "PICA富士吉田",
+  "pref": "山梨",
+  "muni": "富士吉田市",
+  "verdict": "追加",
+  "reason": "公式（pica-resort.jp/yoshida）で住所（富士吉田市上吉田4959-4）が一致し、テントサイトが1サイト単位の料金でソロ1泊2,500円〜と公式に明記されている",
+  "checkedUrls": [
+   "https://www.pica-resort.jp/yoshida/",
+   "https://www.pica-resort.jp/yoshida/stay/site/index.html",
+   "https://www.pica-resort.jp/yoshida/about/guidance.html",
+   "https://www.pica-resort.jp/yoshida/stay/option/rental/index.html",
+   "https://booking.pica-resort.jp/v3/calendar/stay/1"
+  ],
+  "officialUrl": "https://www.pica-resort.jp/yoshida/",
+  "reservationUrl": "https://booking.pica-resort.jp/v3/calendar/stay/1",
+  "address": "山梨県富士吉田市上吉田4959-4",
+  "priceMin": 2500,
+  "priceMax": 5000,
+  "priceNote": "サイト単位課金（人数課金なし・定員6名・車1台込み）。公式の宿泊施設一覧「広葉樹林間サイト 電源なし（定員6名・10サイト）1泊1サイト 2,500円〜」。**公式オンライン予約の実売カレンダー（2026年11月10〜17日週）では同サイトが3,000〜5,000円表示だったため上限はその最高値を採用。**別途ペット1頭1,000〜1,900円。「場内での直火のたき火…は禁止」（焚き火台持参なら可）",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://www.pica-resort.jp/yoshida/about/guidance.html",
+    "quote": "場内の共同浴場は利用無料です。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.pica-resort.jp/yoshida/stay/option/rental/index.html",
+    "quote": "木炭や薪は在庫切れにならないように商品を揃えています"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.pica-resort.jp/yoshida/stay/option/rental/index.html",
+    "quote": "販売品 ゲストハウスでお求めいただける商品です。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.pica-resort.jp/yoshida/about/guidance.html",
+    "quote": "ペットの同伴は、ご予約の際その旨をお申し付けいただいた方に限ります。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11332",
+  "napName": "PICA富士吉田"
+ },
+ {
+  "napId": "11341",
+  "name": "WOODPECKER",
+  "pref": "山梨",
+  "muni": "北杜市",
+  "verdict": "追加",
+  "reason": "公式サイトで住所（北杜市須玉町上津金2449-5）が一致し、ソロ1泊の内訳（スペース料＋入場料＋環境料）が明記されている。**公式の予約フォームが「一人キャンプ専用キャンプ場」と明示**",
+  "checkedUrls": [
+   "https://www.woodpecker-cs.com/",
+   "https://www.woodpecker-cs.com/price/18",
+   "https://www.woodpecker-cs.com/guide/10",
+   "https://www.woodpecker-cs.com/reservation"
+  ],
+  "officialUrl": "https://www.woodpecker-cs.com/",
+  "reservationUrl": "https://www.woodpecker-cs.com/reservation",
+  "address": "山梨県北杜市須玉町上津金2449-5",
+  "priceMin": 2900,
+  "priceMax": 4400,
+  "priceNote": "スペース料＋入場料＋環境料の合算。公式料金表（1泊）「スペース料 バイク1台 2,500円（入場料:1人分含む）」＋「環境料（ゴミ・汚水処理）400円」＝2,900円（バイク）。車なら「スペース料 車1台 3,000円」＋「入場料 大人1,000円」＋環境料400円＝4,400円。**公式のオープン期間は2026年4月18日〜11月23日。予約は2ヶ月前の1日から電話またはメールフォーム。70歳以上はスペース料20%引き**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.woodpecker-cs.com/guide/10",
+    "quote": "温水シャワー室（２箇所）…２分１００円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.woodpecker-cs.com/price/18",
+    "quote": "薪・炭（3KG)、ホワイトガソリン、各種ガスボンベ、マントル、ホヤ等用意してあります。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.woodpecker-cs.com/price/18",
+    "quote": "薪・炭（3KG)、ホワイトガソリン、各種ガスボンベ、マントル、ホヤ等用意してあります。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.woodpecker-cs.com/price/18",
+    "quote": "ペット同伴・1匹 400円　1日・5匹までといたします"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11341",
+  "napName": "ウッドペッカーキャンプ場"
+ },
+ {
+  "napId": "11298",
+  "name": "椿荘オートキャンプ場",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "門は通る（施設公式で住所一致、ソロ1泊2,000〜3,000円）が、**既に `tsubakiso-auto` として掲載済み**の施設なので新規追加はしない。既存レコードと公式URL・住所がともに一致。なお公式の料金は2026年1月に改定済みで、既存の priceMax（4,500円）より新しい情報（ハイシーズン3,000円）が出ている点は後で見直す価値あり",
+  "checkedUrls": [
+   "https://doushi-tsubakiso.com/",
+   "https://doushi-tsubakiso.com/camp.php",
+   "https://www.doshi-kanko.jp/camp/tsubakisou/"
+  ],
+  "officialUrl": "https://doushi-tsubakiso.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村4150",
+  "priceMin": 2000,
+  "priceMax": 3000,
+  "priceNote": "公式料金案内（2026年1月改定）の計算例「平日 ソロ（車1台1名様）2,000円」。旧料金表に「通常料金（1泊 〜翌日11:00）ソロ（車/バイク1台 1名様）2,000円／ミドルシーズン 2,500円／ハイシーズン（土曜日、連休、GW、お盆）3,000円」。車1台込みで駐車場の別料金なし。AC電源（第二サイト）は1区画1泊1,000円が別途。支払いは現金のみ（受付時の前金制）。予約は電話のみで「平日はご予約をお受けしていませんので、先着順のご案内となります」",
+  "features": {
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://doushi-tsubakiso.com/camp.php",
+    "quote": "場内に売店はありません。薪、炭、氷、ビール、備品等は受付で販売しております。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://doushi-tsubakiso.com/camp.php",
+    "quote": "場内に売店はありません。薪、炭、氷、ビール、備品等は受付で販売しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://doushi-tsubakiso.com/camp.php",
+    "quote": "ペットの入場は可能ですが、ほかのお客様の迷惑にならないようご配慮をお願いします。"
+   },
+   "nearbyOnsen": {
+    "value": "天然温泉「紅椿の湯」まで約400m。特別料金で利用でき受付で割引券をもらえる",
+    "evidenceUrl": "https://doushi-tsubakiso.com/camp.php",
+    "quote": "当施設から400メートルほどの場所に位置する紅椿の湯を、特別料金でご利用いただけます。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11298",
+  "napName": "椿荘オートキャンプ場"
+ },
+ {
+  "napId": "11307",
+  "name": "RetreatCamp まほろば",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "門は通る（施設公式で住所一致、FORESTテントサイト4,000円〜）が、**既に `retreat-camp-mahoroba`（リトリートキャンプまほろば）として掲載済み**の施設なので新規追加はしない。既存レコードと公式URL・住所がともに一致。**施設名の表記が英字とカタカナで違うため名前照合では捕まらず、住所と公式URLの照合で止めた**",
+  "checkedUrls": [
+   "https://retreatcamp-mahoroba.net/",
+   "https://retreatcamp-mahoroba.net/guide/",
+   "https://retreatcamp-mahoroba.net/camparea/forest-tentsite/",
+   "https://retreatcamp-mahoroba.net/faq/"
+  ],
+  "officialUrl": "https://retreatcamp-mahoroba.net/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡富士河口湖町河口山宮2553",
+  "priceMin": 4000,
+  "priceMax": 8000,
+  "priceNote": "最安区画「FORESTテントサイト」の公式料金：オフシーズン4,000円〜／レギュラー5,000円〜／ハイ6,000円〜／ホリデー8,000円〜。「駐車場・シャワー・トイレ・炊事場の利用料金を含む金額です」「定員 4名」「車両乗入 不可（車は駐車場）」なので1名でも区画料金のみ。各額に「〜」が付く下限表記のため上振れの可能性あり。通年営業",
+  "features": {
+   "bath": {
+    "value": false,
+    "evidenceUrl": "https://retreatcamp-mahoroba.net/faq/",
+    "quote": "Q.お風呂はありますか？ A. バスタブが付いているお部屋はVillaのみです。…それ以外のお部屋とテントサイトご宿泊のお客様は共有のシャワールームがございますのでそちらをご利用ください。"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://retreatcamp-mahoroba.net/guide/",
+    "quote": "シャワーは、まほろばご宿泊のお客様は無料で24時間お使い頂けます。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://retreatcamp-mahoroba.net/guide/",
+    "quote": "薪（針葉樹）800円／薪（広葉樹）1,000円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://retreatcamp-mahoroba.net/guide/",
+    "quote": "受付にて売店あり（焚火用薪、BBQ用薪、着火材、ガスコンロ用ガスボンベ、歯ブラシセット、着火マン、飲料水、焼き網など）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://retreatcamp-mahoroba.net/guide/",
+    "quote": "ペットお連れのお客様はご自身のテントでのみご宿泊可能です。必ずリードをお付けください。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11307",
+  "napName": "Retreat camp まほろば"
+ },
+ {
+  "napId": "11351",
+  "name": "フレンドパークむかわ",
+  "pref": "山梨",
+  "muni": "北杜市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（北杜市武川町柳沢3506-1）が一致し、1サイト単位の宿泊料金（ローシーズン5,500円／ハイシーズン最大8,800円）が明記され単独利用の制限がない",
+  "checkedUrls": [
+   "https://fp-mukawa-kaikoma.com/",
+   "https://fp-mukawa-kaikoma.com/camp/",
+   "https://fp-mukawa-kaikoma.com/faq/",
+   "https://fp-mukawa-kaikoma.com/access/"
+  ],
+  "officialUrl": "https://fp-mukawa-kaikoma.com/",
+  "reservationUrl": "https://fp-mukawa-kaikoma.com/camp/reserve_1day.html",
+  "address": "山梨県北杜市武川町柳沢3506-1",
+  "priceMin": 5500,
+  "priceMax": 8800,
+  "priceNote": "サイト単位課金（税込・テント1・タープ1・車1台・5名まで）で人数課金なし。公式「サイト使用料／ローシーズン 全サイト共通 5,500円」「ハイシーズン プレミアムパノラマサイト 8,800円／しらかばサイト（電源・水道付）7,260円／林間・甲斐駒サイト 6,050円」。駐車場は無料（公式FAQ「駐車場は無料ですか？→無料です」）。ゴミ袋は任意で1泊300円。**12〜2月は冬季閉園、水曜定休。2026年よりローシーズン料金を新設した旨の告知あり**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://fp-mukawa-kaikoma.com/camp/",
+    "quote": "シャワールーム 100円／2.5分"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://fp-mukawa-kaikoma.com/faq/",
+    "quote": "売店では…キャンプやバーベキューに必要な薪や炭、カセットガスや軍手…などがご購入いただけます"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://fp-mukawa-kaikoma.com/faq/",
+    "quote": "管理棟/売店の営業時間は…5〜9月は9:00〜17:00までの営業"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://fp-mukawa-kaikoma.com/faq/",
+    "quote": "ペットも一緒にキャンプができますか？ A. はい。一般的なマナーをお守りいただいた上でご一緒にお楽しみください"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.7799626,
+   "lng": 138.3299223,
+   "url": "https://fp-mukawa-kaikoma.com/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/11351",
+  "napName": "フレンドパークむかわ"
+ },
+ {
+  "napId": "11352",
+  "name": "南アルプス三景園オートキャンプ場",
+  "pref": "山梨",
+  "muni": "北杜市",
+  "verdict": "追加",
+  "reason": "施設公式で住所（北杜市武川町柳沢烏帽子3601-1）が一致し、**ソロキャンプ専用料金（通常3,300円／ハイシーズン8,800円）が料金表に明記**されている",
+  "checkedUrls": [
+   "https://sankeien-camp.com/",
+   "https://sankeien-camp.com/guide/",
+   "https://sankeien-camp.com/solo-camp/",
+   "https://sankeien-camp.com/sites/"
+  ],
+  "officialUrl": "https://sankeien-camp.com/",
+  "reservationUrl": "https://sankeien-camp.com/reserve/",
+  "address": "山梨県北杜市武川町柳沢烏帽子3601-1",
+  "priceMin": 3300,
+  "priceMax": 8800,
+  "priceNote": "ソロ専用料金。公式「オートキャンプ料金／通常シーズン（ハイシーズン以外土日も含む）…ソロキャンプ 3,300円」「ハイシーズン…ソロキャンプ 8,800円」（**ハイシーズン＝土曜日を含む3日以上の連休と盆休み8/8〜8/15の宿泊で、ソロ料金が2.7倍に跳ねる**）。ソロ専用ページにも「ソロ限定価格 3,300円／ハイシーズン以外土日も含みます」。ゴミ処理料150円/人（持ち帰りなら不要）、電源サイトは＋1,100円。シャワーは中学生以上500円で別料金。バイク横付けOKで駐車料金の別途記載なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://sankeien-camp.com/guide/",
+    "quote": "共用設備利用／シャワー（中学生以上）500円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://sankeien-camp.com/sites/",
+    "quote": "管理棟（センターハウス）受付・売店・休息・自動販売機・レンタル・シャワールーム・トイレ／売店営業時間：10〜18時"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://sankeien-camp.com/guide/",
+    "quote": "ドッグランサイト 6,600円"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.7726999,
+   "lng": 138.3317427,
+   "url": "https://sankeien-camp.com/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/11352",
+  "napName": "南アルプス三景園オートキャンプ場"
+ },
+ {
+  "napId": "11355",
+  "name": "玉川キャンプ村",
+  "pref": "山梨",
+  "muni": "小菅村",
+  "verdict": "追加",
+  "reason": "施設公式に**ソロサイト料金1,500円**の記載あり。公式アクセスページの住所は小菅村2457-4だが、同じ公式サイトのビジネス所在地設定が「小菅村2202」で台帳と一致し、電話番号も一致するため同一施設と判断",
+  "checkedUrls": [
+   "https://www.tama-camp.com/",
+   "https://www.tama-camp.com/stay",
+   "https://www.tama-camp.com/access",
+   "http://www.vill.kosuge.yamanashi.jp/tourist/tourist-facility.html"
+  ],
+  "officialUrl": "https://www.tama-camp.com/",
+  "reservationUrl": null,
+  "address": "山梨県北都留郡小菅村2457-4",
+  "priceMin": 1500,
+  "priceMax": 1500,
+  "priceNote": "公式「宿泊施設」ページ「オートキャンプ 料金は4,000円より、サイト＋駐車1台分＋4名分を含みます。**ソロサイトは2名まで、1,500円より受け付けています。**」「お車二台目以降は一台につき、1,000円/1泊の追加料金」。「1,500円より」の下限表記のみでシーズン別の上限は非公開のため priceMax を同額にした。**公式内に住所が2通りある（アクセスページ「小菅村2457-4」／ビジネス所在地設定「小菅村2202」）。11/24以降の冬季はログハウスと中流エリアのみ利用可、1〜3月は事前にLINE問い合わせが必要**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://www.tama-camp.com/",
+    "quote": "手作りの露天風呂に浸かりながら眺める星空は、日常の喧騒を忘れさせてくれる最高のご褒美"
+   },
+   "nearbyOnsen": {
+    "value": "「小菅の湯」（奥多摩駅発のバス路線上。最寄りバス停は「玉川」）",
+    "evidenceUrl": "https://www.tama-camp.com/access",
+    "quote": "バスでお越しになる方は、奥多摩駅発小菅の湯行きに乗り、「玉川」バス停でお降りください"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11355",
+  "napName": "玉川キャンプ村"
+ },
+ {
+  "napId": "11356",
+  "name": "東部森林公園 ほうれん坊の森キャンプ場",
+  "pref": "山梨",
+  "muni": "小菅村",
+  "verdict": "追加",
+  "reason": "施設公式で住所（小菅村2402-2）が一致し、**ソロキャンプ料金が料金表に明記**されていてソロ歓迎の記載もある",
+  "checkedUrls": [
+   "https://www.horenbo.com/",
+   "https://www.horenbo.com/charge/",
+   "https://www.horenbo.com/facility/",
+   "https://www.horenbo.com/access/"
+  ],
+  "officialUrl": "https://www.horenbo.com/",
+  "reservationUrl": null,
+  "address": "山梨県北都留郡小菅村2402-2",
+  "priceMin": 2200,
+  "priceMax": 4400,
+  "priceNote": "**公式の料金表は税抜表示**。「ソロキャンンプ（平日バリューシーズンのみ）サイト料込 ¥2,000」＝税込2,200円が最安。ソロプラン対象外の日は「テントサイト（定員4名）¥2,000（平日バリュー）／¥2,500（土日・繁忙期レギュラー）／¥3,000（GW・お盆・SWトップ）」＋「施設使用料 テント・オートサイト 大人 ¥1,000」で税抜3,000〜4,000円＝税込3,300〜4,400円。priceMax はトップシーズンの税込4,400円。「車料 一台追加 ¥1,000」とあり1台目は料金内と読める。アーリー／レイトは各1組1,000円。予約は公式が「ご予約はなっぷから」と案内",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://www.horenbo.com/facility/",
+    "quote": "ドラム缶風呂／1日一組限定（要予約：薪２束付き）自分で沸かす川沿いの露天風呂！"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.horenbo.com/facility/",
+    "quote": "シャワーは男女各２個あり 15時〜21時 まで無料で利用することができます"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.horenbo.com/charge/",
+    "quote": "販売品／薪（一束）¥750、雑木（約10kg)¥1100、炭（1kg)¥440"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.horenbo.com/facility/",
+    "quote": "バス停「東部森林公園」で下車すると目の前の建物が受付売店施設の「ほうれん坊」です"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.horenbo.com/charge/",
+    "quote": "ペット（テント・オートサイト）¥1,000"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.761148,
+   "lng": 138.975302,
+   "url": "https://www.horenbo.com/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/11356",
+  "napName": "ほうれん坊の森キャンプ場"
+ },
+ {
+  "napId": "11357",
+  "name": "平山キャンプ場",
+  "pref": "山梨",
+  "muni": "小菅村",
+  "verdict": "追加",
+  "reason": "施設公式で住所（小菅村2959）が一致し、テントサイトの区画料＋利用料＋施設利用料が明記されていてソロ1泊の総額が算出できる",
+  "checkedUrls": [
+   "https://www.hirayamacamp.com/",
+   "https://www.hirayamacamp.com/pages/1441836/stay",
+   "https://www.hirayamacamp.com/pages/1451038/facility"
+  ],
+  "officialUrl": "https://www.hirayamacamp.com/",
+  "reservationUrl": null,
+  "address": "山梨県北都留郡小菅村2959",
+  "priceMin": 3250,
+  "priceMax": 4350,
+  "priceNote": "区画料＋利用料＋施設利用料の合算。公式「宿泊設備について」テントサイト「１区画¥1700＋利用料（大人1人¥1100、小人1人¥600）＋施設利用料（税込）」、施設利用料「大人：450円/1人（税込）」→ ソロ1泊＝1,700＋1,100＋450＝3,250円。「※オートキャンプの場合は駐車料金が1100円加算されます」→ オート利用時は4,350円。テント区画は17、オートキャンプは2区画。**「薪の持ち込みはご遠慮いただいております」。**予約は電話が基本で一部ネット予約",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://www.hirayamacamp.com/pages/1451038/facility",
+    "quote": "浴場／入浴料：¥400/1人（税込）…岩風呂（男女別）です。16:00~21:00利用可能。※少人数の場合は沸かさない場合もあります"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.hirayamacamp.com/pages/1451038/facility",
+    "quote": "シャワーのみ：¥300/1人（税込）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.hirayamacamp.com/pages/1451038/facility",
+    "quote": "販売品／薪（ナラ）1,650、薪（杉）660"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.hirayamacamp.com/pages/1451038/facility",
+    "quote": "販売品／価格（税込）…薪（ナラ）1,650"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.756655,
+   "lng": 138.9537494,
+   "url": "https://www.hirayamacamp.com/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/11357",
+  "napName": "平山キャンプ場"
+ },
+ {
+  "napId": "11360",
+  "name": "奥秋キャンプ",
+  "pref": "山梨",
+  "muni": "丹波山村",
+  "verdict": "追加",
+  "reason": "施設公式で住所（丹波山村1388）が一致し、テントサイト1名あたり1,650円（公式が「ソロキャンプ向き」と明記）とシーズン別料金・駐車費が明記されている",
+  "checkedUrls": [
+   "https://farmerswoodcabin.com/",
+   "https://farmerswoodcabin.com/charge/",
+   "https://farmerswoodcabin.com/kyoutsuu/",
+   "https://farmerswoodcabin.com/hb_accommodation/tent-for02/",
+   "https://farmerswoodcabin.com/access/"
+  ],
+  "officialUrl": "https://farmerswoodcabin.com/",
+  "reservationUrl": "https://farmerswoodcabin.com/reservation/",
+  "address": "山梨県北都留郡丹波山村1388",
+  "priceMin": 2090,
+  "priceMax": 2750,
+  "priceNote": "1名単位課金＋駐車費。公式「テントサイト 2名まで 1,650（1名あたり）／2名程度 ソロキャンプ向き」「※休前日は10％増、ハイシーズンは20％増となります」。**テントサイトは車両乗入不可なので「車 770円/台、バイク 440円/台」の駐車・駐輪費が別途必須**。priceMin＝通常平日1,650＋バイク440＝2,090円（公共交通なら1,650円）、priceMax＝ハイシーズン1,980＋車770＝2,750円。シャワーは330円。支払いはチェックイン時に現金かPayPay。**予約システムのシーズン表の期間が2024年の日付のまま更新されていない。国立公園内のため直火禁止（焚き火台は可）**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://farmerswoodcabin.com/charge/",
+    "quote": "入浴料／シャワー 330円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://farmerswoodcabin.com/kyoutsuu/",
+    "quote": "管理棟（受付）／売店／寝具レンタル／調理道具レンタル"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://farmerswoodcabin.com/hb_accommodation/tent-for02/",
+    "quote": "ペット同伴 可 ※リード、ドッグゲージをご利用下さい"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.7920773,
+   "lng": 138.912358,
+   "url": "https://farmerswoodcabin.com/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/11360",
+  "napName": "奥秋キャンプ"
  }
 ]
