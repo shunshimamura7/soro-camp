@@ -1,0 +1,59 @@
+[
+ {"napId":"11362","name":"東キャンプ場","pref":"山梨","muni":"丹波山村","verdict":"門落ち(公式なし)",
+  "reason":"丹波山村公式の施設一覧は名称・電話番号のみで料金もURLも無い。見つかるのは村のDMO「たばやま観光Navi」（一般社団法人たばやま観光推進機構）のページだけで、**DMOは根拠に使えない**。施設独自の公式サイトは検索でも発見できず",
+  "checkedUrls":["https://vill.tabayama.yamanashi.jp/kanko/shisetsu.html","https://tabayama.info/hang-out/camp/東キャンプ村/"],"officialUrl":null},
+
+ {"napId":"11363","name":"グリーンリバーかめやキャンプ場","pref":"山梨","muni":"丹波山村","verdict":"門落ち(公式なし)",
+  "reason":"村公式では「グリーンリバーかめやバンガロー」として名称・電話のみ掲載で料金・URL無し。DMO運営の「たばやま観光Navi」のページ（バンガロー8棟、室料7,000〜20,000円）は根拠に使えず、**そこでもテント泊の記載が無くバンガロー主体**。施設独自の公式サイトは発見できず",
+  "checkedUrls":["https://vill.tabayama.yamanashi.jp/kanko/shisetsu.html","https://tabayama.info/hang-out/camp/グリーンリバーかめやバンガロー/"],"officialUrl":null},
+
+ {"napId":"13592","name":"西湖キャンプビレッジ・ノーム","pref":"山梨","muni":"富士河口湖町","verdict":"追加",
+  "reason":"公式（gnome.hamayouresort.com）で住所（西湖1030）・名称が一致し、平日限定の「おまかせサイト」が1名でも3,300円で使える",
+  "checkedUrls":["https://gnome.hamayouresort.com/","https://gnome.hamayouresort.com/stay/kukaku/","https://gnome.hamayouresort.com/stay/omakase/","https://gnome.hamayouresort.com/facility/"],
+  "officialUrl":"https://gnome.hamayouresort.com/","reservationUrl":null,
+  "address":"山梨県南都留郡富士河口湖町西湖1030","priceMin":3300,"priceMax":11550,
+  "priceNote":"**平日限定「おまかせサイト」3,300円（税込）〜／1泊（大人3名まで。1名でも同額）が最安。**通常の「林間サイト」は区画単位で9,350〜11,550円（税込）／1泊（最大5名）で、ソロでも区画1つ分。駐車場2台目は550円。**支払いはオンラインカード決済のみ**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://gnome.hamayouresort.com/facility/","quote":"シャワールーム コインシャワー（3分100円）"},
+    "shop":{"value":true,"evidenceUrl":"https://gnome.hamayouresort.com/facility/","quote":"売店 薪や木炭などのキャンプ用品を管理棟で販売しています"},
+    "firewood":{"value":true,"evidenceUrl":"https://gnome.hamayouresort.com/facility/","quote":"薪や木炭などのキャンプ用品を管理棟で販売しています"},
+    "pet":{"value":true,"evidenceUrl":"https://gnome.hamayouresort.com/stay/omakase/","quote":"ペットはリードまたはゲージにて同伴可。"},
+    "nearbyOnsen":{"value":"いずみの湯（キャンプ場から約150m。姉妹施設の日帰り温泉）","evidenceUrl":"https://gnome.hamayouresort.com/facility/","quote":"温泉（いずみの湯） キャンプ場から約150m 姉妹施設の日帰り温泉です"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"13622","name":"白根御池小屋","pref":"山梨","muni":"南アルプス市","verdict":"UNMEASURED",
+  "reason":"門は通る（公式 shiraneoike.ashiyasu.com で住所一致、テント1泊 大人1,000円）が、**南アルプスの山小屋のテント場で、車では行けず登山が前提**。既存の掲載266件に同種の山小屋テント場は1件も無いため、**掲載対象に含めるかの方針判断が要る**。予約は「南ぷすリザーブ」のみで電話予約不可。売店でカップラーメン等の行動食を販売",
+  "checkedUrls":["https://shiraneoike.ashiyasu.com/","https://shiraneoike.ashiyasu.com/stay/price/","https://shiraneoike.ashiyasu.com/stay/tent/"],"officialUrl":"https://shiraneoike.ashiyasu.com/"},
+
+ {"napId":"13635","name":"北岳山荘","pref":"山梨","muni":"","verdict":"UNMEASURED",
+  "reason":"門は通る（公式 kitadake.ashiyasu.com でテント1名1,100円）が、**標高2,900mの北岳と中白根の鞍部に建つ山小屋のテント場**で登山前提。しかも**住所が「北岳・中白根鞍部」で番地のある住所が存在せず、市町村の照合もできない**（事務所所在地は南アルプス市芦安）。白根御池小屋と同じく、山小屋のテント場を掲載対象にするかの方針判断が要る",
+  "checkedUrls":["https://kitadake.ashiyasu.com/","https://kitadake.ashiyasu.com/stay/price/","https://kitadake.ashiyasu.com/about/outline/"],"officialUrl":"https://kitadake.ashiyasu.com/"},
+
+ {"napId":"13659","name":"精進湖オートキャンプ場","pref":"山梨","muni":"上九一色村","verdict":"UNMEASURED",
+  "reason":"公式（shojiko.jp）のフリーオートキャンプサイトでソロ料金（バイク2,000円／普通車3,000円）は確認できたが、**公式住所「富士河口湖町精進495」が台帳の「上九一色村精進瀬々波550-1」と一致しない**。しかも**この公式URLと住所は既存レコード `shojiko-camping`（精進湖キャンピングコテージ）と同一**で、同じ施設の別名義か隣接する別サイトかが判別できない。完全先着順で予約不可（当日受付のみ）",
+  "checkedUrls":["http://shojiko.jp/","http://shojiko.jp/doc/campsite.html","http://shojiko.jp/doc/access.html"],"officialUrl":"http://shojiko.jp/"},
+
+ {"napId":"13662","name":"硯の里キャンプ場","pref":"山梨","muni":"早川町","verdict":"追加",
+  "reason":"公式（suzuri-camp.jimdofree.com）で住所（早川町雨畑495）が一致し、入場料＋テント料金が明記されている",
+  "checkedUrls":["https://suzuri-camp.jimdofree.com/","https://suzuri-camp.jimdofree.com/ご利用料金-サービス案内/","https://suzuri-camp.jimdofree.com/施設案内/"],
+  "officialUrl":"https://suzuri-camp.jimdofree.com/","reservationUrl":null,
+  "address":"山梨県南巨摩郡早川町雨畑495","priceMin":2000,"priceMax":3000,
+  "priceNote":"入場料＋テント料の合算。オンシーズン（4〜11月）は入場料 大人500円＋テント（1人用）1張り 平日1,500円／休日1,800円＝平日2,000円・休日2,300円。**オフシーズン（12〜3月）は入場料が大人1,200円に上がる**ので、冬の休日は1,200＋1,800＝3,000円になる。これを priceMax に採った。薪は1束600円で場内販売",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://suzuri-camp.jimdofree.com/ご利用料金-サービス案内/","quote":"薪 …………………………  1束 600円"},
+    "shop":{"value":true,"evidenceUrl":"https://suzuri-camp.jimdofree.com/ご利用料金-サービス案内/","quote":"薪 1束600円／炭（3kg）1袋600円 ほか場内販売あり"},
+    "nearbyOnsen":{"value":"ヴィラ雨畑（車で5分）","evidenceUrl":"https://suzuri-camp.jimdofree.com/","quote":"周辺には、車で５分の所に温泉（ヴィラ雨畑）や、硯ミュージアム（硯匠庵）…"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"13663","name":"CAMP INNFUJI（忍草3235）","pref":"山梨","muni":"忍野村","verdict":"UNMEASURED",
+  "reason":"公式に「**トレーラー・キャンピングカー専用キャンプ場です」「テントサイトはありません**」と明記され宿泊が車内前提。**束25の napId 11305 と同じ施設**（公式住所は忍草3236-2で、こちらの台帳行は忍草3235）。同じ理由で判断待ち",
+  "checkedUrls":["http://www.sky.hi-ho.ne.jp/camp-innfuji/"],"officialUrl":"http://www.sky.hi-ho.ne.jp/camp-innfuji/"},
+
+ {"napId":"13781","name":"南アルプス温泉ロッジ・白峰会館","pref":"山梨","muni":"南アルプス市","verdict":"宿泊系のため対象外",
+  "reason":"南アルプス市公式が「南アルプス登山の玄関口にあり、低価格が魅力の**公共温泉宿**」と明記した市営のロッジ形式の客室宿泊施設で、**テント泊の設定が無い**",
+  "checkedUrls":["https://www.city.minami-alps.yamanashi.jp/sisetsu/shisetsu/lodge/","https://www.minamialps-lodge.com/"],"officialUrl":"https://www.city.minami-alps.yamanashi.jp/sisetsu/shisetsu/lodge/"},
+
+ {"napId":"13784","name":"みずがき山グリーンロッジ","pref":"山梨","muni":"北杜市","verdict":"門落ち(単独利用不可)",
+  "reason":"公式の利用案内に「**みずがき山グリーンロッジは、団体様専用のキャンプ施設です。個人でのご利用はゴールデンウィークとお盆のみ可能です。**」と明記。営業期間（4月下旬〜11月中旬）の大半が個人利用不可。オートキャンプ1区画4,500円/1泊という料金自体は存在する",
+  "checkedUrls":["https://www.mizugakiyama-greenlodge.com/","https://www.mizugakiyama-greenlodge.com/?page_id=40","https://www.mizugakiyama-greenlodge.com/?page_id=42"],"officialUrl":"https://www.mizugakiyama-greenlodge.com/"}
+]

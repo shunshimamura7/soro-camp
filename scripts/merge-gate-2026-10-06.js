@@ -103,9 +103,16 @@ for (const file of files) {
         rejected.push({ napId: id, name: r.name, why: '追加なのに料金の根拠（priceNote）が無い' });
         continue;
       }
-      // 公式の住所に台帳の市町村名が入っているか
-      if (row.muni && !norm(r.address).includes(norm(row.muni))) {
+      // 公式の住所に台帳の市町村名が入っているか。
+      // **台帳の muni が「(不明)」のようなプレースホルダのときは市町村では照合できない**ので、
+      // 県名の一致だけを見る（ここで弾くと正当な追加まで落ちる。実際に落ちた）。
+      const muniUsable = row.muni && !/^\(|不明|^[-－]$/.test(row.muni);
+      if (muniUsable && !norm(r.address).includes(norm(row.muni))) {
         rejected.push({ napId: id, name: r.name, why: `公式住所に市町村名「${row.muni}」が無い（${r.address}）` });
+        continue;
+      }
+      if (!muniUsable && pref && !norm(r.address).includes(norm(pref))) {
+        rejected.push({ napId: id, name: r.name, why: `台帳の市町村が「${row.muni}」で照合できず、公式住所にも県名「${pref}」が無い（${r.address}）` });
         continue;
       }
       addById.set(id, { ...r, pref, muni: row.muni, napUrl: row.napUrl, napName: row.name });

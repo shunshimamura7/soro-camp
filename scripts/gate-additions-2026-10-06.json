@@ -3798,5 +3798,252 @@
   },
   "napUrl": "https://www.nap-camp.com/yamanashi/11360",
   "napName": "奥秋キャンプ"
+ },
+ {
+  "napId": "13592",
+  "name": "西湖キャンプビレッジ・ノーム",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "公式（gnome.hamayouresort.com）で住所（西湖1030）・名称が一致し、平日限定の「おまかせサイト」が1名でも3,300円で使える",
+  "checkedUrls": [
+   "https://gnome.hamayouresort.com/",
+   "https://gnome.hamayouresort.com/stay/kukaku/",
+   "https://gnome.hamayouresort.com/stay/omakase/",
+   "https://gnome.hamayouresort.com/facility/"
+  ],
+  "officialUrl": "https://gnome.hamayouresort.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡富士河口湖町西湖1030",
+  "priceMin": 3300,
+  "priceMax": 11550,
+  "priceNote": "**平日限定「おまかせサイト」3,300円（税込）〜／1泊（大人3名まで。1名でも同額）が最安。**通常の「林間サイト」は区画単位で9,350〜11,550円（税込）／1泊（最大5名）で、ソロでも区画1つ分。駐車場2台目は550円。**支払いはオンラインカード決済のみ**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://gnome.hamayouresort.com/facility/",
+    "quote": "シャワールーム コインシャワー（3分100円）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://gnome.hamayouresort.com/facility/",
+    "quote": "売店 薪や木炭などのキャンプ用品を管理棟で販売しています"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://gnome.hamayouresort.com/facility/",
+    "quote": "薪や木炭などのキャンプ用品を管理棟で販売しています"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://gnome.hamayouresort.com/stay/omakase/",
+    "quote": "ペットはリードまたはゲージにて同伴可。"
+   },
+   "nearbyOnsen": {
+    "value": "いずみの湯（キャンプ場から約150m。姉妹施設の日帰り温泉）",
+    "evidenceUrl": "https://gnome.hamayouresort.com/facility/",
+    "quote": "温泉（いずみの湯） キャンプ場から約150m 姉妹施設の日帰り温泉です"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/13592",
+  "napName": "西湖キャンプビレッジ・ノーム"
+ },
+ {
+  "napId": "13662",
+  "name": "硯の里キャンプ場",
+  "pref": "山梨",
+  "muni": "早川町",
+  "verdict": "追加",
+  "reason": "公式（suzuri-camp.jimdofree.com）で住所（早川町雨畑495）が一致し、入場料＋テント料金が明記されている",
+  "checkedUrls": [
+   "https://suzuri-camp.jimdofree.com/",
+   "https://suzuri-camp.jimdofree.com/ご利用料金-サービス案内/",
+   "https://suzuri-camp.jimdofree.com/施設案内/"
+  ],
+  "officialUrl": "https://suzuri-camp.jimdofree.com/",
+  "reservationUrl": null,
+  "address": "山梨県南巨摩郡早川町雨畑495",
+  "priceMin": 2000,
+  "priceMax": 3000,
+  "priceNote": "入場料＋テント料の合算。オンシーズン（4〜11月）は入場料 大人500円＋テント（1人用）1張り 平日1,500円／休日1,800円＝平日2,000円・休日2,300円。**オフシーズン（12〜3月）は入場料が大人1,200円に上がる**ので、冬の休日は1,200＋1,800＝3,000円になる。これを priceMax に採った。薪は1束600円で場内販売",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://suzuri-camp.jimdofree.com/ご利用料金-サービス案内/",
+    "quote": "薪 …………………………  1束 600円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://suzuri-camp.jimdofree.com/ご利用料金-サービス案内/",
+    "quote": "薪 1束600円／炭（3kg）1袋600円 ほか場内販売あり"
+   },
+   "nearbyOnsen": {
+    "value": "ヴィラ雨畑（車で5分）",
+    "evidenceUrl": "https://suzuri-camp.jimdofree.com/",
+    "quote": "周辺には、車で５分の所に温泉（ヴィラ雨畑）や、硯ミュージアム（硯匠庵）…"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/13662",
+  "napName": "硯の里キャンプ場"
+ },
+ {
+  "napId": "13891",
+  "name": "道志村久保キャンプ場",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "施設公式（kubo-camp.jp）で住所（道志村久保2447）・料金とも確認。**公式に「【ソロ来場者限定割引】※トップシーズンを除く宿泊者 入場料金無料」というソロ向けの割引制度がある**",
+  "checkedUrls": [
+   "https://kubo-camp.jp/",
+   "https://kubo-camp.jp/%E4%BA%88%E7%B4%84-%E6%96%99%E9%87%91-%E3%82%B5%E3%82%A4%E3%83%88%E7%B4%B9%E4%BB%8B/",
+   "https://kubo-camp.jp/facilities/"
+  ],
+  "officialUrl": "https://kubo-camp.jp/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村久保2447",
+  "priceMin": 2500,
+  "priceMax": 6300,
+  "priceNote": "基本料金は「宿泊入場料 大人(中学生から)800円/1泊、車1台1,000円/1泊」。**「【ソロ来場者限定割引】※トップシーズンを除く宿泊者 入場料金無料」**があるので、レギュラーシーズンのテントサイト2,500円がそのままソロの総額（車なしの場合）。**トップシーズンはソロ割引の対象外**で、最安サイト5,500円＋入場料800円＝6,300円。**予約は電話のみ・現金払いのみ**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://kubo-camp.jp/facilities/",
+    "quote": "五右衛門風呂　ドラム缶を使った五右衛門風呂を体験できます。1日1組 2,000円　※針葉樹1束無料"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://kubo-camp.jp/facilities/",
+    "quote": "コインシャワー　24時間利用可能　1回5分300円でご利用いただけます。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://kubo-camp.jp/facilities/",
+    "quote": "針葉樹400円/広葉樹600円から"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://kubo-camp.jp/facilities/",
+    "quote": "販売　針葉樹400円/広葉樹600円から　木炭3㎏ 1,000円"
+   },
+   "nearbyOnsen": {
+    "value": "紅椿の湯（営業10時〜21時／冬は20時。特別優待券あり）",
+    "evidenceUrl": "https://kubo-camp.jp/facilities/",
+    "quote": "近隣の温泉施設をご利用ください。紅椿の湯：営業10時から21時（冬20時）特別優待券あり"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/13891",
+  "napName": "道志村 久保キャンプ場"
+ },
+ {
+  "napId": "13900",
+  "name": "原始村キャンプ場",
+  "pref": "山梨",
+  "muni": "小菅村",
+  "verdict": "追加",
+  "reason": "施設公式（genshi-mura.com）で住所（小菅村1970）と**ソロ専用サイトの料金**を確認。1区画につき車1台分の駐車料金が無料",
+  "checkedUrls": [
+   "https://www.genshi-mura.com",
+   "https://www.genshi-mura.com/stay",
+   "https://www.genshi-mura.com/facility"
+  ],
+  "officialUrl": "https://www.genshi-mura.com",
+  "reservationUrl": null,
+  "address": "山梨県北都留郡小菅村1970",
+  "priceMin": 4700,
+  "priceMax": 4700,
+  "priceNote": "サイト課金＋施設利用料の合算。公式「ソロサイト　4,000円 (5m×4ｍ) ＋施設使用料」「【施設利用料】大人1名700円、子ども1名400円」→ 4,000＋700＝4,700円。「１区画のご予約につき、車１台分の駐車料金は無料」",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.genshi-mura.com/facility",
+    "quote": "シャワー室　男女2つずつシャワー室がご利用出来ます。1人1回300円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.genshi-mura.com/facility",
+    "quote": "受付＆売店（薪(針葉樹)1束、薪(広葉樹)1束 等を販売）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.genshi-mura.com/facility",
+    "quote": "薪(針葉樹) 1束／薪(広葉樹) 1束"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/13900",
+  "napName": "原始村キャンプ場"
+ },
+ {
+  "napId": "13929",
+  "name": "和みの里キャンプ場",
+  "pref": "山梨",
+  "muni": "都留市",
+  "verdict": "追加",
+  "reason": "門は通る（公式 nagomi-camp.com で住所・料金一致）が、**既に `nagomino-sato-tsuru` として掲載済み**の施設なので新規追加はしない（住所と公式URLが既存と一致）。**なっぷの hpUrl は「和風コテージ一位の宿」という別施設を指していて誤誘導だった**ので、検索で正しい公式を特定している",
+  "checkedUrls": [
+   "https://www.nagomi-camp.com/",
+   "http://fuyohs.sakura.ne.jp/ichii-yado/"
+  ],
+  "officialUrl": "https://www.nagomi-camp.com/",
+  "reservationUrl": null,
+  "address": "山梨県都留市戸沢1126",
+  "priceMin": 4000,
+  "priceMax": 8500,
+  "priceNote": "区画単位課金なのでソロでも同額。公式「【和みの里キャンプ場：宿泊】サイト利用可能スペース12.5m×12.5m　◆通常プラン◆１泊5,000円〜8,500円」「◆数量限定：格安プラン◆１泊4,000円〜7,500円」",
+  "features": {
+   "nearbyOnsen": {
+    "value": "天然温泉「芭蕉 月待ちの湯」が徒歩4分。キャンプ場利用の特別料金で大人720円→510円",
+    "evidenceUrl": "https://www.nagomi-camp.com/",
+    "quote": "徒歩圏内に天然温泉「芭蕉 月待ちの湯」…徒歩4分…キャンプ場ご利用特別料金　大人：720円→510円"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/13929",
+  "napName": "山の中の天然温泉　和みの里キャンプ場"
+ },
+ {
+  "napId": "13924",
+  "name": "CAMP AKAIKE",
+  "pref": "山梨",
+  "muni": "(不明)",
+  "verdict": "追加",
+  "reason": "門は通る（公式で住所一致、入場料1,500円＋ソロブッシュサイト1,000円〜＝2,500円）が、**既に `camp-akaike` として掲載済み**の施設なので新規追加はしない。施設名・住所・公式URLの3つすべてが既存と一致",
+  "checkedUrls": [
+   "https://www.camp-akaike.jp/"
+  ],
+  "officialUrl": "https://www.camp-akaike.jp/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡富士河口湖町精進550-127",
+  "priceMin": 2500,
+  "priceMax": 2500,
+  "priceNote": "入場料＋サイト料の合算。公式「入場料：大人（中学生以上）1,500円」＋「ソロブッシュ【最長32時間滞在アーリー＆レイトサービス】(テント・タープ等合計2張まで・ソロ専用) 1,000円〜」＝2,500円が公開下限。「土日・繁忙期料金有り」とあるが金額は非公開。税込",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.camp-akaike.jp/",
+    "quote": "シャワー(16:00〜翌8:00) 宿泊者　無料"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.camp-akaike.jp/",
+    "quote": "売店(受付棟) ジュース類（自動販売機）･アイス類･酒･ビール"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.camp-akaike.jp/",
+    "quote": "薪　500円〜"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.camp-akaike.jp/",
+    "quote": "ワンちゃん　200円（ワンちゃんWELCOME！）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/13924",
+  "napName": "CAMP AKAIKE（キャンプ アカイケ）"
  }
 ]

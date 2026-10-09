@@ -16991,5 +16991,212 @@
       "https://farmerswoodcabin.com/reservation/"
     ],
     "coordsVerified": false
+  },
+  {
+    "id": "saiko-camp-village-gnome",
+    "slug": "saiko-camp-village-gnome",
+    "name": "西湖キャンプビレッジ・ノーム",
+    "prefecture": "山梨",
+    "area": "西湖",
+    "status": "active",
+    "address": "山梨県南都留郡富士河口湖町西湖1030",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3300,
+    "priceMax": 11550,
+    "priceNote": "**平日限定「おまかせサイト」3,300円（税込）〜／1泊（大人3名まで。1名でも同額）が最安。**通常の「林間サイト」は区画単位で9,350〜11,550円（税込）／1泊（最大5名）で、ソロでも区画1つ分。駐車場2台目は550円。**支払いはオンラインカード決済のみ**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワールーム コインシャワー（3分100円）（https://gnome.hamayouresort.com/facility/）",
+      "firewood": true,
+      "firewoodNote": "薪や木炭などのキャンプ用品を管理棟で販売しています（https://gnome.hamayouresort.com/facility/）",
+      "shop": true,
+      "shopNote": "売店 薪や木炭などのキャンプ用品を管理棟で販売しています（https://gnome.hamayouresort.com/facility/）",
+      "pet": true,
+      "petNote": "ペットはリードまたはゲージにて同伴可。（https://gnome.hamayouresort.com/stay/omakase/）",
+      "nearbyOnsen": "いずみの湯（キャンプ場から約150m。姉妹施設の日帰り温泉）（https://gnome.hamayouresort.com/facility/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "西湖の「キャンプビレッジ・ノーム」。**平日限定の「おまかせサイト」が3,300円（大人3名まで・1名でも同額）**で、区画を選べない代わりに安い。姉妹施設の日帰り温泉「いずみの湯」が約150mという立地。管理棟で薪・木炭を売っている。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://gnome.hamayouresort.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**3,300円は平日限定の「おまかせサイト」。**通常の林間サイトは区画単位で9,350〜11,550円で、ソロでも区画1つ分を払う",
+      "**支払いはオンラインカード決済のみ**",
+      "駐車場は2台目から550円",
+      "シャワーはコイン式（3分100円）で、場内に風呂は無い",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://gnome.hamayouresort.com/"
+    ]
+  },
+  {
+    "id": "suzuri-no-sato",
+    "slug": "suzuri-no-sato",
+    "name": "硯の里キャンプ場",
+    "prefecture": "山梨",
+    "area": "早川町",
+    "status": "active",
+    "address": "山梨県南巨摩郡早川町雨畑495",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2000,
+    "priceMax": 3000,
+    "priceNote": "入場料＋テント料の合算。オンシーズン（4〜11月）は入場料 大人500円＋テント（1人用）1張り 平日1,500円／休日1,800円＝平日2,000円・休日2,300円。**オフシーズン（12〜3月）は入場料が大人1,200円に上がる**ので、冬の休日は1,200＋1,800＝3,000円になる。これを priceMax に採った。薪は1束600円で場内販売",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "薪 …………………………  1束 600円（https://suzuri-camp.jimdofree.com/ご利用料金-サービス案内/）",
+      "shop": true,
+      "shopNote": "薪 1束600円／炭（3kg）1袋600円 ほか場内販売あり（https://suzuri-camp.jimdofree.com/ご利用料金-サービス案内/）",
+      "nearbyOnsen": "ヴィラ雨畑（車で5分）（https://suzuri-camp.jimdofree.com/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "早川町雨畑、硯の産地。**入場料500円＋1人用テント1張り1,500円でソロ2,000円**（オンシーズンの平日）。薪は1束600円で場内販売。車で5分に温泉（ヴィラ雨畑）と硯ミュージアムがある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://suzuri-camp.jimdofree.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**オフシーズン（12〜3月）は入場料が大人500円→1,200円に上がる。**冬の休日だと総額3,000円",
+      "休日はテント料が1,800円（平日1,500円）",
+      "場内の風呂・シャワーについて公式に記載が無い。**事前に確認したほうがいい**",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://suzuri-camp.jimdofree.com/"
+    ]
+  },
+  {
+    "id": "doshi-kubo-camp",
+    "slug": "doshi-kubo-camp",
+    "name": "道志村久保キャンプ場",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "status": "active",
+    "address": "山梨県南都留郡道志村久保2447",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2500,
+    "priceMax": 6300,
+    "priceNote": "基本料金は「宿泊入場料 大人(中学生から)800円/1泊、車1台1,000円/1泊」。**「【ソロ来場者限定割引】※トップシーズンを除く宿泊者 入場料金無料」**があるので、レギュラーシーズンのテントサイト2,500円がそのままソロの総額（車なしの場合）。**トップシーズンはソロ割引の対象外**で、最安サイト5,500円＋入場料800円＝6,300円。**予約は電話のみ・現金払いのみ**",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "五右衛門風呂　ドラム缶を使った五右衛門風呂を体験できます。1日1組 2,000円　※針葉樹1束無料（https://kubo-camp.jp/facilities/）",
+      "shower": true,
+      "showerNote": "コインシャワー　24時間利用可能　1回5分300円でご利用いただけます。（https://kubo-camp.jp/facilities/）",
+      "firewood": true,
+      "firewoodNote": "針葉樹400円/広葉樹600円から（https://kubo-camp.jp/facilities/）",
+      "shop": true,
+      "shopNote": "販売　針葉樹400円/広葉樹600円から　木炭3㎏ 1,000円（https://kubo-camp.jp/facilities/）",
+      "nearbyOnsen": "紅椿の湯（営業10時〜21時／冬は20時。特別優待券あり）（https://kubo-camp.jp/facilities/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "道志村久保。**公式に「【ソロ来場者限定割引】※トップシーズンを除く宿泊者 入場料金無料」というソロ向けの割引がある**のが珍しく、レギュラーシーズンならテントサイト2,500円がそのまま総額になる（車なしの場合）。ドラム缶の五右衛門風呂（1日1組2,000円・針葉樹1束無料）が体験できる。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://kubo-camp.jp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**トップシーズンはソロ割引の対象外。**最安サイト5,500円＋入場料800円で6,300円になる",
+      "車で行くなら1台1,000円／1泊が加算される",
+      "**予約は電話のみ・支払いは現金のみ**",
+      "**大浴場は営業を中止している**（公式は近隣の紅椿の湯を案内）。五右衛門風呂は1日1組の別料金",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://kubo-camp.jp/"
+    ]
+  },
+  {
+    "id": "genshi-mura-camp",
+    "slug": "genshi-mura-camp",
+    "name": "原始村キャンプ場",
+    "prefecture": "山梨",
+    "area": "小菅村",
+    "status": "active",
+    "address": "山梨県北都留郡小菅村1970",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 4700,
+    "priceMax": 4700,
+    "priceNote": "サイト課金＋施設利用料の合算。公式「ソロサイト　4,000円 (5m×4ｍ) ＋施設使用料」「【施設利用料】大人1名700円、子ども1名400円」→ 4,000＋700＝4,700円。「１区画のご予約につき、車１台分の駐車料金は無料」",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー室　男女2つずつシャワー室がご利用出来ます。1人1回300円（https://www.genshi-mura.com/facility）",
+      "firewood": true,
+      "firewoodNote": "薪(針葉樹) 1束／薪(広葉樹) 1束（https://www.genshi-mura.com/facility）",
+      "shop": true,
+      "shopNote": "受付＆売店（薪(針葉樹)1束、薪(広葉樹)1束 等を販売）（https://www.genshi-mura.com/facility）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "小菅村の原始村。**公式に「ソロサイト 4,000円 (5m×4ｍ)」という専用区画があり**、施設利用料700円を足して4,700円。**1区画につき車1台分の駐車料金が無料**。シャワー室は男女2つずつで1回300円。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.genshi-mura.com",
+    "reservationUrl": null,
+    "cautions": [
+      "施設利用料700円がサイト料に加算される（公式の表記はサイト料と別建て）",
+      "シャワーは1人1回300円の別料金",
+      "場内に風呂は無い（公式に記載なし）",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.genshi-mura.com"
+    ]
   }
 ]
