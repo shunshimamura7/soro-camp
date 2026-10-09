@@ -58,3 +58,5 @@ scripts/shots-2026-10-06/
 
 # 門の束の入力（台帳から機械的に作り直せる）。**結果の out-*.json は追跡する**
 scripts/.gate-raw/in-*.json
+scripts/.gate-raw/sz-in-*.json
+scripts/.gate-raw/kn-in-*.json

@@ -35,6 +35,7 @@ const files = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const LEDGERS = {
   千葉: path.join(ROOT, 'data', 'chiba-nap-triage-2026-10-06.json'),
   山梨: path.join(ROOT, 'data', 'yamanashi-nap-triage-2026-10-06.json'),
+  静岡: path.join(ROOT, 'data', 'shizuoka-nap-triage-2026-10-10.json'),
 };
 const ADDITIONS = path.join(__dirname, 'gate-additions-2026-10-06.json');
 
@@ -64,7 +65,15 @@ const rowOf = new Map(); // napId -> {pref, row}
 for (const [pref, p] of Object.entries(LEDGERS)) {
   const j = JSON.parse(fs.readFileSync(p, 'utf8'));
   loaded[pref] = j;
-  for (const r of j.rows || []) rowOf.set(String(r.napId), { pref, row: r });
+  for (const r of j.rows || []) {
+    const id = String(r.napId);
+    // なっぷの施設IDは県をまたいで一意なはずだが、取り違えると県違いの行に書き込むので止める
+    if (rowOf.has(id)) {
+      console.error(`中止: napId ${id} が ${rowOf.get(id).pref} と ${pref} の台帳に重複している`);
+      process.exit(1);
+    }
+    rowOf.set(id, { pref, row: r });
+  }
 }
 
 let additions = [];
