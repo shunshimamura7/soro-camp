@@ -1,0 +1,75 @@
+[
+ {"napId":"11841","name":"はるの川音の郷","pref":"静岡","muni":"浜松市","verdict":"追加",
+  "reason":"施設公式（kawaoto.jp）で住所（浜松市天竜区春野町宮川2098-1）の一致を確認。利用案内に「暖房器具を使用しての冬場のテント泊もお楽しみいただけます」とありテント泊が前提。「第2・第3キャンプサイト1泊 5,400円」は定員5名までの区画料金で、最低利用人数の明記は無い。サイト料金に駐車1台分が含まれ、入場料は定員超過時のみ",
+  "checkedUrls":["https://kawaoto.jp/","https://kawaoto.jp/charge/","https://kawaoto.jp/facility/","https://kawaoto.jp/facility/stay.php","https://kawaoto.jp/access/","https://kawaoto.jp/charge/charge_2503.pdf"],
+  "officialUrl":"https://kawaoto.jp/","reservationUrl":"https://kawaoto.revn.jp/",
+  "address":"静岡県浜松市天竜区春野町宮川2098-1","priceMin":5400,"priceMax":5400,
+  "priceNote":"区画単位の定額。公式「ご利用料金」より「第2・第3キャンプサイト1泊 5,400円」（定員5名・駐車1台分込み）。**5名まで同額なのでソロでも5,400円を1人で負担する。**入場料（大人1,000円／子供500円）は定員を超えたときだけ。**キャンプサイトの料金表に税込／税別の明記が無い**（同時期の料金改定PDFではドッグサイトについて「新料金（税込）」と書かれている）",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://kawaoto.jp/charge/","quote":"お風呂（家族風呂） 1,500円 30分"},
+    "shower":{"value":true,"evidenceUrl":"https://kawaoto.jp/charge/","quote":"シャワー 500円 15分"},
+    "firewood":{"value":true,"evidenceUrl":"https://kawaoto.jp/charge/","quote":"マキ（1巻き） 500円"},
+    "shop":{"value":true,"evidenceUrl":"https://kawaoto.jp/facility/","quote":"管理等に売店を付帯しております。"}},
+  "coordsFromOfficialMap":{"lat":34.9774615,"lng":137.9089875,"url":"https://kawaoto.jp/access/"}},
+
+ {"napId":"11842","name":"べんてんじまヴィレッジ","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"浜松市の旅館業台帳（自治体公式）に「べんてんじまヴィレッジ　静岡県浜松市天竜区春野町川上383番地の2」の登録があり施設の存在と住所は確認できたが、**施設自体の公式サイトが施設名・地名・電話番号のどのクエリでも見つからず**、出てくるのはなっぷ・Campla・いこーよ・地域ブログ等の二次情報源だけ。テント泊可否・1名利用可否・料金のいずれも公式で確認できない",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11842","https://www.city.hamamatsu.shizuoka.jp/"],
+  "officialUrl":null},
+
+ {"napId":"11844","name":"森山バンガロー","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式が見つからない。施設名・「公式」併記・電話番号で検索したが、出てくるのはなっぷ・Campla・camp-quests・静岡新聞アットエス・hinata 等の二次情報源のみ。浜松市の旅館業台帳にも該当の登録が見当たらない。**なお じゃらんnet に「閉鎖などの理由により基本情報を表示しておりません」の注記があったが、これは掲載側の定型文で、他の掲載サイトは継続しているため閉鎖の確証とはしなかった**",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11844"],
+  "officialUrl":null},
+
+ {"napId":"11845","name":"明野キャンプ場","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式が見つからない。施設名・地名・電話番号で検索したが、見つかったのは GAZOO・るるぶ・浜松浜名湖だいすきネット・地域住民有志の情報サイト等の二次情報源だけ。浜松市の旅館業台帳にも該当の登録が見当たらない",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11845","https://harunoch.web.fc2.com/"],
+  "officialUrl":null},
+
+ {"napId":"11846","name":"秋葉オートキャンプ場","pref":"静岡","muni":"浜松市","verdict":"追加",
+  "reason":"施設公式（akiha-camp.com）で住所（浜松市天竜区春野町領家364）の一致を確認。**公式に「ソロキャンプ 2,000円〜 ※区画サイト ・1名迄 ・電源なし ・車両乗入OK ・ペットOK」という1名専用の区画サイトがあり、入場料も「無料」と明記。**料金・設備はなっぷではなく公式サイト本文だけを根拠にしている。**サブエージェントは同じ引用にある「ペットOK」を features に入れていなかったので、本体側で pet を足した**",
+  "checkedUrls":["https://akiha-camp.com/","https://akiha-camp.com/guide","https://akiha-camp.com/facilites","https://akiha-camp.com/access"],
+  "officialUrl":"https://akiha-camp.com/","reservationUrl":"https://www.nap-camp.com/shizuoka/11846",
+  "address":"静岡県浜松市天竜区春野町領家364","priceMin":2000,"priceMax":2000,
+  "priceNote":"1名専用サイトの定額。公式「ソロキャンプ 2,000円〜 ※区画サイト ・1名迄 ・電源なし ・車両乗入OK ・ペットOK」＋「入場料 無料」。車の乗入れ込みで2,000円。**公式の表記が「2,000円〜」で休前日等の変動があり得るが上限の記載が見当たらない。税込／税別の明記も無い。公式に「※予約は全てなっぷで行っています。」とあり予約はなっぷ経由**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://akiha-camp.com/facilites","quote":"管理棟　売店　自動販売機　トイレ　シャワー室　炊事場"},
+    "firewood":{"value":true,"evidenceUrl":"https://akiha-camp.com/facilites","quote":"売店メニュー 薪　炭　カセットコンロ用ガス　氷　ビール　カップラーメン　お菓子　アイスクリーム　花火　サンダル等"},
+    "shop":{"value":true,"evidenceUrl":"https://akiha-camp.com/facilites","quote":"管理棟　売店　自動販売機　トイレ　シャワー室　炊事場"},
+    "pet":{"value":true,"evidenceUrl":"https://akiha-camp.com/","quote":"ソロキャンプ 2,000円〜 ※区画サイト ・1名迄 ・電源なし ・車両乗入OK ・ペットOK"}},
+  "coordsFromOfficialMap":{"lat":34.95294072993344,"lng":137.88332834532338,"url":"https://akiha-camp.com/access"}},
+
+ {"napId":"11847","name":"小川の里オートキャンプ場","pref":"静岡","muni":"浜松市","verdict":"追加",
+  "reason":"施設公式（ogawanosato.com）で住所（浜松市天竜区小川1800）の一致を確認。**公式の利用料金に「オートキャンプ、ソロキャンプ（宿泊） 大人：１名様につき２，０００円」とソロキャンプが明示されている。**利用案内の「8m×8mでテント1つ、タープ1つ、車1台程度を基準」からテント泊が前提",
+  "checkedUrls":["https://www.ogawanosato.com/","https://www.ogawanosato.com/概要/","https://www.ogawanosato.com/利用料金/","https://www.ogawanosato.com/利用案内/","https://www.ogawanosato.com/施設案内/","https://www.ogawanosato.com/アクセス/"],
+  "officialUrl":"https://www.ogawanosato.com/","reservationUrl":"https://www.ogawanosato.com/予約/",
+  "address":"静岡県浜松市天竜区小川1800","priceMin":2000,"priceMax":2000,
+  "priceNote":"人数課金のみ。公式「利用料金」より「オートキャンプ、ソロキャンプ（宿泊） 大人：１名様につき２，０００円」。駐車は料金に含まれ、入場料の記載は無い。**税込／税別の明記が無い**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.ogawanosato.com/利用案内/","quote":"施設内にシャワー(１回１５分３００円)がございます。"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.ogawanosato.com/利用料金/","quote":"薪 針葉樹：１かご500円 薪 広葉樹：１かご700円"},
+    "pet":{"value":true,"evidenceUrl":"https://www.ogawanosato.com/利用案内/","quote":"ペットの入場は可能です。"},
+    "nearbyOnsen":{"value":"龍山入浴施設「やすらぎの湯」（車で15分程度）","evidenceUrl":"https://www.ogawanosato.com/利用案内/","quote":"また車で１５分程度の場所に入浴施設がございますので、ご希望の方は以下をご参照ください。 施設名：龍山入浴施設 「やすらぎの湯」 所在地：浜松市天竜区龍山町戸倉711-2"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11848","name":"小川の里 一景","pref":"静岡","muni":"浜松市","verdict":"門落ち(既存レコードと重複)",
+  "reason":"**「一景（いっけい）」は小川の里オートキャンプ場（napId 11847・同じ束で追加）の公式サイト自身が「小川の里入り口の高台は、周辺地域（小川）で一番の景観が望めることから、一景（いっけい）と呼ばれております」と説明している敷地内の展望スポットの名称で、独立した別施設ではない。**台帳の住所（小川1839-1）は本体（小川1800）と違うが、独立施設としての公式情報源（専用サイト・旅館業台帳の個別登録）が一切見つからない",
+  "checkedUrls":["https://www.ogawanosato.com/","https://www.nap-camp.com/shizuoka/11848"],
+  "officialUrl":null},
+
+ {"napId":"11849","name":"星降るみさくぼキャンプ場よつばの杜","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"施設専用の公式サイトが見つからない。浜松市の食品衛生台帳（自治体公式）に「静岡県浜松市天竜区水窪町奥領家4192番地の2」として登録があり台帳の住所と一致、市の広報記事でも「よつばの杜キャンプ場」として紹介されているが、**いずれも紹介であって料金・1名利用可否・テント泊の詳細が書かれていない。**じゃらん等の二次情報源には料金があるが根拠に使えない。**2023年のInstagram投稿に「旧よつばの杜テントサウナより受け継ぎました新オーナーです」とあり運営者が変わった様子だが、閉鎖を示す公式情報ではないので閉鎖疑いにはしていない**",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11849","https://www.city.hamamatsu.shizuoka.jp/"],
+  "officialUrl":null},
+
+ {"napId":"11850","name":"上阿多古バンガロー","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"浜松市の旅館業台帳（自治体公式）に「上阿多古キャンプセンター　静岡県浜松市天竜区西藤平1542番地」の登録があり住所は台帳と一致した（名称は違うが同一住所なので同一施設と判断）。だが**施設自体の公式サイトが無く**、出てくるのは CityDO!・アソビュー・なっぷ・Campla・hinata 等の二次情報源のみ。テント泊可否・1名利用可否・料金のいずれも公式で確認できない",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11850","https://www.city.hamamatsu.shizuoka.jp/"],
+  "officialUrl":null},
+
+ {"napId":"11851","name":"あたご島キャンプ場","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"浜松市の旅館業台帳に「プチハウスATAGO」、公衆浴場台帳に「あたご島露天風呂」として**いずれも台帳の住所（西藤平207-1）と一致する登録**があり、同じ場所にロッジ型宿泊施設と露天風呂の営業許可があることは確認できた。だが台帳は名称と許可種別だけで、キャンプ場としての料金・1名利用可否・テント泊可否が分からない。運営者と思われる Facebook／Instagram は**ログインなしでは本文が表示されず確認できなかった。**二次情報源には「食材や器材はすべて持ち込み」「チェックイン／チェックアウト記載なし」とあり日帰りBBQ中心の可能性もあるが、公式に明記が無いので宿泊可否も含め確定できない",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11851","https://www.city.hamamatsu.shizuoka.jp/","https://www.facebook.com/atagotou","https://www.instagram.com/atagoto.bbq/"],
+  "officialUrl":null}
+]

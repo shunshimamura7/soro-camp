@@ -1,0 +1,57 @@
+[
+ {"napId":"11879","name":"丸火自然公園グリーンキャンプ場","pref":"静岡","muni":"富士市","verdict":"追加",
+  "reason":"施設公式（fuji-marubi.jp／富士市立少年自然の家が運営）で住所（富士市大淵10847-1）の一致を確認。「テントサイト 西20サイト（1番〜20番）／東15サイト（21番〜35番）」で持込テント泊可。「サイト使用料 １サイト　1,000円／1泊（大人・小人計5名まで）」の区画定額で、FAQ にも「Q　テントは２張り以上張れますか？ -ソロ用の小さいテントなら、サイトによっては可能です」とソロ前提の記述がある",
+  "checkedUrls":["https://www.fuji-marubi.jp/campground/","https://www.fuji-marubi.jp/access/","https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007455.html"],
+  "officialUrl":"https://www.fuji-marubi.jp/campground/","reservationUrl":"https://www.nap-camp.com/shizuoka/11879",
+  "address":"静岡県富士市大淵10847-1","priceMin":1000,"priceMax":1000,
+  "priceNote":"区画単位の定額。公式「サイト使用料 １サイト　1,000円／1泊（大人・小人計5名まで）」で人数による変動は無く、駐車場（P2・P3）は無料、入場料の記載も無い。**税込／税別の明記が無い。予約は公式が指定するなっぷ経由（料金自体は公式に掲載）**",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://www.fuji-marubi.jp/campground/","quote":"Q　薪は当日買えますか？ -買えます。１束500円で販売しております。チェックイン時に窓口にてご購入ください。（8：30〜17：00）"},
+    "pet":{"value":true,"evidenceUrl":"https://www.fuji-marubi.jp/campground/","quote":"-ペットには必ずリードを使用し、糞はお持ち帰りください。（野生動物に影響を与えてしまいます）"}},
+  "coordsFromOfficialMap":{"lat":35.2319528,"lng":138.7222587,"url":"https://www.fuji-marubi.jp/access/"}},
+
+ {"napId":"11880","name":"オートキャンプ場・麓晃庵","pref":"静岡","muni":"富士市","verdict":"門落ち(公式なし)",
+  "reason":"なっぷ以外の施設公式・富士市公式の情報源が見つからない。施設名単独・住所（富士市大淵4009）・電話番号など複数のクエリで検索したが該当結果が一件も出ず、富士市公式のサイト内検索でも該当なし",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11880","https://www.city.fuji.shizuoka.jp/"],
+  "officialUrl":null},
+
+ {"napId":"11881","name":"野田山健康緑地公園「富士川キャンプ場」","pref":"静岡","muni":"富士市","verdict":"門落ち(既存レコードと重複)",
+  "reason":"**既存レコード `fujikawa-camp`（「野田山健康緑地公園 富士川キャンプ場」／静岡県富士市中之郷4482-141／officialUrl `https://fujikawa-camp.jp/`）と同一施設。**本体側の3キー照合で公式URLが完全一致した（公式表記の「4482番地の141」と既存の「4482-141」は同じ住所）。**なお今回の調査で公式アクセスページの座標（35.148164, 138.59775）が取れている。既存レコードは needsCoord のままなので、座標の反映は別途やる価値がある（引き継ぎメモに記載）**",
+  "checkedUrls":["https://fujikawa-camp.jp/","https://fujikawa-camp.jp/price/","https://fujikawa-camp.jp/facilities/","https://fujikawa-camp.jp/faq/","https://fujikawa-camp.jp/access/","https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007433.html"],
+  "officialUrl":"https://fujikawa-camp.jp/"},
+
+ {"napId":"13541","name":"PICA初島（旧：初島アイランドリゾート）","pref":"静岡","muni":"熱海市","verdict":"宿泊系のため対象外",
+  "reason":"施設公式（pica-resort.jp/hatsushima）の「宿泊施設」一覧は**アイランドヴィラ プレミア／グランデ／テラス／コージー／オーシャンの5種だけで全てヴィラ（コテージ）形式。**持込テントサイトの選択肢が無い（「テント編」等はキャンプ初心者向けのコラムへのリンクで宿泊施設ではない）",
+  "checkedUrls":["https://www.pica-resort.jp/hatsushima/","https://www.pica-resort.jp/hatsushima/stay/plan/index.html","https://www.pica-resort.jp/hatsushima/stay/site/index.html"],
+  "officialUrl":"https://www.pica-resort.jp/hatsushima/"},
+
+ {"napId":"13542","name":"熊平水辺の里オートキャンプ場","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"浜松市公式・なっぷ以外の情報源が見つからない。施設名・住所（浜松市天竜区熊976）など複数のクエリで検索したが該当結果が得られず、浜松市公式の観光ページにも記載が無い。**なお検索エンジン側の事情で「熊」を含むクエリがクマ出没情報に引っ張られ続けたため、再確認の余地がある**",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/13542","https://www.city.hamamatsu.shizuoka.jp/","https://www.city.hamamatsu.shizuoka.jp/attraction/index.html"],
+  "officialUrl":null},
+
+ {"napId":"13584","name":"細野高原ツリーハウス村キャンプ場","pref":"静岡","muni":"東伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"東伊豆町公式・なっぷ以外の情報源が見つからない。町公式の観光情報ページにも該当施設の記載が無い。**検索が無関係な同名の人名・商品に引っ張られ続けたため、再確認の余地がある**",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/13584","https://www.town.higashiizu.lg.jp/","https://www.town.higashiizu.lg.jp/kanko_bunka_sports/kankojyohou/index.html"],
+  "officialUrl":null},
+
+ {"napId":"13618","name":"赤石小屋","pref":"静岡","muni":"静岡市","verdict":"UNMEASURED",
+  "reason":"南アルプスの山小屋群を運営する特種東海フォレスト株式会社の公式で確認（赤石小屋は［静岡県営］で同社が受託運営）。「テント場 15張程度」「幕営料(一人) 2,000円」（繁忙日は3,000円）と1人単位の料金があり、「幕営地でのテント泊は予約制をとらず、当日の受け付けです。」と**予約不要**の明記もある。**ただし車両ではアクセスできず登山道からしか行けない山小屋のテント場で、当サイトが扱うソロキャンプ場とは性格が違う。既に「山小屋のテント場は UNMEASURED」の前例（千葉・山梨の門）があるので、それに揃えて判断待ちにした。**公式に番地の記載も無く、住所は「静岡市葵区田代」までしか取れない",
+  "checkedUrls":["https://www.t-forest.com/","https://www.t-forest.com/alpsinfo/climber/","https://www.t-forest.com/alpsinfo/climber/lodgeinfo/","https://www.t-forest.com/alpsinfo/reservation/"],
+  "officialUrl":"https://www.t-forest.com/alpsinfo/climber/lodgeinfo/"},
+
+ {"napId":"13664","name":"キャンプ山の上","pref":"静岡","muni":"南伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"南伊豆町公式・なっぷ以外の情報源が見つからない。町公式の観光カテゴリにも記載が無い。**検索が長野県の同名の天然記念物に引っ張られ続けたため、再確認の余地がある。**なお束03でも同名の「キャンプ山の家」（蛇石676-7）を同じ理由で門落ちにしている",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/13664","https://www.town.minamiizu.shizuoka.jp/","https://www.town.minamiizu.shizuoka.jp/category/bunya/kanko/"],
+  "officialUrl":null},
+
+ {"napId":"13670","name":"堂ヶ島ランドホピア","pref":"静岡","muni":"西伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"西伊豆町公式・施設公式・なっぷ以外の情報源が見つからない。表記違いの可能性も含めて検索したが、堂ヶ島自体は著名な観光地で結果は多数出るものの、本施設名への言及が観光協会ページ・まとめブログを含め一件も確認できなかった。**同系列と思われる「南伊豆ランドホピア」（hopia.jp）は束sz-02で宿泊系として対象外にしている**",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/13670"],
+  "officialUrl":null},
+
+ {"napId":"13674","name":"ヴィラ弓ヶ浜","pref":"静岡","muni":"南伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"南伊豆町公式・施設公式・なっぷ以外の情報源が見つからない。町公式の弓ヶ浜関連ページ（弓ヶ浜海水浴場でのキャンプについて等）にも「ヴィラ弓ヶ浜」への言及が無い",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/13674","https://www.town.minamiizu.shizuoka.jp/docs/2013031300498/"],
+  "officialUrl":null}
+]

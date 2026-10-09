@@ -1,0 +1,88 @@
+[
+ {"napId":"11852","name":"石神の里キャンプ場","pref":"静岡","muni":"浜松市","verdict":"追加",
+  "reason":"施設公式（ishigaminosato.com）で住所（浜松市天竜区石神1455-2）の一致を確認。「林間・川原フリーサイト（車両乗入れ不可）」でテント泊可、定員は上限（3名）の指定だけ。**本体側で /fee/ と /freesite/ を取得し直して突き合わせた。/freesite/ に「利用料（環境維持費、ゴミ管理費含む）：1,000円／人（16歳以上）」「車：1,000円／台、バイク：500円／台（乗入れ不可、60〜90m程度離れた駐車場）」があり、日別カレンダーには基本料金0円の日もある。一方 /fee/ はフリーサイトを「税込料金：2,000円〜」と表示していて読みが食い違う**ので、両方の読みが収まる幅にした",
+  "checkedUrls":["https://ishigaminosato.com/","https://ishigaminosato.com/fee/","https://ishigaminosato.com/info/","https://ishigaminosato.com/facility/","https://ishigaminosato.com/freesite/","https://ishigaminosato.com/ohuro/"],
+  "officialUrl":"https://ishigaminosato.com/","reservationUrl":"https://ishigaminosato.com/freesite/",
+  "address":"静岡県浜松市天竜区石神1455-2","priceMin":1000,"priceMax":7000,
+  "priceNote":"日別の基本料金＋人数課金（＋車なら駐車料）。公式に「料金表（税込）」の明記あり。**料金の読み方に幅がある。**/freesite/ の内訳は「利用料（環境維持費、ゴミ管理費含む）：1,000円／人（16歳以上）」＋日別の基本料金で、カレンダーに基本料金0円の日があるため車なしソロなら1,000円。ところが /fee/ では同じ林間・川原フリーサイトが「税込料金：2,000円〜」と表示されている。上限は大型オートサイトのハイシーズンで基本5,000円＋人数1,000円＋車1,000円＝7,000円。**予約時に総額を確認すること。**車は1,000円／台、バイクは500円／台（いずれも乗入れ不可で60〜90m離れた駐車場）",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://ishigaminosato.com/ohuro/","quote":"貸切家族風呂 シャワーと浴槽付きの貸切家族風呂 税込価格：3,000円/90分 １日４組（時間予約制）"},
+    "shower":{"value":true,"evidenceUrl":"https://ishigaminosato.com/info/","quote":"共有設備 水洗トイレ 飲料用自動販売機 屋外水場 シャワー ゴミ置き場 薪・炭販売所 灰捨て場 管理棟"},
+    "firewood":{"value":true,"evidenceUrl":"https://ishigaminosato.com/info/","quote":"薪・炭販売所"},
+    "shop":{"value":true,"evidenceUrl":"https://ishigaminosato.com/info/","quote":"共有設備 水洗トイレ 飲料用自動販売機 屋外水場 シャワー ゴミ置き場 薪・炭販売所 灰捨て場 管理棟"},
+    "pet":{"value":true,"evidenceUrl":"https://ishigaminosato.com/fee/","quote":"ペットはリード着用。ムダ吠え禁止。長時間吠えないようにご注意ください"}},
+  "coordsFromOfficialMap":{"lat":34.901432879851086,"lng":137.76335425147013,"url":"https://ishigaminosato.com/info/"}},
+
+ {"napId":"11853","name":"龍山秘密村","pref":"静岡","muni":"浜松市","verdict":"追加",
+  "reason":"施設公式（himitsumura.com）で確認。ロッジ・コテージとは別区分の「テントサイト」が明記されテント泊可、単独利用を妨げる記載も無い。**「料金はすべて税込表記です」と明記。公式の住所は「龍山町大嶺1371-2」で台帳の「1371-5」と番地末尾が違うが、施設名・大字が一致する施設は他に無いので同一施設とした**",
+  "checkedUrls":["https://himitsumura.com/","https://himitsumura.com/about","https://himitsumura.com/booking","https://www.nap-camp.com/shizuoka/11853"],
+  "officialUrl":"https://himitsumura.com/","reservationUrl":"https://himitsumura.com/booking",
+  "address":"静岡県浜松市天竜区龍山町大嶺1371-2","priceMin":2200,"priceMax":2200,
+  "priceNote":"人数課金のみ（税込明記）。公式「テントサイト 平日 ¥2,200／大人 ¥1,100／小学生以下」「休日 ¥2,200／大人」「ピーク 7・8月 ¥2,200／大人」で**平日・休日・ピークのいずれも大人1名2,200円で変動しない。**「料金はすべて税込表記です」と明記。公式に「秘密村はオートキャンプ場ではありません。広場へは自動車を乗り入れないでください」とあり、駐車場の追加料金の記載は無い。**公式の住所（大嶺1371-2）は台帳の1371-5と番地末尾が違う**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://himitsumura.com/about","quote":"シャワールーム 料金 １０分：５００円　　延長５分：２５０円"},
+    "shop":{"value":true,"evidenceUrl":"https://himitsumura.com/about","quote":"売店でも販売しております。"},
+    "pet":{"value":true,"evidenceUrl":"https://himitsumura.com/about","quote":"ペット の場内への受け入れは可能です。 テントサイト内では、リードにつなぎ放し飼いはしないようにお願いします。 コテージ・ロッジは、ペット同伴でのご利用は頂けません。"}},
+  "coordsFromOfficialMap":{"lat":34.9921408,"lng":137.7626654,"url":"https://himitsumura.com/"}},
+
+ {"napId":"11854","name":"静岡県立森林公園キャンプ場","pref":"静岡","muni":"浜松市","verdict":"門落ち(宿泊不可)",
+  "reason":"県立森林公園の公式（kenritsu-shinrinkouen.jp）「キャンプ場・炊飯棟」ページに「森林公園では決められた場所でしかテントの設営・火の利用はできません。ルールを守ってデイキャンプをお楽しみください。**（宿泊は不可）**」と明記。利用時間も「午前10時から午後4時」のデイキャンプのみ。**公式の住所は「浜松市浜名区尾野2597-7」で、台帳の「浜北区」は2024年の区再編前の旧区名（同じ場所）**",
+  "checkedUrls":["https://kenritsu-shinrinkouen.jp/","https://kenritsu-shinrinkouen.jp/facilities/camp/","https://kenritsu-shinrinkouen.jp/access/","https://kenritsu-shinrinkouen.jp/guide/"],
+  "officialUrl":"https://kenritsu-shinrinkouen.jp/"},
+
+ {"napId":"11855","name":"てんてんゴーしぶ川","pref":"静岡","muni":"浜松市","verdict":"追加",
+  "reason":"施設公式（tentengo.jp）で確認。「サイトはオートキャンプができ、フリーテントもございます。」でテント泊可、単独利用を妨げる記載も無い。全ページ末尾に「※ご利用料金などはすべて税込価格となっております。」の明記あり。**公式の住所表記は「浜松市北区引佐町渋川237-1」で、北区は2024年の区再編前の旧区名（現在は浜名区）**",
+  "checkedUrls":["http://www.tentengo.jp/","http://www.tentengo.jp/menu-1.php","http://www.tentengo.jp/menu-2.php","http://www.tentengo.jp/menu-3.php","http://www.tentengo.jp/menu-4.php"],
+  "officialUrl":"http://www.tentengo.jp/","reservationUrl":null,
+  "address":"静岡県浜松市北区引佐町渋川237-1","priceMin":4000,"priceMax":4500,
+  "priceNote":"区画単位の定額（税込明記）。公式「オートキャンプ　１サイト　　　4,000円　（電源サイト　4,500円）」で、1サイト1台・何名でも同額。フリーテントの個別料金は公式に数値の記載が無い。**公式に「料金はご予約の際に電話にてご確認ください」との注記があり、予約は電話のみ（「予約は電話のみとさせていただきます」と明記）**",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"http://www.tentengo.jp/menu-1.php","quote":"共同浴場があります。利用時間は午後５時～午後１０時です。 利用料は、　中学生以上　400円　小学生　200円　（温泉ではありません）"},
+    "shop":{"value":true,"evidenceUrl":"http://www.tentengo.jp/menu-1.php","quote":"売店・・・シャンプー・コンディショナー・ボディーソープ・タオル 炭等"}},
+  "coordsFromOfficialMap":{"lat":34.92752499999965,"lng":137.682146,"url":"http://www.tentengo.jp/menu-3.php"}},
+
+ {"napId":"11856","name":"浜松市かわな野外活動センター","pref":"静岡","muni":"浜松市","verdict":"門落ち(単独利用不可)",
+  "reason":"施設公式（kawana-oac.com／運営は公益財団法人 浜松市スポーツ協会）の「利用について」に「利用できる団体　**10名以上で当センターの教育活動プログラムを利用する団体**」「成人又は青年の引率責任者がいる団体・グループ」と明記されており、個人1名での利用が想定されていない。**公式の住所は「浜松市浜名区引佐町川名455-5」で、台帳の「北区」は2024年の区再編前の旧区名**",
+  "checkedUrls":["https://www.kawana-oac.com/","https://www.kawana-oac.com/price/","https://www.kawana-oac.com/howtouse/","https://www.kawana-oac.com/space/"],
+  "officialUrl":"https://www.kawana-oac.com/"},
+
+ {"napId":"11857","name":"エヌエルファーム","pref":"静岡","muni":"新居町","verdict":"閉鎖疑い",
+  "reason":"当時の施設公式ブログ（nlfarm.hamazo.tv／運営 有限会社エヌエルファーム）に**運営者自身の閉鎖告知**がある。2014/09/26「2004年にオープンし、10年間皆様に愛されご利用いただいた（有）エヌエルファーム。突然のお話で大変恐縮ではございますが2014年9月30日を持ちまして幕を引くことになりました。」、2014/09/30「本日をもってnLfarmは解散です。」。URLが開けないのではなく告知文による確認。**なお台帳の市町村「新居町」は合併前の旧町名（現在は湖西市）**",
+  "checkedUrls":["https://nlfarm.hamazo.tv/","https://www.nap-camp.com/shizuoka/11857"],
+  "officialUrl":"https://nlfarm.hamazo.tv/"},
+
+ {"napId":"11861","name":"表富士キャンピング場","pref":"静岡","muni":"富士宮市","verdict":"追加",
+  "reason":"施設公式（oyado-nisinoya.com／運営：民宿旅館 西の家）の「表富士キャンピング場」ページで確認。「雑木林の中のテント･サイト」でテント泊可、単独利用を妨げる記載も無い。本文に「所在地　富士宮市上井出１２５３－１」と明記され台帳と一致。**既存レコード `pica-omotefuji`（PICA表富士／富士宮市粟倉2745）とは名前が似ているが住所も公式URLも別の施設**",
+  "checkedUrls":["https://oyado-nisinoya.com/camp.html","https://oyado-nisinoya.com/access.html"],
+  "officialUrl":"https://oyado-nisinoya.com/camp.html","reservationUrl":null,
+  "address":"静岡県富士宮市上井出1253-1","priceMin":5500,"priceMax":5500,
+  "priceNote":"区画単位の定額。公式「雑木林の中のテント・サイト　１区画（5人まで） １泊　5,500円〜　2台目以降1000円ずつ追加」。**5名まで同額なのでソロでも5,500円を1人で負担する。**公式に「※gw。夏休み等のシーズは料金が加算される場合がございます」とあるが加算額が書かれていないので下限のみ。**公式の表記が「5,500円〜」。税込／税別の明記も無い**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://oyado-nisinoya.com/camp.html","quote":"場内には、コインシャワーがあります。"},
+    "firewood":{"value":true,"evidenceUrl":"https://oyado-nisinoya.com/camp.html","quote":"どんぐりの木のマキを１箱３００円で販売しています。"},
+    "nearbyOnsen":{"value":"西の家の風呂（車2分）・天母の湯（車10分）・風の湯（車7分）・新稲子川温泉ユートリオ（車30分）","evidenceUrl":"https://oyado-nisinoya.com/camp.html","quote":"車で2分の所には西の家があり、リニューアルしたお風呂で入浴ができます。車で３０分の所には、新稲子川温泉ユートリオ（旧芝川町）車で１０分の所には、天母の湯（奇石博物館　横）車で７分の所には、風の湯などがあります。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11862","name":"GRAN REGALO ASAGIRI","pref":"静岡","muni":"富士宮市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（gran-regalo.com）にキャンプ（テント区画）のセクションはあるが、**「公式サイトから予約」ボタンはHTML上でコメントアウトされ無効化されていて、実際の予約導線はなっぷのみ。**公式サイトにキャンプの料金ページが無く（サイトマップ上も固定ページはトップだけ）、公式独自の予約システム（go-gran-regalo.reservation.jp）も「施設は公開されていません。」と表示されて停止中",
+  "checkedUrls":["https://gran-regalo.com/","https://gran-regalo.com/wp-sitemap-posts-page-1.xml","https://gran-regalo.com/wp-sitemap-posts-post-1.xml","https://go-gran-regalo.reservation.jp/ja"],
+  "officialUrl":"https://gran-regalo.com/"},
+
+ {"napId":"11864","name":"朝霧高原オートキャンプ場","pref":"静岡","muni":"富士宮市","verdict":"門落ち(公式なし)",
+  "reason":"住所（富士宮市猪之頭2071）は複数の地図・紹介サイトで一致したが、いずれも施設公式ではない（紹介ページ自身が「本ページは…公式ホームページではありません。」と明記）。独自の公式サイトが見つからない。**同じ猪之頭エリアに名前の似た別施設が複数あるが、2350の「猪の頭オートキャンプ場」（跡地に Foresters Village Kobitto）も 1162-3 の「朝霧ジャンボリーオートキャンプ場」も台帳の2071とは別施設なので混同せずに弾いた**",
+  "checkedUrls":["https://guide.pilzcafeplus.com/asagiri-ac/","https://asagiri-camp.net/","https://inokashira.info/?page_id=426","https://inokashira.info/?page_id=430"],
+  "officialUrl":null},
+
+ {"napId":"11865","name":"FUJIYAMA泉の森CAMPING FIELD","pref":"静岡","muni":"富士宮市","verdict":"追加",
+  "reason":"施設公式（fujiyamaizumi.com）の「プラン・施設案内」で確認。**「島林間サイト」は基本料金＋大人1名分だけで利用でき車も不要**なので、ソロ・車なしの総額が算定できる。本文に「〒418-0108 静岡県富士宮市猪之頭2131-4」と明記され台帳と一致",
+  "checkedUrls":["https://fujiyamaizumi.com/ja/","https://fujiyamaizumi.com/ja/plan.html","https://fujiyamaizumi.com/ja/information.html","https://fujiyamaizumi.com/ja/pages.html","https://fujiyamaizumi.com/ja/reserve.html"],
+  "officialUrl":"https://fujiyamaizumi.com/ja/","reservationUrl":"https://fujiyamaizumi.com/ja/reserve.html",
+  "address":"静岡県富士宮市猪之頭2131-4","priceMin":2500,"priceMax":7000,
+  "priceNote":"基本料金＋人数課金（島林間サイト）。公式「島林間サイト…●基本料金（テント・タープ・ハンモック等）1,500円 ●大人 1,000円 ●子供 500円（3歳〜小学生） ●車　1,000円 ●バイク　500円」で、**車なしソロなら1,500＋1,000＝2,500円。**オートサイト／島区画／島手前サイトは「1区間 7,000円（車1台、大人4名）」「1区画　6,000円（車1台、大人4名様）」の区画定額でソロでも全額かかる。**税込／税別の明記が無い**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://fujiyamaizumi.com/ja/plan.html","quote":"コインシャワー室　3分100円"},
+    "firewood":{"value":true,"evidenceUrl":"https://fujiyamaizumi.com/ja/plan.html","quote":"売店（薪・炭・氷・ビール・ジュース）"},
+    "shop":{"value":true,"evidenceUrl":"https://fujiyamaizumi.com/ja/plan.html","quote":"売店（薪・炭・氷・ビール・ジュース）"},
+    "nearbyOnsen":{"value":"天母の湯・風の湯・田貫湖休暇村（距離の記載なし）","evidenceUrl":"https://fujiyamaizumi.com/ja/plan.html","quote":"近隣の入浴施設 天母（あんも）の湯…風の湯…田貫湖 休暇村"}},
+  "coordsFromOfficialMap":{"lat":35.34962465569267,"lng":138.56327051602983,"url":"https://fujiyamaizumi.com/ja/pages.html"}}
+]

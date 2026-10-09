@@ -813,9 +813,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11841",
    "latCandidate": "34.9774615",
    "lngCandidate": "137.9089875",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kawaoto.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（kawaoto.jp）で住所（浜松市天竜区春野町宮川2098-1）の一致を確認。利用案内に「暖房器具を使用しての冬場のテント泊もお楽しみいただけます」とありテント泊が前提。「第2・第3キャンプサイト1泊 5,400円」は定員5名までの区画料金で、最低利用人数の明記は無い。サイト料金に駐車1台分が含まれ、入場料は定員超過時のみ"
   },
   {
    "napId": "11842",
@@ -826,8 +826,8 @@
    "latCandidate": "35.04539",
    "lngCandidate": "138.0219606",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "浜松市の旅館業台帳（自治体公式）に「べんてんじまヴィレッジ　静岡県浜松市天竜区春野町川上383番地の2」の登録があり施設の存在と住所は確認できたが、**施設自体の公式サイトが施設名・地名・電話番号のどのクエリでも見つからず**、出てくるのはなっぷ・Campla・いこーよ・地域ブログ等の二次情報源だけ。テント泊可否・1名利用可否・料金のいずれも公式で確認できない"
   },
   {
    "napId": "11843",
@@ -850,8 +850,8 @@
    "latCandidate": "35.049981",
    "lngCandidate": "137.915802",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式が見つからない。施設名・「公式」併記・電話番号で検索したが、出てくるのはなっぷ・Campla・camp-quests・静岡新聞アットエス・hinata 等の二次情報源のみ。浜松市の旅館業台帳にも該当の登録が見当たらない。**なお じゃらんnet に「閉鎖などの理由により基本情報を表示しておりません」の注記があったが、これは掲載側の定型文で、他の掲載サイトは継続しているため閉鎖の確証とはしなかった**"
   },
   {
    "napId": "11845",
@@ -862,8 +862,8 @@
    "latCandidate": "34.9611142",
    "lngCandidate": "137.8995391",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式が見つからない。施設名・地名・電話番号で検索したが、見つかったのは GAZOO・るるぶ・浜松浜名湖だいすきネット・地域住民有志の情報サイト等の二次情報源だけ。浜松市の旅館業台帳にも該当の登録が見当たらない"
   },
   {
    "napId": "11846",
@@ -873,9 +873,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11846",
    "latCandidate": "34.9532386667598",
    "lngCandidate": "137.88447431705123",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://akiha-camp.com/",
+   "verdict": "追加",
+   "reason": "施設公式（akiha-camp.com）で住所（浜松市天竜区春野町領家364）の一致を確認。**公式に「ソロキャンプ 2,000円〜 ※区画サイト ・1名迄 ・電源なし ・車両乗入OK ・ペットOK」という1名専用の区画サイトがあり、入場料も「無料」と明記。**料金・設備はなっぷではなく公式サイト本文だけを根拠にしている。**サブエージェントは同じ引用にある「ペットOK」を features に入れていなかったので、本体側で pet を足した**"
   },
   {
    "napId": "11847",
@@ -885,9 +885,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11847",
    "latCandidate": "34.9362227",
    "lngCandidate": "137.8412309",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.ogawanosato.com/",
+   "verdict": "追加",
+   "reason": "施設公式（ogawanosato.com）で住所（浜松市天竜区小川1800）の一致を確認。**公式の利用料金に「オートキャンプ、ソロキャンプ（宿泊） 大人：１名様につき２，０００円」とソロキャンプが明示されている。**利用案内の「8m×8mでテント1つ、タープ1つ、車1台程度を基準」からテント泊が前提"
   },
   {
    "napId": "11848",
@@ -898,8 +898,8 @@
    "latCandidate": "34.9374253",
    "lngCandidate": "137.8397366",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "**「一景（いっけい）」は小川の里オートキャンプ場（napId 11847・同じ束で追加）の公式サイト自身が「小川の里入り口の高台は、周辺地域（小川）で一番の景観が望めることから、一景（いっけい）と呼ばれております」と説明している敷地内の展望スポットの名称で、独立した別施設ではない。**台帳の住所（小川1839-1）は本体（小川1800）と違うが、独立施設としての公式情報源（専用サイト・旅館業台帳の個別登録）が一切見つからない"
   },
   {
    "napId": "11849",
@@ -910,8 +910,8 @@
    "latCandidate": "35.18935429650089",
    "lngCandidate": "137.87535896897316",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設専用の公式サイトが見つからない。浜松市の食品衛生台帳（自治体公式）に「静岡県浜松市天竜区水窪町奥領家4192番地の2」として登録があり台帳の住所と一致、市の広報記事でも「よつばの杜キャンプ場」として紹介されているが、**いずれも紹介であって料金・1名利用可否・テント泊の詳細が書かれていない。**じゃらん等の二次情報源には料金があるが根拠に使えない。**2023年のInstagram投稿に「旧よつばの杜テントサウナより受け継ぎました新オーナーです」とあり運営者が変わった様子だが、閉鎖を示す公式情報ではないので閉鎖疑いにはしていない**"
   },
   {
    "napId": "11850",
@@ -922,8 +922,8 @@
    "latCandidate": "34.9108008",
    "lngCandidate": "137.7599029",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "浜松市の旅館業台帳（自治体公式）に「上阿多古キャンプセンター　静岡県浜松市天竜区西藤平1542番地」の登録があり住所は台帳と一致した（名称は違うが同一住所なので同一施設と判断）。だが**施設自体の公式サイトが無く**、出てくるのは CityDO!・アソビュー・なっぷ・Campla・hinata 等の二次情報源のみ。テント泊可否・1名利用可否・料金のいずれも公式で確認できない"
   },
   {
    "napId": "11851",
@@ -934,8 +934,8 @@
    "latCandidate": "34.907143",
    "lngCandidate": "137.7630416",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "浜松市の旅館業台帳に「プチハウスATAGO」、公衆浴場台帳に「あたご島露天風呂」として**いずれも台帳の住所（西藤平207-1）と一致する登録**があり、同じ場所にロッジ型宿泊施設と露天風呂の営業許可があることは確認できた。だが台帳は名称と許可種別だけで、キャンプ場としての料金・1名利用可否・テント泊可否が分からない。運営者と思われる Facebook／Instagram は**ログインなしでは本文が表示されず確認できなかった。**二次情報源には「食材や器材はすべて持ち込み」「チェックイン／チェックアウト記載なし」とあり日帰りBBQ中心の可能性もあるが、公式に明記が無いので宿泊可否も含め確定できない"
   },
   {
    "napId": "11852",
@@ -945,9 +945,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11852",
    "latCandidate": "34.90115991457348",
    "lngCandidate": "137.76560802949984",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://ishigaminosato.com/",
+   "verdict": "追加",
+   "reason": "施設公式（ishigaminosato.com）で住所（浜松市天竜区石神1455-2）の一致を確認。「林間・川原フリーサイト（車両乗入れ不可）」でテント泊可、定員は上限（3名）の指定だけ。**本体側で /fee/ と /freesite/ を取得し直して突き合わせた。/freesite/ に「利用料（環境維持費、ゴミ管理費含む）：1,000円／人（16歳以上）」「車：1,000円／台、バイク：500円／台（乗入れ不可、60〜90m程度離れた駐車場）」があり、日別カレンダーには基本料金0円の日もある。一方 /fee/ はフリーサイトを「税込料金：2,000円〜」と表示していて読みが食い違う**ので、両方の読みが収まる幅にした"
   },
   {
    "napId": "11853",
@@ -957,9 +957,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11853",
    "latCandidate": "34.992491",
    "lngCandidate": "137.761507",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://himitsumura.com/",
+   "verdict": "追加",
+   "reason": "施設公式（himitsumura.com）で確認。ロッジ・コテージとは別区分の「テントサイト」が明記されテント泊可、単独利用を妨げる記載も無い。**「料金はすべて税込表記です」と明記。公式の住所は「龍山町大嶺1371-2」で台帳の「1371-5」と番地末尾が違うが、施設名・大字が一致する施設は他に無いので同一施設とした**"
   },
   {
    "napId": "11854",
@@ -969,9 +969,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11854",
    "latCandidate": "34.8491258",
    "lngCandidate": "137.7799576",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kenritsu-shinrinkouen.jp/",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "県立森林公園の公式（kenritsu-shinrinkouen.jp）「キャンプ場・炊飯棟」ページに「森林公園では決められた場所でしかテントの設営・火の利用はできません。ルールを守ってデイキャンプをお楽しみください。**（宿泊は不可）**」と明記。利用時間も「午前10時から午後4時」のデイキャンプのみ。**公式の住所は「浜松市浜名区尾野2597-7」で、台帳の「浜北区」は2024年の区再編前の旧区名（同じ場所）**"
   },
   {
    "napId": "11855",
@@ -981,9 +981,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11855",
    "latCandidate": "34.9275172",
    "lngCandidate": "137.6820917",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.tentengo.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（tentengo.jp）で確認。「サイトはオートキャンプができ、フリーテントもございます。」でテント泊可、単独利用を妨げる記載も無い。全ページ末尾に「※ご利用料金などはすべて税込価格となっております。」の明記あり。**公式の住所表記は「浜松市北区引佐町渋川237-1」で、北区は2024年の区再編前の旧区名（現在は浜名区）**"
   },
   {
    "napId": "11856",
@@ -993,9 +993,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11856",
    "latCandidate": "34.8793600",
    "lngCandidate": "137.698512",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.kawana-oac.com/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "施設公式（kawana-oac.com／運営は公益財団法人 浜松市スポーツ協会）の「利用について」に「利用できる団体　**10名以上で当センターの教育活動プログラムを利用する団体**」「成人又は青年の引率責任者がいる団体・グループ」と明記されており、個人1名での利用が想定されていない。**公式の住所は「浜松市浜名区引佐町川名455-5」で、台帳の「北区」は2024年の区再編前の旧区名**"
   },
   {
    "napId": "11857",
@@ -1005,9 +1005,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11857",
    "latCandidate": "34.70105238931388",
    "lngCandidate": "137.57093489170074",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://nlfarm.hamazo.tv/",
+   "verdict": "閉鎖疑い",
+   "reason": "当時の施設公式ブログ（nlfarm.hamazo.tv／運営 有限会社エヌエルファーム）に**運営者自身の閉鎖告知**がある。2014/09/26「2004年にオープンし、10年間皆様に愛されご利用いただいた（有）エヌエルファーム。突然のお話で大変恐縮ではございますが2014年9月30日を持ちまして幕を引くことになりました。」、2014/09/30「本日をもってnLfarmは解散です。」。URLが開けないのではなく告知文による確認。**なお台帳の市町村「新居町」は合併前の旧町名（現在は湖西市）**"
   },
   {
    "napId": "11859",
@@ -1029,9 +1029,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11861",
    "latCandidate": "35.312122",
    "lngCandidate": "138.597989",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://oyado-nisinoya.com/camp.html",
+   "verdict": "追加",
+   "reason": "施設公式（oyado-nisinoya.com／運営：民宿旅館 西の家）の「表富士キャンピング場」ページで確認。「雑木林の中のテント･サイト」でテント泊可、単独利用を妨げる記載も無い。本文に「所在地　富士宮市上井出１２５３－１」と明記され台帳と一致。**既存レコード `pica-omotefuji`（PICA表富士／富士宮市粟倉2745）とは名前が似ているが住所も公式URLも別の施設**"
   },
   {
    "napId": "11862",
@@ -1041,9 +1041,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11862",
    "latCandidate": "35.3153880417463",
    "lngCandidate": "138.6071815894104",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://gran-regalo.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式（gran-regalo.com）にキャンプ（テント区画）のセクションはあるが、**「公式サイトから予約」ボタンはHTML上でコメントアウトされ無効化されていて、実際の予約導線はなっぷのみ。**公式サイトにキャンプの料金ページが無く（サイトマップ上も固定ページはトップだけ）、公式独自の予約システム（go-gran-regalo.reservation.jp）も「施設は公開されていません。」と表示されて停止中"
   },
   {
    "napId": "11864",
@@ -1054,8 +1054,8 @@
    "latCandidate": null,
    "lngCandidate": null,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "住所（富士宮市猪之頭2071）は複数の地図・紹介サイトで一致したが、いずれも施設公式ではない（紹介ページ自身が「本ページは…公式ホームページではありません。」と明記）。独自の公式サイトが見つからない。**同じ猪之頭エリアに名前の似た別施設が複数あるが、2350の「猪の頭オートキャンプ場」（跡地に Foresters Village Kobitto）も 1162-3 の「朝霧ジャンボリーオートキャンプ場」も台帳の2071とは別施設なので混同せずに弾いた**"
   },
   {
    "napId": "11865",
@@ -1065,9 +1065,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11865",
    "latCandidate": "35.34968563729852",
    "lngCandidate": "138.56530716190184",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://fujiyamaizumi.com/ja/",
+   "verdict": "追加",
+   "reason": "施設公式（fujiyamaizumi.com）の「プラン・施設案内」で確認。**「島林間サイト」は基本料金＋大人1名分だけで利用でき車も不要**なので、ソロ・車なしの総額が算定できる。本文に「〒418-0108 静岡県富士宮市猪之頭2131-4」と明記され台帳と一致"
   },
   {
    "napId": "11866",
@@ -1078,8 +1078,8 @@
    "latCandidate": null,
    "lngCandidate": null,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "閉鎖疑い",
+   "reason": "公式サイトが見つからず、検索でも関連ページが出ない。**地元の猪之頭区公式サイト（inokashira.info）の『Foresters Village Kobitto あさぎりキャンプフィールド』の紹介文に「［住所］静岡県富士宮市猪之頭2350　※猪の頭オートキャンプ場さん跡地」と明記**されており、同じ場所に別施設が跡地として開業している。閉業の確定情報ではないので「閉鎖疑い」"
   },
   {
    "napId": "11867",
@@ -1089,9 +1089,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11867",
    "latCandidate": "35.3555171",
    "lngCandidate": "138.5499019",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://pengin.grupo.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（pengin.grupo.jp）で住所（富士宮市猪之頭2351）の完全一致を確認。「オートキャンプサイト１サイトにテント１.タープ１.車１」でテント泊可、2名以上必須の記載も無い。**サブエージェントは priceMax に広々ACサイトの13,300円を入れていたが、既存の値付け（黄金崎・石廊崎など）と同じく標準区画までを範囲にするので、本体側で6,300円に直した**（広々ACは注意書きに回した）"
   },
   {
    "napId": "11869",
@@ -1101,9 +1101,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11869",
    "latCandidate": "35.36427590546343",
    "lngCandidate": "138.5697841644287",
-   "officialUrl": null,
+   "officialUrl": "https://www.fielddogsgarden.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "施設公式（fielddogsgarden.com）で住所（富士宮市猪之頭字人穴道1816-9）の一致と、人数課金の「～キャンプ料金～　1人(中学生以上)1名様：2,750円」は確認できた。だが**公式サイトに「テント」の語が一度も出てこない。サブエージェントは「ロッジとは別に芝生の有料サイトがあるから屋外キャンプ区画だろう」と推論していたが、これは公式の記載ではない。本体側で /複製-camp を取得し直したところ Wix のJS描画で本文がほぼ取れず、「テント」0件・「キャンプ」0件だった。**テント泊ができるかを公式で確認できないので追加しない（門の条件1が未確認）。ブラウザで目視すれば判定できる見込み"
   },
   {
    "napId": "11870",
@@ -1113,9 +1113,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11870",
    "latCandidate": "35.371323571842794",
    "lngCandidate": "138.57680892944336",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.mochiya.co.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（mochiya.co.jp）で住所（富士宮市猪之頭1114-1）の完全一致を確認。**「ソロでもみんなでも楽しい！キャンプ」「もちやキャンプについて・敷地内どこでも設営可能！」とソロ可・テント設営可が公式に明言されている。**料金PDFに「キャンプ・BBQ料金表(税込）」と税込の明記あり。**サブエージェントの shop はナビゲーションのメニュー文字列、pet は「ドッグラン等の施設もあります」という別施設の話が根拠だったので、本体側で両方外した**"
   },
   {
    "napId": "11871",
@@ -1125,9 +1125,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11871",
    "latCandidate": "35.3398027",
    "lngCandidate": "138.5734454",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://nishifuji.com/",
+   "verdict": "追加",
+   "reason": "施設公式（nishifuji.com）で住所（富士宮市内野1687）の一致を確認。「オートキャンプ：75台（車＋テント又はキャンピングカー）」でテント泊可。**公式に「バイクでソロサイト」という単独利用前提の区画がある。サブエージェントはバイク限定だからと下限から外していたが、やまぼうし（御殿場）で徒歩・バイクの安い区分を priceMin に採った扱いと揃えて、本体側で下限を3,300円に直した**"
   },
   {
    "napId": "11872",
@@ -1137,9 +1137,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11872",
    "latCandidate": "35.3278346",
    "lngCandidate": "138.5733059",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://volcano-camp.amebaownd.com/",
+   "verdict": "追加",
+   "reason": "施設公式（volcano-camp.amebaownd.com）で住所（富士宮市内野1892-1）の完全一致を確認。「テントサイト（ペット可）」「１区画、車1台・テント1張り・タープ1張りの料金となります」でテント泊可、単独利用を禁じる記載も無い。**公式トップに埋め込まれた地図ウィジェットにテンプレートの既定値（店舗名「SALONE de BELLE」・東京近郊の緯度経度）が残っていたため、座標は採用していない**"
   },
   {
    "napId": "11873",
@@ -1149,9 +1149,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11873",
    "latCandidate": "35.297115",
    "lngCandidate": "138.636903",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://shinfuji-auto-camp.com/",
+   "verdict": "追加",
+   "reason": "施設公式（shinfuji-auto-camp.com）で確認。**公式の住所は「北山7430-421」で台帳の「北山鞍骨7430」とは表記が違うが番地が一致し、鞍骨は字名なので同じ場所。**「オートキャンプサイト 1区画 5,000円 定員5名・車1台含む」の区画定額で、単独利用を妨げる記載は無い"
   },
   {
    "napId": "11875",
@@ -1161,9 +1161,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11875",
    "latCandidate": "35.4057608",
    "lngCandidate": "138.5668136",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.fumotomura.co.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（fumotomura.co.jp／フレーム構成・Shift_JIS）で住所（富士宮市麓174-1）の完全一致を確認。「レンタル品　テント　5000円／1泊　6人用」の記載からテント泊の施設と確認でき、「1区画使用料（車1台、5人まで）・・・・・5000円／1泊」の区画定額。単独利用を妨げる記載は無い"
   },
   {
    "napId": "11876",
@@ -1185,9 +1185,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11877",
    "latCandidate": "35.253627",
    "lngCandidate": "138.7719707",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.kodomo.or.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（kodomo.or.jp／静岡県の指定管理施設）で住所（富士市桑崎1015）の完全一致を確認。「テントサイト　大小合わせて20区画のスペースがあるテントサイトです。1区画に対して4、5人用テント・タープが各1台設置可能」でテント泊可、区画課金で単独利用を妨げる記載も無い。**「ご利用料金（1区画あたり、税込）」と税込の明記あり**"
   },
   {
    "napId": "11878",
@@ -1197,9 +1197,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11878",
    "latCandidate": "35.195156",
    "lngCandidate": "138.771357",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html",
+   "verdict": "追加",
+   "reason": "富士市公式（自治体公式）で確認。**本体側でもページを取得し直し、「須津山休養林内にある、テントサイト5か所の小さなキャンプ場です」「テントサイト使用料　1区画1泊につき520円」と、場内設備が「テントサイト5区画」「トイレ（1箇所）」「炊飯棟」だけであること、そして「テントサイト内での火気の使用は禁止です。調理等火気の使用は炊飯棟でのみ行ってください。」という制約を直接確認した。**入場料・駐車料の記載は無い。**サブエージェントは nearbyOnsen に false を入れていたが文字列ではないので外し、firewood も記載が無いので外した**"
   },
   {
    "napId": "11879",
@@ -1209,9 +1209,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11879",
    "latCandidate": "35.230231964359035",
    "lngCandidate": "138.7235410139192",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.fuji-marubi.jp/campground/",
+   "verdict": "追加",
+   "reason": "施設公式（fuji-marubi.jp／富士市立少年自然の家が運営）で住所（富士市大淵10847-1）の一致を確認。「テントサイト 西20サイト（1番〜20番）／東15サイト（21番〜35番）」で持込テント泊可。「サイト使用料 １サイト　1,000円／1泊（大人・小人計5名まで）」の区画定額で、FAQ にも「Q　テントは２張り以上張れますか？ -ソロ用の小さいテントなら、サイトによっては可能です」とソロ前提の記述がある"
   },
   {
    "napId": "11880",
@@ -1222,8 +1222,8 @@
    "latCandidate": "35.22483",
    "lngCandidate": "138.6678114",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "なっぷ以外の施設公式・富士市公式の情報源が見つからない。施設名単独・住所（富士市大淵4009）・電話番号など複数のクエリで検索したが該当結果が一件も出ず、富士市公式のサイト内検索でも該当なし"
   },
   {
    "napId": "11881",
@@ -1233,9 +1233,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11881",
    "latCandidate": "35.148249",
    "lngCandidate": "138.597634",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://fujikawa-camp.jp/",
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "**既存レコード `fujikawa-camp`（「野田山健康緑地公園 富士川キャンプ場」／静岡県富士市中之郷4482-141／officialUrl `https://fujikawa-camp.jp/`）と同一施設。**本体側の3キー照合で公式URLが完全一致した（公式表記の「4482番地の141」と既存の「4482-141」は同じ住所）。**なお今回の調査で公式アクセスページの座標（35.148164, 138.59775）が取れている。既存レコードは needsCoord のままなので、座標の反映は別途やる価値がある（引き継ぎメモに記載）**"
   },
   {
    "napId": "11883",
@@ -1257,9 +1257,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13541",
    "latCandidate": "35.038957",
    "lngCandidate": "139.173253",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.pica-resort.jp/hatsushima/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式（pica-resort.jp/hatsushima）の「宿泊施設」一覧は**アイランドヴィラ プレミア／グランデ／テラス／コージー／オーシャンの5種だけで全てヴィラ（コテージ）形式。**持込テントサイトの選択肢が無い（「テント編」等はキャンプ初心者向けのコラムへのリンクで宿泊施設ではない）"
   },
   {
    "napId": "13542",
@@ -1270,8 +1270,8 @@
    "latCandidate": "34.9621136",
    "lngCandidate": "137.7469489",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "浜松市公式・なっぷ以外の情報源が見つからない。施設名・住所（浜松市天竜区熊976）など複数のクエリで検索したが該当結果が得られず、浜松市公式の観光ページにも記載が無い。**なお検索エンジン側の事情で「熊」を含むクエリがクマ出没情報に引っ張られ続けたため、再確認の余地がある**"
   },
   {
    "napId": "13584",
@@ -1282,8 +1282,8 @@
    "latCandidate": "34.7938324",
    "lngCandidate": "139.0166200",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "東伊豆町公式・なっぷ以外の情報源が見つからない。町公式の観光情報ページにも該当施設の記載が無い。**検索が無関係な同名の人名・商品に引っ張られ続けたため、再確認の余地がある**"
   },
   {
    "napId": "13618",
@@ -1293,9 +1293,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13618",
    "latCandidate": "35.2575075",
    "lngCandidate": "138.2338511",
-   "officialUrl": null,
+   "officialUrl": "https://www.t-forest.com/alpsinfo/climber/lodgeinfo/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "南アルプスの山小屋群を運営する特種東海フォレスト株式会社の公式で確認（赤石小屋は［静岡県営］で同社が受託運営）。「テント場 15張程度」「幕営料(一人) 2,000円」（繁忙日は3,000円）と1人単位の料金があり、「幕営地でのテント泊は予約制をとらず、当日の受け付けです。」と**予約不要**の明記もある。**ただし車両ではアクセスできず登山道からしか行けない山小屋のテント場で、当サイトが扱うソロキャンプ場とは性格が違う。既に「山小屋のテント場は UNMEASURED」の前例（千葉・山梨の門）があるので、それに揃えて判断待ちにした。**公式に番地の記載も無く、住所は「静岡市葵区田代」までしか取れない"
   },
   {
    "napId": "13664",
@@ -1306,8 +1306,8 @@
    "latCandidate": "34.704988",
    "lngCandidate": "138.78965",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "南伊豆町公式・なっぷ以外の情報源が見つからない。町公式の観光カテゴリにも記載が無い。**検索が長野県の同名の天然記念物に引っ張られ続けたため、再確認の余地がある。**なお束03でも同名の「キャンプ山の家」（蛇石676-7）を同じ理由で門落ちにしている"
   },
   {
    "napId": "13670",
@@ -1318,8 +1318,8 @@
    "latCandidate": "34.79500383442556",
    "lngCandidate": "138.75922959297895",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "西伊豆町公式・施設公式・なっぷ以外の情報源が見つからない。表記違いの可能性も含めて検索したが、堂ヶ島自体は著名な観光地で結果は多数出るものの、本施設名への言及が観光協会ページ・まとめブログを含め一件も確認できなかった。**同系列と思われる「南伊豆ランドホピア」（hopia.jp）は束sz-02で宿泊系として対象外にしている**"
   },
   {
    "napId": "13674",
@@ -1330,8 +1330,8 @@
    "latCandidate": "34.6356922",
    "lngCandidate": "138.8957317",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "南伊豆町公式・施設公式・なっぷ以外の情報源が見つからない。町公式の弓ヶ浜関連ページ（弓ヶ浜海水浴場でのキャンプについて等）にも「ヴィラ弓ヶ浜」への言及が無い"
   },
   {
    "napId": "13678",
@@ -2922,14 +2922,15 @@
   "asOf": "2026-10-10",
   "門の対象": 224,
   "内訳": {
-   "追加": 30,
-   "閉鎖疑い": 19,
-   "門落ち(公式なし)": 16,
-   "門落ち(料金も予約も公式に無し)": 6,
-   "宿泊系のため対象外": 4,
-   "門落ち(単独利用不可)": 1,
-   "門落ち(既存レコードと重複)": 2,
-   "UNMEASURED": 164
+   "追加": 47,
+   "閉鎖疑い": 21,
+   "門落ち(公式なし)": 29,
+   "門落ち(料金も予約も公式に無し)": 7,
+   "宿泊系のため対象外": 5,
+   "門落ち(単独利用不可)": 2,
+   "門落ち(既存レコードと重複)": 4,
+   "門落ち(宿泊不可)": 1,
+   "UNMEASURED": 126
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }

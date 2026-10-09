@@ -6595,5 +6595,782 @@
   },
   "napUrl": "https://www.nap-camp.com/shizuoka/11838",
   "napName": "浦川キャンプ村"
+ },
+ {
+  "napId": "11841",
+  "name": "はるの川音の郷",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "施設公式（kawaoto.jp）で住所（浜松市天竜区春野町宮川2098-1）の一致を確認。利用案内に「暖房器具を使用しての冬場のテント泊もお楽しみいただけます」とありテント泊が前提。「第2・第3キャンプサイト1泊 5,400円」は定員5名までの区画料金で、最低利用人数の明記は無い。サイト料金に駐車1台分が含まれ、入場料は定員超過時のみ",
+  "checkedUrls": [
+   "https://kawaoto.jp/",
+   "https://kawaoto.jp/charge/",
+   "https://kawaoto.jp/facility/",
+   "https://kawaoto.jp/facility/stay.php",
+   "https://kawaoto.jp/access/",
+   "https://kawaoto.jp/charge/charge_2503.pdf"
+  ],
+  "officialUrl": "https://kawaoto.jp/",
+  "reservationUrl": "https://kawaoto.revn.jp/",
+  "address": "静岡県浜松市天竜区春野町宮川2098-1",
+  "priceMin": 5400,
+  "priceMax": 5400,
+  "priceNote": "区画単位の定額。公式「ご利用料金」より「第2・第3キャンプサイト1泊 5,400円」（定員5名・駐車1台分込み）。**5名まで同額なのでソロでも5,400円を1人で負担する。**入場料（大人1,000円／子供500円）は定員を超えたときだけ。**キャンプサイトの料金表に税込／税別の明記が無い**（同時期の料金改定PDFではドッグサイトについて「新料金（税込）」と書かれている）",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://kawaoto.jp/charge/",
+    "quote": "お風呂（家族風呂） 1,500円 30分"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://kawaoto.jp/charge/",
+    "quote": "シャワー 500円 15分"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://kawaoto.jp/charge/",
+    "quote": "マキ（1巻き） 500円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://kawaoto.jp/facility/",
+    "quote": "管理等に売店を付帯しております。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.9774615,
+   "lng": 137.9089875,
+   "url": "https://kawaoto.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11841",
+  "napName": "はるの川音の郷"
+ },
+ {
+  "napId": "11846",
+  "name": "秋葉オートキャンプ場",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "施設公式（akiha-camp.com）で住所（浜松市天竜区春野町領家364）の一致を確認。**公式に「ソロキャンプ 2,000円〜 ※区画サイト ・1名迄 ・電源なし ・車両乗入OK ・ペットOK」という1名専用の区画サイトがあり、入場料も「無料」と明記。**料金・設備はなっぷではなく公式サイト本文だけを根拠にしている。**サブエージェントは同じ引用にある「ペットOK」を features に入れていなかったので、本体側で pet を足した**",
+  "checkedUrls": [
+   "https://akiha-camp.com/",
+   "https://akiha-camp.com/guide",
+   "https://akiha-camp.com/facilites",
+   "https://akiha-camp.com/access"
+  ],
+  "officialUrl": "https://akiha-camp.com/",
+  "reservationUrl": "https://www.nap-camp.com/shizuoka/11846",
+  "address": "静岡県浜松市天竜区春野町領家364",
+  "priceMin": 2000,
+  "priceMax": 2000,
+  "priceNote": "1名専用サイトの定額。公式「ソロキャンプ 2,000円〜 ※区画サイト ・1名迄 ・電源なし ・車両乗入OK ・ペットOK」＋「入場料 無料」。車の乗入れ込みで2,000円。**公式の表記が「2,000円〜」で休前日等の変動があり得るが上限の記載が見当たらない。税込／税別の明記も無い。公式に「※予約は全てなっぷで行っています。」とあり予約はなっぷ経由**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://akiha-camp.com/facilites",
+    "quote": "管理棟　売店　自動販売機　トイレ　シャワー室　炊事場"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://akiha-camp.com/facilites",
+    "quote": "売店メニュー 薪　炭　カセットコンロ用ガス　氷　ビール　カップラーメン　お菓子　アイスクリーム　花火　サンダル等"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://akiha-camp.com/facilites",
+    "quote": "管理棟　売店　自動販売機　トイレ　シャワー室　炊事場"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://akiha-camp.com/",
+    "quote": "ソロキャンプ 2,000円〜 ※区画サイト ・1名迄 ・電源なし ・車両乗入OK ・ペットOK"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.95294072993344,
+   "lng": 137.88332834532338,
+   "url": "https://akiha-camp.com/access"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11846",
+  "napName": "秋葉オートキャンプ場"
+ },
+ {
+  "napId": "11847",
+  "name": "小川の里オートキャンプ場",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "施設公式（ogawanosato.com）で住所（浜松市天竜区小川1800）の一致を確認。**公式の利用料金に「オートキャンプ、ソロキャンプ（宿泊） 大人：１名様につき２，０００円」とソロキャンプが明示されている。**利用案内の「8m×8mでテント1つ、タープ1つ、車1台程度を基準」からテント泊が前提",
+  "checkedUrls": [
+   "https://www.ogawanosato.com/",
+   "https://www.ogawanosato.com/概要/",
+   "https://www.ogawanosato.com/利用料金/",
+   "https://www.ogawanosato.com/利用案内/",
+   "https://www.ogawanosato.com/施設案内/",
+   "https://www.ogawanosato.com/アクセス/"
+  ],
+  "officialUrl": "https://www.ogawanosato.com/",
+  "reservationUrl": "https://www.ogawanosato.com/予約/",
+  "address": "静岡県浜松市天竜区小川1800",
+  "priceMin": 2000,
+  "priceMax": 2000,
+  "priceNote": "人数課金のみ。公式「利用料金」より「オートキャンプ、ソロキャンプ（宿泊） 大人：１名様につき２，０００円」。駐車は料金に含まれ、入場料の記載は無い。**税込／税別の明記が無い**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawanosato.com/利用案内/",
+    "quote": "施設内にシャワー(１回１５分３００円)がございます。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawanosato.com/利用料金/",
+    "quote": "薪 針葉樹：１かご500円 薪 広葉樹：１かご700円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawanosato.com/利用案内/",
+    "quote": "ペットの入場は可能です。"
+   },
+   "nearbyOnsen": {
+    "value": "龍山入浴施設「やすらぎの湯」（車で15分程度）",
+    "evidenceUrl": "https://www.ogawanosato.com/利用案内/",
+    "quote": "また車で１５分程度の場所に入浴施設がございますので、ご希望の方は以下をご参照ください。 施設名：龍山入浴施設 「やすらぎの湯」 所在地：浜松市天竜区龍山町戸倉711-2"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11847",
+  "napName": "小川の里オートキャンプ場"
+ },
+ {
+  "napId": "11852",
+  "name": "石神の里キャンプ場",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "施設公式（ishigaminosato.com）で住所（浜松市天竜区石神1455-2）の一致を確認。「林間・川原フリーサイト（車両乗入れ不可）」でテント泊可、定員は上限（3名）の指定だけ。**本体側で /fee/ と /freesite/ を取得し直して突き合わせた。/freesite/ に「利用料（環境維持費、ゴミ管理費含む）：1,000円／人（16歳以上）」「車：1,000円／台、バイク：500円／台（乗入れ不可、60〜90m程度離れた駐車場）」があり、日別カレンダーには基本料金0円の日もある。一方 /fee/ はフリーサイトを「税込料金：2,000円〜」と表示していて読みが食い違う**ので、両方の読みが収まる幅にした",
+  "checkedUrls": [
+   "https://ishigaminosato.com/",
+   "https://ishigaminosato.com/fee/",
+   "https://ishigaminosato.com/info/",
+   "https://ishigaminosato.com/facility/",
+   "https://ishigaminosato.com/freesite/",
+   "https://ishigaminosato.com/ohuro/"
+  ],
+  "officialUrl": "https://ishigaminosato.com/",
+  "reservationUrl": "https://ishigaminosato.com/freesite/",
+  "address": "静岡県浜松市天竜区石神1455-2",
+  "priceMin": 1000,
+  "priceMax": 7000,
+  "priceNote": "日別の基本料金＋人数課金（＋車なら駐車料）。公式に「料金表（税込）」の明記あり。**料金の読み方に幅がある。**/freesite/ の内訳は「利用料（環境維持費、ゴミ管理費含む）：1,000円／人（16歳以上）」＋日別の基本料金で、カレンダーに基本料金0円の日があるため車なしソロなら1,000円。ところが /fee/ では同じ林間・川原フリーサイトが「税込料金：2,000円〜」と表示されている。上限は大型オートサイトのハイシーズンで基本5,000円＋人数1,000円＋車1,000円＝7,000円。**予約時に総額を確認すること。**車は1,000円／台、バイクは500円／台（いずれも乗入れ不可で60〜90m離れた駐車場）",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://ishigaminosato.com/ohuro/",
+    "quote": "貸切家族風呂 シャワーと浴槽付きの貸切家族風呂 税込価格：3,000円/90分 １日４組（時間予約制）"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://ishigaminosato.com/info/",
+    "quote": "共有設備 水洗トイレ 飲料用自動販売機 屋外水場 シャワー ゴミ置き場 薪・炭販売所 灰捨て場 管理棟"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://ishigaminosato.com/info/",
+    "quote": "薪・炭販売所"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://ishigaminosato.com/info/",
+    "quote": "共有設備 水洗トイレ 飲料用自動販売機 屋外水場 シャワー ゴミ置き場 薪・炭販売所 灰捨て場 管理棟"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://ishigaminosato.com/fee/",
+    "quote": "ペットはリード着用。ムダ吠え禁止。長時間吠えないようにご注意ください"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.901432879851086,
+   "lng": 137.76335425147013,
+   "url": "https://ishigaminosato.com/info/"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11852",
+  "napName": "石神の里キャンプ場"
+ },
+ {
+  "napId": "11853",
+  "name": "龍山秘密村",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "施設公式（himitsumura.com）で確認。ロッジ・コテージとは別区分の「テントサイト」が明記されテント泊可、単独利用を妨げる記載も無い。**「料金はすべて税込表記です」と明記。公式の住所は「龍山町大嶺1371-2」で台帳の「1371-5」と番地末尾が違うが、施設名・大字が一致する施設は他に無いので同一施設とした**",
+  "checkedUrls": [
+   "https://himitsumura.com/",
+   "https://himitsumura.com/about",
+   "https://himitsumura.com/booking",
+   "https://www.nap-camp.com/shizuoka/11853"
+  ],
+  "officialUrl": "https://himitsumura.com/",
+  "reservationUrl": "https://himitsumura.com/booking",
+  "address": "静岡県浜松市天竜区龍山町大嶺1371-2",
+  "priceMin": 2200,
+  "priceMax": 2200,
+  "priceNote": "人数課金のみ（税込明記）。公式「テントサイト 平日 ¥2,200／大人 ¥1,100／小学生以下」「休日 ¥2,200／大人」「ピーク 7・8月 ¥2,200／大人」で**平日・休日・ピークのいずれも大人1名2,200円で変動しない。**「料金はすべて税込表記です」と明記。公式に「秘密村はオートキャンプ場ではありません。広場へは自動車を乗り入れないでください」とあり、駐車場の追加料金の記載は無い。**公式の住所（大嶺1371-2）は台帳の1371-5と番地末尾が違う**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://himitsumura.com/about",
+    "quote": "シャワールーム 料金 １０分：５００円　　延長５分：２５０円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://himitsumura.com/about",
+    "quote": "売店でも販売しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://himitsumura.com/about",
+    "quote": "ペット の場内への受け入れは可能です。 テントサイト内では、リードにつなぎ放し飼いはしないようにお願いします。 コテージ・ロッジは、ペット同伴でのご利用は頂けません。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.9921408,
+   "lng": 137.7626654,
+   "url": "https://himitsumura.com/"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11853",
+  "napName": "龍山秘密村"
+ },
+ {
+  "napId": "11855",
+  "name": "てんてんゴーしぶ川",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "施設公式（tentengo.jp）で確認。「サイトはオートキャンプができ、フリーテントもございます。」でテント泊可、単独利用を妨げる記載も無い。全ページ末尾に「※ご利用料金などはすべて税込価格となっております。」の明記あり。**公式の住所表記は「浜松市北区引佐町渋川237-1」で、北区は2024年の区再編前の旧区名（現在は浜名区）**",
+  "checkedUrls": [
+   "http://www.tentengo.jp/",
+   "http://www.tentengo.jp/menu-1.php",
+   "http://www.tentengo.jp/menu-2.php",
+   "http://www.tentengo.jp/menu-3.php",
+   "http://www.tentengo.jp/menu-4.php"
+  ],
+  "officialUrl": "http://www.tentengo.jp/",
+  "reservationUrl": null,
+  "address": "静岡県浜松市北区引佐町渋川237-1",
+  "priceMin": 4000,
+  "priceMax": 4500,
+  "priceNote": "区画単位の定額（税込明記）。公式「オートキャンプ　１サイト　　　4,000円　（電源サイト　4,500円）」で、1サイト1台・何名でも同額。フリーテントの個別料金は公式に数値の記載が無い。**公式に「料金はご予約の際に電話にてご確認ください」との注記があり、予約は電話のみ（「予約は電話のみとさせていただきます」と明記）**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "http://www.tentengo.jp/menu-1.php",
+    "quote": "共同浴場があります。利用時間は午後５時～午後１０時です。 利用料は、　中学生以上　400円　小学生　200円　（温泉ではありません）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "http://www.tentengo.jp/menu-1.php",
+    "quote": "売店・・・シャンプー・コンディショナー・ボディーソープ・タオル 炭等"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.92752499999965,
+   "lng": 137.682146,
+   "url": "http://www.tentengo.jp/menu-3.php"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11855",
+  "napName": "てんてんゴーしぶ川"
+ },
+ {
+  "napId": "11861",
+  "name": "表富士キャンピング場",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "施設公式（oyado-nisinoya.com／運営：民宿旅館 西の家）の「表富士キャンピング場」ページで確認。「雑木林の中のテント･サイト」でテント泊可、単独利用を妨げる記載も無い。本文に「所在地　富士宮市上井出１２５３－１」と明記され台帳と一致。**既存レコード `pica-omotefuji`（PICA表富士／富士宮市粟倉2745）とは名前が似ているが住所も公式URLも別の施設**",
+  "checkedUrls": [
+   "https://oyado-nisinoya.com/camp.html",
+   "https://oyado-nisinoya.com/access.html"
+  ],
+  "officialUrl": "https://oyado-nisinoya.com/camp.html",
+  "reservationUrl": null,
+  "address": "静岡県富士宮市上井出1253-1",
+  "priceMin": 5500,
+  "priceMax": 5500,
+  "priceNote": "区画単位の定額。公式「雑木林の中のテント・サイト　１区画（5人まで） １泊　5,500円〜　2台目以降1000円ずつ追加」。**5名まで同額なのでソロでも5,500円を1人で負担する。**公式に「※gw。夏休み等のシーズは料金が加算される場合がございます」とあるが加算額が書かれていないので下限のみ。**公式の表記が「5,500円〜」。税込／税別の明記も無い**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://oyado-nisinoya.com/camp.html",
+    "quote": "場内には、コインシャワーがあります。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://oyado-nisinoya.com/camp.html",
+    "quote": "どんぐりの木のマキを１箱３００円で販売しています。"
+   },
+   "nearbyOnsen": {
+    "value": "西の家の風呂（車2分）・天母の湯（車10分）・風の湯（車7分）・新稲子川温泉ユートリオ（車30分）",
+    "evidenceUrl": "https://oyado-nisinoya.com/camp.html",
+    "quote": "車で2分の所には西の家があり、リニューアルしたお風呂で入浴ができます。車で３０分の所には、新稲子川温泉ユートリオ（旧芝川町）車で１０分の所には、天母の湯（奇石博物館　横）車で７分の所には、風の湯などがあります。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11861",
+  "napName": "表富士キャンピング場"
+ },
+ {
+  "napId": "11865",
+  "name": "FUJIYAMA泉の森CAMPING FIELD",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "施設公式（fujiyamaizumi.com）の「プラン・施設案内」で確認。**「島林間サイト」は基本料金＋大人1名分だけで利用でき車も不要**なので、ソロ・車なしの総額が算定できる。本文に「〒418-0108 静岡県富士宮市猪之頭2131-4」と明記され台帳と一致",
+  "checkedUrls": [
+   "https://fujiyamaizumi.com/ja/",
+   "https://fujiyamaizumi.com/ja/plan.html",
+   "https://fujiyamaizumi.com/ja/information.html",
+   "https://fujiyamaizumi.com/ja/pages.html",
+   "https://fujiyamaizumi.com/ja/reserve.html"
+  ],
+  "officialUrl": "https://fujiyamaizumi.com/ja/",
+  "reservationUrl": "https://fujiyamaizumi.com/ja/reserve.html",
+  "address": "静岡県富士宮市猪之頭2131-4",
+  "priceMin": 2500,
+  "priceMax": 7000,
+  "priceNote": "基本料金＋人数課金（島林間サイト）。公式「島林間サイト…●基本料金（テント・タープ・ハンモック等）1,500円 ●大人 1,000円 ●子供 500円（3歳〜小学生） ●車　1,000円 ●バイク　500円」で、**車なしソロなら1,500＋1,000＝2,500円。**オートサイト／島区画／島手前サイトは「1区間 7,000円（車1台、大人4名）」「1区画　6,000円（車1台、大人4名様）」の区画定額でソロでも全額かかる。**税込／税別の明記が無い**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://fujiyamaizumi.com/ja/plan.html",
+    "quote": "コインシャワー室　3分100円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://fujiyamaizumi.com/ja/plan.html",
+    "quote": "売店（薪・炭・氷・ビール・ジュース）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://fujiyamaizumi.com/ja/plan.html",
+    "quote": "売店（薪・炭・氷・ビール・ジュース）"
+   },
+   "nearbyOnsen": {
+    "value": "天母の湯・風の湯・田貫湖休暇村（距離の記載なし）",
+    "evidenceUrl": "https://fujiyamaizumi.com/ja/plan.html",
+    "quote": "近隣の入浴施設 天母（あんも）の湯…風の湯…田貫湖 休暇村"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.34962465569267,
+   "lng": 138.56327051602983,
+   "url": "https://fujiyamaizumi.com/ja/pages.html"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11865",
+  "napName": "FUJIYAMA泉の森CAMPING FIELD"
+ },
+ {
+  "napId": "11867",
+  "name": "ペンギン村オートキャンプ場",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "施設公式（pengin.grupo.jp）で住所（富士宮市猪之頭2351）の完全一致を確認。「オートキャンプサイト１サイトにテント１.タープ１.車１」でテント泊可、2名以上必須の記載も無い。**サブエージェントは priceMax に広々ACサイトの13,300円を入れていたが、既存の値付け（黄金崎・石廊崎など）と同じく標準区画までを範囲にするので、本体側で6,300円に直した**（広々ACは注意書きに回した）",
+  "checkedUrls": [
+   "https://pengin.grupo.jp/",
+   "https://pengin.grupo.jp/free768041",
+   "https://pengin.grupo.jp/free774694",
+   "https://pengin.grupo.jp/free773829",
+   "https://pengin.grupo.jp/free773874"
+  ],
+  "officialUrl": "https://pengin.grupo.jp/",
+  "reservationUrl": null,
+  "address": "静岡県富士宮市猪之頭2351",
+  "priceMin": 5500,
+  "priceMax": 6300,
+  "priceNote": "区画単位のモデル料金。公式「大人２名様限定オートキャンプサイト　２０サイト　１泊モデル料金　5.500円　モデル料金（大人２名＋車１台＋ゴミ処理代）」が最安で、車とゴミ処理代込み。標準の「オートキャンプサイト６０サイト　１泊モデル料金　6.300円」。**人数が少なくても減額の規定が無いのでソロでも同額。**広々ACオートキャンプサイトは13,300円だが必須ではないので範囲に入れていない。**税込／税別の明記が無い**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://pengin.grupo.jp/free768041",
+    "quote": "貸切家族風呂　４０分　１家族　１サイト　2０００円"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://pengin.grupo.jp/free768041",
+    "quote": "コインシャワー３　（５分２００円）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://pengin.grupo.jp/free768041",
+    "quote": "売店/その他　氷.薪.炭.着火剤.ホワイトガソリン.ガス.マントル.電池. 調味料.ビール.ジュース.アイス"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://pengin.grupo.jp/free768041",
+    "quote": "売店/その他　氷.薪.炭.着火剤.ホワイトガソリン.ガス.マントル.電池. 調味料.ビール.ジュース.アイス"
+   },
+   "nearbyOnsen": {
+    "value": "風の湯・天母の湯・花の湯（距離の記載なし）",
+    "evidenceUrl": "https://pengin.grupo.jp/free773874",
+    "quote": "温泉 風の湯 天母の湯 花の湯"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.3555171,
+   "lng": 138.5499019,
+   "url": "https://pengin.grupo.jp/free773829"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11867",
+  "napName": "ペンギン村オートキャンプ場"
+ },
+ {
+  "napId": "11870",
+  "name": "もちやキャンプ場",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "施設公式（mochiya.co.jp）で住所（富士宮市猪之頭1114-1）の完全一致を確認。**「ソロでもみんなでも楽しい！キャンプ」「もちやキャンプについて・敷地内どこでも設営可能！」とソロ可・テント設営可が公式に明言されている。**料金PDFに「キャンプ・BBQ料金表(税込）」と税込の明記あり。**サブエージェントの shop はナビゲーションのメニュー文字列、pet は「ドッグラン等の施設もあります」という別施設の話が根拠だったので、本体側で両方外した**",
+  "checkedUrls": [
+   "http://www.mochiya.co.jp/camp.html",
+   "http://www.mochiya.co.jp/access.html",
+   "http://www.mochiya.co.jp/2025camp.pdf"
+  ],
+  "officialUrl": "http://www.mochiya.co.jp/",
+  "reservationUrl": "http://www.mochiya.co.jp/camp.html",
+  "address": "静岡県富士宮市猪之頭1114-1",
+  "priceMin": 1500,
+  "priceMax": 2000,
+  "priceNote": "人数課金＋車なら駐車料（税込明記）。公式の料金PDF「キャンプ・BBQ料金表(税込）」より「宿泊キャンプ/泊　入場料（お一人様）　大人（中学生以上）1，500円」で**車なしなら1,500円**、「駐車料　自動車/台　500円」を足して2,000円。ゴミ処理代300円／袋は販売品なので必須額に入れていない",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.mochiya.co.jp/camp.html",
+    "quote": "簡易シャワーブース完備(冬季は休止しております)"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "http://www.mochiya.co.jp/2025camp.pdf",
+    "quote": "薪/束　　700円"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.37111839214375,
+   "lng": 138.57568073105278,
+   "url": "http://www.mochiya.co.jp/access.html"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11870",
+  "napName": "もちやキャンプ場"
+ },
+ {
+  "napId": "11871",
+  "name": "西富士オートキャンプ場",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "施設公式（nishifuji.com）で住所（富士宮市内野1687）の一致を確認。「オートキャンプ：75台（車＋テント又はキャンピングカー）」でテント泊可。**公式に「バイクでソロサイト」という単独利用前提の区画がある。サブエージェントはバイク限定だからと下限から外していたが、やまぼうし（御殿場）で徒歩・バイクの安い区分を priceMin に採った扱いと揃えて、本体側で下限を3,300円に直した**",
+  "checkedUrls": [
+   "https://nishifuji.com/",
+   "https://nishifuji.com/price/",
+   "https://nishifuji.com/facility/",
+   "https://nishifuji.com/guide/"
+  ],
+  "officialUrl": "https://nishifuji.com/",
+  "reservationUrl": "https://www.camp-net.jp/reserve/?camp=9",
+  "address": "静岡県富士宮市内野1687",
+  "priceMin": 3300,
+  "priceMax": 7500,
+  "priceNote": "区画単位（4シーズン制）。**バイクで行くなら「バイクでソロサイト」3,300円〜が最安。**車なら「サイト（1区画・1泊）…AC電源なし　レギュラー　さくらサイト4,800／ひのきの森サイト4,800／栗サイト4,800／杉の森サイト4,800」で4,800円、AC電源ありが5,800円、ハイシーズンで最大7,500円。人数で増える規定は無い。ワイド・グループサイトやログバンガローは最大15,400円だが必須ではない。**税込／税別の明記が無い。予約は公式指定の外部システムのみで電話予約不可**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://nishifuji.com/facility/",
+    "quote": "お風呂 貸切 露天風呂 人工ラジウム温泉 無料 30分 貸切予約制 ※浴場内の温水シャワーは2分100円です。"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://nishifuji.com/facility/",
+    "quote": "コインシャワー・ランドリー 24時間利用可能 コインシャワー：2分100円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://nishifuji.com/facility/",
+    "quote": "売店 薪、炭、氷など"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://nishifuji.com/facility/",
+    "quote": "売店 薪、炭、氷など"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://nishifuji.com/guide/",
+    "quote": "ペット可（放し飼い禁止）"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.339821180275244,
+   "lng": 138.5712902152495,
+   "url": "https://nishifuji.com/"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11871",
+  "napName": "西富士オートキャンプ場"
+ },
+ {
+  "napId": "11872",
+  "name": "VOLCANO 白糸オートキャンプ場",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "施設公式（volcano-camp.amebaownd.com）で住所（富士宮市内野1892-1）の完全一致を確認。「テントサイト（ペット可）」「１区画、車1台・テント1張り・タープ1張りの料金となります」でテント泊可、単独利用を禁じる記載も無い。**公式トップに埋め込まれた地図ウィジェットにテンプレートの既定値（店舗名「SALONE de BELLE」・東京近郊の緯度経度）が残っていたため、座標は採用していない**",
+  "checkedUrls": [
+   "https://volcano-camp.amebaownd.com/",
+   "https://volcano-camp.amebaownd.com/pages/2675612/page_201903091447",
+   "https://volcano-camp.amebaownd.com/pages/3610044/page_202002241810"
+  ],
+  "officialUrl": "https://volcano-camp.amebaownd.com/",
+  "reservationUrl": "https://volcano-camp.amebaownd.com/pages/3610044/page_202002241810",
+  "address": "静岡県富士宮市内野1892-1",
+  "priceMin": 6500,
+  "priceMax": 7500,
+  "priceNote": "区画単位のモデル料金。公式「・電源なしサイト 6,500円〜」（モデル人数：大人2名＋子供2名 車1台 または大人3名 車1台／追加：お1人につき1,000円、車1台につき1,000円）、「・電源付きサイト 7,500円〜」。**人数が少なくても減額の規定が無いのでソロでも同額。**ワイド・グループサイトは最大26,000円〜だが必須ではない。**公式の表記が「〜」で上振れがあり得る。税込／税別の明記も無い。予約はメールのみで電話予約不可**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://volcano-camp.amebaownd.com/pages/2675612/page_201903091447",
+    "quote": "・コインシャワー（４分） 200円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://volcano-camp.amebaownd.com/pages/2675612/page_201903091447",
+    "quote": "◇売店 薪、炭、ガス"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://volcano-camp.amebaownd.com/pages/2675612/page_201903091447",
+    "quote": "◇売店 薪、炭、ガス"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://volcano-camp.amebaownd.com/pages/2675612/page_201903091447",
+    "quote": "テントサイト（ペット可）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "suspiciousContent": "公式サイトのJSON内に別テーマ由来のテンプレート既定値（店舗名『SALONE de BELLE』、東京近郊の緯度経度）が残存。座標としては採用していない",
+  "napUrl": "https://www.nap-camp.com/shizuoka/11872",
+  "napName": "VOLCANO 白糸オートキャンプ場"
+ },
+ {
+  "napId": "11873",
+  "name": "新富士オートキャンプ場",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "施設公式（shinfuji-auto-camp.com）で確認。**公式の住所は「北山7430-421」で台帳の「北山鞍骨7430」とは表記が違うが番地が一致し、鞍骨は字名なので同じ場所。**「オートキャンプサイト 1区画 5,000円 定員5名・車1台含む」の区画定額で、単独利用を妨げる記載は無い",
+  "checkedUrls": [
+   "https://shinfuji-auto-camp.com/",
+   "https://shinfuji-auto-camp.com/access.html",
+   "https://shinfuji-auto-camp.com/article_site.html",
+   "https://shinfuji-auto-camp.com/info.html",
+   "https://shinfuji-auto-camp.com/reservation.html"
+  ],
+  "officialUrl": "https://shinfuji-auto-camp.com/",
+  "reservationUrl": "https://shinfuji-auto-camp.com/reservation.html",
+  "address": "静岡県富士宮市北山7430-421",
+  "priceMin": 5000,
+  "priceMax": 5000,
+  "priceNote": "区画単位の定額。公式「オートキャンプサイト 1区画 5,000円 定員5名・車1台含む」。**5名まで同額なのでソロでも5,000円を1人で負担する。税込／税別の明記が無い**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://shinfuji-auto-camp.com/info.html",
+    "quote": "内風呂・露天風呂　ご宿泊の場合、風呂は無料でご利用頂けます。風呂は2箇所あります。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://shinfuji-auto-camp.com/info.html",
+    "quote": "薪（建築廃材）1袋 500円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://shinfuji-auto-camp.com/info.html",
+    "quote": "薪（建築廃材）1袋 500円　炭3kg 600円　ロックアイス1袋 350円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://shinfuji-auto-camp.com/",
+    "quote": "ペット可なのでワンちゃん連れのキャンパーにもおすすめ。"
+   },
+   "nearbyOnsen": {
+    "value": "天母の湯（車5分）・風の湯（車10分）",
+    "evidenceUrl": "https://shinfuji-auto-camp.com/access.html",
+    "quote": "日帰り温泉 天母の湯 車で5分 風の湯 車で10分"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.29537313416691,
+   "lng": 138.63844085939064,
+   "url": "https://shinfuji-auto-camp.com/access.html"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11873",
+  "napName": "新富士オートキャンプ場"
+ },
+ {
+  "napId": "11875",
+  "name": "富士オートキャンプ場ふもと村",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "施設公式（fumotomura.co.jp／フレーム構成・Shift_JIS）で住所（富士宮市麓174-1）の完全一致を確認。「レンタル品　テント　5000円／1泊　6人用」の記載からテント泊の施設と確認でき、「1区画使用料（車1台、5人まで）・・・・・5000円／1泊」の区画定額。単独利用を妨げる記載は無い",
+  "checkedUrls": [
+   "http://www.fumotomura.co.jp/",
+   "http://www.fumotomura.co.jp/body.html",
+   "http://www.fumotomura.co.jp/introduction/body.html",
+   "http://www.fumotomura.co.jp/charge/body.html",
+   "http://www.fumotomura.co.jp/facilities/body.html"
+  ],
+  "officialUrl": "http://www.fumotomura.co.jp/",
+  "reservationUrl": null,
+  "address": "静岡県富士宮市麓174-1",
+  "priceMin": 5000,
+  "priceMax": 5000,
+  "priceNote": "区画単位の定額。公式「1区画使用料（車1台、5人まで）・・・・・5000円／1泊」（2泊目以降4,000円）。**5名まで同額なのでソロでも5,000円を1人で負担する。税込／税別の明記が無い。公式に「現在レンタルは中止しております」「ご予約はお電話のみとなります」の注記あり**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.fumotomura.co.jp/facilities/body.html",
+    "quote": "コインシャワーは3分100円です"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11875",
+  "napName": "富士オートキャンプ場ふもと村"
+ },
+ {
+  "napId": "11877",
+  "name": "静岡県富士山こどもの国",
+  "pref": "静岡",
+  "muni": "富士市",
+  "verdict": "追加",
+  "reason": "施設公式（kodomo.or.jp／静岡県の指定管理施設）で住所（富士市桑崎1015）の完全一致を確認。「テントサイト　大小合わせて20区画のスペースがあるテントサイトです。1区画に対して4、5人用テント・タープが各1台設置可能」でテント泊可、区画課金で単独利用を妨げる記載も無い。**「ご利用料金（1区画あたり、税込）」と税込の明記あり**",
+  "checkedUrls": [
+   "https://www.kodomo.or.jp/stay/",
+   "https://www.kodomo.or.jp/stay/camp/",
+   "https://www.kodomo.or.jp/guide/",
+   "https://www.kodomo.or.jp/access/"
+  ],
+  "officialUrl": "https://www.kodomo.or.jp/",
+  "reservationUrl": "https://yoyaku-pref-shizuoka.comp-re.com/",
+  "address": "静岡県富士市桑崎1015",
+  "priceMin": 1630,
+  "priceMax": 4980,
+  "priceNote": "区画課金＋入園料（税込明記）。公式「ご利用料金（1区画あたり、税込）」テントサイト平日800円／区画・土日1,000円／区画、オートキャンプ場平日3,300円／区画・土日4,150円／区画。別途「入園料金 一般料金（税込）大人830円」が1日分必要（宿泊日数分使える）。最安はテントサイト平日の800＋830＝1,630円、高いほうはオートキャンプ場土日の4,150＋830＝4,980円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.kodomo.or.jp/stay/camp/",
+    "quote": "コインシャワー 有料（5分／200円）のコインシャワーです。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.kodomo.or.jp/stay/camp/",
+    "quote": "「草原の家」では、寝袋やバーベキューコンロなどのレンタル用品、炭や薪などの販売品を取り扱いしています。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.kodomo.or.jp/stay/camp/",
+    "quote": "「草原の家」では、寝袋やバーベキューコンロなどのレンタル用品、炭や薪などの販売品を取り扱いしています。"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://www.kodomo.or.jp/stay/",
+    "quote": "自然・動物を保護するため、ペットを連れてのご入園はご遠慮いただいております。なお、盲導犬・介助犬・聴導犬は除きます。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.25326566933573,
+   "lng": 138.7703232004109,
+   "url": "https://www.kodomo.or.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11877",
+  "napName": "静岡県富士山こどもの国"
+ },
+ {
+  "napId": "11878",
+  "name": "須津山休養林キャンプ場",
+  "pref": "静岡",
+  "muni": "富士市",
+  "verdict": "追加",
+  "reason": "富士市公式（自治体公式）で確認。**本体側でもページを取得し直し、「須津山休養林内にある、テントサイト5か所の小さなキャンプ場です」「テントサイト使用料　1区画1泊につき520円」と、場内設備が「テントサイト5区画」「トイレ（1箇所）」「炊飯棟」だけであること、そして「テントサイト内での火気の使用は禁止です。調理等火気の使用は炊飯棟でのみ行ってください。」という制約を直接確認した。**入場料・駐車料の記載は無い。**サブエージェントは nearbyOnsen に false を入れていたが文字列ではないので外し、firewood も記載が無いので外した**",
+  "checkedUrls": [
+   "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html"
+  ],
+  "officialUrl": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html",
+  "reservationUrl": null,
+  "address": "静岡県富士市江尾1035番地",
+  "priceMin": 520,
+  "priceMax": 520,
+  "priceNote": "区画単位の定額。富士市公式「テントサイト使用料　1区画1泊につき520円」が唯一の必須費用で、入園料・駐車料の記載は無い。**テントサイトは5区画だけ。税込／税別の明記が無い。予約は富士市林政課へ直接または電話のみ**",
+  "features": {
+   "bath": {
+    "value": false,
+    "evidenceUrl": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html",
+    "quote": "キャンプ場の周辺に店舗や自動販売機、入浴施設はありません。"
+   },
+   "shower": {
+    "value": false,
+    "evidenceUrl": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html",
+    "quote": "キャンプ場の周辺に店舗や自動販売機、入浴施設はありません。"
+   },
+   "shop": {
+    "value": false,
+    "evidenceUrl": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html",
+    "quote": "キャンプ場の周辺に店舗や自動販売機、入浴施設はありません。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11878",
+  "napName": "須津山休養林キャンプ場"
+ },
+ {
+  "napId": "11879",
+  "name": "丸火自然公園グリーンキャンプ場",
+  "pref": "静岡",
+  "muni": "富士市",
+  "verdict": "追加",
+  "reason": "施設公式（fuji-marubi.jp／富士市立少年自然の家が運営）で住所（富士市大淵10847-1）の一致を確認。「テントサイト 西20サイト（1番〜20番）／東15サイト（21番〜35番）」で持込テント泊可。「サイト使用料 １サイト　1,000円／1泊（大人・小人計5名まで）」の区画定額で、FAQ にも「Q　テントは２張り以上張れますか？ -ソロ用の小さいテントなら、サイトによっては可能です」とソロ前提の記述がある",
+  "checkedUrls": [
+   "https://www.fuji-marubi.jp/campground/",
+   "https://www.fuji-marubi.jp/access/",
+   "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007455.html"
+  ],
+  "officialUrl": "https://www.fuji-marubi.jp/campground/",
+  "reservationUrl": "https://www.nap-camp.com/shizuoka/11879",
+  "address": "静岡県富士市大淵10847-1",
+  "priceMin": 1000,
+  "priceMax": 1000,
+  "priceNote": "区画単位の定額。公式「サイト使用料 １サイト　1,000円／1泊（大人・小人計5名まで）」で人数による変動は無く、駐車場（P2・P3）は無料、入場料の記載も無い。**税込／税別の明記が無い。予約は公式が指定するなっぷ経由（料金自体は公式に掲載）**",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.fuji-marubi.jp/campground/",
+    "quote": "Q　薪は当日買えますか？ -買えます。１束500円で販売しております。チェックイン時に窓口にてご購入ください。（8：30〜17：00）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.fuji-marubi.jp/campground/",
+    "quote": "-ペットには必ずリードを使用し、糞はお持ち帰りください。（野生動物に影響を与えてしまいます）"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.2319528,
+   "lng": 138.7222587,
+   "url": "https://www.fuji-marubi.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11879",
+  "napName": "丸火自然公園グリーンキャンプ場"
  }
 ]
