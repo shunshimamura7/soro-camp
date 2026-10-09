@@ -5438,5 +5438,446 @@
   },
   "napUrl": "https://www.nap-camp.com/yamanashi/16780",
   "napName": "7inchCAMP ミチノエキミトミDOG BASE"
+ },
+ {
+  "napId": "10026",
+  "name": "さつきヶ丘公園キャンプ場",
+  "pref": "静岡",
+  "muni": "伊豆の国市",
+  "verdict": "追加",
+  "reason": "**伊豆の国市公式（自治体公式）**のキャンプ場ページと料金表ページで確認。テントサイト10張（持込）、1泊2日は「午後1時から翌日正午まで」で宿泊可。料金表に「さつきヶ丘公園キャンプ場 新使用料金表　利用区分：大人（1人1泊2日）330円」とあり1名利用を妨げる記載も無い",
+  "checkedUrls": [
+   "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html",
+   "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ryoukin/kouenshinkyoukin.html"
+  ],
+  "officialUrl": "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html",
+  "reservationUrl": "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/moushikomi.html",
+  "address": "静岡県伊豆の国市浮橋1597-3",
+  "priceMin": 330,
+  "priceMax": 330,
+  "priceNote": "人数課金のみ。伊豆の国市公式の「スポーツ施設（公園施設）料金表」より「さつきヶ丘公園キャンプ場　新使用料金表　利用区分：大人　単位：1人1泊2日　使用料：330円」（小人160円）。**当サイトで最も安い。**駐車場（35台）やその他の別料金の記載は無い。**税込／税別の明記が無い。**利用時間は午後1時から翌日正午まで",
+  "features": {
+   "shower": {
+    "value": false,
+    "evidenceUrl": "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html",
+    "quote": "AC(電源)はありません。また、シャワー等の施設もありません。"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html",
+    "quote": "ペットを連れてのご入場(ゲージ持参の場合も不可)"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.014524,
+   "lng": 138.997516,
+   "url": "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/10026",
+  "napName": "さつきヶ丘公園"
+ },
+ {
+  "napId": "11753",
+  "name": "もちこし来楽歩",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "追加",
+  "reason": "施設公式（mochikoshi-club.com）で住所（伊豆市持越692）の一致を確認。チェックイン13時・チェックアウト11時のオートキャンプ場で持込テント泊可。料金ページに1人あたりの入場料があり、2名以上の縛りの記載は無い。**公式に「温泉は休館中です。シャワーはございます。」とあるので、場内の風呂は現在使えない（恒久的に「無い」とは書かれていないので bath は立てていない）**",
+  "checkedUrls": [
+   "http://www.mochikoshi-club.com/",
+   "http://www.mochikoshi-club.com/charge.html",
+   "http://www.mochikoshi-club.com/equipment.html",
+   "http://www.mochikoshi-club.com/access.html"
+  ],
+  "officialUrl": "http://www.mochikoshi-club.com/",
+  "reservationUrl": "http://www.mochikoshi-club.com/calendar_form01/pc.php",
+  "address": "静岡県伊豆市持越692",
+  "priceMin": 4370,
+  "priceMax": 4370,
+  "priceNote": "サイト課金＋入場料（税込明記）。公式「サイト使用料　通常１泊　４，０７０円（税込）」＋「その他の使用料　入場料、付帯設備使用料（一人あたり）　３００円（税込）」＝1名1泊4,370円。AC電源1,010円・テレビアンテナ300円は任意オプションなので含めていない",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.mochikoshi-club.com/",
+    "quote": "温泉は休館中です。シャワーはございます。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "http://www.mochikoshi-club.com/",
+    "quote": "ペットのご来場は可能ですが、３匹目以上は千円／匹の宿泊代をお願いします。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11753",
+  "napName": "もちこし来楽歩"
+ },
+ {
+  "napId": "11755",
+  "name": "天城ふるさと広場キャンプ場",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "追加",
+  "reason": "伊豆市公式（市営観光施設一覧）が本施設の料金について施設側サイトを案内しており、施設公式（spri.jp）自体は画像のみで料金が読めなかったため、**同じ敷地（天城ドーム内）に事務所を置く運営団体「伊豆魅力(三力)プロジェクト」の公式サイトの料金表で確認した。本体側でも取得し直し、「●キャンプ場 持ち込みテント 2,200円」と、ページ末尾の所在地「〒410-3216 伊豆市上船原1120-1 天城ドーム内」を直接確認した。**最低人数の制限は無い。バンガロー・宿泊棟は対象外",
+  "checkedUrls": [
+   "https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/811.html",
+   "https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/index.html",
+   "https://www.spri.jp/furusatohiroba/",
+   "http://izumiryoku.com/ryoukin/index.html",
+   "http://izumiryoku.com/institution/index.html"
+  ],
+  "officialUrl": "http://izumiryoku.com/ryoukin/index.html",
+  "reservationUrl": "https://k3.p-kashikan.jp/izu-city/",
+  "address": "静岡県伊豆市上船原1120-1",
+  "priceMin": 2200,
+  "priceMax": 2200,
+  "priceNote": "区画単位の定額。運営団体（伊豆魅力(三力)プロジェクト／所在地：伊豆市上船原1120-1 天城ドーム内）公式の料金表より「●キャンプ場　1人　持ち込みテント（1区画6ｍ×6ｍ）2,200円」。入場料・駐車料の別記載は無い。**税込／税別の明記が無い。施設専用の公式サイト（spri.jp）は料金が画像のみで読めず、根拠は運営団体サイト**",
+  "features": {},
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11755",
+  "napName": "天城ふるさと広場"
+ },
+ {
+  "napId": "11760",
+  "name": "ファーマーズヒル（旧かたつむり）",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "追加",
+  "reason": "施設公式（f-hill.jp）で住所（伊豆市湯ヶ島892-66）の一致を確認。チェックイン15:00〜17:00・チェックアウト10:00の持込テント泊キャンプ場。**公式に「ソロサイト　３名限定　駐車1台無料　料金：2000円（１テント）　入場料：1000円」と専用のソロサイトがある**",
+  "checkedUrls": [
+   "https://f-hill.jp/wordpress/",
+   "https://f-hill.jp/wordpress/camp/",
+   "https://f-hill.jp/wordpress/access/",
+   "https://f-hill.jp/wordpress/reservation/"
+  ],
+  "officialUrl": "https://f-hill.jp/wordpress/camp/",
+  "reservationUrl": "https://f-hill.jp/wordpress/reservation/",
+  "address": "静岡県伊豆市湯ヶ島892-66",
+  "priceMin": 3000,
+  "priceMax": 3000,
+  "priceNote": "ソロサイトの定額＋入場料。公式「ソロサイト　３名限定　駐車1台無料　料金：2000円（１テント）　入場料：1000円」＝3,000円（駐車1台は無料）。**税込／税別の明記が無い。**「３名限定」は枠数の意味に読めるが公式の表記のまま載せてある",
+  "features": {},
+  "coordsFromOfficialMap": {
+   "lat": 34.86412925744013,
+   "lng": 138.9222290086709,
+   "url": "https://f-hill.jp/wordpress/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11760",
+  "napName": "ファーマーズヒル（旧かたつむり）"
+ },
+ {
+  "napId": "11764",
+  "name": "オートキャンピング村アドベンチャーファミリー",
+  "pref": "静岡",
+  "muni": "河津町",
+  "verdict": "追加",
+  "reason": "施設公式（grandporte.com/adven）で確認。チェックイン13:00〜18:00・チェックアウト11:00の持込テントのオートキャンプ場。「入場料/大人　1人500円」と人数単位の記載があり単独利用可。**公式に番地の記載が無いので住所は大字（上佐ヶ野）までに留めた**（台帳は上佐ヶ野大休場383-3）。**同じ河津町上佐ヶ野に「佐ヶ野オートキャンプ場」が別にあるが、台帳住所が川津筏場1585-5で別施設**",
+  "checkedUrls": [
+   "https://www.grandporte.com/adven/index.html",
+   "https://www.nap-camp.com/shizuoka/11764"
+  ],
+  "officialUrl": "https://www.grandporte.com/adven/index.html",
+  "reservationUrl": "https://www.grandporte.com/adven/mailform/",
+  "address": "静岡県賀茂郡河津町上佐ヶ野",
+  "priceMin": 2500,
+  "priceMax": 4500,
+  "priceNote": "サイト課金＋入場料。公式「■サイト利用料　1区画/4000円　AC電源付5000円(数に限りがございます。予約時要確認）**10月1日〜翌3月31日まで1区画/2000円**・AC電源付3000円※入場料/大人　1人500円　子供1人250円（３歳〜小学生）」。1名の総額は冬季（10/1〜3/31）が2,000＋500＝2,500円、それ以外が4,000＋500＝4,500円。「■駐車料金(税別)　１区画に２台以上の場合　１台 1000円」で1台目は無料。**駐車料のみ税別の明記があり、サイト代・入場料は税込／税別の明記が無い。公式に番地の記載が無い**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.grandporte.com/adven/index.html",
+    "quote": "シャワー棟　清潔さが保たれている温水シャワー棟　男性3女性3　6分200円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.grandporte.com/adven/index.html",
+    "quote": "■販売品　炭、薪、氷、卓上コンロ用ガス、ガスカートリッジ、ホワイトガソリン調味料、日用雑貨、その他・・"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.grandporte.com/adven/index.html",
+    "quote": "■施設　管理棟・炊事場・売店・温水シャワー・水洗トイレ"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.grandporte.com/adven/index.html",
+    "quote": "＊ペット(犬）は可ですが、自己管理、自己責任、及び無駄吠え等他のお客様のご迷惑にならぬようにお願いいたします。"
+   },
+   "nearbyOnsen": {
+    "value": "踊り子温泉会館（車で約13分・キャンプ場に50％割引券あり）",
+    "evidenceUrl": "https://www.grandporte.com/adven/index.html",
+    "quote": "踊り子温泉会館（キャンプ場より車で約１３分）…大人 1000円　/　子供 500円 （キャンプ場に50％割引券あり）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11764",
+  "napName": "オートキャンピング村アドベンチャーファミリー"
+ },
+ {
+  "napId": "11765",
+  "name": "河津オートキャンプ場",
+  "pref": "静岡",
+  "muni": "河津町",
+  "verdict": "追加",
+  "reason": "施設公式（kawazucamp.com）で住所（〒413-0502 静岡県賀茂郡河津町川津筏場555）の一致を確認。「オートキャンプサイト67区画」「ツールームテントは長さ6ｍくらいまでなら設営可能です」で持込テント泊可。1名利用を禁じる記載は無い（FAQ にあるのは「大人ばかり3人以上のグループの利用はできません」という別の制限）。**本体側でも設備ページを取得し直し、ペットの記述が公式の原文どおりであることを確認した**",
+  "checkedUrls": [
+   "https://kawazucamp.com/",
+   "https://kawazucamp.com/facilities/",
+   "https://kawazucamp.com/rental/",
+   "https://kawazucamp.com/access/",
+   "https://kawazucamp.com/faq/",
+   "https://www.nap-camp.com/shizuoka/11765"
+  ],
+  "officialUrl": "https://kawazucamp.com/",
+  "reservationUrl": "https://kawazucamp.com/reservation/",
+  "address": "静岡県賀茂郡河津町川津筏場555",
+  "priceMin": 5500,
+  "priceMax": 5500,
+  "priceNote": "サイト課金＋施設利用料（税込明記）。公式「オートキャンプサイト AC電源なし 4,400円」＋「施設利用料 大人（中学生以上）：1,100円」＝5,500円。「※料金は税込価格になります。」と明記。入場料・駐車料の別建ては無く、施設利用料がそれに相当。電源あり・広々電源つき・ハンモックサイト・ホームキャビンを選ぶと高くなる。**FAQ に「大人ばかり3人以上のグループの利用はできません」という制限がある（ソロは対象外）**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://kawazucamp.com/facilities/",
+    "quote": "温泉露天風呂(温水シャワー付)は男女別で15時〜22時までご利用できます。※無料"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://kawazucamp.com/facilities/",
+    "quote": "温泉露天風呂(温水シャワー付)は男女別で15時〜22時までご利用できます。※無料"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://kawazucamp.com/rental/",
+    "quote": "売店販売品 燃料類 木炭 着火剤 薪"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://kawazucamp.com/facilities/",
+    "quote": "受付・売店（管理棟） 売店では板氷、調味料、日用雑貨、炭・薪類を取り扱っております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://kawazucamp.com/facilities/",
+    "quote": "一部オートキャンプサイトでペット可、広々電源つきサイトはペット不可"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.79387297277364,
+   "lng": 138.9758127119803,
+   "url": "https://kawazucamp.com/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11765",
+  "napName": "河津オートキャンプ場"
+ },
+ {
+  "napId": "11770",
+  "name": "雲見夕陽と潮騒の岬オートキャンプ場",
+  "pref": "静岡",
+  "muni": "松崎町",
+  "verdict": "追加",
+  "reason": "施設公式（yuuhi-shiosai.com、Shift_JIS のため cp932 で明示デコードして確認）で住所（〒410-3615 静岡県賀茂郡松崎町雲見字塩谷83-1）の一致を確認（台帳は「雲見塩谷83-1」で「字」の有無だけの差）。**公式に「オートキャンプサイトは、ソロキャンプ専用になりました。」と明記されたソロ専用のキャンプ場。**レンタル品にテントが無く持参前提。「ソロキャンプ1泊 1サイト4500円」「料金は税込です。」と明記",
+  "checkedUrls": [
+   "https://yuuhi-shiosai.com/",
+   "https://yuuhi-shiosai.com/riyou/riyou.htm",
+   "https://yuuhi-shiosai.com/riyou/index.htm",
+   "https://yuuhi-shiosai.com/zyounai/zyounai.htm",
+   "https://yuuhi-shiosai.com/syuuhen/syuuhen.htm",
+   "https://yuuhi-shiosai.com/yoyaku/yoyaku.htm"
+  ],
+  "officialUrl": "https://yuuhi-shiosai.com/",
+  "reservationUrl": "https://yuuhi-shiosai.com/yoyaku/yoyaku.htm",
+  "address": "静岡県賀茂郡松崎町雲見字塩谷83-1",
+  "priceMin": 4500,
+  "priceMax": 4500,
+  "priceNote": "ソロ専用サイトの定額（税込明記・現金のみ）。公式「料金は税込です。現金のみのお支払いになります。」「ソロキャンプ1泊 1サイト4500円」。**AC電源・展望風呂・温水シャワーはいずれも無料でこの金額に含まれる。**入場料はデイキャンプ・見学者のみに適用。ロッジ（1〜2名9,000〜17,000円）は建物泊なので採っていない",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://yuuhi-shiosai.com/zyounai/zyounai.htm",
+    "quote": "展望風呂は貸切で入浴可(無料・予約不可）"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://yuuhi-shiosai.com/zyounai/zyounai.htm",
+    "quote": "温水シャワーは無料です。コインタイマーではありませんので、安心してお使いください。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://yuuhi-shiosai.com/riyou/riyou.htm",
+    "quote": "販売品 炭、薪(自家製をたくさん、ご用意しています。)、ガス、氷､乾電池等"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://yuuhi-shiosai.com/riyou/riyou.htm",
+    "quote": "販売品 炭、薪(自家製をたくさん、ご用意しています。)、ガス、氷､乾電池等(自販機無し、食糧品、ジュース、酒類の販売はありません。）"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://yuuhi-shiosai.com/riyou/riyou.htm",
+    "quote": "ペットの同伴 不可"
+   },
+   "nearbyOnsen": {
+    "value": "平六地蔵露天風呂（車で7分・石部港付近）",
+    "evidenceUrl": "https://yuuhi-shiosai.com/syuuhen/syuuhen.htm",
+    "quote": "石部港の釣り場、近くに平六地蔵露天風呂もあります。車で7分"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11770",
+  "napName": "雲見夕陽と潮騒の岬オートキャンプ場"
+ },
+ {
+  "napId": "11771",
+  "name": "オートキャンプ花沢",
+  "pref": "静岡",
+  "muni": "松崎町",
+  "verdict": "追加",
+  "reason": "施設公式（hanazawacamp.yu-yake.com）のフッターに「〒410-3615　静岡県賀茂郡松崎町雲見字花沢」と明記され市町村が一致。チェックイン13:00〜15:00・チェックアウト11:00で宿泊施設。オートキャンプサイトのほかテント泊用の「テントサイト使用料」が料金表にあり、人数の下限記載は無い。**料金表の見出しに「料金表（消費税込）」と明記。公式に番地の記載が無いので住所は大字（雲見字花沢）までに留めた**",
+  "checkedUrls": [
+   "https://hanazawacamp.yu-yake.com/index.html",
+   "https://hanazawacamp.yu-yake.com/ryokin.html",
+   "https://hanazawacamp.yu-yake.com/shisetu.html",
+   "https://hanazawacamp.yu-yake.com/kankou.html",
+   "https://hanazawacamp.yu-yake.com/access.html"
+  ],
+  "officialUrl": "https://hanazawacamp.yu-yake.com/index.html",
+  "reservationUrl": "https://hanazawacamp.yu-yake.com/10208/kuushitu_yoyaku/kuushitu_yoyaku.html",
+  "address": "静岡県賀茂郡松崎町雲見字花沢",
+  "priceMin": 1000,
+  "priceMax": 3000,
+  "priceNote": "徒歩なら人数課金、車なら区画課金（料金表に「消費税込」と明記）。**徒歩・車なしなら「テントサイト使用料　大人　１，０００円」が1名1泊の総額。**車で行く場合は「オートキャンプ　施設使用料　１サイト　３，０００円」の区画定額（人数による加算の記載なし）で、公式に「※お車の乗入れ・ペット料金は無料です」。**公式に番地の記載が無い**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://hanazawacamp.yu-yake.com/shisetu.html",
+    "quote": "●家族風呂（２ヶ所）大人３００円・小人２００円"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://hanazawacamp.yu-yake.com/shisetu.html",
+    "quote": "●温水シャワー［男・女別］（１回　２００円）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://hanazawacamp.yu-yake.com/shisetu.html",
+    "quote": "●売　店"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://hanazawacamp.yu-yake.com/ryokin.html",
+    "quote": "※お車の乗入れ・ペット料金は無料です"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11771",
+  "napName": "オートキャンプ花沢"
+ },
+ {
+  "napId": "11774",
+  "name": "オートキャンプ銀河",
+  "pref": "静岡",
+  "muni": "西伊豆町",
+  "verdict": "追加",
+  "reason": "施設公式（ac-ginga.com）のフッターに「静岡県賀茂郡西伊豆町一色八の段1986-1」とあり台帳と完全一致。**「ご利用ルール」ページに「※ただしソロキャンプ(1サイトに車1台、大人1名様)の場合には、「ご利用ルール」を守っていただける方に限り6サイト6名様までお伺いさせていただきます。」と1名利用を公式が明示的に認めている。**「●お連れ様や知人などでも日帰り等のご入場はできません。」で日帰り不可＝宿泊前提、「1サイト(1区画)に車1台・テント1張」で持込テントのオートサイト形式。料金は各項目に〔税込〕明記",
+  "checkedUrls": [
+   "http://www.ac-ginga.com/",
+   "http://www.ac-ginga.com/ryoukin.html",
+   "http://www.ac-ginga.com/shisetsu.html",
+   "http://www.ac-ginga.com/rule.html",
+   "http://www.ac-ginga.com/gaiyou.html",
+   "http://www.ac-ginga.com/access.html"
+  ],
+  "officialUrl": "http://www.ac-ginga.com/",
+  "reservationUrl": "http://www.ac-ginga.com/contact.html",
+  "address": "静岡県賀茂郡西伊豆町一色八の段1986-1",
+  "priceMin": 5280,
+  "priceMax": 5280,
+  "priceNote": "サイト課金＋施設利用料＋ゴミ管理費（すべて〔税込〕明記）。公式「●オートサイト　3,850円〔税込〕」＋「●施設利用料　・大人(1名様) 1,100円〔税込〕」＋「●ゴミ管理費(町指定ゴミ袋配布)　・1泊(1サイトまたはキャビン1棟につき)　330円〔税込〕」＝5,280円。**ゴミ管理費が必須なので総額に入れてある。**シャワー200円・五右衛門風呂1名1,100円・AC電源1,100円は任意。車なしの別料金設定は公式に記載が無い",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "http://www.ac-ginga.com/shisetsu.html",
+    "quote": "五右衛門風呂…■貸切予約制(40分)　・大人1名様(中学生以上)　800円(1名様でご利用の際は1,100円となります)"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.ac-ginga.com/shisetsu.html",
+    "quote": "●シャワー室：男女別に3室あります。 約4分200円となります。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "http://www.ac-ginga.com/shisetsu.html",
+    "quote": "各レンタル品の貸し出し、炭、薪、電池、雑貨などの販売をしています。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "http://www.ac-ginga.com/shisetsu.html",
+    "quote": "管理棟・売店…各レンタル品の貸し出し、炭、薪、電池、雑貨などの販売をしています。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "http://www.ac-ginga.com/gaiyou.html",
+    "quote": "●ペット　：　可能（自己管理）※リードに繋ぎ、フンなどの始末、無駄吠えの配慮"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.79770850879595,
+   "lng": 138.78238798638267,
+   "url": "http://www.ac-ginga.com/access.html"
+  },
+  "napUrl": "https://www.nap-camp.com/shizuoka/11774",
+  "napName": "オートキャンプ銀河"
+ },
+ {
+  "napId": "11776",
+  "name": "キャンプ黄金崎",
+  "pref": "静岡",
+  "muni": "西伊豆町",
+  "verdict": "追加",
+  "reason": "施設公式（koganezaki.com）で住所（〒410-3501 静岡県賀茂郡西伊豆町宇久須2182-1）の一致を確認。テントサイト（A／B／Cサイト）での宿泊が可能で、予約フォームの人数選択が大人「1」から選べ、どのサイトページにも2名以上必須の記載が無い。**近接する既存レコード `ugusu-camp`（宇久須キャンプ場／宇久須2102-13）とは番地・施設名・公式URLが異なる別施設**",
+  "checkedUrls": [
+   "https://koganezaki.com/",
+   "https://koganezaki.com/about/",
+   "https://koganezaki.com/access/",
+   "https://koganezaki.com/reserve/",
+   "https://koganezaki.com/hb_accommodation/a-kogage/",
+   "https://koganezaki.com/hb_accommodation/a-umi/",
+   "https://koganezaki.com/option/services/"
+  ],
+  "officialUrl": "https://koganezaki.com/",
+  "reservationUrl": "https://koganezaki.com/reserve/",
+  "address": "静岡県賀茂郡西伊豆町宇久須2182-1",
+  "priceMin": 6600,
+  "priceMax": 7700,
+  "priceNote": "サイト課金＋施設使用料（税込明記）。最安の標準テントサイト（Aサイト木陰）で、公式「≪サイト利用料≫●レギュラーシーズン 5,500円(税込)〜/区画 ●ハイシーズン 6,600円(税込)〜/区画」＋「●施設使用料 中学生以上：1,100円」＝レギュラー6,600円／ハイ7,700円。**GW・夏季のみ駐車料が車1台1泊1,000円別途**（公式アクセスページ「ＧＷ、夏季は駐車料金が掛かります。その他の時期は無料」）。コインシャワーは200円／5分で別途。「ゆったり」系のワイドサイトはサイト利用料11,000〜13,000円でより高額だが、標準サイトの最安を代表値にした",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://koganezaki.com/access/",
+    "quote": "・コインシャワー(200円/5分)"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://koganezaki.com/option/services/",
+    "quote": "薪　1束1,100円　※秋から販売"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://koganezaki.com/access/",
+    "quote": "■管理棟(センターハウス)・売店"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://koganezaki.com/hb_accommodation/a-kogage/",
+    "quote": "ペット同伴 可※犬、猫"
+   },
+   "nearbyOnsen": {
+    "value": "沢田公園露天風呂・クリスタルビーチ周辺の温泉（車で約5〜15分）",
+    "evidenceUrl": "https://koganezaki.com/",
+    "quote": "温泉は、沢田公園露天風呂やクリスタルビーチ周辺の温泉まで車で約5〜15分です。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/shizuoka/11776",
+  "napName": "キャンプ黄金崎"
  }
 ]

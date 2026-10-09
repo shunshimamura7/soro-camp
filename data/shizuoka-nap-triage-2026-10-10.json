@@ -21,9 +21,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/10026",
    "latCandidate": "35.0142362",
    "lngCandidate": "138.9975467",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html",
+   "verdict": "追加",
+   "reason": "**伊豆の国市公式（自治体公式）**のキャンプ場ページと料金表ページで確認。テントサイト10張（持込）、1泊2日は「午後1時から翌日正午まで」で宿泊可。料金表に「さつきヶ丘公園キャンプ場 新使用料金表　利用区分：大人（1人1泊2日）330円」とあり1名利用を妨げる記載も無い"
   },
   {
    "napId": "11751",
@@ -45,9 +45,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11753",
    "latCandidate": "34.8929693",
    "lngCandidate": "138.8820265",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.mochikoshi-club.com/",
+   "verdict": "追加",
+   "reason": "施設公式（mochikoshi-club.com）で住所（伊豆市持越692）の一致を確認。チェックイン13時・チェックアウト11時のオートキャンプ場で持込テント泊可。料金ページに1人あたりの入場料があり、2名以上の縛りの記載は無い。**公式に「温泉は休館中です。シャワーはございます。」とあるので、場内の風呂は現在使えない（恒久的に「無い」とは書かれていないので bath は立てていない）**"
   },
   {
    "napId": "11754",
@@ -58,8 +58,8 @@
    "latCandidate": "34.9292977",
    "lngCandidate": "138.8139677",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "伊豆市公式の指定管理者一覧等を当たったが本施設（旧・土肥オートキャンプ場）の市公式ページを特定できず（類似の松原公園津波避難複合施設＝テラッセオレンジトイは別物）。施設側は Instagram と X のアカウントだけで、**ログイン壁のため本文・料金が確認できない。**独自の公式サイトも見つからず、第三者まとめサイトとなっぷだけでは一次情報にならない"
   },
   {
    "napId": "11755",
@@ -69,9 +69,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11755",
    "latCandidate": "34.916182",
    "lngCandidate": "138.897613",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://izumiryoku.com/ryoukin/index.html",
+   "verdict": "追加",
+   "reason": "伊豆市公式（市営観光施設一覧）が本施設の料金について施設側サイトを案内しており、施設公式（spri.jp）自体は画像のみで料金が読めなかったため、**同じ敷地（天城ドーム内）に事務所を置く運営団体「伊豆魅力(三力)プロジェクト」の公式サイトの料金表で確認した。本体側でも取得し直し、「●キャンプ場 持ち込みテント 2,200円」と、ページ末尾の所在地「〒410-3216 伊豆市上船原1120-1 天城ドーム内」を直接確認した。**最低人数の制限は無い。バンガロー・宿泊棟は対象外"
   },
   {
    "napId": "11758",
@@ -81,9 +81,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11758",
    "latCandidate": "34.90639311062137",
    "lngCandidate": "138.99418243187714",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.izu.shizuoka.jp/soshiki/1004/2/810.html",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "伊豆市公式に「萬城の滝キャンプ場は…現在、株式会社NTTLandscapeが運営管理を行っています」「**詳細は、キャンプ検索・予約サイトナップをご覧ください**」と明記。運営会社の公式ニュースでも「キャンプ場検索・予約サイト『なっぷ』における予約受付も開始しました」と案内するだけで、**市・運営会社どちらの公式にも料金が無い**"
   },
   {
    "napId": "11759",
@@ -94,8 +94,8 @@
    "latCandidate": "34.90482404726781",
    "lngCandidate": "138.7900686264038",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "独自の公式サイトが見つからない。伊豆市公式の市営観光施設一覧にも掲載が無く自治体管理の施設ではない模様。**伊豆市観光情報サイト（DMO運営）は根拠に使えない**ため、一次情報源が無い"
   },
   {
    "napId": "11760",
@@ -105,9 +105,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11760",
    "latCandidate": "34.8673743",
    "lngCandidate": "138.9193411",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://f-hill.jp/wordpress/camp/",
+   "verdict": "追加",
+   "reason": "施設公式（f-hill.jp）で住所（伊豆市湯ヶ島892-66）の一致を確認。チェックイン15:00〜17:00・チェックアウト10:00の持込テント泊キャンプ場。**公式に「ソロサイト　３名限定　駐車1台無料　料金：2000円（１テント）　入場料：1000円」と専用のソロサイトがある**"
   },
   {
    "napId": "11762",
@@ -118,8 +118,8 @@
    "latCandidate": "34.7570142",
    "lngCandidate": "139.0160502",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "独自の公式サイトが見つからない。運営元と思われる「伊豆今井浜相沢」のサイトは同一住所の姉妹施設「伊豆今井浜オートキャンプ場」を案内しているが、**2021年の最新投稿で「年内は営業を見合わせております」とあり以降更新が無く、現行の『今井浜オレンジヒルズフィールド』と同一か別施設か確認できない。**施工した建築事務所の実績ページでは2023年に「宿泊棟２棟、多目的作業棟１棟」を新築したレンタルビレッジ型施設と紹介されており、持込テント泊の可否も公式に確認できない"
   },
   {
    "napId": "11763",
@@ -130,8 +130,8 @@
    "latCandidate": "34.7871469",
    "lngCandidate": "139.0036944",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "独自の公式サイトが見つからない。河津町公式にも掲載が無く自治体運営の施設ではない模様。**河津町観光協会のページは根拠に使えない**ため、一次情報源が無い"
   },
   {
    "napId": "11764",
@@ -141,9 +141,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11764",
    "latCandidate": "34.797259",
    "lngCandidate": "138.976725",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.grandporte.com/adven/index.html",
+   "verdict": "追加",
+   "reason": "施設公式（grandporte.com/adven）で確認。チェックイン13:00〜18:00・チェックアウト11:00の持込テントのオートキャンプ場。「入場料/大人　1人500円」と人数単位の記載があり単独利用可。**公式に番地の記載が無いので住所は大字（上佐ヶ野）までに留めた**（台帳は上佐ヶ野大休場383-3）。**同じ河津町上佐ヶ野に「佐ヶ野オートキャンプ場」が別にあるが、台帳住所が川津筏場1585-5で別施設**"
   },
   {
    "napId": "11765",
@@ -153,9 +153,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11765",
    "latCandidate": "34.7939636",
    "lngCandidate": "138.9784998",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kawazucamp.com/",
+   "verdict": "追加",
+   "reason": "施設公式（kawazucamp.com）で住所（〒413-0502 静岡県賀茂郡河津町川津筏場555）の一致を確認。「オートキャンプサイト67区画」「ツールームテントは長さ6ｍくらいまでなら設営可能です」で持込テント泊可。1名利用を禁じる記載は無い（FAQ にあるのは「大人ばかり3人以上のグループの利用はできません」という別の制限）。**本体側でも設備ページを取得し直し、ペットの記述が公式の原文どおりであることを確認した**"
   },
   {
    "napId": "11766",
@@ -166,8 +166,8 @@
    "latCandidate": "34.7877546",
    "lngCandidate": "138.9794877",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設名・電話番号・住所で探したが独自の公式サイト・公式SNSが見つからない。河津町公式配下の観光ページには住所と電話番号だけで料金・宿泊可否・公式サイトへのリンクが無く、しかも末尾に「連絡先・URL (一社)河津町観光協会」とあり**観光協会発の情報なので根拠に使えない。**近隣の同名創業者らしき会社サイト（grandporte.com）は住所・電話が一致せず別施設として弾いた"
   },
   {
    "napId": "11767",
@@ -189,9 +189,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11770",
    "latCandidate": "34.714309",
    "lngCandidate": "138.743585",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://yuuhi-shiosai.com/",
+   "verdict": "追加",
+   "reason": "施設公式（yuuhi-shiosai.com、Shift_JIS のため cp932 で明示デコードして確認）で住所（〒410-3615 静岡県賀茂郡松崎町雲見字塩谷83-1）の一致を確認（台帳は「雲見塩谷83-1」で「字」の有無だけの差）。**公式に「オートキャンプサイトは、ソロキャンプ専用になりました。」と明記されたソロ専用のキャンプ場。**レンタル品にテントが無く持参前提。「ソロキャンプ1泊 1サイト4500円」「料金は税込です。」と明記"
   },
   {
    "napId": "11771",
@@ -201,9 +201,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11771",
    "latCandidate": "34.7115142",
    "lngCandidate": "138.759777",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://hanazawacamp.yu-yake.com/index.html",
+   "verdict": "追加",
+   "reason": "施設公式（hanazawacamp.yu-yake.com）のフッターに「〒410-3615　静岡県賀茂郡松崎町雲見字花沢」と明記され市町村が一致。チェックイン13:00〜15:00・チェックアウト11:00で宿泊施設。オートキャンプサイトのほかテント泊用の「テントサイト使用料」が料金表にあり、人数の下限記載は無い。**料金表の見出しに「料金表（消費税込）」と明記。公式に番地の記載が無いので住所は大字（雲見字花沢）までに留めた**"
   },
   {
    "napId": "11772",
@@ -213,9 +213,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11772",
    "latCandidate": "34.683762331902834",
    "lngCandidate": "138.78152579069138",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://hopia.jp/minamiizu/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式（hopia.jp/minamiizu）で「南伊豆町 伊浜一丁田の一戸建て貸し、南伊豆ランドホピア。」と市町村・住所の一致を確認。だが「カップル・親子での2〜3名用ログハウスから、学生の方の合宿や社員旅行におすすめの6〜50名用まで**一戸建て貸し切り**。」で、**全棟ログハウス・コテージの建物貸切専業**。自分でテントを張るプランの記載が無い"
   },
   {
    "napId": "11773",
@@ -237,9 +237,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11774",
    "latCandidate": "34.801933",
    "lngCandidate": "138.795923",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.ac-ginga.com/",
+   "verdict": "追加",
+   "reason": "施設公式（ac-ginga.com）のフッターに「静岡県賀茂郡西伊豆町一色八の段1986-1」とあり台帳と完全一致。**「ご利用ルール」ページに「※ただしソロキャンプ(1サイトに車1台、大人1名様)の場合には、「ご利用ルール」を守っていただける方に限り6サイト6名様までお伺いさせていただきます。」と1名利用を公式が明示的に認めている。**「●お連れ様や知人などでも日帰り等のご入場はできません。」で日帰り不可＝宿泊前提、「1サイト(1区画)に車1台・テント1張」で持込テントのオートサイト形式。料金は各項目に〔税込〕明記"
   },
   {
    "napId": "11776",
@@ -249,9 +249,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11776",
    "latCandidate": "34.842723749595514",
    "lngCandidate": "138.76566410284423",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://koganezaki.com/",
+   "verdict": "追加",
+   "reason": "施設公式（koganezaki.com）で住所（〒410-3501 静岡県賀茂郡西伊豆町宇久須2182-1）の一致を確認。テントサイト（A／B／Cサイト）での宿泊が可能で、予約フォームの人数選択が大人「1」から選べ、どのサイトページにも2名以上必須の記載が無い。**近接する既存レコード `ugusu-camp`（宇久須キャンプ場／宇久須2102-13）とは番地・施設名・公式URLが異なる別施設**"
   },
   {
    "napId": "11777",
@@ -261,9 +261,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11777",
    "latCandidate": "34.8277139",
    "lngCandidate": "138.8498018",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.town.nishiizu.shizuoka.jp/kakuka/sangyou/kankou/yado_shisetsu/makibanoie.html",
+   "verdict": "宿泊系のため対象外",
+   "reason": "西伊豆町公式（自治体公式）と施設公式の両方で確認したが、宿泊形態は「コテージ(5人用)」3棟・「コテージ(8人用)」2棟・「大型休憩施設(9人〜24人用)」1棟・「バーベキュー棟」のみで、**テントサイト・テント泊の記載が一切無い。**住所は公式に「〒410-3501　静岡県賀茂郡西伊豆町宇久須3609番地1」で台帳と一致。**既存レコード `nishi-amagi-kogen`（西天城高原牧場のキャンプ場／伊豆市上船原1519）とは市町村も住所も違う別施設**"
   },
   {
    "napId": "11778",
@@ -273,9 +273,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11778",
    "latCandidate": "34.8188116",
    "lngCandidate": "138.8290421",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.241z-autocamp.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式（241z-autocamp.com）で住所（〒410-3511 静岡県賀茂郡西伊豆町大沢里424-1）の一致と、オートサイト26区画・設備（お風呂、24時間シャワー、売店の薪・炭販売、ペット可）までは確認できたが、**料金が一切掲載されていない。**各サイトの「→詳細はこちら」、ヘッダーの「予約はこちら」、フッターの「宿泊予約」がすべてなっぷの予約ページへ直リンクで、公式ドメイン内に料金ページが存在しない（/price /plan /fee /ryoukin 等を当たったがすべて同一のトップを返すSPA構成）"
   },
   {
    "napId": "11779",
@@ -285,9 +285,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/11779",
    "latCandidate": "34.8298956",
    "lngCandidate": "138.8397917",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.instagram.com/kazahana_camp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "独自ドメインの公式サイトは複数の検索手段でも見つからず、確認できた公式チャネルは運営者本人の Instagram（@kazahana_camp。ページタイトルが施設名と一致し、プロフィールに「西伊豆にある【ネイチャービレッジおおたき】のオーナーをしていた嫁祖父からやってみないかとのお言葉を頂き、2025年5月にオープン」と関係者本人の記載）だけ。**そこに住所・電話・料金のいずれも無く**、リンクもXアカウントのみ。西伊豆町公式の宿泊施設一覧にも掲載が無い"
   },
   {
    "napId": "11780",
@@ -2922,8 +2922,12 @@
   "asOf": "2026-10-10",
   "門の対象": 224,
   "内訳": {
-   "UNMEASURED": 224,
-   "閉鎖疑い": 18
+   "追加": 10,
+   "閉鎖疑い": 18,
+   "門落ち(公式なし)": 5,
+   "門落ち(料金も予約も公式に無し)": 3,
+   "宿泊系のため対象外": 2,
+   "UNMEASURED": 204
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }

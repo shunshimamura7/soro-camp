@@ -1,0 +1,80 @@
+[
+ {"napId":"10026","name":"さつきヶ丘公園キャンプ場","pref":"静岡","muni":"伊豆の国市","verdict":"追加",
+  "reason":"**伊豆の国市公式（自治体公式）**のキャンプ場ページと料金表ページで確認。テントサイト10張（持込）、1泊2日は「午後1時から翌日正午まで」で宿泊可。料金表に「さつきヶ丘公園キャンプ場 新使用料金表　利用区分：大人（1人1泊2日）330円」とあり1名利用を妨げる記載も無い",
+  "checkedUrls":["https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html","https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ryoukin/kouenshinkyoukin.html"],
+  "officialUrl":"https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html","reservationUrl":"https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/moushikomi.html",
+  "address":"静岡県伊豆の国市浮橋1597-3","priceMin":330,"priceMax":330,
+  "priceNote":"人数課金のみ。伊豆の国市公式の「スポーツ施設（公園施設）料金表」より「さつきヶ丘公園キャンプ場　新使用料金表　利用区分：大人　単位：1人1泊2日　使用料：330円」（小人160円）。**当サイトで最も安い。**駐車場（35台）やその他の別料金の記載は無い。**税込／税別の明記が無い。**利用時間は午後1時から翌日正午まで",
+  "features":{
+    "shower":{"value":false,"evidenceUrl":"https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html","quote":"AC(電源)はありません。また、シャワー等の施設もありません。"},
+    "pet":{"value":false,"evidenceUrl":"https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html","quote":"ペットを連れてのご入場(ゲージ持参の場合も不可)"}},
+  "coordsFromOfficialMap":{"lat":35.014524,"lng":138.997516,"url":"https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html"}},
+
+ {"napId":"11753","name":"もちこし来楽歩","pref":"静岡","muni":"伊豆市","verdict":"追加",
+  "reason":"施設公式（mochikoshi-club.com）で住所（伊豆市持越692）の一致を確認。チェックイン13時・チェックアウト11時のオートキャンプ場で持込テント泊可。料金ページに1人あたりの入場料があり、2名以上の縛りの記載は無い。**公式に「温泉は休館中です。シャワーはございます。」とあるので、場内の風呂は現在使えない（恒久的に「無い」とは書かれていないので bath は立てていない）**",
+  "checkedUrls":["http://www.mochikoshi-club.com/","http://www.mochikoshi-club.com/charge.html","http://www.mochikoshi-club.com/equipment.html","http://www.mochikoshi-club.com/access.html"],
+  "officialUrl":"http://www.mochikoshi-club.com/","reservationUrl":"http://www.mochikoshi-club.com/calendar_form01/pc.php",
+  "address":"静岡県伊豆市持越692","priceMin":4370,"priceMax":4370,
+  "priceNote":"サイト課金＋入場料（税込明記）。公式「サイト使用料　通常１泊　４，０７０円（税込）」＋「その他の使用料　入場料、付帯設備使用料（一人あたり）　３００円（税込）」＝1名1泊4,370円。AC電源1,010円・テレビアンテナ300円は任意オプションなので含めていない",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"http://www.mochikoshi-club.com/","quote":"温泉は休館中です。シャワーはございます。"},
+    "pet":{"value":true,"evidenceUrl":"http://www.mochikoshi-club.com/","quote":"ペットのご来場は可能ですが、３匹目以上は千円／匹の宿泊代をお願いします。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11754","name":"SUN no MORI 伊豆（旧：土肥オートキャンプ場）","pref":"静岡","muni":"伊豆市","verdict":"門落ち(公式なし)",
+  "reason":"伊豆市公式の指定管理者一覧等を当たったが本施設（旧・土肥オートキャンプ場）の市公式ページを特定できず（類似の松原公園津波避難複合施設＝テラッセオレンジトイは別物）。施設側は Instagram と X のアカウントだけで、**ログイン壁のため本文・料金が確認できない。**独自の公式サイトも見つからず、第三者まとめサイトとなっぷだけでは一次情報にならない",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11754","http://www.af08.com/camp-site/09-sizuoka/004-toi.html","https://www.instagram.com/sun.no.mori._.izu/","https://www.city.izu.shizuoka.jp/soshiki/1004/2/4241.html","https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/index.html","https://www.aishiteikanri.jp/facilities/campground"],
+  "officialUrl":null},
+
+ {"napId":"11755","name":"天城ふるさと広場キャンプ場","pref":"静岡","muni":"伊豆市","verdict":"追加",
+  "reason":"伊豆市公式（市営観光施設一覧）が本施設の料金について施設側サイトを案内しており、施設公式（spri.jp）自体は画像のみで料金が読めなかったため、**同じ敷地（天城ドーム内）に事務所を置く運営団体「伊豆魅力(三力)プロジェクト」の公式サイトの料金表で確認した。本体側でも取得し直し、「●キャンプ場 持ち込みテント 2,200円」と、ページ末尾の所在地「〒410-3216 伊豆市上船原1120-1 天城ドーム内」を直接確認した。**最低人数の制限は無い。バンガロー・宿泊棟は対象外",
+  "checkedUrls":["https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/811.html","https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/index.html","https://www.spri.jp/furusatohiroba/","http://izumiryoku.com/ryoukin/index.html","http://izumiryoku.com/institution/index.html"],
+  "officialUrl":"http://izumiryoku.com/ryoukin/index.html","reservationUrl":"https://k3.p-kashikan.jp/izu-city/",
+  "address":"静岡県伊豆市上船原1120-1","priceMin":2200,"priceMax":2200,
+  "priceNote":"区画単位の定額。運営団体（伊豆魅力(三力)プロジェクト／所在地：伊豆市上船原1120-1 天城ドーム内）公式の料金表より「●キャンプ場　1人　持ち込みテント（1区画6ｍ×6ｍ）2,200円」。入場料・駐車料の別記載は無い。**税込／税別の明記が無い。施設専用の公式サイト（spri.jp）は料金が画像のみで読めず、根拠は運営団体サイト**",
+  "features":{},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11758","name":"LScamp中伊豆（萬城の滝キャンプ場）","pref":"静岡","muni":"伊豆市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"伊豆市公式に「萬城の滝キャンプ場は…現在、株式会社NTTLandscapeが運営管理を行っています」「**詳細は、キャンプ検索・予約サイトナップをご覧ください**」と明記。運営会社の公式ニュースでも「キャンプ場検索・予約サイト『なっぷ』における予約受付も開始しました」と案内するだけで、**市・運営会社どちらの公式にも料金が無い**",
+  "checkedUrls":["https://www.city.izu.shizuoka.jp/soshiki/1004/2/810.html","https://www.ntt-landscape.co.jp/news/lscamp-nakaizu/","https://www.ntt-landscape.co.jp/"],
+  "officialUrl":"https://www.city.izu.shizuoka.jp/soshiki/1004/2/810.html"},
+
+ {"napId":"11759","name":"さざ波キャンプ場","pref":"静岡","muni":"伊豆市","verdict":"門落ち(公式なし)",
+  "reason":"独自の公式サイトが見つからない。伊豆市公式の市営観光施設一覧にも掲載が無く自治体管理の施設ではない模様。**伊豆市観光情報サイト（DMO運営）は根拠に使えない**ため、一次情報源が無い",
+  "checkedUrls":["http://www.af08.com/camp-site/09-sizuoka/005-sazanami.html","https://kanko.city.izu.shizuoka.jp/sightseeing/sazanamicamp/","https://www.nap-camp.com/shizuoka/11759"],
+  "officialUrl":null},
+
+ {"napId":"11760","name":"ファーマーズヒル（旧かたつむり）","pref":"静岡","muni":"伊豆市","verdict":"追加",
+  "reason":"施設公式（f-hill.jp）で住所（伊豆市湯ヶ島892-66）の一致を確認。チェックイン15:00〜17:00・チェックアウト10:00の持込テント泊キャンプ場。**公式に「ソロサイト　３名限定　駐車1台無料　料金：2000円（１テント）　入場料：1000円」と専用のソロサイトがある**",
+  "checkedUrls":["https://f-hill.jp/wordpress/","https://f-hill.jp/wordpress/camp/","https://f-hill.jp/wordpress/access/","https://f-hill.jp/wordpress/reservation/"],
+  "officialUrl":"https://f-hill.jp/wordpress/camp/","reservationUrl":"https://f-hill.jp/wordpress/reservation/",
+  "address":"静岡県伊豆市湯ヶ島892-66","priceMin":3000,"priceMax":3000,
+  "priceNote":"ソロサイトの定額＋入場料。公式「ソロサイト　３名限定　駐車1台無料　料金：2000円（１テント）　入場料：1000円」＝3,000円（駐車1台は無料）。**税込／税別の明記が無い。**「３名限定」は枠数の意味に読めるが公式の表記のまま載せてある",
+  "features":{},
+  "coordsFromOfficialMap":{"lat":34.86412925744013,"lng":138.9222290086709,"url":"https://f-hill.jp/wordpress/access/"}},
+
+ {"napId":"11762","name":"今井浜オレンジヒルズフィールド","pref":"静岡","muni":"河津町","verdict":"門落ち(公式なし)",
+  "reason":"独自の公式サイトが見つからない。運営元と思われる「伊豆今井浜相沢」のサイトは同一住所の姉妹施設「伊豆今井浜オートキャンプ場」を案内しているが、**2021年の最新投稿で「年内は営業を見合わせております」とあり以降更新が無く、現行の『今井浜オレンジヒルズフィールド』と同一か別施設か確認できない。**施工した建築事務所の実績ページでは2023年に「宿泊棟２棟、多目的作業棟１棟」を新築したレンタルビレッジ型施設と紹介されており、持込テント泊の可否も公式に確認できない",
+  "checkedUrls":["https://izuimaihama-aizawa.com/","https://izuimaihama-aizawa.com/category/facilities/camp","https://matsunaga-sekkei.com/orangehills","https://kankou.town.kawazu.shizuoka.jp/attraction/205/"],
+  "officialUrl":null},
+
+ {"napId":"11763","name":"大池キャンプ場","pref":"静岡","muni":"河津町","verdict":"門落ち(公式なし)",
+  "reason":"独自の公式サイトが見つからない。河津町公式にも掲載が無く自治体運営の施設ではない模様。**河津町観光協会のページは根拠に使えない**ため、一次情報源が無い",
+  "checkedUrls":["https://kankou.town.kawazu.shizuoka.jp/attraction/205/","https://www.nap-camp.com/shizuoka/11763"],
+  "officialUrl":null},
+
+ {"napId":"11764","name":"オートキャンピング村アドベンチャーファミリー","pref":"静岡","muni":"河津町","verdict":"追加",
+  "reason":"施設公式（grandporte.com/adven）で確認。チェックイン13:00〜18:00・チェックアウト11:00の持込テントのオートキャンプ場。「入場料/大人　1人500円」と人数単位の記載があり単独利用可。**公式に番地の記載が無いので住所は大字（上佐ヶ野）までに留めた**（台帳は上佐ヶ野大休場383-3）。**同じ河津町上佐ヶ野に「佐ヶ野オートキャンプ場」が別にあるが、台帳住所が川津筏場1585-5で別施設**",
+  "checkedUrls":["https://www.grandporte.com/adven/index.html","https://www.nap-camp.com/shizuoka/11764"],
+  "officialUrl":"https://www.grandporte.com/adven/index.html","reservationUrl":"https://www.grandporte.com/adven/mailform/",
+  "address":"静岡県賀茂郡河津町上佐ヶ野","priceMin":2500,"priceMax":4500,
+  "priceNote":"サイト課金＋入場料。公式「■サイト利用料　1区画/4000円　AC電源付5000円(数に限りがございます。予約時要確認）**10月1日〜翌3月31日まで1区画/2000円**・AC電源付3000円※入場料/大人　1人500円　子供1人250円（３歳〜小学生）」。1名の総額は冬季（10/1〜3/31）が2,000＋500＝2,500円、それ以外が4,000＋500＝4,500円。「■駐車料金(税別)　１区画に２台以上の場合　１台 1000円」で1台目は無料。**駐車料のみ税別の明記があり、サイト代・入場料は税込／税別の明記が無い。公式に番地の記載が無い**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.grandporte.com/adven/index.html","quote":"シャワー棟　清潔さが保たれている温水シャワー棟　男性3女性3　6分200円"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.grandporte.com/adven/index.html","quote":"■販売品　炭、薪、氷、卓上コンロ用ガス、ガスカートリッジ、ホワイトガソリン調味料、日用雑貨、その他・・"},
+    "shop":{"value":true,"evidenceUrl":"https://www.grandporte.com/adven/index.html","quote":"■施設　管理棟・炊事場・売店・温水シャワー・水洗トイレ"},
+    "pet":{"value":true,"evidenceUrl":"https://www.grandporte.com/adven/index.html","quote":"＊ペット(犬）は可ですが、自己管理、自己責任、及び無駄吠え等他のお客様のご迷惑にならぬようにお願いいたします。"},
+    "nearbyOnsen":{"value":"踊り子温泉会館（車で約13分・キャンプ場に50％割引券あり）","evidenceUrl":"https://www.grandporte.com/adven/index.html","quote":"踊り子温泉会館（キャンプ場より車で約１３分）…大人 1000円　/　子供 500円 （キャンプ場に50％割引券あり）"}},
+  "coordsFromOfficialMap":null}
+]
