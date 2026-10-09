@@ -19462,5 +19462,1004 @@
       "https://koganezaki.com/",
       "https://koganezaki.com/reserve/"
     ]
+  },
+  {
+    "id": "camp-fantasea",
+    "slug": "camp-fantasea",
+    "name": "CampFantasea（キャンプファンタジア）",
+    "prefecture": "静岡",
+    "area": "南伊豆",
+    "status": "active",
+    "address": "静岡県賀茂郡南伊豆町伊浜2733-3",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 5500,
+    "priceMax": 9500,
+    "priceNote": "サイト課金＋施設利用料。公式「施設タイプ別料金 平日料金 テントサイト 4,500円〜」「休前日・休日料金 テントサイト 6,500円〜」「施設利用料 ＋1名につき 1,000円（10才未満は無料）」「サイト料金には、車１台かバイク２台の駐車料も含みます。追加は1台あたり1,000円。」「**ハイシーズン（GW・夏期・年末年始）は各サイト 休日料金＋2,000円**」。平日1名で4,500＋1,000＝5,500円、休日ハイシーズン1名で6,500＋2,000＋1,000＝9,500円。**駐車は車1台込み。公式の表記が「〜」なので上振れがあり得る。税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワールーム（温水）は無料です。24時間ご利用いただけます（https://www.campfantasea.com/user-guide）",
+      "pet": true,
+      "petNote": "ワンちゃんと猫ちゃんのご同伴はOKです。その他のペットはお問い合わせください。（https://www.campfantasea.com/pet）",
+      "reservationNote": "公式が案内する予約先: https://www.campfantasea.com/reserve"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "南伊豆町伊浜の高台。平日ならテントサイト4,500円＋施設利用料1,000円でソロ5,500円、**車1台（またはバイク2台）の駐車料が込み**。温水シャワーが無料で24時間使える。犬・猫の同伴OK。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.campfantasea.com/",
+    "reservationUrl": "https://www.campfantasea.com/reserve",
+    "cautions": [
+      "**休前日・休日は6,500円〜に上がり、GW・夏期・年末年始のハイシーズンはさらに＋2,000円**で総額9,500円",
+      "公式の料金表記が「4,500円〜」なので上振れがあり得る",
+      "税込／税別の明記が無い",
+      "車は1台込み、追加は1台1,000円",
+      "場内の風呂・売店・薪の販売について公式に記載が無い"
+    ],
+    "source": [
+      "https://www.campfantasea.com/",
+      "https://www.campfantasea.com/reserve"
+    ]
+  },
+  {
+    "id": "irouzaki-autocamp",
+    "slug": "irouzaki-autocamp",
+    "name": "石廊崎オートキャンプ場",
+    "prefecture": "静岡",
+    "area": "南伊豆",
+    "status": "active",
+    "address": "静岡県賀茂郡南伊豆町石廊崎199-4",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 6000,
+    "priceMax": 6000,
+    "priceNote": "区画単位の定額。公式サイト内の料金画像より「利用料金 ¥6,000円【AC電気代込み】定員:1サイト5名様まで【一泊二日】★1サイト6m×10m」。**1サイト（5名まで）定額なのでソロでも6,000円を1人で負担する。**AC電気代込みで入場料・駐車料の別建ては無い。6名目以降のみ追加（大人1,000円・子供500円）。チェックインは13:00〜16:00、チェックアウトは11:00まで。**料金が公式サイト上で画像でしか示されておらず、税込／税別の表記も無い**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "2025/07/11日　シャワールームの新設（https://atushi-akabane.sakura.ne.jp/irouzaki01/index01.html）",
+      "pet": true,
+      "petNote": "キャンプ場内では、ペットの犬猫にはリードを装着するかゲージ等に入れて管理して下さい。（https://atushi-akabane.sakura.ne.jp/irouzaki01/kinshi00.jpg）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "伊豆半島最南端、石廊崎のオートキャンプ場（運営は入口のお食事処「網船納屋」）。1サイト6m×10mで**AC電気代込みの6,000円**。2025年7月にシャワールームが新設された。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://atushi-akabane.sakura.ne.jp/irouzaki01/index.html",
+    "reservationUrl": null,
+    "cautions": [
+      "**1サイト（5名まで）の定額なので、ソロでも6,000円を1人で負担する**",
+      "**料金が公式サイト上で画像でしか示されていない。**税込／税別の表記も無いので、予約時に確認する",
+      "チェックインは13:00〜16:00、チェックアウトは11:00まで",
+      "6名目以降のみ追加料金（大人1,000円・子供500円）",
+      "場内の風呂・売店・薪の販売について公式に記載が無い",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://atushi-akabane.sakura.ne.jp/irouzaki01/index.html"
+    ]
+  },
+  {
+    "id": "otome-forest-camp2",
+    "slug": "otome-forest-camp2",
+    "name": "乙女森林公園第2キャンプ場",
+    "prefecture": "静岡",
+    "area": "御殿場",
+    "status": "active",
+    "address": "静岡県御殿場市深沢2696-2",
+    "type": "campground",
+    "lat": 35.287219,
+    "lng": 138.972042,
+    "priceMin": 6000,
+    "priceMax": 6000,
+    "priceNote": "区画課金＋入場料。公式「料金のご案内」より「乙女森林公園第２キャンプ場利用料金　オートキャンプサイト（１３区画）定員：５名　１泊１区画：５，０００円（**市民料金２，０００円**）」「・利用料の他に入場料がかかります。（大人1人最大1,000円、小学生から高校生まで1人最大500円）」。市民以外なら5,000＋1,000＝6,000円。**御殿場市民は2,000＋入場料で3,000円**。税込／税別の明記が無い",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "簡易型シャワールーム（有料１００円で５分間・ガス給湯・照明付き）が２棟　炊事場・トイレ棟の脇にあります。（https://www.gotemba-otome.jp/%e7%ac%ac2%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4）",
+      "firewood": true,
+      "firewoodNote": "＊薪・炭も販売しています！◎薪(針葉樹)　１カゴ５００円◎薪(広葉樹)　１カゴ８００円（https://www.gotemba-otome.jp/%e6%96%99%e9%87%91%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85）",
+      "shop": true,
+      "shopNote": "管理棟の売店では、各種受付の他レンタル用品、アイスクリーム、冷たい飲み物(アルコールもあります)、調味料、キャンプ用品(薪、炭もあります)などを取りそろえております。（https://www.gotemba-otome.jp/%e7%ac%ac2%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4）",
+      "pet": true,
+      "petNote": "以下のオートキャンプサイトに限り、ペット同伴でご利用できます。・第１キャンプ場オートサイトNo.１２・No.１３・No.１４（３サイト）・第２キャンプ場オートサイトNo.７・No.８（２サイト）（https://www.gotemba-otome.jp/%e4%ba%88%e7%b4%84%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "御殿場市営、乙女森林公園の第2キャンプ場（第1とは別のキャンプ場）。オートキャンプサイト13区画で1泊1区画5,000円＋入場料1,000円。管理棟の売店でレンタル用品・飲み物・調味料・薪・炭が買える。簡易型シャワールーム（100円で5分）が2棟。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.gotemba-otome.jp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**御殿場市民なら区画料金が2,000円になり、入場料と合わせて3,000円**（市民以外は6,000円）",
+      "1区画の定額（定員5名）なので、ソロでも区画1つ分を払う",
+      "**ペット同伴できるのは第2キャンプ場のオートサイトNo.7・No.8の2区画だけ**",
+      "税込／税別の明記が無い",
+      "場内の風呂について公式に記載が無い（簡易シャワーのみ）",
+      "同じ公式サイトで第1キャンプ場（深沢2190）も案内されている。予約時に取り違えないこと"
+    ],
+    "source": [
+      "https://www.gotemba-otome.jp/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "yamaboushi-autocamp",
+    "slug": "yamaboushi-autocamp",
+    "name": "やまぼうしオートキャンプ場",
+    "prefecture": "静岡",
+    "area": "御殿場",
+    "status": "active",
+    "address": "静岡県御殿場市板妻630",
+    "type": "campground",
+    "lat": 35.28869,
+    "lng": 138.88008,
+    "priceMin": 2500,
+    "priceMax": 7000,
+    "priceNote": "車両単位の定額。公式「宿泊について」より「フリーサイト　⾞1台1泊　￥5,000（通常料⾦）、￥6,000（割増期間）、￥7,000（年末年始）」「⾞1台につき⼤⼈5⼈まで」。**バイク1台なら￥2,500〜5,000**なので下限は2,500円、上限は車の年末年始で7,000円。入場料・駐車料の別記載は無い。**税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "● シャワー（温水／男女別なし）施設数2：無料（冬季はご利用できません）（https://www.g-news.jp/yamaboushi/）",
+      "firewood": true,
+      "firewoodNote": "● 売店（ 営業　8：00 ～ 17：00 ）薪ステッカーアパレル（たまに）（https://www.g-news.jp/yamaboushi/）",
+      "shop": true,
+      "shopNote": "● 売店（ 営業　8：00 ～ 17：00 ）薪ステッカーアパレル（たまに）（https://www.g-news.jp/yamaboushi/）",
+      "pet": true,
+      "petNote": "ペット同伴可（自己管理でしっかりと鎖着用願います）（https://www.g-news.jp/yamaboushi/）",
+      "nearbyOnsen": "御殿場御胎内温泉（約2km・車で5分）（https://www.g-news.jp/yamaboushi/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "御殿場市板妻のフリーサイト。**バイクなら1台2,500円**、車なら1台5,000円で、どちらも大人5人まで同額。温水シャワーが無料。売店で薪を売っている。御殿場御胎内温泉が約2km（車で5分）。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.g-news.jp/yamaboushi/",
+    "reservationUrl": null,
+    "cautions": [
+      "**車だと通常5,000円・割増期間6,000円・年末年始7,000円。**バイクなら2,500〜5,000円で、乗り物で倍違う",
+      "**シャワーは冬季は利用できない**と公式が明記",
+      "税込／税別の明記が無い",
+      "場内の風呂について公式に記載が無い（温水シャワーのみ）",
+      "公式ページには古い案内がHTMLコメントで残っている。料金はメール予約時に確認したほうがいい"
+    ],
+    "source": [
+      "https://www.g-news.jp/yamaboushi/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "hakone-no-sato-camp",
+    "slug": "hakone-no-sato-camp",
+    "name": "三島市立箱根の里 キャンプ場",
+    "prefecture": "静岡",
+    "area": "三島",
+    "status": "active",
+    "address": "静岡県三島市字北原菅4710-1",
+    "type": "campground",
+    "lat": 35.16311,
+    "lng": 138.98288,
+    "priceMin": 200,
+    "priceMax": 200,
+    "priceNote": "人数課金のみ（税込明記）。公式「３ 使用料金表（税込）」より「キャンプ場　宿泊利用　その他の方　１人１泊につき　市民１００円　**市民以外２００円**」。入場料・駐車料の別記載は無い。**当サイトで2番目に安い。**なお手引きに「午前10時以降活動する場合 日帰り料金がかかります。」の注記がある",
+    "features": {
+      "reservation": "要",
+      "bath": false,
+      "bathNote": "入浴 自然の家 宿泊団体 のみ 利用可 ◆入浴時間：１８時３０分～２１時３０分／※キャンプ場に３泊４日以上宿泊する方は、自然の家の浴室利用団体がある日に限り、無料で自然の家浴室を１８時３０分～２１時３０分の間に１回使用できます。（https://www.city.mishima.shizuoka.jp/uploaded/attachment/14150.pdf）",
+      "shower": true,
+      "showerNote": "シャワー 希望される方がいる団体は、事前に利用時間をお申し出ください。※キャンプ場利用者が優先となります。♦利用時間：１３時～１６時 （自然の家 浴室）・利用 料：１人 １回 ５０円 （最終日に精算）（https://www.city.mishima.shizuoka.jp/uploaded/attachment/14150.pdf）",
+      "pet": false,
+      "petNote": "♦ ペットを連れての活動はできません。（https://www.city.mishima.shizuoka.jp/uploaded/attachment/14150.pdf）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "三島市立の青少年教育施設「箱根の里」のキャンプ場。**市民以外でも1人1泊200円（税込）**という、当サイトで2番目に安い料金。公式の利用対象に「キャンプ場：団体または個人」と明記されていて、個人は1か月前〜3日前に予約する。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.city.mishima.shizuoka.jp/site/hakonenosato/index.html",
+    "reservationUrl": null,
+    "cautions": [
+      "**自然の家の風呂は「宿泊団体のみ利用可」。**キャンプ場利用者が入れるのは「3泊4日以上宿泊する方が、浴室利用団体がある日に限り1回」だけなので、1泊のソロでは使えない",
+      "シャワー（自然の家 浴室）は**13時〜16時の時間帯のみ・1人1回50円**で、事前に利用時間を申し出る必要がある",
+      "**ペットを連れての活動はできない**と公式が明記",
+      "**青少年の集団宿泊・野外活動を目的とした施設**。静かなソロキャンプを求める場所とは性格が違う",
+      "「午前10時以降活動する場合 日帰り料金がかかります」の注記がある",
+      "公式の住所は「三島市字北原菅4710-1」。なっぷの「山中新田4710-1」とは大字名が違う"
+    ],
+    "source": [
+      "https://www.city.mishima.shizuoka.jp/site/hakonenosato/index.html"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "yoshikawa-kawasemi",
+    "slug": "yoshikawa-kawasemi",
+    "name": "吉川キャンプ場カワセミの里",
+    "prefecture": "静岡",
+    "area": "森町",
+    "status": "active",
+    "address": "静岡県周智郡森町亀久保85-2",
+    "type": "campground",
+    "lat": 34.891533,
+    "lng": 137.977963,
+    "priceMin": 2200,
+    "priceMax": 2200,
+    "priceNote": "入場料＋区画課金（税込明記）。公式「施設及び利用料金表(税込)」より「入場料　1人　200円　小学生以上」＋「テント(持込･1区画)　1泊　2,000円　9区画」＝2,200円",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー棟　1回5分　100円　3室･温水･身障者用有（https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/sangyoseisakuka/kankoshinkokakari/2/627.html）",
+      "pet": false,
+      "petNote": "(注意)ペットを連れての施設利用はお断り願います。（https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/sangyoseisakuka/kankoshinkokakari/2/627.html）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "森町亀久保、町の公式が運営情報を出しているキャンプ場。**入場料200円＋持込テント1区画2,000円で総額2,200円（税込明記）**。テントサイトは9区画。温水シャワー棟（1回5分100円・3室）がある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/sangyoseisakuka/kankoshinkokakari/2/627.html",
+    "reservationUrl": null,
+    "cautions": [
+      "**ペットを連れての施設利用はお断り**と町公式が明記",
+      "1区画の定額なので、ソロでも区画1つ分を払う",
+      "シャワーは1回5分100円の別料金",
+      "場内の風呂・売店・薪の販売について公式に記載が無い",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/sangyoseisakuka/kankoshinkokakari/2/627.html"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "momozawa-tent-site",
+    "slug": "momozawa-tent-site",
+    "name": "桃沢野外活動センター テントサイト",
+    "prefecture": "静岡",
+    "area": "長泉町",
+    "status": "active",
+    "address": "静岡県駿東郡長泉町元長窪895-108",
+    "type": "campground",
+    "lat": 35.180966,
+    "lng": 138.842957,
+    "priceMin": 1000,
+    "priceMax": 4000,
+    "priceNote": "区画単位の定額（人数不問）。公式「テントサイト」より「《サイト６》広さ：4.5m×4.5m　料金：¥1,000/泊（テント１張りスペース）」〜「《サイト２》広さ：１８m×５m　料金：¥4,000/泊（テント4張りスペース）」。ソロなら最安1,000円の区画を選べる。入場料・駐車料の別記載は無い。**「長泉町在住・在勤の方は表示料金の半額」。税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "pet": false,
+      "petNote": "・施設全面ペット禁止とさせて頂いております。（https://www.momozawa.fun/%e6%a1%83%e6%b2%a2%e5%88%a9%e7%94%a8%e3%81%ae%e6%b3%a8%e6%84%8f%e7%82%b9/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "長泉町元長窪、桃沢野外活動センター内のテントサイト。10区画あり、**テント1張りスペースなら1泊1,000円**。区画単位の定額で人数は問われない。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.momozawa.fun/",
+    "reservationUrl": null,
+    "cautions": [
+      "**長泉町在住・在勤なら表示料金の半額**（身分証明書の提示が必要）",
+      "**施設全面ペット禁止**と公式が明記",
+      "公式に「（フォレサウナにはサウナ・トイレ・貸切風呂・コインシャワー・売店があります）」とあるが、**テント泊の客が使えるのか・いくらかは書かれていない**ので、風呂・シャワー・売店の条件には入れていない。現地で確認する",
+      "薪も「BBQ場利用の方向けに、受付でもBBQ備品（薪、炭、網、トングなど）の販売をしております」という限定付きの記載なので条件に入れていない",
+      "税込／税別の明記が無い",
+      "**同じ長泉町内に約1km離れた別施設「桃沢キャンプ場」（工芸村併設）がある。**予約時に取り違えないこと"
+    ],
+    "source": [
+      "https://www.momozawa.fun/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "hakamadaki-autocamp",
+    "slug": "hakamadaki-autocamp",
+    "name": "はかま滝オートキャンプ場",
+    "prefecture": "静岡",
+    "area": "沼津市",
+    "status": "active",
+    "address": "静岡県沼津市戸田3908-13",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2200,
+    "priceMax": 5500,
+    "priceNote": "単身・徒歩／バイクか、車かで料金が変わる（どちらも税込を公式が明記）。公式「◎オートサイト（AC込み／車１台分の駐車料金含む）１サイト１泊　税別価格５，０００円（税込み５，５００円）＊１サイトにテント１張り」「**◎フリーサイト（単身で、徒歩・バイクの場合）１サイト１泊　税別価格２，０００円（税込み２，２００円）**※グループでのご利用、車でのご来場の場合はオートサイトと同じ料金設定となります」",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "管理棟には、受付、トイレ、守衛室、シャワー室があります。（https://jforestheda.wixsite.com/hakamacamp/blank-5）",
+      "pet": true,
+      "petNote": "◆ペットの同行は条件付きで可となります・ご希望の方は、必ずご予約の際にお伝えください。（https://jforestheda.wixsite.com/hakamacamp/blank-2）",
+      "nearbyOnsen": "道の駅「くるら戸田」の温泉（距離の記載なし）（https://jforestheda.wixsite.com/hakamacamp）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "沼津市戸田、はかま滝のオートキャンプ場（市が設置し戸田森林組合が管理）。**公式の料金表に「フリーサイト（単身で、徒歩・バイクの場合）1サイト1泊 税込み2,200円」という単身専用の区分がある**のが分かりやすい。管理棟にシャワー室。道の駅「くるら戸田」の温泉が近い。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://jforestheda.wixsite.com/hakamacamp",
+    "reservationUrl": null,
+    "cautions": [
+      "**車で行くとオートサイト扱いになり税込5,500円**（AC込み・駐車1台分込み）。単身2,200円は徒歩・バイクのときだけ",
+      "グループ利用も同じくオートサイト料金",
+      "ペットの同行は条件付きで可。**予約の際に必ず伝える必要がある**",
+      "場内の風呂について公式に記載が無い（シャワー室のみ）"
+    ],
+    "source": [
+      "https://jforestheda.wixsite.com/hakamacamp"
+    ]
+  },
+  {
+    "id": "ose-tent-mura",
+    "slug": "ose-tent-mura",
+    "name": "大瀬テント村",
+    "prefecture": "静岡",
+    "area": "沼津市",
+    "status": "active",
+    "address": "静岡県沼津市西浦大瀬崎977",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 800,
+    "priceMax": 2400,
+    "priceNote": "人数課金＋車なら駐車料。公式「キャンプ施設とご利用料金のご案内」より「テントサイド（予約受付なし）小学生以上１人　シーズン期間９００円／シーズンオフ８００円」「駐車場　乗用車１台　シーズン期間１，５００円／シーズンオフ１，３００円」。車なしならシーズンオフ800円〜シーズン900円、車ありならシーズンで900＋1,500＝2,400円。**税込／税別の明記が無い。公式が「予約受付なし」と明記している**",
+    "features": {
+      "reservation": "不要",
+      "reservationNote": "公式の料金表に「テントサイド（予約受付なし）」と明記（http://web.thn.jp/osetent/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "沼津市西浦、大瀬崎のテント村。**公式が「テントサイド（予約受付なし）」と書いていて予約がいらない**のが珍しい。料金は小学生以上1人シーズン900円・シーズンオフ800円で、**車を使わなければ1,000円を切る。**テントは持込のみ。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://web.thn.jp/osetent/",
+    "reservationUrl": null,
+    "cautions": [
+      "**車で行くと駐車場代が乗用車1台シーズン1,500円・シーズンオフ1,300円**かかり、総額2,400円まで上がる",
+      "税込／税別の明記が無い",
+      "予約を受け付けていないので、繁忙期は場所の確保が読めない",
+      "場内の風呂・シャワー・売店・薪の販売について公式に記載が無い",
+      "近くの温泉について公式に記載が無い",
+      "**近接する別施設「大瀬崎キャンプ場」（西浦江梨329）と混同しないこと**"
+    ],
+    "source": [
+      "http://web.thn.jp/osetent/"
+    ]
+  },
+  {
+    "id": "mirakuno-camp",
+    "slug": "mirakuno-camp",
+    "name": "みらくのキャンプ場",
+    "prefecture": "静岡",
+    "area": "裾野",
+    "status": "active",
+    "address": "静岡県裾野市須山2956-7",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 4400,
+    "priceMax": 5500,
+    "priceNote": "区画単位の定額（税込明記）。公式「ご利用料金表(税込) 基本料金 通常料金/3連休等繁忙期 １泊目 ４，４００円/５，５００円」で、基本料金は4名・車1台まで込み。**4名まで同額なのでソロでも4,400円を1人で負担する。**常設電源（＋1,100円）は任意オプション",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "脱衣所完備の温水シャワールームが２部屋ありますのでご希望の方は管理人まで申し出下さい（5分100円）（http://web.thn.jp/mirakuno/page003.html）",
+      "shop": true,
+      "shopNote": "キャンプ及びバーベキューの受付所です。売店もあります。（http://web.thn.jp/mirakuno/page003.html）",
+      "pet": true,
+      "petNote": "ペットはリードを装着し糞の処理、事故等は自己責任をもって処理して下さい。（http://web.thn.jp/mirakuno/page004.html）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "裾野市須山のオートキャンプ場。基本料金が4名・車1台まで込みで**通常4,400円（税込明記）**。温水シャワールーム（脱衣所完備・5分100円）が2部屋、受付に売店がある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://web.thn.jp/mirakuno/",
+    "reservationUrl": null,
+    "cautions": [
+      "**4名まで同額の区画定額なので、ソロでも4,400円を1人で負担する**",
+      "3連休等の繁忙期は5,500円",
+      "常設電源は＋1,100円",
+      "シャワーは管理人に申し出る方式（5分100円）",
+      "場内の風呂について公式に記載が無い（温水シャワーのみ）",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "http://web.thn.jp/mirakuno/"
+    ]
+  },
+  {
+    "id": "countrybear-camp",
+    "slug": "countrybear-camp",
+    "name": "カントリーベアーファミリーキャンプ場",
+    "prefecture": "静岡",
+    "area": "裾野",
+    "status": "active",
+    "address": "静岡県裾野市須山字大野2646",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3000,
+    "priceMax": 3000,
+    "priceNote": "ソロ＆ペアサイトの定額。公式「概要・料金・レンタル品」より「【ソロ＆ペアサイト】料金：3,000円　内容：車1台/テント1張/2名まで」で車1台込み。**税込／税別の明記が無い。公式サイトが2026年10月に移転したばかりで設備情報が復旧中**",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "公式が案内する予約先: https://countrybear-fcg.com/%e3%82%bd%e3%83%ad%e3%83%bb%e3%83%9a%e3%82%a2%e3%82%b5%e3%82%a4%e3%83%88%e4%ba%88%e7%b4%84%e7%8a%b6%e6%b3%81/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "裾野市須山字大野。**公式に「【ソロ＆ペアサイト】料金：3,000円 内容：車1台/テント1張/2名まで」という名前からしてソロ向けの区分がある。**車1台込みで3,000円。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://countrybear-fcg.com/",
+    "reservationUrl": "https://countrybear-fcg.com/%e3%82%bd%e3%83%ad%e3%83%bb%e3%83%9a%e3%82%a2%e3%82%b5%e3%82%a4%e3%83%88%e4%ba%88%e7%b4%84%e7%8a%b6%e6%b3%81/",
+    "cautions": [
+      "税込／税別の明記が無い",
+      "**公式サイトが2026年10月に移転したばかりで、設備（風呂・シャワー・売店・薪など）の紹介ページがまだ復旧中。**場内の設備は現地か電話で確認する",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://countrybear-fcg.com/",
+      "https://countrybear-fcg.com/%e3%82%bd%e3%83%ad%e3%83%bb%e3%83%9a%e3%82%a2%e3%82%b5%e3%82%a4%e3%83%88%e4%ba%88%e7%b4%84%e7%8a%b6%e6%b3%81/"
+    ]
+  },
+  {
+    "id": "dog-field-gasshukoku",
+    "slug": "dog-field-gasshukoku",
+    "name": "Dog Field合衆国",
+    "prefecture": "静岡",
+    "area": "裾野",
+    "status": "active",
+    "address": "静岡県裾野市下和田572-1",
+    "type": "campground",
+    "lat": 35.233845,
+    "lng": 138.873137,
+    "priceMin": 4400,
+    "priceMax": 4400,
+    "priceNote": "サイト課金＋人数課金（税込明記）。公式「一般サイト（Cサイト）1区画ご利用の場合（ご愛犬無し）」の料金表より「サイト利用料金 2,860円/泊」＋「大人（13歳以上）1,540円/人」＝4,400円。駐車は「1,540円/台・2台目以降（※1台は無料）」で1台目無料。「※価格は税込み価格になります。」と明記。**犬なしで使えるのは一般サイト（Cサイトの3区画）だけ**",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "キャンプ場をご利用のお客様は、原則、愛犬同伴に限ります。（https://www.dog-field.jp/camp.html）",
+      "reservationNote": "公式が案内する予約先: https://www.dog-field.jp/reservation.html"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "裾野市下和田、犬連れ前提のキャンプ場。**2024年9月から一般サイト（Cサイトの3区画）だけは犬なしでも泊まれるようになった**。サイト2,860円＋大人1,540円で4,400円（税込明記）、車1台目は無料。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.dog-field.jp/",
+    "reservationUrl": "https://www.dog-field.jp/reservation.html",
+    "cautions": [
+      "**犬なしで使えるのは一般サイト（Cサイトの3区画）だけ**。ほかの区画は「原則、愛犬同伴に限ります」",
+      "3区画しかないので枠が少ない",
+      "駐車は1台目無料、2台目以降1,540円",
+      "**犬連れが基本のキャンプ場**なので、犬が苦手な人には向かない",
+      "場内の風呂・シャワー・売店・薪の販売について公式に記載が無い",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://www.dog-field.jp/",
+      "https://www.dog-field.jp/reservation.html"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "kenmin-no-mori-camp",
+    "slug": "kenmin-no-mori-camp",
+    "name": "静岡県県民の森キャンプ場",
+    "prefecture": "静岡",
+    "area": "静岡市葵区・井川",
+    "status": "active",
+    "address": "静岡県静岡市葵区岩崎284",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 700,
+    "priceMax": 700,
+    "priceNote": "区画単位の定額。公式「施設・料金」より「テントサイト　フリーサイト　700円」（「**ソロテント向けの小さな区画です**」と明記）。入場料・駐車料の別記載は無い。**税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "公式が案内する予約先: https://kenmori-camp.rsvsys.jp/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "静岡市葵区岩崎の静岡県県民の森（指定管理：井川森林組合）。**公式が「フリーサイト ソロテント向けの小さな区画です。」と明記したソロ向け区画が700円**。入場料などの加算も無い。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://www.kenmori.info/",
+    "reservationUrl": "https://kenmori-camp.rsvsys.jp/",
+    "cautions": [
+      "**風呂・シャワー（ユニットバス）はログハウス／ロッジ宿泊者専用の設備で、テントサイト利用者向けの共用設備ではない**",
+      "税込／税別の明記が無い",
+      "売店・薪の販売について公式に記載が無い",
+      "近くの温泉について公式に記載が無い",
+      "山深い場所なので、買い出しは麓で済ませておく"
+    ],
+    "source": [
+      "http://www.kenmori.info/",
+      "https://kenmori-camp.rsvsys.jp/"
+    ]
+  },
+  {
+    "id": "fujikawa-camp-hill-luna",
+    "slug": "fujikawa-camp-hill-luna",
+    "name": "藤川キャンプヒルLUNA・Luna",
+    "prefecture": "静岡",
+    "area": "静岡市葵区",
+    "status": "active",
+    "address": "静岡県静岡市葵区黒俣2735",
+    "type": "campground",
+    "lat": 35.0672205,
+    "lng": 138.2036777,
+    "priceMin": 4000,
+    "priceMax": 5000,
+    "priceNote": "入場料＋サイト課金。公式「料金案内」より「入場料　大人：５００円（中学生以上)／1名」＋「オートサイト　平日：３，５００円／１サイト１泊」＝平日4,000円。休前日・日は4,000＋500＝4,500円、GW・夏休み・連休・祝日は4,500＋500＝5,000円。車1台は無料。**税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "温水シャワー　１６：００～２２：００（５分間 300円）（https://camp-lunaluna.com/free/guide2）",
+      "firewood": true,
+      "firewoodNote": "販売　薪、氷の販売あり（https://camp-lunaluna.com/free/guide2）",
+      "pet": true,
+      "petNote": "ペット　下記のお約束を守っていただける場合のみ可能です。２匹まで可能。（https://camp-lunaluna.com/free/guide2）",
+      "nearbyOnsen": "創造と生きがいの湯（車で20〜25分）（https://camp-lunaluna.com/free/onsen）",
+      "reservationNote": "公式が案内する予約先: https://camp-lunaluna.com/free/web-reservation"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "静岡市葵区黒俣のオートキャンプ場。入場料500円＋オートサイト平日3,500円でソロ4,000円、**車1台は無料**。温水シャワー（16:00〜22:00・5分300円）、薪と氷の販売あり。ペットは2匹まで。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://camp-lunaluna.com/",
+    "reservationUrl": "https://camp-lunaluna.com/free/web-reservation",
+    "cautions": [
+      "休前日・日は4,500円、GW・夏休み・連休・祝日は5,000円",
+      "税込／税別の明記が無い",
+      "シャワーは16:00〜22:00の時間帯のみ（5分300円）",
+      "場内に風呂は無い。温泉は車で20〜25分の「創造と生きがいの湯」",
+      "売店について公式に記載が無い（薪・氷の販売は確認済み）"
+    ],
+    "source": [
+      "https://camp-lunaluna.com/",
+      "https://camp-lunaluna.com/free/web-reservation"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "kidachi-camp-kannami",
+    "slug": "kidachi-camp-kannami",
+    "name": "函南町立木立キャンプ場",
+    "prefecture": "静岡",
+    "area": "函南町",
+    "status": "active",
+    "address": "静岡県田方郡函南町",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 700,
+    "priceMax": 1400,
+    "priceNote": "人数課金＋テント課金。公式より「宿泊（午前10時から翌日の午前10時まで）大人200円 子供100円／大人400円 子供200円」「持込テント（テントサイト利用料）1張つき500円／1張につき1,000円」（前者が町内者、後者が町外者）。町内者700円、**町外者1,400円**。駐車料・入場料の記載は無い。**税込／税別の明記が無い。公式ページに施設の番地が載っていない**",
+    "features": {
+      "reservation": "要",
+      "pet": false,
+      "petNote": "ペットの持ち込みはしないでください。（https://www.town.kannami.shizuoka.jp/soshiki/1017/1042.html）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "函南町立のキャンプ場。**町外の人でも宿泊400円＋持込テント1,000円の1,400円**、町内なら700円。利用時間は午前10時から翌日の午前10時まで。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.town.kannami.shizuoka.jp/soshiki/1017/1042.html",
+    "reservationUrl": null,
+    "cautions": [
+      "**町公式のページに施設の番地が載っていない。**当サイトの住所は「静岡県田方郡函南町」までで、カーナビは施設名で検索したほうがいい",
+      "**ペットの持ち込みはしないでください**と町公式が明記",
+      "税込／税別の明記が無い",
+      "予約・問い合わせは函南町教育委員会 生涯学習課",
+      "場内の風呂・シャワー・売店・薪の販売について公式に記載が無い",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://www.town.kannami.shizuoka.jp/soshiki/1017/1042.html"
+    ]
+  },
+  {
+    "id": "shimada-yamanoie",
+    "slug": "shimada-yamanoie",
+    "name": "島田市野外活動センター山の家",
+    "prefecture": "静岡",
+    "area": "島田",
+    "status": "active",
+    "address": "静岡県島田市身成48番地の3",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 1700,
+    "priceMax": 2500,
+    "priceNote": "区画課金＋環境整備費。市内はサイト1,600円＋環境整備費100円＝1,700円。**市外は「利用者が市外に住所…を有する場合…利用料の額の50パーセントに相当する額を加算する」で2,400円＋100円＝2,500円。**入浴（500円）は任意なので総額に含めていない。**税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "浴室を利用することができる者は、和室を宿泊で利用する者及びキャンプ場を宿泊で利用する者とする。（https://www.city.shimada.shizuoka.jp/kurashi-docs/yagaikatsudousenntayamanoie.html）",
+      "firewood": true,
+      "firewoodNote": "薪(3kg)　1束（https://yamanoie.jp/?p=153）",
+      "reservationNote": "公式が案内する予約先: https://yamanoie.jp/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "島田市身成の野外活動センター「山の家」。キャンプサイト1区画1,600円＋環境整備費100円で市内1,700円。**公式の規定に「浴室を利用することができる者は、和室を宿泊で利用する者及びキャンプ場を宿泊で利用する者とする。」とあり、キャンプ泊でも風呂に入れる**。薪（3kg）の販売あり。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.city.shimada.shizuoka.jp/kurashi-docs/yagaikatsudousenntayamanoie.html",
+    "reservationUrl": "https://yamanoie.jp/",
+    "cautions": [
+      "**市外の人は利用料が50％加算されて2,400円**、環境整備費と合わせて2,500円",
+      "環境整備費100円／人が別途必要（2026年8月20日改訂の料金表で確認）",
+      "入浴は500円（任意利用なので総額には含めていない）",
+      "税込／税別の明記が無い",
+      "売店について公式に記載が無い",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://www.city.shimada.shizuoka.jp/kurashi-docs/yagaikatsudousenntayamanoie.html",
+      "https://yamanoie.jp/"
+    ]
+  },
+  {
+    "id": "warabezawa-shinsui",
+    "slug": "warabezawa-shinsui",
+    "name": "童子沢親水公園",
+    "prefecture": "静岡",
+    "area": "島田",
+    "status": "active",
+    "address": "静岡県島田市大代2459",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 0,
+    "priceMax": 0,
+    "priceNote": "**無料。**公式「事前に申請すれば、キャンプやバーベキューが無料で行えます。」「童子沢親水公園には無料駐車場があり」で、車の有無にかかわらず0円。**ただし事前の申請が必須**（市のオンライン申請フォーム）。**公式の住所（大代2459）は台帳の番地（大代2477-16）と違う**",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "公式が案内する予約先: https://logoform.jp/form/imZT/1184444"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "島田市大代の親水公園。**島田市公式が「事前に申請すれば、キャンプやバーベキューが無料で行えます。キャンプ可能エリアでは、テントを設置して宿泊ができます。」と明記していて、無料駐車場もあるので総額0円**。当サイトで唯一の無料のキャンプ地。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.city.shimada.shizuoka.jp/kanko-docs/waxtupazawa.html",
+    "reservationUrl": "https://logoform.jp/form/imZT/1184444",
+    "cautions": [
+      "**事前の申請が必須**（市のオンライン申請フォーム）。飛び込みでは泊まれない",
+      "**設備は何も確認できていない。**風呂・シャワー・売店・薪の販売・ゴミの扱いについて公式に記載が無いので、装備はすべて持参する前提で行く",
+      "**公式の住所（島田市大代2459）はなっぷ掲載の番地（大代2477-16）と違う**",
+      "親水公園なので川遊びの利用者と時間帯が重なる",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://www.city.shimada.shizuoka.jp/kanko-docs/waxtupazawa.html",
+      "https://logoform.jp/form/imZT/1184444"
+    ]
+  },
+  {
+    "id": "okubo-camp-fujieda",
+    "slug": "okubo-camp-fujieda",
+    "name": "大久保キャンプ場",
+    "prefecture": "静岡",
+    "area": "藤枝",
+    "status": "active",
+    "address": "静岡県藤枝市瀬戸ノ谷11029",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 1830,
+    "priceMax": 1830,
+    "priceNote": "区画単位の定額。公式「テントキャンプサイト使用料　1区画　14時〜翌日12時　1,830円」（人数割りではなく1区画単位）。駐車料の追加記載は見当たらない。**税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "公式が案内する予約先: https://orep-o.net/okubo_camp/camp_rsv.html"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "藤枝市瀬戸ノ谷の市営キャンプ場（指定管理：おれっぷ大久保）。**テントキャンプサイト1区画1,830円**で、利用時間は14時〜翌日12時。藤枝市公式のPDFと施設公式サイトの金額が一致している。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://orep-o.net/okubo_camp/",
+    "reservationUrl": "https://orep-o.net/okubo_camp/camp_rsv.html",
+    "cautions": [
+      "1区画の定額なので、ソロでも区画1つ分を払う",
+      "税込／税別の明記が無い",
+      "**場内の風呂・シャワー・売店・薪の販売について公式に記載が無い**。事前に確認したほうがいい",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://orep-o.net/okubo_camp/",
+      "https://orep-o.net/okubo_camp/camp_rsv.html"
+    ]
+  },
+  {
+    "id": "nagisaen-hamamatsu",
+    "slug": "nagisaen-hamamatsu",
+    "name": "浜松市渚園",
+    "prefecture": "静岡",
+    "area": "浜松",
+    "status": "active",
+    "address": "静岡県浜松市中央区舞阪町弁天島5005-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 410,
+    "priceMax": 810,
+    "priceNote": "人数課金＋車なら駐車料。公式「フリーキャンプ　一日大人（高校生以上）：410円」で**車なしなら410円**。車ありは駐車場「400円／回　**キャンプ場利用者も駐車料金がかかります。**」を足して810円。**税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "温水シャワー　200円／回　利用時間は5分です。（https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/charge.html）",
+      "reservationNote": "公式が案内する予約先: https://www.birukan.jp/nagisaen/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "浜松市中央区舞阪町弁天島、浜名湖畔の市営施設。**フリーキャンプなら大人410円で、車を使わなければこれだけ。**利用時間は午前10時〜翌朝10時。温水シャワー（200円／回・5分）がある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/index.html",
+    "reservationUrl": "https://www.birukan.jp/nagisaen/",
+    "cautions": [
+      "**キャンプ場利用者も駐車料金が400円／回かかる**と公式が明記。車なら総額810円",
+      "**ペット連れはオートキャンプが基本で、ペット専用サイトの利用に限られる。**今回の料金はフリーキャンプのものなので、ペット同伴の可否は管理事務室に確認する",
+      "税込／税別の明記が無い",
+      "場内の風呂・売店・薪の販売について公式に記載が無い",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/index.html",
+      "https://www.birukan.jp/nagisaen/"
+    ]
+  },
+  {
+    "id": "urakawa-camp-mura",
+    "slug": "urakawa-camp-mura",
+    "name": "浦川キャンプ村",
+    "prefecture": "静岡",
+    "area": "浜松・天竜",
+    "status": "active",
+    "address": "静岡県浜松市天竜区佐久間町浦川3454-12",
+    "type": "campground",
+    "lat": 35.055840980344826,
+    "lng": 137.76458231524188,
+    "priceMin": 3500,
+    "priceMax": 3500,
+    "priceNote": "テント課金＋人数課金。公式「持ち込みテント　3,000円〜　1張」＋「※テント泊でのご利用はテント利用料に加え1名につき1泊500円（未就学児無料）を申し受けます」＝最低3,500円。駐車は「宿泊の場合　1台　無料　2台目以降500円×宿泊日数」で1台無料。**公式の表記が「3,000円〜」で、「持ち込みテントはテントサイトに対して明らかに大きい場合、割増料金が発生する場合があります」とあり上限が決まっていない。税込／税別の明記も無い**",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "大浴場は管理棟にあります。(※宿泊者のみ利用可・入村時に必ず予約が必要です）（https://www.urakawacamp.com/price/）",
+      "firewood": true,
+      "firewoodNote": "薪（一束）　1,000円（https://www.urakawacamp.com/price/）",
+      "pet": false,
+      "petNote": "ペットのご同伴はご遠慮いただいております。（https://www.urakawacamp.com/introduction/）",
+      "nearbyOnsen": "東栄温泉（距離の記載なし）（https://www.urakawacamp.com/price/）",
+      "reservationNote": "公式が案内する予約先: https://www.urakawacamp.com/availability/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "浜松市天竜区佐久間町浦川のキャンプ村。持ち込みテント3,000円＋1名500円で3,500円。**管理棟に大浴場があり、宿泊者なら使える**（入村時に予約）。薪は一束1,000円。駐車は1台無料。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.urakawacamp.com/",
+    "reservationUrl": "https://www.urakawacamp.com/availability/",
+    "cautions": [
+      "**大浴場は入村時に必ず予約が必要**。あとから思い立っては使えない",
+      "公式の表記が「3,000円〜」で、「持ち込みテントはテントサイトに対して明らかに大きい場合、割増料金が発生する場合があります」とあり上限が決まっていない",
+      "**ペットの同伴はご遠慮いただいております**と公式が明記",
+      "税込／税別の明記が無い",
+      "駐車は1台無料、2台目以降は500円×宿泊日数",
+      "公式は近くの東栄温泉も案内している"
+    ],
+    "source": [
+      "https://www.urakawacamp.com/",
+      "https://www.urakawacamp.com/availability/"
+    ],
+    "coordsVerified": false
   }
 ]

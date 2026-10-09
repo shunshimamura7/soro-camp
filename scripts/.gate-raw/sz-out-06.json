@@ -1,0 +1,85 @@
+[
+ {"napId":"11828","name":"静岡市浜石野外センター","pref":"静岡","muni":"静岡市","verdict":"閉鎖疑い",
+  "reason":"静岡市公式（更新日2026年3月18日）に「由比浜石わくわくの森（旧浜石野外センター、旧静清庵地区青少年野外センター）は、**2023年度末をもってキャンプ場としての運営を終了し、その後公園として維持管理をしています。**」「2025年度末には、新名称が「由比浜石わくわくの森」に決定しました。」と明記。キャンプ場としては既に廃止されている",
+  "checkedUrls":["https://www.city.shizuoka.lg.jp/s8967/s012390.html","https://www.city.shizuoka.lg.jp/s8967/faq/s000001.html"],
+  "officialUrl":"https://www.city.shizuoka.lg.jp/s8967/s012390.html"},
+
+ {"napId":"11830","name":"函南町立木立キャンプ場","pref":"静岡","muni":"函南町","verdict":"追加",
+  "reason":"函南町公式（生涯学習課／自治体公式）の料金表で確認。「宿泊（午前10時から翌日の午前10時まで）」でテント泊でき、人数の下限規定は無い。**本体側でも町公式ページを取得し直したが、載っているのは教育委員会（上沢81番地）と役場（平井717-13）の住所だけで施設の番地が無いので、住所は大字抜きの「静岡県田方郡函南町」までに留めた**（町立施設なので施設名で特定できる）",
+  "checkedUrls":["https://www.town.kannami.shizuoka.jp/soshiki/1017/1042.html","https://www.town.kannami.shizuoka.jp/kanko_bunka_sports/kanko/3/index.html","https://www.town.kannami.shizuoka.jp/shisetsu/index.html"],
+  "officialUrl":"https://www.town.kannami.shizuoka.jp/soshiki/1017/1042.html","reservationUrl":null,
+  "address":"静岡県田方郡函南町","priceMin":700,"priceMax":1400,
+  "priceNote":"人数課金＋テント課金。公式より「宿泊（午前10時から翌日の午前10時まで）大人200円 子供100円／大人400円 子供200円」「持込テント（テントサイト利用料）1張つき500円／1張につき1,000円」（前者が町内者、後者が町外者）。町内者700円、**町外者1,400円**。駐車料・入場料の記載は無い。**税込／税別の明記が無い。公式ページに施設の番地が載っていない**",
+  "features":{
+    "pet":{"value":false,"evidenceUrl":"https://www.town.kannami.shizuoka.jp/soshiki/1017/1042.html","quote":"ペットの持ち込みはしないでください。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11831","name":"島田市野外活動センター山の家","pref":"静岡","muni":"島田市","verdict":"追加",
+  "reason":"島田市公式（自治体公式）に「「山の家」は、豊かな自然を生かしたキャンプや川遊び、スポーツなど、さまざまな野外活動の場としてご利用いただけます。」とあり、料金表に「キャンプサイト　宿泊での利用　1区画当たり、1夜につき　1,600円」。1名利用を妨げる規定は無い。指定管理者（株式会社空と大地と）の施設公式の最新料金表（2026年8月20日改訂）で「環境整備費　1人　100円」が別途必要と確認できたので総額に入れた。住所（静岡県島田市身成48番地の3）は公式で確認、台帳と一致",
+  "checkedUrls":["https://www.city.shimada.shizuoka.jp/kurashi-docs/yagaikatsudousenntayamanoie.html","https://yamanoie.jp/","https://yamanoie.jp/?p=153"],
+  "officialUrl":"https://www.city.shimada.shizuoka.jp/kurashi-docs/yagaikatsudousenntayamanoie.html","reservationUrl":"https://yamanoie.jp/",
+  "address":"静岡県島田市身成48番地の3","priceMin":1700,"priceMax":2500,
+  "priceNote":"区画課金＋環境整備費。市内はサイト1,600円＋環境整備費100円＝1,700円。**市外は「利用者が市外に住所…を有する場合…利用料の額の50パーセントに相当する額を加算する」で2,400円＋100円＝2,500円。**入浴（500円）は任意なので総額に含めていない。**税込／税別の明記が無い**",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://www.city.shimada.shizuoka.jp/kurashi-docs/yagaikatsudousenntayamanoie.html","quote":"浴室を利用することができる者は、和室を宿泊で利用する者及びキャンプ場を宿泊で利用する者とする。"},
+    "firewood":{"value":true,"evidenceUrl":"https://yamanoie.jp/?p=153","quote":"薪(3kg)　1束"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11832","name":"童子沢親水公園","pref":"静岡","muni":"島田市","verdict":"追加",
+  "reason":"島田市公式（自治体公式）に「**事前に申請すれば、キャンプやバーベキューが無料で行えます。**キャンプ可能エリアでは、テントを設置して宿泊ができます。」と明記。人数の下限規定は無く、駐車場も「無料駐車場があり」と明記されている。**公式の住所は「静岡県島田市大代2459」で台帳の「大代２４７７－１６」と番地が違うが、同じ名称の公園について市公式が書いているページなので公式の住所を採った**",
+  "checkedUrls":["https://www.city.shimada.shizuoka.jp/kanko-docs/waxtupazawa.html"],
+  "officialUrl":"https://www.city.shimada.shizuoka.jp/kanko-docs/waxtupazawa.html","reservationUrl":"https://logoform.jp/form/imZT/1184444",
+  "address":"静岡県島田市大代2459","priceMin":0,"priceMax":0,
+  "priceNote":"**無料。**公式「事前に申請すれば、キャンプやバーベキューが無料で行えます。」「童子沢親水公園には無料駐車場があり」で、車の有無にかかわらず0円。**ただし事前の申請が必須**（市のオンライン申請フォーム）。**公式の住所（大代2459）は台帳の番地（大代2477-16）と違う**",
+  "features":{},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11833","name":"大久保キャンプ場","pref":"静岡","muni":"藤枝市","verdict":"追加",
+  "reason":"藤枝市公式と指定管理者（おれっぷ大久保）公式の両方で「テントキャンプサイト使用料　1区画　14時〜翌日12時　1,830円」を確認。市公式PDF「大久保キャンプ場使用料（令和元年10月1日〜）」と施設公式サイトの金額が一致しており現行料金と判断。住所（藤枝市瀬戸ノ谷11029）も公式で確認、台帳と一致。人数条件の記載は無い",
+  "checkedUrls":["https://www.city.fujieda.shizuoka.jp/soshiki/_shisetsu/1445918550085.html","https://www.city.fujieda.shizuoka.jp/material/files/group/115/07kyanpujosiyouryo.pdf","https://orep-o.net/okubo_camp/","https://orep-o.net/okubo_camp/facility.html","https://orep-o.net/okubo_camp/tent_camp.html"],
+  "officialUrl":"https://orep-o.net/okubo_camp/","reservationUrl":"https://orep-o.net/okubo_camp/camp_rsv.html",
+  "address":"静岡県藤枝市瀬戸ノ谷11029","priceMin":1830,"priceMax":1830,
+  "priceNote":"区画単位の定額。公式「テントキャンプサイト使用料　1区画　14時〜翌日12時　1,830円」（人数割りではなく1区画単位）。駐車料の追加記載は見当たらない。**税込／税別の明記が無い**",
+  "features":{},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11835","name":"海辺の遊び場BARBEEふじ","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式として見つかった barbee-fuji.com は**DNS解決不可（NXDOMAIN、複数経路で確認）**でアクセスできない。浜松市公式にも掲載が無く、出てくるのはなっぷ・bbqhack・Yahoo!マップ・エキテン等の第三者サイトのみ。**URLが開けないことだけで閉業とは断定せず、自治体公式を確認したうえで「公式なし」とした**",
+  "checkedUrls":["https://bbqhack.net/detail/324"],
+  "officialUrl":null,
+  "fetchError":"barbee-fuji.com は DNS解決不可（NXDOMAIN）のため本文未取得"},
+
+ {"napId":"11836","name":"浜松市渚園","pref":"静岡","muni":"浜松市","verdict":"追加",
+  "reason":"浜松市公式（自治体公式）の「渚園-料金表」に「フリーキャンプ」として「午前10時～翌朝10時」の宿泊利用と「一日大人（高校生以上）：410円」が明記されテント泊可。人数下限の規定も無い。指定管理会社（東海ビル管理株式会社）の施設公式でも同額を確認。**サブエージェントは pet:true を付けていたが、公式は「ペット連れの場合はオートキャンプが基本となります。またペット専用サイトのご利用に限ります。」で、今回値付けしたフリーキャンプではペット可と言い切れないため本体側で外して注意書きに回した**",
+  "checkedUrls":["https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/index.html","https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/charge.html","https://www.birukan.jp/nagisaen/page/camp/","https://www.city.hamamatsu.shizuoka.jp/maps/n-nagisa_p.html"],
+  "officialUrl":"https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/index.html","reservationUrl":"https://www.birukan.jp/nagisaen/",
+  "address":"静岡県浜松市中央区舞阪町弁天島5005-1","priceMin":410,"priceMax":810,
+  "priceNote":"人数課金＋車なら駐車料。公式「フリーキャンプ　一日大人（高校生以上）：410円」で**車なしなら410円**。車ありは駐車場「400円／回　**キャンプ場利用者も駐車料金がかかります。**」を足して810円。**税込／税別の明記が無い**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/charge.html","quote":"温水シャワー　200円／回　利用時間は5分です。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11838","name":"浦川キャンプ村","pref":"静岡","muni":"浜松市","verdict":"追加",
+  "reason":"施設公式（urakawacamp.com）の「ご利用料金」ページで住所（静岡県浜松市天竜区佐久間町浦川3454-12）の完全一致を確認。「持ち込みテント　3,000円〜　1張」「※テント泊でのご利用はテント利用料に加え1名につき1泊500円（未就学児無料）を申し受けます」でテント泊可、人数下限も無い。**本体側でも料金ページを取得し直し、大浴場が「宿泊者のみ利用可・入村時に必ず予約が必要」であること（テント泊客も宿泊者なので使える）と薪の販売を直接確認した**",
+  "checkedUrls":["https://www.urakawacamp.com/","https://www.urakawacamp.com/price/","https://www.urakawacamp.com/introduction/","https://www.urakawacamp.com/accessmap/","https://www.urakawacamp.com/contactus/faq/"],
+  "officialUrl":"https://www.urakawacamp.com/","reservationUrl":"https://www.urakawacamp.com/availability/",
+  "address":"静岡県浜松市天竜区佐久間町浦川3454-12","priceMin":3500,"priceMax":3500,
+  "priceNote":"テント課金＋人数課金。公式「持ち込みテント　3,000円〜　1張」＋「※テント泊でのご利用はテント利用料に加え1名につき1泊500円（未就学児無料）を申し受けます」＝最低3,500円。駐車は「宿泊の場合　1台　無料　2台目以降500円×宿泊日数」で1台無料。**公式の表記が「3,000円〜」で、「持ち込みテントはテントサイトに対して明らかに大きい場合、割増料金が発生する場合があります」とあり上限が決まっていない。税込／税別の明記も無い**",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://www.urakawacamp.com/price/","quote":"大浴場は管理棟にあります。(※宿泊者のみ利用可・入村時に必ず予約が必要です）"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.urakawacamp.com/price/","quote":"薪（一束）　1,000円"},
+    "pet":{"value":false,"evidenceUrl":"https://www.urakawacamp.com/introduction/","quote":"ペットのご同伴はご遠慮いただいております。"},
+    "nearbyOnsen":{"value":"東栄温泉（距離の記載なし）","evidenceUrl":"https://www.urakawacamp.com/price/","quote":"入浴を希望される方は近くの東栄温泉のご利用をお勧めいたします"}},
+  "coordsFromOfficialMap":{"lat":35.055840980344826,"lng":137.76458231524188,"url":"https://www.urakawacamp.com/accessmap/"}},
+
+ {"napId":"11839","name":"上島キャンプ場","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"施設の公式サイトが見つからず、浜松市公式にも該当施設（天竜区佐久間町中部）の掲載が無い（市公式で出てくる「上島」関連は中央区の別施設「馬込川上島緑地」等で無関係）。見つかる情報源はなっぷ・campla・jpcamp・**地域コミュニティ団体が運営するポータル（観光協会的な位置づけで一次情報に使えない）**のみ",
+  "checkedUrls":["https://sakuma-dropin.com/saku-map/134/"],
+  "officialUrl":null},
+
+ {"napId":"11840","name":"四駆アイランド","pref":"静岡","muni":"浜松市","verdict":"門落ち(公式なし)",
+  "reason":"唯一見つかった施設公式サイト（www7a.biglobe.ne.jp/~yonku/）は**トップも index.html も 404 Not Found で本文が存在しない。**公式ブログもリンク先として同サイトを示すだけで記事が0件。浜松市公式にも掲載が無い。**URLが開けないことだけで閉業とは断定していないが、料金・宿泊条件を確認できる一次情報が存在しない**",
+  "checkedUrls":["https://kinokozimaautocamp.blog84.fc2.com/","http://www7a.biglobe.ne.jp/~yonku/index.html","http://www7a.biglobe.ne.jp/~yonku/"],
+  "officialUrl":null,
+  "fetchError":"http://www7a.biglobe.ne.jp/~yonku/ 及び index.html は404 Not Found"}
+]

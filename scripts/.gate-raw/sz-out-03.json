@@ -1,0 +1,63 @@
+[
+ {"napId":"11780","name":"田子プライベートキャンプ場","pref":"静岡","muni":"西伊豆町","verdict":"門落ち(単独利用不可)",
+  "reason":"現在は「AQUA VILLAGE」としてリニューアル運営（公式 villageinc.jp/aqua が「西伊豆のプライベートキャンプ場（西伊豆田子漁港より船でエントリー）」と説明。住所は〒410-3515 静岡県賀茂郡西伊豆町田子1145-5 で台帳の田子地区と一致）。だが公式プランページに「**土日祝日は10名さまから、平日は6名さまからお受けしております。**（それ以下のご利用でも、基本料金として上記人数分をお支払いいただくことでご予約可能です。）」と明記されており、1名では実質利用できない（平日でも最低6名分）",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11780","https://villageinc.jp/aqua/","https://villageinc.jp/aqua/facility","https://villageinc.jp/aqua/plan","https://villageinc.jp/aqua/access"],
+  "officialUrl":"https://villageinc.jp/aqua/"},
+
+ {"napId":"11781","name":"ストーンチェアキャンプ場","pref":"静岡","muni":"東伊豆町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式（stone-chair.com）で住所（静岡県賀茂郡東伊豆町稲取字休石3204-1）の一致を確認。「ソロもファミリーもペットも大歓迎」とソロ可の明記もあるが、**サイト内に料金の記載が一切なく**、「ご予約はこちら」はすべてなっぷへの誘導のみ",
+  "checkedUrls":["https://www.nap-camp.com/shizuoka/11781","https://www.stone-chair.com/","https://www.stone-chair.com/about","https://www.stone-chair.com/usage-info","https://www.stone-chair.com/usage-info/bath-shower","https://www.stone-chair.com/rental-sales"],
+  "officialUrl":"https://www.stone-chair.com/"},
+
+ {"napId":"11782","name":"オートキャンプはがちざき","pref":"静岡","muni":"南伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"複数の検索経路とディレクトリサイトを当たったが施設公式が見つからない。**ディレクトリ掲載の「公式サイトURL」候補 camp-hagachi.org は DNS解決不可（存在しないドメイン）。**南伊豆町公式にも掲載が無い。**なおこの束は検索エンジン（Bing／Yahoo／DuckDuckGo）が断続的に bot 対策で不安定になり、後半の数件は検索範囲が限られていた可能性がある**",
+  "checkedUrls":["http://www.af08.com/camp-site/09-sizuoka/022-hagatizaki.html","https://www.boxos.com/campweb/cw05327.html","https://autocamp.mobi/area/tokai/shizuoka/minamiizu-cho-kamo-gun","http://www.camp-hagachi.org/","https://www.town.minamiizu.shizuoka.jp/"],
+  "officialUrl":null},
+
+ {"napId":"11783","name":"南伊豆夕日ヶ丘キャンプ場","pref":"静岡","muni":"南伊豆町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式（yu-higaoka-camp.com）で住所（静岡県賀茂郡南伊豆町伊浜2222）の一致を確認。各サイト紹介ページ・利用規約ページを見たが**料金の記載が一切ない。**予約は公式ドメイン内の予約システムで行うが、**価格はJSで動的描画されていて静的HTMLに「円」が1件も出てこない**ため、1名1泊の総額を文字情報として確認できない",
+  "checkedUrls":["https://www.yu-higaoka-camp.com/","https://www.yu-higaoka-camp.com/home2","https://www.yu-higaoka-camp.com/reservation","https://www.yu-higaoka-camp.com/campsite1","https://www.yu-higaoka-camp.com/campsite4","https://www.yu-higaoka-camp.com/premium","https://www.yu-higaoka-camp.com/rules"],
+  "officialUrl":"https://www.yu-higaoka-camp.com/"},
+
+ {"napId":"11784","name":"CampFantasea（キャンプファンタジア）","pref":"静岡","muni":"南伊豆町","verdict":"追加",
+  "reason":"公式（campfantasea.com）で住所（静岡県賀茂郡南伊豆町伊浜2733-3）の一致を確認。テントサイトがあり持込テントで宿泊でき、人数下限の記載も無い。1名の総額が平日5,500円〜休日ハイシーズン9,500円で公式から算定できる",
+  "checkedUrls":["https://www.campfantasea.com/","https://www.campfantasea.com/campsite","https://www.campfantasea.com/user-guide","https://www.campfantasea.com/service","https://www.campfantasea.com/pet","https://www.campfantasea.com/reserve"],
+  "officialUrl":"https://www.campfantasea.com/","reservationUrl":"https://www.campfantasea.com/reserve",
+  "address":"静岡県賀茂郡南伊豆町伊浜2733-3","priceMin":5500,"priceMax":9500,
+  "priceNote":"サイト課金＋施設利用料。公式「施設タイプ別料金 平日料金 テントサイト 4,500円〜」「休前日・休日料金 テントサイト 6,500円〜」「施設利用料 ＋1名につき 1,000円（10才未満は無料）」「サイト料金には、車１台かバイク２台の駐車料も含みます。追加は1台あたり1,000円。」「**ハイシーズン（GW・夏期・年末年始）は各サイト 休日料金＋2,000円**」。平日1名で4,500＋1,000＝5,500円、休日ハイシーズン1名で6,500＋2,000＋1,000＝9,500円。**駐車は車1台込み。公式の表記が「〜」なので上振れがあり得る。税込／税別の明記が無い**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.campfantasea.com/user-guide","quote":"シャワールーム（温水）は無料です。24時間ご利用いただけます"},
+    "pet":{"value":true,"evidenceUrl":"https://www.campfantasea.com/pet","quote":"ワンちゃんと猫ちゃんのご同伴はOKです。その他のペットはお問い合わせください。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11785","name":"キャンプイン桜","pref":"静岡","muni":"南伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"検索したが施設公式が見つからない。掲載サイト側も「公式サイトやホームページへのリンクは無い」「オンライン予約不可」としている。**この束は検索エンジンが bot 対策で不安定だったので、再確認の余地がある**",
+  "checkedUrls":["https://camp-spot.hinata.me/spots/campuin-sakura"],
+  "officialUrl":null},
+
+ {"napId":"11787","name":"キャンプ山の家","pref":"静岡","muni":"南伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"検索とディレクトリサイトを当たった。ディレクトリには住所（静岡県賀茂郡南伊豆町蛇石676-7・台帳と一致）・電話番号・「お風呂あり」の記載があるが**公式サイトURLの記載が無く、他の検索でも公式が見つからない。この束は検索エンジンが bot 対策で不安定だったので、再確認の余地がある**",
+  "checkedUrls":["https://autocamp.mobi/area/tokai/shizuoka/minamiizu-cho-kamo-gun","https://autocamp.mobi/area/tokai/shizuoka/minamiizu-cho-kamo-gun/219"],
+  "officialUrl":null},
+
+ {"napId":"11788","name":"石廊崎オートキャンプ場","pref":"静岡","muni":"南伊豆町","verdict":"追加",
+  "reason":"公式（運営は入口のお食事処「網船納屋」。anbune.saloon.jp から atushi-akabane.sakura.ne.jp/irouzaki01/ へリダイレクト）で住所（〒415-0156 静岡県賀茂郡南伊豆町石廊崎199-4）の完全一致を確認。持込テントのオートキャンプ場で、定員は上限（1サイト5名様まで）の指定だけ。**料金は公式サイト内の画像でしか示されていないため、本体側でも ryoukin10.jpg を取り直して目視し、「利用料金 ¥6,000円【AC電気代込み】定員：1サイト 5名様まで【一泊二日】★1サイト6m x 10m」「チェックイン pm13:00〜pm16:00 / チェックアウト am11:00まで」を確認した**",
+  "checkedUrls":["http://anbune.saloon.jp/index.html","https://atushi-akabane.sakura.ne.jp/irouzaki01/index.html","https://atushi-akabane.sakura.ne.jp/irouzaki01/index01.html","https://atushi-akabane.sakura.ne.jp/irouzaki01/index02-0.html","https://atushi-akabane.sakura.ne.jp/irouzaki01/ryoukin10.jpg","https://atushi-akabane.sakura.ne.jp/irouzaki01/kinshi00.jpg"],
+  "officialUrl":"https://atushi-akabane.sakura.ne.jp/irouzaki01/index.html","reservationUrl":null,
+  "address":"静岡県賀茂郡南伊豆町石廊崎199-4","priceMin":6000,"priceMax":6000,
+  "priceNote":"区画単位の定額。公式サイト内の料金画像より「利用料金 ¥6,000円【AC電気代込み】定員:1サイト5名様まで【一泊二日】★1サイト6m×10m」。**1サイト（5名まで）定額なのでソロでも6,000円を1人で負担する。**AC電気代込みで入場料・駐車料の別建ては無い。6名目以降のみ追加（大人1,000円・子供500円）。チェックインは13:00〜16:00、チェックアウトは11:00まで。**料金が公式サイト上で画像でしか示されておらず、税込／税別の表記も無い**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://atushi-akabane.sakura.ne.jp/irouzaki01/index01.html","quote":"2025/07/11日　シャワールームの新設"},
+    "pet":{"value":true,"evidenceUrl":"https://atushi-akabane.sakura.ne.jp/irouzaki01/kinshi00.jpg","quote":"キャンプ場内では、ペットの犬猫にはリードを装着するかゲージ等に入れて管理して下さい。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11789","name":"南伊豆・入間キャンプ村","pref":"静岡","muni":"南伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"検索したが公式サイトが見つからず、ディレクトリにも掲載が無く電話番号すら確認できなかった。**この束は検索エンジン（特に DuckDuckGo）が途中からレート制限で完全にブロックされたため、検索範囲が限られていた。再確認の余地がある**",
+  "checkedUrls":[],
+  "officialUrl":null},
+
+ {"napId":"11790","name":"マリンロッヂ弓ヶ浜","pref":"静岡","muni":"南伊豆町","verdict":"門落ち(公式なし)",
+  "reason":"検索したが公式サイトが見つからない（検索結果が無関係な固有名詞に引っ張られた）。ディレクトリにも掲載が無い。**この束は検索エンジンが bot 対策・レート制限で不安定だったため、検索範囲が限られていた。再確認の余地がある**",
+  "checkedUrls":[],
+  "officialUrl":null}
+]

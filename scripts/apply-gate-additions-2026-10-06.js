@@ -76,11 +76,27 @@ const existingNames = new Set(list.map((c) => nameKey(c.name)).filter(Boolean));
 const existingAddrs = new Set(list.map((c) => nameKey(c.address)).filter(Boolean));
 const existingUrls = new Set(list.map((c) => urlKey(c.officialUrl)).filter(Boolean));
 
-/** 既に載っている施設か（名前・住所・公式URL のどれかが一致したら同じ施設と見る） */
-const alreadyListed = (r) =>
-  existingNames.has(nameKey(r.name)) ||
-  (r.address && existingAddrs.has(nameKey(r.address))) ||
-  (r.officialUrl && existingUrls.has(urlKey(r.officialUrl)));
+/** `--allow-dup napId[,napId]` で名指しされた「公式URLだけ衝突しているが別施設」 */
+const ALLOW_DUP = new Set(
+  (process.argv.includes('--allow-dup') ? process.argv[process.argv.indexOf('--allow-dup') + 1] || '' : '')
+    .split(',').map((x) => x.trim()).filter(Boolean)
+);
+
+const hitName = (r) => existingNames.has(nameKey(r.name));
+const hitAddr = (r) => !!r.address && existingAddrs.has(nameKey(r.address));
+const hitUrl = (r) => !!r.officialUrl && existingUrls.has(urlKey(r.officialUrl));
+
+/** 既に載っている施設か（名前・住所・公式URL のどれかが一致したら同じ施設と見る）
+ *
+ * **URLだけの一致は誤検知する。**1つの公式サイトが複数のキャンプ場を載せている例がある
+ * （御殿場市営の gotemba-otome.jp が第1／第2キャンプ場の両方を扱っていた）。
+ * そういう行は `--allow-dup <napId>` で名指しして通す。**名前か住所が一致している行は
+ * 名指しでも通さない**（同じ施設を二重登録する事故を防ぐ）。 */
+const alreadyListed = (r) => {
+  if (hitName(r) || hitAddr(r)) return true;
+  if (hitUrl(r)) return !ALLOW_DUP.has(String(r.napId));
+  return false;
+};
 
 const pending = [...byId.keys()].filter((id) => !alreadyListed(byId.get(id)));
 for (const id of pending) if (!EDIT[id]) stop(`台帳の napId ${id}（${byId.get(id).name}）に EDIT が無い`);
@@ -119,7 +135,13 @@ for (const [id, edit] of Object.entries(EDIT)) {
   }
 
   // 設備。台帳にある（＝引用と根拠URLが付いた）ものだけを入れる
-  const features = { reservation: '要' };
+  /* 予約の要否は既定で「要」。公式が「予約受付なし」と書いている施設があるので
+   * EDIT 側で上書きできるようにする（値は data の実績に合わせて 要／不要／ハイシーズンのみ） */
+  const RESV = ['要', '不要', 'ハイシーズンのみ'];
+  if (edit.reservation !== undefined && !RESV.includes(edit.reservation)) {
+    stop(`EDIT の reservation が想定外: ${edit.slug} / ${edit.reservation}`);
+  }
+  const features = { reservation: edit.reservation || '要' };
   for (const [k, noteKey] of Object.entries(FEATURE_NOTE)) {
     const v = (r.features || {})[k];
     if (!v || (v.value !== true && v.value !== false)) continue;
@@ -130,7 +152,8 @@ for (const [id, edit] of Object.entries(EDIT)) {
   if (on && typeof on.value === 'string' && on.value.trim()) {
     features.nearbyOnsen = `${on.value.trim()}（${on.evidenceUrl}）`;
   }
-  if (r.reservationUrl) features.reservationNote = `公式が案内する予約先: ${r.reservationUrl}`;
+  if (edit.reservationNote) features.reservationNote = edit.reservationNote;
+  else if (r.reservationUrl) features.reservationNote = `公式が案内する予約先: ${r.reservationUrl}`;
 
   const coord = r.coordsFromOfficialMap;
   const rec = {
