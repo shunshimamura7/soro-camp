@@ -183,6 +183,14 @@ async function main() {
   const limit = Number(arg('limit') || ids.length);
   const dest = arg('out');
 
+  /* ★ `--out` が無いと取得結果を1件も書かずに捨てる。
+   * 2026-10-10 に神奈川25件（Crawl-delay 30秒で13分）をこれで捨てた。黙って進まない。 */
+  if (!dest) {
+    console.error('中止: --out=<保存先.json> が必要です（無いと取得結果を保存せずに捨てます）');
+    console.error('  例: node scripts/nap-camp-sitemap.js --pref=kanagawa --harvest --out=scripts/.nap-harvest/kanagawa.json');
+    process.exit(1);
+  }
+
   /* ★ レジューム。**途中で落ちても取り直さない。**
    * Crawl-delay 30 秒だと全件で数時間かかるので、中断が前提。
    * 取得済みは `--out` の JSON に逐次書き、次回はそれを読んで**残りだけ**叩く。 */
