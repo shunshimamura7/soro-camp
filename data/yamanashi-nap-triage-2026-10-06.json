@@ -225,9 +225,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11251",
    "latCandidate": "35.5078155",
    "lngCandidate": "138.8912794",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.sisidome.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（sisidome.jp）で住所（都留市鹿留1543）が一致し、宿泊キャンプ1区画6,000円を確認。人数下限の記載なし。公式の「3名様料金以上から承ります」はBBQ、「3名様以上で利用可能」は貸切釣り場の条件で、宿泊キャンプには掛からない"
   },
   {
    "napId": "11252",
@@ -238,8 +238,8 @@
    "latCandidate": "35.513854",
    "lngCandidate": "138.872323",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式・公式予約先がいずれも見つからない（なっぷの hpUrl は null、都留市公式にも該当ページなし）。住所（鹿留3064）での検索でも公式は出ない"
   },
   {
    "napId": "11255",
@@ -249,9 +249,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11255",
    "latCandidate": "35.4536038",
    "lngCandidate": "138.5685327",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.motosuko.jp/",
+   "verdict": "追加",
+   "reason": "施設公式（motosuko.jp）で住所（南巨摩郡身延町釜額2035）が一致し、テントサイト3,300円＋施設利用料550円を確認。駐車は宿泊者1台目無料。公式のルールにある人数制限はいずれも上限で下限の記載は無い"
   },
   {
    "napId": "11256",
@@ -261,9 +261,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11256",
    "latCandidate": "35.4735158",
    "lngCandidate": "138.5732415",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kouan-motosuko.com/camp/index.html",
+   "verdict": "追加",
+   "reason": "門は通る（公式 kouan-motosuko.com で住所一致、平日ソロ2,900円）が、**既に `kouan-motosuko` として掲載済みの施設**。重複なので新規追加はしない。なお公式に「浩庵管理棟にてお風呂(500円)もご利用頂けます。(キャンプ場、キャビン利用者のみ)」とあり、場内の風呂として記録に残す"
   },
   {
    "napId": "11257",
@@ -273,9 +273,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11257",
    "latCandidate": "35.4711676",
    "lngCandidate": "138.3358978",
-   "officialUrl": null,
+   "officialUrl": "https://www.hayakawa-eco.com/tomaru/camp.html",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "ソロ可・住所一致（早川町黒桂745）・料金1,300円（入園料込み）まで確定したが、**公式が禁止事項に「所定場所以外での焚き火（焚き火台を利用しても不可）」と明記しテントサイトでの焚き火ができない**ため判断が要る。焚き火ができるのは炊事棟のカマドのみ。公式は「芝生広場がそのままフリーサイトとなっており、ソロキャンプにも…ご利用いただけます」とソロを明記。駐車場は無料。12月〜3月は冬期閉鎖"
   },
   {
    "napId": "11264",
@@ -297,9 +297,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11266",
    "latCandidate": "35.4055015",
    "lngCandidate": "138.880672",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.pica-resort.jp/yamanakako/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式の宿泊施設一覧が**コテージ8タイプのみでテントサイトが存在しない**（住所は平野506-296で一致）。予約サイトの「テントサイト」はPICA全施設共通の絞り込みチェックボックスで、当施設には該当物件なし"
   },
   {
    "napId": "11267",
@@ -310,8 +310,8 @@
    "latCandidate": "35.4055148",
    "lngCandidate": "138.8806622",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "閉鎖疑い",
+   "reason": "運営者であるボーイスカウト日本連盟の公式サイトに当該野営場のページが存在せず（`/facility/` も404）、**公式記事が「これまで山中野営場から那須野営場、高萩スカウトフィールドへと会場を移して実施してきましたが」と会場移転を記述**。現役施設としての記載が皆無。なお現役であってもスカウト団体向けの野営場なので単独利用の可否は未確認"
   },
   {
    "napId": "11268",
@@ -321,9 +321,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11268",
    "latCandidate": "35.4092338",
    "lngCandidate": "138.9014405",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.kozanso.com/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "公式料金ページのオートキャンプ欄の直下に「**※混雑時には夜間に騒音などの苦情が絶えないため、ご家族連れか、大人２名様利用のみに限定して受け入れさせていただいております。**」と明記され1名では利用できない"
   },
   {
    "napId": "11269",
@@ -333,9 +333,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11269",
    "latCandidate": "35.414101325977946",
    "lngCandidate": "138.89531622081995",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://the-508.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式サイト（the-508.com）は sitemap と wp-json の双方で**公開固定ページが2件だけ**で、料金表も住所の記載も無い。「BOOK NOW」の遷移先はなっぷ"
   },
   {
    "napId": "11270",
@@ -345,9 +345,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11270",
    "latCandidate": "35.4138637",
    "lngCandidate": "138.9001239",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://privatehousebyron.rsvon.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "1日1組貸切の洋室3室・夕朝2食付きの宿で**テントサイトが無い**（「おとな（中学生以上）平日 22,000円〜（2食付き）」）。加えて公式表記の住所は平野508-448で台帳の508-28とも一致しない"
   },
   {
    "napId": "11272",
@@ -369,9 +369,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11274",
    "latCandidate": "35.5279563",
    "lngCandidate": "139.033379",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://doushi-mizunomoto.com/",
+   "verdict": "追加",
+   "reason": "公式の「各種料金のご案内」にテントサイト1泊の入場料・テント1張料・駐車場料が明記され住所（道志村下善之木10220）も一致"
   },
   {
    "napId": "11275",
@@ -382,8 +382,8 @@
    "latCandidate": "35.5279563",
    "lngCandidate": "139.033379",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "道志村の当該施設の公式サイト・公式予約先が見つからない（なっぷにも公式URL登録なし）。**検索上位の camp-rabbit.com は「キャンプラビット」で所在地が栃木県那須郡那須町**＝別施設なので根拠に使わなかった。もう一つの候補 outocamp-doushi413.com はサイト全体が WordPress の致命的エラーで HTTP 500"
   },
   {
    "napId": "11277",
@@ -405,9 +405,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11278",
    "latCandidate": "35.4788816",
    "lngCandidate": "138.960313",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.skyvalleycamp.com/",
+   "verdict": "追加",
+   "reason": "施設公式に入場料1,000円＋1張用サイト2,000円（車1台込）と**「※ソロ用テントサイト有り」**の記載があり、住所（道志村11754-1）も一致"
   },
   {
    "napId": "11282",
@@ -417,9 +417,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11282",
    "latCandidate": "35.46140011902933",
    "lngCandidate": "138.93993615929503",
-   "officialUrl": null,
+   "officialUrl": "https://www.navi-city.com/yamabushi/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式に2025.4.1改定の料金表があり住所（道志村12753-3）も一致、釜風呂（無料）やシャワーも確認できたが、**ソロ料金の読み方が公式表記だけでは確定できない**。「・大人 1,200円（・ソロ： 閑散期 1,200円 繁忙期 2,200円）／・車 2,000円」で、ソロ行が大人単価の置き換え（＝車込み3,200〜4,200円）か、車込みの総額（＝1,200〜2,200円）かが判別できず、差が2倍以上開く。電話で確認してからでないと載せられない"
   },
   {
    "napId": "11284",
@@ -430,8 +430,8 @@
    "latCandidate": "35.5279563",
    "lngCandidate": "139.033379",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・公式予約先が一切見つからず、なっぷにも公式URL登録なし。ヒットしたのは体験レポート・予約サイト・県の観光公式（観光系のため根拠不可）のみ"
   },
   {
    "napId": "11285",
@@ -441,9 +441,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11285",
    "latCandidate": "35.521613",
    "lngCandidate": "138.8427664",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.natureland-om.co.jp/",
+   "verdict": "追加",
+   "reason": "施設公式の利用料金ページに入場料・車・テントの1泊単価が明記され、住所（道志村5964）も一致"
   },
   {
    "napId": "11288",
@@ -453,9 +453,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11288",
    "latCandidate": "35.5174321",
    "lngCandidate": "139.019160",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://yasokyo.vercel.app/",
+   "verdict": "追加",
+   "reason": "運営者制作の施設公式サイトに施設利用料・区画料・車乗り入れ料が明記され、住所（道志村谷相7910）も一致"
   },
   {
    "napId": "11290",
@@ -465,9 +465,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11290",
    "latCandidate": "35.5279563",
    "lngCandidate": "139.033379",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://camp-mujina.com/",
+   "verdict": "追加",
+   "reason": "施設公式の利用料金ページに入場料（オートキャンプ1台・大人）と駐車料金が明記され、住所（道志村道志9707）も一致"
   },
   {
    "napId": "11294",
@@ -478,8 +478,8 @@
    "latCandidate": "35.5152517",
    "lngCandidate": "139.0143429",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・公式予約先が見つからず、なっぷにも公式URL登録なし。候補の outocamp-doushi413.com はサイト全体が HTTP 500 で閲覧不能。**ヒットした道志村内のサイトはいずれも別施設**（yukawaya.a.la9.jp＝両国橋キャンプ場 湯川屋、sanko2400.com＝山光荘、doshinomori.jp＝道志の森）。閉業の告知は確認できていないため閉鎖判定はしていない"
   },
   {
    "napId": "11295",
@@ -489,9 +489,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/11295",
    "latCandidate": "35.512504161849556",
    "lngCandidate": "139.007969892807",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://takippara-camp.site/",
+   "verdict": "追加",
+   "reason": "施設公式に通常／ハイシーズンのチャージ料＋1名あたり利用料の料金表があり、住所（道志村8483）も一致。公式が「ご家族でも、おひとりでも。」とソロ可を明記"
   },
   {
    "napId": "11296",
@@ -2857,13 +2857,13 @@
   "打ち切り": true,
   "打ち切りの理由": "1件あたり検索1〜2回＋公式ページ取得1〜2回。山梨は収穫完了後に8件を調査して打ち切った",
   "内訳": {
-   "門落ち(公式なし)": 5,
-   "追加": 8,
-   "宿泊系のため対象外": 30,
-   "門落ち(単独利用不可)": 1,
-   "門落ち(料金も予約も公式に無し)": 1,
-   "UNMEASURED": 178,
-   "閉鎖疑い": 13
+   "門落ち(公式なし)": 9,
+   "追加": 17,
+   "宿泊系のため対象外": 32,
+   "門落ち(単独利用不可)": 2,
+   "門落ち(料金も予約も公式に無し)": 2,
+   "UNMEASURED": 160,
+   "閉鎖疑い": 14
   }
  }
 }

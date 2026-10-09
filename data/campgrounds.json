@@ -15939,5 +15939,423 @@
       "https://docs.google.com/forms/d/e/1FAIpQLSeb4rCLgLg_NTS0rxQdeeuQ_IIYJIL3ir0l-H9LMqWAY8BkxA/viewform"
     ],
     "coordsVerified": false
+  },
+  {
+    "id": "berrypark-fishon-sisidome",
+    "slug": "berrypark-fishon-sisidome",
+    "name": "BerryPark in FISH ON！鹿留",
+    "prefecture": "山梨",
+    "area": "都留市",
+    "status": "active",
+    "address": "山梨県都留市鹿留1543",
+    "type": "campground",
+    "lat": 35.5077615,
+    "lng": 138.8824525,
+    "priceMin": 6000,
+    "priceMax": 6000,
+    "priceNote": "区画単位課金。公式キャンプページ「宿泊料金（1区画）／宿泊 6区画 川沿い 6,000円」。人数課金の記載なし＝ソロ1泊6,000円。キャンプの予約は電話のみ（「予約制となります。お電話にてお問い合わせください。」）。**レンタルキャンプセット14,000円の説明に「宿泊料、駐車料、シャワー利用料…込み」とあり駐車料が別途必要な可能性があるが、駐車料の額が公式に出ていないため加算できていない。**釣り券の購入義務は宿泊キャンプには無い",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "宿泊料、駐車料、シャワー利用料(バスタオル、フェイスタオル、アメニティグッズ)込み（https://www.sisidome.jp/camp/）",
+      "shop": true,
+      "shopNote": "設備 水洗トイレ、炊事場、売店、自販機、駐車場（https://www.sisidome.jp/camp/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "都留市鹿留、管理釣り場に併設する川沿いのキャンプ場。宿泊は6区画で1区画6,000円。売店・自販機・水洗トイレがあり、シャワーも使える。釣りが目的の人が多い場所だが、宿泊キャンプに釣り券の購入義務はない。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.sisidome.jp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**区画単位の課金でソロ割が無い。**6区画しかないので埋まりやすい",
+      "**キャンプの予約は電話のみ**（公式「予約制となります。お電話にてお問い合わせください。」）",
+      "**駐車料が別途必要な可能性がある。**レンタルキャンプセットの説明に「宿泊料、駐車料…込み」とあるが、素泊まりの駐車料の額が公式に出ていない。予約時に確認する",
+      "公式の「3名様以上から」の条件はBBQと貸切釣り場のもので、宿泊キャンプには掛からない"
+    ],
+    "source": [
+      "https://www.sisidome.jp/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "motosuko-ikoinomori",
+    "slug": "motosuko-ikoinomori",
+    "name": "本栖湖いこいの森キャンプ場",
+    "prefecture": "山梨",
+    "area": "身延町",
+    "status": "active",
+    "address": "山梨県南巨摩郡身延町釜額2035",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3850,
+    "priceMax": 3850,
+    "priceNote": "区画課金＋施設利用料。公式「テントサイト Aタイプ 1区画（管理棟下部）6m×9m 3,300円〜（1泊）」＋「施設利用料 大人 550円（1回）」＝3,850円。駐車料は「普通車（宿泊利用者は1台目まで無料）1,100円（1泊）」で宿泊者は無料のため加算せず。**区画料が「3,300円〜」の下限表示なので繁忙期は上振れする可能性があり、予約システム側の金額はJS描画で未取得。営業期間は4月〜11月**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー室・洗面台 男女それぞれ4室。シャンプー類はご持参下さい。（https://www.motosuko.jp/facility.html）",
+      "firewood": true,
+      "firewoodNote": "薪（販売）1缶 770円（https://www.motosuko.jp/price.html）",
+      "shop": true,
+      "shopNote": "本館（管理棟）内の売店でロックアイス、スナック菓子、カップ麺など販売しております。（https://www.motosuko.jp/facility.html）",
+      "pet": true,
+      "petNote": "ペット連れ時の注意事項…躾の行き届いていない犬の同伴は不可です。放し飼いは禁止です。（https://www.motosuko.jp/pet.html）",
+      "reservationNote": "公式が案内する予約先: https://link300.rsvsys.jp/reservations/calendar/ikoinomoricamp"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "本栖湖の南、身延町釜額。テントサイトAタイプ（6m×9m）が1区画3,300円〜で、施設利用料550円を足して3,850円。**宿泊者は駐車場1台目が無料**。シャワー室が男女各4室あり、管理棟の売店でロックアイスやカップ麺も買える。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.motosuko.jp/",
+    "reservationUrl": "https://link300.rsvsys.jp/reservations/calendar/ikoinomoricamp",
+    "cautions": [
+      "**営業期間は4月〜11月。**冬は閉まっている",
+      "区画料が「3,300円〜」の下限表示。繁忙期は上がる可能性があり、予約システム側の金額は確認できていない",
+      "シャンプー類は持参（公式に明記）",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.motosuko.jp/",
+      "https://link300.rsvsys.jp/reservations/calendar/ikoinomoricamp"
+    ]
+  },
+  {
+    "id": "mizunomoto-auto-camp",
+    "slug": "mizunomoto-auto-camp",
+    "name": "水之元オートキャンプ場",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "status": "active",
+    "address": "山梨県南都留郡道志村下善之木10220",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2500,
+    "priceMax": 3000,
+    "priceNote": "入場料＋テント1張料＋駐車場の合算。公式「各種料金のご案内」より テントサイト 3歳以上入場料「テント／1泊 電話予約500円／ネット予約1,000円」＋「テント／1張り 1,000円」＋駐車場「車１台あたり／１泊 1,000円」→ 電話予約2,500円／ネット予約3,000円。バイクなら駐車500円。**同じ表の東屋行は「1,500円 ※東屋利用料込」とネット料金に施設料を含む書き方なので、テント行のネット1,000円に1張り料が含まれる読み方（＝2,000円）も否定しきれない。予約前に確認すること。**公式の予約ボタン（liberty-service）はAPIが「facility not available」を返し料金表示不可、パンフレットPDFは画像のみ",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "お風呂ご利用時間 8：00 〜 21：00 ※宿泊のお客様は無料とさせていただいておりますが、オートキャンプ及びバンガローご利用のお客様はお一人様300円いただいております。（https://doushi-mizunomoto.com/contacts.html）",
+      "shower": true,
+      "showerNote": "キャンプ場内にコインシャワーがございます。5分200円 ※24時間利用可能（https://doushi-mizunomoto.com/camping.php）",
+      "firewood": true,
+      "firewoodNote": "薪 400円／１束（https://doushi-mizunomoto.com/contacts.html）",
+      "shop": true,
+      "shopNote": "炭 600円／３kg 薪 400円／１束 氷 200円／１kg（https://doushi-mizunomoto.com/contacts.html）",
+      "pet": true,
+      "petNote": "バンガロー内はペット禁止です（バンガロー外可）／第二キャンプ場 ドッグラン（https://doushi-mizunomoto.com/camping.php）",
+      "nearbyOnsen": "道志村内に温泉施設あり（施設名・距離の記載なし）（https://doushi-mizunomoto.com/camping.php）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "道志村下善之木。**ドラム缶風呂（オートキャンプ利用は1人300円）とコインシャワー（24時間・5分200円）が場内にある**。料金は入場料＋テント1張り1,000円＋駐車場1,000円の積み上げで、電話予約だと入場料が500円に下がる。薪は1束400円と安い。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://doushi-mizunomoto.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**電話予約のほうが安い**（入場料 電話500円／ネット1,000円）",
+      "**料金表の読み方に曖昧さがある。**東屋の行は「ネット料金に施設料込み」という書き方なので、テント行のネット1,000円に1張り料が含まれる読み方（＝2,000円）も否定しきれない。予約前に確認する",
+      "お風呂は宿泊客は無料だが、**オートキャンプ利用は1人300円**",
+      "公式の予約ボタン（外部システム）は現在エラーで料金が表示されない",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://doushi-mizunomoto.com/"
+    ]
+  },
+  {
+    "id": "skyvalley-camp",
+    "slug": "skyvalley-camp",
+    "name": "スカイバレーキャンプ場",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "status": "active",
+    "address": "山梨県南都留郡道志村11754-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3000,
+    "priceMax": 3000,
+    "priceNote": "入場料＋サイト料の合算。公式「入場料金（1泊）小学生以上1000円/1人」＋「オートサイト 宿泊料金 2,000円 / 1張りあたり」「1張用サイト テント１張り＋タープ１張＋車１台」→ 合計3,000円（駐車場はサイト料金に含まれる）。**「※テント一人(ソロ)での土曜、連休、お盆(8/07〜16)の利用サイト数を限らせております…(平日、日曜は制限をしておりません。)」＝繁忙日はソロ枠に上限がある。**予約は電話のみ。AC電源は別途1,000円",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "宿泊される皆様に無料でご利用いただける「ジャグジーバス」を完備しています／利用料金 宿泊者無料でご利用いただけます。（https://www.skyvalleycamp.com/furo.html）",
+      "shower": true,
+      "showerNote": "（ジャグジー風呂）シャワー等完備（https://www.skyvalleycamp.com/furo.html）",
+      "firewood": true,
+      "firewoodNote": "販売品 薪 500円（https://www.skyvalleycamp.com/gaiyou.html）",
+      "shop": true,
+      "shopNote": "販売品 薪 500円／木炭（3kg）800円／着火材 200円〜／液体石けん 500円（※食料品、氷、お酒、タバコの販売はしておりません）（https://www.skyvalleycamp.com/gaiyou.html）",
+      "pet": true,
+      "petNote": "バンガローは全室ペット同伴OKですが、以下の二通りからご選択ください。／場内での放し飼いは…禁止いたします。（https://www.skyvalleycamp.com/kinsi.html）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "道志村。**宿泊者が無料で使えるジャグジーバスがある**のが大きく、公式も「近くの温泉施設へ行くと家族全員分の料金がかさむけれど、無料のお風呂を利用して…」と書いている。入場料1,000円＋1張用サイト2,000円（テント1張＋タープ1張＋車1台込み）で3,000円。**公式に「※ソロ用テントサイト有り」の明記あり**。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.skyvalleycamp.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**土曜・連休・お盆（8/07〜16）はソロで使えるサイト数に上限がある**と公式に明記（平日と日曜は制限なし）",
+      "**予約は電話のみ。**ネット予約はない",
+      "AC電源は別途1,000円",
+      "売店に食料品・氷・酒・タバコは置いていない（公式に明記）",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.skyvalleycamp.com/"
+    ]
+  },
+  {
+    "id": "natureland-om",
+    "slug": "natureland-om",
+    "name": "ネイチャーランド オム",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "status": "active",
+    "address": "山梨県南都留郡道志村5964",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2400,
+    "priceMax": 2400,
+    "priceNote": "入場料＋車＋テント料の合算。公式「オートキャンプ施設利用料／入場料 大人(中学生以上)：800円／車 自家用車：1,100円 バイク：300円／テント １人用：500円 ２〜８人用：1,000円」→ ソロ1泊＝800＋1,100＋500＝2,400円。バイク利用なら1,600円、2〜8人用テント持参なら2,900円。タープは別途500円（任意）。予約は電話のみ",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "岩風呂ご入浴料 大人(中学生以上)：450円 子供(３歳以上)：250円／1家族30分間の貸し切りとなります。時間予約制（http://www.natureland-om.co.jp/charge.html）",
+      "firewood": true,
+      "firewoodNote": "薪 550円（http://www.natureland-om.co.jp/sell_rental.html）",
+      "shop": true,
+      "shopNote": "販売品・レンタル用品／薪 550円／炭（３ｋｇ）750円（http://www.natureland-om.co.jp/sell_rental.html）",
+      "pet": true,
+      "petNote": "ペット同伴にて利用可能（宿泊施設、共用施設以外）／キャンプ場内ではノーリードにせず、必ずリードを使用して下さい。（http://www.natureland-om.co.jp/intro.html）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "道志村5964。**1人用テントの料金区分（500円）が公式にある**のが効いていて、入場料800円＋車1,100円を足してソロ2,400円。バイクなら1,600円まで下がる。岩風呂は1家族30分の貸切制で大人450円。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://www.natureland-om.co.jp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**岩風呂は時間予約制の貸切（大人450円）。**宿泊の予約時か受付時に予約する",
+      "バイクで行くと駐車が300円になり総額1,600円",
+      "タープを張るなら別途500円",
+      "**予約は電話のみ**",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "http://www.natureland-om.co.jp/"
+    ]
+  },
+  {
+    "id": "yasokyo-camp",
+    "slug": "yasokyo-camp",
+    "name": "谷相郷キャンプ場",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "status": "active",
+    "address": "山梨県南都留郡道志村谷相7910",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3000,
+    "priceMax": 3000,
+    "priceNote": "施設利用料＋区画料＋車乗り入れ料の合算。公式「施設利用料 大人 1000円 子供 800円／区画料 1,000円／車乗り入れ 1,000円（1台につき）／バイク 500円（1台につき）」→ ソロ1泊＝3,000円（バイクなら2,500円）。**旧ドメイン mfi.or.jp/yasokyo-camp/ は404。予約は電話番号宛のショートメール（SMS）のみでネット予約フォームなし。営業期間は4月下旬〜10月末**",
+    "features": {
+      "reservation": "要",
+      "bath": false,
+      "bathNote": "（FAQ 入浴設備はありますか？）露天風呂は現在、休止しております。車で5分の距離に 村営銭湯の「道志の湯」がございます。（https://yasokyo.vercel.app/）",
+      "firewood": true,
+      "firewoodNote": "（FAQ 場内販売はありますか？）ございます。薪や飲食料品などを取り揃えております。（https://yasokyo.vercel.app/）",
+      "shop": true,
+      "shopNote": "充実の品揃えの売店。キャンプ用品や薪はもちろん、お酒や食料品、おもちゃまで。（https://yasokyo.vercel.app/）",
+      "pet": true,
+      "petNote": "（FAQ ペットは同伴できますか？）キャンプサイトでは同伴可能です。ただし、バンガローには入室不可です。（ケージ利用でも不可）（https://yasokyo.vercel.app/）",
+      "nearbyOnsen": "村営銭湯「道志の湯」まで車で5分（https://yasokyo.vercel.app/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "道志村谷相。施設利用料1,000円＋区画料1,000円＋車乗り入れ1,000円で3,000円（バイクなら2,500円）。**売店の品揃えが良く、公式も「キャンプ用品や薪はもちろん、お酒や食料品、おもちゃまで」**と書いている。村営銭湯「道志の湯」が車で5分。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://yasokyo.vercel.app/",
+    "reservationUrl": null,
+    "cautions": [
+      "**露天風呂は現在休止中**と公式FAQに明記。入浴は車5分の村営銭湯「道志の湯」",
+      "**営業期間は4月下旬〜10月末**",
+      "**予約は電話番号宛のショートメール（SMS）のみ。**ネット予約フォームがない",
+      "バンガローにはペット不可（ケージ利用でも不可）",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://yasokyo.vercel.app/"
+    ]
+  },
+  {
+    "id": "autocamp-mujina",
+    "slug": "autocamp-mujina",
+    "name": "オートキャンプ in むじな",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "status": "active",
+    "address": "山梨県南都留郡道志村道志9707",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 1900,
+    "priceMax": 2900,
+    "priceNote": "公式「利用料金」より 入場料「オートキャンプ1台 1,000円」「大人（中学生以上）2022年7月16日から 900円」、別枠で「駐車料金 1,000円」。**公式表が「オートキャンプ1台」と「駐車料金」を別行にしているため、ソロ1台利用で駐車料金が重複して必要かが公式表記だけでは断定できない。**入場料のみなら1,900円、駐車料金も必須なら2,900円で、下限と上限の両方の読み方を含めた。料金表に旧料金（800円）が併記されているが、公式のお知らせ「利用料金の改定について」(2022.6.1)で現行900円と確認。予約は電話のみ",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "設備利用料 シャワー(温水 男女別 コインタイマー式 5分) 200円（https://camp-mujina.com/?page_id=11）",
+      "firewood": true,
+      "firewoodNote": "設備 …シャワー,ランドリー,売店（燃料 電池 薪 炭等）（https://camp-mujina.com/?page_id=9）",
+      "shop": true,
+      "shopNote": "売店（燃料 電池 薪 炭等）,自動販売機（ジュース類）（https://camp-mujina.com/?page_id=9）",
+      "pet": true,
+      "petNote": "ペット大歓迎！ 大自然の中、わんちゃんと素敵な休日をお過ごし下さい！（https://camp-mujina.com/）",
+      "nearbyOnsen": "道志の湯（大人700円、10:00〜21:00・4月〜10月）（https://camp-mujina.com/?page_id=25）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "道志村道志9707。入場料（オートキャンプ1台1,000円＋大人900円）でソロ1,900円から。温水のコインシャワー（男女別・5分200円）があり、売店で薪・炭・電池が買える。道志の湯が近い。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://camp-mujina.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**料金表の読み方に曖昧さがある。**公式が「オートキャンプ1台 1,000円」と「駐車料金 1,000円」を別行に書いているため、ソロ1台で駐車料金が重複して必要かが判別できない。1,900円〜2,900円の幅で見ておき、予約時に確認する",
+      "公式の料金表に旧料金（大人800円）が併記されたまま残っている。**現行は900円**（2022年6月1日のお知らせで確認）",
+      "**予約は電話のみ**",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://camp-mujina.com/"
+    ]
+  },
+  {
+    "id": "takippara-camp",
+    "slug": "takippara-camp",
+    "name": "たきっぱらキャンプ場",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "status": "active",
+    "address": "山梨県南都留郡道志村8483",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3300,
+    "priceMax": 5500,
+    "priceNote": "チャージ料＋1名あたり利用料の合算。公式「料金表（税込）」より ノーマルサイト（1番〜16番）チャージ料 通常シーズン（車1台分含む）¥2,200／ハイシーズン（車1台分含む）¥4,400、利用料金（1名あたり）¥1,100 → ソロ1泊＝通常3,300円／ハイシーズン5,500円。「※ チャージ料にはサイト利用料と車1台分の駐車料金が含まれています」。1サイト定員は最大6名で下限なし。**公式告知「2025年7月より予約方法が変わりました…ご予約は「なっぷ」からの受付となります／お電話やメールでのご予約は受け付けておりません」。サイト見出しに「滝原オートキャンプ場」表記も併用されている**",
+    "features": {
+      "reservation": "要"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "道志村8483。チャージ料（車1台分の駐車料込み）＋1名1,100円という構成で、通常シーズンのノーマルサイトならソロ3,300円。公式が「ご家族でも、おひとりでも。」とソロ利用をはっきり書いている。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://takippara-camp.site/",
+    "reservationUrl": null,
+    "cautions": [
+      "**ハイシーズンはチャージ料が倍の4,400円になり、ソロ総額5,500円**",
+      "**予約はなっぷのみ。**公式が「2025年7月より…お電話やメールでのご予約は受け付けておりません」と告知している",
+      "公式サイトの見出しに「滝原オートキャンプ場」という別表記も併用されていて紛らわしい",
+      "場内の風呂・シャワー・売店について公式に記載が無い。**事前に確認したほうがいい**",
+      "**座標が未取得。**公式の埋め込み地図のラベルが無関係な文字列だったのでピンとして採らなかった"
+    ],
+    "source": [
+      "https://takippara-camp.site/"
+    ]
   }
 ]

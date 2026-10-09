@@ -1,0 +1,66 @@
+[
+ {"napId":"11251","name":"BerryPark in FISH ON！鹿留","pref":"山梨","muni":"都留市","verdict":"追加",
+  "reason":"施設公式（sisidome.jp）で住所（都留市鹿留1543）が一致し、宿泊キャンプ1区画6,000円を確認。人数下限の記載なし。公式の「3名様料金以上から承ります」はBBQ、「3名様以上で利用可能」は貸切釣り場の条件で、宿泊キャンプには掛からない",
+  "checkedUrls":["https://www.sisidome.jp/","https://www.sisidome.jp/camp/","https://www.sisidome.jp/facilities/","https://www.sisidome.jp/faq/","https://www.sisidome.jp/access/"],
+  "officialUrl":"https://www.sisidome.jp/","reservationUrl":null,
+  "address":"山梨県都留市鹿留1543","priceMin":6000,"priceMax":6000,
+  "priceNote":"区画単位課金。公式キャンプページ「宿泊料金（1区画）／宿泊 6区画 川沿い 6,000円」。人数課金の記載なし＝ソロ1泊6,000円。キャンプの予約は電話のみ（「予約制となります。お電話にてお問い合わせください。」）。**レンタルキャンプセット14,000円の説明に「宿泊料、駐車料、シャワー利用料…込み」とあり駐車料が別途必要な可能性があるが、駐車料の額が公式に出ていないため加算できていない。**釣り券の購入義務は宿泊キャンプには無い",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.sisidome.jp/camp/","quote":"宿泊料、駐車料、シャワー利用料(バスタオル、フェイスタオル、アメニティグッズ)込み"},
+    "shop":{"value":true,"evidenceUrl":"https://www.sisidome.jp/camp/","quote":"設備 水洗トイレ、炊事場、売店、自販機、駐車場"}},
+  "coordsFromOfficialMap":{"lat":35.5077615,"lng":138.8824525,"url":"https://www.sisidome.jp/access/"}},
+
+ {"napId":"11252","name":"風車キャンプ場","pref":"山梨","muni":"都留市","verdict":"門落ち(公式なし)",
+  "reason":"施設公式・自治体公式・公式予約先がいずれも見つからない（なっぷの hpUrl は null、都留市公式にも該当ページなし）。住所（鹿留3064）での検索でも公式は出ない",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/11252","https://www.city.tsuru.yamanashi.jp/soshiki/somu/houseikouhou_t/1/1776.html"],"officialUrl":null},
+
+ {"napId":"11255","name":"本栖湖いこいの森キャンプ場","pref":"山梨","muni":"身延町","verdict":"追加",
+  "reason":"施設公式（motosuko.jp）で住所（南巨摩郡身延町釜額2035）が一致し、テントサイト3,300円＋施設利用料550円を確認。駐車は宿泊者1台目無料。公式のルールにある人数制限はいずれも上限で下限の記載は無い",
+  "checkedUrls":["https://www.motosuko.jp/","https://www.motosuko.jp/price.html","https://www.motosuko.jp/facility.html","https://www.motosuko.jp/pet.html"],
+  "officialUrl":"https://www.motosuko.jp/","reservationUrl":"https://link300.rsvsys.jp/reservations/calendar/ikoinomoricamp",
+  "address":"山梨県南巨摩郡身延町釜額2035","priceMin":3850,"priceMax":3850,
+  "priceNote":"区画課金＋施設利用料。公式「テントサイト Aタイプ 1区画（管理棟下部）6m×9m 3,300円〜（1泊）」＋「施設利用料 大人 550円（1回）」＝3,850円。駐車料は「普通車（宿泊利用者は1台目まで無料）1,100円（1泊）」で宿泊者は無料のため加算せず。**区画料が「3,300円〜」の下限表示なので繁忙期は上振れする可能性があり、予約システム側の金額はJS描画で未取得。営業期間は4月〜11月**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://www.motosuko.jp/facility.html","quote":"シャワー室・洗面台 男女それぞれ4室。シャンプー類はご持参下さい。"},
+    "firewood":{"value":true,"evidenceUrl":"https://www.motosuko.jp/price.html","quote":"薪（販売）1缶 770円"},
+    "shop":{"value":true,"evidenceUrl":"https://www.motosuko.jp/facility.html","quote":"本館（管理棟）内の売店でロックアイス、スナック菓子、カップ麺など販売しております。"},
+    "pet":{"value":true,"evidenceUrl":"https://www.motosuko.jp/pet.html","quote":"ペット連れ時の注意事項…躾の行き届いていない犬の同伴は不可です。放し飼いは禁止です。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"11256","name":"浩庵キャンプ場","pref":"山梨","muni":"身延町","verdict":"追加",
+  "reason":"門は通る（公式 kouan-motosuko.com で住所一致、平日ソロ2,900円）が、**既に `kouan-motosuko` として掲載済みの施設**。重複なので新規追加はしない。なお公式に「浩庵管理棟にてお風呂(500円)もご利用頂けます。(キャンプ場、キャビン利用者のみ)」とあり、場内の風呂として記録に残す",
+  "checkedUrls":["https://kouan-motosuko.com/camp/index.html","https://kouan-motosuko.com/faq/index.html"],
+  "officialUrl":"https://kouan-motosuko.com/camp/index.html","reservationUrl":"https://kouan-motosuko.com/reserve/Reserve/input/?type=camp",
+  "address":"山梨県南巨摩郡身延町中ノ倉2926","priceMin":2900,"priceMax":3800,
+  "priceNote":"人数課金＋テント設営料＋駐車場。公式の宿泊料金表より、通常料金(平日)15:00〜20:00イン＝大人700円＋テント設営料1,100円＋駐車場1,100円＝2,900円。割増料金1(休日・祝日・繁忙期)7:30〜15:00イン＝大人1,000円＋設営料1,400円＋駐車場1,400円＝3,800円。バイクなら駐車場に代えて800〜1,000円。管理棟のお風呂は別途500円",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://kouan-motosuko.com/camp/index.html","quote":"浩庵キャンプ場内にコインシャワー(24h)を完備、浩庵管理棟にてお風呂(500円)もご利用頂けます。(キャンプ場、キャビン利用者のみ)"},
+    "shower":{"value":true,"evidenceUrl":"https://kouan-motosuko.com/camp/index.html","quote":"場内設備：共同炊事場、トイレ、コインシャワー(24h)、管理棟風呂"},
+    "shop":{"value":true,"evidenceUrl":"https://kouan-motosuko.com/faq/index.html","quote":"売店は8：00〜20：00まで、レストランはランチタイムのみの営業となります。"},
+    "pet":{"value":true,"evidenceUrl":"https://kouan-motosuko.com/camp/index.html","quote":"ペットは他人の迷惑になる行為(リード無し、トイレ不始末、鳴き声等)は避けてください。キャビンへのペットの入室は固くお断りします。"}},
+  "coordsFromOfficialMap":{"lat":35.4683992,"lng":138.5721585,"url":"https://kouan-motosuko.com/access/index.html"}},
+
+ {"napId":"11257","name":"南アルプス邑野鳥公園 キャンプサイト","pref":"山梨","muni":"早川町","verdict":"UNMEASURED",
+  "reason":"ソロ可・住所一致（早川町黒桂745）・料金1,300円（入園料込み）まで確定したが、**公式が禁止事項に「所定場所以外での焚き火（焚き火台を利用しても不可）」と明記しテントサイトでの焚き火ができない**ため判断が要る。焚き火ができるのは炊事棟のカマドのみ。公式は「芝生広場がそのままフリーサイトとなっており、ソロキャンプにも…ご利用いただけます」とソロを明記。駐車場は無料。12月〜3月は冬期閉鎖",
+  "checkedUrls":["https://www.hayakawa-eco.com/tomaru/camp.html","https://www.hayakawa-eco.com/program/shisetsu.html"],"officialUrl":"https://www.hayakawa-eco.com/tomaru/camp.html"},
+
+ {"napId":"11266","name":"PICA山中湖","pref":"山梨","muni":"山中湖村","verdict":"宿泊系のため対象外",
+  "reason":"公式の宿泊施設一覧が**コテージ8タイプのみでテントサイトが存在しない**（住所は平野506-296で一致）。予約サイトの「テントサイト」はPICA全施設共通の絞り込みチェックボックスで、当施設には該当物件なし",
+  "checkedUrls":["https://www.pica-resort.jp/yamanakako/","https://www.pica-resort.jp/yamanakako/stay/site/index.html","https://www.pica-resort.jp/yamanakako/about/map/index.html"],"officialUrl":"https://www.pica-resort.jp/yamanakako/"},
+
+ {"napId":"11267","name":"山中野営場","pref":"山梨","muni":"山中湖村","verdict":"閉鎖疑い",
+  "reason":"運営者であるボーイスカウト日本連盟の公式サイトに当該野営場のページが存在せず（`/facility/` も404）、**公式記事が「これまで山中野営場から那須野営場、高萩スカウトフィールドへと会場を移して実施してきましたが」と会場移転を記述**。現役施設としての記載が皆無。なお現役であってもスカウト団体向けの野営場なので単独利用の可否は未確認",
+  "checkedUrls":["https://www.scout.or.jp/?s=%E5%B1%B1%E4%B8%AD%E9%87%8E%E5%96%B6%E5%A0%B4","https://www.scout.or.jp/facility/"],"officialUrl":null},
+
+ {"napId":"11268","name":"湖山荘キャンプ場","pref":"山梨","muni":"山中湖村","verdict":"門落ち(単独利用不可)",
+  "reason":"公式料金ページのオートキャンプ欄の直下に「**※混雑時には夜間に騒音などの苦情が絶えないため、ご家族連れか、大人２名様利用のみに限定して受け入れさせていただいております。**」と明記され1名では利用できない",
+  "checkedUrls":["http://www.kozanso.com/","http://www.kozanso.com/ryoukin.html"],"officialUrl":"http://www.kozanso.com/"},
+
+ {"napId":"11269","name":"the 508","pref":"山梨","muni":"山中湖村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式サイト（the-508.com）は sitemap と wp-json の双方で**公開固定ページが2件だけ**で、料金表も住所の記載も無い。「BOOK NOW」の遷移先はなっぷ",
+  "checkedUrls":["https://the-508.com/","https://the-508.com/rule/","https://the-508.com/wp-json/wp/v2/pages"],"officialUrl":"https://the-508.com/"},
+
+ {"napId":"11270","name":"プライベートハウス バイロン","pref":"山梨","muni":"山中湖村","verdict":"宿泊系のため対象外",
+  "reason":"1日1組貸切の洋室3室・夕朝2食付きの宿で**テントサイトが無い**（「おとな（中学生以上）平日 22,000円〜（2食付き）」）。加えて公式表記の住所は平野508-448で台帳の508-28とも一致しない",
+  "checkedUrls":["https://privatehousebyron.rsvon.com/"],"officialUrl":"https://privatehousebyron.rsvon.com/"}
+]

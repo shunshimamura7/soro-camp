@@ -2717,5 +2717,406 @@
   },
   "napUrl": "https://www.nap-camp.com/chiba/16510",
   "napName": "Base Camp Kisarazu"
+ },
+ {
+  "napId": "11251",
+  "name": "BerryPark in FISH ON！鹿留",
+  "pref": "山梨",
+  "muni": "都留市",
+  "verdict": "追加",
+  "reason": "施設公式（sisidome.jp）で住所（都留市鹿留1543）が一致し、宿泊キャンプ1区画6,000円を確認。人数下限の記載なし。公式の「3名様料金以上から承ります」はBBQ、「3名様以上で利用可能」は貸切釣り場の条件で、宿泊キャンプには掛からない",
+  "checkedUrls": [
+   "https://www.sisidome.jp/",
+   "https://www.sisidome.jp/camp/",
+   "https://www.sisidome.jp/facilities/",
+   "https://www.sisidome.jp/faq/",
+   "https://www.sisidome.jp/access/"
+  ],
+  "officialUrl": "https://www.sisidome.jp/",
+  "reservationUrl": null,
+  "address": "山梨県都留市鹿留1543",
+  "priceMin": 6000,
+  "priceMax": 6000,
+  "priceNote": "区画単位課金。公式キャンプページ「宿泊料金（1区画）／宿泊 6区画 川沿い 6,000円」。人数課金の記載なし＝ソロ1泊6,000円。キャンプの予約は電話のみ（「予約制となります。お電話にてお問い合わせください。」）。**レンタルキャンプセット14,000円の説明に「宿泊料、駐車料、シャワー利用料…込み」とあり駐車料が別途必要な可能性があるが、駐車料の額が公式に出ていないため加算できていない。**釣り券の購入義務は宿泊キャンプには無い",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.sisidome.jp/camp/",
+    "quote": "宿泊料、駐車料、シャワー利用料(バスタオル、フェイスタオル、アメニティグッズ)込み"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.sisidome.jp/camp/",
+    "quote": "設備 水洗トイレ、炊事場、売店、自販機、駐車場"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.5077615,
+   "lng": 138.8824525,
+   "url": "https://www.sisidome.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/11251",
+  "napName": "FISH・ON!鹿留"
+ },
+ {
+  "napId": "11255",
+  "name": "本栖湖いこいの森キャンプ場",
+  "pref": "山梨",
+  "muni": "身延町",
+  "verdict": "追加",
+  "reason": "施設公式（motosuko.jp）で住所（南巨摩郡身延町釜額2035）が一致し、テントサイト3,300円＋施設利用料550円を確認。駐車は宿泊者1台目無料。公式のルールにある人数制限はいずれも上限で下限の記載は無い",
+  "checkedUrls": [
+   "https://www.motosuko.jp/",
+   "https://www.motosuko.jp/price.html",
+   "https://www.motosuko.jp/facility.html",
+   "https://www.motosuko.jp/pet.html"
+  ],
+  "officialUrl": "https://www.motosuko.jp/",
+  "reservationUrl": "https://link300.rsvsys.jp/reservations/calendar/ikoinomoricamp",
+  "address": "山梨県南巨摩郡身延町釜額2035",
+  "priceMin": 3850,
+  "priceMax": 3850,
+  "priceNote": "区画課金＋施設利用料。公式「テントサイト Aタイプ 1区画（管理棟下部）6m×9m 3,300円〜（1泊）」＋「施設利用料 大人 550円（1回）」＝3,850円。駐車料は「普通車（宿泊利用者は1台目まで無料）1,100円（1泊）」で宿泊者は無料のため加算せず。**区画料が「3,300円〜」の下限表示なので繁忙期は上振れする可能性があり、予約システム側の金額はJS描画で未取得。営業期間は4月〜11月**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.motosuko.jp/facility.html",
+    "quote": "シャワー室・洗面台 男女それぞれ4室。シャンプー類はご持参下さい。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.motosuko.jp/price.html",
+    "quote": "薪（販売）1缶 770円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.motosuko.jp/facility.html",
+    "quote": "本館（管理棟）内の売店でロックアイス、スナック菓子、カップ麺など販売しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.motosuko.jp/pet.html",
+    "quote": "ペット連れ時の注意事項…躾の行き届いていない犬の同伴は不可です。放し飼いは禁止です。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11255",
+  "napName": "本栖湖いこいの森キャンプ場"
+ },
+ {
+  "napId": "11256",
+  "name": "浩庵キャンプ場",
+  "pref": "山梨",
+  "muni": "身延町",
+  "verdict": "追加",
+  "reason": "門は通る（公式 kouan-motosuko.com で住所一致、平日ソロ2,900円）が、**既に `kouan-motosuko` として掲載済みの施設**。重複なので新規追加はしない。なお公式に「浩庵管理棟にてお風呂(500円)もご利用頂けます。(キャンプ場、キャビン利用者のみ)」とあり、場内の風呂として記録に残す",
+  "checkedUrls": [
+   "https://kouan-motosuko.com/camp/index.html",
+   "https://kouan-motosuko.com/faq/index.html"
+  ],
+  "officialUrl": "https://kouan-motosuko.com/camp/index.html",
+  "reservationUrl": "https://kouan-motosuko.com/reserve/Reserve/input/?type=camp",
+  "address": "山梨県南巨摩郡身延町中ノ倉2926",
+  "priceMin": 2900,
+  "priceMax": 3800,
+  "priceNote": "人数課金＋テント設営料＋駐車場。公式の宿泊料金表より、通常料金(平日)15:00〜20:00イン＝大人700円＋テント設営料1,100円＋駐車場1,100円＝2,900円。割増料金1(休日・祝日・繁忙期)7:30〜15:00イン＝大人1,000円＋設営料1,400円＋駐車場1,400円＝3,800円。バイクなら駐車場に代えて800〜1,000円。管理棟のお風呂は別途500円",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://kouan-motosuko.com/camp/index.html",
+    "quote": "浩庵キャンプ場内にコインシャワー(24h)を完備、浩庵管理棟にてお風呂(500円)もご利用頂けます。(キャンプ場、キャビン利用者のみ)"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://kouan-motosuko.com/camp/index.html",
+    "quote": "場内設備：共同炊事場、トイレ、コインシャワー(24h)、管理棟風呂"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://kouan-motosuko.com/faq/index.html",
+    "quote": "売店は8：00〜20：00まで、レストランはランチタイムのみの営業となります。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://kouan-motosuko.com/camp/index.html",
+    "quote": "ペットは他人の迷惑になる行為(リード無し、トイレ不始末、鳴き声等)は避けてください。キャビンへのペットの入室は固くお断りします。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.4683992,
+   "lng": 138.5721585,
+   "url": "https://kouan-motosuko.com/access/index.html"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/11256",
+  "napName": "浩庵キャンプ場"
+ },
+ {
+  "napId": "11274",
+  "name": "水之元オートキャンプ場",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "公式の「各種料金のご案内」にテントサイト1泊の入場料・テント1張料・駐車場料が明記され住所（道志村下善之木10220）も一致",
+  "checkedUrls": [
+   "https://doushi-mizunomoto.com/",
+   "https://doushi-mizunomoto.com/camping.php",
+   "https://doushi-mizunomoto.com/contacts.html",
+   "https://doushi-mizunomoto.com/facility.html"
+  ],
+  "officialUrl": "https://doushi-mizunomoto.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村下善之木10220",
+  "priceMin": 2500,
+  "priceMax": 3000,
+  "priceNote": "入場料＋テント1張料＋駐車場の合算。公式「各種料金のご案内」より テントサイト 3歳以上入場料「テント／1泊 電話予約500円／ネット予約1,000円」＋「テント／1張り 1,000円」＋駐車場「車１台あたり／１泊 1,000円」→ 電話予約2,500円／ネット予約3,000円。バイクなら駐車500円。**同じ表の東屋行は「1,500円 ※東屋利用料込」とネット料金に施設料を含む書き方なので、テント行のネット1,000円に1張り料が含まれる読み方（＝2,000円）も否定しきれない。予約前に確認すること。**公式の予約ボタン（liberty-service）はAPIが「facility not available」を返し料金表示不可、パンフレットPDFは画像のみ",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://doushi-mizunomoto.com/contacts.html",
+    "quote": "お風呂ご利用時間 8：00 〜 21：00 ※宿泊のお客様は無料とさせていただいておりますが、オートキャンプ及びバンガローご利用のお客様はお一人様300円いただいております。"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://doushi-mizunomoto.com/camping.php",
+    "quote": "キャンプ場内にコインシャワーがございます。5分200円 ※24時間利用可能"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://doushi-mizunomoto.com/contacts.html",
+    "quote": "薪 400円／１束"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://doushi-mizunomoto.com/contacts.html",
+    "quote": "炭 600円／３kg 薪 400円／１束 氷 200円／１kg"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://doushi-mizunomoto.com/camping.php",
+    "quote": "バンガロー内はペット禁止です（バンガロー外可）／第二キャンプ場 ドッグラン"
+   },
+   "nearbyOnsen": {
+    "value": "道志村内に温泉施設あり（施設名・距離の記載なし）",
+    "evidenceUrl": "https://doushi-mizunomoto.com/camping.php",
+    "quote": "※道志村内には温泉施設もございます。ご利用ください。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11274",
+  "napName": "水之元オートキャンプ場"
+ },
+ {
+  "napId": "11278",
+  "name": "スカイバレーキャンプ場",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "施設公式に入場料1,000円＋1張用サイト2,000円（車1台込）と**「※ソロ用テントサイト有り」**の記載があり、住所（道志村11754-1）も一致",
+  "checkedUrls": [
+   "https://www.skyvalleycamp.com/",
+   "https://www.skyvalleycamp.com/gaiyou.html",
+   "https://www.skyvalleycamp.com/auto.html",
+   "https://www.skyvalleycamp.com/furo.html",
+   "https://www.skyvalleycamp.com/kinsi.html"
+  ],
+  "officialUrl": "https://www.skyvalleycamp.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村11754-1",
+  "priceMin": 3000,
+  "priceMax": 3000,
+  "priceNote": "入場料＋サイト料の合算。公式「入場料金（1泊）小学生以上1000円/1人」＋「オートサイト 宿泊料金 2,000円 / 1張りあたり」「1張用サイト テント１張り＋タープ１張＋車１台」→ 合計3,000円（駐車場はサイト料金に含まれる）。**「※テント一人(ソロ)での土曜、連休、お盆(8/07〜16)の利用サイト数を限らせております…(平日、日曜は制限をしておりません。)」＝繁忙日はソロ枠に上限がある。**予約は電話のみ。AC電源は別途1,000円",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://www.skyvalleycamp.com/furo.html",
+    "quote": "宿泊される皆様に無料でご利用いただける「ジャグジーバス」を完備しています／利用料金 宿泊者無料でご利用いただけます。"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.skyvalleycamp.com/furo.html",
+    "quote": "（ジャグジー風呂）シャワー等完備"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.skyvalleycamp.com/gaiyou.html",
+    "quote": "販売品 薪 500円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.skyvalleycamp.com/gaiyou.html",
+    "quote": "販売品 薪 500円／木炭（3kg）800円／着火材 200円〜／液体石けん 500円（※食料品、氷、お酒、タバコの販売はしておりません）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.skyvalleycamp.com/kinsi.html",
+    "quote": "バンガローは全室ペット同伴OKですが、以下の二通りからご選択ください。／場内での放し飼いは…禁止いたします。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11278",
+  "napName": "スカイバレーキャンプ場"
+ },
+ {
+  "napId": "11285",
+  "name": "ネイチャーランド オム",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "施設公式の利用料金ページに入場料・車・テントの1泊単価が明記され、住所（道志村5964）も一致",
+  "checkedUrls": [
+   "http://www.natureland-om.co.jp/charge.html",
+   "http://www.natureland-om.co.jp/intro.html",
+   "http://www.natureland-om.co.jp/sell_rental.html"
+  ],
+  "officialUrl": "http://www.natureland-om.co.jp/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村5964",
+  "priceMin": 2400,
+  "priceMax": 2400,
+  "priceNote": "入場料＋車＋テント料の合算。公式「オートキャンプ施設利用料／入場料 大人(中学生以上)：800円／車 自家用車：1,100円 バイク：300円／テント １人用：500円 ２〜８人用：1,000円」→ ソロ1泊＝800＋1,100＋500＝2,400円。バイク利用なら1,600円、2〜8人用テント持参なら2,900円。タープは別途500円（任意）。予約は電話のみ",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "http://www.natureland-om.co.jp/charge.html",
+    "quote": "岩風呂ご入浴料 大人(中学生以上)：450円 子供(３歳以上)：250円／1家族30分間の貸し切りとなります。時間予約制"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "http://www.natureland-om.co.jp/sell_rental.html",
+    "quote": "薪 550円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "http://www.natureland-om.co.jp/sell_rental.html",
+    "quote": "販売品・レンタル用品／薪 550円／炭（３ｋｇ）750円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "http://www.natureland-om.co.jp/intro.html",
+    "quote": "ペット同伴にて利用可能（宿泊施設、共用施設以外）／キャンプ場内ではノーリードにせず、必ずリードを使用して下さい。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11285",
+  "napName": "ネイチャーランド オム"
+ },
+ {
+  "napId": "11288",
+  "name": "谷相郷キャンプ場",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "運営者制作の施設公式サイトに施設利用料・区画料・車乗り入れ料が明記され、住所（道志村谷相7910）も一致",
+  "checkedUrls": [
+   "https://yasokyo.vercel.app/",
+   "http://www.mfi.or.jp/yasokyo-camp/"
+  ],
+  "officialUrl": "https://yasokyo.vercel.app/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村谷相7910",
+  "priceMin": 3000,
+  "priceMax": 3000,
+  "priceNote": "施設利用料＋区画料＋車乗り入れ料の合算。公式「施設利用料 大人 1000円 子供 800円／区画料 1,000円／車乗り入れ 1,000円（1台につき）／バイク 500円（1台につき）」→ ソロ1泊＝3,000円（バイクなら2,500円）。**旧ドメイン mfi.or.jp/yasokyo-camp/ は404。予約は電話番号宛のショートメール（SMS）のみでネット予約フォームなし。営業期間は4月下旬〜10月末**",
+  "features": {
+   "bath": {
+    "value": false,
+    "evidenceUrl": "https://yasokyo.vercel.app/",
+    "quote": "（FAQ 入浴設備はありますか？）露天風呂は現在、休止しております。車で5分の距離に 村営銭湯の「道志の湯」がございます。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://yasokyo.vercel.app/",
+    "quote": "（FAQ 場内販売はありますか？）ございます。薪や飲食料品などを取り揃えております。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://yasokyo.vercel.app/",
+    "quote": "充実の品揃えの売店。キャンプ用品や薪はもちろん、お酒や食料品、おもちゃまで。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://yasokyo.vercel.app/",
+    "quote": "（FAQ ペットは同伴できますか？）キャンプサイトでは同伴可能です。ただし、バンガローには入室不可です。（ケージ利用でも不可）"
+   },
+   "nearbyOnsen": {
+    "value": "村営銭湯「道志の湯」まで車で5分",
+    "evidenceUrl": "https://yasokyo.vercel.app/",
+    "quote": "車で5分の距離に 村営銭湯の「道志の湯」がございます。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11288",
+  "napName": "谷相郷キャンプ場"
+ },
+ {
+  "napId": "11290",
+  "name": "オートキャンプ in むじな",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "施設公式の利用料金ページに入場料（オートキャンプ1台・大人）と駐車料金が明記され、住所（道志村道志9707）も一致",
+  "checkedUrls": [
+   "https://camp-mujina.com/",
+   "https://camp-mujina.com/?page_id=11",
+   "https://camp-mujina.com/?page_id=9",
+   "https://camp-mujina.com/?page_id=25"
+  ],
+  "officialUrl": "https://camp-mujina.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村道志9707",
+  "priceMin": 1900,
+  "priceMax": 2900,
+  "priceNote": "公式「利用料金」より 入場料「オートキャンプ1台 1,000円」「大人（中学生以上）2022年7月16日から 900円」、別枠で「駐車料金 1,000円」。**公式表が「オートキャンプ1台」と「駐車料金」を別行にしているため、ソロ1台利用で駐車料金が重複して必要かが公式表記だけでは断定できない。**入場料のみなら1,900円、駐車料金も必須なら2,900円で、下限と上限の両方の読み方を含めた。料金表に旧料金（800円）が併記されているが、公式のお知らせ「利用料金の改定について」(2022.6.1)で現行900円と確認。予約は電話のみ",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://camp-mujina.com/?page_id=11",
+    "quote": "設備利用料 シャワー(温水 男女別 コインタイマー式 5分) 200円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://camp-mujina.com/?page_id=9",
+    "quote": "設備 …シャワー,ランドリー,売店（燃料 電池 薪 炭等）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://camp-mujina.com/?page_id=9",
+    "quote": "売店（燃料 電池 薪 炭等）,自動販売機（ジュース類）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://camp-mujina.com/",
+    "quote": "ペット大歓迎！ 大自然の中、わんちゃんと素敵な休日をお過ごし下さい！"
+   },
+   "nearbyOnsen": {
+    "value": "道志の湯（大人700円、10:00〜21:00・4月〜10月）",
+    "evidenceUrl": "https://camp-mujina.com/?page_id=25",
+    "quote": "道志の湯 ご案内 営業時間 １０：００〜２１：００（４月〜１０月）入浴料 大人７００円"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11290",
+  "napName": "オートキャンプinむじな"
+ },
+ {
+  "napId": "11295",
+  "name": "たきっぱらキャンプ場",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "施設公式に通常／ハイシーズンのチャージ料＋1名あたり利用料の料金表があり、住所（道志村8483）も一致。公式が「ご家族でも、おひとりでも。」とソロ可を明記",
+  "checkedUrls": [
+   "https://takippara-camp.site/"
+  ],
+  "officialUrl": "https://takippara-camp.site/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村8483",
+  "priceMin": 3300,
+  "priceMax": 5500,
+  "priceNote": "チャージ料＋1名あたり利用料の合算。公式「料金表（税込）」より ノーマルサイト（1番〜16番）チャージ料 通常シーズン（車1台分含む）¥2,200／ハイシーズン（車1台分含む）¥4,400、利用料金（1名あたり）¥1,100 → ソロ1泊＝通常3,300円／ハイシーズン5,500円。「※ チャージ料にはサイト利用料と車1台分の駐車料金が含まれています」。1サイト定員は最大6名で下限なし。**公式告知「2025年7月より予約方法が変わりました…ご予約は「なっぷ」からの受付となります／お電話やメールでのご予約は受け付けておりません」。サイト見出しに「滝原オートキャンプ場」表記も併用されている**",
+  "features": {},
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/11295",
+  "napName": "たきっぱらキャンプ場"
  }
 ]
