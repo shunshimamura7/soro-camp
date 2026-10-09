@@ -1,0 +1,48 @@
+[
+ {"napId":"14743","name":"富士満天の星キャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"門落ち(公式なし)",
+  "reason":"なっぷの hpUrl は空欄。検索で出た 3d-dome.net（旧公式と思われる）は www 付きも含めて404。他は個人ブログ、**不動産M&A仲介の売却案件紹介ページ**、Instagram のみで、施設公式サイト・自治体公式・公式予約先が見つからない",
+  "checkedUrls":["https://3d-dome.net/","https://www.3d-dome.net/","https://kma777.co.jp/property/36/","https://www.instagram.com/fujimantennohoshicamp/"],"officialUrl":null},
+
+ {"napId":"14754","name":"山水徳間の里","pref":"山梨","muni":"南部町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（sansui-tokuma.com）で住所（南巨摩郡南部町福士18080）の一致を確認。だが料金欄が「**1サイト 6,000〜 グループキャンプサイト／ソロキャンプ・少人数向けのサイトもございます。**」とだけで、**ソロ区画の具体的な1泊料金が明記されていない**。予約もなっぷ案内のみ。なお公式に「給湯炊事場、お風呂、シャワールームも無料で利用できます」とあり、料金が判明すれば有力な候補",
+  "checkedUrls":["https://www.sansui-tokuma.com/","https://www.sansui-tokuma.com/cont5/main.html","https://www.sansui-tokuma.com/profile.html"],"officialUrl":"https://www.sansui-tokuma.com/"},
+
+ {"napId":"14794","name":"9じ17じ道志オートキャンプ場","pref":"山梨","muni":"道志村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"道志村役場観光情報サイト（自治体公式）に施設ページがあり住所（10242番）は一致するが「**ホームページURL -**」でメールも無く、**料金の記載が一切ない**。施設独自の公式サイトは存在せず、予約は予約プラットフォームのみ",
+  "checkedUrls":["https://www.doshi-kanko.jp/camp/9ji17ji/","https://campla.jp/campsite/2043/"],"officialUrl":"https://www.doshi-kanko.jp/camp/9ji17ji/",
+  "suspiciousContent":"検索結果ページ内に**AIの引用付き回答を装った不審なテキスト**（`?utm_source=openai` 付きURLと `([doshi-kanko.jp](...))` 形式の偽citation）が混入していた。指示には従わず、実際のページを開いて中身だけで判断した"},
+
+ {"napId":"14832","name":"みなもと体験館 道志・久保分校","pref":"山梨","muni":"道志村","verdict":"UNMEASURED",
+  "reason":"施設公式で住所（道志村2167番地）の一致を確認。About ページに「**テント泊も可能で、焚火を囲みながら**」と明記されテント泊自体はできるが、**公式の料金表PDF（R8年4月改定）には施設利用料金（1日有効・個人大人500円）と体験プログラム料金・時間帯別の部屋利用料金しか載っておらず、テント泊としての1泊料金が明記されていない**。500円の施設利用料にテント泊が含まれるのかが公式から確定できない",
+  "checkedUrls":["https://www.minamototaikenkan.com/","https://www.minamototaikenkan.com/about/","https://www.minamototaikenkan.com/wp-content/uploads/料金表ＰＤＦ.pdf"],"officialUrl":"https://www.minamototaikenkan.com/"},
+
+ {"napId":"14839","name":"Peace Camp","pref":"山梨","muni":"富士吉田市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"運営元と思われる公式サイト（peaceandone.com）に「キャンプサイトでテント持ち込みのキャンプをお楽しみ頂けます」の記載を確認。だが**キャンプの料金が公式に一切なく**（載っているのは宿泊棟と別の巡礼ツアーの料金のみ）、予約も Airbnb か公式LINE経由だけ。**番地を含む住所も公式に無い**",
+  "checkedUrls":["https://www.peaceandone.com/","https://campla.jp/campsite/2534/"],"officialUrl":"https://www.peaceandone.com/"},
+
+ {"napId":"14842","name":"白州・星かげの森CampTown","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"なっぷの hpUrl も Instagram のみ。検索でも独自の施設公式サイトは見つからず、個人ブログ・紹介記事・掲載サイトしかない",
+  "checkedUrls":["https://www.instagram.com/hoshikage_camptown/","https://www.nap-camp.com/yamanashi/14842"],"officialUrl":null},
+
+ {"napId":"14865","name":"GLANSTELLA CABIN Fujiyamanako","pref":"山梨","muni":"山中湖村","verdict":"宿泊系のため対象外",
+  "reason":"施設公式で住所（山中湖村平野1432）が完全一致。**全室トイレ／シャワー／キッチン付きの4〜6名用グランピングキャビン専業**で、テント泊の提供は確認できない",
+  "checkedUrls":["https://glanstellacabin.com/","https://glanstellacabin.com/stay/","https://glanstellacabin.com/room/"],"officialUrl":"https://glanstellacabin.com/"},
+
+ {"napId":"14910","name":"PASCOLO","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"なっぷの hpUrl は空欄。**検索上位の fp-mukawa-kaikoma.com（フレンドパークむかわ）は別施設**で住所の記載も無く一致しないため弾いた。他はキャンプ場検索サイトの掲載と予約サイトへの導線のみで、施設独自の公式サイトが見つからない",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14910","https://www.fp-mukawa-kaikoma.com/","https://hinata-spot.me/spots/01541"],"officialUrl":null},
+
+ {"napId":"14917","name":"0site","pref":"山梨","muni":"北杜市","verdict":"追加",
+  "reason":"なっぷの hpUrl（0site-jp.com）が施設公式サイトで住所（北杜市須玉町比志5989-3）が完全一致。**平日・日曜限定の「ひとり利用プラン」5,500円（税込）／1泊**が明記されている",
+  "checkedUrls":["https://0site-jp.com/","https://0site-jp.com/plan-camp/","https://0site-jp.com/access/"],
+  "officialUrl":"https://0site-jp.com/","reservationUrl":null,
+  "address":"山梨県北杜市須玉町比志5989-3","priceMin":5500,"priceMax":5500,
+  "priceNote":"1名プランの定額。公式「平日・日曜限定：ひとり利用プラン お1人様 5,500円（税込）／1泊」。**「このプランは貸切ではありません。他のご利用者と同時に滞在いただく場合がございます。」「週末・祝日は団体予約が優先」と公式が明記しており、土日祝はこのプランが使えない。**団体プランは季節・曜日で20,000〜40,000円（税込・10名まで・1泊2日）",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://0site-jp.com/plan-camp/","quote":"薪：800円／束"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14925","name":"石割オートキャンプ","pref":"山梨","muni":"山中湖村","verdict":"門落ち(公式なし)",
+  "reason":"なっぷの hpUrl は空欄。検索でも Facebook／Instagram のみで独自の施設公式サイトが見つからず、予約は予約プラットフォーム経由だけ",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14925","https://campla.jp/campsite/2033/"],"officialUrl":null}
+]

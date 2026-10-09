@@ -4311,5 +4311,623 @@
   "coordsFromOfficialMap": null,
   "napUrl": "https://www.nap-camp.com/yamanashi/14561",
   "napName": "BULLs キャンプ【ペットと泊まれるキャンプ場】"
+ },
+ {
+  "napId": "14623",
+  "name": "白州テラスキャンプ場 by VILLARS",
+  "pref": "山梨",
+  "muni": "北杜市",
+  "verdict": "追加",
+  "reason": "施設公式（villars.co.jp/hakushu）で住所（北杜市白州町台ヶ原字川平2354-258）の一致を確認。1泊1テラスサイト（小学生以上5名まで）の定額料金が公式に明記",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/14623",
+   "https://villars.co.jp/hakushu"
+  ],
+  "officialUrl": "https://villars.co.jp/hakushu/",
+  "reservationUrl": null,
+  "address": "山梨県北杜市白州町台ヶ原字川平2354-258",
+  "priceMin": 5000,
+  "priceMax": 7500,
+  "priceNote": "区画課金＋休前日のみ入場料・駐車料。公式「料金」より「入場料 平日は無料！休前日：1,000円/1泊・1名」「宿泊費 全日5,000円〜/1泊1テラスサイト（小学生以上の最大5名まで）」「駐車料金 平日は無料！※休前日：1,500円/1泊・1台」。1区画最大5名の定額制なので平日ソロは5,000円、休前日は入場料・駐車料込みで7,500円。**公式の表記が「5,000円〜」なので繁忙期の上振れがあり得る**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://villars.co.jp/hakushu",
+    "quote": "貸切露天風呂 薪で沸かす掛け流し貸切露天風呂です。…宿泊客には入浴料無料で提供しております。"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://villars.co.jp/hakushu",
+    "quote": "トイレは男女各1か所、共に最新ウォシュレット付です。シャワーも完備しています。"
+   },
+   "nearbyOnsen": {
+    "value": "甲斐駒ケ岳温泉 尾白の湯（車で約5分）",
+    "evidenceUrl": "https://villars.co.jp/hakushu",
+    "quote": "＝温泉＝ ・甲斐駒ケ岳温泉 尾白の湯：約５分"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.801424498952024,
+   "lng": 138.32240274054632,
+   "url": "https://villars.co.jp/hakushu"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/14623",
+  "napName": "白州テラスキャンプ場 by VILLARS"
+ },
+ {
+  "napId": "14663",
+  "name": "CAMP＆SAUNA 3set",
+  "pref": "山梨",
+  "muni": "都留市",
+  "verdict": "追加",
+  "reason": "施設公式（camp-sauna-3set.jp）で住所（都留市上谷1-7-29）の一致を確認。1名あたりの利用料金が公式に明記され単独利用の制限も無い",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/14663",
+   "https://camp-sauna-3set.jp/",
+   "https://camp-sauna-3set.jp/service/",
+   "https://camp-sauna-3set.jp/access/"
+  ],
+  "officialUrl": "https://camp-sauna-3set.jp/",
+  "reservationUrl": "https://camp-sauna-3set.jp/reservation",
+  "address": "山梨県都留市上谷1-7-29",
+  "priceMin": 3300,
+  "priceMax": 4400,
+  "priceNote": "人数課金＋車両課金。公式「基本料金には下記が含まれます。区画利用料金…利用料金 3,300円（税込）/人 入場料」「駐車料金 1,100円（税込）/台 お車で来場の際は、1台に付き1,100円の駐車料金を頂きます」。テント等は持込み前提で、レンタル利用時は別途3,300円／張〜",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://camp-sauna-3set.jp/service/",
+    "quote": "シャワールーム利用無料（24h利用可能）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://camp-sauna-3set.jp/service/",
+    "quote": "薪（5〜7kg） ¥900"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.550369,
+   "lng": 138.902949,
+   "url": "https://camp-sauna-3set.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/14663",
+  "napName": "CAMP＆SAUNA 3set（キャンプ＆サウナ　サンセット）"
+ },
+ {
+  "napId": "14676",
+  "name": "リトルノース・キャンピンググラウンド",
+  "pref": "山梨",
+  "muni": "富士川町",
+  "verdict": "追加",
+  "reason": "施設公式（littlenorth.net）で住所の一致を確認。**サブエージェントは「南都留郡富士川町平林」と報告したが郡名が誤りで番地も欠けていたため、本体側で公式のアクセスページを開き直し「〒400-0514　山梨県南巨摩郡富士川町平林1603」に直した**",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/14676",
+   "https://littlenorth.net",
+   "https://littlenorth.net/?page_id=735",
+   "https://littlenorth.net/?page_id=8"
+  ],
+  "officialUrl": "https://littlenorth.net/?page_id=735",
+  "reservationUrl": "https://littlenorth.net/?page_id=118",
+  "address": "山梨県南巨摩郡富士川町平林1603",
+  "priceMin": 6600,
+  "priceMax": 11000,
+  "priceNote": "区画課金のみ（税込）。公式「AUTOCAMP…≪料金≫※税込 6,600円〜11,000円 ※料金はシーズンによって異なります。★4名以上でご利用の場合、追加1名につき大人：＋1,650円〜2,200円/人、泊」「≪設営可能数≫1サイトにつき：テント1張＋タープ1張＋車1台まで」。3名まで同額の区画定額なのでソロでも追加料金は無いが、**区画1つ分を1人で負担する形で、季節によって6,600〜11,000円と幅が大きい**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://littlenorth.net/?page_id=735",
+    "quote": "シャワールーム 予約制となっています。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://littlenorth.net/?page_id=735",
+    "quote": "売店 炭（550円・込） 薪（550円・込） 飲み物"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://littlenorth.net/?page_id=735",
+    "quote": "売店 炭（550円・込） 薪（550円・込） 飲み物"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.575573735769424,
+   "lng": 138.41281257661979,
+   "url": "https://littlenorth.net/?page_id=8"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/14676",
+  "napName": "リトルノースキャンピンググラウンド"
+ },
+ {
+  "napId": "14687",
+  "name": "清里オーベルジュ コート・ドゥ・ヴェール キャンプサイト",
+  "pref": "山梨",
+  "muni": "北杜市",
+  "verdict": "追加",
+  "reason": "施設公式（kiyosato-auberge.com/camp/）で住所（北杜市高根町清里3545-943）の完全一致を確認。自分でテントを張る前提のキャンプサイトで、1区画定額の料金が公式に明記（予約はなっぷ経由だが価格は公式記載）",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/14687",
+   "https://kiyosato-auberge.com/",
+   "https://kiyosato-auberge.com/camp/",
+   "https://kiyosato-auberge.com/access/",
+   "https://kiyosato-auberge.com/2021/glamping/"
+  ],
+  "officialUrl": "https://kiyosato-auberge.com/camp/",
+  "reservationUrl": null,
+  "address": "山梨県北杜市高根町清里3545-943",
+  "priceMin": 3000,
+  "priceMax": 9000,
+  "priceNote": "区画単位の定額（税込）。公式「基本区画料金 ・サービスシーズン 3,000円(税込)・スタンダードシーズン 5,500円(税込)・トップシーズン 8,000円(税込)・特別日 9,000円(税込)」「1区画 1〜4名(最大人数6名まで)…1区画は、車1台 1テント、1タープ」。1区画定額なのでソロでも季節価格がそのまま総額になり、**同じ施設で3,000円と9,000円の3倍差がある**。公式は「ご予約はこちら 予約サイトなっぷ」と予約自体はなっぷ経由",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://kiyosato-auberge.com/camp/",
+    "quote": "シャワールームが新設されました。25分400円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://kiyosato-auberge.com/camp/",
+    "quote": "(ファイヤーピット) 1台 4,000円(薪一束付き)・追加薪"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://kiyosato-auberge.com/camp/",
+    "quote": "【ペット】・同伴不可となります。"
+   },
+   "nearbyOnsen": {
+    "value": "アクアリゾート天女の湯（車で約3分・割引チケット有り）",
+    "evidenceUrl": "https://kiyosato-auberge.com/camp/",
+    "quote": "【温泉施設】・アクアリゾート天女の湯をご利用ください(割引チケット有り) ※車で約3分。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/14687",
+  "napName": "清里オーベルジュ　コート・ドゥ・ヴェール(緑の丘)オートキャンプサイト"
+ },
+ {
+  "napId": "14917",
+  "name": "0site",
+  "pref": "山梨",
+  "muni": "北杜市",
+  "verdict": "追加",
+  "reason": "なっぷの hpUrl（0site-jp.com）が施設公式サイトで住所（北杜市須玉町比志5989-3）が完全一致。**平日・日曜限定の「ひとり利用プラン」5,500円（税込）／1泊**が明記されている",
+  "checkedUrls": [
+   "https://0site-jp.com/",
+   "https://0site-jp.com/plan-camp/",
+   "https://0site-jp.com/access/"
+  ],
+  "officialUrl": "https://0site-jp.com/",
+  "reservationUrl": null,
+  "address": "山梨県北杜市須玉町比志5989-3",
+  "priceMin": 5500,
+  "priceMax": 5500,
+  "priceNote": "1名プランの定額。公式「平日・日曜限定：ひとり利用プラン お1人様 5,500円（税込）／1泊」。**「このプランは貸切ではありません。他のご利用者と同時に滞在いただく場合がございます。」「週末・祝日は団体予約が優先」と公式が明記しており、土日祝はこのプランが使えない。**団体プランは季節・曜日で20,000〜40,000円（税込・10名まで・1泊2日）",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://0site-jp.com/plan-camp/",
+    "quote": "薪：800円／束"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/14917",
+  "napName": "0site"
+ },
+ {
+  "napId": "14933",
+  "name": "富士すばるランド キャンプフィールド",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "施設公式（subaruland.jp）で住所（富士河口湖町船津字剣丸尾6663-1）の一致を確認。「区画のみ利用」プランが1区画4,800円（税込）〜・6名まで一律料金で、ソロでも利用できる。公式アクセスページの地図ピンを国土地理院で逆引きし 19430（富士河口湖町）船津 を確認済み",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/14933",
+   "https://www.subaruland.jp/",
+   "https://www.subaruland.jp/camp-field/",
+   "https://www.subaruland.jp/access/"
+  ],
+  "officialUrl": "https://www.subaruland.jp/camp-field/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡富士河口湖町船津字剣丸尾6663-1",
+  "priceMin": 4800,
+  "priceMax": 4800,
+  "priceNote": "区画単位の定額（税込）。公式「選べる料金プラン」より「区画のみ利用 1区画 4,800円（税込）〜 ※1サイト最大6名様まで利用可能・6名様まで一律料金」。ワンデーパス付きプラン（1人4,400円〜）と日帰りデイキャンプ（1日3,000円〜）は別プラン。**公式の表記が「4,800円〜」で、AC電源サイト等の割増額は静的ページに出ていないため上限は未確認。**営業期間は4月〜11月で冬季クローズ",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.subaruland.jp/camp-field/",
+    "quote": "キャンプ場ご利用の方向けにシャワールームがございます。利用可能時間は18:00〜翌8:00です"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.subaruland.jp/camp-field/",
+    "quote": "薪や炭などの消耗品はシルバンズカフェ＆ショップにて販売しております"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.subaruland.jp/camp-field/",
+    "quote": "薪や炭などの消耗品はシルバンズカフェ＆ショップにて販売しております"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.subaruland.jp/camp-field/",
+    "quote": "愛犬とのびのび…区画内ではリードの着用が必要です"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.457757372660225,
+   "lng": 138.7575070757779,
+   "url": "https://www.subaruland.jp/access/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/14933",
+  "napName": "すばるランド CAMP FIELD"
+ },
+ {
+  "napId": "14941",
+  "name": "＆GREENフジ",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "施設公式（andgreencamp.com/fuji）に**1〜2名専用の「Soloサイト」3,500円〜**があり単独利用が前提。**公式ページ本文には番地の記載が無く（本体側で3ページをHTMLごと grep して確認）、サブエージェントが報告した「船津6662-1」は裏を取れなかったので採らない。**公式のマップボタンが指す Google マップの地点（&GREEN キャンプ場 / 35.4527338,138.7481432）を国土地理院で逆引きし 19430（富士河口湖町）船津 を確認したので、住所は大字までに留めた",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/14941",
+   "https://andgreencamp.com/fuji/",
+   "https://andgreencamp.com/fuji/facility",
+   "https://andgreencamp.com/fuji/rule",
+   "https://maps.app.goo.gl/gH72s23EhLHQduoo9",
+   "https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat=35.4527338&lon=138.7481432"
+  ],
+  "officialUrl": "https://andgreencamp.com/fuji/facility",
+  "reservationUrl": "https://www.camp-net.jp/reserve/?camp=174",
+  "address": "山梨県南都留郡富士河口湖町船津",
+  "priceMin": 3500,
+  "priceMax": 3500,
+  "priceNote": "区画単位の定額。公式「施設概要」より「Soloサイト 料金 ¥3,500〜[2名まで含む] 定員2名 AC電源なし 車乗入可」。**公式の表記が「¥3,500〜」で、季節・曜日別のカレンダー価格はJS描画のため上限を確認できていない。**確認できた下限だけを入れてある",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://andgreencamp.com/fuji/facility",
+    "quote": "シャワールーム（無料）7:00〜11:00、17:00〜22:00"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://andgreencamp.com/fuji/facility",
+    "quote": "管理棟…薪や消耗品などの販売、各種レンタルなどを取り扱っております"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://andgreencamp.com/fuji/facility",
+    "quote": "管理棟…薪や消耗品などの販売、各種レンタルなどを取り扱っております"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://andgreencamp.com/fuji/facility",
+    "quote": "ひだまりサイト ペット同伴OK！森に囲まれ、開放的で気持ちのいいサイトです"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.4527338,
+   "lng": 138.7481432,
+   "url": "https://andgreencamp.com/fuji/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/14941",
+  "napName": "&amp;GREEN"
+ },
+ {
+  "napId": "15076",
+  "name": "平須CAMP21",
+  "pref": "山梨",
+  "muni": "身延町",
+  "verdict": "追加",
+  "reason": "運営者（大石屋）公式に住所（身延町平須2126）の一致と、**「1組1名（ソロ）」の料金区分そのもの**が明記されている。風呂・シャワーは公式が「用意がございません」と明示しているので false を採れた",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/15076",
+   "https://r.goope.jp/ooishiya502",
+   "https://r.goope.jp/ooishiya502/free/page_hirasucamp21",
+   "https://r.goope.jp/ooishiya502/menu",
+   "https://r.goope.jp/ooishiya502/about"
+  ],
+  "officialUrl": "https://r.goope.jp/ooishiya502/menu",
+  "reservationUrl": null,
+  "address": "山梨県南巨摩郡身延町平須2126",
+  "priceMin": 2000,
+  "priceMax": 3000,
+  "priceNote": "人数区分ごとの定額。公式「メニュー＆プラン」より「オートフリーサイト 1組1名（ソロ）…2,000円」「林間サイト／オートサイト／林間フリーサイト 1組1名（ソロ）…3,000円」。**税込／税別の明記が無い。**デイキャンプ（日帰り）は別途1,500円〜",
+  "features": {
+   "bath": {
+    "value": false,
+    "evidenceUrl": "https://r.goope.jp/ooishiya502/menu",
+    "quote": "【お風呂、シャワー】※当施設には用意がございません。身延町内にある温泉施設のご利用を推奨しております。"
+   },
+   "shower": {
+    "value": false,
+    "evidenceUrl": "https://r.goope.jp/ooishiya502/menu",
+    "quote": "【お風呂、シャワー】※当施設には用意がございません。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://r.goope.jp/ooishiya502/about",
+    "quote": "薪 700円 / 1束、竹薪 400円、ベビー薪 500円 / 1カゴ"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://r.goope.jp/ooishiya502/about",
+    "quote": "【各種物販】薪・ベビー薪・焚付・ファットウッド・木箱(素材)"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://r.goope.jp/ooishiya502/menu",
+    "quote": "入場可能です。（リード着用必須・糞の後片付けをお願いします。）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/15076",
+  "napName": "平須CAMP21"
+ },
+ {
+  "napId": "15651",
+  "name": "ドッグランキャンプ（ニュー福寿荘）",
+  "pref": "山梨",
+  "muni": "山中湖村",
+  "verdict": "追加",
+  "reason": "施設公式（new-fukujuso.com）で住所（山中湖村平野140）の一致を確認。1張り／1台／235㎡の区画定額（6,600〜8,800円 税込）が明記され、「もちろん、ワンちゃん連れでないお客様も大歓迎です」と単独利用も可。**サブエージェントは大浴場を bath:true と判定していたが、公式の記載は「車で3分」の本館の大浴場なので、本体側で bath から外して nearbyOnsen に移した**",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/15651",
+   "http://fukujuso.jp/dog_camp/index.html",
+   "https://new-fukujuso.com/",
+   "https://new-fukujuso.com/dogrun.html",
+   "https://new-fukujuso.com/reservation.html",
+   "https://new-fukujuso.com/access.html"
+  ],
+  "officialUrl": "https://new-fukujuso.com/dogrun.html",
+  "reservationUrl": "https://site.reservation.liberty-service.com/cc5f559e549f4f2fac443b9673014a37/facility-6abeec8c-5c63-4f0a-bca4-163277f67147/search",
+  "address": "山梨県南都留郡山中湖村平野140",
+  "priceMin": 6600,
+  "priceMax": 8800,
+  "priceNote": "区画単位の定額（税込）。公式「料金・ご予約」より「1張り／1台／235㎡ 6区画 6,600円(4月・10〜12月) / 8,800円(5〜9月)」。**区画定額なのでソロでも6,600〜8,800円を1人で負担する。**公式に「もちろん、ワンちゃん連れでないお客様も大歓迎です」と明記",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://new-fukujuso.com/dogrun.html",
+    "quote": "薪 660円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://new-fukujuso.com/dogrun.html",
+    "quote": "販売 薪 660円 カートリッジ式ガス燃料 1,100円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://new-fukujuso.com/dogrun.html",
+    "quote": "ワンちゃん 無料 小型犬〜大型犬までOK"
+   },
+   "nearbyOnsen": {
+    "value": "ニュー福寿荘の大浴場（車で3分・24時間入浴可）／山中湖平野温泉 石割の湯",
+    "evidenceUrl": "https://new-fukujuso.com/dogrun.html",
+    "quote": "お風呂 ニュー福寿荘の大浴場をご利用いただけます（車で3分/24時間入浴可）／その他、キャンプ場近く「山中湖平野温泉 石割の湯」がございます"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/15651",
+  "napName": "ドッグキャンプ福寿in石割"
+ },
+ {
+  "napId": "15671",
+  "name": "市川公園MTBフィールド",
+  "pref": "山梨",
+  "muni": "市川三郷町",
+  "verdict": "追加",
+  "reason": "指定管理者（株式会社山守人）の公式サイトで住所（市川三郷町印沢947-3）の一致を確認。オートキャンプサイトの1張あたり定額（システム利用料・駐車料金込み4,000円〜）が明記",
+  "checkedUrls": [
+   "https://www.nap-camp.com/yamanashi/15671",
+   "https://www.minamialpsmtb.com/ichikawaparkmtb"
+  ],
+  "officialUrl": "https://www.minamialpsmtb.com/ichikawaparkmtb",
+  "reservationUrl": null,
+  "address": "山梨県西八代郡市川三郷町印沢947-3",
+  "priceMin": 4000,
+  "priceMax": 4000,
+  "priceNote": "区画単位の定額。公式より「テントサイト1張(1泊4名まで、システム利用料や駐車料金込み）¥4,000〜」「追加宿泊1名一泊(5名以上の場合)¥500」「アーリーチェックイン(11時〜)¥1,000」。**税込／税別の明記が無く、表記も「¥4,000〜」なので上限は未確認。**オートキャンプサイトは通常12区画＋絶景展望台サイト1区画",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.minamialpsmtb.com/ichikawaparkmtb",
+    "quote": "販売品 炭3kg 800円 まき1束 800円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.minamialpsmtb.com/ichikawaparkmtb",
+    "quote": "販売品 炭3kg 800円 まき1束 800円"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/15671",
+  "napName": "市川公園MTBフィールド"
+ },
+ {
+  "napId": "15673",
+  "name": "琴川キャンプ場＆サウナ琴川",
+  "pref": "山梨",
+  "muni": "山梨市",
+  "verdict": "追加",
+  "reason": "施設公式（kotogawacamp.jp）で住所（山梨市牧丘町杣口2050-1）の一致を確認。林間サイトに「少人数やソロにオススメ」と明記があり単独利用可。**風呂は公式FAQが「当キャンプ場敷地内にはありません」と明示しているので false を採れた**（ドラム缶風呂は洗体不可の体験用なので bath にしない）",
+  "checkedUrls": [
+   "https://kotogawacamp.jp/",
+   "https://kotogawacamp.jp/company/",
+   "https://kotogawacamp.jp/facility/ichou/",
+   "https://kotogawacamp.jp/facility/sakura/",
+   "https://kotogawacamp.jp/facility/forest/",
+   "https://kotogawacamp.jp/facility/drum-bath/",
+   "https://kotogawacamp.jp/faq/"
+  ],
+  "officialUrl": "https://kotogawacamp.jp/",
+  "reservationUrl": null,
+  "address": "山梨県山梨市牧丘町杣口2050-1",
+  "priceMin": 4000,
+  "priceMax": 5000,
+  "priceNote": "サイト課金＋人数課金。公式より林間／さくらサイトは「サイト利用料3,000円／一泊」＋「大人1名1,000円／一泊」＝4,000円（車1台無料・2台目から＋1,000円）、いちょうサイトは4,000円＋1,000円＝5,000円。林間サイトのページに「少人数やソロにオススメ」と明記",
+  "features": {
+   "bath": {
+    "value": false,
+    "evidenceUrl": "https://kotogawacamp.jp/faq/",
+    "quote": "お風呂や温泉はありますか？ 当キャンプ場敷地内にはありません。近場のお風呂をご案内致します。ドラム缶風呂では髪や体を洗うことはできません。"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://kotogawacamp.jp/facility/",
+    "quote": "トイレ・シャワー 男女共用の水洗ウオッシュレットです。コイン式温水シャワーも設置しましたのでご利用ください。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://kotogawacamp.jp/faq/",
+    "quote": "薪(広葉樹)、炭、焚付、ガスボンベ、蚊取り線香、軍手、トングなどです。"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://kotogawacamp.jp/facility/",
+    "quote": "薪、炭、焚付、軍手、トング、蚊取り線香、ガスボンベなど最低限の消耗品を取り扱っています。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://kotogawacamp.jp/faq/",
+    "quote": "ペットは連れて行っていいですか？ ペットOKです。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/15673",
+  "napName": "琴川キャンプ場 &amp; サウナ琴川"
+ },
+ {
+  "napId": "15714",
+  "name": "センタービレッジキャンプ場",
+  "pref": "山梨",
+  "muni": "道志村",
+  "verdict": "追加",
+  "reason": "施設公式（フレーム構成の古いサイト）に**「ソロプラン」大人1名3,000円／日**の明記あり。公式の住所表記は「12,311」で台帳行の12312と番地が1違いだが、施設名・電話番号・場内の地名（持萩沢ほか）が一致しており同一施設と判断。**本体側で表記のカンマを外して12311に直した**",
+  "checkedUrls": [
+   "https://cvcamp.sakura.ne.jp/",
+   "https://cvcamp.sakura.ne.jp/base.htm",
+   "https://cvcamp.sakura.ne.jp/charge.htm",
+   "https://cvcamp.sakura.ne.jp/equ.htm"
+  ],
+  "officialUrl": "https://cvcamp.sakura.ne.jp/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡道志村12311",
+  "priceMin": 3000,
+  "priceMax": 3000,
+  "priceNote": "ソロ専用プランの定額。公式「ソロプラン」大人1名 プラン合計3,000円（内訳：施設使用料1,000円＋サイト料2,000円）。**公式の住所表記は「12,311」で台帳の12312と番地が1違い。**広い敷地のため許容範囲と見たが、現地では施設名で確認したほうがいい",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://cvcamp.sakura.ne.jp/equ.htm",
+    "quote": "シャワー2棟（6口）"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://cvcamp.sakura.ne.jp/equ.htm",
+    "quote": "管理棟：売店・救急薬品など常設しており"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://cvcamp.sakura.ne.jp/charge.htm",
+    "quote": "その他、燃料、薪等ご用意しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://cvcamp.sakura.ne.jp/base.htm",
+    "quote": "最近、ペットを連れてくる方がだいぶ増えてます。他の人に迷惑を掛けないよう管理をしっかりして"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/15714",
+  "napName": "センタービレッジキャンプ場"
+ },
+ {
+  "napId": "15770",
+  "name": "オートキャンプFUJICHU",
+  "pref": "山梨",
+  "muni": "富士吉田市",
+  "verdict": "追加",
+  "reason": "施設公式（fujichu-camp.com）で住所（富士吉田市新屋724-1）の一致を確認し、「お一人さまでのご利用OK」の明記もある。利用料金ページでソロ／デュオ向けサイトの料金を確認。**サブエージェントは上限を5,000円としていたが、公式のトップハイシーズン加算（＋1,000円）を足した6,000円が上限なので本体側で直した**",
+  "checkedUrls": [
+   "https://fujichu-camp.com/",
+   "https://fujichu-camp.com/pages/53/"
+  ],
+  "officialUrl": "https://fujichu-camp.com/",
+  "reservationUrl": null,
+  "address": "山梨県富士吉田市新屋724-1",
+  "priceMin": 4000,
+  "priceMax": 6000,
+  "priceNote": "サイト課金＋入場料。公式より、ソロ／デュオ向けサイト（B6〜B7・AC電源無し）がレギュラー2,500円／ミドル3,000円／トップ3,500円、これに入場料（大人1名）1,500円。レギュラー季は4,000円、トップ季は5,000円。**さらに公式に「GW／お盆／年末年始のトップハイシーズンは各サイト＋1,000円」の加算があるので上限は6,000円**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://fujichu-camp.com/",
+    "quote": "綺麗なトイレ・シャワー完備！どなたでも安心してご利用いただけます。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://fujichu-camp.com/pages/53/",
+    "quote": "薪（針葉樹）800円 薪（焚き付け用）600円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://fujichu-camp.com/pages/53/",
+    "quote": "販売品：ガス缶(OD)1個800円、薪（針葉樹）800円、炭3キロ700円 等"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://fujichu-camp.com/",
+    "quote": "犬（ペット）がフリーで楽しめるドッグランサイトもあります。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/15770",
+  "napName": "オートキャンプFUJICHU"
+ },
+ {
+  "napId": "15920",
+  "name": "Dogs Garden WILDPARK",
+  "pref": "山梨",
+  "muni": "山中湖村",
+  "verdict": "追加",
+  "reason": "施設公式（dogs-wildpark.com と、そこから辿れる予約案内 wildpark-camp.crayonsite.com）で住所（山中湖村山中1359）の完全一致を確認。ドッグフリーサイトはテント1張り単位の定額で、定員は上限（3名）だけの指定なので単独利用に問題がない。**風呂・シャワーは公式が「ありません」と明示しているので false を採れた**",
+  "checkedUrls": [
+   "https://dogs-wildpark.com/",
+   "https://dogs-wildpark.com/access/",
+   "https://wildpark-camp.crayonsite.com/",
+   "https://wildpark-camp.crayonsite.com/p/2/",
+   "https://wildpark-camp.crayonsite.com/p/3/"
+  ],
+  "officialUrl": "https://wildpark-camp.crayonsite.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡山中湖村山中1359",
+  "priceMin": 7000,
+  "priceMax": 10000,
+  "priceNote": "テント1張り単位の定額。公式よりサイトA・B（ドッグフリーサイト）が「平日・日曜7,000円、土曜・休前日8,000円、TOP・三連休10,000円」（定員3名・犬2頭・車1台まで込み、人数による追加なし）。**テント単位の定額なのでソロでも7,000〜10,000円を1人で負担する。**車乗入れ可のサイトCは9,000〜12,000円でさらに高い",
+  "features": {
+   "bath": {
+    "value": false,
+    "evidenceUrl": "https://wildpark-camp.crayonsite.com/p/2/",
+    "quote": "シャワーお風呂はありません。車で5分の場所に♨️温泉『紅富士の湯』がこざいますので、そちらをご案内させて頂いてます。"
+   },
+   "shower": {
+    "value": false,
+    "evidenceUrl": "https://wildpark-camp.crayonsite.com/p/2/",
+    "quote": "シャワーお風呂はありません。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://wildpark-camp.crayonsite.com/p/3/",
+    "quote": "犬連れ専門のキャンプ場!! ドッグフリーサイト／※定員、人3名、犬2頭、車1台まで"
+   },
+   "nearbyOnsen": {
+    "value": "紅富士の湯（車で5分）",
+    "evidenceUrl": "https://wildpark-camp.crayonsite.com/p/2/",
+    "quote": "車で5分の場所に♨️温泉『紅富士の湯』がこざいますので、そちらをご案内させて頂いてます。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/15920",
+  "napName": "Dogs Garden WILDPARK"
  }
 ]

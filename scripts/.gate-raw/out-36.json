@@ -1,0 +1,84 @@
+[
+ {"napId":"15673","name":"琴川キャンプ場＆サウナ琴川","pref":"山梨","muni":"山梨市","verdict":"追加",
+  "reason":"施設公式（kotogawacamp.jp）で住所（山梨市牧丘町杣口2050-1）の一致を確認。林間サイトに「少人数やソロにオススメ」と明記があり単独利用可。**風呂は公式FAQが「当キャンプ場敷地内にはありません」と明示しているので false を採れた**（ドラム缶風呂は洗体不可の体験用なので bath にしない）",
+  "checkedUrls":["https://kotogawacamp.jp/","https://kotogawacamp.jp/company/","https://kotogawacamp.jp/facility/ichou/","https://kotogawacamp.jp/facility/sakura/","https://kotogawacamp.jp/facility/forest/","https://kotogawacamp.jp/facility/drum-bath/","https://kotogawacamp.jp/faq/"],
+  "officialUrl":"https://kotogawacamp.jp/","reservationUrl":null,
+  "address":"山梨県山梨市牧丘町杣口2050-1","priceMin":4000,"priceMax":5000,
+  "priceNote":"サイト課金＋人数課金。公式より林間／さくらサイトは「サイト利用料3,000円／一泊」＋「大人1名1,000円／一泊」＝4,000円（車1台無料・2台目から＋1,000円）、いちょうサイトは4,000円＋1,000円＝5,000円。林間サイトのページに「少人数やソロにオススメ」と明記",
+  "features":{
+    "bath":{"value":false,"evidenceUrl":"https://kotogawacamp.jp/faq/","quote":"お風呂や温泉はありますか？ 当キャンプ場敷地内にはありません。近場のお風呂をご案内致します。ドラム缶風呂では髪や体を洗うことはできません。"},
+    "shower":{"value":true,"evidenceUrl":"https://kotogawacamp.jp/facility/","quote":"トイレ・シャワー 男女共用の水洗ウオッシュレットです。コイン式温水シャワーも設置しましたのでご利用ください。"},
+    "firewood":{"value":true,"evidenceUrl":"https://kotogawacamp.jp/faq/","quote":"薪(広葉樹)、炭、焚付、ガスボンベ、蚊取り線香、軍手、トングなどです。"},
+    "shop":{"value":true,"evidenceUrl":"https://kotogawacamp.jp/facility/","quote":"薪、炭、焚付、軍手、トング、蚊取り線香、ガスボンベなど最低限の消耗品を取り扱っています。"},
+    "pet":{"value":true,"evidenceUrl":"https://kotogawacamp.jp/faq/","quote":"ペットは連れて行っていいですか？ ペットOKです。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"15703","name":"御坂路さくら公園オートキャンプ場","pref":"山梨","muni":"笛吹市","verdict":"UNMEASURED",
+  "reason":"施設公式で住所（笛吹市御坂町上黒駒5421）の一致を確認したが、**料金が「大人2名・車1台」を基本とする例示だけ**（区画サイト：大人2名＋子供2名＋車で5,000円／大人1名＋子供1名＋車で4,000円。フリーサイト：同4名で4,000円／大人1名＋子供1名で3,000円）で、**成人1名単独の総額を導く基本料金表が公式に見つからない**",
+  "checkedUrls":["https://www.misakacamp.com/","https://www.misakacamp.com/user-guide","https://www.misakacamp.com/access","https://www.misakacamp.com/reserve"],
+  "officialUrl":"https://www.misakacamp.com/"},
+
+ {"napId":"15714","name":"センタービレッジキャンプ場","pref":"山梨","muni":"道志村","verdict":"追加",
+  "reason":"施設公式（フレーム構成の古いサイト）に**「ソロプラン」大人1名3,000円／日**の明記あり。公式の住所表記は「12,311」で台帳行の12312と番地が1違いだが、施設名・電話番号・場内の地名（持萩沢ほか）が一致しており同一施設と判断。**本体側で表記のカンマを外して12311に直した**",
+  "checkedUrls":["https://cvcamp.sakura.ne.jp/","https://cvcamp.sakura.ne.jp/base.htm","https://cvcamp.sakura.ne.jp/charge.htm","https://cvcamp.sakura.ne.jp/equ.htm"],
+  "officialUrl":"https://cvcamp.sakura.ne.jp/","reservationUrl":null,
+  "address":"山梨県南都留郡道志村12311","priceMin":3000,"priceMax":3000,
+  "priceNote":"ソロ専用プランの定額。公式「ソロプラン」大人1名 プラン合計3,000円（内訳：施設使用料1,000円＋サイト料2,000円）。**公式の住所表記は「12,311」で台帳の12312と番地が1違い。**広い敷地のため許容範囲と見たが、現地では施設名で確認したほうがいい",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://cvcamp.sakura.ne.jp/equ.htm","quote":"シャワー2棟（6口）"},
+    "shop":{"value":true,"evidenceUrl":"https://cvcamp.sakura.ne.jp/equ.htm","quote":"管理棟：売店・救急薬品など常設しており"},
+    "firewood":{"value":true,"evidenceUrl":"https://cvcamp.sakura.ne.jp/charge.htm","quote":"その他、燃料、薪等ご用意しております。"},
+    "pet":{"value":true,"evidenceUrl":"https://cvcamp.sakura.ne.jp/base.htm","quote":"最近、ペットを連れてくる方がだいぶ増えてます。他の人に迷惑を掛けないよう管理をしっかりして"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"15770","name":"オートキャンプFUJICHU","pref":"山梨","muni":"富士吉田市","verdict":"追加",
+  "reason":"施設公式（fujichu-camp.com）で住所（富士吉田市新屋724-1）の一致を確認し、「お一人さまでのご利用OK」の明記もある。利用料金ページでソロ／デュオ向けサイトの料金を確認。**サブエージェントは上限を5,000円としていたが、公式のトップハイシーズン加算（＋1,000円）を足した6,000円が上限なので本体側で直した**",
+  "checkedUrls":["https://fujichu-camp.com/","https://fujichu-camp.com/pages/53/"],
+  "officialUrl":"https://fujichu-camp.com/","reservationUrl":null,
+  "address":"山梨県富士吉田市新屋724-1","priceMin":4000,"priceMax":6000,
+  "priceNote":"サイト課金＋入場料。公式より、ソロ／デュオ向けサイト（B6〜B7・AC電源無し）がレギュラー2,500円／ミドル3,000円／トップ3,500円、これに入場料（大人1名）1,500円。レギュラー季は4,000円、トップ季は5,000円。**さらに公式に「GW／お盆／年末年始のトップハイシーズンは各サイト＋1,000円」の加算があるので上限は6,000円**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://fujichu-camp.com/","quote":"綺麗なトイレ・シャワー完備！どなたでも安心してご利用いただけます。"},
+    "firewood":{"value":true,"evidenceUrl":"https://fujichu-camp.com/pages/53/","quote":"薪（針葉樹）800円 薪（焚き付け用）600円"},
+    "shop":{"value":true,"evidenceUrl":"https://fujichu-camp.com/pages/53/","quote":"販売品：ガス缶(OD)1個800円、薪（針葉樹）800円、炭3キロ700円 等"},
+    "pet":{"value":true,"evidenceUrl":"https://fujichu-camp.com/","quote":"犬（ペット）がフリーで楽しめるドッグランサイトもあります。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"15775","name":"ワインの宿東夢","pref":"山梨","muni":"甲州市","verdict":"門落ち(住所を照合できない)",
+  "reason":"施設公式（toumuwinery.com/wine-inn/）と甲州市の移住ポータル（自治体公式）がどちらも運営「株式会社東夢」の住所を**甲州市勝沼町勝沼2562-2**と書いており、台帳行の住所（勝沼町上岩崎狐原816-1）と**字名からして一致しない**。キャンプ料金自体は公式に明記（参考：平日サイト利用料3,300円＋大人1名1,000円＝4,300円、休前日・ハイシーズン5,500円＋1,000円＝6,500円）だが、同一施設と確定できないため保留",
+  "checkedUrls":["https://toumuwinery.com/wine-inn/","https://www.city.koshu.yamanashi.jp/iju/iju/wine-noyado-toumu.html"],
+  "officialUrl":"https://toumuwinery.com/wine-inn/"},
+
+ {"napId":"15792","name":"untitled","pref":"山梨","muni":"北杜市","verdict":"UNMEASURED",
+  "reason":"公式（untitled-camp.studio.site）は**1日1組限定の完全貸切制で、最安プラン（平日・サウナ無し）でも20,000円〜**（4名まで込み・5名以上＋1名5,000円）。ソロでも貸切料金がそのまま総額になり12,000円を大幅に超える。**なお公式がJS描画のため、サブエージェントは r.jina.ai という第三者のテキスト変換プロキシ経由で本文を取得している。**料金を採らない判定なのでデータには影響しないが、追加判定にこの経路は使わない",
+  "checkedUrls":["https://untitled-camp.studio.site/","https://untitled-camp.studio.site/price","https://untitled-camp.studio.site/faclities","https://untitled-camp.studio.site/faq","https://note.com/camp_untitled"],
+  "officialUrl":"https://untitled-camp.studio.site/"},
+
+ {"napId":"15844","name":"山梨県立愛宕山こどもの国","pref":"山梨","muni":"甲府市","verdict":"閉鎖疑い",
+  "reason":"施設公式（atagoyama.yya.or.jp）に「**令和7年4月1日から、旧愛宕山自然の家の解体工事に伴い、キャンプ場の利用を休止いたします**」と明記。今日（2026-10-10）時点で休止開始から1年半が経ち、再開の告知が見当たらない",
+  "checkedUrls":["https://atagoyama.yya.or.jp/camp.html"],
+  "officialUrl":"https://atagoyama.yya.or.jp/camp.html"},
+
+ {"napId":"15851","name":"山中湖ハウス","pref":"山梨","muni":"山中湖村","verdict":"宿泊系のため対象外",
+  "reason":"施設公式（yamanakako-house.com）で住所（山中湖村平野508-72）の完全一致を確認したが、**最大定員20名の一棟貸し別荘（和室・ベッド・布団、大浴場完備）でテントサイトの設定が無い**",
+  "checkedUrls":["https://www.yamanakako-house.com/"],
+  "officialUrl":"https://www.yamanakako-house.com/"},
+
+ {"napId":"15918","name":"猿橋リバーサイドベースキャンプ場","pref":"山梨","muni":"大月市","verdict":"門落ち(公式なし)",
+  "reason":"施設専用の公式サイトが見つからず、**大月市観光協会のページ自身が「予約サイト：楽天トラベルキャンプ」「予約サイト：なっぷ」の2つだけを案内している**。観光協会・なっぷ・楽天トラベルキャンプはいずれも一次情報として使えないため、根拠になる公式情報源が存在しない",
+  "checkedUrls":["https://otsuki-kanko.info/category/content-page/view/404","https://tk-camp.com/saruhashi-river-side/","https://campla.jp/campsite/1911/","https://www.instagram.com/saruhashi_riverside/"],
+  "officialUrl":null},
+
+ {"napId":"15920","name":"Dogs Garden WILDPARK","pref":"山梨","muni":"山中湖村","verdict":"追加",
+  "reason":"施設公式（dogs-wildpark.com と、そこから辿れる予約案内 wildpark-camp.crayonsite.com）で住所（山中湖村山中1359）の完全一致を確認。ドッグフリーサイトはテント1張り単位の定額で、定員は上限（3名）だけの指定なので単独利用に問題がない。**風呂・シャワーは公式が「ありません」と明示しているので false を採れた**",
+  "checkedUrls":["https://dogs-wildpark.com/","https://dogs-wildpark.com/access/","https://wildpark-camp.crayonsite.com/","https://wildpark-camp.crayonsite.com/p/2/","https://wildpark-camp.crayonsite.com/p/3/"],
+  "officialUrl":"https://wildpark-camp.crayonsite.com/","reservationUrl":null,
+  "address":"山梨県南都留郡山中湖村山中1359","priceMin":7000,"priceMax":10000,
+  "priceNote":"テント1張り単位の定額。公式よりサイトA・B（ドッグフリーサイト）が「平日・日曜7,000円、土曜・休前日8,000円、TOP・三連休10,000円」（定員3名・犬2頭・車1台まで込み、人数による追加なし）。**テント単位の定額なのでソロでも7,000〜10,000円を1人で負担する。**車乗入れ可のサイトCは9,000〜12,000円でさらに高い",
+  "features":{
+    "bath":{"value":false,"evidenceUrl":"https://wildpark-camp.crayonsite.com/p/2/","quote":"シャワーお風呂はありません。車で5分の場所に♨️温泉『紅富士の湯』がこざいますので、そちらをご案内させて頂いてます。"},
+    "shower":{"value":false,"evidenceUrl":"https://wildpark-camp.crayonsite.com/p/2/","quote":"シャワーお風呂はありません。"},
+    "pet":{"value":true,"evidenceUrl":"https://wildpark-camp.crayonsite.com/p/3/","quote":"犬連れ専門のキャンプ場!! ドッグフリーサイト／※定員、人3名、犬2頭、車1台まで"},
+    "nearbyOnsen":{"value":"紅富士の湯（車で5分）","evidenceUrl":"https://wildpark-camp.crayonsite.com/p/2/","quote":"車で5分の場所に♨️温泉『紅富士の湯』がこざいますので、そちらをご案内させて頂いてます。"}},
+  "coordsFromOfficialMap":null}
+]

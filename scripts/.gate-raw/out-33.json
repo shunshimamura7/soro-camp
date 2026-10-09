@@ -1,0 +1,80 @@
+[
+ {"napId":"14585","name":"LScamp山中湖","pref":"山梨","muni":"山中湖村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"運営会社（NTTランドスケープ）のニュースページは実在し施設と一致するが、料金記載がなく、本文に「予約方法 予約サイト【なっぷ】」とあるだけで価格・予約ともなっぷ頼み",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14585","https://www.ntt-landscape.co.jp/","https://www.ntt-landscape.co.jp/news/lscamp-yamanakako/"],
+  "officialUrl":"https://www.ntt-landscape.co.jp/news/lscamp-yamanakako/"},
+
+ {"napId":"14591","name":"木もれびPONDキャンプ場","pref":"山梨","muni":"北杜市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（komorebi-pondcamp.com）は実在し施設名も一致し、「ご家族、カップル、デュオキャンプ、ソロキャンプ限定！」と単独利用可の明記もあるが、**HOME・キャンプページとも料金の記載が一切なく**、予約は「なっぷ よりご予約を承っております」のみ",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14591","https://www.komorebi-pondcamp.com","https://www.komorebi-pondcamp.com/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97"],
+  "officialUrl":"https://www.komorebi-pondcamp.com"},
+
+ {"napId":"14623","name":"白州テラスキャンプ場 by VILLARS","pref":"山梨","muni":"北杜市","verdict":"追加",
+  "reason":"施設公式（villars.co.jp/hakushu）で住所（北杜市白州町台ヶ原字川平2354-258）の一致を確認。1泊1テラスサイト（小学生以上5名まで）の定額料金が公式に明記",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14623","https://villars.co.jp/hakushu"],
+  "officialUrl":"https://villars.co.jp/hakushu/","reservationUrl":null,
+  "address":"山梨県北杜市白州町台ヶ原字川平2354-258","priceMin":5000,"priceMax":7500,
+  "priceNote":"区画課金＋休前日のみ入場料・駐車料。公式「料金」より「入場料 平日は無料！休前日：1,000円/1泊・1名」「宿泊費 全日5,000円〜/1泊1テラスサイト（小学生以上の最大5名まで）」「駐車料金 平日は無料！※休前日：1,500円/1泊・1台」。1区画最大5名の定額制なので平日ソロは5,000円、休前日は入場料・駐車料込みで7,500円。**公式の表記が「5,000円〜」なので繁忙期の上振れがあり得る**",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://villars.co.jp/hakushu","quote":"貸切露天風呂 薪で沸かす掛け流し貸切露天風呂です。…宿泊客には入浴料無料で提供しております。"},
+    "shower":{"value":true,"evidenceUrl":"https://villars.co.jp/hakushu","quote":"トイレは男女各1か所、共に最新ウォシュレット付です。シャワーも完備しています。"},
+    "nearbyOnsen":{"value":"甲斐駒ケ岳温泉 尾白の湯（車で約5分）","evidenceUrl":"https://villars.co.jp/hakushu","quote":"＝温泉＝ ・甲斐駒ケ岳温泉 尾白の湯：約５分"}},
+  "coordsFromOfficialMap":{"lat":35.801424498952024,"lng":138.32240274054632,"url":"https://villars.co.jp/hakushu"}},
+
+ {"napId":"14663","name":"CAMP＆SAUNA 3set","pref":"山梨","muni":"都留市","verdict":"追加",
+  "reason":"施設公式（camp-sauna-3set.jp）で住所（都留市上谷1-7-29）の一致を確認。1名あたりの利用料金が公式に明記され単独利用の制限も無い",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14663","https://camp-sauna-3set.jp/","https://camp-sauna-3set.jp/service/","https://camp-sauna-3set.jp/access/"],
+  "officialUrl":"https://camp-sauna-3set.jp/","reservationUrl":"https://camp-sauna-3set.jp/reservation",
+  "address":"山梨県都留市上谷1-7-29","priceMin":3300,"priceMax":4400,
+  "priceNote":"人数課金＋車両課金。公式「基本料金には下記が含まれます。区画利用料金…利用料金 3,300円（税込）/人 入場料」「駐車料金 1,100円（税込）/台 お車で来場の際は、1台に付き1,100円の駐車料金を頂きます」。テント等は持込み前提で、レンタル利用時は別途3,300円／張〜",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://camp-sauna-3set.jp/service/","quote":"シャワールーム利用無料（24h利用可能）"},
+    "firewood":{"value":true,"evidenceUrl":"https://camp-sauna-3set.jp/service/","quote":"薪（5〜7kg） ¥900"}},
+  "coordsFromOfficialMap":{"lat":35.550369,"lng":138.902949,"url":"https://camp-sauna-3set.jp/access/"}},
+
+ {"napId":"14676","name":"リトルノース・キャンピンググラウンド","pref":"山梨","muni":"富士川町","verdict":"追加",
+  "reason":"施設公式（littlenorth.net）で住所の一致を確認。**サブエージェントは「南都留郡富士川町平林」と報告したが郡名が誤りで番地も欠けていたため、本体側で公式のアクセスページを開き直し「〒400-0514　山梨県南巨摩郡富士川町平林1603」に直した**",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14676","https://littlenorth.net","https://littlenorth.net/?page_id=735","https://littlenorth.net/?page_id=8"],
+  "officialUrl":"https://littlenorth.net/?page_id=735","reservationUrl":"https://littlenorth.net/?page_id=118",
+  "address":"山梨県南巨摩郡富士川町平林1603","priceMin":6600,"priceMax":11000,
+  "priceNote":"区画課金のみ（税込）。公式「AUTOCAMP…≪料金≫※税込 6,600円〜11,000円 ※料金はシーズンによって異なります。★4名以上でご利用の場合、追加1名につき大人：＋1,650円〜2,200円/人、泊」「≪設営可能数≫1サイトにつき：テント1張＋タープ1張＋車1台まで」。3名まで同額の区画定額なのでソロでも追加料金は無いが、**区画1つ分を1人で負担する形で、季節によって6,600〜11,000円と幅が大きい**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://littlenorth.net/?page_id=735","quote":"シャワールーム 予約制となっています。"},
+    "firewood":{"value":true,"evidenceUrl":"https://littlenorth.net/?page_id=735","quote":"売店 炭（550円・込） 薪（550円・込） 飲み物"},
+    "shop":{"value":true,"evidenceUrl":"https://littlenorth.net/?page_id=735","quote":"売店 炭（550円・込） 薪（550円・込） 飲み物"}},
+  "coordsFromOfficialMap":{"lat":35.575573735769424,"lng":138.41281257661979,"url":"https://littlenorth.net/?page_id=8"}},
+
+ {"napId":"14683","name":"やぐら沢キャンプ場","pref":"山梨","muni":"道志村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（yagurasawa.com）は実在し道志村役場の観光サイトにも掲載があり住所（道志村6735）も一致するが、公式が「※基本料金となります当日の価格は予約サイトの金額をご確認ください」として**具体額を載せていない**。2025年8月分から予約も「なっぷ」に一本化と告知",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14683","https://doshi-kanko.jp/camp/","https://doshi-kanko.jp/camp/yagurasawa/","https://yagurasawa.com/"],
+  "officialUrl":"https://yagurasawa.com/"},
+
+ {"napId":"14687","name":"清里オーベルジュ コート・ドゥ・ヴェール キャンプサイト","pref":"山梨","muni":"北杜市","verdict":"追加",
+  "reason":"施設公式（kiyosato-auberge.com/camp/）で住所（北杜市高根町清里3545-943）の完全一致を確認。自分でテントを張る前提のキャンプサイトで、1区画定額の料金が公式に明記（予約はなっぷ経由だが価格は公式記載）",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14687","https://kiyosato-auberge.com/","https://kiyosato-auberge.com/camp/","https://kiyosato-auberge.com/access/","https://kiyosato-auberge.com/2021/glamping/"],
+  "officialUrl":"https://kiyosato-auberge.com/camp/","reservationUrl":null,
+  "address":"山梨県北杜市高根町清里3545-943","priceMin":3000,"priceMax":9000,
+  "priceNote":"区画単位の定額（税込）。公式「基本区画料金 ・サービスシーズン 3,000円(税込)・スタンダードシーズン 5,500円(税込)・トップシーズン 8,000円(税込)・特別日 9,000円(税込)」「1区画 1〜4名(最大人数6名まで)…1区画は、車1台 1テント、1タープ」。1区画定額なのでソロでも季節価格がそのまま総額になり、**同じ施設で3,000円と9,000円の3倍差がある**。公式は「ご予約はこちら 予約サイトなっぷ」と予約自体はなっぷ経由",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://kiyosato-auberge.com/camp/","quote":"シャワールームが新設されました。25分400円"},
+    "firewood":{"value":true,"evidenceUrl":"https://kiyosato-auberge.com/camp/","quote":"(ファイヤーピット) 1台 4,000円(薪一束付き)・追加薪"},
+    "pet":{"value":false,"evidenceUrl":"https://kiyosato-auberge.com/camp/","quote":"【ペット】・同伴不可となります。"},
+    "nearbyOnsen":{"value":"アクアリゾート天女の湯（車で約3分・割引チケット有り）","evidenceUrl":"https://kiyosato-auberge.com/camp/","quote":"【温泉施設】・アクアリゾート天女の湯をご利用ください(割引チケット有り) ※車で約3分。"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14706","name":"精進レークサイドキャンプ","pref":"山梨","muni":"富士河口湖町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（精進レークホテル shojilake.jp）に住所（富士河口湖町精進255）が一致するキャンプページはあるが「SHOJI LAKE SIDE CAMP オフシーズン有り 詳しくは外部予約サイト参照」とあるだけで**料金の記載が無く**、予約リンクはなっぷのみ。なお「只今シャワーはお使いいただけません」の告知あり",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14706","https://shojilake.jp/shoji-lakeside-camp/"],
+  "officialUrl":"https://shojilake.jp/shoji-lakeside-camp/"},
+
+ {"napId":"14725","name":"FREE FIELD　陽の間","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"住所（北杜市武川町山高3567-51）が一致する掲載は**グランピング掲載ポータル（mingla.jp）とInstagramのみ**で、施設独自の公式サイト・自治体公式ページ・公式予約エンジンのいずれも確認できなかった",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14725","https://www.mingla.jp/hotels/free-field-hinoma","https://www.instagram.com/freefield_official/","https://fairy-group.jp/","https://freesitebase.com/"],
+  "officialUrl":null},
+
+ {"napId":"14740","name":"The boon","pref":"山梨","muni":"大月市","verdict":"門落ち(既存レコードと重複)",
+  "reason":"施設公式（theboon-showerclimbing.com）に「山梨県大月市の**金の森山荘の敷地内にある**THE BOON」「カーナビには、**金の森山荘**で検索してお越しください」と明記されており、**既存レコード kananomori-sanso（金の森山荘／山梨県大月市大月町真木6188）と同一敷地**。本体側の住所3キー照合でも既存と同住所で衝突したため、別レコードとしては追加しない",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14740","https://www.theboon-showerclimbing.com/"],
+  "officialUrl":"https://www.theboon-showerclimbing.com/",
+  "note":"**同じ敷地にTHE BOON経由の別料金体系がある。**公式「CAMP 車１台テント１張りで¥5,000 12月〜2月は入園料なし／車１台テント１張りで¥5,000＋大人¥700子供¥500 3月〜11月」「※連休、GW、SW、年末年始は＋¥2,000」「大浴場利用料 大人¥800」で、既存レコードの7,500円（山荘直受け：利用者料金2,000＋テントサイト4,500＋駐車1,000）より安い。既存の priceNote に併記するかは判断待ち"}
+]
