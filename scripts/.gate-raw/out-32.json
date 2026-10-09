@@ -1,0 +1,66 @@
+[
+ {"napId":"14396","name":"Back Yard Camp","pref":"山梨","muni":"富士河口湖町","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"施設公式（backyard-camp.com）は実在し住所（富士河口湖町精進301）も一致するが、**全ページを確認してもシャワー500円以外の料金記載が無く**、予約導線は「ご予約はこちらから（なっぷ）」の1本のみ",
+  "checkedUrls":["https://backyard-camp.com/","https://backyard-camp.com/guide/","https://backyard-camp.com/campingfield/","https://backyard-camp.com/faq/"],"officialUrl":"https://backyard-camp.com/"},
+
+ {"napId":"14400","name":"富士見荘キャンプ場","pref":"山梨","muni":"山中湖村","verdict":"追加",
+  "reason":"施設公式に住所（山中湖村山中339-3）が一致し、**バンガローと一体のプランとは別に独立したテントサイト（1区画／1日1組）の料金表がある**。素のテントサイト料金だけを採った",
+  "checkedUrls":["https://michiaki5218.jimdofree.com/","https://michiaki5218.jimdofree.com/about/","https://michiaki5218.jimdofree.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB-%E9%A2%A8%E5%91%82/"],
+  "officialUrl":"https://michiaki5218.jimdofree.com/","reservationUrl":null,
+  "address":"山梨県南都留郡山中湖村山中339-3","priceMin":3500,"priceMax":4500,
+  "priceNote":"区画課金＋施設利用料＋駐車代。公式「テントサイト1泊ご利用料金 施設利用料金 大人1名(中学生以上）500円 …1区画 料金 ３０００円 １０名まで区画内であれば何張り張っても同料金」。**1区画は1日1組限定なので人数に関わらず3,000円が必須**。徒歩／公共交通なら3,500円、普通車（1台1,000円）なら4,500円。**完全予約制で電話予約のみ**",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://michiaki5218.jimdofree.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB-%E9%A2%A8%E5%91%82/","quote":"シャワーのみ…１５分１名３００円"},
+    "shop":{"value":true,"evidenceUrl":"https://michiaki5218.jimdofree.com/about/","quote":"炊飯器、電子レンジ、トースター、冷蔵庫は売店内にて無料利用可能です"},
+    "pet":{"value":false,"evidenceUrl":"https://michiaki5218.jimdofree.com/about/","quote":"現在ペットの入場はお断りしております"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14410","name":"杓子山ゲートウェイキャンプ","pref":"山梨","muni":"富士吉田市","verdict":"宿泊系のため対象外",
+  "reason":"公式（shakushi-gc.com）は住所一致だが**現在は「グランピングリゾート」で、全室がベッド・エアコン完備の「ドームテント」7タイプのみ**。自分でテントを張る宿泊形態の提供がない",
+  "checkedUrls":["https://shakushi-gc.com/access/","https://shakushi-gc.com/room/"],"officialUrl":"https://shakushi-gc.com/"},
+
+ {"napId":"14415","name":"BISTRO SOLA キャンプサイト","pref":"山梨","muni":"山中湖村","verdict":"閉鎖疑い",
+  "reason":"住所一致の公式（yamanakako-sola.jp）が**「RENTALSPACE SOLA」へ完全に業態転換していて、キャンプ／テントの記載が一切なく出張シェフの貸切パーティ会場に変わっている**。「2025.01.01 SOLA RESORT LAKESIDEがリニューアルオープンしました」の告知あり。関連の宿泊施設もエイジングケアの宿で、キャンプ場としての営業は終了したとみられる",
+  "checkedUrls":["https://www.yamanakako-sola.jp/","https://www.solaresortbeseed.com"],"officialUrl":"https://www.yamanakako-sola.jp/"},
+
+ {"napId":"14449","name":"富士エコパークビレッヂ 富士エコキャンプ場","pref":"山梨","muni":"富士河口湖町","verdict":"追加",
+  "reason":"なっぷの hpUrl が直接公式（fujiecopark.com）を指しており住所（富士河口湖町富士ケ嶺633-1）も一致。**公式サイト内に税込の料金表がある**",
+  "checkedUrls":["https://fujiecopark.com/","https://fujiecopark.com/about","https://fujiecopark.com/free/goriyouannai","https://fujiecopark.com/menu"],
+  "officialUrl":"https://fujiecopark.com/","reservationUrl":null,
+  "address":"山梨県南都留郡富士河口湖町富士ケ嶺633-1","priceMin":1760,"priceMax":4400,
+  "priceNote":"人数課金＋車両課金。公式「キャンプサイト(税込み) 平日1泊 中学生以上￥1760/人…普通車・軽自動車・中型車￥2200/台」（7月以降の休前日・年末年始等は中学生以上が最大￥2200/人）。徒歩／公共交通＋平日なら1,760円、車＋最繁忙期なら4,400円。**予約は公式が「キャンプ場予約＜なっぷ＞」と案内しているが、料金自体は公式に掲載されている**",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://fujiecopark.com/menu","quote":"■薪(針葉樹)￥700 ■薪(広葉樹)￥850"},
+    "shop":{"value":true,"evidenceUrl":"https://fujiecopark.com/menu","quote":"販売・レンタルなど ■薪(針葉樹)￥700 ■薪(広葉樹)￥850 ■炭￥700…"},
+    "pet":{"value":true,"evidenceUrl":"https://fujiecopark.com/free/goriyouannai","quote":"ペットは一緒に入場できますが。飼い主の方はマナーを守り…"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14466","name":"山梨・白州 FLAMME日向山オートキャンプサイト","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"**なっぷの hpUrl（suenaga.tech）は埼玉の金属プレス加工会社で、施設とは無関係な誤データだった**。検索しても公式サイトは見つからず Instagram のみ。北杜市公式の観光ページにも掲載なし",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/14466","https://www.suenaga.tech/","https://www.city.hokuto.yamanashi.jp/docs/1843.html"],"officialUrl":null,
+  "suspiciousContent":"なっぷ由来の hpUrl が実在しない無関係企業（埼玉の金属プレス加工会社 suenaga.tech）を指していた"},
+
+ {"napId":"14467","name":"CAMP&COTTAGE THE DOOR","pref":"山梨","muni":"富士河口湖町","verdict":"宿泊系のため対象外",
+  "reason":"なっぷの hpUrl（the-door.jp）は**DNS消滅**。現公式（glamping-fujiyamanashi.com、住所一致）では「ドームテント」「リゾートコテージ」「ドッグコテージ」のみが宿泊区分で、いずれもベッド・空調完備のグランピング／コテージ。**テントは庭にオプションで追加する付属物でしかない**",
+  "checkedUrls":["https://www.glamping-fujiyamanashi.com/","https://www.glamping-fujiyamanashi.com/room/"],"officialUrl":"https://www.glamping-fujiyamanashi.com/"},
+
+ {"napId":"14490","name":"アウトドアコミュニティロッジ gosen","pref":"山梨","muni":"南アルプス市","verdict":"宿泊系のため対象外",
+  "reason":"公式（elkinc.co.jp/gosen、住所一致）は**「1日1組限定の一棟貸し宿」で、キャンプ／テントの語が一切登場しない**。BBQ・テントサウナ・トレッキング用品レンタル等のアクティビティがある貸別荘タイプ",
+  "checkedUrls":["https://www.elkinc.co.jp/gosen","https://www.elkinc.co.jp/gosen/gosen-about"],"officialUrl":"https://www.elkinc.co.jp/gosen"},
+
+ {"napId":"14520","name":"VIASSO","pref":"山梨","muni":"山中湖村","verdict":"UNMEASURED",
+  "reason":"公式（viasso.jp、住所一致）は2024年10月に一時休止し、2025年3月21日に**運営主体が変わって「バンガロー（宿泊棟）のみ」予約再開**。本来のテント泊は**「テントサイトオープン（現在改修工事中）」で現状未提供**。トップの料金表は再開前のもので公式自身が「サービス内容や料金などは一部変更となります」と告知しているため旧料金の疑いが強く、現行のテントサイト料金が確認できない",
+  "checkedUrls":["https://viasso.jp/","https://viasso.jp/blog/?id=16","https://viasso.jp/blog/?id=17","https://viasso.jp/blog/?id=18"],"officialUrl":"https://viasso.jp/"},
+
+ {"napId":"14561","name":"BULLsキャンプ","pref":"山梨","muni":"鳴沢村","verdict":"追加",
+  "reason":"公式（bullscamp.com）の住所（鳴沢村鳴沢4122-3）が一致し、**テント泊専用の「区画サイト[A/B/C]」がある**。公式の静的ページと公式指定の予約エンジンで金額の読み方に幅があるため、両方の読みを priceMin〜priceMax に収めた",
+  "checkedUrls":["https://bullscamp.com/","https://bullscamp.com/%e3%83%97%e3%83%a9%e3%83%b3%e4%b8%80%e8%a6%a7/","https://bullscamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/","https://tabichat.jp/engine/hotels/bullscamp/rooms/685"],
+  "officialUrl":"https://bullscamp.com/","reservationUrl":"https://tabichat.jp/engine/hotels/bullscamp",
+  "address":"山梨県南都留郡鳴沢村鳴沢4122-3","priceMin":2500,"priceMax":4500,
+  "priceNote":"公式プラン一覧「区画サイト[A],[B],[C]…１泊３０００円〜 サイト使用 テント１張・タープ１張・4名まで・駐車料１台込」＋ゴミ処理料500円／1サイト・1泊＝3,500円。**ただし公式指定の予約エンジン（タビチャット）では同じ区画が「2名1泊4,000円〜（1名あたり2,000円）」「1名予約可」と表示されており、1名なら2,000円の按分が効くのか2名分4,000円が最低適用なのかが確定できない。**そのため2,500円（按分＋ゴミ処理）〜4,500円（2名分＋ゴミ処理）の幅にした。ペット同伴は現地で1匹1,500円／泊",
+  "features":{
+    "shower":{"value":true,"evidenceUrl":"https://bullscamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/","quote":"シャワー（無料・24H利用可）"},
+    "pet":{"value":true,"evidenceUrl":"https://bullscamp.com/%e3%83%97%e3%83%a9%e3%83%b3%e4%b8%80%e8%a6%a7/","quote":"区画サイト[A],[B],[C] ペットOK！"},
+    "nearbyOnsen":{"value":"温泉施設が車で5分以内（複合施設・スーパー等と併せて）","evidenceUrl":"https://tabichat.jp/engine/hotels/bullscamp/rooms/685","quote":"キャンプ場付近には、スーパーやホームセンター、飲食店を兼ね備えた複合施設や温泉施設が車で5分以内の範囲にあり"}},
+  "coordsFromOfficialMap":null}
+]

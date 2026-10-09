@@ -17198,5 +17198,349 @@
     "source": [
       "https://www.genshi-mura.com"
     ]
+  },
+  {
+    "id": "sosaku-no-mori-obina",
+    "slug": "sosaku-no-mori-obina",
+    "name": "創作の森おびな",
+    "prefecture": "山梨",
+    "area": "甲府市",
+    "status": "active",
+    "address": "山梨県甲府市下帯那町24",
+    "type": "campground",
+    "lat": 35.7024934,
+    "lng": 138.5608037,
+    "priceMin": 1220,
+    "priceMax": 1220,
+    "priceNote": "区画単位の定額。公式「テントサイト利用料金」より「●宿泊（21:00〜翌日9:00）1,220円／1区画」。1区画は4〜5人用テント3張程度まで入る広さだが人数による追加課金の記載は無い。**利用時間が21:00〜翌9:00という変わった区切り**なので、早く入りたい場合は確認が要る",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "当日、薪が足りなくなっても大丈夫。十分なストックがありますので、必要な場合には購入いただけます。（https://sosaku.obina.jp/facility_info/tent_site）",
+      "reservationNote": "公式が案内する予約先: https://sosaku.obina.jp/reservation"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "甲府市下帯那町、市所管の体験宿泊施設。**テントサイトは1区画1,220円という破格の安さ**で、1区画に4〜5人用テント3張程度が入る広さ。薪は現地で買える（公式が「十分なストックがあります」と書いている）。甲府市街から車で登る立地。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://sosaku.obina.jp/",
+    "reservationUrl": "https://sosaku.obina.jp/reservation",
+    "cautions": [
+      "**利用時間が21:00〜翌9:00という変わった区切り**。早く入りたい場合は事前に確認する",
+      "人数による追加課金の記載は無く、区画単位の定額",
+      "場内の風呂・シャワー・売店について公式に記載が無い。**事前に確認したほうがいい**"
+    ],
+    "source": [
+      "https://sosaku.obina.jp/",
+      "https://sosaku.obina.jp/reservation"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "mitsutoge-green-center",
+    "slug": "mitsutoge-green-center",
+    "name": "三ツ峠グリーンセンター",
+    "prefecture": "山梨",
+    "area": "西桂町",
+    "status": "active",
+    "address": "山梨県南都留郡西桂町下暮地1900",
+    "type": "campground",
+    "lat": 35.528855104537534,
+    "lng": 138.83828693425804,
+    "priceMin": 4000,
+    "priceMax": 4000,
+    "priceNote": "区画単位の定額。公式「アウトドア」ページ「キャンプスペース…【料金】1区画・1泊キャンプ　4,000円（10:00〜翌10:00）」。公式指定の予約エンジン側のデータでも「テントスペース 1泊キャンプ」最小宿泊人数1名・最低料金4,000円で一致。**なっぷ掲載の旧ドメインは売却パーキングページになっているので注意**",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "徒歩2分ふれあい館では、ご入浴もしていただけます！（有料 9:00〜21:50）（https://mitsutoge.roukyou.gr.jp/outdoor/）",
+      "firewood": true,
+      "firewoodNote": "焚火台　ファイアプレイステーブル　1,100円（レンタル料金表より）（https://mitsutoge.roukyou.gr.jp/outdoor/）",
+      "reservationNote": "公式が案内する予約先: https://tabichat.jp/engine/hotels/mitsutoge"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "西桂町、三ツ峠の登山口に近い公共系の施設。**キャンプスペースは1区画1泊4,000円（10:00〜翌10:00の24時間）**で、徒歩2分の「ふれあい館」で入浴もできる（有料・9:00〜21:50）。公式と公式予約先の両方で最小宿泊人数1名を確認済み。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://mitsutoge.roukyou.gr.jp/",
+    "reservationUrl": "https://tabichat.jp/engine/hotels/mitsutoge",
+    "cautions": [
+      "**区画単位の定額でソロ割が無い**",
+      "入浴は場内ではなく徒歩2分のふれあい館（有料）",
+      "**なっぷ掲載の旧ドメイン（mitsutoge.jp）は売却パーキングページになっている。**現公式は mitsutoge.roukyou.gr.jp"
+    ],
+    "source": [
+      "https://mitsutoge.roukyou.gr.jp/",
+      "https://tabichat.jp/engine/hotels/mitsutoge"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "toshokan-autocamp-yamanakako",
+    "slug": "toshokan-autocamp-yamanakako",
+    "name": "東照館 オートキャンプ山中湖",
+    "prefecture": "山梨",
+    "area": "山中湖村",
+    "status": "active",
+    "address": "山梨県南都留郡山中湖村平野1430",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 4000,
+    "priceMax": 4300,
+    "priceNote": "サイト課金＋人数課金の合算（すべて10%税込）。公式「施設利用料　大人（中学生以上）￥500（ひとり1泊あたり価格）」「区画サイト　やや絶景芝生サイト（電源無し）￥3,500〜／林間サイト￥3,500〜」→ ソロ1名4,000円。**別途「ごみ処理代金￥300」が必須か任意か公式から読み取れないため、含めた場合の4,300円を priceMax にした**。公式に「※ご予約は外部サイト「なっぷ」でのみ承っております」と明記（料金自体は公式サイトの表が根拠）",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "薪・炭・網　￥800（販売）（https://www.tosho-kan.com/camp/）",
+      "pet": true,
+      "petNote": "ペット　￥500（施設利用料）／絶景エリア、ペットエリアに芝生サイトが誕生！（https://www.tosho-kan.com/camp/）",
+      "nearbyOnsen": "公共温泉『石割の湯』車1分、『紅富士の湯』車10分（https://www.tosho-kan.com/camp/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "山中湖村平野。区画サイト3,500円＋施設利用料500円でソロ4,000円。**村営温泉「石割の湯」が車1分**、「紅富士の湯」が車10分という立地が効いている。薪・炭・網は800円で販売。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.tosho-kan.com/camp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**「ごみ処理代金300円」が必須か任意か公式から読み取れない。**含めると4,300円。予約時に確認する",
+      "**予約は外部サイト「なっぷ」でのみ受付**と公式に明記",
+      "場内に風呂は無い（石割の湯などを使う前提）",
+      "ペットは施設利用料500円"
+    ],
+    "source": [
+      "https://www.tosho-kan.com/camp/"
+    ]
+  },
+  {
+    "id": "life-outdoor-garden",
+    "slug": "life-outdoor-garden",
+    "name": "life outdoor garden",
+    "prefecture": "山梨",
+    "area": "北杜・白州",
+    "status": "active",
+    "address": "山梨県北杜市白州町白須8112-1",
+    "type": "campground",
+    "lat": 35.7997502,
+    "lng": 138.3171409,
+    "priceMin": 2000,
+    "priceMax": 2000,
+    "priceNote": "人数課金＋サイト課金の合算。公式「施設・プラン料金」より「【基本料金】大人（中学生以上）：¥1,000-」＋個別サイト一覧の「**ソロサイト《秘密基地感アリ！》1泊¥1,000〜**」＝最安2,000円。テントサイト（一般）は¥1,500〜。**消費税区分の明記が無いが表示額がそのまま最終価格と読める**",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "【管理棟（トレーラーハウス）】薪や、ステッカー販売など。（https://lifeoutdoorgarden.com/stay/）",
+      "pet": true,
+      "petNote": "ペット同伴可（https://lifeoutdoorgarden.com/stay/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "北杜市白州町。**公式の個別サイト一覧に「ソロサイト《秘密基地感アリ！》1泊¥1,000〜」という専用区画がある**。基本料金（大人1,000円）を足して2,000円。管理棟はトレーラーハウスで薪やステッカーを売っている。ペット同伴可。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://lifeoutdoorgarden.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "一般のテントサイトは1,500円〜なので、ソロサイトが取れるかで300〜500円変わる",
+      "公式の料金表に消費税区分の明記が無い（表示額がそのまま最終価格と読める）",
+      "場内の風呂・シャワーについて公式に記載が無い"
+    ],
+    "source": [
+      "https://lifeoutdoorgarden.com/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "fujimiso-camp",
+    "slug": "fujimiso-camp",
+    "name": "富士見荘キャンプ場",
+    "prefecture": "山梨",
+    "area": "山中湖村",
+    "status": "active",
+    "address": "山梨県南都留郡山中湖村山中339-3",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3500,
+    "priceMax": 4500,
+    "priceNote": "区画課金＋施設利用料＋駐車代。公式「テントサイト1泊ご利用料金 施設利用料金 大人1名(中学生以上）500円 …1区画 料金 ３０００円 １０名まで区画内であれば何張り張っても同料金」。**1区画は1日1組限定なので人数に関わらず3,000円が必須**。徒歩／公共交通なら3,500円、普通車（1台1,000円）なら4,500円。**完全予約制で電話予約のみ**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワーのみ…１５分１名３００円（https://michiaki5218.jimdofree.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB-%E9%A2%A8%E5%91%82/）",
+      "shop": true,
+      "shopNote": "炊飯器、電子レンジ、トースター、冷蔵庫は売店内にて無料利用可能です（https://michiaki5218.jimdofree.com/about/）",
+      "pet": false,
+      "petNote": "現在ペットの入場はお断りしております（https://michiaki5218.jimdofree.com/about/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "山中湖村山中。**テントサイトは1区画1日1組限定**で、区画料3,000円＋施設利用料500円。10名まで区画内なら何張り張っても同じ料金なので、ソロだと1人で3,000円を負担する形。売店の炊飯器・電子レンジ・冷蔵庫が無料で使える。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://michiaki5218.jimdofree.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**1区画1日1組限定なので、人数に関わらず区画料3,000円が必須**",
+      "**車で行くと駐車代1,000円／台**（普通車）が加算されて4,500円",
+      "**ペットの入場はお断り**と公式に明記",
+      "**完全予約制で電話予約のみ**",
+      "シャワーは15分1名300円の別料金"
+    ],
+    "source": [
+      "https://michiaki5218.jimdofree.com/"
+    ]
+  },
+  {
+    "id": "fuji-ecopark-village",
+    "slug": "fuji-ecopark-village",
+    "name": "富士エコパークビレッヂ 富士エコキャンプ場",
+    "prefecture": "山梨",
+    "area": "富士河口湖町・富士ヶ嶺",
+    "status": "active",
+    "address": "山梨県南都留郡富士河口湖町富士ケ嶺633-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 1760,
+    "priceMax": 4400,
+    "priceNote": "人数課金＋車両課金。公式「キャンプサイト(税込み) 平日1泊 中学生以上￥1760/人…普通車・軽自動車・中型車￥2200/台」（7月以降の休前日・年末年始等は中学生以上が最大￥2200/人）。徒歩／公共交通＋平日なら1,760円、車＋最繁忙期なら4,400円。**予約は公式が「キャンプ場予約＜なっぷ＞」と案内しているが、料金自体は公式に掲載されている**",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "■薪(針葉樹)￥700 ■薪(広葉樹)￥850（https://fujiecopark.com/menu）",
+      "shop": true,
+      "shopNote": "販売・レンタルなど ■薪(針葉樹)￥700 ■薪(広葉樹)￥850 ■炭￥700…（https://fujiecopark.com/menu）",
+      "pet": true,
+      "petNote": "ペットは一緒に入場できますが。飼い主の方はマナーを守り…（https://fujiecopark.com/free/goriyouannai）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "富士ヶ嶺の富士エコパークビレッヂ。**平日なら中学生以上1人1,760円（税込）**で、徒歩や公共交通なら車両料金もかからない。薪は針葉樹700円・広葉樹850円。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://fujiecopark.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**車で行くと普通車2,200円／台が加算される**（平日なら合計3,960円）",
+      "7月以降の休前日・年末年始などは人数料金が最大2,200円／人に上がり、車と合わせて4,400円",
+      "**予約は公式が「キャンプ場予約＜なっぷ＞」と案内している**（料金は公式に掲載）",
+      "場内の風呂・シャワーについて公式に記載が無い"
+    ],
+    "source": [
+      "https://fujiecopark.com/"
+    ]
+  },
+  {
+    "id": "bulls-camp",
+    "slug": "bulls-camp",
+    "name": "BULLsキャンプ",
+    "prefecture": "山梨",
+    "area": "鳴沢村",
+    "status": "active",
+    "address": "山梨県南都留郡鳴沢村鳴沢4122-3",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2500,
+    "priceMax": 4500,
+    "priceNote": "公式プラン一覧「区画サイト[A],[B],[C]…１泊３０００円〜 サイト使用 テント１張・タープ１張・4名まで・駐車料１台込」＋ゴミ処理料500円／1サイト・1泊＝3,500円。**ただし公式指定の予約エンジン（タビチャット）では同じ区画が「2名1泊4,000円〜（1名あたり2,000円）」「1名予約可」と表示されており、1名なら2,000円の按分が効くのか2名分4,000円が最低適用なのかが確定できない。**そのため2,500円（按分＋ゴミ処理）〜4,500円（2名分＋ゴミ処理）の幅にした。ペット同伴は現地で1匹1,500円／泊",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー（無料・24H利用可）（https://bullscamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/）",
+      "pet": true,
+      "petNote": "区画サイト[A],[B],[C] ペットOK！（https://bullscamp.com/%e3%83%97%e3%83%a9%e3%83%b3%e4%b8%80%e8%a6%a7/）",
+      "nearbyOnsen": "温泉施設が車で5分以内（複合施設・スーパー等と併せて）（https://tabichat.jp/engine/hotels/bullscamp/rooms/685）",
+      "reservationNote": "公式が案内する予約先: https://tabichat.jp/engine/hotels/bullscamp"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "鳴沢村、富士山の北麓。**テント泊専用の「区画サイト[A/B/C]」があり、シャワーが無料で24時間使える**。テント1張・タープ1張・4名まで・駐車1台込み。ペットOKの区画。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://bullscamp.com/",
+    "reservationUrl": "https://tabichat.jp/engine/hotels/bullscamp",
+    "cautions": [
+      "**料金の読み方に幅がある。**公式の静的ページは「1泊3,000円〜」＋ゴミ処理料500円だが、公式が指定する予約エンジンでは同じ区画が「2名1泊4,000円〜（1名あたり2,000円）」と出ていて、1名のとき按分が効くのか2名分が最低適用なのかが確定できない。2,500〜4,500円で見ておき、予約時に確認する",
+      "ゴミ処理料500円／1サイト・1泊が別途",
+      "ペット同伴は現地で1匹1,500円／泊",
+      "場内に風呂は無い（シャワーのみ）"
+    ],
+    "source": [
+      "https://bullscamp.com/",
+      "https://tabichat.jp/engine/hotels/bullscamp"
+    ]
   }
 ]

@@ -4045,5 +4045,271 @@
   "coordsFromOfficialMap": null,
   "napUrl": "https://www.nap-camp.com/yamanashi/13924",
   "napName": "CAMP AKAIKE（キャンプ アカイケ）"
+ },
+ {
+  "napId": "14066",
+  "name": "創作の森おびな",
+  "pref": "山梨",
+  "muni": "甲府市",
+  "verdict": "追加",
+  "reason": "甲府市所管の体験宿泊施設の公式サイトでテントサイト1区画の宿泊料金（21:00〜翌9:00）1,220円を確認。住所（甲府市下帯那町24）が完全一致し、薪も現地で買える",
+  "checkedUrls": [
+   "https://sosaku.obina.jp/",
+   "https://sosaku.obina.jp/facility_info",
+   "https://sosaku.obina.jp/facility_info/tent_site",
+   "https://sosaku.obina.jp/reservation"
+  ],
+  "officialUrl": "https://sosaku.obina.jp/",
+  "reservationUrl": "https://sosaku.obina.jp/reservation",
+  "address": "山梨県甲府市下帯那町24",
+  "priceMin": 1220,
+  "priceMax": 1220,
+  "priceNote": "区画単位の定額。公式「テントサイト利用料金」より「●宿泊（21:00〜翌日9:00）1,220円／1区画」。1区画は4〜5人用テント3張程度まで入る広さだが人数による追加課金の記載は無い。**利用時間が21:00〜翌9:00という変わった区切り**なので、早く入りたい場合は確認が要る",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://sosaku.obina.jp/facility_info/tent_site",
+    "quote": "当日、薪が足りなくなっても大丈夫。十分なストックがありますので、必要な場合には購入いただけます。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.7024934,
+   "lng": 138.5608037,
+   "url": "https://sosaku.obina.jp/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/14066",
+  "napName": "創作の森おびな"
+ },
+ {
+  "napId": "14265",
+  "name": "三ツ峠グリーンセンター",
+  "pref": "山梨",
+  "muni": "西桂町",
+  "verdict": "追加",
+  "reason": "**なっぷ記載の旧ドメイン（mitsutoge.jp）は販売用パーキングページ化していた**が、検索で移転先の現公式（mitsutoge.roukyou.gr.jp）を発見。住所（西桂町下暮地1900）が完全一致し、テントスペース1泊4,000円を公式と公式指定の予約エンジンの両方で確認",
+  "checkedUrls": [
+   "https://mitsutoge.jp/",
+   "https://mitsutoge.roukyou.gr.jp/",
+   "https://mitsutoge.roukyou.gr.jp/outdoor/",
+   "https://tabichat.jp/engine/hotels/mitsutoge"
+  ],
+  "officialUrl": "https://mitsutoge.roukyou.gr.jp/",
+  "reservationUrl": "https://tabichat.jp/engine/hotels/mitsutoge",
+  "address": "山梨県南都留郡西桂町下暮地1900",
+  "priceMin": 4000,
+  "priceMax": 4000,
+  "priceNote": "区画単位の定額。公式「アウトドア」ページ「キャンプスペース…【料金】1区画・1泊キャンプ　4,000円（10:00〜翌10:00）」。公式指定の予約エンジン側のデータでも「テントスペース 1泊キャンプ」最小宿泊人数1名・最低料金4,000円で一致。**なっぷ掲載の旧ドメインは売却パーキングページになっているので注意**",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://mitsutoge.roukyou.gr.jp/outdoor/",
+    "quote": "徒歩2分ふれあい館では、ご入浴もしていただけます！（有料 9:00〜21:50）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://mitsutoge.roukyou.gr.jp/outdoor/",
+    "quote": "焚火台　ファイアプレイステーブル　1,100円（レンタル料金表より）"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.528855104537534,
+   "lng": 138.83828693425804,
+   "url": "https://mitsutoge.roukyou.gr.jp/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/14265",
+  "napName": "三ツ峠グリーンセンター"
+ },
+ {
+  "napId": "14335",
+  "name": "東照館 オートキャンプ山中湖",
+  "pref": "山梨",
+  "muni": "山中湖村",
+  "verdict": "追加",
+  "reason": "公式で住所（山中湖村平野1430）が完全一致し「東照館オートキャンプ山中湖」の記載も一致。区画サイト最安3,500円＋施設利用料（大人）500円＝4,000円を確認。**石割の湯が車1分**",
+  "checkedUrls": [
+   "https://www.tosho-kan.com/camp/"
+  ],
+  "officialUrl": "https://www.tosho-kan.com/camp/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡山中湖村平野1430",
+  "priceMin": 4000,
+  "priceMax": 4300,
+  "priceNote": "サイト課金＋人数課金の合算（すべて10%税込）。公式「施設利用料　大人（中学生以上）￥500（ひとり1泊あたり価格）」「区画サイト　やや絶景芝生サイト（電源無し）￥3,500〜／林間サイト￥3,500〜」→ ソロ1名4,000円。**別途「ごみ処理代金￥300」が必須か任意か公式から読み取れないため、含めた場合の4,300円を priceMax にした**。公式に「※ご予約は外部サイト「なっぷ」でのみ承っております」と明記（料金自体は公式サイトの表が根拠）",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.tosho-kan.com/camp/",
+    "quote": "薪・炭・網　￥800（販売）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.tosho-kan.com/camp/",
+    "quote": "ペット　￥500（施設利用料）／絶景エリア、ペットエリアに芝生サイトが誕生！"
+   },
+   "nearbyOnsen": {
+    "value": "公共温泉『石割の湯』車1分、『紅富士の湯』車10分",
+    "evidenceUrl": "https://www.tosho-kan.com/camp/",
+    "quote": "近くに地元でも人気の村営温泉あり。日帰り入浴できます！／公共温泉『石割の湯』車1分、『紅富士の湯』車10分"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/14335",
+  "napName": "東照館　オートキャンプ山中湖"
+ },
+ {
+  "napId": "14372",
+  "name": "life outdoor garden",
+  "pref": "山梨",
+  "muni": "北杜市",
+  "verdict": "追加",
+  "reason": "公式で住所（北杜市白州町白須8112-1）が完全一致。基本料金（大人）1,000円＋最安の**ソロサイト**1,000円＝2,000円を確認。2026年の最新投稿もあり稼働中",
+  "checkedUrls": [
+   "https://lifeoutdoorgarden.com/",
+   "https://lifeoutdoorgarden.com/stay/"
+  ],
+  "officialUrl": "https://lifeoutdoorgarden.com/",
+  "reservationUrl": null,
+  "address": "山梨県北杜市白州町白須8112-1",
+  "priceMin": 2000,
+  "priceMax": 2000,
+  "priceNote": "人数課金＋サイト課金の合算。公式「施設・プラン料金」より「【基本料金】大人（中学生以上）：¥1,000-」＋個別サイト一覧の「**ソロサイト《秘密基地感アリ！》1泊¥1,000〜**」＝最安2,000円。テントサイト（一般）は¥1,500〜。**消費税区分の明記が無いが表示額がそのまま最終価格と読める**",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://lifeoutdoorgarden.com/stay/",
+    "quote": "【管理棟（トレーラーハウス）】薪や、ステッカー販売など。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://lifeoutdoorgarden.com/stay/",
+    "quote": "ペット同伴可"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.7997502,
+   "lng": 138.3171409,
+   "url": "https://lifeoutdoorgarden.com/stay/"
+  },
+  "napUrl": "https://www.nap-camp.com/yamanashi/14372",
+  "napName": "Life outdoor garden"
+ },
+ {
+  "napId": "14400",
+  "name": "富士見荘キャンプ場",
+  "pref": "山梨",
+  "muni": "山中湖村",
+  "verdict": "追加",
+  "reason": "施設公式に住所（山中湖村山中339-3）が一致し、**バンガローと一体のプランとは別に独立したテントサイト（1区画／1日1組）の料金表がある**。素のテントサイト料金だけを採った",
+  "checkedUrls": [
+   "https://michiaki5218.jimdofree.com/",
+   "https://michiaki5218.jimdofree.com/about/",
+   "https://michiaki5218.jimdofree.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB-%E9%A2%A8%E5%91%82/"
+  ],
+  "officialUrl": "https://michiaki5218.jimdofree.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡山中湖村山中339-3",
+  "priceMin": 3500,
+  "priceMax": 4500,
+  "priceNote": "区画課金＋施設利用料＋駐車代。公式「テントサイト1泊ご利用料金 施設利用料金 大人1名(中学生以上）500円 …1区画 料金 ３０００円 １０名まで区画内であれば何張り張っても同料金」。**1区画は1日1組限定なので人数に関わらず3,000円が必須**。徒歩／公共交通なら3,500円、普通車（1台1,000円）なら4,500円。**完全予約制で電話予約のみ**",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://michiaki5218.jimdofree.com/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB-%E9%A2%A8%E5%91%82/",
+    "quote": "シャワーのみ…１５分１名３００円"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://michiaki5218.jimdofree.com/about/",
+    "quote": "炊飯器、電子レンジ、トースター、冷蔵庫は売店内にて無料利用可能です"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://michiaki5218.jimdofree.com/about/",
+    "quote": "現在ペットの入場はお断りしております"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/14400",
+  "napName": "富士見荘キャンプ場"
+ },
+ {
+  "napId": "14449",
+  "name": "富士エコパークビレッヂ 富士エコキャンプ場",
+  "pref": "山梨",
+  "muni": "富士河口湖町",
+  "verdict": "追加",
+  "reason": "なっぷの hpUrl が直接公式（fujiecopark.com）を指しており住所（富士河口湖町富士ケ嶺633-1）も一致。**公式サイト内に税込の料金表がある**",
+  "checkedUrls": [
+   "https://fujiecopark.com/",
+   "https://fujiecopark.com/about",
+   "https://fujiecopark.com/free/goriyouannai",
+   "https://fujiecopark.com/menu"
+  ],
+  "officialUrl": "https://fujiecopark.com/",
+  "reservationUrl": null,
+  "address": "山梨県南都留郡富士河口湖町富士ケ嶺633-1",
+  "priceMin": 1760,
+  "priceMax": 4400,
+  "priceNote": "人数課金＋車両課金。公式「キャンプサイト(税込み) 平日1泊 中学生以上￥1760/人…普通車・軽自動車・中型車￥2200/台」（7月以降の休前日・年末年始等は中学生以上が最大￥2200/人）。徒歩／公共交通＋平日なら1,760円、車＋最繁忙期なら4,400円。**予約は公式が「キャンプ場予約＜なっぷ＞」と案内しているが、料金自体は公式に掲載されている**",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://fujiecopark.com/menu",
+    "quote": "■薪(針葉樹)￥700 ■薪(広葉樹)￥850"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://fujiecopark.com/menu",
+    "quote": "販売・レンタルなど ■薪(針葉樹)￥700 ■薪(広葉樹)￥850 ■炭￥700…"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://fujiecopark.com/free/goriyouannai",
+    "quote": "ペットは一緒に入場できますが。飼い主の方はマナーを守り…"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/14449",
+  "napName": "富士エコパークビレッヂ　富士エコキャンプ場"
+ },
+ {
+  "napId": "14561",
+  "name": "BULLsキャンプ",
+  "pref": "山梨",
+  "muni": "鳴沢村",
+  "verdict": "追加",
+  "reason": "公式（bullscamp.com）の住所（鳴沢村鳴沢4122-3）が一致し、**テント泊専用の「区画サイト[A/B/C]」がある**。公式の静的ページと公式指定の予約エンジンで金額の読み方に幅があるため、両方の読みを priceMin〜priceMax に収めた",
+  "checkedUrls": [
+   "https://bullscamp.com/",
+   "https://bullscamp.com/%e3%83%97%e3%83%a9%e3%83%b3%e4%b8%80%e8%a6%a7/",
+   "https://bullscamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+   "https://tabichat.jp/engine/hotels/bullscamp/rooms/685"
+  ],
+  "officialUrl": "https://bullscamp.com/",
+  "reservationUrl": "https://tabichat.jp/engine/hotels/bullscamp",
+  "address": "山梨県南都留郡鳴沢村鳴沢4122-3",
+  "priceMin": 2500,
+  "priceMax": 4500,
+  "priceNote": "公式プラン一覧「区画サイト[A],[B],[C]…１泊３０００円〜 サイト使用 テント１張・タープ１張・4名まで・駐車料１台込」＋ゴミ処理料500円／1サイト・1泊＝3,500円。**ただし公式指定の予約エンジン（タビチャット）では同じ区画が「2名1泊4,000円〜（1名あたり2,000円）」「1名予約可」と表示されており、1名なら2,000円の按分が効くのか2名分4,000円が最低適用なのかが確定できない。**そのため2,500円（按分＋ゴミ処理）〜4,500円（2名分＋ゴミ処理）の幅にした。ペット同伴は現地で1匹1,500円／泊",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://bullscamp.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+    "quote": "シャワー（無料・24H利用可）"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://bullscamp.com/%e3%83%97%e3%83%a9%e3%83%b3%e4%b8%80%e8%a6%a7/",
+    "quote": "区画サイト[A],[B],[C] ペットOK！"
+   },
+   "nearbyOnsen": {
+    "value": "温泉施設が車で5分以内（複合施設・スーパー等と併せて）",
+    "evidenceUrl": "https://tabichat.jp/engine/hotels/bullscamp/rooms/685",
+    "quote": "キャンプ場付近には、スーパーやホームセンター、飲食店を兼ね備えた複合施設や温泉施設が車で5分以内の範囲にあり"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "napUrl": "https://www.nap-camp.com/yamanashi/14561",
+  "napName": "BULLs キャンプ【ペットと泊まれるキャンプ場】"
  }
 ]

@@ -1,0 +1,69 @@
+[
+ {"napId":"14066","name":"創作の森おびな","pref":"山梨","muni":"甲府市","verdict":"追加",
+  "reason":"甲府市所管の体験宿泊施設の公式サイトでテントサイト1区画の宿泊料金（21:00〜翌9:00）1,220円を確認。住所（甲府市下帯那町24）が完全一致し、薪も現地で買える",
+  "checkedUrls":["https://sosaku.obina.jp/","https://sosaku.obina.jp/facility_info","https://sosaku.obina.jp/facility_info/tent_site","https://sosaku.obina.jp/reservation"],
+  "officialUrl":"https://sosaku.obina.jp/","reservationUrl":"https://sosaku.obina.jp/reservation",
+  "address":"山梨県甲府市下帯那町24","priceMin":1220,"priceMax":1220,
+  "priceNote":"区画単位の定額。公式「テントサイト利用料金」より「●宿泊（21:00〜翌日9:00）1,220円／1区画」。1区画は4〜5人用テント3張程度まで入る広さだが人数による追加課金の記載は無い。**利用時間が21:00〜翌9:00という変わった区切り**なので、早く入りたい場合は確認が要る",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://sosaku.obina.jp/facility_info/tent_site","quote":"当日、薪が足りなくなっても大丈夫。十分なストックがありますので、必要な場合には購入いただけます。"}},
+  "coordsFromOfficialMap":{"lat":35.7024934,"lng":138.5608037,"url":"https://sosaku.obina.jp/"}},
+
+ {"napId":"14108","name":"The Camp & Garden AMANAYU","pref":"山梨","muni":"北杜市","verdict":"UNMEASURED",
+  "reason":"公式ブログでソロ専用サイト5,000円（2019〜2023年の複数投稿で金額が一貫し「値上げなし」と繰り返し明記）を確認できたが、**公式ページ内に番地レベルの住所記載がなく「北杜市」までしか照合できない**。加えて**2023年5月以降の更新が見当たらず最新の営業状況が未確認**",
+  "checkedUrls":["https://amanayu.tumblr.com/"],"officialUrl":"https://amanayu.tumblr.com/"},
+
+ {"napId":"14129","name":"LOOF TINY HOUSE CAMP","pref":"山梨","muni":"笛吹市","verdict":"宿泊系のため対象外",
+  "reason":"**なっぷ記載の hpUrl（loof-ashigawa.com）は無関係な旅行ブログに転用済み**。検索で見つけた現公式（loof-camp.com）は住所（笛吹市芦川町鶯宿620-1）が完全一致したが、**提供宿泊形態は TINY HOUSE（独立コテージ）のみでテントサイトの設定が無い**（公式メニューは CABINS／ACTIVITY／FOOD_DRINK／TENT-SAUNA だけ）",
+  "checkedUrls":["http://loof-ashigawa.com/","https://loof-camp.com/","https://loof-camp.com/cabins/"],"officialUrl":"https://loof-camp.com/"},
+
+ {"napId":"14207","name":"きこりのプライベートキャンプ場山作","pref":"山梨","muni":"北杜市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"運営会社（山作LLC）公式に「当キャンプ場は1日3組限定（1組6名様まで）で受付けております。**ただし、ソロキャンパーはフリーサイトで設営可能です。**」とソロ可の明記はあるが、**その後に料金の記載が一切なく**予約も問い合わせフォームのみで価格が確認できない",
+  "checkedUrls":["https://yamasaku.vision/","https://yamasaku.vision/camp/"],"officialUrl":"https://yamasaku.vision/camp/"},
+
+ {"napId":"14213","name":"芦安キャンプサイトNo.2","pref":"山梨","muni":"南アルプス市","verdict":"閉鎖疑い",
+  "reason":"なっぷ記載の公式ドメイン campsiteno2.com が**DNS解決不能（NXDOMAIN、ドメイン自体が消滅）**。加えて**南アルプス市公式の観光ページに「※現在は一般の方の受け入れを休止しております。」と明記**されている（市公式のリンク先も消滅したドメインのまま）",
+  "checkedUrls":["https://www.campsiteno2.com/","https://www.city.minami-alps.yamanashi.jp/docs/6133.html"],"officialUrl":null},
+
+ {"napId":"14261","name":"PAWS GROUND","pref":"山梨","muni":"北杜市","verdict":"UNMEASURED",
+  "reason":"公式で住所（北杜市小淵沢町5419-5）が完全一致し、**「TENT A 南向きのテント配置 1泊 22,000円 税別 …大人4人まで宿泊可」のサイト単位の定額**を確認。人数に関わらず同額なので**1名でも税込24,200円**になり、高額の線を大きく超えるため判断が要る",
+  "checkedUrls":["https://www.paws-ground.com/","https://www.paws-ground.com/blank-1"],"officialUrl":"https://www.paws-ground.com/"},
+
+ {"napId":"14265","name":"三ツ峠グリーンセンター","pref":"山梨","muni":"西桂町","verdict":"追加",
+  "reason":"**なっぷ記載の旧ドメイン（mitsutoge.jp）は販売用パーキングページ化していた**が、検索で移転先の現公式（mitsutoge.roukyou.gr.jp）を発見。住所（西桂町下暮地1900）が完全一致し、テントスペース1泊4,000円を公式と公式指定の予約エンジンの両方で確認",
+  "checkedUrls":["https://mitsutoge.jp/","https://mitsutoge.roukyou.gr.jp/","https://mitsutoge.roukyou.gr.jp/outdoor/","https://tabichat.jp/engine/hotels/mitsutoge"],
+  "officialUrl":"https://mitsutoge.roukyou.gr.jp/","reservationUrl":"https://tabichat.jp/engine/hotels/mitsutoge",
+  "address":"山梨県南都留郡西桂町下暮地1900","priceMin":4000,"priceMax":4000,
+  "priceNote":"区画単位の定額。公式「アウトドア」ページ「キャンプスペース…【料金】1区画・1泊キャンプ　4,000円（10:00〜翌10:00）」。公式指定の予約エンジン側のデータでも「テントスペース 1泊キャンプ」最小宿泊人数1名・最低料金4,000円で一致。**なっぷ掲載の旧ドメインは売却パーキングページになっているので注意**",
+  "features":{
+    "bath":{"value":true,"evidenceUrl":"https://mitsutoge.roukyou.gr.jp/outdoor/","quote":"徒歩2分ふれあい館では、ご入浴もしていただけます！（有料 9:00〜21:50）"},
+    "firewood":{"value":true,"evidenceUrl":"https://mitsutoge.roukyou.gr.jp/outdoor/","quote":"焚火台　ファイアプレイステーブル　1,100円（レンタル料金表より）"}},
+  "coordsFromOfficialMap":{"lat":35.528855104537534,"lng":138.83828693425804,"url":"https://mitsutoge.roukyou.gr.jp/"}},
+
+ {"napId":"14335","name":"東照館 オートキャンプ山中湖","pref":"山梨","muni":"山中湖村","verdict":"追加",
+  "reason":"公式で住所（山中湖村平野1430）が完全一致し「東照館オートキャンプ山中湖」の記載も一致。区画サイト最安3,500円＋施設利用料（大人）500円＝4,000円を確認。**石割の湯が車1分**",
+  "checkedUrls":["https://www.tosho-kan.com/camp/"],
+  "officialUrl":"https://www.tosho-kan.com/camp/","reservationUrl":null,
+  "address":"山梨県南都留郡山中湖村平野1430","priceMin":4000,"priceMax":4300,
+  "priceNote":"サイト課金＋人数課金の合算（すべて10%税込）。公式「施設利用料　大人（中学生以上）￥500（ひとり1泊あたり価格）」「区画サイト　やや絶景芝生サイト（電源無し）￥3,500〜／林間サイト￥3,500〜」→ ソロ1名4,000円。**別途「ごみ処理代金￥300」が必須か任意か公式から読み取れないため、含めた場合の4,300円を priceMax にした**。公式に「※ご予約は外部サイト「なっぷ」でのみ承っております」と明記（料金自体は公式サイトの表が根拠）",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://www.tosho-kan.com/camp/","quote":"薪・炭・網　￥800（販売）"},
+    "pet":{"value":true,"evidenceUrl":"https://www.tosho-kan.com/camp/","quote":"ペット　￥500（施設利用料）／絶景エリア、ペットエリアに芝生サイトが誕生！"},
+    "nearbyOnsen":{"value":"公共温泉『石割の湯』車1分、『紅富士の湯』車10分","evidenceUrl":"https://www.tosho-kan.com/camp/","quote":"近くに地元でも人気の村営温泉あり。日帰り入浴できます！／公共温泉『石割の湯』車1分、『紅富士の湯』車10分"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"14357","name":"南アルプス36〜アウトドアの宿 Od-inn〜","pref":"山梨","muni":"南アルプス市","verdict":"宿泊系のため対象外",
+  "reason":"公式で住所（南アルプス市芦安芦倉1322-1）が完全一致したが、公式タイトルが「**1棟貸し囲炉裏付き和モダン古民家の宿**」で、サイト内に「テント」の語が一切出現せずテント泊の設定が無い",
+  "checkedUrls":["https://salps36.com/"],"officialUrl":"https://salps36.com/"},
+
+ {"napId":"14372","name":"life outdoor garden","pref":"山梨","muni":"北杜市","verdict":"追加",
+  "reason":"公式で住所（北杜市白州町白須8112-1）が完全一致。基本料金（大人）1,000円＋最安の**ソロサイト**1,000円＝2,000円を確認。2026年の最新投稿もあり稼働中",
+  "checkedUrls":["https://lifeoutdoorgarden.com/","https://lifeoutdoorgarden.com/stay/"],
+  "officialUrl":"https://lifeoutdoorgarden.com/","reservationUrl":null,
+  "address":"山梨県北杜市白州町白須8112-1","priceMin":2000,"priceMax":2000,
+  "priceNote":"人数課金＋サイト課金の合算。公式「施設・プラン料金」より「【基本料金】大人（中学生以上）：¥1,000-」＋個別サイト一覧の「**ソロサイト《秘密基地感アリ！》1泊¥1,000〜**」＝最安2,000円。テントサイト（一般）は¥1,500〜。**消費税区分の明記が無いが表示額がそのまま最終価格と読める**",
+  "features":{
+    "firewood":{"value":true,"evidenceUrl":"https://lifeoutdoorgarden.com/stay/","quote":"【管理棟（トレーラーハウス）】薪や、ステッカー販売など。"},
+    "pet":{"value":true,"evidenceUrl":"https://lifeoutdoorgarden.com/stay/","quote":"ペット同伴可"}},
+  "coordsFromOfficialMap":{"lat":35.7997502,"lng":138.3171409,"url":"https://lifeoutdoorgarden.com/stay/"}}
+]

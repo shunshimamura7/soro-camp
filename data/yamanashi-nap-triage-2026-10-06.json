@@ -1401,9 +1401,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14066",
    "latCandidate": "35.702496",
    "lngCandidate": "138.560790",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://sosaku.obina.jp/",
+   "verdict": "追加",
+   "reason": "甲府市所管の体験宿泊施設の公式サイトでテントサイト1区画の宿泊料金（21:00〜翌9:00）1,220円を確認。住所（甲府市下帯那町24）が完全一致し、薪も現地で買える"
   },
   {
    "napId": "14068",
@@ -1425,9 +1425,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14108",
    "latCandidate": "35.7764308446884",
    "lngCandidate": "138.33203053474426",
-   "officialUrl": null,
+   "officialUrl": "https://amanayu.tumblr.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式ブログでソロ専用サイト5,000円（2019〜2023年の複数投稿で金額が一貫し「値上げなし」と繰り返し明記）を確認できたが、**公式ページ内に番地レベルの住所記載がなく「北杜市」までしか照合できない**。加えて**2023年5月以降の更新が見当たらず最新の営業状況が未確認**"
   },
   {
    "napId": "14129",
@@ -1437,9 +1437,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14129",
    "latCandidate": "35.54833813715839",
    "lngCandidate": "138.6516318321228",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://loof-camp.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "**なっぷ記載の hpUrl（loof-ashigawa.com）は無関係な旅行ブログに転用済み**。検索で見つけた現公式（loof-camp.com）は住所（笛吹市芦川町鶯宿620-1）が完全一致したが、**提供宿泊形態は TINY HOUSE（独立コテージ）のみでテントサイトの設定が無い**（公式メニューは CABINS／ACTIVITY／FOOD_DRINK／TENT-SAUNA だけ）"
   },
   {
    "napId": "14207",
@@ -1449,9 +1449,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14207",
    "latCandidate": "35.79906464393032",
    "lngCandidate": "138.32678945402222",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://yamasaku.vision/camp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "運営会社（山作LLC）公式に「当キャンプ場は1日3組限定（1組6名様まで）で受付けております。**ただし、ソロキャンパーはフリーサイトで設営可能です。**」とソロ可の明記はあるが、**その後に料金の記載が一切なく**予約も問い合わせフォームのみで価格が確認できない"
   },
   {
    "napId": "14213",
@@ -1462,8 +1462,8 @@
    "latCandidate": "35.631750775669985",
    "lngCandidate": "138.3617426821777",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "閉鎖疑い",
+   "reason": "なっぷ記載の公式ドメイン campsiteno2.com が**DNS解決不能（NXDOMAIN、ドメイン自体が消滅）**。加えて**南アルプス市公式の観光ページに「※現在は一般の方の受け入れを休止しております。」と明記**されている（市公式のリンク先も消滅したドメインのまま）"
   },
   {
    "napId": "14227",
@@ -1509,9 +1509,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14261",
    "latCandidate": "35.86360929174895",
    "lngCandidate": "138.29193687438965",
-   "officialUrl": null,
+   "officialUrl": "https://www.paws-ground.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式で住所（北杜市小淵沢町5419-5）が完全一致し、**「TENT A 南向きのテント配置 1泊 22,000円 税別 …大人4人まで宿泊可」のサイト単位の定額**を確認。人数に関わらず同額なので**1名でも税込24,200円**になり、高額の線を大きく超えるため判断が要る"
   },
   {
    "napId": "14265",
@@ -1521,9 +1521,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14265",
    "latCandidate": "35.53039751658268",
    "lngCandidate": "138.83733189105988",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://mitsutoge.roukyou.gr.jp/",
+   "verdict": "追加",
+   "reason": "**なっぷ記載の旧ドメイン（mitsutoge.jp）は販売用パーキングページ化していた**が、検索で移転先の現公式（mitsutoge.roukyou.gr.jp）を発見。住所（西桂町下暮地1900）が完全一致し、テントスペース1泊4,000円を公式と公式指定の予約エンジンの両方で確認"
   },
   {
    "napId": "14323",
@@ -1569,9 +1569,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14335",
    "latCandidate": "35.43467069832536",
    "lngCandidate": "138.91225790768738",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.tosho-kan.com/camp/",
+   "verdict": "追加",
+   "reason": "公式で住所（山中湖村平野1430）が完全一致し「東照館オートキャンプ山中湖」の記載も一致。区画サイト最安3,500円＋施設利用料（大人）500円＝4,000円を確認。**石割の湯が車1分**"
   },
   {
    "napId": "14357",
@@ -1581,9 +1581,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14357",
    "latCandidate": "35.6362403",
    "lngCandidate": "138.3660754",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://salps36.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（南アルプス市芦安芦倉1322-1）が完全一致したが、公式タイトルが「**1棟貸し囲炉裏付き和モダン古民家の宿**」で、サイト内に「テント」の語が一切出現せずテント泊の設定が無い"
   },
   {
    "napId": "14362",
@@ -1605,9 +1605,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14372",
    "latCandidate": "35.7998729",
    "lngCandidate": "138.3171319",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://lifeoutdoorgarden.com/",
+   "verdict": "追加",
+   "reason": "公式で住所（北杜市白州町白須8112-1）が完全一致。基本料金（大人）1,000円＋最安の**ソロサイト**1,000円＝2,000円を確認。2026年の最新投稿もあり稼働中"
   },
   {
    "napId": "14396",
@@ -1617,9 +1617,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14396",
    "latCandidate": "35.4922932",
    "lngCandidate": "138.6034715",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://backyard-camp.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "施設公式（backyard-camp.com）は実在し住所（富士河口湖町精進301）も一致するが、**全ページを確認してもシャワー500円以外の料金記載が無く**、予約導線は「ご予約はこちらから（なっぷ）」の1本のみ"
   },
   {
    "napId": "14398",
@@ -1641,9 +1641,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14400",
    "latCandidate": "35.410524",
    "lngCandidate": "138.857705",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://michiaki5218.jimdofree.com/",
+   "verdict": "追加",
+   "reason": "施設公式に住所（山中湖村山中339-3）が一致し、**バンガローと一体のプランとは別に独立したテントサイト（1区画／1日1組）の料金表がある**。素のテントサイト料金だけを採った"
   },
   {
    "napId": "14410",
@@ -1653,9 +1653,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14410",
    "latCandidate": "35.488170",
    "lngCandidate": "138.830682",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://shakushi-gc.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式（shakushi-gc.com）は住所一致だが**現在は「グランピングリゾート」で、全室がベッド・エアコン完備の「ドームテント」7タイプのみ**。自分でテントを張る宿泊形態の提供がない"
   },
   {
    "napId": "14415",
@@ -1665,9 +1665,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14415",
    "latCandidate": "35.4229316",
    "lngCandidate": "138.8497604",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.yamanakako-sola.jp/",
+   "verdict": "閉鎖疑い",
+   "reason": "住所一致の公式（yamanakako-sola.jp）が**「RENTALSPACE SOLA」へ完全に業態転換していて、キャンプ／テントの記載が一切なく出張シェフの貸切パーティ会場に変わっている**。「2025.01.01 SOLA RESORT LAKESIDEがリニューアルオープンしました」の告知あり。関連の宿泊施設もエイジングケアの宿で、キャンプ場としての営業は終了したとみられる"
   },
   {
    "napId": "14449",
@@ -1677,9 +1677,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14449",
    "latCandidate": "35.41124366989689",
    "lngCandidate": "138.61761047249146",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://fujiecopark.com/",
+   "verdict": "追加",
+   "reason": "なっぷの hpUrl が直接公式（fujiecopark.com）を指しており住所（富士河口湖町富士ケ嶺633-1）も一致。**公式サイト内に税込の料金表がある**"
   },
   {
    "napId": "14466",
@@ -1690,8 +1690,8 @@
    "latCandidate": "35.79953361858058",
    "lngCandidate": "138.2997045073898",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "**なっぷの hpUrl（suenaga.tech）は埼玉の金属プレス加工会社で、施設とは無関係な誤データだった**。検索しても公式サイトは見つからず Instagram のみ。北杜市公式の観光ページにも掲載なし"
   },
   {
    "napId": "14467",
@@ -1701,9 +1701,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14467",
    "latCandidate": "35.49103987708318",
    "lngCandidate": "138.7592037069153",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.glamping-fujiyamanashi.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "なっぷの hpUrl（the-door.jp）は**DNS消滅**。現公式（glamping-fujiyamanashi.com、住所一致）では「ドームテント」「リゾートコテージ」「ドッグコテージ」のみが宿泊区分で、いずれもベッド・空調完備のグランピング／コテージ。**テントは庭にオプションで追加する付属物でしかない**"
   },
   {
    "napId": "14490",
@@ -1713,9 +1713,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14490",
    "latCandidate": null,
    "lngCandidate": null,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.elkinc.co.jp/gosen",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式（elkinc.co.jp/gosen、住所一致）は**「1日1組限定の一棟貸し宿」で、キャンプ／テントの語が一切登場しない**。BBQ・テントサウナ・トレッキング用品レンタル等のアクティビティがある貸別荘タイプ"
   },
   {
    "napId": "14515",
@@ -1737,9 +1737,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14520",
    "latCandidate": "35.436508404856056",
    "lngCandidate": "138.90943503379825",
-   "officialUrl": null,
+   "officialUrl": "https://viasso.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式（viasso.jp、住所一致）は2024年10月に一時休止し、2025年3月21日に**運営主体が変わって「バンガロー（宿泊棟）のみ」予約再開**。本来のテント泊は**「テントサイトオープン（現在改修工事中）」で現状未提供**。トップの料金表は再開前のもので公式自身が「サービス内容や料金などは一部変更となります」と告知しているため旧料金の疑いが強く、現行のテントサイト料金が確認できない"
   },
   {
    "napId": "14561",
@@ -1749,9 +1749,9 @@
    "napUrl": "https://www.nap-camp.com/yamanashi/14561",
    "latCandidate": "35.48559507153583",
    "lngCandidate": "138.7306706351044",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://bullscamp.com/",
+   "verdict": "追加",
+   "reason": "公式（bullscamp.com）の住所（鳴沢村鳴沢4122-3）が一致し、**テント泊専用の「区画サイト[A/B/C]」がある**。公式の静的ページと公式指定の予約エンジンで金額の読み方に幅があるため、両方の読みを priceMin〜priceMax に収めた"
   },
   {
    "napId": "14585",
@@ -2857,13 +2857,13 @@
   "打ち切り": true,
   "打ち切りの理由": "1件あたり検索1〜2回＋公式ページ取得1〜2回。山梨は収穫完了後に8件を調査して打ち切った",
   "内訳": {
-   "門落ち(公式なし)": 24,
-   "追加": 38,
-   "宿泊系のため対象外": 35,
+   "門落ち(公式なし)": 25,
+   "追加": 45,
+   "宿泊系のため対象外": 40,
    "門落ち(単独利用不可)": 5,
-   "門落ち(料金も予約も公式に無し)": 10,
-   "UNMEASURED": 108,
-   "閉鎖疑い": 16
+   "門落ち(料金も予約も公式に無し)": 12,
+   "UNMEASURED": 91,
+   "閉鎖疑い": 18
   }
  }
 }
