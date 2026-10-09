@@ -161,7 +161,11 @@ for (const [pref, p] of Object.entries(LEDGERS)) {
   const j = loaded[pref];
   const counts = {};
   for (const r of j.rows || []) counts[r.verdict] = (counts[r.verdict] || 0) + 1;
-  j.progress = { ...(j.progress || {}), asOf: '2026-10-06', 内訳: counts };
+  // asOf は固定値にしない。静岡の台帳（2026-10-10 生成）に 10-06 を書き戻していた
+  // toISOString は UTC。JST の未明に回すと前日になるのでローカル日付で組む
+  const d = new Date();
+  const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  j.progress = { ...(j.progress || {}), asOf: today, 内訳: counts };
   const raw = fs.readFileSync(p, 'utf8');
   const EOL = raw.includes('\r\n') ? '\r\n' : '\n';
   fs.writeFileSync(p, (JSON.stringify(j, null, 1) + '\n').replace(/\n/g, EOL));

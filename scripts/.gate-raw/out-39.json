@@ -1,0 +1,56 @@
+[
+ {"napId":"16397","name":"Hoshiakari Campfield","pref":"山梨","muni":"身延町","verdict":"UNMEASURED",
+  "reason":"公式（晴家村 hallelujah-village.com）で住所（身延町三沢3859）の一致を確認。「1日1組限定の貸切オートキャンプサイト」「施設タイプ：フリーサイト」でテント泊可・1名の下限指定も無いが、**料金が「基本料金 1組6人まで15000円（税別）」の人数に依らない貸切定額**なので、1名でも税込で約16,500円かかり12,000円を超える",
+  "checkedUrls":["https://hallelujah-village.com/","https://hallelujah-village.com/hoshiakari-campfield/","https://hallelujah-village.com/reserve-the-area/"],
+  "officialUrl":"https://hallelujah-village.com/hoshiakari-campfield/"},
+
+ {"napId":"16427","name":"LARGO","pref":"山梨","muni":"道志村","verdict":"UNMEASURED",
+  "reason":"運営元（SXD）の公式特設サイトで確認。「敷地内では、テントを張ってBBQも焚火もでき」「宿泊キャンプは最大10人までご利用いただけます」でテント泊可・1名の下限指定も無いが、**料金が「平日：¥40,000 +消費税 /日」「土日祝日：¥50,000 +消費税 /日」のサイト貸切定額**なので、1名でも税込で約44,000円かかり12,000円を大きく超える。**なお公式の住所表記は「下善之木 10339-2」で台帳の10399-2と1桁違う**（施設名・運営者・字名は一致）",
+  "checkedUrls":["https://trailer-house.sxd-d.com/lp/moviendo/"],
+  "officialUrl":"https://trailer-house.sxd-d.com/lp/moviendo/"},
+
+ {"napId":"16495","name":"SNUG CAMP HOUSE","pref":"山梨","muni":"道志村","verdict":"UNMEASURED",
+  "reason":"公式（Googleサイト）で住所（道志村12612-3）の完全一致を確認。「敷地内でのテント泊なら10名以上も可能です」でテント泊可だが、**料金が「平日基本料金 44,000円（4名様の宿泊費込み）」の一棟貸し定額**（日曜66,000円／土曜・祝前日132,000円／トップシーズン154,000円）で、1名でも最低44,000円かかり12,000円を大きく超える",
+  "checkedUrls":["https://sites.google.com/view/snugcamphouse","https://cotte.fun/stay/524"],
+  "officialUrl":"https://sites.google.com/view/snugcamphouse"},
+
+ {"napId":"16504","name":"fumotto de Camp","pref":"山梨","muni":"南アルプス市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式（fumotto.jp）で施設名を確認。「芝生広場内フリーサイト」等のプラン名はあるが、**料金の記載がページ内に一切なく**、予約・料金確認はすべてなっぷへのリンクのみ",
+  "checkedUrls":["https://fumotto.jp/shop/fumotto-de-camp-2/"],
+  "officialUrl":"https://fumotto.jp/shop/fumotto-de-camp-2/"},
+
+ {"napId":"16563","name":"NORD YATSUGATAKE CAMP SITE","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"英語名・カタカナ名・住所（大阿原3290）で探したが独自ドメインの施設公式が見つからない。**類似名の「八ヶ岳オートキャンプ場」（yatsugatake-autocamp.com）は住所・施設名が一致せず別施設として弾いた。**Instagram の `nord.camp` はポーランドのキャンプ場で無関係。紹介サイト apese.net が「公式サイト」として示すリンク先も実体はなっぷのページだった",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/16563","https://www.yatsugatake-autocamp.com/","https://www.yatsugatake-autocamp.com/information.html","https://apese.net/?id=11173125","https://www.instagram.com/nord.camp/","https://camp24.jp/yatsugatake-campsite"],
+  "officialUrl":null},
+
+ {"napId":"16602","name":"Mt.Kentoku Fish&Lodge（マウント ケントク フィッシュ＆ロッジ）","pref":"山梨","muni":"山梨市","verdict":"宿泊系のため対象外",
+  "reason":"公式（mt-kentoku-fandl.com）で施設名・住所の一致を確認。**宿泊形態は「ロッジタイプのお部屋」のみ**（「26,000円〜/1棟1泊（定員4名様まで）」全7棟）で、テントサイト・持込テント泊の記載が一切ない。釣り堀＋ロッジの宿泊施設",
+  "checkedUrls":["https://www.mt-kentoku-fandl.com/","https://www.mt-kentoku-fandl.com/ご宿泊"],
+  "officialUrl":"https://www.mt-kentoku-fandl.com/"},
+
+ {"napId":"16616","name":"ナチュラルカフェ キャンピングサイト","pref":"山梨","muni":"甲州市","verdict":"追加",
+  "reason":"カフェ直営の公式（natural-camp.crayonsite.com）で住所（甲州市塩山上萩原3127）の完全一致を確認。**本体側でも公式ページを開き直して「サイトＡ,Ｂ共 1泊 一張2名まで 8,000円（税別）・・・追加1名ごとに1,000円（税別）」を直接確認した。**「2名まで」は上限の表現で、追加1名ごとの加算があることから1名でも8,000円（税別）の定額。入場料・駐車料の記載は無い。**サブエージェントは「薪（約7㎏）サービス」を firewood:true としていたが、公式の表記は無料サービスで販売ではないので、本体側で firewood を外した**（当サイトの条件は「薪を買える」）",
+  "checkedUrls":["https://natural-camp.crayonsite.com/","https://reserva.be/naturalcafekoshu","https://reserva.be/naturalcafekoshu/about"],
+  "officialUrl":"https://natural-camp.crayonsite.com/","reservationUrl":null,
+  "address":"山梨県甲州市塩山上萩原3127","priceMin":8800,"priceMax":8800,
+  "priceNote":"テント1張単位の定額。公式「サイトＡ,Ｂ共　1泊 一張2名まで　8,000円（税別）・・・追加1名ごとに1,000円（税別）」「中学生まで半額」「同伴犬は無料」。**公式の表記は税別8,000円で税込額の明記が無いため、消費税10%を足した8,800円を入れてある。**入場料・駐車料の記載は無い。**支払いはチェックイン時の現地払いで、予約はメールか電話のみ**",
+  "features":{
+    "pet":{"value":true,"evidenceUrl":"https://natural-camp.crayonsite.com/","quote":"3つのサイトしかありませんが、犬連れOKという珍しいところです。大きなドッグランも併設しています。／同伴犬は無料"}},
+  "coordsFromOfficialMap":{"lat":35.7278456,"lng":138.7917841,"url":"https://natural-camp.crayonsite.com/"}},
+
+ {"napId":"16618","name":"3set山中湖","pref":"山梨","muni":"山中湖村","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式（camp-sauna-3set.jp/yamanakako）の住所は「山中湖村山中273-4」で、**同じ運営の既存レコード「CAMP＆SAUNA 3set」（都留市上谷1-7-29）とは別施設**（重複ではないことを確認）。キャンプサイトページに「テントを持ち込んで自分だけのキャンプを楽しむもよし」とテント泊可の明記はあるが、同じページに「キャンプサイトのご予約は なっぷ にて受け付けております」とあり、**料金が公式に一切ない**",
+  "checkedUrls":["https://camp-sauna-3set.jp/yamanakako/","https://camp-sauna-3set.jp/yamanakako/campsite/","https://camp-sauna-3set.jp/yamanakako/access/"],
+  "officialUrl":"https://camp-sauna-3set.jp/yamanakako/campsite/"},
+
+ {"napId":"16728","name":"Campground HOLIDAY VALLEY","pref":"山梨","muni":"北杜市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式の情報発信は Instagram（@camp.holidayv_）のみ。プロフィールに「山梨県北杜市の会員制キャンプ場 2026シーズン営業は4月25日〜11月下旬迄 一般のお客様はキャンプ場ナビサイト『なっぷ』からのご予約となります」と明記され、**会員制で一般客はなっぷ経由のみ。公式の料金記載が無い**",
+  "checkedUrls":["https://www.instagram.com/camp.holidayv_/"],
+  "officialUrl":"https://www.instagram.com/camp.holidayv_/"},
+
+ {"napId":"16731","name":"都留星と風キャンプフィールド","pref":"山梨","muni":"都留市","verdict":"門落ち(料金も予約も公式に無し)",
+  "reason":"公式の情報発信は Instagram（@hoshitokaze_campfield）のみで、**外部リンクもなっぷの施設ページ1本だけ**。独自ドメインの公式サイトが見つからず、料金の記載も無い",
+  "checkedUrls":["https://www.instagram.com/hoshitokaze_campfield/","https://japancamp.jp/camp_search/tsuru_hoshitokaze/"],
+  "officialUrl":"https://www.instagram.com/hoshitokaze_campfield/"}
+]

@@ -1,0 +1,47 @@
+[
+ {"napId":"16738","name":"清里高原 ペンション まんてん星","pref":"山梨","muni":"北杜市","verdict":"追加",
+  "reason":"施設公式（manten.yamanashi.jp）で住所（〒407-0301 山梨県北杜市高根町清里3545-2231）の一致を確認。オートキャンプのページに「キャンパーの方向けプランです。草原を望む３テントサイトを貸切でご利用いただけます。テントサイトのみの貸出しですので、キャンプに必要なものはすべてご持参ください。」とありテント持込み前提、最低人数の明記も無い。**サブエージェントは bath:true・firewood:true を付けていたが、本体側で両方外した。**風呂は「宿から車で5分の温泉施設」と「1組当たり追加2,000円・室内泊のお客様が優先」の家族風呂で、どちらも場内で自由に使える風呂ではないので nearbyOnsen に寄せた。薪は「薪一束無料」で販売ではない（当サイトの条件は「薪を買える」）",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/16738","https://manten.yamanashi.jp/2024/10/01/own-tent/","https://manten.yamanashi.jp/access/"],
+  "officialUrl":"https://manten.yamanashi.jp/2024/10/01/own-tent/","reservationUrl":null,
+  "address":"山梨県北杜市高根町清里3545-2231","priceMin":10000,"priceMax":10000,
+  "priceNote":"貸切単位の定額。公式「【1泊貸切料金】10,000円（３テントサイト・トイレ・水場・電源利用可、薪一束無料）」。**3テントサイトを人数に依らず貸切る方式で、ソロでも10,000円を1人で負担する。**最低人数の明記は無い。**税込／税別の明記が無い。**任意オプションで家族風呂＋2,000円、客室泊（ツイン10,000円／トリプル12,000円）があるがキャンプ料金には含まれない",
+  "features":{
+    "pet":{"value":true,"evidenceUrl":"https://manten.yamanashi.jp/2024/10/01/own-tent/","quote":"④ペットをお連れいただく場合は、必ずリードをつけてお過ごしください。"},
+    "nearbyOnsen":{"value":"車で5分の温泉施設（公式に施設名の記載なし）／宿の家族風呂は1組＋2,000円・室内泊客が優先","evidenceUrl":"https://manten.yamanashi.jp/2024/10/01/own-tent/","quote":"宿から車で5分の温泉施設がございます。利用料は現地でお支払いください。１組当たり追加2,000円で当宿の家族風呂もお使いいただけます。（室内泊のお客様が優先となります）"}},
+  "coordsFromOfficialMap":null},
+
+ {"napId":"16754","name":"大武川オートキャンプ場","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"施設独自の公式サイトが見つからない。なっぷ以外に出てくるのはじゃらん・NAVITIME・4travel・天気サイト等の第三者掲載のみ。**類似名の「フレンドパークむかわ」（北杜市公式に掲載／武川町柳澤3506-1、公式 fp-mukawa-kaikoma.com）は住所が台帳の「柳澤3560」と異なる別施設として弾いた。**北杜市公式にも「大武川オートキャンプ場」という名称の施設は見当たらない",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/16754","https://www.hokuto-kanko.jp/spot/mukawa/","https://www.city.hokuto.yamanashi.jp/kosodate/child-map/kosodate_list/mukawafp/","https://fp-mukawa-kaikoma.com/","https://www.jalan.net/kankou/spt_19409ah3330042476/"],
+  "officialUrl":null},
+
+ {"napId":"16766","name":"Oregonomi Camper","pref":"山梨","muni":"北杜市","verdict":"UNMEASURED",
+  "reason":"施設公式（oregonomicamper.com）は実在し「南アルプスの麓の静かな森の中にあります」とテント泊前提のキャンプ場であることは分かる。だが**サイト全体が Next.js のクライアント描画で、料金（/pricing）・施設案内（/camping）・利用ガイド（/guide）・特商法表記（/law）・予約（/reserve）のどれも静的HTMLに本文が入っておらず、価格・1名利用の可否・番地が取れない。本体側でも /pricing を取り直したが「円」の出現は0件だった。**住所も公式では「北杜市白州」までしか確認できない。**金額が高いからではなく技術的に読めないためのUNMEASURED。ブラウザで目視すれば判定できる見込み**",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/16766","https://www.oregonomicamper.com/","https://www.oregonomicamper.com/pricing","https://www.oregonomicamper.com/camping","https://www.oregonomicamper.com/guide","https://www.oregonomicamper.com/law","https://www.oregonomicamper.com/reserve"],
+  "officialUrl":"https://www.oregonomicamper.com/"},
+
+ {"napId":"16780","name":"7inchCAMP ミチノエキミトミDOG BASE","pref":"山梨","muni":"山梨市","verdict":"追加",
+  "reason":"施設公式（7inchcamp.com/mitomi-db）で住所（〒404-0201 山梨県山梨市三富川浦1822-20）の一致を確認。「ドッグランサイト専門」としながら「わんちゃん連れでない方のご利用もお待ちしてます」とあり犬なしの1名でも利用できる。チェックイン13:00〜17:00・チェックアウト12:00・消灯22時で宿泊前提。料金が「【利用料金＝宿泊料＋サイト料】」の人数課金なので1名の総額が出せる。**近接する既存レコード `fuefukigoya-camp`（笛吹小屋キャンプ場／三富川浦1820）とは番地・施設名・公式URLがすべて異なる別施設**",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/16780","https://7inchcamp.com/mitomi-db","https://maps.app.goo.gl/7WJbo959VSEFr7at5"],
+  "officialUrl":"https://7inchcamp.com/mitomi-db","reservationUrl":null,
+  "address":"山梨県山梨市三富川浦1822-20","priceMin":4500,"priceMax":6500,
+  "priceNote":"人数課金＋サイト課金。公式「【利用料金＝宿泊料＋サイト料】となります。」で、宿泊料（大人一名・中学生以上）が平日1,500円／休前日2,000円／大型連休・年末年始2,500円、サイト料金がAサイト4,000円・Bサイト3,000円。1名の最安は平日＋Bサイトで4,500円、最高は大型連休＋Aサイトで6,500円。**支払いは「当日現金のみ」。税込／税別の明記が無い**",
+  "features":{
+    "pet":{"value":true,"evidenceUrl":"https://7inchcamp.com/mitomi-db","quote":"愛犬と思いっきりキャンプを楽しんで頂けたら嬉しいです。／わんちゃん連れでない方のご利用もお待ちしてます。"}},
+  "coordsFromOfficialMap":{"lat":35.859408,"lng":138.7560125,"url":"https://7inchcamp.com/mitomi-db"}},
+
+ {"napId":"16832","name":"FujihokurokuSamoyedBase","pref":"山梨","muni":"富士河口湖町","verdict":"宿泊系のため対象外",
+  "reason":"住所（〒401-0302 山梨県南都留郡富士河口湖町小立5244-1）は一致するが、実態は「1日1組のプライベートRVパーク」。「利用可能車種：セミフルコン,バスコン,キャブコン,バンコン,トラベルトレーラー,軽キャンピングカー,一般車」「1泊5,000円〜／1台（利用可能台数1台）」「駐車スペースは砂利がひいてあります」で**車中泊前提の施設**でテントサイトの設定が無い。**なお根拠は日本RV協会の登録ページ（rv-park.jp）で、施設の自前サイトではない。**テントサイトを持つことが後から分かったら見直す",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/16832","https://web.rv-park.jp/spaces/detail/652","https://www.kurumatabi.com/park/rvpark/1710.html"],
+  "officialUrl":"https://web.rv-park.jp/spaces/detail/652"},
+
+ {"napId":"16836","name":"autumn haze camping","pref":"山梨","muni":"北杜市","verdict":"門落ち(公式なし)",
+  "reason":"施設独自の公式サイトも公式SNSアカウントも見つからない。なっぷ掲載以外にヒットする一次情報が一切なく、北杜市公式にも該当施設の記載が無い",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/16836"],
+  "officialUrl":null},
+
+ {"napId":"16837","name":"The Little Bee WILD BASE CAMP","pref":"山梨","muni":"甲州市","verdict":"UNMEASURED",
+  "reason":"運営元公式（the-little-bee.com）内の専用ページで住所（甲州市勝沼町菱山5482）の完全一致を確認（同運営のいちご狩り農園は勝沼町山1768-1で別地番なので、キャンプ場固有の住所としてこのページの記載を採った）。「敷地内は区画分けされておらず、テントの設営場所やレイアウトは自由。ソロキャンプからファミリー、グループ、最大50名まで利用可能です。」でテント泊・1名利用とも可。だが**料金が「料金は人数ではなく「1組あたり」で設定しています」の完全な1組定額制**（月〜木50,000円／金60,000円／土日祝70,000円／大型連休80,000円・いずれも税込）で、1名でも最安50,000円かかり12,000円を大きく超える",
+  "checkedUrls":["https://www.nap-camp.com/yamanashi/16837","https://www.the-little-bee.com/","https://www.the-little-bee.com/coming-soon-01"],
+  "officialUrl":"https://www.the-little-bee.com/coming-soon-01"}
+]

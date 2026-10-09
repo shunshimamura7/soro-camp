@@ -18265,5 +18265,665 @@
     "source": [
       "https://wildpark-camp.crayonsite.com/"
     ]
+  },
+  {
+    "id": "lowkeys-farm",
+    "slug": "lowkeys-farm",
+    "name": "LOWKEYS FARM",
+    "prefecture": "山梨",
+    "area": "富士河口湖町・富士ヶ嶺",
+    "status": "active",
+    "address": "山梨県南都留郡富士河口湖町富士ケ嶺28",
+    "type": "campground",
+    "lat": 35.4216924,
+    "lng": 138.6288218,
+    "priceMin": 3500,
+    "priceMax": 5000,
+    "priceNote": "1名専用プランの定額（税込明記）。公式「【農作業体験付き】富士山麓・静かなソロキャンププラン…【料金】・平日：3,500円（税込） ・土日祝,ハイシーズン：5,000円（税込）」「【注意事項】・1名限定／1日3組まで ・フリーサイト利用 ・**農作業体験への参加が必須です**」。駐車料・入場料の別記載は無い。**公式に「ご利用料金改定のお知らせ（2026年3月1日より）」の告知があり、プラン一覧の金額は改定後と見られるが本文は未取得。**また「2月は閉園中」の表示あり",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "公式が案内する予約先: https://page.line.me/278cktea"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "富士ヶ嶺の市民農園をベースにしたファームキャンプ。**公式に「【農作業体験付き】富士山麓・静かなソロキャンププラン」という1名限定プランがあり、平日3,500円（税込）**。1日3組まででフリーサイト。公式が「特に平日は完ソロ率高」「人の多いキャンプ場が苦手な方におすすめ」と書いている。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://page.line.me/278cktea",
+    "reservationUrl": "https://page.line.me/278cktea",
+    "cautions": [
+      "**宿泊前に15〜30分の農作業体験への参加が必須**。体験なしのプランはグループ向けのプレミアムプランだけ",
+      "土日祝・ハイシーズンは5,000円（税込）",
+      "**1名限定／1日3組まで**なので枠が少ない",
+      "**2月は閉園**",
+      "**公式に「ご利用料金改定のお知らせ（2026年3月1日より）」の告知がある。**プラン一覧の金額は改定後と見られるが、予約時に確認する",
+      "**公式サイト（自前ドメイン）が無く、情報源は施設のLINE公式アカウント。**予約・問い合わせもLINEから",
+      "場内の風呂・シャワー・売店について公式に記載が無い"
+    ],
+    "source": [
+      "https://page.line.me/278cktea",
+      "https://page.line.me/278cktea"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "liberty-camp-fujikawa",
+    "slug": "liberty-camp-fujikawa",
+    "name": "LIBERTY CAMP場",
+    "prefecture": "山梨",
+    "area": "富士川町",
+    "status": "active",
+    "address": "山梨県南巨摩郡富士川町平林3237",
+    "type": "campground",
+    "lat": 35.5673166,
+    "lng": 138.3944032,
+    "priceMin": 3300,
+    "priceMax": 8800,
+    "priceNote": "人数課金（一部サイトは区画料金を加算）。公式の原文は「お一人様 ¥3000(税抜) 小学生 ¥1500(税抜) 小学生未満は無料」（A／B／Wサイト共通）、「※A1サイトのみデッキサイトです…A1サイトのみ区画料金が税抜き4000円が別途かかります。」「※W3サイトはペット同伴ＯＫで…W3サイトのみ別途区画料金が税別4000円かかります。」、Cサイトは「区画料金 ¥6000(税抜)」＋「お一人様 ¥2000(税抜)」。**公式は全部税抜表記で税込額の明記が無いため、消費税10%を足した額を入れた。**1名の最安はB／Wサイトの3,000円（税抜）＝3,300円、最高はCサイトの8,000円（税抜）＝8,800円。A1・W3は7,000円（税抜）＝7,700円。入場料・駐車料の記載は無い",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "Aサイト(ハンモック付き・ペット同伴サイト)／※W3サイトはペット同伴ＯＫでドッグランとファイヤーピット付きスペースがご利用いただけます！（https://liberty-camp.simdif.com/contact.html）",
+      "nearbyOnsen": "赤石温泉（キャンプ場の隣・17:00から利用可・1時間800円）（https://liberty-camp.simdif.com/contact.html）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "富士川町平林。**B・Wサイトなら「お一人様 ¥3000(税抜)」の人数課金だけで泊まれる**ので、ソロで区画1つ分を負担させられない。A1サイトはウッドフェンスに囲まれたデッキサイトで犬のリード無しOK、W3はドッグランとファイヤーピット付き。**赤石温泉がキャンプ場の隣**で、17:00から1時間800円で入れる。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://liberty-camp.simdif.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**公式の料金表示は全部税抜。**当サイトの金額は消費税10%を足したもの（3,300〜8,800円）",
+      "**A1サイトとW3サイトは区画料金が税抜4,000円別途**かかる（ソロで7,700円）",
+      "Cサイトは区画料金6,000円＋1人2,000円（税抜）でソロ8,800円",
+      "**予約はなっぷから**と公式が案内（料金は公式に掲載）",
+      "場内の風呂・シャワーについて公式に記載が無い（隣の赤石温泉を使う前提）"
+    ],
+    "source": [
+      "https://liberty-camp.simdif.com/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "hirabayashi-camping",
+    "slug": "hirabayashi-camping",
+    "name": "Hirabayashi Camping",
+    "prefecture": "山梨",
+    "area": "富士川町",
+    "status": "active",
+    "address": "山梨県南巨摩郡富士川町平林2172",
+    "type": "campground",
+    "lat": 35.5810408,
+    "lng": 138.4030463,
+    "priceMin": 3000,
+    "priceMax": 3000,
+    "priceNote": "人数課金のみ。公式「大人（中学生以上）¥3,000 / 泊」「子供（小学生以下）無料」。**税込／税別の明記が無い。**入場料・駐車料の記載は無い。任意オプションとして「薪使い放題オプション ¥1,000 / 泊」「貸切 ¥2,000 / 泊」がある",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "温水トイレ・シャワー・炊事場完備。（https://hirabayashi-camping.com/）",
+      "firewood": true,
+      "firewoodNote": "薪は使い放題オプション（+1,000円）あり。（https://hirabayashi-camping.com/）",
+      "pet": true,
+      "petNote": "ペット同伴OK。（https://hirabayashi-camping.com/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "富士川町平林、**1日3組限定**のテントサイト。「大人（中学生以上）¥3,000 / 泊」の人数課金だけで、ソロでも3,000円。各サイトはウッドチップ敷きで、温水トイレ・シャワー・炊事場が完備。ペット同伴OK。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://hirabayashi-camping.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "税込／税別の明記が無い",
+      "**1日3組限定**なので枠が少ない",
+      "薪は「使い放題オプション（＋1,000円）」で、1束売りではない",
+      "貸切オプションは＋2,000円／泊",
+      "場内の風呂について公式に記載が無い（シャワーのみ）",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://hirabayashi-camping.com/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "superwild-rc-camp",
+    "slug": "superwild-rc-camp",
+    "name": "SUPERWILD RC and Camp Field（旧：瀬音村こもれびの森キャンプ場）",
+    "prefecture": "山梨",
+    "area": "山梨市・三富",
+    "status": "active",
+    "address": "山梨県山梨市三富川浦円川1613",
+    "type": "campground",
+    "lat": 35.816141,
+    "lng": 138.752376,
+    "priceMin": 3000,
+    "priceMax": 3000,
+    "priceNote": "人数課金のみ（税込明記）。公式「すべて税込価格です。」「キャンプ宿泊（全域フリーサイト）お一人様 3,000円 / 1泊」。中学生以下は保護者同伴で無料。入場料・駐車料の別記載は無い。**全域フリーサイトで直火OK、チェックイン・アウトの時刻規定が無い**のがこの施設の特徴",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "ご自由にご同伴ください。ただし当日の混雑具合によっては周囲へのご配慮をよろしくお願いします。（https://swrc.jp/camp/）",
+      "nearbyOnsen": "白龍閣（三富温泉郷・車で約5分・10:00〜21:30）（https://swrc.jp/around/）",
+      "reservationNote": "公式が案内する予約先: https://swrc.jp/book-camp/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "山梨市三富川浦、旧「瀬音村こもれびの森キャンプ場」。**「すべて税込価格です。」と明記した上で「キャンプ宿泊（全域フリーサイト）お一人様 3,000円 / 1泊」**という分かりやすさ。**全域フリーサイトで直火OK、チェックイン・アウトの時刻規定が無い**のが効いている。ペットも自由に同伴できる。白龍閣（三富温泉郷）が車で約5分。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://swrc.jp/camp/",
+    "reservationUrl": "https://swrc.jp/book-camp/",
+    "cautions": [
+      "全域フリーサイトなので区画は選べない。混雑時は周囲への配慮が要る",
+      "**RCコース（ラジコン）併設の施設**なので、静けさを最優先するなら営業状況を確認する",
+      "場内の風呂・シャワー・売店について公式に記載が無い",
+      "中学生以下は保護者同伴で無料"
+    ],
+    "source": [
+      "https://swrc.jp/camp/",
+      "https://swrc.jp/book-camp/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "kanayama-sanso-camp",
+    "slug": "kanayama-sanso-camp",
+    "name": "金山山荘・キャンプ場",
+    "prefecture": "山梨",
+    "area": "北杜・須玉",
+    "status": "active",
+    "address": "山梨県北杜市須玉町小尾8872-7",
+    "type": "campground",
+    "lat": 35.8672196,
+    "lng": 138.5718075,
+    "priceMin": 1000,
+    "priceMax": 1000,
+    "priceNote": "人数課金のみ。公式の料金表「テントサイト　１泊・１人　大人１０００円　子供 ５００円」（子供は3歳〜小学生、3歳未満無料）。**税込／税別の明記が無い。**デイキャンプ・日帰りバーベキュー向けの「入場料 １人２００円」はテント泊には掛からない別枠。公式に「＊キャンプのお客様は事前に電話予約をお願い致します。予約電話番号：090-8845-7904」とあり**電話予約が必要**。通年営業。PayPay可",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "＊温水シャワーご利用いただけます。（http://kanayamasannsou.com/entry.html）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "北杜市須玉町小尾、金山山荘が併設するキャンプ場。**「テントサイト 1泊・1人 大人1,000円」という当サイト最安クラスの料金**。通年営業で温水シャワーが使える。岩魚釣り・山菜取り・昆虫採集ができる高原の立地で、石窯ピザ（18cm 1,500円〜）も食べられる。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://kanayamasannsou.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**キャンプは事前の電話予約が必要**（090-8845-7904）",
+      "税込／税別の明記が無い",
+      "石窯ピザは平日・土日祝とも11:00〜14:00で、雨天は休み（予約すれば雨でも営業）",
+      "場内の風呂について公式に記載が無い（温水シャワーのみ）",
+      "売店について公式に記載が無い。**消耗品は持参したほうがいい**",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "http://kanayamasannsou.com/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "camp-and-cabins-yamanakako",
+    "slug": "camp-and-cabins-yamanakako",
+    "name": "キャンプ・アンド・キャビンズ山中湖",
+    "prefecture": "山梨",
+    "area": "山中湖",
+    "status": "active",
+    "address": "山梨県南都留郡山中湖村山中287-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 5000,
+    "priceMax": 8800,
+    "priceNote": "区画単位の定額。最安区分「オートキャンプサイト」のシーズン料金は公式カレンダーで「バリュー ¥5,000／レギュラー ¥6,500／トップ ¥8,800」。公式に「上記金額は、大人2名＋車1台の基本料金です。18歳未満のこどもは無料です。」とあり、**1名でも2名分の基本料金を払う形**。追加は大人3名以降1人2,200円、車2台目以降1,650円、ペット1,100円。**税込／税別の表記が見当たらない。**「広めのオートキャンプサイト」〜「GARAGEプラス」など最大28,000円の区画もあるが、ここは最安区分だけを採った",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "大浴場（https://www.camp-cabins.com/yamanakako/facility/）",
+      "shower": true,
+      "showerNote": "コインシャワー(個室)（https://www.camp-cabins.com/yamanakako/facility/）",
+      "firewood": true,
+      "firewoodNote": "薪（24時間無人販売）／500円〜（https://www.camp-cabins.com/yamanakako/rental/）",
+      "shop": true,
+      "shopNote": "中央管理棟・ショップ（https://www.camp-cabins.com/yamanakako/facility/）",
+      "pet": true,
+      "petNote": "ペットをお連れのお客様は別途追加料金が発生します…犬ペット（1〜3匹まで）一律1,100円（https://www.camp-cabins.com/yamanakako/stay/list/2519/）",
+      "reservationNote": "公式が案内する予約先: https://reser.yagai-kikaku.com/cc_reserve/sv_open"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "山中湖村山中、ファミリー向けで名の知れたキャンプ場。**場内に大浴場があり、コインシャワー（個室）、中央管理棟のショップ、薪の24時間無人販売（500円〜）と設備が揃っている。**オートキャンプサイトはバリューシーズン5,000円から。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.camp-cabins.com/yamanakako/",
+    "reservationUrl": "https://reser.yagai-kikaku.com/cc_reserve/sv_open",
+    "cautions": [
+      "**公式が「上記金額は、大人2名＋車1台の基本料金です」と書いており、ソロでも2名分の基本料金を払う形**。人数による減額は無い",
+      "シーズンで5,000円（バリュー）〜8,800円（トップ）と動く",
+      "税込／税別の表記が公式に見当たらない",
+      "**ファミリー向けの大型キャンプ場**なので、静けさを求めるなら時期を選ぶ",
+      "ペットは1〜3匹まで一律1,100円、車2台目以降1,650円"
+    ],
+    "source": [
+      "https://www.camp-cabins.com/yamanakako/",
+      "https://reser.yagai-kikaku.com/cc_reserve/sv_open"
+    ]
+  },
+  {
+    "id": "heidi-mura-clarakan",
+    "slug": "heidi-mura-clarakan",
+    "name": "ハイジの村クララ館",
+    "prefecture": "山梨",
+    "area": "北杜・明野",
+    "status": "active",
+    "address": "山梨県北杜市明野町浅尾5259-950",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 4200,
+    "priceMax": 5200,
+    "priceNote": "サイト課金＋人数課金。公式「料　金：サイト利用料金　2,200円／大人1名につき+2,000円（繁忙期+3,000円）／小学生+1,000円（繁忙期+2,000円）／幼児 無料」「※ご利用料金＝人数分の宿泊料金+サイト使用料」。1名は通常期2,200＋2,000＝4,200円、繁忙期2,200＋3,000＝5,200円。駐車場は「区画サイト・グランピングは専用駐車場（無料）をご利用ください。」で無料。**徒歩2〜3分の「クララの湯」は「区画サイト・RVカーサイト：入浴料別途」で金額が公式に無く、任意利用なので総額に含めていない。**税込／税別の明記も無い",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "区画サイト・RVサイト：ペット可（https://www.kikyouya.co.jp/Clarakan/pg4984552.html）",
+      "nearbyOnsen": "天然温泉クララの湯（徒歩2〜3分・入浴料別途）（https://www.kikyouya.co.jp/Clarakan/pg4984552.html）",
+      "reservationNote": "公式が案内する予約先: https://www.takibi-reservation.style/ca6173"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "北杜市明野町、ハイジの村のホテル「クララ館」に併設された全7区画の区画サイト。**サイト利用料2,200円＋大人1名2,000円でソロ4,200円**、専用駐車場は無料。**天然温泉「クララの湯」が徒歩2〜3分**。テント等は持参。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.kikyouya.co.jp/Clarakan/index.html",
+    "reservationUrl": "https://www.takibi-reservation.style/ca6173",
+    "cautions": [
+      "繁忙期は大人1名が＋3,000円になり総額5,200円",
+      "**クララの湯は「区画サイト・RVカーサイト：入浴料別途」で、金額が公式に書かれていない。**現地で確認する",
+      "税込／税別の明記が無い",
+      "**テント等の備品は持参**（公式に「お食事やテント等の備品はご持参ください。」）",
+      "場内の風呂・シャワー・売店について公式に記載が無い"
+    ],
+    "source": [
+      "https://www.kikyouya.co.jp/Clarakan/index.html",
+      "https://www.takibi-reservation.style/ca6173"
+    ]
+  },
+  {
+    "id": "dotekage-camp-ground",
+    "slug": "dotekage-camp-ground",
+    "name": "DOTEKAGE CAMP GROUND",
+    "prefecture": "山梨",
+    "area": "河口湖",
+    "status": "active",
+    "address": "山梨県南都留郡富士河口湖町小立5321-2",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 4950,
+    "priceMax": 9350,
+    "priceNote": "サイト課金＋施設利用料（税込明記）。公式「平日　￥5,500　+　施設利用料 1人ごとに ￥550　(4才以上)／ハイシーズン　￥7,700＋550／トップシーズン　￥8,800＋550／**平日ソロキャンプ限定　￥4,400　+　施設利用料　￥550**」。1名の最安は平日ソロ限定で4,950円、最高はトップシーズンの9,350円。「駐車場：サイト1台　2台目から+2,200円」で1台分は込み。AC電源1,100円は任意。公式に「※　価格は全て税込価格です。」と明記",
+    "features": {
+      "reservation": "要",
+      "bath": false,
+      "bathNote": "建物設備（BBQ台、お風呂、サウナ等）のご使用は建物宿泊者に限られます。テントサイトのお客様への共有はご遠慮ください。（https://dotekage-camp.com/?page_id=111）",
+      "shower": true,
+      "showerNote": "シャワー室2カ所（https://dotekage-camp.com/?gallery=217）",
+      "firewood": true,
+      "firewoodNote": "薪 1本 ¥88（https://dotekage-camp.com/?page_id=234）",
+      "shop": true,
+      "shopNote": "販売品：薪1本¥88、炭（3kg）¥825、着火剤¥330（https://dotekage-camp.com/?page_id=234）",
+      "reservationNote": "公式が案内する予約先: https://dotekage-camp.com/yoyaku/yoyaku2.html"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "富士河口湖町小立、全22区画のオート区画サイト。**公式に「平日ソロキャンプ限定 ￥4,400 ＋ 施設利用料 ￥550」という1名専用プランがあり、総額4,950円。**価格は「全て税込価格です。」と明記。薪1本88円から、炭・着火剤など販売品の一覧が公式に出ている。シャワー室2カ所。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://dotekage-camp.com/",
+    "reservationUrl": "https://dotekage-camp.com/yoyaku/yoyaku2.html",
+    "cautions": [
+      "**ソロ限定プランは平日のみ**。ハイシーズンは7,700円、トップシーズンは8,800円（＋施設利用料550円）",
+      "**オート区画サイトはペット不可。**ペット同伴はドッグサイトかキャビンDXのみ（公式FAQ）",
+      "**場内のお風呂・サウナは建物宿泊者専用で、テントサイトの客は使えない**と公式が明記",
+      "駐車は1台込みで、2台目から＋2,200円。AC電源は＋1,100円",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://dotekage-camp.com/",
+      "https://dotekage-camp.com/yoyaku/yoyaku2.html"
+    ]
+  },
+  {
+    "id": "camp-satomiya",
+    "slug": "camp-satomiya",
+    "name": "CAMP SATOMIYA（キャンプさとみや）",
+    "prefecture": "山梨",
+    "area": "河口湖",
+    "status": "active",
+    "address": "山梨県南都留郡富士河口湖町勝山3951番5",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3500,
+    "priceMax": 7000,
+    "priceNote": "サイト課金＋人数課金。公式「■施設利用料（１人・一泊あたり）┗大人（中学生以上）1,500円┗子供（4歳〜小学生）750円┗3歳以下無料┗ペット200円」「■サイト料金：＜オートキャンプサイト＞全18区画┗メインサイト（9区画）：平日2,500円・休前日と夏休み4,500円・繁忙期5,500円┗サブサイト（9区画）：平日2,000円・休前日と夏休み4,000円・繁忙期5,000円」。1名の最安は平日サブサイトで2,000＋1,500＝3,500円、最高は繁忙期メインサイトで5,500＋1,500＝7,000円。「■駐車場：予約のサイト内に駐車可能。」で区画内駐車込み。**税込／税別の明記が無い。**2026年4月18日営業開始の新しい施設",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "・サニタリー棟(トレーラーハウス・男女別棟)┗トイレ6・温水シャワー4・給水洗い場4・灰捨て場・焚火台コンロ洗い場／キャンプさとみやには受付の近くに外付けの冷水シャワーが備え付けられています。（https://www.fujikanko.co.jp/newsrelease/3659）",
+      "firewood": true,
+      "firewoodNote": "■売店：薪のみセルフサービスで販売（針葉樹／広葉樹袋詰め放題で1,000円）（https://www.fujikanko.co.jp/newsrelease/3659）",
+      "shop": true,
+      "shopNote": "■売店：薪のみセルフサービスで販売（針葉樹／広葉樹袋詰め放題で1,000円）（https://www.fujikanko.co.jp/newsrelease/3659）",
+      "pet": true,
+      "petNote": "■施設利用料（１人・一泊あたり）┗ペット200円（https://www.fujikanko.co.jp/newsrelease/3659）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "富士河口湖町勝山、河口湖南岸の全18区画。**2026年4月18日に営業を始めた新しいキャンプ場**で、平日のサブサイトならサイト2,000円＋施設利用料1,500円でソロ3,500円。サニタリー棟に温水シャワー4、受付近くに外付けの冷水シャワー。売店は薪のみで、針葉樹／広葉樹の袋詰め放題が1,000円。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.fujikanko.co.jp/newsrelease/3659",
+    "reservationUrl": null,
+    "cautions": [
+      "繁忙期のメインサイトだと5,500円＋1,500円で7,000円",
+      "**売店は薪だけ**（公式に「薪のみセルフサービスで販売」）。ほかの消耗品は持参する",
+      "**キャンプグッズのレンタルは無い**と公式が明記",
+      "税込／税別の明記が無い",
+      "**施設専用の公式サイトが無く、情報源は運営会社（富士観光開発）のニュースリリース。**最新の料金は予約時に確認する",
+      "場内の風呂について公式に記載が無い（シャワーのみ）"
+    ],
+    "source": [
+      "https://www.fujikanko.co.jp/newsrelease/3659"
+    ]
+  },
+  {
+    "id": "kanchi-camp-doshi",
+    "slug": "kanchi-camp-doshi",
+    "name": "神地（かんち）キャンプ場 BBQ広場",
+    "prefecture": "山梨",
+    "area": "道志村",
+    "status": "active",
+    "address": "山梨県南都留郡道志村中神地",
+    "type": "campground",
+    "lat": 35.503855,
+    "lng": 138.992592,
+    "priceMin": 2500,
+    "priceMax": 3200,
+    "priceNote": "テント課金＋人数課金（＋任意のゴミ処理費）。公式「１テント１泊：土日祝 1,200円／平日 1,000円」「施設利用料ひとり１泊：1,500円（小学生600円／乳幼児・ペット 無料）」「ゴミ処理費：500円　※村指定ゴミ袋1枚の金額です　**※持ち帰りの場合は無料です**」。1名の最安は平日・ゴミ持ち帰りで2,500円、最高は土日祝・ゴミ処理費込みで3,200円。宿泊者の駐車料金の記載は無い。**税込／税別の明記が無い。公式に番地の記載が無い**",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワーもこの料金内で使えます。（https://doshibbq.wixsite.com/kanchi-camp/料金-時間-など）",
+      "pet": true,
+      "petNote": "施設利用料ひとり１泊：1,500円（小学生600円／乳幼児・ペット 無料）（https://doshibbq.wixsite.com/kanchi-camp/料金-時間-など）",
+      "reservationNote": "公式が案内する予約先: https://doshibbq.wixsite.com/kanchi-camp/アクセス-予約"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "道志村中神地、BBQ広場に併設されたテントサイト。**平日でゴミを持ち帰るなら1テント1,000円＋施設利用料1,500円で2,500円**という安さ。シャワーがこの料金内で使える。ペットは無料。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://doshibbq.wixsite.com/kanchi-camp",
+    "reservationUrl": "https://doshibbq.wixsite.com/kanchi-camp/アクセス-予約",
+    "cautions": [
+      "土日祝はテント代が1,200円。ゴミ処理費（村指定ゴミ袋1枚分）500円を払うと総額3,200円。**持ち帰れば無料**",
+      "税込／税別の明記が無い",
+      "**公式ページに番地の記載が無い。**当サイトの住所は大字（中神地）まで。カーナビは施設名で検索したほうがいい",
+      "宿泊者の駐車料金について公式に記載が無い",
+      "場内の風呂について公式に記載が無い（シャワーのみ）",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://doshibbq.wixsite.com/kanchi-camp",
+      "https://doshibbq.wixsite.com/kanchi-camp/アクセス-予約"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "natural-cafe-camp",
+    "slug": "natural-cafe-camp",
+    "name": "ナチュラルカフェ キャンピングサイト",
+    "prefecture": "山梨",
+    "area": "甲州市",
+    "status": "active",
+    "address": "山梨県甲州市塩山上萩原3127",
+    "type": "campground",
+    "lat": 35.7278456,
+    "lng": 138.7917841,
+    "priceMin": 8800,
+    "priceMax": 8800,
+    "priceNote": "テント1張単位の定額。公式「サイトＡ,Ｂ共　1泊 一張2名まで　8,000円（税別）・・・追加1名ごとに1,000円（税別）」「中学生まで半額」「同伴犬は無料」。**公式の表記は税別8,000円で税込額の明記が無いため、消費税10%を足した8,800円を入れてある。**入場料・駐車料の記載は無い。**支払いはチェックイン時の現地払いで、予約はメールか電話のみ**",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "3つのサイトしかありませんが、犬連れOKという珍しいところです。大きなドッグランも併設しています。／同伴犬は無料（https://natural-camp.crayonsite.com/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "甲州市塩山上萩原、大菩薩の麓にあるカフェ直営のキャンプ場。サイトは3つだけで、**犬連れOKで大きなドッグランが併設されている**のが個性。テント1張2名まで8,000円（税別）の定額なので、ソロでも同額。**薪（約7kg）が無料で付いてくる。**",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://natural-camp.crayonsite.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**公式の料金表示は税別。**当サイトの8,800円は消費税10%を足したもの",
+      "**テント1張単位の定額なのでソロでも8,800円を1人で負担する。**当サイトの中では高めの価格帯",
+      "**予約はメールか電話のみ**、支払いはチェックイン時の現地払い",
+      "薪は無料サービスで販売ではないので、「薪を買える」の条件には入れていない",
+      "場内の風呂・シャワー・売店について公式に記載が無い",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://natural-camp.crayonsite.com/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "manten-hoshi-camp",
+    "slug": "manten-hoshi-camp",
+    "name": "清里高原 ペンション まんてん星",
+    "prefecture": "山梨",
+    "area": "清里",
+    "status": "active",
+    "address": "山梨県北杜市高根町清里3545-2231",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 10000,
+    "priceMax": 10000,
+    "priceNote": "貸切単位の定額。公式「【1泊貸切料金】10,000円（３テントサイト・トイレ・水場・電源利用可、薪一束無料）」。**3テントサイトを人数に依らず貸切る方式で、ソロでも10,000円を1人で負担する。**最低人数の明記は無い。**税込／税別の明記が無い。**任意オプションで家族風呂＋2,000円、客室泊（ツイン10,000円／トリプル12,000円）があるがキャンプ料金には含まれない",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "④ペットをお連れいただく場合は、必ずリードをつけてお過ごしください。（https://manten.yamanashi.jp/2024/10/01/own-tent/）",
+      "nearbyOnsen": "車で5分の温泉施設（公式に施設名の記載なし）／宿の家族風呂は1組＋2,000円・室内泊客が優先（https://manten.yamanashi.jp/2024/10/01/own-tent/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "北杜市高根町清里、ペンション「まんてん星」のオートキャンプ。**草原を望む3テントサイトを貸切で使えて1泊10,000円**、薪一束が無料で付く。トイレ・水場・電源が使える。テント等はすべて持参。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://manten.yamanashi.jp/2024/10/01/own-tent/",
+    "reservationUrl": null,
+    "cautions": [
+      "**3テントサイトの貸切料金なので、ソロでも10,000円を1人で負担する。**当サイトの中では高い",
+      "税込／税別の明記が無い",
+      "**宿の家族風呂は1組＋2,000円で、しかも室内泊の客が優先**。キャンプで確実に入れるとは限らない",
+      "場内に風呂は無く、温泉は車で5分の施設（公式に施設名の記載が無い）",
+      "場内のシャワー・売店について公式に記載が無い",
+      "薪一束は無料で付くが販売の記載ではないので、「薪を買える」の条件には入れていない"
+    ],
+    "source": [
+      "https://manten.yamanashi.jp/2024/10/01/own-tent/"
+    ]
+  },
+  {
+    "id": "7inchcamp-mitomi-dogbase",
+    "slug": "7inchcamp-mitomi-dogbase",
+    "name": "7inchCAMP ミチノエキミトミDOG BASE",
+    "prefecture": "山梨",
+    "area": "山梨市・三富",
+    "status": "active",
+    "address": "山梨県山梨市三富川浦1822-20",
+    "type": "campground",
+    "lat": 35.859408,
+    "lng": 138.7560125,
+    "priceMin": 4500,
+    "priceMax": 6500,
+    "priceNote": "人数課金＋サイト課金。公式「【利用料金＝宿泊料＋サイト料】となります。」で、宿泊料（大人一名・中学生以上）が平日1,500円／休前日2,000円／大型連休・年末年始2,500円、サイト料金がAサイト4,000円・Bサイト3,000円。1名の最安は平日＋Bサイトで4,500円、最高は大型連休＋Aサイトで6,500円。**支払いは「当日現金のみ」。税込／税別の明記が無い**",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "愛犬と思いっきりキャンプを楽しんで頂けたら嬉しいです。／わんちゃん連れでない方のご利用もお待ちしてます。（https://7inchcamp.com/mitomi-db）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "山梨市三富川浦、道の駅みとみに隣接するドッグランサイト。**「ドッグランサイト専門」としながら公式が「わんちゃん連れでない方のご利用もお待ちしてます」と書いている**ので犬なしでも行ける。平日＋Bサイトなら宿泊料1,500円＋サイト料3,000円で4,500円。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://7inchcamp.com/mitomi-db",
+    "reservationUrl": null,
+    "cautions": [
+      "**支払いは当日現金のみ**",
+      "休前日は宿泊料2,000円、大型連休・年末年始は2,500円。Aサイトはサイト料4,000円で総額6,500円まで上がる",
+      "税込／税別の明記が無い",
+      "消灯は22時",
+      "**犬連れ前提のサイト**なので、犬が苦手な人には向かない",
+      "場内の風呂・シャワー・売店について公式に記載が無い",
+      "近くの温泉について公式に記載が無い"
+    ],
+    "source": [
+      "https://7inchcamp.com/mitomi-db"
+    ],
+    "coordsVerified": false
   }
 ]
