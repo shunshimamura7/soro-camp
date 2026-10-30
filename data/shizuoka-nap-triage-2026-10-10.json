@@ -1342,8 +1342,8 @@
    "latCandidate": "34.8633602",
    "lngCandidate": "139.0880726",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "検索で施設公式・自治体公式が出ず（なっぷ・iko-yo・旅行会社のみ）。なっぷの施設タイプはロッジ・ログハウス・コテージのみで、テントサイトの根拠もない。※調査役は『宿泊系』としたが公式で確認していないので親が公式なしに直した"
   },
   {
    "napId": "13693",
@@ -1353,9 +1353,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13693",
    "latCandidate": "35.2360937",
    "lngCandidate": "138.9257761",
-   "officialUrl": null,
+   "officialUrl": "https://www.tokinosumika.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 tokinosumika.com は実在。「OUTDOOR HILL VILLAGE」の記載があるがテントサイトの有無・料金・1名可否を公式で確認できず（個別ページを取得できなかった＝技術的に読めない型）。"
   },
   {
    "napId": "13736",
@@ -1366,8 +1366,8 @@
    "latCandidate": "34.9598856",
    "lngCandidate": "138.0896911",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式が検索で見つからず（じゃらん・ポータルのみ）。なっぷの施設タイプはコテージのみ。※調査役は『宿泊系』としたが公式未確認なので親が公式なしに直した"
   },
   {
    "napId": "13737",
@@ -1401,9 +1401,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13780",
    "latCandidate": "35.33985550023164",
    "lngCandidate": "138.59194758647476",
-   "officialUrl": null,
+   "officialUrl": "https://fujimilkland.com/stay/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 fujimilkland.com で住所「静岡県富士宮市上井出3690番地」一致、テント泊可（「大自然の中でテントを張って滞在できます」「フリーサイトのため、先着順」）。料金は「バイク・車1台 5,000円/泊～」で『～』付き、1名利用可の明記なし、入場料の有無も不明。1名総額が確定しない。"
   },
   {
    "napId": "13786",
@@ -1414,8 +1414,8 @@
    "latCandidate": "34.6619488",
    "lngCandidate": "138.918642",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "検索はアソビュー・じゃらん・なっぷ・まとめのみで施設公式を発見できず。"
   },
   {
    "napId": "13832",
@@ -1438,8 +1438,8 @@
    "latCandidate": "34.7302694",
    "lngCandidate": "138.228334",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "公式は検索で見つからず。なっぷではトレーラーハウス4棟のみでテントサイトの記載なし。※調査役は『宿泊系』としたが公式未確認なので親が公式なしに直した"
   },
   {
    "napId": "13883",
@@ -1450,8 +1450,8 @@
    "latCandidate": "34.805046",
    "lngCandidate": "138.754932",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "公式・自治体公式は検索で見つからず（なっぷ・hinata・まとめのみ）。"
   },
   {
    "napId": "13884",
@@ -1462,8 +1462,8 @@
    "latCandidate": "34.805504",
    "lngCandidate": "138.754814",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "公式・自治体公式は見つからず。1日1グループ貸切との情報はなっぷ口コミのみ。"
   },
   {
    "napId": "13889",
@@ -2919,18 +2919,18 @@
   }
  ],
  "progress": {
-  "asOf": "2026-10-10",
+  "asOf": "2026-10-30",
   "門の対象": 224,
   "内訳": {
    "追加": 47,
    "閉鎖疑い": 21,
-   "門落ち(公式なし)": 29,
+   "門落ち(公式なし)": 35,
    "門落ち(料金も予約も公式に無し)": 7,
    "宿泊系のため対象外": 5,
    "門落ち(単独利用不可)": 2,
    "門落ち(既存レコードと重複)": 4,
    "門落ち(宿泊不可)": 1,
-   "UNMEASURED": 126
+   "UNMEASURED": 120
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }

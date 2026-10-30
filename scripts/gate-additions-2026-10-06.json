@@ -7372,5 +7372,169 @@
   },
   "napUrl": "https://www.nap-camp.com/shizuoka/11879",
   "napName": "丸火自然公園グリーンキャンプ場"
+ },
+ {
+  "napId": "11632",
+  "name": "クアハウス山小屋",
+  "pref": "神奈川",
+  "muni": "伊勢原市",
+  "verdict": "追加",
+  "reason": "公式 kurhaus-yamagoya.com を親が curl で再取得して照合。住所「〒259-1101 神奈川県伊勢原市日向2184-1」一致。「キャンプ ご利用料金（税込） キャンプサイトにてテントを設営しての宿泊利用の方はこちら。スペースのみの貸し出しとなりますので、機材は持ち込みをお願いいたします。 大人 1名1泊（中学生以上） レギュラーシーズン ￥2,000 ハイシーズン ￥2,200」。既掲載『ふれあいの森日向キャンプ場（日向2190-2）』とは住所・運営が別。",
+  "checkedUrls": [
+   "https://kurhaus-yamagoya.com/",
+   "https://kurhaus-yamagoya.com/camp",
+   "https://kurhaus-yamagoya.com/access",
+   "https://kurhaus-yamagoya.com/bath",
+   "https://kurhaus-yamagoya.com/reserve"
+  ],
+  "officialUrl": "https://kurhaus-yamagoya.com/",
+  "reservationUrl": "https://kurhaus-yamagoya.com/reserve",
+  "address": "神奈川県伊勢原市日向2184-1",
+  "priceMin": 2000,
+  "priceMax": 2200,
+  "priceNote": "人数課金。公式「大人 1名1泊（中学生以上） レギュラーシーズン ￥2,000 ハイシーズン ￥2,200」（税込）。スペースのみの貸し出しで機材は持込。駐車場無料",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://kurhaus-yamagoya.com/bath",
+    "quote": "お風呂の営業日は土・日・祭日・G.W.・お盆・お正月休みです。 大人￥800"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://kurhaus-yamagoya.com/camp",
+    "quote": "売店のご案内 ご利用可能時間 10:00～17:00 販売品目 炭（3キロ）￥1,000 薪（1束）￥900 着火剤 ￥350 お飲み物・調味料・皿・はし・お菓子・おもちゃ等 販売"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://kurhaus-yamagoya.com/camp",
+    "quote": "薪（1束）￥900"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://kurhaus-yamagoya.com/camp",
+    "quote": "ペットの入場、カラオケ、打ち上げ花火はお断りいたします。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.4369397,
+   "lng": 139.2601025,
+   "url": "https://kurhaus-yamagoya.com/access"
+  },
+  "soloNote": "大人 1名1泊（中学生以上） レギュラーシーズン ￥2,000（人数下限の記載なし）",
+  "napUrl": "https://www.nap-camp.com/kanagawa/11632",
+  "napName": "クアハウス山小屋"
+ },
+ {
+  "napId": "11646",
+  "name": "望地弁天キャンプ場",
+  "pref": "神奈川",
+  "muni": "相模原市",
+  "verdict": "追加",
+  "reason": "相模原市公式『望地弁天キャンプ場』を親が curl で再取得して照合。所在地「〒252-0244 中央区田名5835地先」。施設「テントサイト（30張分）」。利用者協力金「利用人数別 1から10人 … 宿泊 1泊2日2,000円・2泊3日3,000円」で1名も同額。",
+  "checkedUrls": [
+   "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html"
+  ],
+  "officialUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html",
+  "reservationUrl": null,
+  "address": "神奈川県相模原市中央区田名5835地先",
+  "priceMin": 2000,
+  "priceMax": 2000,
+  "priceNote": "サイト単位課金（1〜10人で1グループ定額の利用者協力金）。市公式「利用人数別 1から10人 日帰り利用 1,000円 宿泊 1泊2日2,000円・2泊3日3,000円」。予約は電話 042-760-6077（開設期間の9時〜17時）",
+  "features": {
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html",
+    "quote": "ペット類の同伴はできません（盲導犬可）。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.53869156013007,
+   "lng": 139.3383743411739,
+   "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html"
+  },
+  "soloNote": "利用人数別 1から10人 宿泊 1泊2日2,000円（人数下限の記載なし）",
+  "napUrl": "https://www.nap-camp.com/kanagawa/11646",
+  "napName": "望地弁天キャンプ場"
+ },
+ {
+  "napId": "11689",
+  "name": "丸太の森キャンプ場",
+  "pref": "神奈川",
+  "muni": "南足柄市",
+  "verdict": "追加",
+  "reason": "施設公式 maruta-no-mori.com（指定管理者 株式会社アグサ／所管 南足柄市役所 農林振興課）を親が curl で再取得して照合。住所「〒250-0121 神奈川県南足柄市広町1544番地」一致。「お気に入りのキャンプ道具を持ち込んでのキャンプはもちろん」で持込テント可。「（A）入園料 お一人様につき 大人／440円」「ウッドデッキサイト（全16区画） 4,400円／1区画」。1名を断る記載なし（区画＋人数の料金体系）。",
+  "checkedUrls": [
+   "https://maruta-no-mori.com/",
+   "https://maruta-no-mori.com/camp/",
+   "https://maruta-no-mori.com/access/",
+   "https://maruta-no-mori.com/institution/"
+  ],
+  "officialUrl": "https://maruta-no-mori.com/",
+  "reservationUrl": "https://www.nap-camp.com/kanagawa/11689",
+  "address": "神奈川県南足柄市広町1544番地",
+  "priceMin": 4840,
+  "priceMax": 4840,
+  "priceNote": "区画+人数。公式「（A）入園料 お一人様につき 大人／440円」＋「ウッドデッキサイト（全16区画） 4,400円／1区画」＝ソロ1名 4,840円（南足柄市在住・在勤・在学は 390円＋3,520円）。駐車は1区画1台分で追加料金の記載なし。税込/税別の表記なし。ウッドデッキの区画数はページ内で「20区画」「全16区画」と食い違う",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://maruta-no-mori.com/institution/",
+    "quote": "炊事場（水場） トイレシャワー棟"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://maruta-no-mori.com/camp/",
+    "quote": "レンタルテントや炊事用具の貸出、薪や木炭などの販売もあります。"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://maruta-no-mori.com/camp/",
+    "quote": "◇ ペットを連れてのキャンプはできません。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.31003545784533,
+   "lng": 139.0733276161617,
+   "url": "https://maruta-no-mori.com/access/"
+  },
+  "soloNote": "区画単位（4,400円/1区画）＋入園料（お一人様440円）の料金体系で、1名利用を断る記載なし。「1名可」の明文は無い",
+  "napUrl": "https://www.nap-camp.com/kanagawa/11689",
+  "napName": "丸太の森キャンプ場"
+ },
+ {
+  "napId": "14522",
+  "name": "ビオトピア オートキャンプ",
+  "pref": "神奈川",
+  "muni": "大井町",
+  "verdict": "追加",
+  "reason": "公式 biotopia.jp/autocamp/ を親が curl で再取得して原文確認：「ソロキャンプ（平日限定） 11:00 – 翌10:00 4,500円 （税込 / 1サイト）」「お1人様利用でお車1台まで。」「お気に入りのテントやグッズを持ち込んで」。アクセスページの住所 大井町山田300（ビオトピア）で台帳と一致。",
+  "checkedUrls": [
+   "https://www.biotopia.jp/autocamp/",
+   "https://www.biotopia.jp/access/",
+   "https://www.biotopia.jp/"
+  ],
+  "officialUrl": "https://www.biotopia.jp/autocamp/",
+  "reservationUrl": "https://www.biotopia.jp/autocamp/",
+  "address": "神奈川県足柄上郡大井町山田300",
+  "priceMin": 4500,
+  "priceMax": 4500,
+  "priceNote": "サイト単位課金。公式「ソロキャンプ（平日限定） 11:00 – 翌10:00 4,500円 （税込 / 1サイト）」「お1人様利用でお車1台まで。」。平日限定で、平日でもGW・夏休み・イベント期間は閉鎖。土日に1名で泊まる場合は通常のマイステイキャンプ（7,500円/サイト・税込）",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.biotopia.jp/autocamp/",
+    "quote": "シャワー利用（ B!アリーナ ） : 大人・小人500円、未就学児無料。※ アリーナのシャワー利用は、オートキャンプのお客様に限って運用しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.biotopia.jp/autocamp/",
+    "quote": "同伴いただけるペットは、原則犬のみです。リードを外すことができるのはドッグラン内だけです。（トレーラーハウスご利用の方は、ペット不可です。）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "お1人様利用でお車1台まで。サイトはマイステイキャンプの広いサイト（15 × 15m以上）をそのままご利用していただけます。",
+  "parentNote": "shop は根拠が隣接の B!マルシェ（食材販売）で場内売店と言い切れないため外した",
+  "napUrl": "https://www.nap-camp.com/kanagawa/14522",
+  "napName": "ビオトピア オートキャンプ"
  }
 ]

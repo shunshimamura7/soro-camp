@@ -21375,5 +21375,211 @@
       "https://www.nap-camp.com/shizuoka/11879"
     ],
     "coordsVerified": false
+  },
+  {
+    "id": "kurhaus-yamagoya",
+    "slug": "kurhaus-yamagoya",
+    "name": "クアハウス山小屋",
+    "prefecture": "神奈川",
+    "area": "伊勢原",
+    "status": "active",
+    "address": "神奈川県伊勢原市日向2184-1",
+    "type": "campground",
+    "lat": 35.4369397,
+    "lng": 139.2601025,
+    "priceMin": 2000,
+    "priceMax": 2200,
+    "priceNote": "人数課金。公式「大人 1名1泊（中学生以上） レギュラーシーズン ￥2,000 ハイシーズン ￥2,200」（税込）。スペースのみの貸し出しで機材は持込。駐車場無料",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "お風呂の営業日は土・日・祭日・G.W.・お盆・お正月休みです。 大人￥800（https://kurhaus-yamagoya.com/bath）",
+      "firewood": true,
+      "firewoodNote": "薪（1束）￥900（https://kurhaus-yamagoya.com/camp）",
+      "shop": true,
+      "shopNote": "売店のご案内 ご利用可能時間 10:00～17:00 販売品目 炭（3キロ）￥1,000 薪（1束）￥900 着火剤 ￥350 お飲み物・調味料・皿・はし・お菓子・おもちゃ等 販売（https://kurhaus-yamagoya.com/camp）",
+      "pet": false,
+      "petNote": "ペットの入場、カラオケ、打ち上げ花火はお断りいたします。（https://kurhaus-yamagoya.com/camp）",
+      "reservationNote": "公式が案内する予約先: https://kurhaus-yamagoya.com/reserve"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "大山の麓・日向の温浴施設に併設されたキャンプサイト。料金は1名1泊の人数課金（大人2,000円、ハイシーズン2,200円・税込）で、**ソロは1人分だけ払えばいい**。売店で薪・炭が買え、土日祝などは併設の天然水のお風呂（大人800円）に入れる。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://kurhaus-yamagoya.com/",
+    "reservationUrl": "https://kurhaus-yamagoya.com/reserve",
+    "cautions": [
+      "**お風呂は土・日・祭日・GW・お盆・正月休みだけの営業**。平日に泊まると入れない",
+      "**車の乗り入れは不可**。駐車場からサイトまで坂・階段を荷物を運ぶ",
+      "スペースのみの貸し出しで、テントなどの機材は持ち込み",
+      "**ペットの入場は不可**（公式の注意事項）",
+      "11〜3月は平日火曜が定休日"
+    ],
+    "source": [
+      "https://kurhaus-yamagoya.com/",
+      "https://kurhaus-yamagoya.com/reserve"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "mochi-benten-camp",
+    "slug": "mochi-benten-camp",
+    "name": "望地弁天キャンプ場",
+    "prefecture": "神奈川",
+    "area": "相模原市中央区",
+    "status": "active",
+    "address": "神奈川県相模原市中央区田名5835地先",
+    "type": "campground",
+    "lat": 35.53869156013007,
+    "lng": 139.3383743411739,
+    "priceMin": 2000,
+    "priceMax": 2000,
+    "priceNote": "サイト単位課金（1〜10人で1グループ定額の利用者協力金）。市公式「利用人数別 1から10人 日帰り利用 1,000円 宿泊 1泊2日2,000円・2泊3日3,000円」。予約は電話 042-760-6077（開設期間の9時〜17時）",
+    "features": {
+      "reservation": "要",
+      "pet": false,
+      "petNote": "ペット類の同伴はできません（盲導犬可）。（https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "相模川の河原にある相模原市のキャンプ場。料金は「利用者協力金」で、**1〜10人まで同額の1泊2,000円**。ソロだと割高に見えるが、市内でこの値段で泊まれるテントサイトは貴重。予約は電話のみ。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html",
+    "reservationUrl": null,
+    "cautions": [
+      "**宿泊できる日が限られる**。開設は3月〜10月と11月の一部で、春・秋は休日の前日などに限られる（夏季は毎日）。日程は市公式で確認",
+      "**予約は電話のみ**（042-760-6077、開設期間の9時〜17時）",
+      "**直火は禁止**。コンロ等を使う（有償貸出あり）",
+      "**ペット類の同伴は不可**（盲導犬可）",
+      "中学生以下は16歳以上の付き添いが必要。河原なので増水時は注意"
+    ],
+    "source": [
+      "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "maruta-no-mori-camp",
+    "slug": "maruta-no-mori-camp",
+    "name": "丸太の森キャンプ場",
+    "prefecture": "神奈川",
+    "area": "南足柄",
+    "status": "active",
+    "address": "神奈川県南足柄市広町1544番地",
+    "type": "campground",
+    "lat": 35.31003545784533,
+    "lng": 139.0733276161617,
+    "priceMin": 4840,
+    "priceMax": 4840,
+    "priceNote": "区画+人数。公式「（A）入園料 お一人様につき 大人／440円」＋「ウッドデッキサイト（全16区画） 4,400円／1区画」＝ソロ1名 4,840円（南足柄市在住・在勤・在学は 390円＋3,520円）。駐車は1区画1台分で追加料金の記載なし。税込/税別の表記なし。ウッドデッキの区画数はページ内で「20区画」「全16区画」と食い違う",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "炊事場（水場） トイレシャワー棟（https://maruta-no-mori.com/institution/）",
+      "firewood": true,
+      "firewoodNote": "レンタルテントや炊事用具の貸出、薪や木炭などの販売もあります。（https://maruta-no-mori.com/camp/）",
+      "pet": false,
+      "petNote": "◇ ペットを連れてのキャンプはできません。（https://maruta-no-mori.com/camp/）",
+      "reservationNote": "公式が案内する予約先: https://www.nap-camp.com/kanagawa/11689"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "南足柄市の公園「足柄森林公園 丸太の森」内のキャンプ場。ウッドデッキサイト4,400円＋入園料440円で**ソロ1名は4,840円**。持ち込みテントで泊まれ、薪・炭は場内で買える。トイレシャワー棟あり。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://maruta-no-mori.com/",
+    "reservationUrl": "https://www.nap-camp.com/kanagawa/11689",
+    "cautions": [
+      "**料金は区画単位**（4,400円/1区画）＋入園料（1人440円）。1人でも区画料金は同じ",
+      "**ペットを連れてのキャンプは不可**",
+      "**「1名でも可」という明文は公式に無い**（区画単位の料金で、1名を断る記載も無い）",
+      "テントは**ウッドデッキの上に張る**。ペグ・自立式テントの可否は予約前に確認",
+      "駐車は1区画につき車1台分"
+    ],
+    "source": [
+      "https://maruta-no-mori.com/",
+      "https://www.nap-camp.com/kanagawa/11689"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "biotopia-autocamp",
+    "slug": "biotopia-autocamp",
+    "name": "ビオトピア オートキャンプ",
+    "prefecture": "神奈川",
+    "area": "大井町",
+    "status": "active",
+    "address": "神奈川県足柄上郡大井町山田300",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 4500,
+    "priceMax": 4500,
+    "priceNote": "サイト単位課金。公式「ソロキャンプ（平日限定） 11:00 – 翌10:00 4,500円 （税込 / 1サイト）」「お1人様利用でお車1台まで。」。平日限定で、平日でもGW・夏休み・イベント期間は閉鎖。土日に1名で泊まる場合は通常のマイステイキャンプ（7,500円/サイト・税込）",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー利用（ B!アリーナ ） : 大人・小人500円、未就学児無料。※ アリーナのシャワー利用は、オートキャンプのお客様に限って運用しております。（https://www.biotopia.jp/autocamp/）",
+      "pet": true,
+      "petNote": "同伴いただけるペットは、原則犬のみです。リードを外すことができるのはドッグラン内だけです。（トレーラーハウスご利用の方は、ペット不可です。）（https://www.biotopia.jp/autocamp/）",
+      "reservationNote": "公式が案内する予約先: https://www.biotopia.jp/autocamp/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "大井町の複合施設「ビオトピア」のオートキャンプ場。**平日限定のソロキャンプ枠が1サイト4,500円（税込）**で、15×15m以上の広いサイトを1人で使える。犬連れ可、オートキャンプ利用者は隣のアリーナのシャワー（500円）が使える。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.biotopia.jp/autocamp/",
+    "reservationUrl": "https://www.biotopia.jp/autocamp/",
+    "cautions": [
+      "**ソロ料金は平日限定**。平日でもGW・夏休み・イベント期間は閉鎖。土日に1人で泊まると通常の7,500円/サイト",
+      "**予約は公式のWEB受付のみ**（ビオトピアマルシェの会員登録が必要）",
+      "ペットは**原則犬のみ**。リードを外せるのはドッグラン内だけ",
+      "シャワーは別棟（B!アリーナ）で有料",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.biotopia.jp/autocamp/",
+      "https://www.biotopia.jp/autocamp/"
+    ]
   }
 ]

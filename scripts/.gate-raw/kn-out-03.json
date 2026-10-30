@@ -1,0 +1,163 @@
+[
+ {
+  "napId": "11672",
+  "name": "世附キャンプセンター",
+  "pref": "神奈川",
+  "muni": "山北町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式が見つからず、山北町公式「キャンプ場の紹介」(0000000232.html)の一覧にも無い。",
+  "checkedUrls": [
+   "https://www.nap-camp.com/kanagawa/11672",
+   "https://www.town.yamakita.kanagawa.jp/0000000232.html"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "11673",
+  "name": "世附川ロッジ",
+  "pref": "神奈川",
+  "muni": "山北町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "山北町公式の一覧に「バンガロー（6～8畳×10棟）／ロッジ…／大人1,500円／泊」とあり建物宿泊のみ、テントサイトの記載なし。",
+  "checkedUrls": [
+   "https://www.town.yamakita.kanagawa.jp/0000000232.html",
+   "https://www.nap-camp.com/kanagawa/11673"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "11674",
+  "name": "笹子沢バンガロー",
+  "pref": "神奈川",
+  "muni": "山北町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "山北町公式の一覧に「バンガロー15棟…素泊まり1泊 大人1,600円」とあり、テントサイトの記載なし。",
+  "checkedUrls": [
+   "https://www.town.yamakita.kanagawa.jp/0000000232.html",
+   "https://www.nap-camp.com/kanagawa/11674"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "11678",
+  "name": "バウアーハウスジャパン",
+  "pref": "神奈川",
+  "muni": "山北町",
+  "verdict": "UNMEASURED",
+  "reason": "山北町公式の一覧に「1テントサイト：1泊 8,400円（料金は税込）／4月～11月（要予約）／美化協力金200円」。施設公式 bowerhouse-japan.com が403で住所・1名可否・営業状況を照合できない（技術的に読めない型）。1名なら8,600円と読めるが確定しない。",
+  "checkedUrls": [
+   "https://www.town.yamakita.kanagawa.jp/0000000232.html",
+   "http://www.bowerhouse-japan.com/",
+   "https://www.nap-camp.com/kanagawa/11678"
+  ],
+  "officialUrl": "http://www.bowerhouse-japan.com/"
+ },
+ {
+  "napId": "11680",
+  "name": "奥箒沢山の家",
+  "pref": "神奈川",
+  "muni": "山北町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式も町公式も見つからない（山北町公式の一覧に無い）。",
+  "checkedUrls": [
+   "https://www.nap-camp.com/kanagawa/11680",
+   "https://www.town.yamakita.kanagawa.jp/0000000232.html"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "11688",
+  "name": "泉の森ふれあいキャンプ場",
+  "pref": "神奈川",
+  "muni": "大和市",
+  "verdict": "門落ち(宿泊不可)",
+  "reason": "大和市公式に「当キャンプ場はデイキャンプなどを行う施設であり、宿泊を伴う活動はできません。」",
+  "checkedUrls": [
+   "https://www.city.yamato.lg.jp/gyosei/soshik/6/sisetsu/23971.html"
+  ],
+  "officialUrl": "https://www.city.yamato.lg.jp/gyosei/soshik/6/sisetsu/23971.html"
+ },
+ {
+  "napId": "11689",
+  "name": "丸太の森キャンプ場",
+  "pref": "神奈川",
+  "muni": "南足柄市",
+  "verdict": "追加",
+  "reason": "施設公式 maruta-no-mori.com（指定管理者 株式会社アグサ／所管 南足柄市役所 農林振興課）を親が curl で再取得して照合。住所「〒250-0121 神奈川県南足柄市広町1544番地」一致。「お気に入りのキャンプ道具を持ち込んでのキャンプはもちろん」で持込テント可。「（A）入園料 お一人様につき 大人／440円」「ウッドデッキサイト（全16区画） 4,400円／1区画」。1名を断る記載なし（区画＋人数の料金体系）。",
+  "checkedUrls": [
+   "https://maruta-no-mori.com/",
+   "https://maruta-no-mori.com/camp/",
+   "https://maruta-no-mori.com/access/",
+   "https://maruta-no-mori.com/institution/"
+  ],
+  "officialUrl": "https://maruta-no-mori.com/",
+  "reservationUrl": "https://www.nap-camp.com/kanagawa/11689",
+  "address": "神奈川県南足柄市広町1544番地",
+  "priceMin": 4840,
+  "priceMax": 4840,
+  "priceNote": "区画+人数。公式「（A）入園料 お一人様につき 大人／440円」＋「ウッドデッキサイト（全16区画） 4,400円／1区画」＝ソロ1名 4,840円（南足柄市在住・在勤・在学は 390円＋3,520円）。駐車は1区画1台分で追加料金の記載なし。税込/税別の表記なし。ウッドデッキの区画数はページ内で「20区画」「全16区画」と食い違う",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://maruta-no-mori.com/institution/",
+    "quote": "炊事場（水場） トイレシャワー棟"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://maruta-no-mori.com/camp/",
+    "quote": "レンタルテントや炊事用具の貸出、薪や木炭などの販売もあります。"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://maruta-no-mori.com/camp/",
+    "quote": "◇ ペットを連れてのキャンプはできません。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.31003545784533,
+   "lng": 139.0733276161617,
+   "url": "https://maruta-no-mori.com/access/"
+  },
+  "soloNote": "区画単位（4,400円/1区画）＋入園料（お一人様440円）の料金体系で、1名利用を断る記載なし。「1名可」の明文は無い"
+ },
+ {
+  "napId": "11690",
+  "name": "夕日の滝バンガロー",
+  "pref": "神奈川",
+  "muni": "南足柄市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式も市公式も見つからない。同じ夕日の滝の sotosotodays CAMPGROUNDS は別施設。",
+  "checkedUrls": [
+   "https://www.nap-camp.com/kanagawa/11690",
+   "https://www.ezbbq.com/country/facility/"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "13537",
+  "name": "此の間沢渓流園",
+  "pref": "神奈川",
+  "muni": "相模原市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式も相模原市公式も見つからない。既掲載「このまさわキャンプ場（緑区青根2745）」と同一の可能性があるが番地が違う（2510）ので重複とは断定しない。",
+  "checkedUrls": [
+   "https://www.nap-camp.com/kanagawa/13537"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "13580",
+  "name": "sotosotodays CAMPGROUNDS",
+  "pref": "神奈川",
+  "muni": "南足柄市",
+  "verdict": "門落ち(単独利用不可)",
+  "reason": "施設公式 ezbbq.com/country/（住所 南足柄市矢倉沢滝下2230 一致）の料金ページに「原則ご家族でのご利用のみとさせて頂きます。…ご友人同士などでのご利用をご遠慮させていただいております。」。ファミリー専用。",
+  "checkedUrls": [
+   "https://www.ezbbq.com/country/",
+   "https://www.ezbbq.com/country/price/",
+   "https://www.ezbbq.com/country/access/",
+   "https://www.ezbbq.com/country/reserve/"
+  ],
+  "officialUrl": "https://www.ezbbq.com/country/"
+ }
+]

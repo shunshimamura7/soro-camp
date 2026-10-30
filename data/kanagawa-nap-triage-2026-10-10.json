@@ -42,8 +42,8 @@
    "latCandidate": "35.4373909",
    "lngCandidate": "139.2691695",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "なっぷに公式URLの記載なし。検索でも施設公式・伊勢原市公式が見つからず民間ポータルのみ。"
   },
   {
    "napId": "11631",
@@ -54,8 +54,8 @@
    "latCandidate": "35.435791",
    "lngCandidate": "139.2683029",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・伊勢原市公式が見つからない（なっぷと民間ポータルのみ）。"
   },
   {
    "napId": "11632",
@@ -65,9 +65,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11632",
    "latCandidate": "35.43851890418155",
    "lngCandidate": "139.26049327850342",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kurhaus-yamagoya.com/",
+   "verdict": "追加",
+   "reason": "公式 kurhaus-yamagoya.com を親が curl で再取得して照合。住所「〒259-1101 神奈川県伊勢原市日向2184-1」一致。「キャンプ ご利用料金（税込） キャンプサイトにてテントを設営しての宿泊利用の方はこちら。スペースのみの貸し出しとなりますので、機材は持ち込みをお願いいたします。 大人 1名1泊（中学生以上） レギュラーシーズン ￥2,000 ハイシーズン ￥2,200」。既掲載『ふれあいの森日向キャンプ場（日向2190-2）』とは住所・運営が別。"
   },
   {
    "napId": "11634",
@@ -77,9 +77,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11634",
    "latCandidate": "35.2847741",
    "lngCandidate": "139.6280157",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.yokosuka.kanagawa.jp/2645/sisetu/fc00000099.html",
+   "verdict": "閉鎖疑い",
+   "reason": "横須賀市公式『【廃止】田浦青少年自然の家』に「令和5年3月31日をもって廃止いたしました」。"
   },
   {
    "napId": "11635",
@@ -89,9 +89,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11635",
    "latCandidate": "35.3288122",
    "lngCandidate": "139.6351045",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/midori-koen/koen/koen/daihyoteki/nojima.html",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "横浜市公式から誘導される運営サイトの予約は『バーベキュー・キャンプ（日帰り）サイト』のみで宿泊の記載なし。"
   },
   {
    "napId": "11636",
@@ -101,9 +101,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11636",
    "latCandidate": "35.561732",
    "lngCandidate": "139.489925",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.kodomonokuni.org/sports/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式 camp_family.html に『4人用貸テント1張 6,500円/1泊』『夏のシーズンのみ、貸し出し備品付き』。テントは貸出のみで持ち込み不可。"
   },
   {
    "napId": "11637",
@@ -137,9 +137,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11641",
    "latCandidate": "35.4408575",
    "lngCandidate": "139.2121857",
-   "officialUrl": null,
+   "officialUrl": "https://www.moroto.co.jp/bosco/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 moroto.co.jp/bosco/（住所 秦野市丹沢寺山75）は営業中。料金一覧は『オートキャンプサイト 1台用(最大6名) 6,000円〜12,000円』と読めたが Shift_JIS の文字化けで読み取りが不確実、1名利用可の明記・設備の引用が取れず（技術的に読めない型）。"
   },
   {
    "napId": "11642",
@@ -150,8 +150,8 @@
    "latCandidate": "35.60267412835735",
    "lngCandidate": "139.1943821310997",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "既掲載『みの石滝キャンプ場（相模原市緑区若柳1628）』と同住所（台帳は旧町名）。"
   },
   {
    "napId": "11646",
@@ -161,9 +161,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11646",
    "latCandidate": "35.5384219",
    "lngCandidate": "139.3392699",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html",
+   "verdict": "追加",
+   "reason": "相模原市公式『望地弁天キャンプ場』を親が curl で再取得して照合。所在地「〒252-0244 中央区田名5835地先」。施設「テントサイト（30張分）」。利用者協力金「利用人数別 1から10人 … 宿泊 1泊2日2,000円・2泊3日3,000円」で1名も同額。"
   },
   {
    "napId": "11648",
@@ -174,8 +174,8 @@
    "latCandidate": "35.528568",
    "lngCandidate": "139.107963",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "既掲載「神之川キャンプ・マス釣り場」(相模原市緑区青根3685)と住所が同一。"
   },
   {
    "napId": "11649",
@@ -186,8 +186,8 @@
    "latCandidate": "35.54811667238115",
    "lngCandidate": "139.1381569647274",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "既掲載「青根キャンプ場」(相模原市緑区青根807)と住所が同一。"
   },
   {
    "napId": "11650",
@@ -198,8 +198,8 @@
    "latCandidate": "35.64310566328629",
    "lngCandidate": "139.13966022750856",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式が見つからず。出たのは iko-yo・hinata・navitime・nap など民間ポータルのみ。"
   },
   {
    "napId": "11653",
@@ -211,7 +211,7 @@
    "lngCandidate": "139.1478431224823",
    "officialUrl": null,
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "蛭ヶ岳山頂の山小屋（山小屋のテント場の型）。nap は料金非表示。施設公式は特定できず、県ページ pref.kanagawa.jp/cnt/f480118/p684803.html は未照合。本人判断。"
   },
   {
    "napId": "11655",
@@ -222,8 +222,8 @@
    "latCandidate": "35.5404919",
    "lngCandidate": "139.112711",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式が出ない（mapfan・rurubu・hinata など民間のみ）。※検索エンジンの取りこぼしの余地あり"
   },
   {
    "napId": "11656",
@@ -234,8 +234,8 @@
    "latCandidate": "35.5368013",
    "lngCandidate": "139.1237808",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "検索結果は jalan など民間ポータルのみ。※検索エンジンの取りこぼしの余地あり"
   },
   {
    "napId": "11657",
@@ -246,8 +246,8 @@
    "latCandidate": "35.5528823",
    "lngCandidate": "139.1511184",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "公式が出ない（民間ポータルと個人ブログのみ）。※検索エンジンの取りこぼしの余地あり"
   },
   {
    "napId": "11660",
@@ -270,8 +270,8 @@
    "latCandidate": "35.560911",
    "lngCandidate": "139.168865",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "公式が出ない（asoview・navitime・hinata・mapple など民間のみ）。※検索エンジンの取りこぼしの余地あり"
   },
   {
    "napId": "11665",
@@ -282,8 +282,8 @@
    "latCandidate": "35.2208491",
    "lngCandidate": "139.07554",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "検索結果は nap のみ。テント泊の可否も確認できず。"
   },
   {
    "napId": "11666",
@@ -294,8 +294,8 @@
    "latCandidate": "35.2368116",
    "lngCandidate": "139.0739153",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "プレスリリース(digitalpr.jp/r/46857)では日帰りBBQ施設（全10卓）。宿泊の記載も施設公式も見つからず。"
   },
   {
    "napId": "11668",
@@ -330,8 +330,8 @@
    "latCandidate": "35.4110607",
    "lngCandidate": "139.0087945",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式が見つからず、山北町公式「キャンプ場の紹介」(0000000232.html)の一覧にも無い。"
   },
   {
    "napId": "11673",
@@ -342,8 +342,8 @@
    "latCandidate": "35.4106968",
    "lngCandidate": "139.0189791",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "宿泊系のため対象外",
+   "reason": "山北町公式の一覧に「バンガロー（6～8畳×10棟）／ロッジ…／大人1,500円／泊」とあり建物宿泊のみ、テントサイトの記載なし。"
   },
   {
    "napId": "11674",
@@ -354,8 +354,8 @@
    "latCandidate": "35.4369409",
    "lngCandidate": "139.0440002",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "宿泊系のため対象外",
+   "reason": "山北町公式の一覧に「バンガロー15棟…素泊まり1泊 大人1,600円」とあり、テントサイトの記載なし。"
   },
   {
    "napId": "11678",
@@ -365,9 +365,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11678",
    "latCandidate": "35.477880413848375",
    "lngCandidate": "139.0667505625656",
-   "officialUrl": null,
+   "officialUrl": "http://www.bowerhouse-japan.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "山北町公式の一覧に「1テントサイト：1泊 8,400円（料金は税込）／4月～11月（要予約）／美化協力金200円」。施設公式 bowerhouse-japan.com が403で住所・1名可否・営業状況を照合できない（技術的に読めない型）。1名なら8,600円と読めるが確定しない。"
   },
   {
    "napId": "11680",
@@ -378,8 +378,8 @@
    "latCandidate": "35.4706198",
    "lngCandidate": "139.0622881",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式も町公式も見つからない（山北町公式の一覧に無い）。"
   },
   {
    "napId": "11682",
@@ -425,9 +425,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11688",
    "latCandidate": "35.4776145",
    "lngCandidate": "139.4410181",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.yamato.lg.jp/gyosei/soshik/6/sisetsu/23971.html",
+   "verdict": "門落ち(宿泊不可)",
+   "reason": "大和市公式に「当キャンプ場はデイキャンプなどを行う施設であり、宿泊を伴う活動はできません。」"
   },
   {
    "napId": "11689",
@@ -437,9 +437,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/11689",
    "latCandidate": "35.30987651694785",
    "lngCandidate": "139.07597380006942",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://maruta-no-mori.com/",
+   "verdict": "追加",
+   "reason": "施設公式 maruta-no-mori.com（指定管理者 株式会社アグサ／所管 南足柄市役所 農林振興課）を親が curl で再取得して照合。住所「〒250-0121 神奈川県南足柄市広町1544番地」一致。「お気に入りのキャンプ道具を持ち込んでのキャンプはもちろん」で持込テント可。「（A）入園料 お一人様につき 大人／440円」「ウッドデッキサイト（全16区画） 4,400円／1区画」。1名を断る記載なし（区画＋人数の料金体系）。"
   },
   {
    "napId": "11690",
@@ -450,8 +450,8 @@
    "latCandidate": "35.311728",
    "lngCandidate": "139.025829",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式も市公式も見つからない。同じ夕日の滝の sotosotodays CAMPGROUNDS は別施設。"
   },
   {
    "napId": "13537",
@@ -462,8 +462,8 @@
    "latCandidate": "35.5404167",
    "lngCandidate": "139.1242276",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式も相模原市公式も見つからない。既掲載「このまさわキャンプ場（緑区青根2745）」と同一の可能性があるが番地が違う（2510）ので重複とは断定しない。"
   },
   {
    "napId": "13580",
@@ -473,9 +473,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/13580",
    "latCandidate": "35.31188943605194",
    "lngCandidate": "139.02698707475793",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.ezbbq.com/country/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "施設公式 ezbbq.com/country/（住所 南足柄市矢倉沢滝下2230 一致）の料金ページに「原則ご家族でのご利用のみとさせて頂きます。…ご友人同士などでのご利用をご遠慮させていただいております。」。ファミリー専用。"
   },
   {
    "napId": "13655",
@@ -485,9 +485,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/13655",
    "latCandidate": "35.26024215532978",
    "lngCandidate": "139.1220617890358",
-   "officialUrl": null,
+   "officialUrl": "https://www.ikoi-odawara.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "小田原市公式(city.odawara.kanagawa.jp/public-i/e_f/wood/ikoinomori.html)で住所=小田原市久野4294-1、キャンプはRECAMP(TEL 0465-24-3785)運営と確認。施設公式 ikoi-odawara.com にもCAMPあり。ただし料金・予約ページはJS描画/404で金額を読めず（技術的に読めない型）。料金・単独可否・持込テント可否が未確定。"
   },
   {
    "napId": "13735",
@@ -498,8 +498,8 @@
    "latCandidate": "35.61221",
    "lngCandidate": "139.1567115",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "出たのは宿泊予約(じゃらん)・ウォーカープラス・asoview・hinata等の民間ポータルのみ。"
   },
   {
    "napId": "13890",
@@ -522,8 +522,8 @@
    "latCandidate": "35.429169",
    "lngCandidate": "139.2952501",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設名・住所(西富岡1399)で検索しても施設公式・伊勢原市公式のキャンプ場ページが出ず。"
   },
   {
    "napId": "14007",
@@ -535,7 +535,7 @@
    "lngCandidate": "139.611372",
    "officialUrl": null,
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式候補 soleil-hill.jp が接続不可/403で開けず（技術的に読めない型）。公式での名称・住所・料金・持込テント可否が未照合。"
   },
   {
    "napId": "14142",
@@ -545,9 +545,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/14142",
    "latCandidate": "35.41211617600684",
    "lngCandidate": "139.1340217590332",
-   "officialUrl": null,
+   "officialUrl": "https://houkaen.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "松田町公式(town.matsuda.kanagawa.jp/site/kankou-sub/yadoriki-bbq.html)で住所 松田町寄4380-1・冬季休業12～3月・HP houkaen.jp を確認（実在・住所一致）。施設公式 houkaen.jp が全URLで403のため料金・ソロ可否を読めない（技術的に読めない型）。"
   },
   {
    "napId": "14180",
@@ -557,9 +557,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/14180",
    "latCandidate": "35.344189",
    "lngCandidate": "139.583247",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kamigo-morinoie.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式 kamigo-morinoie.com/camp/ のキャンプは手ぶらセット付きデッキサイトのみ。原文「テント・タープの持ち込みはご遠慮頂いております。」で持ち込みテント不可。"
   },
   {
    "napId": "14259",
@@ -582,8 +582,8 @@
    "latCandidate": null,
    "lngCandidate": null,
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "住所(牧野4611-1)が『里楽巣FUJINO』と同一で旧称/別名の可能性。施設公式・自治体公式は見つからず。"
   },
   {
    "napId": "14383",
@@ -594,8 +594,8 @@
    "latCandidate": "35.58633324771646",
    "lngCandidate": "139.15157829339293",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "民間メディアではグランピング施設と報道。施設公式ページは開けず未確認。仮に公式が出ても宿泊系の見込み。"
   },
   {
    "napId": "14508",
@@ -605,9 +605,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/14508",
    "latCandidate": "35.3407445",
    "lngCandidate": "139.068317",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://campiece.com/area/minamiashigara/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 campiece.com/area/minamiashigara/ で住所 南足柄市内山2586 一致・営業中。FAQ「外部サイト「なっぷ」からオンライン予約をお願いします。」で予約はなっぷ任せ、ソロ1名の宿泊料金の記載なし（貸切料金表のみ）。なっぷ誘導型（継続メモ§6-2の方針待ち）。"
   },
   {
    "napId": "14522",
@@ -617,9 +617,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/14522",
    "latCandidate": "35.3308202943862",
    "lngCandidate": "139.1625115159169",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.biotopia.jp/autocamp/",
+   "verdict": "追加",
+   "reason": "公式 biotopia.jp/autocamp/ を親が curl で再取得して原文確認：「ソロキャンプ（平日限定） 11:00 – 翌10:00 4,500円 （税込 / 1サイト）」「お1人様利用でお車1台まで。」「お気に入りのテントやグッズを持ち込んで」。アクセスページの住所 大井町山田300（ビオトピア）で台帳と一致。"
   },
   {
    "napId": "14608",
@@ -935,11 +935,18 @@
   }
  ],
  "progress": {
-  "asOf": "2026-10-10",
+  "asOf": "2026-10-30",
   "門の対象": 62,
   "内訳": {
-   "閉鎖疑い": 14,
-   "UNMEASURED": 62
+   "閉鎖疑い": 15,
+   "門落ち(公式なし)": 17,
+   "追加": 4,
+   "門落ち(宿泊不可)": 2,
+   "宿泊系のため対象外": 4,
+   "UNMEASURED": 29,
+   "門落ち(既存レコードと重複)": 3,
+   "門落ち(単独利用不可)": 1,
+   "門落ち(料金も予約も公式に無し)": 1
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }
