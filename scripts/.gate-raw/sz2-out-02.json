@@ -1,0 +1,64 @@
+[
+ {
+  "napId": "13889",
+  "name": "炭焼の杜 明ケ島キャンプ場",
+  "pref": "静岡",
+  "muni": "掛川市",
+  "verdict": "追加",
+  "reason": "公式 bt-r.jp/smc/ を親が curl で再取得して照合。住所「〒436-0337 静岡県掛川市炭焼33-2」一致。「②ステージ付き区画サイト利用、 大人１名（ソロキャンプ）の場合 5,000円＋500円＝5,500円」。平日は「ステージ付区画サイト(ペット可・ペット不可)… 5,000円 －1,000円値引き ＝ 4,000円」。",
+  "checkedUrls": [
+   "http://www.bt-r.jp/smc/"
+  ],
+  "officialUrl": "http://www.bt-r.jp/smc/",
+  "reservationUrl": "http://camprsv.com/13889/rsv_list/",
+  "address": "静岡県掛川市炭焼33-2",
+  "priceMin": 4500,
+  "priceMax": 5500,
+  "priceNote": "区画+人数。公式「大人１名（ソロキャンプ）の場合 5,000円＋500円＝5,500円」（サイト使用料5,000円＋環境維持費500円/人）。月〜金は「サイト使用料を割引」で 4,000円＋500円＝4,500円（4/27〜5/5・8/10〜8/17・繁忙期は割引なし）。税表記なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.bt-r.jp/smc/",
+    "quote": "シャワー使用料………………1回200円／人"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "http://www.bt-r.jp/smc/",
+    "quote": "ドッグランを含む「ペット可キャンプエリア」"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.9017041,
+   "lng": 138.0114231,
+   "url": "http://www.bt-r.jp/smc/"
+  },
+  "soloNote": "大人１名（ソロキャンプ）の場合 5,000円＋500円＝5,500円"
+ },
+ {
+  "napId": "13967",
+  "name": "グリーンヴィレッジ川根",
+  "pref": "静岡",
+  "muni": "島田市",
+  "verdict": "追加",
+  "reason": "公式 ne.jp/asahi/greenvillage/kawane/ を親が curl で再取得して照合。住所「静岡県島田市川根町身成4856」一致。キャンプページに「ボッチキャンプ 1泊1区画（4m×8m）3,000円 ※AC電源利用は追加料金500円」（定員1名）。",
+  "checkedUrls": [
+   "http://www.ne.jp/asahi/greenvillage/kawane/",
+   "http://www.ne.jp/asahi/greenvillage/kawane/camp/index.html"
+  ],
+  "officialUrl": "http://www.ne.jp/asahi/greenvillage/kawane/",
+  "reservationUrl": "http://www.ne.jp/asahi/greenvillage/kawane/camp/index.html",
+  "address": "静岡県島田市川根町身成4856",
+  "priceMin": 3000,
+  "priceMax": 3500,
+  "priceNote": "サイト単位課金（1名用区画）。公式「ボッチキャンプ 1泊1区画（4m×8m）3,000円 ※AC電源利用は追加料金500円」、定員1名。電源を使うと3,500円。税表記なし。温水シャワー5分200円・指定ゴミ袋300円は別",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.ne.jp/asahi/greenvillage/kawane/camp/index.html",
+    "quote": "温水シャワー（5分200円）は石鹸、シャンプー類は備え付けてありませんのでご持参ください。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "ボッチキャンプ 1泊1区画（4m×8m）3,000円 ※AC電源利用は追加料金500円 定員1名"
+ }
+]

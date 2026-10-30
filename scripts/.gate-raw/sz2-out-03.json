@@ -1,0 +1,12 @@
+[
+ {
+  "napId": "14181",
+  "name": "NELO gotemba",
+  "pref": "静岡",
+  "muni": "小山町",
+  "verdict": "門落ち(既存レコードと重複)",
+  "reason": "既掲載「NELO Gotemba（小山町新柴字道端672-1）」と住所一致。",
+  "checkedUrls": [],
+  "officialUrl": null
+ }
+]

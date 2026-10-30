@@ -21538,7 +21538,7 @@
     "prefecture": "神奈川",
     "area": "大井町",
     "status": "active",
-    "address": "神奈川県足柄上郡大井町山田300",
+    "address": "神奈川県足柄上郡大井町山田885",
     "type": "campground",
     "lat": 0,
     "lng": 0,
@@ -21580,6 +21580,106 @@
     "source": [
       "https://www.biotopia.jp/autocamp/",
       "https://www.biotopia.jp/autocamp/"
+    ]
+  },
+  {
+    "id": "sumiyaki-no-mori-akegashima",
+    "slug": "sumiyaki-no-mori-akegashima",
+    "name": "炭焼の杜 明ケ島キャンプ場",
+    "prefecture": "静岡",
+    "area": "掛川",
+    "status": "active",
+    "address": "静岡県掛川市炭焼33-2",
+    "type": "campground",
+    "lat": 34.9017041,
+    "lng": 138.0114231,
+    "priceMin": 4500,
+    "priceMax": 5500,
+    "priceNote": "区画+人数。公式「大人１名（ソロキャンプ）の場合 5,000円＋500円＝5,500円」（サイト使用料5,000円＋環境維持費500円/人）。月〜金は「サイト使用料を割引」で 4,000円＋500円＝4,500円（4/27〜5/5・8/10〜8/17・繁忙期は割引なし）。税表記なし",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー使用料………………1回200円／人（http://www.bt-r.jp/smc/）",
+      "pet": true,
+      "petNote": "ドッグランを含む「ペット可キャンプエリア」（http://www.bt-r.jp/smc/）",
+      "reservationNote": "公式が案内する予約先: http://camprsv.com/13889/rsv_list/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "掛川市北部の山あい「炭焼の杜」のキャンプ場。ステージ付き区画サイトで、**ソロは公式に「大人１名（ソロキャンプ）の場合 5,500円」と明記**。平日はサイト料が1,000円引きで4,500円。ペット可エリアとドッグランがある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://www.bt-r.jp/smc/",
+    "reservationUrl": "http://camprsv.com/13889/rsv_list/",
+    "cautions": [
+      "**料金は区画＋人数**（サイト使用料5,000円＋環境維持費500円/人）。平日割引は GW・お盆・繁忙期は対象外",
+      "**森町側からのルートは道幅が非常に狭い**と公式が注意。新東名「森・掛川IC」から約30分の推奨ルートで",
+      "シャワーは1回200円（現地払い・お釣りなし）",
+      "ペットはペット可エリアのみ",
+      "地図のピンは公式ページの埋め込み地図から取った"
+    ],
+    "source": [
+      "http://www.bt-r.jp/smc/",
+      "http://camprsv.com/13889/rsv_list/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "green-village-kawane",
+    "slug": "green-village-kawane",
+    "name": "グリーンヴィレッジ川根",
+    "prefecture": "静岡",
+    "area": "川根",
+    "status": "active",
+    "address": "静岡県島田市川根町身成4856",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3000,
+    "priceMax": 3500,
+    "priceNote": "サイト単位課金（1名用区画）。公式「ボッチキャンプ 1泊1区画（4m×8m）3,000円 ※AC電源利用は追加料金500円」、定員1名。電源を使うと3,500円。税表記なし。温水シャワー5分200円・指定ゴミ袋300円は別",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "温水シャワー（5分200円）は石鹸、シャンプー類は備え付けてありませんのでご持参ください。（http://www.ne.jp/asahi/greenvillage/kawane/camp/index.html）",
+      "reservationNote": "公式が案内する予約先: http://www.ne.jp/asahi/greenvillage/kawane/camp/index.html"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "島田市川根町の山あいのキャンプ場。**1名用の「ボッチキャンプ」区画が1泊3,000円**（4m×8m・定員1名、電源ありは3,500円）。温水シャワーあり。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://www.ne.jp/asahi/greenvillage/kawane/",
+    "reservationUrl": "http://www.ne.jp/asahi/greenvillage/kawane/camp/index.html",
+    "cautions": [
+      "ボッチキャンプは**1区画1名まで**",
+      "温水シャワーは5分200円。石鹸・シャンプーは持参",
+      "ゴミを置いていく場合は指定ゴミ袋（300円）を購入",
+      "花火はキャンプファイヤーエリアのみ",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "http://www.ne.jp/asahi/greenvillage/kawane/",
+      "http://www.ne.jp/asahi/greenvillage/kawane/camp/index.html"
     ]
   }
 ]

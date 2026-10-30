@@ -1,0 +1,27 @@
+[
+ {
+  "napId": "16737",
+  "name": "あつぎ飯山キャンプ場",
+  "pref": "神奈川",
+  "muni": "厚木市",
+  "verdict": "UNMEASURED",
+  "reason": "施設公式 atsugi-iiyama-campsite.jp は実在（「ソロキャンプでもお楽しみいただけます」）だが Studio 製の JS 描画で住所・料金・予約が読めない（技術的に読めない型）。実ブラウザでの確認が必要。",
+  "checkedUrls": [
+   "https://atsugi-iiyama-campsite.jp/",
+   "https://hitonomoricorp.jp/4542/"
+  ],
+  "officialUrl": "https://atsugi-iiyama-campsite.jp/"
+ },
+ {
+  "napId": "16784",
+  "name": "DANOISO",
+  "pref": "神奈川",
+  "muni": "大磯町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "なっぷ以外に施設公式・自治体公式が出ない。",
+  "checkedUrls": [
+   "https://www.nap-camp.com/kanagawa/16784"
+  ],
+  "officialUrl": null
+ }
+]

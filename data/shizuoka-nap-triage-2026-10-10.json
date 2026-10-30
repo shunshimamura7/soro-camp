@@ -1473,9 +1473,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13889",
    "latCandidate": "34.90157724132331",
    "lngCandidate": "138.01128588616848",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.bt-r.jp/smc/",
+   "verdict": "追加",
+   "reason": "公式 bt-r.jp/smc/ を親が curl で再取得して照合。住所「〒436-0337 静岡県掛川市炭焼33-2」一致。「②ステージ付き区画サイト利用、 大人１名（ソロキャンプ）の場合 5,000円＋500円＝5,500円」。平日は「ステージ付区画サイト(ペット可・ペット不可)… 5,000円 －1,000円値引き ＝ 4,000円」。"
   },
   {
    "napId": "13897",
@@ -1509,9 +1509,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13967",
    "latCandidate": "34.936314",
    "lngCandidate": "138.089469",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.ne.jp/asahi/greenvillage/kawane/",
+   "verdict": "追加",
+   "reason": "公式 ne.jp/asahi/greenvillage/kawane/ を親が curl で再取得して照合。住所「静岡県島田市川根町身成4856」一致。キャンプページに「ボッチキャンプ 1泊1区画（4m×8m）3,000円 ※AC電源利用は追加料金500円」（定員1名）。"
   },
   {
    "napId": "13969",
@@ -1642,8 +1642,8 @@
    "latCandidate": "35.31945963270086",
    "lngCandidate": "138.9818918513123",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "既掲載「NELO Gotemba（小山町新柴字道端672-1）」と住所一致。"
   },
   {
    "napId": "14199",
@@ -2922,15 +2922,15 @@
   "asOf": "2026-10-30",
   "門の対象": 224,
   "内訳": {
-   "追加": 47,
+   "追加": 49,
    "閉鎖疑い": 21,
    "門落ち(公式なし)": 35,
    "門落ち(料金も予約も公式に無し)": 7,
    "宿泊系のため対象外": 5,
    "門落ち(単独利用不可)": 2,
-   "門落ち(既存レコードと重複)": 4,
+   "門落ち(既存レコードと重複)": 5,
    "門落ち(宿泊不可)": 1,
-   "UNMEASURED": 120
+   "UNMEASURED": 117
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }

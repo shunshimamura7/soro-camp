@@ -1,0 +1,76 @@
+[
+ {
+  "napId": "16411",
+  "name": "宮ヶ瀬ヴィレッジ【Miyagase Village】",
+  "pref": "神奈川",
+  "muni": "愛川町",
+  "verdict": "門落ち(既存レコードと重複)",
+  "reason": "既掲載「宮ヶ瀬ヴィレッジキャンプ場（愛川町半原2574）」と住所一致。",
+  "checkedUrls": [
+   "https://www.nap-camp.com/kanagawa/16411"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "16294",
+  "name": "ラビスタ横須賀観音崎テラス",
+  "pref": "神奈川",
+  "muni": "横須賀市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式はホテル（dormy-hotels.com）。持ち込みテント泊の記載なし。",
+  "checkedUrls": [
+   "https://dormy-hotels.com/resort/hotels/la_kannonzaki/"
+  ],
+  "officialUrl": "https://dormy-hotels.com/resort/hotels/la_kannonzaki/"
+ },
+ {
+  "napId": "16212",
+  "name": "本牧市民プール BBQPIT横浜＆CAMP",
+  "pref": "神奈川",
+  "muni": "横浜市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式・自治体公式が見つからず。なっぷでは日帰り・デイキャンプ中心。",
+  "checkedUrls": [
+   "https://www.nap-camp.com/kanagawa/16212"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "16551",
+  "name": "オートキャンプ場KINOBA",
+  "pref": "神奈川",
+  "muni": "山北町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式・自治体公式が出ず。※検索エンジンの取りこぼしの余地あり",
+  "checkedUrls": [
+   "https://www.nap-camp.com/kanagawa/16551"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "16238",
+  "name": "Lotus Camp Village",
+  "pref": "神奈川",
+  "muni": "大磯町",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "公式 lotus-camp.com で住所 大磯町寺坂200-1 一致、「ソロキャンプサイト 約80㎡ / 定員1名」あり。料金・予約はなっぷのみ＝なっぷ誘導型（§6-2 の方針次第で候補に戻る）。",
+  "checkedUrls": [
+   "http://lotus-camp.com/",
+   "https://www.nap-camp.com/kanagawa/16238"
+  ],
+  "officialUrl": "http://lotus-camp.com/"
+ },
+ {
+  "napId": "16405",
+  "name": "MAMURO CAMP BASE",
+  "pref": "神奈川",
+  "muni": "清川村",
+  "verdict": "UNMEASURED",
+  "reason": "公式 mamuro-campbase.com で住所 清川村煤ヶ谷2134-5 一致。/price/ に「ソロエリア 5,000〜6,000円」「※曜日、季節で異なります。詳細は「なっぷ」「楽天トラベルキャンプ」予約サイトをご参照ください」。課金方式・税込別が不明で、予約は予約サイト任せ。",
+  "checkedUrls": [
+   "https://mamuro-campbase.com/",
+   "https://mamuro-campbase.com/price/"
+  ],
+  "officialUrl": "https://mamuro-campbase.com/"
+ }
+]

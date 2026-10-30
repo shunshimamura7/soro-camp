@@ -701,9 +701,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/15088",
    "latCandidate": "35.41551009594425",
    "lngCandidate": "139.18973644232787",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://yamamo-field.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 yamamo-field.com（秦野市の施設案内からリンク）で住所 秦野市菩提2046番地の5 一致、フリーエリアサイトは「ソロ~デュオでご利用頂ける、直火が出来るサイト」。ただし宿泊料金の記載が見つからず、予約はなっぷ予約システム。料金表が画像/PDFにある可能性（未確認）＝なっぷ誘導型。"
   },
   {
    "napId": "15102",
@@ -785,9 +785,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/16098",
    "latCandidate": "35.4394892",
    "lngCandidate": "139.0459056",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.springs-village.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式 springs-village.com でグランピング（ドーム型・コットンベルテント型）・ヴィラ・ホテル棟のみ。持ち込みテントのサイトなし。"
   },
   {
    "napId": "16099",
@@ -834,8 +834,8 @@
    "latCandidate": "35.4133996",
    "lngCandidate": "139.6631457",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式が見つからず。なっぷでは日帰り・デイキャンプ中心。"
   },
   {
    "napId": "16238",
@@ -845,9 +845,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/16238",
    "latCandidate": "35.32258618385656",
    "lngCandidate": "139.2900252968506",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://lotus-camp.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 lotus-camp.com で住所 大磯町寺坂200-1 一致、「ソロキャンプサイト 約80㎡ / 定員1名」あり。料金・予約はなっぷのみ＝なっぷ誘導型（§6-2 の方針次第で候補に戻る）。"
   },
   {
    "napId": "16294",
@@ -857,9 +857,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/16294",
    "latCandidate": "35.2611765",
    "lngCandidate": "139.7378169",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://dormy-hotels.com/resort/hotels/la_kannonzaki/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式はホテル（dormy-hotels.com）。持ち込みテント泊の記載なし。"
   },
   {
    "napId": "16405",
@@ -869,9 +869,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/16405",
    "latCandidate": "35.48271912032145",
    "lngCandidate": "139.27827511248628",
-   "officialUrl": null,
+   "officialUrl": "https://mamuro-campbase.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 mamuro-campbase.com で住所 清川村煤ヶ谷2134-5 一致。/price/ に「ソロエリア 5,000〜6,000円」「※曜日、季節で異なります。詳細は「なっぷ」「楽天トラベルキャンプ」予約サイトをご参照ください」。課金方式・税込別が不明で、予約は予約サイト任せ。"
   },
   {
    "napId": "16406",
@@ -894,8 +894,8 @@
    "latCandidate": "35.5347693",
    "lngCandidate": "139.2705842",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "既掲載「宮ヶ瀬ヴィレッジキャンプ場（愛川町半原2574）」と住所一致。"
   },
   {
    "napId": "16551",
@@ -906,8 +906,8 @@
    "latCandidate": "35.45777519326369",
    "lngCandidate": "139.0617519428313",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・自治体公式が出ず。※検索エンジンの取りこぼしの余地あり"
   },
   {
    "napId": "16737",
@@ -917,9 +917,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/16737",
    "latCandidate": "35.4792755",
    "lngCandidate": "139.3059497",
-   "officialUrl": null,
+   "officialUrl": "https://atsugi-iiyama-campsite.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "施設公式 atsugi-iiyama-campsite.jp は実在（「ソロキャンプでもお楽しみいただけます」）だが Studio 製の JS 描画で住所・料金・予約が読めない（技術的に読めない型）。実ブラウザでの確認が必要。"
   },
   {
    "napId": "16784",
@@ -930,8 +930,8 @@
    "latCandidate": "35.3159397",
    "lngCandidate": "139.2909231",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "なっぷ以外に施設公式・自治体公式が出ない。"
   }
  ],
  "progress": {
@@ -939,14 +939,14 @@
   "門の対象": 62,
   "内訳": {
    "閉鎖疑い": 15,
-   "門落ち(公式なし)": 17,
+   "門落ち(公式なし)": 20,
    "追加": 4,
    "門落ち(宿泊不可)": 2,
-   "宿泊系のため対象外": 4,
-   "UNMEASURED": 29,
-   "門落ち(既存レコードと重複)": 3,
+   "宿泊系のため対象外": 6,
+   "UNMEASURED": 21,
+   "門落ち(既存レコードと重複)": 4,
    "門落ち(単独利用不可)": 1,
-   "門落ち(料金も予約も公式に無し)": 1
+   "門落ち(料金も予約も公式に無し)": 3
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }

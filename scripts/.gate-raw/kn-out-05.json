@@ -1,0 +1,30 @@
+[
+ {
+  "napId": "16098",
+  "name": "SPRINGS VILLAGE 足柄・丹沢温泉リゾート＆グランピング",
+  "pref": "神奈川",
+  "muni": "山北町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式 springs-village.com でグランピング（ドーム型・コットンベルテント型）・ヴィラ・ホテル棟のみ。持ち込みテントのサイトなし。",
+  "checkedUrls": [
+   "https://www.springs-village.com/tanzawa/glamping/",
+   "https://www.springs-village.com/"
+  ],
+  "officialUrl": "https://www.springs-village.com/"
+ },
+ {
+  "napId": "15088",
+  "name": "秦野市表丹沢野外活動センター",
+  "pref": "神奈川",
+  "muni": "秦野市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "公式 yamamo-field.com（秦野市の施設案内からリンク）で住所 秦野市菩提2046番地の5 一致、フリーエリアサイトは「ソロ~デュオでご利用頂ける、直火が出来るサイト」。ただし宿泊料金の記載が見つからず、予約はなっぷ予約システム。料金表が画像/PDFにある可能性（未確認）＝なっぷ誘導型。",
+  "checkedUrls": [
+   "https://yamamo-field.com/using/",
+   "https://yamamo-field.com/facility/",
+   "https://yamamo-field.com/faq/",
+   "https://www.city.hadano.kanagawa.jp/shisei/shisetsuannai/9642.html"
+  ],
+  "officialUrl": "https://yamamo-field.com/"
+ }
+]
