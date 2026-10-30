@@ -1,0 +1,340 @@
+{
+  "checks": [
+    {
+      "name": "w390 バーの高さ ≤ 56px",
+      "pass": true,
+      "detail": {
+        "barHeight": 56
+      }
+    },
+    {
+      "name": "w390 scrollY=844 バー領域にカードが出ている画素 = 0",
+      "pass": true,
+      "detail": {
+        "barTop": 0,
+        "visibleOverlapPx": 0,
+        "visibleCardPx": 0,
+        "sampledPx": 21840,
+        "nullPx": 56,
+        "geomOverlapPx": 20048,
+        "cardsUnderBar": 1,
+        "cards": 346
+      }
+    },
+    {
+      "name": "w390 scrollY=1688 バー領域にカードが出ている画素 = 0",
+      "pass": true,
+      "detail": {
+        "barTop": 0,
+        "visibleOverlapPx": 0,
+        "visibleCardPx": 0,
+        "sampledPx": 21840,
+        "nullPx": 56,
+        "geomOverlapPx": 20048,
+        "cardsUnderBar": 1,
+        "cards": 346
+      }
+    },
+    {
+      "name": "w390 scrollY=2532 バー領域にカードが出ている画素 = 0",
+      "pass": true,
+      "detail": {
+        "barTop": 0,
+        "visibleOverlapPx": 0,
+        "visibleCardPx": 0,
+        "sampledPx": 21840,
+        "nullPx": 56,
+        "geomOverlapPx": 20048,
+        "cardsUnderBar": 1,
+        "cards": 346
+      }
+    },
+    {
+      "name": "w390 バー背景のアルファ = 1",
+      "pass": true,
+      "detail": {
+        "bg": "rgb(14, 13, 11)",
+        "opacity": "1",
+        "backdrop": "none"
+      }
+    },
+    {
+      "name": "w390 バー件数のコントラスト ≥ 4.5",
+      "pass": true,
+      "detail": {
+        "text": "346件",
+        "label": "⚙絞り込みおすすめ順価格安い順346件",
+        "disabled": false,
+        "selected": false,
+        "ratio": 16.96,
+        "fg": "rgb(243, 239, 233)",
+        "bg": "rgb(14, 13, 11)"
+      }
+    },
+    {
+      "name": "w390 シート背景のアルファ = 1",
+      "pass": true,
+      "detail": {
+        "bg": "rgb(14, 13, 11)",
+        "opacity": "1",
+        "backdrop": "none"
+      }
+    },
+    {
+      "name": "w390 シート件数のコントラスト最小値 ≥ 4.5（押せる 17個）",
+      "pass": true,
+      "detail": {
+        "min": 5.7,
+        "worst": {
+          "text": "346件",
+          "label": "全部 346件",
+          "disabled": false,
+          "selected": true,
+          "ratio": 5.7,
+          "fg": "rgb(14, 13, 11)",
+          "bg": "rgb(232, 97, 31)"
+        }
+      }
+    },
+    {
+      "name": "w390 0件の条件は押せない",
+      "pass": true,
+      "detail": {
+        "disabled": []
+      }
+    },
+    {
+      "name": "w390 シート内のボタンはすべて高さ 44px 以上",
+      "pass": true,
+      "detail": {
+        "small": []
+      }
+    },
+    {
+      "name": "w390 条件グリッドは2列",
+      "pass": true,
+      "detail": {
+        "cols": 2
+      }
+    },
+    {
+      "name": "w390 グループ見出し 設備／買える／その他",
+      "pass": true,
+      "detail": {
+        "headings": [
+          "設備",
+          "買える",
+          "その他"
+        ]
+      }
+    },
+    {
+      "name": "w390 対照：シートなしなら同じスワイプでページが動く",
+      "pass": true,
+      "detail": {
+        "before": 600,
+        "after": 923
+      }
+    },
+    {
+      "name": "w390 シート表示中は背面がスクロールしない（先頭カードの画面上の位置が不変）",
+      "pass": true,
+      "detail": {
+        "cardTopBefore": -335,
+        "cardTopAfter": -335,
+        "sheetInnerScrolled": 162,
+        "lock": [
+          "hidden",
+          "hidden",
+          "fixed"
+        ]
+      }
+    },
+    {
+      "name": "w390 閉じると開く前の位置に戻る",
+      "pass": true,
+      "detail": {
+        "cardTopBefore": -335,
+        "cardTopAfterClose": -335
+      }
+    },
+    {
+      "name": "w390 「◯件を表示」= バーの件数 = 一覧のカード数",
+      "pass": true,
+      "detail": {
+        "applyText": "89件を表示",
+        "barCount": "89件",
+        "cardCount": 89
+      }
+    },
+    {
+      "name": "w390 閉じたらロックが外れる",
+      "pass": true,
+      "detail": {
+        "inline": [
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "name": "w390 背景タップで閉じる",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "w390 × で閉じる",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "w390 Esc で閉じる",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "w390 野営地タブにこだわり検索・予算が出ない",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "w1280 バーの高さ ≤ 56px",
+      "pass": true,
+      "detail": {
+        "barHeight": 56
+      }
+    },
+    {
+      "name": "w1280 scrollY=900 バー領域にカードが出ている画素 = 0",
+      "pass": true,
+      "detail": {
+        "barTop": 0,
+        "visibleOverlapPx": 0,
+        "visibleCardPx": 0,
+        "sampledPx": 71680,
+        "nullPx": 56,
+        "geomOverlapPx": 0,
+        "cardsUnderBar": 0,
+        "cards": 346
+      }
+    },
+    {
+      "name": "w1280 scrollY=1800 バー領域にカードが出ている画素 = 0",
+      "pass": true,
+      "detail": {
+        "barTop": 0,
+        "visibleOverlapPx": 0,
+        "visibleCardPx": 0,
+        "sampledPx": 71680,
+        "nullPx": 56,
+        "geomOverlapPx": 44799,
+        "cardsUnderBar": 3,
+        "cards": 346
+      }
+    },
+    {
+      "name": "w1280 scrollY=2700 バー領域にカードが出ている画素 = 0",
+      "pass": true,
+      "detail": {
+        "barTop": 0,
+        "visibleOverlapPx": 0,
+        "visibleCardPx": 0,
+        "sampledPx": 71680,
+        "nullPx": 56,
+        "geomOverlapPx": 44799,
+        "cardsUnderBar": 3,
+        "cards": 346
+      }
+    },
+    {
+      "name": "w1280 バー背景のアルファ = 1",
+      "pass": true,
+      "detail": {
+        "bg": "rgb(14, 13, 11)",
+        "opacity": "1",
+        "backdrop": "none"
+      }
+    },
+    {
+      "name": "w1280 バー件数のコントラスト ≥ 4.5",
+      "pass": true,
+      "detail": {
+        "text": "346件",
+        "label": "⚙絞り込みおすすめ順価格安い順346件",
+        "disabled": false,
+        "selected": false,
+        "ratio": 16.96,
+        "fg": "rgb(243, 239, 233)",
+        "bg": "rgb(14, 13, 11)"
+      }
+    },
+    {
+      "name": "w1280 パネル背景のアルファ = 1",
+      "pass": true,
+      "detail": {
+        "bg": "rgb(14, 13, 11)",
+        "opacity": "1",
+        "backdrop": "none"
+      }
+    },
+    {
+      "name": "w1280 パネルは sticky でない",
+      "pass": true,
+      "detail": {
+        "position": "static"
+      }
+    },
+    {
+      "name": "w1280 パネル件数のコントラスト最小値 ≥ 4.5（押せる 17個）",
+      "pass": true,
+      "detail": {
+        "min": 5.7,
+        "worst": {
+          "text": "346件",
+          "label": "全部 346件",
+          "disabled": false,
+          "selected": true,
+          "ratio": 5.7,
+          "fg": "rgb(14, 13, 11)",
+          "bg": "rgb(232, 97, 31)"
+        }
+      }
+    },
+    {
+      "name": "w1280 0件の条件は押せない／選択中は0件でも押せる",
+      "pass": true,
+      "detail": {
+        "zeroDisabled": [
+          "wifi",
+          "noReservation",
+          "nearbyOnsen"
+        ],
+        "pressed": [
+          "bath(1件)",
+          "shop(1件)",
+          "pet(1件)",
+          "fishing(1件)"
+        ]
+      }
+    },
+    {
+      "name": "w1280 選択中ピルを含む件数のコントラスト最小値 ≥ 4.5",
+      "pass": true,
+      "detail": {
+        "min": 5.7,
+        "disabledRatio": [
+          5.13,
+          5.13,
+          5.13
+        ]
+      }
+    },
+    {
+      "name": "w1280 野営地タブにこだわり検索・予算が出ない",
+      "pass": true,
+      "detail": {}
+    }
+  ],
+  "fail": []
+}

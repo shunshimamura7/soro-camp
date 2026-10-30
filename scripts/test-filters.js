@@ -277,6 +277,39 @@ if (unbacked.length > 0) {
   );
 }
 
+
+// ── 貼りつきバー・シート・パネルの背景は完全不透明（2026-10-30）─────────────
+// 以前はこだわりパネル全体が sticky で `bg-white/95 backdrop-blur` だったため、
+// 下のカードの文字が透けて読めなかった。背景の定数に透過が入ったら落とす。
+{
+  const bgNames = ["BAR_BG", "SHEET_BG", "PANEL_BG"];
+  const TRANSLUCENT = /\/\d|\/\[|backdrop-|opacity-|rgba|hsla|transparent|#[0-9a-fA-F]{8}\b|#[0-9a-fA-F]{4}\b/;
+  for (const name of bgNames) {
+    const m = barSrc.match(new RegExp(`const ${name}\\s*=\\s*"([^"]*)"`));
+    if (!m) {
+      errors.push(`FilterBar.tsx に ${name} が見つからない（背景は定数で持つこと。名前を変えたらこのテストも直すこと）`);
+      continue;
+    }
+    if (!/^bg-\[#[0-9a-fA-F]{6}\]$/.test(m[1].trim()) || TRANSLUCENT.test(m[1])) {
+      errors.push(`${name} に透過指定がある（"${m[1]}"）。バー・シートの背景は bg-[#rrggbb] の不透明1色だけにすること`);
+    }
+  }
+  // バー要素そのものに背景以外の透過クラスを直書きしていないか
+  const barTag = barSrc.match(/data-testid="filter-bar"[\s\S]*?className=\{`([^`]*)`\}/);
+  if (!barTag) {
+    errors.push('FilterBar.tsx の data-testid="filter-bar" が見つからない');
+  } else if (/backdrop-|opacity-|bg-[^\s]*\/\d|bg-white|rgba/.test(barTag[1])) {
+    errors.push(`貼りつきバーの className に透過指定がある（${barTag[1]}）`);
+  } else if (!/\$\{BAR_BG\}/.test(barTag[1])) {
+    errors.push("貼りつきバーの背景が BAR_BG を使っていない");
+  }
+  // sticky はバー1本だけ（パネル全体を sticky に戻さない）
+  const stickyClass = (barSrc.match(/className=[^\n]*\bsticky\b/g) || []).length;
+  if (stickyClass !== 1) {
+    errors.push(`FilterBar.tsx で sticky を使っている要素が ${stickyClass}個ある。貼りつくのは細いバー1本だけ`);
+  }
+}
+
 // ── 出力 ──────────────────────────────────────────────────────────────────────
 if (errors.length > 0) {
   console.error("test-filters: 失敗");
