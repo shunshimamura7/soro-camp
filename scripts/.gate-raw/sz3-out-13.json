@@ -1,0 +1,203 @@
+[
+ {
+  "napId": "14928",
+  "name": "音助の里",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：施設公式 otosukeno-sato.jp はあるが内容が取得できず、料金・1名利用条件を公式で確認できない（料金の載る観光サイトは不採用）。本人判断へ。",
+  "checkedUrls": [
+   "https://www.otosukeno-sato.jp/"
+  ],
+  "officialUrl": "https://www.otosukeno-sato.jp/"
+ },
+ {
+  "napId": "16209",
+  "name": "ログハウス・SAKURA FAMILIAR",
+  "pref": "静岡",
+  "muni": "河津町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "Cue（Manus）調査：別表記・運営元・自治体情報を含め施設公式・自治体公式が見つからず、第三者掲載のみ。",
+  "checkedUrls": [],
+  "officialUrl": null
+ },
+ {
+  "napId": "16243",
+  "name": "ヒュッゲ湖西市民キャンプ場",
+  "pref": "静岡",
+  "muni": "湖西市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "Cue（Manus）調査：湖西市公式広報で施設名と吉美2571を確認、運営者公式 hygge-kosai.com もあるが、持ち込みテント泊・1名利用・1泊料金の公式記載なし。",
+  "checkedUrls": [
+   "https://hygge-kosai.com/news/welcome/"
+  ],
+  "officialUrl": "https://hygge-kosai.com/news/welcome/"
+ },
+ {
+  "napId": "16261",
+  "name": "COW RESORT IDEBOK",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：運営元公式で「キャンピングカー専用 宿泊スペース」。持ち込みテントサイトではない。",
+  "checkedUrls": [
+   "https://www.ideboku.co.jp/cowresort-idebok/camping-car/index.html"
+  ],
+  "officialUrl": "https://www.ideboku.co.jp/cowresort-idebok/camping-car/index.html"
+ },
+ {
+  "napId": "16305",
+  "name": "限界集落　天空の館",
+  "pref": "静岡",
+  "muni": "磐田市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：施設公式で住所（磐田市万瀬493-2）とキャンプ・BBQ案内は確認できるが、持ち込みテント泊・1名利用・料金の記載なし。本人判断へ。",
+  "checkedUrls": [
+   "https://www.manze-tenkuu.com/outside-space"
+  ],
+  "officialUrl": "https://www.manze-tenkuu.com/outside-space"
+ },
+ {
+  "napId": "16350",
+  "name": "檜の森キャンプ場",
+  "pref": "静岡",
+  "muni": "小山町",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：住所は小山町観光協会ページのみ、管理人のInstagramに予約案内。持ち込みテント泊・1名利用・料金を公式で確認できない。本人判断へ。",
+  "checkedUrls": [
+   "https://www.instagram.com/ono.yuuji/"
+  ],
+  "officialUrl": "https://www.instagram.com/ono.yuuji/"
+ },
+ {
+  "napId": "16358",
+  "name": "天空テラス",
+  "pref": "静岡",
+  "muni": "沼津市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：公式 tenkuu-terrace.jp で住所（沼津市戸田3878-72）一致。ドームテント客室のグランピングで持ち込みテントサイトなし。",
+  "checkedUrls": [
+   "https://www.tenkuu-terrace.jp/"
+  ],
+  "officialUrl": "https://www.tenkuu-terrace.jp/"
+ },
+ {
+  "napId": "13737",
+  "name": "貸別荘　レイクタウン",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：公式 u-resort.com は貸別荘の建物宿泊のみ（公式住所は伊東市吉田836-93で台帳と番地違い）。",
+  "checkedUrls": [
+   "http://www.u-resort.com/lake.htm"
+  ],
+  "officialUrl": "http://www.u-resort.com/lake.htm"
+ },
+ {
+  "napId": "13948",
+  "name": "マヒナ･グランピング･スパ・ヴィレッジ",
+  "pref": "静岡",
+  "muni": "東伊豆町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：公式Instagramで名称と住所（東伊豆町大川1096-1）を確認。常設型グランピングで持ち込みテント泊の案内なし。",
+  "checkedUrls": [
+   "https://www.instagram.com/mahina_glamping_spa_village/"
+  ],
+  "officialUrl": "https://www.instagram.com/mahina_glamping_spa_village/"
+ },
+ {
+  "napId": "14021",
+  "name": "いにしえの杜　鉄橋の杜キャンプ場",
+  "pref": "静岡",
+  "muni": "川根本町",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が挙げ、親が公式 inishiemori.com を curl で取り直して確認。「住所：静岡県榛原郡川根本町崎平566 大井川第二橋梁横」。「■Sサイト (ソロキャンプ用） 定員２名様まで … 基本料金２５００円＋１名様につき３００円＋駐車料金１台５００円 ※バイクは１台につき２００円 上記料金は、１泊の料金です。 徒歩、自転車でお越しの場合は、駐車料金はございません。」「電話：080-5199-3804（電話予約のみ）」。地図は公式の埋め込み（キャンプ場名のピン）。",
+  "checkedUrls": [
+   "https://inishiemori.com/tetsudou-mori-camp/"
+  ],
+  "officialUrl": "https://inishiemori.com/tetsudou-mori-camp/",
+  "reservationUrl": null,
+  "address": "静岡県榛原郡川根本町崎平566",
+  "priceMin": 2800,
+  "priceMax": 3300,
+  "priceNote": "区画+人数+駐車。公式「■Sサイト (ソロキャンプ用） … 基本料金２５００円＋１名様につき３００円＋駐車料金１台５００円 ※バイクは１台につき２００円」「徒歩、自転車でお越しの場合は、駐車料金はございません。」→徒歩・自転車2,800円、バイク3,000円、車3,300円。税込/税別の表記なし",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://inishiemori.com/tetsudou-mori-camp/",
+    "quote": "販売 売り切れ等の場合がございますので、ご予約いただいた方が確実です。 炭 薪"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://inishiemori.com/tetsudou-mori-camp/",
+    "quote": "ペットをお連れの方のご利用は、種類、大きさにかかわらずお断りします。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.090106,
+   "lng": 138.120995,
+   "url": "https://inishiemori.com/tetsudou-mori-camp/"
+  },
+  "soloNote": "■Sサイト (ソロキャンプ用） 定員２名様まで"
+ },
+ {
+  "napId": "14085",
+  "name": "GRAND CEREUS VILLAGE",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "Cue（Manus）調査：公式Facebook・Instagramで住所（宇佐美3506-2）は確認できるが、持ち込みテント泊・料金・公式予約方法の記載なし。",
+  "checkedUrls": [
+   "https://www.facebook.com/GrandCereusVillage/"
+  ],
+  "officialUrl": "https://www.facebook.com/GrandCereusVillage/"
+ },
+ {
+  "napId": "14122",
+  "name": "時之栖 もりのくに",
+  "pref": "静岡",
+  "muni": "川根本町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：公式 morinokuni.jp の宿泊案内は一戸建てコテージのみ（「記載されている料金はコテージ1棟当たり」）。持ち込みテントサイトなし。",
+  "checkedUrls": [
+   "https://morinokuni.jp/"
+  ],
+  "officialUrl": "https://morinokuni.jp/"
+ },
+ {
+  "napId": "14138",
+  "name": "ゆとりろグランピングガーデン熱海伊豆山",
+  "pref": "静岡",
+  "muni": "熱海市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：「ソラトニワ熱海伊豆山」に改称。公式はホテル客室・プライベートヴィラのみで持ち込みテントサイトなし。",
+  "checkedUrls": [
+   "https://soratoniwa-atami.com/"
+  ],
+  "officialUrl": "https://soratoniwa-atami.com/"
+ },
+ {
+  "napId": "14204",
+  "name": "ぼっちの森",
+  "pref": "静岡",
+  "muni": "南伊豆町",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式 mukku4443.wixsite.com に「平日ソロキャン新価格 ￥2,500～」「ソロキャンパー向けキャンプ場」とあるが、1名1泊の総額が確定せず、公式ページ間で番地（1232-155／1232-65）も食い違う。本人判断へ。",
+  "checkedUrls": [
+   "https://mukku4443.wixsite.com/mysite"
+  ],
+  "officialUrl": "https://mukku4443.wixsite.com/mysite"
+ },
+ {
+  "napId": "14255",
+  "name": "丸鉄園キャンプ場",
+  "pref": "静岡",
+  "muni": "東伊豆町",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "Cue（Manus）調査：公式Facebookで「伊豆熱川 丸鉄園」と住所（奈良本1401）を確認。キャンプの料金・予約方法・1名利用の根拠が公式に無い。",
+  "checkedUrls": [
+   "https://www.facebook.com/marutetuen/about"
+  ],
+  "officialUrl": "https://www.facebook.com/marutetuen/about"
+ }
+]

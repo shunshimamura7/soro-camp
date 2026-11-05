@@ -22536,5 +22536,54 @@
     "source": [
       "https://www.ninomaru-village.jp/キャンプ/"
     ]
+  },
+  {
+    "id": "tetsukyo-no-mori-camp",
+    "slug": "tetsukyo-no-mori-camp",
+    "name": "いにしえの杜　鉄橋の杜キャンプ場",
+    "prefecture": "静岡",
+    "area": "川根本町・崎平",
+    "status": "active",
+    "address": "静岡県榛原郡川根本町崎平566",
+    "type": "campground",
+    "lat": 35.090106,
+    "lng": 138.120995,
+    "priceMin": 2800,
+    "priceMax": 3300,
+    "priceNote": "区画+人数+駐車。公式「■Sサイト (ソロキャンプ用） … 基本料金２５００円＋１名様につき３００円＋駐車料金１台５００円 ※バイクは１台につき２００円」「徒歩、自転車でお越しの場合は、駐車料金はございません。」→徒歩・自転車2,800円、バイク3,000円、車3,300円。税込/税別の表記なし",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "販売 売り切れ等の場合がございますので、ご予約いただいた方が確実です。 炭 薪（https://inishiemori.com/tetsudou-mori-camp/）",
+      "pet": false,
+      "petNote": "ペットをお連れの方のご利用は、種類、大きさにかかわらずお断りします。（https://inishiemori.com/tetsudou-mori-camp/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "大井川第二橋梁の真横、川根本町崎平の小さなキャンプ場。**ソロキャンプ用のSサイト**があり、基本2,500円＋1人300円＋駐車500円で**車のソロは1泊3,300円**（徒歩・自転車なら2,800円）。目の前を鉄橋が渡る。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://inishiemori.com/tetsudou-mori-camp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**予約は電話のみ**（9〜19時）",
+      "**ペット不可**（車内に残すのも不可）",
+      "大井川鐵道は台風被害で崎平まで運行していない（公式のお知らせ）。車で行く前提",
+      "場内に各サイト1台分しか駐車スペースがない",
+      "シャワー・風呂の記載なし"
+    ],
+    "source": [
+      "https://inishiemori.com/tetsudou-mori-camp/"
+    ],
+    "coordsVerified": false
   }
 ]

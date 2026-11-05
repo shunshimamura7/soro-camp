@@ -8216,5 +8216,42 @@
   "soloNote": "6サイト（１サイト定員：1～４名）",
   "napUrl": "https://www.nap-camp.com/shizuoka/16542",
   "napName": "にのまるキャンプ"
+ },
+ {
+  "napId": "14021",
+  "name": "いにしえの杜　鉄橋の杜キャンプ場",
+  "pref": "静岡",
+  "muni": "川根本町",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が挙げ、親が公式 inishiemori.com を curl で取り直して確認。「住所：静岡県榛原郡川根本町崎平566 大井川第二橋梁横」。「■Sサイト (ソロキャンプ用） 定員２名様まで … 基本料金２５００円＋１名様につき３００円＋駐車料金１台５００円 ※バイクは１台につき２００円 上記料金は、１泊の料金です。 徒歩、自転車でお越しの場合は、駐車料金はございません。」「電話：080-5199-3804（電話予約のみ）」。地図は公式の埋め込み（キャンプ場名のピン）。",
+  "checkedUrls": [
+   "https://inishiemori.com/tetsudou-mori-camp/"
+  ],
+  "officialUrl": "https://inishiemori.com/tetsudou-mori-camp/",
+  "reservationUrl": null,
+  "address": "静岡県榛原郡川根本町崎平566",
+  "priceMin": 2800,
+  "priceMax": 3300,
+  "priceNote": "区画+人数+駐車。公式「■Sサイト (ソロキャンプ用） … 基本料金２５００円＋１名様につき３００円＋駐車料金１台５００円 ※バイクは１台につき２００円」「徒歩、自転車でお越しの場合は、駐車料金はございません。」→徒歩・自転車2,800円、バイク3,000円、車3,300円。税込/税別の表記なし",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://inishiemori.com/tetsudou-mori-camp/",
+    "quote": "販売 売り切れ等の場合がございますので、ご予約いただいた方が確実です。 炭 薪"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://inishiemori.com/tetsudou-mori-camp/",
+    "quote": "ペットをお連れの方のご利用は、種類、大きさにかかわらずお断りします。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.090106,
+   "lng": 138.120995,
+   "url": "https://inishiemori.com/tetsudou-mori-camp/"
+  },
+  "soloNote": "■Sサイト (ソロキャンプ用） 定員２名様まで",
+  "napUrl": "https://www.nap-camp.com/shizuoka/14021",
+  "napName": "いにしえの杜　鉄橋の杜キャンプ場"
  }
 ]
