@@ -22,7 +22,8 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.join(__dirname, "..");
-const campSrc = fs.readFileSync(path.join(root, "lib", "camp.ts"), "utf8");
+// 2026-11-05：判定はデータを読まない lib/camp-core.ts に移した（画面側の JS にデータを入れないため）
+const campSrc = fs.readFileSync(path.join(root, "lib", "camp-core.ts"), "utf8");
 const barSrc = fs.readFileSync(path.join(root, "components", "FilterBar.tsx"), "utf8");
 
 const errors = [];
@@ -89,7 +90,8 @@ if (reservationLine && !/===\s*"不要"/.test(reservationLine)) {
 // ── 4. 件数表示が、実際に出てくる母集団と同じところから数えているか ──────────
 // 種別タブの件数を `activeCampgrounds`（全159件）から数えると、既定表示の128件とずれる。
 // 野営地タブが「11」と出しながら一覧には2件しか出ない、という状態がこれで起きていた。
-const pageSrc = fs.readFileSync(path.join(root, "app", "page.tsx"), "utf8");
+// 2026-11-05：トップの画面部分は components/HomeClient.tsx に移した（app/page.tsx はデータを軽くして渡すだけ）
+const pageSrc = fs.readFileSync(path.join(root, "components", "HomeClient.tsx"), "utf8");
 
 if (!/countByType\(baseCamps\)/.test(pageSrc)) {
   errors.push(
@@ -162,6 +164,27 @@ for (const parts of viewFiles) {
   const src = fs.readFileSync(path.join(root, rel), "utf8");
   if (/hasEvidenceUrl\(/.test(src)) {
     errors.push(`${rel} が hasEvidenceUrl() を直接呼んでいる。表示側は hasEvidence() を使うこと`);
+  }
+}
+
+// ── 2026-11-05 審査で見つかった事故を戻さない ────────────────────────────────
+// 1. layout で canonical を全ページ共通（トップ）にしない。詳細ページが検索でトップの重複扱いになる
+const layoutSrc = fs.readFileSync(path.join(root, "app", "layout.tsx"), "utf8");
+if (/canonical\s*:\s*SITE_URL/.test(layoutSrc)) {
+  errors.push("app/layout.tsx が canonical: SITE_URL を持っている。全ページの canonical がトップを指してしまう。各ページで自分のURLを指定すること");
+}
+// 2. データの強調記法 ** を画面にそのまま出さない。soloComment・cautions は RichText を通す
+for (const rel of [path.join("app", "camp", "[slug]", "page.tsx"), path.join("components", "CampCard.tsx")]) {
+  const src = fs.readFileSync(path.join(root, rel), "utf8");
+  if (/>\s*\{camp\.soloComment\}\s*</.test(src) || />\s*\{c\}\s*<\/span>/.test(src)) {
+    errors.push(`${rel} が soloComment / cautions を RichText を通さずに出している（「**」が画面に残る）`);
+  }
+}
+// 3. 画面側（"use client"）からデータ全体を読まない。トップの JS に 1MB 超のデータが入る
+for (const rel of [path.join("components", "HomeClient.tsx"), path.join("components", "FilterBar.tsx"), path.join("components", "CampCard.tsx"), path.join("components", "MapView.tsx"), path.join("components", "MapModal.tsx")]) {
+  const src = fs.readFileSync(path.join(root, rel), "utf8");
+  if (/from\s+["']@\/lib\/camp["']/.test(src) || /campgrounds\.json/.test(src)) {
+    errors.push(`${rel} が lib/camp（データ入り）を読んでいる。画面側は lib/camp-core を使うこと`);
   }
 }
 

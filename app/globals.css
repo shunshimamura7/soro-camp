@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
+  --background: #f7f3ec;
+  --foreground: #1c1814;
 }
 
 html {
@@ -13,6 +13,27 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+  /*
+    日本語Webフォント（Noto Sans JP）をやめ、端末の日本語フォントを使う（2026-11-05）。
+    Webフォントは unicode-range で76ファイル・約2.4MBに分割され、スマホ回線で表示まで6秒かかっていた（審査員9）。
+  */
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
+}
+
+/* キーボード操作のフォーカスを、明るい背景でも炭色の帯の上でも見えるようにする（審査員6） */
+:focus-visible {
+  outline: 3px solid #e8611f;
+  outline-offset: 2px;
+}
+
+/* 動きを減らす設定の人には、アニメーション・スクロールの動きを止める */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 * {

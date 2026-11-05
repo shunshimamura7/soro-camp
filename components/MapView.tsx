@@ -1,7 +1,8 @@
 "use client";
 
+import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useRef, useState, useCallback } from "react";
-import { hasEvidence, hasUsableCoord, hasVerifiedScores, isToleratedWildSite } from "@/lib/camp";
+import { hasEvidence, hasUsableCoord, hasVerifiedScores, isToleratedWildSite } from "@/lib/camp-core";
 import { nearbyBathUrl, nearbyShoppingUrl } from "@/lib/maps";
 import maplibregl from "maplibre-gl";
 import type { Campground } from "@/lib/types";

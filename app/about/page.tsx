@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "このサイトについて — スコアの見方とデータの扱い",
   description:
     "ソロキャン羅針盤の5軸スコアの定義、soloScore の計算式（静けさ・絶景を2倍で重み付け）、データの出典と鮮度についての注意書き。",
+  alternates: { canonical: "/about" },
 };
 
 const AXES: Array<{ key: string; label: string; weight: string; desc: string; scale: string[] }> = [
@@ -89,26 +90,47 @@ export default function AboutPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-3 sm:px-4 pt-4 sm:pt-8 pb-16">
-      <nav className="text-xs text-slate-500 mb-4">
-        <Link href="/" className="hover:text-slate-700">
-          ← 一覧
+      <nav aria-label="パンくずリスト" className="text-[13px] text-[#6b5d50] mb-2">
+        <Link href="/" className="inline-flex items-center min-h-[44px] hover:text-[#b5440e]">
+          トップ
         </Link>
       </nav>
 
-      <h1 className="font-['Shippori_Mincho_B1','Noto_Serif_JP',serif] text-2xl sm:text-3xl font-bold text-[#0e0d0b] leading-tight mb-3">
+      <h1 className="text-2xl sm:text-3xl font-bold text-[#0e0d0b] leading-tight mb-3">
         このサイトについて
       </h1>
-      <p className="text-[15px] text-slate-600 leading-[1.9] mb-8">
+      <p className="text-[15px] text-[#4a3f35] leading-[1.9] mb-8">
         神奈川・静岡・山梨・千葉のキャンプ場と野営地を、ソロキャンプの視点で比較するためのサイトです。
         現在 {total} 件（うち野営地 {wild} 件）を掲載しています。
       </p>
 
+      {/* 3行の要約（2026-11-05。初めての人が式を読まなくても分かるように。審査員1） */}
+      <section className="mb-8 rounded-2xl border border-[#e9e2d8] bg-white p-4 sm:p-5">
+        <h2 className="text-[16px] font-bold text-[#1c1814] mb-2">まず3つだけ</h2>
+        <ol className="list-decimal pl-5 space-y-1.5 text-[14px] leading-relaxed text-[#1c1814]">
+          <li><b>料金と設備は、各施設の公式サイトで確かめたものだけ</b>を載せています。料金はソロ1名1泊で実際に払う総額（入場料・管理費込み）です。</li>
+          <li><b>分からないことは「要確認」「未確認」と書きます。</b>推測で「なし」や金額を埋めません。</li>
+          <li><b>静けさ・景観などの5点満点の評価は、根拠がそろった施設だけ</b>に付けます（高いほど良い）。まだ多くの施設が「確認中」です。</li>
+        </ol>
+      </section>
+
+      {/* 予約サイトとの違い（審査員10） */}
+      <section className="mb-10">
+        <h2 className="text-lg sm:text-xl font-bold text-[#1c1814] mb-3">予約サイトとの違い</h2>
+        <ul className="list-disc pl-5 space-y-1.5 text-[14px] leading-[1.9] text-[#4a3f35]">
+          <li>予約サイトの表示は「1区画いくら」が多く、ソロで行くと結局いくらかが分かりにくいことがあります。このサイトは<b>ソロ1名の総額</b>で並べます。</li>
+          <li>料金・設備の一つひとつに<b>公式ページの原文と出典</b>を付けています。詳細ページの「出典」から確かめられます。</li>
+          <li>管理されたキャンプ場と、管理者のいない<b>野営地を分けて</b>載せ、野営地には「公認なし」などの前提を必ず出します。</li>
+          <li>予約はできません。予約は各施設の公式サイトか、施設が案内する予約サイトで行ってください。</li>
+        </ul>
+      </section>
+
       {/* 5軸 */}
       <section className="mb-10">
-        <h2 className="font-['Shippori_Mincho_B1','Noto_Serif_JP',serif] text-lg sm:text-xl font-bold text-[#0e0d0b] mb-3">
+        <h2 className="text-lg sm:text-xl font-bold text-[#0e0d0b] mb-3">
           5軸スコアの定義
         </h2>
-        <p className="text-[14px] text-slate-600 leading-[1.9] mb-4">
+        <p className="text-[14px] text-[#4a3f35] leading-[1.9] mb-4">
           5軸は、根拠がそろった施設だけを1〜5の整数で評価します。現在は {scoresVerified} 件が評価確認済みで、残りは「評価確認中」として点数をおすすめに使いません。
         </p>
 
@@ -119,19 +141,19 @@ export default function AboutPage() {
               className="bg-white rounded-2xl border border-[#e2ddd8] p-4 sm:p-5"
             >
               <div className="flex items-baseline gap-2 mb-1.5">
-                <h3 className="font-['Shippori_Mincho_B1','Noto_Serif_JP',serif] text-[16px] font-bold text-[#0e0d0b]">
+                <h3 className="text-[16px] font-bold text-[#0e0d0b]">
                   {a.label}
                 </h3>
-                <span className="font-['JetBrains_Mono',monospace] text-[11px] px-1.5 py-0.5 rounded bg-[#f5f0ea] text-[#6b5a4e] border border-[#e2ddd8]">
+                <span className="text-[12px] px-1.5 py-0.5 rounded bg-[#f5f0ea] text-[#4a3f35] border border-[#e2ddd8]">
                   重み {a.weight}
                 </span>
               </div>
-              <p className="text-[13px] text-slate-600 leading-relaxed mb-3">{a.desc}</p>
+              <p className="text-[13px] text-[#4a3f35] leading-relaxed mb-3">{a.desc}</p>
               <ul className="flex flex-col gap-1">
                 {a.scale.map((s) => (
                   <li
                     key={s}
-                    className="font-['JetBrains_Mono',monospace] text-[12px] text-[#5a5050] leading-relaxed"
+                    className="text-[12px] text-[#4a3f35] leading-relaxed"
                   >
                     {s}
                   </li>
@@ -144,18 +166,18 @@ export default function AboutPage() {
 
       {/* soloScore */}
       <section className="mb-10">
-        <h2 className="font-['Shippori_Mincho_B1','Noto_Serif_JP',serif] text-lg sm:text-xl font-bold text-[#0e0d0b] mb-3">
+        <h2 className="text-lg sm:text-xl font-bold text-[#0e0d0b] mb-3">
           soloScore の計算式
         </h2>
-        <p className="text-[14px] text-slate-600 leading-[1.9] mb-3">
+        <p className="text-[14px] text-[#4a3f35] leading-[1.9] mb-3">
           一覧の「おすすめ順」は、評価確認済みの施設ではこの値の降順です。評価確認中の施設は、仮の点数を使わず中立扱いで後ろに表示します。
         </p>
         <div className="bg-[#0e0d0b] rounded-2xl p-4 sm:p-5 mb-4 overflow-x-auto">
-          <code className="font-['JetBrains_Mono',monospace] text-[12px] sm:text-[13px] text-[#e8c89a] whitespace-nowrap">
+          <code className="text-[12px] sm:text-[13px] text-[#e8c89a] whitespace-nowrap">
             soloScore = (静けさ×2 + 絶景×2 + コスパ + アクセス + 設備) ÷ 7
           </code>
         </div>
-        <p className="text-[14px] text-slate-600 leading-[1.9]">
+        <p className="text-[14px] text-[#4a3f35] leading-[1.9]">
           <strong className="text-[#0e0d0b]">静けさと絶景だけを2倍にしている理由。</strong>
           ソロキャンプでは、設備の充実や買い出しの利便性は「あれば良い」程度の要素です。
           一方で、隣の話し声が一晩中聞こえる場所と、静寂の中で焚き火を眺められる場所とでは、
@@ -164,7 +186,7 @@ export default function AboutPage() {
           グループキャンプなら重みは変わるはずですが、このサイトはソロ前提なので、
           代えのきかない2軸を重くしています。
         </p>
-        <p className="text-[14px] text-slate-600 leading-[1.9] mt-4">
+        <p className="text-[14px] text-[#4a3f35] leading-[1.9] mt-4">
           <strong className="text-[#0e0d0b]">料金が未確認の施設のコスパについて。</strong>
           料金の裏を取れていない施設は「料金 要確認」と表示しています。
           そうした施設では、コスパを判定する根拠がないため、
@@ -178,33 +200,33 @@ export default function AboutPage() {
 
       {/* データについて */}
       <section className="mb-10">
-        <h2 className="font-['Shippori_Mincho_B1','Noto_Serif_JP',serif] text-lg sm:text-xl font-bold text-[#0e0d0b] mb-3">
+        <h2 className="text-lg sm:text-xl font-bold text-[#0e0d0b] mb-3">
           データの出典と鮮度
         </h2>
-        <p className="text-[14px] text-slate-600 leading-[1.9] mb-4">
+        <p className="text-[14px] text-[#4a3f35] leading-[1.9] mb-4">
           掲載情報は各キャンプ場の公式サイト、予約サイト、地図サービス、および公開情報をもとに整理しています。
           現在は {evidenceBacked} 件に情報源の入口を記録し、根拠URLのない施設は一覧で「情報確認中」と表示します。
           スコアは公開情報にもとづく当サイトの評価であり、実測値ではありません。
         </p>
 
         <div className="rounded-xl border border-[#e8611f] bg-white px-4 py-3 mb-4">
-          <p className="text-[13px] leading-relaxed text-[#e8611f]">
+          <p className="text-[13px] leading-relaxed text-[#7a2e0a]">
             現在 {unverified} 件は情報を確認できていません。該当ページには
-            「この情報は未確認です」と表示しています。料金・営業期間・予約要否・焚き火の可否は
+            「この施設の情報はまだ確認できていません」と表示しています。料金・営業期間・予約要否・焚き火の可否は
             変更されることがあるため、訪問前に必ず公式サイト等でご確認ください。
           </p>
         </div>
 
-        <p className="text-[14px] text-slate-600 leading-[1.9]">
-          確認済みのページには「最終確認: YYYY-MM-DD」を表示しています。
+        <p className="text-[14px] text-[#4a3f35] leading-[1.9]">
+          確認済みのページには、その施設の情報を確認した日を表示しています。
           野営地は管理者不在・設備なしの場所を含みます。直火の可否や現在の開放状況は
           自治体の判断で変わるため、各ページの注意事項を必ずお読みください。
         </p>
       </section>
 
       <div>
-        <Link href="/" className="text-blue-500 text-sm hover:underline">
-          ← キャンプ場一覧に戻る
+        <Link href="/" className="inline-flex items-center min-h-[44px] text-[14px] font-semibold text-[#b5440e] underline hover:no-underline">
+          トップの一覧に戻る
         </Link>
       </div>
     </div>

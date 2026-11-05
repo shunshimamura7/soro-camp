@@ -1,6 +1,6 @@
 "use client";
 
-import type { TypeTab } from "@/lib/camp";
+import type { TypeTab } from "@/lib/camp-core";
 
 /**
  * 一覧上部の種別タブ。**キャンプ場 / 野営地 の2つだけ。**
@@ -26,28 +26,32 @@ const TABS: Array<{ key: TypeTab; label: string }> = [
 const base =
   "flex-1 min-w-0 flex items-center justify-center gap-1 sm:gap-1.5 " +
   "min-h-[44px] px-2 sm:px-4 rounded-xl border transition-colors " +
-  "font-['Shippori_Mincho_B1','Noto_Serif_JP',serif] font-bold " +
-  "text-[13px] sm:text-[15px] whitespace-nowrap";
-const active = "bg-[#e8611f] text-white border-[#e8611f]";
-const inactive = "bg-white text-[#0e0d0b] border-[#e2ddd8] hover:border-[#e8611f]/50";
+  "font-bold text-[14px] sm:text-[15px] whitespace-nowrap";
+// 白文字は #b5440e の上に置く（ember #e8611f の上だと 3.41:1 で AA 未満。審査員6）
+const active = "bg-[#b5440e] text-white border-[#b5440e]";
+const inactive = "bg-white text-[#1c1814] border-[#d8d0c6] hover:border-[#b5440e]";
 
 export default function TypeTabs({ value, onChange, counts }: Props) {
   return (
-    <div role="tablist" aria-label="施設の種別" className="flex gap-1.5 sm:gap-2">
+    /*
+      2026-11-05：role="tablist"/"tab" をやめて、押し分けのボタン（aria-pressed）にした。
+      タブを名乗るなら矢印キー移動・tabpanel が要るのに、どれも無かった（審査員6）。
+    */
+    <div role="group" aria-label="施設の種別" className="flex gap-1.5 sm:gap-2">
       {TABS.map(({ key, label }) => {
         const selected = value === key;
         return (
           <button
             key={key}
-            role="tab"
-            aria-selected={selected}
+            type="button"
+            aria-pressed={selected}
             onClick={() => onChange(key)}
             className={`${base} ${selected ? active : inactive}`}
           >
             <span>{label}</span>
             <span
-              className={`font-['JetBrains_Mono',monospace] font-normal text-[11px] sm:text-[12px] ${
-                selected ? "text-white/80" : "text-[#9a8e84]"
+              className={`font-normal text-[13px] tabular-nums ${
+                selected ? "text-white" : "text-[#6b5d50]"
               }`}
             >
               {counts[key]}

@@ -1,16 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
-import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
-import "maplibre-gl/dist/maplibre-gl.css";
 import { SITE_URL } from "@/lib/site";
 import { latestVerifiedDate } from "@/lib/camp";
 
-const noto = Noto_Sans_JP({ subsets: ["latin"], weight: ["400", "700"] });
 
 const SITE_NAME = "ソロキャン羅針盤";
 const SITE_DESCRIPTION =
-  "神奈川・静岡・山梨・千葉のソロキャンプ場を比較。予算・車横付け・釣り・売店などの希望条件と、料金・位置・評価の確認状況から自分に合うサイトを探せます。";
+  "神奈川・静岡・山梨・千葉のソロキャンプ場ガイド。料金と設備は各施設の公式サイトで裏取りしたものだけを掲載し、料金はソロ1名1泊の総額で表示。予算・風呂・ペット可・売店などで絞り込めます。";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -25,20 +22,10 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
     description: SITE_DESCRIPTION,
-  keywords: [
-    "ソロキャンプ",
-    "ソロキャンプ場",
-    "千葉県 キャンプ場",
-    "神奈川県 キャンプ場",
-    "静岡県 キャンプ場",
-    "山梨県 キャンプ場",
-    "釣り キャンプ場",
-    "売店あり キャンプ場",
-    "予約不要 キャンプ場",
-  ],
-  alternates: {
-    canonical: SITE_URL,
-  },
+  /*
+    canonical は各ページで自分のURLを指定する（2026-11-05）。
+    ここで SITE_URL を指定していたため、全詳細ページの canonical がトップを指していた（審査員8）。
+  */
   openGraph: {
 
     type: "website",
@@ -47,11 +34,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} | ソロキャンプ場ガイド`,
     description: SITE_DESCRIPTION,
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "ソロキャン羅針盤" }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} | ソロキャンプ場ガイド`,
     description: SITE_DESCRIPTION,
+    images: ["/og.png"],
   },
 };
 
@@ -59,31 +48,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const lastVerified = latestVerifiedDate();
   return (
     <html lang="ja">
-      <body className={`${noto.className} bg-white text-slate-900 min-h-screen`}>
-        <header className="border-b border-slate-200 px-3 sm:px-4 py-2 sm:py-3 bg-white pt-[env(safe-area-inset-top)]">
-          <div className="max-w-4xl mx-auto flex items-center gap-2 sm:gap-3">
-            <span className="text-xl sm:text-2xl leading-none">🏕</span>
-            <div className="min-w-0 flex-1">
-              <Link href="/" className="text-slate-900 font-bold text-base sm:text-lg leading-none hover:text-blue-500 transition-colors">
-                ソロキャン羅針盤
-              </Link>
-              <p className="text-xs text-slate-500 mt-0.5 hidden sm:block">神奈川・静岡・山梨・千葉 ソロキャンプ場ガイド</p>
-            </div>
+      <body className="bg-[#f7f3ec] text-[#1c1814] min-h-screen">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:rounded-lg focus:bg-[#0e0d0b] focus:px-4 focus:py-3 focus:text-white"
+        >
+          本文へスキップ
+        </a>
+        <header className="border-b border-[#e9e2d8] px-3 sm:px-4 py-2 sm:py-2.5 bg-white pt-[max(0.5rem,env(safe-area-inset-top))]">
+          <div className="max-w-4xl mx-auto flex items-center gap-2 sm:gap-3 min-h-[44px]">
+            <Link href="/" className="flex items-center gap-2 min-h-[44px] min-w-0 flex-1 text-[#1c1814] hover:text-[#b5440e] transition-colors">
+              <span className="text-xl sm:text-2xl leading-none" aria-hidden="true">🏕</span>
+              <span className="min-w-0">
+                <span className="block font-bold text-base sm:text-lg leading-tight">ソロキャン羅針盤</span>
+                <span className="text-[12px] text-[#6b5d50] hidden sm:block">神奈川・静岡・山梨・千葉 ソロキャンプ場ガイド</span>
+              </span>
+            </Link>
             <Link
               href="/about"
-              className="shrink-0 inline-flex items-center min-h-[36px] px-3 rounded-lg border border-[#e2ddd8] text-[13px] text-[#5a4a3a] hover:border-[#e8611f] hover:text-[#e8611f] transition-colors"
+              className="shrink-0 inline-flex items-center min-h-[44px] px-3 rounded-lg border border-[#d8d0c6] text-[13px] text-[#4a3f35] hover:border-[#b5440e] hover:text-[#b5440e] transition-colors"
             >
-              スコアの見方
+              このサイトについて
             </Link>
           </div>
         </header>
 
-        <main>{children}</main>
+        <main id="main" tabIndex={-1} className="focus:outline-none">{children}</main>
 
-        <footer className="border-t border-slate-200 mt-16 py-8 px-4 text-center text-xs text-slate-400">
+        <footer className="border-t border-[#e9e2d8] mt-12 py-8 px-4 text-center text-[12px] text-[#6b5d50]">
           <p>© 2026 ソロキャン羅針盤 — 情報の正確性に努めていますが、訪問前に各キャンプ場へご確認ください。</p>
           {/* データの lastVerified の最大値。固定で書くと更新時に直し忘れる */}
-          {lastVerified && <p className="mt-1">最終確認: {lastVerified}</p>}
+          {lastVerified && <p className="mt-1">データの最終更新: {lastVerified}（施設ごとの確認日は各詳細ページ）</p>}
         </footer>
 
         {/*

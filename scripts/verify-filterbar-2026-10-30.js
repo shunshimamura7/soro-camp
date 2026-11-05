@@ -217,9 +217,14 @@ async function run(width, height) {
     await page.waitForTimeout(250);
     const closed = (await page.$('[data-testid="filter-sheet"]')) === null;
     const barCount = (await page.textContent('[data-testid="result-count"]')).trim();
-    const cardCount = await page.evaluate(() => document.querySelectorAll("article").length);
+    // 2026-11-05：一覧は40件ずつ描く。描いた枚数＋「もっと見る（残りN件）」の N が件数と一致すればよい
+    const cardCount = await page.evaluate(() => {
+      const shown = document.querySelectorAll("article").length;
+      const m = Array.from(document.querySelectorAll("button")).map((b) => b.textContent || "").join(" ").match(/もっと見る（残り(\d+)件）/);
+      return shown + (m ? Number(m[1]) : 0);
+    });
     const n = Number(applyText.replace(/件を表示/, ""));
-    ok(`${tag} 「◯件を表示」= バーの件数 = 一覧のカード数`, closed && barCount === `${n}件` && cardCount === n, { applyText, barCount, cardCount });
+    ok(`${tag} 「◯件を表示」= バーの件数 = 一覧のカード数（描画済み＋残り）`, closed && barCount === `${n}件` && cardCount === n, { applyText, barCount, cardCount });
     const ovf2 = await page.evaluate(() => [document.documentElement.style.overflow, document.body.style.overflow, document.body.style.position]);
     ok(`${tag} 閉じたらロックが外れる`, ovf2.every((o) => o === ""), { inline: ovf2 });
 
@@ -241,7 +246,7 @@ async function run(width, height) {
 
   // 野営地タブにはバーもこだわり検索も出さない
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.click('[role="tab"]:has-text("野営地")');
+  await page.click('button[aria-pressed]:has-text("野営地")');
   await page.waitForTimeout(200);
   const wildBar = await page.$('[data-testid="filter-bar"]');
   const budget = await page.$('input[type="range"]');

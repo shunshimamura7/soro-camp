@@ -2,14 +2,14 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
-  activeCampgrounds,
   countMatching,
   hasActiveConditions,
   DEFAULT_FILTERS,
   BUDGET_LIMIT,
   BUDGET_STEP,
-} from "@/lib/camp";
-import type { FeatureFilterKey, Filters, SortKey } from "@/lib/camp";
+} from "@/lib/camp-core";
+import { useFocusTrap } from "@/lib/useFocusTrap";
+import type { FeatureFilterKey, Filters, SortKey } from "@/lib/camp-core";
 import type { Campground } from "@/lib/types";
 
 type Props = {
@@ -27,11 +27,8 @@ type Props = {
   onMapOpen?: () => void;
 };
 
-const PREFECTURE_ORDER = ["神奈川", "静岡", "山梨", "千葉", "東京"] as const;
-const PREFECTURES: string[] = [
-  "全部",
-  ...PREFECTURE_ORDER.filter((p) => activeCampgrounds.some((c) => c.prefecture === p)),
-];
+/** 掲載している4県。データを画面側の JS に入れないため固定で持つ（2026-11-05）。県を増やしたらここも足す */
+const PREFECTURES: string[] = ["全部", "神奈川", "静岡", "山梨", "千葉"];
 
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "soloScore", label: "おすすめ順" },
@@ -59,6 +56,7 @@ const FEATURE_GROUPS: FeatureGroup[] = [
       { key: "bath",          label: "♨️ 風呂あり" },
       { key: "shower",        label: "🚿 シャワー" },
       { key: "westernToilet", label: "🚽 洋式トイレ" },
+      { key: "warmToilet",    label: "🚽 温水洗浄トイレ" },
     ],
   },
   {
@@ -82,6 +80,8 @@ const FEATURE_GROUPS: FeatureGroup[] = [
        * 風呂ありで出てくる。**判定は `lib/camp.ts` の `FEATURE_PREDICATES` に1か所だけ。
        */
       { key: "nearbyOnsen",   label: "♨️ 近くに温泉" },
+      /** season が「通年」で始まるものだけ。営業期間が要確認の施設は入れない */
+      { key: "yearRound",     label: "❄️ 通年営業（冬も）" },
     ],
   },
 ];
@@ -191,6 +191,8 @@ export default function FilterBar({
 
   // PC 幅ではシートを出さない（PC はパネルで見せる）。幅が変わったらシートは消え、ロックも外れる
   const showSheet = sheetOpen && !isDesktop;
+  // シート表示中は Tab をシートの中で循環させる（背景のカードへ抜けていた。審査員6）
+  useFocusTrap(sheetRef, showSheet);
 
   /**
    * シートを開いている間は**背面をスクロールさせない。**

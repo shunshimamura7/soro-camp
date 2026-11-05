@@ -1,7 +1,9 @@
 "use client";
 
+import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useRef, useState, useCallback } from "react";
-import { hasEvidence, hasUsableCoord, hasVerifiedScores, isToleratedWildSite } from "@/lib/camp";
+import { useFocusTrap } from "@/lib/useFocusTrap";
+import { hasEvidence, hasUsableCoord, hasVerifiedScores, isToleratedWildSite } from "@/lib/camp-core";
 import { nearbyBathUrl, nearbyShoppingUrl } from "@/lib/maps";
 import { createPortal } from "react-dom";
 import maplibregl from "maplibre-gl";
@@ -78,6 +80,13 @@ export default function MapModal({ camps, onClose }: Props) {
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [panelOpen, closePanel, onClose]);
+
+  // 開いたらダイアログへフォーカスを入れ、中で Tab を循環させる（審査員6）
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useFocusTrap(dialogRef, true);
+  useEffect(() => {
+    dialogRef.current?.querySelector<HTMLElement>(".map-modal-close-btn")?.focus();
+  }, []);
 
   // Body scroll lock
   useEffect(() => {
@@ -177,8 +186,11 @@ export default function MapModal({ camps, onClose }: Props) {
 
   const content = (
     <div
+      ref={dialogRef}
       role="dialog"
       aria-modal="true"
+      aria-label="キャンプ場の地図"
+      tabIndex={-1}
       style={{ position: "fixed", inset: 0, zIndex: 100, background: "#0e0d0b" }}
     >
       {/* Map canvas */}

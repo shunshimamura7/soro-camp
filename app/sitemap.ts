@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { evidenceBackedCampgrounds } from "@/lib/camp";
 import { SITE_URL } from "@/lib/site";
+import { PREF_SLUG } from "@/lib/prefs";
 
 
 // output: "export"（Cloudflare Pages 向け静的書き出し）で必須
@@ -34,6 +35,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.5,
     },
+    // 県別の着地ページ（2026-11-05 新設）
+    ...Object.values(PREF_SLUG).map((pref) => ({
+      url: `${SITE_URL}/pref/${pref}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    })),
     ...campPages,
   ];
 }
