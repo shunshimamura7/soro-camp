@@ -343,6 +343,15 @@ if (unbacked.length > 0) {
       errors.push(`${c.slug}: priceVerified が true なのに priceMin が0（無料と書いていない）。料金未確認に戻すこと`);
     }
   }
+  // 公式の原文と既存の記述が矛盾しない（直火：原文で禁止なのに「直火OK」と書かない）
+  const factsAll = require("../data/official-facts-2026-11-05.json").facts;
+  for (const c of all) {
+    const j = factsAll[c.slug]?.jikabi;
+    if (!j) continue;
+    const t = JSON.stringify({ b: c.features?.bonfireNote, s: c.soloComment, ca: c.cautions });
+    if (j.status === "不可" && /直火(OK|ＯＫ|可|が?できる)/.test(t)) errors.push(`${c.slug}: 公式の原文は直火禁止なのに、記述に「直火OK」がある`);
+    if (j.status === "可" && /直火(は)?(禁止|不可|NG)/.test(t)) errors.push(`${c.slug}: 公式の原文は直火可なのに、記述に「直火禁止」がある`);
+  }
   // 公式ページの原文：引用と出典URLが揃っていること
   const facts = require("../data/official-facts-2026-11-05.json").facts;
   for (const [slug, rec] of Object.entries(facts)) {
@@ -351,6 +360,14 @@ if (unbacked.length > 0) {
       if (!v.quote || v.quote.length < 6 || !/^https?:\/\//.test(v.url || "")) errors.push(`official-facts: ${slug}.${k} の引用か出典URLが欠けている`);
       if (/nap-camp\.com/.test(v.url)) errors.push(`official-facts: ${slug}.${k} の出典が予約サイト`);
     }
+  }
+}
+
+// ── 画面用の JS にデータを入れない（地図チャンクに campgrounds.json が丸ごと入っていた。審査員9）──
+for (const rel of ["lib/map-style.ts", "lib/maps.ts", "lib/camp-core.ts", "lib/lite.ts", "lib/rich.tsx"]) {
+  const src = fs.readFileSync(path.join(root, rel), "utf8");
+  if (/from\s+["'](\.\/camp|@\/lib\/camp)["']/.test(src) || /campgrounds\.json|official-facts/.test(src.replace(/\/\/.*$|\/\*[\s\S]*?\*\//gm, ""))) {
+    errors.push(`${rel} がデータ（lib/camp・campgrounds.json）を読んでいる。データを読まない camp-core から import すること`);
   }
 }
 

@@ -32,6 +32,12 @@ function wildToiletLabel(t?: string): string {
   return `トイレ ${t}`;
 }
 
+const WOMEN_LABEL: Record<string, string> = {
+  "女性専用エリア・サイト": "女性専用サイト",
+  "女性専用プラン": "女性限定プラン",
+  "女性専用の設備": "女性専用の水回り",
+};
+
 const chip = "inline-flex items-center rounded-full border px-2.5 py-0.5 text-[12px] font-semibold";
 const warnChip = `${chip} border-[#e6c79c] bg-[#fdf3e3] text-[#7a4a10]`;
 const greyChip = `${chip} border-[#d8d0c6] bg-[#f4f0ea] text-[#4a3f35]`;
@@ -54,8 +60,12 @@ export default function CampCard({ camp, bathFilterActive = false, headingLevel 
   if (of?.bike?.status === "可") tags.push({ key: "bike", icon: "🏍", label: "バイク可" });
   if (of?.jikabi?.status === "可") tags.push({ key: "jikabi", icon: "🔥", label: "直火OK" });
   if (of?.jikabi?.status === "一部可") tags.push({ key: "jikabi", icon: "🔥", label: "直火 一部OK" });
+  if (of?.bike?.status === "制限あり") tags.push({ key: "bike", icon: "🏍", label: "バイク 条件つき" });
   if (of?.manager?.status === "24時間常駐") tags.push({ key: "mgr", icon: "🏠", label: "管理人 夜も常駐" });
-  if (of?.women?.status) tags.push({ key: "women", icon: "♀", label: "女性専用あり" });
+  if (of?.nightGate) tags.push({ key: "gate", icon: "🚧", label: "夜は出入口を閉める" });
+  if (of?.women?.status) tags.push({ key: "women", icon: "♀", label: WOMEN_LABEL[of.women.status] ?? "女性専用あり" });
+  if (of?.solo?.status && of.solo.status !== "ソロ利用可の明記") tags.push({ key: "solo", icon: "⛺", label: of.solo.status === "ソロ専用サイト" ? "ソロ専用サイト" : "ソロ料金あり" });
+  const nightAway = of?.manager?.status === "夜間不在" || of?.manager?.status === "日中のみ";
   const ci = of?.checkin;
   const isWild = camp.type === "wild";
   const priceUnverified = !isWild && camp.priceVerified !== true;
@@ -66,19 +76,19 @@ export default function CampCard({ camp, bathFilterActive = false, headingLevel 
   const coord = hasUsableCoord(camp);
   const hasExceptions =
     Boolean(camp.restrictions?.length) || Boolean(camp.eligibility) || isWild || tolerated || noBonfire ||
-    Boolean(camp.needsVerify) || !evidence || !coord;
+    Boolean(camp.needsVerify) || !evidence || !coord || nightAway;
 
   return (
     <article
-      className="relative bg-white rounded-2xl border border-[#e9e2d8] hover:border-[#e8611f] focus-within:border-[#e8611f] transition-colors overflow-hidden"
+      className="relative flex flex-col bg-white rounded-2xl border border-[#e9e2d8] hover:border-[#e8611f] focus-within:border-[#e8611f] transition-colors overflow-hidden"
       style={{ contentVisibility: "auto", containIntrinsicSize: "auto 272px" }}
     >
       {/*
         1. 施設名・県・保存。**DOM は施設名リンク→保存の順**にし、見た目だけ grid で県を上に置く
         （Tab が毎回保存ボタンに先に止まっていた。審査員6）
       */}
-      <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-2 px-4 pt-3.5 pb-2">
-        <H className="col-start-1 row-start-2 pt-1 font-bold text-[18px] sm:text-[19px] text-[#1c1814] leading-snug">
+      <div className="flex flex-col px-4 pt-3.5 pb-2 pr-[5.5rem]">
+        <H className="order-2 pt-1 font-bold text-[18px] sm:text-[19px] text-[#1c1814] leading-snug [text-wrap:pretty]">
           <Link
             href={`/camp/${camp.slug}`}
             className="after:absolute after:inset-0 after:content-[''] hover:text-[#b5440e]"
@@ -86,12 +96,13 @@ export default function CampCard({ camp, bathFilterActive = false, headingLevel 
             {camp.name}
           </Link>
         </H>
-        <span className="col-start-1 row-start-1 text-[12px] text-[#6b5d50] truncate">
+        <span className="order-1 text-[12px] text-[#6b5d50] truncate">
           {camp.prefecture}・{camp.area}
         </span>
-        <div className="col-start-2 row-start-1 row-span-2">
-          <FavoriteButton slug={camp.slug} name={camp.name} />
-        </div>
+      </div>
+      {/* 保存は右上に重ねる（見出しの幅を食って施設名が単語の途中で折れていた。審査員5） */}
+      <div className="absolute top-3 right-3">
+        <FavoriteButton slug={camp.slug} name={camp.name} />
       </div>
 
       {/* 3. 例外だけのチップ。今そこへ行けるか・情報が欠けていないかを先に見せる */}
@@ -108,6 +119,7 @@ export default function CampCard({ camp, bathFilterActive = false, headingLevel 
           {!evidence && <span className={warnChip}>情報確認中</span>}
           {camp.needsVerify && <span className={warnChip}>要確認</span>}
           {!coord && <span className={greyChip}>地図ピン未取得</span>}
+          {nightAway && <span className={warnChip}>夜は管理人不在（公式）</span>}
         </div>
       )}
 
@@ -130,7 +142,7 @@ export default function CampCard({ camp, bathFilterActive = false, headingLevel 
               <span className="text-[12px] font-semibold text-[#2a6e3f]">公式で確認</span>
             </p>
             {camp.priceNote && (
-              <p className="mt-0.5 text-[12px] text-[#6b5d50] truncate">
+              <p className="mt-0.5 text-[12px] text-[#6b5d50] line-clamp-2">
                 <RichText text={camp.priceNote} strongClassName="font-normal" />
               </p>
             )}
@@ -138,6 +150,13 @@ export default function CampCard({ camp, bathFilterActive = false, headingLevel 
         )}
       </div>
 
+      {of?.access && (
+        <p className="px-4 pb-1 text-[12px] text-[#4a3f35]">
+          <span aria-hidden="true">{of.access.kind === "train" ? "🚉 " : "🚗 "}</span>
+          {of.access.status}
+          <span className="ml-1 text-[#6b5d50]">（公式）</span>
+        </p>
+      )}
       {ci && (ci.in || ci.out) && (
         <p className="px-4 pb-2.5 text-[12px] text-[#4a3f35]">
           {ci.in && <>IN <b className="font-semibold text-[#1c1814]">{ci.in}</b></>}
@@ -164,7 +183,7 @@ export default function CampCard({ camp, bathFilterActive = false, headingLevel 
 
       {/* 6. ソロ向けのひとこと（2行まで） */}
       {camp.soloComment && (
-        <div className="px-4 pb-4">
+        <div className="mt-auto px-4 pb-4">
           {/* 余白は外側に持たせる。clamp する要素に padding があると3行目が余白に見えてしまう */}
           <p className="text-[13px] text-[#4a3f35] leading-relaxed line-clamp-2">
             <RichText text={camp.soloComment} strongClassName="font-semibold text-[#1c1814]" />

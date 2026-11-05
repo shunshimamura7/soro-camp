@@ -1,5 +1,5 @@
 'use client';
-import { useState, useSyncExternalStore } from 'react';
+import { useSyncExternalStore } from 'react';
 
 const KEY = 'soro-favs';
 /** 同じページ内の他のボタンに変更を伝えるためのイベント。storage イベントは別タブにしか飛ばない */
@@ -55,8 +55,6 @@ export function useFavorites(): string[] {
 export default function FavoriteButton({ slug, name }: { slug: string; name?: string }) {
   const favs = useFavorites();
   const fav = favs.includes(slug);
-  /** 押した結果を読み上げる（審査員6：aria-pressed だけでは結果が音で分からない） */
-  const [said, setSaid] = useState('');
 
   const toggle = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -69,7 +67,9 @@ export default function FavoriteButton({ slug, name }: { slug: string; name?: st
       /* ストレージが使えない環境では保存しない */
     }
     window.dispatchEvent(new Event(CHANGE_EVENT));
-    setSaid(fav ? `${name ?? ''}を保存から外しました（${next.length}件）` : `${name ?? ''}を保存しました（${next.length}件）`);
+    // 押した結果をページに1つの読み上げ領域（layout の #fav-status）で伝える（カードごとに置くと40個になる。審査員6）
+    const live = document.getElementById('fav-status');
+    if (live) live.textContent = fav ? `${name ?? ''}を保存から外しました（${next.length}件）` : `${name ?? ''}を保存しました（${next.length}件）`;
   };
 
   // ラベルは固定し、状態は aria-pressed だけで伝える（ラベルと状態が食い違って読まれていた。審査員6）
@@ -81,13 +81,12 @@ export default function FavoriteButton({ slug, name }: { slug: string; name?: st
       aria-pressed={fav}
       aria-label={label}
       title={label}
-      className={`relative z-10 inline-flex items-center justify-center gap-1 min-w-[44px] h-11 -my-2 -mr-2 px-2 rounded-lg text-[13px] font-semibold transition-colors ${
+      className={`relative z-10 inline-flex items-center justify-center gap-1 min-w-[44px] h-11 px-2 rounded-lg text-[13px] font-semibold transition-colors ${
         fav ? 'text-[#b5440e]' : 'text-[#6b5d50] hover:text-[#b5440e]'
       }`}
     >
       <span aria-hidden="true" className="text-[18px] leading-none">{fav ? '★' : '☆'}</span>
       <span className="text-[12px]">{fav ? '保存済み' : '保存'}</span>
-      <span role="status" className="sr-only">{said}</span>
     </button>
   );
 }

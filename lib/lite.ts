@@ -23,7 +23,11 @@ export function toLite(c: Campground): Campground {
       : hasDirectUrl || urlSource.length > 0
         ? undefined
         : (c.cautions ?? []).filter((s) => /https?:\/\//.test(s)).slice(0, 1);
-  const f = c.features;
+  // 根拠（…Note）のない false は未確認として渡す（一覧・比較で「なし」と出さない）
+  const fr = c.features as unknown as Record<string, unknown>;
+  const ev = (k: string) => (fr[k] === false && !fr[`${k}Note`] ? undefined : (fr[k] as boolean | undefined));
+  const f = { ...c.features, bath: ev("bath"), shower: ev("shower"), carIn: ev("carIn"), wifi: ev("wifi"), bonfire: ev("bonfire"),
+    firewood: ev("firewood"), fishing: ev("fishing"), shop: ev("shop"), pet: ev("pet") } as Campground["features"];
   const lite = {
     id: c.id,
     slug: c.slug,
@@ -41,7 +45,7 @@ export function toLite(c: Campground): Campground {
     priceMax: c.priceMax,
     priceVerified: c.priceVerified,
     needsPrice: c.needsPrice,
-    priceNote: cut(c.priceNote, 90),
+    priceNote: cut(c.priceNote, 64),
     features: {
       bath: f.bath, shower: f.shower, carIn: f.carIn, wifi: f.wifi, bonfire: f.bonfire,
       bonfireNote: f.bonfire === false ? cut(f.bonfireNote, 40) : undefined,
@@ -52,7 +56,7 @@ export function toLite(c: Campground): Campground {
     season: c.season,
     scores: c.scores,
     scoresVerified: c.scoresVerified,
-    soloComment: cut(c.soloComment, 170),
+    soloComment: cut(c.soloComment, 90),
     restrictions: c.restrictions,
     eligibility: c.eligibility,
     needsVerify: c.needsVerify,
@@ -67,8 +71,8 @@ export function toLite(c: Campground): Campground {
           Object.entries(c.officialFacts)
             .filter(([k]) => k !== "fetchedAt")
             .map(([k, v]) => {
-              const f = v as { status: string; in?: string; out?: string; price?: string };
-              return [k, { status: f.status, in: f.in, out: f.out, price: f.price }];
+              const f = v as { status: string; in?: string; out?: string; price?: string; kind?: string; surface?: string };
+              return [k, { status: f.status, in: f.in, out: f.out, price: f.price, kind: f.kind, surface: f.surface }];
             })
         )
       : undefined,

@@ -387,7 +387,7 @@ export type Campground = {
   officialFacts?: OfficialFacts;
 };
 
-export type OfficialFactKey = "checkin" | "bike" | "jikabi" | "manager" | "women";
+export type OfficialFactKey = "checkin" | "bike" | "jikabi" | "manager" | "nightGate" | "women" | "solo" | "access" | "ground" | "road" | "toilet" | "shower";
 export type OfficialFact = {
   status: string;
   quote: string;
@@ -396,5 +396,10 @@ export type OfficialFact = {
   out?: string;
   quoteOut?: string;
   price?: string;
+  /** access：car（IC から）/ train（駅・バス停から） */
+  kind?: string;
+  /** ground：原文にある地面の語・サイト数 */
+  surface?: string;
+  sites?: string;
 };
 export type OfficialFacts = Partial<Record<OfficialFactKey, OfficialFact>> & { fetchedAt?: string };

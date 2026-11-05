@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useMemo, useEffect, useRef, startTransition } from "react";
+import { useState, useMemo, useEffect, useRef, startTransition, useTransition } from "react";
 import dynamic from "next/dynamic";
-import { filterAndSort, filterByType, countByType, countMatching, DEFAULT_FILTERS } from "@/lib/camp-core";
+import { filterAndSort, filterByType, countByType, countMatching, DEFAULT_FILTERS, FEATURE_FILTER_KEYS } from "@/lib/camp-core";
+import { PREF_SLUG, PREF_BY_SLUG } from "@/lib/prefs";
 import Link from "next/link";
 import type { Filters, SortKey, TypeTab } from "@/lib/camp-core";
 import type { Campground } from "@/lib/types";
@@ -17,14 +18,16 @@ const MapModal = dynamic(() => import("@/components/MapModal"), { ssr: false });
 const PAGE = 40;
 
 const QUICK_PREFS = ["神奈川", "静岡", "山梨", "千葉"];
-type QuickKey = "bath" | "warmToilet" | "yearRound" | "firewood" | "priceChecked" | "budget";
+type QuickKey = "bath" | "warmToilet" | "yearRound" | "firewood" | "priceChecked" | "budget" | "nightSafe" | "soloSite";
 const QUICK_FEATURES: { key: QuickKey; label: string; patch?: Partial<Filters> }[] = [
+  { key: "priceChecked", label: "料金を公式で確認済み" },
+  { key: "soloSite", label: "ソロ専用サイト・ソロ料金" },
   { key: "budget", label: "¥2,000以下" },
   { key: "bath", label: "♨️ 風呂あり" },
   { key: "warmToilet", label: "温水洗浄トイレ" },
   { key: "firewood", label: "薪を買える" },
   { key: "yearRound", label: "冬も営業" },
-  { key: "priceChecked", label: "料金を公式で確認済み" },
+  { key: "nightSafe", label: "夜も安心（公式に記載）" },
 ];
 const quickBase = "shrink-0 inline-flex items-center gap-1.5 min-h-[44px] px-3.5 rounded-full border text-[13px] font-semibold whitespace-nowrap transition-colors";
 const quickOn = "bg-[#b5440e] border-[#b5440e] text-white";
@@ -70,6 +73,50 @@ export default function HomeClient({ backed, pending }: Props) {
    */
   const effectiveFilters = typeTab === "wild" ? DEFAULT_FILTERS : filters;
   const results = useMemo(() => filterAndSort(scopedCamps, effectiveFilters, sort), [scopedCamps, effectiveFilters, sort]);
+
+  /** 県・目的チップの件数。描画のたびに全件を数え直さないよう、条件と母集団が変わったときだけ数える（審査員9） */
+  const quickCounts = useMemo(() => {
+    const m: Record<string, number> = {};
+    for (const p of QUICK_PREFS) m[p] = countMatching(scopedCamps, filters, { prefecture: p });
+    for (const { key } of QUICK_FEATURES)
+      m[key] = countMatching(scopedCamps, filters, key === "budget" ? { budgetMax: 2000 } : { [key]: true });
+    return m;
+  }, [scopedCamps, filters]);
+
+  /**
+   * 条件を URL に残す（2026-11-05 審査員10：「静岡・風呂あり・¥2,000以下」を共有・ブックマークできなかった）。
+   * 読み込み時に復元し、変わったら replaceState で書き換える（履歴は増やさない）
+   */
+  const restored = useRef(false);
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    const next: Filters = { ...DEFAULT_FILTERS };
+    const pref = q.get("pref");
+    if (pref && PREF_BY_SLUG[pref]) next.prefecture = PREF_BY_SLUG[pref];
+    for (const k of (q.get("f") ?? "").split(",")) if ((FEATURE_FILTER_KEYS as string[]).includes(k)) (next as Record<string, unknown>)[k] = true;
+    const b = Number(q.get("budget"));
+    if (b > 0) next.budgetMax = b;
+    setFilters(next);
+    if (q.get("sort") === "priceAsc") setSort("priceAsc");
+    if (q.get("tab") === "wild") setTypeTab("wild");
+    restored.current = true;
+  }, []);
+  useEffect(() => {
+    if (!restored.current) return;
+    const q = new URLSearchParams();
+    if (typeTab === "wild") q.set("tab", "wild");
+    const slug = PREF_SLUG[filters.prefecture as keyof typeof PREF_SLUG];
+    if (slug) q.set("pref", slug);
+    const on = FEATURE_FILTER_KEYS.filter((k) => filters[k]);
+    if (on.length) q.set("f", on.join(","));
+    if (filters.budgetMax !== null) q.set("budget", String(filters.budgetMax));
+    if (sort !== "soloScore") q.set("sort", sort);
+    const qs = q.toString();
+    const url = qs ? `/?${qs}` : "/";
+    if (url !== window.location.pathname + window.location.search) history.replaceState(null, "", url);
+  }, [filters, sort, typeTab]);
+
+  const [morePending, startMore] = useTransition();
 
   // 条件が変わったら先頭から描き直す
   useEffect(() => {
@@ -143,6 +190,7 @@ export default function HomeClient({ backed, pending }: Props) {
       */}
       {typeTab === "campground" && (
         <section className="max-w-4xl mx-auto px-4 md:px-8 pb-3" aria-label="すぐ選ぶ">
+          {/* スマホでは県の段と目的の段を分ける（1段に並べると目的チップが画面外で気づかれなかった。審査員1・5・10） */}
           <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap [scrollbar-width:none]">
             {QUICK_PREFS.map((p) => {
               const on = filters.prefecture === p;
@@ -151,15 +199,16 @@ export default function HomeClient({ backed, pending }: Props) {
                   onClick={() => onFiltersChange({ ...filters, prefecture: on ? "全部" : p })}
                   className={`${quickBase} ${on ? quickOn : quickOff}`}>
                   {on && <span aria-hidden="true">✓</span>}{p}
-                  <span className="tabular-nums font-normal">{countMatching(scopedCamps, filters, { prefecture: on ? filters.prefecture : p })}</span>
+                  <span className="tabular-nums font-normal">{on ? results.length : quickCounts[p]}</span>
                 </button>
               );
             })}
-            <span aria-hidden="true" className="shrink-0 w-px bg-[#d8d0c6] my-2" />
+          </div>
+          <div className="mt-1.5 flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap [scrollbar-width:none] [mask-image:linear-gradient(to_right,#000_88%,transparent)] md:[mask-image:none]">
             {QUICK_FEATURES.map(({ key, label, patch }) => {
               const on = key === "budget" ? filters.budgetMax === 2000 : filters[key];
               const next = key === "budget" ? { budgetMax: on ? null : 2000 } : { [key]: !on };
-              const n = countMatching(scopedCamps, filters, key === "budget" ? { budgetMax: 2000 } : { [key]: true });
+              const n = quickCounts[key];
               if (!on && n === 0) return null;
               return (
                 <button key={key} type="button" aria-pressed={on}
@@ -212,30 +261,24 @@ export default function HomeClient({ backed, pending }: Props) {
         />
       )}
 
-      {/* 結果の見出し行：件数（読み上げ対象）・保存済み・地図 */}
+      {/* 結果の見出し行：件数（読み上げ対象）・保存済み・比べる・地図を1行に（スマホで2段になっていた。審査員1・5） */}
       <section className="max-w-4xl mx-auto px-4 md:px-8 pt-3">
-        <div className="flex flex-wrap items-center gap-2">
-          <div className="flex-1 min-w-[8rem]">
-            {/* 件数は上の帯に出ている。ここは読み上げ用（画面では保存済み表示のときだけ見せる） */}
-            <p className={onlyFavs ? "text-[15px] font-bold text-[#1c1814]" : "sr-only"} aria-live="polite">
-              {tabName} {results.length}件{onlyFavs ? "（保存済み）" : ""}
-            </p>
-            {typeTab === "campground" && (
-              <Link href="/about#sort" className="inline-flex items-center min-h-[44px] text-[12px] text-[#6b5d50] underline underline-offset-2 hover:text-[#b5440e]">並び順について</Link>
-            )}
-          </div>
+        <p className={onlyFavs ? "text-[15px] font-bold text-[#1c1814] mb-1" : "sr-only"} aria-live="polite">
+          {tabName} {results.length}件{onlyFavs ? "（保存済み）" : ""}
+        </p>
+        <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={() => startTransition(() => setOnlyFavs((v) => !v))}
             aria-pressed={onlyFavs}
-            className={`inline-flex items-center gap-1 min-h-[44px] px-3 rounded-xl border text-[13px] font-semibold transition-colors ${
+            className={`shrink-0 inline-flex items-center gap-1 min-h-[44px] px-3 rounded-xl border text-[13px] font-semibold transition-colors ${
               onlyFavs ? "bg-[#b5440e] border-[#b5440e] text-white" : "bg-white border-[#d8d0c6] text-[#4a3f35] hover:border-[#b5440e]"
             }`}
           >
-            <span aria-hidden="true">{onlyFavs ? "★" : "☆"}</span>保存済み {favCount}
+            <span aria-hidden="true">{onlyFavs ? "★" : "☆"}</span>保存 {favCount}
           </button>
           {favCount > 0 && (
-            <Link href="/saved" className="inline-flex items-center min-h-[44px] px-3 rounded-xl border border-[#d8d0c6] bg-white text-[13px] font-semibold text-[#4a3f35] hover:border-[#b5440e]">
+            <Link href="/saved" className="shrink-0 inline-flex items-center min-h-[44px] px-3 rounded-xl border border-[#d8d0c6] bg-white text-[13px] font-semibold text-[#4a3f35] hover:border-[#b5440e]">
               比べる
             </Link>
           )}
@@ -245,10 +288,13 @@ export default function HomeClient({ backed, pending }: Props) {
             onClick={() => setMapOpen(true)}
             onPointerEnter={() => void import("@/components/MapModal")}
             onFocus={() => void import("@/components/MapModal")}
-            className="inline-flex items-center gap-1 min-h-[44px] px-3 rounded-xl border border-[#b5440e] bg-white text-[13px] font-semibold text-[#b5440e]"
+            className="shrink-0 inline-flex items-center gap-1 min-h-[44px] px-3 rounded-xl border border-[#b5440e] bg-white text-[13px] font-semibold text-[#b5440e]"
           >
-            <span aria-hidden="true">🗺</span>地図で見る
+            <span aria-hidden="true">🗺</span>地図
           </button>
+          {typeTab === "campground" && (
+            <Link href="/about#sort" className="ml-auto inline-flex items-center min-h-[44px] text-[12px] text-[#6b5d50] underline underline-offset-2 hover:text-[#b5440e]">並び順とは</Link>
+          )}
         </div>
       </section>
 
@@ -290,10 +336,11 @@ export default function HomeClient({ backed, pending }: Props) {
               <div ref={sentinelRef} className="mt-6 text-center">
                 <button
                   type="button"
-                  onClick={() => setLimit((n) => n + PAGE)}
+                  onClick={() => startMore(() => setLimit((n) => n + PAGE))}
+                  aria-busy={morePending}
                   className="min-h-[44px] px-5 rounded-xl border border-[#b5440e] bg-white text-[#b5440e] text-sm font-semibold"
                 >
-                  もっと見る（残り{results.length - limit}件）
+                  {morePending ? "読み込み中…" : `もっと見る（残り${results.length - limit}件）`}
                 </button>
               </div>
             )}

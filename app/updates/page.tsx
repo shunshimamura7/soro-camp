@@ -4,10 +4,10 @@ import { evidenceBackedCampgrounds } from "@/lib/camp";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "最近確認した施設 — ソロキャン羅針盤",
+  title: "最近確認した施設",
   description: "公式サイトで料金・設備を最近確認したキャンプ場の一覧。確認した日の新しい順。",
   alternates: { canonical: "/updates" },
-  openGraph: { title: "最近確認した施設 — ソロキャン羅針盤", url: `${SITE_URL}/updates`, type: "article", images: ["/og.png"] },
+  openGraph: { title: "最近確認した施設", url: `${SITE_URL}/updates`, type: "article", images: ["/og.png"] },
 };
 
 /**

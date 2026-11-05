@@ -30,7 +30,12 @@ const ROWS: [string, (c: Campground) => string][] = [
   ["直火", (c) => c.officialFacts?.jikabi?.status ?? "記載なし"],
   ["薪の販売", (c) => yn(c.features.firewood)],
   ["バイク", (c) => c.officialFacts?.bike?.status ?? "記載なし"],
-  ["管理人・夜間", (c) => c.officialFacts?.manager?.status ?? "記載なし"],
+  ["管理人", (c) => c.officialFacts?.manager?.status ?? "記載なし"],
+  ["夜の出入り", (c) => (c.officialFacts?.nightGate ? "夜は出入口を閉める" : "記載なし")],
+  ["ソロ向け", (c) => c.officialFacts?.solo?.status ?? "記載なし"],
+  ["区画と地面", (c) => (c.officialFacts?.ground ? [c.officialFacts.ground.status, c.officialFacts.ground.surface].filter(Boolean).join("・") : "記載なし")],
+  ["トイレ（公式）", (c) => c.officialFacts?.toilet?.status ?? "記載なし"],
+  ["アクセス", (c) => c.officialFacts?.access?.status ?? "記載なし"],
   ["女性向け", (c) => c.officialFacts?.women?.status ?? "記載なし"],
   ["予約", (c) => c.features.reservation || "未確認"],
   ["確認した日", (c) => (c.lastVerified && c.lastVerified !== "2025-01-01" ? c.lastVerified : "未記録")],
@@ -65,7 +70,7 @@ export default function SavedClient({ camps }: { camps: Campground[] }) {
         <span aria-hidden="true">›</span>
         <span aria-current="page">保存した施設を比べる</span>
       </nav>
-      <h1 className="text-[22px] sm:text-3xl font-bold text-[#1c1814] leading-tight">{shared ? "共有された施設を比べる" : "保存した施設を比べる"}</h1>
+      <h1 id="saved-h1" tabIndex={-1} className="text-[22px] sm:text-3xl font-bold text-[#1c1814] leading-tight outline-none">{shared ? "共有された施設を比べる" : "保存した施設を比べる"}</h1>
       <p className="mt-2 text-[14px] leading-relaxed text-[#4a3f35]">
         最大{MAX}件まで横に並べます。値は公式で確認できたものだけで、確認できていないものは「未確認」「記載なし」と書きます。
       </p>
@@ -82,19 +87,20 @@ export default function SavedClient({ camps }: { camps: Campground[] }) {
               比較のURLをコピー
             </button>
             {shared && (
-              <button type="button" onClick={() => { setShared(null); history.replaceState(null, "", "/saved"); }} className="min-h-[44px] px-4 rounded-xl border border-[#b5440e] bg-white text-[#b5440e] text-[14px] font-semibold">
+              <button type="button" onClick={() => { setShared(null); history.replaceState(null, "", "/saved"); requestAnimationFrame(() => document.getElementById("saved-h1")?.focus()); }} className="min-h-[44px] px-4 rounded-xl border border-[#b5440e] bg-white text-[#b5440e] text-[14px] font-semibold">
                 自分の保存を表示
               </button>
             )}
             <p role="status" className="self-center text-[13px] text-[#2a6e3f]">{copied ? "コピーしました" : ""}</p>
           </div>
           {ids.length > MAX && <p className="mt-2 text-[13px] text-[#6b5d50]">保存は{ids.length}件あります。先頭の{MAX}件を表示しています。</p>}
-          <div className="mt-4 overflow-x-auto rounded-2xl border border-[#e9e2d8] bg-white">
+          <p className="mt-3 text-[12px] text-[#6b5d50] md:hidden">表は横にスクロールできます →</p>
+          <div className="mt-1 md:mt-4 overflow-x-auto rounded-2xl border border-[#e9e2d8] bg-white" tabIndex={0} role="region" aria-label="保存した施設の比較（横にスクロール）">
             <table className="min-w-[640px] w-full text-[14px]">
               <caption className="sr-only">保存した施設の比較</caption>
               <thead>
                 <tr>
-                  <th scope="col" className="w-28 p-3 text-left text-[12px] text-[#6b5d50] font-semibold">項目</th>
+                  <th scope="col" className="sticky left-0 z-10 bg-white w-28 p-3 text-left text-[12px] text-[#6b5d50] font-semibold">項目</th>
                   {list.map((c) => (
                     <th key={c.slug} scope="col" className="p-3 text-left align-top">
                       <Link href={`/camp/${c.slug}`} className="font-bold text-[#1c1814] underline decoration-[#d8c3ad] underline-offset-2 hover:text-[#b5440e]">{c.name}</Link>
@@ -106,11 +112,17 @@ export default function SavedClient({ camps }: { camps: Campground[] }) {
               <tbody>
                 {ROWS.map(([label, fn]) => (
                   <tr key={label} className="border-t border-[#f0eae1]">
-                    <th scope="row" className="p-3 text-left text-[13px] font-normal text-[#6b5d50] align-top">{label}</th>
+                    <th scope="row" className="sticky left-0 z-10 bg-white p-3 text-left text-[13px] font-normal text-[#6b5d50] align-top">{label}</th>
                     {list.map((c) => {
                       const v = fn(c);
                       const muted = /^(未確認|記載なし|未記録)$/.test(v);
-                      return <td key={c.slug} className={`p-3 align-top ${muted ? "text-[#6b5d50]" : "font-semibold text-[#1c1814]"}`}>{v}</td>;
+                      const stale = label === "確認した日" && /^\d{4}-\d{2}-\d{2}$/.test(v) && Date.now() - new Date(v).getTime() > 90 * 86400000;
+                      return (
+                        <td key={c.slug} className={`p-3 align-top ${muted ? "bg-[#faf7f2] text-[#6b5d50]" : "font-semibold text-[#1c1814]"}`}>
+                          {v}
+                          {stale && <span className="block text-[12px] font-semibold text-[#7a4a10]">3か月以上前。再確認を</span>}
+                        </td>
+                      );
                     })}
                   </tr>
                 ))}

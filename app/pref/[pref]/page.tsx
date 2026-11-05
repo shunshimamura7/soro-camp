@@ -5,6 +5,7 @@ import { evidenceBackedCampgrounds, filterByType } from "@/lib/camp";
 import { PREF_BY_SLUG, PREF_SLUG } from "@/lib/prefs";
 import { SITE_URL } from "@/lib/site";
 import CampCard from "@/components/CampCard";
+import { AREAS, areaKey } from "@/lib/areas";
 import type { Campground } from "@/lib/types";
 
 /**
@@ -98,7 +99,15 @@ export default async function PrefPage({ params }: { params: Promise<{ pref: str
           風呂・ペット可・予算などで絞り込むならトップへ
         </Link>
       </p>
-      <nav aria-label="ほかの県" className="mt-1 mb-5 flex flex-wrap gap-2">
+      {/* エリア別ページへ（5件以上のエリアだけ） */}
+      <nav aria-label={`${name}県のエリア`} className="mt-1 flex flex-wrap gap-2">
+        {AREAS.filter((a) => a.pref === name && camps.filter((c) => areaKey(c.area) === a.name).length >= 5).map((a) => (
+          <Link key={a.slug} href={`/area/${a.slug}`} className="inline-flex items-center min-h-[44px] px-3 rounded-xl border border-[#b5440e] bg-white text-[13px] font-semibold text-[#b5440e] hover:bg-[#fdf3ea]">
+            {a.name}（{camps.filter((c) => areaKey(c.area) === a.name).length}）
+          </Link>
+        ))}
+      </nav>
+      <nav aria-label="ほかの県" className="mt-2 mb-5 flex flex-wrap gap-2">
         {Object.entries(PREF_SLUG)
           .filter(([n]) => n !== name)
           .map(([n, s]) => (

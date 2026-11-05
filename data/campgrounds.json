@@ -463,7 +463,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "直火OK（貴重）",
+      "bonfireNote": "焚き火は焚き火台で可。直火は禁止（公式「環境保護の観点により直火は禁止とさせていただきます。 必ず焚き火台をご使用ください。」https://motosulakeside.com/index.php/rule/）",
       "pet": true,
       "shower": true,
       "toilet": "ウォシュレット",
@@ -487,7 +487,7 @@
       "nearbyOnsen": "富士眺望の湯ゆらり（車で約21分）／上九の湯（車で約21分）／ふじやま温泉（車で約33分）／下部温泉（車で約27分）（https://motosulakeside.com/index.php/access/）"
     },
     "season": "2026年度は4月16日〜11月末（予定）。6・10・11月の火水は定休。12月と年末年始は別途HPで案内",
-    "soloComment": "三方を松林に囲まれた静かな本栖湖畔。ペットOK・直火OK・車横付けOKの三拍子揃った貴重なキャンプ場。本栖湖の透明度はガチ。連泊する価値あり。",
+    "soloComment": "三方を松林に囲まれた静かな本栖湖畔。ペットOK・車横付けOKのキャンプ場（直火は禁止で、焚き火は焚き火台を使う）。本栖湖の透明度はガチ。連泊する価値あり。",
     "officialUrl": "https://motosulakeside.com/",
     "reservationUrl": "https://www.nap-camp.com/yamanashi/11329",
     "tel": null,
@@ -1027,7 +1027,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "直火OK",
+      "bonfireNote": "直火も、焚き火台だけでの焚き火も禁止（公式「当キャンプ場は直火及び焚き火台のみでの焚き火は禁止です。」https://saiko-jiyuu.camp/page/requests）",
       "pet": true,
       "toilet": "ウォシュレット",
       "carIn": true,
@@ -1053,7 +1053,7 @@
       "nearbyOnsen": "いずみの湯、富士眺望の湯 ゆらり（距離・所要時間の記載なし）（https://saiko-jiyuu.camp/page/nearby-info）"
     },
     "season": "3月〜12月中旬",
-    "soloComment": "西湖畔で直火OKかつ車横付け可能な稀有なキャンプ場。内陸のFエリアは1,000円から、湖畔のAエリアは2,500円と料金差が大きいのでエリア選びが鍵。シャワー・風呂はないが近隣に温泉あり。富士山が西湖越しに見える湖畔Aエリアの早朝の静けさは格別。WEB予約専用なので注意。",
+    "soloComment": "西湖畔で車横付けができるキャンプ場（直火は禁止。焚き火のルールは公式で確認）。内陸のFエリアは1,000円から、湖畔のAエリアは2,500円と料金差が大きいのでエリア選びが鍵。シャワー・風呂はないが近隣に温泉あり。富士山が西湖越しに見える湖畔Aエリアの早朝の静けさは格別。WEB予約専用なので注意。",
     "officialUrl": "https://saiko-jiyuu.camp/",
     "reservationUrl": "https://saiko-jiyuu.camp/calendar/index",
     "tel": "0555-82-2857",
@@ -2366,7 +2366,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "直火OK",
+      "bonfireNote": "直火は禁止（公式「直火は禁止、ゴミはお持ち帰りください」https://doushi-keikoku.jp/?page_id=65）",
       "pet": true,
       "toilet": "洋式",
       "carIn": true,
@@ -2388,7 +2388,7 @@
       "petNote": "入場料（1泊料金）… ペット 100円（https://doushi-keikoku.jp/?page_id=540）"
     },
     "season": "通年（12月〜3月は要確認）",
-    "soloComment": "直火OKかつ予約不要で1,700円〜（入場700円+駐車1,000円）。道志川源流域の深い渓谷に囲まれ、夏は川遊び、冬は静寂の雪景色を独り占め。近隣の道の駅どうし温泉で入浴問題も解決。",
+    "soloComment": "予約不要で1,700円〜（入場700円+駐車1,000円）。直火は禁止。道志川源流域の深い渓谷に囲まれ、夏は川遊び、冬は静寂の雪景色を独り占め。近隣の道の駅どうし温泉で入浴問題も解決。",
     "tel": "042-787-0088",
     "lastVerified": "2026-10-06",
     "priceVerified": true,
@@ -4525,7 +4525,7 @@
     },
     "features": {
       "bonfire": true,
-      "bonfireNote": "直火可",
+      "bonfireNote": "直火は不可。焚き火は焚き火台で（公式「直火は不可です、たき火をご希望の場合にはたき火台などをご持参いただくか有料レンタルをご利用ください。」https://westriver-camp.com/information/）",
       "pet": true,
       "shower": true,
       "bath": true,

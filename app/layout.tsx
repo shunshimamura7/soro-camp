@@ -96,6 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           閲覧時のローカル日付で制限中かどうかを判定させる。
           読み込めなくても要確認表示が残るだけなので defer で足りる。
         */}
+        <p id="fav-status" role="status" className="sr-only" />
         <script src="/restrictions.js" defer />
       </body>
     </html>

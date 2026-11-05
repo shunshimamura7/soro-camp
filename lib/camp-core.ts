@@ -208,7 +208,9 @@ export type FeatureFilterKey =
   | "bikeOk"
   | "jikabiOk"
   | "womenOnly"
-  | "managerNight";
+  | "managerNight"
+  | "nightSafe"
+  | "soloSite";
 
 /**
  * 条件ごとの判定。**未確認を「あり」に混ぜない**ため、すべて厳密な true 判定にする。
@@ -251,6 +253,15 @@ const FEATURE_PREDICATES: Record<FeatureFilterKey, (c: Campground) => boolean> =
   jikabiOk:      (c) => c.officialFacts?.jikabi?.status === "可" || c.officialFacts?.jikabi?.status === "一部可",
   womenOnly:     (c) => Boolean(c.officialFacts?.women?.status),
   managerNight:  (c) => c.officialFacts?.manager?.status === "24時間常駐",
+  /**
+   * 夜も安心（2026-11-05 審査員4のプリセット）：管理人が夜も常駐／夜間は出入口を閉める／女性専用の区画・水回り、
+   * のどれかが公式に書いてある。夜は無人と書いてある施設は入れない
+   */
+  /** ソロ専用サイト・ソロ料金が公式に書いてある（「ソロ歓迎」の一般的な文言は入れない） */
+  soloSite:      (c) => c.officialFacts?.solo?.status === "ソロ専用サイト" || c.officialFacts?.solo?.status === "ソロ料金・プラン",
+  nightSafe:     (c) =>
+    c.officialFacts?.manager?.status !== "夜間不在" &&
+    (c.officialFacts?.manager?.status === "24時間常駐" || Boolean(c.officialFacts?.nightGate) || Boolean(c.officialFacts?.women)),
 };
 
 export const FEATURE_FILTER_KEYS = Object.keys(FEATURE_PREDICATES) as FeatureFilterKey[];
@@ -282,6 +293,8 @@ export const DEFAULT_FILTERS: Filters = {
   jikabiOk: false,
   womenOnly: false,
   managerNight: false,
+  nightSafe: false,
+  soloSite: false,
 };
 
 export function hasActiveConditions(filters: Filters): boolean {

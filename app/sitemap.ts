@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { evidenceBackedCampgrounds, latestVerifiedDate } from "@/lib/camp";
 import { SITE_URL } from "@/lib/site";
 import { PREF_SLUG } from "@/lib/prefs";
+import { AREAS, areaKey } from "@/lib/areas";
 
 // output: "export"（Cloudflare Pages 向け静的書き出し）で必須
 export const dynamic = "force-static";
@@ -18,6 +19,12 @@ function verifiedDate(lastVerified: string | undefined, fallback: Date): Date {
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const latest = new Date(latestVerifiedDate() ?? Date.now());
+  // 一覧ページの lastmod は、そのページに載る施設の確認日の最大値（ビルド日にしない。審査員8）
+  const latestOf = (pred: (c: (typeof evidenceBackedCampgrounds)[number]) => boolean) =>
+    new Date(latestVerifiedDate(evidenceBackedCampgrounds.filter(pred)) ?? latest);
+  const areaPages = AREAS.filter(
+    (a) => evidenceBackedCampgrounds.filter((c) => c.type !== "wild" && c.prefecture === a.pref && areaKey(c.area) === a.name).length >= 5
+  ).map((a) => ({ url: `${SITE_URL}/area/${a.slug}`, lastModified: latestOf((c) => c.prefecture === a.pref && areaKey(c.area) === a.name) }));
   const campPages = evidenceBackedCampgrounds.map((c) => ({
     url: `${SITE_URL}/camp/${c.slug}`,
     lastModified: verifiedDate(c.lastVerified, latest),
@@ -26,7 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: SITE_URL, lastModified: latest },
     { url: `${SITE_URL}/about`, lastModified: latest },
     { url: `${SITE_URL}/updates`, lastModified: latest },
-    ...Object.values(PREF_SLUG).map((pref) => ({ url: `${SITE_URL}/pref/${pref}`, lastModified: latest })),
+    ...Object.entries(PREF_SLUG).map(([name, pref]) => ({ url: `${SITE_URL}/pref/${pref}`, lastModified: latestOf((c) => c.prefecture === name) })),
+    ...areaPages,
     ...campPages,
   ];
 }

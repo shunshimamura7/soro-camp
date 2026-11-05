@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "このサイトについて — スコアの見方とデータの扱い",
   description:
-    "ソロキャン羅針盤の5軸スコアの定義、soloScore の計算式（静けさ・絶景を2倍で重み付け）、データの出典と鮮度についての注意書き。",
+    "料金はソロ1名1泊の総額、料金・設備は公式の原文つき、分からないことは未確認。並び順・評価・データの扱い。",
   alternates: { canonical: "/about" },
   // og はトップの使い回しになっていた（og:url がトップを指していた。審査員8）
   openGraph: {
@@ -199,8 +199,8 @@ export default function AboutPage() {
         <p className="text-[14px] text-[#4a3f35] leading-[1.9] mb-3">
           一覧の「情報が確かな順」は、評価確認済みの施設ではこの値の降順です。評価確認中の施設は、仮の点数を使わず中立扱いで後ろに表示します。
         </p>
-        <div className="bg-[#0e0d0b] rounded-2xl p-4 sm:p-5 mb-4 overflow-x-auto">
-          <code className="text-[12px] sm:text-[13px] text-[#e8c89a] whitespace-nowrap">
+        <div className="bg-[#0e0d0b] rounded-2xl p-4 sm:p-5 mb-4">
+          <code className="text-[12px] sm:text-[13px] text-[#e8c89a] break-words">
             soloScore = (静けさ×2 + 絶景×2 + コスパ + アクセス + 設備) ÷ 7
           </code>
         </div>
@@ -238,8 +238,8 @@ export default function AboutPage() {
 
         <div className="rounded-xl border border-[#e8611f] bg-white px-4 py-3 mb-4">
           <p className="text-[13px] leading-relaxed text-[#7a2e0a]">
-            現在 {unverified} 件は情報を確認できていません。該当ページには
-            「この施設の情報はまだ確認できていません」と表示しています。料金・営業期間・予約要否・焚き火の可否は
+            確認した日を記録していない施設が {unverified} 件あります（上の「情報確認中」とは別の数え方です）。該当ページには
+            「確認した日は記録していません」と表示しています。料金・営業期間・予約要否・焚き火の可否は
             変更されることがあるため、訪問前に必ず公式サイト等でご確認ください。
           </p>
         </div>

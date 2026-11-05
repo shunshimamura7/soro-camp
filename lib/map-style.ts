@@ -24,7 +24,7 @@ import type {
   Point as MlPoint,
 } from "maplibre-gl";
 import type { FeatureCollection, Point } from "geojson";
-import { hasUsableCoord } from "./camp";
+import { hasUsableCoord } from "./camp-core";
 import type { Campground } from "./types";
 
 // ── 色 ────────────────────────────────────────────────────────────────────

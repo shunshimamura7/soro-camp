@@ -88,10 +88,12 @@ const FEATURE_GROUPS: FeatureGroup[] = [
   {
     title: "公式ページに書いてある",
     items: [
+      { key: "soloSite",     label: "⛺ ソロ専用サイト・ソロ料金" },
       { key: "bikeOk",       label: "🏍 バイクで利用可" },
       { key: "jikabiOk",     label: "🔥 直火OK（一部含む）" },
       { key: "managerNight", label: "🏠 管理人が夜も常駐" },
       { key: "womenOnly",    label: "♀ 女性専用の区画・設備" },
+      { key: "nightSafe",    label: "🌙 夜も安心（常駐・閉門・女性専用）" },
     ],
   },
 ];
@@ -372,7 +374,8 @@ export default function FilterBar({
             // 将来 10,000円を超える施設が入ったとき右端まで振っても出てこなくなる。
             set("budgetMax", v >= BUDGET_LIMIT ? null : v);
           }}
-          aria-label={`予算の上限 ${budgetLabel} ${budgetCount}件`}
+          aria-label="予算の上限（ソロ1名1泊の総額）"
+          aria-valuetext={`${filters.budgetMax === null ? "上限なし" : `${filters.budgetMax.toLocaleString()}円以下`}・${budgetCount}件`}
           className="mt-1 w-full h-11 cursor-pointer accent-[#e8611f] bg-transparent"
         />
         <div className="flex justify-between text-[11px] text-[#bfb7ad] -mt-1">

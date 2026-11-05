@@ -1,18 +1,34 @@
 {
  "fetchedAt": "2026-11-05",
- "note": "各施設の公式サイトの原文から抜き出した記述。quote は原文そのまま、url は取得したページ。推測は入れていない。",
+ "note": "各施設の公式サイトの原文から抜き出した記述（2026-11-05 取得）。quote は原文そのまま、url は取得したページ。status は原文の要点（原文にある語だけで作る）。推測は入れていない。",
  "facts": {
   "asagiri-eichinomori": {
    "checkin": {
     "status": "記載あり",
     "quote": "■チェックイン時間：13：00～16：00",
     "url": "https://www.bt-r.jp/aec/",
-    "in": "13：00～16：00"
+    "in": "13:00～16:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "地面での直火は禁止となります（焚き火台・コンロをご使用ください）。",
     "url": "https://www.bt-r.jp/aec/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "・最大3人まで、2人専用、家族限定、ソロキャンプ、それぞれ専用サイト",
+    "url": "https://www.bt-r.jp/aec/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "・全て区画サイト（フリーサイト無）",
+    "url": "https://www.bt-r.jp/aec/"
+   },
+   "access": {
+    "status": "富士宮インターより30分",
+    "quote": "新東名富士宮インターより30 分",
+    "url": "https://www.bt-r.jp/aec/",
+    "kind": "car"
    }
   },
   "urban-camping-asagiri-houzan": {
@@ -21,6 +37,16 @@
     "quote": "【チェックイン】 13:00～",
     "url": "https://urban-camping.jp/system.html",
     "in": "13:00～"
+   },
+   "toilet": {
+    "status": "男女別・温水ウォシュレット",
+    "quote": "トイレ（男女別） 温水ウォシュレット付き",
+    "url": "https://urban-camping.jp/"
+   },
+   "shower": {
+    "status": "男女別",
+    "quote": "シャワールーム（男女別）",
+    "url": "https://urban-camping.jp/"
    }
   },
   "tanukiko": {
@@ -35,14 +61,19 @@
     "status": "不可",
     "quote": "直火は禁止です。焚火台やグリル、コンロを使用してください。",
     "url": "https://tanukiko.com/faq/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "●テントサイト （フリーサイト） テント150張可能です。",
+    "url": "https://tanukiko.com/south/",
+    "sites": "テント150張可能"
    }
   },
   "kouan-motosuko": {
-   "checkin": {
-    "status": "記載あり",
-    "quote": "午前10時です。レイトチェックアウトを選択することで17時まで延長可能です。",
-    "url": "https://kouan-motosuko.com/faq/index.html",
-    "out": "午前10時"
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイトで区画管理をしていませんのでサイトの指定はできません。",
+    "url": "https://kouan-motosuko.com/faq/index.html"
    }
   },
   "shindo": {
@@ -51,6 +82,12 @@
     "quote": "料金／車500円（バイク 300円）",
     "url": "https://shindocamp.com/",
     "price": "300円"
+   },
+   "access": {
+    "status": "相模原ICから約20分",
+    "quote": "圏央道／相模原 IC から約 20 分",
+    "url": "https://shindocamp.com/",
+    "kind": "car"
    }
   },
   "pica-fuji-saiko": {
@@ -65,10 +102,21 @@
     "quote": "国立公園内につき、直火は禁止になります。焚火等をする際は、必ず焚火台等をご利用下さい。ウッドデッキ上での焚火も禁止です。",
     "url": "https://www.pica-resort.jp/saiko/faq/index.html"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "ただし、場内のゲートが夜10時で閉まりますので、お帰りのお時間にはご注意ください。",
     "url": "https://www.pica-resort.jp/saiko/faq/index.html"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "テントサイト・TENBA フリーサイト （定員1日最大84名・フリーサイト）",
+    "url": "https://www.pica-resort.jp/saiko/stay/site/index.html"
+   },
+   "access": {
+    "status": "河口湖ICから15～20分",
+    "quote": "・中央自動車道・河口湖ICより 15～20分",
+    "url": "https://www.pica-resort.jp/saiko/access/index.html",
+    "kind": "car"
    }
   },
   "norolodge": {
@@ -88,6 +136,27 @@
     "status": "可",
     "quote": "直火での焚き火、バーベキュー、川遊び、魚釣り、大滝までの散策など、小さなお子様から大人の方まで幅広くお楽しみいただけます。",
     "url": "https://norolodge.com/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンププラン バイク2000円〜、お車2500円〜でテントサイトにお泊まりいただけるお得なプランです。",
+    "url": "https://norolodge.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイトにご宿泊いただけるプランです。 サイト1区画の大きさは約8x6m。",
+    "url": "https://norolodge.com/stay/tent/"
+   },
+   "access": {
+    "status": "圏央道相模原ICから車で20分",
+    "quote": "圏央道相模原ICより車で20分でお越しいただけます。",
+    "url": "https://norolodge.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "温水便座付き",
+    "quote": "新旧トイレ共に温水便座付きで、秋冬も安心してお使いいただけます。",
+    "url": "https://norolodge.com/facility/"
    }
   },
   "motosu-lakeside": {
@@ -96,10 +165,10 @@
     "quote": "環境保護の観点により直火は禁止とさせていただきます。 必ず焚き火台をご使用ください。",
     "url": "https://motosulakeside.com/index.php/rule/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
-    "quote": "夜20:00～翌朝8:00の間は、入口ゲートを閉鎖させていただきます。",
-    "url": "https://motosulakeside.com/"
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "当キャンプ場では18:00 ～翌朝8:00 の間は入口ゲートを閉鎖させていただきます。",
+    "url": "https://motosulakeside.com/index.php/rule/"
    }
   },
   "fumotoppara": {
@@ -112,6 +181,22 @@
    "jikabi": {
     "status": "不可",
     "quote": "直火はできません。必ずBBQコンロや焚火台をご利用下さい。",
+    "url": "https://fumotoppara.net/guide/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "全面フリーサイトです。 View more 広大な草原サイトからは、どこからでも富士山と毛無山が望めます。",
+    "url": "https://fumotoppara.net/guide/",
+    "surface": "草原"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "17時以降の車両の移動・出入りは禁止です。",
+    "url": "https://fumotoppara.net/guide/"
+   },
+   "shower": {
+    "status": "男女各2つ",
+    "quote": "シャワールームが男女各2つずつあります。",
     "url": "https://fumotoppara.net/guide/"
    }
   },
@@ -126,6 +211,21 @@
     "status": "不可",
     "quote": "直火（焚火台を使用してください）",
     "url": "https://asagiri-camp.net/camp-guide/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ファミリーキャンプやソロキャンプ、グループでのご利用など、さまざまなスタイルに合わせてお選びいただけます。",
+    "url": "https://asagiri-camp.net/campsites/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "富士山をのぞむ日本有数の広さを誇るフリーサイトです。区画がなく広々としたフリーサイト。",
+    "url": "https://asagiri-camp.net/"
+   },
+   "toilet": {
+    "status": "全て洋式",
+    "quote": "全て洋式のトイレとなっております。",
+    "url": "https://asagiri-camp.net/faq/"
    }
   },
   "pica-omotefuji": {
@@ -145,9 +245,25 @@
     "quote": "直火での火気の使用は禁止させて頂いております。焚火台やバーベキューグリル等をご利用ください。",
     "url": "https://www.pica-resort.jp/omotefuji/faq/index.html"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "夜間（22:00～7:00）はお車での入場ができなくなります。フロントへご確認ください。",
+    "url": "https://www.pica-resort.jp/omotefuji/about/guidance.html"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "（定員50人収容・フリーサイト） 1泊1サイト 1,300円～ 区画テントサイト",
+    "url": "https://www.pica-resort.jp/omotefuji/stay/site/index.html"
+   },
+   "access": {
+    "status": "富士宮駅からバス約30分",
+    "quote": "富士宮駅より富士山富士宮五合目行きで約30分（7，8月の登山バス運行期間のみ）",
+    "url": "https://www.pica-resort.jp/omotefuji/access/index.html",
+    "kind": "train"
+   },
+   "shower": {
+    "status": "ゲストハウスで無料",
+    "quote": "シャワーはゲストハウスでご利用いただけます。（無料）",
     "url": "https://www.pica-resort.jp/omotefuji/about/guidance.html"
    }
   },
@@ -172,6 +288,11 @@
     "quote": "バイク 1台 330円",
     "url": "https://ootakicampsite.com/pricelist/",
     "price": "330円"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "(1名ソロキャンプ) 3,300円",
+    "url": "https://ootakicampsite.com/pricelist/"
    }
   },
   "aone": {
@@ -179,6 +300,11 @@
     "status": "可",
     "quote": "単車1台分の駐車料を含む。",
     "url": "https://aonecamp.jp/price/"
+   },
+   "toilet": {
+    "status": "5か所・全て水洗",
+    "quote": "場内に5か所 全て水洗トイレ",
+    "url": "https://aonecamp.jp/about/"
    }
   },
   "saiko-jiyu": {
@@ -197,6 +323,28 @@
     "status": "不可",
     "quote": "当キャンプ場は直火及び焚き火台のみでの焚き火は禁止です。",
     "url": "https://saiko-jiyuu.camp/page/requests"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "・ソロ及び少人数のお客様にお勧めサイト",
+    "url": "https://saiko-jiyuu.camp/page/facility"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "約60区画、定員は100〜150名様程度までです。",
+    "url": "https://saiko-jiyuu.camp/page/facility",
+    "sites": "約60区画"
+   },
+   "access": {
+    "status": "河口湖ICから車で約20分",
+    "quote": "中央自動車道河口湖ICから車で約20分",
+    "url": "https://saiko-jiyuu.camp/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "男女各3箇所",
+    "quote": "トイレは男女各3箇所ずつございます。",
+    "url": "https://saiko-jiyuu.camp/page/facility"
    }
   },
   "kannogawa": {
@@ -210,6 +358,11 @@
     "status": "不可",
     "quote": "場内全面で直火は禁止しております。たき火台等をご使用ください。",
     "url": "https://kannogawa.jp/onegai/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "【区画サイト】 宿泊 ２，８６０円→３，０８０円",
+    "url": "https://kannogawa.jp/"
    }
   },
   "yamanakako-misaki": {
@@ -229,6 +382,21 @@
     "status": "不可",
     "quote": "直火禁止。焚火台のご利用をお願いします。",
     "url": "https://camp.sotosotodays.com/yamanakako-misaki/price/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "徒歩・自転車・バイクのソロキャンプ専用サイトです。",
+    "url": "https://camp.sotosotodays.com/yamanakako-misaki/facility/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト 自動車・ファミリー専用の区画オートキャンプサイトです。",
+    "url": "https://camp.sotosotodays.com/yamanakako-misaki/facility/"
+   },
+   "toilet": {
+    "status": "男女別",
+    "quote": "男女別のお手洗いとなっております。",
+    "url": "https://camp.sotosotodays.com/yamanakako-misaki/facility/"
    }
   },
   "kawazu-nanadaru": {
@@ -247,6 +415,12 @@
     "url": "https://www.city.iwata.shizuoka.jp/shisetsu_guide/koen_shisetsu/kouen/1005910.html",
     "in": "午後1時から午後5時まで",
     "out": "午前11時まで"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "フリーサイト27区画・AC電源付区画サイト42区画",
+    "url": "https://www.city.iwata.shizuoka.jp/shisetsu_guide/koen_shisetsu/kouen/1005910.html",
+    "sites": "フリーサイト27区画・AC電源付区画サイト42区画"
    }
   },
   "onoji-family": {
@@ -261,6 +435,17 @@
     "quote": "オートバイ 2人まで（OF） 1,760円 ／ （RG）2,200円 ／ （HI）2,420円",
     "url": "https://oonoji.co.jp/camp/",
     "price": "1,760円"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロ専用サイト レギュラーシーズン 車１台１名での利用のみ ￥2,750",
+    "url": "https://oonoji.co.jp/camp/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "雄大な富士山をバックに全面芝生のサイトでアウトドアを満喫いただけます！ ハイシーズン以外は区画なしのフリーサイトが魅力です。",
+    "url": "https://oonoji.co.jp/camp/",
+    "surface": "芝生"
    }
   },
   "wellcamp-nishitanzawa": {
@@ -274,6 +459,11 @@
    "jikabi": {
     "status": "一部可",
     "quote": "※仕様規格外のBBQコンロをご使用になられる場合は、ウッドデッキ下のスペースの直火可能な場所でのご使用をお願い致します。",
+    "url": "https://well-camp.com/promise/promise2/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "※1区画に収まらない場合は設営できません",
     "url": "https://well-camp.com/promise/promise2/"
    }
   },
@@ -294,6 +484,22 @@
     "status": "不可",
     "quote": "直火の使用は禁止です！ 火の使用は必ず焚火台やコンロの上でおこなって下さい。",
     "url": "https://shojiko.jp/doc/campsite.html"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "（料金例2 バイクソロ） 大人1名、バイク1台の場合",
+    "url": "https://shojiko.jp/doc/campsite.html"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "当キャンプ場は精進湖湖畔でのフリーサイトとなっていますので予約を受け付ける事が出来ません。",
+    "url": "https://shojiko.jp/doc/faq.html"
+   },
+   "access": {
+    "status": "精進湖畔下車→徒歩5分",
+    "quote": "中央高速バス「新宿西口駅」→精進湖畔下車 →徒歩5分",
+    "url": "https://shojiko.jp/doc/access.html",
+    "kind": "train"
    }
   },
   "sankoso-auto": {
@@ -308,6 +514,16 @@
     "status": "不可",
     "quote": "当キャンプ場では直火での焚き火は禁止とさせていただいております。",
     "url": "https://www.sanko2400.com/faq"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "※ソロキャン直前割り ￥3,100（入場料込み） 空きがあれば、前々日から予約可能",
+    "url": "https://www.sanko2400.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "*区画サイト料 (車1台・4名まで)",
+    "url": "https://www.sanko2400.com/"
    }
   },
   "okudoshi-auto": {
@@ -317,6 +533,17 @@
     "url": "https://www.okudoshi.net/",
     "in": "13 時",
     "out": "11 時"
+   },
+   "access": {
+    "status": "都留ICより30分",
+    "quote": "中央道都留ICより、30分（24Km）",
+    "url": "https://www.okudoshi.net/map/map.html",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "男女別・全ウォッシュレット付",
+    "quote": "トイレ３箇所（男女別）洋式13（全ウォッシュレット付）",
+    "url": "https://www.okudoshi.net/jyo/jyunai.html"
    }
   },
   "woodsman-camp": {
@@ -330,6 +557,16 @@
     "status": "一部可",
     "quote": "全面直火OKの、少し離れた場所にある野営スタイルのフリーサイトです。",
     "url": "https://woodsman.jp/menu"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロサイト１名毎 2,500円 ※3名以上のグループは、テントサイト若しくはオートサイトのご予約をお願い致します。",
+    "url": "https://woodsman.jp/menu"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き水洗",
+    "quote": "ウォシュレット付き水洗トイレ",
+    "url": "https://woodsman.jp/"
    }
   },
   "doshi-keikoku": {
@@ -354,6 +591,27 @@
     "status": "24時間常駐",
     "quote": "区画制・夜間駐在のオートキャンプ場です",
     "url": "https://doushi-keikoku.jp/?page_id=65"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロでもファミリーでも 川でも山でも楽しめます",
+    "url": "https://doushi-keikoku.jp/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "2区画相当の大きさの広めのサイトもあります。",
+    "url": "https://doushi-keikoku.jp/?page_id=67"
+   },
+   "access": {
+    "status": "東野バス停から徒歩約30〜40分",
+    "quote": "徒歩 （音久和から約10分、東野バス停から約30〜40分）",
+    "url": "https://doushi-keikoku.jp/?page_id=66",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き水洗",
+    "quote": "ウォシュレット付き水洗トイレ（男・女・多目的）",
+    "url": "https://doushi-keikoku.jp/?page_id=165"
    }
   },
   "karasawa-miyagase": {
@@ -374,8 +632,20 @@
     "status": "記載あり",
     "quote": "チェックイン 13：00〜日没 チェックアウト 11：00",
     "url": "https://konomasawacamp.co.jp/?page_id=15",
-    "in": "13：00〜日没",
-    "out": "11：00"
+    "in": "13:00〜日没",
+    "out": "11:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートキャンプサイト(約50区画)",
+    "url": "https://konomasawacamp.co.jp/",
+    "sites": "約50区画"
+   },
+   "access": {
+    "status": "相模湖ICから車で30〜40分",
+    "quote": "相模湖ICより、車で30〜40分ほどです。",
+    "url": "https://konomasawacamp.co.jp/",
+    "kind": "car"
    }
   },
   "camp-baird": {
@@ -384,6 +654,16 @@
     "quote": "クールブリーズサイトのフリーテントサイト・トレーラーハウス： サイトにお入りいただけるのは12時から となります。",
     "url": "https://bairdbeer.com/ja/pages/faq",
     "in": "12時から"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "フリーテントサイトでソロキャンプの方は、ソロキャンプ特典として2枚です！",
+    "url": "https://bairdbeer.com/ja/pages/faq"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "ウエストコーストサイト・ダークスカイサイト(区画サイト)：",
+    "url": "https://bairdbeer.com/ja/pages/faq"
    }
   },
   "izu-kakure-auto": {
@@ -396,6 +676,22 @@
    "jikabi": {
     "status": "可",
     "quote": "直火はできますか？ はい。すべてのサイトで直火ができます。灰は場内の灰捨て場をご利用ください。",
+    "url": "https://kakure-camp.corpkj.com/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "4区画。ソロ、デュオ、ファミリーまで使いやすい標準的なサイトです。",
+    "url": "https://kakure-camp.corpkj.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートサイト 9区画",
+    "url": "https://kakure-camp.corpkj.com/",
+    "sites": "9区画"
+   },
+   "toilet": {
+    "status": "男女別の屋内トイレ",
+    "quote": "男女別の屋内トイレ 手洗い場（飲用可・温水あり）",
     "url": "https://kakure-camp.corpkj.com/"
    }
   },
@@ -416,8 +712,8 @@
     "quote": "※地面の上での直火はお断りさせていただいております。",
     "url": "https://www.pica-resort.jp/grinpa/faq/index.html"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "夜間（22:00～7:00）はお車での入場ができなくなります。",
     "url": "https://www.pica-resort.jp/grinpa/about/guidance.html"
    }
@@ -427,6 +723,11 @@
     "status": "可",
     "quote": "車両・バイク１台分は、サイト使用料に含まれます。",
     "url": "https://camp.imagining.jp/price2/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "ご家族でも十分な広さのウッドデッキが8サイト、細かい砂利を敷いたグラウンドサイトが4サイト",
+    "url": "https://camp.imagining.jp/sites/"
    }
   },
   "hottarakashi-camp": {
@@ -437,9 +738,19 @@
     "in": "13:00～17:00",
     "out": "翌11:00"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "22:00以降は、防犯のため場内手前のゲートを施錠いたします。",
+    "url": "https://hottarakashicamp.com/facility"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "どこからでも富士山と夜景が抜群の景色！リーズナブルな価格でも、しっかりサイトスペースが区切られている区画サイトをご紹介！",
+    "url": "https://hottarakashicamp.com/facility/div"
+   },
+   "toilet": {
+    "status": "すべて水洗",
+    "quote": "トイレはすべて水洗です。",
     "url": "https://hottarakashicamp.com/facility"
    }
   },
@@ -460,6 +771,28 @@
     "status": "不可",
     "quote": "直火は禁止です。必ず焚火台・コンロを使用してください。",
     "url": "https://fujikawa-camp.jp/faq/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "【ソロキャンプ割引】 1人で1区画を利用する方に限り、サイト利用料金を1,000円割引",
+    "url": "https://fujikawa-camp.jp/price/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "平地オートサイト は全6区画。 もちろん富士山を眺めることもできます。 区画内に車の乗入れができ、愛車の横にテントを張ることができます。",
+    "url": "https://fujikawa-camp.jp/price/",
+    "sites": "全6区画"
+   },
+   "access": {
+    "status": "新東名のICから約14分",
+    "quote": "到着(IC から約14分) 〔名古屋から〕 新東名",
+    "url": "https://fujikawa-camp.jp/access/",
+    "kind": "car"
+   },
+   "road": {
+    "status": "林道善福寺線の看板で右折",
+    "quote": "林道善福寺線の看板が見えたら右折",
+    "url": "https://fujikawa-camp.jp/access/"
    }
   },
   "motosu-shore-camp": {
@@ -481,10 +814,21 @@
     "quote": "直火は全面禁止です ：必ず焚き火台やコンロをご使用ください。",
     "url": "https://www.motosuko-camp.com/4_notes.html"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "夜間の車両移動禁止 ：夜10時～朝6時までは就寝時間です。この時間帯の車の進入や移動は固くお断りします。",
     "url": "https://www.motosuko-camp.com/4_notes.html"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "テントエリア内は完全自由（フリーサイト）ですので、お好みの場所に設営できます。",
+    "url": "https://www.motosuko-camp.com/2_info.html"
+   },
+   "access": {
+    "status": "河口湖ICから約30分",
+    "quote": "中央自動車道「河口湖IC」より国道139号・本栖湖方面へ 約30分",
+    "url": "https://www.motosuko-camp.com/5_access.html",
+    "kind": "car"
    }
   },
   "shosenkyo-auto-camp": {
@@ -499,18 +843,56 @@
     "status": "不可",
     "quote": "直火は禁止です。 焚き火台 をご使用ください。",
     "url": "https://syosenkyo-camp.com/about/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロデュオプラン 4,000円〜 定員2名・全区画が対象",
+    "url": "https://syosenkyo-camp.com/price/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "宿泊用の全28区画にAC電源を備え、地面には水はけのよい白州砕石を使用。",
+    "url": "https://syosenkyo-camp.com/",
+    "surface": "砕石",
+    "sites": "全28区画"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "19時～翌朝9時は敷地内に従業員は駐在しません。",
+    "url": "https://syosenkyo-camp.com/terms/"
+   },
+   "access": {
+    "status": "双葉SAスマートIC約20分",
+    "quote": "中央自動車道「双葉SAスマートIC」より、車で約20分。",
+    "url": "https://syosenkyo-camp.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "温水洗浄便座",
+    "quote": "トイレには温水洗浄便座を完備。",
+    "url": "https://syosenkyo-camp.com/"
    }
   },
   "retreat-camp-mahoroba": {
-   "checkin": {
-    "status": "記載あり",
-    "quote": "14:00〜17:00（テントサイト、パオ、テラス、リトリートハウス）",
-    "url": "https://retreatcamp-mahoroba.net/guide/",
-    "in": "14:00〜17:00"
-   },
    "jikabi": {
     "status": "不可",
     "quote": "焚火は必ず焚き火台を御使用ください。直火は山火事の原因になります。",
+    "url": "https://retreatcamp-mahoroba.net/guide/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "まほろばオートサイト（4区画） Under Mt.Fujiオートサイト（3区画） パノラマテントサイト（5区画）",
+    "url": "https://retreatcamp-mahoroba.net/guide/"
+   },
+   "access": {
+    "status": "河口湖ICから20分",
+    "quote": "お車で 中央道・河口湖IC下車 20分",
+    "url": "https://retreatcamp-mahoroba.net/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "全て洋式の暖房便座",
+    "quote": "全て洋式の暖房便座です。",
     "url": "https://retreatcamp-mahoroba.net/guide/"
    }
   },
@@ -521,10 +903,16 @@
     "url": "https://www.verga.info/rules",
     "in": "15時から17時"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "21:30になりましたら、メインゲート・サブゲートを施錠させていただきます。",
     "url": "https://www.verga.info/faq-%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F"
+   },
+   "access": {
+    "status": "須玉ICから約20分",
+    "quote": "中央道須玉ICから約20分",
+    "url": "https://www.verga.info/acsess",
+    "kind": "car"
    }
   },
   "westriver-auto-camp": {
@@ -540,10 +928,15 @@
     "quote": "直火は不可です、たき火をご希望の場合にはたき火台などをご持参いただくか有料レンタルをご利用ください。",
     "url": "https://westriver-camp.com/information/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "夜9時から朝8時まではゲートを閉鎖します。 この時間はお車の移動・出入りは不可となります。",
     "url": "https://westriver-camp.com/information/"
+   },
+   "road": {
+    "status": "場内は勾配のある砂利道",
+    "quote": "入場は可能ですが、場内は勾配のある砂利道の為、お車の重量と馬力のバランスによっては走行や車庫入れが難しい場合もあります。",
+    "url": "https://westriver-camp.com/qanda/"
    }
   },
   "pica-fujiyama-camp": {
@@ -551,21 +944,26 @@
     "status": "記載あり",
     "quote": "チェックイン 14：00～19：00（テントサイトは13：00～19：00）",
     "url": "https://www.pica-resort.jp/fujiyama/about/guidance.html",
-    "in": "13：00～19：00"
+    "in": "13:00～19:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "場内での直火のたき火・花火・発電機・カラオケ・IPod等の音楽機器の使用は禁止しています。",
     "url": "https://www.pica-resort.jp/fujiyama/about/guidance.html"
+   },
+   "access": {
+    "status": "河口湖ICから10分",
+    "quote": "中央自動車道・河口湖ICより 10分",
+    "url": "https://www.pica-resort.jp/fujiyama/access/index.html",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "無料・ドライヤーあり",
+    "quote": "場内のシャワーは利用無料です。（ドライヤー、シャンプー類はあります。バスタオルはご持参いただくか、レンタル(200円/枚)ください。）",
+    "url": "https://www.pica-resort.jp/fujiyama/about/guidance.html"
    }
   },
   "kiyosato-chuo-auto": {
-   "checkin": {
-    "status": "記載あり",
-    "quote": "通常：14時〜17時 （土曜日やハイシーズンは最終受付時間に変動あり）",
-    "url": "https://autocamp.co.jp/features/",
-    "in": "14時〜17時"
-   },
    "bike": {
     "status": "可",
     "quote": "バイク一台＋大人一人 1,500円 (税込)",
@@ -577,9 +975,20 @@
     "quote": "直火禁止です。焚き火台やバーベキューグリルなどを使用し、火の後片付けをしっかりと行いましょう。",
     "url": "https://autocamp.co.jp/features/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
-    "quote": "お車の出入りは22時から7時までできません。",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "車両は朝7:00〜22:00の間出入りが可能です。入り口の門が閉まりますので早朝出発の方はご相談ください。",
+    "url": "https://autocamp.co.jp/stay/"
+   },
+   "access": {
+    "status": "各ICから車で20分～30分",
+    "quote": "中央自動車道の須玉･長坂･小淵沢の各ICから車で20分～30分",
+    "url": "https://autocamp.co.jp/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗・24時間・ウォシュレット",
+    "quote": "水洗トイレ（24時間） 男子6室(ウォシュレット、便座ヒーター付き)",
     "url": "https://autocamp.co.jp/features/"
    }
   },
@@ -593,6 +1002,28 @@
    "jikabi": {
     "status": "不可",
     "quote": "直火での火気の使用は禁止させて頂いております。焚火台やバーベキューグリル等をご利用ください。",
+    "url": "https://www.pica-resort.jp/akeno/faq/index.html"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロ・デュオ専用サイト （定員2名・1サイト） 1泊1サイト 1,000円～",
+    "url": "https://www.pica-resort.jp/akeno/stay/site/index.html"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "林間フリーサイト・フォレスト （利用人数 1～6名・4サイト）",
+    "url": "https://www.pica-resort.jp/akeno/stay/site/index.html",
+    "surface": "林間",
+    "sites": "4サイト"
+   },
+   "road": {
+    "status": "バス停から急な坂道",
+    "quote": "「茅ヶ岳（金ヶ岳）登山道入口」下車、バス停から約2km歩く。 （急な坂道が続きます）",
+    "url": "https://www.pica-resort.jp/akeno/access/index.html"
+   },
+   "shower": {
+    "status": "男女別・大人210円",
+    "quote": "有料ですが、センターハウス内に男女別シャワールーム（大人210円・子供100円）がございます。",
     "url": "https://www.pica-resort.jp/akeno/faq/index.html"
    }
   },
@@ -608,6 +1039,18 @@
     "status": "不可",
     "quote": "焚火・直火のご利用はできません。",
     "url": "https://campmura.com/price/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "当施設では区画制（全20区画）となり、区画の指定はできません。 テントサイト1区画の広さは約5ｍ×5ｍとなります。",
+    "url": "https://campmura.com/qa/",
+    "sites": "全20区画"
+   },
+   "access": {
+    "status": "小田原駅東口から約75分",
+    "quote": "小田原駅東口より（所要時間計：約75分） 小田原 4番のりば 桃源台行",
+    "url": "https://campmura.com/access/",
+    "kind": "train"
    }
   },
   "hikenkayama": {
@@ -617,6 +1060,32 @@
     "url": "https://www.hitsurugi-camp.com/price.html",
     "in": "13:00～17:00",
     "out": "～11:00"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "またソロキャンプにも最適なフリーサイトも新設！",
+    "url": "https://www.hitsurugi-camp.com/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "区画サイトも電源付きに、 またソロキャンプにも最適なフリーサイトも新設！",
+    "url": "https://www.hitsurugi-camp.com/"
+   },
+   "access": {
+    "status": "東名菊川ICから車で17分",
+    "quote": "東名菊川ICから車で17分",
+    "url": "https://www.hitsurugi-camp.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗・ウォシュレット付",
+    "quote": "水洗ウォシュレット付トイレ",
+    "url": "https://www.hitsurugi-camp.com/price.html"
+   },
+   "shower": {
+    "status": "20時まで・無料",
+    "quote": "シャワー室(20時まで/無料）",
+    "url": "https://www.hitsurugi-camp.com/facility.html"
    }
   },
   "yanagishima": {
@@ -625,7 +1094,13 @@
     "quote": "チェックイン ：（宿泊）13時～18時 （アーリーチェックイン 11：00～ ） （日帰り）11時～ チェックアウト：（宿泊）翌日８時～10時まで",
     "url": "https://www.yanagishima-camp.com/?page_id=88",
     "in": "13時～18時",
-    "out": "翌日８時～10時まで"
+    "out": "翌日8時～10時まで"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントサイト：29区画各5人まで",
+    "url": "https://www.yanagishima-camp.com/",
+    "sites": "29区画"
    }
   },
   "tiny-camp-village": {
@@ -633,7 +1108,13 @@
     "status": "記載あり",
     "quote": "・ チェックインは１７時まで となります。 チェックインが １５時以降になる場合は事前にご連絡ください 。",
     "url": "https://www.tiny-camp-village.com/",
-    "in": "１７時まで"
+    "in": "17時まで"
+   },
+   "access": {
+    "status": "バス停から徒歩１５分ほど",
+    "quote": "バス停より徒歩１５分ほど",
+    "url": "https://www.tiny-camp-village.com/access",
+    "kind": "train"
    }
   },
   "asagiri-foodpark": {
@@ -650,9 +1131,9 @@
     "url": "https://asagiri-foodpark.com/afp.html",
     "price": "1,400円/台"
    },
-   "manager": {
-    "status": "夜間不在",
-    "quote": "※16:00以降は管理人不在のためチェックイン時間を過ぎるとチェックインできません。",
+   "ground": {
+    "status": "区画サイト",
+    "quote": "当施設のオートキャンプ場はフリーサイトではなく、サイト数も多くありません。",
     "url": "https://asagiri-foodpark.com/afp.html"
    }
   },
@@ -668,6 +1149,22 @@
     "status": "不可",
     "quote": "◎直火 焚き火台、コンロ等をご使用ください。",
     "url": "https://www.narakoko.info/wp/guide"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ファミリーキャンプからソロキャンプと天然温泉の露天風呂も楽しめる",
+    "url": "https://www.narakoko.info/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "フリーサイト (オートキャンプエリア) 林間区画サイト (オートキャンプエリア) 電源付き区画サイト",
+    "url": "https://www.narakoko.info/"
+   },
+   "access": {
+    "status": "掛川駅からバス約35分",
+    "quote": "JR 掛川駅北口下車⇒バス「掛川バスサービス泉行」6 番線⇒ならここの湯バス停下車（約35 分）",
+    "url": "https://www.narakoko.info/",
+    "kind": "train"
    }
   },
   "fujisan-genshijin": {
@@ -677,6 +1174,16 @@
     "url": "https://genshijin-fujinomiya.com/",
     "in": "13時～18時",
     "out": "11時"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "サイトは全て100㎡以上の区画で仕切られており、電源付きサイト、ドッグランなど完備。",
+    "url": "https://genshijin-fujinomiya.com/about.html"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き",
+    "quote": "ウォシュレット付きのトイレや、お湯の出る炊事場等、",
+    "url": "https://genshijin-fujinomiya.com/about.html"
    }
   },
   "marubi-auto": {
@@ -684,17 +1191,17 @@
     "status": "記載あり",
     "quote": "・チェックイン １３：００以降 ・チェックアウト １１：００",
     "url": "https://marubi.main.jp/riyou.html",
-    "in": "１３：００以降",
-    "out": "１１：００"
+    "in": "13:00以降",
+    "out": "11:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "・ 直火、発電機、カラオケ、打ち上げ花火は禁止です。",
     "url": "https://marubi.main.jp/riyou.html"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
-    "quote": "・ ゲートの閉門 ２１：００～７：００ 消灯 ２２：００",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "ゲートの閉門 ２１：００～７：００",
     "url": "https://marubi.main.jp/riyou.html"
    }
   },
@@ -703,6 +1210,16 @@
     "status": "不可",
     "quote": "直火 禁止 音響・発電機",
     "url": "https://tanzawakolodge.com/about/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートキャンプサイトは、全て車の乗り入れが可能な区画サイトで",
+    "url": "https://tanzawakolodge.com/about/"
+   },
+   "road": {
+    "status": "県道沿いの舗装路",
+    "quote": "キャンプ場までの道のりは、片側一車線の県道沿い舗装路でバス停が目の前にあります。",
+    "url": "https://tanzawakolodge.com/about/"
    }
   },
   "granpapa-solo-bocchi": {
@@ -710,18 +1227,34 @@
     "status": "記載あり",
     "quote": "チェックイン 12：00～15：00／チェックアウト 11：00",
     "url": "https://www.gran-papa.com/plan/",
-    "in": "12：00～15：00",
-    "out": "11：00"
+    "in": "12:00～15:00",
+    "out": "11:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "※直火NG／焚火台＋焚火シート必須※",
     "url": "https://www.gran-papa.com/site/solo/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "入口ゲートは 19時～翌7時の間施錠します。 防犯上この時間帯は入退場ができませんのでご注意ください。",
     "url": "https://www.gran-papa.com/plan/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "【ソロキャンプ向け / 最大2名様まで】",
+    "url": "https://www.gran-papa.com/site/solo/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "フラットな区画サイト",
+    "url": "https://www.gran-papa.com/site/solo/"
+   },
+   "access": {
+    "status": "新富士ICから約25分",
+    "quote": "新東名高速「新富士IC」より車で 約25分。",
+    "url": "https://www.gran-papa.com/access/",
+    "kind": "car"
    }
   },
   "nelo-gotemba": {
@@ -731,6 +1264,17 @@
     "url": "https://challengeoutdoor.co/nelogotemba/",
     "in": "13:00~16:00",
     "out": "8:00~11:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "19区画 駐車場 25台",
+    "url": "https://challengeoutdoor.co/nelogotemba/",
+    "sites": "19区画"
+   },
+   "toilet": {
+    "status": "ウォシュレット付",
+    "quote": "ウォシュレット付の綺麗なトイレやお湯が使える炊事場で誰でも快適なキャンプ。",
+    "url": "https://challengeoutdoor.co/nelogotemba/"
    }
   },
   "doshigawa-kanko-noen": {
@@ -739,6 +1283,12 @@
     "quote": "チェックイン 10時 チェックアウト",
     "url": "https://www.doshi-kanko.jp/camp/kanko-nouen/",
     "in": "10時"
+   },
+   "access": {
+    "status": "都留ICから30分",
+    "quote": "中央道 相模湖IC 50分、都留IC 30分／東名 御殿場IC 55分／圏央道 相模原IC 55分",
+    "url": "https://www.doshi-kanko.jp/camp/kanko-nouen/",
+    "kind": "car"
    }
   },
   "yamanakako-minami-auto": {
@@ -748,6 +1298,12 @@
     "url": "https://www.minami-camp.com/",
     "in": "13:00",
     "out": "11:00"
+   },
+   "access": {
+    "status": "東富士五湖ICから約15分",
+    "quote": "東富士五湖ICより車で約15分。",
+    "url": "https://www.minami-camp.com/",
+    "kind": "car"
    }
   },
   "village-hakushu": {
@@ -762,6 +1318,17 @@
     "status": "可",
     "quote": "テントサイトでの直火可能",
     "url": "https://www.village-hakushu.com/about01"
+   },
+   "access": {
+    "status": "小淵沢ICから約20分",
+    "quote": "中央自動車道小淵沢ICから約20分",
+    "url": "https://www.village-hakushu.com/access",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "有料",
+    "quote": "❖キャンプサイト シャワー室あり（有料）",
+    "url": "https://www.village-hakushu.com/about01"
    }
   },
   "minoishtaki": {
@@ -774,8 +1341,14 @@
    },
    "manager": {
     "status": "24時間常駐",
-    "quote": "営業時間：7:00～21:00 （管理人は24時間滞在）",
+    "quote": "（管理人は24時間滞在）",
     "url": "https://camp-minoishi.com/facility/"
+   },
+   "access": {
+    "status": "相模湖駅から徒歩約10分",
+    "quote": "JR相模湖駅から徒歩約10分『山口ボート』に到着次第、 乗船人数のご連絡(042-685-0330 )をお願いします。",
+    "url": "https://camp-minoishi.com/access/",
+    "kind": "train"
    }
   },
   "camp-akaike": {
@@ -784,6 +1357,16 @@
     "quote": "バイク （バイク１台スペース・テント１張・タープ１張） 1,000円～",
     "url": "https://www.camp-akaike.jp/",
     "price": "1,000円～"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロブッシュ【最長32時間滞在アーリー＆レイトサービス】 (テント・タープ等合計2張まで・ソロ専用)",
+    "url": "https://www.camp-akaike.jp/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイト ※電源無し 土日・繁忙期料金有り",
+    "url": "https://www.camp-akaike.jp/"
    }
   },
   "tsukiyono-doshi-camp": {
@@ -792,6 +1375,12 @@
     "quote": "チェックイン 13時 チェックアウト",
     "url": "https://www.doshi-kanko.jp/camp/tsukiyono/",
     "in": "13時"
+   },
+   "access": {
+    "status": "相模湖ICから35分",
+    "quote": "中央道 相模湖IC 35分、都留IC 50分／東名 御殿場IC 70分／圏央道 相模原IC 35分",
+    "url": "https://www.doshi-kanko.jp/camp/tsukiyono/",
+    "kind": "car"
    }
   },
   "flora-campsite": {
@@ -804,6 +1393,23 @@
     "status": "不可",
     "quote": "直火禁止 ​焚き火台 焚き火シート必須",
     "url": "https://www.floracampsite.com/info"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "自分だけの静寂を満喫したいソロキャンパーに最適な、自由でラフな森の空間をお楽しみください。",
+    "url": "https://www.floracampsite.com/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "綺麗に整地されていない自然そのものの雑木林を活かしたフリーサイトです。",
+    "url": "https://www.floracampsite.com/",
+    "surface": "雑木林"
+   },
+   "access": {
+    "status": "小淵沢ICから約20分",
+    "quote": "中央道小淵沢ICから約20分",
+    "url": "https://www.floracampsite.com/contact",
+    "kind": "car"
    }
   },
   "hayato-hakone": {
@@ -812,16 +1418,31 @@
     "quote": "チェックイン 11:00-18:00 チェックアウト",
     "url": "https://hayatohakoneguesthouse.com/page/hakone-camp/",
     "in": "11:00-18:00"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "手ぶらで行ける ソロキャンプデビュープラン有",
+    "url": "https://hayatohakoneguesthouse.com/page/hakone-camp/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト サイトの地面：土",
+    "url": "https://hayatohakoneguesthouse.com/page/hakone-camp/",
+    "surface": "土"
+   },
+   "access": {
+    "status": "箱根口ICから約5分",
+    "quote": "箱根口ICからの所要時間：約5分",
+    "url": "https://hayatohakoneguesthouse.com/page/hakone-camp/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗・洋式仮設",
+    "quote": "清潔な 水洗トイレ完備 （洋式仮設トイレ）",
+    "url": "https://hayatohakoneguesthouse.com/page/hakone-camp/"
    }
   },
   "shimobe-yurucamp-sato": {
-   "checkin": {
-    "status": "記載あり",
-    "quote": "午後1時〜／翌日午前11時まで",
-    "url": "https://www.michinoeki-shimobe.jp/camp/",
-    "in": "午後1時〜",
-    "out": "翌日午前11時まで"
-   },
    "bike": {
     "status": "可",
     "quote": "バイク・ソロ向け（定員1〜2名）7サイト",
@@ -831,12 +1452,48 @@
     "status": "不可",
     "quote": "直火での焚き火。芝を傷つけないように焚き火台をご用意ください。",
     "url": "https://www.michinoeki-shimobe.jp/camp/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ファミリー（定員1〜6名）10サイト／バイク・ソロ向け（定員1〜2名）7サイト",
+    "url": "https://www.michinoeki-shimobe.jp/camp/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントサイト（1区画）",
+    "url": "https://www.michinoeki-shimobe.jp/camp/"
+   },
+   "toilet": {
+    "status": "水洗・多目的トイレ",
+    "quote": "シャワー室、水洗トイレ、多目的トイレ",
+    "url": "https://www.michinoeki-shimobe.jp/camp/"
    }
   },
   "bushcraft-shonan": {
    "bike": {
     "status": "可",
     "quote": "バイクや自転車でお越しの場合は、敷地内空きスペースをご利用下さいませ。",
+    "url": "https://bush-craft.biz/qa/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロキャンプ専用スペースです。",
+    "url": "https://bush-craft.biz/member/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "全5区画 (1区画約35㎡程)",
+    "url": "https://bush-craft.biz/",
+    "sites": "全5区画"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "施設にスタッフの滞在はございません。不定期の巡回による施設管理を行っております。",
+    "url": "https://bush-craft.biz/member/"
+   },
+   "toilet": {
+    "status": "仮設トイレ（和式）",
+    "quote": "仮設トイレ（和式）をご利用いただけます。",
     "url": "https://bush-craft.biz/qa/"
    }
   },
@@ -847,6 +1504,12 @@
     "url": "https://www.nagomi-camp.com/",
     "in": "13:00",
     "out": "11:00"
+   },
+   "access": {
+    "status": "都留ICから車で10分",
+    "quote": "都留ICより車10分",
+    "url": "https://www.nagomi-camp.com/topics",
+    "kind": "car"
    }
   },
   "kamioshima-camp": {
@@ -854,19 +1517,24 @@
     "status": "不可",
     "quote": "直火は禁止です。コンロ等をご利用ください",
     "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "施設 テントサイト（100張分）、炊事場、水洗トイレ、貸出用テント（15張）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html"
    }
   },
   "camp-bean-izu": {
-   "checkin": {
-    "status": "記載あり",
-    "quote": "はじめてご利用される方は、原則としまして10:00～13:00のご入場でお願いしております。",
-    "url": "https://www.campbean.jp/information/",
-    "in": "10:00～13:00"
-   },
    "jikabi": {
     "status": "一部可",
     "quote": "決められた場所であれば直火も可能です。焚き火の注意事項をご一読ください。",
     "url": "https://www.campbean.jp/information/"
+   },
+   "access": {
+    "status": "修善寺駅から車で15分程",
+    "quote": "CAMP BEANは伊豆市修善寺駅から車で15分程、",
+    "url": "https://www.campbean.jp/",
+    "kind": "train"
    }
   },
   "kunowaki-shinsui": {
@@ -886,6 +1554,28 @@
     "status": "不可",
     "quote": "※直火禁止。 新型コロナウイルス感染予防対策期間中はご迷惑をお掛け致しました。",
     "url": "https://www.kunowaki.net/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "区画サイト34区画 フリーテントサイト100張",
+    "url": "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "sites": "区画サイト34区画 フリーテントサイト100張"
+   },
+   "access": {
+    "status": "塩郷駅から徒歩10分",
+    "quote": "塩郷駅から車で３分、徒歩１０分",
+    "url": "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "売店、水洗トイレ、洗濯機、温水シャワー、酒類販売、まき販売、炊事棟",
+    "url": "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/"
+   },
+   "shower": {
+    "status": "温水シャワー",
+    "quote": "売店、水洗トイレ、洗濯機、温水シャワー、酒類販売、まき販売、炊事棟",
+    "url": "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/"
    }
   },
   "tenshino-mori-camp": {
@@ -909,12 +1599,37 @@
     "url": "https://shinozawa-ootaki-camp.com/info/access/",
     "in": "13:00～",
     "out": "～11:00"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "家族、ペット連れ、ソロキャンプ、どなたでも充実したアウトドア体験をぜひお楽しみください。",
+    "url": "https://shinozawa-ootaki-camp.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "篠沢大滝キャンプ場は、区画サイトのほかにグループ限定サイトエリア、",
+    "url": "https://shinozawa-ootaki-camp.com/"
+   },
+   "shower": {
+    "status": "コインシャワー",
+    "quote": "管理棟・コインシャワー・コインランドリー",
+    "url": "https://shinozawa-ootaki-camp.com/campsite_category/facility/"
    }
   },
   "ugusu-camp": {
    "jikabi": {
     "status": "不可",
     "quote": "【禁止事項】サイトでの直火、ペット類の持ち込み",
+    "url": "https://www.nishiizu-kankou.com/stay/ugusucanp"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "管理棟のほか水洗トイレ、温水シャワー、炊事棟、更衣室を完備。",
+    "url": "https://www.nishiizu-kankou.com/stay/ugusucanp"
+   },
+   "shower": {
+    "status": "3分200円",
+    "quote": "シャワー3分 200円",
     "url": "https://www.nishiizu-kankou.com/stay/ugusucanp"
    }
   },
@@ -937,6 +1652,16 @@
     "status": "可",
     "quote": "※バイクの場合：標準３台／最大６台（４台以上は追加料金）",
     "url": "https://oic-camp.com/service/allweather/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロテントサイトは１～２人用テントと小さなタープの設営を前提にしておりますので、大きなテントやタープのご利用はご遠慮ください。",
+    "url": "https://oic-camp.com/service/solo/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "サイトまでのアプローチ路には砂利を敷いています。一区画の大きさは、概ね8m×8mです。",
+    "url": "https://oic-camp.com/service/auto-m/"
    }
   },
   "fudonotaki-auto": {
@@ -954,6 +1679,19 @@
     "quote": "★二輪車１台２名迄１日 ４０００円",
     "url": "https://www.shiraishiautocamp.com/price",
     "price": "４０００円"
+   },
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン１２時 ・チェックアウトは１１時",
+    "url": "https://www.shiraishiautocamp.com/info",
+    "in": "12時",
+    "out": "11時"
+   },
+   "access": {
+    "status": "大井松田ICから約50分",
+    "quote": "東名（大井松田IC)より約５０分",
+    "url": "https://www.shiraishiautocamp.com/contact",
+    "kind": "car"
    }
   },
   "ryokokubashi-camp": {
@@ -961,6 +1699,12 @@
     "status": "可",
     "quote": "バイク～125 200 350",
     "url": "https://yukawaya.a.la9.jp/camp/camp_price.html"
+   },
+   "access": {
+    "status": "相模原ICより30分",
+    "quote": "相模原ICより30分 相模原IC下車。",
+    "url": "https://yukawaya.a.la9.jp/access.html",
+    "kind": "car"
    }
   },
   "new-tashiro-auto-camp": {
@@ -988,6 +1732,17 @@
     "status": "不可",
     "quote": "直火は禁止です。 焚き火台等を使用して頂き、必ず焚火マットも併用してください。",
     "url": "https://www.midoritotaiyounooka.com/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB"
+   },
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン １３：００～１７：００",
+    "url": "https://www.midoritotaiyounooka.com/",
+    "in": "13:00"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "※平日限定ソロテントは半額となります。",
+    "url": "https://www.midoritotaiyounooka.com/%E6%96%99%E9%87%91%E8%A1%A8"
    }
   },
   "saiko-kohan-camp": {
@@ -995,13 +1750,23 @@
     "status": "記載あり",
     "quote": "チェックイン 9:00〜（※前日満車の場合は10:30〜）18:30まで",
     "url": "https://saikohan.com/price/",
-    "out": "10:30"
+    "in": "9:00"
    },
    "bike": {
     "status": "可",
     "quote": "バイク 500円 キャンピングカー（大型・トレーラー）",
     "url": "https://saikohan.com/price/",
     "price": "500円"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイト 湖岸に広がる開放的なフリーサイト。 区画のない自由なレイアウトで、湖を眺めながらキャンプを楽しめます。",
+    "url": "https://saikohan.com/about/"
+   },
+   "shower": {
+    "status": "温水・1回450円",
+    "quote": "温水シャワー / 1回 450円",
+    "url": "https://saikohan.com/price/"
    }
   },
   "ogayanagawa-keikoku": {
@@ -1015,6 +1780,21 @@
     "status": "不可",
     "quote": "直火での焚き火は禁止となっています。",
     "url": "https://ooyanagawa-camp.com/%e5%bd%93%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4%e3%81%ae%e3%81%94%e5%88%a9%e7%94%a8%e3%81%ae%e7%9a%86%e6%a7%98%e3%81%b8%e3%81%ae%e3%81%8a%e9%a1%98%e3%81%84/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロキャンプ向けサイトもあります。〈必ずご予約下さい〉",
+    "url": "https://ooyanagawa-camp.com/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "区画サイトとフリーサイトがあります。",
+    "url": "https://ooyanagawa-camp.com/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85-%e3%81%94%e5%88%a9%e7%94%a8%e6%96%99%e9%87%91%e6%96%b0%e6%96%99%e9%87%91/"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "水洗トイレ、駐車場 施設案内/ご利用料金",
+    "url": "https://ooyanagawa-camp.com/"
    }
   },
   "saiko-tsuhara-camp": {
@@ -1029,10 +1809,27 @@
     "quote": "場内は直火禁止です。必ず焚き火台と焚き火シートをご使用ください。",
     "url": "https://tsuhara-camp.jp/attention/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "21:00から翌朝7:00までは、車の出入りおよび場内での車両移動はできません。",
     "url": "https://tsuhara-camp.jp/access/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "津原キャンプ場では、小さなお子さま連れのご家族からソロキャンパー、グループのお客様まで、",
+    "url": "https://tsuhara-camp.jp/attention/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "湖に近い湖畔サイト、木々に囲まれた林間サイト、開放感のある広場サイトがあります。 いずれもフリーサイトとなり、当日の利用状況に応じてご案内します。",
+    "url": "https://tsuhara-camp.jp/faq/",
+    "surface": "林間"
+   },
+   "access": {
+    "status": "バス停から徒歩約1分",
+    "quote": "バス停からキャンプ場まで徒歩約1分",
+    "url": "https://tsuhara-camp.jp/faq/",
+    "kind": "train"
    }
   },
   "apt-ichishiro": {
@@ -1047,6 +1844,12 @@
     "status": "不可",
     "quote": "7人まで、地面は芝生 直火禁止 サイトにより利用料金が異なります。",
     "url": "https://abt-camp.shizu.website/facility_rate/"
+   },
+   "access": {
+    "status": "アプトいちしろ駅から徒歩５分",
+    "quote": "アプトいちしろキャンプ場は大井川鐡道のアプトいちしろ駅から徒歩５分！",
+    "url": "https://abt-camp.shizu.website/",
+    "kind": "train"
    }
   },
   "otaki-sabo": {
@@ -1054,12 +1857,29 @@
     "status": "記載あり",
     "quote": "チェックイン 12:00〜16:00 チェックアウト 11:０0まで",
     "url": "http://otaki-sabo.info/access.html",
-    "in": "12:00〜16:00"
+    "in": "12:00〜16:00",
+    "out": "11:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "直火は禁止です。焚き火台及び焚き火シートをご利用ください（レンタル有）。",
     "url": "http://otaki-sabo.info/policy.html"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ファミリーキャンプやソロキャンプ・ツーリングキャンプ向けの小規模キャンプ場です",
+    "url": "http://otaki-sabo.info/"
+   },
+   "access": {
+    "status": "市原鶴舞ICから車で約20分",
+    "quote": "圏央道市原鶴舞ICから車で約20分。",
+    "url": "http://otaki-sabo.info/access.html",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "温水洗浄トイレ",
+    "quote": "シャワールーム・温水洗浄トイレ・洗い場(お湯OK)・炭捨て場等",
+    "url": "http://otaki-sabo.info/cost.html"
    }
   },
   "morimaki-auto": {
@@ -1075,6 +1895,28 @@
     "quote": "バイク 1台 300円",
     "url": "https://www.morimaki-camp.com/facility/",
     "price": "300円"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイト(200サイト) ・水洗トイレ(4か所)",
+    "url": "https://www.morimaki-camp.com/facility/",
+    "sites": "200サイト"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "21:00以降はお車の出入り、移動はできません。21:00～7:00まで門を閉めます。",
+    "url": "https://www.morimaki-camp.com/rule/"
+   },
+   "access": {
+    "status": "姉崎・袖ヶ浦ICから6km",
+    "quote": "館山自動車道 姉崎・袖ヶ浦ICを鴨川方面へ右折6km、三高交差点を左折して1km",
+    "url": "https://www.morimaki-camp.com/access/",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "5分300円",
+    "quote": "シャワーのご利用は5分300円です。",
+    "url": "https://www.morimaki-camp.com/rule/"
    }
   },
   "otaki-kenminnomori": {
@@ -1082,7 +1924,12 @@
     "status": "記載あり",
     "quote": "チェックイン時間は、午後２時～４時までです。",
     "url": "https://otakikenminnomori.jp/camp",
-    "in": "午後２時～４時"
+    "in": "午後2時～4時"
+   },
+   "shower": {
+    "status": "無料・17:00～21:00",
+    "quote": "温水シャワー(無料)の利用可能時間は、17:00～21:00まで となります。",
+    "url": "https://otakikenminnomori.jp/camp"
    }
   },
   "hiranoda-kyuyoson": {
@@ -1104,6 +1951,11 @@
     "status": "不可",
     "quote": "※直火、カラオケ、打ち上げ花火（手持ち花火は第1駐車場バスレーンでお願いします。）",
     "url": "https://fujino-art.jp/camp/"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "大きな屋根の炊事場、温水シャワー、水洗トイレも完備しています。",
+    "url": "https://fujino-art.jp/camp/"
    }
   },
   "sengokudai-auto": {
@@ -1111,8 +1963,35 @@
     "status": "記載あり",
     "quote": "A1 チェックインは13：00~16：00・チェックアウトは12：00までとなります。",
     "url": "https://www.1059dai.com/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/",
-    "in": "13：00~16：00",
-    "out": "12：00"
+    "in": "13:00~16:00",
+    "out": "12:00"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンプ限定の格安料金プランもあります。",
+    "url": "https://www.1059dai.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントサイト19区画＋バンガロ1棟の、こじんまりとしたキャンプ場です。",
+    "url": "https://www.1059dai.com/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/",
+    "sites": "19区画"
+   },
+   "access": {
+    "status": "木更津東ICから約30km",
+    "quote": "圏央道『木更津東IC』より国道410号鴨川方面、２０分程で『名殿信号』左折、国道465号亀山湖方面へ。約１５分で右折、県道81号『清澄養老ライン』 を清澄方面へ５分で到着。木更津東ICから約30km",
+    "url": "https://www.1059dai.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "洋式トイレ4基・暖かい便座",
+    "quote": "2024年お客様からのご要望が多かった寒い季節の味方「暖かい便座」を洋式トイレ4基に設置させて頂きました。",
+    "url": "https://www.1059dai.com/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/"
+   },
+   "shower": {
+    "status": "30分単位の予約制・2基",
+    "quote": "シャワー室のご利用は30分単位の予約制で、シャワーは2基と別に更衣室あります。",
+    "url": "https://www.1059dai.com/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/"
    }
   },
   "sugari-camp": {
@@ -1126,6 +2005,22 @@
    "jikabi": {
     "status": "一部可",
     "quote": "すがり1の対岸フリーサイトでは直火が可能で、川原で石のかまどを作って",
+    "url": "https://sugari.camp/lp/solo-camp.php"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロでもリーズナブル 通常期間は¥1,500/泊〜と、ソロキャンパーには嬉しい料金設定。",
+    "url": "https://sugari.camp/lp/solo-camp.php"
+   },
+   "access": {
+    "status": "浜松浜北ICから約20分",
+    "quote": "新東名高速道路 浜松浜北ICから約20分",
+    "url": "https://sugari.camp/lp/solo-camp.php",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "清潔な水洗",
+    "quote": "トイレは清潔な水洗。スタッフが常駐しておりセキュリティ面でも安心です。",
     "url": "https://sugari.camp/lp/solo-camp.php"
    }
   },
@@ -1151,6 +2046,32 @@
     "status": "24時間常駐",
     "quote": "夜間は、スタッフがキャンプ場入口近くの場所におりますのでお電話ください、対応いたします。",
     "url": "https://orangemura.com/camp/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "（ソロ：3500円のみ ） バイク1台 + テント1張",
+    "url": "https://orangemura.com/camp/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "海の見える高台にある第1キャンプ場（約40区画） 森に囲まれた第2キャンプ場（約50区画）",
+    "url": "https://orangemura.com/camp/"
+   },
+   "access": {
+    "status": "富浦ICから車で約25分",
+    "quote": "高速館山道〜富津館山自動車道「富浦IC」 （ICから車で約25分）",
+    "url": "https://orangemura.com/access/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "炊事場(一部お湯も出ます) / 水洗トイレ / 24時間温水シャワー",
+    "url": "https://orangemura.com/camp/"
+   },
+   "shower": {
+    "status": "24時間無料",
+    "quote": "温水シャワーは24時間無料でご利用できます。",
+    "url": "https://orangemura.com/camp/"
    }
   },
   "narita-yume-bokujo": {
@@ -1163,6 +2084,33 @@
    "jikabi": {
     "status": "不可",
     "quote": "禁止事項：「直火」「騒音行為」「共用スペースの占有行為」",
+    "url": "https://www.yumebokujo.com/camp.html"
+   },
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックアウト 17:00（手続きなし）",
+    "url": "https://www.yumebokujo.com/camp.html",
+    "out": "17:00"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "一般サイト：区画の無いフリーサイト。車道の確保等周辺の方へご配慮の上ご利用ください ・電源サイト：約9×9ｍの区画サイト（用地は非正方形もあり）",
+    "url": "https://www.yumebokujo.com/camp.html"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "夜間等、営業時間外はスタッフは不在となります",
+    "url": "https://www.yumebokujo.com/camp.html"
+   },
+   "access": {
+    "status": "圏央道下総ICから約2分",
+    "quote": "【圏央道下総IC】より車で約2分",
+    "url": "https://www.yumebokujo.com/access.html",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "管理棟近くはウォシュレット付",
+    "quote": "バリアフリーな障碍者トイレも完備。管理棟近くのトイレはウォシュレット付き！",
     "url": "https://www.yumebokujo.com/camp.html"
    }
   },
@@ -1183,6 +2131,27 @@
     "status": "不可",
     "quote": "直火禁止、焚き火台の下に耐火マットをご使用下さい。",
     "url": "https://ethp.net/camp/kamifuse/?mid=9"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンプ特別料金 車(1人1台)3,000円",
+    "url": "https://ethp.net/camp/kamifuse/?mid=9"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "総面積20,739㎡、オ－トキャンプサイト数70 （内ＡＣ電源付15サイト）。",
+    "url": "https://ethp.net/camp/kamifuse/?mid",
+    "sites": "オ－トキャンプサイト数70"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "水洗トイレ 温水シャワ－室３",
+    "url": "https://ethp.net/camp/kamifuse/?mid=1"
+   },
+   "shower": {
+    "status": "1回1人200円",
+    "quote": "シャワー1回1人200円(大人同伴の小学生以下無料)",
+    "url": "https://ethp.net/camp/kamifuse/?mid=9"
    }
   },
   "tachibana-fureai-camp": {
@@ -1192,6 +2161,12 @@
     "url": "https://www.tachibana-park.jp/facility-guide/camp/",
     "in": "13:00〜17:00",
     "out": "8:00〜11:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "2023年4月にオープンしたキャンプサイトは、自然をたっぷり楽しめる全57区画です。",
+    "url": "https://www.tachibana-park.jp/facility-guide/camp/",
+    "sites": "全57区画"
    }
   },
   "umegashima-camp": {
@@ -1206,6 +2181,13 @@
     "status": "不可",
     "quote": "直火不可。バンガロー等建物の近くでは十分ご注意ください。",
     "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイト（第1～3広場） 砂利で整地、一部土のエリアあり 上限70張り（持ち込みテント65張り、貸出テント5張り）",
+    "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html",
+    "surface": "砂利",
+    "sites": "上限70張り"
    }
   },
   "miyoshi-family-camp": {
@@ -1220,7 +2202,17 @@
     "status": "記載あり",
     "quote": "チェックイン PM12：00～",
     "url": "http://fruitsvillage.com/plan1.html",
-    "in": "PM12：00～"
+    "in": "PM12:00～"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "平日のソロキャンプに特化したお得な情報です 大人1名 お車1台のお客様のみのご提供になります",
+    "url": "http://fruitsvillage.com/custom11.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "※オートキャンプサイトの1区画当たりの広さは平均8m×10mです",
+    "url": "http://fruitsvillage.com/plan1.html"
    }
   },
   "inagasaki-camp": {
@@ -1235,6 +2227,22 @@
     "status": "不可",
     "quote": "① 直火禁止 ② キャンプ場からの釣り禁止",
     "url": "https://inagasaki.world.coocan.jp/caution.html"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "オートキャンプサイト : 1区画1泊につき 3,300円 フリーキャンプサイト : テント1張1,100円",
+    "url": "https://inagasaki.world.coocan.jp/facilities.html"
+   },
+   "access": {
+    "status": "上総亀山駅から徒歩10分",
+    "quote": "JR内房線木更津駅～JR久留里線上総亀山駅下車～徒歩10分",
+    "url": "https://inagasaki.world.coocan.jp/access.html",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "水洗トイレ(身障者対応)",
+    "quote": "水洗トイレ(身障者対応)",
+    "url": "https://inagasaki.world.coocan.jp/facilities.html"
    }
   },
   "laqlaq-garden": {
@@ -1254,6 +2262,16 @@
     "status": "不可",
     "quote": "直火は禁止です。芝・地面を焦がさないよう、脚付きのたき火台、バーベキュー台、コンロ等をご利用ください。",
     "url": "https://laqlaqgarden.com/attention/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "区画サイトは全て140㎡以上、オートフリーサイトも広大な中に受入れは絞り",
+    "url": "https://laqlaqgarden.com/"
+   },
+   "toilet": {
+    "status": "洋式簡易水洗",
+    "quote": "洋式簡易水洗トイレまたは、男子小便器があります。",
+    "url": "https://laqlaqgarden.com/garden-map/"
    }
   },
   "nanasatogawa-autocamp": {
@@ -1263,6 +2281,18 @@
     "url": "https://www.city.kimitsu.lg.jp/site/kanko/10224.html",
     "in": "13時00分",
     "out": "11時00分"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートキャンプサイト35区画",
+    "url": "https://www.city.kimitsu.lg.jp/site/kanko/10224.html",
+    "sites": "35区画"
+   },
+   "access": {
+    "status": "木更津東ICから40分程度",
+    "quote": "木更津東ICより久留里方面、国道465号線黄和田畑先。所要時間40分程度",
+    "url": "https://www.city.kimitsu.lg.jp/site/kanko/10224.html",
+    "kind": "car"
    }
   },
   "taibusamisaki-camp": {
@@ -1277,6 +2307,12 @@
     "status": "不可",
     "quote": "直火は禁止です。常設のかまどをご利用いただくか、焚き火台等をお持ちください。",
     "url": "https://taibusa-misaki.jp/mp/goriyouhouhou_ryokinhyo"
+   },
+   "access": {
+    "status": "富浦駅から徒歩約40分",
+    "quote": "富浦駅→→→徒歩約40分",
+    "url": "https://taibusa-misaki.jp/access/",
+    "kind": "train"
    }
   },
   "okugome-kimura-nouen": {
@@ -1293,6 +2329,17 @@
     "url": "https://www.city.kimitsu.lg.jp/site/kanko/77120.html",
     "in": "13時00分から16時00分",
     "out": "11時00分"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "管理棟 フリーサイト 区画サイト オートサイト",
+    "url": "https://www.city.kimitsu.lg.jp/site/kanko/77120.html"
+   },
+   "access": {
+    "status": "木更津東ICより30分",
+    "quote": "圏央道 木更津東ICより30分",
+    "url": "https://www.city.kimitsu.lg.jp/site/kanko/77120.html",
+    "kind": "car"
    }
   },
   "ohara-sotobou": {
@@ -1300,8 +2347,8 @@
     "status": "記載あり",
     "quote": "チェックイン 13：00～17：00 チェックアウト 8：00～11：00",
     "url": "https://oohara-ac-inn.jimdofree.com/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91",
-    "in": "13：00～17：00",
-    "out": "8：00～11：00"
+    "in": "13:00～17:00",
+    "out": "8:00～11:00"
    },
    "jikabi": {
     "status": "不可",
@@ -1312,6 +2359,28 @@
     "status": "24時間常駐",
     "quote": "管理人24時間常駐（営業時）",
     "url": "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "サイト数 オート60区画（AC電源付き20区画）",
+    "url": "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/",
+    "sites": "オート60区画"
+   },
+   "access": {
+    "status": "東金ICから約40分",
+    "quote": "千葉東金道路・東金ICを降りて九十九里道路を経由、国道128号線で約40分",
+    "url": "https://oohara-ac-inn.jimdofree.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "洋式水洗",
+    "quote": "管理棟、炊事棟、トイレ(洋式水洗）、温水シャワー、ランドリー",
+    "url": "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/"
+   },
+   "shower": {
+    "status": "温水シャワーあり",
+    "quote": "管理棟、炊事棟、トイレ(洋式水洗）、温水シャワー、ランドリー",
+    "url": "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/"
    }
   },
   "seiwa-kenminnomori": {
@@ -1319,6 +2388,17 @@
     "status": "可",
     "quote": "お車やバイクをサイト近くまで乗り入れていただけます。",
     "url": "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "各サイトに、便利な設備を完備したオートキャンプサイトを全11区画ご用意しております。",
+    "url": "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/",
+    "sites": "全11区画"
+   },
+   "shower": {
+    "status": "１回１００円・３分間",
+    "quote": "温水シャワーは、１回１００円で３分間がご利用頂けます。",
+    "url": "https://www.seiwanomori.jp/2695-2/"
    }
   },
   "tomisakikan-camp": {
@@ -1335,12 +2415,22 @@
     "status": "記載あり",
     "quote": "チェックイン： PM 1：00～PM 4：00（PM 4:00以降になるお客様はお電話下さい） チェックアウトAM 11：00",
     "url": "http://katuuraonsen.com/camp/camp.html",
-    "in": "PM 1：00～PM 4：00",
-    "out": "AM 11：00"
+    "in": "PM 1:00～PM 4:00",
+    "out": "AM 11:00"
    },
    "jikabi": {
     "status": "可",
     "quote": "直火ＯＫ 薪サービス【薪は無料（廃材）ですが、数に限りがございますので必要最低限でお願いします。 】",
+    "url": "http://katuuraonsen.com/camp/camp.html"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "施設： 管理棟、水洗トイレ、温水シャワー男女（無料）、洗い場",
+    "url": "http://katuuraonsen.com/camp/camp.html"
+   },
+   "shower": {
+    "status": "男女・無料",
+    "quote": "施設： 管理棟、水洗トイレ、温水シャワー男女（無料）、洗い場",
     "url": "http://katuuraonsen.com/camp/camp.html"
    }
   },
@@ -1351,6 +2441,12 @@
     "url": "https://kaikouzu.com/camp.html",
     "in": "15:00",
     "out": "10:00"
+   },
+   "access": {
+    "status": "JR浜金谷駅まで徒歩約10分",
+    "quote": "JR浜金谷駅まで徒歩約10分",
+    "url": "https://kaikouzu.com/access.html",
+    "kind": "train"
    }
   },
   "acn-katsuura-manbow": {
@@ -1366,18 +2462,49 @@
     "status": "記載あり",
     "quote": "テントサイト：チェックイン・・・13 :00 チェックアウト・・・11:00",
     "url": "https://www.eleven-camp.com/caution",
-    "out": "11:00"
+    "out": "11:00",
+    "in": "13:00"
    },
    "bike": {
     "status": "可",
     "quote": "区画料：1,650円 電源料 550円 車/バイク（1台）",
     "url": "https://www.eleven-camp.com/caution"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画が約120㎡の広さで、テントやタープをたてても十分な広さです。全部で120区画あり、トップシーズン以外はお好きな場所を選ぶことも出来ます。",
+    "url": "https://www.eleven-camp.com/sight",
+    "sites": "全部で120区画"
+   },
+   "access": {
+    "status": "木更津東ICから15分",
+    "quote": "木更津東ICから15分 姉崎袖ヶ浦ICから25分 君津ICから20分",
+    "url": "https://www.eleven-camp.com/access",
+    "kind": "car"
    }
   },
   "shiosai-campfield": {
    "jikabi": {
     "status": "不可",
     "quote": "場内は全て直火禁止です。 焚き火台 ・ 脚付きコンロ等の器具をご使用ください。",
+    "url": "https://shiosai-minamiboso.com/"
+   },
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00 / チェックアウト 11:00",
+    "url": "https://shiosai-minamiboso.com/",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "ハナレフリーサイト （F1～F8） ホテル棟（管理棟）から一番離れた静かなエリアにあるフリーサイトです。",
+    "url": "https://shiosai-minamiboso.com/",
+    "sites": "F1～F8"
+   },
+   "toilet": {
+    "status": "全て洋式・洗浄便座付",
+    "quote": "全て洋式トイレ・洗浄便座付です。",
     "url": "https://shiosai-minamiboso.com/"
    }
   },
@@ -1388,6 +2515,12 @@
     "url": "https://www.city.asahi.lg.jp/soshiki/29/24010.html",
     "in": "午後1時～午後3時",
     "out": "午前9時～午前11時"
+   },
+   "access": {
+    "status": "横芝光ICから約20分",
+    "quote": "横芝光ICから国道126号で約20分",
+    "url": "https://www.city.asahi.lg.jp/soshiki/3/2759.html",
+    "kind": "car"
    }
   },
   "nightvista-camp": {
@@ -1401,6 +2534,23 @@
     "status": "可",
     "quote": "バイク (駐車台数)   1台/1区画",
     "url": "https://nightvista3.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト (オートキャンプサイト) サイトの地面：土",
+    "url": "https://nightvista3.com/",
+    "surface": "土"
+   },
+   "access": {
+    "status": "鋸南ICより車で約5分",
+    "quote": "富津館山道路・鋸南ICより車で約5分。",
+    "url": "https://nightvista3.com/",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "300円・1人1回15分",
+    "quote": "シャワー 300円 ※場所／ ヴィラハウス鋸南2号館内 ※1人1回15分",
+    "url": "https://nightvista3.com/"
    }
   },
   "campgarden-inzai": {
@@ -1408,12 +2558,12 @@
     "status": "記載あり",
     "quote": "チェックイン 13：00～17：00 / チェックアウト 翌11：00",
     "url": "https://campg-inzai.com/price/",
-    "in": "13：00～17：00",
-    "out": "翌11：00"
+    "in": "13:00～17:00",
+    "out": "翌11:00"
    },
    "manager": {
     "status": "夜間不在",
-    "quote": "当施設は夜間スタッフが常駐しないため",
+    "quote": "当施設は夜間スタッフが常駐しないため、宿泊につきましてはお断りしております。",
     "url": "https://campg-inzai.com/faq/"
    }
   },
@@ -1423,6 +2573,11 @@
     "quote": "※オートバイ/自転車 は 無料",
     "url": "https://www.romannomori.co.jp/price/",
     "price": "無料"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "Q．キャンプサイトの広さを教えてください。 A．駐車スペースを含まず7m&times;7mです。（サイト横付け可能、1サイト1台まで。）",
+    "url": "https://www.romannomori.co.jp/faq/"
    }
   },
   "ichinose-kogen-camp": {
@@ -1438,6 +2593,12 @@
     "quote": "車１台１泊500円 バイク1台1泊300円",
     "url": "https://www.cosmo.ne.jp/camp/goriyouhohou.htm",
     "price": "300円"
+   },
+   "access": {
+    "status": "勝沼インターから塩山方面",
+    "quote": "中央高速道路勝沼インターで降りて塩山方面に向かう．約１５分で塩山に到着する．",
+    "url": "https://www.cosmo.ne.jp/camp/michiannnaizu.htm",
+    "kind": "car"
    }
   },
   "autocamp-suzuran": {
@@ -1445,8 +2606,19 @@
     "status": "記載あり",
     "quote": "チェックイン １３時から１７時 チェックアウト １１時",
     "url": "http://park15.wakwak.com/~suzuran/ryoukin/index.htm",
-    "in": "１３時から１７時",
-    "out": "１１時"
+    "in": "13時から17時",
+    "out": "11時"
+   },
+   "access": {
+    "status": "一宮・御坂インターから２０分",
+    "quote": "一宮・御坂インターから２０分で大自然を体験しよう！！",
+    "url": "http://park15.wakwak.com/~suzuran/ryoukin/index.htm",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "温水シャワーは無料",
+    "quote": "温水シャワー・サイトの駐車料金は 無料 です。",
+    "url": "http://park15.wakwak.com/~suzuran/ryoukin/index.htm"
    }
   },
   "fuefukigoya-camp": {
@@ -1466,6 +2638,11 @@
    "jikabi": {
     "status": "不可",
     "quote": "※ 場内での直火は禁止しています。",
+    "url": "http://www.fuefukigoya.com/sisetu.html"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "［営業時間］AM8:00～PM10:00（開門・閉門時間になります）",
     "url": "http://www.fuefukigoya.com/sisetu.html"
    }
   },
@@ -1487,10 +2664,15 @@
     "quote": "・直火は禁止です。 ・焚き火を行う場合は、必ず焚き火台および焚き火シートをご使用ください。",
     "url": "https://www.camp-inba.com/terms-of-service"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "18:00以降は緊急時を除き車両の出入りはできません",
     "url": "https://www.camp-inba.com/guidance"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロキャンプや静かに過ごしたい方向けエリアです",
+    "url": "https://www.camp-inba.com/terms-of-service"
    }
   },
   "holywoods-kururi": {
@@ -1498,18 +2680,29 @@
     "status": "記載あり",
     "quote": "ご宿泊時：チェックイン １３時から１７時（遅くなる場合はご連絡をお願い致します。） チェックアウト １１時まで",
     "url": "https://holywoodscamp.jimdofree.com/%E3%81%94%E4%BA%88%E7%B4%84-1/%E3%81%94%E5%88%A9%E7%94%A8%E8%A6%8F%E5%AE%9A/",
-    "in": "１３時から１７時",
-    "out": "１１時"
+    "in": "13時から17時",
+    "out": "11時"
    },
    "jikabi": {
     "status": "不可",
     "quote": "●直火は禁止です。焚き火をする際は焚き火台と不燃シートを使用してください。",
     "url": "https://holywoodscamp.jimdofree.com/%E3%81%94%E4%BA%88%E7%B4%84-1/%E3%81%94%E5%88%A9%E7%94%A8%E8%A6%8F%E5%AE%9A/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
-    "quote": "●閉門２１時、消灯２２時です。",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "閉門２１時、消灯２２時です。",
     "url": "https://holywoodscamp.jimdofree.com/%E3%81%94%E4%BA%88%E7%B4%84-1/%E3%81%94%E5%88%A9%E7%94%A8%E8%A6%8F%E5%AE%9A/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロキャンプ・夫婦キャンプ・ご家族でのキャンプまで、 自然をゆっくりお楽しみいただけます。",
+    "url": "https://holywoodscamp.jimdofree.com/"
+   },
+   "access": {
+    "status": "木更津東ICより約１５分",
+    "quote": "木更津東ICより約１５分",
+    "url": "https://holywoodscamp.jimdofree.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "kind": "car"
    }
   },
   "hanahana-no-sato": {
@@ -1517,7 +2710,7 @@
     "status": "記載あり",
     "quote": "チェックイン １２：００ チェックアウト",
     "url": "https://hanahananosato.com/camp",
-    "in": "１２：００"
+    "in": "12:00"
    },
    "bike": {
     "status": "可",
@@ -1528,6 +2721,26 @@
    "jikabi": {
     "status": "一部可",
     "quote": "直火OKのサイト有り",
+    "url": "https://hanahananosato.com/camp/policies"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンプ 車： 3,300円(税込) バイク・自転車・徒歩： 2,200円(税込)",
+    "url": "https://hanahananosato.com/camp"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オート1区画 (２〜４人、テント、タープ１張、車１台まで)",
+    "url": "https://hanahananosato.com/camp"
+   },
+   "toilet": {
+    "status": "水洗トイレ３ヶ所",
+    "quote": "水洗トイレ３ヶ所 五右衛門風呂 、温水シャワー 夜間照明",
+    "url": "https://hanahananosato.com/camp/policies"
+   },
+   "shower": {
+    "status": "温水シャワーあり",
+    "quote": "水洗トイレ３ヶ所 五右衛門風呂 、温水シャワー 夜間照明",
     "url": "https://hanahananosato.com/camp/policies"
    }
   },
@@ -1548,6 +2761,32 @@
     "status": "不可",
     "quote": "・直火は禁止です。（焚き火台をご使用いただいての焚き火は問題ございません。）",
     "url": "https://www.kurosaka.net/user-guide/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "当キャンプ場は区画サイトです。",
+    "url": "https://www.kurosaka.net/user-guide/"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "22時〜7時はお静かにお願いいたします。車での出入りも禁止しております。",
+    "url": "https://www.kurosaka.net/user-guide/"
+   },
+   "access": {
+    "status": "甲府南ICから約10分",
+    "quote": "「甲府南IC」から約8Ｋｍ、約10分",
+    "url": "https://www.kurosaka.net/access/",
+    "kind": "car"
+   },
+   "road": {
+    "status": "民家の中の細い道あり",
+    "quote": "Google Mapで表示される道でお越しになると、高速を降りた後で民家の中にある細い道を通らなくてはならない部分がございます。",
+    "url": "https://www.kurosaka.net/access/"
+   },
+   "toilet": {
+    "status": "水洗・洋式",
+    "quote": "トイレはすべて洋式です。 トイレ1 水洗の洋式トイレ男性用1、女性用2、男性用小1",
+    "url": "https://www.kurosaka.net/facility/"
    }
   },
   "rewild-greenfield": {
@@ -1566,6 +2805,32 @@
     "status": "不可",
     "quote": "直火禁止（焚き火台＋難燃シート必須）／クワイエットタイム 22:00〜翌7:00／場内は最徐行",
     "url": "https://www.campforlife.jp/rgf/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロ専用サイト 2,750円〜",
+    "url": "https://www.campforlife.jp/rgf/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "フリーサイト 2,750円〜 100㎡区画サイト 7,700円〜 100㎡電源区画サイト 8,800円〜",
+    "url": "https://www.campforlife.jp/rgf/"
+   },
+   "access": {
+    "status": "市原鶴舞ICから車で33分",
+    "quote": "市原鶴舞ICから24.7km（車で33分）",
+    "url": "https://www.campforlife.jp/rgf/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "男女別ウォシュレット付",
+    "quote": "男女別ウォシュレット付トイレ 各3",
+    "url": "https://www.campforlife.jp/rgf/"
+   },
+   "shower": {
+    "status": "15分330円・要予約",
+    "quote": "温水シャワー 3つ（15分330円・要予約）",
+    "url": "https://www.campforlife.jp/rgf/"
    }
   },
   "inbanuma-sunset-hills": {
@@ -1573,7 +2838,7 @@
     "status": "記載あり",
     "quote": "※チェックインは11：00～15：00となります。",
     "url": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html",
-    "in": "11：00～15：00"
+    "in": "11:00～15:00"
    },
    "jikabi": {
     "status": "不可",
@@ -1586,6 +2851,17 @@
     "status": "不可",
     "quote": "A. 直火は禁止しております。焚き火台のご利用をお願いします。",
     "url": "https://sunnybase.net/contact/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "フリーサイト Fサイト 区画サイト Hサイト",
+    "url": "https://sunnybase.net/sazan/"
+   },
+   "access": {
+    "status": "富浦ICから14.5km",
+    "quote": "館山サザンビレッジ（富浦ICから14.5km）",
+    "url": "https://sunnybase.net/access/",
+    "kind": "car"
    }
   },
   "oto-camp-hiroba": {
@@ -1593,8 +2869,23 @@
     "status": "記載あり",
     "quote": "チェックインは 12：00～ チェックアウトは 翌10:00 です。",
     "url": "https://oto-camp.jp/",
-    "in": "12：00～",
+    "in": "12:00～",
     "out": "翌10:00"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロ / ファミリー 一区画一泊二日：中学生以上 1人 2,500円",
+    "url": "https://oto-camp.jp/"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "共有設備に、水洗トイレとシャワーがございます。 こちらも無料でお使いいただけます。",
+    "url": "https://oto-camp.jp/?page_id=14"
+   },
+   "shower": {
+    "status": "無料",
+    "quote": "共有設備に、水洗トイレとシャワーがございます。 こちらも無料でお使いいただけます。",
+    "url": "https://oto-camp.jp/?page_id=14"
    }
   },
   "campsite-torami": {
@@ -1609,6 +2900,17 @@
     "status": "不可",
     "quote": "芝生での直火はご遠慮ください。",
     "url": "https://campsite-torami.com/campsite.html"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロサイト 木々に囲まれたソロテント1張り分。ソロキャンプはじめの一歩に。 1名限定",
+    "url": "https://campsite-torami.com/"
+   },
+   "access": {
+    "status": "JR東浪見駅から徒歩2分",
+    "quote": "JR東浪見駅 徒歩2分",
+    "url": "https://campsite-torami.com/",
+    "kind": "train"
    }
   },
   "cappadocia-family": {
@@ -1629,12 +2931,28 @@
     "status": "不可",
     "quote": "直火禁止 焚き火は、必ず焚火台をご利用ください。",
     "url": "https://breeze-camp.com/guideline/"
+   },
+   "access": {
+    "status": "富浦ICより車で約5分",
+    "quote": "富津・館山道路 富浦IC より車で約5分",
+    "url": "https://breeze-camp.com/",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "24時間利用可",
+    "quote": "トイレ、シャワー、炊事棟は24時間使用できます。",
+    "url": "https://breeze-camp.com/guideline/"
    }
   },
   "pgf-camp": {
    "jikabi": {
     "status": "不可",
     "quote": "直火は禁止で、焚き火台をご利用ください。",
+    "url": "https://camp.pgf.land/?page_id=84"
+   },
+   "shower": {
+    "status": "シャワーなし",
+    "quote": "シャワーはございませんが、近くに小糸川温泉があります。",
     "url": "https://camp.pgf.land/?page_id=84"
    }
   },
@@ -1656,6 +2974,23 @@
     "status": "不可",
     "quote": "●直火は禁止 芝生の場所で焚き火をする場合は焚き火台と焚き火シートは必須です。",
     "url": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "フリーサイトA ：芝面／約１０X１９m＝１９０㎡ X５区画相当、場所により差があります。 区画サイトB ：全面芝／１０X１４ｍ＝１４０㎡ X１区画 テント追加可",
+    "url": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+    "surface": "芝面"
+   },
+   "access": {
+    "status": "冨浦ICより約30分",
+    "quote": "車 ：館山自動車道冨浦ICより約30分",
+    "url": "https://s-birdinn.amebaownd.com/pages/846110/page_201702121322",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "ウォシュレット付・男女別",
+    "quote": "ウォシュレット付きトイレ・洗面X各２（男女別）",
+    "url": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325"
    }
   },
   "buenavista-beach-club": {
@@ -1670,6 +3005,27 @@
     "status": "不可",
     "quote": "直火での焚き火は禁止です。焚き火をする場合は防火シートの上に焚き火台などを使用のうえ、行ってください。",
     "url": "https://www.buenavista-beachclub.com/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンプ（お一人様）のプランです。 芝生または土のフリースペースです。",
+    "url": "https://www.buenavista-beachclub.com/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "もちろん、区画サイトやフリーサイトで家族や友達とのキャンプやソロキャンプでアウトドアを楽しむのにも最適です。",
+    "url": "https://www.buenavista-beachclub.com/"
+   },
+   "access": {
+    "status": "富浦インター出口より約20分",
+    "quote": "富浦インター出口より、約20分",
+    "url": "https://www.buenavista-beachclub.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗・ウォシュレット",
+    "quote": "・水洗トイレ (ウォシュレット ・水洗バイオトイレ （ウォシュレット） ・コンポスト",
+    "url": "https://www.buenavista-beachclub.com/"
    }
   },
   "kujukuri-taiyo-to-umi": {
@@ -1677,6 +3033,11 @@
     "status": "不可",
     "quote": "直火は禁止なのでコンロや焚き火台などの器具 をご使用ください。",
     "url": "https://tandu.jp/faq"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画（1家族） テント、タープ、各1張、車1台 基本定員2名～最大5名まで",
+    "url": "https://tandu.jp/institution"
    }
   },
   "yubou-camp": {
@@ -1689,6 +3050,22 @@
    "bike": {
     "status": "可",
     "quote": "乗用車 / トレーラー / キャンピングカー / バイク",
+    "url": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "広さ約1200㎡、高台から海を眺める砕石サイト（地面は砕石となります）であり、近場に水場やトイレが完備されたオートフリーサイトです。",
+    "url": "https://boso-asobo.com/facility/%e9%81%8a%e6%88%bfcamp/",
+    "surface": "砕石"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "炊事場、分別ゴミ箱、水洗トイレ、ウェットスーツ干場",
+    "url": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/"
+   },
+   "shower": {
+    "status": "シャワーあり",
+    "quote": "簡易売店（薪、炭など、酒類無し）、自動販売機、シャワー、レンタルルーム",
     "url": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/"
    }
   },
@@ -1704,6 +3081,16 @@
     "status": "不可",
     "quote": "・直火禁止 芝生の保持の為直火は禁止、背の低い焚火台のご利用もお控えください。",
     "url": "https://inukakeyakuzen.wixsite.com/my-site-9/%E5%88%A9%E7%94%A8%E4%B8%8A%E3%81%AE%E6%B3%A8%E6%84%8F"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "適度な広さでソロキャンプに最適な空間。",
+    "url": "https://inukakeyakuzen.wixsite.com/my-site-9/%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "水洗トイレ トイレはミディアムサイトとスタンダードサイトの中間の位置に設置しています。",
+    "url": "https://inukakeyakuzen.wixsite.com/my-site-9/%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B"
    }
   },
   "bonfirebase-futtsu": {
@@ -1723,6 +3110,21 @@
     "status": "一部可",
     "quote": "→直火は決められたエリア内でお楽しみください。",
     "url": "https://futtsu-bonfirebase.com/agreement.html"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロキャンプ、週末キャンプにもおすすめです。",
+    "url": "https://futtsu-bonfirebase.com/"
+   },
+   "road": {
+    "status": "入口は急坂",
+    "quote": "入口は急坂ですので十分ご注意してお越しください。",
+    "url": "https://futtsu-bonfirebase.com/agreement.html"
+   },
+   "shower": {
+    "status": "15分300円・24時間",
+    "quote": "コイン式15分300円で利用時間は24時間可能です。",
+    "url": "https://futtsu-bonfirebase.com/faq.html"
    }
   },
   "hanabusa-camp": {
@@ -1730,14 +3132,34 @@
     "status": "記載あり",
     "quote": "13：００~チェックイン12：00までチェックアウト",
     "url": "https://www.big-advance.site/c/128/1618",
-    "in": "13：００",
-    "out": "12：00"
+    "in": "12:00"
    }
   },
   "isumi-genji-botaru": {
    "bike": {
     "status": "可",
     "quote": "車1台（バイク） 1名まで テント1張り",
+    "url": "https://www.genjibotaru.jp/facility/facility01/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "草原サイトソロ 車1台（バイク） 1名まで",
+    "url": "https://www.genjibotaru.jp/facility/facility01/"
+   },
+   "access": {
+    "status": "市原鶴舞ICから車で20分",
+    "quote": "お車：圏央道市原鶴舞ICから車で20分",
+    "url": "https://www.genjibotaru.jp/facility/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "男女別・ウォシュレット付",
+    "quote": "男女別_ウォシュレット付き洋式トイレ完備",
+    "url": "https://www.genjibotaru.jp/facility/facility01/"
+   },
+   "shower": {
+    "status": "男女別・個室",
+    "quote": "男女別_切り替え可能なシャワーヘッド付き、個室",
     "url": "https://www.genjibotaru.jp/facility/facility01/"
    }
   },
@@ -1746,8 +3168,34 @@
     "status": "記載あり",
     "quote": "チェックインは13：00～18：00、チェックアウトは11：00までにお願いいたします。",
     "url": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
-    "in": "13：00～18：00",
-    "out": "11：00"
+    "in": "13:00～18:00",
+    "out": "11:00"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ご家族、ソロ、カップルなど、少人数向けの小さな オートキャンプ場です。",
+    "url": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "全サイトが区画サイトです。フリーサイトはありません。",
+    "url": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/"
+   },
+   "access": {
+    "status": "東金ICより約25分～30分",
+    "quote": "東金ICより約25分～30分",
+    "url": "https://www.herb-cool.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "シャワー棟の水洗トイレ、シャワーはご自由にご利用いただけます。",
+    "url": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/"
+   },
+   "shower": {
+    "status": "無料",
+    "quote": "シャワー（無料）、水洗トイレ、Wi-Fi、自動販売機（ジュース）、薪、炭の販売",
+    "url": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/"
    }
   },
   "jikkoku-auto-camp": {
@@ -1767,6 +3215,11 @@
     "status": "不可",
     "quote": "実谷オートキャンプ場は全サイトで直火をお断りしています。焚き火台等をご利用ください。",
     "url": "https://www.jikkokucampsite.com/cont5/main.html"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロキャンパー用のフリーサイトです。お一人でのご利用をお願いします。",
+    "url": "https://www.jikkokucampsite.com/cont2/main.html"
    }
   },
   "arinomien-auto-camp": {
@@ -1775,10 +3228,33 @@
     "quote": "直火可能な専用炉が付いたオートサイト。約6ｘ6ｍ程度の少しコンパクトな区画で1～2名までの少人数専用です。",
     "url": "https://arinomi.co.jp/campsites/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "夜間（19:00〜翌7:00）は車の出入り・移動禁止",
     "url": "https://arinomi.co.jp/rules/"
+   },
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックアウトはキャンプサイト・ソロ・JIKABIなどが〜11:00、テラス・ログキャビン・シェッドが〜10:00です。",
+    "url": "https://arinomi.co.jp/faq/",
+    "out": "11:00"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "お車は1区画につき1台サイトへ乗り入れ可能です（ソロサイトは車乗り入れ不可）。",
+    "url": "https://arinomi.co.jp/campsites/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "全85区画のキャンプサイト 木々に囲まれプライベート感の高いサイトから、ファミリー向けのゆったりサイト・雨でも安心の屋根付きサイトまで。あなたのスタイルに合ったサイトをお選びください。 場内は全て区画サイトとなります。",
+    "url": "https://arinomi.co.jp/campsites/",
+    "sites": "全85区画"
+   },
+   "access": {
+    "status": "酒々井ICから約30分",
+    "quote": "酒々井IC → 約12km・約30分",
+    "url": "https://arinomi.co.jp/",
+    "kind": "car"
    }
   },
   "camp-sauna-uusi": {
@@ -1793,6 +3269,21 @@
     "status": "不可",
     "quote": "直火はできません。焚き火台をご利用ください。",
     "url": "https://www.camp-uusi.com/uusi%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84/"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "午後10時～翌朝8時の間はスタッフの対応はしておりません。",
+    "url": "https://www.camp-uusi.com/uusi%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84/"
+   },
+   "toilet": {
+    "status": "男女別ウォシュレット付",
+    "quote": "男女別ウォシュレット付きトイレ",
+    "url": "https://www.camp-uusi.com/"
+   },
+   "shower": {
+    "status": "男女別温水・更衣室あり",
+    "quote": "男女別温水シャワー/更衣室（ソープ類、ドライヤー完備）",
+    "url": "https://www.camp-uusi.com/"
    }
   },
   "outland2": {
@@ -1812,6 +3303,27 @@
     "status": "不可",
     "quote": "＊直火はできませんので焚き火台を用意して下さい",
     "url": "https://outland2.site/facility/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロ利用でバイクの場合・・・3000円/泊 ・ソロ利用で車の場合・・・・・4000円/泊",
+    "url": "https://outland2.site/facility/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト 定員 〜2名",
+    "url": "https://outland2.site/facility/"
+   },
+   "access": {
+    "status": "富浦インター出口より約7～8分",
+    "quote": "館山道富浦インター出口より約7～8分です",
+    "url": "https://outland2.site/%e5%a0%b4%e5%86%85%e3%83%9e%e3%83%83%e3%83%97/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "女性用・男女兼用 各1",
+    "quote": "トイレ： 女性用 男女兼用 各１",
+    "url": "https://outland2.site/facility/"
    }
   },
   "in-to-the-wild": {
@@ -1830,6 +3342,27 @@
     "url": "https://www.kamogawacamp.jp/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85/",
     "in": "12時",
     "out": "11時30分"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントサイト：25区画 （AC電源サイト：10区画）",
+    "url": "https://www.kamogawacamp.jp/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85/",
+    "sites": "25区画"
+   },
+   "road": {
+    "status": "場内に急な坂道の曲がり角",
+    "quote": "場内に 急な坂道の曲がり角 があり、車種によってはタイヤが空転してしまうことがあります。",
+    "url": "https://www.kamogawacamp.jp/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/"
+   },
+   "toilet": {
+    "status": "男女別水洗",
+    "quote": "男女別水洗トイレ：2箇所",
+    "url": "https://www.kamogawacamp.jp/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85/"
+   },
+   "shower": {
+    "status": "大人300円・子供150円",
+    "quote": "（シャワー大人300円、子供150円）",
+    "url": "https://www.kamogawacamp.jp/%e3%81%94%e5%88%a9%e7%94%a8%e6%96%99%e9%87%91/"
    }
   },
   "isumi-paddle-club": {
@@ -1839,6 +3372,21 @@
     "url": "https://wowsports.jp/campbbq/",
     "in": "13:00",
     "out": "11:00"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "●ソロサイトA、 『竹に包まれてはぁーってなっちゃうサイト』 まるで竹の中の秘密基地！ソロを満喫してください。",
+    "url": "https://wowsports.jp/campbbq/"
+   },
+   "toilet": {
+    "status": "簡易水栓",
+    "quote": "トイレ 簡易水栓です。",
+    "url": "https://wowsports.jp/campbbq/campinfo/"
+   },
+   "shower": {
+    "status": "簡易シャワーあり",
+    "quote": "簡易トイレ・簡易シャワーあり",
+    "url": "https://wowsports.jp/campbbq/"
    }
   },
   "onjuku-drone-camping": {
@@ -1852,6 +3400,21 @@
     "status": "不可",
     "quote": "焚き火は可能です。焚き火台をご利用ください。直火は禁止です。",
     "url": "https://farmresort-onjuku.com/facility/faq/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "【平日限定】ソロ・デュオプラン登場！A〜Qサイトが3,000円均一でお好きな区画を選べます！",
+    "url": "https://farmresort-onjuku.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画333㎡～10,000㎡以上の専有空間をご用意しました。",
+    "url": "https://farmresort-onjuku.com/"
+   },
+   "toilet": {
+    "status": "水洗トイレ5基 洋式3基",
+    "quote": "ゲートエリア 水洗トイレ 5基 洋式3基 男子2基",
+    "url": "https://farmresort-onjuku.com/area/"
    }
   },
   "render-fika-sammu": {
@@ -1866,9 +3429,9 @@
     "quote": "直火はできません。焚き火台をご利用ください。",
     "url": "https://renderfika.com/ja/terms-of-use"
    },
-   "manager": {
-    "status": "夜間不在",
-    "quote": "(8) 深夜の従業員がいない際の緊急対応が必要な場合",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "夜20時以降、朝8時以前の車両の出入りは緊急時以外はご遠慮ください。",
     "url": "https://renderfika.com/ja/terms-of-use"
    }
   },
@@ -1878,6 +3441,11 @@
     "quote": "チェックイン 13:00~17:00",
     "url": "https://www.kujukuri.co.jp/camp02.html",
     "in": "13:00~17:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "１区画サイト 定員 4名",
+    "url": "https://www.kujukuri.co.jp/camp02.html"
    }
   },
   "ichibanboshi-village": {
@@ -1886,6 +3454,17 @@
     "quote": "バイク、自転車でお越しの方は、1台につき一律1,000円",
     "url": "https://star-village.jp/guide-1.html",
     "price": "1,000円"
+   },
+   "access": {
+    "status": "蘇我ICから約20分",
+    "quote": "京葉道路「蘇我IC」から約20分、もしくはアクアライン「市原IC」から約24分でお越しいただけます。",
+    "url": "https://star-village.jp/access.html",
+    "kind": "car"
+   },
+   "road": {
+    "status": "一本の林道を抜ける",
+    "quote": "一本の林道を抜けると、 眼前には広大な草原と大きな空。",
+    "url": "https://star-village.jp/aboutus.html"
    }
   },
   "tako-no-hoshi": {
@@ -1905,6 +3484,38 @@
     "status": "一部可",
     "quote": "直火は直火エリアのみ可能で、ご指定場所以外は焚火台および防炎シートをご使用ください。",
     "url": "https://takonohoshi.jp/announce/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロ1サイト 一日4組限定 定員1名のソロプランです。",
+    "url": "https://takonohoshi.jp/price/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "区画貸しのフリーサイトです。ご自身の個性あるマイスタイルキャンプをお楽しみ頂けます。 基本砕石敷きで電源のありなしや立地と面積により総合的にグレード決定されています。",
+    "url": "https://takonohoshi.jp/price/",
+    "surface": "砕石"
+   },
+   "access": {
+    "status": "成田ＩＣから約３５分",
+    "quote": "東関東自動車道「成田ＩＣ」から約３５分",
+    "url": "https://takonohoshi.jp/access/",
+    "kind": "car"
+   },
+   "road": {
+    "status": "北口まで細い道路",
+    "quote": "＊北口に入るまでには細い道路が続きますので、ぜひ南口よりお越しください。",
+    "url": "https://takonohoshi.jp/access/"
+   },
+   "toilet": {
+    "status": "水洗・ウォシュレット付き",
+    "quote": "ウォシュレット付きの綺麗な水洗トイレです。男女別で各２箇所ご用意しています。",
+    "url": "https://takonohoshi.jp/facility/"
+   },
+   "shower": {
+    "status": "温水・宿泊者は無料",
+    "quote": "温水シャワーが男性用、女性用それぞれ２ヶ所あります。ご宿泊者様の利用料金は無料です。",
+    "url": "https://takonohoshi.jp/announce/"
    }
   },
   "nine-ten-nine-notehama": {
@@ -1912,14 +3523,29 @@
     "status": "記載あり",
     "quote": "チェックイン 午後13：00 チェックアウト 午前10：00",
     "url": "https://www.99inakakurashi.com/camp/camp/charge/",
-    "in": "午後13：00",
-    "out": "午前10：00"
+    "in": "午後13:00",
+    "out": "午前10:00"
    },
    "bike": {
     "status": "可",
     "quote": "バイク追加 4台まで￥1,000/1台",
     "url": "https://www.99inakakurashi.com/camp/camp/charge/",
     "price": "￥1,000/1台"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "◆サイト数・・・10区画 ◆場内施設・設備",
+    "url": "https://www.99inakakurashi.com/camp/camp/camp-info/"
+   },
+   "toilet": {
+    "status": "男女別・水洗",
+    "quote": "男女別水洗トイレ 炊事場・・・3棟",
+    "url": "https://www.99inakakurashi.com/camp/camp/camp-info/"
+   },
+   "shower": {
+    "status": "シャワールーム5ヶ所",
+    "quote": "シャワールーム5ヶ所、男女別水洗トイレなど充実した設備！",
+    "url": "https://www.99inakakurashi.com/camp/camp/camp-info/"
    }
   },
   "minna-no-satoyama": {
@@ -1940,6 +3566,28 @@
     "status": "不可",
     "quote": "焚き火は、焚火台＋焚火シートを使用してお楽しみください。直火は禁止です。",
     "url": "https://minna-no-satoyama.com/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロサイト 野営のような感覚で ひとりの時間にひたれるサイト 火と森と 自分だけ",
+    "url": "https://minna-no-satoyama.com/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "林間キャンプサイト 木々の間を吹き抜ける風と 木漏れ日 森にひとつずつ区切られた プライベート感のあるサイトです 林間フリーサイト",
+    "url": "https://minna-no-satoyama.com/",
+    "surface": "林間"
+   },
+   "access": {
+    "status": "貝塚ICから約10分",
+    "quote": "京葉道路「貝塚IC」から約10分 （約5km）",
+    "url": "https://minna-no-satoyama.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "個室・洋式",
+    "quote": "トイレ（個室・洋式） 木の香りのする 手作りの個室 洋式で きれいに保っています",
+    "url": "https://minna-no-satoyama.com/"
    }
   },
   "shelter-base": {
@@ -1958,6 +3606,27 @@
     "status": "女性専用の設備",
     "quote": "女性専用パウダースペース 女性限定コンセント付きのパウダースペースがございます。",
     "url": "https://www.shelterbase.jp/facility/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ウッドデッキサイト・芝生サイト・ペットサイト・ソロサイトがございます。",
+    "url": "https://www.shelterbase.jp/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "ウッドデッキサイト、芝生サイト、ソロフリーエリアの指定はできますが、サイトはお選びいただけません。",
+    "url": "https://www.shelterbase.jp/faq/",
+    "surface": "芝生"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "スタッフは24時間常駐しております",
+    "url": "https://www.shelterbase.jp/facility/"
+   },
+   "toilet": {
+    "status": "冷暖房完備・ウォシュレット",
+    "quote": "冷暖房完備・温水・ウォシュレット付き洋式トイレ。",
+    "url": "https://www.shelterbase.jp/facility/"
    }
   },
   "bamboo-grove-camp": {
@@ -1972,6 +3641,27 @@
     "status": "不可",
     "quote": "直火禁止 焚き火シート・焚き火台をお使いの上、安全を保って焚き火をお楽しみください。",
     "url": "https://bamboo-grove-camp.com/userguide/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "最低120㎡もある広い区画で開けた景色を楽しめる 広場エリア 。 竹林に囲まれ、プライベート感のある 竹林エリア 。",
+    "url": "https://bamboo-grove-camp.com/"
+   },
+   "access": {
+    "status": "貝塚ICから約20分",
+    "quote": "貝塚ICから約20分 東関東自動車道 経由",
+    "url": "https://bamboo-grove-camp.com/access/",
+    "kind": "car"
+   },
+   "road": {
+    "status": "道幅が狭く、カーブ",
+    "quote": "車道沿いは道幅が狭く、カーブや交通量も相まって歩くのは危険です。",
+    "url": "https://bamboo-grove-camp.com/access/"
+   },
+   "toilet": {
+    "status": "男女別・ウォシュレット有",
+    "quote": "トイレ (男女別で2:2室×2か所、ウォシュレット有)",
+    "url": "https://bamboo-grove-camp.com/plans/"
    }
   },
   "sakatagaike-park": {
@@ -1979,6 +3669,12 @@
     "status": "不可",
     "quote": "直火（たき火）での実施は禁止です。コンロ等を使って下さい。",
     "url": "https://www.city.narita.chiba.jp/environment/page188400.html"
+   },
+   "access": {
+    "status": "下総松崎駅から約1キロ",
+    "quote": "本公園は、成田市の北西の市街化調整区域に位置し、JR成田線下総松崎駅から北へ約1キロメートルの地点にあり、",
+    "url": "https://www.city.narita.chiba.jp/shisetsu/page000195.html",
+    "kind": "train"
    }
   },
   "camp-bancho-riders-base99": {
@@ -1997,6 +3693,32 @@
     "status": "可",
     "quote": "直火も可能です、ウッドデッキなど燃えやすいものは注意してください。",
     "url": "https://airsite.jp/campbancho/archives/menu/434"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "※ソロサイトは一部乗り入れが難しい場所あり",
+    "url": "https://airsite.jp/campbancho/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト 一人あたり3,300円~ 1～2名程度のキャンプに向いています。",
+    "url": "https://airsite.jp/campbancho/"
+   },
+   "access": {
+    "status": "横芝光ICより約17分",
+    "quote": "銚子連絡道路・横芝光ICより約17分。",
+    "url": "https://airsite.jp/campbancho/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き水洗",
+    "quote": "ウォシュレット付き水洗トイレ",
+    "url": "https://airsite.jp/campbancho/archives/menu/434"
+   },
+   "shower": {
+    "status": "シャワー無料",
+    "quote": "・シャワー無料 ・ランドリー＆乾燥機",
+    "url": "https://airsite.jp/campbancho/archives/menu/434"
    }
   },
   "aerbin-sports-park": {
@@ -2009,10 +3731,21 @@
    }
   },
   "sanuki-farm-auto-camp": {
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "※また、原則として消灯時間中のお車の出入りは緊急時を除き、禁止といたします。",
     "url": "https://www.sanukifarm.com/%E5%96%B6%E6%A5%AD%E6%A1%88%E5%86%85"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト/ サイトの地面：芝 / 土 / 砂",
+    "url": "https://www.sanukifarm.com/%E5%96%B6%E6%A5%AD%E6%A1%88%E5%86%85",
+    "surface": "芝 / 土 / 砂"
+   },
+   "toilet": {
+    "status": "温水洗浄便座付き",
+    "quote": "隅々まで清掃の行き届いた温水洗浄便座付きトイレや、ゆとりある設計の炊事棟を完備。",
+    "url": "https://www.sanukifarm.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%B5%E3%82%A4%E3%83%88"
    }
   },
   "chiba-ushino-hiroba": {
@@ -2021,6 +3754,22 @@
     "quote": "【チェックイン】12時〜17時",
     "url": "https://ushinohiroba.com/app/customer/camping_guide",
     "in": "12時〜17時"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "キャンプパークは区画サイトですか？フリーサイトですか？ フリーサイトです。",
+    "url": "https://ushinohiroba.com/frequently-asked-questions"
+   },
+   "access": {
+    "status": "高田IC出口から約10分",
+    "quote": "千葉東金道路高田IC出口を降りて約10分です。",
+    "url": "https://ushinohiroba.com/access/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "24時間ご利用いただけます",
+    "quote": "施設のトイレは遊歩道を通って約5分程度です。お隣の富田さとにわ耕園のトイレは、約2分程度です。どちらも24時間ご利用いただけます。",
+    "url": "https://ushinohiroba.com/frequently-asked-questions"
    }
   },
   "arkforest-yachiyo": {
@@ -2034,6 +3783,16 @@
     "status": "不可",
     "quote": "直火は禁止となります。焚火台や焚火シートをご使用ください。",
     "url": "https://www.arkforest.jp/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "小区画のソロサイトの他に、車の乗り入れが可能なオートサイトには中区画と大区画の2種類あります。",
+    "url": "https://www.arkforest.jp/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "山を開拓して作られた小さなキャンプ場の区画サイトです。",
+    "url": "https://www.arkforest.jp/site.html"
    }
   },
   "ujack-mutsuzawa": {
@@ -2046,6 +3805,17 @@
     "status": "一部可",
     "quote": "場内は直火禁止（ソロデュオサイトを除く）です。焚き火台・脚付きコンロ等の器具をご使用ください。",
     "url": "https://mutsuzawa.ujack.co.jp/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "最大2人までのソロ・デュオキャンプ専用。区画サイトから少し離れている為静かに過ごせ、",
+    "url": "https://mutsuzawa.ujack.co.jp/plan/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト 日当たり良好で見晴らしが良く、夜には満天の星を眺めることが出来る芝のサイトです。",
+    "url": "https://mutsuzawa.ujack.co.jp/plan/",
+    "surface": "芝"
    }
   },
   "ichihara-quad-forest": {
@@ -2060,6 +3830,22 @@
     "status": "制限あり",
     "quote": "駐車場から先の園内・園路は、許可車以外の車両の進入はできません。 （ 自動車、バイク、自転車の進入不可 ）",
     "url": "https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画の広さは、およそ50平方メートル程度で、その区画内にテントを設置し、",
+    "url": "https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/"
+   },
+   "access": {
+    "status": "月崎駅から徒歩で約1km",
+    "quote": "ＪＲ五井駅から小湊鉄道で『月崎駅』まで。里山を抜けて進むローカル線の旅はいかがでしょうか。月崎駅からは徒歩で約1kmです。",
+    "url": "https://ichihara-forest.jp/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "炊事棟/シャワー施設/水洗トイレ 他",
+    "url": "https://ichihara-forest.jp/%e6%a3%ae%e3%81%ae%e7%b4%b9%e4%bb%8b/"
    }
   },
   "bighorn-auto-camp": {
@@ -2067,11 +3853,21 @@
     "status": "記載あり",
     "quote": "チェックインは１３時から１８時までになります。",
     "url": "https://bighorn-camp.com/faq/",
-    "in": "１３時から１８時"
+    "in": "13時から18時"
    },
    "jikabi": {
     "status": "不可",
     "quote": "直火は全サイト内で禁止となっています。焚き火やダッチオーブンなどで薪を使う場合は焚き火台等を使用すればＯＫです。",
+    "url": "https://bighorn-camp.com/faq/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "はい、大歓迎です。ビッグホーンは賑やかなグループ向けではなく、静かに自然の中で過ごされたい少人数のお客様（ソロ・デュオなど）がご利用頂けるオートキャンプ場です。",
+    "url": "https://bighorn-camp.com/faq/"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "ＰＭ９：００以降はゲートが閉まりますので門限をお守りください。",
     "url": "https://bighorn-camp.com/faq/"
    }
   },
@@ -2080,13 +3876,35 @@
     "status": "記載あり",
     "quote": "チェックイン：13：00〜17：00 チェックアウト：8：30〜11：00",
     "url": "https://beefarm.co.jp/bee-camp-field-site/",
-    "in": "13：00〜17：00",
-    "out": "8：30〜11：00"
+    "in": "13:00〜17:00",
+    "out": "8:30〜11:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "直火による焚火はできません。焚火台、防炎シートをご用意ください。",
     "url": "https://beefarm.co.jp/bee-camp-field-rule/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "各10m×10m目安・ソロキャンプ可",
+    "url": "https://beefarm.co.jp/bee-camp-field-facilityinfo/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイトは2つのデイサイトと4つのキャンプサイトで、いずれも車両乗り入れ可で、広々とした芝生の樹木に囲われたサイトです。",
+    "url": "https://beefarm.co.jp/bee-camp/",
+    "surface": "芝生"
+   },
+   "access": {
+    "status": "高田ICより 15分",
+    "quote": "千葉東金道路 高田ICより 15分",
+    "url": "https://beefarm.co.jp/visiter-information/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗・暖房便座・ウォシュレット",
+    "quote": "各サイト毎に水洗トイレ棟があります。 暖房便座、ウォシュレット付き",
+    "url": "https://beefarm.co.jp/bee-camp-field-facilityinfo/"
    }
   },
   "osawa-auto-camp": {
@@ -2102,6 +3920,16 @@
     "quote": "駐車 : 車1台￥1,000 バイク1台￥500",
     "url": "https://www.osawaautocamp.com/",
     "price": "￥500"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロキャンプにもオススメです",
+    "url": "https://www.osawaautocamp.com/"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "管理棟、炊事棟、水洗トイレ、",
+    "url": "https://www.osawaautocamp.com/"
    }
   },
   "northland-campers-village": {
@@ -2124,6 +3952,11 @@
     "status": "不可",
     "quote": "焚き火マットを敷いて焚き火をお楽しみください(直火禁止）",
     "url": "https://gm-autocamp.com/rule/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "電源付きオートサイト 、林間オートサイト 、林間ソロサイト",
+    "url": "https://gm-autocamp.com/"
    }
   },
   "basecamp-kisarazu": {
@@ -2133,6 +3966,12 @@
     "url": "https://tenjinfarm.com/about",
     "in": "10:00am～",
     "out": "翌日12:00pm"
+   },
+   "access": {
+    "status": "金田ICよりクルマで15分",
+    "quote": "日本みつばちの聖地作りを進めている当園はアクアライン金田ICよりクルマで15分のところにあります。",
+    "url": "https://tenjinfarm.com/about",
+    "kind": "car"
    }
   },
   "berrypark-fishon-sisidome": {
@@ -2148,6 +3987,22 @@
     "quote": "バイク 500円 （1台につき）",
     "url": "https://yasokyo.vercel.app/",
     "price": "500円 （1台につき）"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "車乗り入れ可能なオート区画サイト。 車でのサイトへの乗り入れ。 快適さを考え、広い区画をご用意しました。",
+    "url": "https://yasokyo.vercel.app/"
+   },
+   "access": {
+    "status": "相模原ICから50分ほど",
+    "quote": "お車でお越しの場合 東京方面：相模原ICから50分ほど",
+    "url": "https://yasokyo.vercel.app/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き",
+    "quote": "トイレはウォシュレット付き。",
+    "url": "https://yasokyo.vercel.app/"
    }
   },
   "motosuko-ikoinomori": {
@@ -2168,6 +4023,18 @@
     "status": "不可",
     "quote": "直火は禁止です。 火を起こす際はBBQコンロ、焚き火台をご利用ください。",
     "url": "https://www.motosuko.jp/qa.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "自然の特徴を活かした区画が6つに分かれているテントサイトやバンガロー、本館に12畳の和室５部屋など、林間のキャンプサイトを備えています。",
+    "url": "https://www.motosuko.jp/",
+    "surface": "林間"
+   },
+   "access": {
+    "status": "河口湖ICから約25分",
+    "quote": "中央自動車道（河口湖IC）→国道139号線：約25分→キャンプ場",
+    "url": "https://www.motosuko.jp/access.html",
+    "kind": "car"
    }
   },
   "takippara-camp": {
@@ -2190,13 +4057,24 @@
     "status": "記載あり",
     "quote": "チェックイン １３：００から チェアウト １２：００まで",
     "url": "https://camp-mujina.com/?page_id=9",
-    "in": "１３：００",
-    "out": "１２：００"
+    "in": "13:00",
+    "out": "12:00"
    },
    "women": {
     "status": "女性専用の設備",
     "quote": "女性専用シャワールームを設置しました。",
     "url": "https://camp-mujina.com/"
+   },
+   "access": {
+    "status": "三ヶ木月夜野（バス50分）",
+    "quote": "JR横浜線 橋本駅（約40分）～三ヶ木月夜野（バス50分）～道志村",
+    "url": "https://camp-mujina.com/?page_id=13",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "男女別３棟",
+    "quote": "トイレ（男女別３棟） シャワー,ランドリー",
+    "url": "https://camp-mujina.com/?page_id=9"
    }
   },
   "skyvalley-camp": {
@@ -2210,6 +4088,33 @@
     "status": "不可",
     "quote": "地面での直火の焚き火はご遠慮ください。 無料で焚き火台を貸し出しておりますので、必ず焚き火台をご利用ください。",
     "url": "https://www.skyvalleycamp.com/kinsi.html"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロ用テントサイト有り",
+    "url": "https://www.skyvalleycamp.com/auto.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "ゆったりと広いオートサイトです。平地や林間サイトなどバリエーションも豊富で雰囲気たっぷり！各サイト水道と焚き火台付で共用トイレもございます。",
+    "url": "https://www.skyvalleycamp.com/auto.html",
+    "surface": "林間"
+   },
+   "access": {
+    "status": "相模原インター約60分",
+    "quote": "圏央道相模原インターの場合【約60分】",
+    "url": "https://www.skyvalleycamp.com/access.html",
+    "kind": "car"
+   },
+   "road": {
+    "status": "手前600ｍからオフロード",
+    "quote": "キャンプ場手前600ｍからオフロードになります。道路幅の狭いところが有りますので対向車に注意して譲り合いの気持ちでお出で下さい。",
+    "url": "https://www.skyvalleycamp.com/situmonn.html"
+   },
+   "toilet": {
+    "status": "男女別・洋式",
+    "quote": "男女別の各洋式トイレあり",
+    "url": "https://www.skyvalleycamp.com/auto.html"
    }
   },
   "saiko-kangakuen": {
@@ -2217,13 +4122,18 @@
     "status": "記載あり",
     "quote": "Ａ：チェックインが１３：００、チェックアウトが１１：００です。",
     "url": "https://www.kangakuen.com/page007.html",
-    "in": "１３：００",
-    "out": "１１：００"
+    "in": "13:00",
+    "out": "11:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "地面での直火は禁止しております。",
     "url": "https://www.kangakuen.com/page002.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "4月末-10月の休日前および繁忙期 は、湖畔テントサイトは1区画7000円（4名+駐車1台分の料金含む）となります。",
+    "url": "https://www.kangakuen.com/"
    }
   },
   "kawaguchiko-newbridge": {
@@ -2234,19 +4144,25 @@
     "in": "13:00",
     "out": "10:00"
    },
-   "bike": {
-    "status": "制限あり",
-    "quote": "22:00～6:00まで就寝時間のため、場内へ車・バイクの出入りはできません。",
-    "url": "https://www.fujigoko.tv/newbridge/fee/"
-   },
    "jikabi": {
     "status": "一部可",
     "quote": "指定場所以外の直火、花火、発電機、音楽、その他使用規制があります。",
     "url": "https://www.fujigoko.tv/newbridge/fee/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "22:00～6:00まで就寝時間のため、場内へ車・バイクの出入りはできません。",
+    "url": "https://www.fujigoko.tv/newbridge/fee/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "持ち込みテントスペース代 （区画なし林間テントサイト・無料駐車場利用）",
+    "url": "https://www.fujigoko.tv/newbridge/fee/",
+    "surface": "林間"
+   },
+   "toilet": {
+    "status": "和式・洋式水洗トイレ",
+    "quote": "電灯、水道、和式・洋式水洗トイレ、無料駐車場（100台）",
     "url": "https://www.fujigoko.tv/newbridge/fee/"
    }
   },
@@ -2255,6 +4171,13 @@
     "status": "不可",
     "quote": "テントサイトでの直火は禁止です。",
     "url": "https://www.koyodai.info/facility.html"
+   },
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは13時から、チェックアウトは11時までにお願いいたします。",
+    "url": "https://www.koyodai.info/faq.html",
+    "in": "13時",
+    "out": "11時"
    }
   },
   "pica-fujiyoshida": {
@@ -2269,10 +4192,31 @@
     "quote": "場内は全て直火禁止とさせていただいております。",
     "url": "https://www.pica-resort.jp/yoshida/faq/index.html"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
-    "quote": "夜10:00以降は、ゲート閉鎖や車での入場に制限がありますので、フロントにご確認ください。",
-    "url": "https://www.pica-resort.jp/yoshida/about/guidance.html"
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "ただし、場内のゲートが夜間閉まりますので、お帰りのお時間にはご注意ください。",
+    "url": "https://www.pica-resort.jp/yoshida/faq/index.html"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロキャンプ 焚火OK BBQグリル付",
+    "url": "https://www.pica-resort.jp/yoshida/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "基本的には1区画1台までです。２台目以降のお車はフロント前の駐車場（無料）へお停めいただけます。",
+    "url": "https://www.pica-resort.jp/yoshida/faq/index.html"
+   },
+   "access": {
+    "status": "河口湖ICから約8分",
+    "quote": "中央自動車道「河口湖IC」下車、お車で約8分ほどの距離です。",
+    "url": "https://www.pica-resort.jp/yoshida/access/index.html",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "暖房便座付きの水洗",
+    "quote": "トイレは暖房便座付きの水洗トイレ。",
+    "url": "https://www.pica-resort.jp/yoshida/about/index.html"
    }
   },
   "sankeien-auto-camp": {
@@ -2280,12 +4224,23 @@
     "status": "記載あり",
     "quote": "チェックイン 13：00 〜 17：00",
     "url": "https://sankeien-camp.com/guide/",
-    "in": "13：00 〜 17：00"
+    "in": "13:00 〜 17:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "ゴミの分別や直火禁止など自然を守るルール",
     "url": "https://sankeien-camp.com/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ライダー・ソロキャンパー大歓迎 ソロ限定価格 3,300 円",
+    "url": "https://sankeien-camp.com/solo-camp/"
+   },
+   "access": {
+    "status": "須玉ICから約20分",
+    "quote": "中央道 須玉ICから約20分。",
+    "url": "https://sankeien-camp.com/solo-camp/",
+    "kind": "car"
    }
   },
   "friendpark-mukawa": {
@@ -2305,6 +4260,28 @@
     "status": "不可",
     "quote": "直火は禁止です。焚火をする際は焚き火台を使用してください。",
     "url": "https://fp-mukawa-kaikoma.com/camp/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロキャンプ、ファミリーキャンプ、グループキャンプなどご希望のキャンプスタイルに合わせてご利用ください。",
+    "url": "https://fp-mukawa-kaikoma.com/facility/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートキャンプ約60区画 ※整備状況により変動します",
+    "url": "https://fp-mukawa-kaikoma.com/facility/",
+    "sites": "約60区画"
+   },
+   "access": {
+    "status": "須玉ICから車で約20分",
+    "quote": "中央道・須玉ICから車で約20分",
+    "url": "https://fp-mukawa-kaikoma.com/access/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "炊事場／水洗トイレ／シャワールーム／洗濯機／乾燥機",
+    "url": "https://fp-mukawa-kaikoma.com/camp/"
    }
   },
   "saiko-camp-village-gnome": {
@@ -2319,6 +4296,12 @@
     "status": "不可",
     "quote": "直火は禁止。焚火台をご使用ください。",
     "url": "https://gnome.hamayouresort.com/stay/rinkan/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト 最大5名 林間 ACなし 車両乗入◯ ペット◯ キャンピングカー×",
+    "url": "https://gnome.hamayouresort.com/",
+    "surface": "林間"
    }
   },
   "suzuri-no-sato": {
@@ -2328,6 +4311,16 @@
     "url": "https://suzuri-camp.jimdofree.com/",
     "in": "14時",
     "out": "10時"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイト テントサイトとしてのご利用の他、焚き火やキャンプファイヤーで使用するファイヤーサークルがあります。",
+    "url": "https://suzuri-camp.jimdofree.com/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "水洗トイレ 男性側は、洋式1室、小便器2基。 女性側は、洋式2室、和式1室となっております。",
+    "url": "https://suzuri-camp.jimdofree.com/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/"
    }
   },
   "woodpecker-camp": {
@@ -2337,6 +4330,11 @@
     "url": "https://www.woodpecker-cs.com/guide/8",
     "in": "12時～17時",
     "out": "13時"
+   },
+   "toilet": {
+    "status": "水洗式",
+    "quote": "便所（水洗式、中央）…湧水使用のため飲料不可",
+    "url": "https://www.woodpecker-cs.com/guide/10"
    }
   },
   "horenbo-no-mori": {
@@ -2356,10 +4354,30 @@
     "quote": "キャンプ場内は直火ができません。",
     "url": "https://www.horenbo.com/portfolio-item/autocamp-river/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "夜21時から朝8時までの間車での移動、出入りはできません。",
     "url": "https://www.horenbo.com/guide/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロキャンプでご来場いただくキャンパーも増えています。",
+    "url": "https://www.horenbo.com/portfolio-item/river-tent-site/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "川のオートサイト 1～4番 約70㎡。車1台・テント1張・タープ1張が広さ目安です。",
+    "url": "https://www.horenbo.com/portfolio-item/autocamp-river/"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "水洗トイレ・シャワー バンガロー、オートキャンプサイトの近くにそれぞれ設置してあります。",
+    "url": "https://www.horenbo.com/facility/"
+   },
+   "shower": {
+    "status": "利用は15時～21時",
+    "quote": "シャワーの利用時間は 15時～21時 です。",
+    "url": "https://www.horenbo.com/facility/"
    }
   },
   "genshi-mura-camp": {
@@ -2367,12 +4385,23 @@
     "status": "記載あり",
     "quote": "【チェックアウト】 9：00〜11：00】 ​※テント場への車の乗り入れは出来ません。",
     "url": "https://www.genshi-mura.com/stay",
-    "out": "9：00〜11：00"
+    "out": "9:00〜11:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "■直火で焚き火は出来ますか。 >>出来ません。必ず焚き火台を使ってください。",
     "url": "https://www.genshi-mura.com/aboutus"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロサイト 4,000円",
+    "url": "https://www.genshi-mura.com/stay"
+   },
+   "access": {
+    "status": "奥多摩駅からバス約50分",
+    "quote": "奥多摩駅より「西東京バス 小菅行き」約50分 「棚沢橋」下車 徒歩10分程 坂を降りて道なり",
+    "url": "https://www.genshi-mura.com/access",
+    "kind": "train"
    }
   },
   "doshi-kubo-camp": {
@@ -2381,7 +4410,7 @@
     "quote": "チェックイン 13:00 チェックアウト 11：00",
     "url": "https://kubo-camp.jp/book/",
     "in": "13:00",
-    "out": "11：00"
+    "out": "11:00"
    },
    "bike": {
     "status": "可",
@@ -2393,6 +4422,21 @@
     "status": "不可",
     "quote": "当施設は全面「直火禁止」です。",
     "url": "https://kubo-camp.jp/rule/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "【ソロ来場者限定割引】※トップシーズンを除く宿泊者 入場料金無料",
+    "url": "https://kubo-camp.jp/book/"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "17時から翌日9時までの間はスタッフは駐在しません。",
+    "url": "https://kubo-camp.jp/rule/"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "21時00分以降はお車の出入りや移動はできません。",
+    "url": "https://kubo-camp.jp/rule/"
    }
   },
   "satoyama-camp-woodcliff": {
@@ -2400,13 +4444,28 @@
     "status": "記載あり",
     "quote": "14:00 チェックイン／〜10:00 チェックアウト",
     "url": "https://www.satoyamacliff-camp.com/guide/",
-    "in": "14:00",
-    "out": "10:00"
+    "in": "〜10:00"
    },
    "jikabi": {
     "status": "一部可",
     "quote": "直火は指定の場所のみ可能です。",
     "url": "https://www.satoyamacliff-camp.com/guide/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "森林A南：区画サイト 森林A北：フリーサイト",
+    "url": "https://www.satoyamacliff-camp.com/guide/"
+   },
+   "access": {
+    "status": "ICから車で約20〜25分",
+    "quote": "市原IC または 姉崎袖ヶ浦IC をご利用ください。ICからキャンプ場までは車で約20〜25分です。",
+    "url": "https://www.satoyamacliff-camp.com/guide/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "ウォシュレットトイレ",
+    "quote": "雨天対応キッチン＆手洗い場、温水シャワー、バリアフリー・ウォシュレットトイレ完備。",
+    "url": "https://www.satoyamacliff-camp.com/"
    }
   },
   "okuaki-camp": {
@@ -2422,6 +4481,21 @@
     "quote": "バイク 440円/台",
     "url": "https://farmerswoodcabin.com/charge/",
     "price": "440円/台"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "丹波山の山そして川を存分に感じられるキャンプサイトです。ソロキャンプから4名までのキャンプができます。",
+    "url": "https://farmerswoodcabin.com/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "川沿いにあるフリーサイトです。フリーサイトに専用の炊事場やトイレを完備しています。",
+    "url": "https://farmerswoodcabin.com/"
+   },
+   "shower": {
+    "status": "330円",
+    "quote": "シャワー 330円 お支払いについて",
+    "url": "https://farmerswoodcabin.com/charge/"
    }
   },
   "fujimiso-camp": {
@@ -2429,13 +4503,19 @@
     "status": "記載あり",
     "quote": "チェックインはテント１４時、バンガロー１５時～１９時。 アウトは翌日１１時までです。",
     "url": "https://michiaki5218.jimdofree.com/%E5%88%9D%E3%82%81%E3%81%A6%E3%81%94%E5%88%A9%E7%94%A8%E3%81%AE%E6%96%B9/",
-    "in": "１４時",
-    "out": "１１時"
+    "in": "14時",
+    "out": "11時"
    },
    "bike": {
     "status": "可",
     "quote": "（バイクは大きさ問わず２台で車１台分にカウントします。）",
     "url": "https://michiaki5218.jimdofree.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画しかないためデイキャンプは宿泊料金となります。",
+    "url": "https://michiaki5218.jimdofree.com/",
+    "sites": "1区画"
    }
   },
   "life-outdoor-garden": {
@@ -2455,6 +4535,16 @@
     "status": "不可",
     "quote": "直火は禁止となっております。",
     "url": "https://lifeoutdoorgarden.com/faq/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロサイト《秘密基地感アリ！》 1泊 ¥1,000〜",
+    "url": "https://lifeoutdoorgarden.com/stay/"
+   },
+   "toilet": {
+    "status": "洋式ウォシュレット",
+    "quote": "トイレ：洋式ウォシュレット機能付き。電源使用可能な化粧室あり。",
+    "url": "https://lifeoutdoorgarden.com/stay/"
    }
   },
   "fuji-ecopark-village": {
@@ -2475,6 +4565,11 @@
     "status": "不可",
     "quote": "□ 直火禁止 バーベキュー等は専用コンロ、及びグリルを使用してください。",
     "url": "https://fujiecopark.com/free/goriyouannai"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイトエリアには 天候状況により車両の乗り入れは禁止 となります。",
+    "url": "https://fujiecopark.com/free/goriyouannai"
    }
   },
   "bulls-camp": {
@@ -2488,6 +4583,16 @@
     "status": "不可",
     "quote": "直火での焚火は禁止。必ず焚火台などをご利用ください。",
     "url": "https://bullscamp.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト[A],[B],[C] ペットOK！ １泊 ３０００円〜",
+    "url": "https://bullscamp.com/"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "・水洗トイレ ・灰捨て場",
+    "url": "https://bullscamp.com/"
    }
   },
   "kiyosato-auberge-camp": {
@@ -2495,7 +4600,7 @@
     "status": "記載あり",
     "quote": "【チェックイン】 12：00～17：00",
     "url": "https://kiyosato-auberge.com/camp/",
-    "in": "12：00～17：00"
+    "in": "12:00～17:00"
    },
    "bike": {
     "status": "可",
@@ -2505,6 +4610,27 @@
    "jikabi": {
     "status": "不可",
     "quote": "【直火について】 ・場内全面禁止",
+    "url": "https://kiyosato-auberge.com/camp/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画 車1台 1テント 1タープまで",
+    "url": "https://kiyosato-auberge.com/camp/"
+   },
+   "access": {
+    "status": "新宿駅から約2時間30分",
+    "quote": "東京方面（新宿駅）から約2時間30分 JR中央本線・特急にて「小淵沢駅」（約2時間）→ JR小海線「清里駅」(約30分）",
+    "url": "https://kiyosato-auberge.com/access/",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "暖房便座ウォシュレット",
+    "quote": "暖房便座ウォシュレットトイレ（ホテルオーベルジュ内のトイレをご利用ください）",
+    "url": "https://kiyosato-auberge.com/camp/"
+   },
+   "shower": {
+    "status": "25分400円",
+    "quote": "シャワールームが新設されました。25分400円",
     "url": "https://kiyosato-auberge.com/camp/"
    }
   },
@@ -2518,6 +4644,24 @@
     "status": "不可",
     "quote": "直火での焚き火等は禁止です。焚き火シートを必ずご利用ください。",
     "url": "https://camp-sauna-3set.jp/faq/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイズは約7m × 7m、全8サイトありウッドチップを敷いております。",
+    "url": "https://camp-sauna-3set.jp/about/",
+    "surface": "ウッドチップ",
+    "sites": "全8サイト"
+   },
+   "access": {
+    "status": "谷村町駅から徒歩5分",
+    "quote": "谷村町駅からも徒歩5分 買い出しも徒歩圏内",
+    "url": "https://camp-sauna-3set.jp/",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き",
+    "quote": "ウォシュレット付きトイレ 水場",
+    "url": "https://camp-sauna-3set.jp/about/"
    }
   },
   "hirasu-camp21": {
@@ -2533,6 +4677,28 @@
     "quote": "バイク2台目以降&hellip; 500円 / 1台につき",
     "url": "https://r.goope.jp/ooishiya502/menu",
     "price": "500円 / 1台につき"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "1組1名（ソロ） &hellip; 3,000円",
+    "url": "https://r.goope.jp/ooishiya502/menu"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "古民家下側に広がる林間を区画として 提供しております。",
+    "url": "https://r.goope.jp/ooishiya502/menu",
+    "surface": "林間"
+   },
+   "access": {
+    "status": "中富ICを降りて約25分",
+    "quote": "中部横断道 中富ICを降りて約25分",
+    "url": "https://r.goope.jp/ooishiya502/about",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "簡易水洗・ウォシュレット付",
+    "quote": "簡易水洗式トイレ （ 洋式便座・ウォシュレット付 ）",
+    "url": "https://r.goope.jp/ooishiya502/menu"
    }
   },
   "hakushu-terrace-villars": {
@@ -2540,8 +4706,13 @@
     "status": "記載あり",
     "quote": "・チェックイン／13：00〜 ・チェックアウト／〜11：00",
     "url": "https://villars.co.jp/hakushu",
-    "in": "13：00〜",
-    "out": "〜11：00"
+    "in": "13:00〜",
+    "out": "〜11:00"
+   },
+   "toilet": {
+    "status": "男女別の水洗トイレ",
+    "quote": "トイレ（男女別のウォッシュレット付き水洗トイレ：LIXIL製）",
+    "url": "https://villars.co.jp/hakushu"
    }
   },
   "little-north-camping": {
@@ -2550,6 +4721,18 @@
     "quote": "«チェックイン» 13時〜15時",
     "url": "https://littlenorth.net/?page_id=935",
     "in": "13時〜15時"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "全面芝生でゆったり広々お過ごしいただけます。 ≪広さ≫ フリーサイトですが、1区画10ｍ(縦)×10ｍ(横)以内でご使用ください。",
+    "url": "https://littlenorth.net/?page_id=735",
+    "surface": "芝生"
+   },
+   "access": {
+    "status": "増穂ICから約30分",
+    "quote": "■中部横断自動車道 増穂ICから県道413を平林方面へ約30分",
+    "url": "https://littlenorth.net/?page_id=8",
+    "kind": "car"
    }
   },
   "liberty-camp-fujikawa": {
@@ -2559,11 +4742,6 @@
     "url": "https://liberty-camp.simdif.com/contact.html",
     "in": "13:00",
     "out": "10:00"
-   },
-   "women": {
-    "status": "女性専用の設備",
-    "quote": "女性専用露天風呂がリニューアル",
-    "url": "https://liberty-camp.simdif.com/contact.html"
    }
   },
   "autocamp-fujichu": {
@@ -2577,10 +4755,16 @@
     "quote": "直火は禁止です。焚き火台・焚き火台シートの使用をお願いします。",
     "url": "https://fujichu-camp.com/pages/54/"
    },
-   "manager": {
-    "status": "日中のみ",
-    "quote": "Q8．従業員の方は、何時まで管理棟にいますか？ A8．基本的に、8時30分～17時までは、在中しています。",
-    "url": "https://fujichu-camp.com/pages/55/"
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロ／デュオ向けサイト（AC電源無し） B6～B7 2,500円",
+    "url": "https://fujichu-camp.com/pages/53/"
+   },
+   "access": {
+    "status": "富士吉田忍野ICから車で１分",
+    "quote": "東富士五湖道路：富士吉田忍野ICよ り車で１分",
+    "url": "https://fujichu-camp.com/pages/4/",
+    "kind": "car"
    }
   },
   "camp-and-cabins-yamanakako": {
@@ -2606,8 +4790,25 @@
    },
    "manager": {
     "status": "日中のみ",
-    "quote": "原則、10時から20時まで管理人が滞在します。",
-    "url": "https://kotogawacamp.jp/facility/"
+    "quote": "原則、10時〜20時まで常駐しておりますが、一人で対応している為すぐに対応できない場合がありますのでご了承ください。",
+    "url": "https://kotogawacamp.jp/faq/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "林間サイトは本格的なソロキャンが可能です",
+    "url": "https://kotogawacamp.jp/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "いちょう、さくら、林間と全部で3区画あるキャンプサイトに加え、キャンプ場では珍しいサウナテントや、一度は入ってみたいドラム缶風呂まで完備しています。",
+    "url": "https://kotogawacamp.jp/",
+    "sites": "全部で3区画"
+   },
+   "access": {
+    "status": "勝沼ICから約30分",
+    "quote": "中央自動車道 勝沼ICより約30分",
+    "url": "https://kotogawacamp.jp/access/",
+    "kind": "car"
    }
   },
   "lowkeys-farm": {
@@ -2623,6 +4824,16 @@
     "quote": "※バイクは1グループにつき2台まで。3台目以降は＋500円となります。",
     "url": "https://page.line.me/278cktea",
     "price": "＋500円"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "【農作業体験付き】富士山麓・静かなソロキャンププラン ￥3,500",
+    "url": "https://page.line.me/278cktea"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "チェックイン後に15〜30分程度の農作業体験を行い、その後は富士山を正面に望むフリーサイトでキャンプをお楽しみいただけます。",
+    "url": "https://page.line.me/278cktea"
    }
   },
   "heidi-mura-clarakan": {
@@ -2632,6 +4843,11 @@
     "url": "https://www.kikyouya.co.jp/Clarakan/index.html",
     "in": "PM3:00",
     "out": "AM10:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画サイト RVサイト",
+    "url": "https://www.kikyouya.co.jp/Clarakan/index.html"
    }
   },
   "kanchi-camp-doshi": {
@@ -2648,8 +4864,8 @@
     "status": "記載あり",
     "quote": "チェックイン 13：00〜17:00 （１６時を過ぎる場合には事前にご連絡お願い致します。） チェックアウト 12：00",
     "url": "https://7inchcamp.com/mitomi-db",
-    "in": "13：00〜17:00",
-    "out": "12：00"
+    "in": "13:00〜17:00",
+    "out": "12:00"
    }
   },
   "superwild-rc-camp": {
@@ -2657,6 +4873,17 @@
     "status": "可",
     "quote": "基本的にどこでも直火可能ですが、乾燥する時期は延焼しないようにくれぐれもお気をつけください。",
     "url": "https://swrc.jp/camp/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "全域フリーサイト・直火OK・チェックイン自由。",
+    "url": "https://swrc.jp/camp/"
+   },
+   "access": {
+    "status": "勝沼ICから約25分",
+    "quote": "中央道「勝沼IC」から約25分、140号沿いです。",
+    "url": "https://swrc.jp/guide/",
+    "kind": "car"
    }
   },
   "natural-cafe-camp": {
@@ -2664,7 +4891,6 @@
     "status": "記載あり",
     "quote": "チェックアウト 13：00 11：00",
     "url": "https://natural-camp.crayonsite.com/",
-    "in": "13:00",
     "out": "11:00"
    }
   },
@@ -2673,6 +4899,25 @@
     "status": "夜間不在",
     "quote": "− 夜間、管理人が不在になることがあります。ご了承ください。",
     "url": "http://www.mochikoshi-club.com/"
+   },
+   "checkin": {
+    "status": "記載あり",
+    "quote": "− チェックイン午後１時、チェックアウト 午前１１時です。",
+    "url": "http://www.mochikoshi-club.com/",
+    "in": "午後1時",
+    "out": "午前11時"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "一区画が余裕の面積１００㎡ 芝生と塗装道路",
+    "url": "http://www.mochikoshi-club.com/equipment.html",
+    "surface": "芝生"
+   },
+   "access": {
+    "status": "沼津ICから約45分",
+    "quote": "沼津IC（東名高速）・長泉沼津IC（新東名）から約45分",
+    "url": "http://www.mochikoshi-club.com/access.html",
+    "kind": "car"
    }
   },
   "camp-satomiya": {
@@ -2687,6 +4932,23 @@
     "status": "可",
     "quote": "■乗り入れ可能車両：乗用車・キャンピングカー・バイク・自転車",
     "url": "https://www.fujikanko.co.jp/newsrelease/3659"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "CAMP SATOMIYAは富士山の麓、富士五湖の一つ河口湖南岸に位置する全18区画のオートキャンプ場です。",
+    "url": "https://www.fujikanko.co.jp/newsrelease/3659",
+    "sites": "全18区画"
+   },
+   "access": {
+    "status": "河口湖ICから約15分",
+    "quote": "〈東京方面より〉中央自動車道【河口湖IC】より河口湖南岸方面へ車で約15分。",
+    "url": "https://www.fujikanko.co.jp/newsrelease/3659",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "トイレ6",
+    "quote": "┗トイレ6・温水シャワー4・給水洗い場4・灰捨て場・焚火台コンロ洗い場",
+    "url": "https://www.fujikanko.co.jp/newsrelease/3659"
    }
   },
   "manten-hoshi-camp": {
@@ -2696,14 +4958,20 @@
     "url": "https://manten.yamanashi.jp/2024/10/01/own-tent/",
     "in": "13時〜16時",
     "out": "〜11時"
+   },
+   "access": {
+    "status": "長坂高根ICから約20分",
+    "quote": "中央自動車道・長坂高根ICから約20分、須玉ICまたは小淵沢ICからは約30分です。",
+    "url": "https://manten.yamanashi.jp/itemlist/",
+    "kind": "car"
    }
   },
   "satsukigaoka-koen-camp": {
-   "checkin": {
-    "status": "記載あり",
-    "quote": "宿泊の場合、16時までにチェックインしてください。",
+   "access": {
+    "status": "田京駅から車で約10分",
+    "quote": "伊豆箱根鉄道田京駅から車で約10分",
     "url": "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html",
-    "in": "16時まで"
+    "kind": "train"
    }
   },
   "dotekage-camp-ground": {
@@ -2718,6 +4986,27 @@
     "status": "不可",
     "quote": "焚火は、必ず焚き火台をご使用ください。直火は火災の原因になりますので、ご遠慮下さい。",
     "url": "https://dotekage-camp.com/?page_id=95"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "平日のソロキャンプ： ※平日のソロキャンプの場合のみチェックを入れて下さい。",
+    "url": "https://dotekage-camp.com/yoyaku/yoyaku2.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "※１区画につき テント１張・タープ１張・5名まで・車１台 でお願いします。",
+    "url": "https://dotekage-camp.com/yoyaku/yoyaku2.html"
+   },
+   "access": {
+    "status": "河口湖ICから車で10分",
+    "quote": "中央自動車【河口湖IC】下車 車で10分",
+    "url": "https://dotekage-camp.com/?page_id=118",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "全てウォシュレット",
+    "quote": "トイレは女性用2つ、男性用2つ、男女兼用1つ、全てウォシュレットです。",
+    "url": "https://dotekage-camp.com/?page_id=95"
    }
   },
   "adventure-family-kawazu": {
@@ -2725,12 +5014,18 @@
     "status": "記載あり",
     "quote": "■チェックイン 13：00～18：00 （遅れる場合は17:00迄に必ず電話でご連絡ください）",
     "url": "https://www.grandporte.com/adven/index.html",
-    "in": "13：00～18：00"
+    "in": "13:00～18:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "＊カラオケ・直火・発電機・楽器、、打ち上げ花火等禁止＊",
     "url": "https://www.grandporte.com/adven/index.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "■サイト ７０区画 （８ｍ×９ｍ）",
+    "url": "https://www.grandporte.com/adven/index.html",
+    "sites": "７０区画"
    }
   },
   "autocamp-ginga": {
@@ -2751,6 +5046,27 @@
     "status": "不可",
     "quote": "●直火禁止。地面に直置きの鉄板なども直火と一緒です。",
     "url": "http://www.ac-ginga.com/rule.html"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "※ただしソロキャンプ(1サイトに車1台、大人1名様)の場合には、「ご利用ルール」を守っていただける方に限り6サイト6名様までお伺いさせていただきます。",
+    "url": "http://www.ac-ginga.com/rule.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1サイト(1区画)に車1台・テント1張・タープ1張(アレンジできるもの、大型不可)です。",
+    "url": "http://www.ac-ginga.com/ryoukin.html"
+   },
+   "access": {
+    "status": "沼津ICから約1時間40分",
+    "quote": "東名高速沼津ICより約1時間40分",
+    "url": "http://www.ac-ginga.com/access.html",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "3棟・3ヶ所ウォッシュレット",
+    "quote": "トイレ：場内にトイレ棟が3棟あります。内3ヶ所ウォッシュレット。",
+    "url": "http://www.ac-ginga.com/shisetsu.html"
    }
   },
   "camp-fantasea": {
@@ -2758,8 +5074,8 @@
     "status": "記載あり",
     "quote": "チェックイン：１４時～１７時（１７時を過ぎる場合はご連絡ください）チェックアウト：１０時",
     "url": "https://www.campfantasea.com/",
-    "in": "１４時～１７時",
-    "out": "１０時"
+    "in": "14時～17時",
+    "out": "10時"
    },
    "bike": {
     "status": "可",
@@ -2770,6 +5086,21 @@
     "status": "不可",
     "quote": "全サ イト 、 直火でのたき火は禁止です。焚き火台、焚き火シートをご利用ください。",
     "url": "https://www.campfantasea.com/user-guide"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ファミリーもソロキャンパーさんも初心者さんも大歓迎です！",
+    "url": "https://www.campfantasea.com/"
+   },
+   "road": {
+    "status": "蛇石峠は狭くつづら折り",
+    "quote": "（蛇石峠は狭くつづら折りです）",
+    "url": "https://www.campfantasea.com/"
+   },
+   "shower": {
+    "status": "二つ・温水・無料・24時間",
+    "quote": "シャワールームは二つ。温水シャワーを無料で２４時間お使いいただけます。",
+    "url": "https://www.campfantasea.com/campsite"
    }
   },
   "autocamp-hanazawa": {
@@ -2777,7 +5108,7 @@
     "status": "記載あり",
     "quote": "■チェックイン ＰＭ１：００～ＰＭ３：００",
     "url": "https://hanazawacamp.yu-yake.com/shisetu.html",
-    "in": "ＰＭ１：００～ＰＭ３：００"
+    "in": "ＰＭ1:00～ＰＭ3:00"
    },
    "bike": {
     "status": "可",
@@ -2792,7 +5123,7 @@
    },
    "manager": {
     "status": "24時間常駐",
-    "quote": "●管理棟（管理人２４時間駐在）",
+    "quote": "管理棟（管理人２４時間駐在）",
     "url": "https://hanazawacamp.yu-yake.com/shisetu.html"
    }
   },
@@ -2803,6 +5134,11 @@
     "url": "https://f-hill.jp/wordpress/camp/",
     "in": "15:00〜1700",
     "out": "10:00"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロサイト ３名限定 駐車1台無料",
+    "url": "https://f-hill.jp/wordpress/camp/"
    }
   },
   "yamaboushi-autocamp": {
@@ -2811,6 +5147,16 @@
     "quote": "バイク1台1泊 ￥2,500",
     "url": "https://www.g-news.jp/yamaboushi/",
     "price": "￥2,500"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "サイト種類 ： フリーサイト or 電源サイト",
+    "url": "https://www.g-news.jp/yamaboushi/"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "［2］20時～翌朝8時までの間は車の出入りはやめて下さい。",
+    "url": "https://www.g-news.jp/yamaboushi/"
    }
   },
   "camp-koganezaki": {
@@ -2818,6 +5164,32 @@
     "status": "不可",
     "quote": "直火は禁止です。焚き火台をご使用ください。",
     "url": "https://koganezaki.com/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ファミリーキャンプやソロキャンプ、ペット連れの伊豆旅行にもおすすめです。",
+    "url": "https://koganezaki.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "Bサイト60㎡【ゆったり】 2区画利用のワイドサイト！",
+    "url": "https://koganezaki.com/about/"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "１部テントサイト接続部はＰＭ20:00～ＡＭ8:00まで車の出入りはできません。",
+    "url": "https://koganezaki.com/access/"
+   },
+   "access": {
+    "status": "沼津ICから約90分",
+    "quote": "東名沼津ICから約90分、新東名長泉沼津ICから約80分、伊豆縦貫道 月ヶ瀬ICから約40分。",
+    "url": "https://koganezaki.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "・水洗トイレ ・灰捨て場",
+    "url": "https://koganezaki.com/access/"
    }
   },
   "hakamadaki-autocamp": {
@@ -2857,6 +5229,17 @@
     "status": "24時間常駐",
     "quote": "管理人はいつもいますか？ 24時間常駐しています。",
     "url": "https://kawazucamp.com/faq/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートキャンプサイト67区画（平均56㎡）",
+    "url": "https://kawazucamp.com/facilities/",
+    "sites": "67区画"
+   },
+   "shower": {
+    "status": "男女別・15時～22時・無料",
+    "quote": "温泉露天風呂(温水シャワー付)は男女別で15時～22時までご利用できます。※無料",
+    "url": "https://kawazucamp.com/facilities/"
    }
   },
   "yoshikawa-kawasemi": {
@@ -2865,6 +5248,12 @@
     "quote": "チェックイン 13時 チェックアウト",
     "url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/sangyoseisakuka/kankoshinkokakari/2/627.html",
     "in": "13時"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "9区画 (1区画4メートル×4メートル程度)",
+    "url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/sangyoseisakuka/kankoshinkokakari/2/627.html",
+    "sites": "9区画"
    }
   },
   "ose-tent-mura": {
@@ -2872,6 +5261,17 @@
     "status": "不可",
     "quote": "■直火は禁止です。 ■花火、大音量の音楽等は禁止です。",
     "url": "http://web.thn.jp/osetent/annai/index.htm"
+   },
+   "access": {
+    "status": "沼津ICから60分",
+    "quote": "東京--（1：30）-→沼津IC--（60分）-→大瀬崎（R414）",
+    "url": "http://web.thn.jp/osetent/map/index.htm",
+    "kind": "car"
+   },
+   "road": {
+    "status": "駐車場は道幅が狭い",
+    "quote": "駐車場は道幅が狭いため キャンピングカー・車高の 低い車の乗り入れは困難",
+    "url": "http://web.thn.jp/osetent/map/index.htm"
    }
   },
   "dog-field-gasshukoku": {
@@ -2879,7 +5279,18 @@
     "status": "記載あり",
     "quote": "チェックイン（当日）12:00 ～ チエックアウト（翌日）11:00",
     "url": "https://www.dog-field.jp/price.html",
-    "out": "11:00"
+    "out": "11:00",
+    "in": "12:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "一般サイト（Cサイト：C1、C2、C3）1区画ご利用の場合（ご愛犬無し）",
+    "url": "https://www.dog-field.jp/price.html"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "※夜22：00～朝7：00の時間帯、お車の場内出入りを禁止しております。",
+    "url": "https://www.dog-field.jp/facility.html"
    }
   },
   "fujikawa-camp-hill-luna": {
@@ -2887,7 +5298,7 @@
     "status": "記載あり",
     "quote": "チェックイン １３：００～ チェックアウト",
     "url": "https://camp-lunaluna.com/free/guide2",
-    "in": "１３：００～"
+    "in": "13:00～"
    },
    "jikabi": {
     "status": "不可",
@@ -2896,7 +5307,17 @@
    },
    "manager": {
     "status": "24時間常駐",
-    "quote": "午後８時～午前７時は 入り口ゲートを閉鎖します。 管 理 棟 ２４時間駐在",
+    "quote": "管 理 棟 ２４時間駐在",
+    "url": "https://camp-lunaluna.com/free/guide2"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートサイト・・・1区画６０～７０㎡",
+    "url": "https://camp-lunaluna.com/free/guide2"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "注 ：午後８時～午前７時は 入り口ゲートを閉鎖します。",
     "url": "https://camp-lunaluna.com/free/guide2"
    }
   },
@@ -2905,6 +5326,12 @@
     "status": "不可",
     "quote": "※ 直火は禁止 です。炊飯、バーベキュー等での火気の使用は、常設の炉又は調理機器などを使用してください。",
     "url": "https://www.city.shimada.shizuoka.jp/kanko-docs/waxtupazawa.html"
+   },
+   "access": {
+    "status": "相良牧之原ICから約30分",
+    "quote": "東名高速道路相良牧之原ICから約30分",
+    "url": "https://www.city.shimada.shizuoka.jp/kanko-docs/waxtupazawa.html",
+    "kind": "car"
    }
   },
   "nagisaen-hamamatsu": {
@@ -2913,8 +5340,8 @@
     "quote": "直火は禁止します。バーベキューグリル、コンロ等の器具を使用する場合は、危険のない場所で使用してください。",
     "url": "https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/etc1.html"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "駐車場は終日開放されていますが、夜間はキャンプ場内への車の入退場はできません。 （3月20日～11月10日 午後9時～翌朝8時",
     "url": "https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/charge.html"
    }
@@ -2924,13 +5351,39 @@
     "status": "記載あり",
     "quote": "チェックインは９：００〜１７：００です。 宿泊のチェックアウトは１１：００、日帰りのチェックアウトは１８：００です。",
     "url": "https://www.ogawanosato.com/%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/",
-    "in": "９：００〜１７：００",
-    "out": "１１：００"
+    "in": "9:00〜17:00",
+    "out": "11:00"
    },
    "jikabi": {
     "status": "一部可",
     "quote": "フリーサイト、区画サイトでの直火は禁止です。焚き火台のご利用をお願いいたします。 ※コアサイトでの直火は可能です。",
     "url": "https://www.ogawanosato.com/%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "▽ オートキャンプ、ソロキャンプ（宿泊） 大人： １名様につき ２,０００円",
+    "url": "https://www.ogawanosato.com/%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "手前サイト(旧区画サイト)利用可。地面は砂利。 ・奥サイト(旧フリーサイト)利用可。地面は芝生。",
+    "url": "https://www.ogawanosato.com/"
+   },
+   "access": {
+    "status": "浜松ICから車で45分",
+    "quote": "東名高速道路 浜松ICから車で４５分",
+    "url": "https://www.ogawanosato.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "洋式・和式・男性用",
+    "quote": "トイレ：洋式トイレ１台、和式トイレ１台、男性用トイレ１台が２箇所",
+    "url": "https://www.ogawanosato.com/%E6%96%BD%E8%A8%AD%E6%A1%88%E5%86%85/"
+   },
+   "shower": {
+    "status": "1回15分300円",
+    "quote": "シャワー：１回１５分３００円",
+    "url": "https://www.ogawanosato.com/%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91/"
    }
   },
   "okubo-camp-fujieda": {
@@ -2940,6 +5393,11 @@
     "url": "https://orep-o.net/okubo_camp/",
     "in": "14:00",
     "out": "12:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画 15・16の2区画 コンセント数 4",
+    "url": "https://orep-o.net/okubo_camp/auto_camp.html"
    }
   },
   "kenmin-no-mori-camp": {
@@ -2947,7 +5405,12 @@
     "status": "記載あり",
     "quote": "チェックイン 午後１時より受付開始",
     "url": "http://www.kenmori.info/howtouse.html",
-    "in": "午後１時"
+    "in": "午後1時"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "フリーサイト ソロテント向けの小さな区画です。",
+    "url": "http://www.kenmori.info/facilityfee.html"
    }
   },
   "haruno-kawaoto-no-sato": {
@@ -2955,6 +5418,16 @@
     "status": "日中のみ",
     "quote": "宿直管理人は9：00～19:00までキャンプ場に常駐しております。 夜間などの緊急時は053-985-0630までご連絡ください。",
     "url": "https://kawaoto.jp/facility/"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "18時以降は入口は閉めさせて頂きますので、ご理解のほどお願い申し上げます。",
+    "url": "https://kawaoto.jp/"
+   },
+   "shower": {
+    "status": "予約は当日チェックイン時",
+    "quote": "家族風呂・シャワーの予約は『当日チェックイン時』に変更になりました。",
+    "url": "https://kawaoto.jp/"
    }
   },
   "omotefuji-camping": {
@@ -2963,6 +5436,11 @@
     "quote": "チェックイン 12:00 チェックアウト",
     "url": "https://oyado-nisinoya.com/camp.html",
     "in": "12:00"
+   },
+   "shower": {
+    "status": "コインシャワーあり",
+    "quote": "場内には、コインシャワーがあります。",
+    "url": "https://oyado-nisinoya.com/camp.html"
    }
   },
   "akiha-autocamp": {
@@ -2971,6 +5449,16 @@
     "quote": "チェックイン 11:00～17:00まで チェックアウト",
     "url": "https://akiha-camp.com/guide",
     "in": "11:00～17:00"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンプ 2,000円～ ※区画サイト ・1名迄",
+    "url": "https://akiha-camp.com/guide"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "※区画サイト ・1名迄 ・電源なし ・車両乗入OK ・ペットOK",
+    "url": "https://akiha-camp.com/guide"
    }
   },
   "urakawa-camp-mura": {
@@ -2980,6 +5468,17 @@
     "url": "https://www.urakawacamp.com/contactus/faq/",
     "in": "13:00",
     "out": "11:00"
+   },
+   "access": {
+    "status": "飯田線浦川駅から5分",
+    "quote": "大千瀬川に挟まれた浮島のキャンプ場、飯田線浦川駅から5分。",
+    "url": "https://www.urakawacamp.com/",
+    "kind": "train"
+   },
+   "shower": {
+    "status": "入村時に予約制",
+    "quote": "シャワー希望のお客様には入村時に予約された場合に限り、管理棟に併設したシャワーをご利用いただけます。",
+    "url": "https://www.urakawacamp.com/introduction/"
    }
   },
   "tatsuyama-himitsumura": {
@@ -2988,6 +5487,16 @@
     "quote": "チェックイン ロッジ・コテージ：14:00〜17:00 テントサイト：13:00〜17:00",
     "url": "https://himitsumura.com/about",
     "in": "13:00〜17:00"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ひっそりと静かに過ごしたいソロキャンパーや大人だけのグループにおススメ。",
+    "url": "https://himitsumura.com/archives/15864"
+   },
+   "toilet": {
+    "status": "すべて水洗・一室のみ洋式",
+    "quote": "芝生サイト内にあるトイレ。すべて水洗で一室のみ洋式です。",
+    "url": "https://himitsumura.com/archives/15864"
    }
   },
   "pengin-mura-autocamp": {
@@ -2995,7 +5504,12 @@
     "status": "記載あり",
     "quote": "オートキャンプ イン１３時～１６時 （１６時過ぎる場合は連絡下さい）",
     "url": "https://pengin.grupo.jp/free768041",
-    "in": "１３時～１６時"
+    "in": "13時～16時"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "水洗トイレ・コインランドリー",
+    "url": "https://pengin.grupo.jp/free768041"
    }
   },
   "mochiya-camp": {
@@ -3005,6 +5519,12 @@
     "url": "http://www.mochiya.co.jp/qa.html",
     "in": "9:00～17:00",
     "out": "17:00"
+   },
+   "access": {
+    "status": "東名富士ICより車で約25分",
+    "quote": "東名富士ICより車で約25分",
+    "url": "http://www.mochiya.co.jp/access.html",
+    "kind": "car"
    }
   },
   "andgreen-fuji": {
@@ -3019,8 +5539,8 @@
     "quote": "直火は禁止です。 必ず焚き火台をご利用ください。",
     "url": "https://andgreencamp.com/fuji/rule/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "入り口ゲートは管理棟の営業時間に合わせ閉鎖します。",
     "url": "https://andgreencamp.com/fuji/rule/"
    }
@@ -3043,6 +5563,17 @@
     "status": "不可",
     "quote": "直火禁止。焚火台やコンロをご利用ください",
     "url": "https://ishigaminosato.com/"
+   },
+   "access": {
+    "status": "浜松浜北ICから20分",
+    "quote": "車の場合：新東名高速道路「浜松浜北 IC」下車20分",
+    "url": "https://ishigaminosato.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗・温水洗浄",
+    "quote": "水洗トイレ（温水洗浄）",
+    "url": "https://ishigaminosato.com/"
    }
   },
   "volcano-shiraito-autocamp": {
@@ -3050,8 +5581,8 @@
     "status": "記載あり",
     "quote": "チェックイン 13：00～ チェックアウト 11：00",
     "url": "https://volcano-camp.amebaownd.com/pages/2675612/page_201903091447",
-    "in": "13：00～",
-    "out": "11：00"
+    "in": "13:00～",
+    "out": "11:00"
    },
    "jikabi": {
     "status": "不可",
@@ -3065,6 +5596,23 @@
     "quote": "チェックイン 13:00 チェックアウト",
     "url": "https://shinfuji-auto-camp.com/",
     "in": "13:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートキャンプサイトはA〜Eサイトまで全65区画",
+    "url": "https://shinfuji-auto-camp.com/",
+    "sites": "全65区画"
+   },
+   "access": {
+    "status": "御殿場ICから50分",
+    "quote": "御殿場ICから50分 新富士ICから30分",
+    "url": "https://shinfuji-auto-camp.com/access.html",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "男女別水洗・暖房便座",
+    "quote": "男女別水洗トイレです。（暖房便座付き）",
+    "url": "https://shinfuji-auto-camp.com/info.html"
    }
   },
   "fujiyama-izumi-no-mori": {
@@ -3085,6 +5633,16 @@
     "status": "不可",
     "quote": "●直火禁止 ●打ち上げ花火や音の出る花火禁止。",
     "url": "https://fujiyamaizumi.com/ja/plan.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "自然の地形を活かした区画サイトです。そのため大きさや形がすべて異なります。",
+    "url": "https://fujiyamaizumi.com/ja/plan.html"
+   },
+   "toilet": {
+    "status": "ウォシュレットあり",
+    "quote": "●トイレ（ウォシュレットあり）",
+    "url": "https://fujiyamaizumi.com/ja/plan.html"
    }
   },
   "fujisan-kodomo-no-kuni": {
@@ -3093,10 +5651,16 @@
     "quote": "ただし、直火はご遠慮ください。（コンロや焚き火台などをご利用ください）",
     "url": "https://www.kodomo.or.jp/faq/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "駐車場は、防犯上の理由から18:00から翌朝6:00まで車両出入口を閉鎖します。",
     "url": "https://www.kodomo.or.jp/faq/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "大小合わせて20区画あるキャンプ場です。",
+    "url": "https://www.kodomo.or.jp/map/",
+    "sites": "20区画"
    }
   },
   "mochi-benten-camp": {
@@ -3104,13 +5668,17 @@
     "status": "不可",
     "quote": "直火は禁止です。コンロ等をご利用ください（有償でお貸ししています）。",
     "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html"
-   }
-  },
-  "kurhaus-yamagoya": {
-   "jikabi": {
-    "status": "可",
-    "quote": "直火はOKですか？ 現状はOKとさせていただいていますが、昨今の環境への配慮を考えて、禁止にする予定です。",
-    "url": "https://kurhaus-yamagoya.com/faq/"
+   },
+   "access": {
+    "status": "原当麻駅からバス、徒歩15分",
+    "quote": "JR原当麻駅から「田名バスターミナル」行（当02）バスで「望地キャンプ場入口」下車徒歩15分",
+    "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "水洗・障害者トイレ",
+    "quote": "水洗トイレ、貸出用テント（12張）、駐車場、貸出用バーベキュー炉（24台）、障害者トイレ",
+    "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html"
    }
   },
   "sumiyaki-no-mori-akegashima": {
@@ -3118,11 +5686,32 @@
     "status": "記載あり",
     "quote": "■チェックイン時間：12：00～16：00",
     "url": "http://www.bt-r.jp/smc/",
-    "in": "12：00～16：00"
+    "in": "12:00～16:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "地面での直火は禁止となります（焚き火台・コンロをご使用ください）。",
+    "url": "http://www.bt-r.jp/smc/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "大人１名（ソロキャンプ）の場合 5,000円＋500円＝5,500円",
+    "url": "http://www.bt-r.jp/smc/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "[ペット可] ステージ付き区画サイト",
+    "url": "http://www.bt-r.jp/smc/"
+   },
+   "access": {
+    "status": "森・掛川ICより約30分",
+    "quote": "新東名「森・掛川IC」より車で約30分",
+    "url": "http://www.bt-r.jp/smc/",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "1回200円/人",
+    "quote": "・シャワー使用料………………1回200円／人",
     "url": "http://www.bt-r.jp/smc/"
    }
   },
@@ -3131,8 +5720,8 @@
     "status": "記載あり",
     "quote": "-チェックイン／11：00～16：00の間 -チェックアウト／～11：00",
     "url": "https://www.fuji-marubi.jp/campground/",
-    "in": "11：00～16：00",
-    "out": "～11：00"
+    "in": "11:00～16:00",
+    "out": "～11:00"
    },
    "bike": {
     "status": "制限あり",
@@ -3143,6 +5732,17 @@
     "status": "不可",
     "quote": "-直火、花火は不可。",
     "url": "https://www.fuji-marubi.jp/campground/"
+   },
+   "access": {
+    "status": "新富士ICから約20分",
+    "quote": "新東名高速道路 新富士ICから 約20分",
+    "url": "https://www.fuji-marubi.jp/access/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "和式・洋式",
+    "quote": "和式・洋式（Ｐ３のみバリアフリートイレ有り）",
+    "url": "https://www.fuji-marubi.jp/campground/"
    }
   },
   "izumi-resort-izu": {
@@ -3152,6 +5752,17 @@
     "url": "https://izumiresort.com/camp-2025/",
     "in": "15:00",
     "out": "11:00"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "車中泊さん ・ソロさん Plan 料金 ¥6,000〜 (1スペース)",
+    "url": "https://izumiresort.com/camp-2025/"
+   },
+   "access": {
+    "status": "富戸駅より徒歩15分",
+    "quote": "伊豆急行線 富戸駅より徒歩15分",
+    "url": "https://izumiresort.com/camp-2025/",
+    "kind": "train"
    }
   },
   "outdoor-hill-village": {
@@ -3159,12 +5770,17 @@
     "status": "記載あり",
     "quote": "チェックイン 15：00 チェックアウト 10：00",
     "url": "https://www.tokinosumika.com/stay/outdoor/",
-    "in": "15：00",
-    "out": "10：00"
+    "in": "15:00",
+    "out": "10:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "※直火禁止（芝生保護のため、軽量ブロックをお貸し出しいたします）",
+    "url": "https://www.tokinosumika.com/stay/outdoor/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンプ(施設の定める平日) ¥2,000",
     "url": "https://www.tokinosumika.com/stay/outdoor/"
    }
   },
@@ -3173,7 +5789,7 @@
     "status": "記載あり",
     "quote": "チェックイン 13：00から チェックアウト",
     "url": "https://nishifuji.com/guide/",
-    "in": "13：00"
+    "in": "13:00"
    },
    "bike": {
     "status": "可",
@@ -3185,6 +5801,22 @@
     "status": "不可",
     "quote": "直火禁止（ただし空カン等を使用しての焚き火は可）",
     "url": "https://nishifuji.com/guide/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "サイト（1区画・1泊）",
+    "url": "https://nishifuji.com/price/"
+   },
+   "access": {
+    "status": "新富士インターから30分20キロ",
+    "quote": "新富士インターから、西富士道路、富士宮道路経由で30分20キロ。",
+    "url": "https://nishifuji.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き",
+    "quote": "ウォシュレット付きトイレ （女子3ヶ所、男子2ヶ所）",
+    "url": "https://nishifuji.com/facility/"
    }
   },
   "daito-onsen-camp": {
@@ -3198,6 +5830,17 @@
     "status": "不可",
     "quote": "直火・焚火禁止 22時以降はお静かにお願いいたします。",
     "url": "https://daitoonsen.jp/camp.php"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイトキャンプ エリアへペットを同伴いただけます。",
+    "url": "https://daitoonsen.jp/camp.php"
+   },
+   "access": {
+    "status": "掛川IC・菊川ICから約30分",
+    "quote": "東名高速道路 掛川IC・菊川ICから国道150号方面へ約30分",
+    "url": "https://daitoonsen.jp/access.php",
+    "kind": "car"
    }
   },
   "hamanako-canal-autocamp": {
@@ -3218,6 +5861,16 @@
     "status": "女性専用エリア・サイト",
     "quote": "女子キャン (専用・水路沿い芝生エリア)(テント・１張): 2,750円（税込）",
     "url": "http://www.bc-canal.com/autocamp/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "バイクキャンプ(ソロ・テント・１張): 2,200円（税込）",
+    "url": "http://www.bc-canal.com/autocamp/"
+   },
+   "shower": {
+    "status": "550円/回",
+    "quote": "シャワー: 550円/回（税込）",
+    "url": "http://www.bc-canal.com/autocamp/"
    }
   },
   "ogawa-camp-field": {
@@ -3225,7 +5878,8 @@
     "status": "記載あり",
     "quote": "チェックインは９：００から可能ですが、日曜日などの連休中日・最終日は１１：００からとなります。 宿泊のチェックアウトは１１：００で、レイトチェックアウト適用で１８：００まで延長が可能です。",
     "url": "https://www.ogawacampfield.com/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85",
-    "out": "１１：００"
+    "out": "11:00",
+    "in": "9:00"
    },
    "bike": {
     "status": "可",
@@ -3237,6 +5891,28 @@
     "status": "一部可",
     "quote": "基本的には焚き火台のご利用をお願いいたします。 土・砂利などが露出している場所であれば直火いただいて問題ございませんが",
     "url": "https://www.ogawacampfield.com/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "天竜川水系一級河川：気田川(けたがわ)に隣接し、静かな山々に囲まれ、ファミリーキャンプやソロキャンプなど幅広く楽しめるキャンプ場です。",
+    "url": "https://www.ogawacampfield.com/about-3"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "全面オートフリーサイト(林間サイトあり)約50区画",
+    "url": "https://www.ogawacampfield.com/about-3",
+    "surface": "林間",
+    "sites": "約50区画"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き",
+    "quote": "ウォシュレット付きトイレ・温水シャワー完備。",
+    "url": "https://www.ogawacampfield.com/"
+   },
+   "shower": {
+    "status": "温水シャワー完備",
+    "quote": "ウォシュレット付きトイレ・温水シャワー完備。",
+    "url": "https://www.ogawacampfield.com/"
    }
   },
   "fuji-wild-adventure": {
@@ -3246,6 +5922,11 @@
     "url": "http://fwa.kp-hd.com/",
     "in": "15:00～19:00",
     "out": "～10:00"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "パーク内の大半は『フリーサイト』となっているので、好きな場所で、好きなようにキャンプが出来ます。",
+    "url": "http://fwa.kp-hd.com/"
    }
   },
   "u-base-camp-ebina": {
@@ -3259,6 +5940,23 @@
     "status": "不可",
     "quote": "直火は禁止となっています。",
     "url": "https://u-base.jp/camp/ebina/faq/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "家族も、ソロもペットも、 身近で気軽に“街キャン”体験。",
+    "url": "https://u-base.jp/camp/ebina/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "芝生広場のフリーサイトを中心に、コテージやRVパークをご用意。",
+    "url": "https://u-base.jp/camp/ebina/",
+    "surface": "芝生"
+   },
+   "access": {
+    "status": "圏央道海老名ICから1分",
+    "quote": "圏央道海老名ICから1分。県道46号 海老名インター前交差点 隣接",
+    "url": "https://u-base.jp/camp/ebina/access/",
+    "kind": "car"
    }
   },
   "earthcolor-izu": {
@@ -3268,6 +5966,16 @@
     "url": "https://earthcolor-izu.jimdofree.com/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E6%96%99%E9%87%91-%E6%A1%88%E5%86%85/",
     "in": "14:00",
     "out": "11:00"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "【おひさまサイト】※ソロサイト6m×4.5mあります。 ソロ向けのサイトです。お日様ポカポカのサイトです。",
+    "url": "https://earthcolor-izu.jimdofree.com/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E6%96%99%E9%87%91-%E6%A1%88%E5%86%85/"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "トイレ・・・月見の丘の側に水洗トイレがあります。",
+    "url": "https://earthcolor-izu.jimdofree.com/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E6%96%99%E9%87%91-%E6%A1%88%E5%86%85/"
    }
   },
   "hamanako-park-village": {
@@ -3275,11 +5983,22 @@
     "status": "記載あり",
     "quote": "テントサイトのチェックアウト時刻は10：00となりますので厳守お願いします。",
     "url": "https://hamanako-p-v.com/camp/",
-    "out": "10：00"
+    "out": "10:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "直火可能でしょうか？ 直火禁止とさせていただいてます。",
+    "url": "https://hamanako-p-v.com/camp/"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイト 区画 35区画(1区画テント1張り/6人まで)",
+    "url": "https://hamanako-p-v.com/camp/",
+    "sites": "35区画"
+   },
+   "toilet": {
+    "status": "温水洗浄便座付き水洗",
+    "quote": "温水洗浄便座付き水洗トイレと脱衣室付きのコインシャワーブースが設置されています。",
     "url": "https://hamanako-p-v.com/camp/"
    }
   },
@@ -3288,8 +6007,8 @@
     "status": "記載あり",
     "quote": "チェックイン14：00 チェックアウト11：00",
     "url": "https://www.izu-camp.jp/%E7%AC%AC%E4%B8%80%E3%82%B5%E3%82%A4%E3%83%88-%E6%9E%97%E9%96%93%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
-    "in": "14：00",
-    "out": "11：00"
+    "in": "14:00",
+    "out": "11:00"
    },
    "bike": {
     "status": "可",
@@ -3305,6 +6024,23 @@
     "status": "24時間常駐",
     "quote": "スタッフは、日中、第１サイトにある事務所にいます。夜間は、第２サイト隣のログハウスにいます。",
     "url": "https://www.izu-camp.jp/%E3%83%97%E3%83%81%E6%B9%AF%E6%B2%BB"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "第一サイトに隣接していてソロキャンパーに人気のサイト。",
+    "url": "https://www.izu-camp.jp/%E7%AC%AC%E4%B8%80%E3%82%B5%E3%82%A4%E3%83%88-%E6%9E%97%E9%96%93%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "第一サイト・第二サイトで合計33の大小の区画サイトと林間サイトに5区画。",
+    "url": "https://www.izu-camp.jp/",
+    "surface": "林間",
+    "sites": "合計33の大小の区画サイト"
+   },
+   "toilet": {
+    "status": "ウォシュレット",
+    "quote": "第一サイトと第二サイトにそれぞれ設置。 林間サイトは第一サイトのトイレを利用。（ウォシュレット）",
+    "url": "https://www.izu-camp.jp/%E7%AC%AC%E4%B8%80%E3%82%B5%E3%82%A4%E3%83%88-%E6%9E%97%E9%96%93%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85"
    }
   },
   "garage-secret-base": {
@@ -3318,6 +6054,18 @@
     "status": "不可",
     "quote": "Q. 直火はできますか？ A. 直火は禁止となります。",
     "url": "https://www.garage-secret-base.com/price-faq"
+   },
+   "checkin": {
+    "status": "記載あり",
+    "quote": "原則チェックインは13時、チェックアウトは翌11 時です。",
+    "url": "https://www.garage-secret-base.com/price-faq",
+    "in": "13時",
+    "out": "11 時"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "G site(ソロ キャン推奨サイト-バイク,自転車)",
+    "url": "https://www.garage-secret-base.com/price-faq"
    }
   },
   "ninomaru-camp": {
@@ -3325,7 +6073,7 @@
     "status": "記載あり",
     "quote": "チェックイン 13：00～17：00 チェックアウト",
     "url": "https://www.ninomaru-village.jp/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/",
-    "in": "13：00～17：00"
+    "in": "13:00～17:00"
    }
   },
   "tetsukyo-no-mori-camp": {
@@ -3333,8 +6081,8 @@
     "status": "記載あり",
     "quote": "チェックイン １２：３０ チェックアウト １１:００",
     "url": "https://inishiemori.com/tetsudou-mori-camp/",
-    "in": "１２：３０",
-    "out": "１１:００"
+    "in": "12:30",
+    "out": "11:00"
    },
    "bike": {
     "status": "可",
@@ -3347,10 +6095,21 @@
     "quote": "直火はお断りしています。焚火台をご使用ください。",
     "url": "https://inishiemori.com/tetsudou-mori-camp/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
     "quote": "夜間２０時以降、早朝６時までのお車の出入りを制限させていただいております。",
     "url": "https://inishiemori.com/tetsudou-mori-camp/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "■Sサイト (ソロキャンプ用） 定員２名様まで",
+    "url": "https://inishiemori.com/tetsudou-mori-camp/"
+   },
+   "access": {
+    "status": "崎平駅から徒歩7分",
+    "quote": "大井川鐵道 崎平駅 線路沿いを青部・金谷方面へ徒歩7分",
+    "url": "https://inishiemori.com/tetsudou-mori-camp/",
+    "kind": "train"
    }
   },
   "bikuishi-camp": {
@@ -3358,13 +6117,29 @@
     "status": "記載あり",
     "quote": "チェックイン 12：30～16：00 チェックアウト 11：00",
     "url": "https://bikuishi.jp/camp/index.html",
-    "in": "12：30～16：00",
-    "out": "11：00"
+    "in": "12:30～16:00",
+    "out": "11:00"
    },
    "jikabi": {
     "status": "一部可",
     "quote": "直火は専用のファイアプレイスをご使用ください。その他の場所での直火は禁止です。",
     "url": "https://bikuishi.jp/camp/index.html"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "当キャンプ場は全て車乗り入れ可能な区画サイト。",
+    "url": "https://bikuishi.jp/"
+   },
+   "access": {
+    "status": "藤枝岡部ICから車で25分",
+    "quote": "新東名藤枝岡部ICから車で25分",
+    "url": "https://bikuishi.jp/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "洗浄付温水便座",
+    "quote": "快適にご利用いただける綺麗なトイレ。男女ともに洗浄付温水便座を完備しています。",
+    "url": "https://bikuishi.jp/facility/index.html"
    }
   },
   "solace-no-oka": {
@@ -3387,7 +6162,7 @@
    },
    "manager": {
     "status": "夜間不在",
-    "quote": "常駐スタッフはいますか？ 常駐スタッフはいません。",
+    "quote": "常駐スタッフはいません。",
     "url": "https://solace-atami.com/faq/"
    }
   },
@@ -3407,6 +6182,16 @@
     "status": "一部可",
     "quote": "電源・ブランコ・直火OK など、オプションも色々あります！",
     "url": "https://www.stone-chair.com/visitor"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロもファミリーもペットも大歓迎。",
+    "url": "https://www.stone-chair.com/"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き",
+    "quote": "ウォシュレット付きトイレ完備です。",
+    "url": "https://www.stone-chair.com/site-introduction"
    }
   },
   "nishiizu-autocamp": {
@@ -3417,6 +6202,27 @@
     "quoteOut": "チェックアウト 〜11:00",
     "in": "14:00〜18:00",
     "out": "〜11:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "サイト区画：26区画",
+    "url": "https://www.241z-autocamp.com/",
+    "sites": "26区画"
+   },
+   "road": {
+    "status": "険しい山道を案内の場合あり",
+    "quote": "カーナビや地図アプリで検索すると、対向車とのすれ違いが困難な険しい山道を案内される場合があります。",
+    "url": "https://www.241z-autocamp.com/"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き",
+    "quote": "ウォシュレット付きトイレ、温水洗い場、ポカポカお風呂。",
+    "url": "https://www.241z-autocamp.com/"
+   },
+   "shower": {
+    "status": "24時間シャワー",
+    "quote": "お風呂、24時間シャワー、ピザ窯、縦型洗濯機",
+    "url": "https://www.241z-autocamp.com/"
    }
   },
   "jurigi-fuji-dog": {
@@ -3436,6 +6242,27 @@
     "status": "女性専用プラン",
     "quote": "女性専用ソロキャンププラン 安心の女性専用枠",
     "url": "https://fuji.dog/price/"
+   },
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンプの方にはソロ料金を設定しています。",
+    "url": "https://fuji.dog/"
+   },
+   "access": {
+    "status": "東名裾野インターより15分",
+    "quote": "東名裾野インターより１５分",
+    "url": "https://fuji.dog/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "24時間利用可",
+    "quote": "全プランでロッジ内の清潔なトイレ・シャワー・キッチン設備が24時間ご利用いただけます。",
+    "url": "https://fuji.dog/price/"
+   },
+   "shower": {
+    "status": "24時間利用可",
+    "quote": "全プランでロッジ内の清潔なトイレ・シャワー・キッチン設備が24時間ご利用いただけます。",
+    "url": "https://fuji.dog/price/"
    }
   },
   "tateyama-club": {
@@ -3451,14 +6278,19 @@
     "quote": "地面での直火は禁止です。",
     "url": "https://www.tateyamaclub.tokyo/terms.html"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
-    "quote": "22:00以降は、防犯のため出入り口のゲートを施錠いたします。",
-    "url": "https://www.tateyamaclub.tokyo/terms.html"
-   },
    "women": {
     "status": "女性専用の設備",
     "quote": "●女性専用パウダールーム(ドライヤー完備)●女性専用シャワー１箇所",
+    "url": "https://www.tateyamaclub.tokyo/"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "22:00以降は、防犯のため出入り口のゲートを施錠いたします。",
+    "url": "https://www.tateyamaclub.tokyo/terms.html"
+   },
+   "toilet": {
+    "status": "男女別・ウォシュレット完備",
+    "quote": "男女別トイレ(ウォシュレット完備)",
     "url": "https://www.tateyamaclub.tokyo/"
    }
   },
@@ -3469,6 +6301,11 @@
     "url": "https://lakelodgeyamanaka.com/guide/",
     "in": "15:00",
     "out": "10:00"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイト 森の中の緑あふれるキャンプサイトです！",
+    "url": "https://lakelodgeyamanaka.com/guide/"
    }
   },
   "yagurasawa-camp": {
@@ -3477,8 +6314,8 @@
     "quote": "チェックインは12：00～16：00です。（予約プランによっては異なります）",
     "url": "https://yagurasawa.com/rule/",
     "quoteOut": "チェックアウトは11：00です。",
-    "in": "12：00～16：00",
-    "out": "11：00"
+    "in": "12:00～16:00",
+    "out": "11:00"
    },
    "bike": {
     "status": "可",
@@ -3491,9 +6328,14 @@
     "quote": "当キャンプ場は直火を禁止しています。",
     "url": "https://yagurasawa.com/rule/"
    },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
-    "quote": "20：00以降は入口ゲートを閉めさせていただく場合がございます。",
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "・20：00以降は入口ゲートを閉めさせていただく場合がございます。",
+    "url": "https://yagurasawa.com/rule/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "・THE野営地はフリーサイトとなります。",
     "url": "https://yagurasawa.com/rule/"
    }
   },
@@ -3514,6 +6356,17 @@
     "status": "夜間不在",
     "quote": "管理人は24時間いますか？ 夜間はいない時間帯もあります。",
     "url": "https://campiece.com/faq/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "サイトの大きさは、一区画約100㎡で、乗用車と4人用テント1～2張り設置可能です。",
+    "url": "https://campiece.com/faq/"
+   },
+   "access": {
+    "status": "大井松田ICから約20分",
+    "quote": "東京方面からお越しの方：大井松田ICから約20分",
+    "url": "https://campiece.com/area/minamiashigara/",
+    "kind": "car"
    }
   },
   "back-yard-camp-shoji": {
@@ -3532,14 +6385,28 @@
     "status": "不可",
     "quote": "直火不可。焚き火を行う場合は、焚き火台をご利用をお願いします。",
     "url": "https://backyard-camp.com/campingfield/fujiview-private-site/"
+   },
+   "shower": {
+    "status": "1回500円・24時間利用可",
+    "quote": "シャワーは1回500円で24時間お使い頂けます。",
+    "url": "https://backyard-camp.com/guide/"
    }
   },
   "kiwi-fruit-country-camp": {
-   "checkin": {
-    "status": "記載あり",
-    "quote": "キャンプ予約日の次の日は朝9時までにチェックアウト",
-    "url": "https://kiwicountry.jp/info",
-    "out": "朝9時"
+   "road": {
+    "status": "舗装されていない場所や林道あり",
+    "quote": "農園は大きな自然の中にあります。舗装されていない場所や林道などがありますので、動きやすい格好が望ましいです。",
+    "url": "https://kiwicountry.jp/faq"
+   },
+   "toilet": {
+    "status": "男女別・水洗・保温便座",
+    "quote": "男女別々の水洗トイレあります。保温便座の場所もあるため、冬でも安心です。",
+    "url": "https://kiwicountry.jp/camp"
+   },
+   "shower": {
+    "status": "男女別々2か所",
+    "quote": "シャワー室は男女別々2か所あります。サイトから50m程です。",
+    "url": "https://kiwicountry.jp/camp"
    }
   },
   "ogawa-grand-lodge-field": {
@@ -3548,8 +6415,19 @@
     "quote": "■ チェックイン 13：00",
     "url": "https://www.campal.co.jp/shops/sort/field/index.html",
     "quoteOut": "■ チェックアウト 11：00",
-    "in": "13：00",
-    "out": "11：00"
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "都市近県のキャンプ場で、ファミリーキャンプはもちろんソロキャンプや ワーケーションなど、身も心にも安らぎを。",
+    "url": "https://www.campal.co.jp/shops/sort/field/index.html"
+   },
+   "access": {
+    "status": "原木ICから車で約55分",
+    "quote": "京葉道路 原木ICから車で約55分（約23km）",
+    "url": "https://www.campal.co.jp/shops/sort/field/index.html",
+    "kind": "car"
    }
   },
   "ma-saison-otaki": {
@@ -3571,6 +6449,21 @@
     "status": "可",
     "quote": "車3台（バイクは6台）まで無料",
     "url": "http://lotus-camp.com/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロキャンプサイト 約80㎡ 定員1名 AC電源なし",
+    "url": "http://lotus-camp.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "全区画130㎡以上の広々オートサイト",
+    "url": "http://lotus-camp.com/"
+   },
+   "shower": {
+    "status": "24時間無料",
+    "quote": "エアコン完備のウォシュレットトイレ、温水炊事場、24時間無料シャワーを完備。",
+    "url": "http://lotus-camp.com/"
    }
   },
   "grove-camping-hill": {
@@ -3591,6 +6484,21 @@
     "status": "可",
     "quote": "常設直火ピットで野趣あふれる焚き火をお楽しみいただけます",
     "url": "https://grove-yugawara.com/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "大きなテントが設営可能な区画サイトです。",
+    "url": "https://grove-yugawara.com/information/sites/"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "管理人不在時（夜間含む）は緊急連絡先の電話番号へご連絡ください",
+    "url": "https://grove-yugawara.com/information/rules/"
+   },
+   "toilet": {
+    "status": "水洗洋式仮設・男女別",
+    "quote": "水洗洋式仮設トイレ 男女別各１基",
+    "url": "https://grove-yugawara.com/information/sites/"
    }
   },
   "wonderful-garden-autocamp": {
@@ -3598,13 +6506,34 @@
     "status": "記載あり",
     "quote": "【オートサイト宿泊】チェックイン12：00～16：00 チェックアウト翌日10：00",
     "url": "https://www.wonderfulgarden.jp/",
-    "in": "12：00～16：00",
-    "out": "10：00"
+    "in": "12:00～16:00",
+    "out": "10:00"
    },
    "jikabi": {
     "status": "不可",
     "quote": "直火・打ち上げ花火・発電機の使用は禁止します",
     "url": "https://www.wonderfulgarden.jp/form/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "☆オートサイト（中）でソロキャンプを複数組でご利用の場合は、それぞれ１サイトずつご予約ください。",
+    "url": "https://www.wonderfulgarden.jp/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "T1～6 約80㎡定員4名、車１台・テント・タープ各1 。 オートサイト（中）電源あり 10A",
+    "url": "https://www.wonderfulgarden.jp/facility/"
+   },
+   "access": {
+    "status": "柏インターより15分",
+    "quote": "柏インターより15分",
+    "url": "https://www.wonderfulgarden.jp/",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "300円／１人（15分）",
+    "quote": "シャワールーム 300円／１人（15分）でご利用いただけます。",
+    "url": "https://www.wonderfulgarden.jp/facility/"
    }
   },
   "fumotto-de-camp": {
@@ -3614,6 +6543,18 @@
     "url": "https://fumotto.jp/shop/fumotto-de-camp-2/",
     "in": "15:00～18:00",
     "out": "8:00～10:00"
+   },
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "芝生広場内フリーサイト fumotto南アルプスでは、気軽にキャンプを楽しむことができます。",
+    "url": "https://fumotto.jp/shop/fumotto-de-camp-2/",
+    "surface": "芝生"
+   },
+   "access": {
+    "status": "十五所停留所から徒歩約20分",
+    "quote": "甲府駅から山梨交通バスを利用して「十五所停留所」下車、徒歩約20分",
+    "url": "https://fumotto.jp/access/",
+    "kind": "train"
    }
   },
   "shinei-kiyosato-camp": {
@@ -3628,6 +6569,23 @@
     "status": "不可",
     "quote": "直火の使用（必ず焚き火台や炉台の上で火を扱ってください）",
     "url": "https://shinei-camp-field.toki-lab.com/terms-of-service/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "区画で区切られているので、ソロ・ペア・ファミリー・グループ、さまざまなスタイルのキャンプに対応しています。",
+    "url": "https://shinei-camp-field.toki-lab.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "キャンプサイトには全43の区画サイト。どの区画も約150㎡と広々です。",
+    "url": "https://shinei-camp-field.toki-lab.com/",
+    "sites": "全43の区画サイト"
+   },
+   "access": {
+    "status": "JR清里駅から徒歩約10分",
+    "quote": "JR清里駅→徒歩約１０分",
+    "url": "https://shinei-camp-field.toki-lab.com/",
+    "kind": "train"
    }
   },
   "hadano-omoteranzawa-camp": {
@@ -3635,8 +6593,7 @@
     "status": "記載あり",
     "quote": "15：00～翌10：00(アーリーチェックイン13：00～可)",
     "url": "https://yamamo-field.com/using/",
-    "in": "15：00",
-    "out": "10：00"
+    "in": "13:00"
    },
    "bike": {
     "status": "可",
@@ -3647,6 +6604,22 @@
     "status": "一部可",
     "quote": "焚き火は、焚火台及びシートをご利用ください。フリーサイトエリアのみ直火をご利用頂けます。",
     "url": "https://yamamo-field.com/using/"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロ~デュオでご利用頂ける、直火が出来るサイトとなってます。",
+    "url": "https://yamamo-field.com/facility/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "ファミリー向けの芝生サイト、ソロ・デュオ用のフリーサイトまで、ニーズに合わせたご利用が可能です。",
+    "url": "https://yamamo-field.com/",
+    "surface": "芝生"
+   },
+   "toilet": {
+    "status": "温水水洗トイレ（洋式）",
+    "quote": "トイレ 温水水洗トイレ（洋式）",
+    "url": "https://yamamo-field.com/facility/"
    }
   },
   "mamuro-camp-base": {
@@ -3661,6 +6634,22 @@
     "status": "不可",
     "quote": "焚火は直火禁止です。焚火台と焚火シートを必ずご利用ください",
     "url": "https://mamuro-campbase.com/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロエリア ¥5,000 円〜6,000 円",
+    "url": "https://mamuro-campbase.com/price/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "区画サイト / フリーサイト サイトの地面：芝 / 土",
+    "url": "https://mamuro-campbase.com/access/",
+    "surface": "芝 / 土"
+   },
+   "shower": {
+    "status": "シャワー無料",
+    "quote": "シャワー無料。汗を流して楽しくキャンプ。タオル、シャンプー、ドライヤー等はご用意下さい",
+    "url": "https://mamuro-campbase.com/about/"
    }
   },
   "hoshiumi-no-kaori": {
@@ -3672,6 +6661,11 @@
    "jikabi": {
     "status": "不可",
     "quote": "直火は禁止となります。（必ず焚火台等をご利用ください。）",
+    "url": "http://www.hoshiuminokaori.jp/termsofuse.html"
+   },
+   "shower": {
+    "status": "24時間利用可能",
+    "quote": "シャワー室については24時間利用可能となります。",
     "url": "http://www.hoshiuminokaori.jp/termsofuse.html"
    }
   },
@@ -3687,6 +6681,22 @@
     "status": "可",
     "quote": "乗用車・バイク・ キャンピングカー は入場可能。",
     "url": "https://tsukiyoko.ujack.co.jp/access.html"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "車横付け可 区画・フリーサイト レンタルあり",
+    "url": "https://tsukiyoko.ujack.co.jp/stay.html"
+   },
+   "access": {
+    "status": "上総一ノ宮駅からタクシー約20分",
+    "quote": "JR「 上総一ノ宮駅 」からタクシーで約 20分 です。",
+    "url": "https://tsukiyoko.ujack.co.jp/access.html",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "洋式・温水洗浄便座付き",
+    "quote": "温水洗浄便座 付きの洋式トイレを設置しています。",
+    "url": "https://tsukiyoko.ujack.co.jp/facilities.html"
    }
   },
   "fujimi-no-oka-autocamp": {
@@ -3695,23 +6705,878 @@
     "quote": "区画サイト12時〜17時、フリーサイト11時〜17時",
     "url": "https://fujimicamp.jp/rule/",
     "quoteOut": "チェックアウト時間までにご退場して下さい。 ＊区画サイト12時、フリーサイト11時",
-    "in": "区画サイト12時〜17時、フリーサイト11時〜17時",
     "out": "区画サイト12時、フリーサイト11時"
-   },
-   "jikabi": {
-    "status": "一部可",
-    "quote": "直火サイト (現在準備中) 直火ができるのはここだけ！",
-    "url": "https://fujimicamp.jp/camp/"
-   },
-   "manager": {
-    "status": "夜間ゲート閉鎖",
-    "quote": "ゲート閉⾨後（18時〜8時）は場内への出⼊りや、お⾞の移動は出来ません",
-    "url": "https://fujimicamp.jp/rule/"
    },
    "women": {
     "status": "女性専用の設備",
     "quote": "女性専用と男女共用の2つのパウダールームを完備。",
     "url": "https://fujimicamp.jp/facility/"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "ゲート閉⾨後（18時〜8時）は場内への出⼊りや、お⾞の移動は出来ません（緊急⾞両等は可能）",
+    "url": "https://fujimicamp.jp/rule/"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "フリーサイト（ソロ限定）とデイキャンプ（日帰り）はご利用できる時間が通常と異なりますので営業時間よりご確認ください。",
+    "url": "https://fujimicamp.jp/camp/"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "区画サイト 12:00〜17:00 8:00〜12:00",
+    "url": "https://fujimicamp.jp/"
+   },
+   "toilet": {
+    "status": "温水便座洋式・自動照明",
+    "quote": "温水便座洋式トイレ 各個室に換気扇が設置されてます。自動照明で夜間でも安心して利用できます。",
+    "url": "https://fujimicamp.jp/facility/"
+   },
+   "shower": {
+    "status": "24時まで利用可",
+    "quote": "シャワールームは何時まで使えますか？ 24時までです。",
+    "url": "https://fujimicamp.jp/faq/"
+   }
+  },
+  "doshi-no-mori": {
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "道志の森キャンプ場は、山梨県道志にあるフリーサイトのキャンプ場です。",
+    "url": "https://doshinomori.jp/"
+   },
+   "access": {
+    "status": "都留市駅からタクシー約４０分",
+    "quote": "富士急行線「都留市駅」＞タクシーで約４０分（約￥6,000-前後）",
+    "url": "https://doshinomori.jp/access.html",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "７カ所（内水洗は５カ所）",
+    "quote": "場内に大きなトイレは７カ所（内水洗は５カ所）あり、水場も併設しています。",
+    "url": "https://doshinomori.jp/facility.html"
+   },
+   "shower": {
+    "status": "場内２カ所・２４時間稼働",
+    "quote": "場内２カ所に設置しています。２４時間稼働していますので、ちょっと汗をかいた時なども便利です。",
+    "url": "https://doshinomori.jp/facility.html"
+   }
+  },
+  "takizawaso": {
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "フリーサイト(予約無し) フリーサイトエリアの気に入った場所でキャンプ！",
+    "url": "https://takizawaen.com/facilities/tent.html"
+   },
+   "access": {
+    "status": "秦野中井ICから約20分",
+    "quote": "お車：東名高速道路「秦野中井IC」から県道720号経由、約10km・約20分",
+    "url": "https://takizawaen.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "和式・洋式の水洗",
+    "quote": "20蛇口の上水道と、和式・洋式の水洗トイレ",
+    "url": "https://takizawaen.com/"
+   }
+  },
+  "nishitanzawa-mountbridge": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "全80区画・AC電源なし",
+    "url": "https://mount-bridge.com/price.html",
+    "sites": "全80区画"
+   },
+   "toilet": {
+    "status": "男女別",
+    "quote": "・お風呂・トイレは各男女別にございます。",
+    "url": "https://mount-bridge.com/"
+   }
+  },
+  "miyagase-village": {
+   "access": {
+    "status": "相模原ICから約15分",
+    "quote": "圏央道の「相模原IC」から約15分、「相模原愛川IC」から約30分です。",
+    "url": "https://miyagase-village.com/",
+    "kind": "car"
+   }
+  },
+  "kumomi-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン/ＰＭ１:00～ＰＭ6:00 チェックアウト/ＡＭ１１:００",
+    "url": "https://www.kumomi-sunset.com/02_site.html",
+    "in": "ＰＭ1:00",
+    "out": "ＡＭ11:00"
+   }
+  },
+  "yataro-camp": {
+   "access": {
+    "status": "厚木ICから約30分",
+    "quote": "東名高速道路「厚木IC」から約30分",
+    "url": "https://k-riverland.jp/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "水洗トイレ 炊事場 スポンジ、洗剤などは設置してありません。",
+    "url": "https://k-riverland.jp/facility/"
+   }
+  },
+  "darumayama-kogen": {
+   "access": {
+    "status": "沼津インターチェンジより40分",
+    "quote": "東名沼津インターチェンジ・新東名長泉沼津インターチェンジより40分",
+    "url": "https://www.city.izu.shizuoka.jp/soshiki/1004/2/1/928.html",
+    "kind": "car"
+   }
+  },
+  "kiyosato-oka": {
+   "access": {
+    "status": "須玉インターから車で25分",
+    "quote": "中央自動車道須玉インターから 車で25分",
+    "url": "https://kiyosato-okanokouen.net/",
+    "kind": "car"
+   }
+  },
+  "richland-kiyokawa": {
+   "access": {
+    "status": "厚木ICから30分",
+    "quote": "東名高速道路厚木ICから30分",
+    "url": "https://www.richland-kiyokawa-camp.com/",
+    "kind": "car"
+   }
+  },
+  "mobility-park-izu": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "全面芝生のグループ向け区画サイトです。",
+    "url": "https://mobility-park.jp/facility",
+    "surface": "芝生"
+   }
+  },
+  "pica-sagamiko": {
+   "access": {
+    "status": "相模湖駅からバス約８分",
+    "quote": "高尾駅のとなりの相模湖駅からバスで約８分",
+    "url": "https://www.sagamiko-resort.jp/access/index.html",
+    "kind": "train"
+   }
+  },
+  "kuragari-camp": {
+   "access": {
+    "status": "玄倉バス停から徒歩3分",
+    "quote": "玄倉バス停下車―(徒歩3分)― 丹沢湖キャンプサイト",
+    "url": "https://tanzawa-camp.sakura.ne.jp/about/access-1.php",
+    "kind": "train"
+   }
+  },
+  "naminokomura": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン／AM11時・チェックアウト／AM10時",
+    "url": "https://www.naminokomura.jp/price.html",
+    "in": "AM11時",
+    "out": "AM10時"
+   },
+   "access": {
+    "status": "根府川駅から徒歩10分",
+    "quote": "JR東海道本線根府川駅下車、徒歩10分",
+    "url": "https://www.naminokomura.jp/access.html",
+    "kind": "train"
+   }
+  },
+  "ikawa-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13時00分 チェックアウト 11時00分",
+    "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0001021.html",
+    "in": "13時00分",
+    "out": "11時00分"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "井川ダム最上流部の湖畔に位置するオートキャンプ場です。テントサイトは41区画あり、",
+    "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0001021.html",
+    "sites": "41区画"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "テントサイトは41区画あり、炊飯室、水洗トイレ、温泉風呂、有料ランドリー、有料温水シャワーがあります。",
+    "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0001021.html"
+   }
+  },
+  "akiyamagawa-camp": {
+   "access": {
+    "status": "インターから平日12分くらい",
+    "quote": "インターから平日１２分くらいで到着",
+    "url": "http://www.akikawaya.co.jp/access.html",
+    "kind": "car"
+   }
+  },
+  "otome-forest-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン １３：００から１７：００まで ・ チェックアウト １１：００まで",
+    "url": "https://www.gotemba-otome.jp/%e7%ac%ac1%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "access": {
+    "status": "御殿場ICから車で6分",
+    "quote": "御殿場ICから車で６分",
+    "url": "https://www.gotemba-otome.jp/%e7%ac%ac1%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4",
+    "kind": "car"
+   }
+  },
+  "kurokawa-shizuoka": {
+   "access": {
+    "status": "清水駅から約60分",
+    "quote": "※所要時間 清水駅から約60分、興津駅から約40分",
+    "url": "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000093.html",
+    "kind": "train"
+   }
+  },
+  "fukushigawa-seishonen": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画 1名 2,200円／1泊",
+    "url": "https://www.town.nanbu.yamanashi.jp/kankou/leisure/Camp-Okuyama.html"
+   }
+  },
+  "nekumasanso-auto": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テント等が汚れないよう土の上に細かい砂利を敷いてあります 全部で２６区画(内、電源サイト４)",
+    "url": "https://hukusshigawacamp.eyado.net/facility.html",
+    "surface": "砂利",
+    "sites": "全部で２６区画"
+   },
+   "toilet": {
+    "status": "温水洗浄トイレ",
+    "quote": "トイレ 温水洗浄トイレ（H28改修済）",
+    "url": "https://hukusshigawacamp.eyado.net/facility.html"
+   }
+  },
+  "fujimangan-village": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 午後14時から午後5時まで",
+    "url": "https://fuji-manganvillage.com/facilityinfo/woodtrailer_type-s/",
+    "in": "午後14時"
+   },
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "1名様から利用できるソロ専用サイト定員5名のスタンダードサイト、ハンモックロープ付きのハンモックサイト、電源付きサイト、ペット同伴サイトもあります。",
+    "url": "https://fuji-manganvillage.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントサイト：18区画 電源サイト・ペット同伴サイトもご用意しております。",
+    "url": "https://fuji-manganvillage.com/facilityinfo/",
+    "sites": "テントサイト：18区画"
+   },
+   "toilet": {
+    "status": "全個室ウォシュレット完備",
+    "quote": "トイレ：全個室ウォシュレット完備で清潔にご利用いただけます。",
+    "url": "https://fuji-manganvillage.com/facilityinfo/"
+   }
+  },
+  "kananomori-sanso": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントサイト1区画貸出料金 4,500円（平日）",
+    "url": "https://kananomori.com/price.html"
+   },
+   "access": {
+    "status": "遊仙橋下車徒2分",
+    "quote": "駅前から桑西行き(ハマイバ行き)バスにて遊仙橋下車徒2分。",
+    "url": "https://kananomori.com/price.html",
+    "kind": "train"
+   }
+  },
+  "fuji-midori-kyuka-auto": {
+   "access": {
+    "status": "河口湖ICから10分",
+    "quote": "新宿－中央自動車道(1時間20分)→河口湖IC(10分)→富士緑の休暇村",
+    "url": "https://www.kyukamura.jp/access",
+    "kind": "car"
+   }
+  },
+  "uchiurayama-kenminnomori": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "車はもちろん、テント、タープもゆったりと張ることが出来ます。サイトごとに緑花木で区画されています。",
+    "url": "https://www.uchiurayama.jp/stay03"
+   }
+  },
+  "kaaji-no-mori": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン／チェックアウト お昼の12時",
+    "url": "https://www.tschiba.com/kaaji/plan.html",
+    "in": "12時",
+    "out": "12時"
+   },
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロはもちろんボーイスカウトや４ＷＤチームなどの貸切り実績があります。",
+    "url": "https://www.tschiba.com/kaaji/plan.html"
+   }
+  },
+  "okitsugawa-auto": {
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "日帰りデイキャンプやお得なソロキャンププランなど詳細は「プラン詳細」、サイト利用料や区画サイズに関しましては「サイト詳細」よりご確認ください。",
+    "url": "https://camp-joe.com/okitsugawa/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "全区画サイトは、車両乗り入れ可能なオートサイトです。エリアは4段のひな壇で区切られ、上からラージサイト、トップエリア、ミドルエリア、リバーサイドエリアとなっております。砕石を敷き詰めたグラウンドで、水捌けが良く風にも強いサイトです。",
+    "url": "https://camp-joe.com/okitsugawa/",
+    "surface": "砕石"
+   },
+   "access": {
+    "status": "新清水ICから約20分",
+    "quote": "高速新東名の新清水ICからは約20分、清水いはらICからは約15分、東名清水ICから20分",
+    "url": "https://camp-joe.com/okitsugawa/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "水洗式の洋式トイレ",
+    "quote": "水洗式の洋式トイレ、無料の温水シャワー、お湯が出る流し台を備えております。",
+    "url": "https://camp-joe.com/okitsugawa/"
+   },
+   "shower": {
+    "status": "無料・21時まで",
+    "quote": "温水シャワーは無料でご利用いただけます。21時以降は就寝者優先時間のクワイエットタイムとなりますのでシャワーもそれまでにお済ませください。",
+    "url": "https://camp-joe.com/okitsugawa/"
+   }
+  },
+  "kazusa-autocamp": {
+   "solo": {
+    "status": "ソロ料金・プラン",
+    "quote": "ソロキャンプについては、１，０００円引きとさせていただきます。",
+    "url": "https://www.kazusa-autocamp.com/k-ryoukinn2020.htm"
+   }
+  },
+  "wildkids-misaki": {
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロからファミリーまで、 様々なキャンプスタイルで楽しめます。",
+    "url": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "約広さ8m×8ｍ・芝生・水はけ良好 池側オートサイト",
+    "url": "https://wild-kids-misaki-auto-camping-ground.jimdosite.com/%E3%82%B5%E3%82%A4%E3%83%88%E7%B4%B9%E4%BB%8B/",
+    "surface": "芝生"
+   }
+  },
+  "miyahara-autocamp": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画 4人 車一台 テント・タープ各1張 1泊 5,000円",
+    "url": "https://www.camp-miyahara.com/rate"
+   }
+  },
+  "futtsu-kanaya-hills": {
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "Ｅ ソロサイト（全３サイト） 専用サイトではめずらしい車両乗り入れが可能なソロサイト。",
+    "url": "https://www.autocamphills.com/guide_e.html"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "Ｂ区画サイト Ｃドッグランサイト Ｄフリーサイト",
+    "url": "https://www.autocamphills.com/charge.html"
+   },
+   "nightGate": {
+    "status": "夜間は出入口を閉める",
+    "quote": "★閉門時間 防犯上の理由により、下記の時間はお車の出入りは出来ません。 19：00 ～ 8：00 ( 4 月～ 10 月 )",
+    "url": "https://www.autocamphills.com/rule.html"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "水洗トイレ 炊事場 灰捨て場",
+    "url": "https://www.autocamphills.com/guide.html"
+   }
+  },
+  "abiko-fureai-camp": {
+   "access": {
+    "status": "湖北台6丁目下車、西へ約1キロ",
+    "quote": "「外回り湖北台駅行き」のバスで湖北台6丁目下車、西へ約1キロメートル。",
+    "url": "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/about.html",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "男女別水洗・車椅子対応",
+    "quote": "男女別水洗トイレ、車椅子対応トイレ",
+    "url": "https://www.city.abiko.chiba.jp/event/shisetsu/fureaicamp/about.html"
+   }
+  },
+  "s-eagle-camp": {
+   "access": {
+    "status": "JR上総一宮駅から徒歩15分",
+    "quote": "JR上総一宮駅→徒歩15分",
+    "url": "https://camp.souken-firm.com/",
+    "kind": "train"
+   }
+  },
+  "sunnyside-auto-camp": {
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロキャンプ、ファミリーキャンプ問わず、体験してみませんか？",
+    "url": "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/"
+   },
+   "access": {
+    "status": "八街駅より車で約10分",
+    "quote": "八街駅より車で約10分",
+    "url": "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "温水洗浄便座",
+    "quote": "トイレは温水洗浄便座です。",
+    "url": "https://hopedigitalsolutions.co.jp/outdoor-sunnyside-autocamp/faciltys/"
+   }
+  },
+  "okuyoro-village": {
+   "access": {
+    "status": "市原鶴舞インターから約30分",
+    "quote": "車 圏央道市原鶴舞インターチェンジから約30分",
+    "url": "https://okuyorovillage.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "ウォシュレット付き",
+    "quote": "ウォシュレット付きの綺麗なトイレをご用意しています。",
+    "url": "https://okuyorovillage.com/plan"
+   },
+   "shower": {
+    "status": "チェックアウトまで利用可",
+    "quote": "シャワー室の利用時間は何時から何時までですか？ チェックイン〜チェックアウトまでご利用可能です。",
+    "url": "https://okuyorovillage.com/faq"
+   }
+  },
+  "shimosa-sports-park": {
+   "access": {
+    "status": "滑河駅から徒歩約10分",
+    "quote": "JR滑河駅から徒歩約10分",
+    "url": "https://www.city.narita.chiba.jp/bunka_sports/page327800.html",
+    "kind": "train"
+   }
+  },
+  "ready-to-flight-narita": {
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "スタッフが24時間滞在しているので急なケガや体調不良の時も安心",
+    "url": "https://rtfn.jp/ishiyasuo/"
+   },
+   "shower": {
+    "status": "シャワールーム200円",
+    "quote": "シャワールーム200円",
+    "url": "https://rtfn.jp/ishiyasuo/"
+   }
+  },
+  "shibireko-suimeiso": {
+   "access": {
+    "status": "中央道甲府南ICから約40分",
+    "quote": "中央道甲府南ICから約40分",
+    "url": "http://shibirekosms.sub.jp/pg1319110.html",
+    "kind": "car"
+   }
+  },
+  "mizunomoto-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00〜 チェックアウト 〜11：00",
+    "url": "https://doushi-mizunomoto.com/camping.php",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "toilet": {
+    "status": "すべてウォシュレット",
+    "quote": "水之元キャンプ場のトイレは、すべてウォシュレット！",
+    "url": "https://doushi-mizunomoto.com/camping.php"
+   }
+  },
+  "tamagawa-camp-mura": {
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロサイトは2名まで、1,500円より受け付けています。",
+    "url": "https://www.tama-camp.com/stay"
+   }
+  },
+  "kashiwa-shonan-yumefarm": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン13:00、チェックアウト10:00",
+    "url": "https://www.yumefarm.jp/facility/autocamping",
+    "in": "13:00",
+    "out": "10:00"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "特に22時以降はスタッフが不在にしますので、電源復旧は翌朝になります。",
+    "url": "https://www.yumefarm.jp/facility/autocamping"
+   },
+   "access": {
+    "status": "柏インターより約36分",
+    "quote": "常磐道 柏インターより17.7km/約36分",
+    "url": "https://www.yumefarm.jp/access",
+    "kind": "car"
+   }
+  },
+  "otaki-wanpaku-camp": {
+   "access": {
+    "status": "市原鶴舞ICから約30分",
+    "quote": "首都圏中央連絡自動車道（圏央道）・市原鶴舞ICより車で約30分。",
+    "url": "https://www.wanpaku-camp.jp/access",
+    "kind": "car"
+   },
+   "shower": {
+    "status": "無料の温水シャワーあり",
+    "quote": "予約制の有料シャワーの他に、無料の温水シャワーがあります。",
+    "url": "https://www.wanpaku-camp.jp/page-8802"
+   }
+  },
+  "hirayama-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "（テントサイトのみチェックインは午後１時、チェックアウトは午前11時としています）",
+    "url": "https://hirayama-campsite.amebaownd.com/pages/1441836/stay",
+    "in": "午後1時",
+    "out": "午前11時"
+   },
+   "toilet": {
+    "status": "水洗・和式/洋式",
+    "quote": "場内のトイレは全て水洗です。 和式/洋式（ウォシュレット付）",
+    "url": "https://hirayama-campsite.amebaownd.com/pages/1451038/facility"
+   }
+  },
+  "sosaku-no-mori-obina": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントサイト（4区画） テントサイト利用料金",
+    "url": "https://sosaku.obina.jp/facility_info",
+    "sites": "4区画"
+   },
+   "access": {
+    "status": "甲府駅から車で20分",
+    "quote": "甲府駅から車で20分 Access Map",
+    "url": "https://sosaku.obina.jp/",
+    "kind": "train"
+   }
+  },
+  "dogrun-camp-fukujuso": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "6区画 テント2張り／車2台 4区画",
+    "url": "https://new-fukujuso.com/dogrun.html"
+   }
+  },
+  "ichikawa-koen-mtb": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "オートキャンプサイト 12区画 通常キャンプサイト 3区画 絶景展望台サイト 1区画",
+    "url": "https://www.minamialpsmtb.com/ichikawaparkmtb"
+   },
+   "access": {
+    "status": "増穂ICから約5分",
+    "quote": "中部横断道 増穂ICから約5分",
+    "url": "https://www.minamialpsmtb.com/ichikawaparkmtb",
+    "kind": "car"
+   }
+  },
+  "zerosite-hokuto": {
+   "access": {
+    "status": "JR長坂駅からタクシー約35分",
+    "quote": "駅からタクシーに乗る場合は、JR長坂駅をご利用ください(約35分)。",
+    "url": "https://0site-jp.com/access/",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "水洗トイレ",
+    "quote": "■水道 ■水洗トイレ ■電源 ■キッチン ■避難所(教室)",
+    "url": "https://0site-jp.com/about/"
+   }
+  },
+  "dogs-garden-wildpark": {
+   "toilet": {
+    "status": "24時間利用可",
+    "quote": "おトイレが24時間ご利用頂けます。",
+    "url": "https://wildpark-camp.crayonsite.com/p/2/"
+   },
+   "shower": {
+    "status": "シャワーなし",
+    "quote": "シャワーお風呂はありません。",
+    "url": "https://wildpark-camp.crayonsite.com/p/2/"
+   }
+  },
+  "hirabayashi-camping": {
+   "access": {
+    "status": "増穂ICから車で約20分",
+    "quote": "中央自動車道 増穂IC より車で約20分",
+    "url": "https://hirabayashi-camping.com/",
+    "kind": "car"
+   },
+   "toilet": {
+    "status": "温水トイレ",
+    "quote": "温水トイレ・温水シャワー・炊事場を完備しています。",
+    "url": "https://hirabayashi-camping.com/faq"
+   }
+  },
+  "kanayama-sanso-camp": {
+   "shower": {
+    "status": "１人１回 ５００円",
+    "quote": "シャワーつかえます。１人１回 ５００円",
+    "url": "http://kanayamasannsou.com/"
+   }
+  },
+  "kumomi-yuhi-shiosai": {
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロキャンプ 専用のキャンプ場になりました。静かな時間をお楽しみください。",
+    "url": "https://yuuhi-shiosai.com/"
+   }
+  },
+  "otome-forest-camp2": {
+   "access": {
+    "status": "御殿場ICから車で6分",
+    "quote": "御殿場ICから車で６分",
+    "url": "https://www.gotemba-otome.jp/%e7%ac%ac1%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4",
+    "kind": "car"
+   }
+  },
+  "fuji-subaruland-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは、13:00～富士すばるランド閉園時間（時期により異なる）までです。 チェックアウトは、富士すばるランド開園時間（時期により異なる）～11:00までとなります。",
+    "url": "https://www.subaruland.jp/qanda/",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "区画前の砂利スペースは焚火台のみで火の使用が可能です。芝生の上（区画内）では、サイト番号が書いてある耐火シート付きの板の上に焚き火台を置いて使用してください。",
+    "url": "https://www.subaruland.jp/camp-field/"
+   }
+  },
+  "countrybear-camp": {
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロ・ペアサイト限定サイトの空き状況はこちら（随時更新中）",
+    "url": "https://countrybear-fcg.com/"
+   }
+  },
+  "shimada-yamanoie": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "1区画当たり、1夜につき 1,600円",
+    "url": "https://www.city.shimada.shizuoka.jp/kurashi-docs/yagaikatsudousenntayamanoie.html"
+   }
+  },
+  "tentengo-shibukawa": {
+   "access": {
+    "status": "新東名いなさICから15分",
+    "quote": "新東名いなさIC→国道257号線→まんぼう峠→県道47号線 15分",
+    "url": "http://www.tentengo.jp/menu-3.php",
+    "kind": "car"
+   }
+  },
+  "momozawa-tent-site": {
+   "access": {
+    "status": "長泉沼津ICから約15分",
+    "quote": "新東名長泉沼津ICより車で約１５分",
+    "url": "https://www.momozawa.fun/wp/",
+    "kind": "car"
+   }
+  },
+  "suzuyama-kyuyorin-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン、チェックアウトともに午前11時",
+    "url": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html",
+    "in": "午前11時",
+    "out": "午前11時"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントサイト5区画 トイレ（1箇所） 炊飯棟（1棟）",
+    "url": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html",
+    "sites": "テントサイト5区画"
+   },
+   "access": {
+    "status": "富士東インターより約30分",
+    "quote": "国道1号富士由比バイパス富士東インターチェンジより約30分（約10km）",
+    "url": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html",
+    "kind": "car"
+   },
+   "road": {
+    "status": "道路が狭い箇所あり",
+    "quote": "※途中に道路が狭い箇所があり、バス等での到着はできません。",
+    "url": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html"
+   },
+   "toilet": {
+    "status": "1箇所",
+    "quote": "テントサイト5区画 トイレ（1箇所） 炊飯棟（1棟）",
+    "url": "https://www.city.fuji.shizuoka.jp/1035250000/miryoku/p007456.html"
+   }
+  },
+  "green-village-kawane": {
+   "access": {
+    "status": "島田金谷ICより約30分",
+    "quote": "★新東名高速道路島田金谷ICより約30分",
+    "url": "http://www.ne.jp/asahi/greenvillage/kawane/",
+    "kind": "car"
+   }
+  },
+  "kobitto-asagiri": {
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "ソロサイト 1区画 定員1名",
+    "url": "https://www.kobitto-asagiri.com/%E6%96%BD%E8%A8%AD-%E3%82%B5%E3%82%A4%E3%83%88%E6%A1%88%E5%86%85/"
+   },
+   "toilet": {
+    "status": "温水シャワートイレ",
+    "quote": "トイレは、温水シャワートイレ。",
+    "url": "https://www.kobitto-asagiri.com/"
+   }
+  },
+  "harunoyama-no-mura": {
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "・SOLOサイト （ソロキャンプ専用）【フリーサイト】",
+    "url": "https://harunoyama.org/camp"
+   },
+   "ground": {
+    "status": "区画とフリー両方",
+    "quote": "森サイト（A）【区画サイト】 柳サイト（B）【フリーサイト】 藤サイト（C）【フリーサイト】",
+    "url": "https://harunoyama.org/"
+   }
+  },
+  "maruta-no-mori-camp": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "テントはウッドデッキサイトが20区画。",
+    "url": "https://maruta-no-mori.com/",
+    "sites": "20区画"
+   },
+   "access": {
+    "status": "東名大井松田IC⇒25分",
+    "quote": "東名大井松田IC⇒25分",
+    "url": "https://maruta-no-mori.com/",
+    "kind": "car"
+   }
+  },
+  "mizugakiyama-mori-no-noen": {
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ソロでもグループでもファミリーでも。",
+    "url": "https://komafarmvillage.com/"
+   },
+   "ground": {
+    "status": "区画サイト",
+    "quote": "白樺の原生林に囲まれた美しいロケーションに、キャンプサイト75区画とバンガロー8棟を備えています。",
+    "url": "https://komafarmvillage.com/",
+    "sites": "キャンプサイト75区画"
+   },
+   "access": {
+    "status": "長坂ICより約15分",
+    "quote": "中央自動車道 長坂ICより約15分。",
+    "url": "https://komafarmvillage.com/access/",
+    "kind": "car"
+   },
+   "road": {
+    "status": "駐車場は未舗装",
+    "quote": "※ 駐車場完備。ただし未舗装のため、お車の車種にご注意ください。",
+    "url": "https://komafarmvillage.com/access/"
+   }
+  },
+  "recamp-shonan": {
+   "ground": {
+    "status": "フリーサイト",
+    "quote": "RECAMPしょうなん - 芝生フリーサイト",
+    "url": "https://www.recamp.co.jp/rcshonan",
+    "surface": "芝生"
+   },
+   "access": {
+    "status": "柏ICから約30分",
+    "quote": "常磐自動車道「柏IC」より約30分",
+    "url": "https://www.recamp.co.jp/rcshonan",
+    "kind": "car"
+   }
+  },
+  "nat-park-isumi": {
+   "solo": {
+    "status": "ソロ専用サイト",
+    "quote": "NAT PARKのテントサイト、「TENT PARK」に隣接するソロキャンプ用サイト「HERMIT PARK」。",
+    "url": "https://www.natpark-isumi.com/campsite-reserve"
+   }
+  },
+  "lscamp-yamanakako": {
+   "access": {
+    "status": "山中湖ICから約10分",
+    "quote": "富士五湖道路「山中湖IC」より約10分",
+    "url": "https://www.ntt-landscape.co.jp/news/lscamp-yamanakako/",
+    "kind": "car"
+   }
+  },
+  "star-forest-hayama": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "【サイト数】3区画 【区画サイズ】9&times;8ｍ、10&times;6ｍ（指定不可）",
+    "url": "https://www.hayama-rvsite.info/tent-site",
+    "sites": "3区画"
+   },
+   "access": {
+    "status": "JR逗子駅から京急バス10分",
+    "quote": "JR逗子駅から京急バス10分 「水源池入口」下車",
+    "url": "https://www.hayama-rvsite.info/rv-site",
+    "kind": "train"
+   },
+   "toilet": {
+    "status": "男女別・24時間利用可",
+    "quote": "男女別トイレ（24時間） 24時間利用可能 ウォシュレット付き",
+    "url": "https://www.hayama-rvsite.info/rv-site"
+   },
+   "shower": {
+    "status": "午前7:00～午後21:00",
+    "quote": "シャワー室 の利用時間は 午前7:00～午後21:00 までです。",
+    "url": "https://www.hayama-rvsite.info/tent-site"
+   }
+  },
+  "moss-camp-field": {
+   "toilet": {
+    "status": "トレーラー内に男女トイレ",
+    "quote": "１つのトレーラー内に男女トイレ・洗い場（温水） が入っています。",
+    "url": "https://moss-campfield.com/stay/"
+   }
+  },
+  "osoto-no-terrace": {
+   "solo": {
+    "status": "ソロ利用可の明記",
+    "quote": "ファミリーもソロもビギナーも のびのび楽しもう！",
+    "url": "https://osotono-terrace.com/"
+   },
+   "access": {
+    "status": "甲府南ICから車で約25分",
+    "quote": "中央自動車道【甲府南IC】より17km、車で約25分。",
+    "url": "https://osotono-terrace.com/",
+    "kind": "car"
+   }
+  },
+  "longbeach-omaezaki-camp": {
+   "ground": {
+    "status": "区画サイト",
+    "quote": "御前崎の海を望む高台に位置する当キャンプ場は、全6区画のゆったりとしたキャンプサイトを備えた自然豊かなアウトドアスペースです。",
+    "url": "https://www.longbeach-camp.com/about",
+    "sites": "全6区画"
+   },
+   "toilet": {
+    "status": "新設・男女別",
+    "quote": "清潔な新設トイレ/男女別でございます。",
+    "url": "https://www.longbeach-camp.com/about"
    }
   }
  }
