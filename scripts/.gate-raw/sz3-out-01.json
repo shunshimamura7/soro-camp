@@ -1,0 +1,78 @@
+[
+ {
+  "napId": "13897",
+  "name": "マリンパーク御前崎キャンプ場（旧：RECAMP 御前崎）",
+  "pref": "静岡",
+  "muni": "御前崎市",
+  "verdict": "UNMEASURED",
+  "reason": "御前崎市公式で住所（港6104-9）と運営（御前崎スマイルプロジェクト）を確認。運営公式の告知（notice/276）は「営業期間 2025年9月20日（土）～ 2026年3月31日（火）（※4月以降の営業については決まり次第ご案内いたします）」で、親が 2026-11-05 に取り直しても4月以降の営業告知が見つからない。今季の営業が公式で確認できないため保留。料金は区画単位 平日2,500〜4,000円／土・祝前日4,000〜8,000円（2025-10付PDF）、1サイト6人まで。",
+  "checkedUrls": [
+   "https://www.city.omaezaki.shizuoka.jp/kanko/watch_goaround/marin_20.html",
+   "https://omaezaki-nagisa-koban.com/notice/276/",
+   "https://omaezaki-nagisa-koban.com/notice/"
+  ],
+  "officialUrl": "https://omaezaki-nagisa-koban.com/notice/276/"
+ },
+ {
+  "napId": "13738",
+  "name": "ログハウスの宿LOG LOG inn(ログログイン)",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "施設公式で住所（伊東市富戸1273-131）一致。「手作りのログハウスで素泊まりの小さな小さな宿屋です」、1泊1名4,400円〜の建物宿泊。テントサイトの記載なし。",
+  "checkedUrls": [
+   "http://www.i-younet.ne.jp/~logloginn/",
+   "http://www.i-younet.ne.jp/~logloginn/facilities.html"
+  ],
+  "officialUrl": "http://www.i-younet.ne.jp/~logloginn/"
+ },
+ {
+  "napId": "13998",
+  "name": "泊まれる公園 INN THE PARK",
+  "pref": "静岡",
+  "muni": "沼津市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "施設公式で住所（沼津市足高220-4）一致。球体テント・宿泊棟の客室提供型（公式タイトル「グランピング｜ホテル」）。持ち込みテントサイトの記載なし。",
+  "checkedUrls": [
+   "https://www.innthepark.jp/numazu/"
+  ],
+  "officialUrl": "https://www.innthepark.jp/numazu/"
+ },
+ {
+  "napId": "14075",
+  "name": "UFUFU VILLAGE",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "施設公式に「温泉と星空のグランピングリゾート」、宿泊はオーバルドーム・トレーラー（食事込み1名13,775円〜）。持ち込みテントサイトなし（公式の住所表記は未照合）。",
+  "checkedUrls": [
+   "https://ufufu-village.jp/"
+  ],
+  "officialUrl": "https://ufufu-village.jp/"
+ },
+ {
+  "napId": "14057",
+  "name": "Fuji Camp Base 煌",
+  "pref": "静岡",
+  "muni": "御殿場市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "施設公式「藤乃煌 富士御殿場」で住所（御殿場市東田中3373-25）一致。キャビンとグランピングドームの客室提供型で持ち込みテントサイトの記載なし。",
+  "checkedUrls": [
+   "https://www.fu-ji-no.jp/kirameki/"
+  ],
+  "officialUrl": "https://www.fu-ji-no.jp/kirameki/"
+ },
+ {
+  "napId": "13969",
+  "name": "ビーチキャンプBY-THE-SEA",
+  "pref": "静岡",
+  "muni": "下田市",
+  "verdict": "UNMEASURED",
+  "reason": "施設公式 by-the-sea.jp はドッグリゾート。グランピングは1名18,000円〜（12,000円超）。「プレミアムキャンプサイト」の料金・条件が公式で読めず、住所の公式掲載も未確認。本人判断へ。",
+  "checkedUrls": [
+   "https://by-the-sea.jp/",
+   "https://by-the-sea.jp/bts_glamping.html"
+  ],
+  "officialUrl": "https://by-the-sea.jp/"
+ }
+]

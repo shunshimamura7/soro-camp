@@ -7602,5 +7602,247 @@
   "soloNote": "ボッチキャンプ 1泊1区画（4m×8m）3,000円 ※AC電源利用は追加料金500円 定員1名",
   "napUrl": "https://www.nap-camp.com/shizuoka/13967",
   "napName": "グリーンヴィレッジ川根"
+ },
+ {
+  "napId": "16118",
+  "name": "WEINS PARK U-BASE CAMP",
+  "pref": "神奈川",
+  "muni": "海老名市",
+  "verdict": "追加",
+  "reason": "親が公式 u-base.jp を curl で取り直して確認。住所「〒243-0422 海老名市中新田3290－1」（アクセス・トップ）。camping ページ「フリーサイト テントサイト (テント1張 + ターブ1張まで) …4サイト サイトご利用料 5,500円 (推奨人数4名まで)」。トップ「家族も、ソロもペットも、身近で気軽に“街キャン”体験。」。キャンプフィールドは「土日のみ営業（金・月の祝日は営業）」。フリーサイトは車の乗り入れ不可（FAQ）。予約導線は公式ページ内のなっぷリンク。",
+  "checkedUrls": [
+   "https://u-base.jp/camp/ebina/",
+   "https://u-base.jp/camp/ebina/camping/",
+   "https://u-base.jp/camp/ebina/faq/",
+   "https://u-base.jp/camp/ebina/bath/",
+   "https://u-base.jp/camp/ebina/access/"
+  ],
+  "officialUrl": "https://u-base.jp/camp/ebina/",
+  "reservationUrl": "https://www.nap-camp.com/kanagawa/16118",
+  "address": "神奈川県海老名市中新田3290-1",
+  "priceMin": 5500,
+  "priceMax": 5500,
+  "priceNote": "サイト単位課金。公式「フリーサイト テントサイト (テント1張 + ターブ1張まで) … サイトご利用料 5,500円 (推奨人数4名まで)」。人数加算の記載なし。税込/税別の表記なし。温浴施設（大人1,500円）は別料金",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://u-base.jp/camp/ebina/bath/",
+    "quote": "U-BASE CAMP に設置された温浴施設。キャンプの際に気になるお風呂やシャワー問題も解消します。…大人 1,500円 … 営業日 土日のみ営業（金・月が祝日の場合は営業）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://u-base.jp/camp/ebina/faq/",
+    "quote": "レンタル用品や薪もご用意しています。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://u-base.jp/camp/ebina/faq/",
+    "quote": "ペットはご同伴可能です。施設内では必ずリードをご使用ください。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.436867,
+   "lng": 139.378249,
+   "url": "https://u-base.jp/camp/ebina/access/"
+  },
+  "soloNote": "家族も、ソロもペットも、身近で気軽に“街キャン”体験。",
+  "napUrl": "https://www.nap-camp.com/kanagawa/16118",
+  "napName": "WEINS PARK U-BASE CAMP"
+ },
+ {
+  "napId": "14302",
+  "name": "Foresters Village Kobitto あさぎりキャンプフィールド",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "親が公式 kobitto-asagiri.com を curl で取り直して確認。住所「〒418-0108 静岡県富士宮市猪之頭2350」。オートキャンプページ「【M】ソロサイト 定員 世帯 ソロサイト 人数 1名まで … 料金 ￥2,750～￥4,950」「【P】プライベートサイト … 人数 1名まで … 料金 ￥3,300～￥5,500」「施設利用料 ※二泊目以降はかかりません 大人（中学生以上） ￥880」。トップには「ファミリー向けのオートキャンプ場」「大人数・グループでのご利用…は受付けておりません」とあるが、ソロサイトは1名までと明記。",
+  "checkedUrls": [
+   "https://www.kobitto-asagiri.com/",
+   "https://www.kobitto-asagiri.com/オートキャンプ/",
+   "https://www.kobitto-asagiri.com/予約-利用案内-1/"
+  ],
+  "officialUrl": "https://www.kobitto-asagiri.com/",
+  "reservationUrl": "https://www.kobitto-asagiri.com/オンライン予約/",
+  "address": "静岡県富士宮市猪之頭2350",
+  "priceMin": 3630,
+  "priceMax": 5830,
+  "priceNote": "区画+人数（ソロサイト料金＋施設利用料）。公式「【M】ソロサイト … 人数 1名まで … 料金 ￥2,750～￥4,950」＋「施設利用料 ※二泊目以降はかかりません 大人（中学生以上） ￥880」→1名1泊 3,630〜5,830円。プライベートサイト（1名まで ￥3,300～￥5,500）なら 4,180〜6,380円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.kobitto-asagiri.com/予約-利用案内-1/",
+    "quote": "コインシャワー 3分100円 24時間利用可能"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.kobitto-asagiri.com/",
+    "quote": "ゲストハウスの売店では、たくさんのキャンプに必要な商品を販売しています。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.kobitto-asagiri.com/",
+    "quote": "薪、氷、ガス缶、ホワイトガソリン、洗剤、紙皿、スポンジ、乾電池など一通りご用意しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.kobitto-asagiri.com/オートキャンプ/",
+    "quote": "ペット 同伴は可能です。 ※犬（大型犬も可）・猫・ウサギ等の小動物は、リードの着用をお願い致します。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "【M】ソロサイト 定員 世帯 ソロサイト 人数 1名まで",
+  "napUrl": "https://www.nap-camp.com/shizuoka/14302",
+  "napName": "Foresters Village Kobitto　あさぎりキャンプフィールド"
+ },
+ {
+  "napId": "14102",
+  "name": "富士山ワイルドアドベンチャー（FWA）",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "親が公式 fwa.kp-hd.com を curl で取り直して確認。住所「〒418-0103 静岡県 富士宮市 上井出 2753-2」。各種プラン「完全フリーサイト【スタンダードプラン】テント泊 … 基本料金＝1,500円／日 ※車1台含む 大人（高校生以上）＝1,000円／日」「【ゆっくりプラン】… 基本料金＝2,000円／日 … 大人＝1,400円／日」。トップ「一人でも、カップルでも、サークルでも」。車両乗入不可。富士見サイト（4,500円～）は課金単位が原文で読めないので幅に含めない。",
+  "checkedUrls": [
+   "http://fwa.kp-hd.com/",
+   "http://fwa.kp-hd.com/wp-json/wp/v2/pages/574",
+   "http://fwa.kp-hd.com/アクセス/"
+  ],
+  "officialUrl": "http://fwa.kp-hd.com/",
+  "reservationUrl": null,
+  "address": "静岡県富士宮市上井出2753-2",
+  "priceMin": 2500,
+  "priceMax": 3400,
+  "priceNote": "区画+人数（基本料金＋大人1名）。公式「完全フリーサイト【スタンダードプラン】テント泊 基本料金＝1,500円／日 ※車1台含む 大人（高校生以上）＝1,000円／日」→2,500円、「【ゆっくりプラン】基本料金＝2,000円／日 … 大人＝1,400円／日」→3,400円。富士見サイト（「¥4,500円～」）は課金単位不明のため含めない。税込/税別の記載なし",
+  "features": {
+   "pet": {
+    "value": true,
+    "evidenceUrl": "http://fwa.kp-hd.com/各種プラン/",
+    "quote": "ペット ｜ 可(リードまたはケージ必須です)"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.33039,
+   "lng": 138.616597,
+   "url": "http://fwa.kp-hd.com/アクセス/"
+  },
+  "soloNote": "一人でも、カップルでも、サークルでも、冒険を楽しみたい子供から…",
+  "napUrl": "https://www.nap-camp.com/shizuoka/14102",
+  "napName": "FWA【富士山ワイルドアドベンチャー】"
+ },
+ {
+  "napId": "14391",
+  "name": "はるの山の村",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "親が公式 harunoyama.org を curl で取り直して確認。住所「〒437-0602 静岡県浜松市天竜区春野町杉943-1」。SOLOサイト「1区画 2,200円＋入場料300円 ※ハイシーズンはサイト料金＋500円 ・1名（ペット不可）」「静かな空間を楽しめるようお一人様専用です」。予約は公式が「キャンプ場予約サイト「なっぷ」からご予約ください」と指定。SOLOサイトは車両乗入れ不可。",
+  "checkedUrls": [
+   "https://harunoyama.org/",
+   "https://harunoyama.org/solo",
+   "https://harunoyama.org/reception",
+   "https://harunoyama.org/qa",
+   "https://harunoyama.org/reserve"
+  ],
+  "officialUrl": "https://harunoyama.org/",
+  "reservationUrl": "https://www.nap-camp.com/shizuoka/14391",
+  "address": "静岡県浜松市天竜区春野町杉943-1",
+  "priceMin": 2500,
+  "priceMax": 3000,
+  "priceNote": "区画+人数（SOLOサイト）。公式「1区画 2,200円＋入場料300円 ※ハイシーズンはサイト料金＋500円」→通常2,500円・ハイシーズン3,000円。税込/税別の表記なし",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://harunoyama.org/reception",
+    "quote": "■桶風呂（2～3人用）45分1,000円【9:00～21:00】"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://harunoyama.org/reception",
+    "quote": "■コインシャワー 5分100円【24時間利用可】"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://harunoyama.org/reception",
+    "quote": "■売店（無人販売）【24時間利用可】"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://harunoyama.org/qa",
+    "quote": "薪･炭、CB缶･OD缶、網、使い捨て食器などのキャンプ用品はもちろん、ドリンクや氷、カップ麺等の軽食もご用意しております。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "静かな空間を楽しめるようお一人様専用です（友人同士の場合は他サイトをご利用ください）",
+  "napUrl": "https://www.nap-camp.com/shizuoka/14391",
+  "napName": "はるの山の村"
+ },
+ {
+  "napId": "14392",
+  "name": "OUTDOOR HILL VILLAGE",
+  "pref": "静岡",
+  "muni": "御殿場市",
+  "verdict": "追加",
+  "reason": "親が公式（時之栖）tokinosumika.com/outdoor を curl で取り直して確認。住所「静岡県御殿場市神山719」。フリーキャンプ「※料金は全て税込 １サイト 平日 ￥5,000 平日（冬季） ￥3,500 休前日A ￥6,000 休前日B ￥7,000 ソロキャンプ(施設の定める平日) ¥2,000 冬ソロキャン(施設の定める冬季平日) ¥1,500」「各テントに１名以上の成人が同宿してください」。グランピング・ログトレーラーも併設。",
+  "checkedUrls": [
+   "https://www.tokinosumika.com/outdoor"
+  ],
+  "officialUrl": "https://www.tokinosumika.com/outdoor",
+  "reservationUrl": "https://www.489pro.com/asp/489/menu.asp?id=22000070&lan=JPN&ty=lim&m_menu=1&room=22&dt=4#ypro_sb",
+  "address": "静岡県御殿場市神山719",
+  "priceMin": 1500,
+  "priceMax": 7000,
+  "priceNote": "サイト単位課金（ソロ料金あり）。公式「※料金は全て税込 １サイト 平日 ￥5,000 平日（冬季） ￥3,500 休前日A ￥6,000 休前日B ￥7,000 ソロキャンプ(施設の定める平日) ¥2,000 冬ソロキャン(施設の定める冬季平日) ¥1,500」。ソロ料金は施設の定める平日だけで、休前日は1サイト料金",
+  "features": {
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.tokinosumika.com/outdoor",
+    "quote": "※ワンちゃん同伴可（自己管理でしっかりとリードを着用ください） ※ワンちゃん１頭に付き、1,000円の料金が発生します。"
+   },
+   "nearbyOnsen": {
+    "value": "天然温泉 気楽坊（時之栖の園内。フリーキャンプ利用者は1日券 大人800円）",
+    "evidenceUrl": "https://www.tokinosumika.com/outdoor"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "ソロキャンプ(施設の定める平日) ¥2,000",
+  "napUrl": "https://www.nap-camp.com/shizuoka/14392",
+  "napName": "OUTDOOR HILL VILLAGE"
+ },
+ {
+  "napId": "14511",
+  "name": "伊豆海の森スマイルキャンプ場（IZUMI RESORT）",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "追加",
+  "reason": "親が公式 izumiresort.com/camp-2025/ を curl で取り直して確認。住所「静岡県伊東市富戸354-1」。料金表「価格は全て税込表示です」「① 施設利用料 … 大人（中学生以上） ¥600」「#2 基本キャンプ1スペース（6.4m×6.4m） 平日、通常シーズン ¥6,000 土曜、繁忙シーズン ¥7,500」。「車中泊、テント泊、タープ設営。ビギナーさんから、ソロさん、ベテランさんまで！」。予約は公式LINE。地図は公式の埋め込み（キャンプ場名のピン）。",
+  "checkedUrls": [
+   "https://izumiresort.com/camp-2025/",
+   "https://izumiresort.com/camp/camp-guidelines/"
+  ],
+  "officialUrl": "https://izumiresort.com/camp-2025/",
+  "reservationUrl": "https://izumiresort.com/reserve/",
+  "address": "静岡県伊東市富戸354-1",
+  "priceMin": 6600,
+  "priceMax": 8100,
+  "priceNote": "区画+人数（施設利用料＋スペース料金）。公式「価格は全て税込表示です」「施設利用料 大人（中学生以上） ¥600」＋「基本キャンプ1スペース 平日、通常シーズン ¥6,000 土曜、繁忙シーズン ¥7,500」→6,600〜8,100円。温泉は別料金",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://izumiresort.com/camp-2025/",
+    "quote": "温泉「伊豆海の湯」 家族、グループ貸切の時間を作ります！…事前ご予約ください。 温泉利用時間 ：19:00~23:00"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://izumiresort.com/camp/camp-guidelines/",
+    "quote": "ペット歓迎 OK：ペット（キャンプスペース内）"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.910293,
+   "lng": 139.135925,
+   "url": "https://izumiresort.com/camp-2025/"
+  },
+  "soloNote": "車中泊、テント泊、タープ設営。ビギナーさんから、ソロさん、ベテランさんまで！",
+  "napUrl": "https://www.nap-camp.com/shizuoka/14511",
+  "napName": "伊豆海の森スマイルキャンプ場　IZUMI RESORT"
  }
 ]

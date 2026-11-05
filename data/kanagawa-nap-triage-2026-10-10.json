@@ -629,9 +629,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/14608",
    "latCandidate": "35.24303693682077",
    "lngCandidate": "139.04478973068848",
-   "officialUrl": null,
+   "officialUrl": "https://www.yunessun.com/yamanone/camp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式（キャンプ＆スパ 山の音・箱根町二ノ平1230-9）は道具一式付きの手ぶらプランで、持ち込みテントの可否と料金が公式ページに無い。なっぷ等の表示では1サイト16,000円〜＋1人2,500円で12,000円超の見込み。本人判断へ。"
   },
   {
    "napId": "14637",
@@ -713,9 +713,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/15102",
    "latCandidate": "35.34906436524977",
    "lngCandidate": "139.1843614578247",
-   "officialUrl": null,
+   "officialUrl": "https://neo-bandit-base.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 neo-bandit-base.com で集合地点「神奈川県足柄上郡大井町高尾」一致。料金表「キャンプのご利用 (13:00-翌11:00) … 大人 1名様 5,000円 駐車場送迎・荷物積み下ろし補助込み」。ただし公式は © 2021 の古いページでなっぷ表示（大人5,400円）と食い違い、持ち込みテント可の明記もない（テントはレンタル品として記載）。フィールドの実ピンも無い（公式地図は集合地点のバス停）。本人判断へ。"
   },
   {
    "napId": "15732",
@@ -737,9 +737,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/15815",
    "latCandidate": "35.268511573636864",
    "lngCandidate": "139.01248322597817",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://glampingsaunahakone.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（箱根町仙石原892）一致。宿泊はグランピングドーム・客室のみで、持ち込みテントサイトの記載なし。"
   },
   {
    "napId": "15927",
@@ -749,9 +749,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/15927",
    "latCandidate": "35.27350927366485",
    "lngCandidate": "139.00352590479554",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.sunterrace.co.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（箱根町仙石原1156-1）一致。「箱根のコテージ型貸別荘」でテントサイトの記載なし。"
   },
   {
    "napId": "16016",
@@ -797,9 +797,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/16099",
    "latCandidate": "35.273850929612344",
    "lngCandidate": "139.0108442679584",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.glamping-hakone.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（箱根町仙石原304）一致。宿泊はキャビン・ヴィラ・アパートメントのみで持ち込みテントの記載なし。"
   },
   {
    "napId": "16118",
@@ -809,9 +809,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/16118",
    "latCandidate": "35.436303433986375",
    "lngCandidate": "139.37806640926206",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://u-base.jp/camp/ebina/",
+   "verdict": "追加",
+   "reason": "親が公式 u-base.jp を curl で取り直して確認。住所「〒243-0422 海老名市中新田3290－1」（アクセス・トップ）。camping ページ「フリーサイト テントサイト (テント1張 + ターブ1張まで) …4サイト サイトご利用料 5,500円 (推奨人数4名まで)」。トップ「家族も、ソロもペットも、身近で気軽に“街キャン”体験。」。キャンプフィールドは「土日のみ営業（金・月の祝日は営業）」。フリーサイトは車の乗り入れ不可（FAQ）。予約導線は公式ページ内のなっぷリンク。"
   },
   {
    "napId": "16129",
@@ -821,9 +821,9 @@
    "napUrl": "https://www.nap-camp.com/kanagawa/16129",
    "latCandidate": "35.163324941813094",
    "lngCandidate": "139.13473287039187",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://couscousglamping.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式 couscousglamping.com で確認。宿泊は施設の宿泊テント（スイートテント 20,020円〜／ドッグラン付き 15,950円〜／レギュラーテント 13,310円〜）のみで、持ち込みテント用サイトは公式に無い。"
   },
   {
    "napId": "16212",
@@ -882,8 +882,8 @@
    "latCandidate": "35.45827501603855",
    "lngCandidate": "139.05970851838057",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設名で2回検索・候補ドメインも試したが施設公式・山北町公式とも見つからず、ふるさと納税・旅行会社・民間ポータルのみ。名前からの宿泊系判定はしていない（検索の取りこぼしの余地あり）。"
   },
   {
    "napId": "16411",
@@ -935,15 +935,15 @@
   }
  ],
  "progress": {
-  "asOf": "2026-10-30",
+  "asOf": "2026-11-05",
   "門の対象": 62,
   "内訳": {
    "閉鎖疑い": 15,
-   "門落ち(公式なし)": 20,
-   "追加": 4,
+   "門落ち(公式なし)": 21,
+   "追加": 5,
    "門落ち(宿泊不可)": 2,
-   "宿泊系のため対象外": 6,
-   "UNMEASURED": 21,
+   "宿泊系のため対象外": 10,
+   "UNMEASURED": 15,
    "門落ち(既存レコードと重複)": 4,
    "門落ち(単独利用不可)": 1,
    "門落ち(料金も予約も公式に無し)": 3

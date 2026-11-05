@@ -1,0 +1,72 @@
+[
+ {
+  "napId": "16118",
+  "name": "WEINS PARK U-BASE CAMP",
+  "pref": "神奈川",
+  "muni": "海老名市",
+  "verdict": "追加",
+  "reason": "親が公式 u-base.jp を curl で取り直して確認。住所「〒243-0422 海老名市中新田3290－1」（アクセス・トップ）。camping ページ「フリーサイト テントサイト (テント1張 + ターブ1張まで) …4サイト サイトご利用料 5,500円 (推奨人数4名まで)」。トップ「家族も、ソロもペットも、身近で気軽に“街キャン”体験。」。キャンプフィールドは「土日のみ営業（金・月の祝日は営業）」。フリーサイトは車の乗り入れ不可（FAQ）。予約導線は公式ページ内のなっぷリンク。",
+  "checkedUrls": [
+   "https://u-base.jp/camp/ebina/",
+   "https://u-base.jp/camp/ebina/camping/",
+   "https://u-base.jp/camp/ebina/faq/",
+   "https://u-base.jp/camp/ebina/bath/",
+   "https://u-base.jp/camp/ebina/access/"
+  ],
+  "officialUrl": "https://u-base.jp/camp/ebina/",
+  "reservationUrl": "https://www.nap-camp.com/kanagawa/16118",
+  "address": "神奈川県海老名市中新田3290-1",
+  "priceMin": 5500,
+  "priceMax": 5500,
+  "priceNote": "サイト単位課金。公式「フリーサイト テントサイト (テント1張 + ターブ1張まで) … サイトご利用料 5,500円 (推奨人数4名まで)」。人数加算の記載なし。税込/税別の表記なし。温浴施設（大人1,500円）は別料金",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://u-base.jp/camp/ebina/bath/",
+    "quote": "U-BASE CAMP に設置された温浴施設。キャンプの際に気になるお風呂やシャワー問題も解消します。…大人 1,500円 … 営業日 土日のみ営業（金・月が祝日の場合は営業）"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://u-base.jp/camp/ebina/faq/",
+    "quote": "レンタル用品や薪もご用意しています。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://u-base.jp/camp/ebina/faq/",
+    "quote": "ペットはご同伴可能です。施設内では必ずリードをご使用ください。"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.436867,
+   "lng": 139.378249,
+   "url": "https://u-base.jp/camp/ebina/access/"
+  },
+  "soloNote": "家族も、ソロもペットも、身近で気軽に“街キャン”体験。"
+ },
+ {
+  "napId": "16129",
+  "name": "クスクスグランピング真鶴",
+  "pref": "神奈川",
+  "muni": "真鶴町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "施設公式 couscousglamping.com で確認。宿泊は施設の宿泊テント（スイートテント 20,020円〜／ドッグラン付き 15,950円〜／レギュラーテント 13,310円〜）のみで、持ち込みテント用サイトは公式に無い。",
+  "checkedUrls": [
+   "https://couscousglamping.com/",
+   "https://couscousglamping.com/faq/"
+  ],
+  "officialUrl": "https://couscousglamping.com/"
+ },
+ {
+  "napId": "16406",
+  "name": "箒沢荘グランピングエリア杢",
+  "pref": "神奈川",
+  "muni": "山北町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設名で2回検索・候補ドメインも試したが施設公式・山北町公式とも見つからず、ふるさと納税・旅行会社・民間ポータルのみ。名前からの宿泊系判定はしていない（検索の取りこぼしの余地あり）。",
+  "checkedUrls": [
+   "https://yado.knt.co.jp/st/S140256/",
+   "https://4travel.jp/dm_hotel-10042168"
+  ],
+  "officialUrl": null
+ }
+]

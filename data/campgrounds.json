@@ -21681,5 +21681,314 @@
       "http://www.ne.jp/asahi/greenvillage/kawane/",
       "http://www.ne.jp/asahi/greenvillage/kawane/camp/index.html"
     ]
+  },
+  {
+    "id": "fuji-wild-adventure",
+    "slug": "fuji-wild-adventure",
+    "name": "富士山ワイルドアドベンチャー（FWA）",
+    "prefecture": "静岡",
+    "area": "富士宮・上井出",
+    "status": "active",
+    "address": "静岡県富士宮市上井出2753-2",
+    "type": "campground",
+    "lat": 35.33039,
+    "lng": 138.616597,
+    "priceMin": 2500,
+    "priceMax": 3400,
+    "priceNote": "区画+人数（基本料金＋大人1名）。公式「完全フリーサイト【スタンダードプラン】テント泊 基本料金＝1,500円／日 ※車1台含む 大人（高校生以上）＝1,000円／日」→2,500円、「【ゆっくりプラン】基本料金＝2,000円／日 … 大人＝1,400円／日」→3,400円。富士見サイト（「¥4,500円～」）は課金単位不明のため含めない。税込/税別の記載なし",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "ペット ｜ 可(リードまたはケージ必須です)（http://fwa.kp-hd.com/各種プラン/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "富士山麓・上井出のアウトドアパーク。完全フリーサイトは基本料金1,500円＋大人1,000円で、**ソロなら1泊2,500円**（チェックアウトが遅いゆっくりプランは3,400円）。公式は「一人でも、カップルでも」と案内している。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://fwa.kp-hd.com/",
+    "reservationUrl": null,
+    "cautions": [
+      "**車両の乗り入れ不可**。荷物は運んで入る",
+      "AC電源なし",
+      "富士見サイトは料金の数え方が公式で読み切れないので、この料金幅に入れていない",
+      "税込・税別の表記が公式に無い。予約時に確認する"
+    ],
+    "source": [
+      "http://fwa.kp-hd.com/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "kobitto-asagiri",
+    "slug": "kobitto-asagiri",
+    "name": "Foresters Village Kobitto あさぎりキャンプフィールド",
+    "prefecture": "静岡",
+    "area": "朝霧高原・猪之頭",
+    "status": "active",
+    "address": "静岡県富士宮市猪之頭2350",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3630,
+    "priceMax": 5830,
+    "priceNote": "区画+人数（ソロサイト料金＋施設利用料）。公式「【M】ソロサイト … 人数 1名まで … 料金 ￥2,750～￥4,950」＋「施設利用料 ※二泊目以降はかかりません 大人（中学生以上） ￥880」→1名1泊 3,630〜5,830円。プライベートサイト（1名まで ￥3,300～￥5,500）なら 4,180〜6,380円",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "コインシャワー 3分100円 24時間利用可能（https://www.kobitto-asagiri.com/予約-利用案内-1/）",
+      "firewood": true,
+      "firewoodNote": "薪、氷、ガス缶、ホワイトガソリン、洗剤、紙皿、スポンジ、乾電池など一通りご用意しております。（https://www.kobitto-asagiri.com/）",
+      "shop": true,
+      "shopNote": "ゲストハウスの売店では、たくさんのキャンプに必要な商品を販売しています。（https://www.kobitto-asagiri.com/）",
+      "pet": true,
+      "petNote": "ペット 同伴は可能です。 ※犬（大型犬も可）・猫・ウサギ等の小動物は、リードの着用をお願い致します。（https://www.kobitto-asagiri.com/オートキャンプ/）",
+      "reservationNote": "公式が案内する予約先: https://www.kobitto-asagiri.com/オンライン予約/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "朝霧高原の林間オートキャンプ場。**定員1名の「ソロサイト」**（2,750〜4,950円）と「プライベートサイト」があり、初日だけ施設利用料880円が加わる。ソロサイトなら1泊3,630〜5,830円。売店で薪が買え、コインシャワーもある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.kobitto-asagiri.com/",
+    "reservationUrl": "https://www.kobitto-asagiri.com/オンライン予約/",
+    "cautions": [
+      "**場全体はファミリー向けで、大人数・グループ利用は不可**。1人で使うならソロサイトかプライベートサイトを選ぶ",
+      "サイト料金はシーズンで変動する",
+      "施設利用料（大人880円）は初日のみ",
+      "**水曜定休**（レギュラーシーズン）",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.kobitto-asagiri.com/",
+      "https://www.kobitto-asagiri.com/オンライン予約/"
+    ]
+  },
+  {
+    "id": "harunoyama-no-mura",
+    "slug": "harunoyama-no-mura",
+    "name": "はるの山の村",
+    "prefecture": "静岡",
+    "area": "浜松・春野",
+    "status": "active",
+    "address": "静岡県浜松市天竜区春野町杉943-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2500,
+    "priceMax": 3000,
+    "priceNote": "区画+人数（SOLOサイト）。公式「1区画 2,200円＋入場料300円 ※ハイシーズンはサイト料金＋500円」→通常2,500円・ハイシーズン3,000円。税込/税別の表記なし",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "■桶風呂（2～3人用）45分1,000円【9:00～21:00】（https://harunoyama.org/reception）",
+      "shower": true,
+      "showerNote": "■コインシャワー 5分100円【24時間利用可】（https://harunoyama.org/reception）",
+      "firewood": true,
+      "firewoodNote": "薪･炭、CB缶･OD缶、網、使い捨て食器などのキャンプ用品はもちろん、ドリンクや氷、カップ麺等の軽食もご用意しております。（https://harunoyama.org/qa）",
+      "shop": true,
+      "shopNote": "■売店（無人販売）【24時間利用可】（https://harunoyama.org/reception）",
+      "reservationNote": "公式が案内する予約先: https://www.nap-camp.com/shizuoka/14391"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "天竜区春野の山あい。**「お一人様専用」のSOLOサイト**があり、1区画2,200円＋入場料300円で**1泊2,500円**（ハイシーズンは＋500円）。受付にコインシャワー、24時間の無人売店、桶風呂がある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://harunoyama.org/",
+    "reservationUrl": "https://www.nap-camp.com/shizuoka/14391",
+    "cautions": [
+      "**SOLOサイトはペット不可**",
+      "SOLOサイトは**車両乗入れ不可**。荷物の積み下ろし後は約100m離れた第2駐車場へ",
+      "水場・トイレは受付（ゲストハウス）のものを使う",
+      "**予約はなっぷのみ**（電話・メールでは受け付けない）と公式が明記",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://harunoyama.org/",
+      "https://www.nap-camp.com/shizuoka/14391"
+    ]
+  },
+  {
+    "id": "outdoor-hill-village",
+    "slug": "outdoor-hill-village",
+    "name": "OUTDOOR HILL VILLAGE",
+    "prefecture": "静岡",
+    "area": "御殿場・神山",
+    "status": "active",
+    "address": "静岡県御殿場市神山719",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 1500,
+    "priceMax": 7000,
+    "priceNote": "サイト単位課金（ソロ料金あり）。公式「※料金は全て税込 １サイト 平日 ￥5,000 平日（冬季） ￥3,500 休前日A ￥6,000 休前日B ￥7,000 ソロキャンプ(施設の定める平日) ¥2,000 冬ソロキャン(施設の定める冬季平日) ¥1,500」。ソロ料金は施設の定める平日だけで、休前日は1サイト料金",
+    "features": {
+      "reservation": "要",
+      "pet": true,
+      "petNote": "※ワンちゃん同伴可（自己管理でしっかりとリードを着用ください） ※ワンちゃん１頭に付き、1,000円の料金が発生します。（https://www.tokinosumika.com/outdoor）",
+      "nearbyOnsen": "天然温泉 気楽坊（時之栖の園内。フリーキャンプ利用者は1日券 大人800円）（https://www.tokinosumika.com/outdoor）",
+      "reservationNote": "公式が案内する予約先: https://www.489pro.com/asp/489/menu.asp?id=22000070&lan=JPN&ty=lim&m_menu=1&room=22&dt=4#ypro_sb"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "御殿場の複合リゾート「時之栖」の中のキャンプ場。天然芝のフリーキャンプに**ソロ料金があり、施設の定める平日は2,000円（冬季平日1,500円）**。園内の天然温泉「気楽坊」が1日券800円で使える。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.tokinosumika.com/outdoor",
+    "reservationUrl": "https://www.489pro.com/asp/489/menu.asp?id=22000070&lan=JPN&ty=lim&m_menu=1&room=22&dt=4#ypro_sb",
+    "cautions": [
+      "**ソロ料金は施設の定める平日だけ**。休前日は1サイト料金（6,000〜7,000円）になる",
+      "時期・曜日で料金が変わる。予約画面で確認する",
+      "犬の同伴は1頭1,000円",
+      "グランピングテント・ログトレーラーも同じエリアにある",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.tokinosumika.com/outdoor",
+      "https://www.489pro.com/asp/489/menu.asp?id=22000070&lan=JPN&ty=lim&m_menu=1&room=22&dt=4#ypro_sb"
+    ]
+  },
+  {
+    "id": "izumi-resort-izu",
+    "slug": "izumi-resort-izu",
+    "name": "伊豆海の森スマイルキャンプ場（IZUMI RESORT）",
+    "prefecture": "静岡",
+    "area": "伊豆高原・富戸",
+    "status": "active",
+    "address": "静岡県伊東市富戸354-1",
+    "type": "campground",
+    "lat": 34.910293,
+    "lng": 139.135925,
+    "priceMin": 6600,
+    "priceMax": 8100,
+    "priceNote": "区画+人数（施設利用料＋スペース料金）。公式「価格は全て税込表示です」「施設利用料 大人（中学生以上） ¥600」＋「基本キャンプ1スペース 平日、通常シーズン ¥6,000 土曜、繁忙シーズン ¥7,500」→6,600〜8,100円。温泉は別料金",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "温泉「伊豆海の湯」 家族、グループ貸切の時間を作ります！…事前ご予約ください。 温泉利用時間 ：19:00~23:00（https://izumiresort.com/camp-2025/）",
+      "pet": true,
+      "petNote": "ペット歓迎 OK：ペット（キャンプスペース内）（https://izumiresort.com/camp/camp-guidelines/）",
+      "reservationNote": "公式が案内する予約先: https://izumiresort.com/reserve/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "伊豆高原の別荘地にある小さなキャンプ場。料金は施設利用料600円＋1スペース6,000円（土曜・繁忙期7,500円）で、**ソロは1泊6,600〜8,100円**（税込）。管理人が常駐し、公式も「ソロさん」向けのプランを案内している。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://izumiresort.com/camp-2025/",
+    "reservationUrl": "https://izumiresort.com/reserve/",
+    "cautions": [
+      "**予約・問い合わせは公式LINE**",
+      "温泉「伊豆海の湯」は事前予約制で別料金",
+      "**別荘地のため火の扱いにルールがある**。公式の利用ガイドラインを確認",
+      "ペットはキャンプスペース内で可（しつけ・無駄吠えなしが条件）"
+    ],
+    "source": [
+      "https://izumiresort.com/camp-2025/",
+      "https://izumiresort.com/reserve/"
+    ],
+    "coordsVerified": false
+  },
+  {
+    "id": "u-base-camp-ebina",
+    "slug": "u-base-camp-ebina",
+    "name": "WEINS PARK U-BASE CAMP",
+    "prefecture": "神奈川",
+    "area": "海老名・中新田",
+    "status": "active",
+    "address": "神奈川県海老名市中新田3290-1",
+    "type": "campground",
+    "lat": 35.436867,
+    "lng": 139.378249,
+    "priceMin": 5500,
+    "priceMax": 5500,
+    "priceNote": "サイト単位課金。公式「フリーサイト テントサイト (テント1張 + ターブ1張まで) … サイトご利用料 5,500円 (推奨人数4名まで)」。人数加算の記載なし。税込/税別の表記なし。温浴施設（大人1,500円）は別料金",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "U-BASE CAMP に設置された温浴施設。キャンプの際に気になるお風呂やシャワー問題も解消します。…大人 1,500円 … 営業日 土日のみ営業（金・月が祝日の場合は営業）（https://u-base.jp/camp/ebina/bath/）",
+      "firewood": true,
+      "firewoodNote": "レンタル用品や薪もご用意しています。（https://u-base.jp/camp/ebina/faq/）",
+      "pet": true,
+      "petNote": "ペットはご同伴可能です。施設内では必ずリードをご使用ください。（https://u-base.jp/camp/ebina/faq/）",
+      "reservationNote": "公式が案内する予約先: https://www.nap-camp.com/kanagawa/16118"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "海老名ICから1分の街なかキャンプ場。芝生のフリーサイトは1サイト5,500円で**人数課金が無く、ソロでも同額**。公式も「家族も、ソロもペットも」とうたう。場内に温浴施設（大人1,500円）があり、薪も買える。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://u-base.jp/camp/ebina/",
+    "reservationUrl": "https://www.nap-camp.com/kanagawa/16118",
+    "cautions": [
+      "**キャンプフィールドは土日のみ営業**（金・月が祝日なら営業）。平日は泊まれない",
+      "フリーサイトは**車の乗り入れ不可**。パーク内の駐車場に停めて運ぶ",
+      "**直火は禁止**。たき火シートとたき火台を使う",
+      "温浴施設は別料金（大人1,500円）",
+      "予約は公式ページから案内されるなっぷ"
+    ],
+    "source": [
+      "https://u-base.jp/camp/ebina/",
+      "https://www.nap-camp.com/kanagawa/16118"
+    ],
+    "coordsVerified": false
   }
 ]

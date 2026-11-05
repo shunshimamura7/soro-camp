@@ -1,0 +1,90 @@
+[
+ {
+  "napId": "14302",
+  "name": "Foresters Village Kobitto　あさぎりキャンプフィールド",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "親が公式 kobitto-asagiri.com を curl で取り直して確認。住所「〒418-0108 静岡県富士宮市猪之頭2350」。オートキャンプページ「【M】ソロサイト 定員 世帯 ソロサイト 人数 1名まで … 料金 ￥2,750～￥4,950」「【P】プライベートサイト … 人数 1名まで … 料金 ￥3,300～￥5,500」「施設利用料 ※二泊目以降はかかりません 大人（中学生以上） ￥880」。トップには「ファミリー向けのオートキャンプ場」「大人数・グループでのご利用…は受付けておりません」とあるが、ソロサイトは1名までと明記。",
+  "checkedUrls": [
+   "https://www.kobitto-asagiri.com/",
+   "https://www.kobitto-asagiri.com/オートキャンプ/",
+   "https://www.kobitto-asagiri.com/予約-利用案内-1/"
+  ],
+  "officialUrl": "https://www.kobitto-asagiri.com/",
+  "reservationUrl": "https://www.kobitto-asagiri.com/オンライン予約/",
+  "address": "静岡県富士宮市猪之頭2350",
+  "priceMin": 3630,
+  "priceMax": 5830,
+  "priceNote": "区画+人数（ソロサイト料金＋施設利用料）。公式「【M】ソロサイト … 人数 1名まで … 料金 ￥2,750～￥4,950」＋「施設利用料 ※二泊目以降はかかりません 大人（中学生以上） ￥880」→1名1泊 3,630〜5,830円。プライベートサイト（1名まで ￥3,300～￥5,500）なら 4,180〜6,380円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.kobitto-asagiri.com/予約-利用案内-1/",
+    "quote": "コインシャワー 3分100円 24時間利用可能"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://www.kobitto-asagiri.com/",
+    "quote": "ゲストハウスの売店では、たくさんのキャンプに必要な商品を販売しています。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.kobitto-asagiri.com/",
+    "quote": "薪、氷、ガス缶、ホワイトガソリン、洗剤、紙皿、スポンジ、乾電池など一通りご用意しております。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.kobitto-asagiri.com/オートキャンプ/",
+    "quote": "ペット 同伴は可能です。 ※犬（大型犬も可）・猫・ウサギ等の小動物は、リードの着用をお願い致します。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "【M】ソロサイト 定員 世帯 ソロサイト 人数 1名まで"
+ },
+ {
+  "napId": "14102",
+  "name": "FWA【富士山ワイルドアドベンチャー】",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "追加",
+  "reason": "親が公式 fwa.kp-hd.com を curl で取り直して確認。住所「〒418-0103 静岡県 富士宮市 上井出 2753-2」。各種プラン「完全フリーサイト【スタンダードプラン】テント泊 … 基本料金＝1,500円／日 ※車1台含む 大人（高校生以上）＝1,000円／日」「【ゆっくりプラン】… 基本料金＝2,000円／日 … 大人＝1,400円／日」。トップ「一人でも、カップルでも、サークルでも」。車両乗入不可。富士見サイト（4,500円～）は課金単位が原文で読めないので幅に含めない。",
+  "checkedUrls": [
+   "http://fwa.kp-hd.com/",
+   "http://fwa.kp-hd.com/wp-json/wp/v2/pages/574",
+   "http://fwa.kp-hd.com/アクセス/"
+  ],
+  "officialUrl": "http://fwa.kp-hd.com/",
+  "reservationUrl": null,
+  "address": "静岡県富士宮市上井出2753-2",
+  "priceMin": 2500,
+  "priceMax": 3400,
+  "priceNote": "区画+人数（基本料金＋大人1名）。公式「完全フリーサイト【スタンダードプラン】テント泊 基本料金＝1,500円／日 ※車1台含む 大人（高校生以上）＝1,000円／日」→2,500円、「【ゆっくりプラン】基本料金＝2,000円／日 … 大人＝1,400円／日」→3,400円。富士見サイト（「¥4,500円～」）は課金単位不明のため含めない。税込/税別の記載なし",
+  "features": {
+   "pet": {
+    "value": true,
+    "evidenceUrl": "http://fwa.kp-hd.com/各種プラン/",
+    "quote": "ペット ｜ 可(リードまたはケージ必須です)"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.33039,
+   "lng": 138.616597,
+   "url": "http://fwa.kp-hd.com/アクセス/"
+  },
+  "soloNote": "一人でも、カップルでも、サークルでも、冒険を楽しみたい子供から…"
+ },
+ {
+  "napId": "14121",
+  "name": "はままつフルーツパーク時之栖",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "UNMEASURED",
+  "reason": "公式 hamamatsu-fp.co.jp で住所（浜名区都田町4263-1）一致。区画貸しテントサイト「1区画 キャンプサイト（電源なし）：5,900円～ … 入園料、区画料、施設協力費含む（4名まで）」で持ち込みテント可。ただし1名利用可の記載がなく、上限額も不明。本人判断へ。",
+  "checkedUrls": [
+   "https://hamamatsu-fp.co.jp/",
+   "https://hamamatsu-fp.co.jp/glamping/"
+  ],
+  "officialUrl": "https://hamamatsu-fp.co.jp/"
+ }
+]

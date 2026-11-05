@@ -1,0 +1,64 @@
+[
+ {
+  "napId": "15102",
+  "name": "NEO BANDIT BASE",
+  "pref": "神奈川",
+  "muni": "大井町",
+  "verdict": "UNMEASURED",
+  "reason": "公式 neo-bandit-base.com で集合地点「神奈川県足柄上郡大井町高尾」一致。料金表「キャンプのご利用 (13:00-翌11:00) … 大人 1名様 5,000円 駐車場送迎・荷物積み下ろし補助込み」。ただし公式は © 2021 の古いページでなっぷ表示（大人5,400円）と食い違い、持ち込みテント可の明記もない（テントはレンタル品として記載）。フィールドの実ピンも無い（公式地図は集合地点のバス停）。本人判断へ。",
+  "checkedUrls": [
+   "https://neo-bandit-base.com/",
+   "https://neo-bandit-base.com/faq/",
+   "https://neo-bandit-base.com/use"
+  ],
+  "officialUrl": "https://neo-bandit-base.com/"
+ },
+ {
+  "napId": "14608",
+  "name": "箱根小涌園ユネッサン",
+  "pref": "神奈川",
+  "muni": "箱根町",
+  "verdict": "UNMEASURED",
+  "reason": "公式（キャンプ＆スパ 山の音・箱根町二ノ平1230-9）は道具一式付きの手ぶらプランで、持ち込みテントの可否と料金が公式ページに無い。なっぷ等の表示では1サイト16,000円〜＋1人2,500円で12,000円超の見込み。本人判断へ。",
+  "checkedUrls": [
+   "https://www.yunessun.com/yamanone/camp/"
+  ],
+  "officialUrl": "https://www.yunessun.com/yamanone/camp/"
+ },
+ {
+  "napId": "15815",
+  "name": "グランピングサウナ箱根",
+  "pref": "神奈川",
+  "muni": "箱根町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所（箱根町仙石原892）一致。宿泊はグランピングドーム・客室のみで、持ち込みテントサイトの記載なし。",
+  "checkedUrls": [
+   "https://glampingsaunahakone.com/"
+  ],
+  "officialUrl": "https://glampingsaunahakone.com/"
+ },
+ {
+  "napId": "15927",
+  "name": "貸別荘サンテラス箱根",
+  "pref": "神奈川",
+  "muni": "箱根町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所（箱根町仙石原1156-1）一致。「箱根のコテージ型貸別荘」でテントサイトの記載なし。",
+  "checkedUrls": [
+   "https://www.sunterrace.co.jp/"
+  ],
+  "officialUrl": "https://www.sunterrace.co.jp/"
+ },
+ {
+  "napId": "16099",
+  "name": "SPRINGS VILLAGE 箱根グランピングリゾート",
+  "pref": "神奈川",
+  "muni": "箱根町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所（箱根町仙石原304）一致。宿泊はキャビン・ヴィラ・アパートメントのみで持ち込みテントの記載なし。",
+  "checkedUrls": [
+   "https://www.glamping-hakone.com/"
+  ],
+  "officialUrl": "https://www.glamping-hakone.com/"
+ }
+]

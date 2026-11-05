@@ -1389,9 +1389,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13738",
    "latCandidate": "34.9180723",
    "lngCandidate": "139.1337341",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.i-younet.ne.jp/~logloginn/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式で住所（伊東市富戸1273-131）一致。「手作りのログハウスで素泊まりの小さな小さな宿屋です」、1泊1名4,400円〜の建物宿泊。テントサイトの記載なし。"
   },
   {
    "napId": "13780",
@@ -1485,9 +1485,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13897",
    "latCandidate": "34.60409530853573",
    "lngCandidate": "138.22961215029298",
-   "officialUrl": null,
+   "officialUrl": "https://omaezaki-nagisa-koban.com/notice/276/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "御前崎市公式で住所（港6104-9）と運営（御前崎スマイルプロジェクト）を確認。運営公式の告知（notice/276）は「営業期間 2025年9月20日（土）～ 2026年3月31日（火）（※4月以降の営業については決まり次第ご案内いたします）」で、親が 2026-11-05 に取り直しても4月以降の営業告知が見つからない。今季の営業が公式で確認できないため保留。料金は区画単位 平日2,500〜4,000円／土・祝前日4,000〜8,000円（2025-10付PDF）、1サイト6人まで。"
   },
   {
    "napId": "13948",
@@ -1521,9 +1521,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13969",
    "latCandidate": "34.655397",
    "lngCandidate": "138.921070",
-   "officialUrl": null,
+   "officialUrl": "https://by-the-sea.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "施設公式 by-the-sea.jp はドッグリゾート。グランピングは1名18,000円〜（12,000円超）。「プレミアムキャンプサイト」の料金・条件が公式で読めず、住所の公式掲載も未確認。本人判断へ。"
   },
   {
    "napId": "13998",
@@ -1533,9 +1533,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/13998",
    "latCandidate": "35.1605832",
    "lngCandidate": "138.8499728",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.innthepark.jp/numazu/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式で住所（沼津市足高220-4）一致。球体テント・宿泊棟の客室提供型（公式タイトル「グランピング｜ホテル」）。持ち込みテントサイトの記載なし。"
   },
   {
    "napId": "14021",
@@ -1557,9 +1557,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14057",
    "latCandidate": "35.28682649596393",
    "lngCandidate": "138.9546668283806",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.fu-ji-no.jp/kirameki/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式「藤乃煌 富士御殿場」で住所（御殿場市東田中3373-25）一致。キャビンとグランピングドームの客室提供型で持ち込みテントサイトの記載なし。"
   },
   {
    "napId": "14075",
@@ -1569,9 +1569,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14075",
    "latCandidate": "34.915269754135146",
    "lngCandidate": "138.9254545571472",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://ufufu-village.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "施設公式に「温泉と星空のグランピングリゾート」、宿泊はオーバルドーム・トレーラー（食事込み1名13,775円〜）。持ち込みテントサイトなし（公式の住所表記は未照合）。"
   },
   {
    "napId": "14085",
@@ -1593,9 +1593,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14102",
    "latCandidate": "35.3302986",
    "lngCandidate": "138.6168973",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://fwa.kp-hd.com/",
+   "verdict": "追加",
+   "reason": "親が公式 fwa.kp-hd.com を curl で取り直して確認。住所「〒418-0103 静岡県 富士宮市 上井出 2753-2」。各種プラン「完全フリーサイト【スタンダードプラン】テント泊 … 基本料金＝1,500円／日 ※車1台含む 大人（高校生以上）＝1,000円／日」「【ゆっくりプラン】… 基本料金＝2,000円／日 … 大人＝1,400円／日」。トップ「一人でも、カップルでも、サークルでも」。車両乗入不可。富士見サイト（4,500円～）は課金単位が原文で読めないので幅に含めない。"
   },
   {
    "napId": "14121",
@@ -1605,9 +1605,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14121",
    "latCandidate": "34.84228677736143",
    "lngCandidate": "137.73033834680479",
-   "officialUrl": null,
+   "officialUrl": "https://hamamatsu-fp.co.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 hamamatsu-fp.co.jp で住所（浜名区都田町4263-1）一致。区画貸しテントサイト「1区画 キャンプサイト（電源なし）：5,900円～ … 入園料、区画料、施設協力費含む（4名まで）」で持ち込みテント可。ただし1名利用可の記載がなく、上限額も不明。本人判断へ。"
   },
   {
    "napId": "14122",
@@ -1713,9 +1713,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14302",
    "latCandidate": "35.3561663",
    "lngCandidate": "138.5520656",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.kobitto-asagiri.com/",
+   "verdict": "追加",
+   "reason": "親が公式 kobitto-asagiri.com を curl で取り直して確認。住所「〒418-0108 静岡県富士宮市猪之頭2350」。オートキャンプページ「【M】ソロサイト 定員 世帯 ソロサイト 人数 1名まで … 料金 ￥2,750～￥4,950」「【P】プライベートサイト … 人数 1名まで … 料金 ￥3,300～￥5,500」「施設利用料 ※二泊目以降はかかりません 大人（中学生以上） ￥880」。トップには「ファミリー向けのオートキャンプ場」「大人数・グループでのご利用…は受付けておりません」とあるが、ソロサイトは1名までと明記。"
   },
   {
    "napId": "14326",
@@ -1725,9 +1725,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14326",
    "latCandidate": "35.4082595",
    "lngCandidate": "138.5845439",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.asagiri-para.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 asagiri-para.com で住所（富士宮市根原282-1）一致。サイトはフライト体験・ライセンスコース・アクセス・Q&Aのみで、キャンプの料金も予約方法も公式に無い。"
   },
   {
    "napId": "14334",
@@ -1750,8 +1750,8 @@
    "latCandidate": "35.0091503523243",
    "lngCandidate": "139.08484898369747",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "既掲載「宇佐美城山公園キャンプ場（伊東市宇佐美1721-5）」と番地まで一致。"
   },
   {
    "napId": "14391",
@@ -1761,9 +1761,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14391",
    "latCandidate": "35.03475664847903",
    "lngCandidate": "137.96041888175353",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://harunoyama.org/",
+   "verdict": "追加",
+   "reason": "親が公式 harunoyama.org を curl で取り直して確認。住所「〒437-0602 静岡県浜松市天竜区春野町杉943-1」。SOLOサイト「1区画 2,200円＋入場料300円 ※ハイシーズンはサイト料金＋500円 ・1名（ペット不可）」「静かな空間を楽しめるようお一人様専用です」。予約は公式が「キャンプ場予約サイト「なっぷ」からご予約ください」と指定。SOLOサイトは車両乗入れ不可。"
   },
   {
    "napId": "14392",
@@ -1773,9 +1773,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14392",
    "latCandidate": "35.2354554",
    "lngCandidate": "138.9258451",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.tokinosumika.com/outdoor",
+   "verdict": "追加",
+   "reason": "親が公式（時之栖）tokinosumika.com/outdoor を curl で取り直して確認。住所「静岡県御殿場市神山719」。フリーキャンプ「※料金は全て税込 １サイト 平日 ￥5,000 平日（冬季） ￥3,500 休前日A ￥6,000 休前日B ￥7,000 ソロキャンプ(施設の定める平日) ¥2,000 冬ソロキャン(施設の定める冬季平日) ¥1,500」「各テントに１名以上の成人が同宿してください」。グランピング・ログトレーラーも併設。"
   },
   {
    "napId": "14460",
@@ -1797,9 +1797,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14494",
    "latCandidate": "35.30479106832786",
    "lngCandidate": "138.58949232936098",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://satoyama-vacation.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式 satoyama-vacation.com/stay/ は寝具付きグランピングテントの1日1組貸切のみで、持ち込みテントサイトは無い（公式の住所は未照合）。"
   },
   {
    "napId": "14509",
@@ -1809,9 +1809,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14509",
    "latCandidate": "35.0758251",
    "lngCandidate": "138.9246661",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.izugateway.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "道の駅公式 izugateway.com の貸出施設にキャンプ・宿泊の記載なし。川の駅公式は403で読めず。キャンプとしての料金・予約は公式に無い。"
   },
   {
    "napId": "14511",
@@ -1821,9 +1821,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14511",
    "latCandidate": "34.910366768927936",
    "lngCandidate": "139.1381356588608",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://izumiresort.com/camp-2025/",
+   "verdict": "追加",
+   "reason": "親が公式 izumiresort.com/camp-2025/ を curl で取り直して確認。住所「静岡県伊東市富戸354-1」。料金表「価格は全て税込表示です」「① 施設利用料 … 大人（中学生以上） ¥600」「#2 基本キャンプ1スペース（6.4m×6.4m） 平日、通常シーズン ¥6,000 土曜、繁忙シーズン ¥7,500」。「車中泊、テント泊、タープ設営。ビギナーさんから、ソロさん、ベテランさんまで！」。予約は公式LINE。地図は公式の埋め込み（キャンプ場名のピン）。"
   },
   {
    "napId": "14514",
@@ -1834,8 +1834,8 @@
    "latCandidate": "34.68125027669303",
    "lngCandidate": "138.86600647064824",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・南伊豆町公式とも見つからず、なっぷ・まとめ系ポータルのみ（千葉の同名施設は別）。"
   },
   {
    "napId": "14547",
@@ -1845,9 +1845,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14547",
    "latCandidate": "35.286936456631295",
    "lngCandidate": "138.953697843713",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.fu-ji-no.jp/kirameki/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（御殿場市東田中3373-25）一致。キャビンとグランピングドームの客室のみで持ち込みテントサイトなし。"
   },
   {
    "napId": "14582",
@@ -1857,9 +1857,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14582",
    "latCandidate": "35.16733856882944",
    "lngCandidate": "139.01617085933685",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.fujihakoneland.or.jp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 fujihakoneland.or.jp（函南町桑原笛場1354）にキャンプ場の料金・予約の記載なし。多目的広場の時間貸し（1時間3,000円税別）のみ。"
   },
   {
    "napId": "14659",
@@ -2919,18 +2919,18 @@
   }
  ],
  "progress": {
-  "asOf": "2026-10-30",
+  "asOf": "2026-11-05",
   "門の対象": 224,
   "内訳": {
-   "追加": 49,
+   "追加": 54,
    "閉鎖疑い": 21,
-   "門落ち(公式なし)": 35,
-   "門落ち(料金も予約も公式に無し)": 7,
-   "宿泊系のため対象外": 5,
+   "門落ち(公式なし)": 36,
+   "門落ち(料金も予約も公式に無し)": 10,
+   "宿泊系のため対象外": 11,
    "門落ち(単独利用不可)": 2,
-   "門落ち(既存レコードと重複)": 5,
+   "門落ち(既存レコードと重複)": 6,
    "門落ち(宿泊不可)": 1,
-   "UNMEASURED": 117
+   "UNMEASURED": 101
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }

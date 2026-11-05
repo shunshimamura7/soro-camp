@@ -1,0 +1,194 @@
+[
+ {
+  "napId": "14326",
+  "name": "Mt.FUJI　PARAGLIDING＆CAMP（旧アサギリ高原パラグライダースクール＆キャンプ）",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "公式 asagiri-para.com で住所（富士宮市根原282-1）一致。サイトはフライト体験・ライセンスコース・アクセス・Q&Aのみで、キャンプの料金も予約方法も公式に無い。",
+  "checkedUrls": [
+   "https://www.asagiri-para.com/",
+   "https://www.asagiri-para.com/q&a"
+  ],
+  "officialUrl": "https://www.asagiri-para.com/"
+ },
+ {
+  "napId": "14344",
+  "name": "宇佐美城山公園キャンプ場 USAMI SHIROYAMA CAMP FIELD",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "門落ち(既存レコードと重複)",
+  "reason": "既掲載「宇佐美城山公園キャンプ場（伊東市宇佐美1721-5）」と番地まで一致。",
+  "checkedUrls": [],
+  "officialUrl": null
+ },
+ {
+  "napId": "14391",
+  "name": "はるの山の村",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "親が公式 harunoyama.org を curl で取り直して確認。住所「〒437-0602 静岡県浜松市天竜区春野町杉943-1」。SOLOサイト「1区画 2,200円＋入場料300円 ※ハイシーズンはサイト料金＋500円 ・1名（ペット不可）」「静かな空間を楽しめるようお一人様専用です」。予約は公式が「キャンプ場予約サイト「なっぷ」からご予約ください」と指定。SOLOサイトは車両乗入れ不可。",
+  "checkedUrls": [
+   "https://harunoyama.org/",
+   "https://harunoyama.org/solo",
+   "https://harunoyama.org/reception",
+   "https://harunoyama.org/qa",
+   "https://harunoyama.org/reserve"
+  ],
+  "officialUrl": "https://harunoyama.org/",
+  "reservationUrl": "https://www.nap-camp.com/shizuoka/14391",
+  "address": "静岡県浜松市天竜区春野町杉943-1",
+  "priceMin": 2500,
+  "priceMax": 3000,
+  "priceNote": "区画+人数（SOLOサイト）。公式「1区画 2,200円＋入場料300円 ※ハイシーズンはサイト料金＋500円」→通常2,500円・ハイシーズン3,000円。税込/税別の表記なし",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://harunoyama.org/reception",
+    "quote": "■桶風呂（2～3人用）45分1,000円【9:00～21:00】"
+   },
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://harunoyama.org/reception",
+    "quote": "■コインシャワー 5分100円【24時間利用可】"
+   },
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://harunoyama.org/reception",
+    "quote": "■売店（無人販売）【24時間利用可】"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://harunoyama.org/qa",
+    "quote": "薪･炭、CB缶･OD缶、網、使い捨て食器などのキャンプ用品はもちろん、ドリンクや氷、カップ麺等の軽食もご用意しております。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "静かな空間を楽しめるようお一人様専用です（友人同士の場合は他サイトをご利用ください）"
+ },
+ {
+  "napId": "14392",
+  "name": "OUTDOOR HILL VILLAGE",
+  "pref": "静岡",
+  "muni": "御殿場市",
+  "verdict": "追加",
+  "reason": "親が公式（時之栖）tokinosumika.com/outdoor を curl で取り直して確認。住所「静岡県御殿場市神山719」。フリーキャンプ「※料金は全て税込 １サイト 平日 ￥5,000 平日（冬季） ￥3,500 休前日A ￥6,000 休前日B ￥7,000 ソロキャンプ(施設の定める平日) ¥2,000 冬ソロキャン(施設の定める冬季平日) ¥1,500」「各テントに１名以上の成人が同宿してください」。グランピング・ログトレーラーも併設。",
+  "checkedUrls": [
+   "https://www.tokinosumika.com/outdoor"
+  ],
+  "officialUrl": "https://www.tokinosumika.com/outdoor",
+  "reservationUrl": "https://www.489pro.com/asp/489/menu.asp?id=22000070&lan=JPN&ty=lim&m_menu=1&room=22&dt=4#ypro_sb",
+  "address": "静岡県御殿場市神山719",
+  "priceMin": 1500,
+  "priceMax": 7000,
+  "priceNote": "サイト単位課金（ソロ料金あり）。公式「※料金は全て税込 １サイト 平日 ￥5,000 平日（冬季） ￥3,500 休前日A ￥6,000 休前日B ￥7,000 ソロキャンプ(施設の定める平日) ¥2,000 冬ソロキャン(施設の定める冬季平日) ¥1,500」。ソロ料金は施設の定める平日だけで、休前日は1サイト料金",
+  "features": {
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.tokinosumika.com/outdoor",
+    "quote": "※ワンちゃん同伴可（自己管理でしっかりとリードを着用ください） ※ワンちゃん１頭に付き、1,000円の料金が発生します。"
+   }
+  },
+  "nearbyOnsen": "天然温泉 気楽坊（時之栖園内。フリーキャンプ利用者は1日券 大人800円）",
+  "coordsFromOfficialMap": null,
+  "soloNote": "ソロキャンプ(施設の定める平日) ¥2,000"
+ },
+ {
+  "napId": "14494",
+  "name": "Mt. FUJI SATOYAMA VACATION (マウントフジ里山バケーション）",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式 satoyama-vacation.com/stay/ は寝具付きグランピングテントの1日1組貸切のみで、持ち込みテントサイトは無い（公式の住所は未照合）。",
+  "checkedUrls": [
+   "https://satoyama-vacation.com/stay/"
+  ],
+  "officialUrl": "https://satoyama-vacation.com/"
+ },
+ {
+  "napId": "14509",
+  "name": "川の駅　伊豆ゲートウェイ函南",
+  "pref": "静岡",
+  "muni": "函南町",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "道の駅公式 izugateway.com の貸出施設にキャンプ・宿泊の記載なし。川の駅公式は403で読めず。キャンプとしての料金・予約は公式に無い。",
+  "checkedUrls": [
+   "https://www.izugateway.com/",
+   "https://www.izugateway.com/rental/"
+  ],
+  "officialUrl": "https://www.izugateway.com/"
+ },
+ {
+  "napId": "14511",
+  "name": "伊豆海の森スマイルキャンプ場　IZUMI RESORT",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "追加",
+  "reason": "親が公式 izumiresort.com/camp-2025/ を curl で取り直して確認。住所「静岡県伊東市富戸354-1」。料金表「価格は全て税込表示です」「① 施設利用料 … 大人（中学生以上） ¥600」「#2 基本キャンプ1スペース（6.4m×6.4m） 平日、通常シーズン ¥6,000 土曜、繁忙シーズン ¥7,500」。「車中泊、テント泊、タープ設営。ビギナーさんから、ソロさん、ベテランさんまで！」。予約は公式LINE。地図は公式の埋め込み（キャンプ場名のピン）。",
+  "checkedUrls": [
+   "https://izumiresort.com/camp-2025/",
+   "https://izumiresort.com/camp/camp-guidelines/"
+  ],
+  "officialUrl": "https://izumiresort.com/camp-2025/",
+  "reservationUrl": "https://izumiresort.com/reserve/",
+  "address": "静岡県伊東市富戸354-1",
+  "priceMin": 6600,
+  "priceMax": 8100,
+  "priceNote": "区画+人数（施設利用料＋スペース料金）。公式「価格は全て税込表示です」「施設利用料 大人（中学生以上） ¥600」＋「基本キャンプ1スペース 平日、通常シーズン ¥6,000 土曜、繁忙シーズン ¥7,500」→6,600〜8,100円。温泉は別料金",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://izumiresort.com/camp-2025/",
+    "quote": "温泉「伊豆海の湯」 家族、グループ貸切の時間を作ります！…事前ご予約ください。 温泉利用時間 ：19:00~23:00"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://izumiresort.com/camp/camp-guidelines/",
+    "quote": "ペット歓迎 OK：ペット（キャンプスペース内）"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.910293,
+   "lng": 139.135925,
+   "url": "https://izumiresort.com/camp-2025/"
+  },
+  "soloNote": "車中泊、テント泊、タープ設営。ビギナーさんから、ソロさん、ベテランさんまで！"
+ },
+ {
+  "napId": "14514",
+  "name": "野営人",
+  "pref": "静岡",
+  "muni": "南伊豆町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式・南伊豆町公式とも見つからず、なっぷ・まとめ系ポータルのみ（千葉の同名施設は別）。",
+  "checkedUrls": [
+   "https://campla.jp/campsite/3339/"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "14547",
+  "name": "藤乃煌 富士御殿場",
+  "pref": "静岡",
+  "muni": "御殿場市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所（御殿場市東田中3373-25）一致。キャビンとグランピングドームの客室のみで持ち込みテントサイトなし。",
+  "checkedUrls": [
+   "https://www.fu-ji-no.jp/kirameki/"
+  ],
+  "officialUrl": "https://www.fu-ji-no.jp/kirameki/"
+ },
+ {
+  "napId": "14582",
+  "name": "富士箱根ランド キャンプ場",
+  "pref": "静岡",
+  "muni": "函南町",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "公式 fujihakoneland.or.jp（函南町桑原笛場1354）にキャンプ場の料金・予約の記載なし。多目的広場の時間貸し（1時間3,000円税別）のみ。",
+  "checkedUrls": [
+   "https://www.fujihakoneland.or.jp/facilities.html"
+  ],
+  "officialUrl": "https://www.fujihakoneland.or.jp/"
+ }
+]
