@@ -1,0 +1,27 @@
+[
+ {
+  "napId": "15767",
+  "name": "オートキャンプもぐら",
+  "pref": "静岡",
+  "muni": "沼津市",
+  "verdict": "UNMEASURED",
+  "reason": "公式 autocamp-mogura.com で住所（沼津市西浦河内字正木ヶ沢538-63）一致。料金はサイト単位の10名まで定額で、公式予約（chillnn）で確認できたのは A1 27,500円・A2 22,000円・E4 15,000円と、1名でも12,000円超。より安い区画は未確認。本人判断へ。",
+  "checkedUrls": [
+   "https://autocamp-mogura.com/",
+   "https://www.chillnn.com/ja/19b4daa052f2f0"
+  ],
+  "officialUrl": "https://autocamp-mogura.com/"
+ },
+ {
+  "napId": "15826",
+  "name": "villa vacances hamanako",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "運営元公式 stylecasa.jp/villa/ はドームテント4棟の1棟貸しグランピングヴィラ。持ち込みテントの案内なし（住所 浜松市中央区協和町102）。",
+  "checkedUrls": [
+   "https://www.stylecasa.jp/villa/"
+  ],
+  "officialUrl": "https://www.stylecasa.jp/villa/"
+ }
+]

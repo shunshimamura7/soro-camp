@@ -22389,5 +22389,55 @@
       "https://www.nap-camp.com/shizuoka/16260"
     ],
     "coordsVerified": false
+  },
+  {
+    "id": "amagi-kogen-autocamp",
+    "slug": "amagi-kogen-autocamp",
+    "name": "天城高原オートキャンプ場",
+    "prefecture": "静岡",
+    "area": "天城高原・白田",
+    "status": "active",
+    "address": "静岡県賀茂郡東伊豆町白田1458-5",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 4000,
+    "priceMax": 4000,
+    "priceNote": "区画+人数。公式「林間サイト 3,000円 ※季節料金あり」（小サイトも3,000円）＋「入場料（大人） 1,000円」→1名1泊4,000円。季節料金の加算額は公式に記載がなく、繁忙期はこれを超えうる。税込/税別の表記なし",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワーやトイレ、流し場を完備。（https://www.izu-camp.jp/第一サイト-林間サイトのご案内）",
+      "pet": true,
+      "petNote": "無駄吠えしない​わんこはOK！ … ・わんこ以外のペットは不可。（https://www.izu-camp.jp/第一サイト-林間サイトのご案内）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "天城高原の標高のある森のオートキャンプ場。**林間サイトは「ソロキャンパーに人気」**と公式が書く区画で、サイト3,000円＋入場料1,000円の**1泊4,000円**。シャワー・ウォシュレットのトイレあり、犬連れ可。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.izu-camp.jp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**季節料金あり**。加算額は公式に書かれていないので、繁忙期は予約時に確認する",
+      "林間サイトは**車を第一サイトの駐車場に停めて運ぶ**。水場は第一サイトの流し（水のみ）",
+      "**直火禁止**（焚き火台は可）",
+      "**周辺に買い出しできる店がない**と公式Q&A。事前に調達する",
+      "貸切の露天風呂（1組1,500円・50分）は車で5分下った渓流サイト側",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.izu-camp.jp/"
+    ]
   }
 ]

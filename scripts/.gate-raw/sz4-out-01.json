@@ -1,0 +1,15 @@
+[
+ {
+  "napId": "14199",
+  "name": "ラフォーレリゾート修善寺",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式 laforet.co.jp/shuzenji/（住所データ 大平1529 一致）はホテル・コテージ中心で、キャンプ・テント・グランピングの語が公式各ページに0件。持ち込みテント泊のサイトは公式に確認できない。",
+  "checkedUrls": [
+   "https://www.laforet.co.jp/shuzenji/",
+   "https://www.laforet.co.jp/shuzenji/facilities/"
+  ],
+  "officialUrl": "https://www.laforet.co.jp/shuzenji/"
+ }
+]

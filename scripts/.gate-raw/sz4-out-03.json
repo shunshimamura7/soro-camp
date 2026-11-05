@@ -1,0 +1,15 @@
+[
+ {
+  "napId": "16032",
+  "name": "glampark 一句石",
+  "pref": "静岡",
+  "muni": "伊豆の国市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "運営旅館の公式 izu1914.com（伊豆の国市中1360-1）でドーム型グランピング3棟のみ。持ち込みテントの区画なし。",
+  "checkedUrls": [
+   "http://izu1914.com/",
+   "http://izu1914.com/glamping.php"
+  ],
+  "officialUrl": "http://izu1914.com/"
+ }
+]

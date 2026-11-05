@@ -8121,5 +8121,38 @@
   "soloNote": "＜利用人数＞ ・区画サイト：5名まで（人数下限の記載なし）",
   "napUrl": "https://www.nap-camp.com/shizuoka/16260",
   "napName": "びく石山 静かな夜のキャンプ場"
+ },
+ {
+  "napId": "14983",
+  "name": "天城高原オートキャンプ場",
+  "pref": "静岡",
+  "muni": "東伊豆町",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が挙げ、親が公式 izu-camp.jp を curl で取り直して確認。住所「〒413-0304 静岡県賀茂郡東伊豆町1458-5」。料金一覧「林間サイト 3,000円 ※季節料金あり 大人２名 車は別駐車場」「小サイト（40㎡） 3,000円 ※季節料金あり」「入場料（大人） 1,000円」。「林間サイト 第一サイトに隣接していてソロキャンパーに人気のサイト。」季節料金の金額は公式に無い。",
+  "checkedUrls": [
+   "https://www.izu-camp.jp/第一サイト-林間サイトのご案内"
+  ],
+  "officialUrl": "https://www.izu-camp.jp/",
+  "reservationUrl": null,
+  "address": "静岡県賀茂郡東伊豆町白田1458-5",
+  "priceMin": 4000,
+  "priceMax": 4000,
+  "priceNote": "区画+人数。公式「林間サイト 3,000円 ※季節料金あり」（小サイトも3,000円）＋「入場料（大人） 1,000円」→1名1泊4,000円。季節料金の加算額は公式に記載がなく、繁忙期はこれを超えうる。税込/税別の表記なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.izu-camp.jp/第一サイト-林間サイトのご案内",
+    "quote": "シャワーやトイレ、流し場を完備。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.izu-camp.jp/第一サイト-林間サイトのご案内",
+    "quote": "無駄吠えしない​わんこはOK！ … ・わんこ以外のペットは不可。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "林間サイト 第一サイトに隣接していてソロキャンパーに人気のサイト。",
+  "napUrl": "https://www.nap-camp.com/shizuoka/14983",
+  "napName": "天城高原オートキャンプ場"
  }
 ]

@@ -1653,9 +1653,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14199",
    "latCandidate": "34.9563555",
    "lngCandidate": "138.9148127",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.laforet.co.jp/shuzenji/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式 laforet.co.jp/shuzenji/（住所データ 大平1529 一致）はホテル・コテージ中心で、キャンプ・テント・グランピングの語が公式各ページに0件。持ち込みテント泊のサイトは公式に確認できない。"
   },
   {
    "napId": "14204",
@@ -1917,9 +1917,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14791",
    "latCandidate": "34.86011600617399",
    "lngCandidate": "137.93774816446532",
-   "officialUrl": null,
+   "officialUrl": "https://rivwoodsresort.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 rivwoodsresort.com で住所（森町大鳥居1）一致。「6,600円～(ルームチャージ)」で1名選択は可能だが、持ち込みテント可の公式記載がなく上限も不明。本人判断へ。"
   },
   {
    "napId": "14797",
@@ -1941,9 +1941,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14806",
    "latCandidate": "35.35980244761436",
    "lngCandidate": "138.56008889510653",
-   "officialUrl": null,
+   "officialUrl": "https://www.instagram.com/fuji_camp_village/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式Instagramのみ確認。持ち込みテント・1名利用・料金が公式で確認できない。本人判断へ。"
   },
   {
    "napId": "14830",
@@ -1953,9 +1953,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14830",
    "latCandidate": "35.3540725",
    "lngCandidate": "138.9318152",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://fjse.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "Cue（Manus）調査：公式 fjse.jp で住所（小山町用沢1337）一致。旅館の客室宿泊（1泊2食付・素泊り等）のみで持ち込みテントサイトは確認できない。"
   },
   {
    "napId": "14869",
@@ -1965,9 +1965,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14869",
    "latCandidate": "34.637827711707295",
    "lngCandidate": "138.8668582376427",
-   "officialUrl": null,
+   "officialUrl": "https://www.izucamp.info/camp",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 izucamp.info にテントサイトと「ソロキャンパーの方にも好評です」があるが、1泊料金がなく住所も899-113と一致するか確定しない。本人判断へ。"
   },
   {
    "napId": "14886",
@@ -1977,9 +1977,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14886",
    "latCandidate": "34.785267686969746",
    "lngCandidate": "139.04123454086155",
-   "officialUrl": null,
+   "officialUrl": "https://www.so-an.co.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 so-an.co.jp で住所（稲取3348-17）一致。コテージ・フリーサイトの案内はあるが「¥44,000~ / 1名」等で持ち込みテント可・1名総額が確定しない。本人判断へ。"
   },
   {
    "napId": "14890",
@@ -2001,9 +2001,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14898",
    "latCandidate": "34.87852227298367",
    "lngCandidate": "138.76922318482514",
-   "officialUrl": null,
+   "officialUrl": "https://r.goope.jp/izucamfarm/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 r.goope.jp/izucamfarm で住所（伊豆市小下田1953）と料金（オートサイト 平日6,000円～・大人4名まで）を確認。ソロサイトの記述はあるがソロサイト自体の料金が公式で取れず、1名総額が確定しない。本人判断へ。"
   },
   {
    "napId": "14914",
@@ -2013,9 +2013,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14914",
    "latCandidate": "34.75142502721495",
    "lngCandidate": "138.05145159755324",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kiwicountry.jp/camp",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "Cue（Manus）調査：公式 kiwicountry.jp/camp で住所（掛川市上内田2040）とキャンプサイトを確認。キャンプ料金の記載がなく、詳細・予約はなっぷへ案内。"
   },
   {
    "napId": "14920",
@@ -2049,9 +2049,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14979",
    "latCandidate": "35.26002211437649",
    "lngCandidate": "138.84939746037136",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://tryandgo.jp/yamanoniwa/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "Cue（Manus）調査：公式 tryandgo.jp/yamanoniwa にオートフリーサイトはあるが料金記載なし、予約はなっぷ専売と案内。"
   },
   {
    "napId": "14982",
@@ -2061,9 +2061,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14982",
    "latCandidate": null,
    "lngCandidate": null,
-   "officialUrl": null,
+   "officialUrl": "https://www.hirizohama-seaside-bbq.com/about",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式で住所（南伊豆町入間1675）一致。「Cサイト 6,500円」「宿泊の方は何日止めても2000円」だが、持ち込みテント・1名利用可の記載なし。本人判断へ。"
   },
   {
    "napId": "14983",
@@ -2073,9 +2073,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14983",
    "latCandidate": "34.828356546581134",
    "lngCandidate": "139.00900870321044",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.izu-camp.jp/",
+   "verdict": "追加",
+   "reason": "Cue（Manus）が挙げ、親が公式 izu-camp.jp を curl で取り直して確認。住所「〒413-0304 静岡県賀茂郡東伊豆町1458-5」。料金一覧「林間サイト 3,000円 ※季節料金あり 大人２名 車は別駐車場」「小サイト（40㎡） 3,000円 ※季節料金あり」「入場料（大人） 1,000円」。「林間サイト 第一サイトに隣接していてソロキャンパーに人気のサイト。」季節料金の金額は公式に無い。"
   },
   {
    "napId": "14977",
@@ -2085,9 +2085,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14977",
    "latCandidate": "35.03835236661759",
    "lngCandidate": "138.33132603034335",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://sankakuyama.booking.chillnn.com/ja/",
+   "verdict": "閉鎖疑い",
+   "reason": "Cue（Manus）調査：公式予約ページに「【9/27営業終了】」の表示（年の記載なし）。現行の営業が確認できない。"
   },
   {
    "napId": "15006",
@@ -2097,9 +2097,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15006",
    "latCandidate": "34.7255154",
    "lngCandidate": "138.2218035",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.pagurus-kashima.com/",
+   "verdict": "閉鎖疑い",
+   "reason": "Cue（Manus）調査：公式に「Pagurus Nature&Camp 鹿島は、2025年10月20日をもちまして宿泊業を終了いたします。」"
   },
   {
    "napId": "15011",
@@ -2121,9 +2121,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15012",
    "latCandidate": "35.3413661",
    "lngCandidate": "138.9130812",
-   "officialUrl": null,
+   "officialUrl": "https://takane-camp.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 takane-camp.com に「【宿泊（１泊）】 高校生以上 4,000 円（税込）」はあるが、公式住所は上小林1506-6で台帳の1489-1と番地違い、持ち込みテント・1名利用の記載も確認できない。本人判断へ。"
   },
   {
    "napId": "15087",
@@ -2277,9 +2277,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15767",
    "latCandidate": "34.986156244199094",
    "lngCandidate": "138.84422571512223",
-   "officialUrl": null,
+   "officialUrl": "https://autocamp-mogura.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 autocamp-mogura.com で住所（沼津市西浦河内字正木ヶ沢538-63）一致。料金はサイト単位の10名まで定額で、公式予約（chillnn）で確認できたのは A1 27,500円・A2 22,000円・E4 15,000円と、1名でも12,000円超。より安い区画は未確認。本人判断へ。"
   },
   {
    "napId": "15768",
@@ -2325,9 +2325,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15826",
    "latCandidate": "34.738743056897725",
    "lngCandidate": "137.61288531981418",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.stylecasa.jp/villa/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "運営元公式 stylecasa.jp/villa/ はドームテント4棟の1棟貸しグランピングヴィラ。持ち込みテントの案内なし（住所 浜松市中央区協和町102）。"
   },
   {
    "napId": "15847",
@@ -2385,9 +2385,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16032",
    "latCandidate": "35.03932972022473",
    "lngCandidate": "138.97269317126313",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://izu1914.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "運営旅館の公式 izu1914.com（伊豆の国市中1360-1）でドーム型グランピング3棟のみ。持ち込みテントの区画なし。"
   },
   {
    "napId": "16061",
@@ -2922,15 +2922,15 @@
   "asOf": "2026-11-05",
   "門の対象": 224,
   "内訳": {
-   "追加": 62,
-   "閉鎖疑い": 21,
+   "追加": 63,
+   "閉鎖疑い": 23,
    "門落ち(公式なし)": 40,
-   "門落ち(料金も予約も公式に無し)": 12,
-   "宿泊系のため対象外": 18,
+   "門落ち(料金も予約も公式に無し)": 14,
+   "宿泊系のため対象外": 22,
    "門落ち(単独利用不可)": 3,
    "門落ち(既存レコードと重複)": 7,
    "門落ち(宿泊不可)": 1,
-   "UNMEASURED": 78
+   "UNMEASURED": 69
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }
