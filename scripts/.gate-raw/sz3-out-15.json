@@ -1,0 +1,33 @@
+[
+ {
+  "napId": "16061",
+  "name": "富士見の丘オートキャンプ場",
+  "pref": "静岡",
+  "muni": "富士市",
+  "verdict": "追加",
+  "reason": "2026-11-05、しゅんが判断を任せたので「料金が下限しか公式に無い施設は下限で載せ、上限が無いことを注意書きに書く」とした。親が公式 fujimicamp.jp を curl で取り直して確認。住所「〒417-0801 静岡県富士市大淵1297」。フリーサイト「定員数 5名 1区画 テント1張、タープ1張、車1台 料金 6,000円/泊〜 ソロ料金 5,000円/泊〜 … ※週末や連休などにより料金が変動いたします。」。予約は公式の予約サイト（reserva）。地図は公式の埋め込み（キャンプ場名のピン）。",
+  "checkedUrls": [
+   "https://fujimicamp.jp/",
+   "https://fujimicamp.jp/camp/"
+  ],
+  "officialUrl": "https://fujimicamp.jp/",
+  "reservationUrl": "https://reserva.be/fujimicamp",
+  "address": "静岡県富士市大淵1297",
+  "priceMin": 5000,
+  "priceMax": 5000,
+  "priceNote": "サイト単位課金（ソロ料金）。公式「ソロ料金 5,000円/泊〜」「※週末や連休などにより料金が変動いたします。」→上限は公式に記載がなく、週末・連休はこれを超える。税込/税別の表記なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://fujimicamp.jp/camp/",
+    "quote": "シャワールーム 遊んだ後は、シャワーを浴びてすっきりリフレッシュ！無料でご用意しています！"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 35.217944,
+   "lng": 138.702548,
+   "url": "https://fujimicamp.jp/"
+  },
+  "soloNote": "ソロ料金 5,000円/泊〜"
+ }
+]

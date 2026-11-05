@@ -35,7 +35,8 @@ const DATA = path.join(ROOT, 'data', 'campgrounds.json');
 const LEDGER = path.join(__dirname, 'gate-additions-2026-10-06.json');
 const WRITE = process.argv.includes('--write') && process.argv.includes('--force');
 const ASKED_WRITE = process.argv.includes('--write');
-const TODAY = '2026-10-06';
+// 実行日（JST）。2026-11-05 まで '2026-10-06' 固定で、10-30・11-05 の追加分の lastVerified が誤っていた（訂正済み）
+const TODAY = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
 const NEUTRAL = { quietness: 3, scenery: 3, value: 3, access: 3, facility: 3 };
 
 /** 人が書く分。キーは napId */
@@ -129,6 +130,9 @@ for (const [id, edit] of Object.entries(EDIT)) {
     stop(`料金が整数でない: ${r.name}（min=${r.priceMin} max=${r.priceMax}）`);
   }
   if (r.priceMax < r.priceMin) stop(`priceMax < priceMin: ${r.name}`);
+  /* needsPrice（2026-11-05）：公式が予約先をなっぷと案内しているが、料金は公式に無い施設。
+   * なっぷの金額は使わない。料金0・priceVerified:false・needsPrice:true で載せる */
+  if (r.needsPrice === true && (r.priceMin !== 0 || r.priceMax !== 0)) stop(`needsPrice なのに料金が0でない: ${r.name}`);
   if (!['千葉', '山梨', '静岡', '神奈川'].includes(r.pref)) stop(`県が想定外: ${r.name} / ${r.pref}`);
   if (r.muni && !norm(r.address).includes(norm(r.muni))) {
     stop(`公式住所に市町村名「${r.muni}」が無い: ${r.name} / ${r.address}`);
@@ -179,7 +183,8 @@ for (const [id, edit] of Object.entries(EDIT)) {
     tel: null,
     telNote: null,
     lastVerified: TODAY,
-    priceVerified: true,
+    priceVerified: r.needsPrice !== true,
+    ...(r.needsPrice === true ? { needsPrice: true } : {}),
     officialUrl: r.officialUrl || null,
     reservationUrl: r.reservationUrl || null,
     cautions: [
