@@ -8154,5 +8154,67 @@
   "soloNote": "林間サイト 第一サイトに隣接していてソロキャンパーに人気のサイト。",
   "napUrl": "https://www.nap-camp.com/shizuoka/14983",
   "napName": "天城高原オートキャンプ場"
+ },
+ {
+  "napId": "16524",
+  "name": "十里木フジドッグ",
+  "pref": "静岡",
+  "muni": "裾野市",
+  "verdict": "追加",
+  "reason": "親が公式 fuji.dog を curl で取り直して確認。住所「静岡県裾野市須山2255-1172」。料金「全料金は税込表示です」「スタンダード宿泊プラン （ソロ・ペア・ファミリー、車中泊） ¥ 4,400 /人 … 対象：1名〜5名様」。「大型テントやタープの設置も可能です」。キャンプ場は最大2組。予約は公式のご予約ページ。",
+  "checkedUrls": [
+   "https://fuji.dog/",
+   "https://fuji.dog/price"
+  ],
+  "officialUrl": "https://fuji.dog/",
+  "reservationUrl": "https://fuji.dog/%e3%81%94%e4%ba%88%e7%b4%84/",
+  "address": "静岡県裾野市須山2255-1172",
+  "priceMin": 4400,
+  "priceMax": 4400,
+  "priceNote": "人数課金。公式「スタンダード宿泊プラン （ソロ・ペア・ファミリー、車中泊） ¥ 4,400 /人 税込・ワンちゃん何頭でも無料」「全料金は税込表示です」",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://fuji.dog/price",
+    "quote": "全プランでロッジ内の清潔なトイレ・シャワー・キッチン設備が24時間ご利用いただけます。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://fuji.dog/price",
+    "quote": "薪（針葉樹） 600円 薪（広葉樹） 800円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://fuji.dog/price",
+    "quote": "ワンちゃんは何匹でも無料です。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "スタンダード宿泊プラン （ソロ・ペア・ファミリー、車中泊） … 対象：1名〜5名様",
+  "napUrl": "https://www.nap-camp.com/shizuoka/16524",
+  "napName": "十里木フジドッグ"
+ },
+ {
+  "napId": "16542",
+  "name": "にのまるキャンプ",
+  "pref": "静岡",
+  "muni": "富士市",
+  "verdict": "追加",
+  "reason": "親が公式 ninomaru-village.jp（運営 社会福祉法人誠信会）を curl で取り直して確認。アクセス「〒417-0801 静岡県富士市大淵4632-5」。キャンプ「ワンサイト ：大人１名 1,100円（税込） … 普通車 ：１台 1,650円（税込） … 自転車 ：１台 550円（税込） 施設整備管理料 ：1組につき550円（税込）」「6サイト（１サイト定員：1～４名）」「チェックイン 13：00～17：00 チェックアウト 8：30～11：00」。予約は公式の問い合わせ・予約フォーム。",
+  "checkedUrls": [
+   "https://www.ninomaru-village.jp/キャンプ/",
+   "https://www.ninomaru-village.jp/アクセス/"
+  ],
+  "officialUrl": "https://www.ninomaru-village.jp/キャンプ/",
+  "reservationUrl": null,
+  "address": "静岡県富士市大淵4632-5",
+  "priceMin": 2200,
+  "priceMax": 3300,
+  "priceNote": "人数＋車両＋1組の管理料。公式「ワンサイト ：大人１名 1,100円（税込）」「普通車 ：１台 1,650円（税込）」「自転車 ：１台 550円（税込）」「施設整備管理料 ：1組につき550円（税込）」→自転車2,200円・車3,300円",
+  "features": {},
+  "coordsFromOfficialMap": null,
+  "soloNote": "6サイト（１サイト定員：1～４名）",
+  "napUrl": "https://www.nap-camp.com/shizuoka/16542",
+  "napName": "にのまるキャンプ"
  }
 ]

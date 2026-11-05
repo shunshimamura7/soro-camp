@@ -2685,9 +2685,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16474",
    "latCandidate": "34.74673942609177",
    "lngCandidate": "137.59666538238525",
-   "officialUrl": null,
+   "officialUrl": "https://www.asoviva-camp.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 asoviva-camp.com（浜松市村櫛町 内山海岸）にソロ・デュオ専用フリーサイトの記載はあるが、宿泊料金は予約サイト側にしかなく公式で読めない。本人判断へ。"
   },
   {
    "napId": "16499",
@@ -2721,9 +2721,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16524",
    "latCandidate": "35.26928691208387",
    "lngCandidate": "138.79484976054385",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://fuji.dog/",
+   "verdict": "追加",
+   "reason": "親が公式 fuji.dog を curl で取り直して確認。住所「静岡県裾野市須山2255-1172」。料金「全料金は税込表示です」「スタンダード宿泊プラン （ソロ・ペア・ファミリー、車中泊） ¥ 4,400 /人 … 対象：1名〜5名様」。「大型テントやタープの設置も可能です」。キャンプ場は最大2組。予約は公式のご予約ページ。"
   },
   {
    "napId": "16542",
@@ -2733,9 +2733,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16542",
    "latCandidate": "35.2537059",
    "lngCandidate": "138.7176567",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.ninomaru-village.jp/キャンプ/",
+   "verdict": "追加",
+   "reason": "親が公式 ninomaru-village.jp（運営 社会福祉法人誠信会）を curl で取り直して確認。アクセス「〒417-0801 静岡県富士市大淵4632-5」。キャンプ「ワンサイト ：大人１名 1,100円（税込） … 普通車 ：１台 1,650円（税込） … 自転車 ：１台 550円（税込） 施設整備管理料 ：1組につき550円（税込）」「6サイト（１サイト定員：1～４名）」「チェックイン 13：00～17：00 チェックアウト 8：30～11：00」。予約は公式の問い合わせ・予約フォーム。"
   },
   {
    "napId": "16560",
@@ -2745,9 +2745,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16560",
    "latCandidate": "35.281330153797256",
    "lngCandidate": "138.64457486749382",
-   "officialUrl": null,
+   "officialUrl": "https://www.anothaplace.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 anothaplace.com（大人1-2名/サイト、テント泊前提）はあるが、料金表が画像でテキストに出ず、住所の公式記載もない。本人判断（ブラウザで料金表の画像確認）へ。"
   },
   {
    "napId": "16578",
@@ -2757,9 +2757,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16578",
    "latCandidate": "34.9048315",
    "lngCandidate": "137.8725396",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://sugari.camp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式 sugari.camp で住所（横川3242-1）一致。RV・車中泊専用8区画でテントサイトの記載なし（テント泊は既掲載のすがり1側）。"
   },
   {
    "napId": "16614",
@@ -2922,15 +2922,15 @@
   "asOf": "2026-11-05",
   "門の対象": 224,
   "内訳": {
-   "追加": 63,
+   "追加": 65,
    "閉鎖疑い": 23,
    "門落ち(公式なし)": 40,
    "門落ち(料金も予約も公式に無し)": 14,
-   "宿泊系のため対象外": 22,
+   "宿泊系のため対象外": 23,
    "門落ち(単独利用不可)": 3,
    "門落ち(既存レコードと重複)": 7,
    "門落ち(宿泊不可)": 1,
-   "UNMEASURED": 69
+   "UNMEASURED": 66
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }
