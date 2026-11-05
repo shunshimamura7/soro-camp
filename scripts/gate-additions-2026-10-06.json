@@ -7844,5 +7844,237 @@
   "soloNote": "車中泊、テント泊、タープ設営。ビギナーさんから、ソロさん、ベテランさんまで！",
   "napUrl": "https://www.nap-camp.com/shizuoka/14511",
   "napName": "伊豆海の森スマイルキャンプ場　IZUMI RESORT"
+ },
+ {
+  "napId": "14659",
+  "name": "リバティーリゾート大東温泉",
+  "pref": "静岡",
+  "muni": "掛川市",
+  "verdict": "追加",
+  "reason": "親が公式 daitoonsen.jp/camp.php を curl で取り直して確認。住所「〒437-1413 静岡県掛川市国安2808-2」。フリーサイトキャンプ「サイト利用料（テント１張り） 3,500 円～ 6,000 円 + 入場料 大人 800 円/1名 … + 入湯税 100 円/1名 + ゴミ処理料 100 円/1袋」「ゴミ処理協力金について、1袋分の料金はサイト利用料に含まれています。」。1名利用可の明記は無いが、テント1張り単位＋1名ごとの課金で人数下限の記載もない（里山キャンプ ウッドクリフと同じ扱い）。公式地図は温泉施設の広域表示なので座標は使わない。",
+  "checkedUrls": [
+   "https://daitoonsen.jp/camp.php",
+   "https://daitoonsen.jp/access.php"
+  ],
+  "officialUrl": "https://daitoonsen.jp/camp.php",
+  "reservationUrl": null,
+  "address": "静岡県掛川市国安2808-2",
+  "priceMin": 4400,
+  "priceMax": 6900,
+  "priceNote": "区画+人数。公式「サイト利用料（テント１張り） 3,500 円～ 6,000 円 + 入場料 大人 800 円/1名 … + 入湯税 100 円/1名」→1名1泊 4,400〜6,900円。ゴミ処理料は1袋分がサイト利用料に含まれる。税込/税別の表記なし",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://daitoonsen.jp/camp.php",
+    "quote": "ご宿泊されるお客様は、温浴施設を無料でご利用いただけます。大浴場、露天風呂、寝湯、サウナなど、様々なお風呂で疲れを癒して。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://daitoonsen.jp/camp.php",
+    "quote": "フリーサイトキャンプ エリアへペットを同伴いただけます。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "テント１張り単位のサイト料金＋大人1名ごとの入場料（人数下限の記載なし）",
+  "napUrl": "https://www.nap-camp.com/shizuoka/14659",
+  "napName": "リバティーリゾート大東温泉"
+ },
+ {
+  "napId": "15087",
+  "name": "earthcolor",
+  "pref": "静岡",
+  "muni": "伊豆の国市",
+  "verdict": "追加",
+  "reason": "親が公式 earthcolor-izu.jimdofree.com を curl で取り直して確認。住所「〒410-2113 静岡県伊豆の国市中1606-71」。料金「大人 お１人 2.000円」、FAQ「料金が安いですが他にかかりませんか？ →なるべくお気軽にお使いいただくために安くしております」。「【おひさまサイト】※ソロサイト… ソロ向けのサイトです」「【桜サイト】※ソロサイト… ソロ向けのサイトです」。予約は公式の「キャンプのご予約はこちら」のリンク先（なっぷ）。",
+  "checkedUrls": [
+   "https://earthcolor-izu.jimdofree.com/",
+   "https://earthcolor-izu.jimdofree.com/キャンプ場料金-案内/"
+  ],
+  "officialUrl": "https://earthcolor-izu.jimdofree.com/",
+  "reservationUrl": "https://www.nap-camp.com/shizuoka/15087",
+  "address": "静岡県伊豆の国市中1606-71",
+  "priceMin": 2000,
+  "priceMax": 2000,
+  "priceNote": "人数課金。公式「大人 お１人 2.000円」。他に料金はかからないと公式FAQ。税込/税別の表記なし",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://earthcolor-izu.jimdofree.com/キャンプ場料金-案内/",
+    "quote": "販売品 薪・・・１束 600円 炭・・・３ｋｇ 600円 着火剤・・・200円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://earthcolor-izu.jimdofree.com/",
+    "quote": "※ペット可、焚き火可"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "【おひさまサイト】※ソロサイト6m×4.5mあります。 ソロ向けのサイトです。",
+  "napUrl": "https://www.nap-camp.com/shizuoka/15087",
+  "napName": "earthcolor"
+ },
+ {
+  "napId": "16802",
+  "name": "GROVE camping hill",
+  "pref": "静岡",
+  "muni": "熱海市",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が候補に挙げ、親が公式 grove-yugawara.com を curl で取り直して確認。所在地「〒413-0001 静岡県熱海市泉75-1」（湯河原町の市街地から車で3分）。料金「◆宿泊費 大人1名 ￥2,000（高校生以上）… ◆駐車料金 車・バイク1台 ￥1,000 自転車・徒歩 無料」。サイト紹介「みはらしサイトは 全面フリーサイト です。主にソロテント向けで…」。予約は公式の予約ページ。",
+  "checkedUrls": [
+   "https://grove-yugawara.com/access/",
+   "https://grove-yugawara.com/price/",
+   "https://grove-yugawara.com/information/sites/",
+   "https://grove-yugawara.com/reservation/"
+  ],
+  "officialUrl": "https://grove-yugawara.com/",
+  "reservationUrl": "https://grove-yugawara.com/reservation/",
+  "address": "静岡県熱海市泉75-1",
+  "priceMin": 2000,
+  "priceMax": 3000,
+  "priceNote": "人数課金＋駐車料金。公式「◆宿泊費 大人1名 ￥2,000（高校生以上）」「◆駐車料金 車・バイク1台 ￥1,000 自転車・徒歩 無料」→徒歩・自転車2,000円、車・バイク3,000円。サイト指定はオプション料金。税込/税別の表記なし",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://grove-yugawara.com/information/sites/",
+    "quote": "受付テント 営業時間：10〜16時（夏季期間は10〜15時） 薪や飲用水（ペットボトル）、ガス缶等の消耗品などを販売しております。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "みはらしサイトは 全面フリーサイト です。主にソロテント向けで、レギュラー・スモールの２種類の横幅のサイトがございます。",
+  "napUrl": "https://www.nap-camp.com/shizuoka/16802",
+  "napName": "GROVE camping hill"
+ },
+ {
+  "napId": "16874",
+  "name": "SOLACEの丘",
+  "pref": "静岡",
+  "muni": "熱海市",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が候補に挙げ、親が公式 solace-atami.com を curl で取り直して確認。住所「〒413-0102 静岡県熱海市下多賀1492-1」。「テントサイト１ テント持参の方推奨サイトです。 料金 6,000円(2名様まで) 3名様以降お1人様追加+3,000円 … 収容人数 1～4名 駐車 有(乗入れ不可)」。FAQ「駐車料金はサイト使用料に含まれています。」",
+  "checkedUrls": [
+   "https://solace-atami.com/camp/",
+   "https://solace-atami.com/faq/"
+  ],
+  "officialUrl": "https://solace-atami.com/camp/",
+  "reservationUrl": null,
+  "address": "静岡県熱海市下多賀1492-1",
+  "priceMin": 6000,
+  "priceMax": 6000,
+  "priceNote": "サイト単位課金（2名まで同額）。公式「テント持参の方推奨サイトです。 料金 6,000円(2名様まで) 3名様以降お1人様追加+3,000円」、FAQ「駐車料金はサイト使用料に含まれています。」。税込/税別の表記なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://solace-atami.com/camp/",
+    "quote": "シャワー棟 清潔な シャワー室 シャワー室 2部屋／トイレ 1部屋／洗面 2個 アメニティ：シャンプー／リンス／ボディソープ／ハンドソープ／ドライヤー 1台／スリッパ"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "テントサイト１ … 収容人数 1～4名",
+  "napUrl": "https://www.nap-camp.com/shizuoka/16874",
+  "napName": "ＳＯＬＡＣＥの丘"
+ },
+ {
+  "napId": "15120",
+  "name": "浜名湖カナルオートキャンプ場",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "親が公式 bc-canal.com を curl で取り直して確認。住所「静岡県浜松市中央区村櫛町4607-13」（autocamp ページは旧表記の西区）。「オープンキャンプエリア(6,500㎡・芝生広場)(テント・１張): 2,750円（税込）」「バイクキャンプ(ソロ・テント・１張): 2,200円（税込）」「※1泊プランには別途施設使用料が掛かります。」「施設使用料 大人：1,100円（税込）」。通年・原則月火定休。予約は電話・問い合わせ。公式地図の座標は親が取り直せなかったので使わない。",
+  "checkedUrls": [
+   "http://www.bc-canal.com/autocamp/",
+   "http://www.bc-canal.com/access.html"
+  ],
+  "officialUrl": "http://www.bc-canal.com/autocamp/",
+  "reservationUrl": null,
+  "address": "静岡県浜松市中央区村櫛町4607-13",
+  "priceMin": 3300,
+  "priceMax": 3850,
+  "priceNote": "区画+人数（1張の料金＋施設使用料）。公式「オープンキャンプエリア…(テント・１張): 2,750円（税込）」「バイクキャンプ(ソロ・テント・１張): 2,200円（税込）」＋「施設使用料 大人：1,100円（税込）」→バイク3,300円・オープンエリア3,850円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.bc-canal.com/autocamp/",
+    "quote": "シャワー: 550円/回（税込）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "バイクキャンプ(ソロ・テント・１張): 2,200円（税込）",
+  "napUrl": "https://www.nap-camp.com/shizuoka/15120",
+  "napName": "浜名湖カナルオートキャンプ場"
+ },
+ {
+  "napId": "16145",
+  "name": "Ogawa. Camp Field",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "親が公式 ogawacampfield.com を curl で取り直して確認。アクセス「【住所】 〒431-3752 静岡県浜松市天竜区小川1170-1 … 【営業期間】 通年営業」。料金「大人１名様につき：２,０００円 … 車１台につき：５００円 バイク・自転車１台につき：３００円 ※２０２６年８月より車両料金が追加」（テント・タープ設営数を含む）。キャンプ場について「ファミリーキャンプやソロキャンプなど幅広く楽しめるキャンプ場です」。予約は公式の予約フォーム。",
+  "checkedUrls": [
+   "https://www.ogawacampfield.com/アクセス",
+   "https://www.ogawacampfield.com/about-3",
+   "https://www.ogawacampfield.com/準備中",
+   "https://www.ogawacampfield.com/注意事項"
+  ],
+  "officialUrl": "https://www.ogawacampfield.com/",
+  "reservationUrl": "https://www.ogawacampfield.com/予約",
+  "address": "静岡県浜松市天竜区小川1170-1",
+  "priceMin": 2000,
+  "priceMax": 2500,
+  "priceNote": "人数課金＋車両料金。公式「大人１名様につき：２,０００円」（テント・タープ設営数を含む）＋「車１台につき：５００円 バイク・自転車１台につき：３００円」→車2,500円・バイク2,300円。連泊は2泊目以降半額（土日祝・大型連休は通常料金）",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawacampfield.com/準備中",
+    "quote": "シャワー(温水)１回１５分：３００円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawacampfield.com/準備中",
+    "quote": "薪 針葉樹：１束５００円 … 薪 広葉樹：１束７００円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawacampfield.com/注意事項",
+    "quote": "ペットの入場は可能です。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "ファミリーキャンプやソロキャンプなど幅広く楽しめるキャンプ場です。",
+  "napUrl": "https://www.nap-camp.com/shizuoka/16145",
+  "napName": "Ogawa. Camp Field"
+ },
+ {
+  "napId": "16146",
+  "name": "浜名湖パークビレッジ",
+  "pref": "静岡",
+  "muni": "湖西市",
+  "verdict": "追加",
+  "reason": "親が公式 hamanako-p-v.com を curl で取り直して確認。アクセス「〒431-0302 静岡県湖西市新居町新居3288-201」（台帳の3228-201は番地違い。市・字は一致）。料金「表示料金は全て税込み」「施設利用料 … 一般 880」「宿泊サイト利用料 … フリーサイト 2,200 3,300 4,000」（平日／土日祝・各前日／ハイシーズン）。フリーサイト「35区画(1区画テント1張り/6人まで)」。1名可の明記はないが人数下限の記載なし。予約は電話（キャンプパーク直通）。公式地図のピンは駐車場なので座標は使わない。",
+  "checkedUrls": [
+   "https://hamanako-p-v.com/access/",
+   "https://hamanako-p-v.com/camp/"
+  ],
+  "officialUrl": "https://hamanako-p-v.com/camp/",
+  "reservationUrl": null,
+  "address": "静岡県湖西市新居町新居3288-201",
+  "priceMin": 3080,
+  "priceMax": 4880,
+  "priceNote": "区画+人数（フリーサイト＋施設利用料）。公式「表示料金は全て税込み」「施設利用料 … 一般 880」＋「フリーサイト 2,200 3,300 4,000」→1名1泊 3,080〜4,880円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://hamanako-p-v.com/camp/",
+    "quote": "温水洗浄便座付き水洗トイレと脱衣室付きのコインシャワーブースが設置されています。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://hamanako-p-v.com/camp/",
+    "quote": "薪(広葉樹) 880円"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "フリーサイト 区画 35区画(1区画テント1張り/6人まで)（人数下限の記載なし）",
+  "napUrl": "https://www.nap-camp.com/shizuoka/16146",
+  "napName": "浜名湖パークビレッジ"
  }
 ]

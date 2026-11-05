@@ -1,0 +1,125 @@
+[
+ {
+  "napId": "15107",
+  "name": "とことん遊べる学校キャンプ カタショー",
+  "pref": "静岡",
+  "muni": "牧之原市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式 katasho.jp は旧小学校の校舎に泊まる施設。「宿泊可能グループは各棟1グループです」「最低利用金額は…平日オフシーズンは42,000円(大人5名分)」。持ち込みテントサイトなし（公式所在地は片浜1216-1）。",
+  "checkedUrls": [
+   "https://katasho.jp/"
+  ],
+  "officialUrl": "https://katasho.jp/"
+ },
+ {
+  "napId": "15108",
+  "name": "ニットーランド貸切キャンプ場",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "4通りの語で検索したが施設公式・自治体公式とも出ず、貸別荘ポータル・campla 等のみ。",
+  "checkedUrls": [
+   "https://campla.jp/campsite/3062/"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "15111",
+  "name": "天城スカイラインキャンプ場",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "UNMEASURED",
+  "reason": "公式 sky-camp.jp で住所（伊東市池895-81）一致。料金はサイト単位で全て「〜」付き（大島サイト 2000円〜 大人2名 車1台まで 等）、別行の「入場料（大人）1,000円」が加算されるか読めず、1名可の明記もない。本人判断へ。",
+  "checkedUrls": [
+   "https://www.sky-camp.jp/"
+  ],
+  "officialUrl": "https://www.sky-camp.jp/"
+ },
+ {
+  "napId": "15120",
+  "name": "浜名湖カナルオートキャンプ場",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "親が公式 bc-canal.com を curl で取り直して確認。住所「静岡県浜松市中央区村櫛町4607-13」（autocamp ページは旧表記の西区）。「オープンキャンプエリア(6,500㎡・芝生広場)(テント・１張): 2,750円（税込）」「バイクキャンプ(ソロ・テント・１張): 2,200円（税込）」「※1泊プランには別途施設使用料が掛かります。」「施設使用料 大人：1,100円（税込）」。通年・原則月火定休。予約は電話・問い合わせ。公式地図の座標は親が取り直せなかったので使わない。",
+  "checkedUrls": [
+   "http://www.bc-canal.com/autocamp/",
+   "http://www.bc-canal.com/access.html"
+  ],
+  "officialUrl": "http://www.bc-canal.com/autocamp/",
+  "reservationUrl": null,
+  "address": "静岡県浜松市中央区村櫛町4607-13",
+  "priceMin": 3300,
+  "priceMax": 3850,
+  "priceNote": "区画+人数（1張の料金＋施設使用料）。公式「オープンキャンプエリア…(テント・１張): 2,750円（税込）」「バイクキャンプ(ソロ・テント・１張): 2,200円（税込）」＋「施設使用料 大人：1,100円（税込）」→バイク3,300円・オープンエリア3,850円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "http://www.bc-canal.com/autocamp/",
+    "quote": "シャワー: 550円/回（税込）"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "バイクキャンプ(ソロ・テント・１張): 2,200円（税込）"
+ },
+ {
+  "napId": "15670",
+  "name": "Seaside Base ARARI",
+  "pref": "静岡",
+  "muni": "西伊豆町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式 arari-camp.jp はベルテント常設の手ぶら型。各プラン「※2名様以上でのご利用となっております」。持ち込みテントサイトなし。",
+  "checkedUrls": [
+   "https://arari-camp.jp/archives/plan"
+  ],
+  "officialUrl": "https://arari-camp.jp/"
+ },
+ {
+  "napId": "15688",
+  "name": "K`s CAMP 伊豆高原グランピング",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所（伊東市富戸1074-1）一致。エンペラーテント・ドーム等の客室型グランピングで持ち込みテントサイトなし。",
+  "checkedUrls": [
+   "https://www.ks-camp.jp/"
+  ],
+  "officialUrl": "https://www.ks-camp.jp/"
+ },
+ {
+  "napId": "15713",
+  "name": "崎平 YANBY OUTDOOR FIELD",
+  "pref": "静岡",
+  "muni": "川根本町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式なし。川根本町公式のキャンプ場一覧（6施設）・条例にも載っていない。既掲載「接岨YANBY OUTDOOR FIELD」とは別住所。",
+  "checkedUrls": [
+   "https://www.town.kawanehon.shizuoka.jp/soshiki/kankoshoko/faq00/5970.html"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "15727",
+  "name": "マリンベース西伊豆",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "UNMEASURED",
+  "reason": "公式 marinebase-nishiizu.com で住所（伊豆市八木沢1363-2）一致、オートサイト・無料シャワー・薪販売あり。ただし料金が公式ページに無く（予約画面はJS描画）、1名可も不明。本人判断へ。",
+  "checkedUrls": [
+   "https://www.marinebase-nishiizu.com/facility"
+  ],
+  "officialUrl": "https://www.marinebase-nishiizu.com/"
+ },
+ {
+  "napId": "15760",
+  "name": "高原キャンプ場　樹庭夢",
+  "pref": "静岡",
+  "muni": "伊豆の国市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式・伊豆の国市公式とも見つからず、campla・ブログ・予約サイトのみ。",
+  "checkedUrls": [
+   "https://campla.jp/campsite/3056/"
+  ],
+  "officialUrl": null
+ }
+]

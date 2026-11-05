@@ -1,0 +1,83 @@
+[
+ {
+  "napId": "14659",
+  "name": "リバティーリゾート大東温泉",
+  "pref": "静岡",
+  "muni": "掛川市",
+  "verdict": "追加",
+  "reason": "親が公式 daitoonsen.jp/camp.php を curl で取り直して確認。住所「〒437-1413 静岡県掛川市国安2808-2」。フリーサイトキャンプ「サイト利用料（テント１張り） 3,500 円～ 6,000 円 + 入場料 大人 800 円/1名 … + 入湯税 100 円/1名 + ゴミ処理料 100 円/1袋」「ゴミ処理協力金について、1袋分の料金はサイト利用料に含まれています。」。1名利用可の明記は無いが、テント1張り単位＋1名ごとの課金で人数下限の記載もない（里山キャンプ ウッドクリフと同じ扱い）。公式地図は温泉施設の広域表示なので座標は使わない。",
+  "checkedUrls": [
+   "https://daitoonsen.jp/camp.php",
+   "https://daitoonsen.jp/access.php"
+  ],
+  "officialUrl": "https://daitoonsen.jp/camp.php",
+  "reservationUrl": null,
+  "address": "静岡県掛川市国安2808-2",
+  "priceMin": 4400,
+  "priceMax": 6900,
+  "priceNote": "区画+人数。公式「サイト利用料（テント１張り） 3,500 円～ 6,000 円 + 入場料 大人 800 円/1名 … + 入湯税 100 円/1名」→1名1泊 4,400〜6,900円。ゴミ処理料は1袋分がサイト利用料に含まれる。税込/税別の表記なし",
+  "features": {
+   "bath": {
+    "value": true,
+    "evidenceUrl": "https://daitoonsen.jp/camp.php",
+    "quote": "ご宿泊されるお客様は、温浴施設を無料でご利用いただけます。大浴場、露天風呂、寝湯、サウナなど、様々なお風呂で疲れを癒して。"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://daitoonsen.jp/camp.php",
+    "quote": "フリーサイトキャンプ エリアへペットを同伴いただけます。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "テント１張り単位のサイト料金＋大人1名ごとの入場料（人数下限の記載なし）"
+ },
+ {
+  "napId": "14677",
+  "name": "アカオビーチキャンプ【ACAO BEACH CAMP】",
+  "pref": "静岡",
+  "muni": "熱海市",
+  "verdict": "UNMEASURED",
+  "reason": "公式 acao.jp/beach/camping は JS 描画で料金が読めない。プレスリリース（公式ではない）では1日1組限定・14,300円/泊＋施設利用料1,500円/名で、1名でも12,000円超の見込み。本人判断へ。",
+  "checkedUrls": [
+   "https://acao.jp/beach/camping"
+  ],
+  "officialUrl": "https://acao.jp/beach"
+ },
+ {
+  "napId": "14723",
+  "name": "伊豆高原テントリゾート",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "UNMEASURED",
+  "reason": "公式LPはSサイト 8,800円〜、公式予約（489ban）は同じテントサイトが6,500円・直前割ソロ限定3,500円と食い違い、1名総額が確定しない。本人判断へ。",
+  "checkedUrls": [
+   "https://www.tentresort-izu-lp.com/",
+   "https://reserve.489ban.net/client/tentresort-izu/0/plan"
+  ],
+  "officialUrl": "https://tentresort-izu.com/"
+ },
+ {
+  "napId": "14749",
+  "name": "バモサンキャンプサイト",
+  "pref": "静岡",
+  "muni": "南伊豆町",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "公式 vamosuncamp-site.com で住所（南伊豆町一條693）一致。1日1組の貸切だが公式に料金なし、予約はなっぷのウィジェットのみ。",
+  "checkedUrls": [
+   "https://www.vamosuncamp-site.com/"
+  ],
+  "officialUrl": "https://www.vamosuncamp-site.com/"
+ },
+ {
+  "napId": "14797",
+  "name": "ビンタンビンタングリーンヴィレッジ",
+  "pref": "静岡",
+  "muni": "川根本町",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所一致。「コテージとバンガローでの宿泊」のみでテントサイトの記載なし。",
+  "checkedUrls": [
+   "https://bintang.greenvillage.site/"
+  ],
+  "officialUrl": "https://bintang.greenvillage.site/"
+ }
+]

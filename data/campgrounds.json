@@ -21990,5 +21990,351 @@
       "https://www.nap-camp.com/kanagawa/16118"
     ],
     "coordsVerified": false
+  },
+  {
+    "id": "daito-onsen-camp",
+    "slug": "daito-onsen-camp",
+    "name": "リバティーリゾート大東温泉",
+    "prefecture": "静岡",
+    "area": "掛川・大東",
+    "status": "active",
+    "address": "静岡県掛川市国安2808-2",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 4400,
+    "priceMax": 6900,
+    "priceNote": "区画+人数。公式「サイト利用料（テント１張り） 3,500 円～ 6,000 円 + 入場料 大人 800 円/1名 … + 入湯税 100 円/1名」→1名1泊 4,400〜6,900円。ゴミ処理料は1袋分がサイト利用料に含まれる。税込/税別の表記なし",
+    "features": {
+      "reservation": "要",
+      "bath": true,
+      "bathNote": "ご宿泊されるお客様は、温浴施設を無料でご利用いただけます。大浴場、露天風呂、寝湯、サウナなど、様々なお風呂で疲れを癒して。（https://daitoonsen.jp/camp.php）",
+      "pet": true,
+      "petNote": "フリーサイトキャンプ エリアへペットを同伴いただけます。（https://daitoonsen.jp/camp.php）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "掛川市大東の温泉施設に付いたフリーサイト。テント1張り3,500〜6,000円＋入場料800円＋入湯税100円で、**ソロは1泊4,400〜6,900円**。泊まれば**大浴場・露天風呂・サウナが無料**で使えるのが強い。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://daitoonsen.jp/camp.php",
+    "reservationUrl": null,
+    "cautions": [
+      "**直火・焚火は禁止**",
+      "設置場所の指定予約はできない（先着順）",
+      "芝生エリアへの車の乗り入れ不可",
+      "**温泉館の休館日（隔週火曜）は入浴できない**",
+      "1名利用の明記は公式に無い（人数下限の記載もない）。予約時に確認する",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://daitoonsen.jp/camp.php"
+    ]
+  },
+  {
+    "id": "earthcolor-izu",
+    "slug": "earthcolor-izu",
+    "name": "earthcolor",
+    "prefecture": "静岡",
+    "area": "伊豆の国・中",
+    "status": "active",
+    "address": "静岡県伊豆の国市中1606-71",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2000,
+    "priceMax": 2000,
+    "priceNote": "人数課金。公式「大人 お１人 2.000円」。他に料金はかからないと公式FAQ。税込/税別の表記なし",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "販売品 薪・・・１束 600円 炭・・・３ｋｇ 600円 着火剤・・・200円（https://earthcolor-izu.jimdofree.com/キャンプ場料金-案内/）",
+      "pet": true,
+      "petNote": "※ペット可、焚き火可（https://earthcolor-izu.jimdofree.com/）",
+      "reservationNote": "公式が案内する予約先: https://www.nap-camp.com/shizuoka/15087"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "伊豆の国市の山の上にある5サイトだけの小さなキャンプ場。料金は**大人1人2,000円**で、公式は「他にかからない」と明言。**ソロ向けのサイト（おひさま・桜）**がある。ペット可・焚き火可。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://earthcolor-izu.jimdofree.com/",
+    "reservationUrl": "https://www.nap-camp.com/shizuoka/15087",
+    "cautions": [
+      "**管理人不在のときは受付が18時以降か翌日**。入場は14時から自由",
+      "車の乗り入れができるのは5サイト中2サイト（月見の丘・草の広場）だけ",
+      "水場はあるが**お湯は出ない**。シャワーの記載なし",
+      "焚き火は持参した焚き火台で",
+      "ゴミは持ち帰りに協力を求めている",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://earthcolor-izu.jimdofree.com/",
+      "https://www.nap-camp.com/shizuoka/15087"
+    ]
+  },
+  {
+    "id": "hamanako-canal-autocamp",
+    "slug": "hamanako-canal-autocamp",
+    "name": "浜名湖カナルオートキャンプ場",
+    "prefecture": "静岡",
+    "area": "浜名湖・村櫛",
+    "status": "active",
+    "address": "静岡県浜松市中央区村櫛町4607-13",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3300,
+    "priceMax": 3850,
+    "priceNote": "区画+人数（1張の料金＋施設使用料）。公式「オープンキャンプエリア…(テント・１張): 2,750円（税込）」「バイクキャンプ(ソロ・テント・１張): 2,200円（税込）」＋「施設使用料 大人：1,100円（税込）」→バイク3,300円・オープンエリア3,850円",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー: 550円/回（税込）（http://www.bc-canal.com/autocamp/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "浜名湖・村櫛のマリーナ「ボートクラブカナル」の芝生キャンプ場。テント1張2,750円＋施設使用料1,100円で**ソロは1泊3,850円**、**バイクのソロ枠なら3,300円**（いずれも税込）。シャワーは1回550円。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "http://www.bc-canal.com/autocamp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**原則月曜・火曜が定休**",
+      "予約は原則前日18時まで、電話か問い合わせで",
+      "「女子キャン」エリアは女性専用",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "http://www.bc-canal.com/autocamp/"
+    ]
+  },
+  {
+    "id": "ogawa-camp-field",
+    "slug": "ogawa-camp-field",
+    "name": "Ogawa. Camp Field",
+    "prefecture": "静岡",
+    "area": "浜松・天竜 小川",
+    "status": "active",
+    "address": "静岡県浜松市天竜区小川1170-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2000,
+    "priceMax": 2500,
+    "priceNote": "人数課金＋車両料金。公式「大人１名様につき：２,０００円」（テント・タープ設営数を含む）＋「車１台につき：５００円 バイク・自転車１台につき：３００円」→車2,500円・バイク2,300円。連泊は2泊目以降半額（土日祝・大型連休は通常料金）",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー(温水)１回１５分：３００円（https://www.ogawacampfield.com/準備中）",
+      "firewood": true,
+      "firewoodNote": "薪 針葉樹：１束５００円 … 薪 広葉樹：１束７００円（https://www.ogawacampfield.com/準備中）",
+      "pet": true,
+      "petNote": "ペットの入場は可能です。（https://www.ogawacampfield.com/注意事項）",
+      "reservationNote": "公式が案内する予約先: https://www.ogawacampfield.com/予約"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "天竜区の気田川沿い、全面オートフリーサイト約50区画。**大人1人2,000円＋車500円でソロは1泊2,500円**（テント・タープの数は込み）。公式も「ソロキャンプなど幅広く」と案内。温水シャワー300円、薪500円〜。通年営業。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.ogawacampfield.com/",
+    "reservationUrl": "https://www.ogawacampfield.com/予約",
+    "cautions": [
+      "**電波が弱く電話が無い**。連絡・予約は公式のフォームかメール",
+      "2026年8月から車両料金（車500円・バイク300円）が加わった",
+      "連泊は2泊目以降が半額（土日祝・大型連休は通常料金）",
+      "ゴミはすべて持ち帰り",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.ogawacampfield.com/",
+      "https://www.ogawacampfield.com/予約"
+    ]
+  },
+  {
+    "id": "hamanako-park-village",
+    "slug": "hamanako-park-village",
+    "name": "浜名湖パークビレッジ",
+    "prefecture": "静岡",
+    "area": "浜名湖・新居",
+    "status": "active",
+    "address": "静岡県湖西市新居町新居3288-201",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3080,
+    "priceMax": 4880,
+    "priceNote": "区画+人数（フリーサイト＋施設利用料）。公式「表示料金は全て税込み」「施設利用料 … 一般 880」＋「フリーサイト 2,200 3,300 4,000」→1名1泊 3,080〜4,880円",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "温水洗浄便座付き水洗トイレと脱衣室付きのコインシャワーブースが設置されています。（https://hamanako-p-v.com/camp/）",
+      "firewood": true,
+      "firewoodNote": "薪(広葉樹) 880円（https://hamanako-p-v.com/camp/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "浜名湖西岸・新居の公園内キャンプパーク。フリーサイト2,200円（土日祝3,300円）＋施設利用料880円で、**ソロは1泊3,080〜4,880円**（税込）。コインシャワーと温水洗浄便座のトイレがあり、薪も買える。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://hamanako-p-v.com/camp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**フリーサイトはペット同伴不可**（ペットサイトは別料金）",
+      "ハイシーズン（GW・11月の土日祝前日）はフリーサイト4,000円",
+      "予約・空き確認はキャンプパーク直通の電話（9〜17時）",
+      "1名利用の明記は公式に無い（人数下限の記載もない）",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://hamanako-p-v.com/camp/"
+    ]
+  },
+  {
+    "id": "grove-camping-hill",
+    "slug": "grove-camping-hill",
+    "name": "GROVE camping hill",
+    "prefecture": "静岡",
+    "area": "熱海・泉（湯河原）",
+    "status": "active",
+    "address": "静岡県熱海市泉75-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 2000,
+    "priceMax": 3000,
+    "priceNote": "人数課金＋駐車料金。公式「◆宿泊費 大人1名 ￥2,000（高校生以上）」「◆駐車料金 車・バイク1台 ￥1,000 自転車・徒歩 無料」→徒歩・自転車2,000円、車・バイク3,000円。サイト指定はオプション料金。税込/税別の表記なし",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "受付テント 営業時間：10〜16時（夏季期間は10〜15時） 薪や飲用水（ペットボトル）、ガス缶等の消耗品などを販売しております。（https://grove-yugawara.com/information/sites/）",
+      "reservationNote": "公式が案内する予約先: https://grove-yugawara.com/reservation/"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "湯河原の市街地から坂を上ったみかん畑の丘（住所は熱海市泉）。**大人1人2,000円＋車1,000円**（徒歩・自転車は無料）で、みはらしサイトは**主にソロテント向けのフリーサイト**。常設の直火ピットで焚き火ができる。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://grove-yugawara.com/",
+    "reservationUrl": "https://grove-yugawara.com/reservation/",
+    "cautions": [
+      "**営業日が限られる**。公式の営業日カレンダーで確認してから予約する",
+      "トイレは仮設、**飲料水は持参**",
+      "受付テントの営業は10〜16時（夏季は15時まで）",
+      "1段に2〜4張りの相席サイト。段の貸切ではない",
+      "サイト指定は別料金のオプション",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://grove-yugawara.com/",
+      "https://grove-yugawara.com/reservation/"
+    ]
+  },
+  {
+    "id": "solace-no-oka",
+    "slug": "solace-no-oka",
+    "name": "SOLACEの丘",
+    "prefecture": "静岡",
+    "area": "熱海・下多賀",
+    "status": "active",
+    "address": "静岡県熱海市下多賀1492-1",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 6000,
+    "priceMax": 6000,
+    "priceNote": "サイト単位課金（2名まで同額）。公式「テント持参の方推奨サイトです。 料金 6,000円(2名様まで) 3名様以降お1人様追加+3,000円」、FAQ「駐車料金はサイト使用料に含まれています。」。税込/税別の表記なし",
+    "features": {
+      "reservation": "要",
+      "shower": true,
+      "showerNote": "シャワー棟 清潔な シャワー室 シャワー室 2部屋／トイレ 1部屋／洗面 2個 アメニティ：シャンプー／リンス／ボディソープ／ハンドソープ／ドライヤー 1台／スリッパ（https://solace-atami.com/camp/）"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "熱海・下多賀の小さな丘。テント持参向けのサイト1・3は**2名まで6,000円で、1名から使える**（収容1〜4名）。駐車料金込み。シャワー室（アメニティ付き）とバレルサウナがある。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://solace-atami.com/camp/",
+    "reservationUrl": null,
+    "cautions": [
+      "**サイトへの車の乗り入れ不可**",
+      "1人でも2名までの区画料金（6,000円）になる",
+      "サイト2は設営済みテントの手ぶらプラン（別料金）",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://solace-atami.com/camp/"
+    ]
   }
 ]

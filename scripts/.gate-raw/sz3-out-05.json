@@ -1,0 +1,34 @@
+[
+ {
+  "napId": "15087",
+  "name": "earthcolor",
+  "pref": "静岡",
+  "muni": "伊豆の国市",
+  "verdict": "追加",
+  "reason": "親が公式 earthcolor-izu.jimdofree.com を curl で取り直して確認。住所「〒410-2113 静岡県伊豆の国市中1606-71」。料金「大人 お１人 2.000円」、FAQ「料金が安いですが他にかかりませんか？ →なるべくお気軽にお使いいただくために安くしております」。「【おひさまサイト】※ソロサイト… ソロ向けのサイトです」「【桜サイト】※ソロサイト… ソロ向けのサイトです」。予約は公式の「キャンプのご予約はこちら」のリンク先（なっぷ）。",
+  "checkedUrls": [
+   "https://earthcolor-izu.jimdofree.com/",
+   "https://earthcolor-izu.jimdofree.com/キャンプ場料金-案内/"
+  ],
+  "officialUrl": "https://earthcolor-izu.jimdofree.com/",
+  "reservationUrl": "https://www.nap-camp.com/shizuoka/15087",
+  "address": "静岡県伊豆の国市中1606-71",
+  "priceMin": 2000,
+  "priceMax": 2000,
+  "priceNote": "人数課金。公式「大人 お１人 2.000円」。他に料金はかからないと公式FAQ。税込/税別の表記なし",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://earthcolor-izu.jimdofree.com/キャンプ場料金-案内/",
+    "quote": "販売品 薪・・・１束 600円 炭・・・３ｋｇ 600円 着火剤・・・200円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://earthcolor-izu.jimdofree.com/",
+    "quote": "※ペット可、焚き火可"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "【おひさまサイト】※ソロサイト6m×4.5mあります。 ソロ向けのサイトです。"
+ }
+]

@@ -1,0 +1,14 @@
+[
+ {
+  "napId": "16499",
+  "name": "Glamping＆Port 結",
+  "pref": "静岡",
+  "muni": "島田市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所（島田市湯日564）一致。施設側のグランピングテント21棟の宿泊施設で、持ち込みテント泊の記載なし。",
+  "checkedUrls": [
+   "https://www.glamping-shizuoka.com/"
+  ],
+  "officialUrl": "https://www.glamping-shizuoka.com/"
+ }
+]

@@ -1,0 +1,169 @@
+[
+ {
+  "napId": "16614",
+  "name": "フォレストベースきねがやと",
+  "pref": "静岡",
+  "muni": "南伊豆町",
+  "verdict": "門落ち(公式なし)",
+  "reason": "Cue（Manus）調査：施設公式を特定できず、南伊豆町公式にも施設情報なし。",
+  "checkedUrls": [
+   "https://www.town.minamiizu.shizuoka.jp/"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "16619",
+  "name": "城ヶ崎BASE",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "門落ち(単独利用不可)",
+  "reason": "Cue（Manus）調査：公式 jogasakibase.com で住所（伊東市八幡野字磯道1031-40）一致。「万一の際の安全のため、お一人での貸し切りはお断りしています。」",
+  "checkedUrls": [
+   "https://www.jogasakibase.com/"
+  ],
+  "officialUrl": "https://www.jogasakibase.com/"
+ },
+ {
+  "napId": "16634",
+  "name": "MIYAKODA.BBQ.FEILD",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式で住所（浜名区都田町4302-1）と宿泊キャンプを確認。料金は「1グループ(定員10名まで/車2台又はバイク4台含む) 会員:3,000円 (税込) /一般:5,000円 (税込)」だが、持ち込みテント・1名利用の明記なし。本人判断へ。",
+  "checkedUrls": [
+   "https://miyakoda-bbq-field.com/camp/"
+  ],
+  "officialUrl": "https://miyakoda-bbq-field.com/camp/"
+ },
+ {
+  "napId": "16695",
+  "name": "めぐみ荘のキャンプ場",
+  "pref": "静岡",
+  "muni": "南伊豆町",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式で住所（南伊豆町伊浜504-2）とサイト料金（6,600円〜、ドライバー1名含む／大人1人600円）を確認したが、1名利用可と総額の数え方が確定しない。本人判断へ。",
+  "checkedUrls": [
+   "https://megumi-camp.eyado.net/"
+  ],
+  "officialUrl": "https://megumi-camp.eyado.net/"
+ },
+ {
+  "napId": "16741",
+  "name": "atago feels (あたごフィールズ)",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式で住所（天竜区上野948）と宿泊キャンプを確認したが、持ち込みテント可否・1名利用・料金が公式で確定しない。本人判断へ。",
+  "checkedUrls": [
+   "https://atago-feels.com/facility"
+  ],
+  "officialUrl": "https://atago-feels.com/facility"
+ },
+ {
+  "napId": "16758",
+  "name": "ふじやまテラス",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式に「大人 1名 ￥2,500-（環境保全料込）」はあるが、公式で市町村住所と持ち込みテント可を確認できない。本人判断へ。",
+  "checkedUrls": [
+   "https://www.fujiyamaterrace.net/price"
+  ],
+  "officialUrl": "https://www.fujiyamaterrace.net/"
+ },
+ {
+  "napId": "16774",
+  "name": "ロングビーチ御前崎キャンプ場",
+  "pref": "静岡",
+  "muni": "御前崎市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "Cue（Manus）調査：公式で住所（御前崎市御前崎5866-2）一致。料金額の記載がなく、予約はなっぷ。",
+  "checkedUrls": [
+   "https://www.longbeach-camp.com/about",
+   "https://www.longbeach-camp.com/guide"
+  ],
+  "officialUrl": "https://www.longbeach-camp.com/"
+ },
+ {
+  "napId": "16802",
+  "name": "GROVE camping hill",
+  "pref": "静岡",
+  "muni": "熱海市",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が候補に挙げ、親が公式 grove-yugawara.com を curl で取り直して確認。所在地「〒413-0001 静岡県熱海市泉75-1」（湯河原町の市街地から車で3分）。料金「◆宿泊費 大人1名 ￥2,000（高校生以上）… ◆駐車料金 車・バイク1台 ￥1,000 自転車・徒歩 無料」。サイト紹介「みはらしサイトは 全面フリーサイト です。主にソロテント向けで…」。予約は公式の予約ページ。",
+  "checkedUrls": [
+   "https://grove-yugawara.com/access/",
+   "https://grove-yugawara.com/price/",
+   "https://grove-yugawara.com/information/sites/",
+   "https://grove-yugawara.com/reservation/"
+  ],
+  "officialUrl": "https://grove-yugawara.com/",
+  "reservationUrl": "https://grove-yugawara.com/reservation/",
+  "address": "静岡県熱海市泉75-1",
+  "priceMin": 2000,
+  "priceMax": 3000,
+  "priceNote": "人数課金＋駐車料金。公式「◆宿泊費 大人1名 ￥2,000（高校生以上）」「◆駐車料金 車・バイク1台 ￥1,000 自転車・徒歩 無料」→徒歩・自転車2,000円、車・バイク3,000円。サイト指定はオプション料金。税込/税別の表記なし",
+  "features": {
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://grove-yugawara.com/information/sites/",
+    "quote": "受付テント 営業時間：10〜16時（夏季期間は10〜15時） 薪や飲用水（ペットボトル）、ガス缶等の消耗品などを販売しております。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "みはらしサイトは 全面フリーサイト です。主にソロテント向けで、レギュラー・スモールの２種類の横幅のサイトがございます。"
+ },
+ {
+  "napId": "16803",
+  "name": "さくら山キャンプ場",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式で住所（伊豆市土肥2389-2）とオートサイトを確認したが、持ち込みサイトの基本料金と単独利用可否が公式で確定しない（「2名様～」は手ぶらキャンプの条件）。本人判断へ。",
+  "checkedUrls": [
+   "https://www.sakurayama-izu.com/facility",
+   "https://www.sakurayama-izu.com/qa"
+  ],
+  "officialUrl": "https://www.sakurayama-izu.com/"
+ },
+ {
+  "napId": "16874",
+  "name": "ＳＯＬＡＣＥの丘",
+  "pref": "静岡",
+  "muni": "熱海市",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が候補に挙げ、親が公式 solace-atami.com を curl で取り直して確認。住所「〒413-0102 静岡県熱海市下多賀1492-1」。「テントサイト１ テント持参の方推奨サイトです。 料金 6,000円(2名様まで) 3名様以降お1人様追加+3,000円 … 収容人数 1～4名 駐車 有(乗入れ不可)」。FAQ「駐車料金はサイト使用料に含まれています。」",
+  "checkedUrls": [
+   "https://solace-atami.com/camp/",
+   "https://solace-atami.com/faq/"
+  ],
+  "officialUrl": "https://solace-atami.com/camp/",
+  "reservationUrl": null,
+  "address": "静岡県熱海市下多賀1492-1",
+  "priceMin": 6000,
+  "priceMax": 6000,
+  "priceNote": "サイト単位課金（2名まで同額）。公式「テント持参の方推奨サイトです。 料金 6,000円(2名様まで) 3名様以降お1人様追加+3,000円」、FAQ「駐車料金はサイト使用料に含まれています。」。税込/税別の表記なし",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://solace-atami.com/camp/",
+    "quote": "シャワー棟 清潔な シャワー室 シャワー室 2部屋／トイレ 1部屋／洗面 2個 アメニティ：シャンプー／リンス／ボディソープ／ハンドソープ／ドライヤー 1台／スリッパ"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "テントサイト１ … 収容人数 1～4名"
+ },
+ {
+  "napId": "16881",
+  "name": "滝沢キャンプ場",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：管理者公式に「１区画５，０００円」「１区画定員１０名まで」で宿泊可。ただし1名可の明記がなく、管理者公式（北区滝沢町626）と浜松市公式（浜名区滝沢町1208-1）で番地が食い違う。本人判断へ。",
+  "checkedUrls": [
+   "https://miyakoda-bbq-field.com/2026/01/16/",
+   "https://www.city.hamamatsu.shizuoka.jp/"
+  ],
+  "officialUrl": "https://miyakoda-bbq-field.com/"
+ }
+]

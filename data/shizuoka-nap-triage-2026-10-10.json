@@ -1869,9 +1869,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14659",
    "latCandidate": "34.6480107",
    "lngCandidate": "138.0669432",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://daitoonsen.jp/camp.php",
+   "verdict": "追加",
+   "reason": "親が公式 daitoonsen.jp/camp.php を curl で取り直して確認。住所「〒437-1413 静岡県掛川市国安2808-2」。フリーサイトキャンプ「サイト利用料（テント１張り） 3,500 円～ 6,000 円 + 入場料 大人 800 円/1名 … + 入湯税 100 円/1名 + ゴミ処理料 100 円/1袋」「ゴミ処理協力金について、1袋分の料金はサイト利用料に含まれています。」。1名利用可の明記は無いが、テント1張り単位＋1名ごとの課金で人数下限の記載もない（里山キャンプ ウッドクリフと同じ扱い）。公式地図は温泉施設の広域表示なので座標は使わない。"
   },
   {
    "napId": "14677",
@@ -1881,9 +1881,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14677",
    "latCandidate": "35.07991858234611",
    "lngCandidate": "139.07413660289802",
-   "officialUrl": null,
+   "officialUrl": "https://acao.jp/beach",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 acao.jp/beach/camping は JS 描画で料金が読めない。プレスリリース（公式ではない）では1日1組限定・14,300円/泊＋施設利用料1,500円/名で、1名でも12,000円超の見込み。本人判断へ。"
   },
   {
    "napId": "14723",
@@ -1893,9 +1893,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14723",
    "latCandidate": "34.8970333",
    "lngCandidate": "139.0904551",
-   "officialUrl": null,
+   "officialUrl": "https://tentresort-izu.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式LPはSサイト 8,800円〜、公式予約（489ban）は同じテントサイトが6,500円・直前割ソロ限定3,500円と食い違い、1名総額が確定しない。本人判断へ。"
   },
   {
    "napId": "14749",
@@ -1905,9 +1905,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14749",
    "latCandidate": "34.69043829272905",
    "lngCandidate": "138.8770556230316",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.vamosuncamp-site.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "公式 vamosuncamp-site.com で住所（南伊豆町一條693）一致。1日1組の貸切だが公式に料金なし、予約はなっぷのウィジェットのみ。"
   },
   {
    "napId": "14791",
@@ -1929,9 +1929,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14797",
    "latCandidate": "35.1185729",
    "lngCandidate": "138.1200592",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://bintang.greenvillage.site/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所一致。「コテージとバンガローでの宿泊」のみでテントサイトの記載なし。"
   },
   {
    "napId": "14806",
@@ -2133,9 +2133,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15087",
    "latCandidate": "35.0452533",
    "lngCandidate": "138.9935511",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://earthcolor-izu.jimdofree.com/",
+   "verdict": "追加",
+   "reason": "親が公式 earthcolor-izu.jimdofree.com を curl で取り直して確認。住所「〒410-2113 静岡県伊豆の国市中1606-71」。料金「大人 お１人 2.000円」、FAQ「料金が安いですが他にかかりませんか？ →なるべくお気軽にお使いいただくために安くしております」。「【おひさまサイト】※ソロサイト… ソロ向けのサイトです」「【桜サイト】※ソロサイト… ソロ向けのサイトです」。予約は公式の「キャンプのご予約はこちら」のリンク先（なっぷ）。"
   },
   {
    "napId": "15107",
@@ -2145,9 +2145,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15107",
    "latCandidate": "34.71211306282309",
    "lngCandidate": "138.2126668691635",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://katasho.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式 katasho.jp は旧小学校の校舎に泊まる施設。「宿泊可能グループは各棟1グループです」「最低利用金額は…平日オフシーズンは42,000円(大人5名分)」。持ち込みテントサイトなし（公式所在地は片浜1216-1）。"
   },
   {
    "napId": "15108",
@@ -2158,8 +2158,8 @@
    "latCandidate": "34.97702852142806",
    "lngCandidate": "138.8750454888855",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "4通りの語で検索したが施設公式・自治体公式とも出ず、貸別荘ポータル・campla 等のみ。"
   },
   {
    "napId": "15111",
@@ -2169,9 +2169,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15111",
    "latCandidate": "34.88988906947536",
    "lngCandidate": "139.0447429952759",
-   "officialUrl": null,
+   "officialUrl": "https://www.sky-camp.jp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 sky-camp.jp で住所（伊東市池895-81）一致。料金はサイト単位で全て「〜」付き（大島サイト 2000円〜 大人2名 車1台まで 等）、別行の「入場料（大人）1,000円」が加算されるか読めず、1名可の明記もない。本人判断へ。"
   },
   {
    "napId": "15120",
@@ -2181,9 +2181,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15120",
    "latCandidate": "34.7229219",
    "lngCandidate": "137.6024169",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "http://www.bc-canal.com/autocamp/",
+   "verdict": "追加",
+   "reason": "親が公式 bc-canal.com を curl で取り直して確認。住所「静岡県浜松市中央区村櫛町4607-13」（autocamp ページは旧表記の西区）。「オープンキャンプエリア(6,500㎡・芝生広場)(テント・１張): 2,750円（税込）」「バイクキャンプ(ソロ・テント・１張): 2,200円（税込）」「※1泊プランには別途施設使用料が掛かります。」「施設使用料 大人：1,100円（税込）」。通年・原則月火定休。予約は電話・問い合わせ。公式地図の座標は親が取り直せなかったので使わない。"
   },
   {
    "napId": "15655",
@@ -2205,9 +2205,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15670",
    "latCandidate": "34.828143368972924",
    "lngCandidate": "138.76251985968017",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://arari-camp.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式 arari-camp.jp はベルテント常設の手ぶら型。各プラン「※2名様以上でのご利用となっております」。持ち込みテントサイトなし。"
   },
   {
    "napId": "15688",
@@ -2217,9 +2217,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15688",
    "latCandidate": "34.90851542962576",
    "lngCandidate": "139.1258451666565",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.ks-camp.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（伊東市富戸1074-1）一致。エンペラーテント・ドーム等の客室型グランピングで持ち込みテントサイトなし。"
   },
   {
    "napId": "15713",
@@ -2230,8 +2230,8 @@
    "latCandidate": "35.09510135504509",
    "lngCandidate": "138.12786028936313",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式なし。川根本町公式のキャンプ場一覧（6施設）・条例にも載っていない。既掲載「接岨YANBY OUTDOOR FIELD」とは別住所。"
   },
   {
    "napId": "15727",
@@ -2241,9 +2241,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15727",
    "latCandidate": "34.8949439",
    "lngCandidate": "138.7723038",
-   "officialUrl": null,
+   "officialUrl": "https://www.marinebase-nishiizu.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 marinebase-nishiizu.com で住所（伊豆市八木沢1363-2）一致、オートサイト・無料シャワー・薪販売あり。ただし料金が公式ページに無く（予約画面はJS描画）、1名可も不明。本人判断へ。"
   },
   {
    "napId": "15760",
@@ -2254,8 +2254,8 @@
    "latCandidate": "35.0451184",
    "lngCandidate": "138.9918172",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "施設公式・伊豆の国市公式とも見つからず、campla・ブログ・予約サイトのみ。"
   },
   {
    "napId": "15761",
@@ -2313,9 +2313,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15823",
    "latCandidate": "35.06810338277015",
    "lngCandidate": "138.24683323100595",
-   "officialUrl": null,
+   "officialUrl": "https://ohkawahouseunion.wixsite.com/ohkawa",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "運営者（大川企業組合）の公式Wixサイトで住所（静岡市葵区坂ノ上）一致。宿泊プラン「■1区画 5,000円（お車1台分の駐車場料金を含む）」、トップ「ソロキャンも、ファミキャン、貸し切りで大規模キャンプも可能です。」。ただし持ち込みテント泊と読める原文がなく、宿泊プランのチェックイン8時・アウト18時・営業時間7:00〜18:00で泊まれるか確定しない。JS描画のため原文は WebFetch 経由。本人判断へ。"
   },
   {
    "napId": "15826",
@@ -2409,9 +2409,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16070",
    "latCandidate": "35.22548",
    "lngCandidate": "138.5901373",
-   "officialUrl": null,
+   "officialUrl": "https://katsura-no-mori.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式で住所（富士宮市大中里1884-5）一致、ソロプランあり。ただし料金は「ソロプラン 5,500円～」のみで上限が公式に無く、詳細は予約サイト。本人判断へ。"
   },
   {
    "napId": "16115",
@@ -2421,9 +2421,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16115",
    "latCandidate": "35.1818831",
    "lngCandidate": "138.9361158",
-   "officialUrl": null,
+   "officialUrl": "https://www.feelcamp.site/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式 feelcamp.site は JS 描画で料金・住所が読めない。本人判断（ブラウザでの確認）へ。"
   },
   {
    "napId": "16144",
@@ -2433,9 +2433,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16144",
    "latCandidate": "35.0108196069886",
    "lngCandidate": "138.93948494007265",
-   "officialUrl": null,
+   "officialUrl": "https://kanogawakamishima.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式で住所（伊豆の国市神島141-4）一致、キャンププラン（1区画6名まで）あり。料金はHTMLコメント混在で読みが確定せず、1名可の記載もない。本人判断へ。"
   },
   {
    "napId": "16145",
@@ -2445,9 +2445,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16145",
    "latCandidate": "34.9460084",
    "lngCandidate": "137.8633124",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.ogawacampfield.com/",
+   "verdict": "追加",
+   "reason": "親が公式 ogawacampfield.com を curl で取り直して確認。アクセス「【住所】 〒431-3752 静岡県浜松市天竜区小川1170-1 … 【営業期間】 通年営業」。料金「大人１名様につき：２,０００円 … 車１台につき：５００円 バイク・自転車１台につき：３００円 ※２０２６年８月より車両料金が追加」（テント・タープ設営数を含む）。キャンプ場について「ファミリーキャンプやソロキャンプなど幅広く楽しめるキャンプ場です」。予約は公式の予約フォーム。"
   },
   {
    "napId": "16146",
@@ -2457,9 +2457,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16146",
    "latCandidate": "34.68221665582726",
    "lngCandidate": "137.58688068389893",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://hamanako-p-v.com/camp/",
+   "verdict": "追加",
+   "reason": "親が公式 hamanako-p-v.com を curl で取り直して確認。アクセス「〒431-0302 静岡県湖西市新居町新居3288-201」（台帳の3228-201は番地違い。市・字は一致）。料金「表示料金は全て税込み」「施設利用料 … 一般 880」「宿泊サイト利用料 … フリーサイト 2,200 3,300 4,000」（平日／土日祝・各前日／ハイシーズン）。フリーサイト「35区画(1区画テント1張り/6人まで)」。1名可の明記はないが人数下限の記載なし。予約は電話（キャンプパーク直通）。公式地図のピンは駐車場なので座標は使わない。"
   },
   {
    "napId": "16158",
@@ -2469,9 +2469,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16158",
    "latCandidate": "34.79071766984401",
    "lngCandidate": "138.80829093313523",
-   "officialUrl": null,
+   "officialUrl": "https://izuglam385.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式で住所（西伊豆町一色385）一致。キャンプサイト4区画はあるが、持ち込みテント可否・1名可・料金が静的ページから取れない（空室カレンダーはJS）。本人判断へ。"
   },
   {
    "napId": "16178",
@@ -2481,9 +2481,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16178",
    "latCandidate": "34.8881209",
    "lngCandidate": "137.8827999",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://sugari.camp/",
+   "verdict": "門落ち(既存レコードと重複)",
+   "reason": "既掲載「キャンプすがり（天竜区横川741-2）」と住所一致。"
   },
   {
    "napId": "16180",
@@ -2697,9 +2697,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16499",
    "latCandidate": "34.80618899201232",
    "lngCandidate": "138.17900226728528",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.glamping-shizuoka.com/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（島田市湯日564）一致。施設側のグランピングテント21棟の宿泊施設で、持ち込みテント泊の記載なし。"
   },
   {
    "napId": "16506",
@@ -2770,8 +2770,8 @@
    "latCandidate": "34.65552930336165",
    "lngCandidate": "138.88163443544315",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "Cue（Manus）調査：施設公式を特定できず、南伊豆町公式にも施設情報なし。"
   },
   {
    "napId": "16619",
@@ -2781,9 +2781,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16619",
    "latCandidate": "34.88318208646219",
    "lngCandidate": "139.12574050388793",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.jogasakibase.com/",
+   "verdict": "門落ち(単独利用不可)",
+   "reason": "Cue（Manus）調査：公式 jogasakibase.com で住所（伊東市八幡野字磯道1031-40）一致。「万一の際の安全のため、お一人での貸し切りはお断りしています。」"
   },
   {
    "napId": "16634",
@@ -2793,9 +2793,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16634",
    "latCandidate": "34.839849742884866",
    "lngCandidate": "137.7301706",
-   "officialUrl": null,
+   "officialUrl": "https://miyakoda-bbq-field.com/camp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式で住所（浜名区都田町4302-1）と宿泊キャンプを確認。料金は「1グループ(定員10名まで/車2台又はバイク4台含む) 会員:3,000円 (税込) /一般:5,000円 (税込)」だが、持ち込みテント・1名利用の明記なし。本人判断へ。"
   },
   {
    "napId": "16695",
@@ -2805,9 +2805,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16695",
    "latCandidate": "34.68489223679195",
    "lngCandidate": "138.7683863356125",
-   "officialUrl": null,
+   "officialUrl": "https://megumi-camp.eyado.net/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式で住所（南伊豆町伊浜504-2）とサイト料金（6,600円〜、ドライバー1名含む／大人1人600円）を確認したが、1名利用可と総額の数え方が確定しない。本人判断へ。"
   },
   {
    "napId": "16741",
@@ -2817,9 +2817,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16741",
    "latCandidate": "34.889983",
    "lngCandidate": "137.7809553",
-   "officialUrl": null,
+   "officialUrl": "https://atago-feels.com/facility",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式で住所（天竜区上野948）と宿泊キャンプを確認したが、持ち込みテント可否・1名利用・料金が公式で確定しない。本人判断へ。"
   },
   {
    "napId": "16758",
@@ -2829,9 +2829,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16758",
    "latCandidate": "35.35114671348322",
    "lngCandidate": "138.60103359926146",
-   "officialUrl": null,
+   "officialUrl": "https://www.fujiyamaterrace.net/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式に「大人 1名 ￥2,500-（環境保全料込）」はあるが、公式で市町村住所と持ち込みテント可を確認できない。本人判断へ。"
   },
   {
    "napId": "16774",
@@ -2841,9 +2841,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16774",
    "latCandidate": "34.6015826",
    "lngCandidate": "138.2055613",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.longbeach-camp.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "Cue（Manus）調査：公式で住所（御前崎市御前崎5866-2）一致。料金額の記載がなく、予約はなっぷ。"
   },
   {
    "napId": "16802",
@@ -2853,9 +2853,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16802",
    "latCandidate": "35.13554168644365",
    "lngCandidate": "139.09195823125765",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://grove-yugawara.com/",
+   "verdict": "追加",
+   "reason": "Cue（Manus）が候補に挙げ、親が公式 grove-yugawara.com を curl で取り直して確認。所在地「〒413-0001 静岡県熱海市泉75-1」（湯河原町の市街地から車で3分）。料金「◆宿泊費 大人1名 ￥2,000（高校生以上）… ◆駐車料金 車・バイク1台 ￥1,000 自転車・徒歩 無料」。サイト紹介「みはらしサイトは 全面フリーサイト です。主にソロテント向けで…」。予約は公式の予約ページ。"
   },
   {
    "napId": "16803",
@@ -2865,9 +2865,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16803",
    "latCandidate": "34.91557956608621",
    "lngCandidate": "138.8091155997013",
-   "officialUrl": null,
+   "officialUrl": "https://www.sakurayama-izu.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式で住所（伊豆市土肥2389-2）とオートサイトを確認したが、持ち込みサイトの基本料金と単独利用可否が公式で確定しない（「2名様～」は手ぶらキャンプの条件）。本人判断へ。"
   },
   {
    "napId": "16807",
@@ -2901,9 +2901,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16874",
    "latCandidate": "35.0530755",
    "lngCandidate": "139.0629966",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://solace-atami.com/camp/",
+   "verdict": "追加",
+   "reason": "Cue（Manus）が候補に挙げ、親が公式 solace-atami.com を curl で取り直して確認。住所「〒413-0102 静岡県熱海市下多賀1492-1」。「テントサイト１ テント持参の方推奨サイトです。 料金 6,000円(2名様まで) 3名様以降お1人様追加+3,000円 … 収容人数 1～4名 駐車 有(乗入れ不可)」。FAQ「駐車料金はサイト使用料に含まれています。」"
   },
   {
    "napId": "16881",
@@ -2913,24 +2913,24 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16881",
    "latCandidate": "34.84920834451818",
    "lngCandidate": "137.7313416844086",
-   "officialUrl": null,
+   "officialUrl": "https://miyakoda-bbq-field.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：管理者公式に「１区画５，０００円」「１区画定員１０名まで」で宿泊可。ただし1名可の明記がなく、管理者公式（北区滝沢町626）と浜松市公式（浜名区滝沢町1208-1）で番地が食い違う。本人判断へ。"
   }
  ],
  "progress": {
   "asOf": "2026-11-05",
   "門の対象": 224,
   "内訳": {
-   "追加": 54,
+   "追加": 61,
    "閉鎖疑い": 21,
-   "門落ち(公式なし)": 36,
-   "門落ち(料金も予約も公式に無し)": 10,
-   "宿泊系のため対象外": 11,
-   "門落ち(単独利用不可)": 2,
-   "門落ち(既存レコードと重複)": 6,
+   "門落ち(公式なし)": 40,
+   "門落ち(料金も予約も公式に無し)": 12,
+   "宿泊系のため対象外": 16,
+   "門落ち(単独利用不可)": 3,
+   "門落ち(既存レコードと重複)": 7,
    "門落ち(宿泊不可)": 1,
-   "UNMEASURED": 101
+   "UNMEASURED": 81
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }

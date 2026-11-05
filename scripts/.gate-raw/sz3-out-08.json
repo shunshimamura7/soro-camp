@@ -1,0 +1,133 @@
+[
+ {
+  "napId": "16145",
+  "name": "Ogawa. Camp Field",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "追加",
+  "reason": "親が公式 ogawacampfield.com を curl で取り直して確認。アクセス「【住所】 〒431-3752 静岡県浜松市天竜区小川1170-1 … 【営業期間】 通年営業」。料金「大人１名様につき：２,０００円 … 車１台につき：５００円 バイク・自転車１台につき：３００円 ※２０２６年８月より車両料金が追加」（テント・タープ設営数を含む）。キャンプ場について「ファミリーキャンプやソロキャンプなど幅広く楽しめるキャンプ場です」。予約は公式の予約フォーム。",
+  "checkedUrls": [
+   "https://www.ogawacampfield.com/アクセス",
+   "https://www.ogawacampfield.com/about-3",
+   "https://www.ogawacampfield.com/準備中",
+   "https://www.ogawacampfield.com/注意事項"
+  ],
+  "officialUrl": "https://www.ogawacampfield.com/",
+  "reservationUrl": "https://www.ogawacampfield.com/予約",
+  "address": "静岡県浜松市天竜区小川1170-1",
+  "priceMin": 2000,
+  "priceMax": 2500,
+  "priceNote": "人数課金＋車両料金。公式「大人１名様につき：２,０００円」（テント・タープ設営数を含む）＋「車１台につき：５００円 バイク・自転車１台につき：３００円」→車2,500円・バイク2,300円。連泊は2泊目以降半額（土日祝・大型連休は通常料金）",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawacampfield.com/準備中",
+    "quote": "シャワー(温水)１回１５分：３００円"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawacampfield.com/準備中",
+    "quote": "薪 針葉樹：１束５００円 … 薪 広葉樹：１束７００円"
+   },
+   "pet": {
+    "value": true,
+    "evidenceUrl": "https://www.ogawacampfield.com/注意事項",
+    "quote": "ペットの入場は可能です。"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "ファミリーキャンプやソロキャンプなど幅広く楽しめるキャンプ場です。"
+ },
+ {
+  "napId": "16146",
+  "name": "浜名湖パークビレッジ",
+  "pref": "静岡",
+  "muni": "湖西市",
+  "verdict": "追加",
+  "reason": "親が公式 hamanako-p-v.com を curl で取り直して確認。アクセス「〒431-0302 静岡県湖西市新居町新居3288-201」（台帳の3228-201は番地違い。市・字は一致）。料金「表示料金は全て税込み」「施設利用料 … 一般 880」「宿泊サイト利用料 … フリーサイト 2,200 3,300 4,000」（平日／土日祝・各前日／ハイシーズン）。フリーサイト「35区画(1区画テント1張り/6人まで)」。1名可の明記はないが人数下限の記載なし。予約は電話（キャンプパーク直通）。公式地図のピンは駐車場なので座標は使わない。",
+  "checkedUrls": [
+   "https://hamanako-p-v.com/access/",
+   "https://hamanako-p-v.com/camp/"
+  ],
+  "officialUrl": "https://hamanako-p-v.com/camp/",
+  "reservationUrl": null,
+  "address": "静岡県湖西市新居町新居3288-201",
+  "priceMin": 3080,
+  "priceMax": 4880,
+  "priceNote": "区画+人数（フリーサイト＋施設利用料）。公式「表示料金は全て税込み」「施設利用料 … 一般 880」＋「フリーサイト 2,200 3,300 4,000」→1名1泊 3,080〜4,880円",
+  "features": {
+   "shower": {
+    "value": true,
+    "evidenceUrl": "https://hamanako-p-v.com/camp/",
+    "quote": "温水洗浄便座付き水洗トイレと脱衣室付きのコインシャワーブースが設置されています。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://hamanako-p-v.com/camp/",
+    "quote": "薪(広葉樹) 880円"
+   }
+  },
+  "coordsFromOfficialMap": null,
+  "soloNote": "フリーサイト 区画 35区画(1区画テント1張り/6人まで)（人数下限の記載なし）"
+ },
+ {
+  "napId": "16178",
+  "name": "キャンプすがり1",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "門落ち(既存レコードと重複)",
+  "reason": "既掲載「キャンプすがり（天竜区横川741-2）」と住所一致。",
+  "checkedUrls": [
+   "https://sugari.camp/"
+  ],
+  "officialUrl": "https://sugari.camp/"
+ },
+ {
+  "napId": "16115",
+  "name": "キャンプ場フィール",
+  "pref": "静岡",
+  "muni": "裾野市",
+  "verdict": "UNMEASURED",
+  "reason": "公式 feelcamp.site は JS 描画で料金・住所が読めない。本人判断（ブラウザでの確認）へ。",
+  "checkedUrls": [
+   "https://www.feelcamp.site/"
+  ],
+  "officialUrl": "https://www.feelcamp.site/"
+ },
+ {
+  "napId": "16070",
+  "name": "富士山と夜景のキャンプ場　桂の森CAMPERSFIELD",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "UNMEASURED",
+  "reason": "公式で住所（富士宮市大中里1884-5）一致、ソロプランあり。ただし料金は「ソロプラン 5,500円～」のみで上限が公式に無く、詳細は予約サイト。本人判断へ。",
+  "checkedUrls": [
+   "https://katsura-no-mori.com/siteinfo/"
+  ],
+  "officialUrl": "https://katsura-no-mori.com/"
+ },
+ {
+  "napId": "16144",
+  "name": "川の駅　伊豆城山",
+  "pref": "静岡",
+  "muni": "伊豆の国市",
+  "verdict": "UNMEASURED",
+  "reason": "公式で住所（伊豆の国市神島141-4）一致、キャンププラン（1区画6名まで）あり。料金はHTMLコメント混在で読みが確定せず、1名可の記載もない。本人判断へ。",
+  "checkedUrls": [
+   "https://kanogawakamishima.com/bbq-camp/"
+  ],
+  "officialUrl": "https://kanogawakamishima.com/"
+ },
+ {
+  "napId": "16158",
+  "name": "伊豆グランピングリゾートIshiki385",
+  "pref": "静岡",
+  "muni": "西伊豆町",
+  "verdict": "UNMEASURED",
+  "reason": "公式で住所（西伊豆町一色385）一致。キャンプサイト4区画はあるが、持ち込みテント可否・1名可・料金が静的ページから取れない（空室カレンダーはJS）。本人判断へ。",
+  "checkedUrls": [
+   "https://izuglam385.com/room-type/camp-site/"
+  ],
+  "officialUrl": "https://izuglam385.com/"
+ }
+]

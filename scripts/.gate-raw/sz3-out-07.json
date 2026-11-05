@@ -1,0 +1,15 @@
+[
+ {
+  "napId": "15823",
+  "name": "大川オートキャンプ場",
+  "pref": "静岡",
+  "muni": "静岡市",
+  "verdict": "UNMEASURED",
+  "reason": "運営者（大川企業組合）の公式Wixサイトで住所（静岡市葵区坂ノ上）一致。宿泊プラン「■1区画 5,000円（お車1台分の駐車場料金を含む）」、トップ「ソロキャンも、ファミキャン、貸し切りで大規模キャンプも可能です。」。ただし持ち込みテント泊と読める原文がなく、宿泊プランのチェックイン8時・アウト18時・営業時間7:00〜18:00で泊まれるか確定しない。JS描画のため原文は WebFetch 経由。本人判断へ。",
+  "checkedUrls": [
+   "https://ohkawahouseunion.wixsite.com/ohkawa",
+   "https://ohkawahouseunion.wixsite.com/ohkawa/blank-7"
+  ],
+  "officialUrl": "https://ohkawahouseunion.wixsite.com/ohkawa"
+ }
+]
