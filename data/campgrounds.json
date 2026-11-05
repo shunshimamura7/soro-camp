@@ -22585,5 +22585,53 @@
       "https://inishiemori.com/tetsudou-mori-camp/"
     ],
     "coordsVerified": false
+  },
+  {
+    "id": "garage-secret-base",
+    "slug": "garage-secret-base",
+    "name": "GARAGE Secret Base",
+    "prefecture": "静岡",
+    "area": "長泉・元長窪",
+    "status": "active",
+    "address": "静岡県駿東郡長泉町元長窪566-5",
+    "type": "campground",
+    "lat": 0,
+    "lng": 0,
+    "needsCoord": true,
+    "priceMin": 3300,
+    "priceMax": 5500,
+    "priceNote": "サイト単位課金（2名まで同額）。公式「G サイト 『ソロ・デュオ推奨サイト』 通年料金 ：3,300円」（車不可・バイク/自転車のみ）、「B サイト 『ソロ,デュオ推奨サイト』 基本料金 ：5,500円」（車可）。どちらも「※シーズンによって異なる場合がございます」。当日現金払いのみ",
+    "features": {
+      "reservation": "要",
+      "reservationNote": "公式が案内する予約先: https://www.garage-secret-base.com/camp-booking"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "長泉町の山あいにある小さなキャンプ場。**バイク・自転車で来るソロならG・Hサイトが3,300円**、車なら「ソロ・デュオ推奨」のB・Eサイトが5,500円（どちらも2名まで同額）。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://www.garage-secret-base.com/",
+    "reservationUrl": "https://www.garage-secret-base.com/camp-booking",
+    "cautions": [
+      "**G・Hサイトは車の駐車不可**（バイク・自転車のみ横付け可）",
+      "料金は「シーズンによって異なる場合がございます」と公式に注記",
+      "**支払いは当日現金のみ**",
+      "当日予約は原則不可（希望時は電話で相談）",
+      "大型テント・大型スクリーンテントは張れない場合がある",
+      "**座標が未取得。**地図にピンを出していない"
+    ],
+    "source": [
+      "https://www.garage-secret-base.com/",
+      "https://www.garage-secret-base.com/camp-booking"
+    ]
   }
 ]

@@ -8253,5 +8253,27 @@
   "soloNote": "■Sサイト (ソロキャンプ用） 定員２名様まで",
   "napUrl": "https://www.nap-camp.com/shizuoka/14021",
   "napName": "いにしえの杜　鉄橋の杜キャンプ場"
+ },
+ {
+  "napId": "15847",
+  "name": "GARAGE Secret Base",
+  "pref": "静岡",
+  "muni": "長泉町",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が挙げ、親が公式 garage-secret-base.com を curl で取り直して確認。住所「〒410-0001 静岡県駿東郡長泉町 元長窪字芹沢566番5」。「G サイト 『ソロ・デュオ推奨サイト』 ≪サイト利用料≫ 通年料金 ：3,300円 …（車、駐車不可サイト。バイク,自転車のみ横付け可能）」「B サイト 『ソロ,デュオ推奨サイト』 … 基本料金 ：5,500円 ※グループ人数2名様までご利用可能。」いずれも「※シーズンによって異なる場合がございます。」予約は公式ページ。",
+  "checkedUrls": [
+   "https://www.garage-secret-base.com/camp-booking"
+  ],
+  "officialUrl": "https://www.garage-secret-base.com/",
+  "reservationUrl": "https://www.garage-secret-base.com/camp-booking",
+  "address": "静岡県駿東郡長泉町元長窪566-5",
+  "priceMin": 3300,
+  "priceMax": 5500,
+  "priceNote": "サイト単位課金（2名まで同額）。公式「G サイト 『ソロ・デュオ推奨サイト』 通年料金 ：3,300円」（車不可・バイク/自転車のみ）、「B サイト 『ソロ,デュオ推奨サイト』 基本料金 ：5,500円」（車可）。どちらも「※シーズンによって異なる場合がございます」。当日現金払いのみ",
+  "features": {},
+  "coordsFromOfficialMap": null,
+  "soloNote": "G サイト 『ソロ・デュオ推奨サイト』 通年料金 ：3,300円",
+  "napUrl": "https://www.nap-camp.com/shizuoka/15847",
+  "napName": "GARAGE Secret Base"
  }
 ]

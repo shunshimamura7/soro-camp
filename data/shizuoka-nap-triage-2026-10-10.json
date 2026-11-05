@@ -1689,9 +1689,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14271",
    "latCandidate": "34.90827012649506",
    "lngCandidate": "139.09733452446744",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://id-village.jp/glamping/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "Cue（Manus）調査：公式 id-village.jp で住所（富戸1317-584）一致。設置済みドームテント等の宿泊のみ（大人1名19,000円〜）で持ち込みテントサイトなし。"
   },
   {
    "napId": "14289",
@@ -1701,9 +1701,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/14289",
    "latCandidate": "34.936365019655284",
    "lngCandidate": "138.1852390085289",
-   "officialUrl": null,
+   "officialUrl": "https://suishamura.com/lodging/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 suishamura.com に「テントを持ち込んで、自由にお過ごしください。」「1泊 ¥20,000」「定員10名様」。1名でも20,000円の貸切と読め12,000円超、1名可の明記もない。本人判断へ。"
   },
   {
    "napId": "14302",
@@ -2193,9 +2193,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15655",
    "latCandidate": "34.72846587426017",
    "lngCandidate": "138.22568493981169",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://shizunami-resort.jp/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "Cue（Manus）調査：公式 shizunami-resort.jp で住所一致・キャンプ案内あり。料金・持ち込み可否・1名利用の掲載なく、予約は第三者サイト。"
   },
   {
    "napId": "15670",
@@ -2265,9 +2265,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15761",
    "latCandidate": "34.74893670094234",
    "lngCandidate": "139.00208121538162",
-   "officialUrl": null,
+   "officialUrl": "https://www.bluemoonterrace.jp/autocamp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 bluemoonterrace.jp/autocamp で住所（河津町見高2）一致。「施設利用料：500円/1人」「区画利用料：3,000円/1区画」だが、泊数単位か・持ち込みテント可・1名可が確定しない。本人判断へ。"
   },
   {
    "napId": "15767",
@@ -2289,9 +2289,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15768",
    "latCandidate": "34.923462559619836",
    "lngCandidate": "138.98580288887018",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://himenoyumother.com/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "Cue（Manus）調査：公式 himenoyumother.com に「ソロキャンプを主体とした…キャンプのできるサービス」とあるが、宿泊の料金・条件・予約案内が公式に無い。"
   },
   {
    "napId": "15816",
@@ -2337,9 +2337,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15847",
    "latCandidate": "35.14493614304708",
    "lngCandidate": "138.8713963484711",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.garage-secret-base.com/",
+   "verdict": "追加",
+   "reason": "Cue（Manus）が挙げ、親が公式 garage-secret-base.com を curl で取り直して確認。住所「〒410-0001 静岡県駿東郡長泉町 元長窪字芹沢566番5」。「G サイト 『ソロ・デュオ推奨サイト』 ≪サイト利用料≫ 通年料金 ：3,300円 …（車、駐車不可サイト。バイク,自転車のみ横付け可能）」「B サイト 『ソロ,デュオ推奨サイト』 … 基本料金 ：5,500円 ※グループ人数2名様までご利用可能。」いずれも「※シーズンによって異なる場合がございます。」予約は公式ページ。"
   },
   {
    "napId": "15882",
@@ -2361,9 +2361,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15909",
    "latCandidate": "35.3573484",
    "lngCandidate": "138.5920163",
-   "officialUrl": null,
+   "officialUrl": "https://maple.hp.peraichi.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 maple.hp.peraichi.com で住所（人穴136-4）一致。料金は「4人 平日10,000円」「8人 平日15,000円」のグループ料金のみで、1名可・1名料金が無い。本人判断へ。"
   },
   {
    "napId": "15917",
@@ -2373,9 +2373,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/15917",
    "latCandidate": "34.9830783",
    "lngCandidate": "138.2507445",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.city.fujieda.shizuoka.jp/soshiki/_shisetsu/1445918365744.html",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "Cue（Manus）調査：藤枝市公式で施設名・住所（岡部町玉取1452）は一致するが、持ち込みテント宿泊・料金・予約方法の根拠が公式に無い。"
   },
   {
    "napId": "16032",
@@ -2397,9 +2397,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16061",
    "latCandidate": "35.2179438",
    "lngCandidate": "138.7025481",
-   "officialUrl": null,
+   "officialUrl": "https://fujimicamp.jp/camp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 fujimicamp.jp で住所（富士市大淵1297）一致。「ソロ料金 5,000円/泊〜」「※週末や連休などにより料金が変動いたします。」で上限が公式に無い。本人判断へ（下限だけで載せるかの判断）。"
   },
   {
    "napId": "16070",
@@ -2493,9 +2493,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16180",
    "latCandidate": "34.9369118",
    "lngCandidate": "137.7692134",
-   "officialUrl": null,
+   "officialUrl": "https://ateranomori.com/76280/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式 ateranomori.com で住所（天竜区阿寺429-4）・テントサイト・予約方法を確認。料金表に金額がない（「全サイト 同額料金になります。」のみ）。本人判断へ。"
   },
   {
    "napId": "16181",
@@ -2505,9 +2505,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16181",
    "latCandidate": "35.2185754",
    "lngCandidate": "138.6606109",
-   "officialUrl": null,
+   "officialUrl": "https://www.instagram.com/p/C2HXQVNSwa9/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式はInstagramのみ。RVパークの案内で「1人 5000(税込)から」「タープok」はあるが、持ち込みテント泊の可否が不明。本人判断へ。"
   },
   {
    "napId": "16195",
@@ -2517,9 +2517,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16195",
    "latCandidate": "35.37847710549912",
    "lngCandidate": "138.59729474973756",
-   "officialUrl": null,
+   "officialUrl": "https://www.instagram.com/tree_line_chillax_field/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：運営公式は Instagram のみ。「施設使用料＆宿泊料で…2025年1月の予約からは3,000円に変更」「ソロ利用の場合も、大人（中学生以上）4,000円となります。」（年末年始プラン）とソロ料金・テント区画を案内。**公式がSNSだけの施設を施設公式とみなすか**は本人判断。"
   },
   {
    "napId": "16198",
@@ -2649,9 +2649,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16393",
    "latCandidate": null,
    "lngCandidate": null,
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.instagram.com/lodge_sora_/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "Cue（Manus）調査：公式Instagramで「1日1組限定の貸切ロッジ」。持ち込みテントサイトの記載なし。"
   },
   {
    "napId": "16431",
@@ -2661,9 +2661,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16431",
    "latCandidate": "34.945161351043815",
    "lngCandidate": "138.41991775951305",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.instagram.com/wec_wholeearthcommunications/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "Cue（Manus）調査：公式案内は施設が用意するテント（NORDISK Asgard 等）の宿泊プランで「定 員 数：2～6名」。持ち込みテントサイトなし。"
   },
   {
    "napId": "16455",
@@ -2674,8 +2674,8 @@
    "latCandidate": "34.62281465021539",
    "lngCandidate": "138.18161294097462",
    "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "verdict": "門落ち(公式なし)",
+   "reason": "Cue（Manus）調査：施設名・住所・電話で調べても第三者掲載のみ。"
   },
   {
    "napId": "16474",
@@ -2709,9 +2709,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16506",
    "latCandidate": "34.73327280035892",
    "lngCandidate": "138.232840844597",
-   "officialUrl": null,
+   "officialUrl": "https://rv.0548pjt.com/guide/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式Instagramは凸凹広場を静波2220-2のイベント会場と記載。持ち込みテント泊と料金（1泊1台3,300円〜）があるRV-PARK公式は静波2220-5で、同一施設と結び付けられない。本人判断へ。"
   },
   {
    "napId": "16524",
@@ -2877,9 +2877,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16807",
    "latCandidate": "34.86630899063513",
    "lngCandidate": "138.91874335456163",
-   "officialUrl": null,
+   "officialUrl": "https://www.instagram.com/koniwa_camp/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "Cue（Manus）調査：公式Instagramは「2025年8月…伊豆・天城に新しくオープンした手ぶらキャンプ場」。公式サイト niwa-camp.jp は開けず、持ち込みテント可・料金・番地を確認できない。本人判断へ。"
   },
   {
    "napId": "16810",
@@ -2889,9 +2889,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16810",
    "latCandidate": "35.28503794035182",
    "lngCandidate": "138.95032841534425",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://www.instagram.com/secretbase_gotemba/",
+   "verdict": "門落ち(料金も予約も公式に無し)",
+   "reason": "Cue（Manus）調査：公式Instagramで住所（御殿場市東田中1920-1-2）一致。料金表・公式予約ページはなく、プロフィールのリンク先はなっぷ。"
   },
   {
    "napId": "16874",
@@ -2922,15 +2922,15 @@
   "asOf": "2026-11-05",
   "門の対象": 224,
   "内訳": {
-   "追加": 66,
+   "追加": 67,
    "閉鎖疑い": 23,
-   "門落ち(公式なし)": 41,
-   "門落ち(料金も予約も公式に無し)": 17,
-   "宿泊系のため対象外": 29,
+   "門落ち(公式なし)": 42,
+   "門落ち(料金も予約も公式に無し)": 21,
+   "宿泊系のため対象外": 32,
    "門落ち(単独利用不可)": 3,
    "門落ち(既存レコードと重複)": 7,
    "門落ち(宿泊不可)": 1,
-   "UNMEASURED": 55
+   "UNMEASURED": 46
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }

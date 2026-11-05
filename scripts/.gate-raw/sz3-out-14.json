@@ -1,0 +1,224 @@
+[
+ {
+  "napId": "14271",
+  "name": "伊豆シャボテンヴィレッジグランピング",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：公式 id-village.jp で住所（富戸1317-584）一致。設置済みドームテント等の宿泊のみ（大人1名19,000円〜）で持ち込みテントサイトなし。",
+  "checkedUrls": [
+   "https://id-village.jp/glamping/"
+  ],
+  "officialUrl": "https://id-village.jp/glamping/"
+ },
+ {
+  "napId": "14289",
+  "name": "水車むら",
+  "pref": "静岡",
+  "muni": "藤枝市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式 suishamura.com に「テントを持ち込んで、自由にお過ごしください。」「1泊 ¥20,000」「定員10名様」。1名でも20,000円の貸切と読め12,000円超、1名可の明記もない。本人判断へ。",
+  "checkedUrls": [
+   "https://suishamura.com/lodging/"
+  ],
+  "officialUrl": "https://suishamura.com/lodging/"
+ },
+ {
+  "napId": "15655",
+  "name": "静波リゾートキャンプサイト",
+  "pref": "静岡",
+  "muni": "牧之原市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "Cue（Manus）調査：公式 shizunami-resort.jp で住所一致・キャンプ案内あり。料金・持ち込み可否・1名利用の掲載なく、予約は第三者サイト。",
+  "checkedUrls": [
+   "https://shizunami-resort.jp/"
+  ],
+  "officialUrl": "https://shizunami-resort.jp/"
+ },
+ {
+  "napId": "15761",
+  "name": "KAWAZU BEACH HOUSE BLUE MOON",
+  "pref": "静岡",
+  "muni": "河津町",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式 bluemoonterrace.jp/autocamp で住所（河津町見高2）一致。「施設利用料：500円/1人」「区画利用料：3,000円/1区画」だが、泊数単位か・持ち込みテント可・1名可が確定しない。本人判断へ。",
+  "checkedUrls": [
+   "https://www.bluemoonterrace.jp/autocamp/"
+  ],
+  "officialUrl": "https://www.bluemoonterrace.jp/autocamp/"
+ },
+ {
+  "napId": "15768",
+  "name": "HIMENOYU MOTHER",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "Cue（Manus）調査：公式 himenoyumother.com に「ソロキャンプを主体とした…キャンプのできるサービス」とあるが、宿泊の料金・条件・予約案内が公式に無い。",
+  "checkedUrls": [
+   "https://himenoyumother.com/"
+  ],
+  "officialUrl": "https://himenoyumother.com/"
+ },
+ {
+  "napId": "15847",
+  "name": "GARAGE Secret Base",
+  "pref": "静岡",
+  "muni": "長泉町",
+  "verdict": "追加",
+  "reason": "Cue（Manus）が挙げ、親が公式 garage-secret-base.com を curl で取り直して確認。住所「〒410-0001 静岡県駿東郡長泉町 元長窪字芹沢566番5」。「G サイト 『ソロ・デュオ推奨サイト』 ≪サイト利用料≫ 通年料金 ：3,300円 …（車、駐車不可サイト。バイク,自転車のみ横付け可能）」「B サイト 『ソロ,デュオ推奨サイト』 … 基本料金 ：5,500円 ※グループ人数2名様までご利用可能。」いずれも「※シーズンによって異なる場合がございます。」予約は公式ページ。",
+  "checkedUrls": [
+   "https://www.garage-secret-base.com/camp-booking"
+  ],
+  "officialUrl": "https://www.garage-secret-base.com/",
+  "reservationUrl": "https://www.garage-secret-base.com/camp-booking",
+  "address": "静岡県駿東郡長泉町元長窪566-5",
+  "priceMin": 3300,
+  "priceMax": 5500,
+  "priceNote": "サイト単位課金（2名まで同額）。公式「G サイト 『ソロ・デュオ推奨サイト』 通年料金 ：3,300円」（車不可・バイク/自転車のみ）、「B サイト 『ソロ,デュオ推奨サイト』 基本料金 ：5,500円」（車可）。どちらも「※シーズンによって異なる場合がございます」。当日現金払いのみ",
+  "features": {},
+  "coordsFromOfficialMap": null,
+  "soloNote": "G サイト 『ソロ・デュオ推奨サイト』 通年料金 ：3,300円"
+ },
+ {
+  "napId": "15909",
+  "name": "めいぷる",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式 maple.hp.peraichi.com で住所（人穴136-4）一致。料金は「4人 平日10,000円」「8人 平日15,000円」のグループ料金のみで、1名可・1名料金が無い。本人判断へ。",
+  "checkedUrls": [
+   "https://maple.hp.peraichi.com/"
+  ],
+  "officialUrl": "https://maple.hp.peraichi.com/"
+ },
+ {
+  "napId": "15917",
+  "name": "たまゆらBBQ",
+  "pref": "静岡",
+  "muni": "藤枝市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "Cue（Manus）調査：藤枝市公式で施設名・住所（岡部町玉取1452）は一致するが、持ち込みテント宿泊・料金・予約方法の根拠が公式に無い。",
+  "checkedUrls": [
+   "https://www.city.fujieda.shizuoka.jp/soshiki/_shisetsu/1445918365744.html"
+  ],
+  "officialUrl": "https://www.city.fujieda.shizuoka.jp/soshiki/_shisetsu/1445918365744.html"
+ },
+ {
+  "napId": "16061",
+  "name": "富士見の丘オートキャンプ場",
+  "pref": "静岡",
+  "muni": "富士市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式 fujimicamp.jp で住所（富士市大淵1297）一致。「ソロ料金 5,000円/泊〜」「※週末や連休などにより料金が変動いたします。」で上限が公式に無い。本人判断へ（下限だけで載せるかの判断）。",
+  "checkedUrls": [
+   "https://fujimicamp.jp/camp/"
+  ],
+  "officialUrl": "https://fujimicamp.jp/camp/"
+ },
+ {
+  "napId": "16180",
+  "name": "あてらの森　キャンプ場",
+  "pref": "静岡",
+  "muni": "浜松市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式 ateranomori.com で住所（天竜区阿寺429-4）・テントサイト・予約方法を確認。料金表に金額がない（「全サイト 同額料金になります。」のみ）。本人判断へ。",
+  "checkedUrls": [
+   "https://ateranomori.com/76280/"
+  ],
+  "officialUrl": "https://ateranomori.com/76280/"
+ },
+ {
+  "napId": "16181",
+  "name": "Fuji Rv Field",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式はInstagramのみ。RVパークの案内で「1人 5000(税込)から」「タープok」はあるが、持ち込みテント泊の可否が不明。本人判断へ。",
+  "checkedUrls": [
+   "https://www.instagram.com/p/C2HXQVNSwa9/"
+  ],
+  "officialUrl": "https://www.instagram.com/p/C2HXQVNSwa9/"
+ },
+ {
+  "napId": "16195",
+  "name": "TREE LINE chillax field",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：運営公式は Instagram のみ。「施設使用料＆宿泊料で…2025年1月の予約からは3,000円に変更」「ソロ利用の場合も、大人（中学生以上）4,000円となります。」（年末年始プラン）とソロ料金・テント区画を案内。**公式がSNSだけの施設を施設公式とみなすか**は本人判断。",
+  "checkedUrls": [
+   "https://www.instagram.com/tree_line_chillax_field/"
+  ],
+  "officialUrl": "https://www.instagram.com/tree_line_chillax_field/"
+ },
+ {
+  "napId": "16393",
+  "name": "lodge sora",
+  "pref": "静岡",
+  "muni": "藤枝市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：公式Instagramで「1日1組限定の貸切ロッジ」。持ち込みテントサイトの記載なし。",
+  "checkedUrls": [
+   "https://www.instagram.com/lodge_sora_/"
+  ],
+  "officialUrl": "https://www.instagram.com/lodge_sora_/"
+ },
+ {
+  "napId": "16431",
+  "name": "Whole Earth Communications",
+  "pref": "静岡",
+  "muni": "静岡市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "Cue（Manus）調査：公式案内は施設が用意するテント（NORDISK Asgard 等）の宿泊プランで「定 員 数：2～6名」。持ち込みテントサイトなし。",
+  "checkedUrls": [
+   "https://www.instagram.com/wec_wholeearthcommunications/"
+  ],
+  "officialUrl": "https://www.instagram.com/wec_wholeearthcommunications/"
+ },
+ {
+  "napId": "16455",
+  "name": "お茶畑のとなり",
+  "pref": "静岡",
+  "muni": "御前崎市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "Cue（Manus）調査：施設名・住所・電話で調べても第三者掲載のみ。",
+  "checkedUrls": [],
+  "officialUrl": null
+ },
+ {
+  "napId": "16506",
+  "name": "凸凹広場",
+  "pref": "静岡",
+  "muni": "牧之原市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式Instagramは凸凹広場を静波2220-2のイベント会場と記載。持ち込みテント泊と料金（1泊1台3,300円〜）があるRV-PARK公式は静波2220-5で、同一施設と結び付けられない。本人判断へ。",
+  "checkedUrls": [
+   "https://rv.0548pjt.com/guide/"
+  ],
+  "officialUrl": "https://rv.0548pjt.com/guide/"
+ },
+ {
+  "napId": "16807",
+  "name": "koniwa CAMP 天城湯ヶ島",
+  "pref": "静岡",
+  "muni": "伊豆市",
+  "verdict": "UNMEASURED",
+  "reason": "Cue（Manus）調査：公式Instagramは「2025年8月…伊豆・天城に新しくオープンした手ぶらキャンプ場」。公式サイト niwa-camp.jp は開けず、持ち込みテント可・料金・番地を確認できない。本人判断へ。",
+  "checkedUrls": [
+   "https://www.instagram.com/koniwa_camp/"
+  ],
+  "officialUrl": "https://www.instagram.com/koniwa_camp/"
+ },
+ {
+  "napId": "16810",
+  "name": "SECRET BASE",
+  "pref": "静岡",
+  "muni": "御殿場市",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "Cue（Manus）調査：公式Instagramで住所（御殿場市東田中1920-1-2）一致。料金表・公式予約ページはなく、プロフィールのリンク先はなっぷ。",
+  "checkedUrls": [
+   "https://www.instagram.com/secretbase_gotemba/"
+  ],
+  "officialUrl": "https://www.instagram.com/secretbase_gotemba/"
+ }
+]
