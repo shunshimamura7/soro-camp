@@ -1,0 +1,63 @@
+[
+ {
+  "napId": "11638",
+  "name": "塔ノ峰青少年の家",
+  "pref": "神奈川",
+  "muni": "小田原市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "現行の公式なし。小田原市公式で見つかったのは2014年の「塔ノ峰青少年の家条例等の廃止」のパブコメ結果と古い広報のみ。廃止後の運営形態は未確認。",
+  "checkedUrls": [
+   "https://www.city.odawara.kanagawa.jp/field/municipality/municipality/comment/result/h26/260825seishonen.html"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "14637",
+  "name": "胴網ベース（旧：油壺アウトドアセンター）",
+  "pref": "神奈川",
+  "muni": "三浦市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "別表記（油壺アウトドアセンター・ステップキャンプベース）でも施設公式・三浦市公式とも見つからず。なっぷと古い新聞記事のみ。",
+  "checkedUrls": [
+   "https://www.kanaloco.jp/news/life/entry-77138.html"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "14747",
+  "name": "京急油壺温泉キャンプパーク",
+  "pref": "神奈川",
+  "muni": "三浦市",
+  "verdict": "閉鎖疑い",
+  "reason": "なっぷの運営者告知に「2024年3月15日(金)をもちまして営業を終了」。京急グループ（三崎観光）の公式リリースでも隣接の観潮荘が同日終了・油壺エリア再整備と告知。キャンプパーク単体の京急ドメインの告知は未取得。",
+  "checkedUrls": [
+   "https://digitalpr.jp/r/82067"
+  ],
+  "officialUrl": null
+ },
+ {
+  "napId": "14771",
+  "name": "スターフォレストキャンプ葉山",
+  "pref": "神奈川",
+  "muni": "葉山町",
+  "verdict": "門落ち(料金も予約も公式に無し)",
+  "reason": "公式 hayama-rvsite.info（運営 スターホーム）で住所（葉山町上山口1431-1）一致、テントサイトあり。ただしサイト料金は「※各サイトの料金は予約サイトからご確認ください」で公式に無く、予約もなっぷ（2025-03-15から）。**なっぷ誘導型**（§6-2 の判断待ち）。認めるなら候補に戻せる。",
+  "checkedUrls": [
+   "https://www.hayama-rvsite.info/",
+   "https://www.hayama-rvsite.info/tent-site"
+  ],
+  "officialUrl": "https://www.hayama-rvsite.info/"
+ },
+ {
+  "napId": "15732",
+  "name": "グランピングスペース湘南",
+  "pref": "神奈川",
+  "muni": "茅ヶ崎市",
+  "verdict": "門落ち(公式なし)",
+  "reason": "施設公式・茅ヶ崎市公式とも見つからず、なっぷとスペースマーケットのみ。",
+  "checkedUrls": [
+   "https://www.spacemarket.com/spaces/glamping/"
+  ],
+  "officialUrl": null
+ }
+]

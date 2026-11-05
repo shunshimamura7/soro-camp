@@ -22336,5 +22336,58 @@
     "source": [
       "https://solace-atami.com/camp/"
     ]
+  },
+  {
+    "id": "bikuishi-camp",
+    "slug": "bikuishi-camp",
+    "name": "びく石山 静かな夜のキャンプ場",
+    "prefecture": "静岡",
+    "area": "藤枝・瀬戸ノ谷",
+    "status": "active",
+    "address": "静岡県藤枝市瀬戸ノ谷5610",
+    "type": "campground",
+    "lat": 34.954148,
+    "lng": 138.209526,
+    "priceMin": 2800,
+    "priceMax": 5300,
+    "priceNote": "サイト単位課金＋人数（環境維持費）。公式「【サイト使用料】 ・1泊 2,300円～」「（金土日、祝日、祝前日） ・区画サイト 4,800円」＋「環境維持費 500円／人」「※料金は税込です。」→平日下限2,800円〜通常期の週末5,300円。繁忙期料金は公式に記載がなく、これを超える日がありうる",
+    "features": {
+      "reservation": "要",
+      "firewood": true,
+      "firewoodNote": "薪などの燃料、食料品、その他キャンプに必要な物を販売。（https://bikuishi.jp/facility/index.html）",
+      "shop": true,
+      "shopNote": "管理棟では受付だけでなく、薪などの燃料、食料品、その他キャンプに必要な物を販売。（https://bikuishi.jp/facility/index.html）",
+      "pet": false,
+      "petNote": "＜ペットについて＞ ペット不可（https://bikuishi.jp/info/index.html）",
+      "reservationNote": "公式が案内する予約先: https://www.nap-camp.com/shizuoka/16260"
+    },
+    "scores": {
+      "quietness": 3,
+      "scenery": 3,
+      "value": 3,
+      "access": 3,
+      "facility": 3
+    },
+    "scoresVerified": false,
+    "season": "要確認（公式に営業期間の記載を確認できていない）",
+    "soloComment": "藤枝のびく石山中腹、東海ガスが運営する「静かな夜」がテーマのキャンプ場。全区画に車を横付けでき、区画サイトは平日2,300円〜（週末4,800円）＋環境維持費500円で、**ソロは1泊2,800〜5,300円**（税込）。管理棟で薪や食料が買える。",
+    "tel": null,
+    "telNote": null,
+    "lastVerified": "2026-10-06",
+    "priceVerified": true,
+    "officialUrl": "https://bikuishi.jp/",
+    "reservationUrl": "https://www.nap-camp.com/shizuoka/16260",
+    "cautions": [
+      "**ペット不可**",
+      "繁忙期の料金は公式ページに無く、予約サイトで確認する",
+      "夜は静かに過ごすことが前提のキャンプ場。ドアの開閉音・警告音にも細かいルールがある",
+      "管理棟の営業は10:30〜16:00",
+      "1名利用の明記は公式に無い（区画サイトは5名まで、下限の記載なし）"
+    ],
+    "source": [
+      "https://bikuishi.jp/",
+      "https://www.nap-camp.com/shizuoka/16260"
+    ],
+    "coordsVerified": false
   }
 ]

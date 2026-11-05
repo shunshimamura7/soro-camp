@@ -1,0 +1,83 @@
+[
+ {
+  "napId": "16198",
+  "name": "伊東　奏の森キャンプ場（旧：奏の森リゾート　フォレストグランピング）",
+  "pref": "静岡",
+  "muni": "伊東市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所（伊東市十足325-1）一致。宿泊は常設のグランピングテントとRVパークのみで、持ち込みテントの宿泊サイトの記載なし。",
+  "checkedUrls": [
+   "https://kanadenomori-resorts.jp/",
+   "https://kanadenomori-resorts.jp/faq/"
+  ],
+  "officialUrl": "https://kanadenomori-resorts.jp/"
+ },
+ {
+  "napId": "16208",
+  "name": "foothillsキャンプ場",
+  "pref": "静岡",
+  "muni": "富士宮市",
+  "verdict": "UNMEASURED",
+  "reason": "公式（Jimdo）で住所（富士宮市北山7429-2）一致、「ソロキャンプ2000円（プライベートサイト、林間サイトは通常料金）」あり。ただし別行の「入場料 大人１人（高校生以上）1000円」が上乗せか読めず、ページに新型コロナ対策文が残り更新日も無く、今季の営業が公式で確かめにくい。本人判断へ。",
+  "checkedUrls": [
+   "https://foothills-camp-field.jimdofree.com/",
+   "https://foothills-camp-field.jimdofree.com/アクセス/"
+  ],
+  "officialUrl": "https://foothills-camp-field.jimdofree.com/"
+ },
+ {
+  "napId": "16250",
+  "name": "HAZ CAMP",
+  "pref": "静岡",
+  "muni": "牧之原市",
+  "verdict": "宿泊系のため対象外",
+  "reason": "公式で住所（牧之原市波津1223-6）一致。エアストリーム（トレーラー）宿泊のプライベートキャンプで、持ち込みテントの宿泊枠なし。",
+  "checkedUrls": [
+   "https://hazcottage.jp/hazcamp/"
+  ],
+  "officialUrl": "https://hazcottage.jp/"
+ },
+ {
+  "napId": "16260",
+  "name": "びく石山 静かな夜のキャンプ場",
+  "pref": "静岡",
+  "muni": "藤枝市",
+  "verdict": "追加",
+  "reason": "親が公式 bikuishi.jp（運営 東海ガス）を curl で取り直して確認。住所「静岡県藤枝市瀬戸ノ谷5610」。「＜通常料金＞ （金土日、祝日、祝前日） ・区画サイト 4,800円」「＜環境維持費（ゴミ管理含む）＞ 500円／人」「※料金は税込です。」、camp ページ「【サイト使用料】 ・1泊 2,300円～」。利用人数「区画サイト：5名まで」（下限の記載なし）。繁忙期料金は公式で「予約サイトをご覧ください」。地図は公式の埋め込み（キャンプ場名のピン）。",
+  "checkedUrls": [
+   "https://bikuishi.jp/",
+   "https://bikuishi.jp/info/index.html",
+   "https://bikuishi.jp/camp/index.html",
+   "https://bikuishi.jp/facility/index.html"
+  ],
+  "officialUrl": "https://bikuishi.jp/",
+  "reservationUrl": "https://www.nap-camp.com/shizuoka/16260",
+  "address": "静岡県藤枝市瀬戸ノ谷5610",
+  "priceMin": 2800,
+  "priceMax": 5300,
+  "priceNote": "サイト単位課金＋人数（環境維持費）。公式「【サイト使用料】 ・1泊 2,300円～」「（金土日、祝日、祝前日） ・区画サイト 4,800円」＋「環境維持費 500円／人」「※料金は税込です。」→平日下限2,800円〜通常期の週末5,300円。繁忙期料金は公式に記載がなく、これを超える日がありうる",
+  "features": {
+   "shop": {
+    "value": true,
+    "evidenceUrl": "https://bikuishi.jp/facility/index.html",
+    "quote": "管理棟では受付だけでなく、薪などの燃料、食料品、その他キャンプに必要な物を販売。"
+   },
+   "firewood": {
+    "value": true,
+    "evidenceUrl": "https://bikuishi.jp/facility/index.html",
+    "quote": "薪などの燃料、食料品、その他キャンプに必要な物を販売。"
+   },
+   "pet": {
+    "value": false,
+    "evidenceUrl": "https://bikuishi.jp/info/index.html",
+    "quote": "＜ペットについて＞ ペット不可"
+   }
+  },
+  "coordsFromOfficialMap": {
+   "lat": 34.954148,
+   "lng": 138.209526,
+   "url": "https://bikuishi.jp/"
+  },
+  "soloNote": "＜利用人数＞ ・区画サイト：5名まで（人数下限の記載なし）"
+ }
+]

@@ -2529,9 +2529,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16198",
    "latCandidate": "34.90966516846204",
    "lngCandidate": "139.08380858305057",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://kanadenomori-resorts.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（伊東市十足325-1）一致。宿泊は常設のグランピングテントとRVパークのみで、持ち込みテントの宿泊サイトの記載なし。"
   },
   {
    "napId": "16208",
@@ -2541,9 +2541,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16208",
    "latCandidate": "35.30596525756571",
    "lngCandidate": "138.62363880859832",
-   "officialUrl": null,
+   "officialUrl": "https://foothills-camp-field.jimdofree.com/",
    "verdict": "UNMEASURED",
-   "reason": null
+   "reason": "公式（Jimdo）で住所（富士宮市北山7429-2）一致、「ソロキャンプ2000円（プライベートサイト、林間サイトは通常料金）」あり。ただし別行の「入場料 大人１人（高校生以上）1000円」が上乗せか読めず、ページに新型コロナ対策文が残り更新日も無く、今季の営業が公式で確かめにくい。本人判断へ。"
   },
   {
    "napId": "16209",
@@ -2577,9 +2577,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16250",
    "latCandidate": "34.6770501",
    "lngCandidate": "138.1939849",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://hazcottage.jp/",
+   "verdict": "宿泊系のため対象外",
+   "reason": "公式で住所（牧之原市波津1223-6）一致。エアストリーム（トレーラー）宿泊のプライベートキャンプで、持ち込みテントの宿泊枠なし。"
   },
   {
    "napId": "16260",
@@ -2589,9 +2589,9 @@
    "napUrl": "https://www.nap-camp.com/shizuoka/16260",
    "latCandidate": "34.95413627185723",
    "lngCandidate": "138.212124298053",
-   "officialUrl": null,
-   "verdict": "UNMEASURED",
-   "reason": null
+   "officialUrl": "https://bikuishi.jp/",
+   "verdict": "追加",
+   "reason": "親が公式 bikuishi.jp（運営 東海ガス）を curl で取り直して確認。住所「静岡県藤枝市瀬戸ノ谷5610」。「＜通常料金＞ （金土日、祝日、祝前日） ・区画サイト 4,800円」「＜環境維持費（ゴミ管理含む）＞ 500円／人」「※料金は税込です。」、camp ページ「【サイト使用料】 ・1泊 2,300円～」。利用人数「区画サイト：5名まで」（下限の記載なし）。繁忙期料金は公式で「予約サイトをご覧ください」。地図は公式の埋め込み（キャンプ場名のピン）。"
   },
   {
    "napId": "16261",
@@ -2922,15 +2922,15 @@
   "asOf": "2026-11-05",
   "門の対象": 224,
   "内訳": {
-   "追加": 61,
+   "追加": 62,
    "閉鎖疑い": 21,
    "門落ち(公式なし)": 40,
    "門落ち(料金も予約も公式に無し)": 12,
-   "宿泊系のため対象外": 16,
+   "宿泊系のため対象外": 18,
    "門落ち(単独利用不可)": 3,
    "門落ち(既存レコードと重複)": 7,
    "門落ち(宿泊不可)": 1,
-   "UNMEASURED": 81
+   "UNMEASURED": 78
   },
   "備考": "施設名によるグランピング除外はしていない（山梨ではテントサイト持ちの施設まで落ちていた）。宿泊系かどうかは門の中で公式を見て決める"
  }
