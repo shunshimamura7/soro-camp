@@ -108,6 +108,10 @@ async function run(width, height) {
   if (width >= 768) {
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.waitForTimeout(200);
+    // 2026-11-05：PC のパネルは既定で閉じる。開いて検査する
+    ok(`${tag} パネルは既定で閉じている`, (await page.locator('[data-testid="filter-panel"]').count()) === 0, {});
+    await page.click('[data-testid="filter-open"]');
+    await page.waitForTimeout(200);
     const panelBg = await page.evaluate(inPage.bg, '[data-testid="filter-panel"]');
     ok(`${tag} パネル背景のアルファ = 1`, panelBg && alphaOf(panelBg.bg) === 1, panelBg);
     const pos = await page.evaluate(() => getComputedStyle(document.querySelector('[data-testid="filter-panel"]')).position);
@@ -166,7 +170,7 @@ async function run(width, height) {
       return getComputedStyle(g).gridTemplateColumns.split(" ").length;
     });
     ok(`${tag} 条件グリッドは2列`, cols === 2, { cols });
-    const headings = await page.evaluate(() => [...document.querySelectorAll('[data-testid="filter-sheet"] p')].map((p) => p.textContent.trim()).filter((t) => ["設備", "買える", "その他"].includes(t)));
+    const headings = await page.evaluate(() => [...document.querySelectorAll('[data-testid="filter-sheet"] p')].map((p) => (p.firstChild && p.firstChild.nodeType === 3 ? p.firstChild.textContent : p.textContent).trim()).filter((t) => ["設備", "買える", "その他"].includes(t)));
     ok(`${tag} グループ見出し 設備／買える／その他`, headings.join("/") === "設備/買える/その他", { headings });
 
     // 背面スクロールが止まっているか。**利用者の指の操作だけで測る**（scrollTo などのプログラム操作は対象外）。

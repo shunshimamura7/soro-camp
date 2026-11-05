@@ -1,0 +1,3718 @@
+{
+ "fetchedAt": "2026-11-05",
+ "note": "各施設の公式サイトの原文から抜き出した記述。quote は原文そのまま、url は取得したページ。推測は入れていない。",
+ "facts": {
+  "asagiri-eichinomori": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "■チェックイン時間：13：00～16：00",
+    "url": "https://www.bt-r.jp/aec/",
+    "in": "13：00～16：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "地面での直火は禁止となります（焚き火台・コンロをご使用ください）。",
+    "url": "https://www.bt-r.jp/aec/"
+   }
+  },
+  "urban-camping-asagiri-houzan": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "【チェックイン】 13:00～",
+    "url": "https://urban-camping.jp/system.html",
+    "in": "13:00～"
+   }
+  },
+  "tanukiko": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：午前8時～午後4時30分 ※冬季（午前8時～午後3時30分） チェックアウト：～午前12時（トップシーズン中は午前11時まで）",
+    "url": "https://tanukiko.com/south/",
+    "in": "午前8時～午後4時30分",
+    "out": "～午前12時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。焚火台やグリル、コンロを使用してください。",
+    "url": "https://tanukiko.com/faq/"
+   }
+  },
+  "kouan-motosuko": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "午前10時です。レイトチェックアウトを選択することで17時まで延長可能です。",
+    "url": "https://kouan-motosuko.com/faq/index.html",
+    "out": "午前10時"
+   }
+  },
+  "shindo": {
+   "bike": {
+    "status": "可",
+    "quote": "料金／車500円（バイク 300円）",
+    "url": "https://shindocamp.com/",
+    "price": "300円"
+   }
+  },
+  "pica-fuji-saiko": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00 ～ 19:00（テントサイトは13:00～19:00）",
+    "url": "https://www.pica-resort.jp/saiko/about/guidance.html",
+    "in": "13:00～19:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "国立公園内につき、直火は禁止になります。焚火等をする際は、必ず焚火台等をご利用下さい。ウッドデッキ上での焚火も禁止です。",
+    "url": "https://www.pica-resort.jp/saiko/faq/index.html"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "ただし、場内のゲートが夜10時で閉まりますので、お帰りのお時間にはご注意ください。",
+    "url": "https://www.pica-resort.jp/saiko/faq/index.html"
+   }
+  },
+  "norolodge": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00〜16:00",
+    "url": "https://norolodge.com/stay/tent/",
+    "in": "13:00〜16:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイクソロ2000円、車ソロ2500円でテントサイトにお泊まりいただけるお得なプランです。",
+    "url": "https://norolodge.com/",
+    "price": "2000円"
+   },
+   "jikabi": {
+    "status": "可",
+    "quote": "直火での焚き火、バーベキュー、川遊び、魚釣り、大滝までの散策など、小さなお子様から大人の方まで幅広くお楽しみいただけます。",
+    "url": "https://norolodge.com/"
+   }
+  },
+  "motosu-lakeside": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "環境保護の観点により直火は禁止とさせていただきます。 必ず焚き火台をご使用ください。",
+    "url": "https://motosulakeside.com/index.php/rule/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜20:00～翌朝8:00の間は、入口ゲートを閉鎖させていただきます。",
+    "url": "https://motosulakeside.com/"
+   }
+  },
+  "fumotoppara": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 午前8:30～午後5:00",
+    "url": "https://fumotoppara.net/guide/",
+    "in": "午前8:30～午後5:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火はできません。必ずBBQコンロや焚火台をご利用下さい。",
+    "url": "https://fumotoppara.net/guide/"
+   }
+  },
+  "asagiri-jamboree": {
+   "bike": {
+    "status": "可",
+    "quote": "電源付：＋1,100円 車追加料：＋1,100円 バイク追加料：＋550円",
+    "url": "https://asagiri-camp.net/faq/",
+    "price": "＋550円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火（焚火台を使用してください）",
+    "url": "https://asagiri-camp.net/camp-guide/"
+   }
+  },
+  "pica-omotefuji": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00 ～ 18:00（テントサイトは 13:00～18:00）",
+    "url": "https://www.pica-resort.jp/omotefuji/about/guidance.html",
+    "in": "13:00～18:00"
+   },
+   "bike": {
+    "status": "制限あり",
+    "quote": "オートバイでの場内走行は禁止です。",
+    "url": "https://www.pica-resort.jp/omotefuji/about/guidance.html"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火での火気の使用は禁止させて頂いております。焚火台やバーベキューグリル等をご利用ください。",
+    "url": "https://www.pica-resort.jp/omotefuji/faq/index.html"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜間（22:00～7:00）はお車での入場ができなくなります。フロントへご確認ください。",
+    "url": "https://www.pica-resort.jp/omotefuji/about/guidance.html"
+   }
+  },
+  "aonohara-auto": {
+   "bike": {
+    "status": "可",
+    "quote": "バイクの入場料金につきまして 令和７年４月１日より下記の通り変更 いたします。 日帰り利用：２００円 → ５００円 宿泊利用：４００円 → １０００円",
+    "url": "https://www.aonohara-acl.jp/index.html",
+    "price": "１０００円"
+   }
+  },
+  "nishitanzawa-ootaki": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00～ チェックアウト ～翌10:00",
+    "url": "https://ootakicampsite.com/pricelist/",
+    "in": "14:00～",
+    "out": "～翌10:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク 1台 330円",
+    "url": "https://ootakicampsite.com/pricelist/",
+    "price": "330円"
+   }
+  },
+  "aone": {
+   "bike": {
+    "status": "可",
+    "quote": "単車1台分の駐車料を含む。",
+    "url": "https://aonecamp.jp/price/"
+   }
+  },
+  "saiko-jiyu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン（宿泊・予約必要日） 受付時間：12:00〜18:00",
+    "url": "https://saiko-jiyuu.camp/page/guide",
+    "in": "12:00〜18:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "お車1台・バイク2台分はサイト使用料金に含まれております。",
+    "url": "https://saiko-jiyuu.camp/page/guide"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "当キャンプ場は直火及び焚き火台のみでの焚き火は禁止です。",
+    "url": "https://saiko-jiyuu.camp/page/requests"
+   }
+  },
+  "kannogawa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン ①日帰り 8:00から ②宿泊 12:00から",
+    "url": "https://kannogawa.jp/onegai/",
+    "in": "12:00から"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "場内全面で直火は禁止しております。たき火台等をご使用ください。",
+    "url": "https://kannogawa.jp/onegai/"
+   }
+  },
+  "yamanakako-misaki": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン ：13時から16時まで チェックアウト：翌11時",
+    "url": "https://camp.sotosotodays.com/yamanakako-misaki/price/",
+    "in": "13時から16時まで",
+    "out": "翌11時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "徒歩・自転車・バイクのソロキャンプ専用サイトです。",
+    "url": "https://camp.sotosotodays.com/yamanakako-misaki/facility/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止。焚火台のご利用をお願いします。",
+    "url": "https://camp.sotosotodays.com/yamanakako-misaki/price/"
+   }
+  },
+  "kawazu-nanadaru": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは13:00〜17:00、チェックアウトは11:00までとなっております。",
+    "url": "https://www.nanatakiauto.com/",
+    "in": "13:00〜17:00",
+    "out": "11:00"
+   }
+  },
+  "ryuyo-marine": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：午後1時から午後5時まで チェックアウト：午前11時まで",
+    "url": "https://www.city.iwata.shizuoka.jp/shisetsu_guide/koen_shisetsu/kouen/1005910.html",
+    "in": "午後1時から午後5時まで",
+    "out": "午前11時まで"
+   }
+  },
+  "onoji-family": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 通常 10:10 (日曜日 12:00)",
+    "url": "https://oonoji.co.jp/camp/",
+    "in": "通常 10:10 (日曜日 12:00)"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "オートバイ 2人まで（OF） 1,760円 ／ （RG）2,200円 ／ （HI）2,420円",
+    "url": "https://oonoji.co.jp/camp/",
+    "price": "1,760円"
+   }
+  },
+  "wellcamp-nishitanzawa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "IN 12:00 ～ 17:00 / OUT 翌11:00",
+    "url": "https://well-camp.com/promise/promise1/",
+    "in": "12:00 ～ 17:00",
+    "out": "翌11:00"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "※仕様規格外のBBQコンロをご使用になられる場合は、ウッドデッキ下のスペースの直火可能な場所でのご使用をお願い致します。",
+    "url": "https://well-camp.com/promise/promise2/"
+   }
+  },
+  "shojiko-camping": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "受付時間：9:30〜17:00 受付場所：精進湖キャンピングコテージ受付 チェックアウト",
+    "url": "https://shojiko.jp/doc/campsite.html",
+    "in": "9:30〜17:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク・自転車（1台） ¥1,000円",
+    "url": "https://shojiko.jp/doc/campsite.html",
+    "price": "¥1,000円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火の使用は禁止です！ 火の使用は必ず焚火台やコンロの上でおこなって下さい。",
+    "url": "https://shojiko.jp/doc/campsite.html"
+   }
+  },
+  "sankoso-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン・チェックアウト チェックイン：13:00 チェックアウト：11:00",
+    "url": "https://www.sanko2400.com/",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "当キャンプ場では直火での焚き火は禁止とさせていただいております。",
+    "url": "https://www.sanko2400.com/faq"
+   }
+  },
+  "okudoshi-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13 時 ジ ～チェックアウト11 時 ジ （時間厳守）",
+    "url": "https://www.okudoshi.net/",
+    "in": "13 時",
+    "out": "11 時"
+   }
+  },
+  "woodsman-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン/12:00",
+    "url": "https://woodsman.jp/",
+    "in": "12:00"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "全面直火OKの、少し離れた場所にある野営スタイルのフリーサイトです。",
+    "url": "https://woodsman.jp/menu"
+   }
+  },
+  "doshi-keikoku": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン（テント：12時〜日没 バンガロー：13時〜日没）",
+    "url": "https://doushi-keikoku.jp/?page_id=167",
+    "in": "12時〜日没"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク（普通二輪・大型二輪） 400円",
+    "url": "https://doushi-keikoku.jp/?page_id=540",
+    "price": "400円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止、ゴミはお持ち帰りください",
+    "url": "https://doushi-keikoku.jp/?page_id=65"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "区画制・夜間駐在のオートキャンプ場です",
+    "url": "https://doushi-keikoku.jp/?page_id=65"
+   }
+  },
+  "karasawa-miyagase": {
+   "bike": {
+    "status": "可",
+    "quote": "バイク 500円 500円",
+    "url": "https://karasawa-camp.sakura.ne.jp/",
+    "price": "500円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火（じかび）はご遠慮下さい。必ずコンロ等をご使用ください。",
+    "url": "https://karasawa-camp.sakura.ne.jp/facility.html"
+   }
+  },
+  "konomasawa-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00〜日没 チェックアウト 11：00",
+    "url": "https://konomasawacamp.co.jp/?page_id=15",
+    "in": "13：00〜日没",
+    "out": "11：00"
+   }
+  },
+  "camp-baird": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "クールブリーズサイトのフリーテントサイト・トレーラーハウス： サイトにお入りいただけるのは12時から となります。",
+    "url": "https://bairdbeer.com/ja/pages/faq",
+    "in": "12時から"
+   }
+  },
+  "izu-kakure-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 12:00〜",
+    "url": "https://kakure-camp.corpkj.com/",
+    "in": "12:00〜"
+   },
+   "jikabi": {
+    "status": "可",
+    "quote": "直火はできますか？ はい。すべてのサイトで直火ができます。灰は場内の灰捨て場をご利用ください。",
+    "url": "https://kakure-camp.corpkj.com/"
+   }
+  },
+  "pica-fuji-greenpa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00 ～ 19:00（テントサイトは 13:00～19:00）",
+    "url": "https://www.pica-resort.jp/grinpa/about/guidance.html",
+    "in": "13:00～19:00"
+   },
+   "bike": {
+    "status": "制限あり",
+    "quote": "オートバイでの場内走行は禁止です。",
+    "url": "https://www.pica-resort.jp/grinpa/about/guidance.html"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "※地面の上での直火はお断りさせていただいております。",
+    "url": "https://www.pica-resort.jp/grinpa/faq/index.html"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜間（22:00～7:00）はお車での入場ができなくなります。",
+    "url": "https://www.pica-resort.jp/grinpa/about/guidance.html"
+   }
+  },
+  "minamiizu-camping-terrace": {
+   "bike": {
+    "status": "可",
+    "quote": "車両・バイク１台分は、サイト使用料に含まれます。",
+    "url": "https://camp.imagining.jp/price2/"
+   }
+  },
+  "hottarakashi-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン・・・13:00～17:00 ぼっちサイト・・・14:00～17:00 チェックアウト・・テント泊 翌11:00",
+    "url": "https://hottarakashicamp.com/facility",
+    "in": "13:00～17:00",
+    "out": "翌11:00"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "22:00以降は、防犯のため場内手前のゲートを施錠いたします。",
+    "url": "https://hottarakashicamp.com/facility"
+   }
+  },
+  "fujikawa-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "Check in チェックイン 12:00～17:00",
+    "url": "https://fujikawa-camp.jp/facilities/",
+    "in": "12:00～17:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク（1台1泊） 500円",
+    "url": "https://fujikawa-camp.jp/price/",
+    "price": "500円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。必ず焚火台・コンロを使用してください。",
+    "url": "https://fujikawa-camp.jp/faq/"
+   }
+  },
+  "motosu-shore-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "ご利用時間：チェックイン 8:00 ～ / チェックアウト 12:00（目安でお願いします）",
+    "url": "https://www.motosuko-camp.com/2_info.html",
+    "in": "8:00 ～",
+    "out": "12:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "乗り入れ車両：乗用車 1,000円 / キャンピング車 2,000円 / 牽引＋トレーラー 3,000円 / バイク 500円",
+    "url": "https://www.motosuko-camp.com/",
+    "price": "500円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は全面禁止です ：必ず焚き火台やコンロをご使用ください。",
+    "url": "https://www.motosuko-camp.com/4_notes.html"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜間の車両移動禁止 ：夜10時～朝6時までは就寝時間です。この時間帯の車の進入や移動は固くお断りします。",
+    "url": "https://www.motosuko-camp.com/4_notes.html"
+   }
+  },
+  "shosenkyo-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "通常チェックイン 13:00〜16:30 ／ チェックアウト 11:00まで",
+    "url": "https://syosenkyo-camp.com/price/",
+    "in": "13:00〜16:30",
+    "out": "11:00まで"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。 焚き火台 をご使用ください。",
+    "url": "https://syosenkyo-camp.com/about/"
+   }
+  },
+  "retreat-camp-mahoroba": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "14:00〜17:00（テントサイト、パオ、テラス、リトリートハウス）",
+    "url": "https://retreatcamp-mahoroba.net/guide/",
+    "in": "14:00〜17:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚火は必ず焚き火台を御使用ください。直火は山火事の原因になります。",
+    "url": "https://retreatcamp-mahoroba.net/guide/"
+   }
+  },
+  "hakushu-ojiro-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "・チェックイン 受付:べるが総合案内 15時から17時の間",
+    "url": "https://www.verga.info/rules",
+    "in": "15時から17時"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "21:30になりましたら、メインゲート・サブゲートを施錠させていただきます。",
+    "url": "https://www.verga.info/faq-%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F"
+   }
+  },
+  "westriver-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン PM2:00～(最終PM4:00) チェックアウト AM8:00～AM11:00",
+    "url": "https://westriver-camp.com/information/",
+    "in": "PM2:00～(最終PM4:00)",
+    "out": "AM8:00～AM11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は不可です、たき火をご希望の場合にはたき火台などをご持参いただくか有料レンタルをご利用ください。",
+    "url": "https://westriver-camp.com/information/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜9時から朝8時まではゲートを閉鎖します。 この時間はお車の移動・出入りは不可となります。",
+    "url": "https://westriver-camp.com/information/"
+   }
+  },
+  "pica-fujiyama-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14：00～19：00（テントサイトは13：00～19：00）",
+    "url": "https://www.pica-resort.jp/fujiyama/about/guidance.html",
+    "in": "13：00～19：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "場内での直火のたき火・花火・発電機・カラオケ・IPod等の音楽機器の使用は禁止しています。",
+    "url": "https://www.pica-resort.jp/fujiyama/about/guidance.html"
+   }
+  },
+  "kiyosato-chuo-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "通常：14時〜17時 （土曜日やハイシーズンは最終受付時間に変動あり）",
+    "url": "https://autocamp.co.jp/features/",
+    "in": "14時〜17時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク一台＋大人一人 1,500円 (税込)",
+    "url": "https://autocamp.co.jp/stay/",
+    "price": "1,500円 (税込)"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止です。焚き火台やバーベキューグリルなどを使用し、火の後片付けをしっかりと行いましょう。",
+    "url": "https://autocamp.co.jp/features/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "お車の出入りは22時から7時までできません。",
+    "url": "https://autocamp.co.jp/features/"
+   }
+  },
+  "akeno-fureai-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00 ～ 19:00",
+    "url": "https://www.pica-resort.jp/akeno/about/guidance.html",
+    "in": "13:00 ～ 19:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火での火気の使用は禁止させて頂いております。焚火台やバーベキューグリル等をご利用ください。",
+    "url": "https://www.pica-resort.jp/akeno/faq/index.html"
+   }
+  },
+  "suigennnomori": {
+   "jikabi": {
+    "status": "一部可",
+    "quote": "テント常設と直火の3区画",
+    "url": "https://www.doshisuigen-mori.com/"
+   }
+  },
+  "ashinoko-camp-mura": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚火・直火のご利用はできません。",
+    "url": "https://campmura.com/price/"
+   }
+  },
+  "hikenkayama": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン13:00～17:00 アーリーチェックイン11時～＋1000円、 チェックアウト ～11:00",
+    "url": "https://www.hitsurugi-camp.com/price.html",
+    "in": "13:00～17:00",
+    "out": "～11:00"
+   }
+  },
+  "yanagishima": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン ：（宿泊）13時～18時 （アーリーチェックイン 11：00～ ） （日帰り）11時～ チェックアウト：（宿泊）翌日８時～10時まで",
+    "url": "https://www.yanagishima-camp.com/?page_id=88",
+    "in": "13時～18時",
+    "out": "翌日８時～10時まで"
+   }
+  },
+  "tiny-camp-village": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "・ チェックインは１７時まで となります。 チェックインが １５時以降になる場合は事前にご連絡ください 。",
+    "url": "https://www.tiny-camp-village.com/",
+    "in": "１７時まで"
+   }
+  },
+  "asagiri-foodpark": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 12:00～15:30 チェックアウト 9:30～11:00",
+    "url": "https://asagiri-foodpark.com/afp.html",
+    "in": "12:00～15:30",
+    "out": "9:30～11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク 1,400円/台",
+    "url": "https://asagiri-foodpark.com/afp.html",
+    "price": "1,400円/台"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "※16:00以降は管理人不在のためチェックイン時間を過ぎるとチェックインできません。",
+    "url": "https://asagiri-foodpark.com/afp.html"
+   }
+  },
+  "narakoko": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "● キャンプサイト・バンガロー チェックイン 13:00~16:00 ● コテージ チェックイン 14:00~16:00 ●チェックアウト「キャンプサイト（フリー・電源付き区画・林間区画）」9:00～11:00",
+    "url": "https://www.narakoko.info/wp/guide",
+    "in": "13:00~16:00",
+    "out": "9:00～11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "◎直火 焚き火台、コンロ等をご使用ください。",
+    "url": "https://www.narakoko.info/wp/guide"
+   }
+  },
+  "fujisan-genshijin": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13時～18時 （アーリーチェックイン：1時間ごと ¥1,100） チェックアウト 11時",
+    "url": "https://genshijin-fujinomiya.com/",
+    "in": "13時～18時",
+    "out": "11時"
+   }
+  },
+  "marubi-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "・チェックイン １３：００以降 ・チェックアウト １１：００",
+    "url": "https://marubi.main.jp/riyou.html",
+    "in": "１３：００以降",
+    "out": "１１：００"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "・ 直火、発電機、カラオケ、打ち上げ花火は禁止です。",
+    "url": "https://marubi.main.jp/riyou.html"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "・ ゲートの閉門 ２１：００～７：００ 消灯 ２２：００",
+    "url": "https://marubi.main.jp/riyou.html"
+   }
+  },
+  "tanzawako-lodge": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火 禁止 音響・発電機",
+    "url": "https://tanzawakolodge.com/about/"
+   }
+  },
+  "granpapa-solo-bocchi": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 12：00～15：00／チェックアウト 11：00",
+    "url": "https://www.gran-papa.com/plan/",
+    "in": "12：00～15：00",
+    "out": "11：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "※直火NG／焚火台＋焚火シート必須※",
+    "url": "https://www.gran-papa.com/site/solo/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "入口ゲートは 19時～翌7時の間施錠します。 防犯上この時間帯は入退場ができませんのでご注意ください。",
+    "url": "https://www.gran-papa.com/plan/"
+   }
+  },
+  "nelo-gotemba": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン・アウト 13:00~16:00 / 8:00~11:00",
+    "url": "https://challengeoutdoor.co/nelogotemba/",
+    "in": "13:00~16:00",
+    "out": "8:00~11:00"
+   }
+  },
+  "doshigawa-kanko-noen": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 10時 チェックアウト",
+    "url": "https://www.doshi-kanko.jp/camp/kanko-nouen/",
+    "in": "10時"
+   }
+  },
+  "yamanakako-minami-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00 チェックアウト 11:00",
+    "url": "https://www.minami-camp.com/",
+    "in": "13:00",
+    "out": "11:00"
+   }
+  },
+  "village-hakushu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00 ​チェックアウト 10:00",
+    "url": "https://www.village-hakushu.com/about01",
+    "in": "13:00",
+    "out": "10:00"
+   },
+   "jikabi": {
+    "status": "可",
+    "quote": "テントサイトでの直火可能",
+    "url": "https://www.village-hakushu.com/about01"
+   }
+  },
+  "minoishtaki": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン(乗船)：13:30〜18:00※ 施設利用時間：14:00頃〜10:00※ チェックアウト(乗船)：9:30〜11:30※",
+    "url": "https://camp-minoishi.com/charge/",
+    "in": "13:30〜18:00",
+    "out": "9:30〜11:30"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "営業時間：7:00～21:00 （管理人は24時間滞在）",
+    "url": "https://camp-minoishi.com/facility/"
+   }
+  },
+  "camp-akaike": {
+   "bike": {
+    "status": "可",
+    "quote": "バイク （バイク１台スペース・テント１張・タープ１張） 1,000円～",
+    "url": "https://www.camp-akaike.jp/",
+    "price": "1,000円～"
+   }
+  },
+  "tsukiyono-doshi-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13時 チェックアウト",
+    "url": "https://www.doshi-kanko.jp/camp/tsukiyono/",
+    "in": "13時"
+   }
+  },
+  "flora-campsite": {
+   "bike": {
+    "status": "可",
+    "quote": "バイクの乗入れは250ccまで可能。",
+    "url": "https://www.floracampsite.com/info"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止 ​焚き火台 焚き火シート必須",
+    "url": "https://www.floracampsite.com/info"
+   }
+  },
+  "hayato-hakone": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 11:00-18:00 チェックアウト",
+    "url": "https://hayatohakoneguesthouse.com/page/hakone-camp/",
+    "in": "11:00-18:00"
+   }
+  },
+  "shimobe-yurucamp-sato": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "午後1時〜／翌日午前11時まで",
+    "url": "https://www.michinoeki-shimobe.jp/camp/",
+    "in": "午後1時〜",
+    "out": "翌日午前11時まで"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク・ソロ向け（定員1〜2名）7サイト",
+    "url": "https://www.michinoeki-shimobe.jp/camp/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火での焚き火。芝を傷つけないように焚き火台をご用意ください。",
+    "url": "https://www.michinoeki-shimobe.jp/camp/"
+   }
+  },
+  "bushcraft-shonan": {
+   "bike": {
+    "status": "可",
+    "quote": "バイクや自転車でお越しの場合は、敷地内空きスペースをご利用下さいませ。",
+    "url": "https://bush-craft.biz/qa/"
+   }
+  },
+  "nagomino-sato-tsuru": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "Check in 13:00 Check out 11:00",
+    "url": "https://www.nagomi-camp.com/",
+    "in": "13:00",
+    "out": "11:00"
+   }
+  },
+  "kamioshima-camp": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。コンロ等をご利用ください",
+    "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003112.html"
+   }
+  },
+  "camp-bean-izu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "はじめてご利用される方は、原則としまして10:00～13:00のご入場でお願いしております。",
+    "url": "https://www.campbean.jp/information/",
+    "in": "10:00～13:00"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "決められた場所であれば直火も可能です。焚き火の注意事項をご一読ください。",
+    "url": "https://www.campbean.jp/information/"
+   }
+  },
+  "kunowaki-shinsui": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "入退場時間 ：入場12時 退場11時",
+    "url": "https://www.kunowaki.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "in": "12時",
+    "out": "11時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "オートバイ     150 持ち込み        1500",
+    "url": "https://www.kunowaki.net/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "※直火禁止。 新型コロナウイルス感染予防対策期間中はご迷惑をお掛け致しました。",
+    "url": "https://www.kunowaki.net/"
+   }
+  },
+  "tenshino-mori-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン … 12時以降チェックアウト … 11時まで",
+    "url": "https://tenshinomori.net/rate",
+    "in": "12時以降",
+    "out": "11時まで"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止とさせていただきます バーベキューなどの際にはコンロ等をご利用ください。",
+    "url": "https://tenshinomori.net/note"
+   }
+  },
+  "shinozawa-ootaki-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "■チェックイン ： 【オートキャンプ】13:00～ 【バンガロー】14:00～ ■チェックアウト： 【オートキャンプ】～11:00 【バンガロー】～10:00",
+    "url": "https://shinozawa-ootaki-camp.com/info/access/",
+    "in": "13:00～",
+    "out": "～11:00"
+   }
+  },
+  "ugusu-camp": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "【禁止事項】サイトでの直火、ペット類の持ち込み",
+    "url": "https://www.nishiizu-kankou.com/stay/ugusucanp"
+   }
+  },
+  "mitsuboshi-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン13：00 チェックアウト11：00",
+    "url": "http://kawanelife.org/camp/fee/",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。必ずBBQコンロや焚火台をご使用ください。",
+    "url": "http://kawanelife.org/camp/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85/"
+   }
+  },
+  "oishii-camp": {
+   "bike": {
+    "status": "可",
+    "quote": "※バイクの場合：標準３台／最大６台（４台以上は追加料金）",
+    "url": "https://oic-camp.com/service/allweather/"
+   }
+  },
+  "fudonotaki-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン／アウト 14:00〜／翌 12:00",
+    "url": "https://ffnpcs.com/",
+    "in": "14:00〜",
+    "out": "12:00"
+   }
+  },
+  "shiraishi-auto-camp": {
+   "bike": {
+    "status": "可",
+    "quote": "★二輪車１台２名迄１日 ４０００円",
+    "url": "https://www.shiraishiautocamp.com/price",
+    "price": "４０００円"
+   }
+  },
+  "ryokokubashi-camp": {
+   "bike": {
+    "status": "可",
+    "quote": "バイク～125 200 350",
+    "url": "https://yukawaya.a.la9.jp/camp/camp_price.html"
+   }
+  },
+  "new-tashiro-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：12:00／チェックアウト：11:00",
+    "url": "https://tashiro-autocamp.com/index.php/root",
+    "in": "12:00",
+    "out": "11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "・直火 ※禁止行為が見られた場合には、スタッフが注意します。",
+    "url": "https://tashiro-autocamp.com/index.php/root"
+   }
+  },
+  "midori-taiyo-oka": {
+   "bike": {
+    "status": "可",
+    "quote": "（バイク）５５０円 ・テント１張につき１台無料。",
+    "url": "https://www.midoritotaiyounooka.com/%E6%96%99%E9%87%91%E8%A1%A8",
+    "price": "５５０円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。 焚き火台等を使用して頂き、必ず焚火マットも併用してください。",
+    "url": "https://www.midoritotaiyounooka.com/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB"
+   }
+  },
+  "saiko-kohan-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 9:00〜（※前日満車の場合は10:30〜）18:30まで",
+    "url": "https://saikohan.com/price/",
+    "out": "10:30"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク 500円 キャンピングカー（大型・トレーラー）",
+    "url": "https://saikohan.com/price/",
+    "price": "500円"
+   }
+  },
+  "ogayanagawa-keikoku": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00～ 18:00までに到着が間に合わない場合は、お電話にて必ずご連絡ください。",
+    "url": "https://ooyanagawa-camp.com/%e5%bd%93%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4%e3%81%ae%e3%81%94%e5%88%a9%e7%94%a8%e3%81%ae%e7%9a%86%e6%a7%98%e3%81%b8%e3%81%ae%e3%81%8a%e9%a1%98%e3%81%84/",
+    "in": "13:00～"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火での焚き火は禁止となっています。",
+    "url": "https://ooyanagawa-camp.com/%e5%bd%93%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4%e3%81%ae%e3%81%94%e5%88%a9%e7%94%a8%e3%81%ae%e7%9a%86%e6%a7%98%e3%81%b8%e3%81%ae%e3%81%8a%e9%a1%98%e3%81%84/"
+   }
+  },
+  "saiko-tsuhara-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 8:00 （繁忙期等混雑時、受付時間の変更をする場合があります",
+    "url": "https://tsuhara-camp.jp/facilities/",
+    "in": "8:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "場内は直火禁止です。必ず焚き火台と焚き火シートをご使用ください。",
+    "url": "https://tsuhara-camp.jp/attention/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "21:00から翌朝7:00までは、車の出入りおよび場内での車両移動はできません。",
+    "url": "https://tsuhara-camp.jp/access/"
+   }
+  },
+  "apt-ichishiro": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "入場時間 12:00から 退場時間 11:00まで",
+    "url": "https://abt-camp.shizu.website/facility_rate/",
+    "in": "12:00から",
+    "out": "11:00まで"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "7人まで、地面は芝生 直火禁止 サイトにより利用料金が異なります。",
+    "url": "https://abt-camp.shizu.website/facility_rate/"
+   }
+  },
+  "otaki-sabo": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 12:00〜16:00 チェックアウト 11:０0まで",
+    "url": "http://otaki-sabo.info/access.html",
+    "in": "12:00〜16:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。焚き火台及び焚き火シートをご利用ください（レンタル有）。",
+    "url": "http://otaki-sabo.info/policy.html"
+   }
+  },
+  "morimaki-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "オートキャンプ… イン 10:00～16:00 / アウト 翌日15:00まで",
+    "url": "https://www.morimaki-camp.com/facility/",
+    "in": "10:00～16:00",
+    "out": "15:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク 1台 300円",
+    "url": "https://www.morimaki-camp.com/facility/",
+    "price": "300円"
+   }
+  },
+  "otaki-kenminnomori": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン時間は、午後２時～４時までです。",
+    "url": "https://otakikenminnomori.jp/camp",
+    "in": "午後２時～４時"
+   }
+  },
+  "hiranoda-kyuyoson": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止ですが、コンロ使用のバーベキューはお楽しみいただけます",
+    "url": "https://www.city.uenohara.yamanashi.jp/site/kankou/1018585.html"
+   }
+  },
+  "fujino-art-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン／15:00～（設営） ● チェックアウト／～10:00（撤収）",
+    "url": "https://fujino-art.jp/camp/",
+    "in": "15:00～",
+    "out": "～10:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "※直火、カラオケ、打ち上げ花火（手持ち花火は第1駐車場バスレーンでお願いします。）",
+    "url": "https://fujino-art.jp/camp/"
+   }
+  },
+  "sengokudai-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "A1 チェックインは13：00~16：00・チェックアウトは12：00までとなります。",
+    "url": "https://www.1059dai.com/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F/",
+    "in": "13：00~16：00",
+    "out": "12：00"
+   }
+  },
+  "sugari-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 12:00〜／チェックアウト 12:00",
+    "url": "https://sugari.camp/lp/solo-camp.php",
+    "in": "12:00",
+    "out": "12:00"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "すがり1の対岸フリーサイトでは直火が可能で、川原で石のかまどを作って",
+    "url": "https://sugari.camp/lp/solo-camp.php"
+   }
+  },
+  "orange-mura-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：9時〜（連休1日目：9時～、2日目・3日目：12時～） チェックアウト：〜14時（連休：〜11時）",
+    "url": "https://orangemura.com/camp/",
+    "in": "9時〜",
+    "out": "〜14時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "全サイトに車、バイク乗り入れできます。",
+    "url": "https://orangemura.com/camp/"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "直火での焚き火は第1キャンプ場NG・第2キャンプ場OK・谷サイトOK・入口サイトOKです。",
+    "url": "https://orangemura.com/camp/"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "夜間は、スタッフがキャンプ場入口近くの場所におりますのでお電話ください、対応いたします。",
+    "url": "https://orangemura.com/camp/"
+   }
+  },
+  "narita-yume-bokujo": {
+   "bike": {
+    "status": "可",
+    "quote": "二輪車 宿泊 900 円 日帰り 600 円",
+    "url": "https://www.yumebokujo.com/camp.html",
+    "price": "宿泊 900 円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "禁止事項：「直火」「騒音行為」「共用スペースの占有行為」",
+    "url": "https://www.yumebokujo.com/camp.html"
+   }
+  },
+  "ohara-kamifuse-auto": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン13時〜17時(遅れる場合は、必ず連絡して下さい。) チェックアウト12時",
+    "url": "https://ethp.net/camp/kamifuse/?mid",
+    "in": "13時〜17時",
+    "out": "12時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "●1サイト5人､車1台(バイク2台)まで",
+    "url": "https://ethp.net/camp/kamifuse/?mid=9"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止、焚き火台の下に耐火マットをご使用下さい。",
+    "url": "https://ethp.net/camp/kamifuse/?mid=9"
+   }
+  },
+  "tachibana-fureai-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：13:00〜17:00 チェックアウト：8:00〜11:00",
+    "url": "https://www.tachibana-park.jp/facility-guide/camp/",
+    "in": "13:00〜17:00",
+    "out": "8:00〜11:00"
+   }
+  },
+  "umegashima-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：12時から17時 チェックアウト：翌10時まで",
+    "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html",
+    "in": "12時から17時",
+    "out": "翌10時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火不可。バンガロー等建物の近くでは十分ご注意ください。",
+    "url": "https://www.city.shizuoka.lg.jp/shisetsu/s0000087.html"
+   }
+  },
+  "miyoshi-family-camp": {
+   "jikabi": {
+    "status": "一部可",
+    "quote": "Ｕ字溝を利用した直火は全サイトでご利用いただけますが、それ以外の直火につきましては禁止とさせていただきます。",
+    "url": "https://miyoshi1185.wixsite.com/miyoshi-family-camp/how-to-use"
+   }
+  },
+  "fruits-village": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン PM12：00～",
+    "url": "http://fruitsvillage.com/plan1.html",
+    "in": "PM12：00～"
+   }
+  },
+  "inagasaki-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン13時～17時 チェックアウト11時まで",
+    "url": "https://inagasaki.world.coocan.jp/facilities.html",
+    "in": "13時～17時",
+    "out": "11時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "① 直火禁止 ② キャンプ場からの釣り禁止",
+    "url": "https://inagasaki.world.coocan.jp/caution.html"
+   }
+  },
+  "laqlaq-garden": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00から16:30まで チェックアウト 12:00まで",
+    "url": "https://laqlaqgarden.com/",
+    "in": "13:00から16:30まで",
+    "out": "12:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "場内は公園と同じです。人が最優先されます。車・バイクの走行は一方通行、場内では最徐行でお願いします。",
+    "url": "https://laqlaqgarden.com/attention/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。芝・地面を焦がさないよう、脚付きのたき火台、バーベキュー台、コンロ等をご利用ください。",
+    "url": "https://laqlaqgarden.com/attention/"
+   }
+  },
+  "nanasatogawa-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "キャンプ チェックイン13時00分 チェックアウト翌日11時00分",
+    "url": "https://www.city.kimitsu.lg.jp/site/kanko/10224.html",
+    "in": "13時00分",
+    "out": "11時00分"
+   }
+  },
+  "taibusamisaki-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00～16:00 チェックアウト 8:30～11:00",
+    "url": "https://taibusa-misaki.jp/mp/goriyouhouhou_ryokinhyo",
+    "in": "13:00～16:00",
+    "out": "8:30～11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。常設のかまどをご利用いただくか、焚き火台等をお持ちください。",
+    "url": "https://taibusa-misaki.jp/mp/goriyouhouhou_ryokinhyo"
+   }
+  },
+  "okugome-kimura-nouen": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "以下をお守りいただきますようお願い致します。 直火✕",
+    "url": "https://okugomekimuranouen.wixsite.com/site/camp"
+   }
+  },
+  "lakeside-kameyama": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13時00分から16時00分 チェックアウト 翌11時00分まで",
+    "url": "https://www.city.kimitsu.lg.jp/site/kanko/77120.html",
+    "in": "13時00分から16時00分",
+    "out": "11時00分"
+   }
+  },
+  "ohara-sotobou": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00～17：00 チェックアウト 8：00～11：00",
+    "url": "https://oohara-ac-inn.jimdofree.com/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91",
+    "in": "13：00～17：00",
+    "out": "8：00～11：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚き火 直火禁止・専用器具をご利用ください",
+    "url": "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "管理人24時間常駐（営業時）",
+    "url": "https://oohara-ac-inn.jimdofree.com/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/"
+   }
+  },
+  "seiwa-kenminnomori": {
+   "bike": {
+    "status": "可",
+    "quote": "お車やバイクをサイト近くまで乗り入れていただけます。",
+    "url": "https://www.seiwanomori.jp/%E5%90%84%E6%96%BD%E8%A8%AD%E3%81%AE%E7%89%B9%E5%BE%B4%E3%81%A8%E3%81%94%E6%A1%88%E5%86%85/"
+   }
+  },
+  "tomisakikan-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 15:00 チェック アウト11:00",
+    "url": "https://www.tomisakikan.net/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E5%AF%8C%E5%B4%8E%E9%A4%A8%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4",
+    "in": "15:00",
+    "out": "11:00"
+   }
+  },
+  "katsuura-tsuruntsurun": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン： PM 1：00～PM 4：00（PM 4:00以降になるお客様はお電話下さい） チェックアウトAM 11：00",
+    "url": "http://katuuraonsen.com/camp/camp.html",
+    "in": "PM 1：00～PM 4：00",
+    "out": "AM 11：00"
+   },
+   "jikabi": {
+    "status": "可",
+    "quote": "直火ＯＫ 薪サービス【薪は無料（廃材）ですが、数に限りがございますので必要最低限でお願いします。 】",
+    "url": "http://katuuraonsen.com/camp/camp.html"
+   }
+  },
+  "ningyonoyu-marineside": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン15：00～ チェックアウト～10：00",
+    "url": "https://kaikouzu.com/camp.html",
+    "in": "15:00",
+    "out": "10:00"
+   }
+  },
+  "acn-katsuura-manbow": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00から16:00の間に入場",
+    "url": "http://www.manbow-camp.jp/reserve/index.html",
+    "in": "13:00から16:00"
+   }
+  },
+  "eleven-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "テントサイト：チェックイン・・・13 :00 チェックアウト・・・11:00",
+    "url": "https://www.eleven-camp.com/caution",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "区画料：1,650円 電源料 550円 車/バイク（1台）",
+    "url": "https://www.eleven-camp.com/caution"
+   }
+  },
+  "shiosai-campfield": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "場内は全て直火禁止です。 焚き火台 ・ 脚付きコンロ等の器具をご使用ください。",
+    "url": "https://shiosai-minamiboso.com/"
+   }
+  },
+  "asahi-unakami-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "宿泊の場合：入場／午後1時～午後3時、退場／午前9時～午前11時",
+    "url": "https://www.city.asahi.lg.jp/soshiki/29/24010.html",
+    "in": "午後1時～午後3時",
+    "out": "午前9時～午前11時"
+   }
+  },
+  "nightvista-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00～18:00",
+    "url": "https://nightvista3.com/",
+    "in": "13:00～18:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク (駐車台数)   1台/1区画",
+    "url": "https://nightvista3.com/"
+   }
+  },
+  "campgarden-inzai": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00～17：00 / チェックアウト 翌11：00",
+    "url": "https://campg-inzai.com/price/",
+    "in": "13：00～17：00",
+    "out": "翌11：00"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "当施設は夜間スタッフが常駐しないため",
+    "url": "https://campg-inzai.com/faq/"
+   }
+  },
+  "romannomori-camp": {
+   "bike": {
+    "status": "可",
+    "quote": "※オートバイ/自転車 は 無料",
+    "url": "https://www.romannomori.co.jp/price/",
+    "price": "無料"
+   }
+  },
+  "ichinose-kogen-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン午後2時チェックアウト午前11時まで。",
+    "url": "https://www.cosmo.ne.jp/camp/",
+    "in": "午後2時",
+    "out": "午前11時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "車１台１泊500円 バイク1台1泊300円",
+    "url": "https://www.cosmo.ne.jp/camp/goriyouhohou.htm",
+    "price": "300円"
+   }
+  },
+  "autocamp-suzuran": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン １３時から１７時 チェックアウト １１時",
+    "url": "http://park15.wakwak.com/~suzuran/ryoukin/index.htm",
+    "in": "１３時から１７時",
+    "out": "１１時"
+   }
+  },
+  "fuefukigoya-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "※［チェック イン ］PM1:00、［チェックアウト］AM11:00をお守りください（事前相談に応じます）。",
+    "url": "http://www.fuefukigoya.com/ryoukin.html",
+    "in": "PM1:00",
+    "out": "AM11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク １台 200円",
+    "url": "http://www.fuefukigoya.com/ryoukin.html",
+    "price": "200円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "※ 場内での直火は禁止しています。",
+    "url": "http://www.fuefukigoya.com/sisetu.html"
+   }
+  },
+  "campfield-marc-west": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00 チェックアウト 翌日10:00（完全撤収）",
+    "url": "https://www.camp-inba.com/guidance",
+    "in": "13:00",
+    "out": "翌日10:00（完全撤収）"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "オートバイは1サイトにつき2台までご利用いただけます",
+    "url": "https://www.camp-inba.com/guidance"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "・直火は禁止です。 ・焚き火を行う場合は、必ず焚き火台および焚き火シートをご使用ください。",
+    "url": "https://www.camp-inba.com/terms-of-service"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "18:00以降は緊急時を除き車両の出入りはできません",
+    "url": "https://www.camp-inba.com/guidance"
+   }
+  },
+  "holywoods-kururi": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "ご宿泊時：チェックイン １３時から１７時（遅くなる場合はご連絡をお願い致します。） チェックアウト １１時まで",
+    "url": "https://holywoodscamp.jimdofree.com/%E3%81%94%E4%BA%88%E7%B4%84-1/%E3%81%94%E5%88%A9%E7%94%A8%E8%A6%8F%E5%AE%9A/",
+    "in": "１３時から１７時",
+    "out": "１１時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "●直火は禁止です。焚き火をする際は焚き火台と不燃シートを使用してください。",
+    "url": "https://holywoodscamp.jimdofree.com/%E3%81%94%E4%BA%88%E7%B4%84-1/%E3%81%94%E5%88%A9%E7%94%A8%E8%A6%8F%E5%AE%9A/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "●閉門２１時、消灯２２時です。",
+    "url": "https://holywoodscamp.jimdofree.com/%E3%81%94%E4%BA%88%E7%B4%84-1/%E3%81%94%E5%88%A9%E7%94%A8%E8%A6%8F%E5%AE%9A/"
+   }
+  },
+  "hanahana-no-sato": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン １２：００ チェックアウト",
+    "url": "https://hanahananosato.com/camp",
+    "in": "１２：００"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク・自転車・徒歩： 2,200円(税込)",
+    "url": "https://hanahananosato.com/camp",
+    "price": "2,200円(税込)"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "直火OKのサイト有り",
+    "url": "https://hanahananosato.com/camp/policies"
+   }
+  },
+  "kurosaka-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "・チェックイン 13時〜16時 ・チェックアウト12時",
+    "url": "https://www.kurosaka.net/user-guide/",
+    "in": "13時〜16時",
+    "out": "12時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイクや車高が低い車が侵入可能なサイトあり",
+    "url": "https://www.kurosaka.net/facility/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "・直火は禁止です。（焚き火台をご使用いただいての焚き火は問題ございません。）",
+    "url": "https://www.kurosaka.net/user-guide/"
+   }
+  },
+  "rewild-greenfield": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00–18:00",
+    "url": "https://www.campforlife.jp/rgf/",
+    "in": "13:00–18:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "・入場料は車両（クルマとバイク）が対象です ・自転車や徒歩は入場料がかかりません",
+    "url": "https://www.campforlife.jp/rgf/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止（焚き火台＋難燃シート必須）／クワイエットタイム 22:00〜翌7:00／場内は最徐行",
+    "url": "https://www.campforlife.jp/rgf/"
+   }
+  },
+  "inbanuma-sunset-hills": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "※チェックインは11：00～15：00となります。",
+    "url": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html",
+    "in": "11：00～15：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "3.ウッドデッキ区画内や区画付近での直火は禁止とし",
+    "url": "https://www.city.sakura.lg.jp/soshiki/sakuranomiryoku/1/3883.html"
+   }
+  },
+  "tateyama-southern-village": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "A. 直火は禁止しております。焚き火台のご利用をお願いします。",
+    "url": "https://sunnybase.net/contact/"
+   }
+  },
+  "oto-camp-hiroba": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは 12：00～ チェックアウトは 翌10:00 です。",
+    "url": "https://oto-camp.jp/",
+    "in": "12：00～",
+    "out": "翌10:00"
+   }
+  },
+  "campsite-torami": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "Check In 12:00〜18:00 ／ Check Out 〜11:00 ／ 消灯 21:00",
+    "url": "https://campsite-torami.com/campsite.html",
+    "in": "12:00〜18:00",
+    "out": "〜11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "芝生での直火はご遠慮ください。",
+    "url": "https://campsite-torami.com/campsite.html"
+   }
+  },
+  "cappadocia-family": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "A. 直火は禁止しております。焚き火台のご利用をお願いします。",
+    "url": "https://sunnybase.net/contact/"
+   }
+  },
+  "breeze-tateyama": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00～17:00",
+    "url": "https://breeze-camp.com/",
+    "in": "14:00～17:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止 焚き火は、必ず焚火台をご利用ください。",
+    "url": "https://breeze-camp.com/guideline/"
+   }
+  },
+  "pgf-camp": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止で、焚き火台をご利用ください。",
+    "url": "https://camp.pgf.land/?page_id=84"
+   }
+  },
+  "south-bird-inn": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "Check in 13:00~17:00, Check out 11:00",
+    "url": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+    "in": "13:00~17:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "1台 バイク・自転車は無料",
+    "url": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325",
+    "price": "無料"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "●直火は禁止 芝生の場所で焚き火をする場合は焚き火台と焚き火シートは必須です。",
+    "url": "https://s-birdinn.amebaownd.com/pages/846116/page_201702121325"
+   }
+  },
+  "buenavista-beach-club": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00 チェックアウト11:00 am",
+    "url": "https://www.buenavista-beachclub.com/",
+    "in": "13:00",
+    "out": "11:00 am"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火での焚き火は禁止です。焚き火をする場合は防火シートの上に焚き火台などを使用のうえ、行ってください。",
+    "url": "https://www.buenavista-beachclub.com/"
+   }
+  },
+  "kujukuri-taiyo-to-umi": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止なのでコンロや焚き火台などの器具 をご使用ください。",
+    "url": "https://tandu.jp/faq"
+   }
+  },
+  "yubou-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 12:00～18:00 チェックアウト",
+    "url": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/",
+    "in": "12:00～18:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "乗用車 / トレーラー / キャンピングカー / バイク",
+    "url": "https://boso-asobo.com/facility-info/%E9%81%8A%E6%88%BFcamp/"
+   }
+  },
+  "sensan-no-niwa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13 : 00～ チェックアウト ～11 : 00",
+    "url": "https://inukakeyakuzen.wixsite.com/my-site-9/%E5%88%A9%E7%94%A8%E4%B8%8A%E3%81%AE%E6%B3%A8%E6%84%8F",
+    "in": "13 : 00～",
+    "out": "～11 : 00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "・直火禁止 芝生の保持の為直火は禁止、背の低い焚火台のご利用もお控えください。",
+    "url": "https://inukakeyakuzen.wixsite.com/my-site-9/%E5%88%A9%E7%94%A8%E4%B8%8A%E3%81%AE%E6%B3%A8%E6%84%8F"
+   }
+  },
+  "bonfirebase-futtsu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "■キャンプサイトチェックイン 13:00～17:00",
+    "url": "https://futtsu-bonfirebase.com/price.html",
+    "in": "13:00～17:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク2台目以降1台 500円",
+    "url": "https://futtsu-bonfirebase.com/price.html",
+    "price": "500円"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "→直火は決められたエリア内でお楽しみください。",
+    "url": "https://futtsu-bonfirebase.com/agreement.html"
+   }
+  },
+  "hanabusa-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "13：００~チェックイン12：00までチェックアウト",
+    "url": "https://www.big-advance.site/c/128/1618",
+    "in": "13：００",
+    "out": "12：00"
+   }
+  },
+  "isumi-genji-botaru": {
+   "bike": {
+    "status": "可",
+    "quote": "車1台（バイク） 1名まで テント1張り",
+    "url": "https://www.genjibotaru.jp/facility/facility01/"
+   }
+  },
+  "kujukuri-herb-garden": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは13：00～18：00、チェックアウトは11：00までにお願いいたします。",
+    "url": "https://www.herb-cool.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/",
+    "in": "13：00～18：00",
+    "out": "11：00"
+   }
+  },
+  "jikkoku-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:30     チェックアウト 12:00",
+    "url": "https://www.jikkokucampsite.com/cont2/main.html",
+    "in": "13:30",
+    "out": "12:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "ご利用人数1名／車またはバイク1台まで。",
+    "url": "https://www.jikkokucampsite.com/cont2/main.html"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "実谷オートキャンプ場は全サイトで直火をお断りしています。焚き火台等をご利用ください。",
+    "url": "https://www.jikkokucampsite.com/cont5/main.html"
+   }
+  },
+  "arinomien-auto-camp": {
+   "jikabi": {
+    "status": "一部可",
+    "quote": "直火可能な専用炉が付いたオートサイト。約6ｘ6ｍ程度の少しコンパクトな区画で1～2名までの少人数専用です。",
+    "url": "https://arinomi.co.jp/campsites/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜間（19:00〜翌7:00）は車の出入り・移動禁止",
+    "url": "https://arinomi.co.jp/rules/"
+   }
+  },
+  "camp-sauna-uusi": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは午後1時（テント付サイトは午後2時）から午後6時まで可能です。 チェックアウト時間は午前11時までとなります。",
+    "url": "https://www.camp-uusi.com/uusi%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84/",
+    "in": "午後1時（テント付サイトは午後2時）から午後6時",
+    "out": "午前11時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火はできません。焚き火台をご利用ください。",
+    "url": "https://www.camp-uusi.com/uusi%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84/"
+   }
+  },
+  "outland2": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00〜15:00 チェックアウト",
+    "url": "https://outland2.site/facility/",
+    "in": "13:00〜15:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "・ソロ利用でバイクの場合・・・3000円/泊",
+    "url": "https://outland2.site/facility/",
+    "price": "3000円/泊"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "＊直火はできませんので焚き火台を用意して下さい",
+    "url": "https://outland2.site/facility/"
+   }
+  },
+  "in-to-the-wild": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00〜17:00 チェックアウト 〜12:00",
+    "url": "https://in-to-the-wild.jimdosite.com/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B5%E3%82%A4%E3%83%88/",
+    "in": "13:00〜17:00",
+    "out": "〜12:00"
+   }
+  },
+  "camping-hills-kamogawa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン・・・・12時 チェックアウト・・・11時30分",
+    "url": "https://www.kamogawacamp.jp/%e6%96%bd%e8%a8%ad%e6%a1%88%e5%86%85/",
+    "in": "12時",
+    "out": "11時30分"
+   }
+  },
+  "isumi-paddle-club": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "Check In 13:00     Check Out 11:00",
+    "url": "https://wowsports.jp/campbbq/",
+    "in": "13:00",
+    "out": "11:00"
+   }
+  },
+  "onjuku-drone-camping": {
+   "bike": {
+    "status": "可",
+    "quote": "追加車両には自動車1台1泊1,000円（2輪バイクは1台1泊500円）",
+    "url": "https://farmresort-onjuku.com/facility/faq/",
+    "price": "1台1泊500円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚き火は可能です。焚き火台をご利用ください。直火は禁止です。",
+    "url": "https://farmresort-onjuku.com/facility/faq/"
+   }
+  },
+  "render-fika-sammu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン・サイト設営 ふたりだけのプライベートサイトをゆっくり設営しよう。 14:30",
+    "url": "https://renderfika.com/ja/surroundings",
+    "in": "14:30"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火はできません。焚き火台をご利用ください。",
+    "url": "https://renderfika.com/ja/terms-of-use"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "(8) 深夜の従業員がいない際の緊急対応が必要な場合",
+    "url": "https://renderfika.com/ja/terms-of-use"
+   }
+  },
+  "kujukuri-seaside-camp2": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00~17:00",
+    "url": "https://www.kujukuri.co.jp/camp02.html",
+    "in": "13:00~17:00"
+   }
+  },
+  "ichibanboshi-village": {
+   "bike": {
+    "status": "可",
+    "quote": "バイク、自転車でお越しの方は、1台につき一律1,000円",
+    "url": "https://star-village.jp/guide-1.html",
+    "price": "1,000円"
+   }
+  },
+  "tako-no-hoshi": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは14時〜17時 チェックアウトは午前11時となります。",
+    "url": "https://takonohoshi.jp/announce/",
+    "in": "14時〜17時",
+    "out": "午前11時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "乗用車、バイク（車高の低いスポーツタイプの車両は乗入れ出来ない場合がございます。",
+    "url": "https://takonohoshi.jp/access/"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "直火は直火エリアのみ可能で、ご指定場所以外は焚火台および防炎シートをご使用ください。",
+    "url": "https://takonohoshi.jp/announce/"
+   }
+  },
+  "nine-ten-nine-notehama": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 午後13：00 チェックアウト 午前10：00",
+    "url": "https://www.99inakakurashi.com/camp/camp/charge/",
+    "in": "午後13：00",
+    "out": "午前10：00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク追加 4台まで￥1,000/1台",
+    "url": "https://www.99inakakurashi.com/camp/camp/charge/",
+    "price": "￥1,000/1台"
+   }
+  },
+  "minna-no-satoyama": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "宿泊は チェックイン 14:00〜17:00／ チェックアウト 11:00",
+    "url": "https://minna-no-satoyama.com/",
+    "in": "14:00〜17:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク 500 円／台",
+    "url": "https://minna-no-satoyama.com/",
+    "price": "500 円／台"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚き火は、焚火台＋焚火シートを使用してお楽しみください。直火は禁止です。",
+    "url": "https://minna-no-satoyama.com/"
+   }
+  },
+  "shelter-base": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "宿泊 チェックイン13:00〜",
+    "url": "https://www.shelterbase.jp/faq/",
+    "in": "13:00〜"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "可能です。ただし直火は禁止しております。焚き火シートと焚き火台を必ずご使用ください。",
+    "url": "https://www.shelterbase.jp/faq/"
+   },
+   "women": {
+    "status": "女性専用の設備",
+    "quote": "女性専用パウダースペース 女性限定コンセント付きのパウダースペースがございます。",
+    "url": "https://www.shelterbase.jp/facility/"
+   }
+  },
+  "bamboo-grove-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13～17時 チェックアウト 11時",
+    "url": "https://bamboo-grove-camp.com/userguide/",
+    "in": "13～17時",
+    "out": "11時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止 焚き火シート・焚き火台をお使いの上、安全を保って焚き火をお楽しみください。",
+    "url": "https://bamboo-grove-camp.com/userguide/"
+   }
+  },
+  "sakatagaike-park": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火（たき火）での実施は禁止です。コンロ等を使って下さい。",
+    "url": "https://www.city.narita.chiba.jp/environment/page188400.html"
+   }
+  },
+  "camp-bancho-riders-base99": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 10:00〜17:00",
+    "url": "https://airsite.jp/campbancho/archives/menu/434",
+    "in": "10:00〜17:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "※バイク、車の横付けOK",
+    "url": "https://airsite.jp/campbancho/"
+   },
+   "jikabi": {
+    "status": "可",
+    "quote": "直火も可能です、ウッドデッキなど燃えやすいものは注意してください。",
+    "url": "https://airsite.jp/campbancho/archives/menu/434"
+   }
+  },
+  "aerbin-sports-park": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン／ アウト 15:00 （最終チェックイン：21:00） ／10:00",
+    "url": "https://www.aerbinsportspark.com/guide/",
+    "in": "15:00",
+    "out": "10:00"
+   }
+  },
+  "sanuki-farm-auto-camp": {
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "※また、原則として消灯時間中のお車の出入りは緊急時を除き、禁止といたします。",
+    "url": "https://www.sanukifarm.com/%E5%96%B6%E6%A5%AD%E6%A1%88%E5%86%85"
+   }
+  },
+  "chiba-ushino-hiroba": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "【チェックイン】12時〜17時",
+    "url": "https://ushinohiroba.com/app/customer/camping_guide",
+    "in": "12時〜17時"
+   }
+  },
+  "arkforest-yachiyo": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "OUT 8:00〜10:00",
+    "url": "https://www.arkforest.jp/",
+    "out": "8:00〜10:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止となります。焚火台や焚火シートをご使用ください。",
+    "url": "https://www.arkforest.jp/"
+   }
+  },
+  "ujack-mutsuzawa": {
+   "bike": {
+    "status": "可",
+    "quote": "バイクの乗り入れができ、樹木を利用してハンモックを使用することが出来るソロサイトです。",
+    "url": "https://mutsuzawa.ujack.co.jp/plan/"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "場内は直火禁止（ソロデュオサイトを除く）です。焚き火台・脚付きコンロ等の器具をご使用ください。",
+    "url": "https://mutsuzawa.ujack.co.jp/"
+   }
+  },
+  "ichihara-quad-forest": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 午後 1 時～午後 5 時の間 チェックアウト 午前 11 時まで",
+    "url": "https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/",
+    "in": "午後 1 時～午後 5 時",
+    "out": "午前 11 時"
+   },
+   "bike": {
+    "status": "制限あり",
+    "quote": "駐車場から先の園内・園路は、許可車以外の車両の進入はできません。 （ 自動車、バイク、自転車の進入不可 ）",
+    "url": "https://ichihara-forest.jp/%e5%88%a9%e7%94%a8%e6%a1%88%e5%86%85/"
+   }
+  },
+  "bighorn-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは１３時から１８時までになります。",
+    "url": "https://bighorn-camp.com/faq/",
+    "in": "１３時から１８時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は全サイト内で禁止となっています。焚き火やダッチオーブンなどで薪を使う場合は焚き火台等を使用すればＯＫです。",
+    "url": "https://bighorn-camp.com/faq/"
+   }
+  },
+  "bee-camp-field": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：13：00〜17：00 チェックアウト：8：30〜11：00",
+    "url": "https://beefarm.co.jp/bee-camp-field-site/",
+    "in": "13：00〜17：00",
+    "out": "8：30〜11：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火による焚火はできません。焚火台、防炎シートをご用意ください。",
+    "url": "https://beefarm.co.jp/bee-camp-field-rule/"
+   }
+  },
+  "osawa-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン12:00 チェックアウト11:00",
+    "url": "https://www.osawaautocamp.com/",
+    "in": "12:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "駐車 : 車1台￥1,000 バイク1台￥500",
+    "url": "https://www.osawaautocamp.com/",
+    "price": "￥500"
+   }
+  },
+  "northland-campers-village": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "・チェックイン pm1:00 ～pm8:00 ・チェックアウト am8:00～ am11:00",
+    "url": "http://www.northland-cv.com/",
+    "in": "pm1:00 ～pm8:00",
+    "out": "am8:00～ am11:00"
+   }
+  },
+  "gold-mountain-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00～17:00",
+    "url": "https://gm-autocamp.com/site/",
+    "in": "13:00～17:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚き火マットを敷いて焚き火をお楽しみください(直火禁止）",
+    "url": "https://gm-autocamp.com/rule/"
+   }
+  },
+  "basecamp-kisarazu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：10:00am～アウト: 翌日12:00pm",
+    "url": "https://tenjinfarm.com/about",
+    "in": "10:00am～",
+    "out": "翌日12:00pm"
+   }
+  },
+  "berrypark-fishon-sisidome": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "全ての場所（駐車場・釣り場・キャンプ場等）での直火は禁止です。",
+    "url": "https://www.sisidome.jp/guide/"
+   }
+  },
+  "yasokyo-camp": {
+   "bike": {
+    "status": "可",
+    "quote": "バイク 500円 （1台につき）",
+    "url": "https://yasokyo.vercel.app/",
+    "price": "500円 （1台につき）"
+   }
+  },
+  "motosuko-ikoinomori": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：13:00 チェックアウト：11:00",
+    "url": "https://www.motosuko.jp/price.html",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク（宿泊利用者は1台目まで無料） 550円（1泊）",
+    "url": "https://www.motosuko.jp/price.html",
+    "price": "550円（1泊）"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。 火を起こす際はBBQコンロ、焚き火台をご利用ください。",
+    "url": "https://www.motosuko.jp/qa.html"
+   }
+  },
+  "takippara-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン： PM12:00 ／ チェックアウト： AM11:00",
+    "url": "https://takippara-camp.site/",
+    "in": "PM12:00",
+    "out": "AM11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク ¥550/台",
+    "url": "https://takippara-camp.site/",
+    "price": "¥550/台"
+   }
+  },
+  "autocamp-mujina": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン １３：００から チェアウト １２：００まで",
+    "url": "https://camp-mujina.com/?page_id=9",
+    "in": "１３：００",
+    "out": "１２：００"
+   },
+   "women": {
+    "status": "女性専用の設備",
+    "quote": "女性専用シャワールームを設置しました。",
+    "url": "https://camp-mujina.com/"
+   }
+  },
+  "skyvalley-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00〜",
+    "url": "https://www.skyvalleycamp.com/",
+    "in": "13:00〜"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "地面での直火の焚き火はご遠慮ください。 無料で焚き火台を貸し出しておりますので、必ず焚き火台をご利用ください。",
+    "url": "https://www.skyvalleycamp.com/kinsi.html"
+   }
+  },
+  "saiko-kangakuen": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "Ａ：チェックインが１３：００、チェックアウトが１１：００です。",
+    "url": "https://www.kangakuen.com/page007.html",
+    "in": "１３：００",
+    "out": "１１：００"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "地面での直火は禁止しております。",
+    "url": "https://www.kangakuen.com/page002.html"
+   }
+  },
+  "kawaguchiko-newbridge": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "宿泊チェックイン13:00（21:00まで受付）～宿泊チェックアウト10:00",
+    "url": "https://www.fujigoko.tv/newbridge/fee/",
+    "in": "13:00",
+    "out": "10:00"
+   },
+   "bike": {
+    "status": "制限あり",
+    "quote": "22:00～6:00まで就寝時間のため、場内へ車・バイクの出入りはできません。",
+    "url": "https://www.fujigoko.tv/newbridge/fee/"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "指定場所以外の直火、花火、発電機、音楽、その他使用規制があります。",
+    "url": "https://www.fujigoko.tv/newbridge/fee/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "22:00～6:00まで就寝時間のため、場内へ車・バイクの出入りはできません。",
+    "url": "https://www.fujigoko.tv/newbridge/fee/"
+   }
+  },
+  "koyodai-camp": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "テントサイトでの直火は禁止です。",
+    "url": "https://www.koyodai.info/facility.html"
+   }
+  },
+  "pica-fujiyoshida": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00 ～ 19:00（テントサイトは 13:00～19:00）",
+    "url": "https://www.pica-resort.jp/yoshida/about/guidance.html",
+    "in": "13:00～19:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "場内は全て直火禁止とさせていただいております。",
+    "url": "https://www.pica-resort.jp/yoshida/faq/index.html"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜10:00以降は、ゲート閉鎖や車での入場に制限がありますので、フロントにご確認ください。",
+    "url": "https://www.pica-resort.jp/yoshida/about/guidance.html"
+   }
+  },
+  "sankeien-auto-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00 〜 17：00",
+    "url": "https://sankeien-camp.com/guide/",
+    "in": "13：00 〜 17：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "ゴミの分別や直火禁止など自然を守るルール",
+    "url": "https://sankeien-camp.com/"
+   }
+  },
+  "friendpark-mukawa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン・アウトは何時ですか？ A. 13:00 チェックイン / 11:00 アウトです。",
+    "url": "https://fp-mukawa-kaikoma.com/faq/",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイクでのキャンプはできますか？ A. はい。1サイトにつき、3人（バイク3台）までのご利用ができます。",
+    "url": "https://fp-mukawa-kaikoma.com/faq/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。焚火をする際は焚き火台を使用してください。",
+    "url": "https://fp-mukawa-kaikoma.com/camp/"
+   }
+  },
+  "saiko-camp-village-gnome": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは13:00〜15:00、チェックアウトは12:00までです。",
+    "url": "https://gnome.hamayouresort.com/faq/",
+    "in": "13:00〜15:00",
+    "out": "12:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止。焚火台をご使用ください。",
+    "url": "https://gnome.hamayouresort.com/stay/rinkan/"
+   }
+  },
+  "suzuri-no-sato": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン・アウト …14時～翌朝10時",
+    "url": "https://suzuri-camp.jimdofree.com/",
+    "in": "14時",
+    "out": "10時"
+   }
+  },
+  "woodpecker-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "通常チェックインは12時～17時、 チェックアウトは13時と致します。",
+    "url": "https://www.woodpecker-cs.com/guide/8",
+    "in": "12時～17時",
+    "out": "13時"
+   }
+  },
+  "horenbo-no-mori": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00～16:00",
+    "url": "https://www.horenbo.com/portfolio-item/autocamp-river/",
+    "in": "14:00～16:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "車1台もしくはバイク2台までサイト内駐車可",
+    "url": "https://www.horenbo.com/portfolio-item/autocamp-river/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "キャンプ場内は直火ができません。",
+    "url": "https://www.horenbo.com/portfolio-item/autocamp-river/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜21時から朝8時までの間車での移動、出入りはできません。",
+    "url": "https://www.horenbo.com/guide/"
+   }
+  },
+  "genshi-mura-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "【チェックアウト】 9：00〜11：00】 ​※テント場への車の乗り入れは出来ません。",
+    "url": "https://www.genshi-mura.com/stay",
+    "out": "9：00〜11：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "■直火で焚き火は出来ますか。 >>出来ません。必ず焚き火台を使ってください。",
+    "url": "https://www.genshi-mura.com/aboutus"
+   }
+  },
+  "doshi-kubo-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00 チェックアウト 11：00",
+    "url": "https://kubo-camp.jp/book/",
+    "in": "13:00",
+    "out": "11：00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク1台：500円 / 1泊",
+    "url": "https://kubo-camp.jp/book/",
+    "price": "500円 / 1泊"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "当施設は全面「直火禁止」です。",
+    "url": "https://kubo-camp.jp/rule/"
+   }
+  },
+  "satoyama-camp-woodcliff": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "14:00 チェックイン／〜10:00 チェックアウト",
+    "url": "https://www.satoyamacliff-camp.com/guide/",
+    "in": "14:00",
+    "out": "10:00"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "直火は指定の場所のみ可能です。",
+    "url": "https://www.satoyamacliff-camp.com/guide/"
+   }
+  },
+  "okuaki-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "要予約のキャンプ場となります。IN14:00 OUT10:00",
+    "url": "https://farmerswoodcabin.com/",
+    "in": "14:00",
+    "out": "10:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク 440円/台",
+    "url": "https://farmerswoodcabin.com/charge/",
+    "price": "440円/台"
+   }
+  },
+  "fujimiso-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインはテント１４時、バンガロー１５時～１９時。 アウトは翌日１１時までです。",
+    "url": "https://michiaki5218.jimdofree.com/%E5%88%9D%E3%82%81%E3%81%A6%E3%81%94%E5%88%A9%E7%94%A8%E3%81%AE%E6%96%B9/",
+    "in": "１４時",
+    "out": "１１時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "（バイクは大きさ問わず２台で車１台分にカウントします。）",
+    "url": "https://michiaki5218.jimdofree.com/"
+   }
+  },
+  "life-outdoor-garden": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン／13:00〜17:00 チェックアウト／〜11:00",
+    "url": "https://lifeoutdoorgarden.com/stay/",
+    "in": "13:00〜17:00",
+    "out": "〜11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "乗り入れ可能車両 乗用車 / トレーラー / キャンピングカー / バイク",
+    "url": "https://lifeoutdoorgarden.com/stay/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止となっております。",
+    "url": "https://lifeoutdoorgarden.com/faq/"
+   }
+  },
+  "fuji-ecopark-village": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは13:00から、チェックアウトは11:00までとさせて頂きます。",
+    "url": "https://fujiecopark.com/free/goriyouannai",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク・自転車 ￥1100/台",
+    "url": "https://fujiecopark.com/menu",
+    "price": "￥1100/台"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "□ 直火禁止 バーベキュー等は専用コンロ、及びグリルを使用してください。",
+    "url": "https://fujiecopark.com/free/goriyouannai"
+   }
+  },
+  "bulls-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00～17:00",
+    "url": "https://bullscamp.com/",
+    "in": "14:00～17:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火での焚火は禁止。必ず焚火台などをご利用ください。",
+    "url": "https://bullscamp.com/"
+   }
+  },
+  "kiyosato-auberge-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "【チェックイン】 12：00～17：00",
+    "url": "https://kiyosato-auberge.com/camp/",
+    "in": "12：00～17：00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク・自転車は、テントサイト横にお停めください。",
+    "url": "https://kiyosato-auberge.com/camp/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "【直火について】 ・場内全面禁止",
+    "url": "https://kiyosato-auberge.com/camp/"
+   }
+  },
+  "camp-sauna-3set": {
+   "bike": {
+    "status": "可",
+    "quote": "約10台の駐車スペースがございます。バイクもとめられます。",
+    "url": "https://camp-sauna-3set.jp/faq/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火での焚き火等は禁止です。焚き火シートを必ずご利用ください。",
+    "url": "https://camp-sauna-3set.jp/faq/"
+   }
+  },
+  "hirasu-camp21": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン &hellip; 13:00～ チェックアウト &hellip; ～翌日11:00",
+    "url": "https://r.goope.jp/ooishiya502/menu",
+    "in": "13:00～",
+    "out": "～翌日11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク2台目以降&hellip; 500円 / 1台につき",
+    "url": "https://r.goope.jp/ooishiya502/menu",
+    "price": "500円 / 1台につき"
+   }
+  },
+  "hakushu-terrace-villars": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "・チェックイン／13：00〜 ・チェックアウト／〜11：00",
+    "url": "https://villars.co.jp/hakushu",
+    "in": "13：00〜",
+    "out": "〜11：00"
+   }
+  },
+  "little-north-camping": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "«チェックイン» 13時〜15時",
+    "url": "https://littlenorth.net/?page_id=935",
+    "in": "13時〜15時"
+   }
+  },
+  "liberty-camp-fujikawa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン13:00 チェックアウト10:00",
+    "url": "https://liberty-camp.simdif.com/contact.html",
+    "in": "13:00",
+    "out": "10:00"
+   },
+   "women": {
+    "status": "女性専用の設備",
+    "quote": "女性専用露天風呂がリニューアル",
+    "url": "https://liberty-camp.simdif.com/contact.html"
+   }
+  },
+  "autocamp-fujichu": {
+   "bike": {
+    "status": "可",
+    "quote": "当キャンプ場には指定場所（各サイト）に限り自動車やオートバイの乗り入れが可能です。",
+    "url": "https://fujichu-camp.com/pages/54/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。焚き火台・焚き火台シートの使用をお願いします。",
+    "url": "https://fujichu-camp.com/pages/54/"
+   },
+   "manager": {
+    "status": "日中のみ",
+    "quote": "Q8．従業員の方は、何時まで管理棟にいますか？ A8．基本的に、8時30分～17時までは、在中しています。",
+    "url": "https://fujichu-camp.com/pages/55/"
+   }
+  },
+  "camp-and-cabins-yamanakako": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン可能時間は原則14時から17時まで",
+    "url": "https://www.camp-cabins.com/yamanakako/guide/",
+    "in": "14時から17時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "場内全て直火禁止 焚き火台・脚付きコンロ等の器具をご使用ください。",
+    "url": "https://www.camp-cabins.com/yamanakako/guide/"
+   }
+  },
+  "kotogawa-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "【チェックイン】13時〜18時 【チェックアウト】10時",
+    "url": "https://kotogawacamp.jp/",
+    "in": "13時〜18時",
+    "out": "10時"
+   },
+   "manager": {
+    "status": "日中のみ",
+    "quote": "原則、10時から20時まで管理人が滞在します。",
+    "url": "https://kotogawacamp.jp/facility/"
+   }
+  },
+  "lowkeys-farm": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "前日ご利用のお客様のチェックアウトが12:00のため、場内の準備の関係で、通常のチェックインは13:00以降となります。",
+    "url": "https://page.line.me/278cktea",
+    "in": "13:00",
+    "out": "12:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "※バイクは1グループにつき2台まで。3台目以降は＋500円となります。",
+    "url": "https://page.line.me/278cktea",
+    "price": "＋500円"
+   }
+  },
+  "heidi-mura-clarakan": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：PM3:00 チェックアウト：AM10:00",
+    "url": "https://www.kikyouya.co.jp/Clarakan/index.html",
+    "in": "PM3:00",
+    "out": "AM10:00"
+   }
+  },
+  "kanchi-camp-doshi": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 深夜0:00 チェックアウト 夜11:59",
+    "url": "https://doshibbq.wixsite.com/kanchi-camp/%E6%96%99%E9%87%91-%E6%99%82%E9%96%93-%E3%81%AA%E3%81%A9",
+    "in": "深夜0:00",
+    "out": "夜11:59"
+   }
+  },
+  "7inchcamp-mitomi-dogbase": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00〜17:00 （１６時を過ぎる場合には事前にご連絡お願い致します。） チェックアウト 12：00",
+    "url": "https://7inchcamp.com/mitomi-db",
+    "in": "13：00〜17:00",
+    "out": "12：00"
+   }
+  },
+  "superwild-rc-camp": {
+   "jikabi": {
+    "status": "可",
+    "quote": "基本的にどこでも直火可能ですが、乾燥する時期は延焼しないようにくれぐれもお気をつけください。",
+    "url": "https://swrc.jp/camp/"
+   }
+  },
+  "natural-cafe-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックアウト 13：00 11：00",
+    "url": "https://natural-camp.crayonsite.com/",
+    "in": "13:00",
+    "out": "11:00"
+   }
+  },
+  "mochikoshi-rakuho": {
+   "manager": {
+    "status": "夜間不在",
+    "quote": "− 夜間、管理人が不在になることがあります。ご了承ください。",
+    "url": "http://www.mochikoshi-club.com/"
+   }
+  },
+  "camp-satomiya": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン13:00～19:00（平日の仕事終わりに間に合います）・チェックアウト6:00～11:00",
+    "url": "https://www.fujikanko.co.jp/newsrelease/3659",
+    "in": "13:00～19:00",
+    "out": "6:00～11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "■乗り入れ可能車両：乗用車・キャンピングカー・バイク・自転車",
+    "url": "https://www.fujikanko.co.jp/newsrelease/3659"
+   }
+  },
+  "manten-hoshi-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン時刻 13時〜16時 チェックアウト時刻 〜11時",
+    "url": "https://manten.yamanashi.jp/2024/10/01/own-tent/",
+    "in": "13時〜16時",
+    "out": "〜11時"
+   }
+  },
+  "satsukigaoka-koen-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "宿泊の場合、16時までにチェックインしてください。",
+    "url": "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/011.html",
+    "in": "16時まで"
+   }
+  },
+  "dotekage-camp-ground": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00〜 チェックアウト 〜11:00",
+    "url": "https://dotekage-camp.com/?page_id=95",
+    "in": "14:00〜",
+    "out": "〜11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚火は、必ず焚き火台をご使用ください。直火は火災の原因になりますので、ご遠慮下さい。",
+    "url": "https://dotekage-camp.com/?page_id=95"
+   }
+  },
+  "adventure-family-kawazu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "■チェックイン 13：00～18：00 （遅れる場合は17:00迄に必ず電話でご連絡ください）",
+    "url": "https://www.grandporte.com/adven/index.html",
+    "in": "13：00～18：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "＊カラオケ・直火・発電機・楽器、、打ち上げ花火等禁止＊",
+    "url": "https://www.grandporte.com/adven/index.html"
+   }
+  },
+  "autocamp-ginga": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "■チェックイン :13時～17時(冬期は16時) ■チェックアウト :11時",
+    "url": "http://www.ac-ginga.com/",
+    "in": "13時～17時(冬期は16時)",
+    "out": "11時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "●バイク1台(1泊1名様) 1,980円〔税込〕",
+    "url": "http://www.ac-ginga.com/ryoukin.html",
+    "price": "1,980円〔税込〕"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "●直火禁止。地面に直置きの鉄板なども直火と一緒です。",
+    "url": "http://www.ac-ginga.com/rule.html"
+   }
+  },
+  "camp-fantasea": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：１４時～１７時（１７時を過ぎる場合はご連絡ください）チェックアウト：１０時",
+    "url": "https://www.campfantasea.com/",
+    "in": "１４時～１７時",
+    "out": "１０時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "サイト料金には、車１台かバイク２台の駐車料も含みます。",
+    "url": "https://www.campfantasea.com/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "全サ イト 、 直火でのたき火は禁止です。焚き火台、焚き火シートをご利用ください。",
+    "url": "https://www.campfantasea.com/user-guide"
+   }
+  },
+  "autocamp-hanazawa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "■チェックイン ＰＭ１：００～ＰＭ３：００",
+    "url": "https://hanazawacamp.yu-yake.com/shisetu.html",
+    "in": "ＰＭ１：００～ＰＭ３：００"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "オートバイ・自転車 １台 １,５００円",
+    "url": "https://hanazawacamp.yu-yake.com/ryokin.html",
+    "price": "１,５００円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火・まき禁止（炭のみ可）",
+    "url": "https://hanazawacamp.yu-yake.com/shisetu.html"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "●管理棟（管理人２４時間駐在）",
+    "url": "https://hanazawacamp.yu-yake.com/shisetu.html"
+   }
+  },
+  "farmers-hill-izu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン15:00〜1700 チェックアウト10:00",
+    "url": "https://f-hill.jp/wordpress/camp/",
+    "in": "15:00〜1700",
+    "out": "10:00"
+   }
+  },
+  "yamaboushi-autocamp": {
+   "bike": {
+    "status": "可",
+    "quote": "バイク1台1泊 ￥2,500",
+    "url": "https://www.g-news.jp/yamaboushi/",
+    "price": "￥2,500"
+   }
+  },
+  "camp-koganezaki": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。焚き火台をご使用ください。",
+    "url": "https://koganezaki.com/"
+   }
+  },
+  "hakamadaki-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "◆利用時間：チェックイン 13時～16時 / チェックアウトは 11時まで",
+    "url": "https://jforestheda.wixsite.com/hakamacamp/blank-2",
+    "in": "13時～16時",
+    "out": "11時まで"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止 です。焚火台などをご利用ください。",
+    "url": "https://jforestheda.wixsite.com/hakamacamp/blank-2"
+   }
+  },
+  "kawazu-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13～18時 チェックアウト オートキャンプサイト～11時まで",
+    "url": "https://kawazucamp.com/",
+    "in": "13～18時",
+    "out": "オートキャンプサイト～11時まで"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイクは1台2200円(オートキャンプサイト電源無しをご利用の場合)で宿泊できます。",
+    "url": "https://kawazucamp.com/rental/",
+    "price": "2200円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止ですが焚き火台などご利用いただければかまいません。",
+    "url": "https://kawazucamp.com/faq/"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "管理人はいつもいますか？ 24時間常駐しています。",
+    "url": "https://kawazucamp.com/faq/"
+   }
+  },
+  "yoshikawa-kawasemi": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13時 チェックアウト",
+    "url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/sangyoseisakuka/kankoshinkokakari/2/627.html",
+    "in": "13時"
+   }
+  },
+  "ose-tent-mura": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "■直火は禁止です。 ■花火、大音量の音楽等は禁止です。",
+    "url": "http://web.thn.jp/osetent/annai/index.htm"
+   }
+  },
+  "dog-field-gasshukoku": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン（当日）12:00 ～ チエックアウト（翌日）11:00",
+    "url": "https://www.dog-field.jp/price.html",
+    "out": "11:00"
+   }
+  },
+  "fujikawa-camp-hill-luna": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン １３：００～ チェックアウト",
+    "url": "https://camp-lunaluna.com/free/guide2",
+    "in": "１３：００～"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "◆ 直火・カラオケ・花火・ 発電機・ たばこのポイ捨ては禁止です。",
+    "url": "https://camp-lunaluna.com/free/guide2"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "午後８時～午前７時は 入り口ゲートを閉鎖します。 管 理 棟 ２４時間駐在",
+    "url": "https://camp-lunaluna.com/free/guide2"
+   }
+  },
+  "warabezawa-shinsui": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "※ 直火は禁止 です。炊飯、バーベキュー等での火気の使用は、常設の炉又は調理機器などを使用してください。",
+    "url": "https://www.city.shimada.shizuoka.jp/kanko-docs/waxtupazawa.html"
+   }
+  },
+  "nagisaen-hamamatsu": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止します。バーベキューグリル、コンロ等の器具を使用する場合は、危険のない場所で使用してください。",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/etc1.html"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "駐車場は終日開放されていますが、夜間はキャンプ場内への車の入退場はできません。 （3月20日～11月10日 午後9時～翌朝8時",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/w-machi/sports/nagisaen/charge.html"
+   }
+  },
+  "ogawanosato-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは９：００〜１７：００です。 宿泊のチェックアウトは１１：００、日帰りのチェックアウトは１８：００です。",
+    "url": "https://www.ogawanosato.com/%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/",
+    "in": "９：００〜１７：００",
+    "out": "１１：００"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "フリーサイト、区画サイトでの直火は禁止です。焚き火台のご利用をお願いいたします。 ※コアサイトでの直火は可能です。",
+    "url": "https://www.ogawanosato.com/%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85/"
+   }
+  },
+  "okubo-camp-fujieda": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン時間 14:00 チェックアウト時間 12:00（コテージは10:00）",
+    "url": "https://orep-o.net/okubo_camp/",
+    "in": "14:00",
+    "out": "12:00"
+   }
+  },
+  "kenmin-no-mori-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 午後１時より受付開始",
+    "url": "http://www.kenmori.info/howtouse.html",
+    "in": "午後１時"
+   }
+  },
+  "haruno-kawaoto-no-sato": {
+   "manager": {
+    "status": "日中のみ",
+    "quote": "宿直管理人は9：00～19:00までキャンプ場に常駐しております。 夜間などの緊急時は053-985-0630までご連絡ください。",
+    "url": "https://kawaoto.jp/facility/"
+   }
+  },
+  "omotefuji-camping": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 12:00 チェックアウト",
+    "url": "https://oyado-nisinoya.com/camp.html",
+    "in": "12:00"
+   }
+  },
+  "akiha-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 11:00～17:00まで チェックアウト",
+    "url": "https://akiha-camp.com/guide",
+    "in": "11:00～17:00"
+   }
+  },
+  "urakawa-camp-mura": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "原則 チェックインが13:00からご利用可能です。 チェックアウトは11:00です。",
+    "url": "https://www.urakawacamp.com/contactus/faq/",
+    "in": "13:00",
+    "out": "11:00"
+   }
+  },
+  "tatsuyama-himitsumura": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン ロッジ・コテージ：14:00〜17:00 テントサイト：13:00〜17:00",
+    "url": "https://himitsumura.com/about",
+    "in": "13:00〜17:00"
+   }
+  },
+  "pengin-mura-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "オートキャンプ イン１３時～１６時 （１６時過ぎる場合は連絡下さい）",
+    "url": "https://pengin.grupo.jp/free768041",
+    "in": "１３時～１６時"
+   }
+  },
+  "mochiya-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン9:00～17:00 チェックアウト17:00まで",
+    "url": "http://www.mochiya.co.jp/qa.html",
+    "in": "9:00～17:00",
+    "out": "17:00"
+   }
+  },
+  "andgreen-fuji": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン テントサイト 14:00～17:30",
+    "url": "https://andgreencamp.com/fuji/rule/",
+    "in": "14:00～17:30"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。 必ず焚き火台をご利用ください。",
+    "url": "https://andgreencamp.com/fuji/rule/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "入り口ゲートは管理棟の営業時間に合わせ閉鎖します。",
+    "url": "https://andgreencamp.com/fuji/rule/"
+   }
+  },
+  "ishigami-no-sato": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：12:00〜17:00（デイキャンプ 9:00〜15:00） チェックアウト：11:00",
+    "url": "https://ishigaminosato.com/",
+    "in": "12:00〜17:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク：500円／台（乗入れ可、区画内に入らない場合は別途駐車場）",
+    "url": "https://ishigaminosato.com/autosite1/",
+    "price": "500円／台"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止。焚火台やコンロをご利用ください",
+    "url": "https://ishigaminosato.com/"
+   }
+  },
+  "volcano-shiraito-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00～ チェックアウト 11：00",
+    "url": "https://volcano-camp.amebaownd.com/pages/2675612/page_201903091447",
+    "in": "13：00～",
+    "out": "11：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火、打ち上げ花火、爆竹、発電機、大音量の音楽、タバコの投げ捨ては禁止します。 焚き火は焚き火台を使用して下さい。",
+    "url": "https://volcano-camp.amebaownd.com/pages/3610044/page_202002241810"
+   }
+  },
+  "shinfuji-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00 チェックアウト",
+    "url": "https://shinfuji-auto-camp.com/",
+    "in": "13:00"
+   }
+  },
+  "fujiyama-izumi-no-mori": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00から チェックアウト 12:00まで",
+    "url": "https://fujiyamaizumi.com/ja/plan.html",
+    "in": "13:00",
+    "out": "12:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "●バイク 500円 ●AC電源（６A） １,０００円（要予約）",
+    "url": "https://fujiyamaizumi.com/ja/plan.html",
+    "price": "500円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "●直火禁止 ●打ち上げ花火や音の出る花火禁止。",
+    "url": "https://fujiyamaizumi.com/ja/plan.html"
+   }
+  },
+  "fujisan-kodomo-no-kuni": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "ただし、直火はご遠慮ください。（コンロや焚き火台などをご利用ください）",
+    "url": "https://www.kodomo.or.jp/faq/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "駐車場は、防犯上の理由から18:00から翌朝6:00まで車両出入口を閉鎖します。",
+    "url": "https://www.kodomo.or.jp/faq/"
+   }
+  },
+  "mochi-benten-camp": {
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止です。コンロ等をご利用ください（有償でお貸ししています）。",
+    "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/kouen_kankou/recreation/1003113.html"
+   }
+  },
+  "kurhaus-yamagoya": {
+   "jikabi": {
+    "status": "可",
+    "quote": "直火はOKですか？ 現状はOKとさせていただいていますが、昨今の環境への配慮を考えて、禁止にする予定です。",
+    "url": "https://kurhaus-yamagoya.com/faq/"
+   }
+  },
+  "sumiyaki-no-mori-akegashima": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "■チェックイン時間：12：00～16：00",
+    "url": "http://www.bt-r.jp/smc/",
+    "in": "12：00～16：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "地面での直火は禁止となります（焚き火台・コンロをご使用ください）。",
+    "url": "http://www.bt-r.jp/smc/"
+   }
+  },
+  "marubi-green-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "-チェックイン／11：00～16：00の間 -チェックアウト／～11：00",
+    "url": "https://www.fuji-marubi.jp/campground/",
+    "in": "11：00～16：00",
+    "out": "～11：00"
+   },
+   "bike": {
+    "status": "制限あり",
+    "quote": "Q サイトへの車やバイクの乗り入れはできますか？ – サイトエリア内への車両の侵入はできません。",
+    "url": "https://www.fuji-marubi.jp/campground/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "-直火、花火は不可。",
+    "url": "https://www.fuji-marubi.jp/campground/"
+   }
+  },
+  "izumi-resort-izu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "IN 15:00 OUT 11:00",
+    "url": "https://izumiresort.com/camp-2025/",
+    "in": "15:00",
+    "out": "11:00"
+   }
+  },
+  "outdoor-hill-village": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 15：00 チェックアウト 10：00",
+    "url": "https://www.tokinosumika.com/stay/outdoor/",
+    "in": "15：00",
+    "out": "10：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "※直火禁止（芝生保護のため、軽量ブロックをお貸し出しいたします）",
+    "url": "https://www.tokinosumika.com/stay/outdoor/"
+   }
+  },
+  "nishifuji-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00から チェックアウト",
+    "url": "https://nishifuji.com/guide/",
+    "in": "13：00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイクでソロサイト なし 3,300",
+    "url": "https://nishifuji.com/price/",
+    "price": "3,300"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火禁止（ただし空カン等を使用しての焚き火は可）",
+    "url": "https://nishifuji.com/guide/"
+   }
+  },
+  "daito-onsen-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00～16:00 チェックアウト",
+    "url": "https://daitoonsen.jp/camp.php",
+    "in": "13:00～16:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火・焚火禁止 22時以降はお静かにお願いいたします。",
+    "url": "https://daitoonsen.jp/camp.php"
+   }
+  },
+  "hamanako-canal-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：13:00～17:00 チェックアウト：7:00～11:00",
+    "url": "http://www.bc-canal.com/autocamp/",
+    "in": "13:00～17:00",
+    "out": "7:00～11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイクキャンプ(ソロ・テント・１張): 2,200円（税込）",
+    "url": "http://www.bc-canal.com/autocamp/",
+    "price": "2,200円（税込）"
+   },
+   "women": {
+    "status": "女性専用エリア・サイト",
+    "quote": "女子キャン (専用・水路沿い芝生エリア)(テント・１張): 2,750円（税込）",
+    "url": "http://www.bc-canal.com/autocamp/"
+   }
+  },
+  "ogawa-camp-field": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは９：００から可能ですが、日曜日などの連休中日・最終日は１１：００からとなります。 宿泊のチェックアウトは１１：００で、レイトチェックアウト適用で１８：００まで延長が可能です。",
+    "url": "https://www.ogawacampfield.com/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85",
+    "out": "１１：００"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイク・自転車１台につき：３００円",
+    "url": "https://www.ogawacampfield.com/%E6%BA%96%E5%82%99%E4%B8%AD",
+    "price": "３００円"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "基本的には焚き火台のご利用をお願いいたします。 土・砂利などが露出している場所であれば直火いただいて問題ございませんが",
+    "url": "https://www.ogawacampfield.com/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85"
+   }
+  },
+  "fuji-wild-adventure": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン：15:00～19:00 チェックアウト：～10:00",
+    "url": "http://fwa.kp-hd.com/",
+    "in": "15:00～19:00",
+    "out": "～10:00"
+   }
+  },
+  "u-base-camp-ebina": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00〜 チェックアウト",
+    "url": "https://u-base.jp/camp/ebina/access/",
+    "in": "13:00〜"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止となっています。",
+    "url": "https://u-base.jp/camp/ebina/faq/"
+   }
+  },
+  "earthcolor-izu": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン      14:00 チェックアウト  11:00",
+    "url": "https://earthcolor-izu.jimdofree.com/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%E6%96%99%E9%87%91-%E6%A1%88%E5%86%85/",
+    "in": "14:00",
+    "out": "11:00"
+   }
+  },
+  "hamanako-park-village": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "テントサイトのチェックアウト時刻は10：00となりますので厳守お願いします。",
+    "url": "https://hamanako-p-v.com/camp/",
+    "out": "10：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火可能でしょうか？ 直火禁止とさせていただいてます。",
+    "url": "https://hamanako-p-v.com/camp/"
+   }
+  },
+  "amagi-kogen-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン14：00 チェックアウト11：00",
+    "url": "https://www.izu-camp.jp/%E7%AC%AC%E4%B8%80%E3%82%B5%E3%82%A4%E3%83%88-%E6%9E%97%E9%96%93%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+    "in": "14：00",
+    "out": "11：00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "大人２名 小人1名 車１台又はバイク２台まで",
+    "url": "https://www.izu-camp.jp/%E7%AC%AC%E4%B8%80%E3%82%B5%E3%82%A4%E3%83%88-%E6%9E%97%E9%96%93%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火ダメ（焚き火台OK）",
+    "url": "https://www.izu-camp.jp/"
+   },
+   "manager": {
+    "status": "24時間常駐",
+    "quote": "スタッフは、日中、第１サイトにある事務所にいます。夜間は、第２サイト隣のログハウスにいます。",
+    "url": "https://www.izu-camp.jp/%E3%83%97%E3%83%81%E6%B9%AF%E6%B2%BB"
+   }
+  },
+  "garage-secret-base": {
+   "bike": {
+    "status": "可",
+    "quote": "G site(ソロ キャン推奨サイト-バイク,自転車) 通年料金 ：3,300円",
+    "url": "https://www.garage-secret-base.com/price-faq",
+    "price": "3,300円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "Q. 直火はできますか？ A. 直火は禁止となります。",
+    "url": "https://www.garage-secret-base.com/price-faq"
+   }
+  },
+  "ninomaru-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13：00～17：00 チェックアウト",
+    "url": "https://www.ninomaru-village.jp/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/",
+    "in": "13：00～17：00"
+   }
+  },
+  "tetsukyo-no-mori-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン １２：３０ チェックアウト １１:００",
+    "url": "https://inishiemori.com/tetsudou-mori-camp/",
+    "in": "１２：３０",
+    "out": "１１:００"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "※バイクは１台につき２００円",
+    "url": "https://inishiemori.com/tetsudou-mori-camp/",
+    "price": "２００円"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火はお断りしています。焚火台をご使用ください。",
+    "url": "https://inishiemori.com/tetsudou-mori-camp/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "夜間２０時以降、早朝６時までのお車の出入りを制限させていただいております。",
+    "url": "https://inishiemori.com/tetsudou-mori-camp/"
+   }
+  },
+  "bikuishi-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 12：30～16：00 チェックアウト 11：00",
+    "url": "https://bikuishi.jp/camp/index.html",
+    "in": "12：30～16：00",
+    "out": "11：00"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "直火は専用のファイアプレイスをご使用ください。その他の場所での直火は禁止です。",
+    "url": "https://bikuishi.jp/camp/index.html"
+   }
+  },
+  "solace-no-oka": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは13:00-17:00 チェックアウトは11:00までとなります。",
+    "url": "https://solace-atami.com/faq/",
+    "in": "13:00-17:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "制限あり",
+    "quote": "サイト内へ車やバイク等乗り物の乗り入れはできません。",
+    "url": "https://solace-atami.com/faq/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "地面に直火は禁止しております。",
+    "url": "https://solace-atami.com/faq/"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "常駐スタッフはいますか？ 常駐スタッフはいません。",
+    "url": "https://solace-atami.com/faq/"
+   }
+  },
+  "stone-chair-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックアウト：11:00",
+    "url": "https://www.stone-chair.com/visitor",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "秋はバイクでソロキャンプ！大自然を満喫しよう",
+    "url": "https://www.stone-chair.com/"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "電源・ブランコ・直火OK など、オプションも色々あります！",
+    "url": "https://www.stone-chair.com/visitor"
+   }
+  },
+  "nishiizu-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 14:00〜18:00",
+    "url": "https://www.241z-autocamp.com/",
+    "quoteOut": "チェックアウト 〜11:00",
+    "in": "14:00〜18:00",
+    "out": "〜11:00"
+   }
+  },
+  "jurigi-fuji-dog": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン時間は12時から15時、チェックアウトは11時です。",
+    "url": "https://fuji.dog/rules/",
+    "in": "12時から15時",
+    "out": "11時"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚き火は可能ですが、直火は禁止です。",
+    "url": "https://fuji.dog/camp-guide/"
+   },
+   "women": {
+    "status": "女性専用プラン",
+    "quote": "女性専用ソロキャンププラン 安心の女性専用枠",
+    "url": "https://fuji.dog/price/"
+   }
+  },
+  "tateyama-club": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン（14:00～17:00）、チェックアウト（8:00～11:00）",
+    "url": "https://www.tateyamaclub.tokyo/terms.html",
+    "in": "14:00～17:00",
+    "out": "8:00～11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "地面での直火は禁止です。",
+    "url": "https://www.tateyamaclub.tokyo/terms.html"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "22:00以降は、防犯のため出入り口のゲートを施錠いたします。",
+    "url": "https://www.tateyamaclub.tokyo/terms.html"
+   },
+   "women": {
+    "status": "女性専用の設備",
+    "quote": "●女性専用パウダールーム(ドライヤー完備)●女性専用シャワー１箇所",
+    "url": "https://www.tateyamaclub.tokyo/"
+   }
+  },
+  "lake-lodge-yamanaka-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン ／ アウト 15:00 ／ 10:00",
+    "url": "https://lakelodgeyamanaka.com/guide/",
+    "in": "15:00",
+    "out": "10:00"
+   }
+  },
+  "yagurasawa-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックインは12：00～16：00です。（予約プランによっては異なります）",
+    "url": "https://yagurasawa.com/rule/",
+    "quoteOut": "チェックアウトは11：00です。",
+    "in": "12：00～16：00",
+    "out": "11：00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "二輪車の場合は１台につき550円/１日の追加料金が発生します。",
+    "url": "https://yagurasawa.com/",
+    "price": "１台につき550円/１日"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "当キャンプ場は直火を禁止しています。",
+    "url": "https://yagurasawa.com/rule/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "20：00以降は入口ゲートを閉めさせていただく場合がございます。",
+    "url": "https://yagurasawa.com/rule/"
+   }
+  },
+  "campiece-minamiashigara": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン・・・13:00～17:00 チェックアウト・・・ 9:00～11:00",
+    "url": "https://campiece.com/faq/",
+    "in": "13:00～17:00",
+    "out": "9:00～11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "サイトは直火ができますか？ 土壌生物を守るため、直火での調理や焚火はできません。",
+    "url": "https://campiece.com/faq/"
+   },
+   "manager": {
+    "status": "夜間不在",
+    "quote": "管理人は24時間いますか？ 夜間はいない時間帯もあります。",
+    "url": "https://campiece.com/faq/"
+   }
+  },
+  "back-yard-camp-shoji": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックアウト11:00amは守って頂くようにお願い致します。",
+    "url": "https://backyard-camp.com/campingfield/fujiview-private-site/",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "可 ※乗用車・バイク",
+    "url": "https://backyard-camp.com/campingfield/fujiview-private-site/"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火不可。焚き火を行う場合は、焚き火台をご利用をお願いします。",
+    "url": "https://backyard-camp.com/campingfield/fujiview-private-site/"
+   }
+  },
+  "kiwi-fruit-country-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "キャンプ予約日の次の日は朝9時までにチェックアウト",
+    "url": "https://kiwicountry.jp/info",
+    "out": "朝9時"
+   }
+  },
+  "ogawa-grand-lodge-field": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "■ チェックイン 13：00",
+    "url": "https://www.campal.co.jp/shops/sort/field/index.html",
+    "quoteOut": "■ チェックアウト 11：00",
+    "in": "13：00",
+    "out": "11：00"
+   }
+  },
+  "ma-saison-otaki": {
+   "bike": {
+    "status": "可",
+    "quote": "もちろんお車やバイクでも。",
+    "url": "https://ma-saison.com/"
+   }
+  },
+  "lotus-camp-village": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックアウトが11:00、チェックインが12:00となっており",
+    "url": "http://lotus-camp.com/",
+    "in": "12:00",
+    "out": "11:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "車3台（バイクは6台）まで無料",
+    "url": "http://lotus-camp.com/"
+   }
+  },
+  "grove-camping-hill": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13時〜16時 チェックアウト 〜翌12時",
+    "url": "https://grove-yugawara.com/",
+    "in": "13時〜16時",
+    "out": "〜翌12時"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "車・バイク 1台 1,000円",
+    "url": "https://grove-yugawara.com/",
+    "price": "1台 1,000円"
+   },
+   "jikabi": {
+    "status": "可",
+    "quote": "常設直火ピットで野趣あふれる焚き火をお楽しみいただけます",
+    "url": "https://grove-yugawara.com/"
+   }
+  },
+  "wonderful-garden-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "【オートサイト宿泊】チェックイン12：00～16：00 チェックアウト翌日10：00",
+    "url": "https://www.wonderfulgarden.jp/",
+    "in": "12：00～16：00",
+    "out": "10：00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火・打ち上げ花火・発電機の使用は禁止します",
+    "url": "https://www.wonderfulgarden.jp/form/"
+   }
+  },
+  "fumotto-de-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "【IN】15:00～18:00／【OUT】8:00～10:00",
+    "url": "https://fumotto.jp/shop/fumotto-de-camp-2/",
+    "in": "15:00～18:00",
+    "out": "8:00～10:00"
+   }
+  },
+  "shinei-kiyosato-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "◎ チェックイン：13:00から チェックアウト：11:00まで",
+    "url": "https://shinei-camp-field.toki-lab.com/",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火の使用（必ず焚き火台や炉台の上で火を扱ってください）",
+    "url": "https://shinei-camp-field.toki-lab.com/terms-of-service/"
+   }
+  },
+  "hadano-omoteranzawa-camp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "15：00～翌10：00(アーリーチェックイン13：00～可)",
+    "url": "https://yamamo-field.com/using/",
+    "in": "15：00",
+    "out": "10：00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "バイクで行けますか？ ご利用いただけます。",
+    "url": "https://yamamo-field.com/faq/"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "焚き火は、焚火台及びシートをご利用ください。フリーサイトエリアのみ直火をご利用頂けます。",
+    "url": "https://yamamo-field.com/using/"
+   }
+  },
+  "mamuro-camp-base": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン13:00 チェックアウト11:00",
+    "url": "https://mamuro-campbase.com/access/",
+    "in": "13:00",
+    "out": "11:00"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "焚火は直火禁止です。焚火台と焚火シートを必ずご利用ください",
+    "url": "https://mamuro-campbase.com/"
+   }
+  },
+  "hoshiumi-no-kaori": {
+   "bike": {
+    "status": "制限あり",
+    "quote": "自動車やバイクの乗り入れについて、芝生部分への乗り入れは基本的に禁止いたします。",
+    "url": "http://www.hoshiuminokaori.jp/termsofuse.html"
+   },
+   "jikabi": {
+    "status": "不可",
+    "quote": "直火は禁止となります。（必ず焚火台等をご利用ください。）",
+    "url": "http://www.hoshiuminokaori.jp/termsofuse.html"
+   }
+  },
+  "tsukiyoko-mutsuzawa": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "チェックイン 13:00–16:00 チェックアウト 12:00",
+    "url": "https://tsukiyoko.ujack.co.jp/",
+    "in": "13:00–16:00",
+    "out": "12:00"
+   },
+   "bike": {
+    "status": "可",
+    "quote": "乗用車・バイク・ キャンピングカー は入場可能。",
+    "url": "https://tsukiyoko.ujack.co.jp/access.html"
+   }
+  },
+  "fujimi-no-oka-autocamp": {
+   "checkin": {
+    "status": "記載あり",
+    "quote": "区画サイト12時〜17時、フリーサイト11時〜17時",
+    "url": "https://fujimicamp.jp/rule/",
+    "quoteOut": "チェックアウト時間までにご退場して下さい。 ＊区画サイト12時、フリーサイト11時",
+    "in": "区画サイト12時〜17時、フリーサイト11時〜17時",
+    "out": "区画サイト12時、フリーサイト11時"
+   },
+   "jikabi": {
+    "status": "一部可",
+    "quote": "直火サイト (現在準備中) 直火ができるのはここだけ！",
+    "url": "https://fujimicamp.jp/camp/"
+   },
+   "manager": {
+    "status": "夜間ゲート閉鎖",
+    "quote": "ゲート閉⾨後（18時〜8時）は場内への出⼊りや、お⾞の移動は出来ません",
+    "url": "https://fujimicamp.jp/rule/"
+   },
+   "women": {
+    "status": "女性専用の設備",
+    "quote": "女性専用と男女共用の2つのパウダールームを完備。",
+    "url": "https://fujimicamp.jp/facility/"
+   }
+  }
+ }
+}

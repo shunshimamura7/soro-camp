@@ -61,6 +61,17 @@ export function toLite(c: Campground): Campground {
     reservationUrl: c.reservationUrl,
     source: urlSource,
     cautions,
+    // 一覧の絞り込みとカードに使う分だけ（原文の引用は詳細ページで出す）
+    officialFacts: c.officialFacts
+      ? Object.fromEntries(
+          Object.entries(c.officialFacts)
+            .filter(([k]) => k !== "fetchedAt")
+            .map(([k, v]) => {
+              const f = v as { status: string; in?: string; out?: string; price?: string };
+              return [k, { status: f.status, in: f.in, out: f.out, price: f.price }];
+            })
+        )
+      : undefined,
   } as unknown as Campground;
 
   if (

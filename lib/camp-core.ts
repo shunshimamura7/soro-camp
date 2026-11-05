@@ -203,7 +203,12 @@ export type FeatureFilterKey =
   | "fishing"
   | "nearbyOnsen"
   | "warmToilet"
-  | "yearRound";
+  | "yearRound"
+  | "priceChecked"
+  | "bikeOk"
+  | "jikabiOk"
+  | "womenOnly"
+  | "managerNight";
 
 /**
  * 条件ごとの判定。**未確認を「あり」に混ぜない**ため、すべて厳密な true 判定にする。
@@ -236,6 +241,16 @@ const FEATURE_PREDICATES: Record<FeatureFilterKey, (c: Campground) => boolean> =
    * 「要確認」は通年に入れない（未確認を混ぜない）。定休日つきの「通年（火曜定休）」は入る。
    */
   yearRound:     (c) => c.season.startsWith("通年"),
+  /** 料金を公式で確認でき、金額が出ているもの（2026-11-05 審査2回目。要問合せ・未確認は入れない） */
+  priceChecked:  (c) => c.priceVerified === true && c.priceMin > 0,
+  /**
+   * ここから下は公式ページの原文から抜き出した記述（data/official-facts-*.json）で判定する。
+   * 原文に書いてあるものだけが該当。書いていない施設は「不可」ではなく「記載なし」。
+   */
+  bikeOk:        (c) => c.officialFacts?.bike?.status === "可",
+  jikabiOk:      (c) => c.officialFacts?.jikabi?.status === "可" || c.officialFacts?.jikabi?.status === "一部可",
+  womenOnly:     (c) => Boolean(c.officialFacts?.women?.status),
+  managerNight:  (c) => c.officialFacts?.manager?.status === "24時間常駐",
 };
 
 export const FEATURE_FILTER_KEYS = Object.keys(FEATURE_PREDICATES) as FeatureFilterKey[];
@@ -262,6 +277,11 @@ export const DEFAULT_FILTERS: Filters = {
   nearbyOnsen: false,
   warmToilet: false,
   yearRound: false,
+  priceChecked: false,
+  bikeOk: false,
+  jikabiOk: false,
+  womenOnly: false,
+  managerNight: false,
 };
 
 export function hasActiveConditions(filters: Filters): boolean {

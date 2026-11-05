@@ -1,5 +1,5 @@
 'use client';
-import { useSyncExternalStore } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 
 const KEY = 'soro-favs';
 /** 同じページ内の他のボタンに変更を伝えるためのイベント。storage イベントは別タブにしか飛ばない */
@@ -55,6 +55,8 @@ export function useFavorites(): string[] {
 export default function FavoriteButton({ slug, name }: { slug: string; name?: string }) {
   const favs = useFavorites();
   const fav = favs.includes(slug);
+  /** 押した結果を読み上げる（審査員6：aria-pressed だけでは結果が音で分からない） */
+  const [said, setSaid] = useState('');
 
   const toggle = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -67,9 +69,11 @@ export default function FavoriteButton({ slug, name }: { slug: string; name?: st
       /* ストレージが使えない環境では保存しない */
     }
     window.dispatchEvent(new Event(CHANGE_EVENT));
+    setSaid(fav ? `${name ?? ''}を保存から外しました（${next.length}件）` : `${name ?? ''}を保存しました（${next.length}件）`);
   };
 
-  const label = `${name ? `${name}を` : ''}${fav ? '保存から外す' : '保存する'}`;
+  // ラベルは固定し、状態は aria-pressed だけで伝える（ラベルと状態が食い違って読まれていた。審査員6）
+  const label = `${name ? `${name}を` : ''}保存`;
   return (
     <button
       type="button"
@@ -83,6 +87,7 @@ export default function FavoriteButton({ slug, name }: { slug: string; name?: st
     >
       <span aria-hidden="true" className="text-[18px] leading-none">{fav ? '★' : '☆'}</span>
       <span className="text-[12px]">{fav ? '保存済み' : '保存'}</span>
+      <span role="status" className="sr-only">{said}</span>
     </button>
   );
 }

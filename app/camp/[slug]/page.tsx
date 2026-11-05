@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { Campground } from "@/lib/types";
+import type { Campground, OfficialFactKey } from "@/lib/types";
 import { hasEvidence, hasUsableCoord, hasVerifiedScores, isToleratedWildSite, activeCampgrounds } from "@/lib/camp";
 import { campMapUrl, nearbyBathUrl, nearbyShoppingUrl } from "@/lib/maps";
 import { notFound } from "next/navigation";
@@ -25,6 +25,14 @@ function seasonShort(season: string): string {
   return season.startsWith("要確認") ? "営業期間は公式で要確認" : `営業期間 ${season}`;
 }
 
+const FACT_ITEMS: [OfficialFactKey, string][] = [
+  ["checkin", "チェックイン／アウト"],
+  ["bike", "バイク"],
+  ["jikabi", "直火（地面での焚き火）"],
+  ["manager", "管理人・夜間"],
+  ["women", "女性向けの区画・設備"],
+];
+
 function priceSummary(camp: Campground): string | null {
   if (camp.type === "wild") return "無料";
   if (camp.priceVerified !== true) return null;
@@ -49,16 +57,16 @@ export async function generateMetadata({
       : `${camp.name}【${camp.prefecture}・${camp.area}】ソロキャンプの料金・設備`;
   const price = priceSummary(camp);
   const comment = plainText(camp.soloComment);
-  // 料金が未確認の施設は、検索結果に出る description にも金額を書かない
-  const description = (
+  // 料金が未確認の施設は、検索結果に出る description にも金額を書かない。
+  // 結論（料金）を先に、続けて特徴を1文。全体を約120字に収める（長いと検索結果で切れる。審査員8）
+  const head =
     camp.type === "wild"
-      ? `${comment} 無料の野営地（管理者なし）。`
+      ? `${camp.prefecture}・${camp.area}の無料の野営地（管理者なし）。`
       : price
-        ? `${comment} ソロ1名1泊 ${price}（公式で確認）。${seasonShort(camp.season)}。`
-        : `${comment} 料金は公式に記載がなく未確認。${seasonShort(camp.season)}。`
-  )
-    .trim()
-    .slice(0, 160);
+        ? `ソロ1名1泊${price.replace(/¥/g, "")}円（公式で確認）。`
+        : `料金は公式に記載がなく未確認。`;
+  const firstSentence = (comment.split("。")[0] ?? "").trim();
+  const description = `${head}${firstSentence ? firstSentence + "。" : ""}${camp.type === "wild" ? "" : seasonShort(camp.season) + "。"}`.slice(0, 120);
 
   const shouldNoIndex = camp.status !== "active" || !hasEvidence(camp);
   const url = `${SITE_URL}/camp/${slug}`;
@@ -79,13 +87,13 @@ function Note({ text }: { text?: string }) {
   // 「本文（https://…）」の形を「本文 https://…」にしてから文と出典に分ける
   const src = parseSource(text.replace(/[（(]\s*(https?:\/\/[^\s）)]+)\s*[)）]/, " $1"));
   return (
-    <span className="block text-[12px] text-[#6b5d50] mt-0.5 leading-relaxed">
+    <span className="block text-[13px] text-[#4a3f35] mt-0.5 leading-relaxed">
       <RichText text={src.label} strongClassName="font-semibold" />
       {src.url && (
         <>
           {" "}
-          <a href={src.url} target="_blank" rel="noopener noreferrer" className="inline-block py-1 font-semibold text-[#b5440e] underline hover:no-underline">
-            出典<span aria-hidden="true"> ↗</span>
+          <a href={src.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center min-h-[44px] min-w-[44px] px-1 font-semibold text-[#b5440e] underline hover:no-underline">
+            出典<span aria-hidden="true"> ↗</span><span className="sr-only">（公式の原文を新しいタブで開く）</span>
           </a>
         </>
       )}
@@ -125,7 +133,8 @@ export default async function CampDetailPage({
   const jsonLd = [
     {
       "@context": "https://schema.org",
-      "@type": "Campground",
+      // 野営地は宿泊施設ではないので Place（黙認の場所を Campground として出さない。審査員8）
+      "@type": camp.type === "wild" ? "Place" : "Campground",
       name: camp.name,
       description: plainText(camp.soloComment),
       address: {
@@ -153,7 +162,7 @@ export default async function CampDetailPage({
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "トップ", item: SITE_URL },
         ...(prefSlug
-          ? [{ "@type": "ListItem", position: 2, name: `${camp.prefecture}県のソロキャンプ場`, item: `${SITE_URL}/pref/${prefSlug}` }]
+          ? [{ "@type": "ListItem", position: 2, name: camp.type === "wild" ? `${camp.prefecture}県の野営地` : `${camp.prefecture}県のソロキャンプ場`, item: camp.type === "wild" ? `${SITE_URL}/pref/${prefSlug}#wild` : `${SITE_URL}/pref/${prefSlug}` }]
           : []),
         { "@type": "ListItem", position: prefSlug ? 3 : 2, name: camp.name, item: `${SITE_URL}/camp/${camp.slug}` },
       ],
@@ -168,20 +177,13 @@ export default async function CampDetailPage({
 
   // "2025-01-01" は一括投入時のプレースホルダなので確認済みとは扱わない
   const isUnverified = !camp.lastVerified || camp.lastVerified.trim() === "" || camp.lastVerified === "2025-01-01";
+  // 確認からの月数（ビルド日基準）。90日を超えたら再確認を促す（審査員2・7）
+  const staleMonths = isUnverified
+    ? 0
+    : Math.floor((Date.now() - new Date(camp.lastVerified + "T00:00:00+09:00").getTime()) / (30 * 86400000));
+  const facts = camp.officialFacts;
 
-  const featureBadges: Array<[string, string, string]> = [];
-  if (f.bath) featureBadges.push(["bath", "♨️", "風呂（場内）"]);
-  if (f.shower) featureBadges.push(["shower", "🚿", "シャワー"]);
-  if (f.carIn) featureBadges.push(["carIn", "🚗", "車横付け"]);
-  if (f.pet) featureBadges.push(["pet", "🐕", "ペット可"]);
-  if (f.wifi) featureBadges.push(["wifi", "📶", "Wi-Fi"]);
-  // 焚き火に期間制限がある施設は、素の「焚き火」を出すと制限チップと矛盾して見える
-  const bonfireRestricted = (camp.restrictions ?? []).some((r) => r.type === "bonfire");
-  if (f.bonfire && !bonfireRestricted) featureBadges.push(["bonfire", "🔥", "焚き火"]);
   const noBonfire = f.bonfire === false && /禁止|不可|できない|NG/.test(f.bonfireNote ?? "");
-  if (f.firewood) featureBadges.push(["firewood", "🪵", "薪販売"]);
-  if (f.fishing) featureBadges.push(["fishing", "🎣", "釣り可"]);
-  if (f.shop) featureBadges.push(["shop", "🏪", "売店"]);
 
   const mapsUrl = campMapUrl(camp);
   const facilityCautions = (camp.cautions ?? []).filter((c) => !isSiteStatusCaution(c));
@@ -189,7 +191,7 @@ export default async function CampDetailPage({
 
   // 施設情報。値が確認できたものと、公式で確認できていないものを分ける（審査員5・10）
   const rows: FacilityRow[] = [
-    { label: "営業期間", value: camp.season.startsWith("要確認") ? "" : camp.season, unknown: camp.season.startsWith("要確認") },
+    { label: "営業期間", value: camp.season.includes("要確認") ? "" : camp.season, unknown: camp.season.includes("要確認") },
     ...(camp.closedDays ? [{ label: "定休日", value: camp.closedDays, unknown: false }] : []),
     {
       label: "予約",
@@ -325,7 +327,6 @@ export default async function CampDetailPage({
             {isToleratedWildSite(camp) && <span className="inline-flex items-center rounded-full border border-[#e6c79c] bg-[#fdf3e3] px-2.5 py-0.5 text-[12px] font-semibold text-[#7a4a10]">公認なし</span>}
             {noBonfire && <span className="inline-flex items-center rounded-full border border-[#d8d0c6] bg-[#f4f0ea] px-2.5 py-0.5 text-[12px] font-semibold text-[#4a3f35]">焚き火不可</span>}
             {!hasEvidence(camp) && <span className="inline-flex items-center rounded-full border border-[#e6c79c] bg-[#fdf3e3] px-2.5 py-0.5 text-[12px] font-semibold text-[#7a4a10]">情報確認中</span>}
-            {!hasUsableCoord(camp) && <span className="inline-flex items-center rounded-full border border-[#d8d0c6] bg-[#f4f0ea] px-2.5 py-0.5 text-[12px] font-semibold text-[#4a3f35]">地図ピン未取得</span>}
           </div>
 
           {/* 料金。結論を大きく、内訳（公式の原文）は折りたたむ */}
@@ -386,7 +387,12 @@ export default async function CampDetailPage({
           {camp.telNote && !camp.tel && <p className="mt-2 text-[12px] text-[#6b5d50]">{camp.telNote}</p>}
 
           <p className="mt-3 text-[12px] text-[#6b5d50]">
-            {isUnverified ? "この施設の情報はまだ確認できていません" : `この施設の情報を確認した日：${camp.lastVerified}`}
+            {isUnverified ? "確認した日は記録していません" : `この施設の情報を確認した日：${camp.lastVerified}`}
+            {staleMonths >= 3 && (
+              <span className="block mt-0.5 font-semibold text-[#7a4a10]">
+                確認から{staleMonths}か月たっています。料金・営業期間は公式で再確認してください。
+              </span>
+            )}
           </p>
         </header>
 
@@ -402,9 +408,9 @@ export default async function CampDetailPage({
             {isWild && (
               <section className="bg-[#fdf3ea] rounded-2xl p-4 sm:p-5 border border-[#e3c6a6]">
                 <h2 className="text-[15px] font-bold text-[#1c1814] mb-1">この場所について</h2>
-                <p className="text-[13px] font-semibold text-[#7a4a10] mb-2">管理者なし・自己責任・夜は暗い。初めての一人キャンプならキャンプ場をおすすめします。</p>
+                <p className="text-[13px] font-semibold text-[#7a4a10] mb-2">自己責任の場所です。初めての一人キャンプならキャンプ場をおすすめします。</p>
                 <ul className="flex flex-col gap-1.5 text-[13px] sm:text-sm text-[#4a3f35] leading-relaxed list-disc pl-5">
-                  <li>管理者・受付・公式サイトがありません。料金や営業時間という概念もありません。</li>
+                  <li>キャンプ場のような予約・受付・常駐の管理人は、ないことが多い場所です。受付や管理の有無はこの場所ごとに違うので、下の注意を確認してください。</li>
                   <li>掲載しているのは、場所と現地の制約を調べて記録したものです。<strong>現地の掲示が常に優先します</strong>。</li>
                   {isToleratedWildSite(camp) && (
                     <li><strong>ここは自治体が公認した野営地ではありません。</strong>黙認されている状態なので、禁止される可能性があります。</li>
@@ -437,23 +443,53 @@ export default async function CampDetailPage({
               </section>
             )}
 
-            {featureBadges.length > 0 && (
+            {/*
+              公式ページの記述（2026-11-05 新設）。チェックイン・バイク・直火・管理人・女性向けを、
+              公式ページの原文そのまま＋出典で出す。書いていないものは「見つからなかった」と並べる（審査員2・3・4）
+            */}
+            {!isWild && (
               <section className="bg-white rounded-2xl p-4 sm:p-5 border border-[#e9e2d8]">
-                <h2 className="text-[15px] font-bold text-[#1c1814] mb-3">公式で確認できた設備</h2>
-                <ul className="grid grid-cols-2 gap-2">
-                  {featureBadges.map(([key, icon, label]) => (
-                    <li key={key} className="flex items-center gap-1.5 min-h-[44px] px-3 bg-[#faf7f2] rounded-xl text-[14px] font-medium text-[#1c1814] border border-[#e9e2d8]">
-                      <span aria-hidden="true">{icon}</span>{label}
-                    </li>
-                  ))}
-                </ul>
+                <h2 className="text-[15px] font-bold text-[#1c1814] mb-1">公式ページに書いてあること</h2>
+                <p className="text-[12px] text-[#6b5d50] mb-2">公式サイトの文章をそのまま引用しています（{facts?.fetchedAt ?? "2026-11-05"} に取得）。</p>
+                <dl>
+                  {FACT_ITEMS.filter(([k]) => facts?.[k]).map(([k, label]) => {
+                    const x = facts![k]!;
+                    const summary =
+                      k === "checkin"
+                        ? [x.in && `IN ${x.in}`, x.out && `OUT ${x.out}`].filter(Boolean).join(" ／ ")
+                        : k === "bike" && x.price
+                          ? `${x.status}（${x.price}）`
+                          : x.status;
+                    return (
+                      <div key={k} className="py-2.5 border-b border-[#f0eae1] last:border-b-0">
+                        <dt className="text-[13px] text-[#6b5d50]">{label}</dt>
+                        <dd className="min-w-0">
+                          <span className="font-semibold text-[14px] text-[#1c1814]">{summary}</span>
+                          <blockquote className="mt-1 border-l-2 border-[#e3c6a6] pl-2.5 text-[13px] leading-relaxed text-[#4a3f35] break-words">
+                            「{x.quote}」{x.quoteOut ? `「${x.quoteOut}」` : ""}
+                          </blockquote>
+                          <a href={x.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center min-h-[44px] text-[13px] font-semibold text-[#b5440e] underline hover:no-underline">
+                            公式の該当ページ<span aria-hidden="true"> ↗</span><span className="sr-only">（{label}の出典を新しいタブで開く）</span>
+                          </a>
+                        </dd>
+                      </div>
+                    );
+                  })}
+                </dl>
+                {FACT_ITEMS.some(([k]) => !facts?.[k]) && (
+                  <p className="mt-2 rounded-xl bg-[#faf7f2] px-3 py-2.5 text-[13px] leading-relaxed text-[#4a3f35]">
+                    <b>公式ページで見つからなかった項目：</b>
+                    {FACT_ITEMS.filter(([k]) => !facts?.[k]).map(([, label]) => label).join("・")}。
+                    書いていないだけで「不可」や「なし」ではありません。
+                  </p>
+                )}
               </section>
             )}
           </div>
 
           <div className="flex flex-col gap-4 sm:gap-6">
             <section className="bg-white rounded-2xl p-4 sm:p-5 border border-[#e9e2d8]">
-              <h2 className="text-[15px] font-bold text-[#1c1814] mb-1">施設情報（公式で確認できたもの）</h2>
+              <h2 className="text-[15px] font-bold text-[#1c1814] mb-1">{isWild ? "調べて分かったこと" : "施設情報（公式で確認できたもの）"}</h2>
               <dl>
                 {known.map((r) => (
                   <div key={r.label} className="flex gap-3 py-2.5 border-b border-[#f0eae1] last:border-b-0">
@@ -475,7 +511,7 @@ export default async function CampDetailPage({
               </dl>
               {unknown.length > 0 && (
                 <p className="mt-3 rounded-xl bg-[#faf7f2] px-3 py-2.5 text-[13px] leading-relaxed text-[#4a3f35]">
-                  <b>公式で確認できていない項目：</b>{unknown.join("・")}。
+                  <b>{isWild ? "分かっていない項目：" : "公式で確認できていない項目："}</b>{unknown.join("・")}。
                   {camp.tel ? "気になる項目は電話で確認してください。" : "気になる項目は公式サイトで確認してください。"}
                 </p>
               )}
@@ -534,7 +570,7 @@ export default async function CampDetailPage({
                       <li key={source}>
                         {url ? (
                           <a href={url} target="_blank" rel="noopener noreferrer" className="inline-block py-1.5 font-semibold text-[#b5440e] underline hover:no-underline break-all">
-                            {label || host}<span aria-hidden="true"> ↗</span>
+                            {label || host}<span aria-hidden="true"> ↗</span><span className="sr-only">（新しいタブ）</span>
                           </a>
                         ) : (
                           label
@@ -600,26 +636,26 @@ export default async function CampDetailPage({
 
       {/* スマホ下の固定バー。予約・公式を主に、炭色で本文と区別する（審査員3・5） */}
       <div
-        className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-[#0e0d0b] border-t border-[#2e2b27]"
+        className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-[#f7f3ec] border-t border-[#d8d0c6] shadow-[0_-2px_8px_rgba(28,24,20,0.08)]"
         style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
       >
         <div className="flex gap-2 px-3 py-2.5">
           {primary ? (
-            <a href={primary.href} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center h-12 rounded-xl bg-[#e8611f] text-[#0e0d0b] text-[15px] font-bold">
+            <a href={primary.href} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center h-12 rounded-xl bg-[#b5440e] text-white text-[15px] font-bold">
               {primary.label}<span aria-hidden="true"> ↗</span>
             </a>
           ) : (
-            <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center h-12 rounded-xl bg-[#e8611f] text-[#0e0d0b] text-[15px] font-bold">
+            <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center h-12 rounded-xl bg-[#b5440e] text-white text-[15px] font-bold">
               Googleマップで開く
             </a>
           )}
           {camp.tel && (
-            <a href={`tel:${camp.tel}`} className="flex items-center justify-center h-12 px-4 rounded-xl border border-[#5a534b] text-[#f3efe9] text-[14px] font-semibold" aria-label={`電話する ${camp.tel}`}>
+            <a href={`tel:${camp.tel}`} className="flex items-center justify-center h-12 px-4 rounded-xl border border-[#b5440e] bg-white text-[#b5440e] text-[14px] font-semibold" aria-label={`電話する ${camp.tel}`}>
               <span aria-hidden="true">📞</span> 電話
             </a>
           )}
           {primary && (
-            <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center h-12 px-4 rounded-xl border border-[#5a534b] text-[#f3efe9] text-[14px] font-semibold" aria-label="Googleマップで開く">
+            <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center h-12 px-4 rounded-xl border border-[#b5440e] bg-white text-[#b5440e] text-[14px] font-semibold" aria-label="Googleマップで開く">
               <span aria-hidden="true">📍</span> 地図
             </a>
           )}

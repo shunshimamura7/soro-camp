@@ -333,6 +333,27 @@ if (unbacked.length > 0) {
   }
 }
 
+// ── 料金の取り違え（2026-11-05 審査2回目）────────────────────────────────────
+{
+  const all = require("../data/campgrounds.json");
+  for (const c of all) {
+    if (c.status !== "active" || c.type === "wild") continue;
+    // 金額のない「要問合せ」を確認済みにしない（価格安い順の先頭に出ていた）
+    if (c.priceVerified === true && !(c.priceMin > 0) && !/^\**無料/.test(c.priceNote || "")) {
+      errors.push(`${c.slug}: priceVerified が true なのに priceMin が0（無料と書いていない）。料金未確認に戻すこと`);
+    }
+  }
+  // 公式ページの原文：引用と出典URLが揃っていること
+  const facts = require("../data/official-facts-2026-11-05.json").facts;
+  for (const [slug, rec] of Object.entries(facts)) {
+    if (!all.some((c) => c.slug === slug)) errors.push(`official-facts: ${slug} が campgrounds.json にない`);
+    for (const [k, v] of Object.entries(rec)) {
+      if (!v.quote || v.quote.length < 6 || !/^https?:\/\//.test(v.url || "")) errors.push(`official-facts: ${slug}.${k} の引用か出典URLが欠けている`);
+      if (/nap-camp\.com/.test(v.url)) errors.push(`official-facts: ${slug}.${k} の出典が予約サイト`);
+    }
+  }
+}
+
 // ── 出力 ──────────────────────────────────────────────────────────────────────
 if (errors.length > 0) {
   console.error("test-filters: 失敗");

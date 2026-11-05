@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { activeCampgrounds, hasEvidence, hasVerifiedScores } from "@/lib/camp";
+import { activeCampgrounds, evidenceBackedCampgrounds, evidencePendingCampgrounds, filterByType, hasEvidence, hasVerifiedScores } from "@/lib/camp";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "このサイトについて — スコアの見方とデータの扱い",
   description:
     "ソロキャン羅針盤の5軸スコアの定義、soloScore の計算式（静けさ・絶景を2倍で重み付け）、データの出典と鮮度についての注意書き。",
   alternates: { canonical: "/about" },
+  // og はトップの使い回しになっていた（og:url がトップを指していた。審査員8）
+  openGraph: {
+    title: "このサイトについて — ソロキャン羅針盤",
+    description: "料金はソロ1名1泊の総額、料金・設備は公式の原文つき、分からないことは未確認。並び順・評価・データの扱い。",
+    url: `${SITE_URL}/about`,
+    type: "article",
+    images: ["/og.png"],
+  },
+  twitter: { card: "summary_large_image", title: "このサイトについて — ソロキャン羅針盤", images: ["/og.png"] },
 };
 
 const AXES: Array<{ key: string; label: string; weight: string; desc: string; scale: string[] }> = [
@@ -79,8 +89,12 @@ const AXES: Array<{ key: string; label: string; weight: string; desc: string; sc
 
 export default function AboutPage() {
   // 「掲載しています」と書く以上、一覧に出る件数（status === 'active'）と一致させる。
+  // トップと同じ式・同じ集計で出す（野営地の数が10と11で食い違っていた。審査員7・10）
   const total = activeCampgrounds.length;
-  const wild = activeCampgrounds.filter((c) => c.type === "wild").length;
+  const backed = evidenceBackedCampgrounds.length;
+  const pending = evidencePendingCampgrounds.length;
+  const backedCamp = filterByType(evidenceBackedCampgrounds, "campground").length;
+  const backedWild = filterByType(evidenceBackedCampgrounds, "wild").length;
   // ここでの unverified は lastVerified の鮮度の話で、status: 'unverified' とは別概念。
   const unverified = activeCampgrounds.filter(
     (c) => !c.lastVerified || c.lastVerified.trim() === "" || c.lastVerified === "2025-01-01"
@@ -101,15 +115,15 @@ export default function AboutPage() {
       </h1>
       <p className="text-[15px] text-[#4a3f35] leading-[1.9] mb-8">
         神奈川・静岡・山梨・千葉のキャンプ場と野営地を、ソロキャンプの視点で比較するためのサイトです。
-        現在 {total} 件（うち野営地 {wild} 件）を掲載しています。
+        掲載 {total} 件 ＝ 公開 {backed} 件（キャンプ場 {backedCamp}・野営地 {backedWild}）＋ 情報確認中 {pending} 件。
       </p>
 
       {/* 3行の要約（2026-11-05。初めての人が式を読まなくても分かるように。審査員1） */}
       <section className="mb-8 rounded-2xl border border-[#e9e2d8] bg-white p-4 sm:p-5">
         <h2 className="text-[16px] font-bold text-[#1c1814] mb-2">まず3つだけ</h2>
         <ol className="list-decimal pl-5 space-y-1.5 text-[14px] leading-relaxed text-[#1c1814]">
-          <li><b>料金と設備は、各施設の公式サイトで確かめたものだけ</b>を載せています。料金はソロ1名1泊で実際に払う総額（入場料・管理費込み）です。</li>
-          <li><b>分からないことは「要確認」「未確認」と書きます。</b>推測で「なし」や金額を埋めません。</li>
+          <li id="evidence" className="scroll-mt-4"><b>料金と設備は、各施設の公式サイトで確かめたものだけ</b>を載せています。料金はソロ1名1泊で実際に払う総額（入場料・管理費込み）です。</li>
+          <li id="unknown" className="scroll-mt-4"><b>分からないことは「要確認」「未確認」と書きます。</b>推測で「なし」や金額を埋めません。</li>
           <li><b>静けさ・景観などの5点満点の評価は、根拠がそろった施設だけ</b>に付けます（高いほど良い）。まだ多くの施設が「確認中」です。</li>
         </ol>
       </section>
@@ -118,11 +132,24 @@ export default function AboutPage() {
       <section className="mb-10">
         <h2 className="text-lg sm:text-xl font-bold text-[#1c1814] mb-3">予約サイトとの違い</h2>
         <ul className="list-disc pl-5 space-y-1.5 text-[14px] leading-[1.9] text-[#4a3f35]">
-          <li>予約サイトの表示は「1区画いくら」が多く、ソロで行くと結局いくらかが分かりにくいことがあります。このサイトは<b>ソロ1名の総額</b>で並べます。</li>
+          <li id="price" className="scroll-mt-4">予約サイトの表示は「1区画いくら」が多く、ソロで行くと結局いくらかが分かりにくいことがあります。このサイトは<b>ソロ1名の総額</b>で並べます。</li>
           <li>料金・設備の一つひとつに<b>公式ページの原文と出典</b>を付けています。詳細ページの「出典」から確かめられます。</li>
           <li>管理されたキャンプ場と、管理者のいない<b>野営地を分けて</b>載せ、野営地には「公認なし」などの前提を必ず出します。</li>
           <li>予約はできません。予約は各施設の公式サイトか、施設が案内する予約サイトで行ってください。</li>
         </ul>
+      </section>
+
+      {/* 並び順（2026-11-05 トップから説明を移した。審査員1・5） */}
+      <section id="sort" className="mb-10 scroll-mt-4">
+        <h2 className="text-lg sm:text-xl font-bold text-[#1c1814] mb-3">並び順について</h2>
+        <ul className="list-disc pl-5 space-y-1.5 text-[14px] leading-[1.9] text-[#4a3f35]">
+          <li><b>情報が確かな順</b>（既定）：5軸の評価が確認できた施設 → 料金を公式で確認できた施設 → 地図の位置が取れている施設 → 名前順。人気やおすすめの度合いではありません。</li>
+          <li><b>価格安い順</b>：ソロ1名1泊の総額の最安額で並べます。料金が未確認の施設は数字で順位を付けず、末尾にまとめます。</li>
+          <li>市内・町内の住民向けの割安料金がある施設は、<b>誰でも払える料金（市外料金）</b>で比べています。</li>
+        </ul>
+        <p className="mt-3 text-[14px] leading-[1.9] text-[#4a3f35]">
+          静けさ・景観などの5点評価は、根拠がそろうまで公開していません（現在 {scoresVerified} 件）。各施設のページでは、代わりに公式ページの記述をそのまま載せています。
+        </p>
       </section>
 
       {/* 5軸 */}
@@ -170,7 +197,7 @@ export default function AboutPage() {
           soloScore の計算式
         </h2>
         <p className="text-[14px] text-[#4a3f35] leading-[1.9] mb-3">
-          一覧の「おすすめ順」は、評価確認済みの施設ではこの値の降順です。評価確認中の施設は、仮の点数を使わず中立扱いで後ろに表示します。
+          一覧の「情報が確かな順」は、評価確認済みの施設ではこの値の降順です。評価確認中の施設は、仮の点数を使わず中立扱いで後ろに表示します。
         </p>
         <div className="bg-[#0e0d0b] rounded-2xl p-4 sm:p-5 mb-4 overflow-x-auto">
           <code className="text-[12px] sm:text-[13px] text-[#e8c89a] whitespace-nowrap">

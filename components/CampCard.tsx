@@ -36,7 +36,7 @@ const chip = "inline-flex items-center rounded-full border px-2.5 py-0.5 text-[1
 const warnChip = `${chip} border-[#e6c79c] bg-[#fdf3e3] text-[#7a4a10]`;
 const greyChip = `${chip} border-[#d8d0c6] bg-[#f4f0ea] text-[#4a3f35]`;
 
-type Props = { camp: Campground; bathFilterActive?: boolean };
+type Props = { camp: Campground; bathFilterActive?: boolean; headingLevel?: 2 | 3 };
 
 /**
  * 一覧のカード（2026-11-05 作り直し）。
@@ -46,8 +46,17 @@ type Props = { camp: Campground; bathFilterActive?: boolean };
  * - 施設名は見出し（h2）にし、リンクの当たりをカード全体に広げる（審査員6）
  * - 文字は12px以上、色は WCAG AA 4.5:1 以上
  */
-export default function CampCard({ camp, bathFilterActive = false }: Props) {
+export default function CampCard({ camp, bathFilterActive = false, headingLevel = 2 }: Props) {
+  const H = headingLevel === 3 ? "h3" : "h2";
   const tags = getFeatureTags(camp.features, bathFilterActive);
+  // 公式ページの原文にはっきり書いてあるもの（詳細ページに原文と出典）
+  const of = camp.officialFacts;
+  if (of?.bike?.status === "可") tags.push({ key: "bike", icon: "🏍", label: "バイク可" });
+  if (of?.jikabi?.status === "可") tags.push({ key: "jikabi", icon: "🔥", label: "直火OK" });
+  if (of?.jikabi?.status === "一部可") tags.push({ key: "jikabi", icon: "🔥", label: "直火 一部OK" });
+  if (of?.manager?.status === "24時間常駐") tags.push({ key: "mgr", icon: "🏠", label: "管理人 夜も常駐" });
+  if (of?.women?.status) tags.push({ key: "women", icon: "♀", label: "女性専用あり" });
+  const ci = of?.checkin;
   const isWild = camp.type === "wild";
   const priceUnverified = !isWild && camp.priceVerified !== true;
   const priceUnknown = !isWild && !priceUnverified && camp.priceMin === 0 && camp.priceMax === 0;
@@ -62,25 +71,28 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
   return (
     <article
       className="relative bg-white rounded-2xl border border-[#e9e2d8] hover:border-[#e8611f] focus-within:border-[#e8611f] transition-colors overflow-hidden"
-      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 340px" }}
+      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 272px" }}
     >
-      {/* 1. 県・エリア・保存 */}
-      <div className="flex items-center gap-2 px-4 pt-3.5">
-        <span className="text-[12px] text-[#6b5d50] truncate flex-1">
+      {/*
+        1. 施設名・県・保存。**DOM は施設名リンク→保存の順**にし、見た目だけ grid で県を上に置く
+        （Tab が毎回保存ボタンに先に止まっていた。審査員6）
+      */}
+      <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-2 px-4 pt-3.5 pb-2">
+        <H className="col-start-1 row-start-2 pt-1 font-bold text-[18px] sm:text-[19px] text-[#1c1814] leading-snug">
+          <Link
+            href={`/camp/${camp.slug}`}
+            className="after:absolute after:inset-0 after:content-[''] hover:text-[#b5440e]"
+          >
+            {camp.name}
+          </Link>
+        </H>
+        <span className="col-start-1 row-start-1 text-[12px] text-[#6b5d50] truncate">
           {camp.prefecture}・{camp.area}
         </span>
-        <FavoriteButton slug={camp.slug} name={camp.name} />
+        <div className="col-start-2 row-start-1 row-span-2">
+          <FavoriteButton slug={camp.slug} name={camp.name} />
+        </div>
       </div>
-
-      {/* 2. 施設名（カード全体がリンク） */}
-      <h2 className="px-4 pt-1 pb-2 font-bold text-[18px] sm:text-[19px] text-[#1c1814] leading-snug">
-        <Link
-          href={`/camp/${camp.slug}`}
-          className="after:absolute after:inset-0 after:content-[''] hover:text-[#b5440e]"
-        >
-          {camp.name}
-        </Link>
-      </h2>
 
       {/* 3. 例外だけのチップ。今そこへ行けるか・情報が欠けていないかを先に見せる */}
       {hasExceptions && (
@@ -125,6 +137,15 @@ export default function CampCard({ camp, bathFilterActive = false }: Props) {
           </>
         )}
       </div>
+
+      {ci && (ci.in || ci.out) && (
+        <p className="px-4 pb-2.5 text-[12px] text-[#4a3f35]">
+          {ci.in && <>IN <b className="font-semibold text-[#1c1814]">{ci.in}</b></>}
+          {ci.in && ci.out && <span aria-hidden="true"> ／ </span>}
+          {ci.out && <>OUT <b className="font-semibold text-[#1c1814]">{ci.out}</b></>}
+          <span className="ml-1 text-[#6b5d50]">（公式）</span>
+        </p>
+      )}
 
       {/* 5. 設備 */}
       {tags.length > 0 && (

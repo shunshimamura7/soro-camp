@@ -133,6 +133,8 @@ export default function MapModal({ camps, onClose }: Props) {
     // コンテナサイズ確定後にリサイズして位置ズレを解消
     setTimeout(() => mapRef.current?.resize(), 100);
 
+    // canvas の英語ラベル 'Map' を日本語にし、ピンがキーボードで選べないことを伝える（審査員6）
+    map.getCanvas().setAttribute("aria-label", "地図（ピンはキーボードでは選べません。施設は閉じた後の一覧から選べます）");
     map.once("load", () => {
       map.setMaxBounds([
         [136.5, 34.2],

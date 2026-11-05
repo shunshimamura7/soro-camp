@@ -380,4 +380,21 @@ export type Campground = {
    */
   lastVerified: string;
   source?: string[];
+  /**
+   * 公式ページの原文から抜き出した記述（2026-11-05 新設。data/official-facts-*.json から lib/camp.ts で付ける）。
+   * campgrounds.json には書かない。quote は原文そのまま、url は取得したページ。
+   */
+  officialFacts?: OfficialFacts;
 };
+
+export type OfficialFactKey = "checkin" | "bike" | "jikabi" | "manager" | "women";
+export type OfficialFact = {
+  status: string;
+  quote: string;
+  url: string;
+  in?: string;
+  out?: string;
+  quoteOut?: string;
+  price?: string;
+};
+export type OfficialFacts = Partial<Record<OfficialFactKey, OfficialFact>> & { fetchedAt?: string };

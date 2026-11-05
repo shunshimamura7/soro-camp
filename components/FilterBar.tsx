@@ -31,7 +31,7 @@ type Props = {
 const PREFECTURES: string[] = ["全部", "神奈川", "静岡", "山梨", "千葉"];
 
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
-  { value: "soloScore", label: "おすすめ順" },
+  { value: "soloScore", label: "情報が確かな順" },
   { value: "priceAsc", label: "価格安い順" },
 ];
 
@@ -82,6 +82,16 @@ const FEATURE_GROUPS: FeatureGroup[] = [
       { key: "nearbyOnsen",   label: "♨️ 近くに温泉" },
       /** season が「通年」で始まるものだけ。営業期間が要確認の施設は入れない */
       { key: "yearRound",     label: "❄️ 通年営業（冬も）" },
+      { key: "priceChecked",  label: "💴 料金を公式で確認済み" },
+    ],
+  },
+  {
+    title: "公式ページに書いてある",
+    items: [
+      { key: "bikeOk",       label: "🏍 バイクで利用可" },
+      { key: "jikabiOk",     label: "🔥 直火OK（一部含む）" },
+      { key: "managerNight", label: "🏠 管理人が夜も常駐" },
+      { key: "womenOnly",    label: "♀ 女性専用の区画・設備" },
     ],
   },
 ];
@@ -155,8 +165,11 @@ export default function FilterBar({
   camps,
 }: Props) {
   const isDesktop = useIsDesktop();
-  /** PC：バーの下のパネル（既定は開いた状態。sticky にはしない） */
-  const [panelOpen, setPanelOpen] = useState(true);
+  /**
+   * PC：バーの下のパネル。**既定は閉じる**（2026-11-05 審査2回目：開いたままだと最初のカードが
+   * 1,600px 下になり、一覧が1画面目に出なかった。審査員5・10）。sticky にはしない
+   */
+  const [panelOpen, setPanelOpen] = useState(false);
   /** スマホ：下から出るシート */
   const [sheetOpen, setSheetOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
@@ -287,6 +300,7 @@ export default function FilterBar({
         onClick={() => toggleFeature(key)}
         className={`${cellBase} ${selected ? pillActive : disabled ? pillEmpty : pillInactive}`}
       >
+        {selected && <span aria-hidden="true" className="font-bold">✓</span>}
         <span className="truncate">{label}</span>
         <Count n={n} selected={selected} disabled={disabled} />
       </button>
@@ -304,6 +318,7 @@ export default function FilterBar({
     <div className="flex flex-col gap-4 text-[#f3efe9]">
       <div className="flex items-center justify-between gap-3">
         <p className="text-[12px] text-[#d6cfc5]">数字は、その条件を足したときの件数です</p>
+        <p className="sr-only" aria-live="polite">{resultCount}件に絞り込みました</p>
         {hasConditions && (
           <button
             onClick={reset}
@@ -328,6 +343,7 @@ export default function FilterBar({
                 onClick={() => set("prefecture", p)}
                 className={`${pillBase} ${selected ? pillActive : pillInactive}`}
               >
+                {selected && <span aria-hidden="true" className="font-bold">✓</span>}
                 <span>{p}</span>
                 <Count n={n} selected={selected} />
               </button>
@@ -338,7 +354,7 @@ export default function FilterBar({
 
       <div>
         <div className="flex items-baseline gap-2">
-          <span className="text-[12px] font-bold text-[#d6cfc5]">予算</span>
+          <span className="text-[12px] font-bold text-[#d6cfc5]">予算（ソロ1名1泊の総額）</span>
           <span className="text-[14px] font-semibold text-[#f3efe9]">
             {budgetLabel}
             <span data-count className="ml-1.5 tabular-nums font-normal text-[#e2dbd1]">{budgetCount}件</span>
@@ -357,7 +373,7 @@ export default function FilterBar({
             set("budgetMax", v >= BUDGET_LIMIT ? null : v);
           }}
           aria-label={`予算の上限 ${budgetLabel} ${budgetCount}件`}
-          className="mt-2 w-full h-6 cursor-pointer accent-[#e8611f] bg-transparent"
+          className="mt-1 w-full h-11 cursor-pointer accent-[#e8611f] bg-transparent"
         />
         <div className="flex justify-between text-[11px] text-[#bfb7ad] -mt-1">
           <span>0円</span>
@@ -395,7 +411,11 @@ export default function FilterBar({
       */}
       {FEATURE_GROUPS.map((group) => (
         <div key={group.title}>
-          <p className="text-[12px] font-bold text-[#d6cfc5] mb-1.5">{group.title}</p>
+          <p className="text-[12px] font-bold text-[#d6cfc5] mb-1.5">
+            {group.title}
+            {group.title === "設備" && <span className="ml-2 font-normal">※件数は公式で「あり」と確認できた施設だけ</span>}
+            {group.title === "公式ページに書いてある" && <span className="ml-2 font-normal">※公式の文章にはっきり書いてある施設だけ。書いていない施設は「不可」ではありません</span>}
+          </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5 sm:gap-2">
             {group.items.map(renderFeature)}
           </div>

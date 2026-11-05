@@ -1,7 +1,13 @@
-import type { Campground } from "./types";
+import type { Campground, OfficialFacts } from "./types";
 import data from "../data/campgrounds.json";
+import factsDoc from "../data/official-facts-2026-11-05.json";
 
-export const campgrounds: Campground[] = data as Campground[];
+/** 公式ページの原文から抜き出した記述を、施設に付ける（元データは書き換えない） */
+const FACTS = (factsDoc as { fetchedAt: string; facts: Record<string, OfficialFacts> });
+export const campgrounds: Campground[] = (data as Campground[]).map((c) => {
+  const f = FACTS.facts[c.slug];
+  return f ? { ...c, officialFacts: { ...f, fetchedAt: FACTS.fetchedAt } } : c;
+});
 
 export * from "./camp-core";
 import { hasEvidence, PLACEHOLDER_VERIFIED_DATE } from "./camp-core";

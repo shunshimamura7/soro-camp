@@ -246,8 +246,8 @@ html {
   top: 12px;
   right: 12px;
   z-index: 10;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: rgba(14, 13, 11, 0.78);
   border: 1.5px solid rgba(232, 97, 31, 0.55);
@@ -441,3 +441,16 @@ html {
   color: #5a4a3a;
   border-color: #e2ddd8;
 }
+
+/* スマホ詳細の下固定バー（約70px）にフォーカス先・ページ末尾が隠れないように（審査員6） */
+@media (max-width: 767px) {
+  html { scroll-padding-bottom: 96px; }
+}
+
+/* 太字の句の途中で1字ずつ折り返さない（審査員5） */
+h1, h2, p { word-break: auto-phrase; }
+
+/* 地図の出典表示を読める大きさ・濃さに（9px・2.66:1 だった。審査員6） */
+.maplibregl-ctrl-attrib, .maplibregl-ctrl-attrib a { font-size: 12px !important; color: #1c1814 !important; }
+.maplibregl-ctrl-attrib { background: rgba(247, 243, 236, 0.95) !important; }
+.maplibregl-ctrl-attrib a { display: inline-block; padding: 4px 2px; }
